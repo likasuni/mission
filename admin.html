@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관리자 | 리카수니 자료실</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="common.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="./">리카수니 <b>관리자</b></a>
+    <div class="auth" id="auth"></div>
+  </div>
+</header>
+
+<main class="wrap" id="main"><p class="muted">불러오는 중...</p></main>
+
+<footer><a href="./">← 자료실로 돌아가기</a></footer>
+
+<script>
+let user = null;
+let current = 'comments';
+
+/* ---------- 탭 ---------- */
+function shell() {
+  $('#main').innerHTML = `
+    <div class="tabs">
+      <button class="tab" data-t="comments" onclick="showTab('comments')">댓글 승인 <span id="n-comments"></span></button>
+      <button class="tab" data-t="requests" onclick="showTab('requests')">자료 요청 <span id="n-requests"></span></button>
+      <button class="tab" data-t="materials" onclick="showTab('materials')">자료 관리</button>
+    </div>
+    <section id="panel"></section>`;
+}
+
+async function showTab(t) {
+  current = t;
+  document.querySelectorAll('.tab').forEach(b => b.classList.toggle('on', b.dataset.t === t));
+  $('#panel').innerHTML = '<p class="muted">불러오는 중...</p>';
+  if (t === 'comments') await tabComments();
+  if (t === 'requests') await tabRequests();
+  if (t === 'materials') await tabMaterials();
+  updateBadges();
+}
+
+async function updateBadges() {
+  const c = await sb.from('comments').select('id', { count: 'exact', head: true }).eq('approved', false);
+  const r = await sb.from('requests').select('id', { count: 'exact', head: true }).eq('status', 'pending');
+  $('#n-comments').textContent = c.count ? `(${c.count})` : '';
+  $('#n-requests').textContent = r.count ? `(${r.count})` : '';
+}
+
+/* ---------- 댓글 승인 ---------- */
+async function tabComments() {
+  const { data, error } = await sb.from('comments')
+    .select('id,author_name,content,created_at,material_id,materials(title)')
+    .eq('approved', false).order('created_at', { ascending: true });
+
+  if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
+  if (!data.length) return $('#panel').innerHTML = `<div class="card"><p class="muted">승인 대기 중인 댓글이 없어요. 👍</p></div>`;
+
+  $('#panel').innerHTML = `
+    <div class="row between" style="margin-bottom:10px">
+      <span class="muted">승인 대기 ${data.length}개</span>
+      <button class="btn btn-navy btn-sm" onclick="approveAll()">전체 승인</button>
+    </div>
+    ${data.map(c => `
+      <div class="card">
+        <div class="row">
+          <strong>${esc(c.author_name || '익명')}</strong>
+          <span class="tag">${esc(c.materials?.title || '')}</span>
+          <span class="meta">${fmtDate(c.created_at)}</span>
+        </div>
+        <p class="body" style="white-space:pre-wrap;margin:8px 0">${esc(c.content)}</p>
+        <div class="row">
+          <button class="btn btn-gold btn-sm" onclick="approve(${c.id})">승인</button>
+          <button class="btn btn-danger btn-sm" onclick="removeComment(${c.id})">삭제</button>
+        </div>
+      </div>`).join('')}`;
+}
+
+async function approve(id) {
+  const { error } = await sb.from('comments').update({ approved: true }).eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast('승인했어요.');
+  showTab('comments');
+}
+
+async function approveAll() {
+  if (!confirm('대기 중인 댓글을 모두 승인할까요?')) return;
+  const { error } = await sb.from('comments').update({ approved: true }).eq('approved', false);
+  if (error) return toast('오류: ' + error.message);
+  toast('모두 승인했어요.');
+  showTab('comments');
+}
+
+async function removeComment(id) {
+  if (!confirm('이 댓글을 삭제할까요?')) return;
+  const { error } = await sb.from('comments').delete().eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast('삭제했어요.');
+  showTab('comments');
+}
+
+/* ---------- 자료 요청 ---------- */
+async function tabRequests() {
+  const { data, error } = await sb.from('requests')
+    .select('id,email,status,created_at,materials(title)')
+    .order('created_at', { ascending: false });
+
+  if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
+  if (!data.length) return $('#panel').innerHTML = `<div class="card"><p class="muted">아직 들어온 요청이 없어요.</p></div>`;
+
+  $('#panel').innerHTML = data.map(r => `
+    <div class="card">
+      <div class="row between">
+        <div>
+          <strong>${esc(r.materials?.title || '')}</strong><br>
+          <span>${esc(r.email)}</span>
+          <span class="meta"> · ${fmtDate(r.created_at)}</span>
+        </div>
+        <div class="row">
+          ${r.status === 'sent'
+            ? '<span class="tag ok">전달 완료</span>'
+            : `<button class="btn btn-line btn-sm" onclick="copyText('${esc(r.email)}')">이메일 복사</button>
+               <button class="btn btn-gold btn-sm" onclick="markSent(${r.id})">전달 완료</button>`}
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+async function markSent(id) {
+  const { error } = await sb.from('requests').update({ status: 'sent' }).eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast('전달 완료로 표시했어요.');
+  showTab('requests');
+}
+
+function copyText(t) {
+  navigator.clipboard.writeText(t).then(() => toast('복사했어요: ' + t));
+}
+
+/* ---------- 자료 관리 ---------- */
+async function tabMaterials() {
+  const { data } = await sb.from('materials')
+    .select('id,title,description,required_comments,created_at')
+    .order('created_at', { ascending: false });
+
+  $('#panel').innerHTML = `
+    <div class="card">
+      <h2>➕ 새 자료 등록</h2>
+      <input type="text" id="mtitle" placeholder="자료 제목 (예: 2026년 10월 고2 모의고사 분석노트)">
+      <textarea id="mdesc" class="mt" placeholder="자료 설명 (어떤 자료인지, 누구에게 도움이 되는지)"></textarea>
+      <div class="row mt">
+        <span class="muted">필요한 승인 댓글 수</span>
+        <input type="number" id="mreq" value="${MISSION_GOAL}" min="1" style="width:90px">
+        <button class="btn btn-navy" onclick="addMaterial()">등록</button>
+      </div>
+    </div>
+    <h2>등록된 자료 ${data?.length || 0}개</h2>
+    ${(data || []).map(m => `
+      <div class="card">
+        <div class="row between">
+          <div>
+            <strong>${esc(m.title)}</strong>
+            <span class="tag">댓글 ${m.required_comments}개</span><br>
+            <span class="meta">${fmtDate(m.created_at)} · <a href="./?id=${m.id}" target="_blank">페이지 보기</a></span>
+          </div>
+          <button class="btn btn-danger btn-sm" onclick="removeMaterial(${m.id})">삭제</button>
+        </div>
+      </div>`).join('')}`;
+}
+
+async function addMaterial() {
+  const title = $('#mtitle').value.trim();
+  const description = $('#mdesc').value.trim();
+  const required_comments = Number($('#mreq').value) || MISSION_GOAL;
+  if (!title) return toast('제목을 입력해 주세요.');
+
+  const { error } = await sb.from('materials').insert({ title, description, required_comments });
+  if (error) return toast('오류: ' + error.message);
+  toast('자료를 등록했어요.');
+  showTab('materials');
+}
+
+async function removeMaterial(id) {
+  if (!confirm('이 자료를 삭제할까요? 연결된 댓글과 요청도 함께 삭제됩니다.')) return;
+  const { error } = await sb.from('materials').delete().eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast('삭제했어요.');
+  showTab('materials');
+}
+
+/* ---------- 시작 ---------- */
+(async function init() {
+  user = await getUser();
+  renderAuth(user);
+
+  if (!user) {
+    $('#main').innerHTML = `<div class="card"><h2>관리자 로그인</h2>
+      <p class="muted">관리자 계정으로 로그인해 주세요.</p>
+      <button class="btn btn-navy" onclick="login()">구글로 로그인</button></div>`;
+    return;
+  }
+
+  const { data: isAdmin } = await sb.rpc('is_admin');
+  if (!isAdmin) {
+    $('#main').innerHTML = `<div class="card"><h2>관리자 권한이 없어요</h2>
+      <p class="muted">현재 로그인: ${esc(user.email)}<br>
+      Supabase SQL Editor에서 이 계정을 관리자로 등록한 뒤 새로고침해 주세요.</p></div>`;
+    return;
+  }
+
+  shell();
+  showTab('comments');
+})();
+</script>
+</body>
+</html>
