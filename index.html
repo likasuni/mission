@@ -68,9 +68,9 @@ function renderMission() {
   if (!user) {
     el.innerHTML = `
       <h2>🎯 나의 미션</h2>
-      <p class="muted">구글 계정으로 로그인하면 댓글 미션을 시작할 수 있어요.<br>
+      <p class="muted">카카오 또는 구글 계정으로 로그인하면 댓글 미션을 시작할 수 있어요.<br>
       승인된 댓글 ${MISSION_GOAL}개를 모으면 원하는 자료를 요청할 수 있습니다.</p>
-      <button class="btn btn-navy mt" onclick="login()">구글로 로그인하고 시작하기</button>`;
+      ${loginButtons()}`;
     return;
   }
   const pct = Math.min(100, (approved / MISSION_GOAL) * 100);
@@ -164,7 +164,7 @@ async function renderDetail(id) {
 function commentForm(mid) {
   if (!user) {
     return `<p class="muted">댓글을 남기려면 로그인해 주세요.</p>
-            <button class="btn btn-navy" onclick="login()">구글로 로그인</button>`;
+            ${loginButtons()}`;
   }
   return `
     <p class="muted">학습 후기, 궁금한 점, 공부 계획 등을 <b>20자 이상</b> 남겨주세요. 성의 없는 댓글은 승인되지 않을 수 있어요.</p>
@@ -223,7 +223,7 @@ async function renderRequest(m) {
     <h2>📩 자료 요청</h2>
     ${ok ? `
       <p class="muted">미션 달성! 자료를 받을 이메일을 확인해 주세요.</p>
-      <input type="email" id="remail" value="${esc(user.email || '')}">
+      <input type="email" id="remail" placeholder="자료를 받을 이메일 주소" value="${esc(user.email || '')}">
       <label class="check mt">
         <input type="checkbox" id="ragree">
         <span>자료 전달을 위해 이름·이메일을 수집·이용하는 데 동의합니다. (전달 완료 후 1년 보관 후 파기, <a href="privacy.html" target="_blank">개인정보처리방침</a>)</span>

@@ -32,16 +32,53 @@ async function getUser() {
 
 function displayName(user) {
   const m = user?.user_metadata || {};
-  return m.full_name || m.name || (user?.email || '').split('@')[0];
+  return m.full_name || m.name || m.nickname || m.preferred_username
+    || (user?.email || '').split('@')[0] || '회원';
 }
 
-async function login() {
+/* ---------- 로그인 ---------- */
+async function login(provider = 'google') {
   const redirectTo = location.origin + location.pathname + location.search;
   const { error } = await sb.auth.signInWithOAuth({
-    provider: 'google',
+    provider,
     options: { redirectTo }
   });
   if (error) toast('로그인 오류: ' + error.message);
+}
+
+// 구글·카카오 로그인 버튼 묶음 (본문 안에 넣을 때 사용)
+function loginButtons() {
+  return `
+    <div class="login-btns">
+      <button class="btn btn-kakao" onclick="login('kakao')">
+        <span class="ico">💬</span> 카카오로 시작하기
+      </button>
+      <button class="btn btn-google" onclick="login('google')">
+        <span class="ico g">G</span> 구글로 시작하기
+      </button>
+    </div>`;
+}
+
+// 로그인 방법 선택 창
+function showLogin() {
+  closeLogin();
+  const wrap = document.createElement('div');
+  wrap.id = 'login-modal';
+  wrap.className = 'modal';
+  wrap.innerHTML = `
+    <div class="modal-box" role="dialog" aria-label="로그인">
+      <button class="modal-x" onclick="closeLogin()" aria-label="닫기">×</button>
+      <h2>로그인</h2>
+      <p class="muted">사용하시는 계정으로 간편하게 로그인하세요.</p>
+      ${loginButtons()}
+    </div>`;
+  wrap.addEventListener('click', (e) => { if (e.target === wrap) closeLogin(); });
+  document.body.appendChild(wrap);
+}
+
+function closeLogin() {
+  const m = document.getElementById('login-modal');
+  if (m) m.remove();
 }
 
 async function logout() {
@@ -53,16 +90,17 @@ function renderAuth(user) {
   const el = $('#auth');
   if (!el) return;
   if (!user) {
-    el.innerHTML = `<button class="btn btn-gold btn-sm" onclick="login()">구글로 로그인</button>`;
+    el.innerHTML = `<button class="btn btn-gold btn-sm" onclick="showLogin()">로그인</button>`;
     return;
   }
-  const pic = user.user_metadata?.avatar_url;
+  const pic = user.user_metadata?.avatar_url || user.user_metadata?.picture;
   el.innerHTML = `
     ${pic ? `<img class="avatar" src="${esc(pic)}" alt="">` : ''}
     <span class="name">${esc(displayName(user))}</span>
     <button class="btn btn-line btn-sm" onclick="logout()">로그아웃</button>`;
 }
 
+/* ---------- 알림 ---------- */
 let toastTimer;
 function toast(msg) {
   let el = $('#toast');

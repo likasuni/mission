@@ -63,6 +63,29 @@ h2 { font-size: 1.15rem; margin: 0 0 10px; color: var(--navy-d); }
 .btn-sm { padding: 6px 12px; font-size: .85rem; }
 .btn:disabled { opacity: .45; cursor: not-allowed; }
 
+/* 소셜 로그인 버튼 */
+.login-btns { display: grid; gap: 10px; max-width: 320px; margin-top: 12px; }
+.btn-kakao { background: #FEE500; color: #191919; padding: 12px 16px; }
+.btn-google { background: #fff; color: #1f2937; border: 1.5px solid #d1d5db; padding: 12px 16px; }
+.btn-kakao .ico, .btn-google .ico { font-size: 1rem; }
+.btn-google .ico.g { font-weight: 800; color: #4285F4; }
+
+/* 로그인 선택 창 */
+.modal {
+  position: fixed; inset: 0; background: rgba(15, 23, 42, .55);
+  display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 50;
+}
+.modal-box {
+  position: relative; background: #fff; border-radius: 16px;
+  padding: 26px 22px 22px; width: 100%; max-width: 360px;
+}
+.modal-box h2 { margin-bottom: 4px; }
+.modal-box .login-btns { max-width: none; margin-top: 16px; }
+.modal-x {
+  position: absolute; top: 10px; right: 12px; border: 0; background: none;
+  font-size: 1.6rem; line-height: 1; color: var(--muted); cursor: pointer;
+}
+
 /* 진행률 */
 .bar { height: 12px; background: #e8ecf5; border-radius: 99px; overflow: hidden; margin: 8px 0; }
 .bar > span {

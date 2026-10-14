@@ -205,14 +205,14 @@ async function removeMaterial(id) {
   if (!user) {
     $('#main').innerHTML = `<div class="card"><h2>관리자 로그인</h2>
       <p class="muted">관리자 계정으로 로그인해 주세요.</p>
-      <button class="btn btn-navy" onclick="login()">구글로 로그인</button></div>`;
+      ${loginButtons()}</div>`;
     return;
   }
 
   const { data: isAdmin } = await sb.rpc('is_admin');
   if (!isAdmin) {
     $('#main').innerHTML = `<div class="card"><h2>관리자 권한이 없어요</h2>
-      <p class="muted">현재 로그인: ${esc(user.email)}<br>
+      <p class="muted">현재 로그인: ${esc(user.email || displayName(user))}<br>
       Supabase SQL Editor에서 이 계정을 관리자로 등록한 뒤 새로고침해 주세요.</p></div>`;
     return;
   }
