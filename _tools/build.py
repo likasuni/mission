@@ -261,10 +261,9 @@ for idx, k in enumerate(keys_sorted):
 <tr><th>과목</th><td>{e(sub_names)}</td></tr>
 </table></div>
 {info_html}
-{ad()}
 {rows}
-{pn}
-{ad()}'''
+{ad()}
+{pn}'''
     page(s_url(k), f'{name} ' + ('등급컷 · ' if inf.get('rows') else '') + '전과목 기출문제·정답·해설 PDF | 리카수니 자료실',
          f'{name} 전과목 기출문제 PDF 무료 다운로드와 ' + ('등급컷·시험 요약. ' if inf else '') + f'{sub_names} 문제지·정답·해설. 리카수니 자료실', body, crumbs, active,
          comments=(s_url(k).strip('/'), name))
@@ -314,15 +313,15 @@ for g in (1, 2, 3):
     ks = [k for k in sessions if k[0] == 'moe' and k[1] == g]
     body = f'''<h1 class="page-h1">고{g} 모의고사 기출문제 전과목 PDF</h1>
 <p class="lead">연도·월별 고{g} 모의고사 문제지와 정답·해설을 모았어요. 총 {len(ks)}개 회차.</p>
-{ad()}<div class="card">{session_list(ks)}</div>'''
+<div class="card">{session_list(ks)}</div>{ad()}'''
     page(f'/moe/go{g}/', f'고{g} 모의고사 기출문제 전과목 PDF 모음 | 리카수니 자료실',
          f'고{g} 모의고사 기출문제 연도별·월별 전과목 문제지·정답·해설 PDF 무료 다운로드.', body,
          [('/', '홈'), (f'/moe/go{g}/', f'고{g} 모의고사')], f'/moe/go{g}/')
 
 ks = sorted([k for k in sessions if k[0] == 'sn'], key=lambda k: -k[2])
 body = '''<h1 class="page-h1">대학수학능력시험(수능) 기출문제 전과목 PDF</h1>
-<p class="lead">학년도별 수능 문제지와 정답·해설을 모았어요.</p>''' + ad() + '<div class="card"><div class="chips">' + ''.join(
-    f'<a class="chip" href="{s_url(k)}">{k[2]}학년도<small>{len(bysubj(sessions[k]))}과목</small></a>' for k in ks) + '</div></div>'
+<p class="lead">학년도별 수능 문제지와 정답·해설을 모았어요.</p>''' + '<div class="card"><div class="chips">' + ''.join(
+    f'<a class="chip" href="{s_url(k)}">{k[2]}학년도<small>{len(bysubj(sessions[k]))}과목</small></a>' for k in ks) + '</div></div>' + ad()
 page('/suneung/', '수능 기출문제 전과목 PDF 모음 | 리카수니 자료실', '대학수학능력시험 학년도별 전과목 기출문제·정답·해설 PDF 무료 다운로드.',
      body, [('/', '홈'), ('/suneung/', '수능 기출')], '/suneung/')
 
@@ -337,7 +336,6 @@ body = f'''<section class="hero"><h1>모의고사·수능 기출문제 전과목
 <a class="tile" href="/moe/go3/"><b>고3</b><span>{cnt[3]}개 회차</span></a>
 <a class="tile gold" href="/suneung/"><b>수능</b><span>{cnt["sn"]}개 학년도</span></a>
 </div>
-{ad()}
 <div class="card"><h2>🆕 최근 회차</h2><div class="chips">''' + ''.join(
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '''</div></div>
 <a class="banner" href="/mission/"><b>🎯 댓글 미션으로 리카수니 자료 받기</b><p>질문·학습 후기 댓글 10개를 모으면 분석노트·어휘노트를 이메일로 보내드려요.</p></a>
