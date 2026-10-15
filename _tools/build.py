@@ -171,7 +171,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=3'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=4'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -350,7 +350,7 @@ body = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청
 <li>모의고사는 연도·월·학년·번호를, 부교재는 교재·강·번호를 골라 요청해요. (예: 2026년 9월 고1 30번, 수능특강 라이트 20강 1번)</li>
 <li>요청하면 카카오톡 '나와의 채팅'으로 분석노트 링크가 바로 와요.</li>
 <li>1인 하루 1개까지 받을 수 있고, 링크는 24시간 동안 열려요.</li>
-<li>아직 준비되지 않은 자료는 원장님께 요청이 전달되고, 그날 요청 횟수는 차감되지 않아요.</li>
+<li>아직 준비되지 않은 자료는 원장님께 요청이 전달돼요. 준비에 1~2일 걸리니 그 뒤에 다시 요청해 주세요. (그날 요청 횟수는 차감되지 않아요)</li>
 </ul></div>''' + ad()
 page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카수니 자료실',
      '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 1인 하루 1개.', body,

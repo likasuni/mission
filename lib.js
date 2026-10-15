@@ -157,7 +157,9 @@ async function noteRequest(user) {
     const box = document.getElementById('nr-preview');
     if (r.error) { box.innerHTML = `<span style="color:var(--danger)">${esc(r.error)}</span>`; return; }
     if (r.missing) {
-      box.innerHTML = `📝 <b>${esc(r.label)}</b>는 아직 준비 중이에요. 원장님께 요청을 전달했어요. 준비되면 다시 요청해 주세요. (오늘 요청 횟수는 차감되지 않아요)`;
+      const d = new Date(Date.now() + 2 * 86400e3);
+      const when = `${d.getMonth() + 1}월 ${d.getDate()}일(${'일월화수목금토'[d.getDay()]})`;
+      box.innerHTML = `📝 <b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 자료 준비에 1~2일 걸리니 <b>${when} 이후에 다시 요청</b>해 주세요. (오늘 요청 횟수는 차감되지 않아요)`;
       return;
     }
     card.innerHTML = head + `<div class="info-box">✅ <b>${esc(r.label)}</b>
