@@ -151,6 +151,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{SITE}/og.png">
 <meta name="google-site-verification" content="BckdSBCPVseYvq2HonB5Q7G9pfCOG10GZvoCOIoK4sk">
+<meta name="naver-site-verification" content="7e1745db79feaa04ab25201be2de4645c4641c34">
 <link rel="icon" href="/favicon.png">
 <style>{CSS}</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" crossorigin="anonymous"></script>
