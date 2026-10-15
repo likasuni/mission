@@ -155,12 +155,12 @@ function copyText(t) {
 /* ---------- 분석노트 신청 ---------- */
 async function tabNotes() {
   const { data, error } = await sb.from('note_requests')
-    .select('id,user_id,page_key,num,status,created_at,comment_id,comments(author_name,content,approved,page_title)')
+    .select('id,user_id,page_key,num,status,created_at,decided_at,link_token,comment_id,comments(author_name,content,approved,page_title)')
     .order('created_at', { ascending: false }).limit(200);
   if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
   if (!data.length) return $('#panel').innerHTML = `<div class="card"><p class="muted">아직 들어온 신청이 없어요.</p></div>`;
   const label = { pending: '<span class="tag wait">대기</span>', approved: '<span class="tag ok">승인</span>', rejected: '<span class="tag">거절</span>' };
-  $('#panel').innerHTML = `<p class="muted">승인하면 신청자 화면에 바로 다운로드 버튼이 생기고, 신청 댓글도 함께 승인돼 미션 개수에 합산돼요.</p>` +
+  $('#panel').innerHTML = `<p class="muted">승인하면 신청자 화면에 바로 다운로드 버튼이 생기고(7일간), 카톡으로 보낼 링크 메시지도 복사할 수 있어요. 신청 댓글도 함께 승인돼 미션 개수에 합산돼요.</p>` +
     data.map(r => `
     <div class="card">
       <div class="row">
@@ -172,12 +172,27 @@ async function tabNotes() {
       ${r.status === 'pending' ? `<div class="row">
         <button class="btn btn-gold btn-sm" onclick="decideNote(${r.id}, 'approved', ${r.comment_id || 'null'})">승인</button>
         <button class="btn btn-danger btn-sm" onclick="decideNote(${r.id}, 'rejected', null)">거절</button></div>` : ''}
+      ${r.status === 'approved' && r.link_token ? `<div class="row">
+        <button class="btn btn-kakao btn-sm" onclick="copyNoteLink('${esc(r.comments?.page_title || r.page_key)}', ${r.num}, '${r.link_token}', '${r.decided_at}')">💬 카톡 메시지 복사</button>
+        <span class="meta">승인 후 7일 동안 열리는 링크</span></div>` : ''}
     </div>`).join('');
+}
+
+function newToken() {
+  return [...crypto.getRandomValues(new Uint8Array(16))].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+function noteLink(r) { return `https://data.likasuni.com/get/?t=${r.link_token}`; }
+function copyNoteLink(title, num, token, decided) {
+  const until = new Date(new Date(decided).getTime() + 7 * 86400000);
+  const msg = `[리카수니 자료실] ${title} ${num}번 분석노트가 준비됐어요 📘\n아래 링크에서 받으세요. (${fmtDate(until)}까지)\nhttps://data.likasuni.com/get/?t=${token}`;
+  navigator.clipboard.writeText(msg).then(() => toast('카톡에 붙여넣을 메시지를 복사했어요.'));
 }
 
 async function decideNote(id, status, commentId) {
   if (status === 'rejected' && !confirm('이 신청을 거절할까요? 거절하면 신청자가 이 회차에서 다시 신청할 수 있어요.')) return;
-  const { error } = await sb.from('note_requests').update({ status, decided_at: new Date().toISOString() }).eq('id', id);
+  const patch = { status, decided_at: new Date().toISOString() };
+  if (status === 'approved') patch.link_token = newToken();
+  const { error } = await sb.from('note_requests').update(patch).eq('id', id);
   if (error) return toast('오류: ' + error.message);
   if (status === 'approved' && commentId) await sb.from('comments').update({ approved: true }).eq('id', commentId);
   toast(status === 'approved' ? '승인했어요. 신청자가 바로 받을 수 있어요.' : '거절했어요.');
@@ -203,12 +218,21 @@ async function tabFiles() {
       <p class="meta">여러 파일을 한 번에 올릴 때는 파일 이름을 번호로(예: 30.pdf, 31.pdf) 해두면 번호가 자동으로 들어가요.</p>
       <button class="btn btn-navy mt" onclick="uploadNotes()">올리기</button>
     </div>
+    <div class="card">
+      <h2>🔗 구글드라이브 링크로 등록</h2>
+      <p class="muted">파일을 올리지 않고 드라이브 링크만 연결해요. 한 줄에 <b>번호 링크</b> 형식으로 적어주세요. 링크는 학생에게 보이지 않고, 승인된 학생만 승인 후 7일 동안 받을 수 있어요.<br>
+      드라이브 파일은 공유 설정을 <b>'링크가 있는 모든 사용자'</b>로 해두어야 해요.</p>
+      <input type="text" id="dpage" placeholder="과목 페이지 주소 예) https://data.likasuni.com/moe/go2/2024-10/eng/">
+      <textarea id="dlines" class="mt" placeholder="20 https://drive.google.com/file/d/xxxx/view&#10;26 https://drive.google.com/file/d/yyyy/view"></textarea>
+      <button class="btn btn-navy mt" onclick="linkDrive()">등록</button>
+    </div>
     <h2>등록된 파일 ${data?.length || 0}개</h2>
     ${(data || []).map(f => `
       <div class="card"><div class="row between">
         <div><strong><a href="/${esc(f.page_key)}/" target="_blank">${esc(f.page_key)}</a> · ${f.num}번</strong> ${f.title ? `<span class="tag">${esc(f.title)}</span>` : ''}<br>
         <span class="meta">${fmtDate(f.created_at)}</span></div>
-        <button class="btn btn-danger btn-sm" onclick="removeNote(${f.id}, '${esc(f.path)}')">삭제</button>
+        <span class="tag">${f.path ? '업로드' : '드라이브'}</span>
+        <button class="btn btn-danger btn-sm" onclick="removeNote(${f.id}, '${esc(f.path || '')}')">삭제</button>
       </div></div>`).join('')}`;
 }
 
@@ -234,9 +258,27 @@ async function uploadNotes() {
   showTab('files');
 }
 
+async function linkDrive() {
+  const page_key = pageKeyFrom($('#dpage').value);
+  if (!page_key) return toast('과목 페이지 주소를 넣어주세요.');
+  let ok = 0;
+  for (const line of $('#dlines').value.split('\n')) {
+    const m = line.match(/^\s*(\d+)\D.*?(?:\/d\/|id=)([\w-]{20,})/);
+    if (!m) { if (line.trim()) toast('형식 확인: ' + line.trim().slice(0, 30)); continue; }
+    const num = Number(m[1]), drive_id = m[2];
+    const a = await sb.from('note_files').upsert({ page_key, num, path: null }, { onConflict: 'page_key,num' });
+    if (a.error) { toast(`${num}번 실패: ${a.error.message}`); continue; }
+    const b = await sb.from('note_sources').upsert({ page_key, num, drive_id }, { onConflict: 'page_key,num' });
+    if (b.error) { toast(`${num}번 실패: ${b.error.message}`); continue; }
+    ok++;
+  }
+  toast(`${ok}개 연결했어요.`);
+  showTab('files');
+}
+
 async function removeNote(id, path) {
   if (!confirm('이 파일을 삭제할까요? 이 번호의 신청 기록도 함께 삭제돼요.')) return;
-  await sb.storage.from('notes').remove([path]);
+  if (path) await sb.storage.from('notes').remove([path]);
   const { error } = await sb.from('note_files').delete().eq('id', id);
   if (error) return toast('오류: ' + error.message);
   toast('삭제했어요.');

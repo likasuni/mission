@@ -2,6 +2,7 @@
    자료실 페이지 공통: 로그인 표시 + 페이지 댓글
    (댓글은 어느 페이지에 달든 미션 개수에 합산)
    ========================================= */
+const NOTE_DAYS = 7; // 승인 후 다운로드 가능 기간(일) — note-download 함수와 같게
 (async function () {
   const user = await getUser();
   renderAuth(user);
@@ -68,7 +69,7 @@
     const nums = files.map(f => f.num).join(', ');
     let mine = null;
     if (user) {
-      const { data } = await sb.from('note_requests').select('id,num,status,created_at')
+      const { data } = await sb.from('note_requests').select('id,num,status,created_at,decided_at')
         .eq('page_key', key).neq('status', 'rejected').maybeSingle();
       mine = data;
     }
@@ -76,7 +77,10 @@
     if (!user) {
       inner = `<p class="muted">로그인 후 댓글로 신청하면 원하는 번호의 분석노트 PDF를 받을 수 있어요.</p>${loginButtons()}`;
     } else if (mine && mine.status === 'approved') {
-      inner = `<p>✅ <b>${mine.num}번 분석노트</b> 신청이 승인됐어요.</p>
+      const until = new Date(new Date(mine.decided_at).getTime() + NOTE_DAYS * 86400000);
+      inner = Date.now() > until
+        ? `<p>⌛ <b>${mine.num}번 분석노트</b> 다운로드 기간(승인 후 ${NOTE_DAYS}일)이 끝났어요.</p>`
+        : `<p>✅ <b>${mine.num}번 분석노트</b> 신청이 승인됐어요. <span class="meta">${fmtDate(until)}까지 받을 수 있어요.</span></p>
         <button class="btn btn-gold" id="ndl">${mine.num}번 PDF 다운로드</button>`;
     } else if (mine) {
       inner = `<p>⏳ <b>${mine.num}번 분석노트</b> 신청 완료! 원장님 확인 후 이 자리에 다운로드 버튼이 생겨요.</p>`;
@@ -91,9 +95,29 @@
     const dl = document.getElementById('ndl');
     if (dl) dl.onclick = async () => {
       const f = files.find(x => x.num === mine.num);
-      const { data, error } = await sb.storage.from('notes').createSignedUrl(f.path, 600, { download: `${title} ${f.num}번 분석노트.pdf` });
-      if (error) return toast('다운로드 오류: ' + error.message);
-      location.href = data.signedUrl;
+      const fname = `${title} ${f.num}번 분석노트.pdf`;
+      dl.disabled = true; dl.textContent = '받는 중...';
+      try {
+        if (f.path) {
+          const { data, error } = await sb.storage.from('notes').createSignedUrl(f.path, 600, { download: fname });
+          if (error) throw new Error(error.message);
+          location.href = data.signedUrl;
+        } else {
+          const { data: { session } } = await sb.auth.getSession();
+          const res = await fetch(`${SUPABASE_URL}/functions/v1/note-download`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
+            body: JSON.stringify({ page_key: key })
+          });
+          if (!res.ok) throw new Error((await res.json().catch(() => ({}))).error || res.status);
+          const blob = await res.blob();
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob); a.download = fname;
+          document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+        }
+      } catch (err) { toast('다운로드 오류: ' + err.message); }
+      dl.disabled = false; dl.textContent = `${mine.num}번 PDF 다운로드`;
     };
     const t = document.getElementById('nbody');
     if (t) {

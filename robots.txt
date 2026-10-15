@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /admin.html
+Disallow: /get/
 Sitemap: https://data.likasuni.com/sitemap.xml

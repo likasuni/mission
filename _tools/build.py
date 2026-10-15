@@ -332,5 +332,5 @@ page('/', '리카수니 자료실 | 모의고사·수능 기출문제 전과목 
 urls = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{TODAY}</lastmod></url>' for p in ['/mission/', '/privacy.html'] + PAGES)
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
     f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
-open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nSitemap: {SITE}/sitemap.xml\n')
+open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /get/\nSitemap: {SITE}/sitemap.xml\n')
 print('pages', len(PAGES), 'sessions', len(sessions), 'files', len(R))
