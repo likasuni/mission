@@ -1,4 +1,4 @@
-// 분석노트 링크 열기: GET ?t=토큰 → 유효기간(24시간) 확인 → 구글드라이브(앱스 스크립트)에서 파일을 가져와 PDF로 전달
+// 분석노트 링크 열기: GET ?t=토큰 → 유효기간(24시간) 확인 → 공개 구글드라이브에서 파일을 가져와 PDF로 전달
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 function page(status: number, msg: string) {
@@ -18,17 +18,11 @@ Deno.serve(async (req) => {
   if (!o || o.status !== 'sent' || !o.drive_id) return page(404, '링크를 찾을 수 없어요.');
   if (Date.now() > new Date(o.expires_at).getTime()) return page(410, '링크 사용 기간(24시간)이 지났어요. 자료실에서 다시 요청해 주세요.');
 
-  const { data: cfg } = await db.from('private_config').select('k,v').in('k', ['gas_url', 'gas_key']);
-  const c = Object.fromEntries((cfg || []).map((r: any) => [r.k, r.v]));
-  const u = new URL(c.gas_url);
-  u.searchParams.set('key', c.gas_key); u.searchParams.set('action', 'get'); u.searchParams.set('id', o.drive_id);
-  let r: any = {};
-  try { r = await (await fetch(u)).json(); } catch (e) { console.log('gas get error', String(e)); }
-  if (!r.b64) return page(502, '파일을 가져오지 못했어요. 잠시 후 다시 시도해 주세요.');
-
-  const bytes = Uint8Array.from(atob(r.b64), (ch) => ch.charCodeAt(0));
+  const g = await fetch(`https://drive.usercontent.google.com/download?id=${encodeURIComponent(o.drive_id)}&export=download&confirm=t`);
+  const type = g.headers.get('content-type') || '';
+  if (!g.ok || !type.includes('pdf')) { console.log('drive fetch failed', g.status, type); return page(502, '파일을 가져오지 못했어요. 잠시 후 다시 시도해 주세요.'); }
   const name = `${o.label}.pdf`;
-  return new Response(bytes, {
+  return new Response(g.body, {
     headers: {
       'Content-Type': 'application/pdf',
       'Content-Disposition': `inline; filename="note.pdf"; filename*=UTF-8''${encodeURIComponent(name)}`,

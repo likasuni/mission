@@ -1,5 +1,5 @@
 // 분석노트 요청: 카카오 로그인 회원, 1인 하루 1개(한국 시간 기준)
-// 구글드라이브(앱스 스크립트)에서 파일을 찾아 24시간짜리 링크를 만들고 카카오톡 '나에게 보내기'로 전송
+// 공개 구글드라이브 분석노트 폴더에서 파일을 찾아 24시간짜리 링크를 만들고 카카오톡 '나에게 보내기'로 전송
 // 파일이 없으면 'missing'으로 기록 → 관리자 페이지에 알림
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
@@ -18,6 +18,37 @@ const cors = (req: Request) => {
 };
 const reply = (req: Request, status: number, body: unknown) =>
   new Response(JSON.stringify(body), { status, headers: { ...cors(req), 'Content-Type': 'application/json' } });
+
+// 공개 폴더 목록 읽기 (하위 폴더 포함, 5분 캐시)
+type Entry = { id: string; name: string };
+let cache: { at: number; root: string; files: Entry[] } | null = null;
+const unescape = (t: string) => t.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+async function listFolder(id: string) {
+  const html = await (await fetch(`https://drive.google.com/embeddedfolderview?id=${id}`)).text();
+  const out: { id: string; name: string; folder: boolean }[] = [];
+  const re = /<div class="flip-entry" id="entry-([\w-]+)"[\s\S]*?<a href="([^"]+)"[\s\S]*?<div class="flip-entry-title">([^<]*)<\/div>/g;
+  let m;
+  while ((m = re.exec(html))) out.push({ id: m[1], name: unescape(m[3]).trim(), folder: m[2].includes('/folders/') });
+  return out;
+}
+async function listTree(root: string): Promise<Entry[]> {
+  if (cache && cache.root === root && Date.now() - cache.at < 5 * 60e3) return cache.files;
+  const files: Entry[] = [];
+  let queue = root.split(',').map((x) => x.trim()).filter(Boolean), seen = 0;
+  while (queue.length && seen < 80) {
+    const batch = queue.splice(0, 8); seen += batch.length;
+    const lists = await Promise.all(batch.map((id) => listFolder(id).catch(() => [])));
+    for (const l of lists) for (const e of l) e.folder ? queue.push(e.id) : files.push({ id: e.id, name: e.name });
+  }
+  cache = { at: Date.now(), root, files };
+  return files;
+}
+function hasNum(name: string, n: number) {
+  const re = /(\d+)\s*(?:[-~]\s*(\d+))?\s*번/g;
+  let m;
+  while ((m = re.exec(name))) { const a = +m[1], b = m[2] ? +m[2] : a; if (n >= a && n <= b) return true; }
+  return false;
+}
 
 const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -38,13 +69,12 @@ Deno.serve(async (req) => {
   if (!(n >= 1 && n <= 60)) return reply(req, 400, { error: '문항 번호를 확인해 주세요.' });
 
   // 요청 → 검색 조건
-  let label = '', search = '', must: string[] = [], query: any = {};
+  let label = '', must: string[] = [], query: any = {};
   if (b.kind === 'moe') {
     const y = Number(b.y), m = Number(b.m), g = Number(b.g);
     if (!(y >= 2015 && y <= 2030 && m >= 1 && m <= 12 && g >= 1 && g <= 3)) return reply(req, 400, { error: '회차를 확인해 주세요.' });
     const mm = String(m).padStart(2, '0');
     label = `${y}년 ${m}월 고${g} 영어 모의고사 ${n}번 분석노트`;
-    search = `${y}-${mm}`;
     must = [`^${y}-${mm}_고${g}_`];
     query = { y, m, g, n };
   } else if (b.kind === 'book') {
@@ -52,7 +82,6 @@ Deno.serve(async (req) => {
     if (!BOOKS.includes(book) || !(unit >= 1 && unit <= 60)) return reply(req, 400, { error: '교재와 강을 확인해 주세요.' });
     label = `${book} ${unit}강 ${n}번 분석노트`;
     const words = book.split(/\s+/);
-    search = words[0];
     must = [...words.map(esc), `(^|\\D)${unit}\\s*강`];
     query = { book, unit, n };
   } else return reply(req, 400, { error: '요청 종류를 확인해 주세요.' });
@@ -64,15 +93,12 @@ Deno.serve(async (req) => {
     .eq('user_id', user.id).eq('status', 'sent').gte('created_at', dayStart);
   if ((count || 0) >= 1) return reply(req, 429, { error: '분석노트는 하루에 1개만 받을 수 있어요. 내일 다시 요청해 주세요.' });
 
-  // 드라이브에서 찾기
-  const { data: cfg } = await db.from('private_config').select('k,v').in('k', ['gas_url', 'gas_key']);
-  const c = Object.fromEntries((cfg || []).map((r: any) => [r.k, r.v]));
-  if (!c.gas_url) return reply(req, 503, { error: '자료 연결 준비 중이에요. 잠시 후 다시 시도해 주세요.' });
-  const u = new URL(c.gas_url);
-  u.searchParams.set('key', c.gas_key); u.searchParams.set('action', 'find');
-  u.searchParams.set('search', search); u.searchParams.set('must', JSON.stringify(must)); u.searchParams.set('n', String(n));
-  let files: { id: string; name: string }[] = [];
-  try { files = (await (await fetch(u)).json()).files || []; } catch (e) { console.log('gas find error', String(e)); }
+  // 공개 드라이브 폴더(분석노트 폴더)에서 찾기
+  const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
+  if (!cfg?.v) return reply(req, 503, { error: '자료 연결 준비 중이에요. 잠시 후 다시 시도해 주세요.' });
+  const all = await listTree(cfg.v);
+  const res = must.map((x) => new RegExp(x));
+  const files = all.filter((f) => /\.pdf$/i.test(f.name) && f.name.includes('분석노트') && res.every((re) => re.test(f.name)) && hasNum(f.name, n));
 
   const name = user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.nickname || '회원';
   if (!files.length) {
