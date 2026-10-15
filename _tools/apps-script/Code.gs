@@ -6,7 +6,7 @@
  *   모의고사: 2026-09_고1_30번_분석노트.pdf  (41-42번처럼 묶음도 가능)
  *   부교재:   2026 수능특강 라이트 20강 1번 분석노트.pdf
  */
-const KEY = '46855bb9b6fdc0b15ee3573f59efb145b691b3ed2ac8b212';
+const KEY = '여기에_비밀키';
 
 function doGet(e) {
   const p = e.parameter || {};
