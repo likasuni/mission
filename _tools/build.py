@@ -120,7 +120,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/notes/', '분석노트'), ('/mission/', '자료 미션')]
+NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/mission/', '자료 미션'), ('/notes/', '분석노트 요청')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -132,10 +132,10 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
     ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else []
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
-    nav = ''.join(f'<a href="{u}"{" class=on" if u == active else ""}>{n}</a>' for u, n in NAV)
+    nav = ''.join(f'<a href="{u}" class="{"on " if u == active else ""}">{n}</a>' for u, n in NAV)
     cm = ''
     if comments:
-        cm = f'<section class="card" id="comments" data-page-key="{e(comments[0])}" data-page-title="{e(comments[1])}"><p class="muted">댓글 불러오는 중...</p></section>'
+        cm = f'<section class="card" id="comments" data-page-key="{e(comments[0])}" data-page-title="{e(comments[1])}"><h2>💬 댓글</h2><p class="muted">댓글 불러오는 중...</p></section>'
     out = f'''<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -156,7 +156,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 {''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
 <body>
-<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></header>
+<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><a class="hdr-cta" href="/notes/">📘 분석노트 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
 <nav class="nav"><div class="nav-in">{nav}</div></nav>
 <main class="wrap">
 {crumb_html}
@@ -171,7 +171,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=4'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=5'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -240,6 +240,10 @@ for idx, k in enumerate(keys_sorted):
         rows += '</div>'
     sub_names = ', '.join(dname(s) for s in subs)
     inf = INFO.get(ikey(k), {})
+    note_banner = ''
+    if k[0] == 'moe' and '영어' in subs:
+        note_banner = (f'<a class="banner note" href="/notes/?y={k[2]}&m={k[3]}&g={k[1]}"><b>📘 이 회차 영어 문항별 분석노트, 카톡으로 받기</b>'
+                       '<p>번호만 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개 · 링크 24시간</p></a>')
     info_html = ''
     if inf.get('summary'):
         info_html += '<div class="card"><h2>📝 시험 요약</h2>' + (f'<p class="muted">{e(inf["date"])}</p>' if inf.get('date') else '') + \
@@ -255,6 +259,7 @@ for idx, k in enumerate(keys_sorted):
          (f'<a href="{s_url(next_k)}">{s_name(next_k)} →</a>' if next_k else '<span></span>') + '</div>'
     body = f'''<h1 class="page-h1">{e(name)} 기출문제·정답·해설 PDF</h1>
 <p class="lead">{e(name)} 전과목({len(subs)}과목) 문제지와 정답·해설을 무료로 내려받을 수 있어요.</p>
+{note_banner}
 <div class="card"><table class="info">
 <tr><th>시행</th><td>{s_when(k)}</td></tr>
 <tr><th>주관</th><td>{s_org(k)}</td></tr>
@@ -340,9 +345,10 @@ body = f'''<section class="hero"><h1>모의고사·수능 기출문제 전과목
 </div>
 <div class="card"><h2>🆕 최근 회차</h2><div class="chips">''' + ''.join(
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '''</div></div>
+<a class="banner note" href="/notes/"><b>📘 영어 모의고사 분석노트 요청</b><p>원하는 회차·번호를 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개, 링크는 24시간 동안 열려요.</p></a>
 <a class="banner" href="/mission/"><b>🎯 댓글 미션으로 리카수니 자료 받기</b><p>질문·학습 후기 댓글 10개를 모으면 분석노트·어휘노트를 이메일로 보내드려요.</p></a>
 ''' + ad()
-body = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
+nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
 <p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트를 카카오톡으로 받아보세요.</p>
 <section class="card mission" id="note-req"><h2>📘 분석노트 요청</h2><p class="muted">불러오는 중...</p></section>
 <div class="card"><h2>이용 방법</h2><ul class="sum">
@@ -353,7 +359,7 @@ body = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청
 <li>아직 준비되지 않은 자료는 원장님께 요청이 전달돼요. 준비에 1~2일 걸리니 그 뒤에 다시 요청해 주세요. (그날 요청 횟수는 차감되지 않아요)</li>
 </ul></div>''' + ad()
 page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카수니 자료실',
-     '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 1인 하루 1개.', body,
+     '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 1인 하루 1개.', nbody,
      [('/', '홈'), ('/notes/', '분석노트 요청')], '/notes/', comments=('notes', '분석노트 요청'))
 
 page('/', '리카수니 자료실 | 모의고사·수능 기출문제 전과목 PDF 무료 다운로드',

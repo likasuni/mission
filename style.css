@@ -242,3 +242,12 @@ footer a { color: var(--muted); margin: 0 6px; }
 .note { font-size: .8rem; color: var(--muted); margin: 8px 0 0; }
 select { border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; font: inherit; background: #fff; min-width: 180px; }
 .info-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 14px 16px; }
+
+/* 분석노트 요청 강조 (댓글과 구분) */
+.top-r { display: flex; align-items: center; gap: 8px; }
+.hdr-cta { background: #fff; color: var(--navy-d); font-weight: 800; font-size: .85rem; text-decoration: none; padding: 6px 12px; border-radius: 99px; white-space: nowrap; }
+.hdr-cta:hover { background: var(--gold); }
+.banner.note { background: linear-gradient(135deg, #b45309, #d97706); }
+.banner.note b { color: #fff; }
+.banner.note p { color: #fff7e6; }
+#comments h2 { border-left: 4px solid var(--navy); padding-left: 10px; }

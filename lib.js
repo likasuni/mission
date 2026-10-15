@@ -29,16 +29,17 @@ const NOTE_BOOKS = ['수능특강 라이트']; // note-request 함수의 BOOKS�
         </div>
         <p class="body">${esc(c.content)}</p>
         ${c.reply ? `<div class="reply"><b>리카수니 원장</b><br>${esc(c.reply)}</div>` : ''}
-      </div>`).join('') || '<p class="muted">첫 질문이나 학습 후기를 남겨주세요!</p>';
+      </div>`).join('') || '<p class="muted">아직 댓글이 없어요. 첫 댓글을 남겨 주세요!</p>';
 
     const form = user ? `
-      <p class="muted">질문·학습 후기를 <b>20자 이상</b> 남겨주세요. 승인된 댓글은 <a href="/mission/">댓글 미션</a> 개수에 합산돼요.</p>
-      <textarea id="cbody" maxlength="1000" placeholder="예) 이 회차 31번이 어려웠는데 해설로 정리했어요. 빈칸 근거 찾는 연습을 더 해야겠어요."></textarea>
+      <p class="muted">이 시험에 대한 질문이나 공부 후기를 <b>댓글</b>로 남겨 주세요. (20자 이상, 원장님 확인 후 공개 · <a href="/mission/">댓글 미션</a>에 합산)<br>
+      분석노트를 받고 싶다면 댓글 대신 <a href="/notes/"><b>📘 분석노트 요청</b></a>을 이용해 주세요.</p>
+      <textarea id="cbody" maxlength="1000" placeholder="댓글 예) 31번 빈칸이 어려웠는데 해설을 보고 근거를 찾았어요. 다음엔 시간 배분을 더 신경 써야겠어요."></textarea>
       <div class="row between mt"><span class="meta"><span id="ccount">0</span>자</span>
-      <button class="btn btn-navy" id="cbtn">댓글 등록</button></div>`
-      : `<p class="muted">카카오로 로그인하면 질문을 남기고 댓글 미션에 참여할 수 있어요.</p>${loginButtons()}`;
+      <button class="btn btn-navy" id="cbtn">💬 댓글 등록</button></div>`
+      : `<p class="muted">카카오로 로그인하면 이 시험에 대한 질문이나 공부 후기를 댓글로 남길 수 있어요.<br>분석노트는 댓글이 아니라 <a href="/notes/"><b>📘 분석노트 요청</b></a>에서 받을 수 있어요.</p>${loginButtons()}`;
 
-    box.innerHTML = `<h2>💬 질문·후기 <span class="meta">${list.filter(c => c.approved).length}</span></h2>${form}<div class="mt">${items}</div>`;
+    box.innerHTML = `<h2>💬 댓글 <span class="meta">${list.filter(c => c.approved).length}개</span></h2>${form}<div class="mt">${items}</div>`;
     if (user) {
       const t = document.getElementById('cbody');
       t.oninput = () => (document.getElementById('ccount').textContent = t.value.trim().length);
@@ -64,7 +65,8 @@ const NOTE_BOOKS = ['수능특강 라이트']; // note-request 함수의 BOOKS�
 async function noteRequest(user) {
   const card = document.getElementById('note-req');
   if (!card) return;
-  const d = card.dataset; // data-y, data-m, data-g 가 있으면 그 회차로 미리 채움
+  const qs = new URLSearchParams(location.search);
+  const d = { y: card.dataset.y || qs.get('y'), m: card.dataset.m || qs.get('m'), g: card.dataset.g || qs.get('g') }; // 회차 미리 채움
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const head = `<h2>📘 분석노트 요청</h2>
     <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. <b>1인 하루 1개</b>, 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>`;
