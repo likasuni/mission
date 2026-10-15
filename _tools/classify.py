@@ -1,5 +1,6 @@
 import json,collections,re,unicodedata
 out=json.load(open('files.json'))
+for o in out: o['path'][0]=o['path'][0].replace(' 기출','')
 SUBJ=[('생활과윤리',['생활과윤리','생활과 윤리','생할과윤리','생활과']),('윤리와사상',['윤리와사상','윤리와 사상','윤리와']),
 ('한국지리',['한국지리']),('세계지리',['세계지리']),('동아시아사',['동아시아사']),('세계사',['세계사']),('경제',['경제']),
 ('정치와법',['정치와법','정치와 법','법과정치','법과 정치','정치와']),('사회문화',['사회문화','사회·문화','사회 문화']),
@@ -29,14 +30,16 @@ for o in out:
     t=o['title']; p=o['path']
     s=subj(t)
     if not s:
-        fs=p[4] if p[0]=='모의고사' else p[2]
+        fs=(p[4] if len(p)>4 else '') if p[0]=='모의고사' else (p[2] if len(p)>2 else '')
         s={'과학':'통합과학','사회':'통합사회','과학탐구':None,'사회탐구':None}.get(fs,fs)
     k=kind(t)
     if not s or not k: bad.append((p,t)); continue
-    if p[0]=='모의고사':
+    try:
+      if p[0]=='모의고사':
         r=dict(exam='moe',year=int(p[1]),grade=int(p[2][1]),month=int(p[3][:-1]),subject=s,group=GROUP.get(s,'기타'),kind=k,id=o['id'],size=o['size'],title=t)
-    else:
+      else:
         r=dict(exam='sn',year=int(p[1][:4]),subject=s,group=GROUP.get(s,'기타'),kind=k,id=o['id'],size=o['size'],title=t)
+    except (ValueError, IndexError): bad.append((p,t)); continue
     recs.append(r)
 # dedupe: same key keep largest
 key=lambda r:(r['exam'],r['year'],r.get('grade'),r.get('month'),r['subject'],r['kind'])

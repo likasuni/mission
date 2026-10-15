@@ -1,0 +1,32 @@
+name: drive-sync
+# 구글드라이브 기출 폴더를 읽어 자료실을 다시 만듭니다 (매일 새벽 3시 + 수동 실행 + _tools/sync.trigger 변경 시)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 18 * * *'
+  push:
+    paths: ['_tools/sync.trigger', '_tools/sync_drive.py', '.github/workflows/drive-sync.yml']
+permissions:
+  contents: write
+concurrency: drive-sync
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Drive → catalog → site
+        working-directory: _tools
+        run: |
+          python sync_drive.py
+          python classify.py | tee classify.log
+          python build.py
+      - name: Commit
+        run: |
+          git config user.name "likasuni-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "드라이브 기출 자동 반영 ($(date -u +%F))"
+          git pull --rebase -q && git push
