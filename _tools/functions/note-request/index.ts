@@ -1,0 +1,112 @@
+// 분석노트 요청: 카카오 로그인 회원, 1인 하루 1개(한국 시간 기준)
+// 구글드라이브(앱스 스크립트)에서 파일을 찾아 24시간짜리 링크를 만들고 카카오톡 '나에게 보내기'로 전송
+// 파일이 없으면 'missing'으로 기록 → 관리자 페이지에 알림
+import { createClient } from 'npm:@supabase/supabase-js@2';
+
+const LINK_HOURS = 24;
+const ORIGINS = ['https://data.likasuni.com', 'http://localhost:8765'];
+const BOOKS = ['수능특강 라이트']; // 부교재 목록 (이름의 각 단어가 파일명에 들어가야 함)
+
+const cors = (req: Request) => {
+  const o = req.headers.get('origin') || '';
+  return {
+    'Access-Control-Allow-Origin': ORIGINS.includes(o) ? o : ORIGINS[0],
+    'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Vary': 'Origin',
+  };
+};
+const reply = (req: Request, status: number, body: unknown) =>
+  new Response(JSON.stringify(body), { status, headers: { ...cors(req), 'Content-Type': 'application/json' } });
+
+const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+Deno.serve(async (req) => {
+  if (req.method === 'OPTIONS') return new Response('ok', { headers: cors(req) });
+  if (req.method !== 'POST') return reply(req, 405, { error: 'POST only' });
+  const db = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!);
+
+  const jwt = (req.headers.get('Authorization') || '').replace('Bearer ', '');
+  const { data: { user } } = await db.auth.getUser(jwt);
+  if (!user) return reply(req, 401, { error: '로그인이 필요해요.' });
+  const providers: string[] = user.app_metadata?.providers || [user.app_metadata?.provider];
+  if (!providers.includes('kakao')) return reply(req, 403, { error: '카카오로 로그인한 회원만 요청할 수 있어요.' });
+
+  let b: any = {};
+  try { b = await req.json(); } catch { /* empty */ }
+  const n = Number(b.n);
+  if (!(n >= 1 && n <= 60)) return reply(req, 400, { error: '문항 번호를 확인해 주세요.' });
+
+  // 요청 → 검색 조건
+  let label = '', search = '', must: string[] = [], query: any = {};
+  if (b.kind === 'moe') {
+    const y = Number(b.y), m = Number(b.m), g = Number(b.g);
+    if (!(y >= 2015 && y <= 2030 && m >= 1 && m <= 12 && g >= 1 && g <= 3)) return reply(req, 400, { error: '회차를 확인해 주세요.' });
+    const mm = String(m).padStart(2, '0');
+    label = `${y}년 ${m}월 고${g} 영어 모의고사 ${n}번 분석노트`;
+    search = `${y}-${mm}`;
+    must = [`^${y}-${mm}_고${g}_`];
+    query = { y, m, g, n };
+  } else if (b.kind === 'book') {
+    const book = String(b.book || ''), unit = Number(b.unit);
+    if (!BOOKS.includes(book) || !(unit >= 1 && unit <= 60)) return reply(req, 400, { error: '교재와 강을 확인해 주세요.' });
+    label = `${book} ${unit}강 ${n}번 분석노트`;
+    const words = book.split(/\s+/);
+    search = words[0];
+    must = [...words.map(esc), `(^|\\D)${unit}\\s*강`];
+    query = { book, unit, n };
+  } else return reply(req, 400, { error: '요청 종류를 확인해 주세요.' });
+
+  // 하루 1개 (한국 시간 자정 기준, 실제로 받은 요청만 계산)
+  const kst = new Date(Date.now() + 9 * 3600e3);
+  const dayStart = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate()) - 9 * 3600e3).toISOString();
+  const { count } = await db.from('note_orders').select('id', { count: 'exact', head: true })
+    .eq('user_id', user.id).eq('status', 'sent').gte('created_at', dayStart);
+  if ((count || 0) >= 1) return reply(req, 429, { error: '분석노트는 하루에 1개만 받을 수 있어요. 내일 다시 요청해 주세요.' });
+
+  // 드라이브에서 찾기
+  const { data: cfg } = await db.from('private_config').select('k,v').in('k', ['gas_url', 'gas_key']);
+  const c = Object.fromEntries((cfg || []).map((r: any) => [r.k, r.v]));
+  if (!c.gas_url) return reply(req, 503, { error: '자료 연결 준비 중이에요. 잠시 후 다시 시도해 주세요.' });
+  const u = new URL(c.gas_url);
+  u.searchParams.set('key', c.gas_key); u.searchParams.set('action', 'find');
+  u.searchParams.set('search', search); u.searchParams.set('must', JSON.stringify(must)); u.searchParams.set('n', String(n));
+  let files: { id: string; name: string }[] = [];
+  try { files = (await (await fetch(u)).json()).files || []; } catch (e) { console.log('gas find error', String(e)); }
+
+  const name = user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.nickname || '회원';
+  if (!files.length) {
+    await db.from('note_orders').insert({ user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'missing' });
+    return reply(req, 200, { missing: true, label });
+  }
+
+  const f = files[0];
+  const token = Array.from(crypto.getRandomValues(new Uint8Array(16))).map((x) => x.toString(16).padStart(2, '0')).join('');
+  const expires = new Date(Date.now() + LINK_HOURS * 3600e3);
+  const link = `https://data.likasuni.com/get/?t=${token}`;
+
+  // 카카오톡 나에게 보내기
+  let kakao = false, kakaoError = '';
+  if (b.kakao_token) {
+    const until = new Date(expires.getTime() + 9 * 3600e3).toISOString().slice(5, 16).replace('-', '/').replace('T', ' ');
+    const template = {
+      object_type: 'text',
+      text: `[리카수니 자료실]\n${label}가 도착했어요 📘\n\n링크는 ${until}까지(24시간) 열 수 있어요.`,
+      link: { web_url: link, mobile_web_url: link },
+      button_title: '분석노트 받기',
+    };
+    const k = await fetch('https://kapi.kakao.com/v2/api/talk/memo/default/send', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${b.kakao_token}`, 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
+      body: new URLSearchParams({ template_object: JSON.stringify(template) }),
+    });
+    kakao = k.ok;
+    if (!k.ok) { kakaoError = await k.text(); console.log('kakao send fail', k.status, kakaoError); }
+  }
+
+  await db.from('note_orders').insert({
+    user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'sent',
+    drive_id: f.id, file_name: f.name, link_token: token, expires_at: expires.toISOString(), kakao_sent: kakao,
+  });
+  return reply(req, 200, { ok: true, label, link, expires_at: expires.toISOString(), kakao, kakao_scope: kakaoError.includes('insufficient') || kakaoError.includes('-402') });
+});

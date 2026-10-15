@@ -37,25 +37,25 @@ function displayName(user) {
 }
 
 /* ---------- 로그인 ---------- */
-async function login(provider = 'google') {
+async function login(provider = 'kakao', scopes) {
   const redirectTo = location.origin + location.pathname + location.search;
   const { error } = await sb.auth.signInWithOAuth({
     provider,
-    options: { redirectTo }
+    options: { redirectTo, ...(scopes ? { scopes } : {}) }
   });
   if (error) toast('로그인 오류: ' + error.message);
 }
 
-// 구글·카카오 로그인 버튼 묶음 (본문 안에 넣을 때 사용)
-function loginButtons() {
+// 로그인 버튼 (회원은 카카오만, 관리자 페이지에서만 구글 버튼 추가)
+function loginButtons(withGoogle = false) {
   return `
     <div class="login-btns">
       <button class="btn btn-kakao" onclick="login('kakao')">
         <span class="ico">💬</span> 카카오로 시작하기
       </button>
-      <button class="btn btn-google" onclick="login('google')">
+      ${withGoogle ? `<button class="btn btn-google" onclick="login('google')">
         <span class="ico g">G</span> 구글로 시작하기
-      </button>
+      </button>` : ''}
     </div>`;
 }
 
@@ -69,7 +69,7 @@ function showLogin() {
     <div class="modal-box" role="dialog" aria-label="로그인">
       <button class="modal-x" onclick="closeLogin()" aria-label="닫기">×</button>
       <h2>로그인</h2>
-      <p class="muted">사용하시는 계정으로 간편하게 로그인하세요.</p>
+      <p class="muted">카카오 계정으로 간편하게 로그인하세요.</p>
       ${loginButtons()}
     </div>`;
   wrap.addEventListener('click', (e) => { if (e.target === wrap) closeLogin(); });

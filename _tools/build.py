@@ -120,7 +120,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/mission/', '자료 미션')]
+NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/notes/', '분석노트'), ('/mission/', '자료 미션')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -179,10 +179,10 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
   addEventListener('load', function () {{ setTimeout(function () {{ if (window.adsbygoogle && window.adsbygoogle.loaded) return; document.querySelectorAll('.ad-slot').forEach(function (d) {{ d.style.display = 'none'; }}); }}, 8000); }});
   var had = false; try {{ had = !!localStorage.getItem('sb-iiyhmskvdjgstoikonwu-auth-token'); }} catch (e) {{}}
   if (had || location.hash.indexOf('access_token') > -1) {{ go(); return; }}
-  var c = document.getElementById('comments');
-  if (c && 'IntersectionObserver' in window) {{
-    var io = new IntersectionObserver(function (es) {{ if (es[0].isIntersecting) {{ io.disconnect(); go(); }} }}, {{ rootMargin: '600px' }});
-    io.observe(c);
+  var els = ['note-req', 'comments'].map(function (id) {{ return document.getElementById(id); }}).filter(Boolean);
+  if (els.length && 'IntersectionObserver' in window) {{
+    var io = new IntersectionObserver(function (es) {{ if (es.some(function (x) {{ return x.isIntersecting; }})) {{ io.disconnect(); go(); }} }}, {{ rootMargin: '600px' }});
+    els.forEach(function (el) {{ io.observe(el); }});
   }}
 }})();
 </script>
@@ -275,10 +275,12 @@ for idx, k in enumerate(keys_sorted):
 <div class="dl"><a href="{view(r["id"])}" target="_blank" rel="noopener">미리보기</a><a href="{down(r["id"])}" rel="noopener">다운로드</a></div></div>''' for r in xs)
         extra = ''
         if s == '영어':
-            extra = '''<div class="card"><h2>📚 리카수니 영어 자료</h2>
+            pre = f' data-y="{k[2]}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else ''
+            extra = f'''<section class="card mission" id="note-req"{pre}><h2>📘 분석노트 요청</h2><p class="muted">이 회차 문항별 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>
+<div class="card"><h2>📚 리카수니 영어 자료</h2>
+<div class="soon"><b>문항별 분석노트</b> · 위에서 번호를 골라 카톡으로 받으세요</div>
 <div class="soon"><b>변형문제</b> · 준비 중이에요</div>
 <div class="soon"><b>어휘 학습노트</b> · 준비 중이에요</div>
-<div class="soon"><b>문항별 분석노트</b> · 준비 중이에요</div>
 <p class="muted">자료가 올라오면 이 페이지에 바로 추가돼요. 질문을 남겨두시면 먼저 알려드릴게요!</p></div>'''
         # 같은 과목 다른 회차
         others = [x for x in same if x != k and s in {r['subject'] for r in sessions[x]}]
@@ -340,6 +342,20 @@ body = f'''<section class="hero"><h1>모의고사·수능 기출문제 전과목
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '''</div></div>
 <a class="banner" href="/mission/"><b>🎯 댓글 미션으로 리카수니 자료 받기</b><p>질문·학습 후기 댓글 10개를 모으면 분석노트·어휘노트를 이메일로 보내드려요.</p></a>
 ''' + ad()
+body = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
+<p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트를 카카오톡으로 받아보세요.</p>
+<section class="card mission" id="note-req"><h2>📘 분석노트 요청</h2><p class="muted">불러오는 중...</p></section>
+<div class="card"><h2>이용 방법</h2><ul class="sum">
+<li>카카오로 로그인한 회원만 요청할 수 있어요.</li>
+<li>모의고사는 연도·월·학년·번호를, 부교재는 교재·강·번호를 골라 요청해요. (예: 2026년 9월 고1 30번, 수능특강 라이트 20강 1번)</li>
+<li>요청하면 카카오톡 '나와의 채팅'으로 분석노트 링크가 바로 와요.</li>
+<li>1인 하루 1개까지 받을 수 있고, 링크는 24시간 동안 열려요.</li>
+<li>아직 준비되지 않은 자료는 원장님께 요청이 전달되고, 그날 요청 횟수는 차감되지 않아요.</li>
+</ul></div>''' + ad()
+page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카수니 자료실',
+     '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 1인 하루 1개.', body,
+     [('/', '홈'), ('/notes/', '분석노트 요청')], '/notes/', comments=('notes', '분석노트 요청'))
+
 page('/', '리카수니 자료실 | 모의고사·수능 기출문제 전과목 PDF 무료 다운로드',
      '고1·고2·고3 모의고사와 수능 기출문제 전과목 문제지·정답·해설 PDF를 연도·월별로 무료 다운로드. 리카수니 자료실', body, (), '/')
 
