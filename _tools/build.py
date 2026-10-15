@@ -35,6 +35,47 @@ def down(i): return f'https://drive.google.com/uc?export=download&id={i}'
 def mb(n): return f'{n/1048576:.1f}MB' if n else ''
 
 R = json.load(open(os.path.join(ROOT, '_tools', 'catalog.json')))
+INFO = json.load(open(os.path.join(ROOT, '_tools', 'exam_info.json')))
+
+def ikey(k):
+    ex, g, y, m = k
+    return f'moe-{g}-{y}-{m}' if ex == 'moe' else f'sn-{y}'
+
+def cut_table(rows):
+    if not rows: return ''
+    n = max([len(r.get('c', r.get('abs', []))) for r in rows] + [1])
+    n = max(n, 1)
+    head = ''.join(f'<th>{i + 1}등급</th>' for i in range(n))
+    has_max = any('max' in r for r in rows)
+    has_r1 = any('r1' in r or 'rates' in r for r in rows)
+    body = ''
+    for r in rows:
+        cells = ''
+        if 'abs' in r:
+            rt = r.get('rates', [])
+            for i in range(n):
+                if i < len(r['abs']):
+                    sub = (f'<small>{rt[i]}%{" 누적" if i else ""}</small>' if i < len(rt) else '')
+                    cells += f'<td>{r["abs"][i]}{sub}</td>'
+                else:
+                    cells += '<td>–</td>'
+            basis = '원점수(절대평가)'
+            r1 = f'{rt[0]}%' if rt else '–'
+        elif 'c' in r:
+            cells = ''.join(f'<td>{r["c"][i]:g}</td>' if i < len(r['c']) else '<td>–</td>' for i in range(n))
+            basis = r.get('basis', '')
+            r1 = r.get('r1', '–')
+        else:
+            cells = '<td>–</td>' * n
+            basis = ''
+            r1 = r.get('r1', '–')
+        body += (f'<tr><th>{e(dname(r["s"]))}<small>{e(basis)}</small></th>{cells}'
+                 + (f'<td>{r.get("max", "–")}</td>' if has_max else '') + (f'<td>{r1}</td>' if has_r1 else '') + '</tr>')
+    return (f'<div class="cut-wrap"><table class="cut"><thead><tr><th>과목</th>{head}'
+            + ('<th>표준점수<br>최고점</th>' if has_max else '') + ('<th>1등급<br>비율</th>' if has_r1 else '')
+            + f'</tr></thead><tbody>{body}</tbody></table></div>')
+
+CUT_NOTE = '<p class="note">교육청·평가원 채점 결과 기준이에요. 절대평가 과목은 등급별 비율(누적)을 함께 적었어요. 학습 참고용이며, 정확한 성적은 개인 성적표를 확인하세요.</p>'
 
 # ---------- 회차(session) 묶기 ----------
 sessions = collections.OrderedDict()
@@ -107,7 +148,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <link rel="icon" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css?v=2">
+<link rel="stylesheet" href="/style.css?v=3">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" crossorigin="anonymous"></script>
 {''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
@@ -180,6 +221,18 @@ for idx, k in enumerate(keys_sorted):
                 rows += f'<div class="subj"><a class="nm" href="{subj_url(k, s)}">{e(dname(s))}</a>{dl_buttons(xs)}</div>'
         rows += '</div>'
     sub_names = ', '.join(dname(s) for s in subs)
+    inf = INFO.get(ikey(k), {})
+    info_html = ''
+    if inf.get('summary'):
+        info_html += '<div class="card"><h2>📝 시험 요약</h2>' + (f'<p class="muted">{e(inf["date"])}</p>' if inf.get('date') else '') + \
+                     '<ul class="sum">' + ''.join(f'<li>{e(x)}</li>' for x in inf['summary']) + '</ul></div>'
+    if inf.get('rows'):
+        info_html += f'<div class="card"><h2>📊 {e(name)} 등급컷</h2>{cut_table(inf["rows"])}{CUT_NOTE}</div>'
+    else:
+        info_html += '<div class="card"><h2>📊 등급컷</h2><p class="muted">확정 등급컷을 정리하고 있어요. 확인되는 대로 업데이트할게요.</p></div>'
+    if inf.get('wrong'):
+        info_html += '<div class="card"><h2>🔥 오답이 많았던 문항</h2><table class="info">' + ''.join(
+            f'<tr><th>{e(dname(x))}</th><td>{e(v)}</td></tr>' for x, v in inf['wrong'].items()) + '</table></div>'
     pn = '<div class="pn">' + (f'<a href="{s_url(prev_k)}">← {s_name(prev_k)}</a>' if prev_k else '<span></span>') + \
          (f'<a href="{s_url(next_k)}">{s_name(next_k)} →</a>' if next_k else '<span></span>') + '</div>'
     body = f'''<h1 class="page-h1">{e(name)} 기출문제·정답·해설 PDF</h1>
@@ -188,14 +241,14 @@ for idx, k in enumerate(keys_sorted):
 <tr><th>시행</th><td>{s_when(k)}</td></tr>
 <tr><th>주관</th><td>{s_org(k)}</td></tr>
 <tr><th>과목</th><td>{e(sub_names)}</td></tr>
-<tr><th>등급컷</th><td class="muted">채점 결과 정리 중이에요. 곧 업데이트됩니다.</td></tr>
 </table></div>
+{info_html}
 {ad()}
 {rows}
 {pn}
 {ad()}'''
-    page(s_url(k), f'{name} 전과목 기출문제·정답·해설 PDF | 리카수니 자료실',
-         f'{name} 전과목 기출문제 PDF 무료 다운로드 - {sub_names} 문제지·정답·해설. 리카수니 자료실', body, crumbs, active,
+    page(s_url(k), f'{name} ' + ('등급컷 · ' if inf.get('rows') else '') + '전과목 기출문제·정답·해설 PDF | 리카수니 자료실',
+         f'{name} 전과목 기출문제 PDF 무료 다운로드와 ' + ('등급컷·시험 요약. ' if inf else '') + f'{sub_names} 문제지·정답·해설. 리카수니 자료실', body, crumbs, active,
          comments=(s_url(k).strip('/'), name))
 
     # 과목 페이지
@@ -219,9 +272,16 @@ for idx, k in enumerate(keys_sorted):
                 f'<a class="chip" href="{subj_url(x, s)}">{e(s_name(x))}</a>' for x in others) + '</div></div>'
         sibs = '<div class="chips">' + ''.join(
             f'<a class="chip" href="{subj_url(k, x)}">{e(dname(x))}</a>' for x in subs if x != s) + '</div>'
+        srows = [r for r in inf.get('rows', []) if r['s'] == s]
+        sinfo = ''
+        if srows or (inf.get('wrong') or {}).get(s):
+            sinfo = f'<div class="card"><h2>📊 {e(full)} 등급컷</h2>' + (cut_table(srows) + CUT_NOTE if srows else '') + \
+                    (f'<p><b>오답이 많았던 문항</b> · {e(inf["wrong"][s])}</p>' if (inf.get('wrong') or {}).get(s) else '') + \
+                    f'<p><a href="{s_url(k)}">{e(name)} 전체 요약·등급컷 보기 →</a></p></div>'
         body = f'''<h1 class="page-h1">{e(full)} 문제·정답·해설 PDF</h1>
 <p class="lead">{e(s_when(k))} · {e(s_org(k))}</p>
 {files}
+{sinfo}
 {ad()}
 {extra}
 <div class="card"><h2>{e(name)} 다른 과목</h2>{sibs}</div>

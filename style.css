@@ -228,3 +228,14 @@ footer a { color: var(--muted); margin: 0 6px; }
 .hero { background: linear-gradient(135deg, var(--navy-d), var(--navy)); color: #fff; border-radius: 16px; padding: 24px 20px; margin-bottom: 14px; }
 .hero h1 { margin: 0 0 6px; font-size: 1.5rem; color: #fff; }
 .hero p { margin: 0; color: #dbe3ff; }
+
+/* 등급컷 표 · 시험 요약 */
+.sum { margin: 6px 0 0; padding-left: 1.2em; }
+.sum li { margin: 4px 0; }
+.cut-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.cut { width: 100%; border-collapse: collapse; font-size: .9rem; text-align: center; min-width: 480px; }
+.cut th, .cut td { border-bottom: 1px solid var(--line); padding: 8px 6px; }
+.cut thead th { background: #eef2ff; color: var(--navy-d); font-size: .82rem; }
+.cut tbody th { text-align: left; white-space: nowrap; color: var(--navy-d); }
+.cut small { display: block; font-size: .72rem; color: var(--muted); font-weight: 400; }
+.note { font-size: .8rem; color: var(--muted); margin: 8px 0 0; }
