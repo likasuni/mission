@@ -112,12 +112,16 @@ Deno.serve(async (req) => {
   const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
   if (!cfg?.v) return reply(req, 503, { error: '자료 연결 준비 중이에요. 잠시 후 다시 시도해 주세요.' });
   const all = await listTree(cfg.v);
-  const res = must.map((x) => new RegExp(x));
+  const words = must.slice(0, -1).map((x) => new RegExp(x)), unitRe = new RegExp(must[must.length - 1] || '$^');
   const files = all.filter((f) => {
-    if (!/\.pdf$/i.test(f.name) || /문제|정답|해설|듣기/.test(f.name) || !hasNum(f.name, n)) return false;
-    if (b.kind === 'moe') { const k = moeKey(f); return !!k && k[0] === query.y && k[1] === query.m && k[2] === query.g; }
+    if (!/\.pdf$/i.test(f.name) || /문제|정답|해설|듣기/.test(f.name)) return false;
+    if (b.kind === 'moe') { const k = moeKey(f); return hasNum(f.name, n) && !!k && k[0] === query.y && k[1] === query.m && k[2] === query.g; }
     const full = [...f.path, f.name].join(' ');
-    return res.every((re) => re.test(full));
+    if (!words.every((re) => re.test(full))) return false;
+    // 부교재 파일 이름 '강-번호.pdf' (0 = Gateway) 예: 1-0.pdf, 20-3.pdf
+    const ku = f.name.match(/^(\d+)\s*-\s*(\d+)\s*\.pdf$/i);
+    if (ku) return +ku[1] === query.unit && +ku[2] === n;
+    return hasNum(f.name, n) && unitRe.test(full); // 또는 '1강' 폴더 안 '1.pdf', 'gateway.pdf'
   });
 
   const name = user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.nickname || '회원';
