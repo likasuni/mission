@@ -178,7 +178,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=8'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=9'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -372,22 +372,34 @@ page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카�
 # ---------- 부교재 요청방 ----------
 # 새 부교재는 BOOKS 에 한 줄 추가 (name 은 lib.js NOTE_BOOKS, note-request 함수 BOOKS 와 같게)
 SAMPLE = 'https://drive.google.com/file/d/105f20gSuhZvR44gCK6oW5mxn2-ZFG12J/view'  # 샘플은 수능특강 라이트로 통일
-BOOKS = [
-    dict(name='수능특강 라이트', full='2026 EBS 수능특강 Light 영어', units=22, who='고1~고2 · 수능특강 입문',
+BOOKS = [  # name 은 드라이브 '부교재 분석노트' 안 폴더 이름과 같게 (lib.js NOTE_BOOK_CFG, note-request 함수 BOOKS 와 같게)
+    dict(name='수능특강 라이트', full='2026 EBS 수능특강 Light 영어', meta='22강 · 강별 Gateway + 문항별', who='고1~고2 · 수능특강 입문',
          intro='수능특강 본책 전에 유형별 감을 잡는 EBS 입문 교재예요. 강마다 Gateway와 문항별로 끊어읽기·구문·어휘·정답 근거를 정리한 분석노트를 제공해요.',
-         buy='https://contents.premium.naver.com/likasuni/cocos/contents?categoryId=1a0c882e9770000nk', blog=''),
+         buy='https://contents.premium.naver.com/likasuni/cocos/contents?categoryId=1a0c882e9770000nk', ready=True),
+    dict(name='하루 6개 1등급 모의고사 고1', full='EBS 하루 6개 1등급 영어독해 모의고사 고1', meta='회차별 6문항', who='고1 · 모의고사 대비',
+         intro='하루 6문항씩 모의고사 유형을 꾸준히 푸는 EBS 고1 독해 교재예요. 회차·문항별 분석노트를 준비하고 있어요.'),
+    dict(name='하루 6개 1등급 모의고사 고2', full='EBS 하루 6개 1등급 영어독해 모의고사 고2', meta='회차별 6문항', who='고2 · 모의고사 대비',
+         intro='하루 6문항씩 모의고사 유형을 꾸준히 푸는 EBS 고2 독해 교재예요. 회차·문항별 분석노트를 준비하고 있어요.'),
+    dict(name='올림포스 영어독해 기본1', full='EBS 올림포스 영어독해의 기본 1', meta='강별 문항', who='고1 · 내신 부교재',
+         intro='학교 내신 부교재로 많이 쓰는 EBS 고등 기본 독해 교재예요. 강·문항별 분석노트를 준비하고 있어요.'),
+    dict(name='리딩파워 기본', full='리딩파워 기본', meta='강별 문항', who='고1~고2 · 독해 기본',
+         intro='유형별 독해 기본기를 다지는 교재예요. 강·문항별 분석노트를 준비하고 있어요.'),
+    dict(name='리딩파워 완성', full='리딩파워 완성', meta='강별 문항', who='고2~고3 · 독해 완성',
+         intro='유형별 독해를 실전 수준으로 완성하는 교재예요. 강·문항별 분석노트를 준비하고 있어요.'),
 ]
 def book_card(b):
     q = urllib.parse.quote(b['name'])
     blog = f'<a class="btn btn-line" href="{e(b["blog"])}">📝 교재 소개글</a>' if b.get('blog') else ''
     return (f'<section class="card book"><div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
             f'<p>{e(b["intro"])}</p>'
-            f'<ul class="book-meta"><li>📚 {b["units"]}강 · 강별 Gateway + 문항별</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul>'
-            '<div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
-            f'<div class="book-btns"><a class="btn btn-kakao" href="/notes/?book={q}">💬 카톡으로 무료 요청</a>'
-            f'<a class="btn btn-navy" href="{e(b["buy"])}" target="_blank" rel="noopener">🛒 강 단위 구매</a>'
-            f'<a class="btn btn-line" href="{SAMPLE}" target="_blank" rel="noopener">📄 분석노트 샘플 보기</a>{blog}</div></section>')
-bbody = ('<h1 class="page-h1">EBS 부교재 영어 분석노트 요청방</h1>'
+            f'<ul class="book-meta"><li>📚 {e(b["meta"])}</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul>'
+            + ('<div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
+               if b.get('ready') else
+               '<p class="book-soon">📝 분석노트 준비 중이에요. 필요한 강·번호를 요청해 주시면 요청이 많은 것부터 먼저 만들어요.</p>')
+            + f'<div class="book-btns"><a class="btn btn-kakao" href="/notes/?book={q}">💬 {"카톡으로 무료 요청" if b.get("ready") else "이 교재 분석노트 요청하기"}</a>'
+            + (f'<a class="btn btn-navy" href="{e(b["buy"])}" target="_blank" rel="noopener">🛒 강 단위 구매</a>' if b.get('buy') else '')
+            + f'<a class="btn btn-line" href="{SAMPLE}" target="_blank" rel="noopener">📄 분석노트 샘플 보기</a>{blog}</div></section>')
+bbody = ('<h1 class="page-h1">부교재 영어 분석노트 요청방</h1>'
          '<p class="lead">리카수니 원장이 직접 만든 부교재 분석노트예요. <b>문항 1개는 카톡으로 무료</b>, 강 전체가 필요하면 <b>강 단위로 구매</b>할 수 있어요.</p>'
          + ''.join(book_card(b) for b in BOOKS) +
          '<div class="card"><h2>이용 방법</h2><ul class="sum">'

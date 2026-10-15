@@ -5,7 +5,8 @@ import { createClient } from 'npm:@supabase/supabase-js@2';
 
 const LINK_HOURS = 24;
 const ORIGINS = ['https://data.likasuni.com', 'http://localhost:8765'];
-const BOOKS = ['수능특강 라이트']; // 부교재 목록 (이름의 각 단어가 폴더·파일 이름에 들어가야 함)
+// 부교재 목록 → 단위(강/회). 이름의 각 단어가 드라이브 폴더 이름에 들어가야 함 (lib.js NOTE_BOOK_CFG 와 같게)
+const BOOKS: Record<string, string> = { '수능특강 라이트': '강', '리딩파워 기본': '강', '리딩파워 완성': '강', '올림포스 영어독해 기본1': '강', '하루 6개 1등급 모의고사 고1': '회', '하루 6개 1등급 모의고사 고2': '회' };
 
 const cors = (req: Request) => {
   const o = req.headers.get('origin') || '';
@@ -94,10 +95,10 @@ Deno.serve(async (req) => {
     query = { y, m, g, n };
   } else if (b.kind === 'book') {
     const book = String(b.book || ''), unit = Number(b.unit);
-    if (!BOOKS.includes(book) || !(unit >= 1 && unit <= 60)) return reply(req, 400, { error: '교재와 강을 확인해 주세요.' });
-    label = `${book} ${unit}강 ${n === 0 ? 'Gateway' : n + '번'} 분석노트`;
+    if (!BOOKS[book] || !(unit >= 1 && unit <= 60)) return reply(req, 400, { error: '교재와 강을 확인해 주세요.' });
+    label = `${book} ${unit}${BOOKS[book]} ${n === 0 ? 'Gateway' : n + '번'} 분석노트`;
     const words = book.split(/\s+/);
-    must = [...words.map(esc), `(^|\\D)${unit}\\s*강`];
+    must = [...words.map(esc), `(^|\\D)${unit}\\s*${BOOKS[book]}`];
     query = { book, unit, n };
   } else return reply(req, 400, { error: '요청 종류를 확인해 주세요.' });
 

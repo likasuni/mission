@@ -266,3 +266,4 @@ select { border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; 
 .book-use b { display: block; color: var(--navy-d); } .book-use span { font-size: .85rem; color: var(--muted); }
 .book-btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .book-btns .btn { flex: 1 1 180px; text-align: center; }
+.book-soon { margin: 0 0 14px; padding: 10px 12px; border-radius: 10px; background: #fff8e6; border: 1px solid #f3d48a; color: #6b4e00; font-size: .9rem; }

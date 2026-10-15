@@ -3,7 +3,17 @@
    - 댓글은 어느 페이지에 달든 미션 개수에 합산
    - 분석노트 요청: 카카오 회원, 1인 하루 1개, 24시간 링크를 카톡으로 자동 발송
    ========================================= */
-const NOTE_BOOKS = ['수능특강 라이트']; // note-request 함수의 BOOKS와 같게
+// 부교재 목록: 이름은 드라이브 '부교재 분석노트' 안 폴더 이름과 같게 (note-request 함수의 BOOKS, build.py BOOKS와 같게)
+// u: 단위(강/회), max: 마지막 강·회, n: 문항 수, gw: Gateway 있음
+const NOTE_BOOK_CFG = {
+  '수능특강 라이트': { u: '강', max: 22, n: 10, gw: true },
+  '리딩파워 기본': { u: '강', max: 30, n: 10 },
+  '리딩파워 완성': { u: '강', max: 30, n: 10 },
+  '올림포스 영어독해 기본1': { u: '강', max: 30, n: 10 },
+  '하루 6개 1등급 모의고사 고1': { u: '회', max: 40, n: 6 },
+  '하루 6개 1등급 모의고사 고2': { u: '회', max: 40, n: 6 },
+};
+const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 
 (async function () {
   const user = await getUser();
@@ -94,7 +104,13 @@ async function noteRequest(user) {
   const y0 = new Date().getFullYear();
   const opt = (arr, sel) => arr.map(v => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${v}</option>`).join('');
   const range = (a, b) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
-  const numOpts = k => k === 'book' ? '<option value="0">Gateway</option>' + opt(range(1, 10), 1) : opt(range(1, 45), 30); // 부교재는 Gateway + 1~10번 (강마다 문항 수가 달라요)
+  const bcfg = b => NOTE_BOOK_CFG[b] || { u: '강', max: 30, n: 10 };
+  const curBook = () => (document.getElementById('nr-b') || {}).value || d.book || NOTE_BOOKS[0];
+  const numOpts = k => {
+    if (k !== 'book') return opt(range(1, 45), 30);
+    const c = bcfg(curBook());
+    return (c.gw ? '<option value="0">Gateway</option>' : '') + opt(range(1, c.n), 1);
+  };
   card.innerHTML = head + `
     <div class="tabs mt"><button class="tab${startBook ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button></div>
     <div id="nr-moe" class="row"${startBook ? ' style="display:none"' : ''}>
@@ -104,7 +120,7 @@ async function noteRequest(user) {
     </div>
     <div id="nr-book" class="row"${startBook ? '' : ' style="display:none"'}>
       <select id="nr-b">${opt(NOTE_BOOKS, d.book)}</select>
-      <select id="nr-u">${opt(range(1, 30), 1)}</select><span>강</span>
+      <select id="nr-u">${opt(range(1, bcfg(startBook ? d.book : NOTE_BOOKS[0]).max), 1)}</select><span id="nr-ul">${bcfg(startBook ? d.book : NOTE_BOOKS[0]).u}</span>
     </div>
     <div class="row mt"><select id="nr-n">${numOpts(startBook ? 'book' : 'moe')}</select><span id="nr-nl">${startBook ? '' : '번 '}분석노트</span>
       <button class="btn btn-navy" id="nr-go">카톡으로 받기</button></div>
@@ -117,7 +133,7 @@ async function noteRequest(user) {
     const n = $v('nr-n');
     document.getElementById('nr-preview').textContent = kind === 'moe'
       ? `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${n}번 분석노트`
-      : `요청: ${$v('nr-b')} ${$v('nr-u')}강 ${n === '0' ? 'Gateway' : n + '번'} 분석노트`;
+      : `요청: ${$v('nr-b')} ${$v('nr-u')}${bcfg($v('nr-b')).u} ${n === '0' ? 'Gateway' : n + '번'} 분석노트`;
   };
   card.querySelectorAll('.tab').forEach(t => t.onclick = () => {
     kind = t.dataset.k;
@@ -129,6 +145,13 @@ async function noteRequest(user) {
     preview();
   });
   card.querySelectorAll('select').forEach(s => s.onchange = preview);
+  document.getElementById('nr-b').onchange = () => { // 교재를 바꾸면 강/회 범위와 번호 목록도 바꿈
+    const c = bcfg($v('nr-b'));
+    document.getElementById('nr-u').innerHTML = opt(range(1, c.max), 1);
+    document.getElementById('nr-ul').textContent = c.u;
+    document.getElementById('nr-n').innerHTML = numOpts('book');
+    preview();
+  };
   preview();
 
   const body = () => kind === 'moe'
