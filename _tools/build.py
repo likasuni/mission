@@ -5,7 +5,7 @@ _tools/catalog.json (구글드라이브 기출 PDF 목록)을 읽어
 홈 / 학년 / 회차 / 과목 페이지와 sitemap.xml 을 저장소 루트에 만든다.
 자료가 추가되면 catalog.json 만 갱신하고 다시 실행하면 된다.
 """
-import json, os, html, datetime, collections, shutil
+import json, os, html, datetime, collections, shutil, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://data.likasuni.com'
@@ -120,7 +120,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/mission/', '자료 미션'), ('/notes/', '분석노트 요청')]
+NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/books/', '부교재'), ('/mission/', '자료 미션'), ('/notes/', '분석노트 요청')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -173,7 +173,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=5'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=6'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -348,6 +348,7 @@ body = f'''<section class="hero"><h1>모의고사·수능 기출문제 전과목
 <div class="card"><h2>🆕 최근 회차</h2><div class="chips">''' + ''.join(
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '''</div></div>
 <a class="banner note" href="/notes/"><b>📘 영어 모의고사 분석노트 요청</b><p>원하는 회차·번호를 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개, 링크는 24시간 동안 열려요.</p></a>
+<a class="banner book" href="/books/"><b>📚 EBS 부교재 분석노트 요청방</b><p>수능특강 라이트 등 부교재 분석노트. 문항 1개는 카톡으로 무료, 강 단위 구매도 가능해요.</p></a>
 <a class="banner" href="/mission/"><b>🎯 댓글 미션으로 리카수니 자료 받기</b><p>질문·학습 후기 댓글 10개를 모으면 분석노트·어휘노트를 이메일로 보내드려요.</p></a>
 ''' + ad()
 nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
@@ -363,6 +364,38 @@ nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요�
 page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카수니 자료실',
      '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 1인 하루 1개.', nbody,
      [('/', '홈'), ('/notes/', '분석노트 요청')], '/notes/', comments=('notes', '분석노트 요청'))
+
+# ---------- 부교재 요청방 ----------
+# 새 부교재는 BOOKS 에 한 줄 추가 (name 은 lib.js NOTE_BOOKS, note-request 함수 BOOKS 와 같게)
+SAMPLE = 'https://drive.google.com/file/d/105f20gSuhZvR44gCK6oW5mxn2-ZFG12J/view'  # 샘플은 수능특강 라이트로 통일
+BOOKS = [
+    dict(name='수능특강 라이트', full='2026 EBS 수능특강 Light 영어', units=22, who='고1~고2 · 수능특강 입문',
+         intro='수능특강 본책 전에 유형별 감을 잡는 EBS 입문 교재예요. 강마다 Gateway와 1~4번, 문항별로 끊어읽기·구문·어휘·정답 근거를 정리한 분석노트를 제공해요.',
+         buy='https://contents.premium.naver.com/likasuni/cocos/contents?categoryId=1a0c882e9770000nk', blog=''),
+]
+def book_card(b):
+    q = urllib.parse.quote(b['name'])
+    blog = f'<a class="btn btn-line" href="{e(b["blog"])}">📝 교재 소개글</a>' if b.get('blog') else ''
+    return (f'<section class="card book"><div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
+            f'<p>{e(b["intro"])}</p>'
+            f'<ul class="book-meta"><li>📚 {b["units"]}강 · 강별 Gateway + 1~4번</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul>'
+            '<div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
+            f'<div class="book-btns"><a class="btn btn-kakao" href="/notes/?book={q}">💬 카톡으로 무료 요청</a>'
+            f'<a class="btn btn-navy" href="{e(b["buy"])}" target="_blank" rel="noopener">🛒 강 단위 구매</a>'
+            f'<a class="btn btn-line" href="{SAMPLE}" target="_blank" rel="noopener">📄 분석노트 샘플 보기</a>{blog}</div></section>')
+bbody = ('<h1 class="page-h1">EBS 부교재 영어 분석노트 요청방</h1>'
+         '<p class="lead">리카수니 원장이 직접 만든 부교재 분석노트예요. <b>문항 1개는 카톡으로 무료</b>, 강 전체가 필요하면 <b>강 단위로 구매</b>할 수 있어요.</p>'
+         + ''.join(book_card(b) for b in BOOKS) +
+         '<div class="card"><h2>이용 방법</h2><ul class="sum">'
+         "<li><b>무료 요청:</b> 카카오 로그인 후 교재·강·번호를 고르면 카카오톡 '나와의 채팅'으로 24시간 링크가 와요. 1인 하루 1개 (모의고사 요청과 합산).</li>"
+         '<li><b>유료 구매:</b> 네이버 프리미엄 콘텐츠에서 필요한 강만 골라 구매해요.</li>'
+         '<li><b>샘플:</b> 먼저 샘플을 보고 분석노트 구성을 확인해 보세요.</li>'
+         '<li>아직 준비되지 않은 강·번호는 원장님께 요청이 전달돼요. 1~2일 뒤 다시 요청해 주세요.</li>'
+         '<li>다른 부교재 분석노트가 필요하면 아래 댓글로 교재 이름을 남겨 주세요. 요청이 많은 교재부터 추가해요.</li>'
+         '</ul></div>' + ad())
+page('/books/', 'EBS 부교재 영어 분석노트 요청 · 수능특강 라이트 | 리카수니 자료실',
+     '수능특강 라이트 등 EBS 부교재 영어 분석노트. 문항 1개는 카카오톡으로 무료, 강 단위 구매도 가능. 리카수니 원장 직접 제작.', bbody,
+     [('/', '홈'), ('/books/', '부교재')], '/books/', comments=('books', '부교재 요청방'))
 
 page('/', '리카수니 자료실 | 모의고사·수능 기출문제 전과목 PDF 무료 다운로드',
      '고1·고2·고3 모의고사와 수능 기출문제 전과목 문제지·정답·해설 PDF를 연도·월별로 무료 다운로드. 리카수니 자료실', body, (), '/')

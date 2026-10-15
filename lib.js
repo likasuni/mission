@@ -66,7 +66,8 @@ async function noteRequest(user) {
   const card = document.getElementById('note-req');
   if (!card) return;
   const qs = new URLSearchParams(location.search);
-  const d = { y: card.dataset.y || qs.get('y'), m: card.dataset.m || qs.get('m'), g: card.dataset.g || qs.get('g') }; // 회차 미리 채움
+  const d = { y: card.dataset.y || qs.get('y'), m: card.dataset.m || qs.get('m'), g: card.dataset.g || qs.get('g'), book: qs.get('book') }; // 회차·교재 미리 채움
+  const startBook = d.book && NOTE_BOOKS.includes(d.book);
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const head = `<h2>📘 분석노트 요청</h2>
     <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. <b>1인 하루 1개</b>, 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>`;
@@ -93,33 +94,38 @@ async function noteRequest(user) {
   const y0 = new Date().getFullYear();
   const opt = (arr, sel) => arr.map(v => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${v}</option>`).join('');
   const range = (a, b) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
+  const numOpts = k => k === 'book' ? '<option value="0">Gateway</option>' + opt(range(1, 4), 1) : opt(range(1, 45), 30); // 부교재는 Gateway + 1~4번
   card.innerHTML = head + `
-    <div class="tabs mt"><button class="tab on" data-k="moe">모의고사</button><button class="tab" data-k="book">부교재</button></div>
-    <div id="nr-moe" class="row">
+    <div class="tabs mt"><button class="tab${startBook ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button></div>
+    <div id="nr-moe" class="row"${startBook ? ' style="display:none"' : ''}>
       <select id="nr-y">${opt(range(2020, y0).reverse(), d.y || y0)}</select>
       <select id="nr-m">${opt([3, 4, 5, 6, 7, 9, 10, 11], d.m || 9)}</select><span>월</span>
       <select id="nr-g">${opt([1, 2, 3], d.g || 1)}</select><span>학년 영어</span>
     </div>
-    <div id="nr-book" class="row" style="display:none">
-      <select id="nr-b">${opt(NOTE_BOOKS)}</select>
+    <div id="nr-book" class="row"${startBook ? '' : ' style="display:none"'}>
+      <select id="nr-b">${opt(NOTE_BOOKS, d.book)}</select>
       <select id="nr-u">${opt(range(1, 30), 1)}</select><span>강</span>
     </div>
-    <div class="row mt"><select id="nr-n">${opt(range(1, 45), 30)}</select><span>번 분석노트</span>
+    <div class="row mt"><select id="nr-n">${numOpts(startBook ? 'book' : 'moe')}</select><span id="nr-nl">${startBook ? '' : '번 '}분석노트</span>
       <button class="btn btn-navy" id="nr-go">카톡으로 받기</button></div>
-    <p class="meta mt" id="nr-preview"></p>`;
+    <p class="meta mt" id="nr-preview"></p>
+    <p class="meta">부교재 분석노트 소개·샘플·구매는 <a href="/books/">부교재 요청방 →</a></p>`;
 
-  let kind = 'moe';
+  let kind = startBook ? 'book' : 'moe';
   const $v = id => document.getElementById(id).value;
   const preview = () => {
+    const n = $v('nr-n');
     document.getElementById('nr-preview').textContent = kind === 'moe'
-      ? `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${$v('nr-n')}번 분석노트`
-      : `요청: ${$v('nr-b')} ${$v('nr-u')}강 ${$v('nr-n')}번 분석노트`;
+      ? `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${n}번 분석노트`
+      : `요청: ${$v('nr-b')} ${$v('nr-u')}강 ${n === '0' ? 'Gateway' : n + '번'} 분석노트`;
   };
   card.querySelectorAll('.tab').forEach(t => t.onclick = () => {
     kind = t.dataset.k;
     card.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x === t));
     document.getElementById('nr-moe').style.display = kind === 'moe' ? '' : 'none';
     document.getElementById('nr-book').style.display = kind === 'book' ? '' : 'none';
+    document.getElementById('nr-n').innerHTML = numOpts(kind);
+    document.getElementById('nr-nl').textContent = kind === 'book' ? '분석노트' : '번 분석노트';
     preview();
   });
   card.querySelectorAll('select').forEach(s => s.onchange = preview);

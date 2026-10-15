@@ -251,3 +251,18 @@ select { border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; 
 .banner.note b { color: #fff; }
 .banner.note p { color: #fff7e6; }
 #comments h2 { border-left: 4px solid var(--navy); padding-left: 10px; }
+
+/* 부교재 요청방 */
+.btn-kakao { background: #fee500; color: #191600; }
+.banner.book { background: linear-gradient(135deg, #0f6b6e, #157e80); }
+.banner.book b { color: #fff; } .banner.book p { color: #e3f6f5; }
+.card.book .book-hd { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-bottom: 6px; }
+.card.book .book-hd h2 { margin: 0; }
+.card.book .tag { font-size: .78rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: #eef1fa; color: var(--navy); }
+.book-meta { margin: 8px 0 12px; padding-left: 0; list-style: none; font-size: .9rem; color: var(--muted); }
+.book-meta li { margin: 2px 0; }
+.book-use { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.book-use div { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #f7f9fb; }
+.book-use b { display: block; color: var(--navy-d); } .book-use span { font-size: .85rem; color: var(--muted); }
+.book-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.book-btns .btn { flex: 1 1 180px; text-align: center; }

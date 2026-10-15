@@ -48,6 +48,7 @@ async function listTree(root: string): Promise<Entry[]> {
 }
 // 파일 이름에 번호가 있는지: '30번', '41-42번', 또는 이름 자체가 '30.pdf', '41-42.pdf'
 function hasNum(name: string, n: number) {
+  if (n === 0) return /gateway|게이트웨이/i.test(name); // 부교재 Gateway
   const re = /(\d+)\s*(?:[-~]\s*(\d+))?\s*번/g;
   let m;
   while ((m = re.exec(name))) { const a = +m[1], b = m[2] ? +m[2] : a; if (n >= a && n <= b) return true; }
@@ -82,7 +83,7 @@ Deno.serve(async (req) => {
   let b: any = {};
   try { b = await req.json(); } catch { /* empty */ }
   const n = Number(b.n);
-  if (!(n >= 1 && n <= 60)) return reply(req, 400, { error: '문항 번호를 확인해 주세요.' });
+  if (!(n >= (b.kind === 'book' ? 0 : 1) && n <= 60)) return reply(req, 400, { error: '문항 번호를 확인해 주세요.' });
 
   // 요청 → 검색 조건
   let label = '', must: string[] = [], query: any = {};
@@ -94,7 +95,7 @@ Deno.serve(async (req) => {
   } else if (b.kind === 'book') {
     const book = String(b.book || ''), unit = Number(b.unit);
     if (!BOOKS.includes(book) || !(unit >= 1 && unit <= 60)) return reply(req, 400, { error: '교재와 강을 확인해 주세요.' });
-    label = `${book} ${unit}강 ${n}번 분석노트`;
+    label = `${book} ${unit}강 ${n === 0 ? 'Gateway' : n + '번'} 분석노트`;
     const words = book.split(/\s+/);
     must = [...words.map(esc), `(^|\\D)${unit}\\s*강`];
     query = { book, unit, n };
