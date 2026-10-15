@@ -173,7 +173,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=7'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=8'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -369,7 +369,7 @@ page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카�
 SAMPLE = 'https://drive.google.com/file/d/105f20gSuhZvR44gCK6oW5mxn2-ZFG12J/view'  # 샘플은 수능특강 라이트로 통일
 BOOKS = [
     dict(name='수능특강 라이트', full='2026 EBS 수능특강 Light 영어', units=22, who='고1~고2 · 수능특강 입문',
-         intro='수능특강 본책 전에 유형별 감을 잡는 EBS 입문 교재예요. 강마다 Gateway와 1~4번, 문항별로 끊어읽기·구문·어휘·정답 근거를 정리한 분석노트를 제공해요.',
+         intro='수능특강 본책 전에 유형별 감을 잡는 EBS 입문 교재예요. 강마다 Gateway와 문항별로 끊어읽기·구문·어휘·정답 근거를 정리한 분석노트를 제공해요.',
          buy='https://contents.premium.naver.com/likasuni/cocos/contents?categoryId=1a0c882e9770000nk', blog=''),
 ]
 def book_card(b):
@@ -377,7 +377,7 @@ def book_card(b):
     blog = f'<a class="btn btn-line" href="{e(b["blog"])}">📝 교재 소개글</a>' if b.get('blog') else ''
     return (f'<section class="card book"><div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
             f'<p>{e(b["intro"])}</p>'
-            f'<ul class="book-meta"><li>📚 {b["units"]}강 · 강별 Gateway + 1~4번</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul>'
+            f'<ul class="book-meta"><li>📚 {b["units"]}강 · 강별 Gateway + 문항별</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul>'
             '<div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
             f'<div class="book-btns"><a class="btn btn-kakao" href="/notes/?book={q}">💬 카톡으로 무료 요청</a>'
             f'<a class="btn btn-navy" href="{e(b["buy"])}" target="_blank" rel="noopener">🛒 강 단위 구매</a>'

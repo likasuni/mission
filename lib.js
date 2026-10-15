@@ -94,7 +94,7 @@ async function noteRequest(user) {
   const y0 = new Date().getFullYear();
   const opt = (arr, sel) => arr.map(v => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${v}</option>`).join('');
   const range = (a, b) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
-  const numOpts = k => k === 'book' ? '<option value="0">Gateway</option>' + opt(range(1, 4), 1) : opt(range(1, 45), 30); // 부교재는 Gateway + 1~4번
+  const numOpts = k => k === 'book' ? '<option value="0">Gateway</option>' + opt(range(1, 10), 1) : opt(range(1, 45), 30); // 부교재는 Gateway + 1~10번 (강마다 문항 수가 달라요)
   card.innerHTML = head + `
     <div class="tabs mt"><button class="tab${startBook ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button></div>
     <div id="nr-moe" class="row"${startBook ? ' style="display:none"' : ''}>
