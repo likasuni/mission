@@ -104,7 +104,8 @@ def s_org(k):
 
 def s_when(k):
     ex, g, y, m = k
-    return f'{y - 1}년 11월 시행' if ex == 'sn' else f'{y}년 {m}월 시행'
+    if ex == 'sn': return '2020년 12월 시행' if y == 2021 else f'{y - 1}년 11월 시행'
+    return f'{y}년 {m}월 시행'
 
 def subj_url(k, s): return s_url(k) + SLUG.get(s, 'etc') + '/'
 
@@ -272,7 +273,7 @@ for idx, k in enumerate(keys_sorted):
                 f'<a class="chip" href="{subj_url(x, s)}">{e(s_name(x))}</a>' for x in others) + '</div></div>'
         sibs = '<div class="chips">' + ''.join(
             f'<a class="chip" href="{subj_url(k, x)}">{e(dname(x))}</a>' for x in subs if x != s) + '</div>'
-        srows = [r for r in inf.get('rows', []) if r['s'] == s]
+        srows = [r for r in inf.get('rows', []) if r['s'] == s or (s == '수학' and r['s'].startswith('수학'))]
         sinfo = ''
         if srows or (inf.get('wrong') or {}).get(s):
             sinfo = f'<div class="card"><h2>📊 {e(full)} 등급컷</h2>' + (cut_table(srows) + CUT_NOTE if srows else '') + \
