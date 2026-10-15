@@ -7,22 +7,22 @@
 <title>관리자 | 리카수니 자료실</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="common.js"></script>
+<script src="/common.js"></script>
 </head>
 <body>
 
 <header class="top">
   <div class="top-in">
-    <a class="brand" href="./">리카수니 <b>관리자</b></a>
+    <a class="brand" href="/">리카수니 <b>관리자</b></a>
     <div class="auth" id="auth"></div>
   </div>
 </header>
 
 <main class="wrap" id="main"><p class="muted">불러오는 중...</p></main>
 
-<footer><a href="./">← 자료실로 돌아가기</a></footer>
+<footer><a href="/">← 자료실로 돌아가기</a></footer>
 
 <script>
 let user = null;
@@ -170,7 +170,7 @@ async function tabMaterials() {
           <div>
             <strong>${esc(m.title)}</strong>
             <span class="tag">댓글 ${m.required_comments}개</span><br>
-            <span class="meta">${fmtDate(m.created_at)} · <a href="./?id=${m.id}" target="_blank">페이지 보기</a></span>
+            <span class="meta">${fmtDate(m.created_at)} · <a href="/mission/?id=${m.id}" target="_blank">페이지 보기</a></span>
           </div>
           <button class="btn btn-danger btn-sm" onclick="removeMaterial(${m.id})">삭제</button>
         </div>
