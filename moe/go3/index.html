@@ -39,8 +39,8 @@
   function next(i) { if (i >= srcs.length) { if (after) after(); return; } var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () { next(i + 1); }; document.body.appendChild(s); }
   function go() { if (!done) { done = true; next(0); } }
   window.lazyLogin = function () { after = function () { showLogin(); }; if (done) { if (window.showLogin) showLogin(); } else go(); };
-  /* 광고 차단 등으로 광고가 끝내 안 뜨면 확보해 둔 자리를 접음 */
-  setTimeout(function () { document.querySelectorAll('.ad-slot').forEach(function (d) { var i = d.querySelector('ins'); if (!i || (!i.getAttribute('data-ad-status') && !i.querySelector('iframe'))) d.style.display = 'none'; }); }, 6000);
+  /* 광고 차단으로 광고 스크립트 자체가 안 불러와졌을 때만 확보해 둔 자리를 접음 */
+  addEventListener('load', function () { setTimeout(function () { if (window.adsbygoogle && window.adsbygoogle.loaded) return; document.querySelectorAll('.ad-slot').forEach(function (d) { d.style.display = 'none'; }); }, 8000); });
   var had = false; try { had = !!localStorage.getItem('sb-iiyhmskvdjgstoikonwu-auth-token'); } catch (e) {}
   if (had || location.hash.indexOf('access_token') > -1) { go(); return; }
   var c = document.getElementById('comments');
