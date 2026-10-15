@@ -35,6 +35,10 @@ def down(i): return f'https://drive.google.com/uc?export=download&id={i}'
 def mb(n): return f'{n/1048576:.1f}MB' if n else ''
 
 R = json.load(open(os.path.join(ROOT, '_tools', 'catalog.json')))
+import re as _re
+# 스타일을 페이지 안에 직접 넣어 첫 화면 표시를 앞당김 (별도 파일 요청 1회 절약)
+CSS = _re.sub(r'\s+', ' ', _re.sub(r'/\*.*?\*/', '', open(os.path.join(ROOT, 'style.css')).read(), flags=_re.S))
+CSS = _re.sub(r'\s*([{};:,>])\s*', r'\1', CSS).strip()
 INFO = json.load(open(os.path.join(ROOT, '_tools', 'exam_info.json')))
 
 def ikey(k):
@@ -147,7 +151,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{SITE}/og.png">
 <link rel="icon" href="/favicon.png">
-<link rel="stylesheet" href="/style.css?v=4">
+<style>{CSS}</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" crossorigin="anonymous"></script>
 {''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
@@ -171,6 +175,8 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
+  /* 광고 차단 등으로 광고가 끝내 안 뜨면 확보해 둔 자리를 접음 */
+  setTimeout(function () {{ document.querySelectorAll('.ad-slot').forEach(function (d) {{ var i = d.querySelector('ins'); if (!i || (!i.getAttribute('data-ad-status') && !i.querySelector('iframe'))) d.style.display = 'none'; }}); }}, 6000);
   var had = false; try {{ had = !!localStorage.getItem('sb-iiyhmskvdjgstoikonwu-auth-token'); }} catch (e) {{}}
   if (had || location.hash.indexOf('access_token') > -1) {{ go(); return; }}
   var c = document.getElementById('comments');
