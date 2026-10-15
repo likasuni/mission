@@ -147,9 +147,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{SITE}/og.png">
 <link rel="icon" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css?v=3">
+<link rel="stylesheet" href="/style.css?v=4">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" crossorigin="anonymous"></script>
 {''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
@@ -166,9 +164,16 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <a href="/privacy.html">개인정보처리방침</a> <a href="/admin.html" rel="nofollow">관리자</a>
 <div class="biz">기출문제 저작권은 한국교육과정평가원·각 시도교육청에 있으며, 학습 목적으로 공개 자료를 정리해 제공합니다.<br>상호: 리카수니</div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="/common.js"></script>
-<script src="/lib.js?v=2"></script>
+<script>
+/* 로그인·댓글 기능은 화면이 다 뜬 뒤 여유 시간에 불러와 첫 화면 속도를 높임 */
+(function () {{
+  var done = false, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=3'];
+  function next(i) {{ if (i >= srcs.length) return; var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
+  function go() {{ if (!done) {{ done = true; next(0); }} }}
+  addEventListener('load', function () {{ ('requestIdleCallback' in window) ? requestIdleCallback(go, {{ timeout: 2000 }}) : setTimeout(go, 800); }});
+  ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function (e) {{ addEventListener(e, go, {{ once: true, passive: true }}); }});
+}})();
+</script>
 </body>
 </html>
 '''

@@ -17,7 +17,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', -apple-system, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
