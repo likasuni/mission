@@ -21,7 +21,7 @@
 </head>
 <body>
 <header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><a class="hdr-cta" href="/notes/">📘 분석노트 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
-<nav class="nav"><div class="nav-in"><a href="/" class="">홈</a><a href="/moe/go1/" class="">고1</a><a href="/moe/go2/" class="">고2</a><a href="/moe/go3/" class="">고3</a><a href="/suneung/" class="">수능</a><a href="/books/" class="on ">부교재</a><a href="/mission/" class="">자료 미션</a><a href="/notes/" class="">분석노트 요청</a></div></nav>
+<nav class="nav"><div class="nav-in"><a href="/" class="">홈</a><a href="/moe/go1/" class="">고1</a><a href="/moe/go2/" class="">고2</a><a href="/moe/go3/" class="">고3</a><a href="/suneung/" class="">수능</a><a href="/books/" class="on ">부교재</a><a href="/notes/" class="">분석노트 요청</a></div></nav>
 <main class="wrap">
 <nav class="crumb"><a href="/">홈</a> › <a href="/books/">부교재</a></nav>
 <h1 class="page-h1">EBS 부교재 영어 분석노트 요청방</h1><p class="lead">리카수니 원장이 직접 만든 부교재 분석노트예요. <b>문항 1개는 카톡으로 무료</b>, 강 전체가 필요하면 <b>강 단위로 구매</b>할 수 있어요.</p><section class="card book"><div class="book-hd"><h2>2026 EBS 수능특강 Light 영어</h2><span class="tag">고1~고2 · 수능특강 입문</span></div><p>수능특강 본책 전에 유형별 감을 잡는 EBS 입문 교재예요. 강마다 Gateway와 1~4번, 문항별로 끊어읽기·구문·어휘·정답 근거를 정리한 분석노트를 제공해요.</p><ul class="book-meta"><li>📚 22강 · 강별 Gateway + 1~4번</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul><div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div><div class="book-btns"><a class="btn btn-kakao" href="/notes/?book=%EC%88%98%EB%8A%A5%ED%8A%B9%EA%B0%95%20%EB%9D%BC%EC%9D%B4%ED%8A%B8">💬 카톡으로 무료 요청</a><a class="btn btn-navy" href="https://contents.premium.naver.com/likasuni/cocos/contents?categoryId=1a0c882e9770000nk" target="_blank" rel="noopener">🛒 강 단위 구매</a><a class="btn btn-line" href="https://drive.google.com/file/d/105f20gSuhZvR44gCK6oW5mxn2-ZFG12J/view" target="_blank" rel="noopener">📄 분석노트 샘플 보기</a></div></section><div class="card"><h2>이용 방법</h2><ul class="sum"><li><b>무료 요청:</b> 카카오 로그인 후 교재·강·번호를 고르면 카카오톡 '나와의 채팅'으로 24시간 링크가 와요. 1인 하루 1개 (모의고사 요청과 합산).</li><li><b>유료 구매:</b> 네이버 프리미엄 콘텐츠에서 필요한 강만 골라 구매해요.</li><li><b>샘플:</b> 먼저 샘플을 보고 분석노트 구성을 확인해 보세요.</li><li>아직 준비되지 않은 강·번호는 원장님께 요청이 전달돼요. 1~2일 뒤 다시 요청해 주세요.</li><li>다른 부교재 분석노트가 필요하면 아래 댓글로 교재 이름을 남겨 주세요. 요청이 많은 교재부터 추가해요.</li></ul></div><div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3951386769813957" data-ad-slot="1035299275" data-ad-format="rectangle, horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
@@ -35,7 +35,7 @@
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=6'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=7'];
   function next(i) { if (i >= srcs.length) { if (after) after(); return; } var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () { next(i + 1); }; document.body.appendChild(s); }
   function go() { if (!done) { done = true; next(0); } }
   window.lazyLogin = function () { after = function () { showLogin(); }; if (done) { if (window.showLogin) showLogin(); } else go(); };

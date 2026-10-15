@@ -21,7 +21,7 @@
 </head>
 <body>
 <header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><a class="hdr-cta" href="/notes/">📘 분석노트 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
-<nav class="nav"><div class="nav-in"><a href="/" class="on ">홈</a><a href="/moe/go1/" class="">고1</a><a href="/moe/go2/" class="">고2</a><a href="/moe/go3/" class="">고3</a><a href="/suneung/" class="">수능</a><a href="/books/" class="">부교재</a><a href="/mission/" class="">자료 미션</a><a href="/notes/" class="">분석노트 요청</a></div></nav>
+<nav class="nav"><div class="nav-in"><a href="/" class="on ">홈</a><a href="/moe/go1/" class="">고1</a><a href="/moe/go2/" class="">고2</a><a href="/moe/go3/" class="">고3</a><a href="/suneung/" class="">수능</a><a href="/books/" class="">부교재</a><a href="/notes/" class="">분석노트 요청</a></div></nav>
 <main class="wrap">
 
 <section class="hero"><h1>모의고사·수능 기출문제 전과목 PDF</h1>
@@ -35,7 +35,6 @@
 <div class="card"><h2>🆕 최근 회차</h2><div class="chips"><a class="chip" href="/moe/go1/2026-09/">2026년 9월 고1 모의고사</a><a class="chip" href="/moe/go2/2026-09/">2026년 9월 고2 모의고사</a><a class="chip" href="/moe/go3/2026-09/">2026년 9월 고3 모의고사</a><a class="chip" href="/moe/go3/2026-07/">2026년 7월 고3 모의고사</a><a class="chip" href="/moe/go1/2026-06/">2026년 6월 고1 모의고사</a><a class="chip" href="/moe/go2/2026-06/">2026년 6월 고2 모의고사</a><a class="chip" href="/moe/go3/2026-05/">2026년 5월 고3 모의고사</a><a class="chip" href="/moe/go1/2026-03/">2026년 3월 고1 모의고사</a><a class="chip" href="/moe/go2/2026-03/">2026년 3월 고2 모의고사</a></div></div>
 <a class="banner note" href="/notes/"><b>📘 영어 모의고사 분석노트 요청</b><p>원하는 회차·번호를 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개, 링크는 24시간 동안 열려요.</p></a>
 <a class="banner book" href="/books/"><b>📚 EBS 부교재 분석노트 요청방</b><p>수능특강 라이트 등 부교재 분석노트. 문항 1개는 카톡으로 무료, 강 단위 구매도 가능해요.</p></a>
-<a class="banner" href="/mission/"><b>🎯 댓글 미션으로 리카수니 자료 받기</b><p>질문·학습 후기 댓글 10개를 모으면 분석노트·어휘노트를 이메일로 보내드려요.</p></a>
 <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3951386769813957" data-ad-slot="1035299275" data-ad-format="rectangle, horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
 
 </main>
@@ -47,7 +46,7 @@
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=6'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=7'];
   function next(i) { if (i >= srcs.length) { if (after) after(); return; } var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () { next(i + 1); }; document.body.appendChild(s); }
   function go() { if (!done) { done = true; next(0); } }
   window.lazyLogin = function () { after = function () { showLogin(); }; if (done) { if (window.showLogin) showLogin(); } else go(); };

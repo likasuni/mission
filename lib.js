@@ -32,7 +32,7 @@ const NOTE_BOOKS = ['수능특강 라이트']; // note-request 함수의 BOOKS�
       </div>`).join('') || '<p class="muted">아직 댓글이 없어요. 첫 댓글을 남겨 주세요!</p>';
 
     const form = user ? `
-      <p class="muted">이 시험에 대한 질문이나 공부 후기를 <b>댓글</b>로 남겨 주세요. (20자 이상, 원장님 확인 후 공개 · <a href="/mission/">댓글 미션</a>에 합산)<br>
+      <p class="muted">이 시험에 대한 질문이나 공부 후기를 <b>댓글</b>로 남겨 주세요. (20자 이상, 원장님 확인 후 공개)<br>
       분석노트를 받고 싶다면 댓글 대신 <a href="/notes/"><b>📘 분석노트 요청</b></a>을 이용해 주세요.</p>
       <textarea id="cbody" maxlength="1000" placeholder="댓글 예) 31번 빈칸이 어려웠는데 해설을 보고 근거를 찾았어요. 다음엔 시간 배분을 더 신경 써야겠어요."></textarea>
       <div class="row between mt"><span class="meta"><span id="ccount">0</span>자</span>
@@ -55,7 +55,7 @@ const NOTE_BOOKS = ['수능특강 라이트']; // note-request 함수의 BOOKS�
       page_key: key, page_title: title, author_name: displayName(user), content
     });
     if (error) { btn.disabled = false; return toast('등록 실패: ' + error.message); }
-    toast('등록됐어요! 승인 후 공개되고 미션에 반영돼요.');
+    toast('등록됐어요! 원장님 확인 후 공개돼요.');
     load();
   }
   load();

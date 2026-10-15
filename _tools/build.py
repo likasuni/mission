@@ -120,7 +120,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/books/', '부교재'), ('/mission/', '자료 미션'), ('/notes/', '분석노트 요청')]
+NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/books/', '부교재'), ('/notes/', '분석노트 요청')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -173,7 +173,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=6'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=7'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -349,7 +349,6 @@ body = f'''<section class="hero"><h1>모의고사·수능 기출문제 전과목
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '''</div></div>
 <a class="banner note" href="/notes/"><b>📘 영어 모의고사 분석노트 요청</b><p>원하는 회차·번호를 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개, 링크는 24시간 동안 열려요.</p></a>
 <a class="banner book" href="/books/"><b>📚 EBS 부교재 분석노트 요청방</b><p>수능특강 라이트 등 부교재 분석노트. 문항 1개는 카톡으로 무료, 강 단위 구매도 가능해요.</p></a>
-<a class="banner" href="/mission/"><b>🎯 댓글 미션으로 리카수니 자료 받기</b><p>질문·학습 후기 댓글 10개를 모으면 분석노트·어휘노트를 이메일로 보내드려요.</p></a>
 ''' + ad()
 nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
 <p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트를 카카오톡으로 받아보세요.</p>
