@@ -97,6 +97,8 @@ def s_url(k):
 def s_name(k, short=False):
     ex, g, y, m = k
     if ex == 'moe':
+        if g == 3 and m in (6, 9):  # 평가원 모의평가는 학년도 기준 (폴더 연도 = 학년도, 시행은 전년도)
+            return f'{y}학년도 {m}월 모의평가(고3)' if not short else f'{y}학년도 {m}월 모평'
         return f'{y}년 {m}월 고{g} 모의고사' if not short else f'{m}월'
     return f'{y}학년도 수능'
 
@@ -109,6 +111,7 @@ def s_org(k):
 def s_when(k):
     ex, g, y, m = k
     if ex == 'sn': return '2020년 12월 시행' if y == 2021 else f'{y - 1}년 11월 시행'
+    if g == 3 and m in (6, 9): return f'{y - 1}년 {m}월 시행'
     return f'{y}년 {m}월 시행'
 
 import hashlib
