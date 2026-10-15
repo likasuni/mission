@@ -1,4 +1,5 @@
 import json,collections,re,unicodedata
+import re as _re
 out=json.load(open('files.json'))
 for o in out: o['path'][0]=o['path'][0].replace(' 기출','')
 SUBJ=[('생활과윤리',['생활과윤리','생활과 윤리','생할과윤리','생활과']),('윤리와사상',['윤리와사상','윤리와 사상','윤리와']),
@@ -33,6 +34,18 @@ for o in out:
         fs=(p[4] if len(p)>4 else '') if p[0]=='모의고사' else (p[2] if len(p)>2 else '')
         s={'과학':'통합과학','사회':'통합사회','과학탐구':None,'사회탐구':None}.get(fs,fs)
     k=kind(t)
+    fold=' '.join(p)
+    tn=unicodedata.normalize('NFC',t)
+    if s in ('기타','직업탐구','제2외국어·한문') or '직업탐구' in fold or '제2외국어' in fold:
+        if '전과목' in tn: s='전과목'
+        elif _re.search(r'(^|[\s_-])과학([\s_,]|$)',tn): s='통합과학'
+        elif _re.search(r'(^|[\s_-])사회([\s_,]|$)',tn): s='통합사회'
+        else:
+            mm=_re.findall(r'[-_]\s*([^-_]+?)\s*(?:문제|정답|해설)',tn)
+            nm=(mm[-1] if mm else '').replace('직업탐구','').strip(' _-·')
+            grp='직업탐구' if ('직업탐구' in fold or '직업탐구' in tn) else '제2외국어·한문'
+            if nm: s=nm; GROUP.setdefault(nm,grp)
+    if s=='전과목': GROUP['전과목']='기타'
     if not s or not k: bad.append((p,t)); continue
     try:
       if p[0]=='모의고사':

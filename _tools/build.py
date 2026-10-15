@@ -23,7 +23,7 @@ DISP = {'물리학1': '물리학Ⅰ', '물리학2': '물리학Ⅱ', '화학1': '
         '생명과학2': '생명과학Ⅱ', '지구과학1': '지구과학Ⅰ', '지구과학2': '지구과학Ⅱ', '생활과윤리': '생활과 윤리',
         '윤리와사상': '윤리와 사상', '정치와법': '정치와 법', '사회문화': '사회·문화'}
 GROUP_ORDER = ['국어', '수학', '영어', '한국사', '사회', '과학', '사회탐구', '과학탐구']
-GROUP_NAME = {'사회': '통합사회', '과학': '통합과학'}
+GROUP_NAME = {'사회': '통합사회', '과학': '통합과학', '기타': '전과목 정답·해설'}
 SUBJ_ORDER = list(SLUG)
 KIND_ORDER = ['문제', '해설', '정답', '듣기대본']
 KIND_LABEL = {'문제': '문제지', '해설': '해설', '정답': '정답표', '듣기대본': '듣기대본'}
@@ -111,7 +111,9 @@ def s_when(k):
     if ex == 'sn': return '2020년 12월 시행' if y == 2021 else f'{y - 1}년 11월 시행'
     return f'{y}년 {m}월 시행'
 
-def subj_url(k, s): return s_url(k) + SLUG.get(s, 'etc') + '/'
+import hashlib
+def sslug(s): return SLUG.get(s) or ('all' if s == '전과목' else 'x-' + hashlib.md5(s.encode()).hexdigest()[:6])  # 제2외국어·직업탐구 등
+def subj_url(k, s): return s_url(k) + sslug(s) + '/'
 
 def bysubj(rs):
     d = collections.OrderedDict()
@@ -233,7 +235,7 @@ for idx, k in enumerate(keys_sorted):
         groups.setdefault(xs[0]['group'], []).append((s, xs))
     rows = ''
     core = [g for g in GROUP_ORDER[:6] if g in groups]
-    blocks = ([('주요 과목', core)] if core else []) + [(GROUP_NAME.get(g, g), [g]) for g in ('사회탐구', '과학탐구') if g in groups]
+    blocks = ([('주요 과목', core)] if core else []) + [(GROUP_NAME.get(g, g), [g]) for g in ('사회탐구', '과학탐구', '직업탐구', '제2외국어·한문', '기타') if g in groups]
     for label, gs in blocks:
         rows += f'<div class="card"><p class="grp">{e(label)}</p>'
         for g in gs:
