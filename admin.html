@@ -33,6 +33,8 @@ function shell() {
   $('#main').innerHTML = `
     <div class="tabs">
       <button class="tab" data-t="comments" onclick="showTab('comments')">댓글 승인 <span id="n-comments"></span></button>
+      <button class="tab" data-t="notes" onclick="showTab('notes')">분석노트 신청 <span id="n-notes"></span></button>
+      <button class="tab" data-t="files" onclick="showTab('files')">분석노트 파일</button>
       <button class="tab" data-t="requests" onclick="showTab('requests')">자료 요청 <span id="n-requests"></span></button>
       <button class="tab" data-t="materials" onclick="showTab('materials')">자료 관리</button>
     </div>
@@ -46,6 +48,8 @@ async function showTab(t) {
   if (t === 'comments') await tabComments();
   if (t === 'requests') await tabRequests();
   if (t === 'materials') await tabMaterials();
+  if (t === 'notes') await tabNotes();
+  if (t === 'files') await tabFiles();
   updateBadges();
 }
 
@@ -54,12 +58,14 @@ async function updateBadges() {
   const r = await sb.from('requests').select('id', { count: 'exact', head: true }).eq('status', 'pending');
   $('#n-comments').textContent = c.count ? `(${c.count})` : '';
   $('#n-requests').textContent = r.count ? `(${r.count})` : '';
+  const n = await sb.from('note_requests').select('id', { count: 'exact', head: true }).eq('status', 'pending');
+  $('#n-notes').textContent = n.count ? `(${n.count})` : '';
 }
 
 /* ---------- 댓글 승인 ---------- */
 async function tabComments() {
   const { data, error } = await sb.from('comments')
-    .select('id,author_name,content,created_at,material_id,materials(title)')
+    .select('id,author_name,content,created_at,material_id,page_key,page_title,materials(title)')
     .eq('approved', false).order('created_at', { ascending: true });
 
   if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
@@ -74,7 +80,7 @@ async function tabComments() {
       <div class="card">
         <div class="row">
           <strong>${esc(c.author_name || '익명')}</strong>
-          <span class="tag">${esc(c.materials?.title || '')}</span>
+          <span class="tag">${c.page_key ? `<a href="/${esc(c.page_key)}/" target="_blank">${esc(c.page_title || c.page_key)}</a>` : esc(c.materials?.title || '')}</span>
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
         <p class="body" style="white-space:pre-wrap;margin:8px 0">${esc(c.content)}</p>
@@ -144,6 +150,97 @@ async function markSent(id) {
 
 function copyText(t) {
   navigator.clipboard.writeText(t).then(() => toast('복사했어요: ' + t));
+}
+
+/* ---------- 분석노트 신청 ---------- */
+async function tabNotes() {
+  const { data, error } = await sb.from('note_requests')
+    .select('id,user_id,page_key,num,status,created_at,comment_id,comments(author_name,content,approved,page_title)')
+    .order('created_at', { ascending: false }).limit(200);
+  if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
+  if (!data.length) return $('#panel').innerHTML = `<div class="card"><p class="muted">아직 들어온 신청이 없어요.</p></div>`;
+  const label = { pending: '<span class="tag wait">대기</span>', approved: '<span class="tag ok">승인</span>', rejected: '<span class="tag">거절</span>' };
+  $('#panel').innerHTML = `<p class="muted">승인하면 신청자 화면에 바로 다운로드 버튼이 생기고, 신청 댓글도 함께 승인돼 미션 개수에 합산돼요.</p>` +
+    data.map(r => `
+    <div class="card">
+      <div class="row">
+        <strong>${esc(r.comments?.author_name || '회원')}</strong> ${label[r.status]}
+        <span class="tag"><a href="/${esc(r.page_key)}/" target="_blank">${esc(r.comments?.page_title || r.page_key)}</a> · ${r.num}번</span>
+        <span class="meta">${fmtDate(r.created_at)}</span>
+      </div>
+      <p class="body" style="white-space:pre-wrap;margin:8px 0">${esc(r.comments?.content || '(댓글 삭제됨)')}</p>
+      ${r.status === 'pending' ? `<div class="row">
+        <button class="btn btn-gold btn-sm" onclick="decideNote(${r.id}, 'approved', ${r.comment_id || 'null'})">승인</button>
+        <button class="btn btn-danger btn-sm" onclick="decideNote(${r.id}, 'rejected', null)">거절</button></div>` : ''}
+    </div>`).join('');
+}
+
+async function decideNote(id, status, commentId) {
+  if (status === 'rejected' && !confirm('이 신청을 거절할까요? 거절하면 신청자가 이 회차에서 다시 신청할 수 있어요.')) return;
+  const { error } = await sb.from('note_requests').update({ status, decided_at: new Date().toISOString() }).eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  if (status === 'approved' && commentId) await sb.from('comments').update({ approved: true }).eq('id', commentId);
+  toast(status === 'approved' ? '승인했어요. 신청자가 바로 받을 수 있어요.' : '거절했어요.');
+  showTab('notes');
+}
+
+/* ---------- 분석노트 파일 ---------- */
+function pageKeyFrom(v) {
+  return v.trim().replace(/^https?:\/\/[^/]+/, '').replace(/^\/+|\/+$/g, '');
+}
+async function tabFiles() {
+  const { data } = await sb.from('note_files').select('id,page_key,num,title,path,created_at').order('page_key').order('num');
+  $('#panel').innerHTML = `
+    <div class="card">
+      <h2>➕ 번호별 분석노트 올리기</h2>
+      <p class="muted">과목 페이지 주소를 붙여넣고 번호와 PDF를 고르세요. 같은 번호를 다시 올리면 파일이 교체돼요.</p>
+      <input type="text" id="fpage" placeholder="예) https://data.likasuni.com/moe/go1/2026-06/eng/">
+      <div class="row mt">
+        <input type="number" id="fnum" placeholder="번호" min="1" max="45" style="width:90px">
+        <input type="text" id="ftitle" placeholder="설명(선택) 예) 빈칸 추론" style="flex:1;min-width:160px">
+      </div>
+      <input type="file" id="ffile" class="mt" accept="application/pdf" multiple>
+      <p class="meta">여러 파일을 한 번에 올릴 때는 파일 이름을 번호로(예: 30.pdf, 31.pdf) 해두면 번호가 자동으로 들어가요.</p>
+      <button class="btn btn-navy mt" onclick="uploadNotes()">올리기</button>
+    </div>
+    <h2>등록된 파일 ${data?.length || 0}개</h2>
+    ${(data || []).map(f => `
+      <div class="card"><div class="row between">
+        <div><strong><a href="/${esc(f.page_key)}/" target="_blank">${esc(f.page_key)}</a> · ${f.num}번</strong> ${f.title ? `<span class="tag">${esc(f.title)}</span>` : ''}<br>
+        <span class="meta">${fmtDate(f.created_at)}</span></div>
+        <button class="btn btn-danger btn-sm" onclick="removeNote(${f.id}, '${esc(f.path)}')">삭제</button>
+      </div></div>`).join('')}`;
+}
+
+async function uploadNotes() {
+  const page_key = pageKeyFrom($('#fpage').value);
+  const files = [...$('#ffile').files];
+  if (!page_key) return toast('과목 페이지 주소를 넣어주세요.');
+  if (!files.length) return toast('PDF 파일을 골라주세요.');
+  let ok = 0;
+  for (const file of files) {
+    const fromName = parseInt((file.name.match(/(\d+)/) || [])[1], 10);
+    const num = files.length === 1 && $('#fnum').value ? Number($('#fnum').value) : fromName;
+    if (!num) { toast(`${file.name}: 번호를 알 수 없어요.`); continue; }
+    const path = `${page_key}/${num}.pdf`;
+    const up = await sb.storage.from('notes').upload(path, file, { upsert: true, contentType: 'application/pdf' });
+    if (up.error) { toast(`${num}번 업로드 실패: ${up.error.message}`); continue; }
+    const title = files.length === 1 ? $('#ftitle').value.trim() || null : null;
+    const { error } = await sb.from('note_files').upsert({ page_key, num, path, ...(title ? { title } : {}) }, { onConflict: 'page_key,num' });
+    if (error) { toast(`${num}번 등록 실패: ${error.message}`); continue; }
+    ok++;
+  }
+  toast(`${ok}개 올렸어요.`);
+  showTab('files');
+}
+
+async function removeNote(id, path) {
+  if (!confirm('이 파일을 삭제할까요? 이 번호의 신청 기록도 함께 삭제돼요.')) return;
+  await sb.storage.from('notes').remove([path]);
+  const { error } = await sb.from('note_files').delete().eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast('삭제했어요.');
+  showTab('files');
 }
 
 /* ---------- 자료 관리 ---------- */

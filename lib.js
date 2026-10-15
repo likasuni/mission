@@ -53,4 +53,68 @@
     load();
   }
   load();
+  notes();
+
+  /* ---------- 번호별 분석노트 신청 (회차 페이지당 1인 1개, 승인 후 다운로드) ---------- */
+  async function notes() {
+    const { data: files } = await sb.from('note_files').select('num,title,path').eq('page_key', key).order('num');
+    if (!files || !files.length) return;
+    let card = document.getElementById('notes');
+    if (!card) {
+      card = document.createElement('section');
+      card.id = 'notes'; card.className = 'card mission';
+      box.parentNode.insertBefore(card, box);
+    }
+    const nums = files.map(f => f.num).join(', ');
+    let mine = null;
+    if (user) {
+      const { data } = await sb.from('note_requests').select('id,num,status,created_at')
+        .eq('page_key', key).neq('status', 'rejected').maybeSingle();
+      mine = data;
+    }
+    let inner = '';
+    if (!user) {
+      inner = `<p class="muted">로그인 후 댓글로 신청하면 원하는 번호의 분석노트 PDF를 받을 수 있어요.</p>${loginButtons()}`;
+    } else if (mine && mine.status === 'approved') {
+      inner = `<p>✅ <b>${mine.num}번 분석노트</b> 신청이 승인됐어요.</p>
+        <button class="btn btn-gold" id="ndl">${mine.num}번 PDF 다운로드</button>`;
+    } else if (mine) {
+      inner = `<p>⏳ <b>${mine.num}번 분석노트</b> 신청 완료! 원장님 확인 후 이 자리에 다운로드 버튼이 생겨요.</p>`;
+    } else {
+      inner = `<p class="muted">이 회차에서 <b>1인 1개 번호</b>를 신청할 수 있어요. 원하는 번호를 고르고, 그 문항에 대한 질문이나 학습 후기를 <b>20자 이상</b> 남겨주세요. 승인되면 PDF를 받을 수 있어요.</p>
+        <div class="row mt"><select id="nnum">${files.map(f => `<option value="${f.num}">${f.num}번${f.title ? ' · ' + esc(f.title) : ''}</option>`).join('')}</select></div>
+        <textarea id="nbody" class="mt" maxlength="1000" placeholder="예) 30번 빈칸 근거를 못 찾았어요. 분석노트로 구조를 다시 보고 싶어요."></textarea>
+        <div class="row between mt"><span class="meta"><span id="ncount">0</span>자</span>
+        <button class="btn btn-navy" id="nbtn">분석노트 신청</button></div>`;
+    }
+    card.innerHTML = `<h2>📘 번호별 분석노트 신청</h2><p class="meta">신청 가능 번호: ${nums}</p>${inner}`;
+    const dl = document.getElementById('ndl');
+    if (dl) dl.onclick = async () => {
+      const f = files.find(x => x.num === mine.num);
+      const { data, error } = await sb.storage.from('notes').createSignedUrl(f.path, 600, { download: `${title} ${f.num}번 분석노트.pdf` });
+      if (error) return toast('다운로드 오류: ' + error.message);
+      location.href = data.signedUrl;
+    };
+    const t = document.getElementById('nbody');
+    if (t) {
+      t.oninput = () => (document.getElementById('ncount').textContent = t.value.trim().length);
+      document.getElementById('nbtn').onclick = async () => {
+        const num = Number(document.getElementById('nnum').value);
+        const body = t.value.trim();
+        if (body.length < 20) return toast('20자 이상 작성해 주세요.');
+        const btn = document.getElementById('nbtn'); btn.disabled = true;
+        const { data: c, error: e1 } = await sb.from('comments').insert({
+          page_key: key, page_title: title, author_name: displayName(user), content: `[${num}번 분석노트 신청] ${body}`
+        }).select('id').single();
+        if (e1) { btn.disabled = false; return toast('등록 실패: ' + e1.message); }
+        const { error: e2 } = await sb.from('note_requests').insert({ page_key: key, num, comment_id: c.id });
+        if (e2) {
+          btn.disabled = false;
+          return toast(e2.code === '23505' ? '이 회차는 이미 신청하셨어요. (1인 1개)' : '신청 실패: ' + e2.message);
+        }
+        toast(`${num}번 분석노트 신청 완료! 승인 후 받을 수 있어요.`);
+        notes(); load();
+      };
+    }
+  }
 })();

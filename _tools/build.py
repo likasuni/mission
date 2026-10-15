@@ -168,7 +168,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="/common.js"></script>
-<script src="/lib.js"></script>
+<script src="/lib.js?v=2"></script>
 </body>
 </html>
 '''
