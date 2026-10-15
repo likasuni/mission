@@ -1,26 +1,24 @@
 // 분석노트 링크 열기: GET ?t=토큰 → 유효기간(24시간) 확인 → 공개 구글드라이브에서 파일을 가져와 PDF로 전달
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
-function page(status: number, msg: string) {
-  const html = `<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>리카수니 자료실</title>
-<body style="font-family:sans-serif;padding:40px 20px;text-align:center;color:#172554"><h2>리카수니 자료실</h2><p>${msg}</p>
-<p><a href="https://data.likasuni.com/" style="color:#1e3a8a">자료실로 가기</a></p></body>`;
-  return new Response(html, { status, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+// 오류는 자료실 안내 페이지로 보냄 (Supabase 함수는 HTML 화면을 그대로 보여주지 못함)
+function page(_status: number, code: string) {
+  return new Response(null, { status: 302, headers: { Location: `https://data.likasuni.com/get/?e=${code}` } });
 }
 
 Deno.serve(async (req) => {
-  if (req.method !== 'GET') return page(405, '지원하지 않는 요청이에요.');
+  if (req.method !== 'GET') return page(405, 'bad');
   const t = new URL(req.url).searchParams.get('t') || '';
-  if (!/^[a-f0-9]{32}$/.test(t)) return page(400, '잘못된 링크예요.');
+  if (!/^[a-f0-9]{32}$/.test(t)) return page(400, 'bad');
   const db = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!);
 
   const { data: o } = await db.from('note_orders').select('label,drive_id,file_name,expires_at,status').eq('link_token', t).maybeSingle();
-  if (!o || o.status !== 'sent' || !o.drive_id) return page(404, '링크를 찾을 수 없어요.');
-  if (Date.now() > new Date(o.expires_at).getTime()) return page(410, '링크 사용 기간(24시간)이 지났어요. 자료실에서 다시 요청해 주세요.');
+  if (!o || o.status !== 'sent' || !o.drive_id) return page(404, 'notfound');
+  if (Date.now() > new Date(o.expires_at).getTime()) return page(410, 'expired');
 
   const g = await fetch(`https://drive.usercontent.google.com/download?id=${encodeURIComponent(o.drive_id)}&export=download&confirm=t`);
   const type = g.headers.get('content-type') || '';
-  if (!g.ok || !type.includes('pdf')) { console.log('drive fetch failed', g.status, type); return page(502, '파일을 가져오지 못했어요. 잠시 후 다시 시도해 주세요.'); }
+  if (!g.ok || type.includes('text/html')) { console.log('drive fetch failed', g.status, type); return page(502, 'fail'); }
   const name = `${o.label}.pdf`;
   return new Response(g.body, {
     headers: {

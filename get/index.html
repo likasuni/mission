@@ -20,9 +20,19 @@
 <p class="meta">파일이 열리지 않으면 위 버튼을 눌러주세요. 링크는 받은 뒤 24시간 동안만 열 수 있어요.</p>
 </div></main>
 <script>
-const t = new URLSearchParams(location.search).get('t') || '';
+const qs = new URLSearchParams(location.search);
+const t = qs.get('t') || '', err = qs.get('e');
 const go = document.getElementById('go');
-if (!/^[a-f0-9]{32}$/.test(t)) {
+const ERR = {
+  bad: '잘못된 링크예요. 받은 링크를 다시 확인해 주세요.',
+  notfound: '링크를 찾을 수 없어요. 자료실에서 다시 요청해 주세요.',
+  expired: '링크 사용 기간(24시간)이 지났어요. 자료실에서 다시 요청해 주세요.',
+  fail: '파일을 가져오지 못했어요. 잠시 후 다시 시도해 주세요.'
+};
+if (err) {
+  document.getElementById('msg').innerHTML = (ERR[err] || ERR.fail) + '<br><a href="/notes/">분석노트 요청하러 가기 →</a>';
+  go.style.display = 'none';
+} else if (!/^[a-f0-9]{32}$/.test(t)) {
   document.getElementById('msg').textContent = '잘못된 링크예요. 받은 링크를 다시 확인해 주세요.';
   go.style.display = 'none';
 } else {
