@@ -5,7 +5,7 @@ import { createClient } from 'npm:@supabase/supabase-js@2';
 
 const LINK_HOURS = 24;
 const ORIGINS = ['https://data.likasuni.com', 'http://localhost:8765'];
-const BOOKS = ['수능특강 라이트']; // 부교재 목록 (이름의 각 단어가 파일명에 들어가야 함)
+const BOOKS = ['수능특강 라이트']; // 부교재 목록 (이름의 각 단어가 폴더·파일 이름에 들어가야 함)
 
 const cors = (req: Request) => {
   const o = req.headers.get('origin') || '';
@@ -20,7 +20,7 @@ const reply = (req: Request, status: number, body: unknown) =>
   new Response(JSON.stringify(body), { status, headers: { ...cors(req), 'Content-Type': 'application/json' } });
 
 // 공개 폴더 목록 읽기 (하위 폴더 포함, 5분 캐시)
-type Entry = { id: string; name: string };
+type Entry = { id: string; name: string; path: string[] };
 let cache: { at: number; root: string; files: Entry[] } | null = null;
 const unescape = (t: string) => t.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 async function listFolder(id: string) {
@@ -34,20 +34,36 @@ async function listFolder(id: string) {
 async function listTree(root: string): Promise<Entry[]> {
   if (cache && cache.root === root && Date.now() - cache.at < 5 * 60e3) return cache.files;
   const files: Entry[] = [];
-  let queue = root.split(',').map((x) => x.trim()).filter(Boolean), seen = 0;
-  while (queue.length && seen < 80) {
-    const batch = queue.splice(0, 8); seen += batch.length;
-    const lists = await Promise.all(batch.map((id) => listFolder(id).catch(() => [])));
-    for (const l of lists) for (const e of l) e.folder ? queue.push(e.id) : files.push({ id: e.id, name: e.name });
+  const queue = root.split(',').map((x) => x.trim()).filter(Boolean).map((id) => ({ id, path: [] as string[] }));
+  let seen = 0;
+  while (queue.length && seen < 200) {
+    const batch = queue.splice(0, 10); seen += batch.length;
+    const lists = await Promise.all(batch.map((f) => listFolder(f.id).catch(() => [])));
+    lists.forEach((l, i) => {
+      for (const e of l) e.folder ? queue.push({ id: e.id, path: [...batch[i].path, e.name] }) : files.push({ id: e.id, name: e.name, path: batch[i].path });
+    });
   }
   cache = { at: Date.now(), root, files };
   return files;
 }
+// 파일 이름에 번호가 있는지: '30번', '41-42번', 또는 이름 자체가 '30.pdf', '41-42.pdf'
 function hasNum(name: string, n: number) {
   const re = /(\d+)\s*(?:[-~]\s*(\d+))?\s*번/g;
   let m;
   while ((m = re.exec(name))) { const a = +m[1], b = m[2] ? +m[2] : a; if (n >= a && n <= b) return true; }
+  const bare = name.match(/^(\d+)\s*(?:[-~]\s*(\d+))?\s*\.pdf$/i);
+  if (bare) { const a = +bare[1], b = bare[2] ? +bare[2] : a; return n >= a && n <= b; }
   return false;
+}
+// 모의고사 회차: 파일 이름(2026-09_고1_…) 또는 폴더 이름(2026년 9월 고1)에서 읽음
+function moeKey(f: Entry): number[] | null {
+  let m = f.name.match(/^(\d{4})-(\d{2})_고(\d)/);
+  if (m) return [+m[1], +m[2], +m[3]];
+  for (const p of [...f.path].reverse()) {
+    m = p.match(/(\d{4})\s*년\s*(\d{1,2})\s*월\s*고\s*(\d)/);
+    if (m) return [+m[1], +m[2], +m[3]];
+  }
+  return null;
 }
 
 const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -73,9 +89,7 @@ Deno.serve(async (req) => {
   if (b.kind === 'moe') {
     const y = Number(b.y), m = Number(b.m), g = Number(b.g);
     if (!(y >= 2015 && y <= 2030 && m >= 1 && m <= 12 && g >= 1 && g <= 3)) return reply(req, 400, { error: '회차를 확인해 주세요.' });
-    const mm = String(m).padStart(2, '0');
     label = `${y}년 ${m}월 고${g} 영어 모의고사 ${n}번 분석노트`;
-    must = [`^${y}-${mm}_고${g}_`];
     query = { y, m, g, n };
   } else if (b.kind === 'book') {
     const book = String(b.book || ''), unit = Number(b.unit);
@@ -98,7 +112,12 @@ Deno.serve(async (req) => {
   if (!cfg?.v) return reply(req, 503, { error: '자료 연결 준비 중이에요. 잠시 후 다시 시도해 주세요.' });
   const all = await listTree(cfg.v);
   const res = must.map((x) => new RegExp(x));
-  const files = all.filter((f) => /\.pdf$/i.test(f.name) && f.name.includes('분석노트') && res.every((re) => re.test(f.name)) && hasNum(f.name, n));
+  const files = all.filter((f) => {
+    if (!/\.pdf$/i.test(f.name) || /문제|정답|해설|듣기/.test(f.name) || !hasNum(f.name, n)) return false;
+    if (b.kind === 'moe') { const k = moeKey(f); return !!k && k[0] === query.y && k[1] === query.m && k[2] === query.g; }
+    const full = [...f.path, f.name].join(' ');
+    return res.every((re) => re.test(full));
+  });
 
   const name = user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.nickname || '회원';
   if (!files.length) {
@@ -132,7 +151,7 @@ Deno.serve(async (req) => {
 
   await db.from('note_orders').insert({
     user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'sent',
-    drive_id: f.id, file_name: f.name, link_token: token, expires_at: expires.toISOString(), kakao_sent: kakao,
+    drive_id: f.id, file_name: [...f.path, f.name].join('/'), link_token: token, expires_at: expires.toISOString(), kakao_sent: kakao,
   });
   return reply(req, 200, { ok: true, label, link, expires_at: expires.toISOString(), kakao, kakao_scope: kakaoError.includes('insufficient') || kakaoError.includes('-402') });
 });
