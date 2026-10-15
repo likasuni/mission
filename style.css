@@ -135,8 +135,11 @@ label.check { display: flex; gap: 8px; align-items: flex-start; font-size: .88re
 .back { display: inline-block; margin-bottom: 12px; color: var(--navy); font-weight: 700; text-decoration: none; }
 
 /* 광고 자리 (코드를 넣기 전에는 자동으로 숨김) */
-.ad-slot { margin: 20px 0; min-height: 100px; text-align: center; }
+.ad-slot { margin: 20px 0; text-align: center; }
 .ad-slot:empty { display: none; }
+/* 광고가 채워지지 않으면 빈 자리를 숨김 */
+ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
+.ad-slot:has(ins[data-ad-status="unfilled"]) { display: none; }
 
 /* 관리자 탭 */
 .tabs { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
