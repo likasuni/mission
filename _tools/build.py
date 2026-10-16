@@ -343,10 +343,10 @@ for idx, k in enumerate(keys_sorted):
             en_top = (f'''<section class="card en-sec" id="notes"><h2>📘 문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
 <p class="hot">🔥 <b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. (1인 하루 1개)</p>
-<div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>'
+<div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>' + ad()
                 + ('<section class="card en-sec" id="var"><h2>✏️ 변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
-                   if vs0 else '<section class="card en-sec" id="var"><h2>✏️ 변형문제</h2><p class="muted">이 회차 변형문제는 준비 중이에요.</p></section>')
+                   if vs0 else '<section class="card en-sec" id="var"><h2>✏️ 변형문제</h2><p class="muted">이 회차 변형문제는 준비 중이에요.</p></section>') + ad()
                 + (f'<section class="card en-sec" id="words"><h2>📝 영어 단어 총정리</h2><p class="muted">이 회차 18~45번 지문의 핵심 어휘를 한 장에 정리했어요.</p><div class="dl"><a href="{view(wd)}" target="_blank" rel="noopener">미리보기</a><a href="{down(wd)}" rel="noopener">다운로드</a></div></section>'
                    if wd else '<section class="card en-sec" id="words"><h2>📝 영어 단어 총정리</h2><p class="muted">이 회차 단어 자료는 준비 중이에요.</p></section>'))
         if s == '영어':

@@ -139,7 +139,8 @@ label.check { display: flex; gap: 8px; align-items: flex-start; font-size: .88re
 
 /* 광고 자리 (코드를 넣기 전에는 자동으로 숨김) */
 /* 광고 자리를 미리 확보해 화면 밀림(CLS) 방지, 채워지지 않으면 접힘 */
-.ad-slot { margin: 20px 0; text-align: center; min-height: 250px; }
+.ad-slot { margin: 28px 0; text-align: center; min-height: 250px; }
+.ad-slot::before { content: "광고"; display: block; margin-bottom: 4px; font-size: .7rem; color: var(--muted); letter-spacing: .05em; }
 .ad-slot:empty { display: none; }
 /* 광고가 채워지지 않으면 빈 자리를 숨김 */
 ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
