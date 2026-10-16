@@ -549,7 +549,7 @@ def book_cover(b):
     for ext in ('jpg', 'jpeg', 'png', 'webp'):
         f = f'img/books/{b["cover"]}.{ext}'
         if os.path.exists(os.path.join(ROOT, f)):
-            return f'<div class="book-cover"><img src="/{f}" alt="{e(b["full"])} 표지" loading="lazy" width="300" height="400"></div>'
+            return f'<div class="book-cover"><img src="/{f}" alt="{e(b["full"])} 표지" loading="lazy" width="320" height="400"></div>'
     pub = 'EBS' if b['full'].startswith('EBS') or 'EBS' in b['full'] else '부교재'
     return (f'<div class="book-cover ph"><span class="ph-pub">{e(pub)}</span>'
             f'<b>{e(b["name"])}</b><span class="ph-who">{e(b["who"].split(" · ")[0])}</span></div>')
