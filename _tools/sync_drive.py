@@ -3,6 +3,7 @@
 import json, re, html, os, urllib.request, concurrent.futures as cf
 
 ROOTS = {'모의고사': '1D5CHVcncu1G1hUzoSR2iJFNMB8H0rsQ8', '대수능': '1p5BG3oPRZxfi8xfyvMhAHsVAlTAGH4dB'}
+VROOTS = {'변형문제': '1e0D-eA_TOZ-4_wPEKlWDnoG-SGu2bXkS'}  # 모의고사 변형문제 (크기 확인 없이 목록만)
 UA = {'User-Agent': 'Mozilla/5.0'}
 RE = re.compile(r'<div class="flip-entry" id="entry-([\w-]+)"[\s\S]*?<a href="([^"]+)"[\s\S]*?<div class="flip-entry-title">([^<]*)</div>')
 
@@ -26,8 +27,8 @@ def listing(fid):
             pass
     print('목록 실패', fid); return []
 
-def walk():
-    out, level = [], [(fid, [name]) for name, fid in ROOTS.items()]
+def walk(roots=ROOTS):
+    out, level = [], [(fid, [name]) for name, fid in roots.items()]
     with cf.ThreadPoolExecutor(12) as ex:
         while level:
             res = list(ex.map(lambda x: listing(x[0]), level))
@@ -62,4 +63,7 @@ with cf.ThreadPoolExecutor(16) as ex:
 for f in files:
     f['size'] = known.get(f['id']) or sizes.get(f['id'], 0)
 json.dump(files, open('files.json', 'w'), ensure_ascii=False)
+var = walk(VROOTS)
+json.dump(var, open('variants.json', 'w'), ensure_ascii=False)
+print('variants', len(var))
 print('files', len(files), 'new size lookups', len(need))

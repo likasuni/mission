@@ -28,7 +28,7 @@ a { color: inherit; }
 /* 상단 바 */
 .top { background: linear-gradient(135deg, var(--navy-d), var(--navy)); color: #fff; }
 .top-in {
-  max-width: 860px; margin: 0 auto; padding: 14px 16px;
+  max-width: 1040px; margin: 0 auto; padding: 14px 16px;
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
 }
 .brand { font-weight: 800; font-size: 1.15rem; text-decoration: none; color: #fff; }
@@ -37,7 +37,7 @@ a { color: inherit; }
 .avatar { width: 28px; height: 28px; border-radius: 50%; }
 
 /* 본문 */
-.wrap { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 20px 16px 60px; }
 .hero { margin: 6px 0 18px; }
 .hero h1 { font-size: 1.5rem; margin: 0 0 6px; color: var(--navy-d); }
 .hero p { margin: 0; color: var(--muted); }
@@ -171,7 +171,7 @@ footer a { color: var(--muted); margin: 0 6px; }
    기출 자료실 (2026-10 추가)
    ========================================= */
 .nav { background: #fff; border-bottom: 1px solid var(--line); }
-.nav-in { max-width: 860px; margin: 0 auto; padding: 0 16px; display: flex; gap: 4px; overflow-x: auto; }
+.nav-in { max-width: 1040px; margin: 0 auto; padding: 0 16px; display: flex; gap: 4px; overflow-x: auto; }
 .nav-in a { padding: 11px 12px; font-weight: 700; font-size: .92rem; color: var(--navy); text-decoration: none; white-space: nowrap; border-bottom: 3px solid transparent; }
 .nav-in a.on, .nav-in a:hover { border-bottom-color: var(--gold); }
 
@@ -270,3 +270,5 @@ select { border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; 
 .banner-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
 .banner-row .banner { margin: 0; height: 100%; }
 @media (max-width: 640px) { .banner-row { grid-template-columns: 1fr; } }
+.var { margin: 6px 0 12px; padding: 12px; border-radius: 10px; background: #f3f6ff; border: 1px solid #d5ddf5; }
+.var p { margin: 4px 0 8px; }

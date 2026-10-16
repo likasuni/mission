@@ -41,6 +41,19 @@ CSS = _re.sub(r'\s+', ' ', _re.sub(r'/\*.*?\*/', '', open(os.path.join(ROOT, 'st
 CSS = _re.sub(r'\s*([{};:,>])\s*', r'\1', CSS).strip()
 INFO = json.load(open(os.path.join(ROOT, '_tools', 'exam_info.json')))
 
+# 리카수니 변형문제 (드라이브 '모의고사 변형문제' 폴더, sync_drive.py 가 variants.json 으로 저장)
+VAR = collections.defaultdict(list)
+_vp = os.path.join(ROOT, '_tools', 'variants.json')
+for v in (json.load(open(_vp)) if os.path.exists(_vp) else []):
+    t = v['title']
+    m = _re.search(r'(\d{4})\s*(년|학년도)[\s_]*(\d{1,2})\s*월[\s_]*고\s*(\d)', t)
+    nm = _re.search(r'[_\s](\d{1,2}(?:\s*[~-]\s*\d{1,2})?)\s*번', t)
+    if not m or not nm: continue
+    y, mo, g = int(m.group(1)), int(m.group(3)), int(m.group(4))
+    if g == 3 and mo in (6, 9) and m.group(2) == '년': y += 1  # 고3 모의평가는 학년도 기준 회차로
+    VAR[('moe', g, y, mo)].append((nm.group(1).replace(' ', '').replace('-', '~'), v['id']))
+def vkey(n): return int(_re.match(r'\d+', n).group())
+
 def ikey(k):
     ex, g, y, m = k
     return f'moe-{g}-{y}-{m}' if ex == 'moe' else f'sn-{y}'
@@ -288,10 +301,14 @@ for idx, k in enumerate(keys_sorted):
         extra = ''
         if s == '영어':
             pre = f' data-y="{k[2]}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else ''
+            vs = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
+            var_html = ('<div class="soon"><b>변형문제</b> · 준비 중이에요</div>' if not vs else
+                        '<div class="var"><b>✏️ 리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
+                        + ''.join(f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs) + '</div></div>')
             extra = f'''<section class="card mission" id="note-req"{pre}><h2>📘 분석노트 요청</h2><p class="muted">이 회차 문항별 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>
 <div class="card"><h2>📚 리카수니 영어 자료</h2>
 <div class="soon"><b>문항별 분석노트</b> · 위에서 번호를 골라 카톡으로 받으세요</div>
-<div class="soon"><b>변형문제</b> · 준비 중이에요</div>
+{var_html}
 <div class="soon"><b>어휘 학습노트</b> · 준비 중이에요</div>
 <p class="muted">자료가 올라오면 이 페이지에 바로 추가돼요. 질문을 남겨두시면 먼저 알려드릴게요!</p></div>'''
         # 같은 과목 다른 회차
