@@ -6,7 +6,7 @@ import { createClient } from 'npm:@supabase/supabase-js@2';
 const LINK_HOURS = 24;
 const ORIGINS = ['https://data.likasuni.com', 'http://localhost:8765'];
 // 부교재 목록 → 단위(강/회). 이름의 각 단어가 드라이브 폴더 이름에 들어가야 함 (lib.js NOTE_BOOK_CFG 와 같게)
-const BOOKS: Record<string, string> = { '수능특강 라이트': '강', '리딩파워 기본': '강', '리딩파워 완성': '강', '올림포스 영어독해 기본1': '강', '하루 6개 1등급 모의고사 고1': '회', '하루 6개 1등급 모의고사 고2': '회' };
+const BOOKS: Record<string, string> = { '수능특강 라이트': '강', '리딩파워 기본': '강', '리딩파워 완성': '강', '올림포스 영어독해 기본1': '강', '하루 6개 1등급 모의고사 고1': '회', '하루 6개 1등급 모의고사 고2': '회', '올림포스 전국연합학력평가 기출문제집 고1': '회', '올림포스 전국연합학력평가 기출문제집 고2': '회' };
 
 const cors = (req: Request) => {
   const o = req.headers.get('origin') || '';

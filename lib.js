@@ -12,6 +12,8 @@ const NOTE_BOOK_CFG = {
   '올림포스 영어독해 기본1': { u: '강', max: 30, n: 10 },
   '하루 6개 1등급 모의고사 고1': { u: '회', max: 40, n: 6 },
   '하루 6개 1등급 모의고사 고2': { u: '회', max: 40, n: 6 },
+  '올림포스 전국연합학력평가 기출문제집 고1': { u: '회', max: 30, from: 18, n: 45 },
+  '올림포스 전국연합학력평가 기출문제집 고2': { u: '회', max: 30, from: 18, n: 45 },
 };
 const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 
@@ -42,7 +44,7 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
       </div>`).join('') || '<p class="muted">아직 댓글이 없어요. 첫 댓글을 남겨 주세요!</p>';
 
     const form = user ? `
-      <p class="muted">이 시험에 대한 질문이나 공부 후기를 <b>댓글</b>로 남겨 주세요. (20자 이상, 원장님 확인 후 공개)<br>
+      <p class="muted">이 시험에 대한 질문이나 공부 후기를 <b>댓글</b>로 남겨 주세요. 짧은 질문도 괜찮아요. (원장님 확인 후 공개)<br>
       분석노트를 받고 싶다면 댓글 대신 <a href="/notes/"><b>📘 분석노트 요청</b></a>을 이용해 주세요.</p>
       <textarea id="cbody" maxlength="1000" placeholder="댓글 예) 31번 빈칸이 어려웠는데 해설을 보고 근거를 찾았어요. 다음엔 시간 배분을 더 신경 써야겠어요."></textarea>
       <div class="row between mt"><span class="meta"><span id="ccount">0</span>자</span>
@@ -59,7 +61,7 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 
   async function submit() {
     const content = document.getElementById('cbody').value.trim();
-    if (content.length < 20) return toast('20자 이상 작성해 주세요.');
+    if (content.length < 2) return toast('댓글 내용을 입력해 주세요.');
     const btn = document.getElementById('cbtn'); btn.disabled = true;
     const { error } = await sb.from('comments').insert({
       page_key: key, page_title: title, author_name: displayName(user), content
@@ -109,7 +111,7 @@ async function noteRequest(user) {
   const numOpts = k => {
     if (k !== 'book') return opt(range(1, 45), 30);
     const c = bcfg(curBook());
-    return (c.gw ? '<option value="0">Gateway</option>' : '') + opt(range(1, c.n), 1);
+    return (c.gw ? '<option value="0">Gateway</option>' : '') + opt(range(c.from || 1, c.n), c.from || 1);
   };
   card.innerHTML = head + `
     <div class="tabs mt"><button class="tab${startBook ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button></div>
