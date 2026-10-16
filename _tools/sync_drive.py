@@ -66,4 +66,10 @@ json.dump(files, open('files.json', 'w'), ensure_ascii=False)
 var = walk(VROOTS)
 json.dump(var, open('variants.json', 'w'), ensure_ascii=False)
 print('variants', len(var))
+# 분석노트·단어 폴더 (목록만): 자료실 영어 페이지의 번호 버튼·단어장 연결에 사용
+EXTRA = {'모의고사 분석노트': '1jSEPdOdM4RD7GplBWwF3jiRKFWToBOBq', '부교재 분석노트': '1vg17CVTqjIRk-hdoA3PhrJ1RTUn84lSO',
+         '모의고사 단어': '1Apb5ZT_Fb1jQoV1-Otj9oWUqeNVsfmNj', '부교재 단어': '1Lq_Ps0Hp6VPsfFLVQwlGzh52DFBzgL9_'}
+ext = walk(EXTRA)
+json.dump(ext, open('extras.json', 'w'), ensure_ascii=False)
+print('extras', len(ext))
 print('files', len(files), 'new size lookups', len(need))
