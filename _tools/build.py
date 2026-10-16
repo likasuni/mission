@@ -352,8 +352,8 @@ body = f'''<section class="hero"><h1>모의고사·수능 기출문제 전과목
 </div>
 <div class="card"><h2>🆕 최근 회차</h2><div class="chips">''' + ''.join(
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '''</div></div>
-<a class="banner note" href="/notes/"><b>📘 영어 모의고사 분석노트 요청</b><p>원하는 회차·번호를 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개, 링크는 24시간 동안 열려요.</p></a>
-<a class="banner book" href="/books/"><b>📚 EBS 부교재 분석노트 요청방</b><p>수능특강 라이트 등 부교재 분석노트. 문항 1개는 카톡으로 무료, 강 단위 구매도 가능해요.</p></a>
+<div class="banner-row"><a class="banner note" href="/notes/"><b>📘 영어 모의고사 분석노트 요청</b><p>원하는 회차·번호를 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개, 링크는 24시간 동안 열려요.</p></a>
+<a class="banner book" href="/books/"><b>📚 부교재 분석노트 요청방</b><p>수능특강 라이트·올림포스·리딩파워 등 교재별 분석노트. 문항 1개는 카톡으로 무료예요.</p></a></div>
 ''' + ad()
 nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
 <p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트를 카카오톡으로 받아보세요.</p>

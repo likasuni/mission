@@ -267,3 +267,6 @@ select { border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; 
 .book-btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .book-btns .btn { flex: 1 1 180px; text-align: center; }
 .book-soon { margin: 0 0 14px; padding: 10px 12px; border-radius: 10px; background: #fff8e6; border: 1px solid #f3d48a; color: #6b4e00; font-size: .9rem; }
+.banner-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+.banner-row .banner { margin: 0; height: 100%; }
+@media (max-width: 640px) { .banner-row { grid-template-columns: 1fr; } }
