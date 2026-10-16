@@ -167,7 +167,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/english/', '🇬🇧 영어 모의고사'), ('/books/', '📚 부교재'), ('/exams/', '📄 전과목 기출'), ('/notes/', '📘 분석노트 요청')]
+NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/books/', '부교재'), ('/exams/', '전과목 기출'), ('/notes/', '분석노트 요청')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -183,7 +183,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
     nav = ''.join(f'<a href="{u}" class="{"on " if u == act else ""}">{n}</a>' for u, n in NAV)
     cm = ''
     if comments:
-        cm = f'<section class="card" id="comments" data-page-key="{e(comments[0])}" data-page-title="{e(comments[1])}"><h2>💬 댓글</h2><p class="muted">댓글 불러오는 중...</p></section>'
+        cm = f'<section class="card" id="comments" data-page-key="{e(comments[0])}" data-page-title="{e(comments[1])}"><h2>댓글</h2><p class="muted">댓글 불러오는 중...</p></section>'
     out = f'''<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -206,7 +206,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 {''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
 <body>
-<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><a class="hdr-cta" href="/notes/">📘 분석노트 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
+<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><a class="hdr-cta" href="/notes/">분석노트 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
 <nav class="nav"><div class="nav-in">{nav}</div></nav>
 <main class="wrap">
 {crumb_html}
@@ -221,7 +221,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=11'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=12'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -292,18 +292,18 @@ for idx, k in enumerate(keys_sorted):
     inf = INFO.get(ikey(k), {})
     note_banner = ''
     if k[0] == 'moe' and '영어' in subs:
-        note_banner = (f'<a class="banner note" href="/notes/?y={k[2]}&m={k[3]}&g={k[1]}"><b>📘 이 회차 영어 문항별 분석노트, 카톡으로 받기</b>'
+        note_banner = (f'<a class="banner note" href="/notes/?y={k[2]}&m={k[3]}&g={k[1]}"><b>이 회차 영어 문항별 분석노트, 카톡으로 받기</b>'
                        '<p>번호만 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개 · 링크 24시간</p></a>')
     info_html = ''
     if inf.get('summary'):
-        info_html += '<div class="card"><h2>📝 시험 요약</h2>' + (f'<p class="muted">{e(inf["date"])}</p>' if inf.get('date') else '') + \
+        info_html += '<div class="card"><h2>시험 요약</h2>' + (f'<p class="muted">{e(inf["date"])}</p>' if inf.get('date') else '') + \
                      '<ul class="sum">' + ''.join(f'<li>{e(x)}</li>' for x in inf['summary']) + '</ul></div>'
     if inf.get('rows'):
-        info_html += f'<div class="card"><h2>📊 {e(name)} 등급컷</h2>{cut_table(inf["rows"])}{CUT_NOTE}</div>'
+        info_html += f'<div class="card"><h2>{e(name)} 등급컷</h2>{cut_table(inf["rows"])}{CUT_NOTE}</div>'
     else:
-        info_html += '<div class="card"><h2>📊 등급컷</h2><p class="muted">확정 등급컷을 정리하고 있어요. 확인되는 대로 업데이트할게요.</p></div>'
+        info_html += '<div class="card"><h2>등급컷</h2><p class="muted">확정 등급컷을 정리하고 있어요. 확인되는 대로 업데이트할게요.</p></div>'
     if inf.get('wrong'):
-        info_html += '<div class="card"><h2>🔥 오답이 많았던 문항</h2><table class="info">' + ''.join(
+        info_html += '<div class="card"><h2>오답이 많았던 문항</h2><table class="info">' + ''.join(
             f'<tr><th>{e(dname(x))}</th><td>{e(v)}</td></tr>' for x, v in inf['wrong'].items()) + '</table></div>'
     pn = '<div class="pn">' + (f'<a href="{s_url(prev_k)}">← {s_name(prev_k)}</a>' if prev_k else '<span></span>') + \
          (f'<a href="{s_url(next_k)}">{s_name(next_k)} →</a>' if next_k else '<span></span>') + '</div>'
@@ -340,22 +340,22 @@ for idx, k in enumerate(keys_sorted):
                 return f'<span class="nb off" title="준비 중">{e(n)}번</span>'
             vs0 = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
             wd = WORDS.get(k)
-            en_top = (f'''<section class="card en-sec" id="notes"><h2>📘 문항별 분석노트</h2>
+            en_top = (f'''<section class="card en-sec" id="notes"><h2>문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
-<p class="hot">🔥 <b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. (1인 하루 1개)</p>
+<p class="hot"><b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. (1인 하루 1개)</p>
 <div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>' + ad()
-                + ('<section class="card en-sec" id="var"><h2>✏️ 변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
+                + ('<section class="card en-sec" id="var"><h2>변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
-                   if vs0 else '<section class="card en-sec" id="var"><h2>✏️ 변형문제</h2><p class="muted">이 회차 변형문제는 준비 중이에요.</p></section>') + ad()
-                + (f'<section class="card en-sec" id="words"><h2>📝 영어 단어 총정리</h2><p class="muted">이 회차 18~45번 지문의 핵심 어휘를 한 장에 정리했어요.</p><div class="dl"><a href="{view(wd)}" target="_blank" rel="noopener">미리보기</a><a href="{down(wd)}" rel="noopener">다운로드</a></div></section>'
-                   if wd else '<section class="card en-sec" id="words"><h2>📝 영어 단어 총정리</h2><p class="muted">이 회차 단어 자료는 준비 중이에요.</p></section>'))
+                   if vs0 else '<section class="card en-sec" id="var"><h2>변형문제</h2><p class="muted">이 회차 변형문제는 준비 중이에요.</p></section>') + ad()
+                + (f'<section class="card en-sec" id="words"><h2>영어 단어 총정리</h2><p class="muted">이 회차 18~45번 지문의 핵심 어휘를 한 장에 정리했어요.</p><div class="dl"><a href="{view(wd)}" target="_blank" rel="noopener">미리보기</a><a href="{down(wd)}" rel="noopener">다운로드</a></div></section>'
+                   if wd else '<section class="card en-sec" id="words"><h2>영어 단어 총정리</h2><p class="muted">이 회차 단어 자료는 준비 중이에요.</p></section>'))
         if s == '영어':
             pre = f' data-y="{k[2]}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else ''
             vs = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
             var_html = ('<div class="soon"><b>변형문제</b> · 준비 중이에요</div>' if not vs else
-                        '<div class="var" id="var"><b>✏️ 리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
+                        '<div class="var" id="var"><b>리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
                         + ''.join(f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs) + '</div></div>')
-            extra = f'''<section class="card mission" id="note-req"{pre}><h2>📘 분석노트 카톡 요청 <small>30~40번 · 최신 자료</small></h2><p class="muted">이 회차 30~40번 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>'''
+            extra = f'''<section class="card mission" id="note-req"{pre}><h2>분석노트 카톡 요청 <small>30~40번 · 최신 자료</small></h2><p class="muted">이 회차 30~40번 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>'''
             if k[0] != 'moe': extra += f'<div class="card">{var_html}</div>'
         # 같은 과목 다른 회차
         others = [x for x in same if x != k and s in {r['subject'] for r in sessions[x]}]
@@ -369,7 +369,7 @@ for idx, k in enumerate(keys_sorted):
         srows = [r for r in inf.get('rows', []) if r['s'] == s or (s == '수학' and r['s'].startswith('수학'))]
         sinfo = ''
         if srows or (inf.get('wrong') or {}).get(s):
-            sinfo = f'<div class="card"><h2>📊 {e(full)} 등급컷</h2>' + (cut_table(srows) + CUT_NOTE if srows else '') + \
+            sinfo = f'<div class="card"><h2>{e(full)} 등급컷</h2>' + (cut_table(srows) + CUT_NOTE if srows else '') + \
                     (f'<p><b>오답이 많았던 문항</b> · {e(inf["wrong"][s])}</p>' if (inf.get('wrong') or {}).get(s) else '') + \
                     f'<p><a href="{s_url(k)}">{e(name)} 전체 요약·등급컷 보기 →</a></p></div>'
         if en_top:
@@ -378,7 +378,7 @@ for idx, k in enumerate(keys_sorted):
 {en_top}
 {extra}
 {ad()}
-<div class="card"><h2>📄 {e(full)} 기출 원본</h2>{files}</div>
+<div class="card"><h2>{e(full)} 기출 원본</h2>{files}</div>
 {sinfo}'''
         else:
             body = f'''<h1 class="page-h1">{e(full)} 문제·정답·해설 PDF</h1>
@@ -427,25 +427,25 @@ tiles = f'''<div class="grid4">
 <a class="tile" href="/moe/go3/"><b>고3</b><span>{cnt[3]}개 회차</span></a>
 <a class="tile gold" href="/suneung/"><b>수능</b><span>{cnt["sn"]}개 학년도</span></a>
 </div>'''
-recent = '<div class="card"><h2>🆕 최근 회차</h2><div class="chips">' + ''.join(
+recent = '<div class="card"><h2>최근 회차</h2><div class="chips">' + ''.join(
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '</div></div>'
 en_sess = sorted([k for k in sessions if k[0] == 'moe' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: (k[1], -k[2], -k[3]))
 note_files = sum(len(NOTES[k]) for k in en_sess)
 word_sess = [k for k in en_sess if k in WORDS]
 body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <p>고1·고2·고3 영어 모의고사를 회차별로 정리했어요. 리카수니 원장이 직접 만든 <b>분석노트·변형문제·단어</b>를 무료로 받아 가세요.</p></section>
-<h2 class="sec-h">🇬🇧 영어 모의고사 핵심 자료</h2>
+<h2 class="sec-h">영어 모의고사 핵심 자료</h2>
 <div class="svc">
-<a class="svc-c c3" href="/english/"><i>📘</i><b>문항별 분석노트</b><span>18~29번·41~45번 바로 보기, 30~40번 최신 자료는 카톡 요청</span><em>{note_files}개 문항</em></a>
-<a class="svc-c c2" href="/variants/"><i>✏️</i><b>변형문제</b><span>문항별 변형문제 PDF 전체 공개</span><em>{len(var_sess)}개 회차 · {var_files}개 문항</em></a>
-<a class="svc-c c5" href="/english/#words"><i>📝</i><b>영어 단어 총정리</b><span>회차별 18~45번 핵심 어휘 정리</span><em>{len(word_sess)}개 회차</em></a>
-<a class="svc-c c4" href="/books/"><i>📚</i><b>부교재 자료</b><span>수능특강 라이트·올림포스 등 분석노트·단어</span><em>{{NBOOKS}}권</em></a>
+<a class="svc-c c3" href="/english/"><b>문항별 분석노트</b><span>18~29번·41~45번 바로 보기, 30~40번 최신 자료는 카톡 요청</span><em>{note_files}개 문항</em></a>
+<a class="svc-c c2" href="/variants/"><b>변형문제</b><span>문항별 변형문제 PDF 전체 공개</span><em>{len(var_sess)}개 회차 · {var_files}개 문항</em></a>
+<a class="svc-c c5" href="/english/#words"><b>영어 단어 총정리</b><span>회차별 18~45번 핵심 어휘 정리</span><em>{len(word_sess)}개 회차</em></a>
+<a class="svc-c c4" href="/books/"><b>부교재 자료</b><span>수능특강 라이트·올림포스 등 분석노트·단어</span><em>{{NBOOKS}}권</em></a>
 </div>
-<h2 class="sec-h">🆕 최근 영어 모의고사</h2>
+<h2 class="sec-h">최근 영어 모의고사</h2>
 <div class="card"><div class="chips">''' + ''.join(
     f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-k[2], -k[3], k[1]))[:9]) + '''</div>
 <p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>''' + ad() + f'''
-<h2 class="sec-h">📄 전과목 기출문제</h2>
+<h2 class="sec-h">전과목 기출문제</h2>
 <p class="muted">국어·수학·사회·과학·한국사까지 전과목 문제지·정답·해설 PDF도 함께 제공해요. 총 {len(sessions)}개 회차, {len(R):,}개 파일.</p>''' + tiles
 
 # ---------- 영어 모의고사 허브 ----------
@@ -458,7 +458,7 @@ def en_table(g):
         mark = lambda ok, t: f'<span class="ok">{t}</span>' if ok else '<span class="no">–</span>'
         rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{e(s_name(k))}</a></td>'
                  f'<td>{mark(nn, f"{nn}문항")}</td><td>{mark(vv, f"{vv}문항")}</td><td>{mark(k in WORDS, "✓")}</td></tr>')
-    return (f'<div class="card"><h2>고{g} 영어 모의고사</h2><table class="en-t"><thead><tr><th>회차</th><th>📘 분석노트</th><th>✏️ 변형문제</th><th>📝 단어</th></tr></thead>'
+    return (f'<div class="card"><h2>고{g} 영어 모의고사</h2><table class="en-t"><thead><tr><th>회차</th><th>분석노트</th><th>변형문제</th><th>단어</th></tr></thead>'
             f'<tbody>{rows}</tbody></table></div>')
 enbody = ('''<h1 class="page-h1">영어 모의고사 분석노트·변형문제·단어</h1>
 <p class="lead">회차를 누르면 문항별 분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
@@ -497,7 +497,7 @@ page('/variants/', '고1·고2 모의고사 영어 변형문제 PDF 무료 | 리
 
 nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
 <p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트를 카카오톡으로 받아보세요.</p>
-<section class="card mission" id="note-req"><h2>📘 분석노트 요청</h2><p class="muted">불러오는 중...</p></section>
+<section class="card mission" id="note-req"><h2>분석노트 요청</h2><p class="muted">불러오는 중...</p></section>
 <div class="card"><h2>이용 방법</h2><ul class="sum">
 <li>카카오로 로그인한 회원만 요청할 수 있어요.</li>
 <li>모의고사는 연도·월·학년·번호를, 부교재는 교재·강·번호를 골라 요청해요. (예: 2026년 9월 고1 30번, 수능특강 라이트 20강 1번)</li>
@@ -555,20 +555,20 @@ def book_cover(b):
             f'<b>{e(b["name"])}</b><span class="ph-who">{e(b["who"].split(" · ")[0])}</span></div>')
 def book_card(b):
     wl = book_words(b)
-    words = ('<div class="bw"><b>📝 단어 학습노트 (무료)</b><div class="chips">' + ''.join(
+    words = ('<div class="bw"><b>단어 학습노트 (무료)</b><div class="chips">' + ''.join(
         f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(l)}</a>' for l, i in wl) + '</div></div>') if wl else ''
     q = urllib.parse.quote(b['name'])
-    blog = f'<a class="btn btn-line" href="{e(b["blog"])}">📝 교재 소개글</a>' if b.get('blog') else ''
+    blog = f'<a class="btn btn-line" href="{e(b["blog"])}">교재 소개글</a>' if b.get('blog') else ''
     return (f'<section class="card book"><div class="book-top">{book_cover(b)}<div class="book-info">'
             f'<div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
             f'<p>{e(b["intro"])}</p>'
-            f'<ul class="book-meta"><li>📚 {e(b["meta"])}</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul></div></div>' + words
+            f'<ul class="book-meta"><li>{e(b["meta"])}</li><li>리카수니 원장이 직접 만든 분석노트</li></ul></div></div>' + words
             + ('<div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
                if b.get('ready') else
-               '<p class="book-soon">📝 분석노트 준비 중이에요. 필요한 강·번호를 요청해 주시면 요청이 많은 것부터 먼저 만들어요.</p>')
-            + f'<div class="book-btns"><a class="btn btn-kakao" href="/notes/?book={q}">💬 {"카톡으로 무료 요청" if b.get("ready") else "이 교재 분석노트 요청하기"}</a>'
-            + (f'<a class="btn btn-navy" href="{e(b["buy"])}" target="_blank" rel="noopener">🛒 강 단위 구매</a>' if b.get('buy') else '')
-            + f'<a class="btn btn-line" href="{SAMPLE}" target="_blank" rel="noopener">📄 분석노트 샘플 보기</a>{blog}</div></section>')
+               '<p class="book-soon">분석노트 준비 중이에요. 필요한 강·번호를 요청해 주시면 요청이 많은 것부터 먼저 만들어요.</p>')
+            + f'<div class="book-btns"><a class="btn btn-kakao" href="/notes/?book={q}">{"카톡으로 무료 요청" if b.get("ready") else "이 교재 분석노트 요청하기"}</a>'
+            + (f'<a class="btn btn-navy" href="{e(b["buy"])}" target="_blank" rel="noopener">강 단위 구매</a>' if b.get('buy') else '')
+            + f'<a class="btn btn-line" href="{SAMPLE}" target="_blank" rel="noopener">분석노트 샘플 보기</a>{blog}</div></section>')
 bbody = ('<h1 class="page-h1">부교재 영어 분석노트 요청방</h1>'
          '<p class="lead">리카수니 원장이 직접 만든 부교재 분석노트예요. <b>문항 1개는 카톡으로 무료</b>, 강 전체가 필요하면 <b>강 단위로 구매</b>할 수 있어요.</p>'
          + ''.join(book_card(b) for b in BOOKS) +

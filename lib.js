@@ -45,13 +45,13 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 
     const form = user ? `
       <p class="muted">이 시험에 대한 질문이나 공부 후기를 <b>댓글</b>로 남겨 주세요. 짧은 질문도 괜찮아요. (원장님 확인 후 공개)<br>
-      분석노트를 받고 싶다면 댓글 대신 <a href="/notes/"><b>📘 분석노트 요청</b></a>을 이용해 주세요.</p>
+      분석노트를 받고 싶다면 댓글 대신 <a href="/notes/"><b>분석노트 요청</b></a>을 이용해 주세요.</p>
       <textarea id="cbody" maxlength="1000" placeholder="댓글 예) 31번 빈칸이 어려웠는데 해설을 보고 근거를 찾았어요. 다음엔 시간 배분을 더 신경 써야겠어요."></textarea>
       <div class="row between mt"><span class="meta"><span id="ccount">0</span>자</span>
-      <button class="btn btn-navy" id="cbtn">💬 댓글 등록</button></div>`
-      : `<p class="muted">카카오로 로그인하면 이 시험에 대한 질문이나 공부 후기를 댓글로 남길 수 있어요.<br>분석노트는 댓글이 아니라 <a href="/notes/"><b>📘 분석노트 요청</b></a>에서 받을 수 있어요.</p>${loginButtons()}`;
+      <button class="btn btn-navy" id="cbtn">댓글 등록</button></div>`
+      : `<p class="muted">카카오로 로그인하면 이 시험에 대한 질문이나 공부 후기를 댓글로 남길 수 있어요.<br>분석노트는 댓글이 아니라 <a href="/notes/"><b>분석노트 요청</b></a>에서 받을 수 있어요.</p>${loginButtons()}`;
 
-    box.innerHTML = `<h2>💬 댓글 <span class="meta">${list.filter(c => c.approved).length}개</span></h2>${form}<div class="mt">${items}</div>`;
+    box.innerHTML = `<h2>댓글 <span class="meta">${list.filter(c => c.approved).length}개</span></h2>${form}<div class="mt">${items}</div>`;
     if (user) {
       const t = document.getElementById('cbody');
       t.oninput = () => (document.getElementById('ccount').textContent = t.value.trim().length);
@@ -81,7 +81,7 @@ async function noteRequest(user) {
   const d = { y: card.dataset.y || qs.get('y'), m: card.dataset.m || qs.get('m'), g: card.dataset.g || qs.get('g'), book: qs.get('book') }; // 회차·교재 미리 채움
   const startBook = d.book && NOTE_BOOKS.includes(d.book);
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
-  const head = `<h2>📘 분석노트 요청</h2>
+  const head = `<h2>분석노트 요청</h2>
     <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. <b>1인 하루 1개</b>, 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>`;
 
   if (!isKakao) {
@@ -96,7 +96,7 @@ async function noteRequest(user) {
     .eq('status', 'sent').gte('created_at', dayStart).order('created_at', { ascending: false }).limit(1);
   if (today && today.length) {
     const o = today[0];
-    card.innerHTML = head + `<div class="info-box">✅ 오늘은 <b>${esc(o.label)}</b>를 받았어요.<br>
+    card.innerHTML = head + `<div class="info-box">오늘은 <b>${esc(o.label)}</b>를 받았어요.<br>
       <span class="meta">${o.kakao_sent ? '카카오톡 \'나와의 채팅\'을 확인해 주세요. ' : ''}링크는 ${fmtDate(o.expires_at)}까지 열려요.</span>
       <p class="mt"><a class="btn btn-gold btn-sm" href="/get/?t=${o.link_token}" target="_blank" rel="noopener">지금 열기</a></p>
       <p class="meta">내일 다시 1개를 요청할 수 있어요.</p></div>`;
@@ -197,10 +197,10 @@ async function noteRequest(user) {
     if (r.missing) {
       const d = new Date(Date.now() + 2 * 86400e3);
       const when = `${d.getMonth() + 1}월 ${d.getDate()}일(${'일월화수목금토'[d.getDay()]})`;
-      box.innerHTML = `📝 <b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 자료 준비에 1~2일 걸리니 <b>${when} 이후에 다시 요청</b>해 주세요. (오늘 요청 횟수는 차감되지 않아요)`;
+      box.innerHTML = `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 자료 준비에 1~2일 걸리니 <b>${when} 이후에 다시 요청</b>해 주세요. (오늘 요청 횟수는 차감되지 않아요)`;
       return;
     }
-    card.innerHTML = head + `<div class="info-box">✅ <b>${esc(r.label)}</b>
+    card.innerHTML = head + `<div class="info-box"><b>${esc(r.label)}</b>
       ${r.kakao ? '를 카카오톡 <b>\'나와의 채팅\'</b>으로 보냈어요!' : '가 준비됐어요. (카톡 발송이 안 돼서 아래 버튼으로 바로 열어 주세요)'}
       <br><span class="meta">링크는 ${fmtDate(r.expires_at)}까지(24시간) 열려요.</span>
       <p class="mt"><a class="btn btn-gold btn-sm" href="${esc(r.link)}" target="_blank" rel="noopener">지금 열기</a></p></div>`;
