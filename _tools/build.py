@@ -513,22 +513,22 @@ page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카�
 # 새 부교재는 BOOKS 에 한 줄 추가 (name 은 lib.js NOTE_BOOKS, note-request 함수 BOOKS 와 같게)
 SAMPLE = 'https://drive.google.com/file/d/105f20gSuhZvR44gCK6oW5mxn2-ZFG12J/view'  # 샘플은 수능특강 라이트로 통일
 BOOKS = [  # name 은 드라이브 '부교재 분석노트' 안 폴더 이름과 같게 (lib.js NOTE_BOOK_CFG, note-request 함수 BOOKS 와 같게)
-    dict(name='수능특강 라이트', full='2026 EBS 수능특강 Light 영어', meta='22강 · 강별 Gateway + 문항별', who='고1~고2 · 수능특강 입문',
+    dict(cover='suteuk-light', name='수능특강 라이트', full='2026 EBS 수능특강 Light 영어', meta='22강 · 강별 Gateway + 문항별', who='고1~고2 · 수능특강 입문',
          intro='수능특강 본책 전에 유형별 감을 잡는 EBS 입문 교재예요. 강마다 Gateway와 문항별로 끊어읽기·구문·어휘·정답 근거를 정리한 분석노트를 제공해요.',
          buy='https://contents.premium.naver.com/likasuni/cocos/contents?categoryId=1a0c882e9770000nk', ready=True),
-    dict(name='하루 6개 1등급 모의고사 고1', full='EBS 하루 6개 1등급 영어독해 모의고사 고1', meta='회차별 6문항', who='고1 · 모의고사 대비',
+    dict(cover='haru6-go1', name='하루 6개 1등급 모의고사 고1', full='EBS 하루 6개 1등급 영어독해 모의고사 고1', meta='회차별 6문항', who='고1 · 모의고사 대비',
          intro='하루 6문항씩 모의고사 유형을 꾸준히 푸는 EBS 고1 독해 교재예요. 회차·문항별 분석노트를 준비하고 있어요.'),
-    dict(name='하루 6개 1등급 모의고사 고2', full='EBS 하루 6개 1등급 영어독해 모의고사 고2', meta='회차별 6문항', who='고2 · 모의고사 대비',
+    dict(cover='haru6-go2', name='하루 6개 1등급 모의고사 고2', full='EBS 하루 6개 1등급 영어독해 모의고사 고2', meta='회차별 6문항', who='고2 · 모의고사 대비',
          intro='하루 6문항씩 모의고사 유형을 꾸준히 푸는 EBS 고2 독해 교재예요. 회차·문항별 분석노트를 준비하고 있어요.'),
-    dict(name='올림포스 전국연합학력평가 기출문제집 고1', full='EBS 올림포스 전국연합학력평가 기출문제집 고1 영어', meta='회차별 18~45번', who='고1 · 모의고사 기출',
+    dict(cover='olympos-gichul-go1', name='올림포스 전국연합학력평가 기출문제집 고1', full='EBS 올림포스 전국연합학력평가 기출문제집 고1 영어', meta='회차별 18~45번', who='고1 · 모의고사 기출',
          intro='고1 전국연합학력평가 기출을 회차별로 모은 EBS 문제집이에요. 회차·문항별 분석노트를 준비하고 있어요.'),
-    dict(name='올림포스 전국연합학력평가 기출문제집 고2', full='EBS 올림포스 전국연합학력평가 기출문제집 고2 영어', meta='회차별 18~45번', who='고2 · 모의고사 기출',
+    dict(cover='olympos-gichul-go2', name='올림포스 전국연합학력평가 기출문제집 고2', full='EBS 올림포스 전국연합학력평가 기출문제집 고2 영어', meta='회차별 18~45번', who='고2 · 모의고사 기출',
          intro='고2 전국연합학력평가 기출을 회차별로 모은 EBS 문제집이에요. 회차·문항별 분석노트를 준비하고 있어요.'),
-    dict(name='올림포스 영어독해 기본1', full='EBS 올림포스 영어독해의 기본 1', meta='강별 문항', who='고1 · 내신 부교재',
+    dict(cover='olympos-basic1', name='올림포스 영어독해 기본1', full='EBS 올림포스 영어독해의 기본 1', meta='강별 문항', who='고1 · 내신 부교재',
          intro='학교 내신 부교재로 많이 쓰는 EBS 고등 기본 독해 교재예요. 강·문항별 분석노트를 준비하고 있어요.'),
-    dict(name='리딩파워 기본', full='리딩파워 기본', meta='강별 문항', who='고1~고2 · 독해 기본',
+    dict(cover='readingpower-basic', name='리딩파워 기본', full='리딩파워 기본', meta='강별 문항', who='고1~고2 · 독해 기본',
          intro='유형별 독해 기본기를 다지는 교재예요. 강·문항별 분석노트를 준비하고 있어요.'),
-    dict(name='리딩파워 완성', full='리딩파워 완성', meta='강별 문항', who='고2~고3 · 독해 완성',
+    dict(cover='readingpower-complete', name='리딩파워 완성', full='리딩파워 완성', meta='강별 문항', who='고2~고3 · 독해 완성',
          intro='유형별 독해를 실전 수준으로 완성하는 교재예요. 강·문항별 분석노트를 준비하고 있어요.'),
 ]
 def book_words(b):  # '부교재 단어' 폴더 중 교재 이름의 단어가 모두 들어간 폴더 (가장 짧은 이름)
@@ -544,15 +544,25 @@ def book_words(b):  # '부교재 단어' 폴더 중 교재 이름의 단어가 �
         m = _re.search(r'(\d+)', t.split('_')[-2] if '_' in t else t)
         return (('실전' in t), int(m.group(1)) if m else 999)
     return [(lab(t), i) for t, i in sorted(BWORDS[f], key=lambda x: order(x[0]))]
+# 표지 이미지: img/books/<cover>.jpg (또는 .png/.webp) 를 올리면 자동으로 표시, 없으면 기본 표지
+def book_cover(b):
+    for ext in ('jpg', 'jpeg', 'png', 'webp'):
+        f = f'img/books/{b["cover"]}.{ext}'
+        if os.path.exists(os.path.join(ROOT, f)):
+            return f'<div class="book-cover"><img src="/{f}" alt="{e(b["full"])} 표지" loading="lazy" width="300" height="400"></div>'
+    pub = 'EBS' if b['full'].startswith('EBS') or 'EBS' in b['full'] else '부교재'
+    return (f'<div class="book-cover ph"><span class="ph-pub">{e(pub)}</span>'
+            f'<b>{e(b["name"])}</b><span class="ph-who">{e(b["who"].split(" · ")[0])}</span></div>')
 def book_card(b):
     wl = book_words(b)
     words = ('<div class="bw"><b>📝 단어 학습노트 (무료)</b><div class="chips">' + ''.join(
         f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(l)}</a>' for l, i in wl) + '</div></div>') if wl else ''
     q = urllib.parse.quote(b['name'])
     blog = f'<a class="btn btn-line" href="{e(b["blog"])}">📝 교재 소개글</a>' if b.get('blog') else ''
-    return (f'<section class="card book"><div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
+    return (f'<section class="card book"><div class="book-top">{book_cover(b)}<div class="book-info">'
+            f'<div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
             f'<p>{e(b["intro"])}</p>'
-            f'<ul class="book-meta"><li>📚 {e(b["meta"])}</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul>' + words
+            f'<ul class="book-meta"><li>📚 {e(b["meta"])}</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul></div></div>' + words
             + ('<div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
                if b.get('ready') else
                '<p class="book-soon">📝 분석노트 준비 중이에요. 필요한 강·번호를 요청해 주시면 요청이 많은 것부터 먼저 만들어요.</p>')
