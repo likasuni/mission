@@ -138,7 +138,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/moe/go1/', '고1'), ('/moe/go2/', '고2'), ('/moe/go3/', '고3'), ('/suneung/', '수능'), ('/books/', '부교재'), ('/notes/', '분석노트 요청')]
+NAV = [('/', '홈'), ('/exams/', '📄 기출문제'), ('/variants/', '✏️ 변형문제'), ('/notes/', '📘 분석노트'), ('/books/', '📚 부교재')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -150,7 +150,8 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
     ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else []
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
-    nav = ''.join(f'<a href="{u}" class="{"on " if u == active else ""}">{n}</a>' for u, n in NAV)
+    act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else active  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
+    nav = ''.join(f'<a href="{u}" class="{"on " if u == act else ""}">{n}</a>' for u, n in NAV)
     cm = ''
     if comments:
         cm = f'<section class="card" id="comments" data-page-key="{e(comments[0])}" data-page-title="{e(comments[1])}"><h2>💬 댓글</h2><p class="muted">댓글 불러오는 중...</p></section>'
@@ -303,7 +304,7 @@ for idx, k in enumerate(keys_sorted):
             pre = f' data-y="{k[2]}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else ''
             vs = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
             var_html = ('<div class="soon"><b>변형문제</b> · 준비 중이에요</div>' if not vs else
-                        '<div class="var"><b>✏️ 리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
+                        '<div class="var" id="var"><b>✏️ 리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
                         + ''.join(f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs) + '</div></div>')
             extra = f'''<section class="card mission" id="note-req"{pre}><h2>📘 분석노트 요청</h2><p class="muted">이 회차 문항별 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>
 <div class="card"><h2>📚 리카수니 영어 자료</h2>
@@ -359,19 +360,54 @@ page('/suneung/', '수능 기출문제 전과목 PDF 모음 | 리카수니 자�
 # ---------- 홈 ----------
 cnt = collections.Counter(k[1] if k[0] == 'moe' else 'sn' for k in sessions)
 latest = sorted([k for k in sessions if k[0] == 'moe'], key=lambda k: (-k[2], -k[3], k[1]))[:9]
-body = f'''<section class="hero"><h1>모의고사·수능 기출문제 전과목 PDF</h1>
-<p>고1·고2·고3 모의고사와 수능 기출 문제지·정답·해설을 한곳에서 무료로 받아보세요. 총 {len(R):,}개 파일.</p></section>
-<div class="grid4">
+var_sess = sorted([k for k in VAR if k in sessions], key=lambda k: (k[1], -k[2], -k[3]))
+var_files = sum(len(dict(VAR[k])) for k in var_sess)
+tiles = f'''<div class="grid4">
 <a class="tile" href="/moe/go1/"><b>고1</b><span>{cnt[1]}개 회차</span></a>
 <a class="tile" href="/moe/go2/"><b>고2</b><span>{cnt[2]}개 회차</span></a>
 <a class="tile" href="/moe/go3/"><b>고3</b><span>{cnt[3]}개 회차</span></a>
 <a class="tile gold" href="/suneung/"><b>수능</b><span>{cnt["sn"]}개 학년도</span></a>
+</div>'''
+recent = '<div class="card"><h2>🆕 최근 회차</h2><div class="chips">' + ''.join(
+    f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '</div></div>'
+body = f'''<section class="hero"><h1>리카수니 자료실</h1>
+<p>모의고사·수능 기출문제부터 리카수니 원장이 직접 만든 변형문제와 분석노트까지, 영어 공부에 필요한 자료를 한곳에서 무료로 이용하세요.</p></section>
+<h2 class="sec-h">한눈에 보는 이용 메뉴</h2>
+<div class="svc">
+<a class="svc-c c1" href="/exams/"><i>📄</i><b>기출문제 PDF</b><span>고1·고2·고3 모의고사, 수능 전과목 문제지·정답·해설</span><em>{len(sessions)}개 회차 · {len(R):,}개 파일</em></a>
+<a class="svc-c c2" href="/variants/"><i>✏️</i><b>영어 변형문제</b><span>모의고사 영어 문항별 변형문제 PDF, 바로 다운로드</span><em>{len(var_sess)}개 회차 · {var_files}개 문항</em></a>
+<a class="svc-c c3" href="/notes/"><i>📘</i><b>모의고사 분석노트</b><span>원하는 문항 분석노트를 카카오톡으로 받기</span><em>무료 · 하루 1개</em></a>
+<a class="svc-c c4" href="/books/"><i>📚</i><b>부교재 분석노트</b><span>수능특강 라이트·올림포스·리딩파워 등 교재별 요청</span><em>{{NBOOKS}}권 · 요청 받는 중</em></a>
 </div>
-<div class="card"><h2>🆕 최근 회차</h2><div class="chips">''' + ''.join(
-    f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '''</div></div>
-<div class="banner-row"><a class="banner note" href="/notes/"><b>📘 영어 모의고사 분석노트 요청</b><p>원하는 회차·번호를 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개, 링크는 24시간 동안 열려요.</p></a>
-<a class="banner book" href="/books/"><b>📚 부교재 분석노트 요청방</b><p>수능특강 라이트·올림포스·리딩파워 등 교재별 분석노트. 문항 1개는 카톡으로 무료예요.</p></a></div>
-''' + ad()
+<h2 class="sec-h">📄 학년별 기출문제</h2>''' + tiles + recent + ad()
+
+# ---------- 기출문제 허브 ----------
+ebody = f'''<h1 class="page-h1">모의고사·수능 기출문제 전과목 PDF</h1>
+<p class="lead">학년을 고르면 연도·월별 회차가 나와요. 회차마다 전과목 문제지·정답·해설과 등급컷을 볼 수 있어요. 총 {len(sessions)}개 회차, {len(R):,}개 파일.</p>''' + tiles + recent + ad()
+page('/exams/', '모의고사·수능 기출문제 전과목 PDF | 리카수니 자료실', '고1·고2·고3 모의고사와 수능 기출문제 전과목 문제지·정답·해설 PDF를 학년·연도·월별로 무료 다운로드.',
+     ebody, [('/', '홈'), ('/exams/', '기출문제')], '/exams/')
+
+# ---------- 변형문제 모음 ----------
+def var_block(g):
+    ks = [k for k in var_sess if k[1] == g]
+    if not ks: return ''
+    out = f'<div class="card"><h2>고{g} 영어 변형문제</h2>'
+    for y in sorted({k[2] for k in ks}, reverse=True):
+        out += f'<p class="grp">{y}년</p><div class="chips">' + ''.join(
+            f'<a class="chip" href="{subj_url(k, "영어")}#var">{k[3]}월<small>{len(dict(VAR[k]))}문항</small></a>'
+            for k in sorted([x for x in ks if x[2] == y], key=lambda x: x[3])) + '</div>'
+    return out + '</div>'
+vbody = ('''<h1 class="page-h1">모의고사 영어 변형문제 (무료)</h1>
+<p class="lead">리카수니 원장이 전국연합학력평가 영어 지문으로 직접 만든 문항별 변형문제예요. 회차를 고르면 18번부터 45번까지 번호별 PDF를 바로 받을 수 있어요.</p>'''
+         + var_block(1) + var_block(2) + '''<div class="card"><h2>이용 방법</h2><ul class="sum">
+<li>회차를 누르면 해당 회차 영어 페이지의 변형문제로 이동해요.</li>
+<li>번호를 누르면 PDF 미리보기가 열리고, 그 화면에서 바로 내려받을 수 있어요.</li>
+<li>같은 페이지에서 원본 기출문제와 문항별 분석노트(카톡 요청)도 함께 이용할 수 있어요.</li>
+</ul></div>''' + ad())
+page('/variants/', '고1·고2 모의고사 영어 변형문제 PDF 무료 | 리카수니 자료실',
+     '전국연합학력평가 고1·고2 영어 문항별 변형문제 PDF 무료 다운로드. 리카수니 원장 직접 제작.', vbody,
+     [('/', '홈'), ('/variants/', '변형문제')], '/variants/')
+
 nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
 <p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트를 카카오톡으로 받아보세요.</p>
 <section class="card mission" id="note-req"><h2>📘 분석노트 요청</h2><p class="muted">불러오는 중...</p></section>
@@ -434,8 +470,8 @@ page('/books/', 'EBS 부교재 영어 분석노트 요청 · 수능특강 라이
      '수능특강 라이트 등 EBS 부교재 영어 분석노트. 문항 1개는 카카오톡으로 무료, 강 단위 구매도 가능. 리카수니 원장 직접 제작.', bbody,
      [('/', '홈'), ('/books/', '부교재')], '/books/', comments=('books', '부교재 요청방'))
 
-page('/', '리카수니 자료실 | 모의고사·수능 기출문제 전과목 PDF 무료 다운로드',
-     '고1·고2·고3 모의고사와 수능 기출문제 전과목 문제지·정답·해설 PDF를 연도·월별로 무료 다운로드. 리카수니 자료실', body, (), '/')
+page('/', '리카수니 자료실 | 모의고사·수능 기출문제 PDF, 영어 변형문제, 분석노트',
+     '고1·고2·고3 모의고사와 수능 기출문제 전과목 PDF, 리카수니 영어 변형문제와 문항별 분석노트를 무료로. 리카수니 자료실', body.replace('{NBOOKS}', str(len(BOOKS))), (), '/')
 
 # ---------- sitemap / robots ----------
 urls = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{TODAY}</lastmod></url>' for p in ['/mission/', '/privacy.html'] + PAGES)

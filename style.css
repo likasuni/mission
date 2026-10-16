@@ -272,3 +272,20 @@ select { border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; 
 @media (max-width: 640px) { .banner-row { grid-template-columns: 1fr; } }
 .var { margin: 6px 0 12px; padding: 12px; border-radius: 10px; background: #f3f6ff; border: 1px solid #d5ddf5; }
 .var p { margin: 4px 0 8px; }
+
+/* 홈: 한눈에 보는 이용 메뉴 */
+.grid4 + .card { margin-top: 14px; }
+.sec-h { font-size: 1.1rem; margin: 22px 0 10px; color: var(--navy-d); }
+.svc { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.svc-c { display: flex; flex-direction: column; gap: 4px; padding: 18px 16px; border-radius: 14px; text-decoration: none; color: #fff; min-height: 168px; }
+.svc-c i { font-style: normal; font-size: 1.6rem; line-height: 1; }
+.svc-c b { font-size: 1.08rem; margin-top: 6px; }
+.svc-c span { font-size: .86rem; opacity: .92; line-height: 1.45; flex: 1; }
+.svc-c em { font-style: normal; font-size: .8rem; font-weight: 700; align-self: flex-start; padding: 3px 9px; border-radius: 999px; background: rgba(255,255,255,.2); }
+.svc-c:hover { filter: brightness(1.06); }
+.svc-c.c1 { background: linear-gradient(135deg, var(--navy-d), var(--navy)); }
+.svc-c.c2 { background: linear-gradient(135deg, #6d28d9, #8b5cf6); }
+.svc-c.c3 { background: linear-gradient(135deg, #b45309, #d97706); }
+.svc-c.c4 { background: linear-gradient(135deg, #0f6b6e, #157e80); }
+@media (max-width: 860px) { .svc { grid-template-columns: repeat(2, minmax(0, 1fr)); } .svc-c { min-height: 150px; } }
+.chip small { display: block; font-size: .72rem; color: var(--muted); font-weight: 500; }
