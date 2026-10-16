@@ -56962,12 +56962,432 @@
 {
 "exam": "sn",
 "year": 2020,
+"subject": "경제",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1ZO4Op01Hn5XcpxJdevfS7tHdi4ydkx_0",
+"size": 1760673,
+"title": "2020학년도 수능 사회탐구 - 경제 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "경제",
+"group": "사회탐구",
+"kind": "해설",
+"id": "1AvJQETEWAYclmz61dwPlWusE2g876ju0",
+"size": 116500,
+"title": "2020학년도 수능 사회탐구 - 경제 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "국어",
+"group": "국어",
+"kind": "문제",
+"id": "19OEQWGUJZAYgM_Dc0e8Cp0_5QrRKR2kE",
+"size": 5850677,
+"title": "2020학년도 수능 - 국어 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "국어",
+"group": "국어",
+"kind": "해설",
+"id": "1ErVVAyUB1EWKIwhHi1UZcMDpSg6EB1Em",
+"size": 289016,
+"title": "2020학년도 수능 - 국어 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "동아시아사",
+"group": "사회탐구",
+"kind": "문제",
+"id": "16Nj4TOQa7Y5Ep3JLQAOuJlCrI1VphHhk",
+"size": 1874435,
+"title": "2020학년도 수능 사회탐구 - 동아시아사 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "동아시아사",
+"group": "사회탐구",
+"kind": "해설",
+"id": "1Mk7ovb0PUDOCsziZ4X9jy22qYE6u0tq7",
+"size": 138356,
+"title": "2020학년도 수능 사회탐구 - 동아시아사 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
 "subject": "물리학1",
 "group": "과학탐구",
 "kind": "문제",
 "id": "10kd7z1dc9fAVRlfrcib8V1nIFQgAIJ2G",
 "size": 1193169,
 "title": "2020학년도 수능_과탐_ 물리1 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "물리학1",
+"group": "과학탐구",
+"kind": "해설",
+"id": "1wUwz7EKmfVzPnmaDgi1QR9smLol7FYQi",
+"size": 229093,
+"title": "2020학년도 수능 과학탐구 - 물리1 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "물리학2",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1eYBkUWT_cXPUERtHgEN3FoUY-zt80gqX",
+"size": 1565186,
+"title": "2020학년도 수능 과학탐구 - 물리2 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "물리학2",
+"group": "과학탐구",
+"kind": "해설",
+"id": "1Olf5R8MIrRymWaGYVuuZAXndu7hmOU_Y",
+"size": 147285,
+"title": "2020학년도 수능 과학탐구 - 물리2 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "사회문화",
+"group": "사회탐구",
+"kind": "문제",
+"id": "18KsezevE9lFFoH6N2Y-29f8_RmTK6PTo",
+"size": 1914425,
+"title": "2020학년도 수능 사회탐구 - 사회문화 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "사회문화",
+"group": "사회탐구",
+"kind": "해설",
+"id": "1iutRpXWIMVHLKTNeI-xSsSrunXKdMzMi",
+"size": 137230,
+"title": "2020학년도 수능 사회탐구 - 사회문화 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "생명과학1",
+"group": "과학탐구",
+"kind": "문제",
+"id": "12odKanaNQadNRG-JL7gRoFqomTx7XTYS",
+"size": 1257180,
+"title": "2020학년도 수능 과학탐구 - 생명과학1 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "생명과학1",
+"group": "과학탐구",
+"kind": "해설",
+"id": "10FgOPAbc2u22ag32NfBrtHHqdv61dd5g",
+"size": 147096,
+"title": "2020학년도 수능 과학탐구 - 생명과학1 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "생명과학2",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1970YjFAnVxC310gt_IiB8YpPDOtIfM8E",
+"size": 1343571,
+"title": "2020학년도 수능 과학탐구 - 생명과학2 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "생명과학2",
+"group": "과학탐구",
+"kind": "해설",
+"id": "1fGMlGYnVWSwII8u8cXc3nTruP1NIXT75",
+"size": 190140,
+"title": "2020학년도 수능 과학탐구 - 생명과학2 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "생활과윤리",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1KVCZdXJpAjRbLi753fKhXASJulFxtNTm",
+"size": 1513978,
+"title": "2020학년도 수능 사회탐구 - 생활과윤리 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "생활과윤리",
+"group": "사회탐구",
+"kind": "해설",
+"id": "184Ix8OvRilX3QPJvf8a9iYh2jRLhrzjk",
+"size": 125971,
+"title": "2020학년도 수능 사회탐구 - 생활과윤리 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "세계사",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1v7YEGo0IYpR7AF3yPa7TO7Uo85yzB9oO",
+"size": 1806832,
+"title": "2020학년도 수능 사회탐구 - 세계사 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "세계사",
+"group": "사회탐구",
+"kind": "해설",
+"id": "1hswSm4adERTI6zlG_RSJCw-29Nrny3UQ",
+"size": 139791,
+"title": "2020학년도 수능 사회탐구 - 세계사 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "세계지리",
+"group": "사회탐구",
+"kind": "문제",
+"id": "15irmxmoLk0gnKzlYH3aik1Yr_9mNgwLR",
+"size": 2083896,
+"title": "2020학년도 수능 사회탐구 - 세계지리 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "세계지리",
+"group": "사회탐구",
+"kind": "해설",
+"id": "1Lh_tUl5HWGDwMCpRigO6ciwoTczYmtf8",
+"size": 155379,
+"title": "2020학년도 수능 사회탐구 - 세계지리 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "수학 가형",
+"group": "수학",
+"kind": "해설",
+"id": "1kmEDKoTxrf7dF7n4CalaoNb7nm-FZ9TY",
+"size": 497356,
+"title": "2020학년도 수능 - 수학 가형 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "수학 나형",
+"group": "수학",
+"kind": "문제",
+"id": "1eCKAF5pFw4YHPD2eScYitM0b1YnmkI_U",
+"size": 2534293,
+"title": "2020학년도 수능 - 수학 나형 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "수학 나형",
+"group": "수학",
+"kind": "해설",
+"id": "1xFaQAIavIigFC4qkM7mbMK2eoccc_wdd",
+"size": 239710,
+"title": "2020학년도 수능 - 수학 나형 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "영어",
+"group": "영어",
+"kind": "문제",
+"id": "17lD1i2x9RCubmVmYNvhRWeY2XrA35mqa",
+"size": 1446452,
+"title": "2020학년도 수능 - 영어 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "영어",
+"group": "영어",
+"kind": "해설",
+"id": "1SMw5jcuZvxgX9wvbB6GRhmb4vIyePwRz",
+"size": 287761,
+"title": "2020학년도 수능 - 영어 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "윤리와사상",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1gRIcOPThcUAsKoHz6GctaHNnxc9HZAoT",
+"size": 1444663,
+"title": "2020학년도 수능 사회탐구 - 윤리와사상 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "윤리와사상",
+"group": "사회탐구",
+"kind": "해설",
+"id": "1fh6Gw2yaaTLAVyaRT6rQB_j_G1Oabwt8",
+"size": 142115,
+"title": "2020학년도 수능 사회탐구 - 윤리와사상 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "정치와법",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1MfWkZl69gDcqC4TGqEx05AJS4CaTHPrw",
+"size": 1669921,
+"title": "2020학년도 수능 사회탐구 - 법과정치 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "정치와법",
+"group": "사회탐구",
+"kind": "해설",
+"id": "1VIRGPimcuALizLlmarHAtUQQsFcnYRJs",
+"size": 122617,
+"title": "2020학년도 수능 사회탐구 - 법과정치 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "지구과학1",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1p3kSeWBTzXqnFMA6vsywNCYpBSRJN_ph",
+"size": 1712817,
+"title": "2020학년도 수능 과학탐구 - 지구과학1 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "지구과학1",
+"group": "과학탐구",
+"kind": "해설",
+"id": "1cNgI9juxchLwDDB5G0SHxZ77WO0wHutU",
+"size": 157583,
+"title": "2020학년도 수능 과학탐구 - 지구과학1 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "지구과학2",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1kzW5tIsBGmbWUlxdvbK5NhG-CLik4dIm",
+"size": 1641345,
+"title": "2020학년도 수능 과학탐구 - 지구과학2 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "지구과학2",
+"group": "과학탐구",
+"kind": "해설",
+"id": "12TpScafsjOvg4VJq9o5Z7SCrqo1kbeAm",
+"size": 138788,
+"title": "2020학년도 수능 과학탐구 - 지구과학2 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "한국사",
+"group": "한국사",
+"kind": "문제",
+"id": "1Dv7I6VQhgobjWmYuaC7mHbrGAwggyNxB",
+"size": 1103580,
+"title": "2020학년도 수능 - 한국사 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "한국사",
+"group": "한국사",
+"kind": "해설",
+"id": "1ca6pvNk702pQy7zmj_1DO58jb6o_r2me",
+"size": 243110,
+"title": "2020학년도 수능 - 한국사 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "한국지리",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1VXPZky0CxugF9CWIKFZckIG9uzJaBRwG",
+"size": 2275847,
+"title": "2020학년도 수능 사회탐구 - 한국지리 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "한국지리",
+"group": "사회탐구",
+"kind": "해설",
+"id": "1ZS71D1h8EaIr_TkFZvI89DF3DyYNvE86",
+"size": 134871,
+"title": "2020학년도 수능 사회탐구 - 한국지리 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "화학1",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1TOcBAKTHNQJHCjN0V81FS1ESIOn_b34I",
+"size": 1580966,
+"title": "2020학년도 수능 과학탐구 - 화학1 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "화학1",
+"group": "과학탐구",
+"kind": "해설",
+"id": "1WAK-961NoMkZT8aMelbMIhRK3uKDB1KK",
+"size": 146043,
+"title": "2020학년도 수능 과학탐구 - 화학1 정답,해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "화학2",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1G1KrusHvUdIoTr09E7iBxVqjVd_r9MFs",
+"size": 1659942,
+"title": "2020학년도 수능 과학탐구 - 화학2 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2020,
+"subject": "화학2",
+"group": "과학탐구",
+"kind": "해설",
+"id": "1BKcArVEsB22Xt5DboTGswA4scKgpCBjJ",
+"size": 166547,
+"title": "2020학년도 수능 과학탐구 - 화학2 정답,해설.pdf"
 },
 {
 "exam": "sn",
