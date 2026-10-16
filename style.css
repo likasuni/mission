@@ -15,6 +15,9 @@
   --danger: #dc2626;
 }
 * { box-sizing: border-box; }
+/* 전체 글씨 크기: 기본 16px → 18px (모바일 17px). 모든 글씨가 rem 기준이라 함께 커집니다 */
+html { font-size: 112.5%; -webkit-text-size-adjust: 100%; }
+@media (max-width: 640px) { html { font-size: 106.25%; } .brand { white-space: nowrap; font-size: 1.05rem; } .hdr-cta { font-size: .78rem; padding: 6px 10px; } }
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
