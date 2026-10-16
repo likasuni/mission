@@ -289,3 +289,26 @@ select { border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; 
 .svc-c.c4 { background: linear-gradient(135deg, #0f6b6e, #157e80); }
 @media (max-width: 860px) { .svc { grid-template-columns: repeat(2, minmax(0, 1fr)); } .svc-c { min-height: 150px; } }
 .chip small { display: block; font-size: .72rem; color: var(--muted); font-weight: 500; }
+
+.svc-c.c5 { background: linear-gradient(135deg, #15803d, #22c55e); }
+.hero p b { color: var(--gold); }
+/* 영어 페이지 번호 버튼 */
+.en-sec h2 small, .card h2 small { font-size: .78rem; font-weight: 600; color: var(--muted); margin-left: 6px; }
+.nbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 8px; margin-top: 10px; }
+.nb { display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; font-weight: 800; font-size: .92rem; text-decoration: none; }
+.nb.open { background: var(--navy); color: #fff; }
+.nb.req { background: #f59e0b; color: #fff; position: relative; }
+.nb.req::after { content: "NEW"; position: absolute; top: -6px; right: -4px; font-size: .58rem; background: #dc2626; color: #fff; border-radius: 999px; padding: 1px 5px; }
+.nb.var { background: #7c3aed; color: #fff; }
+.nb.off { background: #eef1f6; color: #a0a8bb; border: 1px dashed #cdd3e2; }
+a.nb:hover { filter: brightness(1.12); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: .82rem; color: var(--muted); }
+.legend i { display: inline-block; width: 14px; height: 14px; min-height: 0; border-radius: 4px; vertical-align: -2px; margin-right: 5px; }
+.legend i.nb.req::after { content: none; }
+.hot { margin: 10px 0 0; padding: 10px 12px; border-radius: 10px; background: #fff7e6; border: 1px solid #f3d48a; color: #7a4b00; font-size: .9rem; }
+.en-t { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.en-t th, .en-t td { padding: 9px 8px; border-bottom: 1px solid var(--line); text-align: center; }
+.en-t th:first-child, .en-t td:first-child { text-align: left; }
+.en-t .ok { color: #15803d; font-weight: 700; } .en-t .no { color: #c0c6d4; }
+.bw { margin: 0 0 14px; padding: 12px; border-radius: 10px; background: #f0fdf4; border: 1px solid #bbf7d0; }
+.bw .chips { margin-top: 8px; }

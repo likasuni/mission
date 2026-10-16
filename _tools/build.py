@@ -54,6 +54,35 @@ for v in (json.load(open(_vp)) if os.path.exists(_vp) else []):
     VAR[('moe', g, y, mo)].append((nm.group(1).replace(' ', '').replace('-', '~'), v['id']))
 def vkey(n): return int(_re.match(r'\d+', n).group())
 
+def skey(t):  # 제목·폴더 이름에서 회차 (moe, 학년, 연도, 월)
+    m = _re.search(r'(\d{4})\s*(년|학년도)[\s_]*(\d{1,2})\s*월[\s_]*고\s*(\d)', t)
+    if not m: return None
+    y, mo, g = int(m.group(1)), int(m.group(3)), int(m.group(4))
+    if g == 3 and mo in (6, 9) and m.group(2) == '년': y += 1
+    return ('moe', g, y, mo)
+
+# 분석노트(18~29·41~45 공개, 30~40 카톡 요청) · 모의고사 단어 · 부교재 단어 (sync_drive.py → extras.json)
+NOTES = collections.defaultdict(dict); WORDS = {}; BWORDS = collections.defaultdict(list)
+_xp = os.path.join(ROOT, '_tools', 'extras.json')
+import unicodedata as _ud
+for x in (json.load(open(_xp)) if os.path.exists(_xp) else []):
+    x['title'] = _ud.normalize('NFC', x['title']); x['path'] = [_ud.normalize('NFC', q) for q in x['path']]  # 맥에서 올린 이름(NFD) 보정
+    t, p0 = x['title'], x['path'][0]
+    if not t.lower().endswith('.pdf'): continue
+    if p0 == '모의고사 분석노트':
+        if _re.search('문제|정답|해설|듣기', t): continue  # 같은 폴더의 시험지 원본은 제외
+        k = skey(' '.join(x['path'][1:])) or skey(t)
+        nm = (_re.search(r'(?<!\d)(\d{1,2})\s*(?:[-~]\s*(\d{1,2}))?\s*번', t)  # '..._30번.pdf', '41-42번'
+              or _re.match(r'^(\d{1,2})(?:\s*[-~]\s*(\d{1,2}))?\s*\.pdf$', t))  # '30.pdf', '41-42.pdf'
+        if k and nm: NOTES[k][nm.group(1) + ('~' + nm.group(2) if nm.group(2) else '')] = x['id']
+    elif p0 == '모의고사 단어':
+        k = skey(t)
+        if k: WORDS[k] = x['id']
+    elif p0 == '부교재 단어':
+        BWORDS[x['path'][1] if len(x['path']) > 1 else '기타'].append((t, x['id']))
+NOTE_NUMS = [str(i) for i in range(18, 41)] + ['41~42', '43~45']
+def is_req(n): return 30 <= vkey(n) <= 40   # 30~40번은 카톡 요청(최근 업데이트 자료)
+
 def ikey(k):
     ex, g, y, m = k
     return f'moe-{g}-{y}-{m}' if ex == 'moe' else f'sn-{y}'
@@ -138,7 +167,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/exams/', '📄 기출문제'), ('/variants/', '✏️ 변형문제'), ('/notes/', '📘 분석노트'), ('/books/', '📚 부교재')]
+NAV = [('/', '홈'), ('/english/', '🇬🇧 영어 모의고사'), ('/books/', '📚 부교재'), ('/exams/', '📄 전과목 기출'), ('/notes/', '📘 분석노트 요청')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -150,7 +179,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
     ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else []
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
-    act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else active  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
+    act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else ('/english/' if active == '/variants/' else active)  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
     nav = ''.join(f'<a href="{u}" class="{"on " if u == act else ""}">{n}</a>' for u, n in NAV)
     cm = ''
     if comments:
@@ -192,7 +221,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=10'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=2', '/lib.js?v=11'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -300,18 +329,34 @@ for idx, k in enumerate(keys_sorted):
         files = ''.join(f'''<div class="file"><div><div class="t">{e(full)} {KIND_LABEL[r["kind"]]}</div><div class="s">PDF {mb(r.get("size", 0))}</div></div>
 <div class="dl"><a href="{view(r["id"])}" target="_blank" rel="noopener">미리보기</a><a href="{down(r["id"])}" rel="noopener">다운로드</a></div></div>''' for r in xs)
         extra = ''
+        en_top = ''
+        if s == '영어' and k[0] == 'moe':
+            nt = NOTES.get(k, {})
+            def nbtn(n):
+                if is_req(n):
+                    return f'<a class="nb req" href="#note-req" data-n="{vkey(n)}" title="카톡으로 요청">{e(n)}번</a>'
+                if n in nt:
+                    return f'<a class="nb open" href="{view(nt[n])}" target="_blank" rel="noopener">{e(n)}번</a>'
+                return f'<span class="nb off" title="준비 중">{e(n)}번</span>'
+            vs0 = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
+            wd = WORDS.get(k)
+            en_top = (f'''<section class="card en-sec" id="notes"><h2>📘 문항별 분석노트</h2>
+<div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
+<p class="hot">🔥 <b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. (1인 하루 1개)</p>
+<div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>'
+                + ('<section class="card en-sec" id="var"><h2>✏️ 변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
+                   + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
+                   if vs0 else '<section class="card en-sec" id="var"><h2>✏️ 변형문제</h2><p class="muted">이 회차 변형문제는 준비 중이에요.</p></section>')
+                + (f'<section class="card en-sec" id="words"><h2>📝 영어 단어 총정리</h2><p class="muted">이 회차 18~45번 지문의 핵심 어휘를 한 장에 정리했어요.</p><div class="dl"><a href="{view(wd)}" target="_blank" rel="noopener">미리보기</a><a href="{down(wd)}" rel="noopener">다운로드</a></div></section>'
+                   if wd else '<section class="card en-sec" id="words"><h2>📝 영어 단어 총정리</h2><p class="muted">이 회차 단어 자료는 준비 중이에요.</p></section>'))
         if s == '영어':
             pre = f' data-y="{k[2]}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else ''
             vs = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
             var_html = ('<div class="soon"><b>변형문제</b> · 준비 중이에요</div>' if not vs else
                         '<div class="var" id="var"><b>✏️ 리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
                         + ''.join(f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs) + '</div></div>')
-            extra = f'''<section class="card mission" id="note-req"{pre}><h2>📘 분석노트 요청</h2><p class="muted">이 회차 문항별 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>
-<div class="card"><h2>📚 리카수니 영어 자료</h2>
-<div class="soon"><b>문항별 분석노트</b> · 위에서 번호를 골라 카톡으로 받으세요</div>
-{var_html}
-<div class="soon"><b>어휘 학습노트</b> · 준비 중이에요</div>
-<p class="muted">자료가 올라오면 이 페이지에 바로 추가돼요. 질문을 남겨두시면 먼저 알려드릴게요!</p></div>'''
+            extra = f'''<section class="card mission" id="note-req"{pre}><h2>📘 분석노트 카톡 요청 <small>30~40번 · 최신 자료</small></h2><p class="muted">이 회차 30~40번 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>'''
+            if k[0] != 'moe': extra += f'<div class="card">{var_html}</div>'
         # 같은 과목 다른 회차
         others = [x for x in same if x != k and s in {r['subject'] for r in sessions[x]}]
         others = sorted(others, key=lambda x: (-x[2], -x[3]))[:12]
@@ -327,7 +372,16 @@ for idx, k in enumerate(keys_sorted):
             sinfo = f'<div class="card"><h2>📊 {e(full)} 등급컷</h2>' + (cut_table(srows) + CUT_NOTE if srows else '') + \
                     (f'<p><b>오답이 많았던 문항</b> · {e(inf["wrong"][s])}</p>' if (inf.get('wrong') or {}).get(s) else '') + \
                     f'<p><a href="{s_url(k)}">{e(name)} 전체 요약·등급컷 보기 →</a></p></div>'
-        body = f'''<h1 class="page-h1">{e(full)} 문제·정답·해설 PDF</h1>
+        if en_top:
+            body = f'''<h1 class="page-h1">{e(full)} 분석노트·변형문제·단어</h1>
+<p class="lead">{e(s_when(k))} · 리카수니 원장이 직접 만든 영어 자료와 기출 원본을 한곳에 모았어요.</p>
+{en_top}
+{extra}
+{ad()}
+<div class="card"><h2>📄 {e(full)} 기출 원본</h2>{files}</div>
+{sinfo}'''
+        else:
+            body = f'''<h1 class="page-h1">{e(full)} 문제·정답·해설 PDF</h1>
 <p class="lead">{e(s_when(k))} · {e(s_org(k))}</p>
 {files}
 {sinfo}
@@ -336,9 +390,14 @@ for idx, k in enumerate(keys_sorted):
 <div class="card"><h2>{e(name)} 다른 과목</h2>{sibs}</div>
 {rel}
 {ad()}'''
-        page(subj_url(k, s), f'{full} 기출문제·해설 PDF 다운로드 | 리카수니 자료실',
-             f'{full} 문제지·정답·해설 PDF 무료 다운로드. {s_when(k)}. 리카수니 자료실',
-             body, crumbs + [(subj_url(k, s), sn)], active, comments=(subj_url(k, s).strip('/'), full))
+        if en_top:
+            page(subj_url(k, s), f'{full} 분석노트·변형문제·단어 PDF | 리카수니 자료실',
+                 f'{full} 문항별 분석노트, 변형문제, 영어 단어 총정리와 기출 원본 PDF 무료. 리카수니 자료실',
+                 body, crumbs + [(subj_url(k, s), sn)], '/english/', comments=(subj_url(k, s).strip('/'), full))
+        else:
+            page(subj_url(k, s), f'{full} 기출문제·해설 PDF 다운로드 | 리카수니 자료실',
+                 f'{full} 문제지·정답·해설 PDF 무료 다운로드. {s_when(k)}. 리카수니 자료실',
+                 body, crumbs + [(subj_url(k, s), sn)], active, comments=(subj_url(k, s).strip('/'), full))
 
 # ---------- 학년 / 수능 목록 ----------
 for g in (1, 2, 3):
@@ -370,16 +429,44 @@ tiles = f'''<div class="grid4">
 </div>'''
 recent = '<div class="card"><h2>🆕 최근 회차</h2><div class="chips">' + ''.join(
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '</div></div>'
-body = f'''<section class="hero"><h1>리카수니 자료실</h1>
-<p>모의고사·수능 기출문제부터 리카수니 원장이 직접 만든 변형문제와 분석노트까지, 영어 공부에 필요한 자료를 한곳에서 무료로 이용하세요.</p></section>
-<h2 class="sec-h">한눈에 보는 이용 메뉴</h2>
+en_sess = sorted([k for k in sessions if k[0] == 'moe' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: (k[1], -k[2], -k[3]))
+note_files = sum(len(NOTES[k]) for k in en_sess)
+word_sess = [k for k in en_sess if k in WORDS]
+body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
+<p>고1·고2·고3 영어 모의고사를 회차별로 정리했어요. 리카수니 원장이 직접 만든 <b>분석노트·변형문제·단어</b>를 무료로 받아 가세요.</p></section>
+<h2 class="sec-h">🇬🇧 영어 모의고사 핵심 자료</h2>
 <div class="svc">
-<a class="svc-c c1" href="/exams/"><i>📄</i><b>기출문제 PDF</b><span>고1·고2·고3 모의고사, 수능 전과목 문제지·정답·해설</span><em>{len(sessions)}개 회차 · {len(R):,}개 파일</em></a>
-<a class="svc-c c2" href="/variants/"><i>✏️</i><b>영어 변형문제</b><span>모의고사 영어 문항별 변형문제 PDF, 바로 다운로드</span><em>{len(var_sess)}개 회차 · {var_files}개 문항</em></a>
-<a class="svc-c c3" href="/notes/"><i>📘</i><b>모의고사 분석노트</b><span>원하는 문항 분석노트를 카카오톡으로 받기</span><em>무료 · 하루 1개</em></a>
-<a class="svc-c c4" href="/books/"><i>📚</i><b>부교재 분석노트</b><span>수능특강 라이트·올림포스·리딩파워 등 교재별 요청</span><em>{{NBOOKS}}권 · 요청 받는 중</em></a>
+<a class="svc-c c3" href="/english/"><i>📘</i><b>문항별 분석노트</b><span>18~29번·41~45번 바로 보기, 30~40번 최신 자료는 카톡 요청</span><em>{note_files}개 문항</em></a>
+<a class="svc-c c2" href="/variants/"><i>✏️</i><b>변형문제</b><span>문항별 변형문제 PDF 전체 공개</span><em>{len(var_sess)}개 회차 · {var_files}개 문항</em></a>
+<a class="svc-c c5" href="/english/#words"><i>📝</i><b>영어 단어 총정리</b><span>회차별 18~45번 핵심 어휘 정리</span><em>{len(word_sess)}개 회차</em></a>
+<a class="svc-c c4" href="/books/"><i>📚</i><b>부교재 자료</b><span>수능특강 라이트·올림포스 등 분석노트·단어</span><em>{{NBOOKS}}권</em></a>
 </div>
-<h2 class="sec-h">📄 학년별 기출문제</h2>''' + tiles + recent + ad()
+<h2 class="sec-h">🆕 최근 영어 모의고사</h2>
+<div class="card"><div class="chips">''' + ''.join(
+    f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-k[2], -k[3], k[1]))[:9]) + '''</div>
+<p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>''' + ad() + f'''
+<h2 class="sec-h">📄 전과목 기출문제</h2>
+<p class="muted">국어·수학·사회·과학·한국사까지 전과목 문제지·정답·해설 PDF도 함께 제공해요. 총 {len(sessions)}개 회차, {len(R):,}개 파일.</p>''' + tiles
+
+# ---------- 영어 모의고사 허브 ----------
+def en_table(g):
+    ks = [k for k in en_sess if k[1] == g]
+    if not ks: return ''
+    rows = ''
+    for k in sorted(ks, key=lambda k: (-k[2], -k[3])):
+        nn = len(NOTES.get(k, {})); vv = len(dict(VAR.get(k, [])))
+        mark = lambda ok, t: f'<span class="ok">{t}</span>' if ok else '<span class="no">–</span>'
+        rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{e(s_name(k))}</a></td>'
+                 f'<td>{mark(nn, f"{nn}문항")}</td><td>{mark(vv, f"{vv}문항")}</td><td>{mark(k in WORDS, "✓")}</td></tr>')
+    return (f'<div class="card"><h2>고{g} 영어 모의고사</h2><table class="en-t"><thead><tr><th>회차</th><th>📘 분석노트</th><th>✏️ 변형문제</th><th>📝 단어</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table></div>')
+enbody = ('''<h1 class="page-h1">영어 모의고사 분석노트·변형문제·단어</h1>
+<p class="lead">회차를 누르면 문항별 분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
+<b>30~40번 분석노트는 최근 업데이트 자료</b>라 카카오톡 요청으로 받을 수 있어요.</p>'''
+          + en_table(1) + ad() + en_table(2) + en_table(3) + ad())
+page('/english/', '영어 모의고사 분석노트·변형문제·단어 PDF | 리카수니 자료실',
+     '고1·고2·고3 영어 모의고사 회차별 문항 분석노트, 변형문제, 영어 단어 총정리 PDF 무료. 리카수니 원장 직접 제작.', enbody,
+     [('/', '홈'), ('/english/', '영어 모의고사')], '/english/')
 
 # ---------- 기출문제 허브 ----------
 ebody = f'''<h1 class="page-h1">모의고사·수능 기출문제 전과목 PDF</h1>
@@ -444,12 +531,28 @@ BOOKS = [  # name 은 드라이브 '부교재 분석노트' 안 폴더 이름과
     dict(name='리딩파워 완성', full='리딩파워 완성', meta='강별 문항', who='고2~고3 · 독해 완성',
          intro='유형별 독해를 실전 수준으로 완성하는 교재예요. 강·문항별 분석노트를 준비하고 있어요.'),
 ]
+def book_words(b):  # '부교재 단어' 폴더 중 교재 이름의 단어가 모두 들어간 폴더 (가장 짧은 이름)
+    ws = b['name'].split()
+    cands = [f for f in BWORDS if all(w in f.replace('_', ' ') for w in ws)]
+    if not cands: return []
+    f = min(cands, key=len)
+    def lab(t):
+        m = _re.search(r'(\d+)\s*강', t) or _re.search(r'(\d+)\s*회', t)
+        if '실전' in t and m: return f'실전 {m.group(1)}회'
+        return f'{m.group(1)}강' if m else t.rsplit('.', 1)[0][-12:]
+    def order(t):
+        m = _re.search(r'(\d+)', t.split('_')[-2] if '_' in t else t)
+        return (('실전' in t), int(m.group(1)) if m else 999)
+    return [(lab(t), i) for t, i in sorted(BWORDS[f], key=lambda x: order(x[0]))]
 def book_card(b):
+    wl = book_words(b)
+    words = ('<div class="bw"><b>📝 단어 학습노트 (무료)</b><div class="chips">' + ''.join(
+        f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(l)}</a>' for l, i in wl) + '</div></div>') if wl else ''
     q = urllib.parse.quote(b['name'])
     blog = f'<a class="btn btn-line" href="{e(b["blog"])}">📝 교재 소개글</a>' if b.get('blog') else ''
     return (f'<section class="card book"><div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
             f'<p>{e(b["intro"])}</p>'
-            f'<ul class="book-meta"><li>📚 {e(b["meta"])}</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul>'
+            f'<ul class="book-meta"><li>📚 {e(b["meta"])}</li><li>✍️ 리카수니 원장이 직접 만든 분석노트</li></ul>' + words
             + ('<div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
                if b.get('ready') else
                '<p class="book-soon">📝 분석노트 준비 중이에요. 필요한 강·번호를 요청해 주시면 요청이 많은 것부터 먼저 만들어요.</p>')

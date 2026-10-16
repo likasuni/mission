@@ -109,7 +109,7 @@ async function noteRequest(user) {
   const bcfg = b => NOTE_BOOK_CFG[b] || { u: '강', max: 30, n: 10 };
   const curBook = () => (document.getElementById('nr-b') || {}).value || d.book || NOTE_BOOKS[0];
   const numOpts = k => {
-    if (k !== 'book') return opt(range(1, 45), 30);
+    if (k !== 'book') return opt(range(30, 40), +qs.get('n') >= 30 && +qs.get('n') <= 40 ? +qs.get('n') : 30); // 모의고사는 30~40번만 요청 (나머지는 페이지에서 바로 보기)
     const c = bcfg(curBook());
     return (c.gw ? '<option value="0">Gateway</option>' : '') + opt(range(c.from || 1, c.n), c.from || 1);
   };
@@ -147,6 +147,11 @@ async function noteRequest(user) {
     preview();
   });
   card.querySelectorAll('select').forEach(s => s.onchange = preview);
+  // 페이지의 주황 번호 버튼(30~40번)을 누르면 요청 칸에 그 번호를 바로 선택
+  document.querySelectorAll('a.nb.req[data-n]').forEach(a => a.addEventListener('click', () => {
+    if (kind !== 'moe') card.querySelector('.tab[data-k="moe"]').click();
+    document.getElementById('nr-n').value = a.dataset.n; preview();
+  }));
   document.getElementById('nr-b').onchange = () => { // 교재를 바꾸면 강/회 범위와 번호 목록도 바꿈
     const c = bcfg($v('nr-b'));
     document.getElementById('nr-u').innerHTML = opt(range(1, c.max), 1);
