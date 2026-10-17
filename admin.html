@@ -30,7 +30,7 @@ let current = 'comments';
 function shell() {
   $('#main').innerHTML = `
     <div class="tabs">
-      <button class="tab" data-t="comments" onclick="showTab('comments')">댓글 승인 <span id="n-comments"></span></button>
+      <button class="tab" data-t="comments" onclick="showTab('comments')">댓글 <span id="n-comments"></span></button>
       <button class="tab" data-t="notes" onclick="showTab('notes')">분석노트 요청 <span id="n-notes"></span></button>
       <button class="tab" data-t="requests" onclick="showTab('requests')">자료 요청 <span id="n-requests"></span></button>
       <button class="tab" data-t="materials" onclick="showTab('materials')">자료 관리</button>
@@ -58,33 +58,56 @@ async function updateBadges() {
   $('#n-notes').textContent = n.count ? `(자료 없음 ${n.count})` : '';
 }
 
-/* ---------- 댓글 승인 ---------- */
+/* ---------- 댓글 (한눈에 보기 · 승인 · 답글 · 회원별 모아보기) ---------- */
+let cFilter = 'all', cUser = null;
 async function tabComments() {
-  const { data, error } = await sb.from('comments')
-    .select('id,author_name,content,created_at,material_id,page_key,page_title,materials(title)')
-    .eq('approved', false).order('created_at', { ascending: true });
-
+  let q = sb.from('comments')
+    .select('id,author_name,content,created_at,approved,reply,user_id,page_key,page_title,materials(title)')
+    .order('created_at', { ascending: false }).limit(200);
+  if (cFilter === 'pending') q = q.eq('approved', false);
+  if (cFilter === 'noreply') q = q.is('reply', null);
+  if (cUser) q = q.eq('user_id', cUser.id);
+  const { data, error } = await q;
   if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
-  if (!data.length) return $('#panel').innerHTML = `<div class="card"><p class="muted">승인 대기 중인 댓글이 없어요. 👍</p></div>`;
-
+  const pend = data.filter(c => !c.approved).length;
+  const fb = (k, label) => `<button class="btn btn-sm ${cFilter === k ? 'btn-navy' : 'btn-line'}" onclick="setCFilter('${k}')">${label}</button>`;
   $('#panel').innerHTML = `
-    <div class="row between" style="margin-bottom:10px">
-      <span class="muted">승인 대기 ${data.length}개</span>
-      <button class="btn btn-navy btn-sm" onclick="approveAll()">전체 승인</button>
+    <div class="card">
+      <div class="row between" style="flex-wrap:wrap;gap:8px">
+        <div class="row" style="gap:6px;flex-wrap:wrap">${fb('all', '전체 댓글')}${fb('pending', '승인 대기')}${fb('noreply', '답글 안 단 댓글')}</div>
+        ${pend ? `<button class="btn btn-gold btn-sm" onclick="approveAll()">대기 ${pend}개 전체 승인</button>` : ''}
+      </div>
+      ${cUser ? `<p class="mt"><b>${esc(cUser.name)}</b> 님의 댓글만 보는 중 · <a href="#" onclick="cUser=null;showTab('comments');return false">전체로 돌아가기</a></p>` : '<p class="meta mt">회원 이름을 누르면 그 회원이 쓴 댓글만 모아 볼 수 있어요.</p>'}
     </div>
-    ${data.map(c => `
+    ${data.length ? data.map(c => `
       <div class="card">
-        <div class="row">
-          <strong>${esc(c.author_name || '익명')}</strong>
+        <div class="row" style="flex-wrap:wrap;gap:6px">
+          <a href="#" onclick="cUser={id:'${c.user_id}',name:${esc(JSON.stringify(c.author_name || '회원'))}};showTab('comments');return false"><strong>${esc(c.author_name || '익명')}</strong></a>
+          <span class="tag" style="background:${c.approved ? '#e8f7ee;color:#166534' : '#fff4e0;color:#9a5b00'}">${c.approved ? '공개' : '승인 대기'}</span>
           <span class="tag">${c.page_key ? `<a href="/${esc(c.page_key)}/" target="_blank">${esc(c.page_title || c.page_key)}</a>` : esc(c.materials?.title || '')}</span>
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
         <p class="body" style="white-space:pre-wrap;margin:8px 0">${esc(c.content)}</p>
-        <div class="row">
-          <button class="btn btn-gold btn-sm" onclick="approve(${c.id})">승인</button>
+        ${c.reply ? `<div class="reply"><b>내 답글</b><br>${esc(c.reply)}</div>` : ''}
+        <div id="rp-${c.id}" style="display:none" class="mt">
+          <textarea id="rt-${c.id}" rows="3" style="width:100%" placeholder="답글을 입력하세요">${esc(c.reply || '')}</textarea>
+          <div class="row mt"><button class="btn btn-navy btn-sm" onclick="saveReply(${c.id})">답글 저장${c.approved ? '' : ' + 승인'}</button></div>
+        </div>
+        <div class="row mt" style="gap:6px">
+          ${c.approved ? '' : `<button class="btn btn-gold btn-sm" onclick="approve(${c.id})">승인</button>`}
+          <button class="btn btn-line btn-sm" onclick="document.getElementById('rp-${c.id}').style.display=''">${c.reply ? '답글 수정' : '답글 달기'}</button>
           <button class="btn btn-danger btn-sm" onclick="removeComment(${c.id})">삭제</button>
         </div>
-      </div>`).join('')}`;
+      </div>`).join('') : '<div class="card"><p class="muted">해당하는 댓글이 없어요.</p></div>'}`;
+}
+function setCFilter(k) { cFilter = k; showTab('comments'); }
+
+async function saveReply(id) {
+  const reply = document.getElementById('rt-' + id).value.trim();
+  const { error } = await sb.from('comments').update({ reply: reply || null, approved: true }).eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast(reply ? '답글을 저장하고 공개했어요.' : '답글을 지웠어요.');
+  showTab('comments');
 }
 
 async function approve(id) {
