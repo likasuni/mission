@@ -36,7 +36,7 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
     const items = list.map(c => `
       <div class="comment">
         <div class="row">
-          <strong>${esc(maskName(c.author_name))}</strong>
+          <strong>${OWNER_IDS.includes(c.user_id) ? '리카수니 원장 <span class="rc-badge">운영자</span>' : esc(maskName(c.author_name))}</strong>
           ${!c.approved ? '<span class="tag wait">비공개</span>' : ''}
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
@@ -75,6 +75,7 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 })();
 
 /* ---------- 이름 가리기: 김나윤 → 김*윤, 홍길 → 홍*, 운영자는 그대로 ---------- */
+const OWNER_IDS = ['6363d675-9fa4-4539-af39-0028444f80f0']; // 원장님 카카오 계정 (댓글에 '리카수니 원장'으로 표시)
 function maskName(n) {
   n = String(n || '회원').trim();
   if (n === '리카수니' || n.length < 2) return n;
@@ -94,19 +95,19 @@ function recentComments() {
   };
   async function load() {
     const { data, count } = await sb.from('comments')
-      .select('id,author_name,content,created_at,reply,page_key,page_title', { count: 'exact' })
+      .select('id,user_id,author_name,content,created_at,reply,page_key,page_title', { count: 'exact' })
       .eq('approved', true).order('created_at', { ascending: false }).limit(6);
-    if (cnt && count) cnt.textContent = count + '개';
-    list.innerHTML = (data || []).map(c => `
-      <div class="rc-item">
-        <div class="rc-av">${esc(maskName(c.author_name)[0])}</div>
+    if (cnt && count) cnt.textContent = '전체 ' + count + '개';
+    list.innerHTML = (data || []).map(c => { const own = OWNER_IDS.includes(c.user_id); return `
+      <div class="rc-item${own ? ' own' : ''}">
+        <div class="rc-av">${own ? '리' : esc(maskName(c.author_name)[0])}</div>
         <div class="rc-bd">
-          <div class="rc-nm"><b>${esc(maskName(c.author_name))}</b><span class="meta">${ago(c.created_at)}</span></div>
+          <div class="rc-nm"><b>${own ? '리카수니 원장' : esc(maskName(c.author_name))}</b>${own ? '<span class="rc-badge">운영자</span>' : ''}<span class="meta">${ago(c.created_at)}</span></div>
           <p class="rc-tx">${esc(c.content.length > 90 ? c.content.slice(0, 90) + '...' : c.content)}</p>
           ${c.reply ? `<div class="rc-rp"><b>리카수니 원장</b> ${esc(c.reply.length > 80 ? c.reply.slice(0, 80) + '...' : c.reply)}</div>` : ''}
           ${c.page_key ? `<a class="rc-pg" href="/${esc(c.page_key)}/#comments">${esc(c.page_title || '글 보기')} →</a>` : ''}
         </div>
-      </div>`).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>';
+      </div>`; }).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>';
   }
   load();
   setInterval(() => { if (!document.hidden) load(); }, 30000);
