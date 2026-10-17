@@ -124,6 +124,7 @@ async function noteRequest(user) {
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const head = `<h2>분석노트 요청</h2>
     <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. <b>하루 모의고사 2개 · 부교재 1개</b>, 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>
+    <p class="meta"><b>받는 방법:</b> 번호를 <b>하나씩</b> 골라 받아요. 모의고사는 하나를 받은 뒤 <b>"다른 번호 받기"</b>를 눌러 두 번째 번호를 받을 수 있어요.</p>
     <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 다시 로그인했을 때 이 칸 위에 <b>"요청하신 자료가 준비됐어요"</b> 알림이 떠요.</p>
     <div id="nr-ready"></div>`;
 

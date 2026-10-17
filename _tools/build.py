@@ -221,7 +221,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=3', '/lib.js?v=16'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=3', '/lib.js?v=17'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -342,7 +342,7 @@ for idx, k in enumerate(keys_sorted):
             wd = WORDS.get(k)
             en_top = (f'''<section class="card en-sec" id="notes"><h2>문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
-<p class="hot"><b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. (하루 2개)</p>
+<p class="hot"><b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 2개</b>까지, 번호를 <b>하나씩</b> 골라 받아요. (하나 받은 뒤 "다른 번호 받기"로 두 번째 번호)</p>
 <div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>' + ad()
                 + ('<section class="card en-sec" id="var"><h2>변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
