@@ -166,7 +166,16 @@ Deno.serve(async (req) => {
     // 같은 자료를 이미 기다리고 있으면 중복으로 쌓지 않음
     const { count: dup } = await db.from('note_orders').select('id', { count: 'exact', head: true })
       .eq('user_id', user.id).eq('label', label).in('status', ['missing', 'resolved']);
-    if (!dup) await db.from('note_orders').insert({ user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'missing' });
+    if (!dup) {
+      await db.from('note_orders').insert({ user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'missing' });
+      // 요청한 페이지 댓글 창에 접수 댓글 + 원장 답글 (이름은 화면에서 김*윤처럼 가려짐)
+      const pk = String(b.page_key || 'notes').slice(0, 200), pt = String(b.page_title || '분석노트 요청').slice(0, 200);
+      await db.from('comments').insert({
+        user_id: user.id, author_name: name, page_key: pk, page_title: pt, approved: true,
+        content: `[자료 요청] ${label} 부탁드려요.`,
+        reply: `${label} 요청 접수했어요. 원장님이 준비해서 완성되면 카카오톡으로 바로 보내 드릴게요.`, replied_at: new Date().toISOString(),
+      });
+    }
     return reply(req, 200, { missing: true, label });
   }
 
@@ -200,6 +209,9 @@ Deno.serve(async (req) => {
   });
   // 기다리던 같은 자료 요청은 '받음' 처리 (준비 알림·관리자 목록에서 빠짐)
   await db.from('note_orders').update({ status: 'done' }).eq('user_id', user.id).eq('label', label).in('status', ['missing', 'resolved']);
+  // 접수 댓글이 있으면 답글을 '전송 완료'로 바꿈
+  await db.from('comments').update({ reply: `${label} 완성돼서 카카오톡으로 보내 드렸어요. 공부에 도움이 되면 좋겠어요!`, replied_at: new Date().toISOString() })
+    .eq('user_id', user.id).eq('content', `[자료 요청] ${label} 부탁드려요.`).like('reply', '%접수했어요%');
   const left = { moe: LIMIT.moe - today.moe - (b.kind === 'moe' ? 1 : 0), book: LIMIT.book - today.book - (b.kind === 'book' ? 1 : 0) };
   return reply(req, 200, { ok: true, label, link, left, expires_at: expires.toISOString(), kakao, kakao_scope: kakaoError.includes('insufficient') || kakaoError.includes('-402') });
 });

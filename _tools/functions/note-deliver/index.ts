@@ -166,6 +166,8 @@ Deno.serve(async (req) => {
       drive_id: f.id, file_name: [...f.path, f.name].join('/'), link_token: token, expires_at: expires.toISOString(), kakao_sent: true,
     });
     await db.from('note_orders').update({ status: 'done' }).eq('user_id', uid).eq('label', w.label).in('status', ['missing', 'resolved']);
+    await db.from('comments').update({ reply: `${w.label} 완성돼서 카카오톡으로 보내 드렸어요. 공부에 도움이 되면 좋겠어요!`, replied_at: new Date().toISOString() })
+      .eq('user_id', uid).eq('content', `[자료 요청] ${w.label} 부탁드려요.`).like('reply', '%접수했어요%');
     log.push(`${uid}: sent ${w.label}`);
   }
   console.log(log.join(' | '));

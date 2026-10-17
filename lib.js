@@ -72,6 +72,7 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
     toast('댓글이 등록됐어요!');
     load();
   }
+  window.reloadComments = load;
   load();
 })();
 
@@ -257,12 +258,13 @@ async function noteRequest(user) {
       try { sessionStorage.setItem('note-pending', JSON.stringify(b)); } catch (e) { /* 무시 */ }
       return login('kakao', 'talk_message');
     }
+    const cbox = document.getElementById('comments');
     let r = {};
     try {
       const res = await fetch(`${SUPABASE_URL}/functions/v1/note-request`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
-        body: JSON.stringify({ ...b, kakao_token: session.provider_token || '' })
+        body: JSON.stringify({ ...b, kakao_token: session.provider_token || '', page_key: cbox ? cbox.dataset.pageKey : 'notes', page_title: cbox ? cbox.dataset.pageTitle : '분석노트 요청' })
       });
       r = await res.json();
     } catch (e) { r = { error: '요청 중 오류가 났어요. 잠시 후 다시 시도해 주세요.' }; }
@@ -273,7 +275,8 @@ async function noteRequest(user) {
     if (r.missing) {
       const d = new Date(Date.now() + 2 * 86400e3);
       const when = `${d.getMonth() + 1}월 ${d.getDate()}일(${'일월화수목금토'[d.getDay()]})`;
-      box.innerHTML = `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 1~2일 뒤(${when}쯤) 다시 로그인하면 이 칸 위에 <b>"준비됐어요"</b> 알림이 떠요. 그때 받기를 눌러 주세요. (오늘 요청 횟수는 차감되지 않아요)`;
+      box.innerHTML = `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 1~2일 뒤(${when}쯤) 다시 로그인하면 이 칸 위에 <b>"준비됐어요"</b> 알림이 떠요. 그때 받기를 눌러 주세요. (오늘 요청 횟수는 차감되지 않아요)<br><span class="meta">아래 댓글 창에도 요청이 접수됐다고 남겨 두었어요.</span>`;
+      if (window.reloadComments) window.reloadComments();
       return;
     }
     card.innerHTML = head + `<div class="info-box"><b>${esc(r.label)}</b>
