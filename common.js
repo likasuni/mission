@@ -23,11 +23,26 @@ function fmtDate(t) {
 
 async function getUser() {
   const { data: { session } } = await sb.auth.getSession();
+  saveKakaoToken(session);
   // 로그인 후 주소창에 남는 토큰 정리
   if (location.hash.includes('access_token')) {
     history.replaceState(null, '', location.pathname + location.search);
   }
   return session?.user ?? null;
+}
+
+// 카카오 로그인 직후 받은 토큰을 서버에 보관 → 요청한 자료가 나중에 준비되면 카톡으로 자동 발송 (하루 1개)
+function saveKakaoToken(session) {
+  const rt = session?.provider_refresh_token;
+  const prov = session?.user?.app_metadata || {};
+  if (!rt || !((prov.providers || [prov.provider]).includes('kakao'))) return;
+  const mark = rt.slice(-12);
+  try { if (localStorage.getItem('kakao-saved') === mark) return; } catch (e) { /* 저장소 사용 불가 */ }
+  fetch(`${SUPABASE_URL}/functions/v1/kakao-token`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
+    body: JSON.stringify({ refresh_token: rt, access_token: session.provider_token || '' })
+  }).then(r => { if (r.ok) { try { localStorage.setItem('kakao-saved', mark); } catch (e) { /* 무시 */ } } }).catch(() => {});
 }
 
 function displayName(user) {
@@ -50,7 +65,7 @@ async function login(provider = 'kakao', scopes) {
 function loginButtons(withGoogle = false) {
   return `
     <div class="login-btns">
-      <button class="btn btn-kakao" onclick="login('kakao')">
+      <button class="btn btn-kakao" onclick="login('kakao', 'talk_message')">
         <span class="ico">💬</span> 카카오로 시작하기
       </button>
       ${withGoogle ? `<button class="btn btn-google" onclick="login('google')">
