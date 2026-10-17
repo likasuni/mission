@@ -39,6 +39,7 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
         <div class="row">
           <strong>${OWNER_IDS.includes(c.user_id) ? '리카수니 원장 <span class="rc-badge">운영자</span>' : esc(maskName(c.author_name))}</strong>
           ${!c.approved ? '<span class="tag wait">비공개</span>' : ''}
+          ${c.content.startsWith('[자료 요청]') ? (/보내 드렸어요/.test(c.reply || '') ? '<span class="rq-st ok">완료 · 카톡 발송</span>' : '<span class="rq-st">진행 중</span>') : ''}
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
         <p class="body">${esc(c.content)}</p>
@@ -95,21 +96,48 @@ function recentComments() {
     const h = Math.floor(m / 60); if (h < 24) return h + '시간 전';
     const d = new Date(t); return `${d.getMonth() + 1}월 ${d.getDate()}일`;
   };
-  async function load() {
-    const { data, count } = await sb.from('comments')
-      .select('id,user_id,author_name,content,created_at,reply,page_key,page_title', { count: 'exact' })
-      .eq('approved', true).order('created_at', { ascending: false }).limit(6);
-    if (cnt && count) cnt.textContent = '전체 ' + count + '개';
-    list.innerHTML = (data || []).map(c => { const own = OWNER_IDS.includes(c.user_id); return `
-      <div class="rc-item${own ? ' own' : ''}">
+  // 자료 요청 댓글: [자료 요청] … 부탁드려요. / 원장 답글에 '보내 드렸어요' 가 있으면 완료
+  const isReq = c => c.content.startsWith('[자료 요청]');
+  const isDone = c => /보내 드렸어요/.test(c.reply || '');
+  const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', '');
+  const shown = { ing: 4, done: 4, cmt: 3 };
+  let cache = null;
+  function reqItem(c, done) {
+    return `<li class="rq${done ? ' ok' : ''}"><span class="rq-st">${done ? '완료' : '진행 중'}</span>
+      <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${ago(c.created_at)}</span></span>
+      ${c.page_key ? `<a class="rq-go" href="/${esc(c.page_key)}/#${done ? 'note-req' : 'comments'}">${done ? '나도 받기' : '보기'}</a>` : ''}</li>`;
+  }
+  function cmtItem(c) {
+    const own = OWNER_IDS.includes(c.user_id);
+    return `<div class="rc-item${own ? ' own' : ''}">
         <div class="rc-av">${own ? '리' : esc(maskName(c.author_name)[0])}</div>
         <div class="rc-bd">
           <div class="rc-nm"><b>${own ? '리카수니 원장' : esc(maskName(c.author_name))}</b>${own ? '<span class="rc-badge">운영자</span>' : ''}<span class="meta">${ago(c.created_at)}</span></div>
-          <p class="rc-tx">${esc(c.content.length > 90 ? c.content.slice(0, 90) + '...' : c.content)}</p>
-          ${c.reply ? `<div class="rc-rp"><b>리카수니 원장</b> ${esc(c.reply.length > 80 ? c.reply.slice(0, 80) + '...' : c.reply)}</div>` : ''}
+          <p class="rc-tx">${esc(c.content.length > 80 ? c.content.slice(0, 80) + '...' : c.content)}</p>
+          ${c.reply ? `<div class="rc-rp"><b>리카수니 원장</b> ${esc(c.reply.length > 70 ? c.reply.slice(0, 70) + '...' : c.reply)}</div>` : ''}
           ${c.page_key ? `<a class="rc-pg" href="/${esc(c.page_key)}/#comments">${esc(c.page_title || '글 보기')} →</a>` : ''}
         </div>
-      </div>`; }).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>';
+      </div>`;
+  }
+  const more = (key, total) => total > shown[key] ? `<button class="rc-more" data-k="${key}">더보기 (${total - shown[key]}개)</button>` : '';
+  function render() {
+    const all = cache || [];
+    const ing = all.filter(c => isReq(c) && !isDone(c)), done = all.filter(c => isReq(c) && isDone(c)), cm = all.filter(c => !isReq(c));
+    if (cnt) cnt.textContent = `진행 ${ing.length} · 완료 ${done.length}`;
+    list.innerHTML = `<div class="rq-cols">
+        <div class="rq-col"><h3>진행 중 <span>${ing.length}</span></h3><ul${shown.ing > 4 ? ' class="open"' : ''}>${ing.slice(0, shown.ing).map(c => reqItem(c, false)).join('') || '<li class="rq-empty">지금 만들고 있는 자료가 없어요.</li>'}</ul>${more('ing', ing.length)}</div>
+        <div class="rq-col ok"><h3>완료 · 카톡 발송 <span>${done.length}</span></h3><ul${shown.done > 4 ? ' class="open"' : ''}>${done.slice(0, shown.done).map(c => reqItem(c, true)).join('') || '<li class="rq-empty">완료된 자료가 여기에 쌓여요.</li>'}</ul>${more('done', done.length)}</div>
+      </div>
+      <h3 class="rc-sub">최근 댓글</h3>
+      <div class="rc-cm${shown.cmt > 3 ? ' open' : ''}">${cm.slice(0, shown.cmt).map(cmtItem).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>'}</div>${more('cmt', cm.length)}`;
+    list.querySelectorAll('.rc-more').forEach(btn => btn.onclick = () => { shown[btn.dataset.k] += 6; render(); });
+  }
+  async function load() {
+    const { data } = await sb.from('comments')
+      .select('id,user_id,author_name,content,created_at,reply,page_key,page_title')
+      .eq('approved', true).order('created_at', { ascending: false }).limit(80);
+    cache = data || [];
+    render();
   }
   load();
   setInterval(() => { if (!document.hidden) load(); }, 30000);
