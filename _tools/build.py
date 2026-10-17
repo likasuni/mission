@@ -221,7 +221,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=3', '/lib.js?v=13'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=3', '/lib.js?v=14'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -229,7 +229,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
   addEventListener('load', function () {{ setTimeout(function () {{ if (window.adsbygoogle && window.adsbygoogle.loaded) return; document.querySelectorAll('.ad-slot').forEach(function (d) {{ d.style.display = 'none'; }}); }}, 8000); }});
   var had = false; try {{ had = !!localStorage.getItem('sb-iiyhmskvdjgstoikonwu-auth-token'); }} catch (e) {{}}
   if (had || location.hash.indexOf('access_token') > -1) {{ go(); return; }}
-  var els = ['note-req', 'comments'].map(function (id) {{ return document.getElementById(id); }}).filter(Boolean);
+  var els = ['note-req', 'comments', 'recent-cmt'].map(function (id) {{ return document.getElementById(id); }}).filter(Boolean);
   if (els.length && 'IntersectionObserver' in window) {{
     var io = new IntersectionObserver(function (es) {{ if (es.some(function (x) {{ return x.isIntersecting; }})) {{ io.disconnect(); go(); }} }}, {{ rootMargin: '600px' }});
     els.forEach(function (el) {{ io.observe(el); }});
@@ -444,7 +444,10 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <h2 class="sec-h">최근 영어 모의고사</h2>
 <div class="card"><div class="chips">''' + ''.join(
     f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-k[2], -k[3], k[1]))[:9]) + '''</div>
-<p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>''' + ad() + f'''
+<p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>
+<section class="card" id="recent-cmt"><div class="rc-head"><h2>최근 댓글</h2><span class="meta rc-n"></span></div>
+<p class="muted" style="margin:6px 0 0">자료에서 궁금한 부분은 각 페이지 아래 댓글로 남겨 주세요. 원장님이 확인하고 답글을 달아 드려요.</p>
+<div class="rc-list"><p class="muted">불러오는 중...</p></div></section>''' + ad() + f'''
 <h2 class="sec-h">전과목 기출문제</h2>
 <p class="muted">국어·수학·사회·과학·한국사까지 전과목 문제지·정답·해설 PDF도 함께 제공해요. 총 {len(sessions)}개 회차, {len(R):,}개 파일.</p>''' + tiles
 

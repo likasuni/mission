@@ -21,6 +21,7 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
   const user = await getUser();
   renderAuth(user);
   noteRequest(user);
+  recentComments();
 
   const box = document.getElementById('comments');
   if (!box) return;
@@ -35,8 +36,8 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
     const items = list.map(c => `
       <div class="comment">
         <div class="row">
-          <strong>${esc(c.author_name || '익명')}</strong>
-          ${!c.approved ? '<span class="tag wait">승인 대기</span>' : ''}
+          <strong>${esc(maskName(c.author_name))}</strong>
+          ${!c.approved ? '<span class="tag wait">비공개</span>' : ''}
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
         <p class="body">${esc(c.content)}</p>
@@ -44,7 +45,7 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
       </div>`).join('') || '<p class="muted">아직 댓글이 없어요. 첫 댓글을 남겨 주세요!</p>';
 
     const form = user ? `
-      <p class="muted">이 시험에 대한 질문이나 공부 후기를 <b>댓글</b>로 남겨 주세요. 짧은 질문도 괜찮아요. (원장님 확인 후 공개)<br>
+      <p class="muted">이 시험에 대한 질문이나 공부 후기를 <b>댓글</b>로 남겨 주세요. 짧은 질문도 괜찮아요. 원장님이 확인하고 답글을 달아 드려요.<br>
       분석노트를 받고 싶다면 댓글 대신 <a href="/notes/"><b>분석노트 요청</b></a>을 이용해 주세요.</p>
       <textarea id="cbody" maxlength="1000" placeholder="댓글 예) 31번 빈칸이 어려웠는데 해설을 보고 근거를 찾았어요. 다음엔 시간 배분을 더 신경 써야겠어요."></textarea>
       <div class="row between mt"><span class="meta"><span id="ccount">0</span>자</span>
@@ -67,11 +68,49 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
       page_key: key, page_title: title, author_name: displayName(user), content
     });
     if (error) { btn.disabled = false; return toast('등록 실패: ' + error.message); }
-    toast('등록됐어요! 원장님 확인 후 공개돼요.');
+    toast('댓글이 등록됐어요!');
     load();
   }
   load();
 })();
+
+/* ---------- 이름 가리기: 김나윤 → 김*윤, 홍길 → 홍*, 운영자는 그대로 ---------- */
+function maskName(n) {
+  n = String(n || '회원').trim();
+  if (n === '리카수니' || n.length < 2) return n;
+  return n.length === 2 ? n[0] + '*' : n[0] + '*'.repeat(n.length - 2) + n[n.length - 1];
+}
+
+/* ---------- 최근 댓글 (첫 화면): 30초마다 새로 불러옴 ---------- */
+function recentComments() {
+  const box = document.getElementById('recent-cmt');
+  if (!box) return;
+  const list = box.querySelector('.rc-list'), cnt = box.querySelector('.rc-n');
+  const ago = t => {
+    const m = Math.floor((Date.now() - new Date(t)) / 60000);
+    if (m < 1) return '방금'; if (m < 60) return m + '분 전';
+    const h = Math.floor(m / 60); if (h < 24) return h + '시간 전';
+    const d = new Date(t); return `${d.getMonth() + 1}월 ${d.getDate()}일`;
+  };
+  async function load() {
+    const { data, count } = await sb.from('comments')
+      .select('id,author_name,content,created_at,reply,page_key,page_title', { count: 'exact' })
+      .eq('approved', true).order('created_at', { ascending: false }).limit(6);
+    if (cnt && count) cnt.textContent = count + '개';
+    list.innerHTML = (data || []).map(c => `
+      <div class="rc-item">
+        <div class="rc-av">${esc(maskName(c.author_name)[0])}</div>
+        <div class="rc-bd">
+          <div class="rc-nm"><b>${esc(maskName(c.author_name))}</b><span class="meta">${ago(c.created_at)}</span></div>
+          <p class="rc-tx">${esc(c.content.length > 90 ? c.content.slice(0, 90) + '...' : c.content)}</p>
+          ${c.reply ? `<div class="rc-rp"><b>리카수니 원장</b> ${esc(c.reply.length > 80 ? c.reply.slice(0, 80) + '...' : c.reply)}</div>` : ''}
+          ${c.page_key ? `<a class="rc-pg" href="/${esc(c.page_key)}/#comments">${esc(c.page_title || '글 보기')} →</a>` : ''}
+        </div>
+      </div>`).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>';
+  }
+  load();
+  setInterval(() => { if (!document.hidden) load(); }, 30000);
+}
 
 /* ---------- 분석노트 요청 ---------- */
 async function noteRequest(user) {
