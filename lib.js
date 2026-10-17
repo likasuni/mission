@@ -82,7 +82,9 @@ async function noteRequest(user) {
   const startBook = d.book && NOTE_BOOKS.includes(d.book);
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const head = `<h2>분석노트 요청</h2>
-    <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. <b>1인 하루 1개</b>, 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>`;
+    <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. <b>1인 하루 1개</b>, 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>
+    <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 다시 로그인했을 때 이 칸 위에 <b>"요청하신 자료가 준비됐어요"</b> 알림이 떠요.</p>
+    <div id="nr-ready"></div>`;
 
   if (!isKakao) {
     card.innerHTML = head + `<p class="muted">카카오로 로그인한 회원만 요청할 수 있어요.</p>${loginButtons()}`;
@@ -100,6 +102,7 @@ async function noteRequest(user) {
       <span class="meta">${o.kakao_sent ? '카카오톡 \'나와의 채팅\'을 확인해 주세요. ' : ''}링크는 ${fmtDate(o.expires_at)}까지 열려요.</span>
       <p class="mt"><a class="btn btn-gold btn-sm" href="/get/?t=${o.link_token}" target="_blank" rel="noopener">지금 열기</a></p>
       <p class="meta">내일 다시 1개를 요청할 수 있어요.</p></div>`;
+    showReady(true);
     return;
   }
 
@@ -166,12 +169,39 @@ async function noteRequest(user) {
     : { kind, book: $v('nr-b'), unit: +$v('nr-u'), n: +$v('nr-n') };
 
   document.getElementById('nr-go').onclick = () => send(body());
+  showReady(false);
 
   // 카카오 메시지 권한을 받으러 다녀온 경우 이어서 요청
   try {
     const pending = sessionStorage.getItem('note-pending');
     if (pending) { sessionStorage.removeItem('note-pending'); send(JSON.parse(pending), true); }
   } catch (e) { /* 저장소 사용 불가 */ }
+
+  // 예전에 요청했지만 그때 없던 자료가 지금 준비됐으면 알림 (하루 1개씩 받기)
+  async function showReady(gotToday) {
+    const slot = document.getElementById('nr-ready');
+    const { data: { session } } = await sb.auth.getSession();
+    if (!slot || !session) return;
+    let r = {};
+    try {
+      const res = await fetch(`${SUPABASE_URL}/functions/v1/note-request`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
+        body: JSON.stringify({ kind: 'check' })
+      });
+      r = await res.json();
+    } catch (e) { return; }
+    const list = r.ready || [];
+    if (!list.length) return;
+    slot.innerHTML = `<div class="ready-box"><b>요청하신 자료가 준비됐어요</b><ul>` + list.map((x, i) =>
+      `<li><span>${esc(x.label)}</span>${gotToday ? '' : `<button class="btn btn-gold btn-sm" data-i="${i}">받기</button>`}</li>`).join('') +
+      `</ul><p class="meta">${gotToday ? '오늘은 이미 1개를 받았어요. 내일 다시 와서 받아 주세요.' : '하루 1개씩 받을 수 있어요.' + (list.length > 1 ? ' 나머지는 내일 다시 와서 받아 주세요.' : '')}</p></div>`;
+    slot.querySelectorAll('button[data-i]').forEach(btn => btn.onclick = () => {
+      const x = list[+btn.dataset.i];
+      slot.innerHTML = '';
+      send({ kind: x.kind, ...x.query });
+    });
+  }
 
   async function send(b, retried) {
     const btn = document.getElementById('nr-go'); btn.disabled = true; btn.textContent = '찾는 중...';
@@ -197,7 +227,7 @@ async function noteRequest(user) {
     if (r.missing) {
       const d = new Date(Date.now() + 2 * 86400e3);
       const when = `${d.getMonth() + 1}월 ${d.getDate()}일(${'일월화수목금토'[d.getDay()]})`;
-      box.innerHTML = `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 자료 준비에 1~2일 걸리니 <b>${when} 이후에 다시 요청</b>해 주세요. (오늘 요청 횟수는 차감되지 않아요)`;
+      box.innerHTML = `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 1~2일 뒤(${when}쯤) 다시 로그인하면 이 칸 위에 <b>"준비됐어요"</b> 알림이 떠요. 그때 받기를 눌러 주세요. (오늘 요청 횟수는 차감되지 않아요)`;
       return;
     }
     card.innerHTML = head + `<div class="info-box"><b>${esc(r.label)}</b>

@@ -70,6 +70,37 @@ function moeKey(f: Entry): number[] | null {
 
 const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
+// 요청 → 라벨·검색 조건
+type Spec = { kind: string; label: string; query: any; words: RegExp[]; unitRe: RegExp; n: number };
+function makeSpec(b: any): Spec | { error: string } {
+  const n = Number(b.n);
+  if (b.kind === 'moe') {
+    const y = Number(b.y), m = Number(b.m), g = Number(b.g);
+    if (!(y >= 2015 && y <= 2030 && m >= 1 && m <= 12 && g >= 1 && g <= 3)) return { error: '회차를 확인해 주세요.' };
+    return { kind: 'moe', label: `${y}년 ${m}월 고${g} 영어 모의고사 ${n}번 분석노트`, query: { y, m, g, n }, words: [], unitRe: /$^/, n };
+  }
+  if (b.kind === 'book') {
+    const book = String(b.book || ''), unit = Number(b.unit);
+    if (!BOOKS[book] || !(unit >= 1 && unit <= 60)) return { error: '교재와 강을 확인해 주세요.' };
+    return { kind: 'book', label: `${book} ${unit}${BOOKS[book]} ${n === 0 ? 'Gateway' : n + '번'} 분석노트`, query: { book, unit, n },
+      words: book.split(/\s+/).map((w) => new RegExp(esc(w))), unitRe: new RegExp(`(^|\\D)${unit}\\s*${BOOKS[book]}`), n };
+  }
+  return { error: '요청 종류를 확인해 주세요.' };
+}
+function findFiles(all: Entry[], sp: Spec) {
+  const { n, query } = sp;
+  return all.filter((f) => {
+    if (!/\.pdf$/i.test(f.name) || /문제|정답|해설|듣기/.test(f.name)) return false;
+    if (sp.kind === 'moe') { const k = moeKey(f); return hasNum(f.name, n) && !!k && k[0] === query.y && k[1] === query.m && k[2] === query.g; }
+    const full = [...f.path, f.name].join(' ');
+    if (!sp.words.every((re) => re.test(full))) return false;
+    // 부교재 파일 이름 '강-번호.pdf' (0 = Gateway) 예: 1-0.pdf, 20-3.pdf
+    const ku = f.name.match(/^(\d+)\s*-\s*(\d+)\s*\.pdf$/i);
+    if (ku) return +ku[1] === query.unit && +ku[2] === n;
+    return hasNum(f.name, n) && sp.unitRe.test(full); // 또는 '1강' 폴더 안 '1.pdf', 'gateway.pdf'
+  });
+}
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: cors(req) });
   if (req.method !== 'POST') return reply(req, 405, { error: 'POST only' });
@@ -83,24 +114,30 @@ Deno.serve(async (req) => {
 
   let b: any = {};
   try { b = await req.json(); } catch { /* empty */ }
+
+  const name = user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.nickname || '회원';
+
+  // 준비된 자료 확인: 이 회원이 요청했지만 그때 없던 자료 중, 지금 드라이브에 올라온 것 (알림용, 횟수 차감 없음)
+  if (b.kind === 'check') {
+    const { data: waits } = await db.from('note_orders').select('kind,label,query,created_at')
+      .eq('user_id', user.id).in('status', ['missing', 'resolved']).order('created_at', { ascending: true }).limit(30);
+    const seen = new Set<string>(), ready: unknown[] = [];
+    const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
+    if (!cfg?.v || !waits?.length) return reply(req, 200, { ready });
+    const all = await listTree(cfg.v);
+    for (const w of waits) {
+      if (seen.has(w.label)) continue; seen.add(w.label);
+      const spec = makeSpec({ kind: w.kind, ...(w.query || {}) });
+      if (!('error' in spec) && findFiles(all, spec).length) ready.push({ kind: w.kind, label: w.label, query: w.query });
+    }
+    return reply(req, 200, { ready });
+  }
+
   const n = Number(b.n);
   if (!(n >= (b.kind === 'book' ? 0 : 1) && n <= 60)) return reply(req, 400, { error: '문항 번호를 확인해 주세요.' });
-
-  // 요청 → 검색 조건
-  let label = '', must: string[] = [], query: any = {};
-  if (b.kind === 'moe') {
-    const y = Number(b.y), m = Number(b.m), g = Number(b.g);
-    if (!(y >= 2015 && y <= 2030 && m >= 1 && m <= 12 && g >= 1 && g <= 3)) return reply(req, 400, { error: '회차를 확인해 주세요.' });
-    label = `${y}년 ${m}월 고${g} 영어 모의고사 ${n}번 분석노트`;
-    query = { y, m, g, n };
-  } else if (b.kind === 'book') {
-    const book = String(b.book || ''), unit = Number(b.unit);
-    if (!BOOKS[book] || !(unit >= 1 && unit <= 60)) return reply(req, 400, { error: '교재와 강을 확인해 주세요.' });
-    label = `${book} ${unit}${BOOKS[book]} ${n === 0 ? 'Gateway' : n + '번'} 분석노트`;
-    const words = book.split(/\s+/);
-    must = [...words.map(esc), `(^|\\D)${unit}\\s*${BOOKS[book]}`];
-    query = { book, unit, n };
-  } else return reply(req, 400, { error: '요청 종류를 확인해 주세요.' });
+  const spec = makeSpec(b);
+  if ('error' in spec) return reply(req, 400, { error: spec.error });
+  const { label, query } = spec;
 
   // 하루 1개 (한국 시간 자정 기준, 실제로 받은 요청만 계산)
   const kst = new Date(Date.now() + 9 * 3600e3);
@@ -113,21 +150,13 @@ Deno.serve(async (req) => {
   const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
   if (!cfg?.v) return reply(req, 503, { error: '자료 연결 준비 중이에요. 잠시 후 다시 시도해 주세요.' });
   const all = await listTree(cfg.v);
-  const words = must.slice(0, -1).map((x) => new RegExp(x)), unitRe = new RegExp(must[must.length - 1] || '$^');
-  const files = all.filter((f) => {
-    if (!/\.pdf$/i.test(f.name) || /문제|정답|해설|듣기/.test(f.name)) return false;
-    if (b.kind === 'moe') { const k = moeKey(f); return hasNum(f.name, n) && !!k && k[0] === query.y && k[1] === query.m && k[2] === query.g; }
-    const full = [...f.path, f.name].join(' ');
-    if (!words.every((re) => re.test(full))) return false;
-    // 부교재 파일 이름 '강-번호.pdf' (0 = Gateway) 예: 1-0.pdf, 20-3.pdf
-    const ku = f.name.match(/^(\d+)\s*-\s*(\d+)\s*\.pdf$/i);
-    if (ku) return +ku[1] === query.unit && +ku[2] === n;
-    return hasNum(f.name, n) && unitRe.test(full); // 또는 '1강' 폴더 안 '1.pdf', 'gateway.pdf'
-  });
+  const files = findFiles(all, spec);
 
-  const name = user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.nickname || '회원';
   if (!files.length) {
-    await db.from('note_orders').insert({ user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'missing' });
+    // 같은 자료를 이미 기다리고 있으면 중복으로 쌓지 않음
+    const { count: dup } = await db.from('note_orders').select('id', { count: 'exact', head: true })
+      .eq('user_id', user.id).eq('label', label).in('status', ['missing', 'resolved']);
+    if (!dup) await db.from('note_orders').insert({ user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'missing' });
     return reply(req, 200, { missing: true, label });
   }
 
@@ -159,5 +188,7 @@ Deno.serve(async (req) => {
     user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'sent',
     drive_id: f.id, file_name: [...f.path, f.name].join('/'), link_token: token, expires_at: expires.toISOString(), kakao_sent: kakao,
   });
+  // 기다리던 같은 자료 요청은 '받음' 처리 (준비 알림·관리자 목록에서 빠짐)
+  await db.from('note_orders').update({ status: 'done' }).eq('user_id', user.id).eq('label', label).in('status', ['missing', 'resolved']);
   return reply(req, 200, { ok: true, label, link, expires_at: expires.toISOString(), kakao, kakao_scope: kakaoError.includes('insufficient') || kakaoError.includes('-402') });
 });
