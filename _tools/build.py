@@ -221,7 +221,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=3', '/lib.js?v=15'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=3', '/lib.js?v=16'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -293,7 +293,7 @@ for idx, k in enumerate(keys_sorted):
     note_banner = ''
     if k[0] == 'moe' and '영어' in subs:
         note_banner = (f'<a class="banner note" href="/notes/?y={k[2]}&m={k[3]}&g={k[1]}"><b>이 회차 영어 문항별 분석노트, 카톡으로 받기</b>'
-                       '<p>번호만 고르면 카카오톡으로 바로 보내드려요. 1인 하루 1개 · 링크 24시간</p></a>')
+                       '<p>번호만 고르면 카카오톡으로 바로 보내드려요. 하루 모의고사 2개 · 부교재 1개 · 링크 24시간</p></a>')
     info_html = ''
     if inf.get('summary'):
         info_html += '<div class="card"><h2>시험 요약</h2>' + (f'<p class="muted">{e(inf["date"])}</p>' if inf.get('date') else '') + \
@@ -342,7 +342,7 @@ for idx, k in enumerate(keys_sorted):
             wd = WORDS.get(k)
             en_top = (f'''<section class="card en-sec" id="notes"><h2>문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
-<p class="hot"><b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. (1인 하루 1개)</p>
+<p class="hot"><b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. (하루 2개)</p>
 <div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>' + ad()
                 + ('<section class="card en-sec" id="var"><h2>변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
@@ -505,11 +505,11 @@ nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요�
 <li>카카오로 로그인한 회원만 요청할 수 있어요.</li>
 <li>모의고사는 연도·월·학년·번호를, 부교재는 교재·강·번호를 골라 요청해요. (예: 2026년 9월 고1 30번, 수능특강 라이트 20강 1번)</li>
 <li>요청하면 카카오톡 '나와의 채팅'으로 분석노트 링크가 바로 와요.</li>
-<li>1인 하루 1개까지 받을 수 있고, 링크는 24시간 동안 열려요.</li>
+<li>하루에 모의고사 2개, 부교재 1개까지 받을 수 있고, 링크는 24시간 동안 열려요.</li>
 <li>아직 준비되지 않은 자료는 원장님께 요청이 전달돼요. 준비에 1~2일 걸리니 그 뒤에 다시 요청해 주세요. (그날 요청 횟수는 차감되지 않아요)</li>
 </ul></div>''' + ad()
 page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카수니 자료실',
-     '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 1인 하루 1개.', nbody,
+     '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 하루 모의고사 2개·부교재 1개.', nbody,
      [('/', '홈'), ('/notes/', '분석노트 요청')], '/notes/', comments=('notes', '분석노트 요청'))
 
 # ---------- 부교재 요청방 ----------
@@ -566,7 +566,7 @@ def book_card(b):
             f'<div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
             f'<p>{e(b["intro"])}</p>'
             f'<ul class="book-meta"><li>{e(b["meta"])}</li><li>리카수니 원장이 직접 만든 분석노트</li></ul></div></div>' + words
-            + ('<div class="book-use"><div><b>무료</b><span>카톡으로 문항 1개, 하루 1번</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
+            + ('<div class="book-use"><div><b>무료</b><span>카톡으로 하루 1문항</span></div><div><b>유료</b><span>강 단위로 필요한 만큼 구매</span></div></div>'
                if b.get('ready') else
                '<p class="book-soon">분석노트 준비 중이에요. 필요한 강·번호를 요청해 주시면 요청이 많은 것부터 먼저 만들어요.</p>')
             + f'<div class="book-btns"><a class="btn btn-kakao" href="/notes/?book={q}">{"카톡으로 무료 요청" if b.get("ready") else "이 교재 분석노트 요청하기"}</a>'
@@ -576,7 +576,7 @@ bbody = ('<h1 class="page-h1">부교재 영어 분석노트 요청방</h1>'
          '<p class="lead">리카수니 원장이 직접 만든 부교재 분석노트예요. <b>문항 1개는 카톡으로 무료</b>, 강 전체가 필요하면 <b>강 단위로 구매</b>할 수 있어요.</p>'
          + ''.join(book_card(b) for b in BOOKS) +
          '<div class="card"><h2>이용 방법</h2><ul class="sum">'
-         "<li><b>무료 요청:</b> 카카오 로그인 후 교재·강·번호를 고르면 카카오톡 '나와의 채팅'으로 24시간 링크가 와요. 1인 하루 1개 (모의고사 요청과 합산).</li>"
+         "<li><b>무료 요청:</b> 카카오 로그인 후 교재·강·번호를 고르면 카카오톡 '나와의 채팅'으로 24시간 링크가 와요. 부교재는 하루 1개 (모의고사는 따로 하루 2개).</li>"
          '<li><b>유료 구매:</b> 네이버 프리미엄 콘텐츠에서 필요한 강만 골라 구매해요.</li>'
          '<li><b>샘플:</b> 먼저 샘플을 보고 분석노트 구성을 확인해 보세요.</li>'
          '<li>아직 준비되지 않은 강·번호는 원장님께 요청이 전달돼요. 1~2일 뒤 다시 요청해 주세요.</li>'

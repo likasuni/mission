@@ -40,7 +40,7 @@
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=3', '/lib.js?v=15'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=3', '/lib.js?v=16'];
   function next(i) { if (i >= srcs.length) { if (after) after(); return; } var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () { next(i + 1); }; document.body.appendChild(s); }
   function go() { if (!done) { done = true; next(0); } }
   window.lazyLogin = function () { after = function () { showLogin(); }; if (done) { if (window.showLogin) showLogin(); } else go(); };

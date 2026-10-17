@@ -1,9 +1,11 @@
-// 분석노트 요청: 카카오 로그인 회원, 1인 하루 1개(한국 시간 기준)
+// 분석노트 요청: 카카오 로그인 회원, 하루 모의고사 2개 · 부교재 1개 (한국 시간 기준)
 // 공개 구글드라이브 분석노트 폴더에서 파일을 찾아 24시간짜리 링크를 만들고 카카오톡 '나에게 보내기'로 전송
 // 파일이 없으면 'missing'으로 기록 → 관리자 페이지에 알림
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 const LINK_HOURS = 24;
+const LIMIT: Record<string, number> = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (lib.js NOTE_LIMIT 와 같게)
+const LIMIT_MSG: Record<string, string> = { moe: '모의고사 분석노트는 하루 2개', book: '부교재 분석노트는 하루 1개' };
 const ORIGINS = ['https://data.likasuni.com', 'http://localhost:8765'];
 // 부교재 목록 → 단위(강/회). 이름의 각 단어가 드라이브 폴더 이름에 들어가야 함 (lib.js NOTE_BOOK_CFG 와 같게)
 const BOOKS: Record<string, string> = { '수능특강 라이트': '강', '리딩파워 기본': '강', '리딩파워 완성': '강', '올림포스 영어독해 기본1': '강', '하루 6개 1등급 모의고사 고1': '회', '하루 6개 1등급 모의고사 고2': '회', '올림포스 전국연합학력평가 기출문제집 고1': '회', '올림포스 전국연합학력평가 기출문제집 고2': '회' };
@@ -101,6 +103,16 @@ function findFiles(all: Entry[], sp: Spec) {
   });
 }
 
+// 오늘(한국 시간) 받은 개수: 종류별
+async function todayCounts(db: any, uid: string) {
+  const kst = new Date(Date.now() + 9 * 3600e3);
+  const dayStart = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate()) - 9 * 3600e3).toISOString();
+  const { data } = await db.from('note_orders').select('kind').eq('user_id', uid).eq('status', 'sent').gte('created_at', dayStart);
+  const c: Record<string, number> = { moe: 0, book: 0 };
+  for (const r of data || []) c[r.kind] = (c[r.kind] || 0) + 1;
+  return c;
+}
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: cors(req) });
   if (req.method !== 'POST') return reply(req, 405, { error: 'POST only' });
@@ -122,15 +134,16 @@ Deno.serve(async (req) => {
     const { data: waits } = await db.from('note_orders').select('kind,label,query,created_at')
       .eq('user_id', user.id).in('status', ['missing', 'resolved']).order('created_at', { ascending: true }).limit(30);
     const seen = new Set<string>(), ready: unknown[] = [];
+    const today = await todayCounts(db, user.id);
     const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
-    if (!cfg?.v || !waits?.length) return reply(req, 200, { ready });
+    if (!cfg?.v || !waits?.length) return reply(req, 200, { ready, today, limit: LIMIT });
     const all = await listTree(cfg.v);
     for (const w of waits) {
       if (seen.has(w.label)) continue; seen.add(w.label);
       const spec = makeSpec({ kind: w.kind, ...(w.query || {}) });
       if (!('error' in spec) && findFiles(all, spec).length) ready.push({ kind: w.kind, label: w.label, query: w.query });
     }
-    return reply(req, 200, { ready });
+    return reply(req, 200, { ready, today, limit: LIMIT });
   }
 
   const n = Number(b.n);
@@ -139,12 +152,9 @@ Deno.serve(async (req) => {
   if ('error' in spec) return reply(req, 400, { error: spec.error });
   const { label, query } = spec;
 
-  // 하루 1개 (한국 시간 자정 기준, 실제로 받은 요청만 계산)
-  const kst = new Date(Date.now() + 9 * 3600e3);
-  const dayStart = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate()) - 9 * 3600e3).toISOString();
-  const { count } = await db.from('note_orders').select('id', { count: 'exact', head: true })
-    .eq('user_id', user.id).eq('status', 'sent').gte('created_at', dayStart);
-  if ((count || 0) >= 1) return reply(req, 429, { error: '분석노트는 하루에 1개만 받을 수 있어요. 내일 다시 요청해 주세요.' });
+  // 하루 개수 제한 (한국 시간 자정 기준, 실제로 받은 것만 계산) — 모의고사 2개 · 부교재 1개
+  const today = await todayCounts(db, user.id);
+  if (today[b.kind] >= LIMIT[b.kind]) return reply(req, 429, { error: `${LIMIT_MSG[b.kind]}까지 받을 수 있어요. 내일 다시 요청해 주세요.` });
 
   // 공개 드라이브 폴더(분석노트 폴더)에서 찾기
   const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
@@ -190,5 +200,6 @@ Deno.serve(async (req) => {
   });
   // 기다리던 같은 자료 요청은 '받음' 처리 (준비 알림·관리자 목록에서 빠짐)
   await db.from('note_orders').update({ status: 'done' }).eq('user_id', user.id).eq('label', label).in('status', ['missing', 'resolved']);
-  return reply(req, 200, { ok: true, label, link, expires_at: expires.toISOString(), kakao, kakao_scope: kakaoError.includes('insufficient') || kakaoError.includes('-402') });
+  const left = { moe: LIMIT.moe - today.moe - (b.kind === 'moe' ? 1 : 0), book: LIMIT.book - today.book - (b.kind === 'book' ? 1 : 0) };
+  return reply(req, 200, { ok: true, label, link, left, expires_at: expires.toISOString(), kakao, kakao_scope: kakaoError.includes('insufficient') || kakaoError.includes('-402') });
 });

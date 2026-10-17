@@ -1,7 +1,7 @@
 /* =========================================
    자료실 페이지 공통: 로그인 표시 + 페이지 댓글 + 분석노트 요청
    - 댓글은 어느 페이지에 달든 미션 개수에 합산
-   - 분석노트 요청: 카카오 회원, 1인 하루 1개, 24시간 링크를 카톡으로 자동 발송
+   - 분석노트 요청: 카카오 회원, 하루 모의고사 2개 · 부교재 1개, 24시간 링크를 카톡으로 자동 발송
    ========================================= */
 // 부교재 목록: 이름은 드라이브 '부교재 분석노트' 안 폴더 이름과 같게 (note-request 함수의 BOOKS, build.py BOOKS와 같게)
 // u: 단위(강/회), max: 마지막 강·회, n: 문항 수, gw: Gateway 있음
@@ -16,6 +16,7 @@ const NOTE_BOOK_CFG = {
   '올림포스 전국연합학력평가 기출문제집 고2': { u: '회', max: 30, from: 18, n: 45 },
 };
 const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
+const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (note-request 함수 LIMIT 와 같게)
 
 (async function () {
   const user = await getUser();
@@ -119,10 +120,10 @@ async function noteRequest(user) {
   if (!card) return;
   const qs = new URLSearchParams(location.search);
   const d = { y: card.dataset.y || qs.get('y'), m: card.dataset.m || qs.get('m'), g: card.dataset.g || qs.get('g'), book: qs.get('book') }; // 회차·교재 미리 채움
-  const startBook = d.book && NOTE_BOOKS.includes(d.book);
+  let startBook = d.book && NOTE_BOOKS.includes(d.book);
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const head = `<h2>분석노트 요청</h2>
-    <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. <b>1인 하루 1개</b>, 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>
+    <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. <b>하루 모의고사 2개 · 부교재 1개</b>, 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>
     <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 다시 로그인했을 때 이 칸 위에 <b>"요청하신 자료가 준비됐어요"</b> 알림이 떠요.</p>
     <div id="nr-ready"></div>`;
 
@@ -131,21 +132,25 @@ async function noteRequest(user) {
     return;
   }
 
-  // 오늘 받은 기록
+  // 오늘 받은 기록 (종류별 개수)
   const kst = new Date(Date.now() + 9 * 3600e3);
   const dayStart = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate()) - 9 * 3600e3).toISOString();
-  const { data: today } = await sb.from('note_orders').select('label,status,link_token,expires_at,kakao_sent')
-    .eq('status', 'sent').gte('created_at', dayStart).order('created_at', { ascending: false }).limit(1);
-  if (today && today.length) {
-    const o = today[0];
-    card.innerHTML = head + `<div class="info-box">오늘은 <b>${esc(o.label)}</b>를 받았어요.<br>
-      <span class="meta">${o.kakao_sent ? '카카오톡 \'나와의 채팅\'을 확인해 주세요. ' : ''}링크는 ${fmtDate(o.expires_at)}까지 열려요.</span>
-      <p class="mt"><a class="btn btn-gold btn-sm" href="/get/?t=${o.link_token}" target="_blank" rel="noopener">지금 열기</a></p>
-      <p class="meta">내일 다시 1개를 요청할 수 있어요.</p></div>`;
-    showReady(true);
+  const { data: todayList } = await sb.from('note_orders').select('kind,label,link_token,expires_at,kakao_sent')
+    .eq('status', 'sent').gte('created_at', dayStart).order('created_at', { ascending: false });
+  const used = { moe: 0, book: 0 };
+  (todayList || []).forEach(o => { used[o.kind] = (used[o.kind] || 0) + 1; });
+  const leftOf = k => Math.max(0, NOTE_LIMIT[k] - used[k]);
+  const gotHtml = (todayList || []).length ? `<div class="info-box"><b>오늘 받은 분석노트</b>` + todayList.map(o => `
+      <div class="row between mt" style="gap:8px;flex-wrap:wrap"><span>${esc(o.label)}</span>
+      <a class="btn btn-gold btn-sm" href="/get/?t=${o.link_token}" target="_blank" rel="noopener">열기</a></div>`).join('') +
+    `<p class="meta mt">오늘 남은 횟수: 모의고사 <b>${leftOf('moe')}개</b> · 부교재 <b>${leftOf('book')}개</b> · 링크는 받은 뒤 24시간 동안 열려요.</p></div>` : '';
+  if (!leftOf('moe') && !leftOf('book')) {
+    card.innerHTML = head + gotHtml + '<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요. 내일 다시 요청해 주세요.</p>';
+    showReady(used);
     return;
   }
 
+  if (!startBook && !leftOf('moe') && leftOf('book') && !card.dataset.y) startBook = true;
   const y0 = new Date().getFullYear();
   const opt = (arr, sel) => arr.map(v => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${v}</option>`).join('');
   const range = (a, b) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
@@ -156,7 +161,7 @@ async function noteRequest(user) {
     const c = bcfg(curBook());
     return (c.gw ? '<option value="0">Gateway</option>' : '') + opt(range(c.from || 1, c.n), c.from || 1);
   };
-  card.innerHTML = head + `
+  card.innerHTML = head + gotHtml + `
     <div class="tabs mt"><button class="tab${startBook ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button></div>
     <div id="nr-moe" class="row"${startBook ? ' style="display:none"' : ''}>
       <select id="nr-y">${opt(range(2020, y0).reverse(), d.y || y0)}</select>
@@ -209,7 +214,7 @@ async function noteRequest(user) {
     : { kind, book: $v('nr-b'), unit: +$v('nr-u'), n: +$v('nr-n') };
 
   document.getElementById('nr-go').onclick = () => send(body());
-  showReady(false);
+  showReady(used);
 
   // 카카오 메시지 권한을 받으러 다녀온 경우 이어서 요청
   try {
@@ -218,7 +223,7 @@ async function noteRequest(user) {
   } catch (e) { /* 저장소 사용 불가 */ }
 
   // 예전에 요청했지만 그때 없던 자료가 지금 준비됐으면 알림 (하루 1개씩 받기)
-  async function showReady(gotToday) {
+  async function showReady(used) {
     const slot = document.getElementById('nr-ready');
     const { data: { session } } = await sb.auth.getSession();
     if (!slot || !session) return;
@@ -234,8 +239,8 @@ async function noteRequest(user) {
     const list = r.ready || [];
     if (!list.length) return;
     slot.innerHTML = `<div class="ready-box"><b>요청하신 자료가 준비됐어요</b><ul>` + list.map((x, i) =>
-      `<li><span>${esc(x.label)}</span>${gotToday ? '' : `<button class="btn btn-gold btn-sm" data-i="${i}">받기</button>`}</li>`).join('') +
-      `</ul><p class="meta">${gotToday ? '오늘은 이미 1개를 받았어요. 내일 다시 와서 받아 주세요.' : '하루 1개씩 받을 수 있어요.' + (list.length > 1 ? ' 나머지는 내일 다시 와서 받아 주세요.' : '')}</p></div>`;
+      `<li><span>${esc(x.label)}</span>${NOTE_LIMIT[x.kind] - (used[x.kind] || 0) > 0 ? `<button class="btn btn-gold btn-sm" data-i="${i}">받기</button>` : '<span class="meta">내일 받기</span>'}</li>`).join('') +
+      `</ul><p class="meta">하루에 모의고사 2개 · 부교재 1개까지 받을 수 있어요. 남은 자료는 내일 다시 와서 받아 주세요.</p></div>`;
     slot.querySelectorAll('button[data-i]').forEach(btn => btn.onclick = () => {
       const x = list[+btn.dataset.i];
       slot.innerHTML = '';
@@ -273,6 +278,7 @@ async function noteRequest(user) {
     card.innerHTML = head + `<div class="info-box"><b>${esc(r.label)}</b>
       ${r.kakao ? '를 카카오톡 <b>\'나와의 채팅\'</b>으로 보냈어요!' : '가 준비됐어요. (카톡 발송이 안 돼서 아래 버튼으로 바로 열어 주세요)'}
       <br><span class="meta">링크는 ${fmtDate(r.expires_at)}까지(24시간) 열려요.</span>
-      <p class="mt"><a class="btn btn-gold btn-sm" href="${esc(r.link)}" target="_blank" rel="noopener">지금 열기</a></p></div>`;
+      <p class="mt"><a class="btn btn-gold btn-sm" href="${esc(r.link)}" target="_blank" rel="noopener">지금 열기</a></p>
+      ${r.left && (r.left.moe > 0 || r.left.book > 0) ? `<p class="meta mt">오늘 더 받을 수 있어요: 모의고사 ${r.left.moe}개 · 부교재 ${r.left.book}개 <a href="#" onclick="location.reload();return false"><b>다른 번호 받기 →</b></a></p>` : '<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요.</p>'}</div>`;
   }
 }

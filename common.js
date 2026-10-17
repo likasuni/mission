@@ -31,7 +31,7 @@ async function getUser() {
   return session?.user ?? null;
 }
 
-// 카카오 로그인 직후 받은 토큰을 서버에 보관 → 요청한 자료가 나중에 준비되면 카톡으로 자동 발송 (하루 1개)
+// 카카오 로그인 직후 받은 토큰을 서버에 보관 → 요청한 자료가 나중에 준비되면 카톡으로 자동 발송 (자동 발송은 하루 1개)
 function saveKakaoToken(session) {
   const rt = session?.provider_refresh_token;
   const prov = session?.user?.app_metadata || {};

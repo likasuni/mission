@@ -1,10 +1,11 @@
 // 준비된 요청 자료 자동 발송 (pg_cron 이 매일 08~22시 매시 5분에 호출)
 // 그때 없던 자료를 기다리는 회원 중, 드라이브에 자료가 올라온 회원에게 가장 먼저 요청한 1개만 카톡으로 보냄
-// 하루 1개 규칙: 오늘 이미 받은 회원은 건너뜀. 나머지는 메시지에서 "자료실에서 받아 가세요"로 안내 (재방문 유도)
+// 자동 발송은 회원당 하루 1개만 (모의고사 2개·부교재 1개 한도 안에서). 나머지는 메시지에서 "자료실에서 받아 가세요"로 안내 (재방문 유도)
 // 공통 함수(listTree·hasNum·moeKey·makeSpec·findFiles)는 note-request 와 같게 유지
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 const LINK_HOURS = 24;
+const LIMIT: Record<string, number> = { moe: 2, book: 1 };
 // 부교재 목록 → 단위(강/회). 이름의 각 단어가 드라이브 폴더 이름에 들어가야 함 (lib.js NOTE_BOOK_CFG 와 같게)
 const BOOKS: Record<string, string> = { '수능특강 라이트': '강', '리딩파워 기본': '강', '리딩파워 완성': '강', '올림포스 영어독해 기본1': '강', '하루 6개 1등급 모의고사 고1': '회', '하루 6개 1등급 모의고사 고2': '회', '올림포스 전국연합학력평가 기출문제집 고1': '회', '올림포스 전국연합학력평가 기출문제집 고2': '회' };
 
@@ -120,10 +121,14 @@ Deno.serve(async (req) => {
     const ready = list.map((w) => ({ w, spec: makeSpec({ kind: w.kind, ...(w.query || {}) }) }))
       .filter((x) => !('error' in x.spec) && findFiles(all, x.spec as Spec).length);
     if (!ready.length) continue;
-    // 오늘 이미 받았으면 건너뜀 (하루 1개)
-    const { count } = await db.from('note_orders').select('id', { count: 'exact', head: true })
-      .eq('user_id', uid).eq('status', 'sent').gte('created_at', dayStart);
-    if ((count || 0) >= 1) continue;
+    // 오늘 받은 것: 종류별 한도 확인 + 자동 발송은 하루 1번만
+    const { data: got } = await db.from('note_orders').select('kind,query').eq('user_id', uid).eq('status', 'sent').gte('created_at', dayStart);
+    if ((got || []).some((r: any) => r.query?.auto)) continue;
+    const used: Record<string, number> = { moe: 0, book: 0 };
+    for (const r of got || []) used[r.kind] = (used[r.kind] || 0) + 1;
+    const pick = ready.findIndex((x) => used[x.w.kind] < LIMIT[x.w.kind]);
+    if (pick < 0) continue;
+    if (pick > 0) ready.unshift(ready.splice(pick, 1)[0]);
     // 카카오 토큰 (없으면 자료실 로그인 시 '준비됐어요' 알림으로 받음)
     const { data: tk } = await db.from('kakao_tokens').select('*').eq('user_id', uid).maybeSingle();
     if (!tk) { log.push(`${uid}: no token`); continue; }
@@ -149,7 +154,7 @@ Deno.serve(async (req) => {
     const until = new Date(expires.getTime() + 9 * 3600e3).toISOString().slice(5, 16).replace('-', '/').replace('T', ' ');
     const rest = ready.length - 1;
     const text = `[리카수니 자료실]\n요청하신 ${w.label}가 준비돼서 보내드려요 📘\n\n링크는 ${until}까지(24시간) 열 수 있어요.` +
-      (rest > 0 ? `\n\n요청하신 자료 ${rest}개가 더 준비돼 있어요. 자료실(data.likasuni.com)에 로그인하면 하루 1개씩 받을 수 있어요.` : '');
+      (rest > 0 ? `\n\n요청하신 자료 ${rest}개가 더 준비돼 있어요. 자료실(data.likasuni.com)에 로그인하면 바로 받을 수 있어요. (모의고사 하루 2개 · 부교재 하루 1개)` : '');
     const k = await fetch('https://kapi.kakao.com/v2/api/talk/memo/default/send', {
       method: 'POST',
       headers: { Authorization: `Bearer ${access}`, 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
@@ -157,7 +162,7 @@ Deno.serve(async (req) => {
     });
     if (!k.ok) { log.push(`${uid}: send fail ${k.status} ${await k.text()}`); continue; }
     await db.from('note_orders').insert({
-      user_id: uid, author_name: w.author_name, kind: w.kind, label: w.label, query: w.query, status: 'sent',
+      user_id: uid, author_name: w.author_name, kind: w.kind, label: w.label, query: { ...(w.query || {}), auto: true }, status: 'sent',
       drive_id: f.id, file_name: [...f.path, f.name].join('/'), link_token: token, expires_at: expires.toISOString(), kakao_sent: true,
     });
     await db.from('note_orders').update({ status: 'done' }).eq('user_id', uid).eq('label', w.label).in('status', ['missing', 'resolved']);
