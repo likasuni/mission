@@ -388,3 +388,4 @@ a.nb:hover { filter: brightness(1.12); }
 @media (max-width: 640px) { .rq-cols { grid-template-columns: 1fr; } }
 #recent-cmt .rc-n { white-space: nowrap; }
 @media (max-width: 640px) { #recent-cmt .rc-head h2 { font-size: 1rem; } #recent-cmt .rc-head { gap: 8px; } .rc-live { padding: 3px 8px; } }
+.rq-col h3 small { margin-left: auto; font-size: .72rem; font-weight: 600; color: #4b7a5c; }

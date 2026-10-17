@@ -104,7 +104,7 @@ function recentComments() {
   let cache = null;
   function reqItem(c, done) {
     return `<li class="rq${done ? ' ok' : ''}"><span class="rq-st">${done ? '완료' : '진행 중'}</span>
-      <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${ago(c.created_at)}</span></span>
+      <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${done ? ago(c.replied_at || c.created_at) + ' 발송' : ago(c.created_at)}</span></span>
       ${c.page_key ? `<a class="rq-go" href="/${esc(c.page_key)}/#${done ? 'note-req' : 'comments'}">${done ? '나도 받기' : '보기'}</a>` : ''}</li>`;
   }
   function cmtItem(c) {
@@ -122,11 +122,13 @@ function recentComments() {
   const more = (key, total) => total > shown[key] ? `<button class="rc-more" data-k="${key}">더보기 (${total - shown[key]}개)</button>` : '';
   function render() {
     const all = cache || [];
-    const ing = all.filter(c => isReq(c) && !isDone(c)), done = all.filter(c => isReq(c) && isDone(c)), cm = all.filter(c => !isReq(c));
+    const week = Date.now() - 7 * 86400e3; // 완료는 최근 7일만
+    const ing = all.filter(c => isReq(c) && !isDone(c)), done = all.filter(c => isReq(c) && isDone(c) && new Date(c.replied_at || c.created_at).getTime() > week)
+      .sort((a, b) => new Date(b.replied_at || b.created_at) - new Date(a.replied_at || a.created_at)), cm = all.filter(c => !isReq(c));
     if (cnt) cnt.textContent = `진행 ${ing.length} · 완료 ${done.length}`;
     list.innerHTML = `<div class="rq-cols">
         <div class="rq-col"><h3>진행 중 <span>${ing.length}</span></h3><ul${shown.ing > 4 ? ' class="open"' : ''}>${ing.slice(0, shown.ing).map(c => reqItem(c, false)).join('') || '<li class="rq-empty">지금 만들고 있는 자료가 없어요.</li>'}</ul>${more('ing', ing.length)}</div>
-        <div class="rq-col ok"><h3>완료 · 카톡 발송 <span>${done.length}</span></h3><ul${shown.done > 4 ? ' class="open"' : ''}>${done.slice(0, shown.done).map(c => reqItem(c, true)).join('') || '<li class="rq-empty">완료된 자료가 여기에 쌓여요.</li>'}</ul>${more('done', done.length)}</div>
+        <div class="rq-col ok"><h3>완료 · 카톡 발송 <span>${done.length}</span><small>최근 7일</small></h3><ul${shown.done > 4 ? ' class="open"' : ''}>${done.slice(0, shown.done).map(c => reqItem(c, true)).join('') || '<li class="rq-empty">최근 7일 안에 보낸 자료가 여기에 보여요.</li>'}</ul>${more('done', done.length)}</div>
       </div>
       <h3 class="rc-sub">최근 댓글</h3>
       <div class="rc-cm${shown.cmt > 3 ? ' open' : ''}">${cm.slice(0, shown.cmt).map(cmtItem).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>'}</div>${more('cmt', cm.length)}`;
@@ -134,7 +136,7 @@ function recentComments() {
   }
   async function load() {
     const { data } = await sb.from('comments')
-      .select('id,user_id,author_name,content,created_at,reply,page_key,page_title')
+      .select('id,user_id,author_name,content,created_at,reply,replied_at,page_key,page_title')
       .eq('approved', true).order('created_at', { ascending: false }).limit(80);
     cache = data || [];
     render();
