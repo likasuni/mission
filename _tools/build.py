@@ -701,7 +701,7 @@ def book_card(b):
         f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(l)}</a>' for l, i in wl) + '</div></div>') if wl else ''
     q = urllib.parse.quote(b['name'])
     blog = f'<a class="btn btn-line" href="{e(b["blog"])}">교재 소개글</a>' if b.get('blog') else ''
-    return (f'<section class="card book"><div class="book-top">{book_cover(b)}<div class="book-info">'
+    return (f'<section class="card book b-panel" id="book-{b["cover"]}" data-b="{b["cover"]}"><div class="book-top">{book_cover(b)}<div class="book-info">'
             f'<div class="book-hd"><h2>{e(b["full"])}</h2><span class="tag">{e(b["who"])}</span></div>'
             f'<p>{e(b["intro"])}</p>'
             f'<ul class="book-meta"><li>{e(b["meta"])}</li><li>리카수니 원장이 직접 만든 분석노트</li></ul></div></div>' + words
@@ -713,7 +713,18 @@ def book_card(b):
             + f'<a class="btn btn-line" href="{SAMPLE}" target="_blank" rel="noopener">분석노트 샘플 보기</a>{blog}</div></section>')
 bbody = ('<h1 class="page-h1">부교재 영어 분석노트 요청방</h1>'
          '<p class="lead">리카수니 원장이 직접 만든 부교재 분석노트예요. <b>문항 1개는 카톡으로 무료</b>, 강 전체가 필요하면 <b>강 단위로 구매</b>할 수 있어요.</p>'
-         + ''.join(book_card(b) for b in BOOKS) +
+         # 교재 책장: 표지를 누르면 그 교재 상세만 보임 (JS 없으면 모두 보임), 고른 교재는 주소(#book-…)와 브라우저에 기억
+         + '<div class="shelf">' + ''.join(
+             f'<button type="button" class="shelf-b" data-b="{b["cover"]}">{book_cover(b)}<span>{e(b["name"])}</span>'
+             f'<em class="{"ready" if b.get("ready") else ""}">{"분석노트 제공" if b.get("ready") else "준비 중"}</em></button>' for b in BOOKS) + '</div>'
+         + ''.join(book_card(b) for b in BOOKS)
+         + '''<script>(function(){var t=document.querySelectorAll('.shelf-b'),p=document.querySelectorAll('.b-panel');
+function show(c,go){var ok=false;t.forEach(function(b){var on=b.dataset.b==c;ok=ok||on;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+if(!ok)return false;p.forEach(function(x){x.hidden=x.dataset.b!=c});try{localStorage.setItem('bookSel',c)}catch(e){}
+if(go){var el=document.getElementById('book-'+c);el&&el.scrollIntoView({behavior:'smooth',block:'start'})}return true}
+t.forEach(function(b){b.onclick=function(){show(b.dataset.b,true);history.replaceState(null,'','#book-'+b.dataset.b)}});
+var h=(location.hash.match(/^#book-(.+)/)||[])[1],s=null;try{s=localStorage.getItem('bookSel')}catch(e){}
+show(h,true)||show(s)||show(t[0]&&t[0].dataset.b)})();</script>''' +
          '<div class="card"><h2>이용 방법</h2><ul class="sum">'
          "<li><b>무료 요청:</b> 카카오 로그인 후 교재·강·번호를 고르면 카카오톡 '나와의 채팅'으로 24시간 링크가 와요. 부교재는 하루 1개 (모의고사는 따로 하루 2개).</li>"
          '<li><b>유료 구매:</b> 네이버 프리미엄 콘텐츠에서 필요한 강만 골라 구매해요.</li>'
