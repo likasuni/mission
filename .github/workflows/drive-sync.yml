@@ -23,6 +23,16 @@ jobs:
           python sync_drive.py
           python classify.py | tee classify.log
           python build.py
+      # 그날 공개된 해설의 요약 글을 리카수니 블로그(Blogger)에 발행. Secrets 가 없으면 건너뜀, 실패해도 사이트 반영은 계속
+      - name: Blog summary post
+        working-directory: _tools
+        continue-on-error: true
+        env:
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+        run: python blogger_post.py
       - name: Commit
         run: |
           git config user.name "likasuni-bot"
