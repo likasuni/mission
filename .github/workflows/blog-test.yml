@@ -1,0 +1,27 @@
+name: blog-test
+# 블로그(Blogger) 연결 테스트: 고른 날짜의 요약 글을 블로그 '임시저장(비공개)'으로 올림. 사이트는 바꾸지 않음
+on:
+  workflow_dispatch:
+    inputs:
+      day:
+        description: '어느 날 공개분으로 테스트할까요? (YYYY-MM-DD)'
+        default: '2026-10-19'
+        required: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Draft post
+        working-directory: _tools
+        env:
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+          BLOGGER_DAY: ${{ inputs.day }}
+          BLOGGER_DRAFT: '1'
+        run: python blogger_post.py

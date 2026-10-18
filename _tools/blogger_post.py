@@ -5,6 +5,7 @@
 
   python blogger_post.py                          # 오늘(한국 시간) 공개분 발행 — BLOGGER_* 환경변수가 없으면 건너뜀
   python blogger_post.py --preview 2026-10-19 out.html   # 발행하지 않고 그날 글 미리보기 HTML 저장
+  BLOGGER_DAY=2026-10-19 BLOGGER_DRAFT=1 python blogger_post.py  # 연결 테스트: 그날 글을 블로그 임시저장(비공개)으로, 기록 안 남김
 
 환경변수(GitHub Secrets): BLOGGER_CLIENT_ID, BLOGGER_CLIENT_SECRET, BLOGGER_REFRESH_TOKEN, BLOGGER_BLOG_ID
 """
@@ -97,9 +98,9 @@ def access_token():
     return json.load(urllib.request.urlopen('https://oauth2.googleapis.com/token', d))['access_token']
 
 
-def publish(tok, title, content, labels):
+def publish(tok, title, content, labels, draft=False):
     body = json.dumps({'kind': 'blogger#post', 'title': title, 'content': content, 'labels': labels}).encode()
-    req = urllib.request.Request(f"https://www.googleapis.com/blogger/v3/blogs/{os.environ['BLOGGER_BLOG_ID']}/posts/",
+    req = urllib.request.Request(f"https://www.googleapis.com/blogger/v3/blogs/{os.environ['BLOGGER_BLOG_ID']}/posts/" + ('?isDraft=true' if draft else ''),
                                  body, {'Authorization': f'Bearer {tok}', 'Content-Type': 'application/json'})
     return json.load(urllib.request.urlopen(req))
 
@@ -109,7 +110,8 @@ def main():
     if sys.argv[1:2] == ['--preview']:
         day, out = sys.argv[2], sys.argv[3]
     else:
-        day, out = datetime.datetime.now(KST).date().isoformat(), None
+        day, out = os.environ.get('BLOGGER_DAY') or datetime.datetime.now(KST).date().isoformat(), None
+    draft = bool(os.environ.get('BLOGGER_DRAFT'))
     nxt = (datetime.date.fromisoformat(day) + datetime.timedelta(days=1)).isoformat()
     today, upcoming = by_exam(ps, day), by_exam(ps, nxt)
     if not today:
@@ -125,9 +127,11 @@ def main():
     tok = None
     for x, q in today.items():
         key = f'{x}|{day}'
-        if key in log: continue
+        if key in log and not draft: continue
         tok = tok or access_token()
-        r = publish(tok, title_of(x, q), post_html(x, q, upcoming), [exam_name(x), '문항별 해설', '리카수니 자료실'])
+        r = publish(tok, title_of(x, q), post_html(x, q, upcoming), [exam_name(x), '문항별 해설', '리카수니 자료실'], draft)
+        if draft:
+            print('blogger: 임시저장 완료 — 블로거 관리 화면의 글 목록에서 확인하세요:', title_of(x, q)); continue
         log[key] = {'url': r.get('url'), 'id': r.get('id'), 'nums': [no(p) for p in q]}
         print('blogger: 발행', r.get('url'))
     json.dump(log, open(LOG, 'w'), ensure_ascii=False, indent=1)
