@@ -1,0 +1,56 @@
+{
+  "exam": "sn-2022",
+  "n": 30,
+  "type": "어휘",
+  "points": 2,
+  "answer": 3,
+  "topic": "유기농법 대규모 도입의 한계",
+  "date": "2026-10-18",
+  "keywords": ["2022 수능 영어 30번", "2022학년도 수능 30번 해설", "2022 수능 30번 정답", "수능 영어 낱말 쓰임", "organic farming 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 30번은 '유기농법'의 한계를 다룬 낱말 쓰임(어휘) 문항이에요. 앞뒤 문장이 모두 유기농법의 단점을 나열하는데 ③만 장점(benefits)으로 뒤집혀 있어요. 정답은 ③ benefits이고, constraints(제약)처럼 부정적인 말이 와야 해요.",
+  "flow": [
+    ["통념", "천연 재료만 쓰는 '유기농법'이 생물권에 덜 해롭다는 주장이 있다."],
+    ["반박 ①", "대규모로 도입하면 수확량은 줄고 생산비는 늘어난다 — 무기 질소 비료가 필수적이다."],
+    ["반박 ②", "거름·녹비 작물을 광범위하게 쓰는 데도 제약이 있고, 화학 약품 없이는 잡초 관리에 일손이 많이 든다."],
+    ["양보", "그래도 윤작, 경작과 축산의 결합 같은 일부 방법은 농촌 생태계의 지속 가능성에 기여한다."]
+  ],
+  "evidence": [
+    {"en": "Large-scale adoption of \"organic\" farming methods, however, would reduce yields and increase production costs for many major crops.", "ko": "그러나 '유기' 농법을 대규모로 채택하면 많은 주요 작물의 수확량은 줄고 생산비는 늘어날 것이다.", "note": "however로 통념을 뒤집으며 글의 방향(유기농법의 한계)이 정해져요. 이후 문장들은 이 단점을 하나씩 보강해요."},
+    {"en": "In addition, there are ③ benefits to the extensive use of either manure or legumes as \"green manure\" crops.", "ko": "(정답 수정) 게다가 거름이나 콩과 식물을 '녹비' 작물로 광범위하게 사용하는 데에는 제약이 있다.", "note": "In addition(게다가)은 앞 내용과 같은 방향을 덧붙이는 연결어예요. 앞이 단점이므로 여기도 단점이어야 하는데 benefits(이점)는 정반대예요. → constraints / limitations"}
+  ],
+  "choices": [
+    {"en": "① reduce (yields)", "ko": "(수확량을) 줄이다", "why": "적절. however 뒤에서 유기농법의 단점을 말하는 자리라 '수확량 감소 + 생산비 증가'가 자연스러워요."},
+    {"en": "② essential (for maintaining productivity)", "ko": "(생산성 유지에) 필수적인", "why": "적절. 유기 질소 공급원이 부족하거나 비싸다는 because절이 무기 질소 비료가 '필수'인 이유가 돼요."},
+    {"en": "③ benefits (to the extensive use of manure)", "ko": "(거름 사용의) 이점", "why": "정답. In addition으로 단점을 이어 가는 자리인데 '이점'으로 뒤집혔어요. constraints(제약)가 맞아요."},
+    {"en": "④ fewer (people are willing to do this work)", "ko": "(이 일을 하려는 사람이) 더 적은", "why": "적절. 사회가 부유해질수록 손으로 잡초를 뽑는 힘든 일을 하려는 사람은 줄어들어요."},
+    {"en": "⑤ contributions (to the sustainability)", "ko": "(지속 가능성에 대한) 기여", "why": "적절. however로 방향이 바뀌어 '그래도 일부 방법은 도움이 된다'는 양보 내용이에요. 함정처럼 보이지만 맞는 쓰임이에요."}
+  ],
+  "grammar": [
+    {"t": "A, defined as B — 과거분사구 삽입", "ex": "\"organic\" methods, defined as those in which only natural products can be used as inputs, would be …", "d": "defined 앞에 which are가 생략된 형태예요. 복원: methods, which are defined as those in which … 주어 methods의 동사는 한참 뒤의 would be예요."},
+    {"t": "either A or B (양자택일)", "ex": "organic supplies … often are either limited or more expensive than inorganic nitrogen fertilizers.", "d": "'A이거나 B이다'. 두 형용사(limited / more expensive)가 병렬이에요. 뒤쪽 either manure or legumes도 같은 구조예요."},
+    {"t": "as + 주어 + 동사 (~함에 따라)", "ex": "… fewer people are willing to do this work as societies become wealthier.", "d": "비교급 fewer와 짝을 이룬 as는 '~함에 따라'로 해석해요. 비례 관계의 신호예요."}
+  ],
+  "vocab": [
+    ["organic", "유기농의, 유기적인"],
+    ["input", "투입물 (비료·사료 등)"],
+    ["biosphere", "생물권"],
+    ["adoption", "채택, 도입"],
+    ["yield", "수확량 (= harvest)"],
+    ["inorganic", "무기의, 화학적인"],
+    ["nitrogen", "질소"],
+    ["moderate", "중간 정도의, 적당한"],
+    ["extensive", "광범위한, 대규모의"],
+    ["constraint", "제약, 제한 (= limitation) — ③ 자리에 와야 할 말"],
+    ["crop rotation", "윤작, 돌려짓기"],
+    ["livestock", "가축"],
+    ["sustainability", "지속 가능성"]
+  ],
+  "summary": {"en": "Large-scale organic farming has real limits in yield, cost, and labor, though some of its methods still help keep rural ecosystems sustainable.", "ko": "대규모 유기농법은 수확량·비용·노동력 면에서 분명한 한계가 있지만, 그 일부 방법은 농촌 생태계의 지속 가능성에 여전히 도움이 된다."},
+  "writing": {"en": "Although organic farming is often seen as eco-friendly, adopting it on a large scale would lower yields and raise costs.", "ko": "유기농법은 흔히 친환경적이라고 여겨지지만, 대규모로 도입하면 수확량은 줄고 비용은 늘어날 것이다."},
+  "tip": "낱말 쓰임 문항은 글의 방향(긍정/부정)부터 잡으세요. however, In addition 같은 연결어가 방향을 알려 줘요. In addition은 '같은 방향 추가'라서, 단점 나열 중간에 장점 단어가 나오면 그게 정답이에요.",
+  "faq": [
+    ["2022학년도 수능 영어 30번 정답은?", "③ benefits예요. 유기농법의 단점을 이어 가는 문장이라 constraints(제약)처럼 부정적인 말이 와야 해요."],
+    ["2022 수능 30번은 어떤 유형인가요?", "문맥상 낱말의 쓰임이 적절하지 않은 것을 고르는 2점 어휘 문항이에요. 유기농법의 한계를 다룬 지문이에요."],
+    ["⑤ contributions는 왜 맞나요?", "앞에서 however로 방향이 바뀌어 '그래도 윤작 같은 일부 방법은 지속 가능성에 기여한다'는 양보 내용이라 긍정어가 맞아요."]
+  ]
+}
