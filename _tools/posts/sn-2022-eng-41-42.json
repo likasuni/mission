@@ -1,0 +1,288 @@
+{
+  "exam": "sn-2022",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "분류는 언어에 본래 내재된 특성이다 (슈퍼마켓 비유)",
+  "date": "2026-10-18",
+  "lead": "2022학년도 수능 영어 41~42번은 슈퍼마켓 비유로 '분류'가 언어의 핵심 구조임을 설명한 장문 세트예요. 41번 제목은 마지막 문장 the structure that lies at the core of our language가 단서이고, 42번 어휘는 '이미 익혀서 분류로 안 느껴진다'는 문맥이라 (c) abstract가 natural이어야 해요. 정답은 41번 ②, 42번 ③이에요.",
+  "flow": [
+    [
+      "도입",
+      "우리는 늘 사물을 분류한다. 음식이 무작위로 놓인 슈퍼마켓을 상상하면 이유를 알 수 있다."
+    ],
+    [
+      "비유",
+      "슈퍼마켓의 분류 체계는 누군가 설계해야 했다."
+    ],
+    [
+      "전환",
+      "그런데 언어에는 이미 만들어진 분류 체계가 들어 있다. 'dog'라는 단어도 동물을 묶고 구별한다."
+    ],
+    [
+      "경험",
+      "아이는 부모가 가르치는 분류 체계를 열심히 배워야 했고, 고양이를 개라고 부르는 실수도 했다."
+    ],
+    [
+      "결론",
+      "분류의 원리를 배우는 것은 언어의 핵심 구조를 배우는 것이다."
+    ]
+  ],
+  "tip": "41번: 장문 제목은 비유(슈퍼마켓)에 끌리지 말고 But·therefore 뒤의 진짜 주제를 잡으세요. 42번: 밑줄 단어 바로 뒤의 이유 표현(this is only because you have already mastered the word)을 보면 abstract가 아니라 natural이 와야 한다는 게 보여요.",
+  "keywords": [
+    "2022 수능 영어 41~42번",
+    "2022학년도 수능 41~42번 해설",
+    "2022 수능 41번 정답",
+    "2022 수능 42번 정답",
+    "수능 영어 장문 독해",
+    "classification language supermarket 지문",
+    "고3 모의고사 영어 해설"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "But there is also a ready-made system of classification embodied in our language.",
+          "ko": "그러나 우리 언어에도 이미 만들어진 분류 체계가 구현되어 있다.",
+          "note": "슈퍼마켓 이야기는 도입 비유예요. But 이후 진짜 주제인 '언어 속 분류'가 나와요."
+        },
+        {
+          "en": "If you hadn't learned to speak, the whole world would seem like the unorganized supermarket …",
+          "ko": "만약 말하는 법을 배우지 않았다면, 온 세상이 정리되지 않은 슈퍼마켓처럼 보였을 것이다 …",
+          "note": "언어 = 세상을 정리해 주는 분류 체계라는 뜻이에요. 비유와 주제가 여기서 하나로 합쳐져요."
+        },
+        {
+          "en": "In learning the principles of classification, therefore, we'll be learning about the structure that lies at the core of our language.",
+          "ko": "그러므로 분류의 원리를 배우면서 우리는 언어의 핵심에 놓인 구조에 대해 배우게 될 것이다.",
+          "note": "therefore로 결론을 내려요. at the core of our language(언어의 핵심) = ②의 Inherent Characteristic of Language(언어의 본질적 특성)."
+        }
+      ],
+      "choices": [
+        {
+          "en": "Similarities of Strategies in Sales and Language Learning",
+          "ko": "판매와 언어 학습 전략의 유사성",
+          "why": "슈퍼마켓은 분류를 설명하기 위한 비유일 뿐이에요. 판매 전략은 글의 주제가 아니에요."
+        },
+        {
+          "en": "Classification: An Inherent Characteristic of Language",
+          "ko": "분류: 언어의 본질적 특성",
+          "why": "정답. 언어에 분류 체계가 이미 들어 있고, 분류 원리는 언어의 핵심 구조라는 결론과 정확히 맞아요."
+        },
+        {
+          "en": "Exploring Linguistic Issues Through Categorization",
+          "ko": "범주화를 통한 언어학적 문제 탐구",
+          "why": "글은 분류로 언어 '문제'를 탐구하지 않아요. 분류 자체가 언어의 특성이라는 거예요. 방향이 뒤집힌 함정이에요."
+        },
+        {
+          "en": "Is a Ready-Made Classification System Truly Better?",
+          "ko": "이미 만들어진 분류 체계가 정말 더 나은가?",
+          "why": "ready-made는 본문 표현이지만, 글은 어느 체계가 더 나은지 비교하지 않아요."
+        },
+        {
+          "en": "Dilemmas of Using Classification in Language Education",
+          "ko": "언어 교육에서 분류를 사용하는 딜레마",
+          "why": "언어 교육 방법이나 딜레마(어려운 선택)는 글에 나오지 않아요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "Such a grouping may seem too (c) abstract to be called a classification, but this is only because you have already mastered the word.",
+          "ko": "그런 묶음은 너무 (c) 추상적이어서 분류라고 부를 수 없을 것처럼 보일지 모르지만, 그건 단지 당신이 그 단어를 이미 완전히 익혔기 때문이다.",
+          "note": "이미 익힌 것은 '추상적'이 아니라 '당연하고 자연스럽게' 느껴져요. abstract → natural(또는 obvious)로 바꿔야 해요."
+        },
+        {
+          "en": "As a child learning to speak, you had to work hard to (d) learn the system of classification …",
+          "ko": "말을 배우는 아이였을 때, 당신은 … 분류 체계를 (d) 배우려고 열심히 노력해야 했다.",
+          "note": "지금은 자연스럽지만 어릴 때는 애써 배웠다는 대조예요. (c)가 '자연스럽다'여야 이 대조가 살아요."
+        },
+        {
+          "en": "If you hadn't learned to speak, the whole world would seem like the (e) unorganized supermarket …",
+          "ko": "말을 배우지 않았다면 온 세상이 (e) 정리되지 않은 슈퍼마켓처럼 보였을 것이다 …",
+          "note": "첫 단락의 '무작위로 진열된 슈퍼마켓'을 가리켜요. unorganized는 적절해요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) time-consuming",
+          "ko": "시간이 많이 걸리는",
+          "why": "적절. 물건이 무작위로 놓여 있으면 찾는 데 시간이 오래 걸려요. extremely difficult와도 자연스럽게 이어져요."
+        },
+        {
+          "en": "(b) design",
+          "ko": "설계하다",
+          "why": "적절. 슈퍼마켓의 분류는 누군가 '만들어야' 했고, 뒤의 언어 속 ready-made(이미 만들어진) 체계와 대조돼요."
+        },
+        {
+          "en": "(c) abstract",
+          "ko": "추상적인",
+          "why": "정답(부적절). 단어를 이미 익혀서 분류로 안 느껴지는 건 그 묶음이 너무 '자연스럽기(natural)' 때문이에요."
+        },
+        {
+          "en": "(d) learn",
+          "ko": "배우다",
+          "why": "적절. 부모가 가르치려던(trying to teach) 체계를 아이가 배우려고 애쓴 거예요."
+        },
+        {
+          "en": "(e) unorganized",
+          "ko": "정리되지 않은",
+          "why": "적절. 언어(분류 체계)가 없다면 세상은 첫 단락의 뒤죽박죽 슈퍼마켓 같을 거예요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "it isn't hard to see why",
+      "ex": "Classifying things together into groups is something we do all the time, and it isn't hard to see why.",
+      "d": "가주어 it, 진주어 to see why. why 뒤에 (we do so)가 생략됐어요. '왜 그런지 알기 어렵지 않다'."
+    },
+    {
+      "t": "if not ~ (양보)",
+      "ex": "The task … would be time-consuming and extremely difficult, if not impossible.",
+      "d": "'불가능하지는 않더라도'. 앞말보다 한 단계 센 표현을 덧붙여요."
+    },
+    {
+      "t": "too ~ to V",
+      "ex": "Such a grouping may seem too natural to be called a classification",
+      "d": "'너무 ~해서 …할 수 없다'. 42번 (c) 자리예요. 원래 낱말은 natural(자연스러운)이에요."
+    },
+    {
+      "t": "가정법 과거완료 혼합",
+      "ex": "If you hadn't learned to speak, the whole world would seem like the unorganized supermarket",
+      "d": "if절은 과거(had p.p.), 주절은 현재(would + 동사원형). '과거에 ~하지 않았다면 지금 ~할 것이다'."
+    },
+    {
+      "t": "this is only because ~",
+      "ex": "but this is only because you have already mastered the word",
+      "d": "'그건 단지 ~ 때문이다'. 앞 문장(분류로 안 보임)의 이유를 밝혀 (c)를 판단하는 근거가 돼요."
+    },
+    {
+      "t": "명사 + 수식어(현재분사)",
+      "ex": "As a child learning to speak, you had to work hard to learn …",
+      "d": "learning to speak가 child를 꾸며요. '말을 배우는 아이로서'. to learn은 목적의 to부정사예요."
+    }
+  ],
+  "vocab": [
+    [
+      "classify",
+      "분류하다"
+    ],
+    [
+      "random",
+      "무작위의"
+    ],
+    [
+      "aisle",
+      "통로"
+    ],
+    [
+      "time-consuming",
+      "시간이 많이 걸리는"
+    ],
+    [
+      "if not",
+      "~은 아니더라도"
+    ],
+    [
+      "classification",
+      "분류"
+    ],
+    [
+      "ready-made",
+      "이미 만들어진"
+    ],
+    [
+      "embody",
+      "구현하다, 담다"
+    ],
+    [
+      "distinguish",
+      "구별하다"
+    ],
+    [
+      "master",
+      "완전히 익히다"
+    ],
+    [
+      "get the hang of",
+      "~의 요령을 터득하다"
+    ],
+    [
+      "infant",
+      "유아"
+    ],
+    [
+      "principle",
+      "원리"
+    ],
+    [
+      "core",
+      "핵심"
+    ],
+    [
+      "inherent",
+      "본래 내재된, 고유한"
+    ],
+    [
+      "arrange",
+      "배열하다"
+    ],
+    [
+      "design",
+      "설계하다"
+    ],
+    [
+      "grouping",
+      "묶음, 분류"
+    ],
+    [
+      "abstract",
+      "추상적인 ↔ 정답 자리에 와야 할 말: natural"
+    ],
+    [
+      "natural",
+      "자연스러운"
+    ],
+    [
+      "unorganized",
+      "정리되지 않은"
+    ],
+    [
+      "unfamiliar",
+      "낯선"
+    ]
+  ],
+  "summary": {
+    "en": "Our language contains a ready-made system of classification, so learning how we classify things means learning the core structure of language.",
+    "ko": "우리 언어에는 이미 만들어진 분류 체계가 들어 있으므로, 사물을 분류하는 방식을 배우는 것은 언어의 핵심 구조를 배우는 것이다."
+  },
+  "writing": {
+    "en": "Every word we learn is a lesson in classification.",
+    "ko": "우리가 배우는 모든 단어는 분류에 대한 수업이다."
+  },
+  "faq": [
+    [
+      "2022학년도 수능 영어 41번 정답은?",
+      "② Classification: An Inherent Characteristic of Language(분류: 언어의 본질적 특성)예요. 분류 원리가 언어의 핵심 구조라는 결론과 일치해요."
+    ],
+    [
+      "2022학년도 수능 영어 42번 정답은?",
+      "③ (c) abstract예요. 단어를 이미 익혔기 때문에 분류로 안 느껴진다는 문맥이라 natural(자연스러운)이 와야 해요."
+    ],
+    [
+      "① Sales and Language Learning이 오답인 이유는?",
+      "슈퍼마켓은 분류를 설명하기 위한 비유예요. 판매 전략은 글의 주제가 아니에요."
+    ]
+  ]
+}
