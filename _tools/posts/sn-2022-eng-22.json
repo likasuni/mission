@@ -1,0 +1,59 @@
+{
+  "exam": "sn-2022",
+  "n": 22,
+  "type": "요지",
+  "points": 2,
+  "answer": 1,
+  "topic": "개인이 피하기 어려운 환경 유해 요인에는 사회적 대응이 필요하다",
+  "date": "2026-10-20",
+  "keywords": ["2022 수능 영어 22번", "2022학년도 수능 22번 해설", "2022 수능 22번 정답", "수능 영어 글의 요지", "environmental hazards 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 22번은 환경 유해 요인 중 개인이 피하기 어려운 것을 다룬 요지 문항이에요. 오염된 공기·수돗물처럼 피할 수 없는 노출은 사회적 조치가 필요하다는 게 핵심이에요. 정답은 ① 개인이 피하기 어려운 유해 환경 요인에 대해서는 사회적 대응이 필요하다예요.",
+  "flow": [
+    ["정의", "환경 유해 요인에는 생물·물리·화학적 요인과 노출을 부추기는 인간 행동이 있다."],
+    ["구분", "오염된 공기·수돗물·공공장소 소음처럼 피하기 어려운 요인은 노출이 비자발적이다."],
+    ["주장", "이런 요인을 줄이려면 대중 인식, 공중 보건 조치 같은 사회적 행동이 필요하다."],
+    ["근거", "많은 나라에서 개인이 피할 수 없는 유해 요인을 더 부도덕하게 여기고 더 분노한다."],
+    ["결론", "이런 점은 위험 감소가 어떻게 일어나는지 생각할 때 중요하다."]
+  ],
+  "evidence": [
+    {"en": "Some environmental contaminants are difficult to avoid …; in these circumstances, exposure is largely involuntary.", "ko": "일부 환경 오염 물질은 피하기 어렵다 …. 이런 상황에서 노출은 대체로 비자발적이다.", "note": "'개인이 피하기 어려운' 요인이라는 글의 대상이 정해져요."},
+    {"en": "Reduction or elimination of these factors may require societal action, such as public awareness and public health measures.", "ko": "이런 요인들을 줄이거나 없애려면 대중의 인식이나 공중 보건 조치 같은 사회적 행동이 필요할 수 있다.", "note": "societal action(사회적 행동) = ①의 '사회적 대응'. 요지 문장이에요."},
+    {"en": "Having no choice but to drink water contaminated with very high levels of arsenic … outrages people more than the personal choice of whether an individual smokes tobacco.", "ko": "비소가 매우 많이 오염된 물을 마실 수밖에 없는 것은 … 개인이 담배를 피울지 말지의 개인적 선택보다 사람들을 더 분노하게 한다.", "note": "피할 수 없는 위험 vs 개인의 선택. 앞의 것이 사회 문제라는 근거예요."}
+  ],
+  "choices": [
+    {"en": "개인이 피하기 어려운 유해 환경 요인에 대해서는 사회적 대응이 필요하다.", "ko": "사회적 대응", "why": "정답. difficult to avoid, involuntary, require societal action이 그대로 담겨 있어요."},
+    {"en": "환경오염으로 인한 피해자들에게 적절한 보상을 하는 것이 바람직하다.", "ko": "피해 보상", "why": "보상 이야기는 없어요. 위험 감소(risk reduction)를 다뤄요."},
+    {"en": "다수의 건강을 해치는 행위에 대해 도덕적 비난 이상의 조치가 요구된다.", "ko": "도덕적 비난 이상", "why": "morally egregious가 나오지만 '비난 이상의 조치'를 주장하진 않아요. 기준은 '피할 수 있느냐'예요."},
+    {"en": "환경오염 문제를 해결하기 위해서는 사후 대응보다 예방이 중요하다.", "ko": "예방", "why": "예방과 사후 대응의 비교는 나오지 않아요."},
+    {"en": "대기오염 문제는 인접 국가들과의 긴밀한 협력을 통해 해결할 수 있다.", "ko": "국가 협력", "why": "polluted air는 예시일 뿐이고, 국제 협력은 언급이 없어요."}
+  ],
+  "grammar": [
+    {"t": "along with", "ex": "Environmental hazards include biological, physical, and chemical ones, along with the human behaviors that promote or allow exposure.", "d": "'~와 함께'. ones는 hazards를 가리켜요."},
+    {"t": "동격 that", "ex": "the fact that some environmental hazards are difficult to avoid at the individual level is felt to be more morally egregious", "d": "the fact that ~(~라는 사실)가 긴 주어예요. 동사는 is felt예요."},
+    {"t": "have no choice but to V", "ex": "Having no choice but to drink water contaminated with very high levels of arsenic", "d": "'~할 수밖에 없다'. 동명사 Having ~이 주어이고, 동사는 outrages예요."},
+    {"t": "being forced to V", "ex": "or being forced to passively breathe in tobacco smoke in restaurants", "d": "수동형 동명사. Having ~과 or로 병렬된 두 번째 주어예요."}
+  ],
+  "vocab": [
+    ["hazard", "위험 요소"],
+    ["exposure", "노출"],
+    ["contaminant", "오염 물질"],
+    ["contaminate", "오염시키다"],
+    ["involuntary", "비자발적인"],
+    ["elimination", "제거"],
+    ["societal", "사회의"],
+    ["public health measure", "공중 보건 조치"],
+    ["egregious", "매우 나쁜"],
+    ["arsenic", "비소"],
+    ["passively", "수동적으로"],
+    ["outrage", "격분하게 하다"],
+    ["risk reduction", "위험 감소"]
+  ],
+  "summary": {"en": "Environmental hazards that individuals cannot avoid, such as polluted air or water, require action at the level of society.", "ko": "오염된 공기나 물처럼 개인이 피할 수 없는 환경 유해 요인은 사회 차원의 대응이 필요하다."},
+  "writing": {"en": "Risks people cannot avoid must be handled by society.", "ko": "사람들이 피할 수 없는 위험은 사회가 다뤄야 한다."},
+  "tip": "요지 문제는 may require, should, must 같은 조동사 문장이 주장일 가능성이 커요. 이 글에서는 require societal action 문장이에요. 예시(비소, 담배 연기)는 근거일 뿐이니 예시만 다루는 선택지는 버리세요.",
+  "faq": [
+    ["2022학년도 수능 영어 22번 정답은?", "① 개인이 피하기 어려운 유해 환경 요인에 대해서는 사회적 대응이 필요하다예요."],
+    ["2022 수능 22번은 어떤 유형인가요?", "글의 요지를 고르는 2점 문항이에요. 환경 유해 요인과 사회적 대응을 다룬 지문이에요."],
+    ["③이 오답인 이유는?", "morally egregious(도덕적으로 매우 나쁜)가 나오지만, 글의 기준은 '개인이 피할 수 있느냐'이고 해결책은 사회적 행동이에요."]
+  ]
+}

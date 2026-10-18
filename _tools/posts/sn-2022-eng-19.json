@@ -1,0 +1,59 @@
+{
+  "exam": "sn-2022",
+  "n": 19,
+  "type": "심경",
+  "points": 2,
+  "answer": 5,
+  "topic": "희귀 공룡 화석을 찾으려던 Evelyn의 기대가 실망으로 바뀌다",
+  "date": "2026-10-19",
+  "keywords": ["2022 수능 영어 19번", "2022학년도 수능 19번 해설", "2022 수능 19번 정답", "수능 영어 심경 변화", "Evelyn Badlands dinosaur fossils 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 19번은 공룡 화석을 찾아 나선 Evelyn의 심경 변화를 묻는 문항이에요. 처음엔 overflowing with anticipation(기대에 넘침), 끝에는 What a waste of time!(시간 낭비)으로 바뀌어요. 정답은 ⑤ hopeful → disappointed예요.",
+  "flow": [
+    ["배경", "Evelyn은 공룡 화석으로 유명한 캐나다 앨버타의 Badlands를 처음 탐사한다."],
+    ["기대", "젊은 아마추어 화석 사냥꾼인 그녀는 기대에 넘쳤고, 희귀 화석을 찾는 평생의 꿈이 이뤄지려 했다."],
+    ["전환", "그러나 몇 시간을 헤맸지만 찾지 못했고, 해가 지기 시작했다."],
+    ["실망", "어두워지는 땅을 보며 '헛걸음했다, 시간 낭비다'라고 한숨 쉰다."]
+  ],
+  "evidence": [
+    {"en": "As a young amateur bone-hunter, she was overflowing with anticipation.", "ko": "젊은 아마추어 화석 사냥꾼으로서 그녀는 기대감에 넘쳐 있었다.", "note": "anticipation(기대) = hopeful. 처음 심경이에요."},
+    {"en": "After many hours of wandering throughout the deserted lands, however, she was unsuccessful.", "ko": "그러나 황량한 땅을 몇 시간 동안 헤맨 끝에도 그녀는 성공하지 못했다.", "note": "however가 심경 전환점이에요. 이 뒤부터 부정적인 감정이 나와요."},
+    {"en": "she sighed to herself, \"I can't believe I came all this way for nothing. What a waste of time!\"", "ko": "그녀는 혼자 한숨을 쉬었다. \"이 먼 길을 헛걸음했다니 믿을 수 없어. 정말 시간 낭비야!\"", "note": "sighed, for nothing, waste of time = disappointed. 마지막 심경이에요."}
+  ],
+  "choices": [
+    {"en": "confused → scared", "ko": "혼란스러운 → 겁먹은", "why": "처음엔 혼란이 아니라 기대예요. 해가 지는 장면도 무서움이 아니라 실망이에요."},
+    {"en": "discouraged → confident", "ko": "낙담한 → 자신감 있는", "why": "흐름이 정반대예요. 기대 → 낙담 순서예요."},
+    {"en": "relaxed → annoyed", "ko": "느긋한 → 짜증 난", "why": "처음은 느긋함이 아니라 들뜬 기대(eagerly)예요."},
+    {"en": "indifferent → depressed", "ko": "무관심한 → 우울한", "why": "평생의 꿈을 좇는 사람이라 무관심과는 거리가 멀어요."},
+    {"en": "hopeful → disappointed", "ko": "희망에 찬 → 실망한", "why": "정답. anticipation, dream, eagerly(희망) → sighed, for nothing, waste of time(실망)."}
+  ],
+  "grammar": [
+    {"t": "It was one's first time to V", "ex": "It was Evelyn's first time to explore the Badlands of Alberta", "d": "'~하는 것은 처음이었다'. 첫 경험이라 기대가 컸다는 배경이에요."},
+    {"t": "과거완료 부정", "ex": "She had not travelled this far for the bones of common dinosaur species.", "d": "'흔한 공룡 뼈를 위해 이렇게 멀리 온 게 아니었다' → 희귀 화석을 원한다는 강한 기대예요."},
+    {"t": "be about to V", "ex": "Her life-long dream … was about to come true.", "d": "'막 ~하려던 참이다'. 기대가 최고조인 순간이에요."},
+    {"t": "분사구문", "ex": "Looking at the slowly darkening ground before her, she sighed to herself", "d": "'~을 보면서'. darkening은 ground를 꾸미는 현재분사예요."}
+  ],
+  "vocab": [
+    ["explore", "탐험하다"],
+    ["numerous", "수많은"],
+    ["fossil", "화석"],
+    ["amateur", "아마추어의"],
+    ["overflow with", "~으로 넘치다"],
+    ["anticipation", "기대"],
+    ["species", "종"],
+    ["life-long", "평생의"],
+    ["eagerly", "열심히, 간절히"],
+    ["wander", "헤매다"],
+    ["deserted", "황량한, 사람이 없는"],
+    ["beyond one's reach", "손이 닿지 않는"],
+    ["sigh", "한숨 쉬다"],
+    ["for nothing", "헛되이"]
+  ],
+  "summary": {"en": "Evelyn starts her fossil hunt full of hope, but after failing to find anything all day, she ends up deeply disappointed.", "ko": "Evelyn은 희망에 차서 화석 탐사를 시작하지만, 하루 종일 아무것도 찾지 못하자 크게 실망한다."},
+  "writing": {"en": "Her excitement slowly turned into disappointment as the sun set.", "ko": "해가 지면서 그녀의 설렘은 서서히 실망으로 바뀌었다."},
+  "tip": "심경 변화 문제는 however 같은 전환어를 기준으로 앞뒤를 나누세요. 앞에서 감정 단어(anticipation, eagerly) 하나, 뒤에서 감정 단어(sighed, waste of time) 하나를 잡으면 답이 나와요.",
+  "faq": [
+    ["2022학년도 수능 영어 19번 정답은?", "⑤ hopeful → disappointed(희망에 찬 → 실망한)예요. 희귀 화석에 대한 기대가 하루 종일 실패하면서 실망으로 바뀌어요."],
+    ["2022 수능 19번은 어떤 유형인가요?", "등장인물의 심경 변화를 고르는 2점 문항이에요."],
+    ["심경이 바뀌는 지점은 어디인가요?", "After many hours of wandering …, however, she was unsuccessful. 문장의 however부터 실망 쪽으로 바뀌어요."]
+  ]
+}

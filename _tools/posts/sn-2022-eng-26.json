@@ -1,0 +1,58 @@
+{
+  "exam": "sn-2022",
+  "n": 26,
+  "type": "내용 일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "르네상스 건축가 Donato Bramante의 생애",
+  "date": "2026-10-21",
+  "keywords": ["2022 수능 영어 26번", "2022학년도 수능 26번 해설", "2022 수능 26번 정답", "수능 영어 내용 일치", "Donato Bramante 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 26번은 건축가 Donato Bramante의 생애에 관한 내용 불일치 문항이에요. 본문은 건축이 주된 관심사가 됐지만 그림을 포기하지 않았다(did not give up painting)고 해요. 정답은 ③이에요.",
+  "flow": [
+    ["출생", "이탈리아 Fermignano에서 태어나 일찍 그림을 시작했고, 아버지가 그림 공부를 권했다."],
+    ["경력", "Urbino에서 Piero della Francesca의 조수로 일했다. (① 일치)"],
+    ["Milan", "1480년경 Milan에 새로운 양식의 교회들을 지었고, 레오나르도 다빈치와 함께 일했다. (② 일치)"],
+    ["관심", "건축이 주된 관심사가 되었지만 그림을 포기하지 않았다. (③ 불일치)"],
+    ["Rome", "1499년 Rome으로 가서 교황 율리우스 2세의 Rome 재개발 계획에 참여했다. (④ 일치)"],
+    ["업적", "성 베드로 대성당을 설계했고, 그의 건축물은 수 세기 동안 다른 건축가들에게 영향을 주었다. (⑤ 일치)"]
+  ],
+  "evidence": [
+    {"en": "Later, he worked as an assistant of Piero della Francesca in Urbino.", "ko": "후에 그는 Urbino에서 Piero della Francesca의 조수로 일했다.", "note": "① 일치."},
+    {"en": "Architecture became his main interest, but he did not give up painting.", "ko": "건축이 그의 주된 관심사가 되었지만, 그는 그림 그리기를 포기하지 않았다.", "note": "③ '그림 그리기를 포기했다'와 정반대예요. 정답 근거예요."},
+    {"en": "His buildings influenced other architects for centuries.", "ko": "그의 건축물들은 수 세기 동안 다른 건축가들에게 영향을 끼쳤다.", "note": "⑤ 일치. 내용 일치 문제의 선택지는 본문 순서대로 나와요."}
+  ],
+  "choices": [
+    {"en": "Piero della Francesca의 조수로 일했다.", "ko": "조수", "why": "일치. he worked as an assistant of Piero della Francesca."},
+    {"en": "Milan에서 새로운 양식의 교회들을 건축했다.", "ko": "Milan 교회", "why": "일치. he built several churches in a new style in Milan."},
+    {"en": "건축에 주된 관심을 갖게 되면서 그림 그리기를 포기했다.", "ko": "그림 포기", "why": "정답(불일치). but he did not give up painting — 그림을 포기하지 않았어요."},
+    {"en": "Pope Julius II의 Rome 재개발 계획에 참여했다.", "ko": "Rome 재개발", "why": "일치. participated in Pope Julius II's plan for the renewal of Rome."},
+    {"en": "그의 건축물들은 다른 건축가들에게 영향을 끼쳤다.", "ko": "영향", "why": "일치. His buildings influenced other architects for centuries."}
+  ],
+  "grammar": [
+    {"t": "과거분사 삽입", "ex": "Donato Bramante, born in Fermignano, Italy, began to paint early in his life.", "d": "born in ~이 주어를 보충 설명해요. 동사는 began이에요."},
+    {"t": "encourage A to V", "ex": "His father encouraged him to study painting.", "d": "'A가 ~하도록 권하다, 격려하다'."},
+    {"t": "give up + 동명사", "ex": "he did not give up painting", "d": "give up 뒤에는 동명사가 와요. 이 문장이 정답 근거예요."},
+    {"t": "동격 대시(―)", "ex": "He planned the new Basilica of St. Peter in Rome ―one of the most ambitious building projects in the history of humankind.", "d": "대시 뒤가 성 베드로 대성당을 다시 설명해요. one of the 최상급 + 복수명사."}
+  ],
+  "vocab": [
+    ["assistant", "조수"],
+    ["architecture", "건축"],
+    ["give up", "포기하다"],
+    ["participate in", "~에 참여하다"],
+    ["Pope", "교황"],
+    ["renewal", "재개발, 재생"],
+    ["basilica", "대성당"],
+    ["ambitious", "야심 찬"],
+    ["humankind", "인류"],
+    ["be buried", "묻히다"],
+    ["architect", "건축가"]
+  ],
+  "summary": {"en": "Donato Bramante, a painter who became a great architect, kept painting, worked in Milan and Rome, and designed St. Peter's Basilica.", "ko": "화가에서 위대한 건축가가 된 Donato Bramante는 그림도 계속 그렸고, Milan과 Rome에서 활동하며 성 베드로 대성당을 설계했다."},
+  "writing": {"en": "He focused on architecture but never gave up painting.", "ko": "그는 건축에 집중했지만 그림을 결코 포기하지 않았다."},
+  "tip": "내용 일치는 선택지가 본문 순서대로 나와요. 선택지 하나를 읽고 본문의 해당 문장을 바로 찾아 대조하세요. but, not 같은 부정·역접 표현이 있는 문장이 정답 근거가 되는 경우가 많아요.",
+  "faq": [
+    ["2022학년도 수능 영어 26번 정답은?", "③ 건축에 주된 관심을 갖게 되면서 그림 그리기를 포기했다예요. 본문은 he did not give up painting이라고 해요."],
+    ["2022 수능 26번은 어떤 유형인가요?", "인물에 관한 글의 내용과 일치하지 않는 것을 고르는 2점 문항이에요."],
+    ["Bramante는 어디에서 활동했나요?", "Urbino에서 조수로 일했고, Milan에서 교회를 지었으며, 1499년 Rome으로 옮겨 재개발 계획에 참여했어요."]
+  ]
+}

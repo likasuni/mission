@@ -11,7 +11,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://data.likasuni.com'
 ADS_CLIENT = 'ca-pub-3951386769813957'
 AD_SLOT = '8157681795'          # data자료실_섹션사이_반응형 (자료실 전용, 2026-10-16)
-TODAY = datetime.date.today().isoformat()
+TODAY = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).date().isoformat()  # 한국 시간
 
 SLUG = {'국어': 'kor', '수학': 'math', '수학 가형': 'math-ga', '수학 나형': 'math-na', '영어': 'eng',
         '한국사': 'history', '통합사회': 'social', '통합과학': 'science',
@@ -60,19 +60,25 @@ _pd = os.path.join(ROOT, '_tools', 'posts')
 for _f in sorted(os.listdir(_pd)) if os.path.isdir(_pd) else []:
     if not _f.endswith('.json'): continue
     _p = json.load(open(os.path.join(_pd, _f)))
+    if _p['date'] > TODAY: continue  # 예약 글: date 날짜 새벽 빌드(drive-sync) 때 공개
     _x = _p['exam'].split('-')  # sn-2022 / moe-1-2026-9
     _p['k'] = ('sn', 0, int(_x[1]), 0) if _x[0] == 'sn' else ('moe', int(_x[1]), int(_x[2]), int(_x[3]))
     _p['subj'] = _p.get('subj', '영어')
+    _p['qs'] = _p.get('qs') or [_p]  # 장문 세트(41~42 등)는 qs 에 문항별 정답·근거·선택지
     POSTS.append(_p)
 POSTS.sort(key=lambda p: (p['date'], p['n']), reverse=True)
 POSTS_BY = collections.defaultdict(list)
 for _p in POSTS: POSTS_BY[_p['k']].append(_p)
 CIRC = '①②③④⑤'
-def post_url(p): return subj_url(p['k'], p['subj']) + f"{p['n']}/"
-def post_name(p): return f"{s_name(p['k'])} {dname(p['subj'])} {p['n']}번"
+def post_no(p): return f"{p['n']}~{p['n2']}" if p.get('n2') else str(p['n'])
+def post_url(p): return subj_url(p['k'], p['subj']) + (f"{p['n']}-{p['n2']}/" if p.get('n2') else f"{p['n']}/")
+def post_name(p): return f"{s_name(p['k'])} {dname(p['subj'])} {post_no(p)}번"
+def post_ans(p):
+    if p.get('n2'): return ' · '.join(f"{q['n']}번 {CIRC[q['answer'] - 1]}" for q in p['qs'])
+    return f"정답 {CIRC[p['answer'] - 1]}"
 def post_card(ps, title):
     return (f'<div class="card"><h2>{e(title)}</h2><div class="plist">' + ''.join(
-        f'<a href="{post_url(p)}"><b>{e(post_name(p))}</b><span>{e(p["type"])} · {e(p["topic"])} · 정답 {CIRC[p["answer"] - 1]}</span></a>' for p in ps)
+        f'<a href="{post_url(p)}"><b>{e(post_name(p))}</b><span>{post_ans(p)} · {e(p["type"])} · {e(p["topic"])}</span></a>' for p in ps)
         + '</div></div>')
 
 
@@ -425,14 +431,27 @@ for idx, k in enumerate(keys_sorted):
 
 # ---------- 문항별 해설 ----------
 for p in POSTS:
-    k, n, ans = p['k'], p['n'], p['answer']
+    k, n = p['k'], p['n']
     nm, url = post_name(p), post_url(p)
     sn = dname(p['subj'])
+    qs, multi = p['qs'], len(p['qs']) > 1
     pts = f' [{p["points"]}점]' if p.get('points') == 3 else ''
-    h1 = f'{nm} 해설·분석 · {p["type"]} 정답 {CIRC[ans - 1]}'
+    ans_s = post_ans(p)
+    h1 = f'{nm} 해설·분석 · {p["type"]} {ans_s}'
     flow = ''.join(f'<li><b>{e(a)}</b> {e(b)}</li>' for a, b in p.get('flow', []))
-    ev = ''.join(f'<blockquote class="ev"><p class="en">{e(x["en"])}</p><p class="ko">{e(x["ko"])}</p><p class="nt">{e(x["note"])}</p></blockquote>' for x in p.get('evidence', []))
-    ch = ''.join(f'<li class="{"ok" if i + 1 == ans else ""}"><span class="no">{CIRC[i]}</span><div><p class="en">{e(c["en"])}</p><p class="ko">{e(c["ko"])}</p><p class="why">{e(c["why"])}</p></div></li>' for i, c in enumerate(p.get('choices', [])))
+    def _ev(q): return ''.join(f'<blockquote class="ev"><p class="en">{e(x["en"])}</p><p class="ko">{e(x["ko"])}</p><p class="nt">{e(x["note"])}</p></blockquote>' for x in q.get('evidence', []))
+    def _ch(q): return ''.join(f'<li class="{"ok" if i + 1 == q["answer"] else ""}"><span class="no">{CIRC[i]}</span><div><p class="en">{e(c["en"])}</p><p class="ko">{e(c["ko"])}</p><p class="why">{e(c["why"])}</p></div></li>' for i, c in enumerate(q.get('choices', [])))
+    def _qh(q, t): return f'{q["n"]}번 {q["type"]} · {t}' if multi else t
+    if multi:
+        qtd = ' · '.join(f'{q["n"]}번 {e(q["type"])}' + (' [3점]' if q.get('points') == 3 else '') for q in qs)
+        atd = '<br>'.join(f'{q["n"]}번 <b class="ans">{CIRC[q["answer"] - 1]}</b> {e(q["choices"][q["answer"] - 1]["en"])}' for q in qs)
+    else:
+        qtd = f'{n}번 · {e(p["type"])}{pts}'
+        atd = f'<b class="ans">{CIRC[p["answer"] - 1]}</b> {e(p["choices"][p["answer"] - 1]["en"]) if p.get("choices") else ""}'
+    qcards = ''.join(f'''<div class="card"><h2>{e(_qh(q, "정답 근거 문장"))}</h2>{_ev(q)}</div>
+{ad() if i == 0 else ''}
+<div class="card"><h2>{e(_qh(q, "선택지 해석과 오답 이유"))}</h2><ol class="chs">{_ch(q)}</ol></div>
+''' for i, q in enumerate(qs))
     gr = ''.join(f'<div class="gr"><b>{e(g["t"])}</b><p class="en">{e(g["ex"])}</p><p>{e(g["d"])}</p></div>' for g in p.get('grammar', []))
     vo = ''.join(f'<tr><th>{e(a)}</th><td>{e(b)}</td></tr>' for a, b in p.get('vocab', []))
     faq = ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in p.get('faq', []))
@@ -441,7 +460,7 @@ for p in POSTS:
     # 같은 번호 변형문제가 있으면 제목·본문에 연결 (41~42 같은 묶음 번호도 포함)
     def _cov(r):
         a = [int(x) for x in _re.findall(r'\d+', r)]
-        return a[0] <= n <= a[-1]
+        return a[0] <= p.get('n2', n) and n <= a[-1]
     vid = next((i for r, i in VAR.get(k, []) if _cov(r)), None) if p['subj'] == '영어' else None
     vtag = ' · 변형문제' if vid else ''
     vcard = (f'<div class="card"><h2>{e(nm)} 변형문제</h2><p class="muted">같은 지문으로 만든 리카수니 변형문제예요. 해설로 정리한 뒤 바로 풀어 보세요.</p>'
@@ -450,15 +469,12 @@ for p in POSTS:
 <p class="lead">{e(p["lead"])}</p>
 <div class="card"><table class="info">
 <tr><th>시험</th><td><a href="{subj_url(k, p['subj'])}">{e(s_name(k))} {e(sn)}</a> ({s_when(k)})</td></tr>
-<tr><th>문항</th><td>{n}번 · {e(p["type"])}{pts}</td></tr>
-<tr><th>정답</th><td><b class="ans">{CIRC[ans - 1]}</b> {e(p["choices"][ans - 1]["en"]) if p.get("choices") else ""}</td></tr>
+<tr><th>문항</th><td>{qtd}</td></tr>
+<tr><th>정답</th><td>{atd}</td></tr>
 <tr><th>핵심</th><td>{e(p["topic"])}</td></tr>
 </table></div>
 <div class="card"><h2>글의 흐름 한눈에</h2><ol class="flow">{flow}</ol></div>
-<div class="card"><h2>정답 근거 문장</h2>{ev}</div>
-{ad()}
-<div class="card"><h2>선택지 해석과 오답 이유</h2><ol class="chs">{ch}</ol></div>
-{f'<div class="tip"><b>풀이 요령</b> {e(p["tip"])}</div>' if p.get("tip") else ''}
+{qcards}{f'<div class="tip"><b>풀이 요령</b> {e(p["tip"])}</div>' if p.get("tip") else ''}
 <div class="card"><h2>꼭 알아야 할 구문</h2>{gr}</div>
 <div class="card"><h2>핵심 어휘</h2><table class="info vocab">{vo}</table></div>
 {ad()}
@@ -477,10 +493,16 @@ for p in POSTS:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p['faq']]})
     crumbs = [('/', '홈'), ('/suneung/' if k[0] == 'sn' else f'/moe/go{k[1]}/', '수능 기출' if k[0] == 'sn' else f'고{k[1]} 모의고사'),
-              (s_url(k), s_name(k)), (subj_url(k, p['subj']), sn), (url, f'{n}번 해설')]
-    page(url, f'{nm} 해설·분석 정답 {CIRC[ans - 1]}{vtag} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
-         f'{nm} 정답 {CIRC[ans - 1]}. {p["lead"]}'[:150], body, crumbs, '/posts/',
+              (s_url(k), s_name(k)), (subj_url(k, p['subj']), sn), (url, f'{post_no(p)}번 해설')]
+    page(url, f'{nm} 해설·분석 {ans_s}{vtag} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
+         f'{nm} {ans_s}. {p["lead"]}'[:150], body, crumbs, '/posts/',
          comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
+    for q in qs if multi else []:  # 세트로 합치기 전 번호별 주소(…/41/)는 세트 페이지로 넘겨 줌
+        _d = os.path.join(ROOT, subj_url(k, p['subj']).strip('/'), str(q['n']))
+        os.makedirs(_d, exist_ok=True)
+        open(os.path.join(_d, 'index.html'), 'w').write(
+            f'<!DOCTYPE html><meta charset="UTF-8"><title>{e(nm)} 해설</title><link rel="canonical" href="{SITE}{url}">'
+            f'<meta http-equiv="refresh" content="0; url={url}"><a href="{url}">{e(nm)} 해설로 이동</a>')
 
 # 수업자료 (회차별 목록)
 def _exam_order(k): return (0 if k[0] == 'sn' else 1, -k[2], -k[3], k[1])
@@ -492,7 +514,7 @@ if POSTS:
     for i, k in enumerate(sorted(POSTS_BY, key=_exam_order)):
         ps = sorted(POSTS_BY[k], key=lambda p: p['n'])
         pb += (f'<div class="card" id="{"-".join(map(str, k))}"><h2>{e(s_name(k))} 영어 <small class="muted">{len(ps)}문항</small></h2><div class="plist">' + ''.join(
-            f'<a href="{post_url(p)}"><b>{p["n"]}번 · {e(p["type"])}</b><span>{e(p["topic"])} · 정답 {CIRC[p["answer"] - 1]}</span></a>' for p in ps)
+            f'<a href="{post_url(p)}"><b>{post_no(p)}번 · {e(p["type"])}</b><span>{post_ans(p)} · {e(p["topic"])}</span></a>' for p in ps)
             + f'</div><p class="more-l" style="margin:10px 0 0"><a href="{subj_url(k, "영어")}">{e(s_name(k))} 영어 기출·자료 보기 →</a></p></div>')
         if i % 2 == 1: pb += ad()
     pb += ad()

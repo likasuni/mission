@@ -1,0 +1,55 @@
+{
+  "exam": "sn-2022",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "Cornhill 고등학교 종이컵 안 쓰기 챌린지 안내문",
+  "date": "2026-10-21",
+  "keywords": ["2022 수능 영어 27번", "2022학년도 수능 27번 해설", "2022 수능 27번 정답", "수능 영어 안내문", "Cornhill No Paper Cup Challenge", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 27번은 Cornhill 고등학교의 'No Paper Cup Challenge' 안내문과 일치하지 않는 것을 고르는 문항이에요. 챌린지 기간은 두 달이 아니라 2주(two weeks)예요. 정답은 ④예요.",
+  "flow": [
+    ["취지", "종이컵 사용을 줄여 함께 지구를 지키자는 챌린지다."],
+    ["참여 방법", "지명되면 텀블러 사용 영상을 찍고(①), 다음 참가자를 영상에서 지명하고, 24시간 안에 학교 웹사이트에 올린다(②)."],
+    ["시작", "학생회장이 2021년 12월 1일에 챌린지를 시작한다. (③)"],
+    ["추가 정보", "챌린지는 2주간 진행된다(④ 불일치). 모든 참가자는 티셔츠를 받는다(⑤)."]
+  ],
+  "evidence": [
+    {"en": "1) After being chosen, record a video showing you are using a tumbler. … 3) Upload the video to our school website within 24 hours.", "ko": "1) 지명된 후 텀블러를 사용하는 모습을 보여 주는 영상을 찍으세요. … 3) 24시간 이내에 학교 웹사이트에 영상을 올리세요.", "note": "①, ② 일치."},
+    {"en": "※ The student council president will start the challenge on December 1st, 2021.", "ko": "※ 학생회장이 2021년 12월 1일에 챌린지를 시작할 것입니다.", "note": "③ 일치."},
+    {"en": "∙The challenge will last for two weeks. ∙All participants will receive T-shirts.", "ko": "∙챌린지는 2주 동안 진행됩니다. ∙모든 참가자는 티셔츠를 받습니다.", "note": "two weeks(2주)인데 ④는 '두 달'이라고 해서 불일치예요. ⑤는 일치."}
+  ],
+  "choices": [
+    {"en": "참가자는 텀블러를 사용하는 자신의 동영상을 찍는다.", "ko": "텀블러 영상", "why": "일치. record a video showing you are using a tumbler."},
+    {"en": "참가자가 동영상을 업로드할 곳은 학교 웹사이트이다.", "ko": "학교 웹사이트", "why": "일치. Upload the video to our school website."},
+    {"en": "학생회장이 시작할 것이다.", "ko": "학생회장", "why": "일치. The student council president will start the challenge."},
+    {"en": "두 달 동안 진행될 예정이다.", "ko": "두 달", "why": "정답(불일치). The challenge will last for two weeks — 2주예요."},
+    {"en": "참가자 전원이 티셔츠를 받을 것이다.", "ko": "티셔츠", "why": "일치. All participants will receive T-shirts."}
+  ],
+  "grammar": [
+    {"t": "invite A to V", "ex": "Cornhill High School invites you to join the \"No Paper Cup Challenge.\"", "d": "'A에게 ~하도록 권하다, 초대하다'."},
+    {"t": "After being p.p.", "ex": "After being chosen, record a video showing you are using a tumbler.", "d": "전치사 뒤 수동형 동명사 '지명된 후에'. showing ~은 video를 꾸며요."},
+    {"t": "by -ing", "ex": "Choose the next participant by saying his or her name in the video.", "d": "'~함으로써'. 다음 참가자를 지명하는 방법이에요."},
+    {"t": "last for + 기간", "ex": "The challenge will last for two weeks.", "d": "last는 동사로 '지속되다'. 정답 근거 문장이에요."}
+  ],
+  "vocab": [
+    ["challenge", "챌린지, 도전"],
+    ["encourage", "권장하다"],
+    ["participate", "참여하다"],
+    ["tumbler", "텀블러"],
+    ["participant", "참가자"],
+    ["upload", "올리다"],
+    ["within", "~ 이내에"],
+    ["student council president", "학생회장"],
+    ["last", "지속되다"],
+    ["additional", "추가의"]
+  ],
+  "summary": {"en": "Cornhill High School's two-week No Paper Cup Challenge asks students to upload videos of themselves using tumblers, and every participant gets a T-shirt.", "ko": "Cornhill 고등학교의 2주간 종이컵 안 쓰기 챌린지는 텀블러 사용 영상을 올리는 방식이며, 참가자 전원이 티셔츠를 받는다."},
+  "writing": {"en": "Let's reduce paper cups by using tumblers.", "ko": "텀블러를 사용해서 종이컵을 줄입시다."},
+  "tip": "안내문 문제는 숫자(기간, 날짜, 시간, 가격, 나이)부터 대조하세요. two weeks ↔ 두 달처럼 단위만 바꾼 선택지가 가장 흔한 정답 패턴이에요.",
+  "faq": [
+    ["2022학년도 수능 영어 27번 정답은?", "④ 두 달 동안 진행될 예정이다예요. 안내문에는 The challenge will last for two weeks(2주)라고 나와요."],
+    ["2022 수능 27번은 어떤 유형인가요?", "안내문의 내용과 일치하지 않는 것을 고르는 2점 문항이에요."],
+    ["영상은 언제까지 올려야 하나요?", "지명된 후 24시간 이내(within 24 hours)에 학교 웹사이트에 올려야 해요."]
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "exam": "sn-2022",
+  "n": 20,
+  "type": "주장",
+  "points": 2,
+  "answer": 3,
+  "topic": "소셜 미디어 활용은 도구가 아니라 사업 목표에서 출발해야 한다",
+  "date": "2026-10-19",
+  "keywords": ["2022 수능 영어 20번", "2022학년도 수능 20번 해설", "2022 수능 20번 정답", "수능 영어 필자의 주장", "social media business objectives 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 20번은 기업이 소셜 미디어를 활용할 때 무엇에서 출발해야 하는지를 다룬 주장 문항이에요. 도구와 플랫폼이 아니라 조직의 목표에서 시작해야 한다는 게 핵심이에요. 정답은 ③ 기업은 소셜 미디어를 활용할 때 사업 목표를 토대로 해야 한다예요.",
+  "flow": [
+    ["문제 제기", "조직이 흔히 하는 실수는 사업 목표보다 소셜 미디어 도구·플랫폼에 지나치게 집중하는 것이다."],
+    ["주장", "소셜 미디어 프로그램은 최신 도구가 아니라 조직의 목표에 대한 철저한 이해에서 시작한다."],
+    ["반박", "'남들 다 하니까' 존재감만 유지하는 것은 그 자체로 아무 목적도 없다."],
+    ["조건", "소셜 미디어는 문제를 해결하거나 (측정 가능한) 개선을 가져와야 의미가 있다."],
+    ["결론", "모든 일에서 목적이 성공을 이끈다. 소셜 미디어도 다르지 않다."]
+  ],
+  "evidence": [
+    {"en": "… they focus too much on social media tools and platforms and not enough on their business objectives.", "ko": "… 그들은 소셜 미디어 도구와 플랫폼에 너무 많이 집중하고 사업 목표에는 충분히 집중하지 않는다.", "note": "가장 흔한 '실수'로 소개돼요. 실수의 반대가 필자의 주장이에요."},
+    {"en": "… creating a social media program begins not with insight into the latest social media tools and channels but with a thorough understanding of the organization's own goals and objectives.", "ko": "… 소셜 미디어 프로그램을 만드는 것은 최신 도구와 채널에 대한 이해가 아니라 조직 자체의 목표에 대한 철저한 이해에서 시작한다.", "note": "not A but B에서 B(조직의 목표)가 필자의 주장이에요. ③과 그대로 연결돼요."},
+    {"en": "In all things, purpose drives success. The world of social media is no different.", "ko": "모든 일에서 목적이 성공을 이끈다. 소셜 미디어의 세계도 다르지 않다.", "note": "마지막 문장에서 '목적(purpose)'을 한 번 더 강조하며 마무리해요."}
+  ],
+  "choices": [
+    {"en": "기업 이미지에 부합하는 소셜 미디어를 직접 개발하여 운영해야 한다.", "ko": "직접 개발", "why": "소셜 미디어를 '개발'하자는 말은 없어요. 도구보다 목표가 먼저라는 내용이에요."},
+    {"en": "기업은 사회적 가치와 요구를 반영하여 사업 목표를 수립해야 한다.", "ko": "사회적 가치 반영", "why": "사업 목표를 '어떻게 세우느냐'가 아니라, 목표를 바탕으로 소셜 미디어를 쓰라는 글이에요."},
+    {"en": "기업은 소셜 미디어를 활용할 때 사업 목표를 토대로 해야 한다.", "ko": "사업 목표가 토대", "why": "정답. not with tools but with … goals and objectives, purpose drives success가 모두 이 내용이에요."},
+    {"en": "소셜 미디어로 제품을 홍보할 때는 구체적인 정보를 제공해야 한다.", "ko": "구체적 정보 제공", "why": "제품 홍보 방법은 글에 나오지 않아요."},
+    {"en": "소비자의 의견을 수렴하기 위해 소셜 미디어를 적극 활용해야 한다.", "ko": "의견 수렴", "why": "소셜 미디어를 '적극 활용하라'는 글이 아니에요. 목적 없이 하는 것을 경계하는 글이에요."}
+  ],
+  "grammar": [
+    {"t": "One of the 복수명사 + 단수동사", "ex": "One of the most common mistakes made by organizations … is that they focus too much on …", "d": "주어는 One이라 동사는 is. made by organizations는 mistakes를 꾸미는 과거분사구예요."},
+    {"t": "begin not with A but with B", "ex": "creating a social media program begins not with insight into the latest … tools … but with a thorough understanding of …", "d": "강조점은 B. 동명사구(creating ~ program)가 주어예요."},
+    {"t": "in and of itself", "ex": "\"Being in social media\" serves no purpose in and of itself.", "d": "'그 자체로는'. 소셜 미디어에 있다는 것만으로는 아무 의미가 없다는 강조예요."},
+    {"t": "either A or B", "ex": "a social media presence must either solve a problem … or result in an improvement of some sort", "d": "목적이 있으려면 '문제 해결'이나 '개선' 중 하나는 해야 한다는 조건이에요."}
+  ],
+  "vocab": [
+    ["experiment with", "~을 시험해 보다"],
+    ["platform", "플랫폼"],
+    ["objective", "목표"],
+    ["insight into", "~에 대한 이해"],
+    ["thorough", "철저한"],
+    ["fulfillment", "이행, 충족"],
+    ["vague", "막연한"],
+    ["presence", "존재(감)"],
+    ["serve a purpose", "목적에 부합하다, 쓸모가 있다"],
+    ["result in", "~을 낳다"],
+    ["preferably", "가급적이면"],
+    ["measurable", "측정 가능한"],
+    ["drive", "이끌다, 추진하다"]
+  ],
+  "summary": {"en": "Businesses should build their social media programs on their own goals, not on the latest tools or trends.", "ko": "기업은 최신 도구나 유행이 아니라 자신의 목표를 바탕으로 소셜 미디어 프로그램을 만들어야 한다."},
+  "writing": {"en": "Start with your goals, not with the tools.", "ko": "도구가 아니라 목표에서 시작하라."},
+  "tip": "주장 문제는 '흔한 실수(mistake)'가 소개되면 그 반대가 필자의 주장이에요. not A but B 문장의 B를 찾고, 마지막 문장(purpose drives success)으로 확인하세요.",
+  "faq": [
+    ["2022학년도 수능 영어 20번 정답은?", "③ 기업은 소셜 미디어를 활용할 때 사업 목표를 토대로 해야 한다예요."],
+    ["2022 수능 20번은 어떤 유형인가요?", "필자가 주장하는 바를 고르는 2점 문항이에요. 기업의 소셜 미디어 활용을 다룬 지문이에요."],
+    ["⑤ 소셜 미디어 적극 활용이 오답인 이유는?", "글은 소셜 미디어를 더 많이 쓰라는 게 아니라, 목적 없이 쓰지 말고 사업 목표에서 출발하라는 내용이에요."]
+  ]
+}
