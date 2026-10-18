@@ -184,7 +184,7 @@ def subj_url(k, s): return s_url(k) + sslug(s) + '/'
 
 def bysubj(rs):
     d = collections.OrderedDict()
-    for s in sorted({r['subject'] for r in rs}, key=lambda x: SUBJ_ORDER.index(x) if x in SUBJ_ORDER else 99):
+    for s in sorted({r['subject'] for r in rs}, key=lambda x: (SUBJ_ORDER.index(x) if x in SUBJ_ORDER else 99, x)):  # 이름으로 동점 정렬 → 빌드마다 순서 고정
         d[s] = sorted([r for r in rs if r['subject'] == s], key=lambda r: KIND_ORDER.index(r['kind']))
     return d
 
@@ -429,7 +429,7 @@ for p in POSTS:
     nm, url = post_name(p), post_url(p)
     sn = dname(p['subj'])
     pts = f' [{p["points"]}점]' if p.get('points') == 3 else ''
-    h1 = f'{nm} 해설 · {p["type"]} 정답 {CIRC[ans - 1]}'
+    h1 = f'{nm} 해설·분석 · {p["type"]} 정답 {CIRC[ans - 1]}'
     flow = ''.join(f'<li><b>{e(a)}</b> {e(b)}</li>' for a, b in p.get('flow', []))
     ev = ''.join(f'<blockquote class="ev"><p class="en">{e(x["en"])}</p><p class="ko">{e(x["ko"])}</p><p class="nt">{e(x["note"])}</p></blockquote>' for x in p.get('evidence', []))
     ch = ''.join(f'<li class="{"ok" if i + 1 == ans else ""}"><span class="no">{CIRC[i]}</span><div><p class="en">{e(c["en"])}</p><p class="ko">{e(c["ko"])}</p><p class="why">{e(c["why"])}</p></div></li>' for i, c in enumerate(p.get('choices', [])))
@@ -438,6 +438,14 @@ for p in POSTS:
     faq = ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in p.get('faq', []))
     sm, wr = p.get('summary'), p.get('writing')
     others = [x for x in POSTS_BY[k] if x is not p]
+    # 같은 번호 변형문제가 있으면 제목·본문에 연결 (41~42 같은 묶음 번호도 포함)
+    def _cov(r):
+        a = [int(x) for x in _re.findall(r'\d+', r)]
+        return a[0] <= n <= a[-1]
+    vid = next((i for r, i in VAR.get(k, []) if _cov(r)), None) if p['subj'] == '영어' else None
+    vtag = ' · 변형문제' if vid else ''
+    vcard = (f'<div class="card"><h2>{e(nm)} 변형문제</h2><p class="muted">같은 지문으로 만든 리카수니 변형문제예요. 해설로 정리한 뒤 바로 풀어 보세요.</p>'
+             f'<div class="dl"><a href="{view(vid)}" target="_blank" rel="noopener">변형문제 PDF 보기</a></div></div>') if vid else ''
     body = f'''<h1 class="page-h1">{e(h1)}</h1>
 <p class="lead">{e(p["lead"])}</p>
 <div class="card"><table class="info">
@@ -456,6 +464,7 @@ for p in POSTS:
 {ad()}
 {f'<div class="card"><h2>한 줄 요약</h2><p class="en">{e(sm["en"])}</p><p class="ko">{e(sm["ko"])}</p></div>' if sm else ''}
 {f'<div class="card"><h2>서술형 대비 문장</h2><p class="en">{e(wr["en"])}</p><p class="ko">{e(wr["ko"])}</p></div>' if wr else ''}
+{vcard}
 {f'<div class="card faq"><h2>자주 묻는 질문</h2>{faq}</div>' if faq else ''}
 <div class="card"><h2>함께 보면 좋은 자료</h2><div class="chips">
 <a class="chip" href="{subj_url(k, p['subj'])}">{e(s_name(k))} {e(sn)} 기출 원본 PDF</a>
@@ -469,7 +478,7 @@ for p in POSTS:
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p['faq']]})
     crumbs = [('/', '홈'), ('/suneung/' if k[0] == 'sn' else f'/moe/go{k[1]}/', '수능 기출' if k[0] == 'sn' else f'고{k[1]} 모의고사'),
               (s_url(k), s_name(k)), (subj_url(k, p['subj']), sn), (url, f'{n}번 해설')]
-    page(url, f'{nm} 해설 정답 {CIRC[ans - 1]} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
+    page(url, f'{nm} 해설·분석 정답 {CIRC[ans - 1]}{vtag} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
          f'{nm} 정답 {CIRC[ans - 1]}. {p["lead"]}'[:150], body, crumbs, '/english/' if p['subj'] == '영어' else '/exams/',
          comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
 
