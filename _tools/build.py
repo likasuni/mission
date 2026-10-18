@@ -54,6 +54,28 @@ for v in (json.load(open(_vp)) if os.path.exists(_vp) else []):
     VAR[('moe', g, y, mo)].append((nm.group(1).replace(' ', '').replace('-', '~'), v['id']))
 def vkey(n): return int(_re.match(r'\d+', n).group())
 
+# 문항별 해설 글 (_tools/posts/*.json) — 원장님이 자료를 주면 Claude 가 JSON 으로 써서 올림
+POSTS = []
+_pd = os.path.join(ROOT, '_tools', 'posts')
+for _f in sorted(os.listdir(_pd)) if os.path.isdir(_pd) else []:
+    if not _f.endswith('.json'): continue
+    _p = json.load(open(os.path.join(_pd, _f)))
+    _x = _p['exam'].split('-')  # sn-2022 / moe-1-2026-9
+    _p['k'] = ('sn', 0, int(_x[1]), 0) if _x[0] == 'sn' else ('moe', int(_x[1]), int(_x[2]), int(_x[3]))
+    _p['subj'] = _p.get('subj', '영어')
+    POSTS.append(_p)
+POSTS.sort(key=lambda p: (p['date'], p['n']), reverse=True)
+POSTS_BY = collections.defaultdict(list)
+for _p in POSTS: POSTS_BY[_p['k']].append(_p)
+CIRC = '①②③④⑤'
+def post_url(p): return subj_url(p['k'], p['subj']) + f"{p['n']}/"
+def post_name(p): return f"{s_name(p['k'])} {dname(p['subj'])} {p['n']}번"
+def post_card(ps, title):
+    return (f'<div class="card"><h2>{e(title)}</h2><div class="plist">' + ''.join(
+        f'<a href="{post_url(p)}"><b>{e(post_name(p))}</b><span>{e(p["type"])} · {e(p["topic"])} · 정답 {CIRC[p["answer"] - 1]}</span></a>' for p in ps)
+        + '</div></div>')
+
+
 def skey(t):  # 제목·폴더 이름에서 회차 (moe, 학년, 연도, 월)
     m = _re.search(r'(\d{4})\s*(년|학년도)[\s_]*(\d{1,2})\s*월[\s_]*고\s*(\d)', t)
     if not m: return None
@@ -174,9 +196,9 @@ def ad():
             f'data-ad-slot="{AD_SLOT}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
             f'<script>(adsbygoogle=window.adsbygoogle||[]).push({{}});</script></div>')
 
-def page(path, title, desc, body, crumbs=(), active='/', comments=None):
+def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website'):
     url = SITE + path
-    ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    ld = list(extra_ld) + [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else []
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
     act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else ('/english/' if active == '/variants/' else active)  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
@@ -192,7 +214,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None):
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{url}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="리카수니 자료실">
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
@@ -390,6 +412,8 @@ for idx, k in enumerate(keys_sorted):
 <div class="card"><h2>{e(name)} 다른 과목</h2>{sibs}</div>
 {rel}
 {ad()}'''
+        if POSTS_BY.get(k) and any(p['subj'] == s for p in POSTS_BY[k]):
+            body += post_card([p for p in POSTS_BY[k] if p['subj'] == s], f'{full} 문항별 해설')
         if en_top:
             page(subj_url(k, s), f'{full} 분석노트·변형문제·단어 PDF | 리카수니 자료실',
                  f'{full} 문항별 분석노트, 변형문제, 영어 단어 총정리와 기출 원본 PDF 무료. 리카수니 자료실',
@@ -398,6 +422,64 @@ for idx, k in enumerate(keys_sorted):
             page(subj_url(k, s), f'{full} 기출문제·해설 PDF 다운로드 | 리카수니 자료실',
                  f'{full} 문제지·정답·해설 PDF 무료 다운로드. {s_when(k)}. 리카수니 자료실',
                  body, crumbs + [(subj_url(k, s), sn)], active, comments=(subj_url(k, s).strip('/'), full))
+
+# ---------- 문항별 해설 ----------
+for p in POSTS:
+    k, n, ans = p['k'], p['n'], p['answer']
+    nm, url = post_name(p), post_url(p)
+    sn = dname(p['subj'])
+    pts = f' [{p["points"]}점]' if p.get('points') == 3 else ''
+    h1 = f'{nm} 해설 · {p["type"]} 정답 {CIRC[ans - 1]}'
+    flow = ''.join(f'<li><b>{e(a)}</b> {e(b)}</li>' for a, b in p.get('flow', []))
+    ev = ''.join(f'<blockquote class="ev"><p class="en">{e(x["en"])}</p><p class="ko">{e(x["ko"])}</p><p class="nt">{e(x["note"])}</p></blockquote>' for x in p.get('evidence', []))
+    ch = ''.join(f'<li class="{"ok" if i + 1 == ans else ""}"><span class="no">{CIRC[i]}</span><div><p class="en">{e(c["en"])}</p><p class="ko">{e(c["ko"])}</p><p class="why">{e(c["why"])}</p></div></li>' for i, c in enumerate(p.get('choices', [])))
+    gr = ''.join(f'<div class="gr"><b>{e(g["t"])}</b><p class="en">{e(g["ex"])}</p><p>{e(g["d"])}</p></div>' for g in p.get('grammar', []))
+    vo = ''.join(f'<tr><th>{e(a)}</th><td>{e(b)}</td></tr>' for a, b in p.get('vocab', []))
+    faq = ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in p.get('faq', []))
+    sm, wr = p.get('summary'), p.get('writing')
+    others = [x for x in POSTS_BY[k] if x is not p]
+    body = f'''<h1 class="page-h1">{e(h1)}</h1>
+<p class="lead">{e(p["lead"])}</p>
+<div class="card"><table class="info">
+<tr><th>시험</th><td><a href="{subj_url(k, p['subj'])}">{e(s_name(k))} {e(sn)}</a> ({s_when(k)})</td></tr>
+<tr><th>문항</th><td>{n}번 · {e(p["type"])}{pts}</td></tr>
+<tr><th>정답</th><td><b class="ans">{CIRC[ans - 1]}</b> {e(p["choices"][ans - 1]["en"]) if p.get("choices") else ""}</td></tr>
+<tr><th>핵심</th><td>{e(p["topic"])}</td></tr>
+</table></div>
+<div class="card"><h2>글의 흐름 한눈에</h2><ol class="flow">{flow}</ol></div>
+<div class="card"><h2>정답 근거 문장</h2>{ev}</div>
+{ad()}
+<div class="card"><h2>선택지 해석과 오답 이유</h2><ol class="chs">{ch}</ol></div>
+{f'<div class="tip"><b>풀이 요령</b> {e(p["tip"])}</div>' if p.get("tip") else ''}
+<div class="card"><h2>꼭 알아야 할 구문</h2>{gr}</div>
+<div class="card"><h2>핵심 어휘</h2><table class="info vocab">{vo}</table></div>
+{ad()}
+{f'<div class="card"><h2>한 줄 요약</h2><p class="en">{e(sm["en"])}</p><p class="ko">{e(sm["ko"])}</p></div>' if sm else ''}
+{f'<div class="card"><h2>서술형 대비 문장</h2><p class="en">{e(wr["en"])}</p><p class="ko">{e(wr["ko"])}</p></div>' if wr else ''}
+{f'<div class="card faq"><h2>자주 묻는 질문</h2>{faq}</div>' if faq else ''}
+<div class="card"><h2>함께 보면 좋은 자료</h2><div class="chips">
+<a class="chip" href="{subj_url(k, p['subj'])}">{e(s_name(k))} {e(sn)} 기출 원본 PDF</a>
+<a class="chip" href="/notes/">분석노트 카톡 요청</a><a class="chip" href="/posts/">문항별 해설 전체</a></div></div>
+{post_card(others, f"{s_name(k)} {sn} 다른 문항 해설") if others else ''}'''
+    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": h1, "description": p['lead'], "datePublished": p['date'],
+           "dateModified": p['date'], "inLanguage": "ko", "keywords": ', '.join(p.get('keywords', [])), "mainEntityOfPage": SITE + url,
+           "author": {"@type": "Person", "name": "리카수니 원장"}, "publisher": {"@type": "Organization", "name": "리카수니 자료실"}}]
+    if p.get('faq'):
+        ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p['faq']]})
+    crumbs = [('/', '홈'), ('/suneung/' if k[0] == 'sn' else f'/moe/go{k[1]}/', '수능 기출' if k[0] == 'sn' else f'고{k[1]} 모의고사'),
+              (s_url(k), s_name(k)), (subj_url(k, p['subj']), sn), (url, f'{n}번 해설')]
+    page(url, f'{nm} 해설 정답 {CIRC[ans - 1]} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
+         f'{nm} 정답 {CIRC[ans - 1]}. {p["lead"]}'[:150], body, crumbs, '/english/' if p['subj'] == '영어' else '/exams/',
+         comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
+
+# 해설 모아보기
+pb = ('''<h1 class="page-h1">영어 기출 문항별 해설</h1>
+<p class="lead">수능·모의고사 영어 문항을 정답 근거, 선택지 오답 이유, 핵심 구문·어휘 중심으로 짧고 정확하게 정리했어요. 리카수니 원장이 수업 준비하며 직접 써요.</p>'''
+      + (post_card(POSTS, f'최근 해설 {len(POSTS)}개') if POSTS else '<div class="card"><p class="muted">곧 첫 해설이 올라와요.</p></div>') + ad())
+page('/posts/', '수능·모의고사 영어 문항별 해설 모음 | 리카수니 자료실',
+     '수능·고3·고2·고1 모의고사 영어 문항별 해설. 정답 근거, 오답 이유, 핵심 구문과 어휘를 짧게 정리. 리카수니 자료실', pb,
+     [('/', '홈'), ('/posts/', '문항별 해설')], '/english/', comments=('posts', '문항별 해설'))
 
 # ---------- 학년 / 수능 목록 ----------
 for g in (1, 2, 3):
@@ -432,6 +514,7 @@ recent = '<div class="card"><h2>최근 회차</h2><div class="chips">' + ''.join
 en_sess = sorted([k for k in sessions if k[0] == 'moe' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: (k[1], -k[2], -k[3]))
 note_files = sum(len(NOTES[k]) for k in en_sess)
 word_sess = [k for k in en_sess if k in WORDS]
+POST_HOME = (post_card(POSTS[:6], '최근 문항별 해설') + '<p class="more-l"><a href="/posts/">문항별 해설 전체 보기 →</a></p>') if POSTS else ''
 body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <p>고1·고2·고3 영어 모의고사를 회차별로 정리했어요. 리카수니 원장이 직접 만든 <b>분석노트·변형문제·단어</b>를 무료로 받아 가세요.</p></section>
 <h2 class="sec-h">영어 모의고사 핵심 자료</h2>
@@ -444,6 +527,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><h2>자료 요청 현황 · 최근 댓글</h2><span class="rc-n"></span></div>
 <div class="rc-body"><p class="rc-tip">없는 자료를 요청하면 <b>진행 중</b>에 올라가고, 완성돼서 카톡으로 보내면 <b>완료</b>로 옮겨져요. 궁금한 점은 각 페이지 아래 <b>댓글</b>로 남겨 주세요.</p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div></div></section>
+{POST_HOME}
 <h2 class="sec-h">최근 영어 모의고사</h2>
 <div class="card"><div class="chips">''' + ''.join(
     f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-k[2], -k[3], k[1]))[:9]) + '''</div>
