@@ -1,0 +1,56 @@
+{
+  "exam": "sn-2022",
+  "n": 44,
+  "type": "지칭 대상",
+  "points": 2,
+  "answer": 3,
+  "topic": "Anna·Jane·Cora 세 인물 중 (c)만 Cora를 가리킨다",
+  "date": "2026-10-23",
+  "keywords": ["2022 수능 영어 44번", "2022학년도 수능 44번 해설", "2022 수능 44번 정답", "수능 영어 지칭 추론", "taekwondo Anna Cora Jane 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 44번은 밑줄 친 대명사 (a)~(e) 중 가리키는 대상이 다른 것을 고르는 문항이에요. (a), (b), (d), (e)는 모두 동아리장 Anna인데, (c) her만 신입 회원 Cora예요. 정답은 ③ (c)예요.",
+  "flow": [
+    ["(a)", "Anna가 쉬는 시간에 Jane이 (a) her에게 다가갔다 → Anna"],
+    ["(b)", "Jane이 Anna에게 미안한 표정을 짓자 (b) she가 Jane의 어깨를 토닥였다 → Anna"],
+    ["(c)", "Anna는 (c) her를 정말 좋아했다 (Anna가 직접 초대한 신입 회원) → Cora"],
+    ["(d)", "Jane: '(d) 너는 실망하거나 화나지 않는다니 믿기지 않아' → Anna"],
+    ["(e)", "Jane이 (e) her에게 대답하려던 순간 문이 열렸다 → Anna"]
+  ],
+  "evidence": [
+    {"en": "At last, when Anna took a break, Jane came over to (a) her …", "ko": "마침내 Anna가 쉬는 시간을 갖자 Jane이 (a) 그녀에게 다가가 …", "note": "Jane이 다가간 사람은 쉬고 있던 Anna예요. (a) = Anna."},
+    {"en": "Cora was a new member, whom Anna had personally invited to join the club. Anna really liked (c) her.", "ko": "Cora는 Anna가 직접 동아리에 초대한 신입 회원이었다. Anna는 (c) 그녀를 정말 좋아했다.", "note": "Anna가 좋아한 대상이니 (c) = Cora. 주어 Anna 자신일 수는 없어요."},
+    {"en": "\"… I can't believe (d) you don't feel disappointed or angry. …\" Anna replied, … Just as Jane was about to respond to (e) her …", "ko": "\"… (d) 네가 실망하거나 화나지 않는다니 믿을 수가 없어. …\" Anna가 대답했다 … Jane이 (e) 그녀에게 막 대답하려던 순간 …", "note": "Jane이 말을 거는 상대도, 대답하려던 상대도 Anna예요. (d), (e) = Anna."}
+  ],
+  "choices": [
+    {"en": "(a) her", "ko": "Anna", "why": "쉬는 시간을 가진 Anna에게 Jane이 다가가요."},
+    {"en": "(b) she", "ko": "Anna", "why": "Jane이 Anna에게 미안한 표정을 짓자, Anna가 Jane의 어깨를 토닥여요."},
+    {"en": "(c) her", "ko": "Cora", "why": "정답. Anna가 직접 초대하고 정말 좋아한 신입 회원 Cora를 가리켜요."},
+    {"en": "(d) you", "ko": "Anna", "why": "Jane이 Anna에게 직접 하는 말 속의 you예요."},
+    {"en": "(e) her", "ko": "Anna", "why": "Anna의 말에 Jane이 대답하려던 상대예요."}
+  ],
+  "grammar": [
+    {"t": "give A a look", "ex": "Jane gave Anna an apologetic look", "d": "'A에게 ~한 표정을 짓다'. (b) she가 누구인지 판단하는 문장이에요."},
+    {"t": "respond with", "ex": "she responded with a friendly pat on Jane's shoulder", "d": "'~으로 응답하다'. Jane's shoulder가 나오므로 she는 Jane이 아닌 Anna예요."},
+    {"t": "Although 양보절", "ex": "Although her budget was tight, Anna bought Cora a taekwondo uniform.", "d": "'예산이 빠듯했지만'. buy A B는 'A에게 B를 사 주다'."},
+    {"t": "There she was!", "ex": "Just as Jane was about to respond to her, the door swung open. There she was!", "d": "도치 표현으로 '그녀가 거기 있었다!'. 여기서 she는 Cora예요(밑줄 아님)."}
+  ],
+  "vocab": [
+    ["head", "우두머리, 장"],
+    ["assist", "돕다"],
+    ["expect", "기다리다, 기대하다"],
+    ["apologetic", "미안해하는"],
+    ["pat", "토닥임"],
+    ["personally", "직접"],
+    ["tight", "빠듯한"],
+    ["uniform", "도복, 유니폼"],
+    ["disappointed", "실망한"],
+    ["respond to", "~에 대답하다"]
+  ],
+  "summary": {"en": "Most pronouns in the story refer to Anna, the club leader, but (c) refers to Cora, the new member she invited.", "ko": "이야기 속 대명사는 대부분 동아리장 Anna를 가리키지만, (c)는 그녀가 초대한 신입 회원 Cora를 가리킨다."},
+  "writing": {"en": "Anna really liked Cora and believed she would come back.", "ko": "Anna는 Cora를 정말 좋아했고 그녀가 돌아올 것이라 믿었다."},
+  "tip": "지칭 문제는 대명사마다 '누가 누구에게' 하는 행동인지 바로 앞 문장에서 확인하세요. Anna really liked (c) her처럼 주어가 Anna면, her는 Anna가 아닌 다른 사람이에요.",
+  "faq": [
+    ["2022학년도 수능 영어 44번 정답은?", "③ (c)예요. (c) her만 Cora이고 나머지 (a), (b), (d), (e)는 모두 Anna예요."],
+    ["2022 수능 44번은 어떤 유형인가요?", "43~45번 장문 세트 중 밑줄 친 대명사가 가리키는 대상이 나머지와 다른 것을 고르는 2점 문항이에요."],
+    ["(b) she가 Anna인 이유는?", "Jane이 Anna에게 미안한 표정을 짓자 she가 Jane의 어깨를 토닥였어요. Jane의 어깨를 토닥인 사람은 Anna예요."]
+  ]
+}

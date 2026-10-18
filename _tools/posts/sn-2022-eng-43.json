@@ -1,0 +1,60 @@
+{
+  "exam": "sn-2022",
+  "n": 43,
+  "type": "장문 순서",
+  "points": 2,
+  "answer": 3,
+  "topic": "다시 돌아온 태권도 신입 회원 Cora를 기다린 Anna",
+  "date": "2026-10-23",
+  "keywords": ["2022 수능 영어 43번", "2022학년도 수능 43번 해설", "2022 수능 43번 정답", "수능 영어 장문 순서", "taekwondo Anna Cora Jane 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 43번은 태권도 동아리장 Anna가 신입 회원 Cora를 기다리는 이야기의 순서 문항이에요. (A)의 질문 → (C) 대답과 사연 → (D) 기다림과 문이 열림 → (B) Cora 등장의 흐름이에요. 정답은 ③ (C) － (D) － (B)예요.",
+  "flow": [
+    ["(A)", "Anna가 신입 회원을 가르치며 계속 출입문을 본다. Jane이 'Cora 기다리니?'라고 묻는다."],
+    ["(C)", "Anna가 불안하게 고개를 끄덕인다. Anna는 Cora를 직접 초대하고 도복까지 사 줬지만, Cora는 한 번 나오고 다시 오지 않았다."],
+    ["(D)", "Anna는 무슨 일이 있었는지 궁금해하고, Jane은 실망하며 잊으라고 한다. 그때 문이 열리고 Cora가 나타난다."],
+    ["(B)", "붕대를 감은 Cora가 자전거 사고로 입원했었다고 설명한다. Anna는 기뻐하고, Jane은 미안한 표정을 짓는다."]
+  ],
+  "evidence": [
+    {"en": "(A) … Jane came over to her and asked, \"Hey, are you waiting for Cora?\" / (C) Anna answered the question by nodding uneasily.", "ko": "(A) … Jane이 다가와 '얘, Cora 기다리는 거야?'라고 물었다. / (C) Anna는 불안하게 고개를 끄덕이며 질문에 답했다.", "note": "(A)의 질문에 (C)가 바로 답해요. (A) → (C)."},
+    {"en": "(C) … she came to practice only once and then never showed up again. / (D) Since Cora had missed several practices, Anna wondered what could have happened.", "ko": "(C) … 그녀는 연습에 딱 한 번 나오고 다시는 나타나지 않았다. / (D) Cora가 여러 번 연습에 빠졌기 때문에 Anna는 무슨 일이 있었는지 궁금했다.", "note": "(C)의 '안 나왔다'를 (D)가 '여러 번 빠졌다'로 이어받아요. (C) → (D)."},
+    {"en": "(D) … the door swung open. There she was! / (B) Cora walked in like a wounded soldier with bandages on her face and arms.", "ko": "(D) … 문이 활짝 열렸다. 그녀가 거기 있었다! / (B) Cora는 얼굴과 팔에 붕대를 감고 부상병처럼 걸어 들어왔다.", "note": "(D)의 마지막 '문이 열리고 Cora 등장' 다음에 (B)의 Cora가 들어오는 장면이 이어져요. (D) → (B)."}
+  ],
+  "choices": [
+    {"en": "(B) － (D) － (C)", "ko": "등장 → 기다림 → 사연", "why": "Cora가 들어오는 (B)는 (D)의 '문이 열렸다' 뒤에 와야 해요."},
+    {"en": "(C) － (B) － (D)", "ko": "사연 → 등장 → 기다림", "why": "(B)에서 이미 Cora가 왔는데 (D)에서 다시 기다리면 시간 순서가 맞지 않아요."},
+    {"en": "(C) － (D) － (B)", "ko": "사연 → 기다림·문 열림 → 등장", "why": "정답. 질문에 대한 답(C) → 기다림과 문이 열림(D) → Cora의 등장과 해명(B)."},
+    {"en": "(D) － (B) － (C)", "ko": "기다림 → 등장 → 사연", "why": "(A)의 질문에 대한 대답이 (C)의 nodding이라 (C)가 먼저 와야 해요."},
+    {"en": "(D) － (C) － (B)", "ko": "기다림 → 사연 → 등장", "why": "(D) 끝에서 문이 열리고 Cora가 나타나므로, 바로 (B)로 이어져야 해요."}
+  ],
+  "grammar": [
+    {"t": "by -ing", "ex": "Anna answered the question by nodding uneasily.", "d": "'~함으로써'. 말 대신 고개를 끄덕여 대답했어요."},
+    {"t": "계속적 용법 whom", "ex": "Cora was a new member, whom Anna had personally invited to join the club.", "d": "콤마 + whom은 '그런데 그녀를'. had invited는 과거보다 앞선 일(과거완료)이에요."},
+    {"t": "could have p.p.", "ex": "Anna wondered what could have happened.", "d": "'무슨 일이 있었을 수도 있는지'. 과거 일에 대한 추측이에요."},
+    {"t": "be about to V", "ex": "Just as Jane was about to respond to her, the door swung open.", "d": "'막 ~하려던 참에'. 극적인 전환 장면을 만들어요."}
+  ],
+  "vocab": [
+    ["strike", "치다"],
+    ["sparring pad", "겨루기용 패드"],
+    ["glance at", "~을 힐끗 보다"],
+    ["nod", "고개를 끄덕이다"],
+    ["uneasily", "불안하게"],
+    ["budget", "예산"],
+    ["show up", "나타나다"],
+    ["judgingly", "비난하듯이"],
+    ["commitment", "약속, 전념"],
+    ["swing open", "활짝 열리다"],
+    ["wounded", "부상당한"],
+    ["bandage", "붕대"],
+    ["thrilled", "아주 기쁜"],
+    ["apologetic", "미안해하는"],
+    ["pat", "토닥임"]
+  ],
+  "summary": {"en": "Anna kept waiting for Cora, who had stopped coming to practice, and Cora finally returned, explaining she had been in a bicycle accident.", "ko": "Anna는 연습에 나오지 않던 Cora를 계속 기다렸고, Cora는 자전거 사고를 당했었다고 설명하며 마침내 돌아왔다."},
+  "writing": {"en": "Anna's trust in Cora was rewarded when she finally came back.", "ko": "Cora가 마침내 돌아오면서 Anna의 믿음은 보답받았다."},
+  "tip": "장문 순서는 각 단락의 첫 문장과 마지막 문장을 연결하세요. (A) 질문 → (C) 대답(nodding), (D) 마지막 '문이 열렸다' → (B) 첫 문장 'Cora가 걸어 들어왔다'. 시간 순서상 Cora 등장(B)이 맨 끝이에요.",
+  "faq": [
+    ["2022학년도 수능 영어 43번 정답은?", "③ (C) － (D) － (B)예요."],
+    ["2022 수능 43번은 어떤 유형인가요?", "43~45번 장문 세트 중, 주어진 글 (A)에 이어질 내용을 순서대로 배열하는 2점 문항이에요."],
+    ["(A) 다음에 (C)가 오는 이유는?", "(A) 마지막의 'Cora 기다리니?'라는 질문에 (C) 첫 문장이 Anna answered the question by nodding으로 답하기 때문이에요."]
+  ]
+}

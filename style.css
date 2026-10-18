@@ -391,11 +391,11 @@ a.nb:hover { filter: brightness(1.12); }
 .rq-col h3 small { margin-left: auto; font-size: .72rem; font-weight: 600; color: #4b7a5c; }
 
 /* ---------- 문항별 해설 ---------- */
-.plist { display: grid; gap: 8px; }
-.plist a { display: flex; flex-direction: column; gap: 2px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: inherit; background: #fff; }
+.plist { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 6px; }
+.plist a { display: flex; align-items: baseline; gap: 8px; min-width: 0; padding: 7px 12px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; color: inherit; background: #fff; }
 .plist a:hover { border-color: #1e3a8a; background: #f6f8ff; }
-.plist a b { color: var(--navy); }
-.plist a span { font-size: .86rem; color: #5b6478; }
+.plist a b { flex: none; font-size: .9rem; color: var(--navy); }
+.plist a span { min-width: 0; font-size: .8rem; color: #5b6478; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .more-l { margin: -6px 0 18px; text-align: right; font-size: .9rem; }
 .ans { display: inline-block; min-width: 1.6em; padding: 0 6px; border-radius: 6px; background: #16a34a; color: #fff; text-align: center; margin-right: 4px; }
 .flow { margin: 0; padding-left: 1.2em; } .flow li { margin: 6px 0; } .flow b { color: var(--navy); margin-right: 6px; }

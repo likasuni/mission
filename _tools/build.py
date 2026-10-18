@@ -11,7 +11,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://data.likasuni.com'
 ADS_CLIENT = 'ca-pub-3951386769813957'
 AD_SLOT = '8157681795'          # data자료실_섹션사이_반응형 (자료실 전용, 2026-10-16)
-TODAY = datetime.date.today().isoformat()
+TODAY = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).date().isoformat()  # 한국 시간
 
 SLUG = {'국어': 'kor', '수학': 'math', '수학 가형': 'math-ga', '수학 나형': 'math-na', '영어': 'eng',
         '한국사': 'history', '통합사회': 'social', '통합과학': 'science',
@@ -60,6 +60,7 @@ _pd = os.path.join(ROOT, '_tools', 'posts')
 for _f in sorted(os.listdir(_pd)) if os.path.isdir(_pd) else []:
     if not _f.endswith('.json'): continue
     _p = json.load(open(os.path.join(_pd, _f)))
+    if _p['date'] > TODAY: continue  # 예약 글: date 날짜 새벽 빌드(drive-sync) 때 공개
     _x = _p['exam'].split('-')  # sn-2022 / moe-1-2026-9
     _p['k'] = ('sn', 0, int(_x[1]), 0) if _x[0] == 'sn' else ('moe', int(_x[1]), int(_x[2]), int(_x[3]))
     _p['subj'] = _p.get('subj', '영어')
@@ -72,7 +73,7 @@ def post_url(p): return subj_url(p['k'], p['subj']) + f"{p['n']}/"
 def post_name(p): return f"{s_name(p['k'])} {dname(p['subj'])} {p['n']}번"
 def post_card(ps, title):
     return (f'<div class="card"><h2>{e(title)}</h2><div class="plist">' + ''.join(
-        f'<a href="{post_url(p)}"><b>{e(post_name(p))}</b><span>{e(p["type"])} · {e(p["topic"])} · 정답 {CIRC[p["answer"] - 1]}</span></a>' for p in ps)
+        f'<a href="{post_url(p)}"><b>{e(post_name(p))}</b><span>정답 {CIRC[p["answer"] - 1]} · {e(p["type"])} · {e(p["topic"])}</span></a>' for p in ps)
         + '</div></div>')
 
 
@@ -492,7 +493,7 @@ if POSTS:
     for i, k in enumerate(sorted(POSTS_BY, key=_exam_order)):
         ps = sorted(POSTS_BY[k], key=lambda p: p['n'])
         pb += (f'<div class="card" id="{"-".join(map(str, k))}"><h2>{e(s_name(k))} 영어 <small class="muted">{len(ps)}문항</small></h2><div class="plist">' + ''.join(
-            f'<a href="{post_url(p)}"><b>{p["n"]}번 · {e(p["type"])}</b><span>{e(p["topic"])} · 정답 {CIRC[p["answer"] - 1]}</span></a>' for p in ps)
+            f'<a href="{post_url(p)}"><b>{p["n"]}번 · {e(p["type"])}</b><span>정답 {CIRC[p["answer"] - 1]} · {e(p["topic"])}</span></a>' for p in ps)
             + f'</div><p class="more-l" style="margin:10px 0 0"><a href="{subj_url(k, "영어")}">{e(s_name(k))} 영어 기출·자료 보기 →</a></p></div>')
         if i % 2 == 1: pb += ad()
     pb += ad()

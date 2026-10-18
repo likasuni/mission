@@ -1,0 +1,55 @@
+{
+  "exam": "sn-2022",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 4,
+  "topic": "2015년과 2025년(예상) 지역별 세계 중산층 비율",
+  "date": "2026-10-21",
+  "keywords": ["2022 수능 영어 25번", "2022학년도 수능 25번 해설", "2022 수능 25번 정답", "수능 영어 도표", "global middle class by region 도표", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 25번은 2015년과 2025년(예상)의 지역별 세계 중산층 비율 도표 문항이에요. 중남미(Central and South America)의 비율이 '변하지 않을 것'이라는 ④가 도표와 맞지 않아요. 정답은 ④예요.",
+  "flow": [
+    ["도표", "두 원그래프는 2015년 지역별 세계 중산층 비율과 2025년 예상 비율을 보여 준다."],
+    ["①", "아시아 태평양: 46% → 60%로 증가 예상 (일치)"],
+    ["②", "2025년 아시아 태평양(60%)은 6개 지역 중 최대이며 유럽(16%)의 3배가 넘는다 (일치)"],
+    ["③", "유럽 24% → 16%, 북미 11% → 8%로 모두 감소 예상 (일치)"],
+    ["④", "중남미는 2015~2025년 비율 변화가 없을 것이다 → 도표에서는 비율이 달라진다 (불일치)"],
+    ["⑤", "2025년에도 2015년처럼 중동·북아프리카가 사하라 이남 아프리카보다 크다 (일치)"]
+  ],
+  "evidence": [
+    {"en": "It is projected that the share of the global middle class in Asia Pacific will increase from 46 percent in 2015 to 60 percent in 2025.", "ko": "아시아 태평양의 세계 중산층 비율은 2015년 46%에서 2025년 60%로 증가할 것으로 예상된다.", "note": "도표 문제는 문장 속 숫자를 도표 숫자와 하나씩 맞춰 보면 돼요. ①은 일치해요."},
+    {"en": "The projected share of Asia Pacific in 2025, the largest among the six regions, is more than three times that of Europe in the same year.", "ko": "6개 지역 중 가장 큰 2025년 아시아 태평양의 예상 비율은 같은 해 유럽 비율의 3배가 넘는다.", "note": "60% > 16% × 3 = 48%. 배수 표현은 직접 계산해서 확인하세요. ②는 일치해요."},
+    {"en": "Central and South America is not expected to change from 2015 to 2025 in its share of the global middle class.", "ko": "중남미는 2015년부터 2025년까지 세계 중산층 비율이 변하지 않을 것으로 예상된다.", "note": "도표에서 중남미의 2015년과 2025년 비율은 서로 달라요. '변화 없음'은 틀린 설명이라 ④가 정답이에요."}
+  ],
+  "choices": [
+    {"en": "① Asia Pacific: 46% → 60% (increase)", "ko": "아시아 태평양 46%에서 60%로 증가", "why": "도표와 일치해요."},
+    {"en": "② Asia Pacific 2025 is more than three times Europe 2025", "ko": "2025년 아시아 태평양이 유럽의 3배 이상", "why": "60%는 16%의 3배(48%)보다 커요. 일치해요."},
+    {"en": "③ Europe 24% → 16%, North America 11% → 8%", "ko": "유럽·북미 모두 감소", "why": "도표와 일치해요."},
+    {"en": "④ Central and South America is not expected to change", "ko": "중남미 비율 변화 없음", "why": "정답(불일치). 도표에서 중남미의 2015년과 2025년 비율이 달라요."},
+    {"en": "⑤ Middle East and North Africa > sub-Saharan Africa in 2025, as in 2015", "ko": "중동·북아프리카가 사하라 이남보다 큼", "why": "두 해 모두 중동·북아프리카 비율이 더 커서 일치해요."}
+  ],
+  "grammar": [
+    {"t": "It is projected that ~", "ex": "It is projected that the share … will increase from 46 percent in 2015 to 60 percent in 2025.", "d": "'~할 것으로 예상된다'. 미래 예측 도표에서 자주 나와요. from A to B로 변화를 나타내요."},
+    {"t": "배수 비교 + that of", "ex": "is more than three times that of Europe in the same year", "d": "that은 앞의 the projected share를 받아요. '유럽의 그것(비율)의 3배 이상'."},
+    {"t": "be projected to V", "ex": "The shares of Europe and North America are both projected to decrease", "d": "'~할 것으로 예상되다'. It is projected that과 같은 뜻이에요."},
+    {"t": "as it was in 2015", "ex": "the share of the Middle East and North Africa will be larger than that of sub-Saharan Africa, as it was in 2015", "d": "'2015년에도 그랬던 것처럼'. 두 시점 모두 확인해야 하는 함정 문장 구조예요."}
+  ],
+  "vocab": [
+    ["percentage share", "비율, 점유율"],
+    ["global middle class", "세계 중산층"],
+    ["region", "지역"],
+    ["projected", "예상되는"],
+    ["Asia Pacific", "아시아 태평양"],
+    ["Central and South America", "중남미"],
+    ["sub-Saharan Africa", "사하라 이남 아프리카"],
+    ["decrease", "감소하다"]
+  ],
+  "summary": {"en": "The global middle class is projected to shift toward Asia Pacific by 2025, while the shares of Europe and North America shrink.", "ko": "2025년까지 세계 중산층은 아시아 태평양 쪽으로 이동하고, 유럽과 북미의 비율은 줄어들 것으로 예상된다."},
+  "writing": {"en": "By 2025, Asia Pacific is expected to hold the largest share of the global middle class.", "ko": "2025년에는 아시아 태평양이 세계 중산층에서 가장 큰 비율을 차지할 것으로 예상된다."},
+  "tip": "도표 문제는 숫자, 배수(three times), 순위(the largest), 변화(not change, increase)를 하나씩 체크하세요. '변화 없음'처럼 숫자 없이 말하는 문장은 두 시점 값을 직접 비교해야 해서 함정으로 자주 나와요.",
+  "faq": [
+    ["2022학년도 수능 영어 25번 정답은?", "④예요. 중남미의 세계 중산층 비율이 변하지 않을 것이라고 했지만, 도표에서는 2015년과 2025년 비율이 달라요."],
+    ["2022 수능 25번은 어떤 유형인가요?", "도표의 내용과 일치하지 않는 것을 고르는 2점 문항이에요."],
+    ["②의 3배는 어떻게 확인하나요?", "2025년 유럽 16% × 3 = 48%인데, 아시아 태평양은 60%라 3배가 넘어요. 그래서 ②는 일치해요."]
+  ]
+}

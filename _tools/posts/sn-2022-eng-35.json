@@ -1,0 +1,61 @@
+{
+  "exam": "sn-2022",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 4,
+  "topic": "정보 시스템이 바꾼 기업 간 협력과 공동 플랫폼의 중요성",
+  "date": "2026-10-22",
+  "keywords": ["2022 수능 영어 35번", "2022학년도 수능 35번 해설", "2022 수능 35번 정답", "수능 영어 무관한 문장", "information systems business cooperation 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 35번은 정보 시스템이 기업 간 협력 방식을 바꿨다는 글에서 흐름과 관계없는 문장을 고르는 문항이에요. 글은 여러 기업 단위가 '함께 협력'하는 이야기인데, ④는 덜 수익성 있는 단위를 '잘라 낸다'는 사업 모델 이야기예요. 정답은 ④예요.",
+  "flow": [
+    ["주제", "정보 시스템은 도입 이후 사업 방식을 크게 바꿨다."],
+    ["①", "특히 여러 단위에 걸쳐 가치 사슬을 통합하는 기업 간 협력에서 그렇다."],
+    ["②", "그 결과 생긴 네트워크는 한 기업뿐 아니라 여러 다른 기업의 단위도 포함한다."],
+    ["③", "그래서 기업은 내부 조직뿐 아니라 주변 단위의 생태계 전체를 고려해야 한다."],
+    ["④ 무관", "많은 대기업이 수익성 있는 단위에 집중하고 덜 수익성 있는 단위를 잘라 내며 사업 모델을 바꾸고 있다."],
+    ["⑤", "이렇게 다른 단위들이 성공적으로 협력하려면 공동 플랫폼이 꼭 필요하다."]
+  ],
+  "evidence": [
+    {"en": "③ … they also need to take into account the entire ecosystem of units surrounding them.", "ko": "③ … 그들은 자신을 둘러싼 단위들의 생태계 전체도 고려해야 한다.", "note": "③까지는 '여러 기업 단위가 연결된 네트워크·생태계'로 흐름이 이어져요."},
+    {"en": "④ Many major companies are fundamentally changing their business models by focusing on profitable units and cutting off less profitable ones.", "ko": "④ 많은 대기업이 수익성 있는 단위에 집중하고 덜 수익성 있는 단위는 잘라 냄으로써 사업 모델을 근본적으로 바꾸고 있다.", "note": "협력·통합이 아니라 '잘라 내기(cutting off)' 이야기예요. 정보 시스템과 협력이라는 주제에서 벗어나요."},
+    {"en": "⑤ In order to allow these different units to cooperate successfully, the existence of a common platform is crucial.", "ko": "⑤ 이 서로 다른 단위들이 성공적으로 협력하게 하려면 공동 플랫폼의 존재가 매우 중요하다.", "note": "these different units는 ②·③의 여러 기업 단위를 가리켜요. ④를 빼면 ③ → ⑤가 자연스럽게 이어져요."}
+  ],
+  "choices": [
+    {"en": "① This is particularly true for business … cooperation between firms …", "ko": "기업 간 협력에서 특히 그렇다", "why": "적절. This는 정보 시스템이 사업 방식을 바꿨다는 첫 문장을 받아요."},
+    {"en": "② The resulting networks … include multiple units from different firms.", "ko": "여러 기업 단위를 포함하는 네트워크", "why": "적절. 기업 간 협력의 결과로 생긴 네트워크를 설명해요."},
+    {"en": "③ … take into account the entire ecosystem of units surrounding them.", "ko": "주변 생태계 전체를 고려", "why": "적절. As a consequence로 ②의 결과를 이어 가요."},
+    {"en": "④ Many major companies are … cutting off less profitable ones.", "ko": "덜 수익성 있는 단위를 잘라 냄", "why": "정답(무관). 협력과 통합이 아니라 구조 조정 이야기라 흐름에서 벗어나요."},
+    {"en": "⑤ … the existence of a common platform is crucial.", "ko": "공동 플랫폼이 중요", "why": "적절. these different units가 ②·③의 여러 단위를 받아 협력 조건을 말해요."}
+  ],
+  "grammar": [
+    {"t": "This is particularly true for ~", "ex": "This is particularly true for business in the shape and form of cooperation between firms", "d": "'이는 ~에 특히 해당된다'. This가 앞 문장 전체를 받아요."},
+    {"t": "not only A but (also) B 변형", "ex": "The resulting networks do not only cover the business units of a single firm but typically also include multiple units from different firms.", "d": "do not only ~ but also ~ 구조. '한 기업뿐 아니라 여러 기업의 단위까지'."},
+    {"t": "take into account", "ex": "they also need to take into account the entire ecosystem of units surrounding them", "d": "'~을 고려하다'. 목적어가 길어 account 뒤로 갔어요. surrounding them은 units를 꾸며요."},
+    {"t": "allow A to V", "ex": "In order to allow these different units to cooperate successfully", "d": "'A가 ~하게 하다'. In order to는 목적 '~하기 위해'."}
+  ],
+  "vocab": [
+    ["information system", "정보 시스템"],
+    ["substantially", "상당히"],
+    ["conduct", "수행하다"],
+    ["integration", "통합"],
+    ["value chain", "가치 사슬"],
+    ["resulting", "그 결과로 생긴"],
+    ["sustainable", "지속 가능한"],
+    ["take into account", "고려하다"],
+    ["ecosystem", "생태계"],
+    ["fundamentally", "근본적으로"],
+    ["profitable", "수익성 있는"],
+    ["cut off", "잘라 내다"],
+    ["platform", "플랫폼"],
+    ["crucial", "매우 중요한"]
+  ],
+  "summary": {"en": "Information systems have created networks of cooperating units across firms, so businesses must consider their whole ecosystem and need a common platform.", "ko": "정보 시스템은 여러 기업에 걸친 협력 네트워크를 만들었고, 그래서 기업은 생태계 전체를 고려하고 공동 플랫폼을 갖춰야 한다."},
+  "writing": {"en": "Successful cooperation between firms needs a shared platform.", "ko": "기업 간 협력이 성공하려면 공동 플랫폼이 필요하다."},
+  "tip": "무관한 문장은 주제어(cooperation, units, integration)를 따라가다 방향이 꺾이는 문장을 찾으세요. ④는 units라는 단어를 쓰지만 '협력'이 아니라 '잘라 내기'라서 함정이에요. 해당 문장을 빼고 앞뒤(③ → ⑤)가 자연스럽게 이어지는지 확인하면 확실해요.",
+  "faq": [
+    ["2022학년도 수능 영어 35번 정답은?", "④예요. 기업 간 협력과 공동 플랫폼을 다루는 글에서, ④만 수익성 낮은 단위를 잘라 내는 사업 모델 이야기예요."],
+    ["2022 수능 35번은 어떤 유형인가요?", "전체 흐름과 관계없는 문장을 고르는 2점 문항이에요."],
+    ["④를 빼면 어떻게 이어지나요?", "③의 '주변 단위의 생태계 전체'를 ⑤의 these different units가 받아 '협력하려면 공동 플랫폼이 필요하다'로 자연스럽게 이어져요."]
+  ]
+}

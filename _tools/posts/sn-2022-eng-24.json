@@ -1,0 +1,60 @@
+{
+  "exam": "sn-2022",
+  "n": 24,
+  "type": "제목",
+  "points": 2,
+  "answer": 1,
+  "topic": "대량 생산 시대에도 수리는 여전히 사람의 손과 창의성에 남아 있다",
+  "date": "2026-10-20",
+  "keywords": ["2022 수능 영어 24번", "2022학년도 수능 24번 해설", "2022 수능 24번 정답", "수능 영어 글의 제목", "mending repairing blacksmith 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 24번은 수리(repair)가 원래 생산보다 더 많은 창의성을 요구한다는 제목 문항이에요. 기계가 물건을 만들게 된 뒤에도 수리만은 사람 손에 남았다는 내용이에요. 정답은 ① Still Left to the Modern Blacksmith: The Art of Repair예요.",
+  "flow": [
+    ["주제문", "고치고 복원하는 일은 원래 생산보다 더 많은 창의성을 요구하는 경우가 많다."],
+    ["과거", "산업화 이전 대장장이는 주문 제작을 했고, 수리는 제작의 연장이었다."],
+    ["변화", "산업화·대량 생산 이후 제작은 지식이 제한된 기계 관리자의 일이 되었다."],
+    ["대조", "그러나 수리는 여전히 설계·재료·전체에 대한 넓은 이해를 요구했다."],
+    ["인용", "1896년 수리 안내서: 제조는 기계로 하지만 모든 수리는 손으로 해야 한다."]
+  ],
+  "evidence": [
+    {"en": "Mending and restoring objects often require even more creativity than original production.", "ko": "물건을 고치고 복원하는 일은 종종 원래 생산보다 훨씬 더 많은 창의성을 요구한다.", "note": "첫 문장이 주제문이에요. 수리 = 창의성이 필요한 '기술(Art)'이에요."},
+    {"en": "But repair continued to require a larger grasp of design and materials, an understanding of the whole and a comprehension of the designer's intentions.", "ko": "그러나 수리는 계속해서 설계와 재료에 대한 더 넓은 이해, 전체에 대한 이해, 설계자의 의도에 대한 이해를 요구했다.", "note": "continued to(계속 ~했다)가 ①의 Still Left(여전히 남아 있는)와 연결돼요."},
+    {"en": "\"But all repairing must be done by hand. … the machine cannot mend it when broken …\"", "ko": "\"그러나 모든 수리는 손으로 해야 한다. … 기계는 그것이 고장 났을 때 고칠 수 없다 …\"", "note": "기계가 대신할 수 없어 사람(현대의 대장장이)에게 남은 일이라는 결론이에요."}
+  ],
+  "choices": [
+    {"en": "Still Left to the Modern Blacksmith: The Art of Repair", "ko": "현대의 대장장이에게 여전히 남겨진 것: 수리의 기술", "why": "정답. 대량 생산 이후에도 수리는 손과 창의성이 필요한 기술로 사람에게 남았다는 내용과 맞아요."},
+    {"en": "A Historical Survey of How Repairing Skills Evolved", "ko": "수리 기술이 어떻게 발전했는지에 대한 역사적 조사", "why": "수리 기술의 '발전 과정'이 아니라, 생산은 변했지만 수리는 그대로 남았다는 대조가 핵심이에요."},
+    {"en": "How to Be a Creative Repairperson: Tips and Ideas", "ko": "창의적인 수리공이 되는 법: 팁과 아이디어", "why": "creativity는 나오지만 수리공이 되는 방법이나 팁은 없어요."},
+    {"en": "A Process of Repair: Create, Modify, Transform!", "ko": "수리의 과정: 만들고, 수정하고, 변형하라!", "why": "modify, transform은 산업화 이전 맞춤 제작을 설명할 때 나온 말이에요. 수리 과정을 설명하는 글이 아니에요."},
+    {"en": "Can Industrialization Mend Our Broken Past?", "ko": "산업화가 우리의 망가진 과거를 고칠 수 있을까?", "why": "mend, broken을 비유로 비튼 함정이에요. 글과 관계없어요."}
+  ],
+  "grammar": [
+    {"t": "even + 비교급", "ex": "Mending and restoring objects often require even more creativity than original production.", "d": "even은 비교급 강조로 '훨씬'. 동명사 두 개가 주어라 동사는 require(복수)예요."},
+    {"t": "동명사구 + 동격", "ex": "customizing the product, modifying or transforming it according to the user, was routine", "d": "customizing the product를 콤마 뒤에서 다시 풀어 설명해요. 동사는 was예요."},
+    {"t": "the province of", "ex": "making things became the province of machine tenders with limited knowledge", "d": "'~의 영역, 담당'. 만드는 일이 기계 관리자의 몫이 되었다는 뜻이에요."},
+    {"t": "much less", "ex": "the machine cannot mend it when broken, much less a clock or a pistol!", "d": "부정문 뒤 much less는 '하물며 ~는 더욱 아니다'. when broken은 when (it is) broken의 생략이에요."}
+  ],
+  "vocab": [
+    ["mend", "고치다"],
+    ["restore", "복원하다"],
+    ["preindustrial", "산업화 이전의"],
+    ["blacksmith", "대장장이"],
+    ["to order", "주문에 따라"],
+    ["customize", "맞춤 제작하다"],
+    ["routine", "일상적인 일"],
+    ["extension", "연장"],
+    ["fabrication", "제작"],
+    ["mass production", "대량 생산"],
+    ["province", "영역, 분야"],
+    ["tender", "관리자, 돌보는 사람"],
+    ["grasp", "이해, 파악"],
+    ["subdivision of labour", "분업"]
+  ],
+  "summary": {"en": "Even after machines took over manufacturing, repairing things still required human hands and creativity.", "ko": "기계가 제조를 맡게 된 후에도, 물건을 고치는 일은 여전히 사람의 손과 창의성을 필요로 했다."},
+  "writing": {"en": "Machines can make things, but people still have to fix them.", "ko": "기계는 물건을 만들 수 있지만, 고치는 일은 여전히 사람의 몫이다."},
+  "tip": "제목 문제는 첫 문장(주제문)과 마지막 인용을 연결하세요. '수리는 창의성이 필요하다 + 기계는 수리를 못 한다' = 수리는 여전히 사람에게 남은 기술. 본문 단어(modify, transform, mend)를 그대로 쓴 선택지는 함정일 때가 많아요.",
+  "faq": [
+    ["2022학년도 수능 영어 24번 정답은?", "① Still Left to the Modern Blacksmith: The Art of Repair(현대의 대장장이에게 여전히 남겨진 것: 수리의 기술)예요."],
+    ["2022 수능 24번은 어떤 유형인가요?", "글의 제목을 고르는 2점 문항이에요. 산업화 이후에도 사람 손에 남은 수리 기술을 다룬 지문이에요."],
+    ["Modern Blacksmith는 무슨 뜻인가요?", "글자 그대로의 대장장이가 아니라, 오늘날 물건을 손으로 고치는 사람을 비유한 말이에요."]
+  ]
+}

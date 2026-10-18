@@ -1,0 +1,58 @@
+{
+  "exam": "sn-2022",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "Goldbeach SeaWorld 어린이 1박 체험 안내문",
+  "date": "2026-10-22",
+  "keywords": ["2022 수능 영어 28번", "2022학년도 수능 28번 해설", "2022 수능 28번 정답", "수능 영어 안내문", "Goldbeach SeaWorld Sleepovers", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 28번은 Goldbeach SeaWorld의 어린이 1박 체험 안내문과 일치하는 것을 고르는 문항이에요. 참가비 50달러에 저녁과 아침 식사가 포함돼요(dinner and breakfast included). 정답은 ③ 참가비에 아침 식사가 포함된다예요.",
+  "flow": [
+    ["소개", "해양 동물을 좋아하는 아이들을 위한 수족관 1박 체험이다."],
+    ["참가자", "8~12세 어린이, 보호자 동반 필수 (① 불일치)"],
+    ["일시", "2022년 5월 토요일 오후 5시 ~ 일요일 오전 10시 (② 불일치)"],
+    ["활동·비용", "가이드 투어, 수중 쇼, 인어와 사진 촬영 / 1인 50달러, 저녁·아침 포함 (③ 일치)"],
+    ["유의 사항", "침낭 미제공, 모든 활동은 실내(④ 불일치), 밤 10시~아침 7시 사진 촬영 금지(⑤ 불일치)"]
+  ],
+  "evidence": [
+    {"en": "Children ages 8 to 12 / Children must be accompanied by a guardian.", "ko": "8세에서 12세 어린이 / 어린이는 반드시 보호자와 동반해야 합니다.", "note": "① 7세 이하는 참가할 수 없어요. 불일치."},
+    {"en": "$50 per person (dinner and breakfast included)", "ko": "1인당 50달러 (저녁 식사와 아침 식사 포함)", "note": "③ 참가비에 아침 식사 포함 — 일치. 정답이에요."},
+    {"en": "All activities take place indoors. / Taking photos is not allowed from 10 p.m. to 7 a.m.", "ko": "모든 활동은 실내에서 진행됩니다. / 밤 10시부터 아침 7시까지는 사진 촬영이 허용되지 않습니다.", "note": "④ 야외(X) → 실내, ⑤ 언제든지(X) → 시간 제한 있음."}
+  ],
+  "choices": [
+    {"en": "7세 이하의 어린이가 참가할 수 있다.", "ko": "7세 이하", "why": "불일치. 참가 대상은 8~12세예요."},
+    {"en": "평일에 진행된다.", "ko": "평일", "why": "불일치. 토요일 오후 5시부터 일요일 오전 10시까지, 주말에 진행돼요."},
+    {"en": "참가비에 아침 식사가 포함된다.", "ko": "아침 식사 포함", "why": "정답(일치). $50 per person (dinner and breakfast included)."},
+    {"en": "모든 활동은 야외에서 진행된다.", "ko": "야외", "why": "불일치. All activities take place indoors — 실내예요."},
+    {"en": "사진 촬영은 언제든지 할 수 있다.", "ko": "사진 언제든", "why": "불일치. 밤 10시부터 아침 7시까지는 사진 촬영이 금지돼요."}
+  ],
+  "grammar": [
+    {"t": "be accompanied by", "ex": "Children must be accompanied by a guardian.", "d": "'~을 동반하다, ~와 함께 가다'. 수동태로 '보호자가 동반해야 한다'는 뜻이에요."},
+    {"t": "명사 + 과거분사 (생략 구문)", "ex": "$50 per person (dinner and breakfast included)", "d": "dinner and breakfast (being) included. '저녁과 아침이 포함된 채로'. 안내문에 자주 나와요."},
+    {"t": "take place", "ex": "All activities take place indoors.", "d": "'열리다, 진행되다'. indoors는 부사로 '실내에서'예요."},
+    {"t": "동명사 주어 + 수동태", "ex": "Taking photos is not allowed from 10 p.m. to 7 a.m.", "d": "동명사 주어는 단수 취급해서 is. from A to B로 금지 시간을 나타내요."}
+  ],
+  "vocab": [
+    ["marine", "해양의"],
+    ["sleepover", "1박 체험, 밤샘 파티"],
+    ["overnight", "하룻밤의"],
+    ["underwater", "수중의"],
+    ["participant", "참가자"],
+    ["accompany", "동반하다"],
+    ["guardian", "보호자"],
+    ["guided tour", "가이드 투어"],
+    ["mermaid", "인어"],
+    ["participation fee", "참가비"],
+    ["provide", "제공하다"],
+    ["indoors", "실내에서"]
+  ],
+  "summary": {"en": "Goldbeach SeaWorld offers weekend sleepovers in May 2022 for children aged 8 to 12, with dinner and breakfast included in the $50 fee.", "ko": "Goldbeach SeaWorld는 2022년 5월 주말에 8~12세 어린이를 위한 1박 체험을 운영하며, 50달러 참가비에 저녁과 아침 식사가 포함된다."},
+  "writing": {"en": "The fee includes both dinner and breakfast.", "ko": "참가비에는 저녁과 아침 식사가 모두 포함된다."},
+  "tip": "'일치하는 것' 문제는 오답 4개를 지워 가며 푸세요. 나이(8 to 12), 요일(Saturdays), 장소(indoors), 시간 제한(10 p.m. to 7 a.m.) 같은 조건이 선택지에서 반대로 바뀌어 나와요.",
+  "faq": [
+    ["2022학년도 수능 영어 28번 정답은?", "③ 참가비에 아침 식사가 포함된다예요. $50 per person (dinner and breakfast included)."],
+    ["2022 수능 28번은 어떤 유형인가요?", "안내문의 내용과 일치하는 것을 고르는 2점 문항이에요."],
+    ["몇 살 어린이가 참가할 수 있나요?", "8세에서 12세 어린이가 보호자와 함께 참가할 수 있어요."]
+  ]
+}
