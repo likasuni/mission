@@ -6,48 +6,154 @@
   "answer": 5,
   "topic": "과학 연구에서 패러다임의 기능",
   "date": "2026-10-18",
-  "keywords": ["2022 수능 영어 23번", "2022학년도 수능 23번 해설", "수능 영어 주제 추론", "paradigm 지문", "토머스 쿤 패러다임", "고3 모의고사 영어 해설"],
+  "keywords": [
+    "2022 수능 영어 23번",
+    "2022학년도 수능 23번 해설",
+    "수능 영어 주제 추론",
+    "paradigm 지문",
+    "토머스 쿤 패러다임",
+    "고3 모의고사 영어 해설"
+  ],
   "lead": "2022학년도 수능 영어 23번은 Thomas Kuhn의 패러다임 개념을 다룬 3점 주제 문항이에요. 과학자는 패러다임을 '믿는' 게 아니라 '사용한다'는 첫 문장이 글 전체의 열쇠예요. 정답은 ⑤ functional aspects of a paradigm in scientific research예요.",
   "flow": [
-    ["주장", "과학자는 패러다임을 믿기보다 사용한다 — 공유된 개념·도구·절차로 관련 문제를 다룬다."],
-    ["설명", "다른 사람이 받아들일 방식으로 쓰는 법만 알면 되고, 그 의미에 대한 믿음까지 같을 필요는 없다."],
-    ["근거", "Kuhn: 해석에 합의하지 않아도 패러다임을 똑같이 알아보고, 그것이 연구를 이끈다."]
+    [
+      "주장",
+      "과학자는 패러다임을 믿기보다 사용한다 — 공유된 개념·도구·절차로 관련 문제를 다룬다."
+    ],
+    [
+      "설명",
+      "다른 사람이 받아들일 방식으로 쓰는 법만 알면 되고, 그 의미에 대한 믿음까지 같을 필요는 없다."
+    ],
+    [
+      "근거",
+      "Kuhn: 해석에 합의하지 않아도 패러다임을 똑같이 알아보고, 그것이 연구를 이끈다."
+    ]
   ],
   "evidence": [
-    {"en": "Scientists use paradigms rather than believing them.", "ko": "과학자들은 패러다임을 믿기보다는 사용한다.", "note": "첫 문장이 주제문이에요. believe(믿음) ↔ use(도구로서의 쓰임)의 대비를 잡으면 ⑤가 보여요."},
-    {"en": "Indeed, one role of a paradigm is to enable scientists to work successfully without having to provide a detailed account of what they are doing.", "ko": "실제로 패러다임의 한 가지 역할은 과학자들이 자신이 무엇을 하는지 자세히 설명하지 않고도 성공적으로 일할 수 있게 하는 것이다.", "note": "one role of a paradigm — 선택지 ⑤의 functional aspects(기능적 측면)를 그대로 풀어 쓴 문장이에요."}
+    {
+      "en": "Scientists use paradigms rather than believing them.",
+      "ko": "과학자들은 패러다임을 믿기보다는 사용한다.",
+      "note": "첫 문장이 주제문이에요. believe(믿음) ↔ use(도구로서의 쓰임)의 대비를 잡으면 ⑤가 보여요."
+    },
+    {
+      "en": "Indeed, one role of a paradigm is to enable scientists to work successfully without having to provide a detailed account of what they are doing.",
+      "ko": "실제로 패러다임의 한 가지 역할은 과학자들이 자신이 무엇을 하는지 자세히 설명하지 않고도 성공적으로 일할 수 있게 하는 것이다.",
+      "note": "one role of a paradigm — 선택지 ⑤의 functional aspects(기능적 측면)를 그대로 풀어 쓴 문장이에요."
+    }
   ],
   "choices": [
-    {"en": "difficulty in drawing novel theories from existing paradigms", "ko": "기존 패러다임으로부터 새로운 이론을 도출하는 것의 어려움", "why": "새 이론을 만드는 어려움은 글에 나오지 않아요."},
-    {"en": "significant influence of personal beliefs in scientific fields", "ko": "과학 분야에서 개인 신념의 상당한 영향력", "why": "오히려 반대예요. 믿음이 같지 않아도 패러다임은 작동한다는 글이에요."},
-    {"en": "key factors that promote the rise of innovative paradigms", "ko": "혁신적 패러다임의 출현을 촉진하는 핵심 요인", "why": "새 패러다임이 생기는 과정(패러다임 전환)은 다루지 않아요. 'paradigm' 단어만 보고 고르기 쉬운 함정이에요."},
-    {"en": "roles of a paradigm in grouping like-minded researchers", "ko": "생각이 비슷한 연구자들을 묶는 데 있어 패러다임의 역할", "why": "'role'이 본문과 겹치지만, 같은 생각을 가진 사람을 모으는 게 아니라 생각이 달라도 함께 연구하게 한다는 내용이에요."},
-    {"en": "functional aspects of a paradigm in scientific research", "ko": "과학 연구에서 패러다임의 기능적 측면", "why": "정답. 패러다임은 믿음의 대상이 아니라 연구를 이끄는 공유된 도구라는 내용 전체를 담아요."}
+    {
+      "en": "difficulty in drawing novel theories from existing paradigms",
+      "ko": "기존 패러다임으로부터 새로운 이론을 도출하는 것의 어려움",
+      "why": "새 이론을 만드는 어려움은 글에 나오지 않아요."
+    },
+    {
+      "en": "significant influence of personal beliefs in scientific fields",
+      "ko": "과학 분야에서 개인 신념의 상당한 영향력",
+      "why": "오히려 반대예요. 믿음이 같지 않아도 패러다임은 작동한다는 글이에요."
+    },
+    {
+      "en": "key factors that promote the rise of innovative paradigms",
+      "ko": "혁신적 패러다임의 출현을 촉진하는 핵심 요인",
+      "why": "새 패러다임이 생기는 과정(패러다임 전환)은 다루지 않아요. 'paradigm' 단어만 보고 고르기 쉬운 함정이에요."
+    },
+    {
+      "en": "roles of a paradigm in grouping like-minded researchers",
+      "ko": "생각이 비슷한 연구자들을 묶는 데 있어 패러다임의 역할",
+      "why": "'role'이 본문과 겹치지만, 같은 생각을 가진 사람을 모으는 게 아니라 생각이 달라도 함께 연구하게 한다는 내용이에요."
+    },
+    {
+      "en": "functional aspects of a paradigm in scientific research",
+      "ko": "과학 연구에서 패러다임의 기능적 측면",
+      "why": "정답. 패러다임은 믿음의 대상이 아니라 연구를 이끄는 공유된 도구라는 내용 전체를 담아요."
+    }
   ],
   "grammar": [
-    {"t": "need only + 동사원형 / need not + 동사원형", "ex": "Scientists need only understand how to use these various elements …", "d": "조동사 need: '~하기만 하면 된다 / ~할 필요가 없다'. need 뒤에 to 없이 동사원형이 와요. 어법 문제 단골이에요."},
-    {"t": "enable + 목적어 + to V / without having to V", "ex": "… to enable scientists to work successfully without having to provide a detailed account …", "d": "'목적어가 ~할 수 있게 하다' + '~할 필요 없이'. account 뒤 what절 두 개가 설명의 내용이에요."},
-    {"t": "prevent A from -ing", "ex": "Lack of a standard interpretation … will not prevent a paradigm from guiding research.", "d": "'A가 ~하는 것을 막다'. 주어(Lack of …)가 길어서 동사 will not prevent를 놓치기 쉬워요."}
+    {
+      "t": "need only + 동사원형 / need not + 동사원형",
+      "ex": "Scientists need only understand how to use these various elements …",
+      "d": "조동사 need: '~하기만 하면 된다 / ~할 필요가 없다'. need 뒤에 to 없이 동사원형이 와요. 어법 문제 단골이에요."
+    },
+    {
+      "t": "enable + 목적어 + to V / without having to V",
+      "ex": "… to enable scientists to work successfully without having to provide a detailed account …",
+      "d": "'목적어가 ~할 수 있게 하다' + '~할 필요 없이'. account 뒤 what절 두 개가 설명의 내용이에요."
+    },
+    {
+      "t": "prevent A from -ing",
+      "ex": "Lack of a standard interpretation … will not prevent a paradigm from guiding research.",
+      "d": "'A가 ~하는 것을 막다'. 주어(Lack of …)가 길어서 동사 will not prevent를 놓치기 쉬워요."
+    }
   ],
   "vocab": [
-    ["paradigm", "패러다임, 사고의 틀 (= framework)"],
-    ["address", "(문제를) 다루다 (= deal with)"],
-    ["employ", "사용하다 (= use)"],
-    ["presuppose", "전제로 하다 (= assume)"],
-    ["comparable", "비슷한, 비교할 만한 (= similar)"],
-    ["unity", "통일성, 일치"],
-    ["account", "설명 (= explanation)"],
-    ["identification", "식별, 알아봄"],
-    ["interpretation", "해석"],
-    ["rationalization", "이론적 설명, 합리화"],
-    ["reduction (to rules)", "(규칙으로의) 축약, 단순화"]
+    [
+      "paradigm",
+      "패러다임, 사고의 틀 (= framework)"
+    ],
+    [
+      "address",
+      "(문제를) 다루다 (= deal with)"
+    ],
+    [
+      "employ",
+      "사용하다 (= use)"
+    ],
+    [
+      "presuppose",
+      "전제로 하다 (= assume)"
+    ],
+    [
+      "comparable",
+      "비슷한, 비교할 만한 (= similar)"
+    ],
+    [
+      "unity",
+      "통일성, 일치"
+    ],
+    [
+      "account",
+      "설명 (= explanation)"
+    ],
+    [
+      "identification",
+      "식별, 알아봄"
+    ],
+    [
+      "interpretation",
+      "해석"
+    ],
+    [
+      "rationalization",
+      "이론적 설명, 합리화"
+    ],
+    [
+      "reduction (to rules)",
+      "(규칙으로의) 축약, 단순화"
+    ]
   ],
-  "summary": {"en": "Scientists treat a paradigm as a shared tool rather than a belief, so it can guide research even when they do not agree on what it fully means.", "ko": "과학자들은 패러다임을 믿음이 아닌 공유된 도구로 다루기 때문에, 그 의미에 완전히 합의하지 못해도 패러다임은 연구를 이끈다."},
-  "writing": {"en": "A paradigm works as a shared tool that guides research without requiring scientists to agree on what it means.", "ko": "패러다임은 과학자들이 그 의미에 합의하지 않아도 연구를 이끄는 공유된 도구로 작용한다."},
+  "summary": {
+    "en": "Scientists treat a paradigm as a shared tool rather than a belief, so it can guide research even when they do not agree on what it fully means.",
+    "ko": "과학자들은 패러다임을 믿음이 아닌 공유된 도구로 다루기 때문에, 그 의미에 완전히 합의하지 못해도 패러다임은 연구를 이끈다."
+  },
+  "writing": {
+    "en": "A paradigm works as a shared tool that guides research without requiring scientists to agree on what it means.",
+    "ko": "패러다임은 과학자들이 그 의미에 합의하지 않아도 연구를 이끄는 공유된 도구로 작용한다."
+  },
   "tip": "주제 문항은 첫 문장의 대비(A rather than B)를 먼저 잡으세요. 선택지에 본문 단어(paradigm, role)가 그대로 있다고 고르면 함정에 빠져요. '글 전체가 무엇을 말하는가'로 확인하세요.",
   "faq": [
-    ["2022학년도 수능 영어 23번 정답은?", "⑤ functional aspects of a paradigm in scientific research (과학 연구에서 패러다임의 기능적 측면)예요."],
-    ["2022 수능 23번은 어떤 유형인가요?", "글의 주제를 고르는 3점 문항이에요. Thomas Kuhn의 패러다임 개념을 다뤄요."],
-    ["④번이 오답인 이유는?", "본문은 생각이 달라도 패러다임을 함께 쓸 수 있다는 내용이라, 생각이 비슷한 연구자를 묶는다는 ④와 반대예요."]
-  ]
+    [
+      "2022학년도 수능 영어 23번 정답은?",
+      "⑤ functional aspects of a paradigm in scientific research (과학 연구에서 패러다임의 기능적 측면)예요."
+    ],
+    [
+      "2022 수능 23번은 어떤 유형인가요?",
+      "글의 주제를 고르는 3점 문항이에요. Thomas Kuhn의 패러다임 개념을 다뤄요."
+    ],
+    [
+      "④번이 오답인 이유는?",
+      "본문은 생각이 달라도 패러다임을 함께 쓸 수 있다는 내용이라, 생각이 비슷한 연구자를 묶는다는 ④와 반대예요."
+    ]
+  ],
+  "note": "패러다임, 과학 철학 지문은 수능 영어의 단골 소재예요. 낯선 어휘에 겁먹기보다 '믿는다(believe) vs 사용한다(use)'처럼 첫 문장의 대조 구조를 잡는 연습을 꼭 해 두세요.",
+  "updated": "2026-10-18"
 }

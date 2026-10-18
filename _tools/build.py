@@ -273,6 +273,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
     PAGES.append(path)
 
 PAGES = []
+LASTMOD = {}  # 사이트맵 lastmod: 실제 날짜를 아는 페이지(해설)만 넣음
 
 def dl_buttons(rs):
     return '<div class="dl">' + ''.join(
@@ -437,6 +438,8 @@ for p in POSTS:
     qs, multi = p['qs'], len(p['qs']) > 1
     pts = f' [{p["points"]}점]' if p.get('points') == 3 else ''
     ans_s = post_ans(p)
+    LASTMOD[url] = p.get('updated', p['date'])
+    desc = f'{nm} {ans_s}. ' + _re.sub('^' + _re.escape(nm) + '[은는]\\s*', '', p['lead'])
     h1 = f'{nm} 해설·분석 · {p["type"]} {ans_s}'
     flow = ''.join(f'<li><b>{e(a)}</b> {e(b)}</li>' for a, b in p.get('flow', []))
     def _ev(q): return ''.join(f'<blockquote class="ev"><p class="en">{e(x["en"])}</p><p class="ko">{e(x["ko"])}</p><p class="nt">{e(x["note"])}</p></blockquote>' for x in q.get('evidence', []))
@@ -475,6 +478,7 @@ for p in POSTS:
 </table></div>
 <div class="card"><h2>글의 흐름 한눈에</h2><ol class="flow">{flow}</ol></div>
 {qcards}{f'<div class="tip"><b>풀이 요령</b> {e(p["tip"])}</div>' if p.get("tip") else ''}
+{f'<div class="note"><b>원장님 한마디</b><p>{e(p["note"])}</p><small>— 리카수니 원장</small></div>' if p.get("note") else ''}
 <div class="card"><h2>꼭 알아야 할 구문</h2>{gr}</div>
 <div class="card"><h2>핵심 어휘</h2><table class="info vocab">{vo}</table></div>
 {ad()}
@@ -487,7 +491,7 @@ for p in POSTS:
 <a class="chip" href="/notes/">분석노트 카톡 요청</a><a class="chip" href="/posts/">수업자료 전체</a></div></div>
 {post_card(others, f"{s_name(k)} {sn} 다른 문항 해설") if others else ''}'''
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": h1, "description": p['lead'], "datePublished": p['date'],
-           "dateModified": p['date'], "inLanguage": "ko", "keywords": ', '.join(p.get('keywords', [])), "mainEntityOfPage": SITE + url,
+           "dateModified": LASTMOD[url], "inLanguage": "ko", "keywords": ', '.join(p.get('keywords', [])), "mainEntityOfPage": SITE + url,
            "author": {"@type": "Person", "name": "리카수니 원장"}, "publisher": {"@type": "Organization", "name": "리카수니 자료실"}}]
     if p.get('faq'):
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -495,7 +499,7 @@ for p in POSTS:
     crumbs = [('/', '홈'), ('/suneung/' if k[0] == 'sn' else f'/moe/go{k[1]}/', '수능 기출' if k[0] == 'sn' else f'고{k[1]} 모의고사'),
               (s_url(k), s_name(k)), (subj_url(k, p['subj']), sn), (url, f'{post_no(p)}번 해설')]
     page(url, f'{nm} 해설·분석 {ans_s}{vtag} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
-         f'{nm} {ans_s}. {p["lead"]}'[:150], body, crumbs, '/posts/',
+         desc[:150], body, crumbs, '/posts/',
          comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
     for q in qs if multi else []:  # 세트로 합치기 전 번호별 주소(…/41/)는 세트 페이지로 넘겨 줌
         _d = os.path.join(ROOT, subj_url(k, p['subj']).strip('/'), str(q['n']))
@@ -715,7 +719,7 @@ page('/', '리카수니 자료실 | 모의고사·수능 기출문제 PDF, 영�
      '고1·고2·고3 모의고사와 수능 기출문제 전과목 PDF, 리카수니 영어 변형문제와 문항별 분석노트를 무료로. 리카수니 자료실', body.replace('{NBOOKS}', str(len(BOOKS))), (), '/')
 
 # ---------- sitemap / robots ----------
-urls = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{TODAY}</lastmod></url>' for p in ['/mission/', '/privacy.html'] + PAGES)
+urls = ''.join(f'<url><loc>{SITE}{p}</loc>' + (f'<lastmod>{LASTMOD[p]}</lastmod>' if p in LASTMOD else '') + '</url>' for p in ['/mission/', '/privacy.html'] + PAGES)
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
     f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
 open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /get/\nSitemap: {SITE}/sitemap.xml\n')
