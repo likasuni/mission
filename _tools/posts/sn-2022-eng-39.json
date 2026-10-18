@@ -6,55 +6,184 @@
   "answer": 4,
   "topic": "영화의 가치는 현실 재현이 아니라 '환상'에 있다",
   "date": "2026-10-18",
-  "keywords": ["2022 수능 영어 39번", "2022학년도 수능 39번 해설", "2022 수능 39번 정답", "수능 영어 문장 삽입", "cinema fantasy silent film 지문", "고3 모의고사 영어 해설"],
+  "keywords": [
+    "2022 수능 영어 39번",
+    "2022학년도 수능 39번 해설",
+    "2022 수능 39번 정답",
+    "수능 영어 문장 삽입",
+    "cinema fantasy silent film 지문",
+    "고3 모의고사 영어 해설"
+  ],
   "lead": "2022학년도 수능 영어 39번은 초기 영화 이론가들이 소리와 색의 도입을 비판한 이유를 다룬 3점 문장 삽입 문항이에요. ④ 뒤 문장의 just such an illusion(바로 그런 착각)이 가리킬 대상이 앞에 없다는 게 결정적 단서예요. 정답은 ④예요.",
   "flow": [
-    ["주장", "영화의 가치는 현실을 보여 주는 데가 아니라 현실이 가리는 '환상의 차원'을 드러내는 데 있다."],
-    ["사례", "그래서 초기 영화 이론가들은 영화를 사실주의로 몰아간 소리와 색의 도입을 비난했다."],
-    ["이유", "영화는 환상의 예술이라 이런 혁신은 불필요했고, 영화를 현실 재현 도구로 만들 위험이 있었다."],
-    ["삽입", "무성 흑백 영화의 비현실성이 지배하는 동안에는 영화 속 환상을 현실 재현으로 착각할 수 없었다. (④)"],
-    ["결론", "그러나 소리와 색은 바로 그런 착각을 만들어 영화 예술의 본질을 파괴할 위협이 되었다."]
+    [
+      "주장",
+      "영화의 가치는 현실을 보여 주는 데가 아니라 현실이 가리는 '환상의 차원'을 드러내는 데 있다."
+    ],
+    [
+      "사례",
+      "그래서 초기 영화 이론가들은 영화를 사실주의로 몰아간 소리와 색의 도입을 비난했다."
+    ],
+    [
+      "이유",
+      "영화는 환상의 예술이라 이런 혁신은 불필요했고, 영화를 현실 재현 도구로 만들 위험이 있었다."
+    ],
+    [
+      "삽입",
+      "무성 흑백 영화의 비현실성이 지배하는 동안에는 영화 속 환상을 현실 재현으로 착각할 수 없었다. (④)"
+    ],
+    [
+      "결론",
+      "그러나 소리와 색은 바로 그런 착각을 만들어 영화 예술의 본질을 파괴할 위협이 되었다."
+    ]
   ],
   "evidence": [
-    {"en": "As long as the irrealism of the silent black and white film predominated, one could not take filmic fantasies for representations of reality.", "ko": "무성 흑백 영화의 비현실성이 지배하는 한, 사람들은 영화 속 환상을 현실의 재현으로 착각할 수 없었다.", "note": "take A for B는 'A를 B로 착각하다'. 이 문장이 '착각(illusion)'이라는 개념을 처음 꺼내요."},
-    {"en": "But sound and color threatened to create just such an illusion, thereby destroying the very essence of film art.", "ko": "그러나 소리와 색은 바로 그런 착각을 만들어 낼 위협이 되었고, 그로써 영화 예술의 본질 자체를 파괴했다.", "note": "just such an illusion(바로 그런 착각)이 가리킬 내용이 ③ 뒤 문장까지 없어요. '환상을 현실로 착각하는 것'이 주어진 문장에서 나오므로 ④에 넣어야 해요."},
-    {"en": "… potentially transforming film into a mere delivery device for representations of reality. ( ④ )", "ko": "… 잠재적으로 영화를 현실 재현의 단순한 전달 장치로 바꿔 놓을 수 있었다. ( ④ )", "note": "representations of reality가 주어진 문장에 그대로 다시 나와요. 무성 영화 시절(과거) → But 소리·색(변화)의 대조도 깔끔하게 이어져요."}
+    {
+      "en": "As long as the irrealism of the silent black and white film predominated, one could not take filmic fantasies for representations of reality.",
+      "ko": "무성 흑백 영화의 비현실성이 지배하는 한, 사람들은 영화 속 환상을 현실의 재현으로 착각할 수 없었다.",
+      "note": "take A for B는 'A를 B로 착각하다'. 이 문장이 '착각(illusion)'이라는 개념을 처음 꺼내요."
+    },
+    {
+      "en": "But sound and color threatened to create just such an illusion, thereby destroying the very essence of film art.",
+      "ko": "그러나 소리와 색은 바로 그런 착각을 만들어 낼 위협이 되었고, 그로써 영화 예술의 본질 자체를 파괴했다.",
+      "note": "just such an illusion(바로 그런 착각)이 가리킬 내용이 ③ 뒤 문장까지 없어요. '환상을 현실로 착각하는 것'이 주어진 문장에서 나오므로 ④에 넣어야 해요."
+    },
+    {
+      "en": "… potentially transforming film into a mere delivery device for representations of reality. ( ④ )",
+      "ko": "… 잠재적으로 영화를 현실 재현의 단순한 전달 장치로 바꿔 놓을 수 있었다. ( ④ )",
+      "note": "representations of reality가 주어진 문장에 그대로 다시 나와요. 무성 영화 시절(과거) → But 소리·색(변화)의 대조도 깔끔하게 이어져요."
+    }
   ],
   "choices": [
-    {"en": "① … reveal what reality itself veils ― the dimension of fantasy. ( ① )", "ko": "현실이 가리는 환상의 차원 뒤", "why": "① 뒤 This is why 문장이 '영화 = 환상'이라는 앞 주장을 바로 이유로 받아요. 사이에 끼면 연결이 끊겨요."},
-    {"en": "② … decried the introduction of sound and other technical innovations … ( ② )", "ko": "소리·색 도입을 비난했다 뒤", "why": "② 뒤 Since 문장이 비난한 이유(환상의 예술이라 불필요)를 바로 설명해요. 자연스러운 흐름이에요."},
-    {"en": "③ … these innovations were completely unnecessary. ( ③ )", "ko": "혁신은 불필요했다 뒤", "why": "③ 뒤 And what's worse는 '불필요한 데다 더 나쁘게도'로 앞 문장과 바로 이어져야 해요."},
-    {"en": "④ … a mere delivery device for representations of reality. ( ④ )", "ko": "현실 재현의 전달 장치 뒤", "why": "정답. 주어진 문장이 '환상을 현실로 착각하는 것'을 말해야, 다음 문장의 just such an illusion이 가리킬 대상이 생겨요."},
-    {"en": "⑤ … destroying the very essence of film art. ( ⑤ )", "ko": "영화 예술의 본질 파괴 뒤", "why": "⑤ 뒤 아른하임 인용은 앞 내용의 결론이에요. 이미 such an illusion이 나온 뒤라 주어진 문장이 오면 순서가 뒤집혀요."}
+    {
+      "en": "① … reveal what reality itself veils ― the dimension of fantasy. ( ① )",
+      "ko": "현실이 가리는 환상의 차원 뒤",
+      "why": "① 뒤 This is why 문장이 '영화 = 환상'이라는 앞 주장을 바로 이유로 받아요. 사이에 끼면 연결이 끊겨요."
+    },
+    {
+      "en": "② … decried the introduction of sound and other technical innovations … ( ② )",
+      "ko": "소리·색 도입을 비난했다 뒤",
+      "why": "② 뒤 Since 문장이 비난한 이유(환상의 예술이라 불필요)를 바로 설명해요. 자연스러운 흐름이에요."
+    },
+    {
+      "en": "③ … these innovations were completely unnecessary. ( ③ )",
+      "ko": "혁신은 불필요했다 뒤",
+      "why": "③ 뒤 And what's worse는 '불필요한 데다 더 나쁘게도'로 앞 문장과 바로 이어져야 해요."
+    },
+    {
+      "en": "④ … a mere delivery device for representations of reality. ( ④ )",
+      "ko": "현실 재현의 전달 장치 뒤",
+      "why": "정답. 주어진 문장이 '환상을 현실로 착각하는 것'을 말해야, 다음 문장의 just such an illusion이 가리킬 대상이 생겨요."
+    },
+    {
+      "en": "⑤ … destroying the very essence of film art. ( ⑤ )",
+      "ko": "영화 예술의 본질 파괴 뒤",
+      "why": "⑤ 뒤 아른하임 인용은 앞 내용의 결론이에요. 이미 such an illusion이 나온 뒤라 주어진 문장이 오면 순서가 뒤집혀요."
+    }
   ],
   "grammar": [
-    {"t": "take A for B", "ex": "one could not take filmic fantasies for representations of reality", "d": "'A를 B로 (잘못) 여기다, 착각하다'. 다음 문장의 illusion(착각)과 이어지는 핵심 표현이에요."},
-    {"t": "not A but B (for its ability)", "ex": "Cinema is valuable not for its ability to make visible the hidden outlines of our reality, but for its ability to reveal what reality itself veils", "d": "강조점은 B. make visible the hidden outlines는 make A visible에서 목적어가 길어 뒤로 간 형태예요."},
-    {"t": "do nothing but V", "ex": "they could do nothing but turn filmmakers and audiences away from the fantasmatic dimension of cinema", "d": "'~할 수밖에 없다, ~하기만 하다'. but 뒤에 동사원형이 와요."},
-    {"t": "분사구문 thereby -ing", "ex": "sound and color threatened to create just such an illusion, thereby destroying the very essence of film art", "d": "thereby(그로써) + -ing는 앞 내용의 결과예요. the very는 '바로 그'라는 강조예요."}
+    {
+      "t": "take A for B",
+      "ex": "one could not take filmic fantasies for representations of reality",
+      "d": "'A를 B로 (잘못) 여기다, 착각하다'. 다음 문장의 illusion(착각)과 이어지는 핵심 표현이에요."
+    },
+    {
+      "t": "not A but B (for its ability)",
+      "ex": "Cinema is valuable not for its ability to make visible the hidden outlines of our reality, but for its ability to reveal what reality itself veils",
+      "d": "강조점은 B. make visible the hidden outlines는 make A visible에서 목적어가 길어 뒤로 간 형태예요."
+    },
+    {
+      "t": "do nothing but V",
+      "ex": "they could do nothing but turn filmmakers and audiences away from the fantasmatic dimension of cinema",
+      "d": "'~할 수밖에 없다, ~하기만 하다'. but 뒤에 동사원형이 와요."
+    },
+    {
+      "t": "분사구문 thereby -ing",
+      "ex": "sound and color threatened to create just such an illusion, thereby destroying the very essence of film art",
+      "d": "thereby(그로써) + -ing는 앞 내용의 결과예요. the very는 '바로 그'라는 강조예요."
+    }
   ],
   "vocab": [
-    ["irrealism", "비현실성"],
-    ["predominate", "지배하다, 우세하다"],
-    ["filmic", "영화의"],
-    ["veil", "가리다, 감추다"],
-    ["dimension", "차원"],
-    ["to a person", "한 사람도 빠짐없이, 모두"],
-    ["decry", "공공연히 비난하다"],
-    ["innovation", "혁신"],
-    ["realism", "사실주의"],
-    ["fantasmatic", "환상의"],
-    ["delivery device", "전달 장치"],
-    ["illusion", "착각, 환상"],
-    ["essence", "본질"],
-    ["coincide", "일치하다"]
+    [
+      "irrealism",
+      "비현실성"
+    ],
+    [
+      "predominate",
+      "지배하다, 우세하다"
+    ],
+    [
+      "filmic",
+      "영화의"
+    ],
+    [
+      "veil",
+      "가리다, 감추다"
+    ],
+    [
+      "dimension",
+      "차원"
+    ],
+    [
+      "to a person",
+      "한 사람도 빠짐없이, 모두"
+    ],
+    [
+      "decry",
+      "공공연히 비난하다"
+    ],
+    [
+      "innovation",
+      "혁신"
+    ],
+    [
+      "realism",
+      "사실주의"
+    ],
+    [
+      "fantasmatic",
+      "환상의"
+    ],
+    [
+      "delivery device",
+      "전달 장치"
+    ],
+    [
+      "illusion",
+      "착각, 환상"
+    ],
+    [
+      "essence",
+      "본질"
+    ],
+    [
+      "coincide",
+      "일치하다"
+    ]
   ],
-  "summary": {"en": "Early film theorists opposed sound and color because they made film look like reality, destroying cinema's true value of revealing fantasy.", "ko": "초기 영화 이론가들은 소리와 색이 영화를 현실처럼 보이게 만들어 환상을 드러낸다는 영화의 진정한 가치를 파괴한다고 보고 반대했다."},
-  "writing": {"en": "Film is most creative when it does not simply copy reality.", "ko": "영화는 현실을 그대로 베끼지 않을 때 가장 창의적이다."},
+  "summary": {
+    "en": "Early film theorists opposed sound and color because they made film look like reality, destroying cinema's true value of revealing fantasy.",
+    "ko": "초기 영화 이론가들은 소리와 색이 영화를 현실처럼 보이게 만들어 환상을 드러낸다는 영화의 진정한 가치를 파괴한다고 보고 반대했다."
+  },
+  "writing": {
+    "en": "Film is most creative when it does not simply copy reality.",
+    "ko": "영화는 현실을 그대로 베끼지 않을 때 가장 창의적이다."
+  },
   "tip": "문장 삽입은 '가리키는 말'이 가리킬 대상이 없는 자리를 찾는 게 1순위예요. just such an illusion처럼 such/this/that이 붙은 명사가 나오면, 그 앞 문장에 해당 내용이 있는지 확인하세요. 없으면 바로 그 앞이 정답 자리예요.",
   "faq": [
-    ["2022학년도 수능 영어 39번 정답은?", "④예요. ④ 뒤 문장의 just such an illusion(바로 그런 착각)이 가리킬 내용, 즉 '환상을 현실로 착각하는 것'이 주어진 문장에서 나와요."],
-    ["2022 수능 39번은 어떤 유형인가요?", "주어진 문장이 들어가기에 가장 적절한 곳을 고르는 3점 문장 삽입 문항이에요. 영화의 환상성과 소리·색 도입을 다룬 지문이에요."],
-    ["take A for B는 무슨 뜻인가요?", "'A를 B로 착각하다(잘못 여기다)'라는 뜻이에요. 이 지문에서는 영화 속 환상을 현실 재현으로 착각하는 것을 말해요."]
-  ]
+    [
+      "2022학년도 수능 영어 39번 정답은?",
+      "④예요. ④ 뒤 문장의 just such an illusion(바로 그런 착각)이 가리킬 내용, 즉 '환상을 현실로 착각하는 것'이 주어진 문장에서 나와요."
+    ],
+    [
+      "2022 수능 39번은 어떤 유형인가요?",
+      "주어진 문장이 들어가기에 가장 적절한 곳을 고르는 3점 문장 삽입 문항이에요. 영화의 환상성과 소리·색 도입을 다룬 지문이에요."
+    ],
+    [
+      "take A for B는 무슨 뜻인가요?",
+      "'A를 B로 착각하다(잘못 여기다)'라는 뜻이에요. 이 지문에서는 영화 속 환상을 현실 재현으로 착각하는 것을 말해요."
+    ]
+  ],
+  "note": "문장 삽입은 '대명사·지시어가 가리킬 대상이 없는 자리'가 거의 항상 정답 근처예요. just such an illusion처럼 such가 보이면 형광펜부터 칠하세요. 3점 문항이지만 이 원리 하나로 풀려요.",
+  "updated": "2026-10-18"
 }

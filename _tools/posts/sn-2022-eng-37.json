@@ -6,56 +6,188 @@
   "answer": 5,
   "topic": "소설 속 세계는 작가의 의식이라는 필터를 한 번 더 거친 세계다",
   "date": "2026-10-18",
-  "keywords": ["2022 수능 영어 37번", "2022학년도 수능 37번 해설", "2022 수능 37번 정답", "수능 영어 글의 순서", "fictional world real world 지문", "고3 모의고사 영어 해설"],
+  "keywords": [
+    "2022 수능 영어 37번",
+    "2022학년도 수능 37번 해설",
+    "2022 수능 37번 정답",
+    "수능 영어 글의 순서",
+    "fictional world real world 지문",
+    "고3 모의고사 영어 해설"
+  ],
   "lead": "2022학년도 수능 영어 37번은 소설 속 세계가 현실 세계와 어떻게 다른지를 다룬 3점 글의 순서 문항이에요. 현실은 혼돈(C) → 마음이 필터 역할(B) → 문학은 작가의 의식이 이미 걸러 낸 세계(A)로 이어져요. 정답은 ⑤ (C) － (B) － (A)예요.",
   "flow": [
-    ["주어진 글", "소설 속 세계는 현실과 비슷하지만 한 가지 중요한 점에서 벗어나 있다."],
-    ["(C) 현실", "개인이 마주하는 현실은 원래 끝없는 혼돈이고, 인간의 마음이 지각할 때 비로소 처리된다."],
-    ["(B) 필터", "마음은 필터처럼 외부 인상을 걸러 해석한다. 그런데 문학 속 세계는 이미 다른 의식이 걸러 놓은 것이다."],
-    ["(A) 작가", "작가는 자신의 세계관에 따라 내용을 골랐고, 작가의 주관이 독자와 원래 세계 사이에 놓인다."]
+    [
+      "주어진 글",
+      "소설 속 세계는 현실과 비슷하지만 한 가지 중요한 점에서 벗어나 있다."
+    ],
+    [
+      "(C) 현실",
+      "개인이 마주하는 현실은 원래 끝없는 혼돈이고, 인간의 마음이 지각할 때 비로소 처리된다."
+    ],
+    [
+      "(B) 필터",
+      "마음은 필터처럼 외부 인상을 걸러 해석한다. 그런데 문학 속 세계는 이미 다른 의식이 걸러 놓은 것이다."
+    ],
+    [
+      "(A) 작가",
+      "작가는 자신의 세계관에 따라 내용을 골랐고, 작가의 주관이 독자와 원래 세계 사이에 놓인다."
+    ]
   ],
   "evidence": [
-    {"en": "The existing world faced by the individual is in principle an infinite chaos of events and details before it is organized by a human mind.", "ko": "개인이 마주하는 현존 세계는 원칙적으로 인간의 마음에 의해 정리되기 전에는 사건과 세부 사항의 무한한 혼돈이다.", "note": "주어진 글의 real world를 the existing world로 받아 '현실은 어떤가'부터 설명해요. 그래서 (C)가 첫 번째예요."},
-    {"en": "… the mind functions as a filter; every outside impression that passes through it is filtered and interpreted.", "ko": "… 마음은 필터 역할을 한다. 그것을 통과하는 모든 외부 인상은 걸러지고 해석된다.", "note": "(C) 끝의 '마음이 지각할 때 처리된다'를 '마음 = 필터'로 이어받아요. (C) → (B)."},
-    {"en": "However, the world the reader encounters in literature is already processed and filtered by another consciousness.", "ko": "그러나 독자가 문학에서 마주하는 세계는 이미 다른 의식에 의해 처리되고 걸러진 것이다.", "note": "(B) 마지막 문장의 another consciousness(다른 의식)가 (A)의 The author(작가)로 연결돼요. (B) → (A)."}
+    {
+      "en": "The existing world faced by the individual is in principle an infinite chaos of events and details before it is organized by a human mind.",
+      "ko": "개인이 마주하는 현존 세계는 원칙적으로 인간의 마음에 의해 정리되기 전에는 사건과 세부 사항의 무한한 혼돈이다.",
+      "note": "주어진 글의 real world를 the existing world로 받아 '현실은 어떤가'부터 설명해요. 그래서 (C)가 첫 번째예요."
+    },
+    {
+      "en": "… the mind functions as a filter; every outside impression that passes through it is filtered and interpreted.",
+      "ko": "… 마음은 필터 역할을 한다. 그것을 통과하는 모든 외부 인상은 걸러지고 해석된다.",
+      "note": "(C) 끝의 '마음이 지각할 때 처리된다'를 '마음 = 필터'로 이어받아요. (C) → (B)."
+    },
+    {
+      "en": "However, the world the reader encounters in literature is already processed and filtered by another consciousness.",
+      "ko": "그러나 독자가 문학에서 마주하는 세계는 이미 다른 의식에 의해 처리되고 걸러진 것이다.",
+      "note": "(B) 마지막 문장의 another consciousness(다른 의식)가 (A)의 The author(작가)로 연결돼요. (B) → (A)."
+    }
   ],
   "choices": [
-    {"en": "(A) － (C) － (B)", "ko": "작가 → 현실 → 필터", "why": "(A)의 The author는 앞에서 '다른 의식'이 언급되어야 자연스러워요. 주어진 글 바로 뒤에 오기 어려워요."},
-    {"en": "(B) － (A) － (C)", "ko": "필터 → 작가 → 현실", "why": "(B)의 the mind functions as a filter는 (C)의 '마음이 혼돈을 처리한다'는 설명이 먼저 있어야 이어져요."},
-    {"en": "(B) － (C) － (A)", "ko": "필터 → 현실 → 작가", "why": "(B) 끝의 another consciousness는 (A)의 작가로 바로 이어져야 해요. 중간에 (C)가 끼면 흐름이 끊겨요."},
-    {"en": "(C) － (A) － (B)", "ko": "현실 → 작가 → 필터", "why": "(A)의 작가 이야기 전에 '문학은 다른 의식이 걸러 낸 세계'라는 (B)의 전환이 필요해요."},
-    {"en": "(C) － (B) － (A)", "ko": "현실 → 필터 → 작가", "why": "정답. 현실은 혼돈(C) → 마음이 필터로 처리, 문학은 다른 의식이 걸러 낸 것(B) → 그 의식인 작가의 주관(A)."}
+    {
+      "en": "(A) － (C) － (B)",
+      "ko": "작가 → 현실 → 필터",
+      "why": "(A)의 The author는 앞에서 '다른 의식'이 언급되어야 자연스러워요. 주어진 글 바로 뒤에 오기 어려워요."
+    },
+    {
+      "en": "(B) － (A) － (C)",
+      "ko": "필터 → 작가 → 현실",
+      "why": "(B)의 the mind functions as a filter는 (C)의 '마음이 혼돈을 처리한다'는 설명이 먼저 있어야 이어져요."
+    },
+    {
+      "en": "(B) － (C) － (A)",
+      "ko": "필터 → 현실 → 작가",
+      "why": "(B) 끝의 another consciousness는 (A)의 작가로 바로 이어져야 해요. 중간에 (C)가 끼면 흐름이 끊겨요."
+    },
+    {
+      "en": "(C) － (A) － (B)",
+      "ko": "현실 → 작가 → 필터",
+      "why": "(A)의 작가 이야기 전에 '문학은 다른 의식이 걸러 낸 세계'라는 (B)의 전환이 필요해요."
+    },
+    {
+      "en": "(C) － (B) － (A)",
+      "ko": "현실 → 필터 → 작가",
+      "why": "정답. 현실은 혼돈(C) → 마음이 필터로 처리, 문학은 다른 의식이 걸러 낸 것(B) → 그 의식인 작가의 주관(A)."
+    }
   ],
   "grammar": [
-    {"t": "In spite of + 명사", "ex": "In spite of the likeness between the fictional and real world, the fictional world deviates from the real one …", "d": "'~에도 불구하고'. 뒤에 명사(구)가 와요. the real one의 one은 world를 가리켜요."},
-    {"t": "과거분사 후치 수식", "ex": "The existing world faced by the individual is … an infinite chaos", "d": "faced by the individual이 world를 꾸며요. 동사는 is예요. '개인이 마주하는 현존 세계는'."},
-    {"t": "전치사 + 관계대명사", "ex": "Because of the inner qualities with which the individual is endowed through heritage and environment", "d": "be endowed with(~을 부여받다)의 with가 which 앞으로 나왔어요. '개인이 유산과 환경을 통해 부여받은 내적 자질'."},
-    {"t": "Whatever + 명사 (양보)", "ex": "Whatever the motives, the author's subjective conception … stands between the reader and the original, untouched world", "d": "'동기가 무엇이든'. Whatever the motives (may be)에서 동사가 생략됐어요. 주절 동사는 stands예요."}
+    {
+      "t": "In spite of + 명사",
+      "ex": "In spite of the likeness between the fictional and real world, the fictional world deviates from the real one …",
+      "d": "'~에도 불구하고'. 뒤에 명사(구)가 와요. the real one의 one은 world를 가리켜요."
+    },
+    {
+      "t": "과거분사 후치 수식",
+      "ex": "The existing world faced by the individual is … an infinite chaos",
+      "d": "faced by the individual이 world를 꾸며요. 동사는 is예요. '개인이 마주하는 현존 세계는'."
+    },
+    {
+      "t": "전치사 + 관계대명사",
+      "ex": "Because of the inner qualities with which the individual is endowed through heritage and environment",
+      "d": "be endowed with(~을 부여받다)의 with가 which 앞으로 나왔어요. '개인이 유산과 환경을 통해 부여받은 내적 자질'."
+    },
+    {
+      "t": "Whatever + 명사 (양보)",
+      "ex": "Whatever the motives, the author's subjective conception … stands between the reader and the original, untouched world",
+      "d": "'동기가 무엇이든'. Whatever the motives (may be)에서 동사가 생략됐어요. 주절 동사는 stands예요."
+    }
   ],
   "vocab": [
-    ["likeness", "유사성"],
-    ["fictional", "허구의"],
-    ["deviate from", "~에서 벗어나다"],
-    ["in principle", "원칙적으로"],
-    ["infinite", "무한한"],
-    ["chaos", "혼돈"],
-    ["perceive", "지각하다"],
-    ["be endowed with", "~을 부여받다"],
-    ["heritage", "유산"],
-    ["impression", "인상"],
-    ["consciousness", "의식"],
-    ["worldview", "세계관"],
-    ["relevance", "관련성"],
-    ["convey", "전달하다"],
-    ["subjective", "주관적인"],
-    ["untouched", "손대지 않은, 원래 그대로의"]
+    [
+      "likeness",
+      "유사성"
+    ],
+    [
+      "fictional",
+      "허구의"
+    ],
+    [
+      "deviate from",
+      "~에서 벗어나다"
+    ],
+    [
+      "in principle",
+      "원칙적으로"
+    ],
+    [
+      "infinite",
+      "무한한"
+    ],
+    [
+      "chaos",
+      "혼돈"
+    ],
+    [
+      "perceive",
+      "지각하다"
+    ],
+    [
+      "be endowed with",
+      "~을 부여받다"
+    ],
+    [
+      "heritage",
+      "유산"
+    ],
+    [
+      "impression",
+      "인상"
+    ],
+    [
+      "consciousness",
+      "의식"
+    ],
+    [
+      "worldview",
+      "세계관"
+    ],
+    [
+      "relevance",
+      "관련성"
+    ],
+    [
+      "convey",
+      "전달하다"
+    ],
+    [
+      "subjective",
+      "주관적인"
+    ],
+    [
+      "untouched",
+      "손대지 않은, 원래 그대로의"
+    ]
   ],
-  "summary": {"en": "While we filter the chaotic real world through our own minds, the world in literature has already been filtered by the author's consciousness.", "ko": "우리는 혼돈스러운 현실 세계를 자신의 마음으로 걸러 보지만, 문학 속 세계는 이미 작가의 의식으로 걸러진 것이다."},
-  "writing": {"en": "A novel shows us a world already filtered through the author's mind.", "ko": "소설은 이미 작가의 마음을 거친 세계를 보여 준다."},
+  "summary": {
+    "en": "While we filter the chaotic real world through our own minds, the world in literature has already been filtered by the author's consciousness.",
+    "ko": "우리는 혼돈스러운 현실 세계를 자신의 마음으로 걸러 보지만, 문학 속 세계는 이미 작가의 의식으로 걸러진 것이다."
+  },
+  "writing": {
+    "en": "A novel shows us a world already filtered through the author's mind.",
+    "ko": "소설은 이미 작가의 마음을 거친 세계를 보여 준다."
+  },
   "tip": "주어진 글이 '현실과 다른 한 가지 점'을 예고하면, 먼저 현실(C)을 설명하고 문학(B·A)으로 넘어가는 순서가 기본이에요. (B)의 However가 현실 → 문학 전환점이고, (B) 끝 another consciousness = (A)의 The author로 연결돼요.",
   "faq": [
-    ["2022학년도 수능 영어 37번 정답은?", "⑤ (C) － (B) － (A)예요. 현실은 혼돈(C) → 마음은 필터, 문학은 다른 의식이 걸러 낸 세계(B) → 그 의식인 작가의 주관(A) 순서예요."],
-    ["2022 수능 37번은 어떤 유형인가요?", "주어진 글 다음에 이어질 글의 순서를 고르는 3점 문항이에요. 소설 속 세계와 현실 세계의 차이를 다룬 지문이에요."],
-    ["(B)와 (A)를 잇는 단서는?", "(B) 마지막 문장의 another consciousness(다른 의식)가 (A)의 The author(작가)를 가리켜요. 지칭 관계가 바로 이어져요."]
-  ]
+    [
+      "2022학년도 수능 영어 37번 정답은?",
+      "⑤ (C) － (B) － (A)예요. 현실은 혼돈(C) → 마음은 필터, 문학은 다른 의식이 걸러 낸 세계(B) → 그 의식인 작가의 주관(A) 순서예요."
+    ],
+    [
+      "2022 수능 37번은 어떤 유형인가요?",
+      "주어진 글 다음에 이어질 글의 순서를 고르는 3점 문항이에요. 소설 속 세계와 현실 세계의 차이를 다룬 지문이에요."
+    ],
+    [
+      "(B)와 (A)를 잇는 단서는?",
+      "(B) 마지막 문장의 another consciousness(다른 의식)가 (A)의 The author(작가)를 가리켜요. 지칭 관계가 바로 이어져요."
+    ]
+  ],
+  "note": "순서 문제에서 자주 놓치는 게 '단락의 마지막 문장'이에요. 첫 문장만 보고 순서를 정하지 말고, 앞 단락의 끝 → 다음 단락의 시작을 이어 보는 연습을 하세요. (B) 끝의 another consciousness → (A)의 The author가 그 예예요.",
+  "updated": "2026-10-18"
 }

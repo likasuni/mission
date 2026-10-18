@@ -6,56 +6,187 @@
   "answer": 2,
   "topic": "전문가를 어느 정도 믿지 않으면 일상의 결정조차 못 한다",
   "date": "2026-10-20",
-  "keywords": ["2022 수능 영어 21번", "2022학년도 수능 21번 해설", "2022 수능 21번 정답", "수능 영어 밑줄 함축 의미", "whether to make ready for the morning commute", "고3 모의고사 영어 해설"],
+  "keywords": [
+    "2022 수능 영어 21번",
+    "2022학년도 수능 21번 해설",
+    "2022 수능 21번 정답",
+    "수능 영어 밑줄 함축 의미",
+    "whether to make ready for the morning commute",
+    "고3 모의고사 영어 해설"
+  ],
   "lead": "2022학년도 수능 영어 21번은 전문가에 대한 신뢰를 다룬 3점 밑줄 함축 의미 문항이에요. 전문가를 전혀 믿지 않으면 '아침 출근 준비를 할지 말지'조차 모르게 된다는 건, 전문가가 주는 바로 쓸 수 있는 정보가 없다는 뜻이에요. 정답은 ② readily applicable information offered by specialized experts예요.",
   "flow": [
-    ["전제", "과학자도 자기 분야 밖의 도덕·윤리 문제에는 특별한 자격이 없다."],
-    ["한계", "전문 분야의 전문성은 다른 많은 분야에 대한 무지로 이어진다. 비전문가의 경험에서 배울 수도 있다."],
-    ["주장", "그러니 신뢰는 제한적이고 초점이 맞춰져야 한다. 맹목적 신뢰는 불신만큼 위험하다."],
-    ["결론", "그러나 전문가를 어느 정도 믿지 않으면 우리는 마비되어 출근 준비 여부조차 모르게 된다. (밑줄)"]
+    [
+      "전제",
+      "과학자도 자기 분야 밖의 도덕·윤리 문제에는 특별한 자격이 없다."
+    ],
+    [
+      "한계",
+      "전문 분야의 전문성은 다른 많은 분야에 대한 무지로 이어진다. 비전문가의 경험에서 배울 수도 있다."
+    ],
+    [
+      "주장",
+      "그러니 신뢰는 제한적이고 초점이 맞춰져야 한다. 맹목적 신뢰는 불신만큼 위험하다."
+    ],
+    [
+      "결론",
+      "그러나 전문가를 어느 정도 믿지 않으면 우리는 마비되어 출근 준비 여부조차 모르게 된다. (밑줄)"
+    ]
   ],
   "evidence": [
-    {"en": "So our trust needs to be limited, and focused. It needs to be very particular.", "ko": "그러므로 우리의 신뢰는 제한적이고 초점이 맞춰져야 한다. 그것은 매우 구체적이어야 한다.", "note": "전문가를 무조건 믿으라는 게 아니라, 해당 분야에 한해 믿으라는 거예요."},
-    {"en": "But without some degree of trust in our designated experts … we are paralyzed, in effect not knowing whether to make ready for the morning commute or not.", "ko": "그러나 지정된 전문가들에 대한 어느 정도의 신뢰가 없으면 … 우리는 마비되어, 사실상 아침 출근 준비를 할지 말지도 모르게 된다.", "note": "출근 준비는 날씨 예보·교통 정보처럼 전문가 정보를 바로 써서 내리는 일상적 결정이에요. 그 정보를 못 쓰면 일상이 멈춰요."},
-    {"en": "Blind trust will get us into at least as much trouble as no trust at all.", "ko": "맹목적 신뢰는 전혀 신뢰하지 않는 것만큼이나 우리를 곤경에 빠뜨릴 것이다.", "note": "양쪽 극단을 모두 경계해요. 밑줄은 '신뢰가 전혀 없을 때'의 결과예요."}
+    {
+      "en": "So our trust needs to be limited, and focused. It needs to be very particular.",
+      "ko": "그러므로 우리의 신뢰는 제한적이고 초점이 맞춰져야 한다. 그것은 매우 구체적이어야 한다.",
+      "note": "전문가를 무조건 믿으라는 게 아니라, 해당 분야에 한해 믿으라는 거예요."
+    },
+    {
+      "en": "But without some degree of trust in our designated experts … we are paralyzed, in effect not knowing whether to make ready for the morning commute or not.",
+      "ko": "그러나 지정된 전문가들에 대한 어느 정도의 신뢰가 없으면 … 우리는 마비되어, 사실상 아침 출근 준비를 할지 말지도 모르게 된다.",
+      "note": "출근 준비는 날씨 예보·교통 정보처럼 전문가 정보를 바로 써서 내리는 일상적 결정이에요. 그 정보를 못 쓰면 일상이 멈춰요."
+    },
+    {
+      "en": "Blind trust will get us into at least as much trouble as no trust at all.",
+      "ko": "맹목적 신뢰는 전혀 신뢰하지 않는 것만큼이나 우리를 곤경에 빠뜨릴 것이다.",
+      "note": "양쪽 극단을 모두 경계해요. 밑줄은 '신뢰가 전혀 없을 때'의 결과예요."
+    }
   ],
   "choices": [
-    {"en": "questionable facts that have been popularized by non-experts", "ko": "비전문가들이 대중화한 의심스러운 사실", "why": "밑줄은 '전문가'를 믿지 않을 때 잃는 것에 관한 말이에요. 비전문가 정보와는 반대예요."},
-    {"en": "readily applicable information offered by specialized experts", "ko": "전문가들이 제공하는 바로 적용할 수 있는 정보", "why": "정답. 전문가를 믿지 않으면 출근 준비 같은 일상 결정에 바로 쓸 정보를 활용할 수 없어요."},
-    {"en": "common knowledge that hardly influences crucial decisions", "ko": "중요한 결정에 거의 영향을 주지 않는 상식", "why": "출근 여부는 실제로 결정을 좌우하는 정보예요. '거의 영향 없다'와 맞지 않아요."},
-    {"en": "practical information produced by both specialists and lay people", "ko": "전문가와 비전문가가 함께 만든 실용 정보", "why": "lay people 이야기는 앞부분에 나오지만, 밑줄 문장은 designated experts에 대한 신뢰만 다뤄요."},
-    {"en": "biased knowledge that is widespread in the local community", "ko": "지역 사회에 퍼진 편향된 지식", "why": "편향된 지식은 글에 나오지 않아요. local native groups를 이용한 함정이에요."}
+    {
+      "en": "questionable facts that have been popularized by non-experts",
+      "ko": "비전문가들이 대중화한 의심스러운 사실",
+      "why": "밑줄은 '전문가'를 믿지 않을 때 잃는 것에 관한 말이에요. 비전문가 정보와는 반대예요."
+    },
+    {
+      "en": "readily applicable information offered by specialized experts",
+      "ko": "전문가들이 제공하는 바로 적용할 수 있는 정보",
+      "why": "정답. 전문가를 믿지 않으면 출근 준비 같은 일상 결정에 바로 쓸 정보를 활용할 수 없어요."
+    },
+    {
+      "en": "common knowledge that hardly influences crucial decisions",
+      "ko": "중요한 결정에 거의 영향을 주지 않는 상식",
+      "why": "출근 여부는 실제로 결정을 좌우하는 정보예요. '거의 영향 없다'와 맞지 않아요."
+    },
+    {
+      "en": "practical information produced by both specialists and lay people",
+      "ko": "전문가와 비전문가가 함께 만든 실용 정보",
+      "why": "lay people 이야기는 앞부분에 나오지만, 밑줄 문장은 designated experts에 대한 신뢰만 다뤄요."
+    },
+    {
+      "en": "biased knowledge that is widespread in the local community",
+      "ko": "지역 사회에 퍼진 편향된 지식",
+      "why": "편향된 지식은 글에 나오지 않아요. local native groups를 이용한 함정이에요."
+    }
   ],
   "grammar": [
-    {"t": "no more ~ than (양자 부정)", "ex": "a climate scientist is no more qualified to comment on health care reform than a physicist is to judge the causes of bee colony collapse", "d": "'A가 ~ 아닌 것처럼 B도 ~ 아니다'. 둘 다 자격이 없다는 뜻이에요."},
-    {"t": "The very + 명사 (강조)", "ex": "The very features that create expertise in a specialized domain lead to ignorance in many others.", "d": "'바로 그 특징들'. 주어는 features, 동사는 lead to예요."},
-    {"t": "at least as ~ as", "ex": "Blind trust will get us into at least as much trouble as no trust at all.", "d": "'적어도 ~만큼'. 맹목적 신뢰도 불신 못지않게 위험하다는 뜻이에요."},
-    {"t": "whether to V or not", "ex": "not knowing whether to make ready for the morning commute or not", "d": "'~할지 말지'. make ready for는 '~을 준비하다'예요."}
+    {
+      "t": "no more ~ than (양자 부정)",
+      "ex": "a climate scientist is no more qualified to comment on health care reform than a physicist is to judge the causes of bee colony collapse",
+      "d": "'A가 ~ 아닌 것처럼 B도 ~ 아니다'. 둘 다 자격이 없다는 뜻이에요."
+    },
+    {
+      "t": "The very + 명사 (강조)",
+      "ex": "The very features that create expertise in a specialized domain lead to ignorance in many others.",
+      "d": "'바로 그 특징들'. 주어는 features, 동사는 lead to예요."
+    },
+    {
+      "t": "at least as ~ as",
+      "ex": "Blind trust will get us into at least as much trouble as no trust at all.",
+      "d": "'적어도 ~만큼'. 맹목적 신뢰도 불신 못지않게 위험하다는 뜻이에요."
+    },
+    {
+      "t": "whether to V or not",
+      "ex": "not knowing whether to make ready for the morning commute or not",
+      "d": "'~할지 말지'. make ready for는 '~을 준비하다'예요."
+    }
   ],
   "vocab": [
-    ["have no purchase on", "~에 대해 영향력(발판)이 없다"],
-    ["moral", "도덕적인"],
-    ["ethical", "윤리적인"],
-    ["qualified", "자격이 있는"],
-    ["reform", "개혁"],
-    ["colony collapse", "(벌) 군집 붕괴"],
-    ["expertise", "전문 지식"],
-    ["domain", "분야"],
-    ["ignorance", "무지"],
-    ["lay", "전문가가 아닌"],
-    ["assessment", "평가"],
-    ["designated", "지정된"],
-    ["sort out", "해결하다, 정리하다"],
-    ["paralyze", "마비시키다"],
-    ["in effect", "사실상"],
-    ["commute", "통근"]
+    [
+      "have no purchase on",
+      "~에 대해 영향력(발판)이 없다"
+    ],
+    [
+      "moral",
+      "도덕적인"
+    ],
+    [
+      "ethical",
+      "윤리적인"
+    ],
+    [
+      "qualified",
+      "자격이 있는"
+    ],
+    [
+      "reform",
+      "개혁"
+    ],
+    [
+      "colony collapse",
+      "(벌) 군집 붕괴"
+    ],
+    [
+      "expertise",
+      "전문 지식"
+    ],
+    [
+      "domain",
+      "분야"
+    ],
+    [
+      "ignorance",
+      "무지"
+    ],
+    [
+      "lay",
+      "전문가가 아닌"
+    ],
+    [
+      "assessment",
+      "평가"
+    ],
+    [
+      "designated",
+      "지정된"
+    ],
+    [
+      "sort out",
+      "해결하다, 정리하다"
+    ],
+    [
+      "paralyze",
+      "마비시키다"
+    ],
+    [
+      "in effect",
+      "사실상"
+    ],
+    [
+      "commute",
+      "통근"
+    ]
   ],
-  "summary": {"en": "Our trust in experts should be limited to their fields, but without any trust in them, we could not make even everyday decisions.", "ko": "전문가에 대한 신뢰는 그들의 분야로 제한되어야 하지만, 신뢰가 전혀 없다면 일상적인 결정조차 내릴 수 없다."},
-  "writing": {"en": "We need focused trust in experts, not blind trust or none at all.", "ko": "우리에게 필요한 것은 맹목적 신뢰나 불신이 아니라 초점 맞춘 신뢰다."},
+  "summary": {
+    "en": "Our trust in experts should be limited to their fields, but without any trust in them, we could not make even everyday decisions.",
+    "ko": "전문가에 대한 신뢰는 그들의 분야로 제한되어야 하지만, 신뢰가 전혀 없다면 일상적인 결정조차 내릴 수 없다."
+  },
+  "writing": {
+    "en": "We need focused trust in experts, not blind trust or none at all.",
+    "ko": "우리에게 필요한 것은 맹목적 신뢰나 불신이 아니라 초점 맞춘 신뢰다."
+  },
   "tip": "함축 의미는 밑줄 앞 without ~(무엇이 없으면)를 먼저 보세요. '전문가에 대한 신뢰가 없으면 → 출근 준비도 못 한다'이므로, 밑줄은 '전문가가 주는 일상에 바로 쓰는 정보'를 잃는다는 뜻이에요.",
   "faq": [
-    ["2022학년도 수능 영어 21번 정답은?", "② readily applicable information offered by specialized experts(전문가들이 제공하는 바로 적용할 수 있는 정보)예요."],
-    ["2022 수능 21번은 어떤 유형인가요?", "밑줄 친 부분이 의미하는 바를 고르는 3점 함축 의미 추론 문항이에요."],
-    ["④가 오답인 이유는?", "비전문가(lay people) 이야기는 앞부분에 나오지만, 밑줄 문장은 지정된 전문가(designated experts)에 대한 신뢰만 다뤄요."]
-  ]
+    [
+      "2022학년도 수능 영어 21번 정답은?",
+      "② readily applicable information offered by specialized experts(전문가들이 제공하는 바로 적용할 수 있는 정보)예요."
+    ],
+    [
+      "2022 수능 21번은 어떤 유형인가요?",
+      "밑줄 친 부분이 의미하는 바를 고르는 3점 함축 의미 추론 문항이에요."
+    ],
+    [
+      "④가 오답인 이유는?",
+      "비전문가(lay people) 이야기는 앞부분에 나오지만, 밑줄 문장은 지정된 전문가(designated experts)에 대한 신뢰만 다뤄요."
+    ]
+  ],
+  "note": "밑줄 함축 문제는 밑줄 표현을 글자 그대로 해석하면 틀려요. 저는 수업에서 '밑줄 바로 앞 without/if 조건을 먼저 읽어라'라고 강조해요. 이 문항도 '전문가를 믿지 않으면 → 출근 준비도 못 한다'라는 인과만 잡으면 3점이 쉽게 풀려요."
 }

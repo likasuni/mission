@@ -6,57 +6,192 @@
   "answer": 4,
   "topic": "세포의 생애 주기와 의외로 단순한 세포 구조",
   "date": "2026-10-22",
-  "keywords": ["2022 수능 영어 29번", "2022학년도 수능 29번 해설", "2022 수능 29번 정답", "수능 영어 어법", "What vs That 어법", "cell life span 지문", "고3 모의고사 영어 해설"],
+  "keywords": [
+    "2022 수능 영어 29번",
+    "2022학년도 수능 29번 해설",
+    "2022 수능 29번 정답",
+    "수능 영어 어법",
+    "What vs That 어법",
+    "cell life span 지문",
+    "고3 모의고사 영어 해설"
+  ],
   "lead": "2022학년도 수능 영어 29번은 세포의 생애 주기를 다룬 3점 어법 문항이에요. ④ What 뒤에 주어·동사·보어가 다 갖춰진 완전한 문장이 와서, 명사절 접속사 That이 와야 해요. 정답은 ④예요.",
   "flow": [
-    ["도입", "개체처럼 세포도 수명이 있고, 생애 주기 동안 크기·모양·대사 활동이 크게 변한다."],
-    ["탄생", "모세포가 분열해 두 딸세포를 만들 때 세포는 쌍둥이로 '태어난다'."],
-    ["성장", "딸세포는 모세포만큼 커질 때까지 자라며 영양분을 흡수해 원형질을 만든다."],
-    ["분화", "적절한 크기가 되면 분열을 준비하거나 성숙해 특수 세포로 분화한다."],
-    ["반전", "세포 대사와 구조가 복잡하리라 예상하겠지만, 실제로는 꽤 단순하고 논리적이다."]
+    [
+      "도입",
+      "개체처럼 세포도 수명이 있고, 생애 주기 동안 크기·모양·대사 활동이 크게 변한다."
+    ],
+    [
+      "탄생",
+      "모세포가 분열해 두 딸세포를 만들 때 세포는 쌍둥이로 '태어난다'."
+    ],
+    [
+      "성장",
+      "딸세포는 모세포만큼 커질 때까지 자라며 영양분을 흡수해 원형질을 만든다."
+    ],
+    [
+      "분화",
+      "적절한 크기가 되면 분열을 준비하거나 성숙해 특수 세포로 분화한다."
+    ],
+    [
+      "반전",
+      "세포 대사와 구조가 복잡하리라 예상하겠지만, 실제로는 꽤 단순하고 논리적이다."
+    ]
   ],
   "evidence": [
-    {"en": "④ What cell metabolism and structure should be complex would not be surprising", "ko": "세포 대사와 구조가 복잡하다는 것은 놀랍지 않을 것이다", "note": "What 뒤 cell metabolism and structure(주어) + should be(동사) + complex(보어)로 문장이 완전해요. 완전한 절을 이끌어 주어 역할을 하는 건 That이에요. What → That."},
-    {"en": "A cell is \"born\" as a twin when its mother cell divides, ① producing two daughter cells.", "ko": "모세포가 분열해 두 개의 딸세포를 만들어 낼 때 세포는 쌍둥이로 '태어난다'.", "note": "① 분사구문. 모세포가 '만들어 내는' 능동이라 producing이 맞아요."},
-    {"en": "Even the most complex cell has only a small number of parts, each ⑤ responsible for a distinct, well-defined aspect of cell life.", "ko": "가장 복잡한 세포조차 적은 수의 부분만 가지며, 각 부분은 세포 생활의 뚜렷하고 명확한 측면을 담당한다.", "note": "⑤ each (being) responsible for ~의 독립분사구문이에요. 형용사 responsible이 맞아요."}
+    {
+      "en": "④ What cell metabolism and structure should be complex would not be surprising",
+      "ko": "세포 대사와 구조가 복잡하다는 것은 놀랍지 않을 것이다",
+      "note": "What 뒤 cell metabolism and structure(주어) + should be(동사) + complex(보어)로 문장이 완전해요. 완전한 절을 이끌어 주어 역할을 하는 건 That이에요. What → That."
+    },
+    {
+      "en": "A cell is \"born\" as a twin when its mother cell divides, ① producing two daughter cells.",
+      "ko": "모세포가 분열해 두 개의 딸세포를 만들어 낼 때 세포는 쌍둥이로 '태어난다'.",
+      "note": "① 분사구문. 모세포가 '만들어 내는' 능동이라 producing이 맞아요."
+    },
+    {
+      "en": "Even the most complex cell has only a small number of parts, each ⑤ responsible for a distinct, well-defined aspect of cell life.",
+      "ko": "가장 복잡한 세포조차 적은 수의 부분만 가지며, 각 부분은 세포 생활의 뚜렷하고 명확한 측면을 담당한다.",
+      "note": "⑤ each (being) responsible for ~의 독립분사구문이에요. 형용사 responsible이 맞아요."
+    }
   ],
   "choices": [
-    {"en": "① producing", "ko": "분사구문", "why": "적절. 모세포가 두 딸세포를 '만들어 내는' 능동 관계라 현재분사가 맞아요."},
-    {"en": "② was", "ko": "대동사", "why": "적절. as large as the mother cell was (large). 비교 대상의 과거 상태를 나타내는 대동사예요."},
-    {"en": "③ differentiates", "ko": "병렬", "why": "적절. it either prepares … or matures and differentiates — 주어 it에 맞춘 3인칭 단수 현재형 병렬이에요."},
-    {"en": "④ What", "ko": "What → That", "why": "정답(틀림). 뒤 문장이 완전하므로 불완전한 절을 이끄는 What은 쓸 수 없어요. 명사절 접속사 That이 와야 해요."},
-    {"en": "⑤ responsible", "ko": "독립분사구문", "why": "적절. each (being) responsible for ~에서 being이 생략된 형태라 형용사가 와요."}
+    {
+      "en": "① producing",
+      "ko": "분사구문",
+      "why": "적절. 모세포가 두 딸세포를 '만들어 내는' 능동 관계라 현재분사가 맞아요."
+    },
+    {
+      "en": "② was",
+      "ko": "대동사",
+      "why": "적절. as large as the mother cell was (large). 비교 대상의 과거 상태를 나타내는 대동사예요."
+    },
+    {
+      "en": "③ differentiates",
+      "ko": "병렬",
+      "why": "적절. it either prepares … or matures and differentiates — 주어 it에 맞춘 3인칭 단수 현재형 병렬이에요."
+    },
+    {
+      "en": "④ What",
+      "ko": "What → That",
+      "why": "정답(틀림). 뒤 문장이 완전하므로 불완전한 절을 이끄는 What은 쓸 수 없어요. 명사절 접속사 That이 와야 해요."
+    },
+    {
+      "en": "⑤ responsible",
+      "ko": "독립분사구문",
+      "why": "적절. each (being) responsible for ~에서 being이 생략된 형태라 형용사가 와요."
+    }
   ],
   "grammar": [
-    {"t": "What vs That (명사절)", "ex": "That cell metabolism and structure should be complex would not be surprising", "d": "What 뒤에는 주어나 목적어가 빠진 불완전한 절, That 뒤에는 완전한 절이 와요. 이 문항의 정답 포인트예요."},
-    {"t": "분사구문 (결과)", "ex": "its mother cell divides, producing two daughter cells", "d": "', -ing'는 '그 결과 ~하다'. 의미상 주어(mother cell)와 능동 관계라 현재분사예요."},
-    {"t": "as ~ as + 대동사", "ex": "each grows until it becomes as large as the mother cell was", "d": "was 뒤에 large가 생략됐어요. 모세포가 '그때 컸던 만큼'이라 과거형이에요."},
-    {"t": "독립분사구문", "ex": "only a small number of parts, each responsible for a distinct, well-defined aspect of cell life", "d": "each (being) responsible for ~. 주절과 주어가 달라 each를 남긴 형태예요."}
+    {
+      "t": "What vs That (명사절)",
+      "ex": "That cell metabolism and structure should be complex would not be surprising",
+      "d": "What 뒤에는 주어나 목적어가 빠진 불완전한 절, That 뒤에는 완전한 절이 와요. 이 문항의 정답 포인트예요."
+    },
+    {
+      "t": "분사구문 (결과)",
+      "ex": "its mother cell divides, producing two daughter cells",
+      "d": "', -ing'는 '그 결과 ~하다'. 의미상 주어(mother cell)와 능동 관계라 현재분사예요."
+    },
+    {
+      "t": "as ~ as + 대동사",
+      "ex": "each grows until it becomes as large as the mother cell was",
+      "d": "was 뒤에 large가 생략됐어요. 모세포가 '그때 컸던 만큼'이라 과거형이에요."
+    },
+    {
+      "t": "독립분사구문",
+      "ex": "only a small number of parts, each responsible for a distinct, well-defined aspect of cell life",
+      "d": "each (being) responsible for ~. 주절과 주어가 달라 each를 남긴 형태예요."
+    }
   ],
   "vocab": [
-    ["life span", "수명"],
-    ["metabolic", "물질대사의"],
-    ["dramatically", "극적으로"],
-    ["divide", "분열하다"],
-    ["daughter cell", "딸세포"],
-    ["absorb", "흡수하다"],
-    ["nutrient", "영양분"],
-    ["assemble", "조립하다, 모으다"],
-    ["protoplasm", "원형질"],
-    ["mature", "성숙하다"],
-    ["differentiate into", "~으로 분화하다"],
-    ["specialized", "특수화된"],
-    ["dynamic", "역동적인"],
-    ["metabolism", "물질대사"],
-    ["distinct", "뚜렷한, 별개의"],
-    ["well-defined", "명확한"]
+    [
+      "life span",
+      "수명"
+    ],
+    [
+      "metabolic",
+      "물질대사의"
+    ],
+    [
+      "dramatically",
+      "극적으로"
+    ],
+    [
+      "divide",
+      "분열하다"
+    ],
+    [
+      "daughter cell",
+      "딸세포"
+    ],
+    [
+      "absorb",
+      "흡수하다"
+    ],
+    [
+      "nutrient",
+      "영양분"
+    ],
+    [
+      "assemble",
+      "조립하다, 모으다"
+    ],
+    [
+      "protoplasm",
+      "원형질"
+    ],
+    [
+      "mature",
+      "성숙하다"
+    ],
+    [
+      "differentiate into",
+      "~으로 분화하다"
+    ],
+    [
+      "specialized",
+      "특수화된"
+    ],
+    [
+      "dynamic",
+      "역동적인"
+    ],
+    [
+      "metabolism",
+      "물질대사"
+    ],
+    [
+      "distinct",
+      "뚜렷한, 별개의"
+    ],
+    [
+      "well-defined",
+      "명확한"
+    ]
   ],
-  "summary": {"en": "Cells are born, grow, and divide or specialize, and although we might expect them to be complex, their structure is actually simple and logical.", "ko": "세포는 태어나 자라고 분열하거나 분화하며, 복잡하리라 예상되지만 실제 구조는 단순하고 논리적이다."},
-  "writing": {"en": "Even the most complex cell is built from a few simple parts.", "ko": "가장 복잡한 세포도 몇 개의 단순한 부분으로 이루어져 있다."},
+  "summary": {
+    "en": "Cells are born, grow, and divide or specialize, and although we might expect them to be complex, their structure is actually simple and logical.",
+    "ko": "세포는 태어나 자라고 분열하거나 분화하며, 복잡하리라 예상되지만 실제 구조는 단순하고 논리적이다."
+  },
+  "writing": {
+    "en": "Even the most complex cell is built from a few simple parts.",
+    "ko": "가장 복잡한 세포도 몇 개의 단순한 부분으로 이루어져 있다."
+  },
   "tip": "What이 밑줄이면 뒤 문장이 완전한지부터 확인하세요. 주어·목적어·보어가 다 있으면 What은 틀리고 That이 맞아요. 반대로 뭔가 빠져 있으면 What이 맞아요.",
   "faq": [
-    ["2022학년도 수능 영어 29번 정답은?", "④ What이에요. 뒤에 완전한 문장(cell metabolism and structure should be complex)이 오므로 명사절 접속사 That으로 고쳐야 해요."],
-    ["2022 수능 29번은 어떤 유형인가요?", "밑줄 친 부분 중 어법상 틀린 것을 고르는 3점 어법 문항이에요."],
-    ["⑤ responsible은 왜 맞나요?", "each (being) responsible for ~에서 being이 생략된 독립분사구문이라 형용사 responsible이 와요."]
-  ]
+    [
+      "2022학년도 수능 영어 29번 정답은?",
+      "④ What이에요. 뒤에 완전한 문장(cell metabolism and structure should be complex)이 오므로 명사절 접속사 That으로 고쳐야 해요."
+    ],
+    [
+      "2022 수능 29번은 어떤 유형인가요?",
+      "밑줄 친 부분 중 어법상 틀린 것을 고르는 3점 어법 문항이에요."
+    ],
+    [
+      "⑤ responsible은 왜 맞나요?",
+      "each (being) responsible for ~에서 being이 생략된 독립분사구문이라 형용사 responsible이 와요."
+    ]
+  ],
+  "note": "What vs That은 수능 어법에서 몇 년째 반복되는 단골 포인트예요. '뒤 문장이 완전하면 That, 불완전하면 What' 한 줄만 확실히 외워도 3점 어법 한 문항을 가져갈 수 있어요."
 }
