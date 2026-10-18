@@ -103,29 +103,39 @@ function out(o) {
 }
 
 /* ---------- 공개/비공개 맞추기 ---------- */
+// 순서: ① 바로 보기 파일에 공개를 직접 걸고 → ② 폴더를 '제한됨'으로 → ③ 남은 파일 중 공개된 것을 비공개로
+// (폴더에서 물려받은 공개는 파일에서 직접 못 지워서, 폴더를 먼저 막아야 함)
 function applySharing() {
-  const t0 = Date.now(), w = walk(true);
-  let toPub = 0, toPriv = 0, left = 0;
-  // 폴더가 아직 공개면(처음 실행) 공개할 파일은 파일 자체에 공개를 꼭 걸어 둠 (폴더 공개를 물려받은 상태일 수 있어서)
+  const t0 = Date.now(), w = walk(true), late = function () { return Date.now() - t0 > 4.5 * 60e3; };
+  let toPub = 0, toPriv = 0, folders = 0, fail = [], done = true;
   const first = w.folders.some(function (d) { return d.getSharingAccess() !== DriveApp.Access.PRIVATE; });
-  // 1) 파일 먼저: 바로 보기 파일은 공개, 나머지는 비공개
+  // ① 바로 보기 파일은 공개 (처음 실행 때는 폴더 공개를 물려받았을 수 있어서 모두 직접 걸어 둠)
   for (let i = 0; i < w.files.length; i++) {
-    if (Date.now() - t0 > 4.5 * 60e3) { left = w.files.length - i; break; } // 시간 초과 전 멈춤 → 다음 실행에서 이어서
-    const f = w.files[i], want = isPublic(f);
+    if (late()) { done = false; break; }
+    const f = w.files[i];
+    if (!isPublic(f)) continue;
     const acc = f.file.getSharingAccess();
-    if (want && (first || (acc !== DriveApp.Access.ANYONE_WITH_LINK && acc !== DriveApp.Access.ANYONE))) {
-      f.file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW); toPub++;
-    } else if (!want && acc !== DriveApp.Access.PRIVATE) {
-      f.file.setSharing(DriveApp.Access.PRIVATE, DriveApp.Permission.NONE); toPriv++;
+    if (first || (acc !== DriveApp.Access.ANYONE_WITH_LINK && acc !== DriveApp.Access.ANYONE)) {
+      try { f.file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW); toPub++; } catch (e) { fail.push(f.name + '(공개)'); }
     }
   }
-  // 2) 파일을 다 맞춘 뒤 폴더를 '제한됨'으로
-  let folders = 0;
-  if (!left) w.folders.forEach(function (d) {
-    if (d.getSharingAccess() !== DriveApp.Access.PRIVATE) { d.setSharing(DriveApp.Access.PRIVATE, DriveApp.Permission.NONE); folders++; }
+  // ② 폴더를 '제한됨'으로
+  if (done) w.folders.forEach(function (d) {
+    if (d.getSharingAccess() !== DriveApp.Access.PRIVATE) {
+      try { d.setSharing(DriveApp.Access.PRIVATE, DriveApp.Permission.NONE); folders++; } catch (e) { fail.push('폴더 ' + d.getName()); }
+    }
   });
+  // ③ 비공개여야 하는데 아직 공개인 파일
+  if (done) for (let i = 0; i < w.files.length; i++) {
+    if (late()) { done = false; break; }
+    const f = w.files[i];
+    if (isPublic(f) || f.file.getSharingAccess() === DriveApp.Access.PRIVATE) continue;
+    try { f.file.setSharing(DriveApp.Access.PRIVATE, DriveApp.Permission.NONE); toPriv++; } catch (e) { fail.push(f.path.slice(1).join('/') + '/' + f.name); }
+  }
   CacheService.getScriptCache().remove('l2_n');
-  const msg = '파일 ' + w.files.length + '개 확인 · 공개로 ' + toPub + ' · 비공개로 ' + toPriv + ' · 폴더 제한 ' + folders + (left ? ' · 남은 파일 ' + left + '개 (setup 을 한 번 더 실행하세요)' : ' · 완료');
+  const msg = '파일 ' + w.files.length + '개 확인 · 공개로 ' + toPub + ' · 폴더 제한 ' + folders + ' · 비공개로 ' + toPriv +
+    (done ? ' · 완료' : ' · 아직 남았어요 (setup 을 한 번 더 실행하세요)') +
+    (fail.length ? '\n바꾸지 못한 것 ' + fail.length + '개: ' + fail.slice(0, 20).join(', ') : '');
   Logger.log(msg);
   return msg;
 }
