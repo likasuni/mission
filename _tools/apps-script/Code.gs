@@ -45,7 +45,7 @@ function walk(withFolders) {
       folders.push(cur.f);
       const fs = cur.f.getFiles();
       while (fs.hasNext()) {
-        const x = fs.next(), nm = x.getName();
+        const x = fs.next(), nm = x.getName().trim(); // 이름 앞뒤 빈칸 제거 (' 18.pdf' 같은 이름)
         if (/\.pdf$/i.test(nm) && !x.isTrashed()) files.push({ id: x.getId(), name: nm, path: cur.path, file: withFolders ? x : null });
       }
       const ds = cur.f.getFolders();
@@ -58,11 +58,11 @@ function walk(withFolders) {
 // 목록 캐시 (CacheService 는 한 칸 100KB 라 나눠 저장)
 function cachedList(minutes) {
   const c = CacheService.getScriptCache();
-  const n = Number(c.get('list_n') || 0);
+  const n = Number(c.get('l2_n') || 0);
   if (n) {
-    const parts = c.getAll(Array.apply(null, Array(n)).map(function (_, i) { return 'list_' + i; }));
+    const parts = c.getAll(Array.apply(null, Array(n)).map(function (_, i) { return 'l2_' + i; }));
     let s = '';
-    for (let i = 0; i < n; i++) { if (!parts['list_' + i]) { s = ''; break; } s += parts['list_' + i]; }
+    for (let i = 0; i < n; i++) { if (!parts['l2_' + i]) { s = ''; break; } s += parts['l2_' + i]; }
     if (s) return JSON.parse(s);
   }
   const list = walk(false).map(function (f) {
@@ -71,8 +71,8 @@ function cachedList(minutes) {
   });
   const s = JSON.stringify(list), size = 90000, put = {};
   const cnt = Math.ceil(s.length / size);
-  for (let i = 0; i < cnt; i++) put['list_' + i] = s.slice(i * size, (i + 1) * size);
-  put.list_n = String(cnt);
+  for (let i = 0; i < cnt; i++) put['l2_' + i] = s.slice(i * size, (i + 1) * size);
+  put.l2_n = String(cnt);
   c.putAll(put, (minutes || 5) * 60);
   return list;
 }
@@ -124,7 +124,7 @@ function applySharing() {
   if (!left) w.folders.forEach(function (d) {
     if (d.getSharingAccess() !== DriveApp.Access.PRIVATE) { d.setSharing(DriveApp.Access.PRIVATE, DriveApp.Permission.NONE); folders++; }
   });
-  CacheService.getScriptCache().remove('list_n');
+  CacheService.getScriptCache().remove('l2_n');
   const msg = '파일 ' + w.files.length + '개 확인 · 공개로 ' + toPub + ' · 비공개로 ' + toPriv + ' · 폴더 제한 ' + folders + (left ? ' · 남은 파일 ' + left + '개 (setup 을 한 번 더 실행하세요)' : ' · 완료');
   Logger.log(msg);
   return msg;
