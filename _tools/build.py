@@ -590,12 +590,22 @@ def en_table(g):
         mark = lambda ok, t: f'<span class="ok">{t}</span>' if ok else '<span class="no">–</span>'
         rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{e(s_name(k))}</a></td>'
                  f'<td>{mark(nn, f"{nn}문항")}</td><td>{mark(vv, f"{vv}문항")}</td><td>{mark(k in WORDS, "✓")}</td></tr>')
-    return (f'<div class="card"><h2>고{g} 영어 모의고사</h2><table class="en-t"><thead><tr><th>회차</th><th>분석노트</th><th>변형문제</th><th>단어</th></tr></thead>'
+    return (f'<div class="card g-panel" id="go{g}" data-g="{g}"><h2>고{g} 영어 모의고사</h2><table class="en-t"><thead><tr><th>회차</th><th>분석노트</th><th>변형문제</th><th>단어</th></tr></thead>'
             f'<tbody>{rows}</tbody></table></div>')
 enbody = ('''<h1 class="page-h1">영어 모의고사 분석노트·변형문제·단어</h1>
 <p class="lead">회차를 누르면 문항별 분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
 <b>30~40번 분석노트는 최근 업데이트 자료</b>라 카카오톡 요청으로 받을 수 있어요.</p>'''
-          + en_table(1) + ad() + en_table(2) + en_table(3) + ad())
+          # 고1·고2·고3 탭: 누른 학년 표만 보임 (JS 없으면 세 표 모두 보임), 고른 학년은 주소(#go2)와 브라우저에 기억
+          + '<div class="g-tabs" role="tablist">' + ''.join(
+              f'<button type="button" class="g-tab" role="tab" data-g="{g}">고{g}<small>{sum(1 for k in en_sess if k[1] == g)}회차</small></button>'
+              for g in (1, 2, 3) if any(k[1] == g for k in en_sess)) + '</div>'
+          + en_table(1) + en_table(2) + en_table(3) + ad()
+          + '''<script>(function(){var t=document.querySelectorAll('.g-tab'),p=document.querySelectorAll('.g-panel');
+function show(g){t.forEach(function(b){var on=b.dataset.g==g;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});
+p.forEach(function(x){x.hidden=x.dataset.g!=g});try{localStorage.setItem('enGrade',g)}catch(e){}}
+t.forEach(function(b){b.onclick=function(){show(b.dataset.g);history.replaceState(null,'','#go'+b.dataset.g)}});
+var h=(location.hash.match(/go([123])/)||[])[1],s=null;try{s=localStorage.getItem('enGrade')}catch(e){}
+show(h||s||'1')})();</script>''')
 page('/english/', '영어 모의고사 분석노트·변형문제·단어 PDF | 리카수니 자료실',
      '고1·고2·고3 영어 모의고사 회차별 문항 분석노트, 변형문제, 영어 단어 총정리 PDF 무료. 리카수니 원장 직접 제작.', enbody,
      [('/', '홈'), ('/english/', '영어 모의고사')], '/english/')

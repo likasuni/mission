@@ -324,6 +324,10 @@ a.nb:hover { filter: brightness(1.12); }
 .en-t th, .en-t td { padding: 9px 8px; border-bottom: 1px solid var(--line); text-align: center; }
 .en-t th:first-child, .en-t td:first-child { text-align: left; }
 .en-t .ok { color: #15803d; font-weight: 700; } .en-t .no { color: #c0c6d4; }
+.g-tabs { position: sticky; top: 0; z-index: 5; display: flex; gap: 8px; margin: 0 0 12px; padding: 8px 0; background: var(--bg, #f5f7fb); }
+.g-tab { flex: 1; padding: 11px 0; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--navy); font: inherit; font-weight: 800; font-size: 1.02rem; cursor: pointer; }
+.g-tab small { margin-left: 6px; font-weight: 600; font-size: .78rem; opacity: .7; }
+.g-tab.on { background: var(--navy); border-color: var(--navy); color: #fff; }
 .bw { margin: 0 0 14px; padding: 12px; border-radius: 10px; background: #f0fdf4; border: 1px solid #bbf7d0; }
 .bw .chips { margin-top: 8px; }
 
