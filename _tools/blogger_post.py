@@ -9,7 +9,7 @@
 
 환경변수(GitHub Secrets): BLOGGER_CLIENT_ID, BLOGGER_CLIENT_SECRET, BLOGGER_REFRESH_TOKEN, BLOGGER_BLOG_ID
 """
-import json, os, sys, html, datetime, collections, urllib.request, urllib.parse
+import json, os, sys, html, datetime, collections, urllib.request, urllib.parse, urllib.error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://data.likasuni.com'
@@ -92,17 +92,27 @@ def by_exam(ps, day):
     return g
 
 
+def env(k): return os.environ.get(k, '').strip()  # Secrets 붙여 넣을 때 딸려 온 빈칸·줄바꿈 제거
+
+
+def call(req, data=None):  # 실패하면 구글이 돌려준 오류 이유(비밀값 없음)를 함께 보여 줌
+    try:
+        return json.load(urllib.request.urlopen(req, data))
+    except urllib.error.HTTPError as x:
+        sys.exit(f'blogger: 오류 {x.code} — {x.read().decode(errors="replace")[:500]}')
+
+
 def access_token():
-    d = urllib.parse.urlencode({'client_id': os.environ['BLOGGER_CLIENT_ID'], 'client_secret': os.environ['BLOGGER_CLIENT_SECRET'],
-                                'refresh_token': os.environ['BLOGGER_REFRESH_TOKEN'], 'grant_type': 'refresh_token'}).encode()
-    return json.load(urllib.request.urlopen('https://oauth2.googleapis.com/token', d))['access_token']
+    d = urllib.parse.urlencode({'client_id': env('BLOGGER_CLIENT_ID'), 'client_secret': env('BLOGGER_CLIENT_SECRET'),
+                                'refresh_token': env('BLOGGER_REFRESH_TOKEN'), 'grant_type': 'refresh_token'}).encode()
+    return call('https://oauth2.googleapis.com/token', d)['access_token']
 
 
 def publish(tok, title, content, labels, draft=False):
     body = json.dumps({'kind': 'blogger#post', 'title': title, 'content': content, 'labels': labels}).encode()
-    req = urllib.request.Request(f"https://www.googleapis.com/blogger/v3/blogs/{os.environ['BLOGGER_BLOG_ID']}/posts/" + ('?isDraft=true' if draft else ''),
+    req = urllib.request.Request(f"https://www.googleapis.com/blogger/v3/blogs/{env('BLOGGER_BLOG_ID')}/posts/" + ('?isDraft=true' if draft else ''),
                                  body, {'Authorization': f'Bearer {tok}', 'Content-Type': 'application/json'})
-    return json.load(urllib.request.urlopen(req))
+    return call(req)
 
 
 def main():
@@ -121,7 +131,7 @@ def main():
         open(out, 'w').write(f'<!DOCTYPE html><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
                              f'<body style="max-width:760px;margin:24px auto;padding:0 16px;font-family:sans-serif;">{page}</body>')
         print('preview', out); return
-    if not all(os.environ.get(k) for k in ('BLOGGER_CLIENT_ID', 'BLOGGER_CLIENT_SECRET', 'BLOGGER_REFRESH_TOKEN', 'BLOGGER_BLOG_ID')):
+    if not all(env(k) for k in ('BLOGGER_CLIENT_ID', 'BLOGGER_CLIENT_SECRET', 'BLOGGER_REFRESH_TOKEN', 'BLOGGER_BLOG_ID')):
         print('blogger: 연결 정보(Secrets) 없음 — 건너뜀'); return
     log = json.load(open(LOG)) if os.path.exists(LOG) else {}
     tok = None
