@@ -16,11 +16,23 @@ Deno.serve(async (req) => {
   if (!o || o.status !== 'sent' || !o.drive_id) return page(404, 'notfound');
   if (Date.now() > new Date(o.expires_at).getTime()) return page(410, 'expired');
 
-  const g = await fetch(`https://drive.usercontent.google.com/download?id=${encodeURIComponent(o.drive_id)}&export=download&confirm=t`);
-  const type = g.headers.get('content-type') || '';
-  if (!g.ok || type.includes('text/html')) { console.log('drive fetch failed', g.status, type); return page(502, 'fail'); }
+  // 분석노트 폴더는 비공개 → 원장님 계정의 Apps Script로 파일을 받아 옴 (설정 전이면 공개 다운로드)
+  const { data: g } = await db.from('private_config').select('k,v').in('k', ['gas_url', 'gas_key']);
+  const url = g?.find((x: any) => x.k === 'gas_url')?.v, key = g?.find((x: any) => x.k === 'gas_key')?.v;
+  let body: BodyInit | null = null;
+  if (url && key) {
+    const j = await (await fetch(`${url}?action=get&id=${encodeURIComponent(o.drive_id)}&key=${encodeURIComponent(key)}`)).json().catch(() => null);
+    if (j?.b64) body = Uint8Array.from(atob(j.b64), (c) => c.charCodeAt(0));
+    else console.log('gas get failed', j?.error);
+  }
+  if (!body) {
+    const r = await fetch(`https://drive.usercontent.google.com/download?id=${encodeURIComponent(o.drive_id)}&export=download&confirm=t`);
+    const type = r.headers.get('content-type') || '';
+    if (!r.ok || type.includes('text/html')) { console.log('drive fetch failed', r.status, type); return page(502, 'fail'); }
+    body = r.body;
+  }
   const name = `${o.label}.pdf`;
-  return new Response(g.body, {
+  return new Response(body, {
     headers: {
       'Content-Type': 'application/pdf',
       'Content-Disposition': `inline; filename="note.pdf"; filename*=UTF-8''${encodeURIComponent(name)}`,

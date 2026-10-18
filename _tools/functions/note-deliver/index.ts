@@ -21,8 +21,21 @@ async function listFolder(id: string) {
   while ((m = re.exec(html))) out.push({ id: m[1], name: unescape(m[3]).trim(), folder: m[2].includes('/folders/') });
   return out;
 }
-async function listTree(root: string): Promise<Entry[]> {
+// 분석노트 폴더는 비공개 → 원장님 계정의 Apps Script(gas_url, 비밀키 gas_key)로 목록을 받음. 설정 전이면 공개 폴더 방식
+async function listTree(root: string, db?: any): Promise<Entry[]> {
   if (cache && cache.root === root && Date.now() - cache.at < 5 * 60e3) return cache.files;
+  if (db) {
+    const { data: g } = await db.from('private_config').select('k,v').in('k', ['gas_url', 'gas_key']);
+    const url = g?.find((x: any) => x.k === 'gas_url')?.v, key = g?.find((x: any) => x.k === 'gas_key')?.v;
+    if (url && key) {
+      const j = await (await fetch(`${url}?action=list&key=${encodeURIComponent(key)}`)).json().catch(() => null);
+      if (j?.files) { // 맨 앞 폴더 이름(모의고사 분석노트/부교재 분석노트)은 빼서 예전 목록과 같은 모양으로
+        const files = j.files.map((f: any) => ({ id: f.id, name: f.name, path: f.path.slice(1) }));
+        cache = { at: Date.now(), root, files }; return files;
+      }
+      console.log('gas list fail');
+    }
+  }
   const files: Entry[] = [];
   const queue = root.split(',').map((x) => x.trim()).filter(Boolean).map((id) => ({ id, path: [] as string[] }));
   let seen = 0;
@@ -105,7 +118,7 @@ Deno.serve(async (req) => {
   const dayStart = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate()) - 9 * 3600e3).toISOString();
   const { data: cfg } = await db.from('private_config').select('v').eq('k', 'notes_root').maybeSingle();
   if (!cfg?.v) return Response.json({ ok: false, reason: 'notes_root' });
-  const all = await listTree(cfg.v);
+  const all = await listTree(cfg.v, db);
 
   // 회원별로 묶기 (요청 순서 유지, 같은 자료는 하나로)
   const byUser = new Map<string, any[]>();

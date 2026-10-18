@@ -1,5 +1,5 @@
 // 분석노트 요청: 카카오 로그인 회원, 하루 모의고사 2개 · 부교재 1개 (한국 시간 기준)
-// 공개 구글드라이브 분석노트 폴더에서 파일을 찾아 24시간짜리 링크를 만들고 카카오톡 '나에게 보내기'로 전송
+// 구글드라이브 분석노트 폴더에서 파일을 찾아 24시간짜리 링크를 만들고 카카오톡 '나에게 보내기'로 전송
 // 파일이 없으면 'missing'으로 기록 → 관리자 페이지에 알림
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
@@ -34,8 +34,21 @@ async function listFolder(id: string) {
   while ((m = re.exec(html))) out.push({ id: m[1], name: unescape(m[3]).trim(), folder: m[2].includes('/folders/') });
   return out;
 }
-async function listTree(root: string): Promise<Entry[]> {
+// 분석노트 폴더는 비공개 → 원장님 계정의 Apps Script(gas_url, 비밀키 gas_key)로 목록을 받음. 설정 전이면 공개 폴더 방식
+async function listTree(root: string, db?: any): Promise<Entry[]> {
   if (cache && cache.root === root && Date.now() - cache.at < 5 * 60e3) return cache.files;
+  if (db) {
+    const { data: g } = await db.from('private_config').select('k,v').in('k', ['gas_url', 'gas_key']);
+    const url = g?.find((x: any) => x.k === 'gas_url')?.v, key = g?.find((x: any) => x.k === 'gas_key')?.v;
+    if (url && key) {
+      const j = await (await fetch(`${url}?action=list&key=${encodeURIComponent(key)}`)).json().catch(() => null);
+      if (j?.files) { // 맨 앞 폴더 이름(모의고사 분석노트/부교재 분석노트)은 빼서 예전 목록과 같은 모양으로
+        const files = j.files.map((f: any) => ({ id: f.id, name: f.name, path: f.path.slice(1) }));
+        cache = { at: Date.now(), root, files }; return files;
+      }
+      console.log('gas list fail');
+    }
+  }
   const files: Entry[] = [];
   const queue = root.split(',').map((x) => x.trim()).filter(Boolean).map((id) => ({ id, path: [] as string[] }));
   let seen = 0;
@@ -137,7 +150,7 @@ Deno.serve(async (req) => {
     const today = await todayCounts(db, user.id);
     const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
     if (!cfg?.v || !waits?.length) return reply(req, 200, { ready, today, limit: LIMIT });
-    const all = await listTree(cfg.v);
+    const all = await listTree(cfg.v, db);
     for (const w of waits) {
       if (seen.has(w.label)) continue; seen.add(w.label);
       const spec = makeSpec({ kind: w.kind, ...(w.query || {}) });
@@ -156,10 +169,10 @@ Deno.serve(async (req) => {
   const today = await todayCounts(db, user.id);
   if (today[b.kind] >= LIMIT[b.kind]) return reply(req, 429, { error: `${LIMIT_MSG[b.kind]}까지 받을 수 있어요. 내일 다시 요청해 주세요.` });
 
-  // 공개 드라이브 폴더(분석노트 폴더)에서 찾기
+  // 분석노트 폴더에서 찾기
   const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
   if (!cfg?.v) return reply(req, 503, { error: '자료 연결 준비 중이에요. 잠시 후 다시 시도해 주세요.' });
-  const all = await listTree(cfg.v);
+  const all = await listTree(cfg.v, db);
   const files = findFiles(all, spec);
 
   if (!files.length) {
