@@ -1,0 +1,60 @@
+{
+  "exam": "sn-2022",
+  "n": 34,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 2,
+  "topic": "과학은 정밀함을 좁혀 가고, 역사는 관점을 넓혀 간다",
+  "date": "2026-10-18",
+  "keywords": ["2022 수능 영어 34번", "2022학년도 수능 34번 해설", "2022 수능 34번 정답", "수능 영어 빈칸 추론", "historical representation 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 34번은 과학과 역사의 발전 방식을 대조한 3점 빈칸 추론 문항이에요. 과학은 정밀함을 쌓아 가지만, 역사는 이전의 '확실하다는 착각'을 계속 깨뜨려요. 정답은 ② certainty and precision seemingly achieved already예요.",
+  "flow": [
+    ["과학", "정밀함과 확정성은 과학 논쟁의 필수 조건이고, 과학의 진보는 더 큰 정밀함을 얻어 가는 과정이다."],
+    ["역사", "역사적 재현은 하나를 다듬는 것보다 더 다양한 재현을 만들어 내는 것을 중시한다."],
+    ["대조", "역사적 통찰은 선택지를 좁히는 것이 아니라 가능한 관점들의 '폭발'이다."],
+    ["목표", "새로운 재현을 만들어 이전의 확정성·정밀함이라는 착각을 벗겨 내는 것을 목표로 한다."],
+    ["결론", "그래서 외부인에게 역사는 혼란을 키우고 이미 얻은 듯한 확실성을 계속 의심하는 과정으로 보인다. (빈칸)"]
+  ],
+  "evidence": [
+    {"en": "It therefore aims at the unmasking of previous illusions of determinacy and precision by the production of new and alternative representations …", "ko": "그러므로 그것은 새롭고 대안적인 재현을 만들어 냄으로써 이전의 확정성과 정밀함이라는 착각을 벗겨 내는 것을 목표로 한다 …", "note": "illusions of determinacy and precision(확정성·정밀함의 착각) = ② certainty and precision seemingly achieved already. seemingly(겉보기에)가 illusion을 그대로 옮긴 말이에요."},
+    {"en": "Historical insight is not a matter of a continuous \"narrowing down\" of previous options …, but … is an \"explosion\" of possible points of view.", "ko": "역사적 통찰은 이전 선택지를 계속 '좁혀 가는' 문제가 아니라 … 가능한 관점들의 '폭발'이다.", "note": "역사는 결론을 확정하지 않고 계속 열어 둬요. 그러니 '이미 확정된 것'을 의심(questioning)하는 게 자연스러워요."},
+    {"en": "… a continuous questioning of ______, rather than, as in the sciences, an ever greater approximation to the truth.", "ko": "… 과학에서처럼 진리에 점점 더 가까이 다가가는 것이 아니라, ______에 대한 계속적인 의문 제기", "note": "rather than 뒤의 과학(정밀함을 쌓음)과 반대여야 해요. 역사는 쌓인 정밀함을 '의심'하는 쪽이에요."}
+  ],
+  "choices": [
+    {"en": "criteria for evaluating historical representations", "ko": "역사적 재현을 평가하는 기준", "why": "글은 재현을 평가하는 기준을 다루지 않아요. 평가는 오히려 과학식 '옳고 그름 분석'에 가까워요."},
+    {"en": "certainty and precision seemingly achieved already", "ko": "이미 달성된 것처럼 보이는 확실성과 정밀함", "why": "정답. 역사는 이전 재현의 '확정성·정밀함이라는 착각'을 벗겨 내므로, 이미 얻은 듯한 확실성을 계속 의심해요."},
+    {"en": "possibilities of alternative interpretations of an event", "ko": "사건에 대한 대안적 해석의 가능성", "why": "역사는 대안적 해석을 '만들어 내는' 쪽이에요. 그 가능성을 의심한다는 건 글과 반대예요."},
+    {"en": "coexistence of multiple viewpoints in historical writing", "ko": "역사 서술에서 여러 관점의 공존", "why": "관점의 '폭발'이 역사의 본질이에요. 여러 관점의 공존을 의심할 이유가 없어요. 반대 방향 함정이에요."},
+    {"en": "correctness and reliability of historical evidence collected", "ko": "수집된 역사적 증거의 정확성과 신뢰성", "why": "글은 증거가 아니라 '재현(representation)'을 다뤄요. 증거의 신뢰성은 나오지 않아요."}
+  ],
+  "grammar": [
+    {"t": "put a premium on", "ex": "historical representation puts a premium on a proliferation of representations", "d": "'~을 중시하다, ~에 높은 가치를 두다'. 역사가 무엇을 중시하는지 찾는 열쇠 표현이에요."},
+    {"t": "not A but B / hence", "ex": "hence not on the refinement of one representation but on the production of an ever more varied set of representations", "d": "hence는 '그러므로'. not on A but on B로 '하나를 다듬기'가 아니라 '더 다양한 재현 만들기'를 중시한다는 대조예요."},
+    {"t": "aim at A rather than at B", "ex": "It … aims at the unmasking of previous illusions … rather than at achieving truth by a careful analysis …", "d": "'B보다는 A를 목표로 한다'. at the unmasking과 at achieving이 rather than으로 짝을 이뤄요."},
+    {"t": "be regarded as", "ex": "the development of historical insight may indeed be regarded by the outsider as a process of creating ever more confusion", "d": "regard A as B의 수동태. by the outsider가 중간에 끼어 있어 as를 놓치지 않게 주의하세요."}
+  ],
+  "vocab": [
+    ["precision", "정밀함"],
+    ["determinacy", "확정성"],
+    ["representation", "재현, 표현"],
+    ["put a premium on", "~을 중시하다"],
+    ["proliferation", "증식, 급증"],
+    ["refinement", "개선, 정제"],
+    ["insight", "통찰"],
+    ["narrow down", "좁히다"],
+    ["approximation", "근사, 접근"],
+    ["unmask", "가면을 벗기다, 폭로하다"],
+    ["illusion", "착각, 환상"],
+    ["alternative", "대안적인"],
+    ["outsider", "외부인"],
+    ["seemingly", "겉보기에, 외견상 — 정답 핵심어"]
+  ],
+  "summary": {"en": "Unlike science, which narrows toward precise truth, history advances by multiplying perspectives and questioning the certainty that earlier accounts seemed to have.", "ko": "정밀한 진리로 좁혀 가는 과학과 달리, 역사는 관점을 늘리고 이전 서술이 가진 듯 보였던 확실성을 의심하며 발전한다."},
+  "writing": {"en": "History grows by questioning what once seemed certain.", "ko": "역사는 한때 확실해 보였던 것을 의심하며 성장한다."},
+  "tip": "과학 vs 역사 대조 지문이에요. 빈칸 문장의 rather than 뒤가 과학이면 빈칸 쪽은 역사예요. 역사의 목표 문장(unmasking of previous illusions of determinacy and precision)을 그대로 바꿔 쓴 선택지를 찾으세요. ③·④처럼 역사가 '좋아하는 것'을 의심 대상으로 넣은 선택지는 방향이 반대예요.",
+  "faq": [
+    ["2022학년도 수능 영어 34번 정답은?", "② certainty and precision seemingly achieved already(이미 달성된 것처럼 보이는 확실성과 정밀함)예요. 역사는 이전 재현의 확정성·정밀함이라는 착각을 계속 의심한다는 내용이에요."],
+    ["2022 수능 34번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 과학과 역사의 발전 방식을 대조한 지문이에요."],
+    ["④ coexistence of multiple viewpoints가 오답인 이유는?", "여러 관점의 '폭발'은 역사가 추구하는 것이에요. 빈칸은 역사가 의심하는 대상이라 반대 방향이에요."]
+  ]
+}

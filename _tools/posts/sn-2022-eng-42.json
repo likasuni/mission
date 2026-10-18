@@ -1,0 +1,59 @@
+{
+  "exam": "sn-2022",
+  "n": 42,
+  "type": "어휘",
+  "points": 2,
+  "answer": 3,
+  "topic": "이미 익숙해진 분류는 너무 '자연스러워서' 분류로 느껴지지 않는다",
+  "date": "2026-10-18",
+  "keywords": ["2022 수능 영어 42번", "2022학년도 수능 42번 해설", "2022 수능 42번 정답", "수능 영어 장문 어휘", "classification language supermarket 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 42번은 41번과 같은 '언어 속 분류' 지문에서 문맥상 어색한 낱말을 고르는 장문 어휘 문항이에요. 단어를 이미 익혔기 때문에 그 묶음이 분류로 안 느껴진다는 건 '추상적'이 아니라 '자연스러워서'예요. 정답은 ③ (c) abstract예요.",
+  "flow": [
+    ["(a)", "무작위로 진열된 슈퍼마켓에서 물건 찾기는 시간이 많이 걸리고(time-consuming) 매우 어렵다."],
+    ["(b)", "슈퍼마켓은 누군가 분류 체계를 설계해야(design) 했다."],
+    ["(c)", "'dog' 같은 묶음은 너무 abstract해서 분류로 안 보인다 → 단어를 이미 익혔기 때문이니 natural(자연스러운)이어야 한다."],
+    ["(d)", "아이는 부모가 가르치는 분류 체계를 배우려고(learn) 애썼다."],
+    ["(e)", "말을 배우지 않았다면 세상은 정리되지 않은(unorganized) 슈퍼마켓처럼 보였을 것이다."]
+  ],
+  "evidence": [
+    {"en": "Such a grouping may seem too (c) abstract to be called a classification, but this is only because you have already mastered the word.", "ko": "그런 묶음은 너무 (c) 추상적이어서 분류라고 부를 수 없을 것처럼 보일지 모르지만, 그건 단지 당신이 그 단어를 이미 완전히 익혔기 때문이다.", "note": "이미 익힌 것은 '추상적'이 아니라 '당연하고 자연스럽게' 느껴져요. abstract → natural(또는 obvious)로 바꿔야 해요."},
+    {"en": "As a child learning to speak, you had to work hard to (d) learn the system of classification …", "ko": "말을 배우는 아이였을 때, 당신은 … 분류 체계를 (d) 배우려고 열심히 노력해야 했다.", "note": "지금은 자연스럽지만 어릴 때는 애써 배웠다는 대조예요. (c)가 '자연스럽다'여야 이 대조가 살아요."},
+    {"en": "If you hadn't learned to speak, the whole world would seem like the (e) unorganized supermarket …", "ko": "말을 배우지 않았다면 온 세상이 (e) 정리되지 않은 슈퍼마켓처럼 보였을 것이다 …", "note": "첫 단락의 '무작위로 진열된 슈퍼마켓'을 가리켜요. unorganized는 적절해요."}
+  ],
+  "choices": [
+    {"en": "(a) time-consuming", "ko": "시간이 많이 걸리는", "why": "적절. 물건이 무작위로 놓여 있으면 찾는 데 시간이 오래 걸려요. extremely difficult와도 자연스럽게 이어져요."},
+    {"en": "(b) design", "ko": "설계하다", "why": "적절. 슈퍼마켓의 분류는 누군가 '만들어야' 했고, 뒤의 언어 속 ready-made(이미 만들어진) 체계와 대조돼요."},
+    {"en": "(c) abstract", "ko": "추상적인", "why": "정답(부적절). 단어를 이미 익혀서 분류로 안 느껴지는 건 그 묶음이 너무 '자연스럽기(natural)' 때문이에요."},
+    {"en": "(d) learn", "ko": "배우다", "why": "적절. 부모가 가르치려던(trying to teach) 체계를 아이가 배우려고 애쓴 거예요."},
+    {"en": "(e) unorganized", "ko": "정리되지 않은", "why": "적절. 언어(분류 체계)가 없다면 세상은 첫 단락의 뒤죽박죽 슈퍼마켓 같을 거예요."}
+  ],
+  "grammar": [
+    {"t": "too ~ to V", "ex": "Such a grouping may seem too natural to be called a classification", "d": "'너무 ~해서 …될 수 없다'. to be called는 수동형 to부정사예요. 정답 (c) 자리의 문장이에요."},
+    {"t": "this is only because ~", "ex": "but this is only because you have already mastered the word", "d": "'그건 단지 ~ 때문이다'. 앞 문장(분류로 안 보임)의 이유를 밝혀 (c)를 판단하는 근거가 돼요."},
+    {"t": "명사 + 수식어(현재분사)", "ex": "As a child learning to speak, you had to work hard to learn …", "d": "learning to speak가 child를 꾸며요. '말을 배우는 아이로서'. to learn은 목적의 to부정사예요."},
+    {"t": "전치사 + 관계대명사 (계속적 용법)", "ex": "you would be in the position of an infant, for whom every object is new and unfamiliar", "d": "for whom = and for the infant. '그 유아에게는 모든 사물이 새롭고 낯설다'."}
+  ],
+  "vocab": [
+    ["time-consuming", "시간이 많이 걸리는"],
+    ["arrange", "배열하다"],
+    ["random", "무작위의"],
+    ["design", "설계하다"],
+    ["embody", "구현하다"],
+    ["grouping", "묶음, 분류"],
+    ["abstract", "추상적인 ↔ 정답 자리에 와야 할 말: natural"],
+    ["natural", "자연스러운"],
+    ["master", "완전히 익히다"],
+    ["get the hang of", "~의 요령을 터득하다"],
+    ["unorganized", "정리되지 않은"],
+    ["unfamiliar", "낯선"],
+    ["core", "핵심"]
+  ],
+  "summary": {"en": "Classifications built into words feel natural only because we have mastered them; without language, the world would seem like a disorganized supermarket.", "ko": "단어에 담긴 분류가 자연스럽게 느껴지는 것은 우리가 이미 익혔기 때문일 뿐이며, 언어가 없다면 세상은 뒤죽박죽인 슈퍼마켓처럼 보일 것이다."},
+  "writing": {"en": "What feels natural to us was once something we had to learn.", "ko": "우리에게 자연스럽게 느껴지는 것도 한때는 애써 배워야 했던 것이다."},
+  "tip": "어휘 문제는 밑줄 단어 바로 뒤의 '이유·대조' 표현을 보세요. (c) 뒤 this is only because you have already mastered the word는 '익숙해서 그렇게 느낀다'는 뜻이라, 익숙함과 어울리는 natural이 와야 해요. abstract는 익숙함과 반대 느낌이에요.",
+  "faq": [
+    ["2022학년도 수능 영어 42번 정답은?", "③ (c) abstract예요. 단어를 이미 익혔기 때문에 분류로 안 느껴진다는 문맥이라 natural(자연스러운)이 와야 해요."],
+    ["2022 수능 42번은 어떤 유형인가요?", "41~42번 장문 독해 세트 중 문맥상 낱말의 쓰임이 적절하지 않은 것을 고르는 2점 어휘 문항이에요."],
+    ["(c) 자리에 원래 들어갈 말은?", "natural(자연스러운)이에요. 'dog'라는 묶음이 너무 자연스러워서 분류라고 부르기 어색하게 느껴지는 것은 단어를 이미 익혔기 때문이라는 흐름이에요."]
+  ]
+}

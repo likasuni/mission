@@ -1,0 +1,61 @@
+{
+  "exam": "sn-2022",
+  "n": 41,
+  "type": "제목",
+  "points": 2,
+  "answer": 2,
+  "topic": "분류는 언어에 본래 내재된 특성이다",
+  "date": "2026-10-18",
+  "keywords": ["2022 수능 영어 41번", "2022학년도 수능 41번 해설", "2022 수능 41번 정답", "수능 영어 장문 제목", "classification language supermarket 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 41번은 슈퍼마켓 비유로 '분류'가 언어의 핵심 구조임을 설명한 장문의 제목 문항이에요. 마지막 문장 the structure that lies at the core of our language가 결정적 단서예요. 정답은 ② Classification: An Inherent Characteristic of Language예요.",
+  "flow": [
+    ["도입", "우리는 늘 사물을 분류한다. 음식이 무작위로 놓인 슈퍼마켓을 상상하면 이유를 알 수 있다."],
+    ["비유", "슈퍼마켓의 분류 체계는 누군가 설계해야 했다."],
+    ["전환", "그런데 언어에는 이미 만들어진 분류 체계가 들어 있다. 'dog'라는 단어도 동물을 묶고 구별한다."],
+    ["경험", "아이는 부모가 가르치는 분류 체계를 열심히 배워야 했고, 고양이를 개라고 부르는 실수도 했다."],
+    ["결론", "분류의 원리를 배우는 것은 언어의 핵심 구조를 배우는 것이다."]
+  ],
+  "evidence": [
+    {"en": "But there is also a ready-made system of classification embodied in our language.", "ko": "그러나 우리 언어에도 이미 만들어진 분류 체계가 구현되어 있다.", "note": "슈퍼마켓 이야기는 도입 비유예요. But 이후 진짜 주제인 '언어 속 분류'가 나와요."},
+    {"en": "If you hadn't learned to speak, the whole world would seem like the unorganized supermarket …", "ko": "만약 말하는 법을 배우지 않았다면, 온 세상이 정리되지 않은 슈퍼마켓처럼 보였을 것이다 …", "note": "언어 = 세상을 정리해 주는 분류 체계라는 뜻이에요. 비유와 주제가 여기서 하나로 합쳐져요."},
+    {"en": "In learning the principles of classification, therefore, we'll be learning about the structure that lies at the core of our language.", "ko": "그러므로 분류의 원리를 배우면서 우리는 언어의 핵심에 놓인 구조에 대해 배우게 될 것이다.", "note": "therefore로 결론을 내려요. at the core of our language(언어의 핵심) = ②의 Inherent Characteristic of Language(언어의 본질적 특성)."}
+  ],
+  "choices": [
+    {"en": "Similarities of Strategies in Sales and Language Learning", "ko": "판매와 언어 학습 전략의 유사성", "why": "슈퍼마켓은 분류를 설명하기 위한 비유일 뿐이에요. 판매 전략은 글의 주제가 아니에요."},
+    {"en": "Classification: An Inherent Characteristic of Language", "ko": "분류: 언어의 본질적 특성", "why": "정답. 언어에 분류 체계가 이미 들어 있고, 분류 원리는 언어의 핵심 구조라는 결론과 정확히 맞아요."},
+    {"en": "Exploring Linguistic Issues Through Categorization", "ko": "범주화를 통한 언어학적 문제 탐구", "why": "글은 분류로 언어 '문제'를 탐구하지 않아요. 분류 자체가 언어의 특성이라는 거예요. 방향이 뒤집힌 함정이에요."},
+    {"en": "Is a Ready-Made Classification System Truly Better?", "ko": "이미 만들어진 분류 체계가 정말 더 나은가?", "why": "ready-made는 본문 표현이지만, 글은 어느 체계가 더 나은지 비교하지 않아요."},
+    {"en": "Dilemmas of Using Classification in Language Education", "ko": "언어 교육에서 분류를 사용하는 딜레마", "why": "언어 교육 방법이나 딜레마(어려운 선택)는 글에 나오지 않아요."}
+  ],
+  "grammar": [
+    {"t": "it isn't hard to see why", "ex": "Classifying things together into groups is something we do all the time, and it isn't hard to see why.", "d": "가주어 it, 진주어 to see why. why 뒤에 (we do so)가 생략됐어요. '왜 그런지 알기 어렵지 않다'."},
+    {"t": "if not ~ (양보)", "ex": "The task … would be time-consuming and extremely difficult, if not impossible.", "d": "'불가능하지는 않더라도'. 앞말보다 한 단계 센 표현을 덧붙여요."},
+    {"t": "too ~ to V", "ex": "Such a grouping may seem too natural to be called a classification", "d": "'너무 ~해서 …할 수 없다'. 42번 (c) 자리예요. 원래 낱말은 natural(자연스러운)이에요."},
+    {"t": "가정법 과거완료 혼합", "ex": "If you hadn't learned to speak, the whole world would seem like the unorganized supermarket", "d": "if절은 과거(had p.p.), 주절은 현재(would + 동사원형). '과거에 ~하지 않았다면 지금 ~할 것이다'."}
+  ],
+  "vocab": [
+    ["classify", "분류하다"],
+    ["random", "무작위의"],
+    ["aisle", "통로"],
+    ["time-consuming", "시간이 많이 걸리는"],
+    ["if not", "~은 아니더라도"],
+    ["classification", "분류"],
+    ["ready-made", "이미 만들어진"],
+    ["embody", "구현하다, 담다"],
+    ["distinguish", "구별하다"],
+    ["master", "완전히 익히다"],
+    ["get the hang of", "~의 요령을 터득하다"],
+    ["infant", "유아"],
+    ["principle", "원리"],
+    ["core", "핵심"],
+    ["inherent", "본래 내재된, 고유한"]
+  ],
+  "summary": {"en": "Our language contains a ready-made system of classification, so learning how we classify things means learning the core structure of language.", "ko": "우리 언어에는 이미 만들어진 분류 체계가 들어 있으므로, 사물을 분류하는 방식을 배우는 것은 언어의 핵심 구조를 배우는 것이다."},
+  "writing": {"en": "Every word we learn is a lesson in classification.", "ko": "우리가 배우는 모든 단어는 분류에 대한 수업이다."},
+  "tip": "장문 제목은 비유(슈퍼마켓)에 끌리지 말고, But이나 therefore 뒤에 나오는 '진짜 주제'를 잡으세요. ③처럼 핵심어(Categorization)는 맞지만 관계가 뒤집힌 선택지, ④처럼 본문 표현(Ready-Made)만 가져온 선택지를 조심하세요.",
+  "faq": [
+    ["2022학년도 수능 영어 41번 정답은?", "② Classification: An Inherent Characteristic of Language(분류: 언어의 본질적 특성)예요. 분류 원리가 언어의 핵심 구조라는 결론과 일치해요."],
+    ["2022 수능 41번은 어떤 유형인가요?", "41~42번 장문 독해 세트 중 제목을 고르는 2점 문항이에요. 슈퍼마켓 비유로 언어 속 분류 체계를 설명한 지문이에요."],
+    ["① Sales and Language Learning이 오답인 이유는?", "슈퍼마켓은 분류를 설명하기 위한 비유예요. 판매 전략은 글의 주제가 아니에요."]
+  ]
+}
