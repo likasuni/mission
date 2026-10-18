@@ -1,0 +1,56 @@
+{
+  "exam": "sn-2022",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "유머는 정확한 정보가 목적이 아니다",
+  "date": "2026-10-18",
+  "keywords": ["2022 수능 영어 31번", "2022학년도 수능 31번 해설", "2022 수능 31번 정답", "수능 영어 빈칸 추론", "humour cognitive disengagement 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 31번은 유머의 '인지적 거리두기'를 다룬 빈칸 추론 문항이에요. 웃긴 이야기를 들을 때 우리는 그게 사실인지 따지지 않는다는 게 핵심이에요. 정답은 ① accurate예요. 유머를 만드는 사람은 정확한 정보가 아니라 즐거움을 주려는 거예요.",
+  "flow": [
+    ["주장", "유머는 실용적 거리두기뿐 아니라 인지적 거리두기도 포함한다 — 웃기는 동안엔 참/거짓을 따지지 않는다."],
+    ["결과", "그래서 웃긴 이야기를 하는 사람이 과장하거나 세부를 지어내도 너그럽게 '코믹 라이선스'를 준다."],
+    ["예시", "스파게티를 키보드에만 쏟았다고 정정하는 청자는 오히려 방해하지 말라는 말을 듣는다."],
+    ["결론", "유머 창작자는 즐거움을 위해 생각을 전하는 것이지, 정확한 정보를 주려는 게 아니다."]
+  ],
+  "evidence": [
+    {"en": "As long as something is funny, we are for the moment not concerned with whether it is real or fictional, true or false.", "ko": "어떤 것이 웃기기만 하면, 우리는 그 순간 그것이 실제인지 허구인지, 참인지 거짓인지에 관심을 두지 않는다.", "note": "true or false를 따지지 않는다 → 빈칸 문장의 'not to provide ___ information'과 짝을 이뤄요. 따지지 않는 건 '정확성'이에요."},
+    {"en": "If they are getting extra laughs by exaggerating the silliness of a situation or even by making up a few details, we are happy to grant them comic licence.", "ko": "상황의 우스꽝스러움을 과장하거나 세부 사항 몇 가지를 지어내서 웃음을 더 얻는다면, 우리는 기꺼이 그들에게 코믹 라이선스를 준다.", "note": "과장·지어내기를 허용한다 = 사실과 맞는지(accurate)는 중요하지 않다. 정정하는 청자 예시도 같은 방향이에요."}
+  ],
+  "choices": [
+    {"en": "accurate", "ko": "정확한", "why": "정답. 참/거짓을 따지지 않고 과장과 지어내기도 허용한다는 내용 전체가 '정확한 정보를 주려는 게 아니다'로 모여요."},
+    {"en": "detailed", "ko": "자세한", "why": "오히려 세부를 지어내기도 한다는 글이라, '자세함'은 핵심이 아니에요. details라는 본문 단어에 끌리기 쉬운 함정이에요."},
+    {"en": "useful", "ko": "유용한", "why": "유용성은 글에서 다루지 않아요. 글의 대비는 '즐거움 vs 사실 정확성'이에요."},
+    {"en": "additional", "ko": "추가적인", "why": "extra laughs의 extra와 비슷해 보여도, 정보를 '더' 주느냐는 논점이 아니에요."},
+    {"en": "alternative", "ko": "대안적인", "why": "다른 정보를 대신 제시한다는 내용은 글에 없어요."}
+  ],
+  "grammar": [
+    {"t": "not just A but (also) B", "ex": "Humour involves not just practical disengagement but cognitive disengagement.", "d": "'A뿐 아니라 B도'. 강조점은 B(인지적 거리두기)에 있어요. 첫 문장에서 B를 잡으면 글 전체가 보여요."},
+    {"t": "주어 + 관계사절/분사구 + 동사 — 긴 주어", "ex": "someone listening to a funny story who tries to correct the teller … will probably be told … to stop interrupting.", "d": "주어 someone을 분사구(listening …)와 관계사절(who tries …)이 꾸며서 동사 will be told가 한참 뒤에 나와요. 복원: someone (who is) listening to a funny story."},
+    {"t": "A for B, not to C", "ex": "… putting ideas into people's heads for the pleasure those ideas will bring, not to provide accurate information.", "d": "'C하려는 게 아니라 B를 위해'. 목적의 대비 구조라 빈칸은 pleasure와 반대편 가치가 와야 해요. the pleasure 뒤에 목적격 관계대명사 that이 생략됐어요."}
+  ],
+  "vocab": [
+    ["involve", "포함하다, 수반하다"],
+    ["disengagement", "거리두기, 이탈"],
+    ["cognitive", "인지의, 인식의"],
+    ["fictional", "허구의"],
+    ["considerable", "상당한"],
+    ["leeway", "여지, 재량"],
+    ["exaggerate", "과장하다"],
+    ["silliness", "어리석음, 우스꽝스러움"],
+    ["make up", "지어내다 (= invent)"],
+    ["grant", "주다, 허용하다"],
+    ["licence", "허가, (표현상의) 자유"],
+    ["interrupt", "방해하다, 끼어들다"],
+    ["accurate", "정확한 — 빈칸 정답"]
+  ],
+  "summary": {"en": "When we enjoy humour, we stop judging whether it is true, because its goal is pleasure rather than accurate information.", "ko": "유머를 즐길 때 우리는 그것이 사실인지 판단하지 않는데, 유머의 목적이 정확한 정보가 아니라 즐거움이기 때문이다."},
+  "writing": {"en": "People allow storytellers to exaggerate because humour aims to entertain, not to inform accurately.", "ko": "사람들이 이야기하는 사람의 과장을 허용하는 것은 유머가 정확히 알리는 것이 아니라 즐겁게 하는 것을 목표로 하기 때문이다."},
+  "tip": "빈칸이 마지막 문장의 대비 구조(for A, not B) 안에 있으면, A(pleasure)의 반대편 가치를 본문에서 찾으세요. 이 글은 첫 문장의 true or false와 예시의 '정정' 장면이 모두 '정확성'을 가리켜요. 본문 단어(details, extra)와 겹치는 선택지는 먼저 의심하세요.",
+  "faq": [
+    ["2022학년도 수능 영어 31번 정답은?", "① accurate(정확한)예요. 유머를 만드는 사람은 정확한 정보가 아니라 즐거움을 주려고 한다는 내용이에요."],
+    ["2022 수능 31번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 유머의 인지적 거리두기를 다룬 지문이에요."],
+    ["② detailed가 오답인 이유는?", "본문은 오히려 세부를 지어내도 괜찮다고 해요. 문제는 자세함이 아니라 사실과 맞는지(정확성)라서 ①이 답이에요."]
+  ]
+}
