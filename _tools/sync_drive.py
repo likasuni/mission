@@ -69,7 +69,7 @@ print('variants', len(var))
 # 분석노트·단어 폴더 (목록만): 자료실 영어 페이지의 번호 버튼·단어장 연결에 사용
 # 분석노트 폴더는 비공개(원장님 Apps Script 가 관리) → Apps Script 의 '공개 목록'(바로 보기 파일만)을 받음
 # 30~40번·부교재 분석노트 주소는 여기(공개 저장소)에 절대 남기지 않음
-GAS_URL = ''  # Apps Script 웹 앱 주소 (…/exec)
+GAS_URL = 'https://script.google.com/macros/s/AKfycbzxFNEMzZvO3Hygpgthx0AYeSqsawLcL1fFBKA24HIOIRXOEiaed6j7HxQUPWUIz9TI/exec'  # Apps Script 웹 앱 주소 (공개 목록만 비밀키 없이 받음)
 WORD_ROOTS = {'모의고사 단어': '1Apb5ZT_Fb1jQoV1-Otj9oWUqeNVsfmNj', '부교재 단어': '1Lq_Ps0Hp6VPsfFLVQwlGzh52DFBzgL9_'}
 NOTE_ROOTS = {'모의고사 분석노트': '1jSEPdOdM4RD7GplBWwF3jiRKFWToBOBq', '부교재 분석노트': '1vg17CVTqjIRk-hdoA3PhrJ1RTUn84lSO'}
 KEEP_PUBLIC = {'105f20gSuhZvR44gCK6oW5mxn2-ZFG12J'}  # 부교재 샘플
