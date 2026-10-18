@@ -1,6 +1,6 @@
 """리카수니 블로그(likasuni.com, Blogger)에 그날 공개된 자료실 해설의 '요약 글'을 자동 발행.
 
-자료실은 문항 1개 = 페이지 1개(상세 해설), 블로그는 하루치 문항을 묶은 요약 글 1개로 구성이 달라
+자료실은 문항 1개 = 페이지 1개(상세 해설), 블로그는 하루치 문항의 정답·포인트만 묶은 심플한 요약 글 1개로 구성이 달라
 같은 글로 보이지 않게 한다. 끝에 자료실 링크와 내일 공개 예고를 붙인다.
 
   python blogger_post.py                          # 오늘(한국 시간) 공개분 발행 — BLOGGER_* 환경변수가 없으면 건너뜀
@@ -54,43 +54,25 @@ def short_type(p): return '장문' if p.get('n2') else p['type']
 def title_of(exam, ps):
     nums = '·'.join(no(p) for p in ps)
     types = '·'.join(dict.fromkeys(short_type(p) for p in ps))
-    return f'{exam_name(exam)} {nums}번 정답과 핵심 근거 한눈에 ({types})'
-
-
-def key_evidence(q):  # 정답과 이어지는 근거 문장: 메모에 '정답' → 정답 번호(②)가 든 문장 → 첫 문장
-    ev = q.get('evidence') or []
-    c = CIRC[q['answer'] - 1]
-    ch = (q.get('choices') or [{}] * 5)[q['answer'] - 1].get('en', '')
-    mk = ch[:ch.index(')') + 1] if ch.startswith('(') and ')' in ch[:5] else c  # (c) 같은 밑줄 기호
-    return (next((x for x in ev if '정답' in x['note']), None) or next((x for x in ev if mk in x['en'] or c in x['en'] or c in x['note']), None)
-            or (ev[0] if ev else None))
+    return f'{exam_name(exam)} {nums}번 정답과 풀이 포인트 ({types})'
 
 
 def item_html(p):
     ans = ' · '.join(f"{q['n']}번 {CIRC[q['answer'] - 1]}" for q in p['qs']) if p.get('n2') else f"정답 {CIRC[p['answer'] - 1]}"
-    sm = (p.get('summary') or {}).get('ko') or p['topic']
-    ev = ''
-    for q in p['qs']:
-        x = key_evidence(q)
-        if not x: continue
-        lab = f"<b style=\"color:#1e3a8a;\">{q['n']}번 근거</b><br>" if p.get('n2') else ''
-        ev += (f'<div style="{BOX}margin:10px 0 0;padding:10px 14px;border-left:4px solid #FFC857;background:#fffdf5;border-radius:6px;">'
-               f'{lab}<span style="font-style:italic;">{e(x["en"])}</span><br><span style="color:#555;">{e(x["ko"])}</span></div>')
     point = p.get('note') or p.get('tip')
-    pt = (f'<p style="margin:12px 0 0;"><b style="color:#1e3a8a;">{"원장님 포인트" if p.get("note") else "풀이 포인트"}</b> {e(point)}</p>') if point else ''
-    return (f'<div style="{BOX}margin:0 0 18px;padding:16px 18px;border:1px solid #d6def0;border-radius:12px;background:#ffffff;">'
-            f'<h3 style="margin:0 0 6px;color:#1e3a8a;font-size:1.15em;">{no(p)}번 · {e(p["type"])} <span style="color:#16a34a;">{ans}</span></h3>'
-            f'<p style="margin:0;"><b>한 줄 요약</b> {e(sm)}</p>{ev}{pt}'
-            f'<p style="margin:14px 0 0;text-align:right;"><a href="{url(p)}" style="display:inline-block;padding:8px 14px;border-radius:8px;background:#1e3a8a;color:#ffffff;text-decoration:none;font-weight:bold;">{no(p)}번 전체 해설 보기 →</a></p>'
+    pt = (f'<p style="margin:10px 0 0;"><b style="color:#1e3a8a;">{"원장님 포인트" if p.get("note") else "풀이 포인트"}</b> {e(point)}</p>') if point else ''
+    return (f'<div style="{BOX}margin:0 0 16px;padding:16px 18px;border:1px solid #d6def0;border-radius:12px;background:#ffffff;">'
+            f'<h3 style="margin:0 0 4px;color:#1e3a8a;font-size:1.15em;">{no(p)}번 · {e(p["type"])} <span style="color:#16a34a;">{ans}</span></h3>'
+            f'<p style="margin:0;color:#555;">{e(p["topic"])}</p>{pt}'
+            f'<p style="margin:12px 0 0;text-align:right;"><a href="{url(p)}" style="display:inline-block;padding:8px 14px;border-radius:8px;background:#1e3a8a;color:#ffffff;text-decoration:none;font-weight:bold;">{no(p)}번 전체 해설 보기 →</a></p>'
             '</div>')
 
 
 def post_html(exam, ps, upcoming):
     nums = '·'.join(no(p) for p in ps)
     h = (f'<div style="{BOX}line-height:1.7;">'
-         f'<p>{e(exam_name(exam))} {nums}번의 정답과 정답 근거를 한눈에 정리했어요. '
-         '문항마다 지문 한 줄 요약, 정답을 고르는 결정적 문장, 풀이 포인트만 짧게 모았어요. '
-         '선택지별 오답 이유, 구문, 어휘까지 담은 전체 해설은 각 문항의 버튼을 눌러 리카수니 자료실에서 볼 수 있어요.</p>')
+         f'<p>{e(exam_name(exam))} {nums}번의 정답과 풀이 포인트만 짧게 정리했어요. '
+         '정답 근거 문장, 선택지별 오답 이유, 구문, 어휘까지 담은 전체 해설은 각 문항의 버튼을 눌러 리카수니 자료실에서 볼 수 있어요.</p>')
     h += ''.join(item_html(p) for p in ps)
     if upcoming:
         h += (f'<div style="{BOX}margin:0 0 18px;padding:14px 18px;border-radius:12px;background:#eef4ff;border:1px solid #c9dbfb;">'
