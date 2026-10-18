@@ -1,0 +1,60 @@
+{
+  "exam": "sn-2022",
+  "n": 40,
+  "type": "요약문",
+  "points": 2,
+  "answer": 1,
+  "topic": "과학적 설명의 두 갈래: 최소한의 법칙으로 통합 vs 개별 현상의 인과 메커니즘",
+  "date": "2026-10-18",
+  "keywords": ["2022 수능 영어 40번", "2022학년도 수능 40번 해설", "2022 수능 40번 정답", "수능 영어 요약문 완성", "scientific explanation Kitcher Salmon 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 40번은 과학적 설명에 대한 두 가지 철학적 관점을 다룬 요약문 완성 문항이에요. (A)는 '최소한의 일반화(minimal number)', (B)는 '개별 현상에서 나오는 규칙성(regularities)'을 바꿔 쓰면 돼요. 정답은 ① least … patterns예요.",
+  "flow": [
+    ["도입", "키처와 새먼은 과학적 설명 이론에 두 가지 대안이 있다고 보았다."],
+    ["관점 1", "통합 관점: 최소한의 일반화로 넓은 현상을 통합하는 것이 설명이다. 체계화가 경제적일수록 이해가 깊다."],
+    ["관점 2", "인과적/기계적 관점: 관심 현상을 만들어 낸 메커니즘을 밝히는 것이 설명이다."],
+    ["보충", "이 관점은 개별 사건의 설명이 우선이고, 일반화의 설명은 규칙성을 만드는 인과 메커니즘에서 나온다고 본다."]
+  ],
+  "evidence": [
+    {"en": "… scientific explanation consists in the unification of broad bodies of phenomena under a minimal number of generalizations.", "ko": "… 과학적 설명은 넓은 범위의 현상들을 최소한의 일반화 아래 통합하는 데 있다.", "note": "a minimal number of generalizations = 요약문 the (A) number of principles. minimal → least로 바뀌었어요."},
+    {"en": "… the more economical the systematization, the deeper our understanding of what is explained.", "ko": "… 체계화가 경제적일수록 설명되는 것에 대한 우리의 이해는 더 깊어진다.", "note": "economical(경제적인, 간결한)도 '가능한 한 적은 원리'를 뜻해요. (A) = least를 다시 확인해 줘요."},
+    {"en": "This view sees the explanation of individual events as primary, with the explanation of generalizations flowing from them. That is, … the causal mechanisms that produce the regularities.", "ko": "이 관점은 개별 사건의 설명을 우선으로 보고, 일반화의 설명은 그것들로부터 나온다고 본다. 즉, … 규칙성을 만들어 내는 인과 메커니즘에서 나온다.", "note": "regularities(규칙성) = (B) patterns. drawn from individual phenomena가 flowing from them(개별 사건에서 나옴)을 바꿔 말한 거예요."}
+  ],
+  "choices": [
+    {"en": "least … patterns", "ko": "최소한의 … 패턴(규칙성)", "why": "정답. minimal number of generalizations → least number of principles, regularities → patterns로 정확히 바뀌었어요."},
+    {"en": "fixed … features", "ko": "고정된 … 특징", "why": "본문은 원리의 수가 '정해져 있다'가 아니라 '최소'여야 한다고 해요. features(특징)도 regularities(규칙성)와 달라요."},
+    {"en": "limited … functions", "ko": "제한된 … 기능", "why": "limited는 그럴듯하지만, (B) functions(기능)는 개별 현상에서 끌어낸 '규칙성'과 맞지 않아요."},
+    {"en": "fixed … rules", "ko": "고정된 … 규칙", "why": "rules는 (B)로 가능해 보여도, (A) fixed가 '최소한(minimal)'의 의미를 담지 못해요."},
+    {"en": "least … assumptions", "ko": "최소한의 … 가정", "why": "(A)는 맞지만 (B) assumptions(가정)는 틀려요. 인과 관점은 가정이 아니라 현상에서 나온 규칙성을 말해요."}
+  ],
+  "grammar": [
+    {"t": "consist in vs consist of", "ex": "scientific explanation consists in the unification of broad bodies of phenomena … / a scientific explanation of a phenomenon consists of uncovering the mechanisms …", "d": "consist in은 '~에 (본질이) 있다', consist of는 '~로 구성되다'. 두 관점 모두 '설명의 정체'를 정의하는 문장이에요."},
+    {"t": "the 비교급, the 비교급", "ex": "the more economical the systematization, the deeper our understanding of what is explained", "d": "'~할수록 더 ~하다'. be동사(is)가 생략된 형태예요. 통합 관점의 핵심 문장이에요."},
+    {"t": "see A as B / with 분사구문", "ex": "This view sees the explanation of individual events as primary, with the explanation of generalizations flowing from them.", "d": "see A as B는 'A를 B로 보다'. with + 명사 + -ing는 '~가 ~하면서'로 부대 상황을 나타내요."},
+    {"t": "형용사구 후치 수식", "ex": "an economical framework of laws or generalizations that are capable of subsuming all observable phenomena", "d": "be capable of -ing는 '~할 수 있다'. that절이 laws or generalizations를 꾸며요."}
+  ],
+  "vocab": [
+    ["alternative", "대안"],
+    ["consist in", "~에 있다"],
+    ["unification", "통합"],
+    ["phenomenon (pl. phenomena)", "현상"],
+    ["generalization", "일반화"],
+    ["economical", "경제적인, 간결한"],
+    ["framework", "틀, 체계"],
+    ["subsume", "포섭(포함)하다"],
+    ["observable", "관찰 가능한"],
+    ["systematize", "체계화하다"],
+    ["empirical", "경험적인"],
+    ["causal", "인과적인"],
+    ["uncover", "밝혀내다"],
+    ["primary", "주된, 우선의"],
+    ["regularity", "규칙성 — (B) patterns"]
+  ],
+  "summary": {"en": "Scientific explanations can be made either by seeking the least number of principles covering all observations or by finding general patterns drawn from individual phenomena.", "ko": "과학적 설명은 모든 관찰을 포괄하는 최소한의 원리를 찾거나, 개별 현상에서 끌어낸 일반적인 패턴을 발견함으로써 이루어질 수 있다."},
+  "writing": {"en": "Science explains the world by simplifying it or by tracing its causes.", "ko": "과학은 세상을 단순화하거나 그 원인을 추적함으로써 설명한다."},
+  "tip": "요약문은 빈칸 주변 단어를 본문에서 찾아 '바꿔 쓰기(paraphrase)'를 확인하세요. number of principles 옆의 (A)는 본문의 minimal number로, drawn from individual phenomena 옆의 (B)는 본문의 regularities로 바로 연결돼요.",
+  "faq": [
+    ["2022학년도 수능 영어 40번 정답은?", "① least … patterns예요. 과학적 설명은 최소한(least)의 원리로 통합하거나, 개별 현상에서 나온 일반적 패턴(patterns)을 찾는 두 방식이 있다는 내용이에요."],
+    ["2022 수능 40번은 어떤 유형인가요?", "글의 내용을 한 문장으로 요약할 때 빈칸 (A), (B)에 들어갈 말을 고르는 2점 요약문 완성 문항이에요."],
+    ["⑤ least … assumptions가 오답인 이유는?", "(A) least는 맞지만, 본문은 개별 현상에서 나오는 '규칙성(regularities)'을 말해요. assumptions(가정)는 본문 내용과 맞지 않아요."]
+  ]
+}

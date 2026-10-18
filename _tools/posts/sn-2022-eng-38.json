@@ -1,0 +1,60 @@
+{
+  "exam": "sn-2022",
+  "n": 38,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 5,
+  "topic": "로봇 도입에 대한 노동자의 두려움을 덜어 주는 경영진의 방법",
+  "date": "2026-10-18",
+  "keywords": ["2022 수능 영어 38번", "2022학년도 수능 38번 해설", "2022 수능 38번 정답", "수능 영어 문장 삽입", "robots factories retraining 지문", "고3 모의고사 영어 해설"],
+  "lead": "2022학년도 수능 영어 38번은 공장에 로봇을 들일 때 노동자의 두려움을 줄이는 방법을 다룬 문장 삽입 문항이에요. 주어진 문장의 also와 Retraining(재교육)이 마지막 문장의 '자리 이동'과 짝을 이뤄요. 정답은 ⑤예요.",
+  "flow": [
+    ["문제", "인간 노동자를 줄이며 로봇을 도입하면 걱정과 두려움이 생긴다."],
+    ["책임", "그 두려움을 막거나 덜어 주는 것은 경영진의 책임이다."],
+    ["방법 1", "로봇은 기존 라인의 사람을 대체하지 말고 새 공장에만 도입할 수 있다."],
+    ["방법 2", "노동자를 계획 과정에 참여시키고, 비용 절감 계획도 노사가 함께 세워야 한다."],
+    ["방법 3", "기존 직원을 회사 내 새 자리로 재교육하면 해고 두려움도 크게 준다. (주어진 문장, ⑤) → 로봇이 못하는 판단 업무로 옮겨야 한다."]
+  ],
+  "evidence": [
+    {"en": "Retraining current employees for new positions within the company will also greatly reduce their fear of being laid off.", "ko": "기존 직원을 회사 내 새 직책에 맞게 재교육하는 것 또한 해고에 대한 두려움을 크게 줄일 것이다.", "note": "also(또한)는 앞에 두려움을 줄이는 다른 방법이 이미 나왔다는 신호예요. 방법들이 다 나온 뒤, 마지막 쪽 자리를 노려요."},
+    {"en": "… planning for such cost reductions should be done jointly by labor and management. ( ⑤ )", "ko": "… 그런 비용 절감 계획은 노동자와 경영진이 함께 해야 한다. ( ⑤ )", "note": "④ 뒤까지는 '계획에 함께 참여'라는 방법이에요. 여기서 '재교육'이라는 새 방법으로 넘어가는 자리가 ⑤예요."},
+    {"en": "Since robots are particularly good at highly repetitive simple motions, the replaced human workers should be moved to positions where judgment and decisions … are required.", "ko": "로봇은 반복적인 단순 동작에 특히 능하므로, 대체된 인간 노동자는 판단과 결정이 필요한 자리로 옮겨져야 한다.", "note": "the replaced human workers ... moved to positions가 주어진 문장의 new positions within the company를 구체적으로 풀어 줘요. 주어진 문장은 이 문장 바로 앞이에요."}
+  ],
+  "choices": [
+    {"en": "① Introduction of robots … creates worry and fear. ( ① )", "ko": "로봇 도입이 걱정과 두려움을 낳는다 뒤", "why": "아직 해결 방법이 하나도 안 나왔어요. also가 쓰일 수 없고, 책임 주체(경영진)도 나오기 전이에요."},
+    {"en": "② It is the responsibility of management … ( ② )", "ko": "경영진의 책임이다 뒤", "why": "② 뒤는 For example로 첫 방법을 드는 자리예요. 재교육이 끼면 예시 연결이 끊겨요."},
+    {"en": "③ robots could be introduced only in new plants … ( ③ )", "ko": "새 공장에만 도입 뒤", "why": "③ 뒤의 '계획 참여' 문장과 ④ 뒤 '노사 공동 계획'이 한 덩어리예요. 사이에 재교육이 끼면 흐름이 갈라져요."},
+    {"en": "④ Workers should be included in the planning … ( ④ )", "ko": "계획에 참여시켜야 한다 뒤", "why": "④ 뒤 문장도 planning을 이어 말해요. '계획 참여' 이야기가 아직 끝나지 않았어요."},
+    {"en": "⑤ … done jointly by labor and management. ( ⑤ )", "ko": "노사 공동 계획 뒤", "why": "정답. 계획 이야기가 끝난 뒤 also로 재교육이라는 새 방법을 꺼내고, 다음 문장이 '대체된 노동자를 판단 업무로 옮기라'며 구체화해요."}
+  ],
+  "grammar": [
+    {"t": "동명사 주어 + 동사", "ex": "Retraining current employees for new positions within the company will also greatly reduce their fear of being laid off.", "d": "Retraining ~ company가 주어, 동사는 will reduce. being laid off는 수동형 동명사로 '해고되는 것'."},
+    {"t": "while 동시 (~하는 동안/~하면서)", "ex": "Introduction of robots into factories, while employment of human workers is being reduced, creates worry and fear.", "d": "while절이 주어와 동사 사이에 끼어 있어요. 주어는 Introduction, 동사는 creates예요. is being reduced는 진행형 수동태."},
+    {"t": "It is ~ to V 가주어", "ex": "It is the responsibility of management to prevent or, at least, to ease these fears.", "d": "진주어는 to prevent / to ease. at least(적어도)가 중간에 삽입돼 있어요."},
+    {"t": "관계부사 where", "ex": "positions where judgment and decisions beyond the abilities of robots are required", "d": "where는 positions를 꾸며요. '로봇 능력을 넘어서는 판단과 결정이 요구되는 자리'."}
+  ],
+  "vocab": [
+    ["retrain", "재교육하다"],
+    ["lay off", "해고하다"],
+    ["employment", "고용"],
+    ["management", "경영진"],
+    ["ease", "덜어 주다, 완화하다"],
+    ["plant", "공장"],
+    ["assembly line", "조립 라인"],
+    ["participate in", "~에 참여하다"],
+    ["manufacturing cost", "제조 비용"],
+    ["competitive", "경쟁력 있는"],
+    ["jointly", "공동으로"],
+    ["labor", "노동자(측)"],
+    ["repetitive", "반복적인"],
+    ["judgment", "판단"]
+  ],
+  "summary": {"en": "Management should ease workers' fears about robots by introducing them carefully, involving workers in planning, and retraining employees for new roles.", "ko": "경영진은 로봇을 신중하게 도입하고, 노동자를 계획에 참여시키며, 직원을 새 역할로 재교육함으로써 로봇에 대한 두려움을 덜어 주어야 한다."},
+  "writing": {"en": "Retraining workers can turn fear of robots into new opportunities.", "ko": "노동자를 재교육하면 로봇에 대한 두려움을 새로운 기회로 바꿀 수 있다."},
+  "tip": "주어진 문장에 also가 있으면 '앞에 같은 종류가 이미 나왔다'는 뜻이에요. 방법이 나열되는 글이면 뒤쪽 자리를 먼저 확인하세요. 그리고 주어진 문장의 new positions가 다음 문장의 moved to positions로 구체화되는지 확인하면 확정이에요.",
+  "faq": [
+    ["2022학년도 수능 영어 38번 정답은?", "⑤예요. 노사 공동 계획 이야기가 끝난 뒤, also로 재교육이라는 새 방법을 꺼내고 다음 문장에서 '판단 업무로 옮기기'로 구체화돼요."],
+    ["2022 수능 38번은 어떤 유형인가요?", "주어진 문장이 들어가기에 가장 적절한 곳을 고르는 2점 문장 삽입 문항이에요. 공장 로봇 도입과 노동자의 두려움을 다룬 지문이에요."],
+    ["④가 오답인 이유는?", "④ 뒤 문장도 planning(계획)을 이어서 말해요. '계획 참여' 이야기가 끝나지 않은 자리라 재교육 문장이 끼면 흐름이 끊겨요."]
+  ]
+}
