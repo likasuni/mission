@@ -189,7 +189,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/books/', '부교재'), ('/exams/', '전과목 기출'), ('/notes/', '분석노트 요청')]
+NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/exams/', '전과목 기출'), ('/notes/', '분석노트 요청')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -468,7 +468,7 @@ for p in POSTS:
 {f'<div class="card faq"><h2>자주 묻는 질문</h2>{faq}</div>' if faq else ''}
 <div class="card"><h2>함께 보면 좋은 자료</h2><div class="chips">
 <a class="chip" href="{subj_url(k, p['subj'])}">{e(s_name(k))} {e(sn)} 기출 원본 PDF</a>
-<a class="chip" href="/notes/">분석노트 카톡 요청</a><a class="chip" href="/posts/">문항별 해설 전체</a></div></div>
+<a class="chip" href="/notes/">분석노트 카톡 요청</a><a class="chip" href="/posts/">수업자료 전체</a></div></div>
 {post_card(others, f"{s_name(k)} {sn} 다른 문항 해설") if others else ''}'''
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": h1, "description": p['lead'], "datePublished": p['date'],
            "dateModified": p['date'], "inLanguage": "ko", "keywords": ', '.join(p.get('keywords', [])), "mainEntityOfPage": SITE + url,
@@ -479,16 +479,28 @@ for p in POSTS:
     crumbs = [('/', '홈'), ('/suneung/' if k[0] == 'sn' else f'/moe/go{k[1]}/', '수능 기출' if k[0] == 'sn' else f'고{k[1]} 모의고사'),
               (s_url(k), s_name(k)), (subj_url(k, p['subj']), sn), (url, f'{n}번 해설')]
     page(url, f'{nm} 해설·분석 정답 {CIRC[ans - 1]}{vtag} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
-         f'{nm} 정답 {CIRC[ans - 1]}. {p["lead"]}'[:150], body, crumbs, '/english/' if p['subj'] == '영어' else '/exams/',
+         f'{nm} 정답 {CIRC[ans - 1]}. {p["lead"]}'[:150], body, crumbs, '/posts/',
          comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
 
-# 해설 모아보기
-pb = ('''<h1 class="page-h1">영어 기출 문항별 해설</h1>
-<p class="lead">수능·모의고사 영어 문항을 정답 근거, 선택지 오답 이유, 핵심 구문·어휘 중심으로 짧고 정확하게 정리했어요. 리카수니 원장이 수업 준비하며 직접 써요.</p>'''
-      + (post_card(POSTS, f'최근 해설 {len(POSTS)}개') if POSTS else '<div class="card"><p class="muted">곧 첫 해설이 올라와요.</p></div>') + ad())
-page('/posts/', '수능·모의고사 영어 문항별 해설 모음 | 리카수니 자료실',
+# 수업자료 (회차별 목록)
+def _exam_order(k): return (0 if k[0] == 'sn' else 1, -k[2], -k[3], k[1])
+pb = '''<h1 class="page-h1">수업자료 · 영어 문항별 해설</h1>
+<p class="lead">리카수니 원장이 모의고사반 수업을 준비하며 정리한 문항별 해설이에요. 정답 근거, 오답 이유, 핵심 구문·어휘 위주로 짧게 정리했어요.</p>'''
+if POSTS:
+    pb += '<div class="card"><div class="chips">' + ''.join(
+        f'<a class="chip" href="#{ "-".join(map(str, k)) }">{e(s_name(k))}<small>{len(POSTS_BY[k])}문항</small></a>' for k in sorted(POSTS_BY, key=_exam_order)) + '</div></div>'
+    for i, k in enumerate(sorted(POSTS_BY, key=_exam_order)):
+        ps = sorted(POSTS_BY[k], key=lambda p: p['n'])
+        pb += (f'<div class="card" id="{"-".join(map(str, k))}"><h2>{e(s_name(k))} 영어 <small class="muted">{len(ps)}문항</small></h2><div class="plist">' + ''.join(
+            f'<a href="{post_url(p)}"><b>{p["n"]}번 · {e(p["type"])}</b><span>{e(p["topic"])} · 정답 {CIRC[p["answer"] - 1]}</span></a>' for p in ps)
+            + f'</div><p class="more-l" style="margin:10px 0 0"><a href="{subj_url(k, "영어")}">{e(s_name(k))} 영어 기출·자료 보기 →</a></p></div>')
+        if i % 2 == 1: pb += ad()
+    pb += ad()
+else:
+    pb += '<div class="card"><p class="muted">곧 첫 수업자료가 올라와요.</p></div>'
+page('/posts/', '수업자료 · 수능·모의고사 영어 문항별 해설 모음 | 리카수니 자료실',
      '수능·고3·고2·고1 모의고사 영어 문항별 해설. 정답 근거, 오답 이유, 핵심 구문과 어휘를 짧게 정리. 리카수니 자료실', pb,
-     [('/', '홈'), ('/posts/', '문항별 해설')], '/english/', comments=('posts', '문항별 해설'))
+     [('/', '홈'), ('/posts/', '수업자료')], '/posts/', comments=('posts', '수업자료'))
 
 # ---------- 학년 / 수능 목록 ----------
 for g in (1, 2, 3):
@@ -523,7 +535,6 @@ recent = '<div class="card"><h2>최근 회차</h2><div class="chips">' + ''.join
 en_sess = sorted([k for k in sessions if k[0] == 'moe' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: (k[1], -k[2], -k[3]))
 note_files = sum(len(NOTES[k]) for k in en_sess)
 word_sess = [k for k in en_sess if k in WORDS]
-POST_HOME = (post_card(POSTS[:6], '최근 문항별 해설') + '<p class="more-l"><a href="/posts/">문항별 해설 전체 보기 →</a></p>') if POSTS else ''
 body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <p>고1·고2·고3 영어 모의고사를 회차별로 정리했어요. 리카수니 원장이 직접 만든 <b>분석노트·변형문제·단어</b>를 무료로 받아 가세요.</p></section>
 <h2 class="sec-h">영어 모의고사 핵심 자료</h2>
@@ -536,7 +547,6 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><h2>자료 요청 현황 · 최근 댓글</h2><span class="rc-n"></span></div>
 <div class="rc-body"><p class="rc-tip">없는 자료를 요청하면 <b>진행 중</b>에 올라가고, 완성돼서 카톡으로 보내면 <b>완료</b>로 옮겨져요. 궁금한 점은 각 페이지 아래 <b>댓글</b>로 남겨 주세요.</p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div></div></section>
-{POST_HOME}
 <h2 class="sec-h">최근 영어 모의고사</h2>
 <div class="card"><div class="chips">''' + ''.join(
     f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-k[2], -k[3], k[1]))[:9]) + '''</div>
