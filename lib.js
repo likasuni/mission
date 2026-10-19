@@ -89,23 +89,22 @@ function maskName(n) {
 function recentComments() {
   const box = document.getElementById('recent-cmt');
   if (!box) return;
-  const list = box.querySelector('.rc-list'), cnt = box.querySelector('.rc-n');
+  const list = box.querySelector('.rc-list');
   const ago = t => {
     const m = Math.floor((Date.now() - new Date(t)) / 60000);
     if (m < 1) return '방금'; if (m < 60) return m + '분 전';
     const h = Math.floor(m / 60); if (h < 24) return h + '시간 전';
     const d = new Date(t); return `${d.getMonth() + 1}월 ${d.getDate()}일`;
   };
-  // 자료 요청 댓글: [자료 요청] … 부탁드려요. / 원장 답글에 '보내 드렸어요' 가 있으면 완료
+  // 자료 요청 댓글: [자료 요청] … 부탁드려요. 진행·완료 구분 없이 최근 요청을 모두 보여 줌
   const isReq = c => c.content.startsWith('[자료 요청]');
-  const isDone = c => /보내 드렸어요/.test(c.reply || '');
   const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', '');
-  const shown = { ing: 4, done: 4, cmt: 3 };
+  const shown = { rq: 6, cmt: 3 };
   let cache = null;
-  function reqItem(c, done) {
-    return `<li class="rq${done ? ' ok' : ''}"><span class="rq-st">${done ? '완료' : '진행 중'}</span>
-      <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${done ? ago(c.replied_at || c.created_at) + ' 발송' : ago(c.created_at)}</span></span>
-      ${c.page_key ? `<a class="rq-go" href="/${esc(c.page_key)}/#${done ? 'note-req' : 'comments'}">${done ? '나도 받기' : '보기'}</a>` : ''}</li>`;
+  function reqItem(c) {
+    return `<li class="rq"><span class="rq-st">요청</span>
+      <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${ago(c.created_at)}</span></span>
+      ${c.page_key ? `<a class="rq-go" href="/${esc(c.page_key)}/#note-req">나도 받기</a>` : ''}</li>`;
   }
   function cmtItem(c) {
     const own = OWNER_IDS.includes(c.user_id);
@@ -122,14 +121,8 @@ function recentComments() {
   const more = (key, total) => total > shown[key] ? `<button class="rc-more" data-k="${key}">더보기 (${total - shown[key]}개)</button>` : '';
   function render() {
     const all = cache || [];
-    const week = Date.now() - 7 * 86400e3; // 완료는 최근 7일만
-    const ing = all.filter(c => isReq(c) && !isDone(c)), done = all.filter(c => isReq(c) && isDone(c) && new Date(c.replied_at || c.created_at).getTime() > week)
-      .sort((a, b) => new Date(b.replied_at || b.created_at) - new Date(a.replied_at || a.created_at)), cm = all.filter(c => !isReq(c));
-    if (cnt) cnt.textContent = `진행 ${ing.length} · 완료 ${done.length}`;
-    list.innerHTML = `<div class="rq-cols">
-        <div class="rq-col"><h3>진행 중 <span>${ing.length}</span></h3><ul${shown.ing > 4 ? ' class="open"' : ''}>${ing.slice(0, shown.ing).map(c => reqItem(c, false)).join('') || '<li class="rq-empty">지금 만들고 있는 자료가 없어요.</li>'}</ul>${more('ing', ing.length)}</div>
-        <div class="rq-col ok"><h3>완료 · 카톡 발송 <span>${done.length}</span><small>최근 7일</small></h3><ul${shown.done > 4 ? ' class="open"' : ''}>${done.slice(0, shown.done).map(c => reqItem(c, true)).join('') || '<li class="rq-empty">최근 7일 안에 보낸 자료가 여기에 보여요.</li>'}</ul>${more('done', done.length)}</div>
-      </div>
+    const rq = all.filter(isReq), cm = all.filter(c => !isReq(c));
+    list.innerHTML = `<div class="rq-col"><h3>최근 자료 요청</h3><ul${shown.rq > 6 ? ' class="open"' : ''}>${rq.slice(0, shown.rq).map(reqItem).join('') || '<li class="rq-empty">필요한 분석노트를 요청해 주세요. 만들어서 카톡으로 보내 드려요.</li>'}</ul>${more('rq', rq.length)}</div>
       <h3 class="rc-sub">최근 댓글</h3>
       <div class="rc-cm${shown.cmt > 3 ? ' open' : ''}">${cm.slice(0, shown.cmt).map(cmtItem).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>'}</div>${more('cmt', cm.length)}`;
     list.querySelectorAll('.rc-more').forEach(btn => btn.onclick = () => { shown[btn.dataset.k] += 6; render(); });

@@ -374,19 +374,20 @@ a.nb:hover { filter: brightness(1.12); }
 @media (max-width: 640px) { #recent-cmt .rc-head { padding: 14px 16px; } .rc-body { padding: 4px 16px 8px; } }
 #recent-cmt .rc-n:empty { display: none; }
 
-/* 자료 요청 현황: 왼쪽 진행 중 · 오른쪽 완료 */
-.rq-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0 4px; }
-.rq-col { min-width: 0; border: 1px solid #f3d48a; border-radius: 12px; background: #fffbf0; padding: 10px 12px; }
+/* 최근 자료 요청: 진행·완료 구분 없이 한 상자, 넓은 화면은 2열 */
+.rq-col { margin: 12px 0 4px; min-width: 0; border: 1px solid #f3d48a; border-radius: 12px; background: #fffbf0; padding: 10px 12px; }
 .rq-col.ok { border-color: #b7e4c7; background: #f2fbf5; }
 .rq-col h3 { margin: 0 0 6px; font-size: .9rem; color: #7a4b00; display: flex; align-items: center; gap: 6px; }
 .rq-col.ok h3 { color: #166534; }
 .rq-col h3 span { padding: 1px 8px; border-radius: 999px; background: #f59e0b; color: #fff; font-size: .74rem; }
 .rq-col.ok h3 span { background: #16a34a; }
-.rq-col ul { list-style: none; margin: 0; padding: 0; }
+.rq-col ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 20px; }
+@media (max-width: 640px) { .rq-col ul { grid-template-columns: 1fr; } }
 .rq-col ul.open, .rc-cm.open { max-height: 330px; overflow-y: auto; }
 .rq { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-top: 1px dashed #ead9ad; font-size: .84rem; }
 .rq-col.ok .rq { border-top-color: #cfe9d8; }
 .rq:first-child { border-top: 0; }
+@media (min-width: 641px) { .rq:nth-child(2) { border-top: 0; } }
 .rq-tx { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.35; }
 .rq-tx b { font-weight: 700; overflow-wrap: anywhere; }
 .rq-tx .meta { font-size: .74rem; }
@@ -398,7 +399,6 @@ a.nb:hover { filter: brightness(1.12); }
 .rc-sub { margin: 14px 0 0; font-size: .95rem; color: var(--navy); }
 .rc-more { display: block; width: 100%; margin: 6px 0 4px; padding: 6px; border: 0; border-radius: 8px; background: rgba(30,58,138,.06); color: var(--navy); font-size: .8rem; font-weight: 700; cursor: pointer; }
 .rc-more:hover { background: rgba(30,58,138,.12); }
-@media (max-width: 640px) { .rq-cols { grid-template-columns: 1fr; } }
 #recent-cmt .rc-n { white-space: nowrap; }
 @media (max-width: 640px) { #recent-cmt .rc-head h2 { font-size: 1rem; } #recent-cmt .rc-head { gap: 8px; } .rc-live { padding: 3px 8px; } }
 .rq-col h3 small { margin-left: auto; font-size: .72rem; font-weight: 600; color: #4b7a5c; }
