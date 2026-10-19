@@ -2,6 +2,8 @@
      자료실 첫 화면(lib.js recentComments)과 같은 내용. 자료실 Supabase 의 승인된 댓글을 30초마다 읽어 옴.
      Blogger 레이아웃 → 가젯 추가 → HTML/JavaScript 에 통째로 붙여 넣기 (제목 칸은 비워 두기) -->
 <style>
+/* 가젯 제목(관리용 이름)은 블로그 화면에서 숨김 */
+.widget:has(#lks-rc) > h2, .widget:has(#lks-rc) > h3, .widget:has(#lks-rc) > .title { display: none !important; }
 #lks-rc .lks-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 /* 자동광고가 머리 줄 안에 들어와도 제목을 밀지 않게: 광고는 맨 위 한 줄을 따로 차지 */
 #lks-rc .lks-head > :not(.lks-live):not(.lks-title) { flex: 0 0 100%; order: -1; max-width: 100%; }
@@ -37,6 +39,9 @@
   var OWNER_IDS = ['6363d675-9fa4-4539-af39-0028444f80f0']; // 원장님 카카오 계정
   var BOX = 'box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden;';
   var root = document.getElementById('lks-rc'); if (!root) return;
+  // 가젯 제목 숨기기 (:has 를 모르는 옛 브라우저용)
+  var w = root.closest ? root.closest('.widget') : null;
+  if (w) for (var j = 0; j < w.children.length; j++) { var ch = w.children[j]; if (/^H[23]$/.test(ch.tagName) || ch.classList.contains('title')) ch.style.display = 'none'; }
   var list = root.querySelector('.lks-list');
   var shown = { rq: 6, cmt: 3 }, cache = [];
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
