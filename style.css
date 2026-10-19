@@ -351,7 +351,10 @@ a.nb:hover { filter: brightness(1.12); }
 /* 최근 댓글 (첫 화면) — 눈에 띄게 */
 #recent-cmt { margin: 26px 0; border-radius: 16px; overflow: hidden; border: 2px solid #1e3a8a; background: #fff; box-shadow: 0 8px 24px rgba(30, 58, 138, .12); }
 #recent-cmt .rc-head { display: flex; align-items: center; gap: 10px; padding: 16px 20px; background: linear-gradient(135deg, #172554, #1e3a8a); color: #fff; }
-#recent-cmt .rc-head h2 { margin: 0; color: #fff; font-size: 1.12rem; }
+#recent-cmt .rc-title { margin: 0; color: #fff; font-size: 1.12rem; font-weight: 800; }
+/* 자동광고가 머리 줄 안에 들어와도 제목을 밀지 않게: 광고는 맨 위 한 줄을 따로 차지 */
+#recent-cmt .rc-head { flex-wrap: wrap; }
+#recent-cmt .rc-head > :not(.rc-live):not(.rc-title):not(.rc-n) { flex: 0 0 100%; order: -1; max-width: 100%; }
 #recent-cmt .rc-n { margin-left: auto; padding: 4px 12px; border-radius: 999px; background: #ffc857; color: #172554; font-size: .82rem; font-weight: 800; }
 .rc-live { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; background: rgba(255,255,255,.14); font-size: .78rem; font-weight: 800; }
 .rc-live i { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 0 0 rgba(74,222,128,.7); animation: rcpulse 1.6s infinite; }
@@ -400,7 +403,7 @@ a.nb:hover { filter: brightness(1.12); }
 .rc-more { display: block; width: 100%; margin: 6px 0 4px; padding: 6px; border: 0; border-radius: 8px; background: rgba(30,58,138,.06); color: var(--navy); font-size: .8rem; font-weight: 700; cursor: pointer; }
 .rc-more:hover { background: rgba(30,58,138,.12); }
 #recent-cmt .rc-n { white-space: nowrap; }
-@media (max-width: 640px) { #recent-cmt .rc-head h2 { font-size: 1rem; } #recent-cmt .rc-head { gap: 8px; } .rc-live { padding: 3px 8px; } }
+@media (max-width: 640px) { #recent-cmt .rc-title { font-size: 1rem; } #recent-cmt .rc-head { gap: 8px; } .rc-live { padding: 3px 8px; } }
 .rq-col h3 small { margin-left: auto; font-size: .72rem; font-weight: 600; color: #4b7a5c; }
 
 /* ---------- 문항별 해설 ---------- */
