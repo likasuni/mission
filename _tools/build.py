@@ -11,6 +11,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://data.likasuni.com'
 ADS_CLIENT = 'ca-pub-3951386769813957'
 AD_SLOT = '8157681795'          # data자료실_섹션사이_반응형 (자료실 전용, 2026-10-16)
+GA_ID = 'G-J12SZ4Z4K7'  # 구글 애널리틱스(GA4) 속성 '리카수니 자료실' (2026-10-19)
+GA = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>'
+      f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');</script>")
 TODAY = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).date().isoformat()  # 한국 시간
 
 SLUG = {'국어': 'kor', '수학': 'math', '수학 가형': 'math-ga', '수학 나형': 'math-na', '영어': 'eng',
@@ -231,6 +234,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <link rel="icon" href="/favicon.png">
 <style>{CSS}</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" crossorigin="anonymous"></script>
+{GA}
 {''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
 <body>
