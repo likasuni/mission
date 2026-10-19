@@ -207,8 +207,8 @@ def ad():
 
 def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website'):
     url = SITE + path
-    ld = list(extra_ld) + [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else []
+    ld = list(extra_ld) + ([{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else [])
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
     act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else ('/english/' if active == '/variants/' else active)  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
     nav = ''.join(f'<a href="{u}" class="{"on " if u == act else ""}">{n}</a>' for u, n in NAV)
@@ -741,7 +741,9 @@ page('/books/', 'EBS 부교재 영어 분석노트 요청 · 수능특강 라이
      [('/', '홈'), ('/books/', '부교재')], '/books/', comments=('books', '부교재 요청방'))
 
 page('/', '리카수니 자료실 | 모의고사·수능 기출문제 PDF, 영어 변형문제, 분석노트',
-     '고1·고2·고3 모의고사와 수능 기출문제 전과목 PDF, 리카수니 영어 변형문제와 문항별 분석노트를 무료로. 리카수니 자료실', body.replace('{NBOOKS}', str(len(BOOKS))), (), '/')
+     '고1·고2·고3 모의고사와 수능 기출문제 전과목 PDF, 리카수니 영어 변형문제와 문항별 분석노트를 무료로. 리카수니 자료실', body.replace('{NBOOKS}', str(len(BOOKS))), (), '/',
+     extra_ld=[{"@context": "https://schema.org", "@type": "WebSite", "name": "리카수니 자료실",  # 검색 결과 사이트 이름
+                "alternateName": ["리카수니", "Likasuni"], "url": SITE + '/'}])
 
 # ---------- sitemap / robots ----------
 urls = ''.join(f'<url><loc>{SITE}{p}</loc>' + (f'<lastmod>{LASTMOD[p]}</lastmod>' if p in LASTMOD else '') + '</url>' for p in ['/mission/', '/privacy.html'] + PAGES)
