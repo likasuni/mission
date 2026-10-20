@@ -1,0 +1,201 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 29,
+  "type": "어법",
+  "points": 2,
+  "answer": 3,
+  "topic": "현실의 문제는 지저분하다: 연역(순수 논리)이 주는 안전함의 착각",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 29번",
+    "2026 10월 고3 영어 29번 해설",
+    "고3 10월 모의고사 29번 정답",
+    "고3 모의고사 어법",
+    "관계대명사 which vs 관계부사 where",
+    "deduction 연역 지문"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 29번은 연역적 사고가 주는 안정감과 그 한계를 다룬 어법 문항이에요. ③ which 뒤에 we are absolutely sure we know all the elements …로 빠진 성분이 없는 완전한 절이 와서, 관계대명사 which 대신 in which(= where)가 와야 해요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "주장",
+      "연역은 문제 상황의 모든 요소와 그 관계를 알 때 결과를 확신하게 해 주어 우리를 안전하게 느끼게 한다."
+    ],
+    [
+      "적용",
+      "전문 분야에서는 '논리적' 전략과 청사진, '모범 사례'·'증거 기반 개입'에 기댄다는 주장으로 나타난다."
+    ],
+    [
+      "한계",
+      "순수 논리라는 이 최고 기준은 모든 요소와 관계를 미리 완전히 아는 닫힌 세계에서만 이룰 수 있다."
+    ],
+    [
+      "현실",
+      "현실에선 그런 일이 없고, 있다 해도 재미없고 기계적인 판에 박힌 추론일 뿐이다. 실제 문제는 모두 지저분하다."
+    ],
+    [
+      "비판",
+      "그런데도 연역을 썼다고 주장하고 싶어지는데, '논리적'이라는 주장이 너무 강해서 결과를 방어할 필요조차 없기 때문이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But this gold standard of pure logic can only be achieved in a closed world, ③ which we are absolutely sure we know all the elements of the problem situation and completely understand all the relationships at play beforehand.",
+      "ko": "그러나 순수 논리의 이 최고 기준은 닫힌 세계에서만 달성될 수 있는데, 그 세계에서는 우리가 문제 상황의 모든 요소를 알고 작용하는 모든 관계를 사전에 완전히 이해한다고 절대적으로 확신한다.",
+      "note": "which 뒤 we are sure (that) we know all the elements …에서 주어 we, 동사 know, 목적어 all the elements가 다 있어요. 완전한 절이니 관계대명사 which는 쓸 수 없고, 장소 선행사 a closed world를 받는 in which(= where)가 와야 해요."
+    },
+    {
+      "en": "In the real world, this never happens—and when it ④ does, we are talking about quite uninteresting, mechanical, routine reasoning.",
+      "ko": "현실 세계에서는 이런 일이 결코 일어나지 않으며, 그리고 그 일이 일어나도 우리는 상당히 재미없고 기계적이며 판에 박힌 추론에 대해 말하고 있다.",
+      "note": "④ does는 앞의 일반동사 happens를 대신하는 대동사예요. 주어 it(단수)에 맞춘 does라 적절해요."
+    },
+    {
+      "en": "Yet it is tempting ⑤ to claim that we have used deduction in dealing with a problem;",
+      "ko": "그럼에도 불구하고 우리가 문제를 다룰 때 연역을 사용했다고 주장하는 것은 솔깃한 일이며,",
+      "note": "⑤ 가주어 it, 진주어 to claim이에요. to부정사가 진짜 주어 자리라 적절해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① confidently",
+      "ko": "부사",
+      "why": "적절. 동사 deduce를 꾸미므로 부사 confidently가 맞아요. '자신 있게 추론하다'."
+    },
+    {
+      "en": "② that",
+      "ko": "동격의 that",
+      "why": "적절. the belief that + 완전한 절(we can produce … strategies). '~라는 믿음'을 나타내는 동격 접속사예요."
+    },
+    {
+      "en": "③ which",
+      "ko": "which → in which(where)",
+      "why": "정답(틀림). 뒤에 성분이 빠지지 않은 완전한 절이 오므로 관계대명사 which는 쓸 수 없어요. a closed world를 받는 in which 또는 where가 와야 해요."
+    },
+    {
+      "en": "④ does",
+      "ko": "대동사",
+      "why": "적절. 앞의 happens를 받는 대동사예요. 주어 it이 단수이고 현재 시제라 does가 맞아요."
+    },
+    {
+      "en": "⑤ to claim",
+      "ko": "진주어 to부정사",
+      "why": "적절. it is tempting to claim ~ 구조에서 it은 가주어, to claim이 진주어예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "관계대명사 which vs 전치사 + 관계대명사(관계부사)",
+      "ex": "a closed world, in which we are absolutely sure we know all the elements of the problem situation",
+      "d": "which 뒤에는 주어나 목적어가 빠진 불완전한 절, in which/where 뒤에는 완전한 절이 와요. 이 문항의 정답 포인트예요."
+    },
+    {
+      "t": "동격의 that",
+      "ex": "the belief that we can produce “logical” strategies and blueprints",
+      "d": "belief, claim, fact 같은 명사 뒤 that + 완전한 절은 '~라는 (믿음)'으로 내용을 풀어 줘요. 관계대명사 that과 달리 뒤 절이 완전해요."
+    },
+    {
+      "t": "대동사 do/does",
+      "ex": "In the real world, this never happens—and when it does, …",
+      "d": "앞에 나온 일반동사(happens)를 반복하지 않으려고 does를 써요. be동사를 받을 땐 is/are, 일반동사를 받을 땐 do/does/did예요."
+    },
+    {
+      "t": "가주어 it ~ 진주어 to부정사",
+      "ex": "Yet it is tempting to claim that we have used deduction",
+      "d": "긴 주어 to claim … 을 뒤로 보내고 it을 앞에 둔 구조예요. '~라고 주장하는 것은 솔깃하다'."
+    },
+    {
+      "t": "so ~ that 결과",
+      "ex": "this claim to pure rationality is so strong that we don’t even have to defend the result",
+      "d": "'너무 ~해서 …하다'. 주장이 너무 강해 결과를 방어할 필요조차 없다는 글의 비판을 마무리해요."
+    }
+  ],
+  "vocab": [
+    [
+      "deduction",
+      "연역"
+    ],
+    [
+      "deduce",
+      "추론하다, 연역하다"
+    ],
+    [
+      "hang together",
+      "서로 맞물리다, 연결되다"
+    ],
+    [
+      "rationality",
+      "합리성"
+    ],
+    [
+      "unassailable",
+      "논쟁의 여지가 없는"
+    ],
+    [
+      "blueprint",
+      "청사진, 계획"
+    ],
+    [
+      "best practice",
+      "모범 사례, 최선의 관행"
+    ],
+    [
+      "evidence-based",
+      "증거에 기반한"
+    ],
+    [
+      "intervention",
+      "개입, 조치"
+    ],
+    [
+      "gold standard",
+      "최고 기준"
+    ],
+    [
+      "beforehand",
+      "사전에, 미리"
+    ],
+    [
+      "at play",
+      "작용하고 있는"
+    ],
+    [
+      "mechanical",
+      "기계적인"
+    ],
+    [
+      "routine",
+      "판에 박힌, 일상적인"
+    ],
+    [
+      "messy",
+      "지저분한, 복잡한"
+    ],
+    [
+      "tempting",
+      "솔깃한, 유혹적인"
+    ]
+  ],
+  "summary": {
+    "en": "Deduction feels safe, but pure logic works only in a closed world where everything is known in advance, while real problems are messy, so calling our reasoning “logical” can hide this limit.",
+    "ko": "연역은 안전하게 느껴지지만 순수 논리는 모든 것을 미리 아는 닫힌 세계에서만 통하고 현실의 문제는 지저분하므로, 우리 추론을 '논리적'이라 부르는 것은 이 한계를 가릴 수 있다."
+  },
+  "writing": {
+    "en": "Pure logic works only in a closed world, but real problems are messy.",
+    "ko": "순수 논리는 닫힌 세계에서만 통하지만, 현실의 문제는 지저분하다."
+  },
+  "tip": "관계사가 밑줄이면 바로 뒤 절에서 주어·목적어가 빠졌는지 확인하세요. which 뒤 절이 완전하면 틀린 거예요. 이때 선행사가 장소(world, situation, case 등)면 in which나 where로 고치면 돼요. we are sure (that) we know처럼 that이 생략된 절이 겹쳐 있으면 맨 안쪽 절까지 따라가서 빠진 게 있는지 보세요.",
+  "faq": [
+    [
+      "2026년 10월 고3 모의고사 영어 29번 정답은?",
+      "③ which예요. 뒤에 완전한 절(we are absolutely sure we know all the elements …)이 오므로 in which(또는 where)로 고쳐야 해요."
+    ],
+    [
+      "2026 10월 고3 영어 29번은 어떤 유형인가요?",
+      "밑줄 친 부분 중 어법상 틀린 것을 고르는 2점 어법 문항이에요. 연역과 순수 논리의 한계를 다룬 지문이에요."
+    ],
+    [
+      "② that은 관계대명사인가요?",
+      "아니에요. the belief 뒤에서 '~라는 믿음'의 내용을 풀어 주는 동격 접속사 that이에요. 뒤 절 we can produce … strategies가 완전해서 적절해요."
+    ]
+  ],
+  "note": "which가 보이면 뒤를 끝까지 읽어 보세요. we are sure we know all the elements처럼 문장이 다 갖춰져 있으면 which는 못 와요. a closed world 같은 장소 선행사면 in which나 where가 정답이에요."
+}

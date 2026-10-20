@@ -1,0 +1,214 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 38,
+  "type": "문장 삽입",
+  "points": 3,
+  "answer": 5,
+  "topic": "복제 오류로 생긴 다양한 게놈이 자연 선택의 재료가 된다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 38번",
+    "2026 10월 고3 영어 38번 해설",
+    "고3 10월 모의고사 38번 정답",
+    "고3 모의고사 문장 삽입",
+    "genome copying errors natural selection 지문",
+    "The former the latter 지시어 단서",
+    "고3 모의고사 영어 해설"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 38번은 유전 정보가 전해질 때 생기는 '복제 오류'가 오히려 자연 선택의 재료가 된다는 글의 문장 삽입 문항이에요. 주어진 문장의 Some(더 잘 적응한 일부)과 most(그렇지 못한 대부분)를 마지막 문장의 The former와 the latter가 그대로 받는 게 결정적 단서예요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "도입",
+      "호모 사피엔스라는 종은 게놈으로 정의된다."
+    ],
+    [
+      "대조",
+      "완벽하게 복사되는 디지털 문서와 달리, 게놈은 부모에서 자식으로 갈 때 돌연변이와 복제 오류가 생긴다."
+    ],
+    [
+      "추가",
+      "여기에 아빠·엄마 유전자 중 어느 절반을 물려받을지도 무작위인 '유전적 복권'이 더해진다."
+    ],
+    [
+      "전환",
+      "이런 '복제 오류'는 결함이 아니라 특징이다. 다양한 게놈을 가진 자손이 자연 선택의 원재료가 되기 때문이다."
+    ],
+    [
+      "결과",
+      "(주어진 문장) 일부는 특정 생태적 지위에 더 잘 적응하고 대부분은 그렇지 못하다. 전자는 살아남아 게놈을 물려줄 가능성이 높고, 후자는 낮다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "These “copying errors” are not a bug but a feature, as offspring with diverse genomes are the raw material shaped by the forces of evolution by natural selection.",
+      "ko": "이러한 '복제 오류'는 버그가 아니라 특징인데, 다양한 게놈을 가진 자손이 자연 선택에 의한 진화의 힘으로 형성되는 원재료이기 때문이다.",
+      "note": "여기서 처음으로 '다양한 자손'이 나와요. 주어진 문장의 Some과 most는 바로 이 offspring with diverse genomes 중 일부와 대부분이에요."
+    },
+    {
+      "en": "Some may be better adapted to a particular ecological niche, while most are either neutral or do worse.",
+      "ko": "일부는 특정한 생태적 지위에 더 잘 적응할 수 있는 반면, 대부분은 이도 저도 아니거나 더 못 한다.",
+      "note": "주어진 문장이에요. '일부(Some) vs 대부분(most)' 두 무리를 나눠 놓았어요."
+    },
+    {
+      "en": "The former will have a higher chance, and the latter a lower one, of surviving and therefore passing on their genome to the next generation.",
+      "ko": "전자는 생존하여 자신의 게놈을 다음 세대에 물려줄 가능성이 더 높을 것이고, 후자는 그 가능성이 더 낮을 것이다.",
+      "note": "The former(전자)·the latter(후자)는 앞에 두 무리가 나와야 쓸 수 있어요. ⑤ 앞 문장엔 그런 두 무리가 없으니 주어진 문장이 ⑤에 들어가야 해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① Homo sapiens as a species is defined by its genome. ( ① )",
+      "ko": "게놈으로 종이 정의된다 뒤",
+      "why": "아직 복제 오류나 다양한 자손 이야기가 나오기 전이에요. 무엇의 Some/most인지 알 수 없어요."
+    },
+    {
+      "en": "② … genomes are subject to random mutations and copying errors as the information is passed from parents to offspring. ( ② )",
+      "ko": "돌연변이·복제 오류 뒤",
+      "why": "② 뒤의 This comes on top of …(이것에 더해)는 앞 문장의 '복제 오류'를 받아야 자연스러워요. 주어진 문장이 끼면 This가 가리킬 게 어색해져요."
+    },
+    {
+      "en": "③ … which of our dad’s genes and which of our mom’s genes we inherit is random, like a deck of shuffled cards. ( ③ )",
+      "ko": "유전적 복권 설명 뒤",
+      "why": "무작위로 물려받는 과정 설명이 이어지는 중이에요. 적응을 잘하고 못하는 '결과' 이야기는 아직 이르러요."
+    },
+    {
+      "en": "④ We all carry variants of nature’s instruction manual for who we can become — differing in roughly one out of every thousand nucleotides. ( ④ )",
+      "ko": "약 1,000개 중 하나꼴로 다르다 뒤",
+      "why": "④ 뒤에서 These “copying errors”가 앞서 말한 오류를 정리하고 '자연 선택의 재료'라는 의미를 줘요. 적응 결과는 그 다음이어야 해요."
+    },
+    {
+      "en": "⑤ … offspring with diverse genomes are the raw material shaped by the forces of evolution by natural selection. ( ⑤ )",
+      "ko": "자연 선택의 원재료 뒤, The former 앞",
+      "why": "정답. 다양한 자손(원재료) → 일부는 잘 적응, 대부분은 아님(주어진 문장) → 전자는 생존 확률↑, 후자는 ↓로 딱 이어져요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "the former / the latter",
+      "ex": "The former will have a higher chance, and the latter a lower one, of surviving …",
+      "d": "'전자/후자'. 앞에 두 대상이 나와야 쓸 수 있어서 문장 삽입의 강한 단서예요. the latter 뒤에는 will have가 생략됐고, one은 chance를 받아요."
+    },
+    {
+      "t": "be subject to",
+      "ex": "genomes are subject to random mutations and copying errors",
+      "d": "'~을 겪기 쉽다, ~의 영향을 받다'. to는 전치사라 뒤에 명사가 와요."
+    },
+    {
+      "t": "on top of",
+      "ex": "This comes on top of the genetic lottery …",
+      "d": "'~에 더하여'. This는 앞 문장의 돌연변이·복제 오류를 가리켜요."
+    },
+    {
+      "t": "의문사절 주어",
+      "ex": "which of our dad’s genes and which of our mom’s genes we inherit is random",
+      "d": "which … we inherit 전체가 주어, 동사는 is예요. '어느 유전자를 물려받을지는 무작위이다'."
+    },
+    {
+      "t": "not A but B",
+      "ex": "These “copying errors” are not a bug but a feature",
+      "d": "'A가 아니라 B'. 부정적으로 보이던 오류를 긍정적 의미로 뒤집는 글의 전환점이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "genome",
+      "게놈, 유전체"
+    ],
+    [
+      "flawlessly",
+      "흠 없이, 완벽하게"
+    ],
+    [
+      "be subject to",
+      "~을 겪기 쉽다"
+    ],
+    [
+      "mutation",
+      "돌연변이"
+    ],
+    [
+      "offspring",
+      "자손"
+    ],
+    [
+      "on top of",
+      "~에 더하여"
+    ],
+    [
+      "inherit",
+      "물려받다"
+    ],
+    [
+      "shuffle",
+      "(카드를) 섞다"
+    ],
+    [
+      "variant",
+      "변이체, 변형"
+    ],
+    [
+      "instruction manual",
+      "설명서"
+    ],
+    [
+      "roughly",
+      "대략"
+    ],
+    [
+      "feature",
+      "특징"
+    ],
+    [
+      "raw material",
+      "원재료"
+    ],
+    [
+      "natural selection",
+      "자연 선택"
+    ],
+    [
+      "adapted",
+      "적응한"
+    ],
+    [
+      "ecological niche",
+      "생태적 지위"
+    ],
+    [
+      "neutral",
+      "중립적인, 이도 저도 아닌"
+    ],
+    [
+      "the former / the latter",
+      "전자 / 후자"
+    ],
+    [
+      "pass on",
+      "물려주다"
+    ]
+  ],
+  "summary": {
+    "en": "Random copying errors in genomes create diverse offspring, which natural selection then sorts by how well they are adapted to survive.",
+    "ko": "게놈의 무작위 복제 오류는 다양한 자손을 만들어 내고, 자연 선택은 그 자손들이 얼마나 잘 적응했는지에 따라 생존을 가른다."
+  },
+  "writing": {
+    "en": "Genetic errors are not defects but the fuel of evolution.",
+    "ko": "유전적 오류는 결함이 아니라 진화의 연료이다."
+  },
+  "tip": "주어진 문장이 '두 무리(Some / most)'를 나누면, 본문에서 그 두 무리를 받는 말(The former / the latter, Those / Others)을 찾으세요. 그 말 바로 앞이 정답 자리예요. 또 This, These 같은 지시어가 앞 문장과 이미 잘 이어지는 곳(②, ④ 뒤)은 끼어들 틈이 없어요.",
+  "faq": [
+    [
+      "2026년 10월 고3 모의고사 영어 38번 정답은?",
+      "⑤예요. 주어진 문장(일부는 잘 적응, 대부분은 그렇지 않음)이 들어가야 마지막 문장의 The former와 the latter가 가리킬 대상이 생겨요."
+    ],
+    [
+      "2026년 10월 고3 모의고사 38번은 몇 점, 어떤 유형인가요?",
+      "주어진 문장이 들어갈 곳을 고르는 3점 문장 삽입 문항이에요. 게놈의 복제 오류와 자연 선택을 다룬 지문이에요."
+    ],
+    [
+      "④에 넣으면 왜 안 되나요?",
+      "④ 뒤 문장(These “copying errors” … natural selection)이 '다양한 자손 = 자연 선택의 재료'라는 전제를 먼저 깔아 줘야 해요. 그 전에 Some/most가 나오면 무엇 중 일부인지 분명하지 않고, 주어진 문장과 The former 사이도 끊겨요."
+    ]
+  ],
+  "note": "The former, the latter가 보이면 바로 '앞에 두 개가 있나?'부터 확인하세요. 이 문항은 그 한 가지만 챙겨도 3점이 거의 풀려요."
+}

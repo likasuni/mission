@@ -1,0 +1,59 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 19,
+  "type": "심경",
+  "points": 2,
+  "answer": 1,
+  "topic": "은하수 촬영을 기대하던 Dan이 먹구름과 비에 실망하는 심경 변화",
+  "date": "2026-10-21",
+  "keywords": ["2026년 10월 고3 모의고사 영어 19번", "2026 10월 고3 영어 19번 해설", "고3 10월 모의고사 19번 정답", "고3 모의고사 심경 변화", "은하수 사진 Dan 지문", "excited disappointed"],
+  "lead": "2026년 10월 고3 모의고사 영어 19번은 은하수 사진을 찍으러 간 Dan이 먹구름과 비 때문에 빈손으로 돌아오는 이야기로, 등장인물의 심경 변화를 고르는 문항이에요. 앞부분의 couldn't stop smiling, heart raced with anticipation과 끝의 downhearted가 양쪽 감정을 정해 줘요. 정답은 ① excited → disappointed예요.",
+  "flow": [
+    ["상황", "드디어 은하수를 촬영하는 밤이 왔다. Dan은 날씨를 확인하고 최적의 장소를 찾아 두었다."],
+    ["기대", "장소로 가는 동안 미소가 멈추지 않고 기대감으로 심장이 뛰었다."],
+    ["전환", "However, 도착하자 먹구름이 하늘을 덮고 몇 분 만에 별이 모두 사라졌다."],
+    ["악화", "한 시간 넘게 날씨 앱을 확인하며 기다렸지만 비까지 내렸다."],
+    ["실망", "고개를 떨구고 한숨을 쉰 뒤, 낙담한 채 집으로 돌아갈 수밖에 없었다."]
+  ],
+  "evidence": [
+    {"en": "As he drove to the spot, he couldn't stop smiling and his heart raced with anticipation.", "ko": "그는 그 장소로 운전해 가면서 미소를 멈출 수 없었고, 기대감에 그의 심장이 마구 뛰었다.", "note": "웃음이 멈추지 않고 기대로 심장이 뛰는 상태 = excited(신이 난). 처음 감정이에요."},
+    {"en": "However, when he arrived, dark clouds began to cover the sky.", "ko": "그러나 그가 도착했을 때, 먹구름이 하늘을 덮기 시작했다.", "note": "However가 감정이 뒤집히는 지점이에요. 여기부터 상황이 계속 나빠져요."},
+    {"en": "He lowered his head, letting out a loud sigh. He could do nothing but drive back home, downhearted.", "ko": "그는 고개를 떨구고 크게 한숨을 쉬었다. 그는 낙담한 채 집으로 운전해 돌아갈 수밖에 없었다.", "note": "고개 숙임, 한숨, downhearted(낙담한) = disappointed(실망한). 나중 감정이에요."}
+  ],
+  "choices": [
+    {"en": "excited → disappointed", "ko": "신이 난 → 실망한", "why": "정답. 기대에 부푼 출발(smiling, anticipation)에서 구름·비로 촬영을 못 하고 낙담(downhearted)한 결말로 바뀌어요."},
+    {"en": "anxious → relieved", "ko": "불안한 → 안도한", "why": "처음엔 불안하지 않고 설렜어요. 끝도 안도가 아니라 낙담이라 방향이 정반대예요."},
+    {"en": "terrified → indifferent", "ko": "겁에 질린 → 무관심한", "why": "겁먹을 장면이 없어요. 한숨 쉬며 낙담했으니 무관심도 아니에요."},
+    {"en": "bored → delighted", "ko": "지루한 → 아주 기쁜", "why": "처음과 끝이 모두 반대예요. 지루하지 않고 들떠 있었고, 끝은 기쁨이 아니라 실망이에요."},
+    {"en": "relaxed → grateful", "ko": "느긋한 → 고마워하는", "why": "심장이 뛸 만큼 들뜬 상태라 relaxed와 거리가 멀고, 고마워할 일도 없어요."}
+  ],
+  "grammar": [
+    {"t": "과거완료 진행", "ex": "Dan had been checking the weather and searching for the perfect location.", "d": "had been -ing는 '그 밤이 오기 전부터 계속 ~해 왔다'. 오래 준비했기에 뒤의 실망이 더 커지는 장치예요."},
+    {"t": "can't stop -ing", "ex": "… he couldn't stop smiling and his heart raced with anticipation.", "d": "'~하는 것을 멈출 수 없다', 즉 계속 웃었다는 뜻이에요. 들뜬 감정을 보여 주는 표현이에요."},
+    {"t": "분사구문 (동시 동작)", "ex": "He lowered his head, letting out a loud sigh.", "d": "letting out은 '~하면서'. 고개를 숙이며 동시에 한숨을 쉬었다는 뜻이에요."},
+    {"t": "do nothing but + 동사원형", "ex": "He could do nothing but drive back home, downhearted.", "d": "'~할 수밖에 없다'. but 뒤에 동사원형 drive가 와요. 끝의 downhearted는 그때의 상태를 덧붙인 형용사예요."}
+  ],
+  "vocab": [
+    ["the Milky Way", "은하수"],
+    ["location", "장소"],
+    ["spot", "장소, 지점"],
+    ["race", "(심장이) 빨리 뛰다"],
+    ["anticipation", "기대"],
+    ["within minutes", "몇 분 안에"],
+    ["constantly", "끊임없이"],
+    ["even worse", "설상가상으로"],
+    ["lower", "낮추다, 떨구다"],
+    ["let out a sigh", "한숨을 쉬다"],
+    ["downhearted", "낙담한"],
+    ["indifferent", "무관심한"],
+    ["terrified", "겁에 질린"]
+  ],
+  "summary": {"en": "Dan set out excitedly to photograph the Milky Way, but clouds and rain ruined the night and he drove home disappointed.", "ko": "Dan은 은하수를 찍으러 신나게 나섰지만, 먹구름과 비 때문에 촬영을 못 하고 실망한 채 집으로 돌아왔다."},
+  "writing": {"en": "His excitement turned into disappointment when the clouds covered the sky.", "ko": "구름이 하늘을 덮자 그의 설렘은 실망으로 바뀌었다."},
+  "tip": "심경 변화 문항은 앞 감정과 뒤 감정을 따로 찾아요. 앞은 smiling, heart raced 같은 몸 반응에서, 뒤는 sigh, lowered his head, downhearted 같은 마지막 문장에서 잡으세요. 화살표 양쪽 중 하나만 맞는 선택지가 많으니 두 칸 모두 확인하고 고르세요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 19번 정답은?", "① excited → disappointed(신이 난 → 실망한)예요. 은하수 촬영에 들떴던 Dan이 먹구름과 비로 낙담해 돌아가요."],
+    ["2026년 10월 고3 영어 19번은 어떤 유형인가요?", "등장인물의 심경 변화를 고르는 2점 문항이에요."],
+    ["② anxious → relieved가 오답인 이유는?", "처음 감정은 불안이 아니라 기대에 찬 설렘이고, 마지막은 안도가 아니라 낙담이에요. 양쪽이 모두 반대예요."]
+  ]
+}

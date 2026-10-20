@@ -1,0 +1,125 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 34,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 2,
+  "topic": "대중적인 문화란 대중문화가 다시 민간 문화 속으로 끌려 들어가는 것",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 34번",
+    "2026 10월 고3 영어 34번 해설",
+    "고3 10월 모의고사 34번 정답",
+    "고3 모의고사 빈칸 추론",
+    "mass culture popular culture folk culture 지문",
+    "팬 문화 our song 지문",
+    "빈칸 추론 3점 해설"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 34번은 대중문화(mass culture)와 대중적인 문화(popular culture)를 생산과 소비로 나누고, 소비자의 손에 들어간 대중문화가 다시 민간 문화로 돌아가는 과정을 설명한 빈칸 추론 문항이에요. In other words가 이끄는 빈칸 문장은 앞의 예시를 한 줄로 정리한 말이에요. 정답은 ② mass culture gets pulled back into folk culture예요.",
+  "flow": [
+    ["배경", "상업 문화가 민간 문화 관습을 장외로 밀어냈지만, 사람들은 여전히 노래를 만들고 시를 썼고, 대중 매체에 반응하는 팬 공동체도 생겼다."],
+    ["개념 구분", "일부 학자들은 대중문화(생산의 범주)와 대중적인 문화(소비의 범주)를 구분한다."],
+    ["정의 + 예시", "대중적인 문화는 대중문화의 재료가 소비자 손에 들어갔을 때 일어나는 일이다. 라디오 노래가 연인의 '우리 노래'가 되고, 팬이 드라마 인물로 직접 이야기를 쓴다."],
+    ["재진술(빈칸)", "다시 말해, 대중적인 문화란 대중문화가 다시 민간 문화 속으로 끌려 들어갈 때 일어나는 것이다."],
+    ["부연", "이 대체 문화 경제는 닫힌 문 뒤, 친구·이웃의 작은 무리 안에서만 돌았기에 문화 산업은 그것과 맞설 필요가 없었다."]
+  ],
+  "evidence": [
+    {
+      "en": "Commercial culture — generating the stories, images, and sounds that mattered most to the public — pushed folk culture practices underground. People still composed and sang songs and amateur writers still scribbled verse.",
+      "ko": "상업 문화는, 대중이 가장 중요하게 여긴 이야기, 이미지, 그리고 소리를 만들어 내면서, 민간 문화 관습을 장외로 밀어냈다. 사람들은 여전히 노래를 작곡하고 불렀으며 아마추어 작가들은 여전히 시구를 끄적거렸다.",
+      "note": "민간 문화(folk culture)는 사라진 게 아니라 '지하로' 밀려났을 뿐이에요. 빈칸에서 대중문화가 돌아가는 곳이 바로 이 민간 문화예요."
+    },
+    {
+      "en": "They argue that popular culture is what happens to the materials of mass culture when they get into the hands of consumers, when a song played on the radio becomes so associated with a particularly romantic evening that two young lovers decide to call it “our song,” …",
+      "ko": "그들은 대중적인 문화란 대중문화의 제재가 소비자의 손에 들어갔을 때 그것에 일어나는 것이라고 주장하는데, 라디오에서 흘러나오는 어떤 노래가 어느 특히 로맨틱한 저녁과 몹시 결부되어 두 젊은 연인이 그것을 ‘우리 노래’라고 부르기로 정하는 경우가 그러하다.",
+      "note": "빈칸 문장은 이 정의를 In other words로 다시 말한 거예요. 방송 노래(대중문화)가 연인의 개인적인 노래(민간 문화)로 바뀌는 과정이에요."
+    },
+    {
+      "en": "… or when a fan becomes so fascinated with a particular television series that it inspires her to write original stories about its characters.",
+      "ko": "… 또는 어떤 팬이 특정 텔레비전 시리즈에 너무나 매료되어 그 시리즈가 그녀에게 그것의 등장인물에 관한 독창적인 이야기를 쓰도록 영감을 주는 경우가 그러하다.",
+      "note": "팬이 직접 이야기를 쓰는 건 앞에서 말한 amateur writers의 민간 문화 활동과 같아요. 대중문화 → 민간 문화로 돌아가는 두 번째 예시예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "fans react to media content as its producers intended",
+      "ko": "팬들이 제작자가 의도한 대로 미디어 콘텐츠에 반응한다",
+      "why": "글의 예시는 노래를 '우리 노래'로 만들고 새 이야기를 쓰는 등, 제작자 의도를 넘어 소비자가 바꿔 쓰는 모습이에요. 방향이 반대예요."
+    },
+    {
+      "en": "mass culture gets pulled back into folk culture",
+      "ko": "대중문화가 다시 민간 문화 속으로 끌려 들어간다",
+      "why": "정답. 대중문화의 재료가 소비자 손에서 연인의 노래, 팬의 창작이 되는 것은 밀려났던 민간 문화로 다시 돌아가는 과정이에요."
+    },
+    {
+      "en": "the market blocks otherwise accessible content",
+      "ko": "시장이 그렇지 않았다면 접근 가능했을 콘텐츠를 막는다",
+      "why": "시장이 콘텐츠를 막는다는 내용은 없어요. 오히려 문화 산업은 이 대체 문화와 맞설 필요조차 없었다고 했어요."
+    },
+    {
+      "en": "culture industries import unknown folk practices",
+      "ko": "문화 산업이 알려지지 않은 민간 관습을 들여온다",
+      "why": "방향이 거꾸로예요. 글은 대중문화가 민간 문화로 가는 흐름이지, 산업이 민간 관습을 가져가는 흐름이 아니에요."
+    },
+    {
+      "en": "the industry popularizes overlooked cultural practices",
+      "ko": "산업이 간과된 문화 관습을 대중화한다",
+      "why": "주체가 산업이라 틀려요. 대중적인 문화는 소비자의 손에서 일어나는 일이고, 그 산물은 작은 무리 안에서만 퍼졌어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "삽입된 분사구 (줄표)",
+      "ex": "Commercial culture — generating the stories, images, and sounds that mattered most to the public — pushed folk culture practices underground.",
+      "d": "줄표 사이 generating ~은 주어 Commercial culture를 보충 설명하는 분사구예요. 줄표 부분을 빼면 주어와 동사 pushed가 바로 보여요."
+    },
+    {
+      "t": "관계대명사 what + when절",
+      "ex": "popular culture is what happens to the materials of mass culture when they get into the hands of consumers",
+      "d": "what은 '~하는 것'이라는 명사절로 보어 역할을 해요. when절은 '그것이 언제 일어나는지'를 알려 줘요."
+    },
+    {
+      "t": "so ~ that 결과 구문",
+      "ex": "a song played on the radio becomes so associated with a particularly romantic evening that two young lovers decide to call it “our song,”",
+      "d": "'너무 ~해서 …하다'. played on the radio는 a song을 뒤에서 꾸미는 과거분사구예요."
+    },
+    {
+      "t": "inspire + 목적어 + to V",
+      "ex": "… that it inspires her to write original stories about its characters.",
+      "d": "'~가 …하도록 영감을 주다'. 5형식 동사라 목적어 뒤에 to부정사가 와요."
+    }
+  ],
+  "vocab": [
+    ["commercial culture", "상업 문화"],
+    ["folk culture", "민간 문화"],
+    ["underground", "지하로, 장외로"],
+    ["compose", "작곡하다"],
+    ["scribble", "끄적거리다"],
+    ["verse", "시, 시구"],
+    ["grassroots", "보통 사람들로 이루어진, 풀뿌리의"],
+    ["emerge", "나타나다, 등장하다"],
+    ["in response to", "~에 대한 반응으로"],
+    ["hold on to", "~을 고수하다"],
+    ["distinction", "구분, 차이"],
+    ["mass culture", "대중문화(생산의 범주)"],
+    ["popular culture", "대중적인 문화(소비의 범주)"],
+    ["associated with", "~와 결부된, 연관된"],
+    ["confront", "직면하다, 맞서다"],
+    ["circulate", "퍼지다, 유통되다"]
+  ],
+  "summary": {
+    "en": "Popular culture arises when consumers take the materials of mass culture and remake them in personal, folk-like ways, such as lovers adopting a song or fans writing their own stories.",
+    "ko": "대중적인 문화는 소비자가 대중문화의 재료를 가져다 연인의 노래나 팬 창작처럼 개인적이고 민간 문화다운 방식으로 다시 만들 때 생겨난다."
+  },
+  "writing": {
+    "en": "Consumers turn mass-produced content into their own personal culture.",
+    "ko": "소비자는 대량 생산된 콘텐츠를 자신만의 개인적인 문화로 바꾼다."
+  },
+  "tip": "In other words 뒤 빈칸은 앞 내용을 다시 말한 것이에요. 바로 앞의 정의(대중문화 재료가 소비자 손에 들어갈 때)와 예시(우리 노래, 팬 창작)를 묶고, 글 첫머리에서 밀려났던 folk culture를 떠올리면 ②가 보여요. 주체가 산업(industry)인 ④·⑤는 '소비자의 손'이라는 핵심과 어긋나니 먼저 지우세요.",
+  "note": "mass culture와 popular culture, 우리말로는 둘 다 '대중문화'라 헷갈려요. 생산이냐 소비냐로 딱 나눠서 읽으면 글이 술술 풀려요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 34번 정답은?", "② mass culture gets pulled back into folk culture(대중문화가 다시 민간 문화 속으로 끌려 들어간다)예요. 소비자 손에 들어간 대중문화가 개인적인 노래나 팬 창작으로 바뀌는 과정을 말해요."],
+    ["2026 10월 고3 영어 34번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 대중문화(생산)와 대중적인 문화(소비)의 구분을 다룬 지문이에요."],
+    ["① fans react to media content as its producers intended가 오답인 이유는?", "글의 팬과 연인은 제작자 의도대로 받아들이지 않고, 노래를 '우리 노래'로 만들거나 새 이야기를 써요. 의도대로 반응한다는 건 글과 반대예요."]
+  ]
+}

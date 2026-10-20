@@ -1,0 +1,125 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 33,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 5,
+  "topic": "AI가 현실 세계에서 흔들리는 이유: 어떤 데이터로도 다 담을 수 없는 세상",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 33번",
+    "2026 10월 고3 영어 33번 해설",
+    "고3 10월 모의고사 33번 정답",
+    "고3 모의고사 빈칸 추론",
+    "AI gray areas 자율 주행 지문",
+    "no data set can ever contain",
+    "빈칸 추론 3점 해설"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 33번은 규칙과 경계가 깔끔하지 않은 현실 세계의 '회색 지대'에서 AI가 자꾸 흔들리는 이유를 다룬 빈칸 추론 문항이에요. 데이터를 늘려도 AI는 패턴을 흉내 내며 조금씩 나아질 뿐, 세상 전체를 담을 수는 없다는 게 핵심이에요. 정답은 ⑤ no data set can ever contain이에요.",
+  "flow": [
+    ["주장", "현실 세계에서 AI의 가장 큰 장애물은 인간의 과업 대부분이 규칙과 경계가 깔끔하지 않다는 점이다."],
+    ["예시", "붐비는 도시 운전 같은 '회색 지대'에서 AI는 흔들린다. 자율 주행차는 통제된 환경 밖에서 아직 사람을 대신하지 못하고, 무인 택시는 샌프란시스코에서 혼란을 일으켰다."],
+    ["부연", "실패가 실제적이고 영구적인 손실이 되는 개방 세계에서는 많은 AI 도구를 아직 믿을 수 없다."],
+    ["양보", "모델이 커지고 운전 데이터를 더 학습하면 성능은 나아질 수 있다."],
+    ["결론", "하지만 그것은 우리 행동의 패턴을 더 많이 흉내 내는 방식일 뿐이다. 우리가 다루는 세상은 어떤 데이터 세트도 다 담을 수 없기 때문이다."]
+  ],
+  "evidence": [
+    {
+      "en": "The biggest obstacle for AI in real-world settings is that most human tasks aren’t nearly as tidy in their rules and boundaries.",
+      "ko": "현실 세계의 환경에서 AI의 가장 큰 장애물은 대부분의 인간 과업이 그것의 규칙과 경계에 있어서 결코 그렇게 잘 정돈되어 있지 않다는 것이다.",
+      "note": "첫 문장이 주제문이에요. 현실 세계는 규칙·경계가 깔끔하지 않다 → 빈칸의 a world는 '깔끔하게 정리되지 않는 세상'이어야 해요."
+    },
+    {
+      "en": "Despite years of optimistic predictions, many AI tools cannot yet be trusted in open-world environments, where the human stakes are high, and failure means real, permanent loss.",
+      "ko": "수년간의 낙관적인 예측에도 불구하고, 많은 AI 도구들은 인간이 잃을 것이 많고 실패가 실제적이고 영구적인 손실을 의미하는 개방 세계 환경에서 아직 신뢰받을 수 없다.",
+      "note": "open-world(열린 세계)는 정해진 틀 안에 가둘 수 없는 세상이에요. 빈칸의 world와 같은 대상을 가리켜요."
+    },
+    {
+      "en": "But they will improve only by mirroring more of the patterns found in our intelligent performances, as we cope with a world that ________.",
+      "ko": "그러나 그것들은 오직 우리의 지적인 수행에서 발견되는 더 많은 행동 양식을 반영함으로써만 향상될 것인데, 우리가 ________ 세상을 다루기 때문이다.",
+      "note": "앞 문장의 '데이터를 더 학습하면 나아질 수 있다'를 But으로 뒤집어요. 데이터에는 한계가 있다는 말이 와야 하니 '어떤 데이터 세트도 결코 담을 수 없는'이 딱 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "data sets can easily predict",
+      "ko": "데이터 세트가 쉽게 예측할 수 있는",
+      "why": "글은 데이터로 다 다룰 수 없는 회색 지대를 말해요. '쉽게 예측된다'는 정반대 방향이에요."
+    },
+    {
+      "en": "clear rules and boundaries dominate",
+      "ko": "분명한 규칙과 경계가 지배하는",
+      "why": "첫 문장에서 인간의 과업은 규칙과 경계가 깔끔하지 않다고 했어요. 본문 단어 rules and boundaries를 그대로 가져온 반대 함정이에요."
+    },
+    {
+      "en": "humans cannot influence in any way",
+      "ko": "인간이 어떤 식으로도 영향을 줄 수 없는",
+      "why": "글은 인간의 영향력이 아니라 AI와 데이터의 한계를 다뤄요. 초점이 어긋나요."
+    },
+    {
+      "en": "we have under control owing to AI",
+      "ko": "AI 덕분에 우리가 통제하고 있는",
+      "why": "AI는 통제된 환경(controlled settings) 밖에서 흔들린다는 게 요지예요. AI 덕분에 통제된다는 말은 글과 반대예요."
+    },
+    {
+      "en": "no data set can ever contain",
+      "ko": "어떤 데이터 세트도 결코 담을 수 없는",
+      "why": "정답. 규칙과 경계가 깔끔하지 않은 열린 세계라서, 데이터를 아무리 늘려도 전부 담을 수는 없어요. 그래서 AI는 패턴을 흉내 내며 조금씩만 나아질 수 있어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "not nearly as ~ (as)",
+      "ex": "most human tasks aren’t nearly as tidy in their rules and boundaries.",
+      "d": "not nearly as ~는 '결코 그만큼 ~하지 않다'는 강한 부정이에요. 비교 대상(as 뒤)이 생략됐지만 'AI가 잘하는 정돈된 과업만큼'이라는 뜻이 숨어 있어요."
+    },
+    {
+      "t": "보어 자리 명사절 where",
+      "ex": "Those “gray areas” (like driving on busy city streets) are where AI tools often falter.",
+      "d": "where는 선행사 없이 '~하는 곳'이라는 명사절을 만들어요. be동사 뒤 보어 자리예요. '회색 지대가 바로 AI가 흔들리는 곳이다'."
+    },
+    {
+      "t": "계속적 용법 관계부사 where",
+      "ex": "… in open-world environments, where the human stakes are high, and failure means real, permanent loss.",
+      "d": "콤마 뒤 where는 앞의 open-world environments를 보충 설명해요. '그곳에서는 ~'로 끊어 읽으면 돼요."
+    },
+    {
+      "t": "only by -ing / 이유의 as",
+      "ex": "But they will improve only by mirroring more of the patterns …, as we cope with a world that …",
+      "d": "only by -ing는 '오직 ~함으로써만'이라 한계를 강조해요. 뒤의 as는 '~이기 때문에'라는 이유예요. 빈칸이 그 이유 속에 있어요."
+    }
+  ],
+  "vocab": [
+    ["obstacle", "장애물"],
+    ["tidy", "깔끔한, 잘 정돈된"],
+    ["boundary", "경계"],
+    ["gray area", "회색 지대, 애매한 영역"],
+    ["falter", "불안정해지다, 흔들리다"],
+    ["forecast", "예측"],
+    ["imminent", "임박한"],
+    ["controlled setting", "통제된 환경"],
+    ["driverless", "운전자가 없는, 무인의"],
+    ["optimistic", "낙관적인"],
+    ["open-world", "개방된 세계의, 열린"],
+    ["stakes", "(걸려 있는) 이해관계, 위험"],
+    ["permanent", "영구적인"],
+    ["mirror", "반영하다, 그대로 따라 하다"],
+    ["cope with", "~을 다루다, 대처하다"],
+    ["data set", "데이터 세트"]
+  ],
+  "summary": {
+    "en": "AI struggles in real-world gray areas because human tasks lack tidy rules, and more data can only help it mimic our patterns in a world no data set can fully capture.",
+    "ko": "인간의 과업은 규칙이 깔끔하지 않아서 AI는 현실의 회색 지대에서 흔들리며, 데이터를 늘려도 어떤 데이터로도 다 담을 수 없는 세상에서 우리 패턴을 흉내 내는 데 그친다."
+  },
+  "writing": {
+    "en": "No amount of data can fully capture the messy real world.",
+    "ko": "아무리 많은 데이터도 복잡한 현실 세계를 완전히 담아낼 수는 없다."
+  },
+  "tip": "빈칸이 마지막 문장에 있으면 첫 문장(주제문)과 같은 말인지 확인하세요. 이 글은 첫 문장 '규칙과 경계가 깔끔하지 않다'와 open-world가 빈칸의 world를 설명해요. 그리고 바로 앞 문장의 '데이터를 더 학습하면 나아진다'를 But으로 뒤집는 흐름이라, 데이터의 한계를 말하는 ⑤를 고르면 돼요. ②처럼 본문 단어(rules and boundaries)를 그대로 쓴 선택지는 방향이 맞는지 꼭 다시 보세요.",
+  "note": "But 앞 문장이 '데이터 늘리면 나아진다'는 양보예요. 양보 뒤 But에서 글쓴이 진짜 생각이 나온다는 것, 빈칸 문제에서 꼭 챙기세요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 33번 정답은?", "⑤ no data set can ever contain(어떤 데이터 세트도 결코 담을 수 없는)이에요. 현실 세계는 규칙과 경계가 깔끔하지 않아 데이터로 다 담을 수 없다는 내용이에요."],
+    ["2026 10월 고3 영어 33번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. AI와 자율 주행차가 현실의 '회색 지대'에서 흔들리는 이유를 다뤄요."],
+    ["② clear rules and boundaries dominate가 오답인 이유는?", "첫 문장에서 인간의 과업은 규칙과 경계가 깔끔하지 않다고 했어요. ②는 본문 단어를 그대로 쓴 반대 내용이라 답이 될 수 없어요."]
+  ]
+}

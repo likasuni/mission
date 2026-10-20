@@ -1,0 +1,212 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 4,
+  "topic": "인간의 특성은 대부분 스펙트럼의 중간에 퍼져 있다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 31번",
+    "2026 10월 고3 영어 31번 해설",
+    "고3 10월 모의고사 31번 정답",
+    "고3 모의고사 빈칸 추론",
+    "human nature traits vary 지문",
+    "인간 본성 스펙트럼"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 31번은 인간 본성에 대한 일반화가 틀리는 이유를 다룬 빈칸 추론 문항이에요. 빈칸 바로 앞 문장이 기울임체로 traits vary(특성은 각기 다르다)를 강조하고, 이기심에서 자기희생까지 분포를 그래프로 그려 보라고 하니 그 결과는 '변동'이에요. 정답은 ④ variation이에요.",
+  "flow": [
+    [
+      "주장",
+      "정치 철학자들이 인간 본성에 대해 내린 일반화는 거의 다 틀렸다."
+    ],
+    [
+      "근거",
+      "역사·예술·문학·과학을 통틀어 우리가 아는 건 특성이 '각기 다르다'는 것이다."
+    ],
+    [
+      "예시",
+      "극단적 이기심부터 극단적 자기희생까지 분포를 그려 보면 변동이 나오고, 지능·합리성·공격성 등도 소수의 예외와 중간의 다수로 나뉜다."
+    ],
+    [
+      "정리",
+      "우리는 이타적이지 않은 만큼 이기적이지도 않고, 대부분의 측면에서 스펙트럼의 중간에 있다."
+    ],
+    [
+      "결론",
+      "인류에게 단언컨대 보편적인 행동·심리 특성은 아주 드물다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "If there is anything we know about human nature in all of its history, art, literature, and the sciences, it is that traits vary.",
+      "ko": "인간 본성에 관하여 그 모든 역사, 예술, 문학, 그리고 과학에서 우리가 알고 있는 것이 있다면, 그것은 특성이 ‘각기 다르다’는 것이다.",
+      "note": "vary를 기울임체로 강조했어요. 바로 뒤 그래프 예시의 결론(빈칸)은 vary의 명사형 variation과 연결돼요."
+    },
+    {
+      "en": "Do the same with intelligence, rationality, brutishness, aggressiveness, or whatever feature you want, and you will find a range, with the exceptional numbering in the very few, and most of us somewhere in the middle.",
+      "ko": "지능, 합리성, 야만성, 공격성, 또는 원하는 어떤 특성에 대해서도 똑같이 해 보면 범위를 발견하게 될 것인데, 예외적인 사람의 수는 극소수이고 우리 대부분은 중간 어딘가에 있다.",
+      "note": "Do the same(똑같이 해 보라)이 빈칸 문장과 같은 구조예요. 빈칸 자리의 결과가 a range(범위)로 바꿔 말해졌으니, 빈칸도 '퍼져 있음 = 변동'이에요."
+    },
+    {
+      "en": "We are mostly, in almost all respects that explain our behaviors and dispositions, in the middle of a spectrum.",
+      "ko": "우리는 대개, 우리의 행동과 성향을 설명하는 거의 모든 측면에서, 스펙트럼의 중간에 있다.",
+      "note": "spectrum(스펙트럼)은 한 가지로 같지 않고 넓게 퍼져 있다는 뜻이에요. uniformity(균일성)와는 정반대예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "bias",
+      "ko": "편향",
+      "why": "글은 특성이 고르게 퍼져 있다는 분포 이야기예요. 어느 한쪽으로 치우친다는 말은 나오지 않아요."
+    },
+    {
+      "en": "progress",
+      "ko": "진보",
+      "why": "시간에 따라 나아진다는 내용이 아니라, 한 시점에서 사람마다 다르다는 분포 이야기예요."
+    },
+    {
+      "en": "uniformity",
+      "ko": "균일성",
+      "why": "정반대 함정이에요. 글은 traits vary, a range, spectrum처럼 다양하다는 걸 강조해요."
+    },
+    {
+      "en": "variation",
+      "ko": "변동, 다양성",
+      "why": "정답. 앞 문장의 traits vary, 뒤 문장의 a range가 모두 빈칸을 바꿔 말한 표현이에요."
+    },
+    {
+      "en": "distortion",
+      "ko": "왜곡",
+      "why": "그래프가 잘못 그려진다는 내용은 없어요. 분포를 그리면 '다양함'이 보인다는 거예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "If there is anything ~, it is that …",
+      "ex": "If there is anything we know about human nature …, it is that traits vary.",
+      "d": "'~한 것이 있다면 그건 바로 …이다'. 강조하고 싶은 결론을 that절에 담는 구조예요. 핵심 주장이 여기 있어요."
+    },
+    {
+      "t": "명령문, and S will ~",
+      "ex": "Graph the distribution …, and you will have variation.",
+      "d": "'~해 보라, 그러면 …할 것이다'. 빈칸이 and 뒤에 있으면 앞 명령문의 결과를 묻는 거예요."
+    },
+    {
+      "t": "with 부대상황",
+      "ex": "you will find a range, with the exceptional numbering in the very few, and most of us somewhere in the middle",
+      "d": "with + 명사 + 분사/부사구 = '~가 …한 채로'. 예외적인 사람은 극소수, 대부분은 중간이라는 분포 모양을 설명해요."
+    },
+    {
+      "t": "no more A than B",
+      "ex": "We are no more selfish than we are selfless",
+      "d": "'B가 아닌 것처럼 A도 아니다'. 이기적이지도 이타적이지도 않고 중간이라는 뜻이에요. 양쪽 끝을 모두 부정하는 표현이에요."
+    },
+    {
+      "t": "at least if ~",
+      "ex": "Very few behavioral or psychological traits are categorically universal to humankind, at least if the sciences are to be believed.",
+      "d": "'적어도 ~한다면'. be to be p.p.는 '~되려면, ~된다면'의 조건 의미예요."
+    }
+  ],
+  "vocab": [
+    [
+      "generalization",
+      "일반화"
+    ],
+    [
+      "political philosopher",
+      "정치 철학자"
+    ],
+    [
+      "trait",
+      "특성"
+    ],
+    [
+      "vary",
+      "각기 다르다"
+    ],
+    [
+      "distribution",
+      "분포"
+    ],
+    [
+      "exhibit",
+      "나타내다, 보이다"
+    ],
+    [
+      "self-interest",
+      "이기심, 사리사욕"
+    ],
+    [
+      "self-sacrifice",
+      "자기희생"
+    ],
+    [
+      "brutishness",
+      "야만성"
+    ],
+    [
+      "aggressiveness",
+      "공격성"
+    ],
+    [
+      "number",
+      "(수가) ~에 이르다"
+    ],
+    [
+      "selfless",
+      "이타적인"
+    ],
+    [
+      "refined",
+      "고상한, 세련된"
+    ],
+    [
+      "be disposed to",
+      "~하는 경향이 있다"
+    ],
+    [
+      "familial",
+      "가족의"
+    ],
+    [
+      "disposition",
+      "성향"
+    ],
+    [
+      "spectrum",
+      "스펙트럼, 범위"
+    ],
+    [
+      "categorically",
+      "단언컨대"
+    ],
+    [
+      "universal",
+      "보편적인"
+    ]
+  ],
+  "summary": {
+    "en": "Most generalizations about human nature are wrong because human traits vary, with most people falling somewhere in the middle of a spectrum.",
+    "ko": "인간 본성에 대한 일반화가 대부분 틀린 이유는 인간의 특성이 각기 다르고, 대부분의 사람은 스펙트럼의 중간 어딘가에 있기 때문이다."
+  },
+  "writing": {
+    "en": "Human traits vary, and most of us sit in the middle of a spectrum.",
+    "ko": "인간의 특성은 각기 다르며, 우리 대부분은 스펙트럼의 중간에 있다."
+  },
+  "tip": "빈칸 문장이 '명령문, and you will ~' 형태면 바로 뒤에 같은 구조(Do the same …, and you will find ~)가 반복되는지 보세요. 뒤 문장의 결과(a range)가 빈칸의 바꿔 말하기예요. 반대 뜻 선택지(uniformity)를 먼저 지우면 더 빨라요.",
+  "faq": [
+    [
+      "2026년 10월 고3 모의고사 영어 31번 정답은?",
+      "④ variation(변동, 다양성)이에요. 앞 문장의 traits vary와 뒤 문장의 a range가 빈칸을 가리켜요."
+    ],
+    [
+      "2026 10월 고3 영어 31번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 인간의 특성이 스펙트럼처럼 퍼져 있다는 지문이에요."
+    ],
+    [
+      "③ uniformity가 오답인 이유는?",
+      "uniformity는 '모두 같음'이라는 뜻이라 글의 핵심인 traits vary(특성은 다르다)와 정반대예요."
+    ]
+  ]
+}
