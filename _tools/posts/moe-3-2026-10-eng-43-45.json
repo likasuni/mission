@@ -1,0 +1,348 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "튼튼함만 믿던 목수 Martin이 조수 Tom의 디테일 덕분에 책장을 완성하다",
+  "date": "2026-10-21",
+  "lead": "2026년 10월 고3 모의고사 영어 43~45번은 튼튼함만 중시하던 목수 Martin이 조수 Tom의 섬세한 디자인 덕분에 어린이 도서관 책장을 완성하고 디테일의 가치를 깨닫는 이야기의 장문 세트예요. 43번 순서는 (A) 제안 무시 → (C) 사서의 아쉬움·노란색 칠 → (B) Tom의 꽃 그림 → (D) 사서의 만족·사과, 44번은 (c)만 Tom, 45번은 '다음 날 아침에 끝냈다'가 불일치예요. 정답은 43번 ②, 44번 ③, 45번 ③이에요.",
+  "flow": [
+    [
+      "(A)",
+      "목수 Martin이 사서에게 주문받은 어린이 책장을 두꺼운 오크 판으로 만든다. 조수 Tom이 장식을 제안하지만 Martin은 '책만 잘 받치면 된다'고 한다."
+    ],
+    [
+      "(C)",
+      "며칠 뒤 사서가 와서 '튼튼하지만 어린이 도서관엔 안 어울린다, 더 명랑했으면'이라 한다. Martin은 노란색으로 칠하지만 여전히 단조롭고, 더 할 게 없다고 인정한다."
+    ],
+    [
+      "(B)",
+      "좌절한 Martin에게 Tom이 다시 스케치를 보여 준다. Martin은 허락하고, Tom은 책장 양쪽에 꽃을 그린다. Martin은 램프를 놓아 주고, 작업은 그날 밤 늦게 끝난다."
+    ],
+    [
+      "(D)",
+      "다음 날 아침 사서는 크게 만족한다. Martin은 Tom에게 사과하고, 둘은 다음 작업에 Tom의 스케치를 쓰기로 한다."
+    ]
+  ],
+  "tip": "43번: 단락 첫 문장의 연결 고리를 잡으세요. (B)의 Seeing his frustration은 (C) 끝의 '더 할 게 없다고 인정'을, (D)의 The next morning은 (B) 끝의 late that night을 받아요. 44번: Martin과 Tom 둘 다 he라서, 문장마다 '누가 누구에게' 하는 행동인지 따지세요. 45번: 시간 표현(late that night ↔ the next morning)이 바뀐 선택지를 조심하세요.",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 43~45번",
+    "2026 10월 고3 영어 43~45번 해설",
+    "고3 10월 모의고사 43번 정답",
+    "고3 10월 모의고사 44번 정답",
+    "고3 10월 모의고사 45번 정답",
+    "고3 모의고사 장문 독해",
+    "Martin Tom bookcase librarian 지문",
+    "고3 모의고사 영어 해설"
+  ],
+  "qs": [
+    {
+      "n": 43,
+      "type": "장문 순서",
+      "points": 2,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "Tom suggested adding a few decorative touches and showed him his sketches. But Martin just said, “If it can hold books safely, it has done its job.”",
+          "ko": "Tom은 장식적인 효과를 조금 더하자고 제안하며 그에게 스케치를 보여 주었지만, Martin은 그저 \"책을 안전하게 받칠 수 있으면 제 역할을 다한 거야.\"라고 말했다.",
+          "note": "(A)는 Martin이 장식을 거절하고 튼튼함만 챙기는 데서 끝나요. 다음엔 그 결과(사서의 반응)가 와야 해요 → (C)."
+        },
+        {
+          "en": "However, it still looked too plain, and he had to admit that he had no idea what else to do. / Seeing his frustration, Tom quietly showed his sketches once more.",
+          "ko": "그러나 그것은 여전히 너무 단조로워 보였고, 그는 달리 무엇을 해야 할지 모른다는 것을 인정해야 했다. / 그가 좌절하는 것을 본 Tom은 조용히 스케치를 한 번 더 보여 주었다.",
+          "note": "(C) 끝의 막막함이 (B) 첫머리의 his frustration(좌절)으로 이어져요. once more(한 번 더)도 (A)에서 이미 한 번 보여 줬기 때문이에요."
+        },
+        {
+          "en": "His work was finished late that night. / The next morning, the librarian smiled when she saw the bookcase.",
+          "ko": "그의 작업은 그날 밤 늦게 끝났다. / 다음 날 아침, 사서는 책장을 보고 미소 지었다.",
+          "note": "(B)의 late that night → (D)의 The next morning으로 시간이 자연스럽게 흘러요. 그래서 (C) － (B) － (D)예요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(B) － (D) － (C)",
+          "ko": "꽃 그림 → 사서 만족 → 사서 아쉬움",
+          "why": "(B)의 Seeing his frustration(좌절)이 (A) 바로 뒤에 오면 Martin이 좌절할 이유가 없어요."
+        },
+        {
+          "en": "(C) － (B) － (D)",
+          "ko": "사서 아쉬움 → 꽃 그림 → 사서 만족",
+          "why": "정답. 사서의 아쉬움과 노란색 실패(C) → 좌절한 Martin에게 Tom이 다시 제안, 밤늦게 완성(B) → 다음 날 아침 사서 만족(D)."
+        },
+        {
+          "en": "(C) － (D) － (B)",
+          "ko": "사서 아쉬움 → 사서 만족 → 꽃 그림",
+          "why": "(C)에서 여전히 단조롭다고 했는데 바로 (D)에서 사서가 만족하면 이유가 없어요. 꽃 그림(B)이 먼저예요."
+        },
+        {
+          "en": "(D) － (B) － (C)",
+          "ko": "사서 만족 → 꽃 그림 → 사서 아쉬움",
+          "why": "(D)의 The next morning과 사과는 작업이 끝난 뒤의 일이라 맨 앞에 올 수 없어요."
+        },
+        {
+          "en": "(D) － (C) － (B)",
+          "ko": "사서 만족 → 사서 아쉬움 → 꽃 그림",
+          "why": "사서가 먼저 만족했다가 다시 아쉬워하는 흐름은 말이 안 돼요. Martin의 사과도 결말이어야 해요."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭 대상",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "Tom suggested adding a few decorative touches and showed (a) him his sketches.",
+          "ko": "Tom은 장식을 조금 더하자고 제안하며 (a) 그에게 스케치를 보여 주었다.",
+          "note": "Tom이 스케치를 보여 준 상대는 Martin이에요. (a) = Martin."
+        },
+        {
+          "en": "When the workshop grew dark, Martin quietly placed a lamp beside Tom so that (c) he could continue working.",
+          "ko": "작업장이 어두워지자, Martin은 (c) 그가 계속 작업할 수 있도록 Tom 옆에 조용히 램프를 놓았다.",
+          "note": "램프를 받고 계속 작업한 사람은 꽃을 그리던 Tom이에요. (c)만 Tom이에요."
+        },
+        {
+          "en": "Tom was happy that Martin finally came to see the value of the details (e) he had once ignored.",
+          "ko": "Tom은 Martin이 (e) 그가 한때 무시했던 디테일의 가치를 마침내 깨닫게 되어 기뻤다.",
+          "note": "디테일을 무시했던 사람은 (A)에서 장식을 거절한 Martin이에요. (e) = Martin."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) him",
+          "ko": "Martin",
+          "why": "Tom이 스케치를 보여 준 상대, Martin이에요."
+        },
+        {
+          "en": "(b) he",
+          "ko": "Martin",
+          "why": "더 좋은 생각이 없어서 Tom에게 디테일 추가를 허락한 사람, Martin이에요."
+        },
+        {
+          "en": "(c) he",
+          "ko": "Tom",
+          "why": "정답. Martin이 램프를 놓아 준 덕분에 계속 작업할 수 있었던 사람은 Tom이에요."
+        },
+        {
+          "en": "(d) he",
+          "ko": "Martin",
+          "why": "책장을 노란색으로 칠하고도 더 할 게 없다고 인정한 사람, Martin이에요."
+        },
+        {
+          "en": "(e) he",
+          "ko": "Martin",
+          "why": "한때 디테일을 무시했던 사람, Martin이에요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "장문 내용 불일치",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "Tom picked up his brushes and painted flowers on both sides of the bookcase.",
+          "ko": "Tom은 붓을 들어 책장 양쪽 측면에 꽃을 그렸다.",
+          "note": "② 일치."
+        },
+        {
+          "en": "When the workshop grew dark, Martin quietly placed a lamp beside Tom so that he could continue working. His work was finished late that night.",
+          "ko": "작업장이 어두워지자 Martin은 그가 계속 작업할 수 있도록 Tom 옆에 램프를 놓았다. 그의 작업은 그날 밤 늦게 끝났다.",
+          "note": "작업은 '그날 밤 늦게' 끝났어요. ③ '다음 날 아침에 끝냈다'는 불일치, 정답이에요. 다음 날 아침은 사서가 책장을 보러 온 때예요."
+        },
+        {
+          "en": "After the librarian left, Martin apologized to Tom.",
+          "ko": "사서가 떠난 후 Martin은 Tom에게 사과했다.",
+          "note": "⑤ 일치."
+        }
+      ],
+      "choices": [
+        {
+          "en": "사서는 아이들을 위한 책장을 주문했다.",
+          "ko": "책장 주문",
+          "why": "일치. One day, a librarian ordered a bookcase for children."
+        },
+        {
+          "en": "Tom은 책장 양쪽 측면에 꽃을 그렸다.",
+          "ko": "꽃 그림",
+          "why": "일치. Tom … painted flowers on both sides of the bookcase."
+        },
+        {
+          "en": "Tom은 다음 날 아침에 작업을 끝냈다.",
+          "ko": "다음 날 아침 완료",
+          "why": "정답(불일치). His work was finished late that night — 그날 밤 늦게 끝났어요."
+        },
+        {
+          "en": "Martin은 책장을 노란색으로 칠했다.",
+          "ko": "노란색 칠",
+          "why": "일치. To solve the issue, Martin painted the bookcase yellow."
+        },
+        {
+          "en": "사서가 떠난 후 Martin은 Tom에게 사과했다.",
+          "ko": "사과",
+          "why": "일치. After the librarian left, Martin apologized to Tom."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "suggest -ing",
+      "ex": "Tom suggested adding a few decorative touches and showed him his sketches.",
+      "d": "suggest는 동명사를 목적어로 써요. show + 사람 + 사물 = '~에게 …을 보여 주다'(4형식). (a) him이 간접목적어예요."
+    },
+    {
+      "t": "현재완료 (완료·결과)",
+      "ex": "“If it can hold books safely, it has done its job.”",
+      "d": "'책을 받칠 수 있으면 이미 제 역할을 다한 것'. 튼튼함만 중요하다는 Martin의 태도가 드러나요."
+    },
+    {
+      "t": "I wish + 가정법 과거",
+      "ex": "I wish it looked more playful.",
+      "d": "'더 명랑해 보이면 좋을 텐데'. 현재 사실(단조로워 보임)과 반대되는 바람이에요."
+    },
+    {
+      "t": "분사구문",
+      "ex": "Seeing his frustration, Tom quietly showed his sketches once more. … Not having a better idea, he allowed Tom to add some details.",
+      "d": "Seeing ~ = When Tom saw ~. Not having ~ = Because he didn't have ~(이유). 부정어 Not은 분사 앞에 와요."
+    },
+    {
+      "t": "so that + 주어 + could",
+      "ex": "Martin quietly placed a lamp beside Tom so that he could continue working.",
+      "d": "'~할 수 있도록'(목적). 44번 (c) he = Tom을 판단하는 문장이에요."
+    },
+    {
+      "t": "so ~ that … / come to V",
+      "ex": "“I was so proud of my work that I forgot the importance of details,” … Martin finally came to see the value of the details he had once ignored.",
+      "d": "so proud that = '너무 자랑스러워서 …했다'. come to see = '알게 되다'. had ignored는 과거보다 앞선 일(과거완료)이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "woodworker",
+      "목수"
+    ],
+    [
+      "assistant",
+      "조수"
+    ],
+    [
+      "delicate",
+      "섬세한"
+    ],
+    [
+      "librarian",
+      "사서"
+    ],
+    [
+      "bookcase",
+      "책장"
+    ],
+    [
+      "confidently",
+      "자신 있게"
+    ],
+    [
+      "oak board",
+      "오크 나무 판"
+    ],
+    [
+      "decorative touch",
+      "장식적 요소"
+    ],
+    [
+      "hold",
+      "받치다, 지탱하다"
+    ],
+    [
+      "stop by",
+      "잠시 들르다"
+    ],
+    [
+      "come along",
+      "(일이) 되어 가다"
+    ],
+    [
+      "praise",
+      "칭찬"
+    ],
+    [
+      "well-made",
+      "잘 만들어진"
+    ],
+    [
+      "belong in",
+      "~에 어울리다"
+    ],
+    [
+      "playful",
+      "명랑한, 장난기 있는"
+    ],
+    [
+      "plain",
+      "단조로운, 수수한"
+    ],
+    [
+      "admit",
+      "인정하다"
+    ],
+    [
+      "frustration",
+      "좌절"
+    ],
+    [
+      "make a difference",
+      "변화를 가져오다"
+    ],
+    [
+      "have one's doubts",
+      "의심하다"
+    ],
+    [
+      "workshop",
+      "작업장"
+    ],
+    [
+      "apologize",
+      "사과하다"
+    ],
+    [
+      "come to V",
+      "~하게 되다"
+    ],
+    [
+      "ignore",
+      "무시하다"
+    ]
+  ],
+  "summary": {
+    "en": "Martin, who cared only about strength, finally realized the value of details after Tom's decorative flowers turned a plain bookcase into one the librarian loved.",
+    "ko": "튼튼함만 중시하던 Martin은 Tom이 그린 장식 꽃 덕분에 단조로운 책장이 사서가 좋아하는 책장으로 바뀌자 마침내 디테일의 가치를 깨달았다."
+  },
+  "writing": {
+    "en": "Sometimes small details make the biggest difference.",
+    "ko": "때로는 작은 디테일이 가장 큰 차이를 만든다."
+  },
+  "faq": [
+    [
+      "2026년 10월 고3 모의고사 영어 43번 정답은?",
+      "② (C) － (B) － (D)예요."
+    ],
+    [
+      "2026년 10월 고3 모의고사 영어 44번 정답은?",
+      "③ (c)예요. (c) he만 Tom이고 나머지 (a), (b), (d), (e)는 모두 Martin이에요."
+    ],
+    [
+      "2026년 10월 고3 모의고사 영어 45번 정답은?",
+      "③ Tom은 다음 날 아침에 작업을 끝냈다예요. 본문은 His work was finished late that night(그날 밤 늦게 끝났다)이라고 해요."
+    ],
+    [
+      "(A) 다음에 (C)가 오는 이유는?",
+      "(A)에서 Martin이 장식을 거절하고 튼튼하게만 만들었으니, 그 결과로 사서가 '튼튼하지만 어린이 도서관엔 안 어울린다'고 하는 (C)가 이어져요. (B)의 Seeing his frustration은 (C) 끝에서 Martin이 막막해한 뒤에야 쓸 수 있어요."
+    ]
+  ],
+  "note": "44번처럼 등장인물 둘이 모두 he로 나오면, 밑줄마다 옆에 M, T를 작게 적어 두라고 해요. 43번 순서를 잡을 때 이미 한 번 읽었으니, 그때 표시해 두면 44·45번은 훨씬 빨라져요."
+}
