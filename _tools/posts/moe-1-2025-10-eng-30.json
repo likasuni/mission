@@ -1,0 +1,196 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 30,
+  "type": "어휘",
+  "points": 2,
+  "answer": 4,
+  "topic": "Z세대의 가치 중심 금융 선택: 투명성과 윤리",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 30번",
+    "2025 10월 고1 영어 30번 해설",
+    "고1 10월 모의고사 30번 정답",
+    "고1 모의고사 어휘",
+    "낱말의 쓰임",
+    "Gen Z 금융 결정 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 30번은 Z세대가 자신의 가치관에 맞는 금융 기관을 고른다는 글의 어휘 문항이에요. 환경과 사회 정의를 중시하는 Z세대가 자기 돈이 '유익한' 관행에 쓰이지 않기를 바란다는 건 앞뒤가 맞지 않아요. 정답은 ④예요.",
+  "flow": [
+    [
+      "주장",
+      "편리함과 기술만이 Z세대의 금융 결정을 이끄는 건 아니다. 이들은 가치관 중심이다."
+    ],
+    [
+      "투명성",
+      "책임감 없는 대기업을 불신하고, 정보가 자유로운 세상에서 자라 완전한 투명성을 기대한다."
+    ],
+    [
+      "예시",
+      "은행은 수수료·약관과 고객 데이터 처리 방식을 분명히 알려야 한다."
+    ],
+    [
+      "윤리",
+      "환경·사회 정의를 중시해 지속 가능한 투자, 가치관이 맞는 기업 지원, 해로운 관행에 돈이 쓰이지 않기를 원한다."
+    ],
+    [
+      "결론",
+      "사회적 책임 투자를 제공하고 환경적 지속 가능성에 헌신하는 은행이 Z세대의 관심을 끈다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Gen Z cares about the environment, social justice, and the ethical implications of their financial decisions.",
+      "ko": "Z세대는 환경, 사회 정의, 그리고 자신의 재정상 결정이 갖는 윤리적 함의에 관심을 가진다.",
+      "note": "윤리를 중시하는 세대라는 전제예요. 이들이 피하고 싶은 건 '해로운' 관행이에요."
+    },
+    {
+      "en": "… and ensuring that their money is not being used to fund ④ beneficial practices.",
+      "ko": "… 그리고 자신의 돈이 유익한 관행에 자금을 대는 데 쓰이지 않도록 하는 것",
+      "note": "is not being used(쓰이지 않도록)와 함께 쓰였으니 부정적인 말이 와야 해요. beneficial → harmful(해로운)이 자연스러워요."
+    },
+    {
+      "en": "Banks that offer socially responsible investment opportunities and are committed to environmental sustainability will ⑤ attract Gen Z's attention.",
+      "ko": "사회적으로 책임 있는 투자 기회를 제공하고 환경적 지속 가능성에 헌신하는 은행은 Z세대의 관심을 끌 것이다.",
+      "note": "윤리적인 은행이 Z세대를 '끌어당긴다'는 결론과도 ④를 harmful로 바꿔야 흐름이 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① lack",
+      "ko": "부족하다",
+      "why": "적절. Z세대가 회의적인 대상은 책임감이 '없는' 대기업이에요."
+    },
+    {
+      "en": "② clearly",
+      "ko": "분명하게",
+      "why": "적절. 투명성을 기대하므로 은행은 수수료·약관을 '분명하게' 알려야 해요."
+    },
+    {
+      "en": "③ important",
+      "ko": "중요한",
+      "why": "적절. 뒤에서 환경·사회 정의를 중시한다고 하니 윤리적 은행 업무가 그 어느 때보다 '중요하다'가 맞아요."
+    },
+    {
+      "en": "④ beneficial",
+      "ko": "유익한",
+      "why": "정답(부적절). 자기 돈이 '쓰이지 않기를' 바라는 대상이므로 harmful(해로운)·unethical(비윤리적인) 같은 말이 와야 해요."
+    },
+    {
+      "en": "⑤ attract",
+      "ko": "끌다",
+      "why": "적절. 사회적 책임 투자와 지속 가능성에 힘쓰는 은행은 Z세대의 관심을 '끈다'."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "not the only + 현재분사 후치 수식",
+      "ex": "While convenience and technology are crucial, they are not the only factors driving Gen Z's financial decisions.",
+      "d": "'유일한 요인은 아니다'라는 뜻으로 다른 요인(가치관)이 나올 것을 예고해요. driving은 factors를 뒤에서 꾸미는 현재분사예요."
+    },
+    {
+      "t": "동명사 병렬 (be interested in)",
+      "ex": "They are interested in sustainable investing, supporting businesses that match their values, and ensuring that their money is not being used to fund …",
+      "d": "in 뒤에 investing, supporting, ensuring 세 개가 병렬이에요. 마지막 항목 안의 not이 ④의 방향을 정해 줘요."
+    },
+    {
+      "t": "진행형 수동태",
+      "ex": "their money is not being used to fund …",
+      "d": "be being p.p.는 '~되고 있다'. is not being used는 '쓰이고 있지 않다'예요."
+    },
+    {
+      "t": "주어를 꾸미는 관계절 + 동사 찾기",
+      "ex": "Banks that offer socially responsible investment opportunities and are committed to environmental sustainability will attract Gen Z's attention.",
+      "d": "that offer ~ and are committed ~까지가 Banks를 꾸미고, 진짜 동사는 will attract예요."
+    }
+  ],
+  "vocab": [
+    [
+      "crucial",
+      "매우 중요한"
+    ],
+    [
+      "values-driven",
+      "가치관 중심의"
+    ],
+    [
+      "bank with",
+      "~와 거래하다"
+    ],
+    [
+      "institution",
+      "기관"
+    ],
+    [
+      "transparency",
+      "투명성"
+    ],
+    [
+      "vital",
+      "필수적인"
+    ],
+    [
+      "skeptical of",
+      "~을 의심하는, 회의적인"
+    ],
+    [
+      "accountability",
+      "책임(감)"
+    ],
+    [
+      "fee",
+      "수수료"
+    ],
+    [
+      "terms and conditions",
+      "약관, 조건"
+    ],
+    [
+      "ethical",
+      "윤리적인"
+    ],
+    [
+      "implication",
+      "함의, 영향"
+    ],
+    [
+      "fund",
+      "자금을 대다"
+    ],
+    [
+      "beneficial",
+      "유익한 ↔ harmful 해로운"
+    ],
+    [
+      "be committed to",
+      "~에 헌신하다"
+    ],
+    [
+      "sustainability",
+      "지속 가능성"
+    ]
+  ],
+  "summary": {
+    "en": "Gen Z makes financial decisions based on their values, so they expect transparency and ethical practices from banks and are drawn to those committed to social responsibility and sustainability.",
+    "ko": "Z세대는 가치관에 따라 금융 결정을 내리므로 은행에 투명성과 윤리적 관행을 기대하고, 사회적 책임과 지속 가능성에 힘쓰는 은행에 끌린다."
+  },
+  "writing": {
+    "en": "Gen Z wants their money to support businesses that match their values.",
+    "ko": "Z세대는 자신의 돈이 자신의 가치관에 맞는 기업을 지원하기를 원한다."
+  },
+  "tip": "어휘 문제는 밑줄 단어 주변의 부정어(not, no, lack)를 꼭 함께 보세요. ④처럼 not being used to fund ___ 안에 들어가면 '쓰이지 않기를 바라는 것'이니 부정적인 단어가 와야 해요. 반의어(beneficial ↔ harmful)를 넣어 보고 글 전체 방향과 맞는지 확인하면 돼요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 30번 정답은?",
+      "④ beneficial이에요. 윤리를 중시하는 Z세대는 자기 돈이 해로운 관행에 쓰이지 않기를 바라므로 harmful(해로운)이 와야 해요."
+    ],
+    [
+      "2025 10월 고1 영어 30번은 어떤 유형인가요?",
+      "밑줄 친 낱말 중 문맥상 쓰임이 적절하지 않은 것을 고르는 2점 어휘 문항이에요. Z세대의 금융 결정을 다룬 지문이에요."
+    ],
+    [
+      "① lack은 왜 맞나요?",
+      "Z세대가 회의적으로 보는 대상은 책임감이 '없는' 대기업이에요. lack accountability가 자연스러워요."
+    ]
+  ],
+  "note": "④는 not being used와 묶어서 읽어야 보여요. 밑줄 단어만 보지 말고 앞쪽 not까지 한 덩어리로 끊어 읽는 습관을 들이세요."
+}

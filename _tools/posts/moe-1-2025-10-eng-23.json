@@ -1,0 +1,204 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 23,
+  "type": "주제",
+  "points": 2,
+  "answer": 1,
+  "topic": "처음부터 이민자에게 열려 있던 로마, 그 개방성이 성장의 토대가 되었다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 23번",
+    "2025 10월 고1 영어 23번 해설",
+    "고1 10월 모의고사 23번 정답",
+    "고1 모의고사 주제",
+    "Rome melting pot 지문",
+    "로마 문화적 개방성 영어 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 23번은 로마가 처음부터 이민자를 받아들인 '용광로'였고, 그 개방성이 로마의 힘과 성공의 토대가 되었다는 주제 문항이에요. It was this initial openness … that laid the foundations 강조 구문이 핵심 문장이에요. 정답은 ① cultural openness as a foundation for Rome’s growth예요.",
+  "flow": [
+    [
+      "도입",
+      "로마는 처음부터 여러 사람이 섞인 용광로였다고 전해진다."
+    ],
+    [
+      "근거 1",
+      "역사학자 Livy: 로마의 첫 주민은 Romulus의 차별 없는 정책에 끌려 사방에서 온 이민자들이었다."
+    ],
+    [
+      "핵심",
+      "바로 이 초기의 개방성이 이후 로마의 힘과 성공의 토대가 되었다."
+    ],
+    [
+      "근거 2",
+      "로마인은 스스로를 다문화적이라 여겼고, 전설 속 왕들도 대부분 이민자 출신으로 덕과 공로로 뽑혔다."
+    ],
+    [
+      "확장",
+      "제국이 세 대륙으로 커지며 새 문화와 집단을 적극 받아들였다 (너무 빠르다고 불평한 사람도 있었다)."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Rome was said to have been a melting pot from the very start.",
+      "ko": "로마는 맨 처음부터 용광로였다고 일컬어졌다.",
+      "note": "첫 문장부터 '여러 문화가 섞인 곳'이라는 소재를 던져요. 글 전체가 로마의 개방성 이야기라는 신호예요."
+    },
+    {
+      "en": "It was this initial openness, Livy asserts, that laid the foundations for the later strength and success of the city.",
+      "ko": "Livy가 주장하길, 그 도시의 이후의 힘과 성공을 위한 토대를 놓은 것은 바로 이러한 초기의 개방성이었다.",
+      "note": "It was ~ that 강조 구문으로 openness를 콕 집어 강조해요. openness = cultural openness, foundations for strength and success = foundation for Rome’s growth. ①과 그대로 맞아요."
+    },
+    {
+      "en": "As the empire expanded across three continents, Rome eagerly adopted new cultural influences and absorbed incoming groups",
+      "ko": "제국이 세 대륙에 걸쳐 확장되면서, 로마는 적극적으로 새로운 문화적 영향을 채택하였고, 유입되는 집단들을 흡수했다",
+      "note": "제국이 커진 뒤에도 개방적인 태도가 이어졌다는 뒷받침이에요. 혼란이나 갈등이 아니라 '받아들였다'가 중심이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "cultural openness as a foundation for Rome’s growth",
+      "ko": "로마 성장의 토대로서의 문화적 개방성",
+      "why": "정답. 초기의 개방성이 로마의 힘과 성공의 토대가 되었다는 강조 구문 문장을 그대로 바꿔 쓴 표현이에요."
+    },
+    {
+      "en": "cultural conflicts between native Romans and immigrants",
+      "ko": "토박이 로마인과 이민자 사이의 문화 갈등",
+      "why": "Juvenal의 불평이 나오지만 마지막에 덧붙인 일부 반응일 뿐이에요. 원주민과 이민자의 갈등은 글의 중심이 아니에요."
+    },
+    {
+      "en": "new foreign cultures as a replacement for Rome’s tradition",
+      "ko": "로마 전통을 대체하는 새로운 외국 문화",
+      "why": "로마는 새 문화를 '받아들였다(adopted, absorbed)'고 했지, 전통을 '대체했다'는 말은 없어요."
+    },
+    {
+      "en": "difficulties in preserving Roman immigrants’ cultural identities",
+      "ko": "로마 이민자들의 문화 정체성을 지키는 것의 어려움",
+      "why": "이민자들이 자기 문화를 지키기 어려웠다는 내용은 나오지 않아요."
+    },
+    {
+      "en": "political instability in Rome caused by rapid territorial expansion",
+      "ko": "급격한 영토 확장으로 인한 로마의 정치적 불안정",
+      "why": "영토 확장(expanded across three continents)은 나오지만 정치적 불안정 이야기는 없어요. 바뀐 것은 '문화 변화 속도'예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "It was ~ that 강조 구문",
+      "ex": "It was this initial openness, Livy asserts, that laid the foundations for the later strength and success of the city.",
+      "d": "It was와 that 사이에 강조하고 싶은 말(this initial openness)을 넣어요. '토대를 놓은 것은 바로 이 초기의 개방성이었다'. 중간의 Livy asserts는 삽입절이에요. 주제문 찾을 때 강조 구문은 꼭 표시하세요."
+    },
+    {
+      "t": "be said to have p.p. (완료부정사)",
+      "ex": "Rome was said to have been a melting pot from the very start.",
+      "d": "'~였다고 일컬어졌다'. to have been은 말한 시점보다 더 이전의 일이라는 뜻이에요."
+    },
+    {
+      "t": "과거분사구 후치 수식 / 분사구문",
+      "ex": "… was comprised of immigrants flooding in from all directions, attracted by Romulus’s deliberate policy of nondiscrimination.",
+      "d": "flooding in ~ 이 immigrants를 꾸며요(현재분사, '몰려드는'). attracted by ~ 는 '~에 끌려서'라는 뜻으로 이민자들이 온 이유를 덧붙여요."
+    },
+    {
+      "t": "with + 명사 + 분사 (부대상황)",
+      "ex": "… only a minority of the city’s legendary kings were Roman-born, with the others all arriving as immigrants …",
+      "d": "'나머지는 모두 이민자로 와서'. with + the others + arriving 구조로, 나머지 왕들의 상황을 덧붙여요."
+    }
+  ],
+  "vocab": [
+    [
+      "melting pot",
+      "(여러 인종·문화가 섞인) 용광로"
+    ],
+    [
+      "historian",
+      "역사학자"
+    ],
+    [
+      "be comprised of",
+      "~으로 구성되다"
+    ],
+    [
+      "immigrant",
+      "이민자"
+    ],
+    [
+      "flood in",
+      "밀려들다, 몰려들다"
+    ],
+    [
+      "deliberate",
+      "의도적인, 계획된"
+    ],
+    [
+      "nondiscrimination",
+      "차별하지 않음, 비차별"
+    ],
+    [
+      "initial",
+      "초기의, 처음의"
+    ],
+    [
+      "openness",
+      "개방성"
+    ],
+    [
+      "assert",
+      "주장하다"
+    ],
+    [
+      "lay the foundations for",
+      "~의 토대를 놓다"
+    ],
+    [
+      "multicultural",
+      "다문화의"
+    ],
+    [
+      "legendary",
+      "전설적인"
+    ],
+    [
+      "throne",
+      "왕위, 왕좌"
+    ],
+    [
+      "virtue",
+      "덕, 미덕"
+    ],
+    [
+      "merit",
+      "공로, 장점"
+    ],
+    [
+      "absorb",
+      "흡수하다, 받아들이다"
+    ],
+    [
+      "eagerly",
+      "열심히, 적극적으로"
+    ]
+  ],
+  "summary": {
+    "en": "Rome welcomed immigrants and new cultures from its very beginning, and this openness became the basis of its strength and success.",
+    "ko": "로마는 처음부터 이민자와 새로운 문화를 받아들였고, 이러한 개방성이 로마의 힘과 성공의 바탕이 되었다."
+  },
+  "writing": {
+    "en": "It was openness to others that made Rome strong.",
+    "ko": "로마를 강하게 만든 것은 바로 다른 이들에 대한 개방성이었다."
+  },
+  "tip": "주제 문제에서 It is(was) ~ that 강조 구문이 나오면 강조된 말이 곧 글의 핵심어일 가능성이 커요. 이 글은 openness가 강조됐으니 openness를 담은 선택지를 먼저 보세요. 마지막 문장의 불평(complained)처럼 끝에 살짝 덧붙인 반대 의견은 주제가 아니에요.",
+  "note": "마지막 줄 Juvenal의 불평만 보고 ② '갈등'을 고르면 안 돼요. 글 끝에 덧붙인 한 줄보다 It was ~ that으로 힘줘 말한 문장이 주제예요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 23번 정답은?",
+      "① cultural openness as a foundation for Rome’s growth(로마 성장의 토대로서의 문화적 개방성)예요. 초기의 개방성이 로마의 힘과 성공의 토대가 되었다는 내용이에요."
+    ],
+    [
+      "2025 10월 고1 영어 23번은 어떤 유형인가요?",
+      "글의 주제로 가장 적절한 것을 고르는 2점 문항이에요. 처음부터 이민자에게 열려 있던 고대 로마를 다룬 지문이에요."
+    ],
+    [
+      "② cultural conflicts가 오답인 이유는?",
+      "시인 Juvenal처럼 문화 변화가 너무 빠르다고 불평한 사람이 있었다는 말은 마지막에 덧붙인 내용일 뿐이에요. 글의 중심은 개방성이 로마 성장의 토대였다는 점이에요."
+    ]
+  ]
+}

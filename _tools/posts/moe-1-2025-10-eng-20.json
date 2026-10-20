@@ -1,0 +1,187 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 20,
+  "type": "주장",
+  "points": 2,
+  "answer": 1,
+  "topic": "오래가는 관계를 위해 의식적으로 꾸준히 연락하라",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 20번",
+    "2025 10월 고1 영어 20번 해설",
+    "고1 10월 모의고사 20번 정답",
+    "고1 모의고사 필자의 주장",
+    "관계 유지 소통 지문",
+    "stay in touch 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 20번은 오래가는 관계를 지키려면 연락이 끊기지 않도록 의식적으로 노력해야 한다는 글이에요. 명령문 To keep the connection alive, make a conscious effort to stay in touch가 주장 문장이에요. 정답은 ① 관계를 지속하기 위해 소통을 이어 가려는 의식적인 노력을 기울여라예요.",
+  "flow": [
+    [
+      "화제",
+      "오래가는 관계를 유지하는 데 가장 중요한 것 중 하나는 소통이다."
+    ],
+    [
+      "문제",
+      "누군가와 친해진 뒤 후속 연락이 없어 관계가 멈춰 버리기 쉽다."
+    ],
+    [
+      "주장",
+      "관계를 살아 있게 하려면 연락을 이어 가려는 의식적인 노력을 하라."
+    ],
+    [
+      "보충",
+      "끊임없이 부탁이나 소식을 보내라는 게 아니라, 친근하고 꾸준한 소통의 끈을 유지하라는 뜻이다."
+    ],
+    [
+      "예시",
+      "상대가 흥미를 가질 만한 기사나 자료를 보면, 한동안 연락이 없었더라도 공유하라. 상대를 생각하고 있다는 걸 보여 준다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "To keep the connection alive, make a conscious effort to stay in touch.",
+      "ko": "관계를 유지하기 위해, 연락하고 지내려는 의식적인 노력을 기울여라.",
+      "note": "명령문으로 필자의 주장이 직접 드러나요. connection alive = 관계 지속, stay in touch = 소통 이어 가기, conscious effort = 의식적인 노력. ①과 하나하나 맞아요."
+    },
+    {
+      "en": "This doesn't mean constantly reaching out with requests or updates but rather maintaining a friendly and consistent line of communication.",
+      "ko": "이는 요청이나 최근 소식을 가지고 끊임없이 연락을 취하는 것이 아니라 오히려 친근하고 일관된 소통의 끈을 유지하는 것을 의미한다.",
+      "note": "주장을 다시 풀어 준 문장이에요. 핵심은 '소통의 끈을 유지하는 것'이에요."
+    },
+    {
+      "en": "A simple message to check in or share something of value can go a long way in reinforcing your relationship.",
+      "ko": "안부를 확인하거나 가치 있는 무언가를 공유하는 간단한 메시지가 여러분의 관계를 강화하는 데 도움이 될 수 있다.",
+      "note": "간단한 연락이 관계를 강화한다는 근거예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "관계를 지속하기 위해 소통을 이어 가려는 의식적인 노력을 기울여라.",
+      "ko": "관계 유지를 위한 꾸준한 소통",
+      "why": "정답. To keep the connection alive, make a conscious effort to stay in touch를 그대로 옮긴 선택지예요."
+    },
+    {
+      "en": "새로운 관계를 형성하기 위해 충분한 시간과 노력을 투자하라.",
+      "ko": "새 관계 형성",
+      "why": "글은 이미 맺은 관계를 '유지'하는 이야기예요. 새로운 관계를 만드는 내용이 아니에요."
+    },
+    {
+      "en": "성공적인 비즈니스를 위해 고객의 요청을 최대한 수용하라.",
+      "ko": "고객 요청 수용",
+      "why": "requests가 나오지만, 요청을 계속 보내는 것이 소통의 핵심이 아니라는 맥락이에요. 비즈니스·고객 이야기도 없어요."
+    },
+    {
+      "en": "효과적인 의사소통을 위해 상대의 성향을 먼저 파악하라.",
+      "ko": "상대 성향 파악",
+      "why": "'소통'은 맞지만, 상대의 성향을 먼저 알아보라는 말은 없어요."
+    },
+    {
+      "en": "넓은 인간관계를 위해 다양한 분야에 관심을 가져라.",
+      "ko": "다양한 분야에 관심",
+      "why": "기사·자료 공유 예시 때문에 헷갈릴 수 있지만, 관심 분야를 넓히라는 게 아니라 상대에게 연락할 계기로 쓰라는 거예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "가주어 It + to부정사 / let + 목적어 + 동사원형",
+      "ex": "It's easy to connect with someone and then let the relationship get stuck due to a lack of follow-up.",
+      "d": "It은 가주어, to connect … and (to) let …이 진주어예요. let the relationship get stuck은 '관계가 정체되게 내버려 두다'. due to는 '~때문에'."
+    },
+    {
+      "t": "not A but rather B",
+      "ex": "This doesn't mean constantly reaching out with requests or updates but rather maintaining a friendly and consistent line of communication.",
+      "d": "'A가 아니라 오히려 B'. 필자가 강조하는 쪽은 B(꾸준한 소통의 끈 유지)예요. mean 뒤라서 둘 다 동명사(reaching, maintaining)로 맞췄어요."
+    },
+    {
+      "t": "삽입절이 들어간 관계대명사절",
+      "ex": "… an article or resource that you think might interest a connection …",
+      "d": "that 뒤에 you think가 끼어 있어요. 빼고 보면 that might interest a connection(지인의 흥미를 끌지도 모르는). 여기서 connection은 '인맥, 아는 사람'이에요."
+    },
+    {
+      "t": "양보의 even if",
+      "ex": "… share it with them, even if you haven't spoken in a while.",
+      "d": "'~하더라도'. 오랫동안 연락하지 않았더라도 공유하라는 뜻이에요. in a while은 '한동안'."
+    }
+  ],
+  "vocab": [
+    [
+      "aspect",
+      "측면"
+    ],
+    [
+      "sustain",
+      "유지하다, 지속하다"
+    ],
+    [
+      "long-term",
+      "장기적인"
+    ],
+    [
+      "get stuck",
+      "막히다, 정체되다"
+    ],
+    [
+      "follow-up",
+      "후속 연락, 후속 조치"
+    ],
+    [
+      "conscious",
+      "의식적인"
+    ],
+    [
+      "stay in touch",
+      "연락하고 지내다"
+    ],
+    [
+      "reach out",
+      "연락을 취하다"
+    ],
+    [
+      "consistent",
+      "일관된, 꾸준한"
+    ],
+    [
+      "check in",
+      "안부를 확인하다"
+    ],
+    [
+      "go a long way",
+      "큰 도움이 되다"
+    ],
+    [
+      "reinforce",
+      "강화하다"
+    ],
+    [
+      "come across",
+      "우연히 발견하다"
+    ],
+    [
+      "be invested in",
+      "~에 마음과 노력을 쏟다"
+    ]
+  ],
+  "summary": {
+    "en": "To keep a long-term relationship alive, you should make a conscious effort to stay in touch through simple, friendly, and consistent communication.",
+    "ko": "오래가는 관계를 지키려면 간단하고 친근하며 꾸준한 소통으로 연락을 이어 가려는 의식적인 노력을 해야 한다."
+  },
+  "writing": {
+    "en": "To keep the connection alive, make a conscious effort to stay in touch.",
+    "ko": "관계를 유지하기 위해, 연락하고 지내려는 의식적인 노력을 기울여라."
+  },
+  "tip": "주장 문제는 명령문(make, share)이나 should, need to 같은 표현을 찾으면 빨라요. 이 글은 셋째 문장의 명령문이 주장이고, 뒤 문장들은 그것을 풀어 설명하거나 예를 드는 부분이에요. 예시(기사·자료 공유)만 보고 선택지를 고르지 마세요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 20번 정답은?",
+      "① 관계를 지속하기 위해 소통을 이어 가려는 의식적인 노력을 기울여라예요. 오래가는 관계를 위해 꾸준히 연락하라는 글이에요."
+    ],
+    [
+      "2025 10월 고1 20번은 어떤 유형인가요?",
+      "필자가 주장하는 바를 고르는 2점 문항이에요. 관계 유지와 소통을 다룬 글이에요."
+    ],
+    [
+      "② 새로운 관계 형성이 오답인 이유는?",
+      "글은 이미 연결된 관계가 정체되지 않게 '유지'하는 방법을 말해요. 새 관계를 만드는 데 시간을 투자하라는 내용은 없어요."
+    ]
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 4,
+  "topic": "2020년 영국 소비자 중 지속 가능한 브랜드의 옷 구매를 선호한 비율(연령·성별)",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 25번",
+    "2025 10월 고1 영어 25번 해설",
+    "고1 10월 모의고사 25번 정답",
+    "고1 모의고사 도표",
+    "sustainable brands clothes 도표",
+    "지속 가능한 브랜드 옷 구매 영어 도표"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 25번은 2020년 영국 소비자 중 지속 가능한 브랜드의 옷 구매를 선호한 비율을 연령대·성별로 보여 주는 막대 도표 문항이에요. 45~54세 남성(9%)은 여성(6%)의 두 배(12%)에 못 미치는데 '두 배보다 많다'고 한 ④가 틀렸어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "도표",
+      "연령대별 남성(흰색)·여성(회색) 비율. 18~24세 8%·10%, 25~34세 16%·7%, 35~44세 16%·12%, 45~54세 9%·6%, 55세 이상 4%·12%."
+    ],
+    [
+      "①",
+      "여성 비율 10, 7, 12, 6, 12% → 모두 5% 초과 → 일치"
+    ],
+    [
+      "②",
+      "남성 비율이 가장 높은 곳은 25~34세·35~44세(각 16%) → 일치"
+    ],
+    [
+      "③",
+      "남녀 차이 25~34세 9%p(16-7) > 18~24세 2%p(10-8) → 일치"
+    ],
+    [
+      "④",
+      "45~54세 남성 9%는 여성 6%의 두 배(12%)보다 작다 → '두 배보다 많다'는 불일치"
+    ],
+    [
+      "⑤",
+      "55세 이상 남성 4%는 다섯 연령대 중 가장 낮음 → 일치"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In the 45-54 age group, the percentage of men who preferred purchasing clothes from sustainable brands was more than twice that of women who did so.",
+      "ko": "45~54세 연령대에서 지속 가능한 브랜드의 옷 구매를 선호한 남성의 비율은 그렇게 한 여성 비율의 두 배보다 더 높았다.",
+      "note": "45~54세: 남성 9%, 여성 6%. 6 × 2 = 12인데 9는 12보다 작아요. '두 배보다 많다'는 틀린 설명이라 ④가 정답이에요."
+    },
+    {
+      "en": "The percentage point gap between men and women who preferred purchasing clothes from sustainable brands in the 25-34 age group was larger than that in the 18-24 age group.",
+      "ko": "25~34세 연령대에서 지속 가능한 브랜드의 옷 구매를 선호한 남성과 여성 사이의 퍼센트포인트 차이는 18~24세 연령대의 그것보다 더 컸다.",
+      "note": "25~34세는 16-7 = 9%p, 18~24세는 10-8 = 2%p. 9가 더 크니 일치해요."
+    },
+    {
+      "en": "The percentage of men who preferred purchasing clothes from sustainable brands in the 55 and up age group was 4%, which was the lowest among the five age groups.",
+      "ko": "55세 이상 연령대에서 지속 가능한 브랜드의 옷 구매를 선호한 남성의 비율은 4%였는데, 이는 다섯 연령대 중 가장 낮았다.",
+      "note": "남성 비율 8, 16, 16, 9, 4 중 4가 가장 낮아요. 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "In each of the five age groups, the percentage of women who preferred purchasing clothes from sustainable brands was over 5%.",
+      "ko": "다섯 연령대 각각에서 지속 가능한 브랜드의 옷 구매를 선호한 여성의 비율은 5%를 넘었다.",
+      "why": "일치. 여성 비율은 10, 7, 12, 6, 12%로 가장 낮은 45~54세(6%)도 5%보다 높아요."
+    },
+    {
+      "en": "The 25-34 and 35-44 age groups had the highest percentage of men who preferred purchasing clothes from sustainable brands.",
+      "ko": "25~34세와 35~44세 연령대가 지속 가능한 브랜드의 옷 구매를 선호한 남성 비율이 가장 높았다.",
+      "why": "일치. 두 연령대 모두 남성 16%로 가장 높아요."
+    },
+    {
+      "en": "The percentage point gap between men and women who preferred purchasing clothes from sustainable brands in the 25-34 age group was larger than that in the 18-24 age group.",
+      "ko": "25~34세의 남녀 비율 차이는 18~24세의 차이보다 컸다.",
+      "why": "일치. 25~34세 9%p(16-7), 18~24세 2%p(10-8)예요."
+    },
+    {
+      "en": "In the 45-54 age group, the percentage of men who preferred purchasing clothes from sustainable brands was more than twice that of women who did so.",
+      "ko": "45~54세에서 남성 비율은 여성 비율의 두 배보다 높았다.",
+      "why": "정답(불일치). 남성 9%는 여성 6%의 두 배인 12%보다 작아요. 두 배가 넘는 곳은 25~34세(16 > 7×2=14)예요."
+    },
+    {
+      "en": "The percentage of men who preferred purchasing clothes from sustainable brands in the 55 and up age group was 4%, which was the lowest among the five age groups.",
+      "ko": "55세 이상 남성 비율은 4%로 다섯 연령대 중 가장 낮았다.",
+      "why": "일치. 남성 비율 중 4%가 가장 낮아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사 목적어 prefer -ing",
+      "ex": "The above graph shows the percentages of U.K. consumers who preferred purchasing clothes from sustainable brands by age and gender in 2020.",
+      "d": "prefer 뒤에 동명사 purchasing이 와서 '구매하는 것을 선호했다'. who는 consumers를 꾸미는 주격 관계대명사예요."
+    },
+    {
+      "t": "배수 비교 more than twice that of",
+      "ex": "the percentage of men … was more than twice that of women who did so.",
+      "d": "'~의 두 배보다 많은'. that은 the percentage를 받아요. 꼭 곱해서 확인: 6 × 2 = 12 > 9라서 틀린 문장이에요."
+    },
+    {
+      "t": "대동사 do so",
+      "ex": "… that of women who did so.",
+      "d": "did so = preferred purchasing clothes from sustainable brands. 같은 말을 반복하지 않으려고 쓴 대동사예요."
+    },
+    {
+      "t": "계속적 용법 , which",
+      "ex": "… in the 55 and up age group was 4%, which was the lowest among the five age groups.",
+      "d": ", which가 앞의 4%를 받아 '그리고 그것은 ~였다'로 정보를 덧붙여요. 최상급 문장은 다섯 개 값을 모두 확인하세요."
+    }
+  ],
+  "vocab": [
+    [
+      "percentage",
+      "비율, 백분율"
+    ],
+    [
+      "consumer",
+      "소비자"
+    ],
+    [
+      "prefer",
+      "선호하다"
+    ],
+    [
+      "purchase",
+      "구매하다"
+    ],
+    [
+      "sustainable",
+      "지속 가능한"
+    ],
+    [
+      "brand",
+      "브랜드, 상표"
+    ],
+    [
+      "gender",
+      "성별"
+    ],
+    [
+      "age group",
+      "연령대"
+    ],
+    [
+      "percentage point",
+      "퍼센트포인트(%p)"
+    ],
+    [
+      "gap",
+      "차이, 격차"
+    ],
+    [
+      "twice",
+      "두 배"
+    ],
+    [
+      "55 and up",
+      "55세 이상"
+    ]
+  ],
+  "summary": {
+    "en": "In 2020, the share of U.K. consumers who preferred buying clothes from sustainable brands differed by age and gender, with men aged 25 to 44 showing the highest rate.",
+    "ko": "2020년 영국에서 지속 가능한 브랜드의 옷 구매를 선호한 소비자 비율은 연령과 성별에 따라 달랐고, 25~44세 남성이 가장 높았다."
+  },
+  "writing": {
+    "en": "In the 55 and up age group, the percentage of women was three times that of men.",
+    "ko": "55세 이상 연령대에서 여성의 비율은 남성 비율의 세 배였다."
+  },
+  "tip": "도표 문제는 막대 숫자를 먼저 표로 옮겨 적고 시작하세요. twice, three times 같은 배수 표현은 작은 쪽에 곱해서 비교하고, gap(차이)은 빼기로 확인하면 실수가 줄어요. men/women, 연령대 이름을 바꿔 치기 했는지도 꼭 보세요.",
+  "note": "④는 남성이 여성보다 높은 건 맞아서 '맞는 문장'처럼 보여요. 많다·적다만 보지 말고 6 × 2 = 12처럼 배수를 직접 계산해 보세요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 25번 정답은?",
+      "④예요. 45~54세 남성 비율(9%)은 여성 비율(6%)의 두 배인 12%보다 작아서 '두 배보다 높았다'는 설명이 도표와 맞지 않아요."
+    ],
+    [
+      "2025 10월 고1 영어 25번은 어떤 유형인가요?",
+      "도표의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. 2020년 영국 소비자의 지속 가능한 브랜드 옷 구매 선호 비율을 연령·성별로 나타낸 막대 도표예요."
+    ],
+    [
+      "③ 퍼센트포인트 차이 문장은 왜 맞나요?",
+      "25~34세는 남성 16%, 여성 7%로 9%p 차이, 18~24세는 남성 8%, 여성 10%로 2%p 차이예요. 25~34세 차이가 더 커서 일치해요."
+    ]
+  ]
+}

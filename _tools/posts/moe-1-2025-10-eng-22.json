@@ -1,0 +1,191 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 22,
+  "type": "요지",
+  "points": 2,
+  "answer": 4,
+  "topic": "해양의 변화에 대처하려면 먼저 해양이 어떻게 작동하는지 이해해야 한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 22번",
+    "2025 10월 고1 영어 22번 해설",
+    "고1 10월 모의고사 22번 정답",
+    "고1 모의고사 글의 요지",
+    "해양 이해 크릴 지문",
+    "ocean engine 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 22번은 바다에 대한 관심은 커지고 있지만, 바다가 어떻게 돌아가는지 모르면 변화에 대해 제대로 논의할 수 없다는 글이에요. 마지막 문장 We need to understand at least some of the context before we can discuss the change and take appropriate action이 요지예요. 정답은 ④ 해양 변화에 대해 논하기 전에 해양을 먼저 이해해야 한다예요.",
+  "flow": [
+    [
+      "도입",
+      "해양에 미치는 인간의 영향에 대한 인식이 커지며, 오래 미뤄 온 논의가 공공의 안건으로 들어오고 있다."
+    ],
+    [
+      "문제",
+      "하지만 이 논의에는 큰 장애물이 있다. 어떻게 작동하는지 모르면 무엇을 할지 논의하기가 거의 불가능하다."
+    ],
+    [
+      "비교",
+      "신장에 문제가 있다는 말을 들은 환자는 학교에서 배워 신장이 어디 있고 무엇을 하는지 대강 안다. 하지만 바다는 그렇지 않다."
+    ],
+    [
+      "예시",
+      "남극해 크릴 감소 기사는 그냥 나쁜 일로 들리지만, 크릴은 '해양 엔진'의 일부라서 고래가 굶주리는 것 이상의 의미가 있다."
+    ],
+    [
+      "결론",
+      "변화를 논의하고 적절한 조치를 하기 전에 최소한의 맥락은 이해해야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "It's almost impossible to discuss what to do about something changing if you don't initially know how it works.",
+      "ko": "만약 여러분이 그것이 어떻게 작동하는지를 애초에 알지 못한다면 변화하는 어떤 것에 대해 무엇을 해야 할지를 논의하는 것은 거의 불가능하다.",
+      "note": "'작동 방식을 모르면 논의가 불가능하다' = '먼저 이해해야 한다'. 요지를 일반적인 말로 먼저 보여 줘요."
+    },
+    {
+      "en": "But that's not the case for the oceans.",
+      "ko": "하지만 해양의 경우는 그렇지 않다.",
+      "note": "신장과 달리 바다에 대해서는 우리가 기본 지식이 없다는 문제를 짚어요."
+    },
+    {
+      "en": "We need to understand at least some of the context before we can discuss the change and take appropriate action.",
+      "ko": "우리는 변화에 대해 논의하고 적절한 조치를 취할 수 있기 전에 최소한 어느 정도의 맥락은 이해할 필요가 있다.",
+      "note": "need to로 마무리하는 요지 문장이에요. understand ~ before we can discuss the change가 ④와 그대로 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "해양에 미치는 인간의 영향에 대한 논의가 필요하다.",
+      "ko": "인간 영향 논의 필요",
+      "why": "첫 문장의 화제일 뿐이에요. 글은 '논의하기 전에 먼저 이해가 필요하다'는 데 초점이 있어요."
+    },
+    {
+      "en": "모든 생명체의 기원이 해양에 있음을 기억해야 한다.",
+      "ko": "생명의 기원",
+      "why": "생명의 기원에 대한 내용은 없어요."
+    },
+    {
+      "en": "해양 보호 정책 수립에 있어 사회적 합의가 중요하다.",
+      "ko": "사회적 합의",
+      "why": "public agenda, conversation이 나오지만 합의가 중요하다는 주장은 없어요."
+    },
+    {
+      "en": "해양 변화에 대해 논하기 전에 해양을 먼저 이해해야 한다.",
+      "ko": "먼저 해양을 이해해야 함",
+      "why": "정답. 작동 방식을 모르면 논의가 불가능하고, 변화를 논의하기 전에 맥락을 이해해야 한다는 마지막 문장과 일치해요."
+    },
+    {
+      "en": "해양 생태계의 회복이 인간의 건강한 삶에 도움을 줄 수 있다.",
+      "ko": "생태계 회복과 건강",
+      "why": "신장 예시는 비유일 뿐이에요. 바다 회복이 사람 건강에 좋다는 내용은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문 + 목적어가 뒤로 간 어순",
+      "ex": "An increasing awareness of our effect on the ocean is slowly seeping into the public agenda, dragging behind it a conversation that is decades overdue.",
+      "d": "dragging은 동시 동작의 분사구문이에요. 원래 drag a conversation behind it인데, 목적어가 길어서 behind it을 앞으로 보냈어요. decades overdue는 '수십 년이나 늦어진'."
+    },
+    {
+      "t": "가주어 It + to부정사 / what to do",
+      "ex": "It's almost impossible to discuss what to do about something changing if you don't initially know how it works.",
+      "d": "It은 가주어, to discuss ~가 진주어예요. what to do는 '무엇을 해야 할지', something changing은 '변하고 있는 무언가'(현재분사 후치 수식)."
+    },
+    {
+      "t": "간접의문문 where ~ / what ~ be up to",
+      "ex": "… at least a vague idea about where their kidneys are and what they're up to.",
+      "d": "about 뒤에 '의문사 + 주어 + 동사' 어순의 간접의문문 두 개가 and로 이어져요. what they're up to는 '그것들이 무슨 일을 하는지'."
+    },
+    {
+      "t": "far + 비교급",
+      "ex": "But there's far more to it than the risk of whales going hungry.",
+      "d": "far는 비교급 강조로 '훨씬'. whales going hungry에서 whales는 동명사 going의 의미상 주어예요(고래가 굶주리는 것)."
+    }
+  ],
+  "vocab": [
+    [
+      "awareness",
+      "인식"
+    ],
+    [
+      "seep into",
+      "~에 스며들다"
+    ],
+    [
+      "public agenda",
+      "공공의 안건"
+    ],
+    [
+      "drag",
+      "끌다"
+    ],
+    [
+      "overdue",
+      "늦어진, 기한이 지난"
+    ],
+    [
+      "obstacle",
+      "장애물"
+    ],
+    [
+      "initially",
+      "처음에, 애초에"
+    ],
+    [
+      "kidney",
+      "신장, 콩팥"
+    ],
+    [
+      "vague",
+      "막연한"
+    ],
+    [
+      "be up to",
+      "~을 하고 있다"
+    ],
+    [
+      "life-support system",
+      "생명 유지 체계"
+    ],
+    [
+      "decline",
+      "감소"
+    ],
+    [
+      "krill",
+      "크릴(작은 새우류)"
+    ],
+    [
+      "context",
+      "맥락"
+    ],
+    [
+      "appropriate",
+      "적절한"
+    ]
+  ],
+  "summary": {
+    "en": "Before we can discuss changes in the ocean and take proper action, we first need to understand how the ocean works.",
+    "ko": "해양의 변화를 논의하고 적절한 조치를 취하려면, 먼저 해양이 어떻게 작동하는지 이해해야 한다."
+  },
+  "writing": {
+    "en": "We need to understand how the ocean works before we can discuss how it is changing.",
+    "ko": "우리는 해양이 어떻게 변하고 있는지 논의하기 전에 해양이 어떻게 작동하는지 이해해야 한다."
+  },
+  "tip": "요지 문제는 첫 문장의 화제(해양에 대한 논의)와 필자가 하고 싶은 말(논의 전에 이해가 먼저)을 구분하세요. But this conversation faces a massive obstacle처럼 But 뒤에서 방향이 잡히고, 마지막 need to 문장에서 정리돼요. 신장·크릴 같은 예시는 요지를 뒷받침하는 재료예요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 22번 정답은?",
+      "④ 해양 변화에 대해 논하기 전에 해양을 먼저 이해해야 한다예요. 바다가 어떻게 작동하는지 알아야 변화에 제대로 대처할 수 있다는 글이에요."
+    ],
+    [
+      "2025 10월 고1 22번은 어떤 유형인가요?",
+      "글의 요지를 고르는 2점 문항이에요. 해양 이해와 크릴 감소 예시를 다룬 글이에요."
+    ],
+    [
+      "① 인간 영향에 대한 논의가 필요하다가 오답인 이유는?",
+      "첫 문장의 화제와 겹치지만, 필자는 논의 자체보다 '논의하기 전에 해양을 이해해야 한다'를 강조해요. 그래서 ④가 더 정확해요."
+    ]
+  ]
+}

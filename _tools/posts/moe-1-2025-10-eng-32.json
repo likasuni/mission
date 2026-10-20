@@ -1,0 +1,195 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 32,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "동물의 수 감각: 수가 커질수록 정확도가 떨어진다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 32번",
+    "2025 10월 고1 영어 32번 해설",
+    "고1 10월 모의고사 32번 정답",
+    "고1 모의고사 빈칸 추론",
+    "approximate number system 지문",
+    "동물의 수 감각"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 32번은 동물의 '근사 수 체계'가 수가 커질수록 덜 정확해진다는 빈칸 추론 문항이에요. 붉은털원숭이와 쥐 실험 모두 수가 클수록 틀린다는 결과라, 빈칸은 '수의 크기가 중요하다'예요. 정답은 ① the size of the numbers matters예요.",
+  "flow": [
+    [
+      "개념",
+      "동물의 수 판단을 설명하는 전문 용어는 근사 수 체계이며, 정밀성은 제공하지 않는다."
+    ],
+    [
+      "특징",
+      "실험한 모든 종에서 수가 커질수록 구별이 덜 정확해지는 특징적인 오류 패턴이 나타난다."
+    ],
+    [
+      "예시 1",
+      "붉은털원숭이는 1과 2, 4와 5까지는 구별하지만 5 이상부터 실패하기 시작한다."
+    ],
+    [
+      "예시 2",
+      "레버를 4~24번 누르도록 배운 쥐는 수가 커질수록 덜 정확해져 목표 근처의 여러 수를 냈다."
+    ],
+    [
+      "결론",
+      "동물의 수 감각 정확도를 실험할 때는 수의 크기가 중요하다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "It shows — and this is the same in every species tested — a characteristic pattern of errors, with discrimination becoming less accurate as the quantities get bigger.",
+      "ko": "그것은, 실험한 모든 종에서 똑같이, 양이 커질수록 구별이 덜 정확해지는 특징적인 오류 패턴을 보인다.",
+      "note": "글의 핵심 문장이에요. 양이 커질수록(as the quantities get bigger) 정확도가 떨어져요. 즉 '수의 크기'가 결과를 좌우해요."
+    },
+    {
+      "en": "Rhesus monkeys can tell one from two, two from three, three from four, four from five … but start to fail from five upwards.",
+      "ko": "붉은털원숭이는 1과 2, 2와 3, 3과 4, 4와 5는 구별할 수 있지만 5 이상부터는 실패하기 시작한다.",
+      "note": "작은 수는 맞히고 큰 수는 틀려요. 수의 크기에 따라 결과가 달라지는 첫 번째 예시예요."
+    },
+    {
+      "en": "Rats … became markedly less and less precise in their responses as the number increased",
+      "ko": "쥐들은 … 수가 증가함에 따라 반응이 현저하게 점점 덜 정확해졌다",
+      "note": "as the number increased가 다시 나와요. 두 예시 모두 '수가 클수록 덜 정확'이라 ①로 정리돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "the size of the numbers matters",
+      "ko": "수의 크기가 중요하다",
+      "why": "정답. 모든 종에서 수가 커질수록 정확도가 떨어진다는 내용을 한마디로 줄인 말이에요."
+    },
+    {
+      "en": "counting skills improve over time",
+      "ko": "세는 능력은 시간이 지나며 향상된다",
+      "why": "글은 시간에 따른 변화가 아니라 수의 크기에 따른 정확도 차이를 말해요."
+    },
+    {
+      "en": "results depend on what the rewards are",
+      "ko": "결과는 보상이 무엇인지에 달려 있다",
+      "why": "보상의 종류는 본문에 나오지 않아요."
+    },
+    {
+      "en": "their emotional states influence the result",
+      "ko": "동물의 감정 상태가 결과에 영향을 미친다",
+      "why": "감정 상태 이야기는 없어요. 원인은 수의 크기예요."
+    },
+    {
+      "en": "the pattern of errors is not easily monitored",
+      "ko": "오류 패턴은 쉽게 관찰되지 않는다",
+      "why": "오히려 모든 종에서 같은 오류 패턴이 뚜렷하게 나타난다고 했어요. 반대 내용이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "What 명사절 주어",
+      "ex": "What it does not provide is precision.",
+      "d": "'그것이 제공하지 않는 것은 정밀성이다'. What절이 주어, is가 동사예요. 강조하고 싶은 precision을 뒤에 둔 구조예요."
+    },
+    {
+      "t": "with + 명사 + -ing (부대상황)",
+      "ex": "a characteristic pattern of errors, with discrimination becoming less accurate as the quantities get bigger",
+      "d": "'구별이 덜 정확해지면서'. with 뒤 명사(discrimination)와 분사(becoming)가 능동 관계라 -ing예요."
+    },
+    {
+      "t": "tell A from B",
+      "ex": "Rhesus monkeys can tell one from two, two from three …",
+      "d": "'A와 B를 구별하다'. distinguish A from B와 같은 뜻이에요."
+    },
+    {
+      "t": "비교급 and 비교급",
+      "ex": "became markedly less and less precise in their responses as the number increased",
+      "d": "'점점 덜 정확해졌다'. as는 '~함에 따라'로 비례 관계를 나타내요."
+    }
+  ],
+  "vocab": [
+    [
+      "technical term",
+      "전문 용어"
+    ],
+    [
+      "judgement",
+      "판단"
+    ],
+    [
+      "approximate",
+      "근사의, 대략적인"
+    ],
+    [
+      "precision",
+      "정밀성"
+    ],
+    [
+      "characteristic",
+      "특징적인"
+    ],
+    [
+      "species",
+      "종"
+    ],
+    [
+      "discrimination",
+      "구별, 식별"
+    ],
+    [
+      "quantity",
+      "양, 수량"
+    ],
+    [
+      "tell A from B",
+      "A와 B를 구별하다"
+    ],
+    [
+      "upwards",
+      "~ 이상"
+    ],
+    [
+      "lever",
+      "레버"
+    ],
+    [
+      "markedly",
+      "현저하게"
+    ],
+    [
+      "precise",
+      "정확한"
+    ],
+    [
+      "spread",
+      "분포, 범위"
+    ],
+    [
+      "observation",
+      "관찰 (결과)"
+    ],
+    [
+      "matter",
+      "중요하다"
+    ]
+  ],
+  "summary": {
+    "en": "Animals judge numbers with an approximate number system, which becomes less accurate as the numbers get bigger, so the size of the numbers matters when testing their number sense.",
+    "ko": "동물은 근사 수 체계로 수를 판단하는데, 수가 커질수록 덜 정확해지므로 동물의 수 감각을 실험할 때는 수의 크기가 중요하다."
+  },
+  "writing": {
+    "en": "Animals become less accurate as the numbers get bigger.",
+    "ko": "동물들은 수가 커질수록 덜 정확해진다."
+  },
+  "tip": "빈칸이 글 마지막에 있으면 앞의 예시들이 공통으로 보여 주는 것을 한 줄로 줄이세요. 원숭이(5 이상부터 실패)와 쥐(수가 늘수록 부정확)의 공통점은 '수가 클수록 틀린다'예요. 본문에 없는 보상·감정·시간 같은 말이 나오는 선택지는 먼저 지우세요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 32번 정답은?",
+      "① the size of the numbers matters(수의 크기가 중요하다)예요. 동물의 수 판단은 수가 커질수록 덜 정확해지기 때문이에요."
+    ],
+    [
+      "2025 10월 고1 영어 32번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 동물의 근사 수 체계를 다룬 지문이에요."
+    ],
+    [
+      "⑤ the pattern of errors is not easily monitored가 오답인 이유는?",
+      "본문은 실험한 모든 종에서 같은 오류 패턴이 나타난다고 했어요. 패턴이 뚜렷하게 관찰된다는 뜻이라 ⑤는 반대 내용이에요."
+    ]
+  ]
+}

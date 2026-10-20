@@ -1,0 +1,196 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 29,
+  "type": "어법",
+  "points": 3,
+  "answer": 2,
+  "topic": "전통 음식에는 이유가 있다: 식단 변화 앞의 겸손",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 29번",
+    "2025 10월 고1 영어 29번 해설",
+    "고1 10월 모의고사 29번 정답",
+    "고1 모의고사 어법",
+    "what vs that 어법",
+    "전통 음식 영양학 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 29번은 전통 음식과 영양학의 한계를 다룬 3점 어법 문항이에요. ② what 뒤에 there is probably a good reason why라는 완전한 문장이 와서, assume의 목적어절을 이끄는 접속사 that이 와야 해요. 정답은 ②예요.",
+  "flow": [
+    [
+      "도입",
+      "인간은 주어진 자원을 미묘하고 복잡한 방식으로 최대한 활용하도록 진화해 왔다."
+    ],
+    [
+      "문제 제기",
+      "식단을 특히 빠르게 바꾸면 사실상 거대한 영양 실험을 하는 셈이니 더 겸손해야 한다."
+    ],
+    [
+      "근거",
+      "영양학은 아직 역사가 짧고 모르는 것이 많다. 수천 년 먹어 온 방식에는 아마 이유가 있다고 봐야 한다."
+    ],
+    [
+      "예시",
+      "전통 방식의 기름진 블러드 소시지가 기름기 없는 공장제 살라미보다, 꿀 몇 숟가락이 감미료보다 낫다고 가정해야 한다."
+    ],
+    [
+      "결론",
+      "영양 전환을 겪는 전통 사회의 어려움을 보면, 이미 전환한 사람들도 자기 식단이 너무 멀리 갔는지 되돌아봐야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "we should assume until it is proven otherwise ② what there is probably a good reason why.",
+      "ko": "우리는 달리 증명될 때까지는 아마 그럴 만한 타당한 이유가 있다고 가정해야 한다.",
+      "note": "assume의 목적어 자리예요. until it is proven otherwise는 중간에 끼어든 부사절이고, 뒤의 there is probably a good reason why는 빠진 것 없는 완전한 문장이에요. 완전한 절을 이끄는 건 that이라 what → that."
+    },
+    {
+      "en": "Traditional foods that don't fit neatly on the contemporary dietary food plate should generally be chosen over highly processed ones that ③ do.",
+      "ko": "현대의 식단 접시에 딱 맞지 않는 전통 음식이 (거기에) 딱 맞는 고도로 가공된 음식보다 대체로 선택되어야 한다.",
+      "note": "③ do는 fit neatly on the contemporary dietary food plate를 대신하는 대동사예요. 선행사 ones(=foods)가 복수라 do가 맞아요."
+    },
+    {
+      "en": "Witnessing how poorly traditional societies are faring … should make those who have already completed it ⑤ question whether their diets have moved too far.",
+      "ko": "전통 사회가 얼마나 형편없이 살아가는지 목격하는 것은 이미 그것을 끝낸 사람들이 자신의 식단이 너무 멀리 가지 않았는지 의문을 품게 만들어야 한다.",
+      "note": "⑤ 사역동사 make + 목적어 + 동사원형이라 question이 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① effectively",
+      "ko": "부사",
+      "why": "적절. 동사 conducting을 꾸미므로 부사가 맞아요. '사실상 실험을 하고 있다'는 뜻이에요."
+    },
+    {
+      "en": "② what",
+      "ko": "what → that",
+      "why": "정답(틀림). 뒤에 there is probably a good reason why라는 완전한 절이 와요. assume의 목적어절을 이끄는 접속사 that이 와야 해요."
+    },
+    {
+      "en": "③ do",
+      "ko": "대동사",
+      "why": "적절. ones that do (fit neatly on the … plate). 선행사 ones가 복수라 do예요."
+    },
+    {
+      "en": "④ made",
+      "ko": "과거분사",
+      "why": "적절. 소시지가 전통 방식으로 '만들어진' 것이라 수동의 과거분사 made가 sausages를 꾸며요."
+    },
+    {
+      "en": "⑤ question",
+      "ko": "사역동사 + 원형부정사",
+      "why": "적절. make + those who … + question. 목적어가 '의문을 품는' 능동 관계라 동사원형이 와요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "접속사 that vs 관계대명사 what",
+      "ex": "we should assume until it is proven otherwise that there is probably a good reason why.",
+      "d": "what 뒤에는 주어·목적어 등이 빠진 불완전한 절, that 뒤에는 완전한 절이 와요. 중간에 끼어든 until절을 괄호로 묶으면 assume that ~ 구조가 잘 보여요."
+    },
+    {
+      "t": "대동사 do",
+      "ex": "highly processed ones that do",
+      "d": "앞에 나온 동사구(fit neatly on the contemporary dietary food plate)를 반복하지 않으려고 do로 대신했어요. 수는 선행사 ones에 맞춰요."
+    },
+    {
+      "t": "사역동사 make + O + 동사원형",
+      "ex": "should make those who have already completed it question whether their diets have moved too far",
+      "d": "make의 목적어가 길어도(those who have already completed it) 뒤에는 동사원형이 와요. whether절은 question의 목적어예요."
+    },
+    {
+      "t": "동명사 주어",
+      "ex": "Witnessing how poorly traditional societies are faring … should make …",
+      "d": "Witnessing ~이 주어, should make가 동사예요. 동명사 주어는 단수 취급이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "evolve",
+      "진화하다"
+    ],
+    [
+      "make the most of",
+      "~을 최대한 활용하다"
+    ],
+    [
+      "subtle",
+      "미묘한"
+    ],
+    [
+      "conduct",
+      "(실험 등을) 하다, 시행하다"
+    ],
+    [
+      "nutrition",
+      "영양 (섭취)"
+    ],
+    [
+      "humility",
+      "겸손"
+    ],
+    [
+      "millennia",
+      "수천 년 (millennium의 복수)"
+    ],
+    [
+      "prove otherwise",
+      "달리 증명하다"
+    ],
+    [
+      "contemporary",
+      "현대의"
+    ],
+    [
+      "highly processed",
+      "고도로 가공된"
+    ],
+    [
+      "lean",
+      "기름기 없는"
+    ],
+    [
+      "superior to",
+      "~보다 우수한"
+    ],
+    [
+      "sweetener",
+      "감미료"
+    ],
+    [
+      "fare",
+      "살아가다, 지내다"
+    ],
+    [
+      "undergo",
+      "겪다"
+    ],
+    [
+      "transition",
+      "전환, 변화"
+    ]
+  ],
+  "summary": {
+    "en": "Since nutritional science is still young, we should humbly assume that traditional foods eaten for millennia exist for good reasons and question whether our modern diets have changed too much.",
+    "ko": "영양학은 아직 역사가 짧으므로, 수천 년 동안 먹어 온 전통 음식에는 타당한 이유가 있다고 겸손하게 가정하고 현대 식단이 너무 많이 바뀌지 않았는지 따져 봐야 한다."
+  },
+  "writing": {
+    "en": "There is probably a good reason why people have eaten certain foods for millennia.",
+    "ko": "사람들이 수천 년 동안 특정 음식을 먹어 온 데에는 아마 타당한 이유가 있을 것이다."
+  },
+  "tip": "what이 밑줄이면 바로 뒤만 보지 말고 중간에 끼어든 부사절(until it is proven otherwise)을 괄호로 묶은 뒤 문장을 확인하세요. there is ~처럼 빠진 것 없는 완전한 문장이 오면 what이 아니라 that이에요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 29번 정답은?",
+      "② what이에요. 뒤에 there is probably a good reason why라는 완전한 절이 오므로 assume의 목적어절을 이끄는 접속사 that으로 고쳐야 해요."
+    ],
+    [
+      "2025 10월 고1 영어 29번은 어떤 유형인가요?",
+      "밑줄 친 부분 중 어법상 틀린 것을 고르는 3점 어법 문항이에요. 전통 음식과 영양학을 다룬 지문이에요."
+    ],
+    [
+      "③ do는 왜 맞나요?",
+      "fit neatly on the contemporary dietary food plate를 대신하는 대동사예요. 선행사 ones(가공식품들)가 복수라 does가 아니라 do가 맞아요."
+    ]
+  ],
+  "note": "② what은 바로 뒤가 아니라 until it is proven otherwise 다음부터 봐야 해요. 끼어든 부사절은 괄호로 묶고 assume that ~ 뼈대를 먼저 찾는 연습을 해 보세요."
+}

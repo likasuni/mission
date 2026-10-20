@@ -1,0 +1,176 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 19,
+  "type": "심경",
+  "points": 2,
+  "answer": 2,
+  "topic": "주차한 자리에 차가 없어 당황했다가, 남편의 차를 타고 왔다는 걸 알고 안도한 '나'",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 19번",
+    "2025 10월 고1 영어 19번 해설",
+    "고1 10월 모의고사 19번 정답",
+    "고1 모의고사 심경 변화",
+    "confused relieved",
+    "사라진 자동차 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 19번은 장을 보고 나온 '나'가 주차해 둔 차가 보이지 않아 어리둥절했다가, 오늘은 남편 차를 타고 왔다는 걸 알고 안도하는 이야기예요. 앞부분의 nothing made sense, 뒷부분의 With a sigh of relief가 심경을 알려 줘요. 정답은 ② confused → relieved예요.",
+  "flow": [
+    [
+      "상황",
+      "쇼핑을 마치고 차를 세워 둔 곳으로 갔지만 차가 없다."
+    ],
+    [
+      "당황",
+      "주차 위치를 잊는 사람이 아니고 장소도 맞는데 차가 없어서, 둘러봐도 도무지 이해가 안 된다."
+    ],
+    [
+      "전환",
+      "남편에게 전화하자, 남편이 웃으며 '당신 차는 집 밖에 있고 오늘은 내 차를 가져갔다'고 알려 준다."
+    ],
+    [
+      "안도",
+      "돌아보니 남편 차가 거기 있었고, 웃음을 참지 못한 채 안도의 한숨을 쉬며 차로 걸어간다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "I knew I was in the right place — so where was my car? I looked around, but nothing made sense.",
+      "ko": "나는 내가 정확한 장소에 있다는 것을 알았지만, 그렇다면 내 차는 어디에 있는 걸까? 나는 주위를 둘러보았지만, 도무지 아무것도 이해되지 않았다.",
+      "note": "장소는 맞는데 차가 없어서 '이해가 안 되는' 상태예요. 처음 심경은 confused(혼란스러운)."
+    },
+    {
+      "en": "Not knowing what to do, I called my husband at home and said, “My car is missing! I can't find my car.”",
+      "ko": "무엇을 해야 할지 몰라, 나는 집에 있는 남편에게 전화를 걸어 \"내 차가 없어졌어요! 나는 차를 못 찾겠어요.\"라고 말했다.",
+      "note": "Not knowing what to do(어찌할 바를 몰라)도 혼란을 보여 줘요."
+    },
+    {
+      "en": "With a sigh of relief, I walked over to the car. Everything was fine after all.",
+      "ko": "안도의 숨을 내쉬며, 나는 차로 걸어갔다. 결국 모든 것이 괜찮았다.",
+      "note": "sigh of relief(안도의 한숨)가 나중 심경 relieved(안도한)를 그대로 말해 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "bored → surprised",
+      "ko": "지루한 → 놀란",
+      "why": "처음에 지루해하는 장면은 없어요. 차가 없어서 당황하고 있어요."
+    },
+    {
+      "en": "confused → relieved",
+      "ko": "혼란스러운 → 안도한",
+      "why": "정답. nothing made sense, Not knowing what to do(혼란) → With a sigh of relief(안도)로 바뀌어요."
+    },
+    {
+      "en": "anxious → indifferent",
+      "ko": "불안한 → 무관심한",
+      "why": "처음엔 불안했다고 볼 수 있지만, 마지막은 무관심이 아니라 안도예요."
+    },
+    {
+      "en": "joyful → regretful",
+      "ko": "기쁜 → 후회하는",
+      "why": "처음이 기쁜 상태도 아니고, 끝에 후회하는 내용도 없어요."
+    },
+    {
+      "en": "hopeful → embarrassed",
+      "ko": "희망에 찬 → 당황한",
+      "why": "자신을 보고 웃는 장면 때문에 embarrassed를 떠올릴 수 있지만, 마지막을 정리하는 말은 sigh of relief예요. 처음도 hopeful이 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "과거완료 had p.p.",
+      "ex": "… headed to the spot where I'd parked my car.",
+      "d": "I'd parked = I had parked. 가게에서 나온 것보다 차를 세운 일이 더 먼저라서 과거완료를 써요. where는 the spot을 꾸미는 관계부사예요."
+    },
+    {
+      "t": "the kind of person to V",
+      "ex": "I wasn't the kind of person to forget where I'd parked.",
+      "d": "to forget이 앞의 person을 꾸며서 '~을 잊어버릴 그런 사람'이에요."
+    },
+    {
+      "t": "부정 분사구문",
+      "ex": "Not knowing what to do, I called my husband at home …",
+      "d": "분사구문의 부정은 Not을 분사 앞에 둬요. = Because I didn't know what to do. what to do는 '무엇을 해야 할지'."
+    },
+    {
+      "t": "cannot help but V",
+      "ex": "I couldn't help but laugh at myself.",
+      "d": "'~하지 않을 수 없다'. 자기 실수가 우스워서 웃음이 난 거예요. 기쁨(joyful)이 아니라 안도와 민망함이 섞인 웃음이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "grocery store",
+      "식료품 가게"
+    ],
+    [
+      "head to",
+      "~로 향하다"
+    ],
+    [
+      "spot",
+      "장소, 자리"
+    ],
+    [
+      "park",
+      "주차하다"
+    ],
+    [
+      "make sense",
+      "이해가 되다, 말이 되다"
+    ],
+    [
+      "missing",
+      "없어진, 실종된"
+    ],
+    [
+      "on the other end of the line",
+      "전화기 반대편에서"
+    ],
+    [
+      "turn around",
+      "돌아보다"
+    ],
+    [
+      "cannot help but",
+      "~하지 않을 수 없다"
+    ],
+    [
+      "sigh",
+      "한숨"
+    ],
+    [
+      "relief",
+      "안도"
+    ],
+    [
+      "after all",
+      "결국"
+    ]
+  ],
+  "summary": {
+    "en": "A woman is confused when her car is not where she parked it, but she feels relieved when her husband reminds her that she drove his car that day.",
+    "ko": "한 여성은 주차해 둔 자리에 차가 없어 혼란스러웠지만, 그날 남편의 차를 타고 왔다는 말을 듣고 안도한다."
+  },
+  "writing": {
+    "en": "With a sigh of relief, I walked over to the car.",
+    "ko": "안도의 숨을 내쉬며, 나는 차로 걸어갔다."
+  },
+  "note": "마지막에 laugh가 나온다고 기쁜 감정으로 고르면 안 돼요. 웃음 바로 뒤에 sigh of relief가 있으니, 감정은 웃음이 아니라 '안도'로 정리하세요.",
+  "tip": "심경 변화는 사건이 바뀌는 지점(여기서는 남편의 전화)을 기준으로 앞뒤를 나눠 읽으세요. 앞쪽은 nothing made sense, Not knowing what to do, 뒤쪽은 sigh of relief처럼 감정이 드러나는 표현을 하나씩 잡으면 돼요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 19번 정답은?",
+      "② confused → relieved(혼란스러운 → 안도한)예요. 차가 없어 당황했다가 남편 차를 타고 왔다는 걸 알고 안도해요."
+    ],
+    [
+      "2025 10월 고1 19번은 어떤 유형인가요?",
+      "글에 드러난 'I'의 심경 변화를 고르는 2점 문항이에요."
+    ],
+    [
+      "⑤ hopeful → embarrassed가 오답인 이유는?",
+      "자신을 보고 웃는 장면이 있지만, 마지막 감정은 sigh of relief(안도)로 정리돼요. 처음도 희망에 찬 상태가 아니라 혼란스러운 상태예요."
+    ]
+  ]
+}

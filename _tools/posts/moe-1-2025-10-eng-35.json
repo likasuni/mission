@@ -1,0 +1,63 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 4,
+  "topic": "소셜 미디어에 올린 개인적 사건은 더 오래 기억된다",
+  "date": "2026-10-21",
+  "keywords": ["2025년 10월 고1 모의고사 영어 35번", "2025 10월 고1 영어 35번 해설", "고1 10월 모의고사 35번 정답", "고1 모의고사 무관한 문장", "social media autobiographical memory 지문", "소셜 미디어 자전적 기억 지문"],
+  "lead": "2025년 10월 고1 모의고사 영어 35번은 소셜 미디어에 올린 개인적 사건이 더 잘 기억된다는 흐름에서 벗어난 문장을 찾는 문항이에요. 글 전체는 '기억'을 이야기하는데, ④만 '상향 비교가 자존감 낮은 사람에게 해롭다'는 정서 문제로 빠져요. 정답은 ④예요.",
+  "flow": [
+    ["주제", "소셜 미디어는 자전적 기억(자기 삶의 기억)을 돕는 중요한 맥락이다."],
+    ["①", "소셜 미디어에 올린 개인적 사건은 올리지 않은 것보다 더 잘 기억되고 덜 잊힌다."],
+    ["② 이유", "온라인에 기억을 공유하면 일어난 일을 되새기고 이해하게 되어 장기 기억 유지에 도움이 된다."],
+    ["③ 추가 이유", "댓글·좋아요, 알고리즘·주기적 알림이 게시된 사건의 기억 단서가 된다."],
+    ["④ 이탈", "(상향 사회적 비교는 자존감이 낮은 사람에게 특히 해롭다.)"],
+    ["⑤ 결론", "그 결과 공유된 사건은 오래 기억되고, 공유되지 않은 것은 잊힐 수 있다."]
+  ],
+  "evidence": [
+    {"en": "Social media serves as an important context to facilitate autobiographical remembering.", "ko": "소셜 미디어는 자전적 기억을 촉진하는 중요한 맥락으로 작용한다.", "note": "첫 문장이 주제예요. 키워드는 remembering(기억하기). 이후 문장은 모두 기억과 연결돼야 해요."},
+    {"en": "Upward social comparisons on social media are particularly harmful for low self-esteem individuals, who tend to make more frequent comparisons when browsing.", "ko": "소셜 미디어에서의 상향 사회적 비교는 자존감이 낮은 개인에게 특히 해로운데, 그들은 인터넷을 돌아다닐 때 비교를 더 자주 하는 경향이 있다.", "note": "소셜 미디어라는 소재는 같지만 내용이 '기억'이 아니라 '비교와 자존감'이에요. 소재만 같고 주제가 다른 문장이라 ④가 정답이에요."},
+    {"en": "As a result, event details shared on social media are likely stabilized and remembered over time, whereas those not shared may become inaccessible or forgotten.", "ko": "그 결과, 소셜 미디어에 공유된 사건 세부 사항들은 시간이 지나면서 안정화되고 기억될 가능성이 높은 반면에, 공유되지 않은 것들은 접근할 수 없게 되거나 잊힐 수 있다.", "note": "As a result는 ②③의 기억 단서 이야기를 받는 결론이에요. ④를 빼면 ③ → ⑤가 자연스럽게 이어져요."}
+  ],
+  "choices": [
+    {"en": "① Personal events posted on social media platforms are better remembered …", "ko": "소셜 미디어에 게시된 개인적 사건이 더 잘 기억된다", "why": "주제 문장을 구체적으로 보여 주는 첫 근거예요. 흐름에 맞아요."},
+    {"en": "② This may be because sharing memories online allows individuals to rehearse …", "ko": "온라인 공유가 되새김과 이해를 도와 장기 기억을 촉진하기 때문", "why": "This may be because로 ①의 이유를 설명해요. 흐름에 맞아요."},
+    {"en": "③ Online feedback such as comments and likes … can further serve as memory cues …", "ko": "댓글·좋아요, 알고리즘·알림이 기억 단서가 된다", "why": "further로 또 다른 이유를 더해요. memory cues로 기억 주제를 이어 가요."},
+    {"en": "④ Upward social comparisons on social media are particularly harmful …", "ko": "상향 사회적 비교는 자존감이 낮은 사람에게 특히 해롭다", "why": "정답. 소셜 미디어 소재만 같고, '기억'이 아닌 '비교·자존감' 이야기로 벗어났어요."},
+    {"en": "⑤ As a result, event details shared on social media are likely stabilized and remembered …", "ko": "그 결과 공유된 사건은 오래 기억되고 공유되지 않은 것은 잊힌다", "why": "①~③을 정리하는 결론이에요. 흐름에 맞아요."}
+  ],
+  "grammar": [
+    {"t": "과거분사 후치 수식 + 비교", "ex": "Personal events posted on social media platforms are better remembered and less forgotten than those not posted, independent of the characteristics of the events.", "d": "posted on ~이 Personal events를 꾸며요. those not posted는 the events not posted. independent of는 '~와 무관하게'."},
+    {"t": "allow A to V + 분사구문 thus -ing", "ex": "sharing memories online allows individuals to rehearse and make sense of what happened, thus facilitating long-term memory retention.", "d": "동명사구 sharing memories online이 주어예요. thus facilitating ~은 '그리하여 ~을 촉진한다'라는 결과를 나타내는 분사구문이에요."},
+    {"t": "A as well as B", "ex": "Online feedback such as comments and likes as well as technological features such as algorithms and periodic reminders can further serve as memory cues", "d": "'B뿐만 아니라 A도'. 주어가 길지만 동사는 can serve예요. serve as는 '~로 작용하다'."},
+    {"t": "계속적 용법 관계대명사 who", "ex": "… harmful for low self-esteem individuals, who tend to make more frequent comparisons when browsing.", "d": "콤마 뒤 who는 앞의 individuals를 보충 설명해요. '그런데 그들은 ~하는 경향이 있다'."}
+  ],
+  "vocab": [
+    ["serve as", "~로 작용하다, ~의 역할을 하다"],
+    ["facilitate", "촉진하다, 쉽게 하다"],
+    ["autobiographical", "자전적인"],
+    ["independent of", "~와 무관하게"],
+    ["characteristic", "특성"],
+    ["rehearse", "되풀이하다, 되새기다"],
+    ["make sense of", "~을 이해하다"],
+    ["retention", "유지"],
+    ["periodic", "주기적인"],
+    ["cue", "단서, 신호"],
+    ["upward", "위쪽으로 향하는, 상향의"],
+    ["self-esteem", "자존감"],
+    ["browse", "(인터넷을) 둘러보다"],
+    ["stabilize", "안정시키다"],
+    ["inaccessible", "접근할 수 없는"]
+  ],
+  "summary": {"en": "Sharing personal events on social media helps people remember them better, as rehearsal and online cues keep those memories stable over time.", "ko": "개인적 사건을 소셜 미디어에 공유하면 되새김과 온라인 단서 덕분에 그 기억이 시간이 지나도 안정적으로 유지되어 더 잘 기억된다."},
+  "writing": {"en": "Memories we share online tend to last longer than those we keep to ourselves.", "ko": "온라인에 공유한 기억은 혼자 간직한 기억보다 더 오래 남는 경향이 있다."},
+  "tip": "무관한 문장은 '소재는 같지만 주제가 다른 문장'이 많아요. 첫 문장에서 주제 키워드(remembering)를 잡고, 각 문장에 memory, remembered, cues 같은 기억 관련 말이 있는지 확인해 보세요. ④에는 기억 이야기가 하나도 없어요.",
+  "note": "④처럼 'social media'가 그대로 들어 있으면 괜히 맞는 문장 같아 보여요. 소재 말고 '이 문장이 무슨 말을 하려는지'를 첫 문장 주제와 비교하는 습관이 이 유형의 핵심이에요.",
+  "faq": [
+    ["2025년 10월 고1 모의고사 영어 35번 정답은?", "④예요. 글은 소셜 미디어 공유가 기억을 돕는다는 내용인데, ④만 상향 비교가 자존감 낮은 사람에게 해롭다는 다른 이야기를 해요."],
+    ["2025년 10월 고1 영어 35번은 어떤 유형인가요?", "전체 흐름과 관계없는 문장을 고르는 2점 무관한 문장 문항이에요. 소셜 미디어와 자전적 기억을 다룬 지문이에요."],
+    ["③이 정답이 아닌 이유는?", "③은 댓글·좋아요와 알고리즘·알림이 memory cues(기억 단서)가 된다고 해요. 기억을 돕는 또 하나의 이유라서 흐름에 맞아요."]
+  ]
+}

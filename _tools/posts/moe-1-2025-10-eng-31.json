@@ -1,0 +1,196 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 3,
+  "topic": "시금치 철분 통념이 오늘날까지 살아남은 이유",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 31번",
+    "2025 10월 고1 영어 31번 해설",
+    "고1 10월 모의고사 31번 정답",
+    "고1 모의고사 빈칸 추론",
+    "시금치 철분 통념 지문",
+    "Popeye spinach myth"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 31번은 '시금치에 철분이 많다'는 통념이 계산 실수에서 시작돼 지금까지 이어진다는 빈칸 추론 문항이에요. persists today, taken hold, even today 같은 표현이 모두 통념이 '오래 버틴다'는 쪽을 가리켜요. 정답은 ③ endurance예요.",
+  "flow": [
+    [
+      "주장",
+      "통념은 단순한 이야기가 아니다. 예로 시금치의 철분 함량 통념이 오늘날까지 이어진다."
+    ],
+    [
+      "기원",
+      "1890년 생리학자 Gustav von Bunge의 단순한 계산 착오에서 시작됐다."
+    ],
+    [
+      "원인",
+      "철분 35mg은 정확했지만 말린 시금치를 분석해, 생시금치보다 열 배 많은 수치가 나왔다."
+    ],
+    [
+      "전개",
+      "오류는 곧 바로잡혔지만 바로잡은 사실도 곧 잊혔고 통념은 자리를 잡았다."
+    ],
+    [
+      "결론",
+      "시금치로 힘을 얻는 Popeye가 통념의 지속에 기여했고, 150년 가까이 지난 지금도 부모들은 이 이야기로 아이들에게 시금치를 먹인다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "a well-known myth that persists today is the supposed high iron content in spinach.",
+      "ko": "오늘날까지 지속되는 잘 알려진 통념 하나는 시금치에 철분이 많다고 여겨지는 것이다.",
+      "note": "persists today(오늘날까지 지속된다)가 처음부터 이 통념의 핵심 성질을 알려 줘요."
+    },
+    {
+      "en": "Although the error was swiftly corrected, the correction was just as swiftly forgotten. The myth had taken hold.",
+      "ko": "그 오류는 빠르게 바로잡혔지만, 그 정정 역시 그만큼 빠르게 잊혔다. 통념은 자리를 잡았다.",
+      "note": "정정은 잊히고 통념은 '굳게 자리 잡았다'. 사라지지 않고 버텼다는 뜻이에요."
+    },
+    {
+      "en": "… contributed to its ______ and even today, some nearly 150 years later, parents the world over use this tale …",
+      "ko": "…그것의 ______에 기여했고, 약 150년이 지난 오늘날에도 전 세계 부모들은 이 이야기를 사용한다…",
+      "note": "빈칸 바로 뒤 even today ~ 150 years later가 '오래 살아남음'을 직접 보여 줘요. 빈칸 = endurance(지속)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "isolation",
+      "ko": "고립",
+      "why": "통념은 전 세계 부모들이 쓸 만큼 널리 퍼졌어요. 고립과는 반대예요."
+    },
+    {
+      "en": "correction",
+      "ko": "정정",
+      "why": "정정은 이미 이뤄졌고 곧 잊혔어요. Popeye는 정정이 아니라 통념이 이어지는 데 기여했어요."
+    },
+    {
+      "en": "endurance",
+      "ko": "지속, 오래 견딤",
+      "why": "정답. persists today, taken hold, even today 150 years later가 모두 통념이 오래 살아남았다는 내용이에요."
+    },
+    {
+      "en": "unpopularity",
+      "ko": "인기 없음",
+      "why": "유명 만화 캐릭터 덕분에 오히려 널리 알려졌어요. 방향이 반대예요."
+    },
+    {
+      "en": "disappearance",
+      "ko": "사라짐",
+      "why": "오늘날에도 쓰인다고 했으니 사라짐은 반대 내용이에요. 사라진 건 '정정'이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "주격 관계대명사 that + persist",
+      "ex": "a well-known myth that persists today is the supposed high iron content in spinach",
+      "d": "that persists today가 myth를 꾸미고, 진짜 동사는 is예요. 주어가 길 때는 동사를 먼저 찾으세요."
+    },
+    {
+      "t": "계속적 용법 which",
+      "ex": "he was analyzing dried spinach, which held ten times more iron than the same amount of fresh leafy greens",
+      "d": "콤마 + which는 앞의 dried spinach를 보충 설명해요. 배수 + 비교급(ten times more ~ than)은 '~보다 열 배 더 많은'이에요."
+    },
+    {
+      "t": "just as + 원급",
+      "ex": "the correction was just as swiftly forgotten",
+      "d": "'(앞의 것과) 꼭 그만큼 빠르게'. 오류가 빨리 고쳐진 만큼 정정도 빨리 잊혔다는 대비예요."
+    },
+    {
+      "t": "persuade O into -ing",
+      "ex": "use this tale to try to persuade their children into eating the healthy vegetable",
+      "d": "'O를 설득해서 ~하게 하다'. into 뒤에는 동명사가 와요."
+    }
+  ],
+  "vocab": [
+    [
+      "myth",
+      "통념, 근거 없는 믿음"
+    ],
+    [
+      "persist",
+      "지속되다"
+    ],
+    [
+      "supposed",
+      "~라고 여겨지는"
+    ],
+    [
+      "content",
+      "함유량"
+    ],
+    [
+      "legend",
+      "전설, 전해 내려오는 이야기"
+    ],
+    [
+      "date back to",
+      "~로 거슬러 올라가다"
+    ],
+    [
+      "originate from",
+      "~에서 비롯되다"
+    ],
+    [
+      "miscalculation",
+      "계산 착오"
+    ],
+    [
+      "physiologist",
+      "생리학자"
+    ],
+    [
+      "accurately",
+      "정확하게"
+    ],
+    [
+      "leafy greens",
+      "잎채소"
+    ],
+    [
+      "swiftly",
+      "빠르게"
+    ],
+    [
+      "take hold",
+      "자리를 잡다, 굳어지다"
+    ],
+    [
+      "contribute to",
+      "~에 기여하다"
+    ],
+    [
+      "endurance",
+      "지속, 오래 견딤 — 빈칸 정답"
+    ],
+    [
+      "persuade",
+      "설득하다"
+    ]
+  ],
+  "summary": {
+    "en": "The myth that spinach is rich in iron began with a calculation error in 1890, and although the error was corrected, the myth has endured for nearly 150 years, helped by Popeye.",
+    "ko": "시금치에 철분이 많다는 통념은 1890년의 계산 착오에서 시작됐고, 오류는 바로잡혔지만 Popeye의 도움으로 150년 가까이 살아남았다."
+  },
+  "writing": {
+    "en": "A myth can survive long after the error behind it has been corrected.",
+    "ko": "통념은 그 뒤에 있던 오류가 바로잡힌 뒤에도 오래 살아남을 수 있다."
+  },
+  "tip": "빈칸 앞뒤에 시간 표현(today, even today, 150 years later)이 반복되면 '오래 이어진다'는 쪽으로 답을 좁히세요. correction처럼 본문에 나온 단어가 그대로 선택지에 있으면, 그 단어가 글에서 어떤 결과를 맞았는지(곧 잊혔다) 확인하고 고르세요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 31번 정답은?",
+      "③ endurance(지속)예요. Popeye가 시금치 철분 통념이 오늘날까지 오래 이어지는 데 기여했다는 내용이에요."
+    ],
+    [
+      "2025 10월 고1 영어 31번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 시금치 철분 통념의 기원을 다룬 지문이에요."
+    ],
+    [
+      "② correction이 오답인 이유는?",
+      "correction은 본문에 나오지만 정정은 '곧 잊혔다'고 했어요. Popeye가 기여한 건 정정이 아니라 통념이 계속 살아남는 것이라 endurance가 답이에요."
+    ]
+  ],
+  "note": "correction은 본문에 그대로 나와서 눈에 확 들어오는 함정이에요. its가 가리키는 게 정정이 아니라 myth라는 것부터 확인하고 빈칸을 채워 보세요."
+}
