@@ -52250,6 +52250,42 @@
 {
 "exam": "moe",
 "year": 2026,
+"grade": 1,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "듣기대본",
+"id": "1Azd_LHvpqs03JPKHIVRiOWx2bAUrbzSv",
+"size": 111562,
+"title": "2610고1영어_듣기대본.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
+"grade": 1,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "문제",
+"id": "1fEch5wu1cCKfGpVHWmrtGK24KtFWgA0d",
+"size": 520618,
+"title": "2610고1영어_문제지.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
+"grade": 1,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "해설",
+"id": "1FpCZtcgZPgjrs9ZmwTasXRqWVUM8_wk_",
+"size": 314671,
+"title": "26년 10월 고1 영어 해설.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
 "grade": 2,
 "month": 3,
 "subject": "국어",
@@ -52714,6 +52750,42 @@
 "id": "15_Il7_aAt7cNjAKyfvh5SABQpDWszBOK",
 "size": 178280,
 "title": "2026년 9월 고2 모의고사 한국사 해설.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
+"grade": 2,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "듣기대본",
+"id": "1myXITC-gYrr1Cm09mjV3EoyHzQmWTIpP",
+"size": 119068,
+"title": "2610고2영어_듣기대본.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
+"grade": 2,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "문제",
+"id": "1Rupy6HRQIc8PwqIxN2kLmTRAD3ocSKGr",
+"size": 432738,
+"title": "2610고2영어_문제지.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
+"grade": 2,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "해설",
+"id": "1yZx6d2Lod_3RGac-MKLl1r9X81npK_1Y",
+"size": 309623,
+"title": "26년 10월 고2 영어 해설.pdf"
 },
 {
 "exam": "moe",
@@ -55198,6 +55270,42 @@
 "id": "1Ph0cEdqVzpyoYMWHO37vo8PcCN7ZNu_o",
 "size": 42400,
 "title": "2025년 9월 고3 모의고사 화학2 정답.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
+"grade": 3,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "듣기대본",
+"id": "1PSCQpWDYWAH35wmNRMCcKwvQAmOQa6g6",
+"size": 1297011,
+"title": "02.10월_고3_영어_듣기대본.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
+"grade": 3,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "문제",
+"id": "1_GcJaYCg00CssF9qinH27_YAlWoxHyqd",
+"size": 441034,
+"title": "01.10월_고3_영어_문제지.pdf"
+},
+{
+"exam": "moe",
+"year": 2026,
+"grade": 3,
+"month": 10,
+"subject": "영어",
+"group": "영어",
+"kind": "해설",
+"id": "11Aa1L7_GaJ4dQuJYpP43Y9SQpt750Elq",
+"size": 309337,
+"title": "26년 10월 고3 영어 해설.pdf"
 },
 {
 "exam": "sn",
