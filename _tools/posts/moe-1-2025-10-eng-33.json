@@ -1,0 +1,63 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 33,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 2,
+  "topic": "인지와 감정은 서로 영향을 주고받아 떼어 놓을 수 없다",
+  "date": "2026-10-21",
+  "keywords": ["2025년 10월 고1 모의고사 영어 33번", "2025 10월 고1 영어 33번 해설", "고1 10월 모의고사 33번 정답", "고1 모의고사 빈칸 추론", "cognition and emotion 지문", "인지와 감정의 양방향성 지문", "시험 불안 생각 바꾸기 지문"],
+  "lead": "2025년 10월 고1 모의고사 영어 33번은 생각(인지)이 감정을 만들고, 그 감정이 다시 생각에 영향을 준다는 빈칸 추론 문항이에요. 빈칸 바로 뒤 This bi-directionality of cognition and emotion(인지와 감정의 양방향성)이 빈칸 내용을 그대로 받아 주는 게 결정적 단서예요. 정답은 ② there's simply no pulling emotion and cognition apart예요.",
+  "flow": [
+    ["통념 반박", "흔히 감정은 이성적 사고의 반대로 그려지지만, 실제로 인지(생각)는 감정의 핵심 구성 요소이다."],
+    ["주장", "상황을 어떻게 생각하느냐가 감정을 만들고, 그 감정이 다시 생각에 영향을 준다."],
+    ["예시", "시험을 못 본다고 생각하며 들어가면 불안이 커지고, 결과에 기분이 나빠지고, 그것이 다시 '나는 시험을 못 본다'는 생각의 증거가 된다."],
+    ["빈칸", "이처럼 감정과 인지는 떼어 놓을 수 없다."],
+    ["활용", "이 양방향성 덕분에 생각을 바꾸면 힘든 감정도 조절할 수 있다."]
+  ],
+  "evidence": [
+    {"en": "How we think about our circumstances shapes the emotions we experience; then those emotions echo back to influence how we think.", "ko": "우리가 상황에 대해 어떻게 '생각하는지'가 우리가 경험하는 감정을 형성하고, 그다음 그 감정이 되돌아와 우리가 생각하는 방식에 영향을 준다.", "note": "생각 → 감정, 감정 → 생각. 두 방향으로 계속 영향을 주고받으니 둘을 따로 떼어 낼 수 없다는 뜻이에요."},
+    {"en": "This bi-directionality of cognition and emotion allows us to adjust difficult emotions by changing the way we think.", "ko": "인지와 감정의 이러한 양방향성은 우리가 생각하는 방식을 바꿈으로써 힘든 감정을 조절할 수 있게 해 준다.", "note": "빈칸 바로 뒤 문장이에요. This bi-directionality가 빈칸 내용을 가리키므로, 빈칸에는 '감정과 인지가 서로 얽혀 있다'는 말이 와야 해요."},
+    {"en": "Despite the cultural trope depicting emotions as the opposite of rational thought, cognition — what we commonly refer to as thinking — is actually a key building block of emotion.", "ko": "감정을 합리적인 사고의 반대로 묘사하는 문화적인 비유적 표현에도 불구하고, 인지, 즉 우리가 흔히 생각이라고 부르는 것은 사실 감정의 핵심 구성 요소이다.", "note": "첫 문장부터 '감정과 이성은 반대'라는 통념을 뒤집어요. 감정과 생각을 분리하는 선택지는 글의 방향과 반대예요."}
+  ],
+  "choices": [
+    {"en": "your emotion will not always be conveyed as intended", "ko": "당신의 감정이 항상 의도한 대로 전달되지는 않을 것이다", "why": "감정을 다른 사람에게 '전달'하는 이야기는 글에 없어요. 글은 내 안에서 생각과 감정이 주고받는 관계를 다뤄요."},
+    {"en": "there's simply no pulling emotion and cognition apart", "ko": "감정과 인지를 떼어 놓을 방법은 그야말로 없다", "why": "정답. 생각이 감정을 만들고 감정이 다시 생각에 영향을 주는 순환을 정리한 말이고, 바로 뒤 This bi-directionality와 딱 이어져요."},
+    {"en": "the ability to regulate emotions can't be learned", "ko": "감정을 조절하는 능력은 배울 수 없다", "why": "글의 마지막은 생각을 바꾸면 감정을 조절할 수 있다고 해요. 정반대 내용이에요."},
+    {"en": "no two people feel an emotion the same way", "ko": "어떤 두 사람도 감정을 똑같이 느끼지 않는다", "why": "사람마다 감정이 다르다는 개인차 이야기는 나오지 않아요. 핵심은 생각과 감정의 연결이에요."},
+    {"en": "emotion often travels far away from reason", "ko": "감정은 종종 이성으로부터 멀리 떠나간다", "why": "첫 문장에서 반박한 통념(감정은 이성의 반대)과 같은 방향이에요. 글의 주장과 반대예요."}
+  ],
+  "grammar": [
+    {"t": "분사구 후치 수식 + 동격 대시", "ex": "Despite the cultural trope depicting emotions as the opposite of rational thought, cognition — what we commonly refer to as thinking — is actually a key building block of emotion.", "d": "depicting ~이 trope를 뒤에서 꾸며요('~을 묘사하는 비유'). 대시 사이 what we commonly refer to as thinking은 cognition을 쉽게 풀어 준 말이고, 진짜 동사는 is예요."},
+    {"t": "의문사절 주어 (How + S + V)", "ex": "How we think about our circumstances shapes the emotions we experience", "d": "How we think about our circumstances 전체가 주어라서 동사는 단수 shapes예요. '우리가 상황을 어떻게 생각하는지가'로 해석해요."},
+    {"t": "there's no -ing", "ex": "there's simply no pulling emotion and cognition apart", "d": "'~하는 것은 불가능하다'라는 뜻이에요. = It is impossible to pull emotion and cognition apart. pull A apart는 'A를 떼어 놓다'."},
+    {"t": "allow A to V / by -ing", "ex": "This bi-directionality of cognition and emotion allows us to adjust difficult emotions by changing the way we think.", "d": "allow A to V는 'A가 ~하게 해 주다', by -ing는 '~함으로써'. '생각 방식을 바꿈으로써 감정을 조절하게 해 준다'예요."}
+  ],
+  "vocab": [
+    ["trope", "비유적 표현"],
+    ["depict A as B", "A를 B로 묘사하다"],
+    ["rational", "합리적인, 이성적인"],
+    ["cognition", "인지"],
+    ["refer to A as B", "A를 B라고 부르다"],
+    ["building block", "구성 요소"],
+    ["circumstance", "상황, 환경"],
+    ["echo back", "되돌아오다, 되울리다"],
+    ["anxiety", "불안"],
+    ["performance", "성과, 수행"],
+    ["bi-directionality", "양방향성"],
+    ["adjust", "조절하다"],
+    ["anticipation", "기대"],
+    ["pathway", "경로"],
+    ["to one's advantage", "~에게 유리하게"],
+    ["pull A apart", "A를 떼어 놓다 — 빈칸 정답"]
+  ],
+  "summary": {"en": "Thinking and emotion constantly influence each other, so changing the way we think can help us manage difficult emotions.", "ko": "생각과 감정은 끊임없이 서로 영향을 주고받으므로, 생각하는 방식을 바꾸면 힘든 감정을 다스리는 데 도움이 된다."},
+  "writing": {"en": "Because thoughts and feelings shape each other, changing a thought can change a feeling.", "ko": "생각과 감정은 서로를 만들기 때문에, 생각 하나를 바꾸면 감정도 바뀔 수 있다."},
+  "tip": "빈칸 바로 뒤 문장이 This + 명사(This bi-directionality)로 시작하면, 그 명사가 빈칸 내용을 요약한 말이에요. '양방향성' = 서로 주고받는다 = 떼어 놓을 수 없다. 그리고 첫 문장에서 반박한 통념(감정 vs 이성)을 그대로 담은 ⑤ 같은 선택지는 먼저 지우세요.",
+  "note": "이 지문은 내용 자체가 시험 보는 여러분 이야기예요. '나는 시험을 못 봐'가 아니라 '떨리는 건 준비됐다는 뜻이야'라고 생각을 바꿔 보는 연습, 수업에서 같이 해 봐요.",
+  "faq": [
+    ["2025년 10월 고1 모의고사 영어 33번 정답은?", "② there's simply no pulling emotion and cognition apart(감정과 인지를 떼어 놓을 방법은 없다)예요. 생각이 감정을 만들고, 감정이 다시 생각에 영향을 준다는 내용이에요."],
+    ["2025년 10월 고1 영어 33번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 인지와 감정의 양방향 관계를 다룬 지문이에요."],
+    ["⑤ emotion often travels far away from reason이 오답인 이유는?", "'감정은 이성과 멀다'는 생각은 글 첫 문장에서 반박한 통념이에요. 글은 오히려 생각과 감정이 붙어 있다고 말해요."]
+  ]
+}

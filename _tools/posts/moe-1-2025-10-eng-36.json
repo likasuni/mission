@@ -1,0 +1,61 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 36,
+  "type": "순서",
+  "points": 2,
+  "answer": 3,
+  "topic": "평범한 식사도 사실은 여러 감각이 합쳐진 경험이다",
+  "date": "2026-10-21",
+  "keywords": ["2025년 10월 고1 모의고사 영어 36번", "2025 10월 고1 영어 36번 해설", "고1 10월 모의고사 36번 정답", "고1 모의고사 글의 순서", "multisensory experience 지문", "다중 감각 식사 경험 지문"],
+  "lead": "2025년 10월 고1 모의고사 영어 36번은 평범한 식사도 눈·질감·맛·냄새·소리가 합쳐진 다중 감각 경험이라는 글의 순서 문항이에요. (B)의 However가 주어진 글의 '당연하게 여긴다'를 뒤집고, (B) 끝의 eating a regular meal을 (C)의 it이 받고, (A)의 it does not stop there가 (C)의 감각 목록에 소리를 더하는 연결이 핵심이에요. 정답은 ③ (B)－(C)－(A)예요.",
+  "flow": [
+    ["주어진 글", "다중 감각 경험은 일상의 중심이지만, 감각이 정상일 때 우리는 그것을 당연하게 여긴다."],
+    ["(B) 전환", "그러나 아무리 평범한 경험도 자세히 보면 놀라운 다중 감각 세계가 드러난다. 일상적인 식사를 생각해 보라."],
+    ["(C) 설명", "식사는 평범해 보이지만 감각의 융합이다. 먼저 눈으로 먹고, 질감·맛·냄새 같은 수많은 감각 신호에도 노출된다."],
+    ["(A) 추가", "거기서 끝이 아니다. 식사 장소의 분위기, 씹는 소리, 도구에서 나는 소리까지 식사 경험에 영향을 준다."]
+  ],
+  "evidence": [
+    {"en": "(B) However, closer inspection to any, even the most ordinary experiences, reveals the remarkable multisensory world in which we live. Consider the experience of eating a regular meal.", "ko": "(B) 그러나 어떤, 심지어 가장 평범한 경험조차 더 자세히 살펴보면 우리가 살고 있는 놀라운 다중 감각 세계가 드러난다. 일상적인 식사를 하는 경험을 생각해 보라.", "note": "However는 주어진 글의 '당연하게 여긴다(take them for granted)'를 뒤집어요. 그래서 주어진 글 바로 뒤는 (B)예요."},
+    {"en": "(C) At first, it may seem like an ordinary experience, but it is actually a fusion of the senses.", "ko": "(C) 처음에는 그것이 평범한 경험처럼 보일 수 있지만, 실제로 그것은 감각들의 융합이다.", "note": "it은 (B) 끝의 the experience of eating a regular meal을 가리켜요. 식사 이야기를 처음 꺼낸 (B) 다음에 (C)가 와요."},
+    {"en": "(A) And it does not stop there. Even the sounds that come both from the atmospheres in which we eat and our interactions with the food (such as chewing) and the tools we use to eat influence our eating experience.", "ko": "(A) 그리고 그것은 거기서 멈추지 않는다. 심지어 우리가 식사하는 분위기와 음식(씹기 등)이나 식사 도구와의 상호 작용에서 나오는 소리들도 우리의 식사 경험에 영향을 미친다.", "note": "there(거기)는 (C)의 눈·질감·맛·냄새 목록을 가리키고, Even the sounds로 감각을 하나 더 보태요. 그래서 (A)가 맨 끝이에요."}
+  ],
+  "choices": [
+    {"en": "(A) － (C) － (B)", "ko": "추가 → 설명 → 전환", "why": "(A)의 it does not stop there는 앞에 감각 목록이 있어야 해요. 주어진 글 바로 뒤에는 멈출 '거기'가 없어요."},
+    {"en": "(B) － (A) － (C)", "ko": "전환 → 추가 → 설명", "why": "(B) 끝에서 식사를 꺼낸 뒤 바로 '거기서 끝이 아니다'(A)가 오면 어색해요. 눈·맛·냄새(C)가 먼저 나와야 소리(A)를 더할 수 있어요."},
+    {"en": "(B) － (C) － (A)", "ko": "전환 → 설명 → 추가", "why": "정답. 당연하게 여긴다(주어진 글) → 그러나 자세히 보면, 식사를 생각해 보라(B) → 식사는 감각의 융합: 눈·질감·맛·냄새(C) → 거기서 끝이 아니다, 소리까지(A)."},
+    {"en": "(C) － (A) － (B)", "ko": "설명 → 추가 → 전환", "why": "(C)의 it(식사)이 가리킬 대상이 주어진 글에는 없어요. 식사는 (B)에서 처음 나와요."},
+    {"en": "(C) － (B) － (A)", "ko": "설명 → 전환 → 추가", "why": "(C)가 맨 앞에 올 수 없고, 식사 이야기를 이미 한 뒤에 다시 '식사를 생각해 보라'(B)가 오는 것도 어색해요."}
+  ],
+  "grammar": [
+    {"t": "take A for granted", "ex": "yet we often take them for granted, especially when our senses function normally or are corrected to normal with aids like glasses.", "d": "'A를 당연하게 여기다'. them은 Multisensory experiences. 주어진 글의 이 말을 (B)의 However가 뒤집어요."},
+    {"t": "주어 + 동사 수 일치 (긴 주어)", "ex": "However, closer inspection to any, even the most ordinary experiences, reveals the remarkable multisensory world in which we live.", "d": "주어는 closer inspection(단수)이라서 동사는 reveals예요. in which we live는 '우리가 사는'으로 the world를 꾸며요."},
+    {"t": "both A and B + 긴 주어", "ex": "Even the sounds that come both from the atmospheres in which we eat and our interactions with the food (such as chewing) and the tools we use to eat influence our eating experience.", "d": "주어는 the sounds, 동사는 맨 뒤 influence예요. that ~ to eat 전체가 sounds를 꾸며 줘서 주어가 아주 길어졌어요. both from A and B 구조로 소리가 나오는 곳 두 가지를 말해요."},
+    {"t": "be exposed to", "ex": "but we are also exposed to countless sensory signals that influence our eating experience such as food textures, tastes, and smells.", "d": "'~에 노출되다'. to는 전치사라서 뒤에 명사가 와요. such as 이하는 sensory signals의 예시예요."}
+  ],
+  "vocab": [
+    ["multisensory", "다중 감각의"],
+    ["take A for granted", "A를 당연하게 여기다"],
+    ["function", "기능하다, 작동하다"],
+    ["correct", "교정하다"],
+    ["aid", "보조 도구"],
+    ["inspection", "살펴봄, 점검"],
+    ["ordinary", "평범한"],
+    ["reveal", "드러내다"],
+    ["remarkable", "놀라운"],
+    ["fusion", "융합"],
+    ["be exposed to", "~에 노출되다"],
+    ["countless", "셀 수 없이 많은"],
+    ["texture", "질감"],
+    ["atmosphere", "분위기"],
+    ["interaction", "상호 작용"],
+    ["chew", "씹다"]
+  ],
+  "summary": {"en": "Even an ordinary meal is a fusion of the senses, shaped by sight, texture, taste, smell, and even sound.", "ko": "평범한 식사조차 시각, 질감, 맛, 냄새, 그리고 소리까지 합쳐진 감각의 융합이다."},
+  "writing": {"en": "We eat not only with our mouths but with all of our senses.", "ko": "우리는 입으로만이 아니라 모든 감각으로 먹는다."},
+  "tip": "However로 시작하는 단락은 앞 내용을 뒤집어요. 주어진 글에 '당연하게 여긴다' 같은 말이 있으면 바로 뒤에 However 단락을 놓아 보세요. 그리고 it does not stop there(거기서 끝이 아니다)처럼 '더하기' 표현은 무엇이 먼저 나열된 뒤에 와야 해요.",
+  "faq": [
+    ["2025년 10월 고1 모의고사 영어 36번 정답은?", "③ (B)－(C)－(A)예요. 그러나 자세히 보면(B) → 식사는 감각의 융합(C) → 거기서 끝이 아니라 소리까지(A) 순서예요."],
+    ["2025년 10월 고1 영어 36번은 어떤 유형인가요?", "주어진 글 다음에 이어질 글의 순서를 고르는 2점 순서 배열 문항이에요. 식사를 예로 든 다중 감각 경험 지문이에요."],
+    ["(A)가 (C) 앞에 올 수 없는 이유는?", "(A)는 And it does not stop there(거기서 끝이 아니다)로 시작해서 앞에 나열된 감각이 있어야 해요. 눈·질감·맛·냄새가 나오는 (C)가 먼저 와야 해요."]
+  ]
+}

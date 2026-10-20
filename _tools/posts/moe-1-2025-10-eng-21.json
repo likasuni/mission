@@ -1,0 +1,192 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 2,
+  "topic": "주민을 위한 녹지 조성이 오히려 집값을 올려 그 주민을 내쫓는 '도시 녹지의 역설'",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 21번",
+    "2025 10월 고1 영어 21번 해설",
+    "고1 10월 모의고사 21번 정답",
+    "고1 모의고사 함축 의미",
+    "urban green space paradox",
+    "도시 재생 녹지 역설 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 21번은 낙후 지역 주민을 위해 만든 녹지가 동네 집값을 올려, 정작 그 주민들이 쫓겨나게 되는 '도시 녹지의 역설'을 다룬 함축 의미 문항이에요. 밑줄 뒤 This results in the exclusion or displacement of the poor neighbourhood's residents, who were intended to benefit …가 뜻을 풀어 줘요. 정답은 ② a situation forcing out city residents green renewals aimed to help예요.",
+  "flow": [
+    [
+      "배경",
+      "낙후 지역의 도시 재생 사업은 주민의 복지를 높이고 환경 불평등을 해결한다고 홍보되어 왔다."
+    ],
+    [
+      "문제 제기",
+      "하지만 소수 민족·저소득층 지역에서는 이런 환경 개선이 '도시 녹지의 역설'을 만들 수 있다."
+    ],
+    [
+      "과정",
+      "좋은 녹지가 생기면 동네가 매력적으로 바뀌고, 그 대신 주거비가 올라 주민들이 임대료를 감당하지 못한다."
+    ],
+    [
+      "결과",
+      "혜택을 받기로 되어 있던 가난한 주민들이 밀려나고, 결국 녹지 접근성이 낮은 비슷한 낙후 지역으로 옮겨 가게 된다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "By contrast, the cost of housing can rise, and residents may not be able to afford the rent.",
+      "ko": "대조적으로, 주거비가 오를 수 있고, 거주자들은 임대료를 지불할 여유가 없을지도 모른다.",
+      "note": "녹지가 동네를 매력적으로 만드는 좋은 점과 반대로, 집값이 올라 주민이 버티기 어려워진다는 부작용이 나와요."
+    },
+    {
+      "en": "This results in the exclusion or displacement of the poor neighbourhood's residents, who were intended to benefit from the ecosystem services provided by the new green space.",
+      "ko": "이는 가난한 지역 거주자들의 배제 혹은 퇴거를 야기하는데, 그들은 새로운 녹색 공간에 의해 제공되는 생태계 서비스로부터 혜택을 얻도록 의도되어 있었다.",
+      "note": "역설의 핵심이에요. 혜택을 받아야 할 주민(who were intended to benefit)이 오히려 밀려나요(displacement). ②의 forcing out city residents green renewals aimed to help와 정확히 맞아요."
+    },
+    {
+      "en": "In turn, the residents may only be able to afford to live in a similar degraded neighbourhood to the one they left, with low access to green infrastructure.",
+      "ko": "결국, 그 거주자들은 녹색 사회 기반 시설에 접근성이 낮은 채로, 그들이 떠났던 곳과 비슷한 낙후된 지역에나 거주할 형편이 될 수 있을지도 모른다.",
+      "note": "쫓겨난 주민은 결국 녹지 혜택을 받지 못해요. 도우려던 사람이 도움을 못 받는다는 역설이 완성돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "an issue where sustainable technologies cost more in green areas",
+      "ko": "녹지 지역에서 지속 가능한 기술이 더 비싸지는 문제",
+      "why": "오르는 것은 기술 비용이 아니라 주거비(cost of housing)예요."
+    },
+    {
+      "en": "a situation forcing out city residents green renewals aimed to help",
+      "ko": "녹색 재생 사업이 도우려던 도시 주민들을 밀어내는 상황",
+      "why": "정답. 녹지 조성으로 집값이 올라, 혜택을 받기로 했던 주민들이 오히려 쫓겨나는 상황이에요. renewals 뒤에 목적격 관계대명사가 생략된 구조예요."
+    },
+    {
+      "en": "a result where green renovation harms the health of city dwellers",
+      "ko": "녹색 개조가 도시 거주자의 건강을 해치는 결과",
+      "why": "건강이 나빠진다는 내용은 없어요. 문제는 주거비와 퇴거예요."
+    },
+    {
+      "en": "a problem of city renovations making environmental pollution worse",
+      "ko": "도시 개조가 환경 오염을 악화시키는 문제",
+      "why": "녹지는 환경을 개선해요. 오염이 심해진다는 말은 없어요."
+    },
+    {
+      "en": "a circumstance causing more crimes in newly developed city areas",
+      "ko": "새로 개발된 도시 지역에서 범죄를 늘리는 상황",
+      "why": "범죄 이야기는 본문에 전혀 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "현재완료 수동태 + as -ing",
+      "ex": "Currently, urban regeneration projects in degraded areas have been promoted as improving the wellbeing of residents and solving environmental injustice problems.",
+      "d": "have been promoted는 '홍보되어 왔다'(현재완료 수동). promote A as B는 'A를 B라고 홍보하다'. as 뒤 동명사 improving과 solving이 and로 나란히 이어져요."
+    },
+    {
+      "t": "결과의 분사구문 / make + 목적어 + 형용사",
+      "ex": "The creation of new, high-quality green spaces can increase attractiveness, making these neighbourhood more desirable.",
+      "d": "콤마 뒤 making은 결과를 나타내는 분사구문으로 '그래서 ~하게 만든다'. make 뒤에 목적어 + 형용사(more desirable)가 와요."
+    },
+    {
+      "t": "계속적 용법 관계대명사 who + 과거분사 후치 수식",
+      "ex": "… the poor neighbourhood's residents, who were intended to benefit from the ecosystem services provided by the new green space.",
+      "d": "콤마 뒤 who는 residents를 보충 설명해요(그런데 그들은 ~하기로 되어 있었다). provided by ~는 services를 뒤에서 꾸미는 과거분사구예요."
+    },
+    {
+      "t": "목적격 관계대명사 생략",
+      "ex": "a situation forcing out city residents green renewals aimed to help",
+      "d": "정답 선택지 구조예요. city residents (that) green renewals aimed to help = '녹색 재생 사업이 도우려고 했던 도시 주민들'. forcing out이 a situation을 꾸며요."
+    }
+  ],
+  "vocab": [
+    [
+      "urban regeneration",
+      "도시 재생"
+    ],
+    [
+      "degraded",
+      "낙후된, 저하된"
+    ],
+    [
+      "promote",
+      "홍보하다, 추진하다"
+    ],
+    [
+      "wellbeing",
+      "복지, 행복"
+    ],
+    [
+      "injustice",
+      "불평등, 부당함"
+    ],
+    [
+      "ethnic community",
+      "소수 민족 공동체"
+    ],
+    [
+      "low-income household",
+      "저소득 가구"
+    ],
+    [
+      "paradox",
+      "역설"
+    ],
+    [
+      "attractiveness",
+      "매력"
+    ],
+    [
+      "desirable",
+      "바람직한, 탐나는"
+    ],
+    [
+      "afford",
+      "~할 여유가 있다"
+    ],
+    [
+      "exclusion",
+      "배제"
+    ],
+    [
+      "displacement",
+      "퇴거, 쫓겨남"
+    ],
+    [
+      "ecosystem service",
+      "생태계 서비스(자연이 주는 혜택)"
+    ],
+    [
+      "infrastructure",
+      "사회 기반 시설"
+    ],
+    [
+      "force out",
+      "몰아내다, 쫓아내다"
+    ]
+  ],
+  "summary": {
+    "en": "New green spaces meant to help poor neighbourhoods can raise housing costs and push out the very residents they were supposed to benefit.",
+    "ko": "가난한 동네를 돕기 위한 새 녹지가 주거비를 올려, 오히려 혜택을 받아야 할 주민들을 밀어낼 수 있다."
+  },
+  "writing": {
+    "en": "Green spaces meant to help poor residents can end up forcing them out.",
+    "ko": "가난한 주민을 돕기 위한 녹지가 결국 그들을 쫓아내게 될 수 있다."
+  },
+  "note": "paradox(역설)가 밑줄에 있으면 '좋으려고 한 일이 반대 결과를 낳는다'는 구조부터 떠올리세요. 이 글에서는 '누구를 위해 만든 녹지인데, 그 사람이 어떻게 됐나'만 잡으면 답이 보여요.",
+  "tip": "함축 의미 문제는 밑줄 바로 뒤에서 그 뜻을 풀어 주는 경우가 많아요. 이 글은 By contrast → This results in → In turn의 흐름으로 역설이 어떻게 생기는지 설명해요. 선택지는 '집값 상승 → 주민 퇴거'를 담았는지로 고르고, 건강·오염·범죄처럼 본문에 없는 결과는 바로 지우세요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 21번 정답은?",
+      "② a situation forcing out city residents green renewals aimed to help(녹색 재생 사업이 도우려던 도시 주민들을 밀어내는 상황)예요."
+    ],
+    [
+      "2025 10월 고1 21번은 어떤 유형인가요?",
+      "밑줄 친 an urban green space paradox의 의미를 고르는 3점 함축 의미 추론 문항이에요."
+    ],
+    [
+      "urban green space paradox는 무슨 뜻인가요?",
+      "낙후 지역 주민을 위해 녹지를 만들었더니 동네 집값이 올라, 정작 그 주민들이 임대료를 못 내고 쫓겨나는 역설적인 상황을 말해요."
+    ]
+  ]
+}

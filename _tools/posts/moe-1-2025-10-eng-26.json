@@ -1,0 +1,191 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 26,
+  "type": "내용 불일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "인도 출신 미국 정치인 Dalip Singh Saund의 삶",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 26번",
+    "2025 10월 고1 영어 26번 해설",
+    "고1 10월 모의고사 26번 정답",
+    "고1 모의고사 내용 불일치",
+    "Dalip Singh Saund 지문",
+    "첫 아시아계 미국 하원의원 영어 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 26번은 인도에서 태어나 미국 의회에 당선된 최초의 아시아인 Dalip Singh Saund에 관한 내용 불일치 문항이에요. 농사는 시작했지만 미국 시민권이 없어 땅을 살 수 없었다고 했으니 '땅을 구입해서'라고 한 ③이 틀렸어요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "소개",
+      "Dalip Singh Saund는 인도 태생의 미국 정치인이다."
+    ],
+    [
+      "학업",
+      "인도 University of Punjab 졸업 후 대학원 진학을 위해 미국으로 이주, 1924년 University of California에서 박사 학위."
+    ],
+    [
+      "시련",
+      "국적 때문에 취업하지 못했고, 이듬해 Imperial Valley에서 농사를 시작했지만 시민권이 없어 땅을 살 수 없었다."
+    ],
+    [
+      "활동",
+      "정치에 관심을 갖고 인도·정치 문제에 대해 발언, 워싱턴 D.C.에서 인도인의 미국 시민권 취득 법안을 홍보했다."
+    ],
+    [
+      "결과",
+      "법안은 1946년 통과, 3년 뒤 시민권 취득, 이후 미국 의회에 당선된 최초의 아시아인이 되었다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The next year, he began farming in Imperial Valley, but he was not able to buy land without U.S. citizenship.",
+      "ko": "이듬해 그는 Imperial Valley에서 농사를 시작했지만, 미국 시민권이 없어서 땅을 살 수 없었다.",
+      "note": "농사를 시작한 것은 맞지만 땅은 '살 수 없었다(was not able to buy land)'고 했어요. ③ '땅을 구입해서'는 정반대라 정답이에요."
+    },
+    {
+      "en": "He earned his doctoral degree at the University of California in 1924 but could not get a job because of his nationality.",
+      "ko": "그는 1924년에 University of California에서 박사 학위를 받았지만 국적 때문에 직업을 구할 수 없었다.",
+      "note": "② '박사 학위를 받았지만 국적 때문에 직업을 구할 수 없었다'와 일치해요."
+    },
+    {
+      "en": "He later became the first Asian to be elected to the U.S. Congress.",
+      "ko": "그는 이후 미국 의회에 당선된 최초의 아시아인이 되었다.",
+      "note": "⑤와 그대로 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "University of Punjab을 졸업한 후에 미국으로 이주했다.",
+      "ko": "이주",
+      "why": "일치. After graduating from the University of Punjab in India, he moved to the U.S. to attend graduate school."
+    },
+    {
+      "en": "박사 학위를 받았지만 국적 때문에 직업을 구할 수 없었다.",
+      "ko": "박사 학위·취업",
+      "why": "일치. He earned his doctoral degree at the University of California in 1924 but could not get a job because of his nationality."
+    },
+    {
+      "en": "Imperial Valley에서 땅을 구입해서 농사를 시작했다.",
+      "ko": "농사·땅",
+      "why": "정답(불일치). he began farming in Imperial Valley, but he was not able to buy land without U.S. citizenship. 농사는 시작했지만 땅은 살 수 없었어요."
+    },
+    {
+      "en": "인도인이 미국 시민이 될 수 있도록 하는 법안을 홍보했다.",
+      "ko": "법안 홍보",
+      "why": "일치. He went to Washington, D.C. and promoted a bill that would allow Indians to become U.S. citizens."
+    },
+    {
+      "en": "미국 의회에 당선된 최초의 아시아인이 되었다.",
+      "ko": "의회 당선",
+      "why": "일치. He later became the first Asian to be elected to the U.S. Congress."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "After -ing (전치사 + 동명사)",
+      "ex": "After graduating from the University of Punjab in India, he moved to the U.S. to attend graduate school.",
+      "d": "After 뒤에 동명사 graduating이 왔어요. to attend는 '~하기 위해' 목적을 나타내는 to부정사예요."
+    },
+    {
+      "t": "주격 관계대명사 that + would",
+      "ex": "He went to Washington, D.C. and promoted a bill that would allow Indians to become U.S. citizens.",
+      "d": "that ~ 이 a bill을 꾸며요. allow A to V는 'A가 ~하도록 허용하다'. would는 '(통과되면) ~하게 될'이라는 뜻이에요."
+    },
+    {
+      "t": "the first + 명사 + to be p.p.",
+      "ex": "He later became the first Asian to be elected to the U.S. Congress.",
+      "d": "to be elected가 the first Asian을 뒤에서 꾸며요. '미국 의회에 선출된 최초의 아시아인'."
+    },
+    {
+      "t": "시간 표현 the next year / three years later",
+      "ex": "The bill was passed in 1946, and three years later Dalip received U.S. citizenship.",
+      "d": "연도 계산이 나오면 직접 더해 보세요. 1946 + 3 = 1949년에 시민권을 받았어요."
+    }
+  ],
+  "vocab": [
+    [
+      "Indian-born",
+      "인도 태생의"
+    ],
+    [
+      "politician",
+      "정치인"
+    ],
+    [
+      "graduate",
+      "졸업하다"
+    ],
+    [
+      "graduate school",
+      "대학원"
+    ],
+    [
+      "doctoral degree",
+      "박사 학위"
+    ],
+    [
+      "nationality",
+      "국적"
+    ],
+    [
+      "farming",
+      "농사, 농업"
+    ],
+    [
+      "citizenship",
+      "시민권"
+    ],
+    [
+      "develop an interest in",
+      "~에 관심을 갖게 되다"
+    ],
+    [
+      "speak out",
+      "공개적으로 의견을 말하다"
+    ],
+    [
+      "promote",
+      "홍보하다, 장려하다"
+    ],
+    [
+      "bill",
+      "법안"
+    ],
+    [
+      "pass",
+      "(법안을) 통과시키다"
+    ],
+    [
+      "elect",
+      "선출하다"
+    ],
+    [
+      "Congress",
+      "(미국) 의회"
+    ]
+  ],
+  "summary": {
+    "en": "Despite being unable to get a job or buy land because he was not a citizen, Dalip Singh Saund worked for Indians' citizenship rights and became the first Asian elected to the U.S. Congress.",
+    "ko": "시민이 아니라서 취업도 땅 구입도 못 했지만, Dalip Singh Saund는 인도인의 시민권을 위해 힘썼고 미국 의회에 당선된 최초의 아시아인이 되었다."
+  },
+  "writing": {
+    "en": "He was not able to buy land without citizenship.",
+    "ko": "그는 시민권 없이는 땅을 살 수 없었다."
+  },
+  "tip": "인물 일치 문제는 선택지가 글의 순서대로 나와요. 선택지 하나를 읽고 본문에서 그 부분을 찾아 but, not, without 같은 말이 있는지 꼭 확인하세요. ③처럼 앞부분(농사 시작)은 맞고 뒷부분(땅 구입)만 틀리게 바꾸는 경우가 많아요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 26번 정답은?",
+      "③ 'Imperial Valley에서 땅을 구입해서 농사를 시작했다'예요. 본문에서는 농사를 시작했지만 미국 시민권이 없어 땅을 살 수 없었다고 했어요."
+    ],
+    [
+      "2025 10월 고1 영어 26번은 어떤 유형인가요?",
+      "글의 내용과 일치하지 않는 것을 고르는 2점 인물 문항이에요. 미국 의회에 당선된 최초의 아시아인 Dalip Singh Saund를 다룬 지문이에요."
+    ],
+    [
+      "Dalip Singh Saund는 언제 미국 시민권을 받았나요?",
+      "인도인의 시민권 법안이 1946년에 통과되고 3년 뒤에 받았다고 했으니 1949년이에요."
+    ]
+  ]
+}

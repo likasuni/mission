@@ -1,0 +1,200 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 24,
+  "type": "제목",
+  "points": 3,
+  "answer": 1,
+  "topic": "우리를 위해 설계되지 않았지만 생명이 가능할 만큼 정밀한 우주의 법칙과 상수",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 24번",
+    "2025 10월 고1 영어 24번 해설",
+    "고1 10월 모의고사 24번 정답",
+    "고1 모의고사 제목",
+    "laws and constants of physics 지문",
+    "우주 물리 상수 정밀성 영어 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 24번은 물리 법칙과 상수가 아주 정밀한 값을 가져서 생명이 생겨날 수 있었지만, 우주가 우리를 위해 설계된 것은 아니라는 제목 문항이에요. '정밀하다'와 '설계되지 않았다(우연)'를 함께 담은 제목을 골라야 해요. 정답은 ① Accidental Precision of the Universe for Life예요.",
+  "flow": [
+    [
+      "주장",
+      "물리 법칙·상수·근본 힘은 매우 정밀한 형태와 값을 가지며, 조금만 달랐어도 생명은 불가능했다."
+    ],
+    [
+      "예시 1",
+      "중력의 정밀한 값 덕분에 먼지와 가스가 원시 항성으로 뭉치고, 행성(지구 포함)이 그 주위를 돌게 되었다."
+    ],
+    [
+      "예시 2",
+      "전자의 값이 아주 조금만 달랐어도 화학 반응도, 유기 화학에 기반한 생명도 시작될 수 없었다."
+    ],
+    [
+      "결론",
+      "우주는 우리를 위해 설계되지 않았고 우리는 특별한 존재도 아니지만, 물리 법칙과 상수가 고등 생명의 진화를 허락했다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The laws and constants of physics and the fundamental forces in our universe have very precise forms and values. This means that, if they were only very slightly different, life would not have been possible.",
+      "ko": "물리학 법칙들과 상수들 그리고 우리 우주의 근본 힘들은 매우 정밀한 형태들과 값들을 가진다. 이는, 만약 그것들이 아주 약간만 다르다면, 생명체가 가능하지 않았을 것임을 의미한다.",
+      "note": "글의 첫 핵심: 우주의 '정밀함(Precision)'이 '생명(Life)'을 가능하게 했다. 제목의 Precision … for Life와 연결돼요."
+    },
+    {
+      "en": "The universe was not designed for us to evolve, we have no privileged position in the universe;",
+      "ko": "우주는 우리가 진화하도록 설계되지 않았고, 우리는 우주에서 어떠한 특권적인 위치도 가지고 있지 않다.",
+      "note": "'설계되지 않았다' = 의도된 것이 아니라는 뜻이에요. 제목의 Accidental(우연한)이 여기서 나와요."
+    },
+    {
+      "en": "however, the laws and constants of physics allowed advanced life to evolve.",
+      "ko": "그러나 물리학의 법칙들과 상수들은 고등 생명체가 진화하도록 허용했다.",
+      "note": "설계되지 않았는데도(우연히) 생명이 가능해졌다는 결론이에요. ①이 '우연 + 정밀 + 생명' 세 가지를 모두 담아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Accidental Precision of the Universe for Life",
+      "ko": "생명을 위한 우주의 우연한 정밀함",
+      "why": "정답. 정밀한 법칙·상수가 생명을 가능하게 했지만(Precision for Life), 우주가 우리를 위해 설계된 건 아니라는(Accidental) 내용을 모두 담았어요."
+    },
+    {
+      "en": "Ongoing Challenges for Exploring the Universe",
+      "ko": "우주 탐사를 위한 계속되는 도전 과제",
+      "why": "우주 탐사나 그 어려움은 글에 나오지 않아요. universe라는 단어만 같아요."
+    },
+    {
+      "en": "How Did the Universe Begin and How Will It End?",
+      "ko": "우주는 어떻게 시작되었고 어떻게 끝날 것인가?",
+      "why": "중력 덕분에 우주가 생겨났다는 말은 있지만 예시일 뿐이에요. 우주의 끝은 전혀 다루지 않아요."
+    },
+    {
+      "en": "Physics vs. Chemistry: Which Drives Science Forward?",
+      "ko": "물리학 대 화학: 무엇이 과학을 이끄는가?",
+      "why": "chemistry는 전자의 예시에서 나오지만 두 학문을 비교하는 글이 아니에요."
+    },
+    {
+      "en": "Mystery of the Human Body: Absolute Precision in Function",
+      "ko": "인체의 신비: 기능의 절대적 정밀함",
+      "why": "precision은 맞지만 대상이 우주의 물리 법칙이지 인체가 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "가정법 과거 / 가정법 과거완료",
+      "ex": "If the value of the electron had been ever so slightly larger or smaller, chemistry, as we know it, would not have been possible …",
+      "d": "If + had p.p., would have p.p. = 가정법 과거완료 '만약 ~했더라면 …했을 텐데'. 실제로는 전자의 값이 딱 맞았다는 뜻이에요. 앞 문장 if they were …, life would not have been possible은 지금의 조건과 과거 결과를 섞은 혼합 가정이에요."
+    },
+    {
+      "t": "enable/permit + 목적어 + to V, 동명사 목적어",
+      "ex": "the precise value of gravity has enabled our universe to arise by permitting the aggregation of dust and gas particles to proto-stars …",
+      "d": "enable A to V 'A가 ~할 수 있게 하다'. by -ing는 수단 '~함으로써'. permit 뒤에는 명사(the aggregation)가 목적어로 왔어요."
+    },
+    {
+      "t": "전치사 + 관계대명사",
+      "ex": "… proto-stars around which planets later came to orbit, including the Earth around the Sun.",
+      "d": "around which = 원시 항성 '주위를'. planets orbit around proto-stars를 관계사절로 바꾼 형태예요."
+    },
+    {
+      "t": "as we know it (명사 뒤 한정)",
+      "ex": "chemistry, as we know it, would not have been possible",
+      "d": "'우리가 알고 있는 (형태의) 화학'. 앞 명사를 한정해 주는 표현이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "law",
+      "법칙"
+    ],
+    [
+      "constant",
+      "상수"
+    ],
+    [
+      "fundamental",
+      "근본적인"
+    ],
+    [
+      "precise",
+      "정밀한, 정확한"
+    ],
+    [
+      "precision",
+      "정밀함"
+    ],
+    [
+      "slightly",
+      "약간, 조금"
+    ],
+    [
+      "gravity",
+      "중력"
+    ],
+    [
+      "arise",
+      "생겨나다, 발생하다"
+    ],
+    [
+      "permit",
+      "허용하다"
+    ],
+    [
+      "aggregation",
+      "응집, 모임"
+    ],
+    [
+      "particle",
+      "입자"
+    ],
+    [
+      "proto-star",
+      "원시 항성"
+    ],
+    [
+      "orbit",
+      "궤도를 돌다"
+    ],
+    [
+      "electron",
+      "전자"
+    ],
+    [
+      "organic chemistry",
+      "유기 화학"
+    ],
+    [
+      "evolve",
+      "진화하다"
+    ],
+    [
+      "privileged",
+      "특권을 가진"
+    ],
+    [
+      "accidental",
+      "우연한"
+    ]
+  ],
+  "summary": {
+    "en": "Although the universe was not designed for us, the very precise laws and constants of physics happened to make life possible.",
+    "ko": "우주는 우리를 위해 설계되지 않았지만, 아주 정밀한 물리 법칙과 상수 덕분에 생명이 가능해졌다."
+  },
+  "writing": {
+    "en": "If gravity had been slightly different, life would not have been possible.",
+    "ko": "중력이 약간만 달랐더라면 생명은 가능하지 않았을 것이다."
+  },
+  "tip": "제목 문제는 글의 핵심어 2~3개가 모두 들어 있는 선택지를 찾으세요. 이 글은 precise(정밀), life(생명), not designed(설계되지 않음=우연) 세 가지예요. 마지막 문장의 however 앞뒤를 함께 읽어야 Accidental이 왜 들어갔는지 보여요.",
+  "note": "Accidental이 낯설어서 ①을 지나치기 쉬워요. 'was not designed for us'를 한 단어로 바꾸면 accidental이라는 점, 이렇게 본문 문장을 한 단어로 줄이는 연습이 제목 문제의 핵심이에요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 24번 정답은?",
+      "① Accidental Precision of the Universe for Life(생명을 위한 우주의 우연한 정밀함)예요. 정밀한 물리 법칙과 상수가 생명을 가능하게 했지만 우주가 우리를 위해 설계된 것은 아니라는 내용이에요."
+    ],
+    [
+      "2025 10월 고1 영어 24번은 어떤 유형인가요?",
+      "글의 제목으로 가장 적절한 것을 고르는 3점 문항이에요. 물리 법칙과 상수의 정밀함을 다룬 과학 지문이에요."
+    ],
+    [
+      "제목의 Accidental은 어디서 나온 말인가요?",
+      "마지막 문장 The universe was not designed for us to evolve(우주는 우리가 진화하도록 설계되지 않았다)에서 나왔어요. 설계되지 않았는데 생명이 가능했으니 '우연한' 정밀함이에요."
+    ]
+  ]
+}

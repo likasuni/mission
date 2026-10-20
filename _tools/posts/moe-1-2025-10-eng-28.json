@@ -1,0 +1,158 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "2025 Robin Hood 축제 안내",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 28번",
+    "2025 10월 고1 영어 28번 해설",
+    "고1 10월 모의고사 28번 정답",
+    "고1 모의고사 안내문 일치",
+    "Robin Hood Festival 지문",
+    "고1 영어 실용문 해설"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 28번은 Robin Hood 축제 안내문을 읽고 내용과 일치하는 것을 고르는 문항이에요. Events 항목의 활쏘기 옆 괄호에 '6세 이상만 가능'이라고 적혀 있어요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "소개",
+      "Shearwood 숲을 유명하게 만든 Robin Hood를 기념하는 연례 축제가 곧 열린다."
+    ],
+    [
+      "일시·장소",
+      "10월 17~19일, 오전 10시~오후 6시, Shearwood Forest Park."
+    ],
+    [
+      "행사",
+      "Robin Hood처럼 활쏘기(6세 이상), Robin Hood·축제 캐릭터와 사진 찍기."
+    ],
+    [
+      "참고",
+      "무료 셔틀버스 제공, 어떤 행사도 예약이 필요 없다. 자세한 정보는 웹사이트에서."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Shoot a bow like Robin Hood. (only available for ages 6 and above)",
+      "ko": "Robin Hood처럼 활을 쏘세요. (6세 이상만 가능)",
+      "note": "활쏘기는 6세 이상만 할 수 있어요. 나이 제한이 있다는 ③과 일치해요."
+    },
+    {
+      "en": "This annual festival aims to celebrate Robin Hood, who has made Shearwood Forest famous around the world.",
+      "ko": "매년 열리는 이 축제는 Shearwood 숲을 전 세계에 유명하게 만든 Robin Hood를 기념하는 것을 목적으로 해요.",
+      "note": "annual은 '매년'이에요. ① 2년에 한 번은 틀려요."
+    },
+    {
+      "en": "Free shuttle bus will be provided. / A reservation is not required for any event.",
+      "ko": "무료 셔틀버스가 제공돼요. / 어떤 행사에도 예약이 필요하지 않아요.",
+      "note": "④ 유료, ⑤ 예약 필요가 모두 반대 내용이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "2년에 한 번 열린다.",
+      "ko": "격년 개최",
+      "why": "불일치. This annual festival — 매년 열리는 축제예요."
+    },
+    {
+      "en": "일주일 동안 진행된다.",
+      "ko": "7일간 진행",
+      "why": "불일치. October 17–19, 사흘 동안이에요."
+    },
+    {
+      "en": "활쏘기에는 나이 제한이 있다.",
+      "ko": "활쏘기 나이 제한",
+      "why": "정답. only available for ages 6 and above, 6세 이상만 참여할 수 있어요."
+    },
+    {
+      "en": "셔틀버스 이용은 유료이다.",
+      "ko": "셔틀버스 유료",
+      "why": "불일치. Free shuttle bus will be provided. 무료예요."
+    },
+    {
+      "en": "행사 참여를 위해 예약이 필요하다.",
+      "ko": "예약 필요",
+      "why": "불일치. A reservation is not required for any event. 예약이 필요 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "계속적 용법 관계대명사 who",
+      "ex": "This annual festival aims to celebrate Robin Hood, who has made Shearwood Forest famous around the world.",
+      "d": "콤마 뒤 who는 Robin Hood를 보충 설명해요. made + 목적어 + 형용사(famous)는 '~을 …하게 만들다'예요."
+    },
+    {
+      "t": "aim to V",
+      "ex": "This annual festival aims to celebrate Robin Hood",
+      "d": "'~하는 것을 목표로 하다'. 축제의 목적을 밝히는 안내문의 단골 표현이에요."
+    },
+    {
+      "t": "수동태 미래·현재",
+      "ex": "Free shuttle bus will be provided. / A reservation is not required for any event.",
+      "d": "be p.p.로 '제공될 것이다', '요구되지 않는다'. not required for any event는 '어떤 행사에도 필요 없다'는 전체 부정이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "annual",
+      "매년의, 연례의"
+    ],
+    [
+      "aim to",
+      "~하는 것을 목표로 하다"
+    ],
+    [
+      "celebrate",
+      "기념하다, 축하하다"
+    ],
+    [
+      "shoot a bow",
+      "활을 쏘다"
+    ],
+    [
+      "available",
+      "이용 가능한"
+    ],
+    [
+      "and above",
+      "~ 이상"
+    ],
+    [
+      "provide",
+      "제공하다"
+    ],
+    [
+      "reservation",
+      "예약"
+    ],
+    [
+      "require",
+      "요구하다, 필요로 하다"
+    ]
+  ],
+  "summary": {
+    "en": "The annual Robin Hood Festival runs from October 17 to 19 at Shearwood Forest Park, offering archery for ages 6 and above, photos with characters, a free shuttle bus, and no need for reservations.",
+    "ko": "매년 열리는 Robin Hood 축제는 10월 17~19일 Shearwood Forest Park에서 열리며, 6세 이상 활쏘기와 캐릭터 사진 찍기를 즐길 수 있고 셔틀버스는 무료, 예약은 필요 없다."
+  },
+  "writing": {
+    "en": "Archery is only available for children aged 6 and above.",
+    "ko": "활쏘기는 6세 이상의 어린이만 할 수 있다."
+  },
+  "tip": "안내문 일치 문제는 선택지를 먼저 읽고 숫자·괄호·Notes 부분을 찾아 하나씩 지우세요. 괄호 속 작은 조건(only available for ages 6 and above)이 정답 근거가 되는 경우가 많아요. annual(매년), free(무료), not required(필요 없음)처럼 반대로 바꾼 함정도 꼭 확인하세요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 28번 정답은?",
+      "③ '활쏘기에는 나이 제한이 있다'예요. 활쏘기는 6세 이상만 할 수 있다고 괄호에 적혀 있어요."
+    ],
+    [
+      "2025 10월 고1 영어 28번은 어떤 유형인가요?",
+      "Robin Hood 축제 안내문을 읽고 내용과 일치하는 것을 고르는 2점 실용문 문항이에요."
+    ],
+    [
+      "② 일주일 동안 진행된다가 틀린 이유는?",
+      "축제 기간은 October 17–19, 즉 10월 17일부터 19일까지 사흘이에요."
+    ]
+  ]
+}

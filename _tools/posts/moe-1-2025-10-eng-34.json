@@ -1,0 +1,62 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 34,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 5,
+  "topic": "역량 접근법: 동물은 각자 고유한 삶의 형태로 번영해야 한다",
+  "date": "2026-10-21",
+  "keywords": ["2025년 10월 고1 모의고사 영어 34번", "2025 10월 고1 영어 34번 해설", "고1 10월 모의고사 34번 정답", "고1 모의고사 빈칸 추론", "Capabilities Approach 지문", "동물 정의 역량 접근법 지문", "finch whale 지문"],
+  "lead": "2025년 10월 고1 모의고사 영어 34번은 역량 접근법(CA)이 동물을 인간과 닮은 정도로 줄 세우지 않고, 각 동물의 고유한 삶의 형태를 기준으로 본다는 빈칸 추론 문항이에요. What is relevant is their own forms of life와 '핀치는 핀치의 삶을, 고래는 고래의 삶을' 문장이 결정적 단서예요. 정답은 ⑤ in the form of life characteristic for that creature예요.",
+  "flow": [
+    ["질문", "역량 접근법(CA)은 무엇이며, 동물 정의를 생각하는 법률가들이 왜 관심을 가질까?"],
+    ["아닌 것", "CA는 동물을 인간과 닮은 정도로 순위 매기지 않고, '우리와 닮은' 동물에게 특권을 주지 않는다. 핀치와 돼지도 고래·코끼리만큼 중요하다."],
+    ["핵심", "각 동물에게 필요한 것을 생각할 때 인간의 삶의 형태는 상관없고, 중요한 것은 '그들 자신의' 삶의 형태이다."],
+    ["비유", "인간이 인간다운 삶을 원하듯 핀치는 핀치의 삶을, 고래는 고래의 삶을 원한다. 동물을 열등한 인간으로 상상하지 말아야 한다."],
+    ["결론(빈칸)", "CA에 따르면 지각 능력이 있는 모든 생명체는 그 생명체 고유의 삶의 형태로 번영할 기회를 가져야 한다."]
+  ],
+  "evidence": [
+    {"en": "And it argues that the human form of life is simply irrelevant when we think about what each type of animal needs and deserves. What is relevant is their own forms of life.", "ko": "그리고 그것은 각 유형의 동물이 무엇을 필요로 하고 무엇을 받을 자격이 있는지 생각할 때 인간의 삶의 형태는 그야말로 상관없다고 주장한다. 상관있는 것은 '그들 자신의' 삶의 형태이다.", "note": "their own이 기울임체로 강조돼 있어요. 빈칸 정답 ⑤의 the form of life characteristic for that creature가 바로 이 말을 바꾼 표현이에요."},
+    {"en": "Just as humans seek to be able to enjoy the characteristic goods of a human life, so a finch seeks a finch's life and the whale a whale's life.", "ko": "인간이 인간다운 삶의 고유한 좋은 것들을 누릴 수 있기를 추구하는 것처럼, 핀치는 핀치의 삶을, 고래는 고래의 삶을 추구한다.", "note": "characteristic(고유한)이라는 단어가 ⑤에 그대로 다시 나와요. 각자 자기 종다운 삶을 원한다는 비유예요."},
+    {"en": "We should extend ourselves and learn, not lazily picture animals as lesser humans, seeking a life sort of like our own.", "ko": "우리는 스스로를 확장하고 배워야 하며, 동물을 우리와 비슷한 삶을 추구하는 열등한 인간으로 게으르게 상상해서는 안 된다.", "note": "동물이 인간처럼 살기를 원한다고 보면 안 된다는 말이에요. '인간을 따라 하기(②)', '인간과 함께 살기(③)'를 지우는 근거예요."}
+  ],
+  "choices": [
+    {"en": "with the help of other species around it", "ko": "주변의 다른 종의 도움으로", "why": "다른 종의 도움 이야기는 없어요. 글은 각 동물 '자신의' 삶의 형태를 강조해요."},
+    {"en": "through imitating the human way of life", "ko": "인간의 삶의 방식을 모방함으로써", "why": "인간의 삶의 형태는 irrelevant(상관없다)라고 했고, 동물을 열등한 인간으로 보지 말라고 했어요. 정반대예요."},
+    {"en": "by coexisting harmoniously with humans", "ko": "인간과 조화롭게 공존함으로써", "why": "그럴듯하지만 여전히 인간을 기준으로 둔 표현이에요. 글의 기준은 그 동물 자신의 삶이에요."},
+    {"en": "under the guidance of more intelligent animals", "ko": "더 지능이 높은 동물의 지도 아래에서", "why": "CA는 동물을 순위 매기지 않는다고 했어요. '더 똑똑한 동물'이라는 서열 자체가 글과 맞지 않아요."},
+    {"en": "in the form of life characteristic for that creature", "ko": "그 생명체에게 고유한 삶의 형태로", "why": "정답. their own forms of life, a finch's life / a whale's life, characteristic goods를 모두 정리한 표현이에요."}
+  ],
+  "grammar": [
+    {"t": "as + 대동사 + 주어 도치", "ex": "The CA does not rank animals by likeness to humans or seek special privileges for those considered most \"like us,\" as do some other popular theoretical approaches.", "d": "as do some other … approaches는 '다른 몇몇 인기 있는 이론적 접근법들이 그러하듯이'. do는 rank/seek를 대신하는 대동사이고, as 뒤에서 주어와 동사가 도치됐어요. those considered ~는 '~라고 여겨지는 것들'."},
+    {"t": "Just as A, so B", "ex": "Just as humans seek to be able to enjoy the characteristic goods of a human life, so a finch seeks a finch's life and the whale a whale's life.", "d": "'A인 것처럼 B도 그렇다'. 뒤의 the whale a whale's life는 반복되는 seeks가 생략된 형태예요(= the whale seeks a whale's life)."},
+    {"t": "형용사 후치 수식", "ex": "in the form of life characteristic for that creature", "d": "characteristic for that creature가 뒤에서 the form of life를 꾸며요. = the form of life (which is) characteristic for that creature. '그 생명체에게 고유한 삶의 형태'."},
+    {"t": "분사구문", "ex": "not lazily picture animals as lesser humans, seeking a life sort of like our own", "d": "seeking ~은 animals를 설명해요. '우리 삶과 비슷한 삶을 추구하는 (존재로)'. picture A as B는 'A를 B로 상상하다'."}
+  ],
+  "vocab": [
+    ["capability", "역량, 능력"],
+    ["approach", "접근법"],
+    ["passionate", "열정적인"],
+    ["justice", "정의"],
+    ["rank", "순위를 매기다"],
+    ["likeness", "닮음, 유사성"],
+    ["privilege", "특권"],
+    ["theoretical", "이론적인"],
+    ["irrelevant", "무관한, 상관없는"],
+    ["deserve", "~을 받을 자격이 있다"],
+    ["characteristic", "고유한, 특유의"],
+    ["extend oneself", "애쓰다, (생각의 폭을) 넓히다"],
+    ["lesser", "더 못한, 열등한"],
+    ["sentient", "지각 능력이 있는"],
+    ["flourish", "번영하다, 잘 자라다"],
+    ["finch", "핀치(부리가 짧은 작은 새)"]
+  ],
+  "summary": {"en": "The Capabilities Approach holds that each animal should be able to flourish according to its own form of life, not according to how similar it is to humans.", "ko": "역량 접근법은 각 동물이 인간과 얼마나 닮았는지가 아니라 그 동물 고유의 삶의 형태에 따라 번영할 수 있어야 한다고 본다."},
+  "writing": {"en": "Every animal deserves to live the life that is natural for its own kind.", "ko": "모든 동물은 자기 종에게 자연스러운 삶을 살 자격이 있다."},
+  "tip": "기울임체(their own)는 글쓴이가 강조하는 말이에요. 빈칸이 마지막 문장에 있으면 앞에서 강조한 말을 다시 찾아 바꿔 쓴 선택지를 고르세요. human이 들어간 선택지(②③)는 '인간 기준은 상관없다'는 글의 주장과 부딪혀요.",
+  "faq": [
+    ["2025년 10월 고1 모의고사 영어 34번 정답은?", "⑤ in the form of life characteristic for that creature(그 생명체에게 고유한 삶의 형태로)예요. 동물은 인간이 아니라 자기 고유의 삶을 기준으로 번영해야 한다는 내용이에요."],
+    ["2025년 10월 고1 영어 34번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 동물 정의를 다루는 역량 접근법(Capabilities Approach) 지문이에요."],
+    ["③ by coexisting harmoniously with humans가 오답인 이유는?", "좋은 말처럼 들리지만 '인간과 함께'라는 인간 기준이 들어 있어요. 글은 인간의 삶의 형태는 상관없고 각 동물 자신의 삶이 중요하다고 해요."]
+  ]
+}

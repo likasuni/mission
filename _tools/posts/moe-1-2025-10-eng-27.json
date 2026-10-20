@@ -1,0 +1,186 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "2025 Britt High School 캐릭터 디자인 대회 안내",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 27번",
+    "2025 10월 고1 영어 27번 해설",
+    "고1 10월 모의고사 27번 정답",
+    "고1 모의고사 안내문 불일치",
+    "Character Design Contest 안내문",
+    "학교 캐릭터 디자인 대회 영어 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 27번은 학교를 상징하는 캐릭터를 만드는 Britt High School 캐릭터 디자인 대회 안내문의 내용 불일치 문항이에요. 수상자는 10월 31일 학교 웹사이트에 발표되고 개별 연락은 없다(No personal contact will be made)고 했으니 ⑤가 틀렸어요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "소개",
+      "Britt High School의 첫 캐릭터 디자인 대회. 학교를 상징하는 캐릭터를 만든다."
+    ],
+    [
+      "제출",
+      "마감 10월 24일 오후 5시, 출품작은 이메일(cdcbritt@bhs.edu)로 보낸다."
+    ],
+    [
+      "평가 기준",
+      "콘셉트, 창의성, 일러스트레이션"
+    ],
+    [
+      "상",
+      "1등 1명 50달러, 2등 2명 30달러, 3등 3명 10달러 기프트 카드(1인당)"
+    ],
+    [
+      "발표",
+      "10월 31일 학교 웹사이트에 발표, 개별 연락은 하지 않음"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Winners will be announced on our school’s website on October 31. No personal contact will be made.",
+      "ko": "수상자는 10월 31일에 우리 학교 웹사이트에 발표될 것입니다. 개별 연락은 이루어지지 않을 것입니다.",
+      "note": "No personal contact = 개별 연락 없음. ⑤ '개별적으로 연락을 받는다'와 정반대라 정답이에요."
+    },
+    {
+      "en": "Entries should be sent by email to cdcbritt@bhs.edu.",
+      "ko": "출품작은 이메일로 cdcbritt@bhs.edu에 보내져야 합니다.",
+      "note": "② '출품작은 이메일로 제출되어야 한다'와 일치해요."
+    },
+    {
+      "en": "Join the contest and create a character that symbolizes our school.",
+      "ko": "대회에 참가해서 우리 학교를 상징하는 캐릭터를 만드세요.",
+      "note": "① '학교를 상징하는 캐릭터를 만드는 대회'와 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "학교를 상징하는 캐릭터를 만드는 대회이다.",
+      "ko": "대회 목적",
+      "why": "일치. Join the contest and create a character that symbolizes our school."
+    },
+    {
+      "en": "출품작은 이메일로 제출되어야 한다.",
+      "ko": "제출 방법",
+      "why": "일치. Entries should be sent by email to cdcbritt@bhs.edu."
+    },
+    {
+      "en": "평가 기준에 창의성이 포함된다.",
+      "ko": "평가 기준",
+      "why": "일치. Judging Criteria에 Concept, Creativity, Illustration이 있어요."
+    },
+    {
+      "en": "2등상은 2명에게 주어진다.",
+      "ko": "2등 인원",
+      "why": "일치. 표에서 2nd prize의 Number of winners가 2예요."
+    },
+    {
+      "en": "수상자는 개별적으로 연락을 받는다.",
+      "ko": "수상자 발표",
+      "why": "정답(불일치). Winners will be announced on our school’s website on October 31. No personal contact will be made. 웹사이트로만 발표하고 개별 연락은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "Join the contest and create a character that symbolizes our school.",
+      "d": "that symbolizes our school이 a character를 꾸며요. '우리 학교를 상징하는 캐릭터'. 선행사가 단수라 symbolizes에 -s가 붙었어요."
+    },
+    {
+      "t": "조동사 수동태 should be p.p.",
+      "ex": "Entries should be sent by email to cdcbritt@bhs.edu.",
+      "d": "출품작은 '보내지는' 것이라 수동태예요. should be sent '보내져야 한다'."
+    },
+    {
+      "t": "미래 수동태 will be p.p.",
+      "ex": "Winners will be announced on our school’s website on October 31. No personal contact will be made.",
+      "d": "will be announced '발표될 것이다', will be made '이루어질 것이다'. No가 주어 앞에 붙으면 문장 전체가 부정이 돼요: '어떤 개별 연락도 없다'."
+    }
+  ],
+  "vocab": [
+    [
+      "contest",
+      "대회"
+    ],
+    [
+      "character",
+      "캐릭터, 등장인물"
+    ],
+    [
+      "symbolize",
+      "상징하다"
+    ],
+    [
+      "submission",
+      "제출"
+    ],
+    [
+      "deadline",
+      "마감 기한"
+    ],
+    [
+      "entry",
+      "출품작, 응모작"
+    ],
+    [
+      "judging criteria",
+      "심사 기준"
+    ],
+    [
+      "concept",
+      "콘셉트, 개념"
+    ],
+    [
+      "creativity",
+      "창의성"
+    ],
+    [
+      "illustration",
+      "삽화, 일러스트"
+    ],
+    [
+      "prize",
+      "상, 상품"
+    ],
+    [
+      "gift card",
+      "기프트 카드, 상품권"
+    ],
+    [
+      "per winner",
+      "수상자 1인당"
+    ],
+    [
+      "announce",
+      "발표하다"
+    ],
+    [
+      "personal contact",
+      "개별 연락"
+    ]
+  ],
+  "summary": {
+    "en": "Britt High School is holding its first contest to design a school character, and winners will only be announced on the school website.",
+    "ko": "Britt High School이 학교 캐릭터를 디자인하는 첫 대회를 열며, 수상자는 학교 웹사이트로만 발표된다."
+  },
+  "writing": {
+    "en": "Winners will be announced on the website, and no personal contact will be made.",
+    "ko": "수상자는 웹사이트에 발표되며, 개별 연락은 하지 않는다."
+  },
+  "tip": "안내문 문제는 ※ 표시가 붙은 마지막 안내를 꼭 읽으세요. 발표 방법·환불·주의 사항 같은 정답 근거가 자주 들어 있어요. 표가 나오면 '인원(Number of winners)'과 '상품(Prize)' 칸을 헷갈리지 않게 줄을 맞춰 보세요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 27번 정답은?",
+      "⑤ '수상자는 개별적으로 연락을 받는다'예요. 수상자는 10월 31일 학교 웹사이트에 발표되고 개별 연락은 없다고 했어요."
+    ],
+    [
+      "2025 10월 고1 영어 27번은 어떤 유형인가요?",
+      "안내문의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. 학교 캐릭터 디자인 대회 안내문이에요."
+    ],
+    [
+      "④ '2등상은 2명에게 주어진다'는 왜 맞나요?",
+      "Prizes 표에서 2nd prize의 Number of winners가 2라서 일치해요. 30달러는 1인당 상품이에요."
+    ]
+  ]
+}

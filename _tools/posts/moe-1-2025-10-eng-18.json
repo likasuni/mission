@@ -1,0 +1,182 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 18,
+  "type": "목적",
+  "points": 2,
+  "answer": 3,
+  "topic": "여행사 광고에 넣을 고객의 여행 경험 후기를 부탁하는 편지",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 18번",
+    "2025 10월 고1 영어 18번 해설",
+    "고1 10월 모의고사 18번 정답",
+    "고1 모의고사 글의 목적",
+    "여행 경험 공유 요청 편지",
+    "Lomos Tours 지문"
+  ],
+  "lead": "2025년 10월 고1 모의고사 영어 18번은 여행사 Lomos Tours의 매니저 Mark Smith가 단골 고객 Kelly 씨에게, 새 광고에 쓸 여행 경험을 몇 마디 들려 달라고 부탁하는 편지예요. I would like to kindly ask if you would be willing to share a few words about your experience가 목적 문장이에요. 정답은 ③ 여행 상품 이용 경험 공유를 요청하려고예요.",
+  "flow": [
+    [
+      "인사",
+      "Lomos Tours의 매니저 Mark Smith가 자신을 소개하고, 고객의 꾸준한 신뢰와 충성에 감사를 전한다."
+    ],
+    [
+      "배경",
+      "내년 새 홍보 캠페인으로 광고를 내보낼 예정이며, 가장 소중한 고객들의 경험을 담으려 한다."
+    ],
+    [
+      "요청",
+      "지난여름 함께 여행했으니 그 경험에 대해 몇 마디 공유해 줄 수 있는지 정중히 부탁한다."
+    ],
+    [
+      "마무리",
+      "피드백이 홍보에 큰 도움이 될 것이며, 곧 직원이 연락할 것이라고 알리고 미리 감사를 전한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "We plan to include the experiences of some of our most valued clients.",
+      "ko": "우리는 우리의 가장 소중한 몇몇 고객님들의 경험을 담을 계획입니다.",
+      "note": "광고에 '고객의 경험'을 넣겠다고 해요. 편지가 고객의 경험 이야기를 원한다는 신호예요."
+    },
+    {
+      "en": "Since you traveled with us last summer, I would like to kindly ask if you would be willing to share a few words about your experience.",
+      "ko": "당신은 지난여름에 우리와 함께 여행하셨기에, 당신의 경험에 대해 몇 마디 말씀을 기꺼이 공유해 주실 수 있는지 정중히 부탁드리고 싶습니다.",
+      "note": "I would like to kindly ask가 부탁 표현이고, 부탁 내용이 share ~ your experience(경험 공유)예요. ③과 그대로 맞아요."
+    },
+    {
+      "en": "Your feedback would be invaluable in helping us promote our services.",
+      "ko": "당신의 피드백은 우리가 서비스를 홍보하는 것을 도와주는 데 매우 소중할 것입니다.",
+      "note": "부탁한 이유를 덧붙인 문장이에요. 홍보에 쓸 '피드백'을 달라는 것이지, 상품을 홍보하는 편지가 아니에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "광고 공모전 참가를 독려하려고",
+      "ko": "광고 공모전 참가 독려",
+      "why": "advertisement가 나오지만 여행사가 직접 광고를 만드는 거예요. 고객에게 공모전에 나가라는 내용은 없어요."
+    },
+    {
+      "en": "고객 감사 행사 상품을 홍보하려고",
+      "ko": "감사 행사 상품 홍보",
+      "why": "첫머리에 감사 인사(appreciation)가 있지만 인사말일 뿐이에요. 감사 행사나 상품 소개는 없어요."
+    },
+    {
+      "en": "여행 상품 이용 경험 공유를 요청하려고",
+      "ko": "여행 경험 공유 요청",
+      "why": "정답. 지난여름 여행한 경험을 광고에 쓸 수 있게 몇 마디 공유해 달라고(share a few words about your experience) 부탁해요."
+    },
+    {
+      "en": "여행 상품 일정 변경 사항을 공지하려고",
+      "ko": "일정 변경 공지",
+      "why": "일정이 바뀌었다는 말은 전혀 없어요."
+    },
+    {
+      "en": "우수 고객을 위한 추가 혜택을 안내하려고",
+      "ko": "우수 고객 혜택 안내",
+      "why": "most valued clients(가장 소중한 고객)가 나오지만, 그들에게 혜택을 주는 게 아니라 경험담을 부탁해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "as part of ~ / 미래진행형",
+      "ex": "Next year, as part of a new promotional campaign, Lomos Tours will be airing an advertisement.",
+      "d": "as part of는 '~의 일환으로'. will be airing은 미래진행형으로 '방영하게 될 것이다'라는 예정된 계획을 말해요."
+    },
+    {
+      "t": "이유의 Since + ask if ~",
+      "ex": "Since you traveled with us last summer, I would like to kindly ask if you would be willing to share a few words …",
+      "d": "여기서 Since는 '~이니까'(이유). ask if ~는 '~인지 묻다'. be willing to V는 '기꺼이 ~하다'로 정중한 부탁에 자주 써요."
+    },
+    {
+      "t": "help + 목적어 + 동사원형",
+      "ex": "Your feedback would be invaluable in helping us promote our services.",
+      "d": "help us promote는 '우리가 홍보하는 것을 돕다'. help 뒤 목적격보어 자리에는 동사원형(또는 to V)이 와요. invaluable은 '가치가 없는'이 아니라 '매우 귀중한'이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "sincere",
+      "진심 어린"
+    ],
+    [
+      "appreciation",
+      "감사"
+    ],
+    [
+      "continued",
+      "지속적인"
+    ],
+    [
+      "loyalty",
+      "충성, 의리"
+    ],
+    [
+      "promotional campaign",
+      "홍보 캠페인"
+    ],
+    [
+      "air",
+      "방송하다, 방영하다"
+    ],
+    [
+      "advertisement",
+      "광고"
+    ],
+    [
+      "valued",
+      "소중한, 귀하게 여기는"
+    ],
+    [
+      "client",
+      "고객"
+    ],
+    [
+      "be willing to",
+      "기꺼이 ~하다"
+    ],
+    [
+      "invaluable",
+      "매우 귀중한"
+    ],
+    [
+      "promote",
+      "홍보하다"
+    ],
+    [
+      "be in touch with",
+      "~와 연락하다"
+    ],
+    [
+      "in advance",
+      "미리"
+    ],
+    [
+      "contribution",
+      "기여"
+    ]
+  ],
+  "summary": {
+    "en": "A travel agency manager asks a loyal customer to share a few words about his trip for the company's new advertisement.",
+    "ko": "한 여행사 매니저가 단골 고객에게 회사의 새 광고에 쓸 여행 경험담을 몇 마디 들려 달라고 부탁한다."
+  },
+  "writing": {
+    "en": "I would like to kindly ask if you would be willing to share a few words about your experience.",
+    "ko": "당신의 경험에 대해 몇 마디 말씀을 기꺼이 공유해 주실 수 있는지 정중히 부탁드리고 싶습니다."
+  },
+  "tip": "편지글 목적 문제는 감사 인사로 시작해도 감사가 목적인 경우는 드물어요. I would like to ask, would you be willing to 같은 부탁 표현이 나오는 문장을 찾아서, 무엇을 부탁하는지만 정확히 읽으면 돼요. advertisement, valued clients처럼 본문 단어만 걸친 선택지는 내용이 맞는지 따져 보세요.",
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 18번 정답은?",
+      "③ 여행 상품 이용 경험 공유를 요청하려고예요. 여행사 광고에 넣을 고객의 여행 경험을 몇 마디 들려 달라고 부탁하는 편지예요."
+    ],
+    [
+      "2025 10월 고1 18번은 어떤 유형인가요?",
+      "글의 목적을 고르는 2점 문항이에요. 여행사 매니저가 고객에게 쓴 편지예요."
+    ],
+    [
+      "⑤ 우수 고객 추가 혜택 안내가 오답인 이유는?",
+      "most valued clients라는 말이 나오지만, 혜택을 준다는 내용은 없고 오히려 고객에게 경험담을 부탁하고 있어요."
+    ]
+  ]
+}

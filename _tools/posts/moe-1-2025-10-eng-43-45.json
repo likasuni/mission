@@ -1,0 +1,314 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "가진 게 거의 없을 때 베푼 신문 가판대 청년 David, 억만장자가 만난 가장 부유한 사람",
+  "date": "2026-10-21",
+  "lead": "2025년 10월 고1 모의고사 영어 43~45번은 억만장자 James Walker가 무일푼 시절 공항 신문 가판대에서 신문을 선물해 준 청년 David를 '가장 부유한 사람'이라고 말하는 이야기의 장문 세트예요. 43번 순서는 (A) 신문 살 돈이 없음 → (D) David의 선물 → (B) 수년 뒤 서점 방문 → (C) David의 거절과 깨달음, 44번은 (e)만 David, 45번은 'David가 제안을 받아들였다'가 불일치예요. 정답은 43번 ④, 44번 ⑤, 45번 ④예요.",
+  "flow": [
+    [
+      "(A)",
+      "기자가 억만장자 James에게 '당신보다 부유한 사람이 있나요?'라고 묻자, 그는 잊지 못할 청년이 있다며 뉴욕 공항에서 David를 처음 만난 이야기를 시작한다. 무일푼이던 James는 신문 살 돈이 없었다."
+    ],
+    [
+      "(D)",
+      "바로 그때 가판대에서 일하던 David가 James에게 신문을 권했고, 돈이 없다고 하자 선물로 주었다. 3개월 뒤 다시 만났을 때도 대가 없이 신문을 주었다."
+    ],
+    [
+      "(B)",
+      "수년 뒤 부유한 사업가가 된 James는 작은 서점을 운영하는 David를 찾아가 원하는 건 무엇이든 주겠다고 했지만, David는 '진정으로 보답할 수 없다'고 말했다."
+    ],
+    [
+      "(C)",
+      "David는 거의 가진 게 없을 때 준 것과 다 가진 지금 주는 것은 다르다며 제안을 거절했다. James는 돈이 사람을 부유하게 만드는 게 아니라는 걸 깨닫고, David가 가장 부유한 사람이라고 기자에게 말했다."
+    ]
+  ],
+  "tip": "43번: (A) 끝 '돈이 없어 신문을 못 샀다' → (D) 첫머리 Just then(바로 그때)처럼 시간·장면 연결어를 따라가세요. (B) 끝 You can't truly compensate me → (C) 첫머리 Why not?은 질문-대답 짝이에요. 44번: He looked at him처럼 한 문장에 대명사가 둘이면 '누가 누구를'인지 따로 표시하세요. 45번: 부정·긍정이 뒤집힌 선택지(받아들였다 ↔ can't accept)를 먼저 의심하세요.",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 43~45번",
+    "2025 10월 고1 영어 43~45번 해설",
+    "고1 10월 모의고사 43번 정답",
+    "고1 10월 모의고사 44번 정답",
+    "고1 10월 모의고사 45번 정답",
+    "고1 모의고사 장문 독해",
+    "James Walker David 신문 가판대 지문"
+  ],
+  "qs": [
+    {
+      "n": 43,
+      "type": "글의 순서",
+      "points": 2,
+      "answer": 4,
+      "evidence": [
+        {
+          "en": "One headline caught his eye, but he had no money to buy the paper. … Just then, David, working at the newsstand noticed James.",
+          "ko": "한 기사 제목이 그의 시선을 사로잡았지만, 그는 신문을 살 돈이 없었다. … 바로 그때, 신문 가판대에서 일하던 David가 James를 발견했다.",
+          "note": "(A)의 마지막 장면(신문을 사고 싶지만 돈이 없음)에 (D)의 Just then(바로 그때)이 이어져요. (A) → (D)."
+        },
+        {
+          "en": "Again, David gave him a newspaper without expecting anything in return. … Years passed and James became a wealthy businessman, but he never forgot the young man he had met at the airport.",
+          "ko": "또다시, David는 그에게 아무런 보답도 기대하지 않고 신문 한 부를 주었다. … 수년이 흘러서 James는 부유한 사업가가 되었지만, 그는 공항에서 만났던 그 청년을 결코 잊지 못했다.",
+          "note": "(D)의 공항 장면 뒤에 Years passed(수년이 흘러)로 시간이 넘어가요. (D) → (B)."
+        },
+        {
+          "en": "He looked at him and said, \"You can't truly compensate me.\" … James asked, \"Why not?\"",
+          "ko": "그는 그를 바라보며 \"당신은 나에게 진정으로 보답할 수 없어요.\"라고 말했다. … James가 \"왜 할 수 없죠?\"라고 물었다.",
+          "note": "(B)의 '보답할 수 없다'에 (C)의 Why not?(왜 안 되죠?)이 바로 대답처럼 이어져요. (B) → (C)."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(B) － (D) － (C)",
+          "ko": "서점 방문 → 공항 선물 → 거절",
+          "why": "(A)에서 신문을 못 산 장면이 끝났는데 바로 '수년 뒤'로 가면 David가 왜 고마운 사람인지 설명이 빠져요."
+        },
+        {
+          "en": "(C) － (B) － (D)",
+          "ko": "거절 → 서점 방문 → 공항 선물",
+          "why": "(C)의 Why not?은 (B)의 '보답할 수 없다'에 대한 질문이라 (B)보다 먼저 올 수 없어요."
+        },
+        {
+          "en": "(C) － (D) － (B)",
+          "ko": "거절 → 공항 선물 → 서점 방문",
+          "why": "(C)가 맨 앞에 오면 James가 무엇에 Why not?이라고 묻는지 알 수 없어요."
+        },
+        {
+          "en": "(D) － (B) － (C)",
+          "ko": "공항 선물 → 서점 방문 → 거절과 깨달음",
+          "why": "정답. 신문 살 돈이 없음(A) → 바로 그때 David가 선물(D) → 수년 뒤 서점 방문과 제안(B) → 거절 이유와 James의 깨달음(C)."
+        },
+        {
+          "en": "(D) － (C) － (B)",
+          "ko": "공항 선물 → 거절 → 서점 방문",
+          "why": "(C)의 거절은 (B)에서 James가 제안을 한 뒤에야 나올 수 있어요."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭 대상",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "He found David running a small bookstore and visited him there. (b) He introduced himself, saying, \"David, you helped me twice …\"",
+          "ko": "그는 David가 작은 서점을 운영하고 있다는 것을 알아내고 거기로 그를 방문했다. (b) 그는 자기를 소개하며 \"David, 당신은 나를 두 번이나 도와줬어요 …\"라고 말했다.",
+          "note": "David를 찾아가 '당신이 나를 도와줬다'고 말하는 사람이니 (b) = James."
+        },
+        {
+          "en": "He looked at (c) him and said, \"You can't truly compensate me.\"",
+          "ko": "그는 (c) 그를 바라보며 \"당신은 나에게 진정으로 보답할 수 없어요.\"라고 말했다.",
+          "note": "보답을 받지 않겠다고 말하는 He는 David, David가 바라본 (c) him은 James예요."
+        },
+        {
+          "en": "Just then, David, working at the newsstand noticed James. (e) He asked, \"Would you like to buy this, sir?\"",
+          "ko": "바로 그때, 신문 가판대에서 일하던 David가 James를 발견했다. \"선생님, 이거 사고 싶으신가요?\"라고 (e) 그가 물었다.",
+          "note": "가판대에서 일하며 신문을 권하는 사람은 David예요. (e)만 David이고 나머지는 모두 James예요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) his",
+          "ko": "James",
+          "why": "신문 제목이 눈길을 끌었지만 돈이 없던 사람, 무일푼 James예요."
+        },
+        {
+          "en": "(b) He",
+          "ko": "James",
+          "why": "서점으로 David를 찾아가 자신을 소개한 James예요."
+        },
+        {
+          "en": "(c) him",
+          "ko": "James",
+          "why": "David가 바라본 상대, 보답하겠다고 찾아온 James예요."
+        },
+        {
+          "en": "(d) he",
+          "ko": "James",
+          "why": "그 순간을 떠올리며 기자에게 말하는 사람은 인터뷰를 받는 James예요."
+        },
+        {
+          "en": "(e) He",
+          "ko": "David",
+          "why": "정답. 신문 가판대에서 일하며 '이거 사시겠어요?'라고 묻는 David예요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "장문 내용 불일치",
+      "points": 2,
+      "answer": 4,
+      "evidence": [
+        {
+          "en": "He told the story of when he first met David at a New York airport.",
+          "ko": "그는 New York에 있는 한 공항에서 David를 처음 만났을 때의 이야기를 들려주었다.",
+          "note": "① 일치."
+        },
+        {
+          "en": "He found David running a small bookstore and visited him there.",
+          "ko": "그는 David가 작은 서점을 운영하고 있다는 것을 알아내고 거기로 그를 방문했다.",
+          "note": "③ 일치. ②도 바로 앞 Years passed and James became a wealthy businessman과 일치해요."
+        },
+        {
+          "en": "That's just generosity at convenience. So, I can't accept your offer.",
+          "ko": "그건 그저 편의에 따른 관대함일 뿐이죠. 그러니, 저는 당신의 제안을 받아들일 수 없어요.",
+          "note": "David는 제안을 거절했어요. ④ '받아들였다'는 불일치, 정답이에요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "James는 공항에서 David를 처음 만났다.",
+          "ko": "공항에서 첫 만남",
+          "why": "일치. he first met David at a New York airport."
+        },
+        {
+          "en": "James는 부유한 사업가가 되었다.",
+          "ko": "부유한 사업가",
+          "why": "일치. James became a wealthy businessman."
+        },
+        {
+          "en": "James는 David의 서점을 방문했다.",
+          "ko": "서점 방문",
+          "why": "일치. He found David running a small bookstore and visited him there."
+        },
+        {
+          "en": "David는 James의 제안을 받아들였다.",
+          "ko": "제안 수락",
+          "why": "정답(불일치). David는 I can't accept your offer라고 거절했어요."
+        },
+        {
+          "en": "David는 James에게 신문을 선물로 주었다.",
+          "ko": "신문 선물",
+          "why": "일치. Take it as a gift. / David gave him a newspaper without expecting anything in return."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문(동시 동작)",
+      "ex": "Years ago, James was broke and stuck at the airport, killing time reading newspaper headlines at the newsstand.",
+      "d": "killing time은 '시간을 때우면서'. kill time -ing는 '~하며 시간을 보내다'예요."
+    },
+    {
+      "t": "find + 목적어 + -ing",
+      "ex": "He found David running a small bookstore and visited him there.",
+      "d": "'David가 ~하고 있는 것을 알게 되다'. 목적격보어 자리에 현재분사 running이 와요."
+    },
+    {
+      "t": "삽입된 분사구",
+      "ex": "Just then, David, working at the newsstand noticed James.",
+      "d": "콤마 사이 working at the newsstand가 David를 설명해요. 진짜 동사는 noticed예요."
+    },
+    {
+      "t": "it is ~ that 강조구문",
+      "ex": "It's the willingness to give even when you have very little that makes you wealthy.",
+      "d": "the willingness … very little을 강조해 '당신을 부유하게 만드는 건 바로 ~하려는 의지'예요. 글의 주제가 담긴 문장이에요."
+    },
+    {
+      "t": "현재완료 경험",
+      "ex": "And so, David is the richest person I have ever met.",
+      "d": "최상급 + I have ever p.p.는 '내가 지금까지 ~한 것 중 가장 …'이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "billionaire",
+      "억만장자"
+    ],
+    [
+      "journalist",
+      "기자"
+    ],
+    [
+      "broke",
+      "무일푼인"
+    ],
+    [
+      "stuck",
+      "갇힌, 꼼짝 못 하는"
+    ],
+    [
+      "kill time",
+      "시간을 때우다"
+    ],
+    [
+      "headline",
+      "(신문) 기사 제목"
+    ],
+    [
+      "newsstand",
+      "신문 가판대"
+    ],
+    [
+      "catch one's eye",
+      "~의 눈길을 끌다"
+    ],
+    [
+      "hesitate",
+      "망설이다"
+    ],
+    [
+      "in return",
+      "보답으로"
+    ],
+    [
+      "wealthy",
+      "부유한"
+    ],
+    [
+      "compensate",
+      "보상하다, 보답하다"
+    ],
+    [
+      "generosity",
+      "관대함, 너그러움"
+    ],
+    [
+      "at convenience",
+      "편할 때에, 편의에 따라"
+    ],
+    [
+      "accept",
+      "받아들이다"
+    ],
+    [
+      "offer",
+      "제안"
+    ],
+    [
+      "willingness",
+      "기꺼이 하는 마음"
+    ]
+  ],
+  "summary": {
+    "en": "James, now a billionaire, called David the richest person he had ever met because David gave to him when he himself had almost nothing.",
+    "ko": "억만장자가 된 James는 David가 자신도 거의 가진 게 없을 때 베풀었기 때문에 그를 이제껏 만난 가장 부유한 사람이라고 했다."
+  },
+  "writing": {
+    "en": "True wealth is the willingness to give even when you have little.",
+    "ko": "진정한 부는 가진 것이 적을 때도 베풀려는 마음이다."
+  },
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 43번 정답은?",
+      "④ (D) － (B) － (C)예요."
+    ],
+    [
+      "2025년 10월 고1 모의고사 영어 44번 정답은?",
+      "⑤ (e)예요. (e) He만 신문을 권한 David이고, 나머지 (a), (b), (c), (d)는 모두 James예요."
+    ],
+    [
+      "2025년 10월 고1 모의고사 영어 45번 정답은?",
+      "④ David는 James의 제안을 받아들였다예요. 본문에서 David는 I can't accept your offer라고 거절해요."
+    ],
+    [
+      "44번 (c) him이 James인 이유는?",
+      "He looked at (c) him and said, \"You can't truly compensate me.\"에서 보답을 거절하는 He가 David예요. 그러니 David가 바라본 (c) him은 James예요."
+    ]
+  ],
+  "note": "44번 (c)는 He와 him이 한 문장에 같이 나와서 헷갈리기 쉬워요. 따옴표 안 대사를 누가 하는지 먼저 정하고 나서 대명사를 붙여 보라고 짚어 줘요."
+}
