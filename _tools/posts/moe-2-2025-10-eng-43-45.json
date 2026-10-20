@@ -1,0 +1,346 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "무릎 부상을 딛고 Sam을 위해 자선 마라톤을 완주한 Jason",
+  "date": "2026-10-21",
+  "lead": "2025년 10월 고2 모의고사 영어 43~45번은 무릎 부상으로 달리지 못하던 Jason이 희귀 심장 질환을 앓는 이웃 아이 Sam을 위해 자선 마라톤에 나가 완주하는 이야기의 장문 세트예요. 43번 순서는 (A) 현수막 → (D) 결심 → (C) 회복과 출발 전 → (B) 레이스와 완주, 44번은 (d)만 Sam, 45번은 의사가 '괜찮을 것'이라고 했으므로 ④가 불일치예요. 정답은 43번 ⑤, 44번 ④, 45번 ④예요.",
+  "flow": [
+    [
+      "(A)",
+      "Jason이 체육관 벽의 '자선 마라톤 ― Sam을 위해 달리세요' 현수막을 본다. Sam은 희귀 심장 질환을 가진 일곱 살 이웃 아이로, Jason이 여름 방학마다 돌봐 왔다."
+    ],
+    [
+      "(D)",
+      "현수막의 Sam 이름이 모든 걸 개인적으로 느끼게 한다. 학교에서 가장 빨랐던 Jason은 무릎 부상으로 오래 달리지 못했지만, 도전해야 한다고 느낀다."
+    ],
+    [
+      "(C)",
+      "Jason은 의사의 조언대로 회복에 힘쓰고, 3마일은 괜찮다는 말을 듣고 초보자 코스에 등록한다. 마라톤 날 아침, Sam이 응원 팻말을 들고 있다."
+    ],
+    [
+      "(B)",
+      "Jason은 힘차게 출발하지만 곧 지친다. Sam을 생각하며 끝까지 달려 결승선을 넘고, Sam이 건넨 물을 받으며 자부심과 감사를 느낀다."
+    ]
+  ],
+  "tip": "43번: 단락 첫머리의 연결 고리를 찾으세요. (D) 첫 문장 Sam's name on the banner는 (A)의 현수막을, (C)의 recover는 (D)의 knee injury를, (B)의 When the whistle blew는 (C)의 마라톤 날 아침을 받아요. 44번: He가 나오면 바로 앞 문장에 남자가 몇 명인지부터 확인하세요. 45번: 숫자·조건(3-mile run would be fine)이 나오는 선택지는 본문과 꼭 대조하세요.",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 43~45번",
+    "2025 10월 고2 영어 43~45번 해설",
+    "고2 10월 모의고사 43번 정답",
+    "고2 10월 모의고사 44번 정답",
+    "고2 10월 모의고사 45번 정답",
+    "고2 모의고사 장문 순서 지칭 내용 일치",
+    "Jason Sam charity marathon 지문"
+  ],
+  "qs": [
+    {
+      "n": 43,
+      "type": "장문 순서",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "(A) Jason stared at the banner across the high school gym wall: \"Annual Charity Marathon — Run for Sam.\" / (D) Seeing Sam's name on the banner made everything feel personal.",
+          "ko": "(A) Jason은 고등학교 체육관 벽에 걸린 '연간 자선 마라톤 ― Sam을 위해 달리세요' 현수막을 응시했다. / (D) 현수막에 적힌 Sam의 이름을 보는 것이 모든 것을 개인적으로 느껴지게 했다.",
+          "note": "(A)의 현수막과 Sam 이야기를 (D)가 the banner로 바로 이어받아요. (A) → (D)."
+        },
+        {
+          "en": "(D) But since his knee injury, he hadn't been able to run for quite a long time. … he knew he had to try. / (C) Jason did everything he could to recover, following his doctor's advice.",
+          "ko": "(D) 하지만 무릎 부상 이후 그는 꽤 오랫동안 달리지 못했다. … 그는 도전해야 한다는 것을 알았다. / (C) Jason은 의사의 조언을 따라 회복하기 위해 할 수 있는 모든 것을 했다.",
+          "note": "(D)에서 부상과 '도전 결심'이 나오고, (C)에서 그 부상에서 회복(recover)하려고 노력해요. (D) → (C)."
+        },
+        {
+          "en": "(C) On marathon morning, Jason stood among the runners, heart pounding. / (B) When the whistle blew, Jason started strong …",
+          "ko": "(C) 마라톤 날 아침, Jason은 가슴이 쿵쿵 뛰는 채로 주자들 사이에 섰다. / (B) 호각이 울리자 Jason은 힘차게 출발했다 …",
+          "note": "출발선에 선 장면(C) 다음에 호각과 함께 출발하는 장면(B)이 와요. (C) → (B)."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(B) － (D) － (C)",
+          "ko": "완주 → 결심 → 회복",
+          "why": "결승선을 넘는 (B)가 맨 앞에 오면, 그 뒤에 부상과 도전 결심이 나오는 게 시간 순서와 맞지 않아요."
+        },
+        {
+          "en": "(C) － (B) － (D)",
+          "ko": "회복 → 완주 → 결심",
+          "why": "(C)의 recover가 무엇에서 회복하는지(무릎 부상)가 아직 안 나왔어요. (D)가 먼저 와야 해요."
+        },
+        {
+          "en": "(C) － (D) － (B)",
+          "ko": "회복 → 결심 → 완주",
+          "why": "등록하고 출발선에 선 (C) 다음에 다시 '도전해야겠다'고 결심하는 (D)가 오면 흐름이 거꾸로예요."
+        },
+        {
+          "en": "(D) － (B) － (C)",
+          "ko": "결심 → 완주 → 회복",
+          "why": "레이스를 마친 (B) 다음에 회복·등록·출발 전 장면(C)이 오면 시간이 거꾸로 가요."
+        },
+        {
+          "en": "(D) － (C) － (B)",
+          "ko": "결심 → 회복·출발 전 → 레이스·완주",
+          "why": "정답. 현수막(A) → Sam 이름을 보고 도전 결심(D) → 회복하고 등록, 마라톤 아침(C) → 출발과 완주(B)."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭 대상",
+      "points": 2,
+      "answer": 4,
+      "evidence": [
+        {
+          "en": "In the crowd, Sam was holding a sign: \"Thank you, Runners!\" Jason smiled. (d) He was all the motivation needed.",
+          "ko": "군중 속에서 Sam이 '감사해요, 러너분들!'이라고 쓰인 팻말을 들고 있었다. Jason은 미소 지었다. (d) 그는 필요한 동기의 전부였다.",
+          "note": "Jason이 미소 지은 이유, 그가 필요로 한 동기는 팻말을 든 Sam이에요. (d) = Sam."
+        },
+        {
+          "en": "(a) He had played in the park and spent summer afternoons chasing ice cream trucks with Sam.",
+          "ko": "(a) 그는 Sam과 함께 공원에서 놀았고 아이스크림 트럭을 쫓으며 여름 오후를 보냈었다.",
+          "note": "with Sam이 있으니 (a)는 Sam이 아니라 Jason이에요."
+        },
+        {
+          "en": "As he was sitting to catch (b) his breath, Sam came over and handed him bottled water.",
+          "ko": "그가 (b) 자신의 숨을 고르기 위해 앉아 있었을 때, Sam이 다가와 그에게 병에 든 물을 건넸다.",
+          "note": "결승선을 넘고 숨을 고르는 사람은 Jason이에요. (b) = Jason."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) He",
+          "ko": "Jason",
+          "why": "Sam과 함께(with Sam) 공원에서 놀았던 사람, Sam을 돌본 Jason이에요."
+        },
+        {
+          "en": "(b) his",
+          "ko": "Jason",
+          "why": "결승선을 넘고 숨을 고르는 사람은 달리기를 마친 Jason이에요."
+        },
+        {
+          "en": "(c) he",
+          "ko": "Jason",
+          "why": "의사의 조언을 따라 회복하려고 할 수 있는 모든 것을 한 사람은 Jason이에요."
+        },
+        {
+          "en": "(d) He",
+          "ko": "Sam",
+          "why": "정답. 팻말을 든 Sam을 보고 Jason이 미소 지었고, Sam이 필요한 동기의 전부였어요."
+        },
+        {
+          "en": "(e) he",
+          "ko": "Jason",
+          "why": "Sam과 마라톤의 희망을 생각하며 도전해야 한다고 느낀 사람은 Jason이에요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "장문 내용 불일치",
+      "points": 2,
+      "answer": 4,
+      "evidence": [
+        {
+          "en": "A day before registration deadline, his doctor said a 3-mile run would be fine.",
+          "ko": "등록 마감 하루 전날, 그의 의사는 3마일 달리기는 괜찮을 것이라고 말했다.",
+          "note": "의사는 '괜찮을 것(fine)'이라고 했어요. ④ '위험할 것'은 불일치, 정답이에요."
+        },
+        {
+          "en": "Sam wasn't just anyone — he was the little boy living next door that Jason had babysat every summer break.",
+          "ko": "Sam은 그저 아무나가 아니었다. 그는 Jason이 여름 방학마다 돌보았던 옆집에 사는 어린 소년이었다.",
+          "note": "② 일치."
+        },
+        {
+          "en": "Jason had always been the fastest runner in school, known among his friends as \"The Speedster.\"",
+          "ko": "Jason은 항상 학교에서 가장 빠른 달리기 주자였고, 친구들 사이에서 'The Speedster'로 알려져 있었다.",
+          "note": "⑤ 일치."
+        }
+      ],
+      "choices": [
+        {
+          "en": "현수막의 슬로건이 Jason의 마음을 요동치게 했다.",
+          "ko": "슬로건의 영향",
+          "why": "일치. The slogan stirred something in him."
+        },
+        {
+          "en": "Jason은 여름 방학마다 Sam을 돌봤다.",
+          "ko": "Sam 돌봄",
+          "why": "일치. the little boy living next door that Jason had babysat every summer break."
+        },
+        {
+          "en": "Sam은 Jason에게 병에 든 물을 건네주었다.",
+          "ko": "물 건넴",
+          "why": "일치. Sam came over and handed him bottled water."
+        },
+        {
+          "en": "Jason의 의사는 3마일 달리기가 위험할 것이라고 말했다.",
+          "ko": "의사의 말",
+          "why": "정답(불일치). his doctor said a 3-mile run would be fine — 괜찮을 거라고 했어요."
+        },
+        {
+          "en": "Jason은 학교에서 가장 빠른 달리기 주자였다.",
+          "ko": "가장 빠른 주자",
+          "why": "일치. Jason had always been the fastest runner in school."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "콜론(:) + 인용",
+      "ex": "Jason stared at the banner across the high school gym wall: \"Annual Charity Marathon — Run for Sam.\"",
+      "d": "콜론 뒤에 현수막에 적힌 내용을 보여 줘요. 이 현수막이 (D) 첫 문장 the banner로 이어져요."
+    },
+    {
+      "t": "관계대명사 that 목적격",
+      "ex": "he was the little boy living next door that Jason had babysat every summer break.",
+      "d": "living next door가 boy를 꾸미고, that Jason had babysat도 boy를 꾸며요. had babysat은 그 전부터 해 온 일(과거완료)이에요."
+    },
+    {
+      "t": "동명사 주어 + make O C",
+      "ex": "Seeing Sam's name on the banner made everything feel personal.",
+      "d": "Seeing … banner가 주어. 사역동사 make + 목적어 + 동사원형(feel), '모든 것을 개인적으로 느껴지게 했다'."
+    },
+    {
+      "t": "분사구문 / 독립분사구문",
+      "ex": "Jason stood among the runners, heart pounding.",
+      "d": "heart pounding = with his heart pounding. 주어(heart)가 따로 있는 분사구문으로 '가슴이 쿵쿵 뛰는 채로'."
+    },
+    {
+      "t": "since (이유)",
+      "ex": "… but since he hadn't run for so long, his energy faded quickly.",
+      "d": "여기서 since는 '~ 때문에'. (D)의 since his knee injury(~ 이후로)와 뜻이 달라요."
+    },
+    {
+      "t": "과거분사 분사구문",
+      "ex": "… he pushed forward, encouraged by the thought of how happy Sam would be.",
+      "d": "encouraged는 수동의 분사구문, '~에 힘을 얻어'. how happy Sam would be는 간접의문문이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "stare at",
+      "~을 응시하다"
+    ],
+    [
+      "banner",
+      "현수막"
+    ],
+    [
+      "charity",
+      "자선"
+    ],
+    [
+      "stir",
+      "요동치게 하다, 휘젓다"
+    ],
+    [
+      "cheerful",
+      "명랑한"
+    ],
+    [
+      "rare",
+      "희귀한"
+    ],
+    [
+      "condition",
+      "질환, 상태"
+    ],
+    [
+      "babysit",
+      "(아이를) 돌보다"
+    ],
+    [
+      "chase",
+      "쫓아가다"
+    ],
+    [
+      "personal",
+      "개인적인"
+    ],
+    [
+      "injury",
+      "부상"
+    ],
+    [
+      "represent",
+      "나타내다, 상징하다"
+    ],
+    [
+      "recover",
+      "회복하다"
+    ],
+    [
+      "registration",
+      "등록"
+    ],
+    [
+      "deadline",
+      "마감"
+    ],
+    [
+      "sign up for",
+      "~에 등록하다"
+    ],
+    [
+      "pound",
+      "(심장이) 쿵쿵 뛰다"
+    ],
+    [
+      "motivation",
+      "동기"
+    ],
+    [
+      "whistle",
+      "호각"
+    ],
+    [
+      "fade",
+      "사라지다, 약해지다"
+    ],
+    [
+      "struggle",
+      "힘든 일, 분투"
+    ],
+    [
+      "catch one's breath",
+      "숨을 고르다"
+    ],
+    [
+      "relief",
+      "안도감"
+    ],
+    [
+      "gratitude",
+      "감사"
+    ]
+  ],
+  "summary": {
+    "en": "Moved by a charity marathon for Sam, the boy he had babysat, Jason recovered from his knee injury and finished the race for him.",
+    "ko": "자신이 돌보던 아이 Sam을 위한 자선 마라톤에 마음이 움직인 Jason은 무릎 부상에서 회복해 Sam을 위해 경주를 완주했다."
+  },
+  "writing": {
+    "en": "Running for someone else gave Jason the strength to finish.",
+    "ko": "다른 사람을 위해 달린다는 생각이 Jason에게 완주할 힘을 주었다."
+  },
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 43번 정답은?",
+      "⑤ (D) － (C) － (B)예요. 현수막을 보고 도전 결심(D) → 회복과 마라톤 아침(C) → 출발과 완주(B) 순서예요."
+    ],
+    [
+      "2025년 10월 고2 모의고사 영어 44번 정답은?",
+      "④ (d)예요. (d) He만 Sam이고 나머지 (a), (b), (c), (e)는 모두 Jason이에요."
+    ],
+    [
+      "2025년 10월 고2 모의고사 영어 45번 정답은?",
+      "④ Jason의 의사는 3마일 달리기가 위험할 것이라고 말했다예요. 본문은 his doctor said a 3-mile run would be fine이라고 해요."
+    ],
+    [
+      "(A) 다음에 (D)가 오는 이유는?",
+      "(A)에서 Jason이 'Run for Sam' 현수막을 보고, (D) 첫 문장이 Seeing Sam's name on the banner로 그 현수막을 그대로 이어받기 때문이에요."
+    ]
+  ]
+}
