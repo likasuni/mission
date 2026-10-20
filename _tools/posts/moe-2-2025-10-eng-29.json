@@ -1,0 +1,193 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 29,
+  "type": "어법",
+  "points": 2,
+  "answer": 5,
+  "topic": "세포 분열의 복제 오류와 자연 선택을 통한 진화",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 29번",
+    "2025 10월 고2 영어 29번 해설",
+    "고2 10월 모의고사 29번 정답",
+    "고2 모의고사 어법",
+    "분사구문 어법 giving",
+    "mutation natural selection 지문",
+    "고2 영어 어법 해설"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 29번은 세포가 분열할 때 생기는 복제 오류가 자연 선택을 거쳐 진화로 이어진다는 글의 어법 문항이에요. ⑤가 있는 문장은 이미 동사 change가 있어서, 뒤에 또 동사 give가 올 수 없고 분사 giving이 와야 해요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "도입",
+      "세포가 분열하면 두 딸세포의 유전체는 서로, 또 모세포와도 완전히 같지 않은 경우가 많다."
+    ],
+    [
+      "세 가지 오류",
+      "오류는 드물게 좋은 변화, 대개는 영향 없는 변화, 어떤 경우엔 핵심 단백질을 망가뜨리는 심각한 손상이 된다."
+    ],
+    [
+      "결과",
+      "좋은 변화는 이어지고, 중립 변화는 운에 달렸고, 심각한 손상은 세포가 죽어 자손을 남기지 못한다."
+    ],
+    [
+      "결론",
+      "돌연변이와 자연 선택의 반복으로 생물은 진화하고, 때로 환경 활용·경쟁·번식에 유리한 새 길을 얻는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "their genetic specifications change, sometimes ⑤ give organisms new ways to exploit the environment more effectively",
+      "ko": "그들의 유전적 특성들은 변화해서, 유기체에게 환경을 더 효과적으로 활용할 새로운 길들을 때로는 제공한다",
+      "note": "주어 their genetic specifications의 동사는 change예요. 접속사 없이 콤마 뒤에 동사 give가 또 올 수 없어요. 분사구문 giving으로 고쳐야 해요."
+    },
+    {
+      "en": "But in some cases, the error will cause serious damage; for example, by ② disrupting the coding sequence for a key protein.",
+      "ko": "그러나 어떤 경우에는 그 오류가 심각한 손상을 초래할 것이다. 예를 들어 핵심 단백질의 코딩 서열을 망가뜨림으로써 그렇게 할 것이다.",
+      "note": "② 전치사 by 뒤에는 동명사가 와요. 뒤에 목적어(the coding sequence)도 있어 disrupting이 맞아요."
+    },
+    {
+      "en": "But changes that cause serious damage ④ lead nowhere",
+      "ko": "그러나 심각한 손상을 초래하는 변화들은 어느 곳에도 닿지 못한다",
+      "note": "④ 주어는 복수 changes예요. that cause serious damage는 수식어일 뿐이라 복수 동사 lead가 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① its",
+      "ko": "대명사 수 일치",
+      "why": "적절. 가리키는 말은 단수 a cell이에요. '그 세포의 두 딸세포'라 its가 맞아요."
+    },
+    {
+      "en": "② disrupting",
+      "ko": "전치사 + 동명사",
+      "why": "적절. 전치사 by 뒤라 동명사가 오고, 목적어 the coding sequence를 받아요."
+    },
+    {
+      "en": "③ whether",
+      "ko": "명사절 접속사",
+      "why": "적절. it은 가주어, 진주어는 whether 절이에요. 뒤 절(the altered cell or its cousins will succeed)이 완전하고 '~할지'라는 뜻이라 whether가 맞아요."
+    },
+    {
+      "en": "④ lead",
+      "ko": "주어-동사 수 일치",
+      "why": "적절. 주어는 복수 changes예요. 관계사절 that cause serious damage를 빼고 보면 changes … lead로 복수 동사가 맞아요."
+    },
+    {
+      "en": "⑤ give",
+      "ko": "give → giving",
+      "why": "정답(틀림). 문장의 동사 change가 이미 있고 접속사도 없어요. '그 결과 ~을 주는'이라는 분사구문 giving이 와야 해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문 (결과)",
+      "ex": "their genetic specifications change, sometimes giving organisms new ways to exploit the environment more effectively",
+      "d": "콤마 뒤 -ing는 '그래서 ~하다'라는 결과를 나타내요. 한 문장에 접속사 없이 동사가 두 개 올 수 없으니, 두 번째 동사는 분사로 바꿔요. 이 문항의 정답 포인트예요."
+    },
+    {
+      "t": "가주어 it + whether 진주어",
+      "ex": "it is a matter of chance whether the altered cell or its cousins will succeed",
+      "d": "it은 가주어, whether 절이 진짜 주어예요. '~가 성공할지는 운의 문제이다'."
+    },
+    {
+      "t": "주어 뒤 수식어와 수 일치",
+      "ex": "But changes that cause serious damage lead nowhere",
+      "d": "주어와 동사 사이에 관계사절이 끼면 수식어를 괄호로 묶고 진짜 주어(changes)와 동사(lead)를 맞춰 보세요."
+    },
+    {
+      "t": "분사구문 (동시·결과)",
+      "ex": "the cell that suffers them dies, leaving no progeny",
+      "d": "', leaving'도 같은 원리예요. 세포가 죽고 '그 결과 자손을 남기지 않는다'. ⑤의 giving과 짝을 이루는 올바른 예시예요."
+    }
+  ],
+  "vocab": [
+    [
+      "divide",
+      "분열하다"
+    ],
+    [
+      "genome",
+      "유전체"
+    ],
+    [
+      "identical",
+      "동일한"
+    ],
+    [
+      "prospect",
+      "전망"
+    ],
+    [
+      "disrupt",
+      "방해하다, 망가뜨리다"
+    ],
+    [
+      "coding sequence",
+      "(유전자의) 코딩 서열"
+    ],
+    [
+      "perpetuate",
+      "영속시키다"
+    ],
+    [
+      "altered",
+      "변화된"
+    ],
+    [
+      "likelihood",
+      "가능성"
+    ],
+    [
+      "reproduce",
+      "번식하다, 복제하다"
+    ],
+    [
+      "neutral",
+      "중립적인"
+    ],
+    [
+      "progeny",
+      "자손"
+    ],
+    [
+      "mutation",
+      "돌연변이"
+    ],
+    [
+      "natural selection",
+      "자연 선택"
+    ],
+    [
+      "specification",
+      "명세, 특성"
+    ],
+    [
+      "exploit",
+      "활용하다"
+    ]
+  ],
+  "summary": {
+    "en": "Copying errors in cell division can be helpful, neutral, or deadly, and through the repeated cycle of mutation and natural selection, organisms evolve.",
+    "ko": "세포 분열 때 생기는 복제 오류는 이롭거나, 중립적이거나, 치명적일 수 있으며, 돌연변이와 자연 선택의 반복을 통해 생물은 진화한다."
+  },
+  "writing": {
+    "en": "Changes that cause serious damage lead nowhere.",
+    "ko": "심각한 손상을 초래하는 변화들은 어디로도 이어지지 못한다."
+  },
+  "tip": "밑줄이 동사 자리에 있으면 그 문장에 동사가 몇 개인지 세어 보세요. 주어 하나에 동사가 이미 있고 접속사가 없다면, 밑줄 친 동사는 분사(-ing/p.p.)나 to부정사로 바뀌어야 해요. 수 일치 밑줄은 주어와 동사 사이 수식어를 지우고 보면 바로 보여요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 29번 정답은?",
+      "⑤ give예요. 문장의 동사 change가 이미 있고 접속사가 없어서, 분사구문 giving으로 고쳐야 해요."
+    ],
+    [
+      "2025 10월 고2 29번은 어떤 유형인가요?",
+      "밑줄 친 부분 중 어법상 틀린 것을 고르는 2점 어법 문항이에요. 세포 분열 오류와 진화를 다룬 지문이에요."
+    ],
+    [
+      "④ lead는 왜 맞나요?",
+      "주어가 복수 changes이고, that cause serious damage는 주어를 꾸미는 관계사절이에요. 그래서 복수 동사 lead가 맞아요."
+    ]
+  ],
+  "note": "29번 ⑤는 같은 글 바로 앞 문장의 ', leaving no progeny'와 똑같은 구조예요. 지문 안에 정답 힌트가 있는 셈이라, 수업 때 두 문장을 나란히 놓고 '동사가 이미 있으면 콤마 뒤는 -ing'를 같이 짚어 볼게요."
+}

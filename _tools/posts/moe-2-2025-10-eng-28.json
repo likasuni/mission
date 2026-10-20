@@ -1,0 +1,174 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "Northmere 초등학교 일일 자전거 타기 수업 안내문",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 28번",
+    "2025 10월 고2 영어 28번 해설",
+    "고2 10월 모의고사 28번 정답",
+    "고2 모의고사 안내문 일치",
+    "One-day Bicycle Riding Class 지문",
+    "고2 영어 실용문 해설"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 28번은 Northmere 초등학교 학부모에게 보내는 일일 자전거 타기 수업 안내문에서 내용과 일치하는 것을 고르는 문항이에요. Registration 항목의 'Where: School website'가 그대로 선택지가 됐어요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "소개",
+      "Northmere 초등학교 학부모에게 자녀가 안전하게 자전거 타기를 즐기게 해 주라고 알린다."
+    ],
+    [
+      "대상·일시",
+      "1~2학년만 참여, 2025년 11월 8일."
+    ],
+    [
+      "일정",
+      "10:00~10:30 안전 교육, 10:30~12:00 실제 주행 연습. 강사는 학교 교사들."
+    ],
+    [
+      "등록",
+      "학교 웹사이트에서, 10월 10일 낮 12시까지, 수업료 무료."
+    ],
+    [
+      "주의사항",
+      "보호자 현장 대기 필수, 안전 장비 제공, 자기 자전거 지참 권장(대여는 10대뿐)."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Registration · Where: School website",
+      "ko": "등록 · 어디서: 학교 웹사이트",
+      "note": "선택지 ③ '학교 웹사이트에서 등록이 가능하다'와 그대로 일치해요."
+    },
+    {
+      "en": "· 10:30 a.m. - 12:00 p.m.: Hands-on riding practice",
+      "ko": "· 오전 10시 30분부터 오후 12시까지: 실제 주행 연습",
+      "note": "주행 연습은 1시간 30분이에요. 선택지 ②의 '2시간'을 거르는 근거예요."
+    },
+    {
+      "en": "· Safety gear will be provided.",
+      "ko": "· 안전 장비가 제공될 것입니다.",
+      "note": "안전 장비는 학교가 줘요. 선택지 ④ '직접 가져와야 한다'와 반대예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "모든 학년 학생이 신청할 수 있다.",
+      "ko": "전 학년 신청 가능",
+      "why": "불일치. Who: 1st to 2nd graders only — 1~2학년만 참여할 수 있어요."
+    },
+    {
+      "en": "2시간의 실제 주행 연습이 포함되어 있다.",
+      "ko": "주행 연습 2시간",
+      "why": "불일치. 주행 연습은 10:30~12:00로 1시간 30분이에요. 수업 전체(10:00~12:00)가 2시간이라 헷갈리기 쉬워요."
+    },
+    {
+      "en": "학교 웹사이트에서 등록이 가능하다.",
+      "ko": "학교 웹사이트 등록",
+      "why": "정답(일치). Registration · Where: School website."
+    },
+    {
+      "en": "안전 장비를 직접 가져와야 한다.",
+      "ko": "안전 장비 지참",
+      "why": "불일치. Safety gear will be provided. 안전 장비는 제공돼요. 가져오라고 권한 건 자기 자전거예요."
+    },
+    {
+      "en": "자전거 대여는 불가능하다.",
+      "ko": "자전거 대여 불가",
+      "why": "불일치. Only 10 bicycles are available for rental. 10대뿐이지만 대여는 돼요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "let + 목적어 + 동사원형",
+      "ex": "Let your children enjoy safe bicycle riding.",
+      "d": "let은 사역동사라 목적어 뒤에 동사원형(enjoy)이 와요. '자녀가 ~을 즐기게 해 주세요'."
+    },
+    {
+      "t": "가주어 it + to부정사",
+      "ex": "It is recommended to bring your children's own bike.",
+      "d": "It은 가주어, 진짜 주어는 to bring ~이에요. '자녀의 자전거를 가져오는 것이 권장된다'."
+    },
+    {
+      "t": "조동사 수동태",
+      "ex": "Safety gear will be provided.",
+      "d": "will be p.p.는 '~될 것이다'. 장비가 '제공되는' 쪽이라 수동태예요."
+    }
+  ],
+  "vocab": [
+    [
+      "attention",
+      "주목하세요, 알립니다"
+    ],
+    [
+      "grader",
+      "~학년 학생"
+    ],
+    [
+      "hands-on",
+      "직접 해 보는, 실습의"
+    ],
+    [
+      "instructor",
+      "강사"
+    ],
+    [
+      "registration",
+      "등록"
+    ],
+    [
+      "deadline",
+      "마감 기한"
+    ],
+    [
+      "tuition",
+      "수업료"
+    ],
+    [
+      "guardian",
+      "보호자"
+    ],
+    [
+      "on site",
+      "현장에"
+    ],
+    [
+      "safety gear",
+      "안전 장비"
+    ],
+    [
+      "provide",
+      "제공하다"
+    ],
+    [
+      "rental",
+      "대여"
+    ]
+  ],
+  "summary": {
+    "en": "Northmere Elementary School offers a free one-day bicycle class for 1st and 2nd graders, with safety education, riding practice, and online registration.",
+    "ko": "Northmere 초등학교는 1~2학년을 위해 안전 교육과 주행 연습이 포함된 무료 일일 자전거 수업을 열고, 등록은 학교 웹사이트에서 받는다."
+  },
+  "writing": {
+    "en": "Safety gear will be provided, but it is recommended to bring your own bike.",
+    "ko": "안전 장비는 제공되지만, 자기 자전거를 가져오는 것이 권장된다."
+  },
+  "tip": "시간이 나오는 안내문은 직접 계산해 보세요. 10:30~12:00은 2시간이 아니라 1시간 30분이에요. 또 '제공된다(provided)'와 '가져오라(bring)'가 어느 물건에 붙어 있는지, '10대만 대여 가능'이 '대여 불가'와 다르다는 것처럼 한 단어 차이를 꼼꼼히 확인하세요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 28번 정답은?",
+      "③ '학교 웹사이트에서 등록이 가능하다'예요. 안내문 Registration 항목의 Where: School website와 일치해요."
+    ],
+    [
+      "2025 10월 고2 28번은 어떤 유형인가요?",
+      "안내문을 읽고 내용과 일치하는 것을 고르는 2점 실용문 문항이에요."
+    ],
+    [
+      "② '2시간의 실제 주행 연습'은 왜 틀렸나요?",
+      "주행 연습(Hands-on riding practice)은 10:30~12:00으로 1시간 30분이에요. 앞의 30분은 안전 교육이라, 2시간은 수업 전체 시간이에요."
+    ]
+  ]
+}

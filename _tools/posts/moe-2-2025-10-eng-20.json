@@ -1,0 +1,62 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 20,
+  "type": "주장",
+  "points": 2,
+  "answer": 2,
+  "topic": "의료 종사자는 환자에게 친절하되 존중하며 직업적인 경계를 지켜야 한다",
+  "date": "2026-10-21",
+  "keywords": ["2025년 10월 고2 모의고사 영어 20번", "2025 10월 고2 영어 20번 해설", "고2 10월 모의고사 20번 정답", "고2 모의고사 필자의 주장", "의료진 환자 직업적 경계", "professional boundaries 지문"],
+  "lead": "2025년 10월 고2 모의고사 영어 20번은 의료 분야에서 일할 때 환자를 친구처럼 대하지 말고 직업적인 관계와 경계를 지키라고 말하는 글이에요. You need to treat patients with respect and keep the relationship professional.이 주장 문장이에요. 정답은 ② 의료 종사자는 환자를 존중하며 직업적인 경계를 유지해야 한다예요.",
+  "flow": [
+    ["주장", "의료 분야에서는 환자와 탄탄한 직업적 관계를 쌓는 것이 중요하고, 현실적인 자기 경계가 그 관계를 지켜 준다."],
+    ["원칙", "초점은 늘 환자에게 두어야 한다."],
+    ["문제", "자주 보는 환자는 친구처럼 여기기 쉽고, 그러면 환자와 나누기 부적절한 개인 정보를 나누게 된다."],
+    ["결과", "환자는 '친구'에게 중요한 건강 정보를 말하기 난처해 숨길 수 있다."],
+    ["재주장", "자기 경계는 곧 직업적 경계다. 환자를 존중하고 관계를 직업적으로 유지하며, 친절하되 환자에게 초점을 두라."]
+  ],
+  "evidence": [
+    {"en": "You need to treat patients with respect and keep the relationship professional.", "ko": "여러분은 환자들을 존중으로 대하고 그 관계를 직업적으로 유지할 필요가 있다.", "note": "need to로 해야 할 일을 직접 말한 문장이에요. respect(존중) + professional(직업적인)이 ②와 그대로 맞아요."},
+    {"en": "By establishing realistic self-boundaries, you can protect that relationship.", "ko": "현실적인 자기 경계를 설정함으로써 여러분은 그 관계를 보호할 수 있다.", "note": "글 앞부분에서 '경계'가 핵심 개념이라는 걸 알려 줘요."},
+    {"en": "Self-boundaries can also be thought of as professional boundaries.", "ko": "자기 경계는 직업적인 경계로 여겨질 수도 있다.", "note": "self-boundaries = professional boundaries. 선택지 ②의 '직업적인 경계'가 바로 이 말이에요."}
+  ],
+  "choices": [
+    {"en": "의료진은 환자에게 진단 결과를 숨김없이 알려야 한다.", "ko": "진단 결과를 숨김없이 알림", "why": "본문의 '정보 공유'는 의료진이 개인 정보를 나누는 문제, 환자가 건강 정보를 숨기는 문제예요. 진단 결과 공개 이야기는 없어요."},
+    {"en": "의료 종사자는 환자를 존중하며 직업적인 경계를 유지해야 한다.", "ko": "존중 + 직업적 경계 유지", "why": "정답. treat patients with respect, keep the relationship professional, professional boundaries가 모두 이 내용이에요."},
+    {"en": "의료 종사자는 객관적 데이터에 기반하여 환자를 진단해야 한다.", "ko": "객관적 데이터로 진단", "why": "진단 방법은 전혀 다루지 않아요. 글은 환자와의 '관계'에 대한 이야기예요."},
+    {"en": "환자는 의료진이 가진 전문가의 영역을 침범하지 않아야 한다.", "ko": "환자가 전문가 영역 침범 금지", "why": "경계를 지켜야 하는 주체가 반대예요. 글은 의료진(you)에게 하는 말이에요."},
+    {"en": "의료진은 환자의 개인 정보를 철저하게 비밀로 유지해야 한다.", "ko": "환자 개인 정보 비밀 유지", "why": "personal information은 나오지만, 의료진 자신의 개인 정보를 환자에게 나누지 말라는 맥락이에요. 본문 단어를 비튼 함정이에요."}
+  ],
+  "grammar": [
+    {"t": "가주어 it ~ to V", "ex": "When you are working in healthcare, it is important to develop a solid professional relationship with your patients.", "d": "it은 가주어, to develop 이하가 진주어예요. '~하는 것이 중요하다'는 주장 글에서 자주 쓰는 틀이에요."},
+    {"t": "by -ing (수단)", "ex": "By establishing realistic self-boundaries, you can protect that relationship.", "d": "'~함으로써'. 경계를 세우는 것이 관계를 지키는 방법이라는 뜻이에요."},
+    {"t": "be likely to V", "ex": "With a friend, you are likely to share personal information that is not appropriate with a patient.", "d": "'~할 가능성이 있다, ~하기 쉽다'. 뒤의 that은 주격 관계대명사로 personal information을 꾸며요."},
+    {"t": "keep + 목적어 + 형용사", "ex": "… and keep the relationship professional.", "d": "'목적어를 ~한 상태로 유지하다'. professional은 목적격 보어예요. professionally(부사)가 아니에요."}
+  ],
+  "vocab": [
+    ["healthcare", "의료, 보건"],
+    ["solid", "견고한, 탄탄한"],
+    ["professional", "직업적인, 전문적인"],
+    ["establish", "설정하다, 세우다"],
+    ["realistic", "현실적인"],
+    ["boundary", "경계"],
+    ["focus", "초점"],
+    ["frequently", "자주"],
+    ["personal information", "개인 정보"],
+    ["appropriate", "적절한"],
+    ["health-related", "건강과 관련된"],
+    ["embarrassing", "난처한, 당황스러운"],
+    ["be thought of as", "~로 여겨지다"],
+    ["treat", "대하다"],
+    ["with respect", "존중하며"]
+  ],
+  "summary": {"en": "Healthcare workers should be friendly to patients but keep professional boundaries, treating them with respect and keeping the focus on them.", "ko": "의료 종사자는 환자에게 친절하되 직업적 경계를 지키며, 환자를 존중하고 환자에게 초점을 두어야 한다."},
+  "writing": {"en": "Healthcare workers should keep a respectful, professional distance from patients.", "ko": "의료 종사자는 환자와 존중하는 직업적 거리를 유지해야 한다."},
+  "tip": "주장 문제는 important, need to, 명령문(Be friendly …)이 들어간 문장을 모아 보세요. 이 글은 처음(it is important to develop …)과 끝(You need to …, Be friendly …)이 같은 말을 반복해요. 본문 단어 personal information이 들어간 ⑤는 '누구의 정보인지'를 꼭 확인하세요.",
+  "note": "⑤번 '개인 정보'에서 많이 흔들릴 수 있어요. 본문은 의료진이 자기 개인 이야기를 환자에게 하지 말라는 거지, 환자 정보 보호 얘기가 아니에요. 누구의 정보인지 주어부터 확인하세요.",
+  "faq": [
+    ["2025년 10월 고2 모의고사 영어 20번 정답은?", "② 의료 종사자는 환자를 존중하며 직업적인 경계를 유지해야 한다예요. 환자를 친구처럼 대하지 말고 직업적 관계를 지키라는 글이에요."],
+    ["2025 10월 고2 20번은 어떤 유형인가요?", "필자가 주장하는 바를 고르는 2점 문항이에요. 의료진과 환자 사이의 직업적 경계를 다룬 글이에요."],
+    ["⑤ 환자의 개인 정보를 비밀로 유지해야 한다가 오답인 이유는?", "본문의 personal information은 의료진이 친구처럼 나누게 되는 자기 정보예요. 환자 정보 보호에 대한 주장은 없어요."]
+  ]
+}

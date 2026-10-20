@@ -1,0 +1,206 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 4,
+  "topic": "측정 단위의 선택은 임의적이며, 그 선택에 따른 값은 세계 자체의 성질이 아니다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 35번",
+    "2025 10월 고2 영어 35번 해설",
+    "고2 10월 모의고사 35번 정답",
+    "고2 모의고사 무관한 문장",
+    "물리학 측정 단위 지문",
+    "units of measure scale 지문",
+    "무관한 문장 찾기 해설"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 35번은 물리학에서 길이나 온도의 단위(척도)는 편의상 고르는 임의적인 선택일 뿐이고, 그 선택에 따라 달라지는 값은 세계 자체의 성질이 아니라는 글의 무관한 문장 찾기 문항이에요. ④만 '사람이 느끼는 온도는 습도와 바람에 따라 다르다'며 체감 온도 이야기로 빠져요. 정답은 ④예요.",
+  "flow": [
+    [
+      "도입",
+      "물리학에서 쓰는 서술 장치인 측정 단위를 생각해 보자. 거리는 피트로든 미터로든 나타낼 수 있고, 물리학은 똑같다."
+    ],
+    [
+      "결론 1",
+      "물리학은 어떤 길이 단위도 선호하지 않으며, 우리는 편의에 따라 아무 단위나 고를 수 있다."
+    ],
+    [
+      "결론 2",
+      "두 지점 사이 거리의 구체적인 수치처럼 그 선택에 달린 특성은 단위 선택과 별개로 세계에 존재하지 않는다."
+    ],
+    [
+      "확장",
+      "온도도 화씨·섭씨·켈빈 중 무엇으로 나타내든 물리학은 바뀌지 않는다."
+    ],
+    [
+      "마무리",
+      "척도의 선택은 서술상의 임의적인 선택이고, 그 선택에 달린 특성은 척도에 의존한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Spatial distances can be given in terms of feet or meters or some other unit, and the physics will be the same regardless.",
+      "ko": "공간적 거리는 피트나 미터나 다른 어떤 단위로도 주어질 수 있고, 물리학은 그와 상관없이 똑같을 것이다.",
+      "note": "글의 출발점이에요. '단위를 바꿔도 물리학은 그대로'라는 생각이 길이와 온도에 모두 적용돼요."
+    },
+    {
+      "en": "③ Temperatures can likewise be given in terms of the Fahrenheit or Celsius or Kelvin scale, and nothing in the physics changes when we switch from one scale to another.",
+      "ko": "온도도 마찬가지로 화씨나 섭씨나 켈빈 척도로 주어질 수 있으며, 한 척도에서 다른 척도로 바꿀 때 물리학에서 아무것도 변하지 않는다.",
+      "note": "likewise로 길이의 논리를 온도로 넓혀요. 그다음 ⑤ We conclude that the choice of scale …가 이 ③을 받아 결론을 내리니 ③ → ⑤가 바로 이어져야 해요."
+    },
+    {
+      "en": "④ Perception of temperature can vary with humidity and wind, even at the same measured value.",
+      "ko": "온도의 인식은 같은 측정값에서도 습도와 바람에 따라 달라질 수 있다.",
+      "note": "temperature라는 소재만 같고, 내용은 '사람이 느끼는 체감 온도'예요. 글의 주제인 '단위·척도 선택의 임의성'과 관계가 없어요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① We conclude from this that physics does not prefer one unit of length over any other, and we may choose any one we like for reasons of convenience.",
+      "ko": "물리학은 특정 길이 단위를 선호하지 않으므로 편의상 아무 단위나 고를 수 있다",
+      "why": "적절. 앞 문장(단위가 달라도 물리학은 같다)에서 첫 번째 결론을 끌어내요."
+    },
+    {
+      "en": "② We further conclude that any feature depending on that choice, such as the particular numerical value assigned to the spatial separation between two locations, is not out there in the world apart from a choice of unit.",
+      "ko": "단위 선택에 달린 수치 같은 특성은 단위 선택과 별개로 세계에 존재하지 않는다",
+      "why": "적절. further로 두 번째 결론을 덧붙이고, ⑤의 scale-dependent와 짝을 이뤄요."
+    },
+    {
+      "en": "③ Temperatures can likewise be given in terms of the Fahrenheit or Celsius or Kelvin scale, and nothing in the physics changes when we switch from one scale to another.",
+      "ko": "온도도 화씨·섭씨·켈빈 중 무엇으로 나타내도 물리학은 바뀌지 않는다",
+      "why": "적절. likewise로 길이의 논리를 온도에 그대로 적용해요."
+    },
+    {
+      "en": "④ Perception of temperature can vary with humidity and wind, even at the same measured value.",
+      "ko": "같은 측정값이라도 체감 온도는 습도와 바람에 따라 다르다",
+      "why": "정답(무관). 소재는 온도지만 '사람의 느낌'에 관한 이야기라, 단위·척도 선택이 임의적이라는 흐름과 맞지 않아요."
+    },
+    {
+      "en": "⑤ We conclude that the choice of scale is an arbitrary choice in description, and that any feature that depends on that choice is scale-dependent.",
+      "ko": "척도 선택은 임의적이고, 그 선택에 달린 특성은 척도에 의존한다",
+      "why": "적절. ③의 온도 척도 이야기를 받아 ①·②와 같은 형식(We conclude …)으로 결론을 내려요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동격 (명사, 명사구)",
+      "ex": "Consider units of measure, one kind of descriptive device we are familiar with using in physics.",
+      "d": "콤마 뒤 one kind of descriptive device가 units of measure를 다시 설명해요. we are familiar with using ~은 device를 꾸미는 관계절(목적격 관계대명사 생략)이에요."
+    },
+    {
+      "t": "prefer A over B",
+      "ex": "… physics does not prefer one unit of length over any other …",
+      "d": "'B보다 A를 선호하다'. any other 뒤에는 unit이 생략됐어요."
+    },
+    {
+      "t": "긴 주어 + is",
+      "ex": "… any feature depending on that choice, such as the particular numerical value assigned to …, is not out there in the world apart from a choice of unit.",
+      "d": "주어 any feature를 depending on ~이 꾸미고, such as ~ 삽입구가 끼어 있어요. 동사는 is예요. assigned to ~는 value를 꾸미는 과거분사예요."
+    },
+    {
+      "t": "switch from A to B",
+      "ex": "… nothing in the physics changes when we switch from one scale to another.",
+      "d": "'A에서 B로 바꾸다'. nothing이 주어라 '아무것도 변하지 않는다'로 해석해요."
+    },
+    {
+      "t": "conclude that ~, and that ~",
+      "ex": "We conclude that the choice of scale is an arbitrary choice in description, and that any feature that depends on that choice is scale-dependent.",
+      "d": "conclude의 목적어인 that절 두 개가 and로 이어졌어요. 두 번째 that 안의 that depends ~는 feature를 꾸미는 관계절이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "unit of measure",
+      "측정 단위"
+    ],
+    [
+      "descriptive",
+      "서술하는, 묘사하는"
+    ],
+    [
+      "device",
+      "장치, 수단"
+    ],
+    [
+      "spatial",
+      "공간의"
+    ],
+    [
+      "in terms of",
+      "~의 관점에서, ~으로"
+    ],
+    [
+      "regardless",
+      "상관없이"
+    ],
+    [
+      "convenience",
+      "편의"
+    ],
+    [
+      "numerical",
+      "수치의"
+    ],
+    [
+      "assign",
+      "부여하다"
+    ],
+    [
+      "separation",
+      "분리, 간격"
+    ],
+    [
+      "apart from",
+      "~와 별개로"
+    ],
+    [
+      "likewise",
+      "마찬가지로"
+    ],
+    [
+      "scale",
+      "척도, 눈금"
+    ],
+    [
+      "perception",
+      "인식, 지각"
+    ],
+    [
+      "humidity",
+      "습도"
+    ],
+    [
+      "arbitrary",
+      "임의적인"
+    ],
+    [
+      "scale-dependent",
+      "척도에 의존하는"
+    ]
+  ],
+  "summary": {
+    "en": "In physics, units and scales are chosen arbitrarily for convenience, so any value that depends on that choice is not a feature of the world itself.",
+    "ko": "물리학에서 단위와 척도는 편의를 위해 임의로 선택되므로, 그 선택에 달린 값은 세계 자체의 특성이 아니다."
+  },
+  "writing": {
+    "en": "Changing the unit does not change the physics.",
+    "ko": "단위를 바꾼다고 물리학이 바뀌지는 않는다."
+  },
+  "tip": "무관한 문장은 '소재는 같고 초점이 다른 문장'이에요. ④도 temperature라는 같은 단어로 자연스러워 보이지만, 글은 '단위 선택'을, ④는 '사람의 느낌'을 말해요. 또 ① We conclude, ② We further conclude, ⑤ We conclude처럼 반복되는 틀이 보이면 그 틀에서 벗어난 문장을 의심하세요.",
+  "note": "④는 temperature 하나로 끼어든 문장이에요. 단어가 같다고 넘어가지 말고 '이 문장이 글의 결론을 돕는가'를 꼭 물어보세요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 35번 정답은?",
+      "④예요. 글은 물리학에서 단위·척도의 선택이 임의적이라는 내용인데, ④만 습도와 바람에 따라 달라지는 체감 온도를 말해요."
+    ],
+    [
+      "2025 10월 고2 35번은 어떤 유형인가요?",
+      "글의 전체 흐름과 관계 없는 문장을 고르는 2점 문항이에요. 물리학의 측정 단위와 척도를 다룬 지문이에요."
+    ],
+    [
+      "③도 온도 이야기인데 왜 무관하지 않나요?",
+      "③은 '온도도 어떤 척도로 나타내든 물리학은 같다'고 해서 길이 단위의 논리를 그대로 이어 가요. ④는 같은 온도라도 사람의 '느낌'이 다르다는 다른 주제예요."
+    ]
+  ]
+}

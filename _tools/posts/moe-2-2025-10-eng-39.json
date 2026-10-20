@@ -1,0 +1,199 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 39,
+  "type": "문장 삽입",
+  "points": 3,
+  "answer": 4,
+  "topic": "폐기 중심 경제에서 '서비스로서의 상품'으로",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 39번",
+    "2025 10월 고2 영어 39번 해설",
+    "고2 10월 모의고사 39번 정답",
+    "고2 모의고사 문장 삽입",
+    "products as a service planned obsolescence 지문",
+    "계획적 노후화 서비스로서의 상품"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 39번은 '버려져야 수요가 생긴다'는 낡은 생각에서 벗어나 수리·재제조로 '서비스로서의 상품'이라는 새 수요를 만들 수 있다는 문장 삽입 문항이에요. 주어진 문장 끝의 products as a service를 ④ 뒤의 Through this setup(임대 구조)이 받아요. 정답은 ④예요.",
+  "flow": [
+    [
+      "통념",
+      "폐기는 오랫동안 경제를 움직이는 필수 동력으로 여겨졌다. 버려지게 설계하면 수요가 계속된다."
+    ],
+    [
+      "전략",
+      "계획적 노후화, 수리 도구 접근 제한, 값싼 자재 같은 전략으로 폐기를 불가피하게 만들었다."
+    ],
+    [
+      "결과",
+      "소비자는 제품을 오래 쓰지 못하고 결국 교체해야 한다."
+    ],
+    [
+      "전환",
+      "(주어진 문장) 그러나 폐기를 없애는 수리·재제조가 '서비스로서의 상품'이라는 다른 수요를 만든다는 걸 그들은 몰랐다."
+    ],
+    [
+      "새 모델",
+      "기업은 제품을 팔지 않고 임대하며, 유지·수리 서비스로 수익을 내고 오래가는 제품을 만들게 된다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "All these strategies ensure that the consumer will have limited access to the product in use and will eventually require a replacement.",
+      "ko": "이 모든 전략들은 소비자가 사용 중인 제품에 제한된 접근을 하게 될 것이고 결국에는 교체를 필요로 할 것을 보장한다.",
+      "note": "여기까지는 '폐기가 수요를 만든다'는 기존 생각 쪽 이야기예요. 주어진 문장의 Those who supported the idea(그 생각을 지지한 사람들)가 가리킬 내용이 여기서 완성돼요."
+    },
+    {
+      "en": "Through this setup, companies simply lease out products that were once sold directly to the customer.",
+      "ko": "이러한 구조를 통해 기업들은 한때 소비자에게 직접 판매되었던 제품들을 단순히 임대한다.",
+      "note": "this setup(이러한 구조)이 가리킬 대상이 ④ 앞에는 없어요. 주어진 문장의 products as a service가 들어가야 '이 구조 = 서비스로서의 상품'이 돼요."
+    },
+    {
+      "en": "With this transition of ownership, companies maintain profit by offering maintenance and repair services and are encouraged to develop long-lasting products.",
+      "ko": "이러한 소유권의 이전으로 기업들은 유지·수리 서비스를 제공함으로써 수익을 유지하고 더 오래가는 제품을 개발하도록 장려된다.",
+      "note": "repair가 주어진 문장의 repair and remanufacturing과 이어지고, transition of ownership은 앞 문장의 lease out을 받아요. ⑤ 자리는 이미 흐름이 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "판매와 수요 관계 설명 뒤",
+      "why": "뒤의 Therefore가 '판매는 수요에 달려 있다'는 앞 문장의 결론을 이끌어요. 아직 폐기 전략도 나오지 않아 Those who supported the idea가 가리킬 게 부족해요."
+    },
+    {
+      "en": "②",
+      "ko": "'버려지게 설계' 결론 뒤",
+      "why": "뒤 문장이 폐기를 불가피하게 만드는 구체적인 전략들을 소개하며 앞 내용을 이어 가요. 여기서 반대 방향(서비스 모델)으로 꺾으면 흐름이 끊겨요."
+    },
+    {
+      "en": "③",
+      "ko": "전략 소개 뒤",
+      "why": "뒤의 All these strategies가 바로 앞의 전략 목록을 받아요. 둘 사이를 떼어 놓을 수 없어요."
+    },
+    {
+      "en": "④",
+      "ko": "교체 필요 결과 뒤",
+      "why": "정답. 기존 생각을 다 설명한 뒤 '그들은 몰랐다'로 뒤집고 products as a service를 꺼내면, Through this setup(임대 구조)이 그것을 받아 설명해요."
+    },
+    {
+      "en": "⑤",
+      "ko": "임대 구조 설명 뒤",
+      "why": "this transition of ownership이 앞 문장의 '판매 → 임대'를 받아 자연스럽게 이어져요. 게다가 this setup이 ④ 앞에서 가리킬 대상이 없는 문제가 그대로 남아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "fail to V + that절",
+      "ex": "Those who supported the idea that waste is necessary to drive demand failed to realize that prioritizing the elimination of waste … creates a different kind of demand",
+      "d": "'~하지 못했다'. the idea that은 동격(그 생각 = 폐기가 필요하다). that절 안의 주어는 동명사구 prioritizing …이라 단수 동사 creates예요."
+    },
+    {
+      "t": "콜론(:) 뒤 구체화",
+      "ex": "… creates a different kind of demand: products as a service.",
+      "d": "콜론 뒤는 앞 명사(a different kind of demand)를 구체적으로 풀어 줘요. '다른 종류의 수요, 즉 서비스로서의 상품'."
+    },
+    {
+      "t": "design O to V",
+      "ex": "Therefore, if you design the product to eventually be wasted, you can ensure that …",
+      "d": "'O가 ~하도록 설계하다'. to be wasted는 수동 to부정사, '결국 버려지도록'."
+    },
+    {
+      "t": "관계대명사 that + 수동태",
+      "ex": "… companies simply lease out products that were once sold directly to the customer.",
+      "d": "that이 products를 꾸며요. were sold는 과거 수동, '한때 직접 판매되었던 제품들'."
+    }
+  ],
+  "vocab": [
+    [
+      "driver",
+      "동력, 원동력"
+    ],
+    [
+      "be tied to",
+      "~에 결부되다"
+    ],
+    [
+      "dependent on",
+      "~에 의존하는"
+    ],
+    [
+      "sustain",
+      "지속시키다"
+    ],
+    [
+      "incorporate",
+      "포함하다"
+    ],
+    [
+      "inevitable",
+      "불가피한"
+    ],
+    [
+      "planned obsolescence",
+      "계획적 노후화"
+    ],
+    [
+      "replacement",
+      "교체(품)"
+    ],
+    [
+      "prioritize",
+      "우선시하다"
+    ],
+    [
+      "elimination",
+      "제거"
+    ],
+    [
+      "remanufacturing",
+      "재제조"
+    ],
+    [
+      "setup",
+      "구조, 체계"
+    ],
+    [
+      "lease out",
+      "임대하다"
+    ],
+    [
+      "transition",
+      "이전, 전환"
+    ],
+    [
+      "ownership",
+      "소유권"
+    ],
+    [
+      "maintenance",
+      "유지, 보수"
+    ],
+    [
+      "long-lasting",
+      "오래 지속되는"
+    ]
+  ],
+  "summary": {
+    "en": "Although waste was long seen as necessary to keep demand going, eliminating waste through repair and remanufacturing creates a new kind of demand in which companies lease products and profit from services.",
+    "ko": "폐기는 오랫동안 수요 유지에 필요하다고 여겨졌지만, 수리와 재제조로 폐기를 없애면 기업이 제품을 임대하고 서비스로 수익을 내는 새로운 수요가 생긴다."
+  },
+  "writing": {
+    "en": "Products that last can still keep a business profitable.",
+    "ko": "오래가는 제품도 여전히 사업의 수익을 유지할 수 있다."
+  },
+  "tip": "주어진 문장이 Those who supported the idea … failed to realize처럼 '앞의 생각을 뒤집는' 문장이면, 그 생각이 다 설명된 지점 뒤에 들어가요. 그리고 주어진 문장 끝의 새 개념(products as a service)을 바로 받는 지시어(this setup)가 있는 곳을 찾으면 확정돼요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 39번 정답은?",
+      "④예요. 폐기 중심 전략과 그 결과 설명이 끝난 뒤 products as a service를 꺼내야, 뒤의 Through this setup이 그 구조를 받아요."
+    ],
+    [
+      "2025 10월 고2 39번은 어떤 유형인가요?",
+      "주어진 문장이 들어갈 위치를 고르는 3점 문장 삽입 문항이에요. 계획적 노후화와 '서비스로서의 상품'을 다룬 지문이에요."
+    ],
+    [
+      "⑤가 오답인 이유는?",
+      "⑤ 뒤의 this transition of ownership은 앞 문장의 '판매 → 임대'를 받아 이미 잘 이어져요. 또 ④ 뒤 this setup이 가리킬 대상이 없는 문제가 남아요."
+    ]
+  ]
+}

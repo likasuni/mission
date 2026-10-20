@@ -1,0 +1,201 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 34,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 2,
+  "topic": "침묵의 나선: 사람들은 자기 의견이 다수라고 느낄 때 더 드러낸다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 34번",
+    "2025 10월 고2 영어 34번 해설",
+    "고2 10월 모의고사 34번 정답",
+    "고2 모의고사 빈칸 추론",
+    "침묵의 나선 spiral of silence 지문",
+    "Noelle-Neumann 여론 이론",
+    "빈칸 추론 해설"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 34번은 Noelle-Neumann의 '침묵의 나선' 이론, 즉 자기 의견이 인기 있다고 느끼는 사람은 말하고 그렇지 않은 사람은 입을 다문다는 내용의 빈칸 추론 문항이에요. 빈칸은 이 이론의 정의를 일상 행동(배지, 범퍼 스티커, SNS)에 다시 적용한 자리예요. 정답은 ② they perceive that others share their opinions예요.",
+  "flow": [
+    [
+      "관찰",
+      "Noelle-Neumann은 선거 운동 중 어떤 견해는 더 많이 다뤄지고, 사람들은 특히 자기 의견이 인기 없다고 여길 때 입을 다문다는 것을 관찰했다."
+    ],
+    [
+      "개념",
+      "이것이 '침묵의 나선'이다. 자기 의견이 인기 있다고 느끼는 사람은 표현하고, 그렇지 않다고 느끼는 사람은 침묵한다."
+    ],
+    [
+      "전개",
+      "이 과정이 나선처럼 이어져 한쪽은 상당한 주목을 받고, 다른 쪽은 거의 받지 못하게 된다."
+    ],
+    [
+      "적용",
+      "사람들은 말, 배지, 범퍼 스티커, SNS 등으로 의견을 표현하는데, 이 이론에 따르면 남들도 같은 의견이라고 인식할 때 이런 행동을 더 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "… sometimes people muted their opinions rather than talking about them, especially if those opinions were perceived to be unpopular.",
+      "ko": "… 때때로 사람들은 자신의 의견을 말하기보다 침묵했는데, 특히 그 의견이 인기 없다고 인식될 때 그랬다.",
+      "note": "인기 없다고 느끼면 '침묵'한다는 말을 뒤집으면, 인기 있다(남들도 같은 생각이다)고 느끼면 '표현'한다는 뜻이 돼요."
+    },
+    {
+      "en": "The spiral of silence occurs when individuals who perceive that their opinions are popular express them, whereas those who do not think their opinions are popular remain quiet.",
+      "ko": "침묵의 나선은 자신의 의견이 대중적이라고 인식하는 개인은 그것을 표현하는 반면, 자신의 의견이 대중적이라고 생각하지 않는 사람들은 조용히 있을 때 일어난다.",
+      "note": "이론의 정의 문장이에요. perceive that their opinions are popular가 정답 ②의 perceive that others share their opinions로 바뀌어 표현됐어요."
+    },
+    {
+      "en": "According to this theory, people are more apt to do these kinds of things when ____________.",
+      "ko": "이 이론에 따르면, 사람들은 ____________ 때 이런 종류의 일들을 더 하는 경향이 있다.",
+      "note": "these kinds of things = 말하기, 배지 달기, 스티커 붙이기, SNS에 올리기, 즉 '의견 표현'이에요. 의견을 표현하는 조건을 정의 문장에서 찾으면 돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "their beliefs begin to conflict with expertise",
+      "ko": "자신의 신념이 전문 지식과 충돌하기 시작할",
+      "why": "전문 지식(expertise)은 글에 나오지 않아요. 글의 기준은 '다른 사람들의 의견'이지 전문가가 아니에요."
+    },
+    {
+      "en": "they perceive that others share their opinions",
+      "ko": "다른 사람들이 자신의 의견을 공유한다고 인식할",
+      "why": "정답. 정의 문장의 perceive that their opinions are popular(내 의견이 인기 있다고 인식함)를 바꿔 말한 표현이에요."
+    },
+    {
+      "en": "they evolve to become tolerant towards criticism",
+      "ko": "비판에 관대해지도록 발전할",
+      "why": "비판을 견디는 태도는 다루지 않아요. 오히려 사람들은 인기 없는 의견이면 비판을 피해 침묵한다는 내용이에요."
+    },
+    {
+      "en": "they feel only breaking the silence can change the game",
+      "ko": "침묵을 깨는 것만이 판도를 바꿀 수 있다고 느낄",
+      "why": "silence를 재활용한 함정이에요. 소수 의견이 침묵을 깨고 나선다는 건 이론과 반대예요."
+    },
+    {
+      "en": "their opposite opinion becomes more and more dominant",
+      "ko": "자신과 반대되는 의견이 점점 더 우세해질",
+      "why": "반대 의견이 우세해지면 이론상 오히려 침묵해요. 표현이 늘어나는 조건과는 정반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "perceive + O + to be ~ (수동태)",
+      "ex": "… especially if those opinions were perceived to be unpopular.",
+      "d": "perceive A to be B '~을 B라고 인식하다'의 수동태예요. '그 의견들이 인기 없다고 인식되면'."
+    },
+    {
+      "t": "주어 + 관계절 + 동사",
+      "ex": "… individuals who perceive that their opinions are popular express them, whereas those who do not think their opinions are popular remain quiet.",
+      "d": "주어 individuals를 who ~ popular가 꾸미고 동사는 express예요. whereas 뒤도 같은 구조로 주어 those, 동사 remain이에요. 긴 주어 속에서 진짜 동사를 찾는 연습에 좋아요."
+    },
+    {
+      "t": "so that (결과)",
+      "ex": "This process occurs in a spiral, so that one side of an issue ends up with considerable publicity and the other side with very little.",
+      "d": "콤마 뒤 so that은 '그래서 (결국) ~하다'라는 결과예요. the other side 뒤에는 ends up이 반복을 피해 생략됐어요."
+    },
+    {
+      "t": "end up with",
+      "ex": "… one side of an issue ends up with considerable publicity …",
+      "d": "'결국 ~을 갖게 되다'. 나선처럼 쌓여 마지막에 생기는 결과를 말해요."
+    },
+    {
+      "t": "be apt to V",
+      "ex": "… people are more apt to do these kinds of things when ____________.",
+      "d": "'~하는 경향이 있다'(= be likely to, tend to). more가 붙어 '더 ~하는 경향이 있다'예요."
+    }
+  ],
+  "vocab": [
+    [
+      "political",
+      "정치의"
+    ],
+    [
+      "observe",
+      "관찰하다"
+    ],
+    [
+      "election campaign",
+      "선거 운동"
+    ],
+    [
+      "get play",
+      "주목받다, 다뤄지다"
+    ],
+    [
+      "mute",
+      "침묵시키다, 소리를 줄이다"
+    ],
+    [
+      "perceive",
+      "인식하다"
+    ],
+    [
+      "unpopular",
+      "인기 없는"
+    ],
+    [
+      "spiral",
+      "나선"
+    ],
+    [
+      "whereas",
+      "~인 반면"
+    ],
+    [
+      "remain quiet",
+      "침묵을 지키다"
+    ],
+    [
+      "considerable",
+      "상당한"
+    ],
+    [
+      "publicity",
+      "주목, 홍보"
+    ],
+    [
+      "bumper sticker",
+      "범퍼 스티커"
+    ],
+    [
+      "apt",
+      "~하는 경향이 있는"
+    ],
+    [
+      "share",
+      "공유하다, 함께 가지다"
+    ],
+    [
+      "tolerant",
+      "관대한"
+    ],
+    [
+      "dominant",
+      "우세한, 지배적인"
+    ]
+  ],
+  "summary": {
+    "en": "According to the spiral of silence theory, people tend to express their opinions when they believe others agree with them and stay silent when they think their views are unpopular.",
+    "ko": "침묵의 나선 이론에 따르면, 사람들은 다른 사람들이 자신에게 동의한다고 믿을 때 의견을 표현하고, 자신의 견해가 인기 없다고 생각할 때는 침묵하는 경향이 있다."
+  },
+  "writing": {
+    "en": "People speak up more easily when they feel they are not alone.",
+    "ko": "사람들은 자신이 혼자가 아니라고 느낄 때 더 쉽게 목소리를 낸다."
+  },
+  "tip": "개념을 설명하는 글에서 빈칸이 마지막에 있으면, 빈칸은 대개 앞의 '정의 문장'을 다른 말로 바꾼 거예요. these kinds of things처럼 지시어가 나오면 무엇을 가리키는지(의견 표현) 먼저 확인하고, 정의 문장에서 '표현하는 조건'을 찾아 선택지와 맞춰 보세요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 34번 정답은?",
+      "② they perceive that others share their opinions(다른 사람들이 자신의 의견을 공유한다고 인식할)예요. 침묵의 나선 이론에서 사람들은 자기 의견이 인기 있다고 느낄 때 표현한다는 내용이에요."
+    ],
+    [
+      "2025 10월 고2 34번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. Noelle-Neumann의 '침묵의 나선' 이론을 다룬 지문이에요."
+    ],
+    [
+      "④ they feel only breaking the silence can change the game이 오답인 이유는?",
+      "silence라는 본문 단어를 쓴 함정이에요. 이론은 인기 없는 의견을 가진 사람이 침묵한다는 것이지, 침묵을 깨고 나선다는 게 아니에요."
+    ]
+  ]
+}

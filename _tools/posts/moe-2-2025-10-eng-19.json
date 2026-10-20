@@ -1,0 +1,62 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 19,
+  "type": "심경",
+  "points": 2,
+  "answer": 3,
+  "topic": "캄캄한 숲에서 길을 잃었다가 요리 냄새를 따라 삼촌의 오두막을 찾은 'I'",
+  "date": "2026-10-21",
+  "keywords": ["2025년 10월 고2 모의고사 영어 19번", "2025 10월 고2 영어 19번 해설", "고2 10월 모의고사 19번 정답", "고2 모의고사 심경 변화", "hopeless relieved 심경", "숲에서 길 잃은 이야기 지문"],
+  "lead": "2025년 10월 고2 모의고사 영어 19번은 어두운 숲에서 길을 잃고 절망하던 'I'가 요리 냄새를 따라가 삼촌의 오두막을 발견하고 안도하는 이야기예요. 앞부분 In desperation, 뒷부분 Thankful beyond words와 My hardship was over.가 단서예요. 정답은 ③ hopeless → relieved예요.",
+  "flow": [
+    ["출발", "집으로 가는 숲길 쪽으로 향하고 있었다."],
+    ["위기", "갑자기 빛 하나 없는 캄캄한 숲에 갇혀 비틀거리다 넘어지고, 언덕에서 굴러 옷이 찢어지고 다쳤다."],
+    ["절망", "자포자기하여 나무에 기대 '어디인지도 모르겠고, 누가 내가 사라진 걸 알기는 할까?' 생각했다."],
+    ["전환", "그때 요리 냄새가 풍겨 와 따라가니 나무 사이로 노란 불빛이 보였다."],
+    ["안도", "Krull 삼촌의 오두막이었다. 말할 수 없이 감사했고, 고생이 끝났다."]
+  ],
+  "evidence": [
+    {"en": "In desperation I stopped and leaned against a tree. I have no idea where I am now. Will anyone even notice that I'm gone?", "ko": "나는 자포자기한 채 멈춰 서서 나무에 기대었다. '내가 지금 어디에 있는지 전혀 모르겠어. 내가 사라진 걸 누군가 알아차리기는 할까?'", "note": "desperation(절망), '아무도 모를 것'이라는 속마음이 앞부분 심경 hopeless(절망한)를 보여 줘요."},
+    {"en": "It was then that a faint aroma drifted through the darkness: the scent of cooking.", "ko": "어둠을 뚫고 희미한 향이 날려 온 것은 바로 그때였다. 요리 냄새였다.", "note": "It was then that ~(바로 그때) 강조 구문이 분위기가 바뀌는 지점이에요."},
+    {"en": "Thankful beyond words, I knew I could finally ask for help. My hardship was over.", "ko": "말로 표현할 수 없을 만큼 감사하며, 나는 마침내 도움을 청할 수 있다는 걸 알았다. 나의 고난은 끝났다.", "note": "finally, hardship was over가 '이제 살았다'는 안도감(relieved)이에요."}
+  ],
+  "choices": [
+    {"en": "curious → amazed", "ko": "호기심 있는 → 놀란", "why": "길을 잃은 상황에서 호기심은 맞지 않아요. 앞부분은 두려움과 절망이에요."},
+    {"en": "bored → satisfied", "ko": "지루한 → 만족한", "why": "다치고 길을 잃은 긴박한 상황이라 지루함과는 거리가 멀어요."},
+    {"en": "hopeless → relieved", "ko": "절망한 → 안도한", "why": "정답. In desperation과 '누가 알기나 할까'는 절망, 오두막을 찾고 My hardship was over는 안도예요."},
+    {"en": "frustrated → regretful", "ko": "좌절한 → 후회하는", "why": "앞은 비슷해 보여도, 뒷부분에 후회하는 말은 없어요. 오히려 감사하고 안심해요."},
+    {"en": "indifferent → grateful", "ko": "무관심한 → 감사하는", "why": "Thankful은 grateful과 통하지만, 앞부분은 무관심이 아니라 절망이에요. 뒤만 맞는 함정이에요."}
+  ],
+  "grammar": [
+    {"t": "as though + 과거완료", "ex": "But almost as though someone had switched off all the lights I was suddenly in a black forest …", "d": "'마치 누군가 불을 다 꺼 버린 것처럼'. 실제가 아닌 일을 비유할 때 as though(= as if) 뒤에 가정법 시제를 써요."},
+    {"t": "분사구문 (이유·상태)", "ex": "Feeling lost, I stumbled.", "d": "= Because I felt lost. '길을 잃은 느낌이 들어서 비틀거렸다'. 문장 앞 -ing가 주어의 상태를 알려 줘요."},
+    {"t": "It was ~ that 강조 구문", "ex": "It was then that a faint aroma drifted through the darkness: …", "d": "then(그때)을 강조해 '바로 그때였다'. 심경이 바뀌는 순간을 표시하니 심경 문제에서 꼭 눈여겨보세요."},
+    {"t": "형용사로 시작하는 분사구문", "ex": "Thankful beyond words, I knew I could finally ask for help.", "d": "앞에 Being이 생략된 형태예요(Being thankful …). 주어 I의 감정 상태를 바로 보여 줘요."}
+  ],
+  "vocab": [
+    ["head", "향하다"],
+    ["switch off", "끄다"],
+    ["stumble", "비틀거리다"],
+    ["tear (tore-torn)", "찢다"],
+    ["injure", "다치게 하다"],
+    ["desperation", "절망, 자포자기"],
+    ["lean against", "~에 기대다"],
+    ["faint", "희미한"],
+    ["aroma", "향기"],
+    ["drift", "떠다니다, 날려 오다"],
+    ["scent", "냄새"],
+    ["glow", "빛나다"],
+    ["cabin", "오두막"],
+    ["beyond words", "말로 표현할 수 없을 만큼"],
+    ["hardship", "고난, 고생"],
+    ["relieved", "안도한"]
+  ],
+  "summary": {"en": "Lost and hurt in a dark forest, the narrator feels hopeless, but the smell of cooking leads him to his uncle's cabin and he feels relieved.", "ko": "캄캄한 숲에서 길을 잃고 다쳐 절망하던 화자는 요리 냄새를 따라 삼촌의 오두막을 찾아내고 안도한다."},
+  "writing": {"en": "Following the smell of cooking, I finally found my way to safety.", "ko": "요리 냄새를 따라가서 나는 마침내 안전한 곳에 이르렀다."},
+  "tip": "심경 변화 문제는 앞부분과 뒷부분 감정을 따로 잡으세요. 바뀌는 지점(It was then that, Suddenly, But)을 찾고, 그 앞뒤의 감정 단어(desperation, Thankful)를 선택지와 맞춰 봐요. ⑤처럼 한쪽만 맞는 선택지가 꼭 있어요.",
+  "faq": [
+    ["2025년 10월 고2 모의고사 영어 19번 정답은?", "③ hopeless → relieved(절망한 → 안도한)예요. 숲에서 길을 잃어 절망했다가 삼촌의 오두막을 찾고 안도하는 이야기예요."],
+    ["2025 10월 고2 19번은 어떤 유형인가요?", "글에 드러난 'I'의 심경 변화를 고르는 2점 문항이에요."],
+    ["⑤ indifferent → grateful이 오답인 이유는?", "뒤쪽 Thankful은 grateful과 비슷하지만, 앞부분은 In desperation처럼 절망한 상태예요. 무관심(indifferent)이 아니에요."]
+  ]
+}

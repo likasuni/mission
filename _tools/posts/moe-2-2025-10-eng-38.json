@@ -1,0 +1,204 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 38,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 5,
+  "topic": "야생 생물 관리: 적극적 관리와 소극적 관리",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 38번",
+    "2025 10월 고2 영어 38번 해설",
+    "고2 10월 모의고사 38번 정답",
+    "고2 모의고사 문장 삽입",
+    "wildlife management active inactive 지문",
+    "야생 생물 관리 국립 공원"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 38번은 야생 생물 관리를 적극적 관리와 소극적 관리로 나누어 설명하는 문장 삽입 문항이에요. 주어진 문장의 Other populations와 not be actively managed가 '이제 소극적 관리로 넘어간다'는 신호이고, ⑤ 뒤의 In such situations가 그 상황(국립 공원처럼 적극 관리하지 않는 경우)을 받아요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "도입",
+      "야생 생물 관리는 모두 관리 책임을 뜻하며, 적극적 관리와 소극적 관리 두 범주로 나뉜다."
+    ],
+    [
+      "적극적 관리 ①",
+      "거주지 이전이나 사냥처럼 개체 수를 직접 늘리거나 줄인다."
+    ],
+    [
+      "적극적 관리 ②",
+      "서식지를 바꾸거나, 개체 수가 적으면 포식자 통제·서식지 개선 같은 방법을 쓴다. 이것들은 모두 적극적 접근이다."
+    ],
+    [
+      "전환",
+      "(주어진 문장) 국립 공원의 개체군처럼 적극적으로 관리되지 않는 개체군도 있다."
+    ],
+    [
+      "소극적 관리",
+      "그런 상황에서는 외부 영향을 최소화하는데, 이는 주로 동물이 아니라 사람을 관리하는 일이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "These efforts represent active approaches to management.",
+      "ko": "이러한 노력들은 관리에 대한 적극적인 접근법을 나타낸다.",
+      "note": "적극적 관리 설명이 여기서 마무리돼요. 바로 뒤에 '적극적으로 관리되지 않는' 경우가 나올 자리가 생겨요."
+    },
+    {
+      "en": "In such situations, management activities minimize external influences on populations and habitat, which often involves management of humans and not animals.",
+      "ko": "그러한 상황들에서 관리 활동은 개체군과 서식지에 대한 외부 영향을 최소화하는데, 이는 대체로 동물이 아닌 인간에 대한 관리를 포함한다.",
+      "note": "In such situations(그러한 상황들)가 가리킬 '상황'이 바로 앞에 없어요. 주어진 문장의 '국립 공원처럼 적극적으로 관리되지 않는 경우'가 들어가야 이어져요."
+    },
+    {
+      "en": "… can be classified into two broad categories: active management and inactive management.",
+      "ko": "… 적극적 관리와 소극적 관리라는 두 가지 넓은 범주로 분류될 수 있다.",
+      "note": "첫 문장에서 두 범주를 예고했는데 본문은 적극적 관리만 길게 다뤄요. 소극적 관리를 꺼내는 문장이 어딘가 필요하다는 단서예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "두 범주 소개 뒤",
+      "why": "바로 뒤가 Active management로 적극적 관리 설명을 시작해요. 여기서 소극적 관리를 먼저 꺼내면 이후 흐름이 뒤죽박죽돼요."
+    },
+    {
+      "en": "②",
+      "ko": "사냥·이전 예시 뒤",
+      "why": "뒤 문장이 Populations can also be actively managed로 적극적 관리의 또 다른 방법(also)을 이어 가요. 끊을 틈이 없어요."
+    },
+    {
+      "en": "③",
+      "ko": "서식지 변경 설명 뒤",
+      "why": "뒤에 other active management(포식자 통제·서식지 개선)가 계속 나와요. 아직 적극적 관리 이야기 중이에요."
+    },
+    {
+      "en": "④",
+      "ko": "포식자 통제 예시 뒤",
+      "why": "뒤의 These efforts가 앞의 포식자 통제·서식지 개선을 받아 '적극적 접근'으로 정리해요. 여기에 넣으면 These efforts가 국립 공원을 가리키게 되어 어색해요."
+    },
+    {
+      "en": "⑤",
+      "ko": "적극적 관리 정리 뒤",
+      "why": "정답. 적극적 관리 정리 뒤에 '적극적으로 관리되지 않는 개체군'을 꺼내면, 뒤의 In such situations가 그 상황을 받아 소극적 관리를 설명해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "like 전치사 + 대명사 those",
+      "ex": "Other populations may not be actively managed, like those in national parks.",
+      "d": "like는 '~처럼'. those는 앞의 populations를 대신해요. '국립 공원에 있는 개체군들처럼'."
+    },
+    {
+      "t": "respectively",
+      "ex": "… in a direct manner through strategies like translocations or hunting, respectively.",
+      "d": "'각각'. 앞의 increasing or decreasing과 짝을 맞춰요. 이전 → 늘리기, 사냥 → 줄이기."
+    },
+    {
+      "t": "to the benefit or disadvantage of",
+      "ex": "Populations can also be actively managed by altering the habitat to the benefit or disadvantage of a population.",
+      "d": "'~에게 유리하게 또는 불리하게'. by -ing는 수단, '서식지를 바꿈으로써'."
+    },
+    {
+      "t": "계속적 용법 , which",
+      "ex": "… management activities minimize external influences on populations and habitat, which often involves management of humans and not animals.",
+      "d": "콤마 + which가 앞 내용 전체(외부 영향 최소화)를 받아요. 단수 취급이라 involves예요."
+    }
+  ],
+  "vocab": [
+    [
+      "wildlife",
+      "야생 생물"
+    ],
+    [
+      "imply",
+      "의미하다, 수반하다"
+    ],
+    [
+      "stewardship",
+      "관리 책임"
+    ],
+    [
+      "classify",
+      "분류하다"
+    ],
+    [
+      "category",
+      "범주"
+    ],
+    [
+      "active",
+      "적극적인"
+    ],
+    [
+      "inactive",
+      "소극적인, 활동하지 않는"
+    ],
+    [
+      "translocation",
+      "(다른 곳으로) 이주, 이전"
+    ],
+    [
+      "respectively",
+      "각각"
+    ],
+    [
+      "alter",
+      "바꾸다"
+    ],
+    [
+      "habitat",
+      "서식지"
+    ],
+    [
+      "agency",
+      "기관"
+    ],
+    [
+      "incorporate",
+      "포함하다"
+    ],
+    [
+      "predator",
+      "포식자"
+    ],
+    [
+      "neonatal",
+      "갓 태어난"
+    ],
+    [
+      "cover",
+      "은신처"
+    ],
+    [
+      "represent",
+      "나타내다"
+    ],
+    [
+      "external",
+      "외부의"
+    ]
+  ],
+  "summary": {
+    "en": "Wildlife can be managed actively by directly changing populations or habitats, or inactively by minimizing outside influences, which mostly means managing people.",
+    "ko": "야생 생물은 개체군이나 서식지를 직접 바꾸는 적극적 방식으로, 또는 외부 영향을 최소화하는 소극적 방식(주로 사람을 관리하는 일)으로 관리될 수 있다."
+  },
+  "writing": {
+    "en": "Sometimes protecting wildlife means managing people rather than animals.",
+    "ko": "때로는 야생 생물을 보호하는 것이 동물보다 사람을 관리하는 일이다."
+  },
+  "tip": "첫 문장에서 두 가지(active / inactive)를 예고했는데 한쪽만 설명된다면, 나머지 하나를 꺼내는 문장이 주어진 문장일 가능성이 커요. 그다음 such, these 같은 지시어가 가리킬 대상이 바로 앞에 있는지 하나씩 확인하세요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 38번 정답은?",
+      "⑤예요. 적극적 관리 설명이 끝난 뒤 '적극적으로 관리되지 않는 개체군'을 꺼내야 In such situations가 자연스럽게 이어져요."
+    ],
+    [
+      "2025 10월 고2 38번은 어떤 유형인가요?",
+      "주어진 문장이 들어갈 위치를 고르는 2점 문장 삽입 문항이에요. 야생 생물 관리의 두 방식을 다룬 지문이에요."
+    ],
+    [
+      "④가 오답인 이유는?",
+      "④ 뒤의 These efforts가 앞의 포식자 통제·서식지 개선을 받아 '적극적 접근'으로 정리하는 문장이라, 그 사이를 끊을 수 없어요."
+    ]
+  ],
+  "note": "In such situations처럼 such가 문장 맨 앞에 오면 '그런 상황이 바로 앞에 있나?'부터 확인하세요. 앞이 적극적 관리 정리 문장이면 가리킬 게 없으니, 거기가 빈자리예요."
+}

@@ -1,0 +1,201 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 30,
+  "type": "어휘",
+  "points": 3,
+  "answer": 5,
+  "topic": "자유주의 문화와 유교 문화가 보는 가족과 기회의 평등",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 30번",
+    "2025 10월 고2 영어 30번 해설",
+    "고2 10월 모의고사 30번 정답",
+    "고2 모의고사 어휘",
+    "낱말의 쓰임 3점",
+    "Confucian liberal culture family 지문",
+    "고2 영어 어휘 해설"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 30번은 자유주의 문화와 유교 문화가 가족과 기회의 평등을 어떻게 다르게 보는지 다룬 3점 어휘 문항이에요. 유교 문화는 기본 권리만 보장되면 가족 때문에 생기는 불평등도 '감수한다'는 흐름인데, ⑤ rejecting(거부하며)은 그 반대예요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "자유주의",
+      "개인을 위한 기회의 공정한 평등이 가족의 온전함을 지키는 것보다 중요하다."
+    ],
+    [
+      "유교",
+      "기회의 평등도 중요하지만 가족이 인간 번영의 근본이고, 개인은 시민이기 전에 가족 구성원이다."
+    ],
+    [
+      "결과",
+      "그래서 유교에서 가족은 사회적 불평등을 낳더라도 버릴 수 없는 내재적 가치를 지닌다."
+    ],
+    [
+      "정책 차이",
+      "자유주의 문화는 가족의 역할을 제한하고 평등주의 정부 프로그램을 늘리지만, 유교 문화는 복지 책임을 가족에게 맡기고 가족에서 비롯된 불평등을 용인한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Therefore, for Confucians, the family ③ possesses inherent value that should never be abandoned, even if it results in certain societal inequalities.",
+      "ko": "그러므로 유교를 따르는 사람들에게는, 가족은 그것이 어떤 사회적 불평등을 초래할지라도, 결코 포기되어서는 안 되는 내재적인 가치를 지닌다.",
+      "note": "유교 문화는 가족이 불평등을 낳더라도 가족을 지킨다고 했어요. 불평등을 '받아들이는' 입장이에요."
+    },
+    {
+      "en": "… may prefer to primarily assign welfare responsibilities to the family, ⑤ rejecting inequalities stemming from the existence of the family as long as everyone's basic freedoms and rights are safeguarded in the state.",
+      "ko": "… 국가에서 모든 사람의 기본적 자유와 권리들이 보장되는 한, 가족의 존재로 인해 발생하는 불평등을 거부하며(→ 용인하며) 복지에 대한 책임을 우선적으로 가족에게 부여하는 것을 선호할지도 모른다.",
+      "note": "as long as(~하는 한)는 조건을 걸고 '그 정도면 괜찮다'고 허용하는 말이에요. 복지를 가족에게 맡기면 가족 사이 불평등은 생기기 마련이니 rejecting이 아니라 tolerating(용인하며)이 맞아요."
+    },
+    {
+      "en": "Some cultures, like the liberal one, may choose to impose increasing ④ restrictions on the role of families …",
+      "ko": "자유주의 문화와 같은 일부 문화들은, 가족의 역할에 점점 더 많은 제약들을 부과하고 …",
+      "note": "자유주의는 기회의 평등을 위해 가족 역할을 '줄이는' 쪽이라 restrictions가 맞아요. On the other hand 뒤의 유교 문화는 그 반대 입장이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① outweighs",
+      "ko": "~보다 더 중요하다",
+      "why": "적절. 자유주의에서는 개인의 기회 평등이 가족의 온전함보다 더 중요해요. 뒤의 In contrast로 유교와 대비되는 흐름과 맞아요."
+    },
+    {
+      "en": "② essential",
+      "ko": "본질적인, 필수적인",
+      "why": "적절. 유교에서 가족은 인간 번영의 근본 역할을 하니, 가족 안에서 사는 것이 삶의 '본질적인' 방식이에요."
+    },
+    {
+      "en": "③ possesses",
+      "ko": "지니다, 소유하다",
+      "why": "적절. 가족이 결코 버려져서는 안 되는 내재적 가치를 '지닌다'는 뜻이라 자연스러워요."
+    },
+    {
+      "en": "④ restrictions",
+      "ko": "제약, 제한",
+      "why": "적절. 자유주의는 기회의 평등을 위해 가족의 역할에 '제약'을 두고 정부 프로그램을 늘려요."
+    },
+    {
+      "en": "⑤ rejecting",
+      "ko": "거부하며 → 용인하며",
+      "why": "정답(부적절). 유교 문화는 기본 권리만 보장되면(as long as) 가족에서 생기는 불평등을 받아들여요. tolerating/accepting(용인하며)이 맞아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "while 양보 (~이지만)",
+      "ex": "while seeking fair equality of opportunity for individuals is important, the family assumes a fundamental role in human flourishing",
+      "d": "while 절의 주어는 동명사구 seeking ~이고 단수 취급해서 is예요. '~이 중요하긴 하지만, 가족이 근본적 역할을 한다'로 강조점은 뒤에 있어요."
+    },
+    {
+      "t": "even if (~할지라도)",
+      "ex": "the family possesses inherent value that should never be abandoned, even if it results in certain societal inequalities",
+      "d": "even if는 '설령 ~하더라도'. 불평등이라는 대가가 있어도 가족을 지킨다는 유교의 입장을 보여 줘요."
+    },
+    {
+      "t": "분사구문 + 현재분사 후치 수식",
+      "ex": "rejecting inequalities stemming from the existence of the family",
+      "d": "', rejecting'은 동시 동작의 분사구문, stemming from ~은 inequalities를 뒤에서 꾸며요. '가족의 존재에서 비롯된 불평등'."
+    },
+    {
+      "t": "as long as (~하는 한)",
+      "ex": "as long as everyone's basic freedoms and rights are safeguarded in the state",
+      "d": "조건을 거는 접속사예요. '기본 권리만 보장된다면 괜찮다'는 허용의 뜻이라 ⑤를 판단하는 열쇠예요."
+    }
+  ],
+  "vocab": [
+    [
+      "liberal",
+      "자유주의의"
+    ],
+    [
+      "equality of opportunity",
+      "기회의 평등"
+    ],
+    [
+      "outweigh",
+      "~보다 더 중요하다"
+    ],
+    [
+      "preservation",
+      "보존"
+    ],
+    [
+      "integrity",
+      "온전함"
+    ],
+    [
+      "Confucian",
+      "유교의"
+    ],
+    [
+      "assume a role",
+      "역할을 맡다"
+    ],
+    [
+      "flourishing",
+      "번영"
+    ],
+    [
+      "inherent",
+      "내재적인, 고유한"
+    ],
+    [
+      "abandon",
+      "버리다, 포기하다"
+    ],
+    [
+      "impose",
+      "부과하다"
+    ],
+    [
+      "restriction",
+      "제약, 제한"
+    ],
+    [
+      "egalitarian",
+      "평등주의의"
+    ],
+    [
+      "in pursuit of",
+      "~을 추구하여"
+    ],
+    [
+      "assign",
+      "맡기다, 부여하다"
+    ],
+    [
+      "stem from",
+      "~에서 비롯되다"
+    ],
+    [
+      "safeguard",
+      "보호하다, 보장하다"
+    ],
+    [
+      "tolerate",
+      "용인하다 — ⑤ 자리에 맞는 말"
+    ]
+  ],
+  "summary": {
+    "en": "Liberal cultures put individual equality of opportunity above the family, while Confucian cultures value the family so highly that they accept the inequalities it creates as long as basic rights are protected.",
+    "ko": "자유주의 문화는 개인의 기회 평등을 가족보다 앞세우는 반면, 유교 문화는 가족을 매우 중시해 기본 권리가 보장되는 한 가족이 낳는 불평등을 받아들인다."
+  },
+  "writing": {
+    "en": "For Confucians, the family has value that should never be abandoned.",
+    "ko": "유교를 따르는 사람들에게 가족은 결코 버려져서는 안 되는 가치를 지닌다."
+  },
+  "tip": "두 입장을 비교하는 글은 먼저 'A 쪽 / B 쪽'으로 문장을 나눠 두세요. 그다음 밑줄 단어가 그 쪽 입장과 같은 방향인지 확인해요. 유교 쪽 문장에 '불평등을 거부한다'가 나오면, 앞에서 '불평등을 낳더라도 가족을 지킨다'고 한 것과 부딪히니 바로 의심하세요. as long as, even if 같은 조건·양보 표현이 방향을 잡아 줘요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 30번 정답은?",
+      "⑤ rejecting이에요. 유교 문화는 기본 권리만 보장되면 가족에서 비롯된 불평등을 받아들이므로 tolerating(용인하며) 같은 말이 와야 해요."
+    ],
+    [
+      "2025 10월 고2 30번은 어떤 유형인가요?",
+      "밑줄 친 낱말 중 문맥상 쓰임이 적절하지 않은 것을 고르는 3점 어휘 문항이에요."
+    ],
+    [
+      "④ restrictions는 왜 맞나요?",
+      "자유주의 문화는 기회의 평등을 위해 가족의 역할을 줄이고 정부 프로그램을 늘려요. 그래서 가족 역할에 '제약'을 둔다는 restrictions가 자연스러워요."
+    ]
+  ],
+  "note": "이 지문은 자유주의와 유교, 두 편의 입장을 섞어 놓아서 밑줄마다 '지금 누구 이야기지?'를 먼저 붙여야 해요. ⑤는 문장 끝 as long as까지 읽어야 '거부'가 아니라 '용인'이라는 게 보이니, 밑줄 단어만 보고 판단하지 말라고 수업에서 꼭 짚을게요."
+}

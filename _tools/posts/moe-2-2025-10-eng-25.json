@@ -1,0 +1,86 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 4,
+  "topic": "2022년 OECD 5개국 25~34세 청년의 최종 학위가 학사·석사인 비율",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 25번",
+    "2025 10월 고2 영어 25번 해설",
+    "고2 10월 모의고사 25번 정답",
+    "고2 모의고사 도표",
+    "bachelor's master's degree 도표",
+    "OECD 청년 학사 석사 비율 영어 도표"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 25번은 2022년 OECD 5개국에서 25~34세 청년의 최종 학위가 학사(Bachelor's)·석사(Master's)인 비율을 비교한 막대 도표 문항이에요. 룩셈부르크의 석사 비율 35%는 학사 비율 19%의 두 배(38%)에 못 미치는데 '두 배 이상'이라고 한 ④가 틀렸어요. 정답은 ④예요.",
+  "flow": [
+    ["도표", "나라별로 학사(흰색)·석사(회색) 막대가 있다. 한국 46%·3%, 뉴질랜드 34%·5%, 미국 29%·11%, 룩셈부르크 19%·35%, 프랑스 14%·23%."],
+    ["①", "학사 비율 한국 46%로 1위, 석사 비율 한국 3%로 꼴찌 → 일치"],
+    ["②", "학사 비율 2위 뉴질랜드 34%, 3위 미국 29% → 일치"],
+    ["③", "룩셈부르크(35>19)·프랑스(23>14)만 석사가 학사보다 높고, 나머지 세 나라는 학사가 높음 → 일치"],
+    ["④", "룩셈부르크 석사 35%, 학사 19%의 두 배는 38% → 35는 38보다 작아서 '두 배 이상' 불일치"],
+    ["⑤", "차이: 한국 43, 뉴질랜드 29, 미국 18, 룩셈부르크 16, 프랑스 9%p → 프랑스가 9%p로 가장 작음 → 일치"]
+  ],
+  "evidence": [
+    {
+      "en": "In Luxembourg, the percentage of young adults with a master’s as their highest degree was more than double that of those with a bachelor’s as their highest degree.",
+      "ko": "룩셈부르크에서, 석사 학위를 최종 학위로 가진 청년의 비율은 학사 학위를 최종 학위로 가진 청년 비율의 두 배 이상이었다.",
+      "note": "학사 19% × 2 = 38%인데 석사는 35%예요. 두 배에 못 미치니 도표와 맞지 않아요. 그래서 ④가 정답이에요."
+    },
+    {
+      "en": "In Luxembourg and France, the percentage of young adults with a master’s as their highest degree exceeded that of those with a bachelor’s as their highest degree, unlike the other three countries.",
+      "ko": "룩셈부르크와 프랑스에서는, 다른 세 나라와 달리, 석사 학위를 최종 학위로 가진 청년의 비율이 학사 학위를 최종 학위로 가진 청년의 비율을 넘어섰다.",
+      "note": "룩셈부르크 35>19, 프랑스 23>14로 석사가 더 높아요. 한국·뉴질랜드·미국은 학사가 더 높으니 일치해요."
+    },
+    {
+      "en": "France showed the smallest gap of 9 percentage points between the percentages of young adults with a bachelor’s and a master’s as their highest degree.",
+      "ko": "프랑스는 학사 학위와 석사 학위를 최종 학위로 가진 청년 비율 사이에 9퍼센트포인트로 가장 작은 차이를 보였다.",
+      "note": "23 − 14 = 9. 다른 나라 차이(43, 29, 18, 16)보다 작아서 일치해요."
+    }
+  ],
+  "choices": [
+    {"en": "The Republic of Korea had the highest percentage of young adults with a bachelor’s as their highest degree, but the lowest percentage of those with a master’s as their highest degree.", "ko": "한국은 학사가 최종 학위인 청년 비율이 가장 높았지만, 석사가 최종 학위인 비율은 가장 낮았다.", "why": "일치. 한국 학사 46%로 1위, 석사 3%로 5개국 중 가장 낮아요."},
+    {"en": "New Zealand had the second-highest percentage of young adults with a bachelor’s as their highest degree, followed by the United States.", "ko": "뉴질랜드는 학사가 최종 학위인 청년 비율이 두 번째로 높았고, 미국이 그 뒤를 이었다.", "why": "일치. 학사 비율은 한국 46, 뉴질랜드 34, 미국 29 순이에요."},
+    {"en": "In Luxembourg and France, the percentage of young adults with a master’s as their highest degree exceeded that of those with a bachelor’s as their highest degree, unlike the other three countries.", "ko": "룩셈부르크와 프랑스에서는 다른 세 나라와 달리 석사 비율이 학사 비율을 넘었다.", "why": "일치. 룩셈부르크 35>19, 프랑스 23>14이고, 나머지 세 나라는 학사가 더 높아요."},
+    {"en": "In Luxembourg, the percentage of young adults with a master’s as their highest degree was more than double that of those with a bachelor’s as their highest degree.", "ko": "룩셈부르크에서 석사 비율은 학사 비율의 두 배 이상이었다.", "why": "정답(불일치). 학사 19%의 두 배는 38%인데 석사는 35%라서 두 배에 못 미쳐요."},
+    {"en": "France showed the smallest gap of 9 percentage points between the percentages of young adults with a bachelor’s and a master’s as their highest degree.", "ko": "프랑스는 학사와 석사 비율 사이에 9퍼센트포인트로 가장 작은 차이를 보였다.", "why": "일치. 23 − 14 = 9%p로, 5개국 중 차이가 가장 작아요."}
+  ],
+  "grammar": [
+    {"t": "as one's highest degree", "ex": "… the percentage of 25- to 34-year-olds (young adults) who attained either a bachelor’s or a master’s degree as their highest degree …", "d": "as는 '~로서'. '최종 학위로서'라는 뜻이에요. either A or B는 'A나 B 중 하나'. bachelor’s 뒤에는 degree가 생략된 경우가 많아요."},
+    {"t": "followed by", "ex": "New Zealand had the second-highest percentage …, followed by the United States.", "d": "'그 뒤를 ~가 이었다'. 뉴질랜드가 2위, 미국이 3위라는 순서를 말해요."},
+    {"t": "대명사 that / those", "ex": "… exceeded that of those with a bachelor’s as their highest degree …", "d": "that = the percentage, those = young adults. 같은 말 반복을 피하는 대명사예요. 무엇을 비교하는지 정확히 바꿔 읽으세요."},
+    {"t": "배수 비교 more than double", "ex": "… was more than double that of those with a bachelor’s as their highest degree.", "d": "'~의 두 배 이상'. 기준 숫자(19)에 2를 곱해서(38) 실제 값(35)과 비교해야 해요."}
+  ],
+  "vocab": [
+    ["illustrate", "보여 주다"],
+    ["attain", "얻다, 획득하다"],
+    ["bachelor’s degree", "학사 학위"],
+    ["master’s degree", "석사 학위"],
+    ["highest degree", "최종 학위"],
+    ["selected", "선택된"],
+    ["as of", "~ 기준으로"],
+    ["followed by", "그 뒤를 ~가 이어"],
+    ["exceed", "넘다, 초과하다"],
+    ["unlike", "~와 달리"],
+    ["double", "두 배"],
+    ["gap", "차이"],
+    ["percentage point", "퍼센트포인트(%p)"]
+  ],
+  "summary": {
+    "en": "In 2022, Korea, New Zealand, and the United States had more young adults whose highest degree was a bachelor's, while Luxembourg and France had more whose highest degree was a master's.",
+    "ko": "2022년에 한국·뉴질랜드·미국은 최종 학위가 학사인 청년이 더 많았고, 룩셈부르크와 프랑스는 최종 학위가 석사인 청년이 더 많았다."
+  },
+  "writing": {
+    "en": "In Luxembourg, the share with a master's was high, but it was less than twice the share with a bachelor's.",
+    "ko": "룩셈부르크에서 석사 비율은 높았지만, 학사 비율의 두 배에는 못 미쳤다."
+  },
+  "tip": "도표 선택지에 double, twice, half가 나오면 반드시 곱셈이나 나눗셈을 직접 해 보세요. 이 문제처럼 막대 길이만 보면 두 배처럼 보여도 19 × 2 = 38과 35를 비교하면 바로 틀린 게 보여요. 나라별 차이(빼기)도 미리 적어 두면 ⑤ 같은 '가장 작은 차이' 문장을 빠르게 확인할 수 있어요.",
+  "note": "룩셈부르크 막대는 눈으로 보면 거의 두 배 같아서 넘어가기 쉬워요. 19 곱하기 2, 이 한 줄을 시험지에 꼭 써 보고 판단해요.",
+  "faq": [
+    ["2025년 10월 고2 모의고사 영어 25번 정답은?", "④예요. 룩셈부르크의 석사 비율 35%는 학사 비율 19%의 두 배인 38%에 못 미치는데 '두 배 이상'이라고 해서 도표와 맞지 않아요."],
+    ["2025 10월 고2 영어 25번은 어떤 유형인가요?", "도표의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. 2022년 OECD 5개국 25~34세 청년의 최종 학위가 학사·석사인 비율을 비교한 막대 도표예요."],
+    ["⑤ 프랑스 9%p 차이는 맞나요?", "네, 맞아요. 프랑스는 23 − 14 = 9%p이고, 한국 43, 뉴질랜드 29, 미국 18, 룩셈부르크 16%p라서 프랑스가 가장 작아요."]
+  ]
+}
