@@ -55,6 +55,9 @@ def short_type(p): return '장문' if p.get('n2') else p['type']
 def title_of(exam, ps):
     nums = '·'.join(no(p) for p in ps)
     types = '·'.join(dict.fromkeys(short_type(p) for p in ps))
+    if len(ps) > 6:  # 한 회차를 한꺼번에 공개한 날은 제목을 짧게
+        nums = f"{ps[0]['n']}~{ps[-1].get('n2') or ps[-1]['n']}"
+        types = '전 문항' if nums == '18~45' else '유형별'
     return f'{exam_name(exam)} {nums}번 정답과 풀이 포인트 ({types})'
 
 
