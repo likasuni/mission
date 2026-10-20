@@ -1,0 +1,204 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 32,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 1,
+  "topic": "재판은 소셜 네트워크의 압력이 아니라 법정에서",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 32번",
+    "2026 10월 고2 영어 32번 해설",
+    "고2 10월 모의고사 32번 정답",
+    "고2 모의고사 빈칸 추론",
+    "mass culture 대중문화 법정 지문",
+    "immune to popular pressure"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 32번은 사람들이 소셜 네트워크로 판결에 압력을 넣는 문화가 해롭다고 비판하는 3점 빈칸 추론 문항이에요. '정의는 대중 광장에서 실현되면 안 된다'는 문장이 결정적 단서라서, 재판은 대중의 압력에 흔들리지 않는 방식이어야 해요. 정답은 ① immune to popular pressure예요.",
+  "flow": [
+    [
+      "전제",
+      "대중문화를 전통과의 유대를 약하게 하는 요인으로 보면, 대중문화는 가족·학교 같은 매개 제도의 역할을 줄이고 그 영역에 겹쳐 들어온다."
+    ],
+    [
+      "예시",
+      "법정은 집단 생활이 정상적이고 조화롭게 돌아가는 데 중요한 전통적 사회 제도다."
+    ],
+    [
+      "문제",
+      "사람들이 소셜 네트워크로 사법 결정에 압력을 넣으면, 이 관행이 대중화되어 습관적인 문화가 되고 이는 해롭다."
+    ],
+    [
+      "주장",
+      "정의는 오늘날 소셜 네트워크라는 가상 공간이 된 대중 광장에서 실현되면 안 된다."
+    ],
+    [
+      "결론",
+      "재판하고 정의를 실현할 곳은 법정이며, 그 방식은 대중의 압력에 영향받지 않아야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "However, when people turn to social networks to put pressure on judicial decisions in certain mediated and politicized processes, this practice is popularized and becomes a habitual form of culture, which is harmful.",
+      "ko": "하지만 조정되고 정치화되는 어떤 과정에 있는 사법적 결정에 압력을 가하기 위해 사람들이 소셜 네트워크에 의존할 때, 이러한 관행은 대중화되고 습관적인 문화의 형태가 되며, 이는 해롭다.",
+      "note": "'판결에 압력을 넣는 것'이 해롭다고 분명히 말해요. 빈칸은 이 압력을 막는 방향이어야 해요."
+    },
+    {
+      "en": "Justice must not be done in the public square, which today is converted into a virtual dimension, the social networks.",
+      "ko": "재판은 대중 광장에서 집행되어서는 안 되며, 그것은 오늘날 가상의 차원, 즉 소셜 네트워크로 전환된다.",
+      "note": "public square(대중 광장) = 소셜 네트워크 = 대중의 목소리예요. 재판이 여기서 이뤄지면 안 된다는 건 대중의 압력에서 떨어져 있어야 한다는 뜻이에요."
+    },
+    {
+      "en": "In a democratic state of law, the appropriate place to judge and make justice is the court and in a way that is immune to popular pressure.",
+      "ko": "민주적인 법치 국가에서, 재판하고 정의를 실현하기에 적절한 장소는 법정이며 대중의 압력에 영향을 받지 않는 방식이어야 한다.",
+      "note": "빈칸 문장이에요. 장소는 법정(the court), 방식은 '대중의 압력에 면역인' 방식. 앞의 put pressure와 정반대로 짝을 이뤄요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "immune to popular pressure",
+      "ko": "대중의 압력에 영향을 받지 않는",
+      "why": "정답. 소셜 네트워크로 판결에 압력을 넣는 건 해롭고, 정의는 대중 광장에서 실현되면 안 된다는 흐름과 딱 맞아요."
+    },
+    {
+      "en": "supportive for the minority",
+      "ko": "소수자를 지지하는",
+      "why": "글은 소수자 보호가 아니라 대중의 압력과 재판의 독립을 다뤄요. 근거가 없어요."
+    },
+    {
+      "en": "responsive to social change",
+      "ko": "사회 변화에 반응하는",
+      "why": "사회 분위기에 맞춰 움직이는 재판이라면 오히려 글이 비판한 '압력에 흔들리는 재판'에 가까워요."
+    },
+    {
+      "en": "open to political negotiation",
+      "ko": "정치적 협상에 열려 있는",
+      "why": "글은 politicized processes(정치화된 과정)를 문제로 봐요. 정치적 협상에 열려 있으면 반대 방향이에요."
+    },
+    {
+      "en": "aligned with public expectations",
+      "ko": "대중의 기대에 맞춘",
+      "why": "대중의 기대에 맞추는 것은 대중 광장에서 정의를 실현하는 것과 같아요. 글의 주장과 정반대인 매력적인 오답이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문 (결과)",
+      "ex": "mass culture weakens the intermediary institutions in society …, diminishing their role and overlapping these institutions.",
+      "d": "', -ing'는 '그래서 ~하다'. 대중문화가 매개 제도를 약하게 해서 그 역할을 줄이고 그 영역에 겹쳐 들어온다는 뜻이에요."
+    },
+    {
+      "t": "turn to + 명사 + to V",
+      "ex": "when people turn to social networks to put pressure on judicial decisions",
+      "d": "turn to는 '~에 의지하다'. 뒤의 to put은 목적('~하기 위해')을 나타내요. put pressure on은 '~에 압력을 가하다'."
+    },
+    {
+      "t": "계속적 용법 which (앞 절 전체)",
+      "ex": "… this practice is popularized and becomes a habitual form of culture, which is harmful.",
+      "d": "which가 앞 내용 전체(관행이 문화로 굳어지는 것)를 받아요. 그래서 단수 동사 is예요."
+    },
+    {
+      "t": "동격 콤마",
+      "ex": "… converted into a virtual dimension, the social networks.",
+      "d": "콤마 뒤 the social networks가 a virtual dimension을 다시 설명해요. '가상의 차원, 즉 소셜 네트워크'."
+    }
+  ],
+  "vocab": [
+    [
+      "mass culture",
+      "대중문화"
+    ],
+    [
+      "weaken",
+      "약화시키다"
+    ],
+    [
+      "intermediary",
+      "매개하는, 중간의"
+    ],
+    [
+      "institution",
+      "제도, 기관"
+    ],
+    [
+      "diminish",
+      "줄이다"
+    ],
+    [
+      "overlap",
+      "겹치다"
+    ],
+    [
+      "court",
+      "법정, 법원"
+    ],
+    [
+      "harmonious",
+      "조화로운"
+    ],
+    [
+      "collective",
+      "집단의"
+    ],
+    [
+      "judicial",
+      "사법의"
+    ],
+    [
+      "mediated",
+      "중재된, 조정된"
+    ],
+    [
+      "politicized",
+      "정치화된"
+    ],
+    [
+      "habitual",
+      "습관적인"
+    ],
+    [
+      "public square",
+      "대중 광장, 공론장"
+    ],
+    [
+      "convert into",
+      "~으로 바꾸다"
+    ],
+    [
+      "virtual",
+      "가상의"
+    ],
+    [
+      "state of law",
+      "법치 국가"
+    ],
+    [
+      "immune to",
+      "~에 영향받지 않는, ~에 면역인 — 빈칸 정답"
+    ]
+  ],
+  "summary": {
+    "en": "Using social networks to pressure judicial decisions harms society, so justice should be done in court in a way that is free from popular pressure.",
+    "ko": "소셜 네트워크로 사법 결정에 압력을 넣는 것은 사회에 해로우므로, 정의는 법정에서 대중의 압력에서 벗어난 방식으로 실현되어야 한다."
+  },
+  "writing": {
+    "en": "Justice should be done in court, not in the public square.",
+    "ko": "정의는 대중 광장이 아니라 법정에서 실현되어야 한다."
+  },
+  "tip": "빈칸이 글 마지막에 있으면 앞에서 '해롭다(harmful)', '~하면 안 된다(must not)'고 한 것을 찾아 그 반대를 고르면 돼요. 이 글은 put pressure, public square가 부정적이니 빈칸은 '압력에서 자유로운' 쪽이에요. responsive, aligned with public처럼 듣기엔 좋아 보여도 대중에 맞춰 가는 선택지는 함정이에요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 32번 정답은?",
+      "① immune to popular pressure(대중의 압력에 영향을 받지 않는)예요. 재판은 소셜 네트워크의 압력이 아니라 법정에서 독립적으로 이뤄져야 한다는 내용이에요."
+    ],
+    [
+      "2026 10월 고2 32번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 대중문화와 소셜 네트워크가 사법 제도에 끼치는 영향을 다룬 지문이에요."
+    ],
+    [
+      "⑤ aligned with public expectations가 오답인 이유는?",
+      "대중의 기대에 맞춘다는 건 글이 비판한 '대중 광장에서의 정의'와 같은 말이에요. 글은 정의가 대중의 압력에서 떨어져 있어야 한다고 해서 정반대예요."
+    ]
+  ],
+  "note": "이 지문은 단어가 어려워 보여도 harmful, must not 두 군데만 잡으면 방향이 보여요. '글쓴이가 싫어하는 것의 반대'를 빈칸에 넣는 연습을 해 보세요. 그럴듯한 말(사회 변화, 대중의 기대)이 오히려 함정이에요."
+}

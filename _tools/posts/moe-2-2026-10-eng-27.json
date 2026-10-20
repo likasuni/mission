@@ -6,56 +6,186 @@
   "answer": 5,
   "topic": "Skydale 고등학교 3D 프린팅 워크숍 안내",
   "date": "2026-10-21",
-  "keywords": ["2026년 10월 고2 모의고사 영어 27번", "2026 10월 고2 영어 27번 해설", "고2 10월 모의고사 27번 정답", "고2 모의고사 안내문 불일치", "3D Printing Workshop 안내문", "Skydale High School 3D 프린팅 영어 안내문"],
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 27번",
+    "2026 10월 고2 영어 27번 해설",
+    "고2 10월 모의고사 27번 정답",
+    "고2 모의고사 안내문 불일치",
+    "3D Printing Workshop 안내문",
+    "Skydale High School 3D 프린팅 영어 안내문"
+  ],
   "lead": "2026년 10월 고2 모의고사 영어 27번은 Skydale 고등학교 3D 프린팅 워크숍 안내문의 내용과 일치하지 않는 것을 고르는 문항이에요. 안내문 마지막 Notes에 작품은 로비(lobby)에 전시된다고 했는데 ⑤는 '도서관'이라고 해서 틀렸어요. 정답은 ⑤예요.",
   "flow": [
-    ["소개", "선생님과 함께 자신만의 3D 작품을 쉽게 만들어 보는 워크숍"],
-    ["일시·장소", "2026년 11월 14일, Einstein Hall"],
-    ["참가비·대상", "1인당 20달러(재료비 포함), Skydale 고등학교 모든 학년 학생"],
-    ["일정", "9~10시 소프트웨어 사용법, 10~11시 작품 설계, 11~12시 작품 출력"],
-    ["참고", "등록은 학교 웹사이트에서만 가능, 3D 출력 작품은 로비에 전시"]
+    [
+      "소개",
+      "선생님과 함께 자신만의 3D 작품을 쉽게 만들어 보는 워크숍"
+    ],
+    [
+      "일시·장소",
+      "2026년 11월 14일, Einstein Hall"
+    ],
+    [
+      "참가비·대상",
+      "1인당 20달러(재료비 포함), Skydale 고등학교 모든 학년 학생"
+    ],
+    [
+      "일정",
+      "9~10시 소프트웨어 사용법, 10~11시 작품 설계, 11~12시 작품 출력"
+    ],
+    [
+      "참고",
+      "등록은 학교 웹사이트에서만 가능, 3D 출력 작품은 로비에 전시"
+    ]
   ],
   "evidence": [
-    {"en": "Your 3D-printed products will be displayed at the lobby.", "ko": "여러분의 3D로 출력된 작품들은 로비에 전시될 것입니다.", "note": "전시 장소는 lobby(로비)예요. 선택지 ⑤의 '도서관'과 달라서 ⑤가 불일치예요."},
-    {"en": "Participation Fee: $20 per person (Cost for materials is included.)", "ko": "참가비: 1인당 20달러 (재료비는 포함되어 있습니다.)", "note": "선택지 ①의 근거예요. 일치해요."},
-    {"en": "11 a.m. - 12 p.m. Printing the 3D product you designed", "ko": "오전 11시 - 오후 12시 자신이 디자인한 3D 작품 출력하기", "note": "선택지 ③의 근거예요. 출력은 오전 11시부터라서 일치해요."}
+    {
+      "en": "Your 3D-printed products will be displayed at the lobby.",
+      "ko": "여러분의 3D로 출력된 작품들은 로비에 전시될 것입니다.",
+      "note": "전시 장소는 lobby(로비)예요. 선택지 ⑤의 '도서관'과 달라서 ⑤가 불일치예요."
+    },
+    {
+      "en": "Participation Fee: $20 per person (Cost for materials is included.)",
+      "ko": "참가비: 1인당 20달러 (재료비는 포함되어 있습니다.)",
+      "note": "선택지 ①의 근거예요. 일치해요."
+    },
+    {
+      "en": "11 a.m. - 12 p.m. Printing the 3D product you designed",
+      "ko": "오전 11시 - 오후 12시 자신이 디자인한 3D 작품 출력하기",
+      "note": "선택지 ③의 근거예요. 출력은 오전 11시부터라서 일치해요."
+    }
   ],
   "choices": [
-    {"en": "재료비는 참가비에 포함되어 있다.", "ko": "참가비", "why": "일치. Participation Fee: $20 per person (Cost for materials is included.)"},
-    {"en": "Skydale 고등학교의 모든 학년 학생들이 참가할 수 있다.", "ko": "참가 대상", "why": "일치. Participants: Skydale High School students of any grade"},
-    {"en": "오전 11시부터 3D 작품을 출력한다.", "ko": "일정", "why": "일치. 11 a.m. - 12 p.m. Printing the 3D product you designed"},
-    {"en": "등록은 학교 웹사이트에서 가능하다.", "ko": "등록", "why": "일치. Registration is only available on our school website (www.skydalehigh.edu)."},
-    {"en": "학생들의 작품들은 도서관에 전시될 것이다.", "ko": "작품 전시", "why": "정답(불일치). Your 3D-printed products will be displayed at the lobby. 도서관이 아니라 로비에 전시돼요."}
+    {
+      "en": "재료비는 참가비에 포함되어 있다.",
+      "ko": "참가비",
+      "why": "일치. Participation Fee: $20 per person (Cost for materials is included.)"
+    },
+    {
+      "en": "Skydale 고등학교의 모든 학년 학생들이 참가할 수 있다.",
+      "ko": "참가 대상",
+      "why": "일치. Participants: Skydale High School students of any grade"
+    },
+    {
+      "en": "오전 11시부터 3D 작품을 출력한다.",
+      "ko": "일정",
+      "why": "일치. 11 a.m. - 12 p.m. Printing the 3D product you designed"
+    },
+    {
+      "en": "등록은 학교 웹사이트에서 가능하다.",
+      "ko": "등록",
+      "why": "일치. Registration is only available on our school website (www.skydalehigh.edu)."
+    },
+    {
+      "en": "학생들의 작품들은 도서관에 전시될 것이다.",
+      "ko": "작품 전시",
+      "why": "정답(불일치). Your 3D-printed products will be displayed at the lobby. 도서관이 아니라 로비에 전시돼요."
+    }
   ],
   "grammar": [
-    {"t": "과거분사 + 명사 / 목적격 관계대명사 생략", "ex": "11 a.m. - 12 p.m. Printing the 3D product you designed", "d": "the 3D product (that) you designed에서 목적격 관계대명사 that이 생략됐어요. '여러분이 디자인한 3D 작품'."},
-    {"t": "any + 단수 명사", "ex": "Participants: Skydale High School students of any grade", "d": "of any grade는 '어느 학년이든'. 즉 모든 학년이 참가할 수 있다는 뜻이에요."},
-    {"t": "only + 장소 (제한)", "ex": "Registration is only available on our school website (www.skydalehigh.edu).", "d": "only가 붙으면 '그곳에서만' 가능하다는 뜻이에요. 다른 방법(전화·방문)이 선택지에 나오면 불일치예요."},
-    {"t": "will be p.p. (미래 수동태)", "ex": "Your 3D-printed products will be displayed at the lobby.", "d": "'전시될 것이다'. 3D-printed는 '3D로 출력된'이라는 복합 형용사예요."}
+    {
+      "t": "목적격 관계대명사 생략",
+      "ex": "11 a.m. - 12 p.m. Printing the 3D product you designed",
+      "d": "the 3D product (that) you designed에서 목적격 관계대명사 that이 생략됐어요. '여러분이 디자인한 3D 작품'."
+    },
+    {
+      "t": "any + 단수 명사",
+      "ex": "Participants: Skydale High School students of any grade",
+      "d": "of any grade는 '어느 학년이든'. 즉 모든 학년이 참가할 수 있다는 뜻이에요."
+    },
+    {
+      "t": "only + 장소 (제한)",
+      "ex": "Registration is only available on our school website (www.skydalehigh.edu).",
+      "d": "only가 붙으면 '그곳에서만' 가능하다는 뜻이에요. 다른 방법(전화·방문)이 선택지에 나오면 불일치예요."
+    },
+    {
+      "t": "will be p.p. (미래 수동태)",
+      "ex": "Your 3D-printed products will be displayed at the lobby.",
+      "d": "'전시될 것이다'. 3D-printed는 '3D로 출력된'이라는 복합 형용사예요."
+    }
   ],
   "vocab": [
-    ["discover", "발견하다"],
-    ["workshop", "워크숍, 체험 교실"],
-    ["participation fee", "참가비"],
-    ["per person", "1인당"],
-    ["material", "재료"],
-    ["include", "포함하다"],
-    ["participant", "참가자"],
-    ["grade", "학년"],
-    ["software", "소프트웨어"],
-    ["design", "설계하다, 디자인하다"],
-    ["print", "출력하다, 인쇄하다"],
-    ["registration", "등록"],
-    ["available", "이용 가능한"],
-    ["display", "전시하다"],
-    ["lobby", "로비"]
+    [
+      "discover",
+      "발견하다"
+    ],
+    [
+      "workshop",
+      "워크숍, 체험 교실"
+    ],
+    [
+      "participation fee",
+      "참가비"
+    ],
+    [
+      "per person",
+      "1인당"
+    ],
+    [
+      "material",
+      "재료"
+    ],
+    [
+      "include",
+      "포함하다"
+    ],
+    [
+      "participant",
+      "참가자"
+    ],
+    [
+      "grade",
+      "학년"
+    ],
+    [
+      "software",
+      "소프트웨어"
+    ],
+    [
+      "design",
+      "설계하다, 디자인하다"
+    ],
+    [
+      "print",
+      "출력하다, 인쇄하다"
+    ],
+    [
+      "registration",
+      "등록"
+    ],
+    [
+      "available",
+      "이용 가능한"
+    ],
+    [
+      "display",
+      "전시하다"
+    ],
+    [
+      "lobby",
+      "로비"
+    ]
   ],
-  "summary": {"en": "Skydale High School holds a one-day 3D printing workshop on November 14, where students of any grade can design and print their own 3D products for $20.", "ko": "Skydale 고등학교는 11월 14일에 하루 3D 프린팅 워크숍을 열며, 모든 학년 학생이 20달러로 자신만의 3D 작품을 설계하고 출력할 수 있다."},
-  "writing": {"en": "The products you make will be displayed in the school lobby.", "ko": "여러분이 만든 작품은 학교 로비에 전시될 것이다."},
+  "summary": {
+    "en": "Skydale High School holds a one-day 3D printing workshop on November 14, where students of any grade can design and print their own 3D products for $20.",
+    "ko": "Skydale 고등학교는 11월 14일에 하루 3D 프린팅 워크숍을 열며, 모든 학년 학생이 20달러로 자신만의 3D 작품을 설계하고 출력할 수 있다."
+  },
+  "writing": {
+    "en": "The products you make will be displayed in the school lobby.",
+    "ko": "여러분이 만든 작품은 학교 로비에 전시될 것이다."
+  },
   "tip": "안내문 문제는 선택지 순서대로 안내문 항목(참가비 → 대상 → 일정 → 등록 → 전시)을 하나씩 짚으면 빨라요. 장소·시간·금액처럼 바꿔치기 쉬운 정보는 단어 하나까지 대조하세요. 이 문항은 lobby를 '도서관'으로 바꿨어요.",
   "faq": [
-    ["2026년 10월 고2 모의고사 영어 27번 정답은?", "⑤예요. 안내문에는 작품이 로비(lobby)에 전시된다고 되어 있는데, ⑤는 도서관에 전시된다고 해서 일치하지 않아요."],
-    ["2026 10월 고2 영어 27번은 어떤 유형인가요?", "안내문의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. Skydale 고등학교 3D 프린팅 워크숍 안내문이에요."],
-    ["④ 등록은 왜 일치하나요?", "안내문에 Registration is only available on our school website라고 되어 있어요. 학교 웹사이트에서만 등록할 수 있으니 '학교 웹사이트에서 가능하다'는 맞는 설명이에요."]
+    [
+      "2026년 10월 고2 모의고사 영어 27번 정답은?",
+      "⑤예요. 안내문에는 작품이 로비(lobby)에 전시된다고 되어 있는데, ⑤는 도서관에 전시된다고 해서 일치하지 않아요."
+    ],
+    [
+      "2026 10월 고2 영어 27번은 어떤 유형인가요?",
+      "안내문의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. Skydale 고등학교 3D 프린팅 워크숍 안내문이에요."
+    ],
+    [
+      "④ 등록은 왜 일치하나요?",
+      "안내문에 Registration is only available on our school website라고 되어 있어요. 학교 웹사이트에서만 등록할 수 있으니 '학교 웹사이트에서 가능하다'는 맞는 설명이에요."
+    ]
   ]
 }

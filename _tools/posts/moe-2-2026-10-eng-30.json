@@ -16,55 +16,181 @@
   ],
   "lead": "2026년 10월 고2 모의고사 영어 30번은 말과 표정이 엇갈릴 때 사람들이 비언어적 신호를 더 믿는다는 글의 낱말 쓰임 문항이에요. 마지막 예시는 '말은 반갑다는데 표정은 그렇지 않은' 모순 상황이어야 하는데, ④ smiling이 들어가면 말과 표정이 일치해 버려요. 정답은 ④예요.",
   "flow": [
-    ["연구", "Eva McMahan의 연구는 비언어적 신호의 우위를 확인했고, 특히 언어적·비언어적 메시지가 서로 다를 때 두드러졌다."],
-    ["결론", "그래서 동반되는 비언어적 의사소통이 말과 맞지 않으면 말로 남을 조종하려는 시도는 실패하기 쉽다."],
-    ["이유", "사람들은 비언어적 메시지를 언어적 메시지보다 더 신뢰하기 때문이다."],
-    ["예시 1", "함께 있어 즐겁다고 말하면서 눈길을 돌리고 억지웃음을 지으면, 그 말을 덜 믿게 된다."],
-    ["예시 2", "동료가 언짢은 표정으로 업무를 맡아서 좋았다고 말하면, 그 말을 믿지 않을 것이다."]
+    [
+      "연구",
+      "Eva McMahan의 연구는 비언어적 신호의 우위를 확인했고, 특히 언어적·비언어적 메시지가 서로 다를 때 두드러졌다."
+    ],
+    [
+      "결론",
+      "그래서 동반되는 비언어적 의사소통이 말과 맞지 않으면 말로 남을 조종하려는 시도는 실패하기 쉽다."
+    ],
+    [
+      "이유",
+      "사람들은 비언어적 메시지를 언어적 메시지보다 더 신뢰하기 때문이다."
+    ],
+    [
+      "예시 1",
+      "함께 있어 즐겁다고 말하면서 눈길을 돌리고 억지웃음을 지으면, 그 말을 덜 믿게 된다."
+    ],
+    [
+      "예시 2",
+      "동료가 언짢은 표정으로 업무를 맡아서 좋았다고 말하면, 그 말을 믿지 않을 것이다."
+    ]
   ],
   "evidence": [
-    {"en": "The phenomenon, however, was especially pronounced when adults found themselves in situations with conflicting messages (i.e., situations in which the contents of the verbal and nonverbal messages differ).", "ko": "그러나 그 현상은 성인들이 모순되는 메시지들이 있는 상황, 즉 언어적 메시지와 비언어적 메시지의 내용이 다른 상황에 처했을 때 특히 두드러졌다.", "note": "글 전체가 '말과 몸짓이 다른' 상황을 다뤄요. 뒤에 나오는 예시도 모두 말과 표정이 엇갈려야 해요."},
-    {"en": "… your colleague tells you with a ④ smiling expression that they were happy to take over your workload. You might not believe that they enjoyed ⑤ replacing you while you were gone.", "ko": "… 여러분의 동료가 언짢은 표정으로 여러분의 업무량을 떠맡게 되어 좋았다고 말할 때 … 여러분은 그들이 여러분이 없는 동안 여러분을 대신하기를 즐거워했다는 것을 믿지 않을 것이다.", "note": "'믿지 않는다'는 결론이 나오려면 말(좋았다)과 표정이 달라야 해요. smiling이면 말과 표정이 같아서 믿지 않을 이유가 없어요. sour(언짢은) 같은 말이 와야 해요."},
-    {"en": "This is because people trust nonverbal messages ② more than verbal ones.", "ko": "이는 사람들이 비언어적 메시지를 언어적인 것보다 더 신뢰하기 때문이다.", "note": "글의 핵심 원리예요. 말보다 표정을 믿으니, 표정이 부정적이면 말을 믿지 않게 돼요."}
+    {
+      "en": "The phenomenon, however, was especially pronounced when adults found themselves in situations with conflicting messages (i.e., situations in which the contents of the verbal and nonverbal messages differ).",
+      "ko": "그러나 그 현상은 성인들이 모순되는 메시지들이 있는 상황, 즉 언어적 메시지와 비언어적 메시지의 내용이 다른 상황에 처했을 때 특히 두드러졌다.",
+      "note": "글 전체가 '말과 몸짓이 다른' 상황을 다뤄요. 뒤에 나오는 예시도 모두 말과 표정이 엇갈려야 해요."
+    },
+    {
+      "en": "… your colleague tells you with a ④ smiling expression that they were happy to take over your workload. You might not believe that they enjoyed ⑤ replacing you while you were gone.",
+      "ko": "… 여러분의 동료가 언짢은 표정으로 여러분의 업무량을 떠맡게 되어 좋았다고 말할 때 … 여러분은 그들이 여러분이 없는 동안 여러분을 대신하기를 즐거워했다는 것을 믿지 않을 것이다.",
+      "note": "'믿지 않는다'는 결론이 나오려면 말(좋았다)과 표정이 달라야 해요. smiling이면 말과 표정이 같아서 믿지 않을 이유가 없어요. sour(언짢은) 같은 말이 와야 해요."
+    },
+    {
+      "en": "This is because people trust nonverbal messages ② more than verbal ones.",
+      "ko": "이는 사람들이 비언어적 메시지를 언어적인 것보다 더 신뢰하기 때문이다.",
+      "note": "글의 핵심 원리예요. 말보다 표정을 믿으니, 표정이 부정적이면 말을 믿지 않게 돼요."
+    }
   ],
   "choices": [
-    {"en": "① fail", "ko": "실패하다", "why": "적절. 비언어적 신호가 말과 맞지 않으면 말로 남을 조종하려는 시도는 '실패'하기 쉬워요."},
-    {"en": "② more", "ko": "더 (신뢰하다)", "why": "적절. 비언어적 신호의 우위(dominance)를 말하는 글이라 비언어적 메시지를 '더' 믿는다는 게 자연스러워요."},
-    {"en": "③ believe", "ko": "믿다", "why": "적절. 눈길을 돌리고 억지웃음을 짓는 걸 보면 그 말을 '믿을' 마음이 줄어들어요(less inclined to believe)."},
-    {"en": "④ smiling", "ko": "웃는 → 언짢은", "why": "정답(부적절). 웃는 표정으로 좋았다고 말하면 말과 표정이 일치해서 믿지 않을 이유가 없어요. 모순 상황이 되려면 sour(언짢은)처럼 부정적인 표정이어야 해요."},
-    {"en": "⑤ replacing", "ko": "대신하기", "why": "적절. 아픈 동안 내 업무를 떠맡은 것(take over your workload)을 replacing you(나를 대신하기)로 바꿔 말했어요."}
+    {
+      "en": "① fail",
+      "ko": "실패하다",
+      "why": "적절. 비언어적 신호가 말과 맞지 않으면 말로 남을 조종하려는 시도는 '실패'하기 쉬워요."
+    },
+    {
+      "en": "② more",
+      "ko": "더 (신뢰하다)",
+      "why": "적절. 비언어적 신호의 우위(dominance)를 말하는 글이라 비언어적 메시지를 '더' 믿는다는 게 자연스러워요."
+    },
+    {
+      "en": "③ believe",
+      "ko": "믿다",
+      "why": "적절. 눈길을 돌리고 억지웃음을 짓는 걸 보면 그 말을 '믿을' 마음이 줄어들어요(less inclined to believe)."
+    },
+    {
+      "en": "④ smiling",
+      "ko": "웃는 → 언짢은",
+      "why": "정답(부적절). 웃는 표정으로 좋았다고 말하면 말과 표정이 일치해서 믿지 않을 이유가 없어요. 모순 상황이 되려면 sour(언짢은)처럼 부정적인 표정이어야 해요."
+    },
+    {
+      "en": "⑤ replacing",
+      "ko": "대신하기",
+      "why": "적절. 아픈 동안 내 업무를 떠맡은 것(take over your workload)을 replacing you(나를 대신하기)로 바꿔 말했어요."
+    }
   ],
   "grammar": [
-    {"t": "find oneself in ~", "ex": "… when adults found themselves in situations with conflicting messages", "d": "'자신이 ~에 처해 있음을 알게 되다', 즉 '~한 상황에 놓이다'. 주어와 목적어가 같아서 재귀대명사 themselves를 써요."},
-    {"t": "be likely to V", "ex": "Attempts to manipulate another person verbally are therefore likely to fail …", "d": "'~하기 쉽다, ~할 것 같다'. 주어는 Attempts(복수)라서 are예요. to manipulate는 Attempts를 꾸미는 to부정사예요."},
-    {"t": "This is because ~", "ex": "This is because people trust nonverbal messages more than verbal ones.", "d": "'이는 ~ 때문이다'. 앞 문장의 이유를 설명해요. ones는 messages를 대신해요."},
-    {"t": "enjoy + 동명사", "ex": "You might not believe that they enjoyed replacing you while you were gone.", "d": "enjoy는 목적어로 동명사를 써요. enjoy to replace는 틀려요."}
+    {
+      "t": "find oneself in ~",
+      "ex": "… when adults found themselves in situations with conflicting messages",
+      "d": "'자신이 ~에 처해 있음을 알게 되다', 즉 '~한 상황에 놓이다'. 주어와 목적어가 같아서 재귀대명사 themselves를 써요."
+    },
+    {
+      "t": "be likely to V",
+      "ex": "Attempts to manipulate another person verbally are therefore likely to fail …",
+      "d": "'~하기 쉽다, ~할 것 같다'. 주어는 Attempts(복수)라서 are예요. to manipulate는 Attempts를 꾸미는 to부정사예요."
+    },
+    {
+      "t": "This is because ~",
+      "ex": "This is because people trust nonverbal messages more than verbal ones.",
+      "d": "'이는 ~ 때문이다'. 앞 문장의 이유를 설명해요. ones는 messages를 대신해요."
+    },
+    {
+      "t": "enjoy + 동명사",
+      "ex": "You might not believe that they enjoyed replacing you while you were gone.",
+      "d": "enjoy는 목적어로 동명사를 써요. enjoy to replace는 틀려요."
+    }
   ],
   "vocab": [
-    ["confirm", "확인하다, 입증하다"],
-    ["dominance", "우위, 지배"],
-    ["nonverbal", "비언어적인"],
-    ["phenomenon", "현상"],
-    ["pronounced", "두드러진, 뚜렷한"],
-    ["conflicting", "모순되는, 상충하는"],
-    ["verbal", "언어적인, 말의"],
-    ["differ", "다르다"],
-    ["manipulate", "조종하다"],
-    ["accompanying", "동반하는"],
-    ["be inclined to V", "~하고 싶어지다, ~하는 경향이 있다"],
-    ["force a smile", "억지웃음을 짓다"],
-    ["colleague", "동료"],
-    ["take over", "떠맡다, 인계받다"],
-    ["workload", "업무량"],
-    ["replace", "대신하다, 대체하다"]
+    [
+      "confirm",
+      "확인하다, 입증하다"
+    ],
+    [
+      "dominance",
+      "우위, 지배"
+    ],
+    [
+      "nonverbal",
+      "비언어적인"
+    ],
+    [
+      "phenomenon",
+      "현상"
+    ],
+    [
+      "pronounced",
+      "두드러진, 뚜렷한"
+    ],
+    [
+      "conflicting",
+      "모순되는, 상충하는"
+    ],
+    [
+      "verbal",
+      "언어적인, 말의"
+    ],
+    [
+      "differ",
+      "다르다"
+    ],
+    [
+      "manipulate",
+      "조종하다"
+    ],
+    [
+      "accompanying",
+      "동반하는"
+    ],
+    [
+      "be inclined to V",
+      "~하고 싶어지다, ~하는 경향이 있다"
+    ],
+    [
+      "force a smile",
+      "억지웃음을 짓다"
+    ],
+    [
+      "colleague",
+      "동료"
+    ],
+    [
+      "take over",
+      "떠맡다, 인계받다"
+    ],
+    [
+      "workload",
+      "업무량"
+    ],
+    [
+      "replace",
+      "대신하다, 대체하다"
+    ]
   ],
-  "summary": {"en": "When words and body language send conflicting messages, people tend to trust the nonverbal signals more than the words.", "ko": "말과 몸짓이 서로 다른 메시지를 보낼 때, 사람들은 말보다 비언어적 신호를 더 믿는 경향이 있다."},
-  "writing": {"en": "People trust nonverbal messages more than verbal ones.", "ko": "사람들은 비언어적 메시지를 언어적 메시지보다 더 신뢰한다."},
+  "summary": {
+    "en": "When words and body language send conflicting messages, people tend to trust the nonverbal signals more than the words.",
+    "ko": "말과 몸짓이 서로 다른 메시지를 보낼 때, 사람들은 말보다 비언어적 신호를 더 믿는 경향이 있다."
+  },
+  "writing": {
+    "en": "People trust nonverbal messages more than verbal ones.",
+    "ko": "사람들은 비언어적 메시지를 언어적 메시지보다 더 신뢰한다."
+  },
   "tip": "낱말 쓰임 문제에서 예시 문장에 밑줄이 있으면, 그 예시가 글의 주장을 제대로 보여 주는지 확인하세요. 이 글은 '말과 표정이 엇갈리는 상황'을 다루니까, 예시 속 말이 긍정이면 표정은 부정이어야 해요. 결론(You might not believe …)과 거꾸로 읽어 보면 어색한 단어가 바로 보여요.",
   "faq": [
-    ["2026년 10월 고2 모의고사 영어 30번 정답은?", "④ smiling이에요. 말과 표정이 엇갈려야 동료의 말을 믿지 않게 되므로 sour(언짢은) 같은 부정적인 표정이 와야 해요."],
-    ["2026 10월 고2 30번은 어떤 유형인가요?", "밑줄 친 낱말 중 문맥상 쓰임이 적절하지 않은 것을 고르는 어휘 문항이에요. 비언어적 신호의 우위를 다룬 지문이에요."],
-    ["⑤ replacing은 왜 맞나요?", "동료가 내 업무를 떠맡은 것(take over your workload)을 '나를 대신하는 것'으로 바꿔 말한 거예요. 동료가 그걸 즐거워했다는 말을 믿기 어렵다는 흐름이라 자연스러워요."]
+    [
+      "2026년 10월 고2 모의고사 영어 30번 정답은?",
+      "④ smiling이에요. 말과 표정이 엇갈려야 동료의 말을 믿지 않게 되므로 sour(언짢은) 같은 부정적인 표정이 와야 해요."
+    ],
+    [
+      "2026 10월 고2 30번은 어떤 유형인가요?",
+      "밑줄 친 낱말 중 문맥상 쓰임이 적절하지 않은 것을 고르는 어휘 문항이에요. 비언어적 신호의 우위를 다룬 지문이에요."
+    ],
+    [
+      "⑤ replacing은 왜 맞나요?",
+      "동료가 내 업무를 떠맡은 것(take over your workload)을 '나를 대신하는 것'으로 바꿔 말한 거예요. 동료가 그걸 즐거워했다는 말을 믿기 어렵다는 흐름이라 자연스러워요."
+    ]
   ],
   "note": "예시 두 개가 같은 원리를 보여 주는 글이에요. 첫 예시가 '좋다고 말하면서 억지웃음'이면 두 번째 예시도 '좋다고 말하면서 언짢은 표정'이어야 짝이 맞아요. 예시끼리 나란히 놓고 비교하는 습관을 들이세요."
 }

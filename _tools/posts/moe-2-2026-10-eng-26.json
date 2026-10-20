@@ -6,59 +6,195 @@
   "answer": 3,
   "topic": "심해 잠수정 배시스케이프를 개발하고 해양 보호에 힘쓴 탐험가 Jacques Piccard의 생애",
   "date": "2026-10-21",
-  "keywords": ["2026년 10월 고2 모의고사 영어 26번", "2026 10월 고2 영어 26번 해설", "고2 10월 모의고사 26번 정답", "고2 모의고사 내용 일치", "Jacques Piccard 지문", "배시스케이프 bathyscaphe 영어 지문"],
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 26번",
+    "2026 10월 고2 영어 26번 해설",
+    "고2 10월 모의고사 26번 정답",
+    "고2 모의고사 내용 일치",
+    "Jacques Piccard 지문",
+    "배시스케이프 bathyscaphe 영어 지문"
+  ],
   "lead": "2026년 10월 고2 모의고사 영어 26번은 심해 잠수정 배시스케이프를 개발하고 10,916미터 잠수 기록을 세운 Jacques Piccard의 생애에 관한 내용 불일치 문항이에요. 본문은 미 해군 장교 Don Walsh와 '함께(together with)' 기록을 세웠다고 했는데 ③은 '단독으로'라고 해서 틀렸어요. 정답은 ③이에요.",
   "flow": [
-    ["출생", "1922년 7월 28일 벨기에에서, 바다와 하늘 탐험으로 유명한 과학자 집안에서 태어남"],
-    ["교직", "스위스에서 대학 졸업 후 University of Geneva에서 경제학을 가르치며 아버지의 배시스케이프 개발을 도움"],
-    ["전환", "잠수정이 6,000미터 깊이에 도달하자 교직을 떠나 배시스케이프 개선에 집중"],
-    ["기록", "1960년 미 해군 장교 Don Walsh와 함께 10,916미터를 하강하며 잠수 기록을 세움"],
-    ["환경", "1970년대 심해 잠수 중 해양 오염을 보고 환경 보호에 집중, 스위스에 바다와 호수 연구 단체를 설립"],
-    ["사망", "2008년 11월 1일 사망, 그의 유산은 동료 해양 탐험가들에게 영감으로 남음"]
+    [
+      "출생",
+      "1922년 7월 28일 벨기에에서, 바다와 하늘 탐험으로 유명한 과학자 집안에서 태어남"
+    ],
+    [
+      "교직",
+      "스위스에서 대학 졸업 후 University of Geneva에서 경제학을 가르치며 아버지의 배시스케이프 개발을 도움"
+    ],
+    [
+      "전환",
+      "잠수정이 6,000미터 깊이에 도달하자 교직을 떠나 배시스케이프 개선에 집중"
+    ],
+    [
+      "기록",
+      "1960년 미 해군 장교 Don Walsh와 함께 10,916미터를 하강하며 잠수 기록을 세움"
+    ],
+    [
+      "환경",
+      "1970년대 심해 잠수 중 해양 오염을 보고 환경 보호에 집중, 스위스에 바다와 호수 연구 단체를 설립"
+    ],
+    [
+      "사망",
+      "2008년 11월 1일 사망, 그의 유산은 동료 해양 탐험가들에게 영감으로 남음"
+    ]
   ],
   "evidence": [
-    {"en": "In 1960, Jacques, together with U.S. Naval Officer Don Walsh, set a diving record, descending 10,916 meters.", "ko": "1960년에 Jacques는 미 해군 장교 Don Walsh와 함께 10,916미터를 하강하면서 잠수 기록을 세웠다.", "note": "together with Don Walsh가 핵심이에요. 혼자가 아니라 두 사람이 함께 세운 기록이라서 '단독으로'라고 한 ③이 불일치예요."},
-    {"en": "After graduating university in Switzerland, he taught economics at the University of Geneva, while helping his father develop bathyscaphes, deep-sea exploration machines.", "ko": "스위스에 있는 대학을 졸업한 후, 그는 자신의 아버지가 심해 탐험 기계인 배시스케이프를 개발하는 것을 도우면서 University of Geneva에서 경제학을 가르쳤다.", "note": "선택지 ② 'University of Geneva에서 경제학을 가르쳤다'의 근거예요. 일치해요."},
-    {"en": "He even founded an organization in Switzerland to study oceans and lakes.", "ko": "심지어 그는 바다와 호수를 연구하기 위해 스위스에 단체를 설립했다.", "note": "선택지 ⑤의 근거예요. 일치해요."}
+    {
+      "en": "In 1960, Jacques, together with U.S. Naval Officer Don Walsh, set a diving record, descending 10,916 meters.",
+      "ko": "1960년에 Jacques는 미 해군 장교 Don Walsh와 함께 10,916미터를 하강하면서 잠수 기록을 세웠다.",
+      "note": "together with Don Walsh가 핵심이에요. 혼자가 아니라 두 사람이 함께 세운 기록이라서 '단독으로'라고 한 ③이 불일치예요."
+    },
+    {
+      "en": "After graduating university in Switzerland, he taught economics at the University of Geneva, while helping his father develop bathyscaphes, deep-sea exploration machines.",
+      "ko": "스위스에 있는 대학을 졸업한 후, 그는 자신의 아버지가 심해 탐험 기계인 배시스케이프를 개발하는 것을 도우면서 University of Geneva에서 경제학을 가르쳤다.",
+      "note": "선택지 ② 'University of Geneva에서 경제학을 가르쳤다'의 근거예요. 일치해요."
+    },
+    {
+      "en": "He even founded an organization in Switzerland to study oceans and lakes.",
+      "ko": "심지어 그는 바다와 호수를 연구하기 위해 스위스에 단체를 설립했다.",
+      "note": "선택지 ⑤의 근거예요. 일치해요."
+    }
   ],
   "choices": [
-    {"en": "과학자 집안에서 태어났다.", "ko": "출생", "why": "일치. … born on July 28, 1922 in Belgium to a family of scientists famous for exploring both the oceans and the skies."},
-    {"en": "University of Geneva에서 경제학을 가르쳤다.", "ko": "교직", "why": "일치. he taught economics at the University of Geneva"},
-    {"en": "단독으로 10,916미터를 하강하면서 잠수 기록을 세웠다.", "ko": "잠수 기록", "why": "정답(불일치). Jacques, together with U.S. Naval Officer Don Walsh, set a diving record … Don Walsh와 함께 세운 기록이에요."},
-    {"en": "1970년대에는 환경을 보호하는 것에 집중했다.", "ko": "환경 보호", "why": "일치. In the 1970s, Jacques focused on protecting the environment …"},
-    {"en": "바다와 호수를 연구하기 위해 스위스에 단체를 설립했다.", "ko": "단체 설립", "why": "일치. He even founded an organization in Switzerland to study oceans and lakes."}
+    {
+      "en": "과학자 집안에서 태어났다.",
+      "ko": "출생",
+      "why": "일치. … born on July 28, 1922 in Belgium to a family of scientists famous for exploring both the oceans and the skies."
+    },
+    {
+      "en": "University of Geneva에서 경제학을 가르쳤다.",
+      "ko": "교직",
+      "why": "일치. he taught economics at the University of Geneva"
+    },
+    {
+      "en": "단독으로 10,916미터를 하강하면서 잠수 기록을 세웠다.",
+      "ko": "잠수 기록",
+      "why": "정답(불일치). Jacques, together with U.S. Naval Officer Don Walsh, set a diving record … Don Walsh와 함께 세운 기록이에요."
+    },
+    {
+      "en": "1970년대에는 환경을 보호하는 것에 집중했다.",
+      "ko": "환경 보호",
+      "why": "일치. In the 1970s, Jacques focused on protecting the environment …"
+    },
+    {
+      "en": "바다와 호수를 연구하기 위해 스위스에 단체를 설립했다.",
+      "ko": "단체 설립",
+      "why": "일치. He even founded an organization in Switzerland to study oceans and lakes."
+    }
   ],
   "grammar": [
-    {"t": "help + 목적어 + 동사원형", "ex": "he taught economics at the University of Geneva, while helping his father develop bathyscaphes, deep-sea exploration machines.", "d": "help는 목적격 보어로 동사원형(develop)이나 to V를 써요. while helping은 '~을 도우면서'. 콤마 뒤 deep-sea exploration machines는 bathyscaphes를 설명하는 동격이에요."},
-    {"t": "be inspired to V", "ex": "Jacques was inspired to leave his teaching career to focus on improving bathyscaphes for underwater research.", "d": "'~할 마음이 생기다'. 뒤의 to focus는 목적(~하기 위해), focus on 뒤엔 동명사 improving이 와요."},
-    {"t": "together with + 분사구문", "ex": "In 1960, Jacques, together with U.S. Naval Officer Don Walsh, set a diving record, descending 10,916 meters.", "d": "together with ~는 삽입구라 주어는 Jacques 하나예요(동사 set). descending은 '~하강하면서'라는 동시 동작 분사구문이에요. 이 삽입구가 정답 근거예요."},
-    {"t": "after + 동명사", "ex": "Jacques focused on protecting the environment after seeing the ocean pollution during his deep-sea dives.", "d": "after seeing은 '본 후에'. 전치사 after 뒤에 동명사가 왔어요."}
+    {
+      "t": "help + 목적어 + 동사원형",
+      "ex": "he taught economics at the University of Geneva, while helping his father develop bathyscaphes, deep-sea exploration machines.",
+      "d": "help는 목적격 보어로 동사원형(develop)이나 to V를 써요. while helping은 '~을 도우면서'. 콤마 뒤 deep-sea exploration machines는 bathyscaphes를 설명하는 동격이에요."
+    },
+    {
+      "t": "be inspired to V",
+      "ex": "Jacques was inspired to leave his teaching career to focus on improving bathyscaphes for underwater research.",
+      "d": "'~할 마음이 생기다'. 뒤의 to focus는 목적(~하기 위해), focus on 뒤엔 동명사 improving이 와요."
+    },
+    {
+      "t": "together with + 분사구문",
+      "ex": "In 1960, Jacques, together with U.S. Naval Officer Don Walsh, set a diving record, descending 10,916 meters.",
+      "d": "together with ~는 삽입구라 주어는 Jacques 하나예요(동사 set). descending은 '~하강하면서'라는 동시 동작 분사구문이에요. 이 삽입구가 정답 근거예요."
+    },
+    {
+      "t": "after + 동명사",
+      "ex": "Jacques focused on protecting the environment after seeing the ocean pollution during his deep-sea dives.",
+      "d": "after seeing은 '본 후에'. 전치사 after 뒤에 동명사가 왔어요."
+    }
   ],
   "vocab": [
-    ["explore", "탐험하다"],
-    ["graduate", "졸업하다"],
-    ["economics", "경제학"],
-    ["bathyscaphe", "배시스케이프(심해 잠수정)"],
-    ["deep-sea", "심해의"],
-    ["exploration", "탐험"],
-    ["depth", "깊이"],
-    ["inspire", "영감을 주다, 마음이 생기게 하다"],
-    ["improve", "개선하다"],
-    ["underwater", "수중의"],
-    ["naval officer", "해군 장교"],
-    ["descend", "하강하다, 내려가다"],
-    ["pollution", "오염"],
-    ["found", "설립하다"],
-    ["legacy", "유산"],
-    ["fellow", "동료의"]
+    [
+      "explore",
+      "탐험하다"
+    ],
+    [
+      "graduate",
+      "졸업하다"
+    ],
+    [
+      "economics",
+      "경제학"
+    ],
+    [
+      "bathyscaphe",
+      "배시스케이프(심해 잠수정)"
+    ],
+    [
+      "deep-sea",
+      "심해의"
+    ],
+    [
+      "exploration",
+      "탐험"
+    ],
+    [
+      "depth",
+      "깊이"
+    ],
+    [
+      "inspire",
+      "영감을 주다, 마음이 생기게 하다"
+    ],
+    [
+      "improve",
+      "개선하다"
+    ],
+    [
+      "underwater",
+      "수중의"
+    ],
+    [
+      "naval officer",
+      "해군 장교"
+    ],
+    [
+      "descend",
+      "하강하다, 내려가다"
+    ],
+    [
+      "pollution",
+      "오염"
+    ],
+    [
+      "found",
+      "설립하다"
+    ],
+    [
+      "legacy",
+      "유산"
+    ],
+    [
+      "fellow",
+      "동료의"
+    ]
   ],
-  "summary": {"en": "Jacques Piccard helped develop bathyscaphes, set a deep diving record with Don Walsh in 1960, and later worked to protect the oceans.", "ko": "Jacques Piccard는 배시스케이프 개발을 도왔고, 1960년 Don Walsh와 함께 심해 잠수 기록을 세웠으며, 이후 바다를 보호하는 일에 힘썼다."},
-  "writing": {"en": "Seeing ocean pollution, he decided to protect the environment.", "ko": "바다 오염을 보고 그는 환경을 보호하기로 결심했다."},
+  "summary": {
+    "en": "Jacques Piccard helped develop bathyscaphes, set a deep diving record with Don Walsh in 1960, and later worked to protect the oceans.",
+    "ko": "Jacques Piccard는 배시스케이프 개발을 도왔고, 1960년 Don Walsh와 함께 심해 잠수 기록을 세웠으며, 이후 바다를 보호하는 일에 힘썼다."
+  },
+  "writing": {
+    "en": "Seeing ocean pollution, he decided to protect the environment.",
+    "ko": "바다 오염을 보고 그는 환경을 보호하기로 결심했다."
+  },
   "tip": "인물 내용 일치는 선택지 순서가 본문 순서와 같아요. 선택지의 숫자·장소를 본문에서 찾은 뒤, '단독으로', '처음으로', '유일하게' 같은 말이 붙어 있으면 together with, also 같은 단서가 본문에 있는지 꼭 확인하세요.",
   "note": "숫자 10,916미터는 본문과 똑같아서 맞다고 넘기기 쉬워요. 숫자만 보지 말고 '단독으로' 같은 꾸밈말까지 본문과 맞춰 보세요.",
   "faq": [
-    ["2026년 10월 고2 모의고사 영어 26번 정답은?", "③이에요. 본문에서 Jacques는 미 해군 장교 Don Walsh와 함께(together with) 10,916미터 잠수 기록을 세웠어요. '단독으로'는 틀린 내용이에요."],
-    ["2026 10월 고2 영어 26번은 어떤 유형인가요?", "글의 내용과 일치하지 않는 것을 고르는 2점 내용 일치 문항이에요. 심해 탐험가 Jacques Piccard의 생애를 다뤄요."],
-    ["배시스케이프(bathyscaphe)가 뭔가요?", "깊은 바다를 탐사하는 잠수정이에요. 본문에서는 deep-sea exploration machines(심해 탐험 기계)라고 바로 뒤에서 설명해 줘요."]
+    [
+      "2026년 10월 고2 모의고사 영어 26번 정답은?",
+      "③이에요. 본문에서 Jacques는 미 해군 장교 Don Walsh와 함께(together with) 10,916미터 잠수 기록을 세웠어요. '단독으로'는 틀린 내용이에요."
+    ],
+    [
+      "2026 10월 고2 영어 26번은 어떤 유형인가요?",
+      "글의 내용과 일치하지 않는 것을 고르는 2점 내용 일치 문항이에요. 심해 탐험가 Jacques Piccard의 생애를 다뤄요."
+    ],
+    [
+      "배시스케이프(bathyscaphe)가 뭔가요?",
+      "깊은 바다를 탐사하는 잠수정이에요. 본문에서는 deep-sea exploration machines(심해 탐험 기계)라고 바로 뒤에서 설명해 줘요."
+    ]
   ]
 }

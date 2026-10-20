@@ -17,57 +17,189 @@
   ],
   "lead": "2026년 10월 고2 모의고사 영어 29번은 생존을 매년 허들을 넘는 경주에 빗대어 과거 인류의 높은 영유아 사망률을 설명한 3점 어법 문항이에요. ⑤ them이 들어간 절이 접속사 없이 앞 문장에 콤마로만 붙어 있어서, 두 절을 이어 주는 관계대명사 whom이 와야 해요. 정답은 ⑤예요.",
   "flow": [
-    ["비유", "생존은 매년 허들 하나를 넘어야 하는 경주와 같다. 초기 허들은 매우 높아서 많은 사람이 처음 몇 개를 넘기 전에 쓰러졌다."],
-    ["배경", "인류는 자연 상태에 가깝게 살았고, 자연은 생명을 극도로 낭비한다."],
-    ["예시", "무화과 씨앗은 극소수만 나무가 되고, 야생 개코원숭이의 약 4분의 1은 한 살 전에 죽는다."],
-    ["인간", "전근대 농업 사회의 영아 사망률은 유인원과 비슷하거나 더 높았고, 수렵 채집 조상도 4분의 1이 첫 생일 전에 죽었다."],
-    ["결론", "그렇지 않았다면 최근의 엄청난 인구 증가는 훨씬 더 일찍 일어났을 것이다."]
+    [
+      "비유",
+      "생존은 매년 허들 하나를 넘어야 하는 경주와 같다. 초기 허들은 매우 높아서 많은 사람이 처음 몇 개를 넘기 전에 쓰러졌다."
+    ],
+    [
+      "배경",
+      "인류는 자연 상태에 가깝게 살았고, 자연은 생명을 극도로 낭비한다."
+    ],
+    [
+      "예시",
+      "무화과 씨앗은 극소수만 나무가 되고, 야생 개코원숭이의 약 4분의 1은 한 살 전에 죽는다."
+    ],
+    [
+      "인간",
+      "전근대 농업 사회의 영아 사망률은 유인원과 비슷하거나 더 높았고, 수렵 채집 조상도 4분의 1이 첫 생일 전에 죽었다."
+    ],
+    [
+      "결론",
+      "그렇지 않았다면 최근의 엄청난 인구 증가는 훨씬 더 일찍 일어났을 것이다."
+    ]
   ],
   "evidence": [
-    {"en": "Things were little better for our hunter-gatherer ancestors, a quarter of ⑤ them failed to reach their first birthday, …", "ko": "우리의 수렵 채집 조상들에게도 사정은 별로 나을 게 없었는데, 그들 중 4분의 1은 첫 번째 생일에 이르지 못했고, …", "note": "앞 절(Things were little better …)과 뒤 절(a quarter of them failed …)이 콤마 하나로만 이어져 있어요. 접속사가 없으니 대명사 them을 관계대명사 whom으로 바꿔 두 절을 연결해야 해요. 전치사 of 뒤라 목적격 whom이에요."},
-    {"en": "Almost a quarter of baboons born in the wild die before they are a year old, which ③ is fairly typical for primates.", "ko": "야생에서 태어난 개코원숭이의 거의 4분의 1이 한 살이 되기 전에 죽는데, 이것은 영장류에게 꽤 전형적이다.", "note": "③ 앞 절 전체(개코원숭이 4분의 1이 죽는다는 사실)를 받는 계속적 용법 which라서 단수 동사 is가 맞아요."},
-    {"en": "Infant mortality rates for humans in pre-modern agricultural societies were similar to, and sometimes higher, than ④ those of apes.", "ko": "전근대 농업 사회에서 인간의 영아 사망률은 유인원의 그것과 비슷했고, 때로는 더 높았다.", "note": "④ 비교 대상인 Infant mortality rates(복수)를 대신하므로 those가 맞아요."}
+    {
+      "en": "Things were little better for our hunter-gatherer ancestors, a quarter of ⑤ them failed to reach their first birthday, …",
+      "ko": "우리의 수렵 채집 조상들에게도 사정은 별로 나을 게 없었는데, 그들 중 4분의 1은 첫 번째 생일에 이르지 못했고, …",
+      "note": "앞 절(Things were little better …)과 뒤 절(a quarter of them failed …)이 콤마 하나로만 이어져 있어요. 접속사가 없으니 대명사 them을 관계대명사 whom으로 바꿔 두 절을 연결해야 해요. 전치사 of 뒤라 목적격 whom이에요."
+    },
+    {
+      "en": "Almost a quarter of baboons born in the wild die before they are a year old, which ③ is fairly typical for primates.",
+      "ko": "야생에서 태어난 개코원숭이의 거의 4분의 1이 한 살이 되기 전에 죽는데, 이것은 영장류에게 꽤 전형적이다.",
+      "note": "③ 앞 절 전체(개코원숭이 4분의 1이 죽는다는 사실)를 받는 계속적 용법 which라서 단수 동사 is가 맞아요."
+    },
+    {
+      "en": "Infant mortality rates for humans in pre-modern agricultural societies were similar to, and sometimes higher, than ④ those of apes.",
+      "ko": "전근대 농업 사회에서 인간의 영아 사망률은 유인원의 그것과 비슷했고, 때로는 더 높았다.",
+      "note": "④ 비교 대상인 Infant mortality rates(복수)를 대신하므로 those가 맞아요."
+    }
   ],
   "choices": [
-    {"en": "① in which", "ko": "전치사 + 관계대명사", "why": "적절. a race in which a hurdle has to be jumped every year — in which 뒤에 주어(a hurdle)와 동사(has to be jumped)가 갖춰진 완전한 절이 와요."},
-    {"en": "② become", "ko": "도치 (will + 주어 + 동사원형)", "why": "적절. From only a very small number of figs가 앞으로 나가 will even one of many seeds become …으로 도치됐어요. 조동사 will 뒤라 동사원형 become이 맞아요."},
-    {"en": "③ is", "ko": "계속적 용법 which의 수일치", "why": "적절. which가 앞 절 전체를 받으므로 단수 취급해 is를 써요."},
-    {"en": "④ those", "ko": "지시대명사 수일치", "why": "적절. 앞의 Infant mortality rates(복수)를 받아 those of apes(유인원의 영아 사망률)가 돼요."},
-    {"en": "⑤ them", "ko": "them → whom", "why": "정답(틀림). 콤마 뒤에 새 절이 접속사 없이 이어져 있어요. 대명사 them으로는 두 절을 연결할 수 없으니 관계대명사 whom(a quarter of whom)으로 고쳐야 해요."}
+    {
+      "en": "① in which",
+      "ko": "전치사 + 관계대명사",
+      "why": "적절. a race in which a hurdle has to be jumped every year — in which 뒤에 주어(a hurdle)와 동사(has to be jumped)가 갖춰진 완전한 절이 와요."
+    },
+    {
+      "en": "② become",
+      "ko": "도치 (will + 주어 + 동사원형)",
+      "why": "적절. From only a very small number of figs가 앞으로 나가 will even one of many seeds become …으로 도치됐어요. 조동사 will 뒤라 동사원형 become이 맞아요."
+    },
+    {
+      "en": "③ is",
+      "ko": "계속적 용법 which의 수일치",
+      "why": "적절. which가 앞 절 전체를 받으므로 단수 취급해 is를 써요."
+    },
+    {
+      "en": "④ those",
+      "ko": "지시대명사 수일치",
+      "why": "적절. 앞의 Infant mortality rates(복수)를 받아 those of apes(유인원의 영아 사망률)가 돼요."
+    },
+    {
+      "en": "⑤ them",
+      "ko": "them → whom",
+      "why": "정답(틀림). 콤마 뒤에 새 절이 접속사 없이 이어져 있어요. 대명사 them으로는 두 절을 연결할 수 없으니 관계대명사 whom(a quarter of whom)으로 고쳐야 해요."
+    }
   ],
   "grammar": [
-    {"t": "수량 표현 + of + 관계대명사", "ex": "… our hunter-gatherer ancestors, a quarter of whom failed to reach their first birthday", "d": "some of whom, most of which, a quarter of whom처럼 쓰여요. 콤마 뒤에 접속사 없이 절이 이어지면 대명사(them)가 아니라 관계대명사(whom/which)가 와야 해요. 이 문항의 정답 포인트예요."},
-    {"t": "only + 부사구 도치", "ex": "From only a very small number of figs will even one of many seeds become a fig tree.", "d": "only가 붙은 부사구가 문장 앞으로 나가면 조동사 + 주어 + 동사원형 순서로 도치돼요. 주어는 even one of many seeds예요."},
-    {"t": "계속적 용법 which (앞 절 전체)", "ex": "Almost a quarter of baboons born in the wild die before they are a year old, which is fairly typical for primates.", "d": "', which'가 앞 절의 내용 전체를 받으면 단수 동사를 써요. born in the wild는 baboons를 뒤에서 꾸미는 과거분사구예요."},
-    {"t": "가정법 과거완료 도치 (if 생략)", "ex": "Had it been otherwise, the huge recent growth in human population would have occurred much earlier.", "d": "= If it had been otherwise. if를 빼고 Had를 앞으로 보낸 형태예요. 주절은 would have p.p.로 '~했을 것이다'."}
+    {
+      "t": "수량 표현 + of + 관계대명사",
+      "ex": "… our hunter-gatherer ancestors, a quarter of whom failed to reach their first birthday",
+      "d": "some of whom, most of which, a quarter of whom처럼 쓰여요. 콤마 뒤에 접속사 없이 절이 이어지면 대명사(them)가 아니라 관계대명사(whom/which)가 와야 해요. 이 문항의 정답 포인트예요."
+    },
+    {
+      "t": "only + 부사구 도치",
+      "ex": "From only a very small number of figs will even one of many seeds become a fig tree.",
+      "d": "only가 붙은 부사구가 문장 앞으로 나가면 조동사 + 주어 + 동사원형 순서로 도치돼요. 주어는 even one of many seeds예요."
+    },
+    {
+      "t": "계속적 용법 which (앞 절 전체)",
+      "ex": "Almost a quarter of baboons born in the wild die before they are a year old, which is fairly typical for primates.",
+      "d": "', which'가 앞 절의 내용 전체를 받으면 단수 동사를 써요. born in the wild는 baboons를 뒤에서 꾸미는 과거분사구예요."
+    },
+    {
+      "t": "가정법 과거완료 도치 (if 생략)",
+      "ex": "Had it been otherwise, the huge recent growth in human population would have occurred much earlier.",
+      "d": "= If it had been otherwise. if를 빼고 Had를 앞으로 보낸 형태예요. 주절은 would have p.p.로 '~했을 것이다'."
+    }
   ],
   "vocab": [
-    ["survival", "생존"],
-    ["hurdle", "허들, 장애물"],
-    ["clear", "(장애물을) 넘다"],
-    ["demographically", "인구 통계학적으로"],
-    ["state of nature", "자연 상태"],
-    ["wasteful", "낭비하는"],
-    ["fig", "무화과"],
-    ["baboon", "개코원숭이"],
-    ["in the wild", "야생에서"],
-    ["typical", "전형적인"],
-    ["primate", "영장류"],
-    ["infant mortality rate", "영아 사망률"],
-    ["pre-modern", "전근대의"],
-    ["ape", "유인원"],
-    ["hunter-gatherer", "수렵 채집인"],
-    ["ancestor", "조상"],
-    ["reproduce", "번식하다, 자손을 낳다"],
-    ["otherwise", "달리, 그렇지 않게"]
+    [
+      "survival",
+      "생존"
+    ],
+    [
+      "hurdle",
+      "허들, 장애물"
+    ],
+    [
+      "clear",
+      "(장애물을) 넘다"
+    ],
+    [
+      "demographically",
+      "인구 통계학적으로"
+    ],
+    [
+      "state of nature",
+      "자연 상태"
+    ],
+    [
+      "wasteful",
+      "낭비하는"
+    ],
+    [
+      "fig",
+      "무화과"
+    ],
+    [
+      "baboon",
+      "개코원숭이"
+    ],
+    [
+      "in the wild",
+      "야생에서"
+    ],
+    [
+      "typical",
+      "전형적인"
+    ],
+    [
+      "primate",
+      "영장류"
+    ],
+    [
+      "infant mortality rate",
+      "영아 사망률"
+    ],
+    [
+      "pre-modern",
+      "전근대의"
+    ],
+    [
+      "ape",
+      "유인원"
+    ],
+    [
+      "hunter-gatherer",
+      "수렵 채집인"
+    ],
+    [
+      "ancestor",
+      "조상"
+    ],
+    [
+      "reproduce",
+      "번식하다, 자손을 낳다"
+    ],
+    [
+      "otherwise",
+      "달리, 그렇지 않게"
+    ]
   ],
-  "summary": {"en": "For most of history, so many people died young that survival was like a race with high hurdles, which delayed the rapid growth of the human population.", "ko": "역사 대부분의 기간 동안 너무 많은 사람이 어려서 죽어 생존은 높은 허들이 있는 경주와 같았고, 이 때문에 인구의 급격한 증가가 늦어졌다."},
-  "writing": {"en": "A quarter of our ancestors failed to reach their first birthday.", "ko": "우리 조상들 중 4분의 1은 첫 번째 생일에 이르지 못했다."},
+  "summary": {
+    "en": "For most of history, so many people died young that survival was like a race with high hurdles, which delayed the rapid growth of the human population.",
+    "ko": "역사 대부분의 기간 동안 너무 많은 사람이 어려서 죽어 생존은 높은 허들이 있는 경주와 같았고, 이 때문에 인구의 급격한 증가가 늦어졌다."
+  },
+  "writing": {
+    "en": "A quarter of our ancestors failed to reach their first birthday.",
+    "ko": "우리 조상들 중 4분의 1은 첫 번째 생일에 이르지 못했다."
+  },
   "tip": "대명사(them, it)가 밑줄이면 그 절 앞에 접속사가 있는지부터 보세요. 콤마만 있고 접속사가 없으면 절이 두 개를 이어 줄 장치가 없는 거예요. 그때는 관계대명사(whom, which)로 바꿔야 해요. 반대로 and, but, so 같은 접속사가 있으면 them이 맞아요.",
   "faq": [
-    ["2026년 10월 고2 모의고사 영어 29번 정답은?", "⑤ them이에요. 앞 절과 접속사 없이 콤마로만 이어져 있어서 관계대명사 whom(a quarter of whom)으로 고쳐야 해요."],
-    ["2026 10월 고2 29번은 어떤 유형인가요?", "밑줄 친 부분 중 어법상 틀린 것을 고르는 3점 어법 문항이에요. 과거 인류의 높은 영유아 사망률을 다룬 지문이에요."],
-    ["② become은 왜 맞나요?", "From only a very small number of figs가 앞으로 나가 도치된 문장이에요. will + 주어(even one of many seeds) + 동사원형 순서라 become이 맞아요."]
+    [
+      "2026년 10월 고2 모의고사 영어 29번 정답은?",
+      "⑤ them이에요. 앞 절과 접속사 없이 콤마로만 이어져 있어서 관계대명사 whom(a quarter of whom)으로 고쳐야 해요."
+    ],
+    [
+      "2026 10월 고2 29번은 어떤 유형인가요?",
+      "밑줄 친 부분 중 어법상 틀린 것을 고르는 3점 어법 문항이에요. 과거 인류의 높은 영유아 사망률을 다룬 지문이에요."
+    ],
+    [
+      "② become은 왜 맞나요?",
+      "From only a very small number of figs가 앞으로 나가 도치된 문장이에요. will + 주어(even one of many seeds) + 동사원형 순서라 become이 맞아요."
+    ]
   ],
   "note": "콤마 하나로 문장 두 개를 붙여 놓은 자리에 them이 보이면, 바로 '접속사 어디 갔지?' 하고 물어보세요. 접속사가 없으면 them 대신 whom이에요. a quarter of whom, some of which는 통째로 입에 붙여 두면 편해요."
 }
