@@ -18,11 +18,11 @@
   "evidence": [
     {"en": "One of Merleau-Ponty's many great metaphors is that perception neither finds the world nor creates it: it reveals it, which he expresses using the term révélateur, the developing fluid for photographs in a darkroom.", "ko": "Merleau-Ponty의 여러 뛰어난 비유 가운데 하나는 지각은 세상을 발견하지도 않고 창조하지도 않는다는 것인데, 즉 그것은 세상을 드러내며, 그는 이를 'révélateur', 즉 암실의 사진용 현상액이라는 용어로 표현한다.", "note": "'현상'의 뜻이 여기서 정해져요. creates가 아니라 reveals, 즉 새로 만들지 않고 드러낸다는 거예요."},
     {"en": "The act of seeing develops what's in the world, like developing a photograph.", "ko": "보는 행위는 사진을 현상하듯 세상 속에 있는 것을 '현상한다'.", "note": "what's in the world(이미 세상에 있는 것)를 현상한다고 했어요. ①의 what already exists와 같은 말이에요."},
-    {"en": "Translators don't simply \"recognize\" what's there, but nor are we \"changing\" it into anything it isn't already, …", "ko": "번역가는 거기에 있는 것을 그저 '인지하지' 않고, 우리는 그것을 그것이 이미 존재하지 않는 어떤 것으로 '바꾸지'도 않는다 …", "note": "밑줄 바로 뒤 풀이예요. 원문에 없는 것으로 바꾸지 않는다 = without inventing anything new. ②④⑤를 지우는 근거예요."}
+    {"en": "Translators don't simply “recognize” what's there, but nor are we “changing” it into anything it isn't already, …", "ko": "번역가는 거기에 있는 것을 그저 '인지하지' 않고, 우리는 그것을 그것이 이미 존재하지 않는 어떤 것으로 '바꾸지'도 않는다 …", "note": "밑줄 바로 뒤 풀이예요. 원문에 없는 것으로 바꾸지 않는다 = without inventing anything new. ②④⑤를 지우는 근거예요."}
   ],
   "choices": [
     {"en": "brings into view what already exists without inventing anything new", "ko": "새로운 어떤 것도 만들어 내지 않고 이미 존재하는 것을 보이게 한다", "why": "정답. 현상액이 필름에 이미 찍힌 상을 드러내듯, 번역도 원문에 있는 것을 드러낼 뿐 없는 것을 지어내지 않는다는 뜻이에요."},
-    {"en": "invents ideologically driven values that are not grounded in the original", "ko": "원문에 근거하지 않은, 이념에 이끌린 가치를 만들어 낸다", "why": "원문에 없는 것으로 바꾸지 않는다(nor are we \"changing\" it into anything it isn't already)는 본문과 정반대예요."},
+    {"en": "invents ideologically driven values that are not grounded in the original", "ko": "원문에 근거하지 않은, 이념에 이끌린 가치를 만들어 낸다", "why": "원문에 없는 것으로 바꾸지 않는다(nor are we “changing” it into anything it isn't already)는 본문과 정반대예요."},
     {"en": "provides detailed background information of the original text to enhance reader comprehension", "ko": "독자의 이해를 높이려고 원문의 자세한 배경 정보를 제공한다", "why": "배경 정보나 독자 이해는 나오지 않아요. 원문에 없는 정보를 덧붙이는 것이라 오히려 '드러내기'와 맞지 않아요."},
     {"en": "introduces a completely new interpretation that appeals to the target readers", "ko": "목표 독자의 마음을 끄는 완전히 새로운 해석을 도입한다", "why": "completely new는 '창조'예요. 지각(번역)은 세상을 창조하지 않는다고 했으니 오답이에요."},
     {"en": "exploits a work of art in order to convey the translator's perspectives", "ko": "번역가의 관점을 전달하려고 예술 작품을 이용한다", "why": "번역가의 관점을 덧씌우는 것은 '변형'에 가까워요. 글은 번역가가 원문의 세계 안에서 그것에 응답한다고 했어요."}
