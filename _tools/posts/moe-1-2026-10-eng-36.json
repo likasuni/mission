@@ -1,0 +1,200 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 36,
+  "type": "순서",
+  "points": 2,
+  "answer": 2,
+  "topic": "소리는 뇌가 만들어 내는 심리적 개념이다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 36번",
+    "2026 10월 고1 영어 36번 해설",
+    "고1 10월 모의고사 36번 정답",
+    "고1 모의고사 글의 순서",
+    "sound perception 지문",
+    "숲에서 나무가 쓰러지면 소리가 날까 지문",
+    "소리 지각 고막 뇌 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 36번은 빛에 색이 없듯 소리도 뇌에 닿기 전에는 분자의 교란일 뿐이라는 글의 순서 문항이에요. (B)의 The same is true of sound가 주어진 글의 Newton 이야기를 받고, (A)의 철학적 질문에 (C)의 No가 대답하는 연결이 핵심이에요. 정답은 ② (B)－(A)－(C)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "모든 소리는 매질 속 분자를 교란하는 운동에서 시작된다. Newton은 빛에는 색이 없고 색의 지각은 생명체의 뇌에서만 일어난다고 했다."
+    ],
+    [
+      "(B) 연결",
+      "소리도 마찬가지다. 소리의 지각은 고막에서 시작되며, 고막에 닿기 전에는 분자의 교란일 뿐이다."
+    ],
+    [
+      "(A) 질문",
+      "그 교란은 측정할 수 있지만 뇌에 닿기 전에는 소리가 아니다. '숲에서 아무도 없을 때 나무가 쓰러지면 소리가 날까?'"
+    ],
+    [
+      "(C) 답",
+      "아니다. 소리는 뇌의 산물인 심리적 개념이라, 아무 생명체도 듣지 않으면 소리를 낸 것이 아니다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "(B) The same is true of sound. Thus perception of sound begins at our eardrums—before it hits our eardrums, it is nothing more than the disturbance of molecules.",
+      "ko": "(B) 소리도 마찬가지이다. 따라서 소리의 지각은 고막에서 시작된다. 고막에 닿기 전에는 그것은 분자의 교란에 불과하다.",
+      "note": "The same(마찬가지)은 주어진 글의 '빛에는 색이 없고, 색은 뇌에서 지각된다'를 받아요. 주어진 글 바로 뒤는 (B)예요."
+    },
+    {
+      "en": "(A) We can measure that disturbance with gauges and instruments, but until it hits a brain, it is not sound.",
+      "ko": "(A) 우리는 측정기와 도구로 그 교란을 측정할 수 있지만, 그것이 뇌에 닿을 때까지는 소리가 아니다.",
+      "note": "that disturbance(그 교란)는 (B) 끝의 the disturbance of molecules를 가리켜요. 그래서 (B) 다음이 (A)예요."
+    },
+    {
+      "en": "(C) No, because sound is a psychological concept, a product of brains.",
+      "ko": "(C) 아니다, 왜냐하면 소리는 심리적 개념, 즉 뇌의 산물이기 때문이다.",
+      "note": "No는 (A) 끝의 질문 \"does it make a sound?\"에 대한 대답이에요. 질문 뒤에 와야 하니 (C)가 맨 마지막이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A) － (C) － (B)",
+      "ko": "질문 → 답 → 연결",
+      "why": "(B)의 The same is true of sound는 빛과 색 이야기 바로 뒤에 와야 '소리도 마찬가지'가 말이 돼요. (B)가 맨 끝에 가면 비교 대상이 너무 멀어지고, (A)의 that disturbance도 (B)의 disturbance of molecules를 먼저 받아야 해요."
+    },
+    {
+      "en": "(B) － (A) － (C)",
+      "ko": "연결 → 질문 → 답",
+      "why": "정답. 빛과 색(주어진 글) → 소리도 마찬가지(B) → 그 교란은 소리가 아니다 + 나무 질문(A) → No, 소리는 뇌의 산물(C)."
+    },
+    {
+      "en": "(B) － (C) － (A)",
+      "ko": "연결 → 답 → 질문",
+      "why": "(C)의 No는 질문에 대한 대답이에요. 질문이 나오는 (A)보다 먼저 올 수 없어요."
+    },
+    {
+      "en": "(C) － (A) － (B)",
+      "ko": "답 → 질문 → 연결",
+      "why": "(C)의 No와 That tree는 앞에 나무 질문이 있어야 해요. 주어진 글 바로 뒤에 올 수 없어요."
+    },
+    {
+      "en": "(C) － (B) － (A)",
+      "ko": "답 → 연결 → 질문",
+      "why": "(C)가 처음에 올 수 없고, 질문(A)이 대답(C)보다 뒤에 오는 것도 맞지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동격의 콤마 + 관계대명사 that",
+      "ex": "All sound begins with some kind of motion, something that disturbs molecules in air, water, steel, wood, or other medium.",
+      "d": "콤마 뒤 something ~은 motion을 다시 풀어 말한 동격이에요. that은 something을 꾸미는 주격 관계대명사예요."
+    },
+    {
+      "t": "be true of ~",
+      "ex": "The same is true of sound.",
+      "d": "'~에도 해당되다, ~도 마찬가지이다'. 앞 내용을 새 대상에 적용할 때 쓰는 연결 표현이라 순서 문제의 강력한 단서예요."
+    },
+    {
+      "t": "nothing more than ~",
+      "ex": "before it hits our eardrums, it is nothing more than the disturbance of molecules.",
+      "d": "'~에 불과하다(= only)'. 앞의 before ~는 시간 부사절, 대시(—)는 앞 문장을 덧붙여 설명해요."
+    },
+    {
+      "t": "until ~ (…할 때까지는 아니다)",
+      "ex": "We can measure that disturbance with gauges and instruments, but until it hits a brain, it is not sound.",
+      "d": "not ~ until …은 '…하고 나서야 비로소 ~이다'. 뇌에 닿고 나서야 비로소 소리가 된다는 뜻이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "motion",
+      "운동, 움직임"
+    ],
+    [
+      "disturb",
+      "교란하다, 흐트러뜨리다"
+    ],
+    [
+      "molecule",
+      "분자"
+    ],
+    [
+      "medium",
+      "매질"
+    ],
+    [
+      "note",
+      "지적하다, 언급하다"
+    ],
+    [
+      "colorless",
+      "색이 없는"
+    ],
+    [
+      "perception",
+      "지각, 인식"
+    ],
+    [
+      "organism",
+      "생명체, 유기체"
+    ],
+    [
+      "eardrum",
+      "고막"
+    ],
+    [
+      "disturbance",
+      "교란"
+    ],
+    [
+      "gauge",
+      "측정기"
+    ],
+    [
+      "instrument",
+      "도구, 기구"
+    ],
+    [
+      "philosophical",
+      "철학적인"
+    ],
+    [
+      "riddle",
+      "수수께끼, 난제"
+    ],
+    [
+      "psychological",
+      "심리적인"
+    ],
+    [
+      "concept",
+      "개념"
+    ],
+    [
+      "product",
+      "산물"
+    ],
+    [
+      "creature",
+      "생명체, 생물"
+    ]
+  ],
+  "summary": {
+    "en": "Just as color exists only in the brain, sound is only a disturbance of molecules until a brain perceives it, so sound is a psychological concept.",
+    "ko": "색이 뇌 안에서만 존재하듯, 소리도 뇌가 지각하기 전까지는 분자의 교란일 뿐이므로 소리는 심리적 개념이다."
+  },
+  "writing": {
+    "en": "Without a listener, a falling tree makes no sound.",
+    "ko": "듣는 이가 없다면 쓰러지는 나무는 소리를 내지 않는다."
+  },
+  "tip": "순서 문제에서 The same is true of ~(~도 마찬가지)는 앞에 '비교할 다른 예'가 있어야 해요. 그리고 질문(?)과 대답(No, Yes)은 반드시 질문이 먼저예요. (B)는 빛 이야기 뒤, (C)는 질문 뒤 — 이 두 가지만 잡으면 (B)－(A)－(C)가 나와요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 36번 정답은?",
+      "② (B)－(A)－(C)예요. 빛과 색 이야기 → 소리도 마찬가지(B) → 그 교란은 소리가 아니라는 설명과 나무 질문(A) → '아니다, 소리는 뇌의 산물'(C) 순서예요."
+    ],
+    [
+      "2026년 10월 고1 영어 36번은 어떤 유형인가요?",
+      "주어진 글 다음에 이어질 글의 순서를 고르는 2점 순서 배열 문항이에요. 소리가 뇌에서 만들어지는 심리적 개념이라는 지문이에요."
+    ],
+    [
+      "(C)가 (A) 앞에 올 수 없는 이유는?",
+      "(C)는 No로 시작하는데, 이것은 (A) 끝의 \"does it make a sound?\"라는 질문에 대한 대답이에요. 질문이 먼저 나와야 하니 (A) 다음에 (C)가 와요."
+    ]
+  ]
+}
