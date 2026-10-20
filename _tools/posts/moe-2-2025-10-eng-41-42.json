@@ -1,0 +1,290 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "근육은 반대되는 것들의 조화로 움직인다",
+  "date": "2026-10-21",
+  "lead": "2025년 10월 고2 모의고사 영어 41~42번은 근육이 수축과 이완이라는 반대 동작의 조화로 움직이고, 근육에 관한 반대 개념들도 사실은 서로를 필요로 하는 역설이라는 장문 세트예요. 41번 제목은 Movement depends on what muscles don't do와 most prove to be paradoxes가 단서이고, 42번은 반대 개념들이 서로를 '배제한다'가 아니라 '필요로 한다'여야 해서 (e) exclude가 틀렸어요. 정답은 41번 ③, 42번 ⑤예요.",
+  "flow": [
+    [
+      "예시",
+      "손을 들면 이두근이 수축하고 삼두근이 이완하며, 내리면 역할이 뒤바뀐다."
+    ],
+    [
+      "원리",
+      "근육은 조화롭게 편성된 긴장으로 움직이는 조정 체계다. 움직임은 근육이 하는 일만큼 하지 않는 일에도 달려 있다(역설)."
+    ],
+    [
+      "확장",
+      "근육을 말할 때 쓰는 짝 개념들(타고남/노력, 무거움/가벼움, 빠름/느림)도 마찬가지다."
+    ],
+    [
+      "질문",
+      "근육에 대한 질문은 정답이 하나인 것처럼 들리고, 반대 개념은 양극화될 수 있다."
+    ],
+    [
+      "결론",
+      "그러나 근육에서는 진정한 양극은 거의 없고 대부분 역설이다. 반대 개념들은 실제로 서로를 필요로 한다."
+    ]
+  ],
+  "tip": "41번: 팔 근육 예시에 머무르지 말고, 예시가 보여 주는 원리(반대되는 것이 함께 작동한다 = 역설)를 제목으로 고르세요. 42번: 글 전체가 '반대가 서로 필요하다'는 주장이니, 마지막 문장에서 '서로 배제한다'는 정반대 말이 나오면 바로 의심하세요.",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 41~42번",
+    "2025 10월 고2 영어 41~42번 해설",
+    "고2 10월 모의고사 41번 정답",
+    "고2 10월 모의고사 42번 정답",
+    "고2 모의고사 장문 제목 어휘",
+    "muscle biceps triceps paradox 지문",
+    "근육 수축 이완 역설"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "All physical activity is paradoxical, in this sense: Movement depends on what muscles don't do, as much as it depends on what they do.",
+          "ko": "이런 의미에서 모든 신체 활동은 역설적이다. 즉, 움직임은 근육이 하는 일에 의존하는 만큼이나 근육이 하지 '않는' 일에 의존한다.",
+          "note": "수축(하는 일)과 이완(하지 않는 일)이 함께 있어야 움직인다는 핵심 원리예요. ③의 Harmony of Contrasts(반대되는 것들의 조화)와 같아요."
+        },
+        {
+          "en": "Both are necessary, each in its time — and the same is true of each side of the pairs of concepts shaping how we talk of muscles.",
+          "ko": "각각의 때에 둘 다 필수적이며, 우리가 근육에 대해 말하는 방식을 형성하는 짝 개념들의 각 측면에도 마찬가지이다.",
+          "note": "근육 동작에서 근육에 관한 '개념'으로 확장돼요. 두 번째 단락이 이 짝 개념들을 다뤄요."
+        },
+        {
+          "en": "But where muscle is concerned, few oppositions are true polarities. Look closely, and most prove to be paradoxes.",
+          "ko": "하지만 근육에 관해서는 진정한 양극인 반대 개념은 거의 없다. 자세히 보면 대부분 역설로 판명된다.",
+          "note": "우리가 흔히 '둘 중 하나'로 생각하는 것들이 사실은 함께 필요하다는 것, 즉 ③의 What We Don't Know About Muscles(근육에 대해 우리가 모르는 것)예요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "Dos and Don'ts to Prevent Muscle Loss",
+          "ko": "근육 손실을 막기 위해 해야 할 것과 하지 말아야 할 것",
+          "why": "글은 근육 손실 예방법을 알려 주지 않아요. don't라는 단어만 걸린 함정이에요."
+        },
+        {
+          "en": "Why Is It Better to Do One Exercise Consistently?",
+          "ko": "왜 한 가지 운동을 꾸준히 하는 것이 더 나은가?",
+          "why": "운동 방법에 대한 질문이 나오지만, 한 가지 운동이 낫다는 답은 없어요. 오히려 정답이 하나가 아니라고 해요."
+        },
+        {
+          "en": "Harmony of Contrasts: What We Don't Know About Muscles",
+          "ko": "반대되는 것들의 조화: 근육에 대해 우리가 모르는 것",
+          "why": "정답. 수축과 이완, 타고남과 노력 같은 반대되는 것들이 서로 필요하다는 '역설'이 글의 핵심이에요."
+        },
+        {
+          "en": "Systematic Stages of a Human's Muscle Recovery",
+          "ko": "인간의 근육 회복의 체계적 단계",
+          "why": "근육 회복이나 그 단계는 글에 나오지 않아요. system이라는 단어만 비슷해요."
+        },
+        {
+          "en": "Common Motion Patterns in All Body Parts",
+          "ko": "모든 신체 부위의 공통된 동작 패턴",
+          "why": "팔·다리 예시가 나오지만, 글의 초점은 동작 패턴이 아니라 '반대가 함께 작동한다'는 원리와 근육에 관한 개념들이에요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 3,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "Born and made, heavy and light, fast and slow: Those opposites actually (e) exclude each other.",
+          "ko": "타고난 것과 만들어진 것, 무거운 것과 가벼운 것, 빠른 것과 느린 것, 즉 그러한 반대 개념들은 실제로 서로를 (e) 배제한다.",
+          "note": "바로 앞에서 반대 개념 대부분이 역설이라고 했어요. 역설이라면 서로 밀어내는 게 아니라 서로를 필요로(require) 해야 해요. exclude는 반대 의미예요."
+        },
+        {
+          "en": "Both are necessary, each in its time — and the same is true of each side of the pairs of concepts …",
+          "ko": "각각의 때에 둘 다 필수적이며, 짝 개념들의 각 측면에도 마찬가지이다 …",
+          "note": "'둘 다 필요하다(necessary)'가 짝 개념에도 적용된다고 미리 말해 뒀어요. 마지막 문장도 같은 방향이어야 해요."
+        },
+        {
+          "en": "But where muscle is concerned, (d) few oppositions are true polarities. Look closely, and most prove to be paradoxes.",
+          "ko": "하지만 근육에 관해서는 (d) 진정한 양극인 반대 개념은 거의 없다. 자세히 보면 대부분 역설로 판명된다.",
+          "note": "But으로 앞의 '반대 개념은 양극화될 수 있다'를 뒤집어요. 진짜 양극은 '거의 없다(few)'가 맞아요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) reverse",
+          "ko": "뒤바꾸다",
+          "why": "적절. 손을 올릴 땐 이두근 수축·삼두근 이완, 내릴 땐 삼두근 수축·이두근 이완으로 역할이 뒤바뀌어요."
+        },
+        {
+          "en": "(b) paradoxical",
+          "ko": "역설적인",
+          "why": "적절. 움직임이 근육이 하는 일만큼 하지 않는 일에도 달려 있다는 콜론 뒤 설명이 바로 '역설'이에요."
+        },
+        {
+          "en": "(c) inborn",
+          "ko": "타고난",
+          "why": "적절. nature versus nurture(유전 대 환경)의 nature 쪽 질문이에요. 뒤의 or does it depend on what people do(노력)와 짝을 이뤄요."
+        },
+        {
+          "en": "(d) few",
+          "ko": "거의 없는",
+          "why": "적절. But 뒤에서 앞의 '양극화'를 뒤집고, 대부분이 역설이라고 이어져요."
+        },
+        {
+          "en": "(e) exclude",
+          "ko": "배제하다",
+          "why": "정답(부적절). 반대 개념들이 역설이라면 서로를 밀어내는 게 아니라 서로를 필요로(require) 해요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문",
+      "ex": "Reversing the motion, when you drop your hand back down, muscles reverse roles.",
+      "d": "Reversing the motion은 '동작을 반대로 하여'. 주절의 주어(muscles)가 아니라 일반적인 상황을 말하는 분사구문이에요."
+    },
+    {
+      "t": "명령문, and ~",
+      "ex": "Lift your hand or drop it, and muscle shows what it is",
+      "d": "'~하라, 그러면 …'. 손을 올리든 내리든, 그러면 근육이 그 정체를 보여 준다."
+    },
+    {
+      "t": "as much as",
+      "ex": "Movement depends on what muscles don't do, as much as it depends on what they do.",
+      "d": "'~하는 만큼이나'. 하지 않는 일과 하는 일이 똑같이 중요하다는 뜻이에요. what은 '~하는 것'."
+    },
+    {
+      "t": "현재분사 후치 수식",
+      "ex": "… the pairs of concepts shaping how we talk of muscles.",
+      "d": "shaping 이하가 concepts를 꾸며요. '근육에 대해 말하는 방식을 형성하는 개념들'."
+    },
+    {
+      "t": "Put like that (분사구문)",
+      "ex": "Put like that, basic questions about muscle may sound like they have one right answer.",
+      "d": "= If it is put like that. '그렇게 표현하면'. sound like + 절은 '~인 것처럼 들리다'."
+    },
+    {
+      "t": "where ~ is concerned",
+      "ex": "But where muscle is concerned, few oppositions are true polarities.",
+      "d": "'~에 관한 한'. few는 '거의 없는'이라는 부정의 뜻이에요."
+    },
+    {
+      "t": "prove to be",
+      "ex": "Look closely, and most prove to be paradoxes.",
+      "d": "'~임이 판명되다'. 명령문, and 구조가 다시 쓰였어요."
+    }
+  ],
+  "vocab": [
+    [
+      "opposing",
+      "대립하는"
+    ],
+    [
+      "contract",
+      "수축하다"
+    ],
+    [
+      "relax",
+      "이완하다"
+    ],
+    [
+      "biceps",
+      "이두근"
+    ],
+    [
+      "triceps",
+      "삼두근"
+    ],
+    [
+      "reverse",
+      "뒤바꾸다"
+    ],
+    [
+      "coordination",
+      "조정, 협응"
+    ],
+    [
+      "orchestrated",
+      "조화롭게 편성된"
+    ],
+    [
+      "tension",
+      "긴장"
+    ],
+    [
+      "rotate",
+      "회전하다"
+    ],
+    [
+      "joint",
+      "관절"
+    ],
+    [
+      "paradoxical",
+      "역설적인"
+    ],
+    [
+      "nature versus nurture",
+      "유전 대 환경"
+    ],
+    [
+      "inborn",
+      "타고난"
+    ],
+    [
+      "the latter",
+      "후자"
+    ],
+    [
+      "opposition",
+      "반대(되는 것)"
+    ],
+    [
+      "polarize",
+      "양극화되다"
+    ],
+    [
+      "polarity",
+      "양극성"
+    ],
+    [
+      "paradox",
+      "역설"
+    ],
+    [
+      "exclude",
+      "배제하다 ↔ 와야 할 말: require"
+    ],
+    [
+      "contrast",
+      "대조, 반대되는 것"
+    ]
+  ],
+  "summary": {
+    "en": "Muscles work through the coordination of opposite actions, and most opposing ideas about muscles are actually paradoxes that need each other.",
+    "ko": "근육은 반대되는 동작의 조화로 움직이며, 근육에 관한 반대 개념들 대부분은 사실 서로를 필요로 하는 역설이다."
+  },
+  "writing": {
+    "en": "In muscle, opposites work together rather than against each other.",
+    "ko": "근육에서 반대되는 것들은 서로 맞서지 않고 함께 작동한다."
+  },
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 41번 정답은?",
+      "③ Harmony of Contrasts: What We Don't Know About Muscles(반대되는 것들의 조화: 근육에 대해 우리가 모르는 것)예요. 반대되는 것들이 함께 필요하다는 역설이 글의 핵심이에요."
+    ],
+    [
+      "2025년 10월 고2 모의고사 영어 42번 정답은?",
+      "⑤ (e) exclude예요. 반대 개념들이 역설이라면 서로를 배제하는 게 아니라 서로를 필요로(require) 해야 해요."
+    ],
+    [
+      "② Why Is It Better to Do One Exercise Consistently?가 오답인 이유는?",
+      "운동 방법에 대한 질문은 나오지만, 글은 정답이 하나인 것처럼 보여도 실제로는 반대가 함께 필요하다고 말해요. 한 가지 운동이 낫다는 내용은 없어요."
+    ]
+  ],
+  "note": "42번처럼 마지막 문장에 밑줄이 있으면 글 전체 주제와 반대 방향인지부터 보세요. 앞에서 Both are necessary, paradoxes라고 해 놓고 exclude로 끝나면 흐름이 뒤집혀요."
+}
