@@ -1,0 +1,193 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 37,
+  "type": "순서",
+  "points": 3,
+  "answer": 3,
+  "topic": "원격 협업에서 작업 공간과 의사소통 공간이 분리되는 문제",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 37번",
+    "2026 10월 고1 영어 37번 해설",
+    "고1 10월 모의고사 37번 정답",
+    "고1 모의고사 글의 순서",
+    "task space communication space 지문",
+    "원격 협업 화상 회의 지문",
+    "seamless communication Ishii 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 37번은 대면 협업에선 작업 공간과 의사소통 공간이 하나지만, 원격 협업에선 둘이 갈라진다는 3점 글의 순서 문항이에요. (B)의 this가 주어진 글의 대면 상황을 받고, (C)의 For example이 (B)의 원격 분리를 예로 보여 준 뒤, (A)의 So가 결론을 내요. 정답은 ③ (B)－(C)－(A)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "대면 협업에서는 서로와 다양한 의사소통 단서를 쉽게 볼 수 있어, 작업 공간이 의사소통 공간의 일부다."
+    ],
+    [
+      "(B) 개념 + 전환",
+      "Ishii는 이를 '틈 없는 의사소통'이라 부른다. 그러나 원격 작업에서는 작업 공간이 의사소통 공간과 흔히 분리된다."
+    ],
+    [
+      "(C) 예시",
+      "화상 회의에서 한 화면엔 상대 얼굴, 다른 화면엔 공유 문서. 작업 공간을 보면서 상대의 단서를 동시에 보기 어렵다."
+    ],
+    [
+      "(A) 결론",
+      "그래서 두 공간 사이에 인위적인 틈이 생긴다. 이것이 의사소통 모델로 예측해야 할 원격 기술의 영향이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "(B) Ishii, a professor at the MIT Media Lab, describes this as seamless communication because there is no functional separation between the task and communication space.",
+      "ko": "(B) MIT Media Lab 교수 Ishii는 이것을 틈 없는 의사소통이라고 묘사하는데, 작업 공간과 의사소통 공간 사이에 기능적 분리가 없기 때문이다.",
+      "note": "this는 주어진 글의 '대면 협업에서 작업 공간이 의사소통 공간의 일부인 상황'을 가리켜요. 주어진 글 바로 뒤는 (B)예요."
+    },
+    {
+      "en": "However, when people are working remotely, the task space is often separated from the communication space.",
+      "ko": "그러나 사람들이 원격으로 일할 때는 작업 공간이 흔히 의사소통 공간과 분리된다.",
+      "note": "(B) 끝에서 원격 상황의 '분리'가 처음 나와요. (C)의 For example, when video conferencing은 이 원격 분리의 예라서 (B) 뒤에 와요."
+    },
+    {
+      "en": "(A) So, there is an artificial seam between the communication space and task space.",
+      "ko": "(A) 그래서 의사소통 공간과 작업 공간 사이에는 인위적인 틈이 있다.",
+      "note": "So는 (C)의 '동시에 볼 수 없다'는 예시를 받아 결론을 내요. seam(틈)은 (B)의 seamless와 대비되는 말이라 마지막 자리에 딱 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A) － (C) － (B)",
+      "ko": "결론 → 예시 → 개념",
+      "why": "(A)의 So와 artificial seam은 앞에 '분리'가 나와야 해요. 주어진 글은 대면 협업(분리 없음)이라 (A)가 바로 올 수 없어요."
+    },
+    {
+      "en": "(B) － (A) － (C)",
+      "ko": "개념 → 결론 → 예시",
+      "why": "(B) 다음 바로 결론 (A)가 오면 (C)의 예시가 결론 뒤에 붙어 흐름이 어색해요. In this case ~ impossible이 So의 근거가 되어야 해요."
+    },
+    {
+      "en": "(B) － (C) － (A)",
+      "ko": "개념 → 예시 → 결론",
+      "why": "정답. 대면 협업(주어진 글) → 틈 없는 의사소통, 그러나 원격은 분리(B) → 화상 회의 예(C) → 그래서 인위적인 틈(A)."
+    },
+    {
+      "en": "(C) － (A) － (B)",
+      "ko": "예시 → 결론 → 개념",
+      "why": "(C)의 For example은 원격 분리의 예인데, 주어진 글엔 원격 이야기가 없어요. (C)가 먼저 올 수 없어요."
+    },
+    {
+      "en": "(C) － (B) － (A)",
+      "ko": "예시 → 개념 → 결론",
+      "why": "(C)가 처음에 올 수 없고, (B)의 this가 화상 회의를 가리키면 '틈 없는 의사소통'과 맞지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사의 후치 수식",
+      "ex": "they can easily see each other and the range of different communication cues being used",
+      "d": "being used가 앞의 communication cues를 뒤에서 꾸며요. 단서들이 '사용되고 있는' 수동·진행이라 being + p.p.예요."
+    },
+    {
+      "t": "describe A as B",
+      "ex": "Ishii … describes this as seamless communication because there is no functional separation …",
+      "d": "'A를 B라고 묘사하다'. a professor at the MIT Media Lab은 Ishii를 설명하는 동격 삽입구예요."
+    },
+    {
+      "t": "가주어 it + to부정사",
+      "ex": "In this case, it is impossible to see many of the remote collaborator's communication cues at the same time as looking at the task space.",
+      "d": "it은 가주어, to see ~가 진주어예요. at the same time as -ing는 '~하는 것과 동시에'."
+    },
+    {
+      "t": "관계대명사 that + 수동태 to부정사",
+      "ex": "This is the type of impact of remote communication technology that needs to be predicted through communication models.",
+      "d": "that은 the type of impact를 꾸미는 주격 관계대명사예요. 영향이 '예측되는' 것이라 to be predicted(수동)로 썼어요."
+    }
+  ],
+  "vocab": [
+    [
+      "collaborate",
+      "협업하다"
+    ],
+    [
+      "face to face",
+      "대면하여"
+    ],
+    [
+      "communication cue",
+      "의사소통 단서"
+    ],
+    [
+      "subset",
+      "부분 집합"
+    ],
+    [
+      "seamless",
+      "틈이 없는, 매끄러운"
+    ],
+    [
+      "functional",
+      "기능적인"
+    ],
+    [
+      "separation",
+      "분리"
+    ],
+    [
+      "remotely",
+      "원격으로"
+    ],
+    [
+      "separate A from B",
+      "A를 B와 분리하다"
+    ],
+    [
+      "video conferencing",
+      "화상 회의"
+    ],
+    [
+      "collaborator",
+      "협업자"
+    ],
+    [
+      "shared document",
+      "공유 문서"
+    ],
+    [
+      "artificial",
+      "인위적인"
+    ],
+    [
+      "seam",
+      "갈라진 틈"
+    ],
+    [
+      "impact",
+      "영향"
+    ],
+    [
+      "predict",
+      "예측하다"
+    ]
+  ],
+  "summary": {
+    "en": "In face-to-face work the task space is part of the communication space, but remote collaboration separates them and creates an artificial seam.",
+    "ko": "대면 작업에서는 작업 공간이 의사소통 공간의 일부이지만, 원격 협업은 둘을 분리하여 인위적인 틈을 만든다."
+  },
+  "writing": {
+    "en": "Working remotely can split what we work on from how we communicate.",
+    "ko": "원격 작업은 우리가 작업하는 것과 소통하는 방식을 갈라놓을 수 있다."
+  },
+  "tip": "순서 문제는 '개념 → 예시(For example) → 결론(So)'의 기본 흐름을 먼저 떠올리세요. 그리고 (B)의 seamless와 (A)의 seam처럼 반대되는 말이 짝으로 나오면, '틈 없음'이 먼저, '틈 있음'이 나중이에요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 37번 정답은?",
+      "③ (B)－(C)－(A)예요. 대면 협업(주어진 글) → 틈 없는 의사소통, 그러나 원격은 분리(B) → 화상 회의 예시(C) → 그래서 인위적인 틈(A) 순서예요."
+    ],
+    [
+      "2026년 10월 고1 영어 37번은 어떤 유형인가요?",
+      "주어진 글 다음에 이어질 글의 순서를 고르는 3점 순서 배열 문항이에요. 원격 협업에서 작업 공간과 의사소통 공간이 분리되는 문제를 다룬 지문이에요."
+    ],
+    [
+      "② (B)－(A)－(C)가 오답인 이유는?",
+      "(A)의 So는 (C)의 '화상 회의에서는 동시에 볼 수 없다'는 예시를 근거로 내린 결론이에요. 예시 (C)가 먼저 와야 하므로 (B)－(C)－(A)가 맞아요."
+    ]
+  ],
+  "note": "(B)의 seamless와 (A)의 seam은 같은 뿌리의 단어가 반대 뜻으로 쓰인 짝이에요. 수업에서는 이런 단어 짝을 먼저 찾아 동그라미 치게 하는데, 이 문항은 그것만으로도 (A)가 마지막이라는 게 보여요."
+}

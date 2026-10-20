@@ -1,0 +1,179 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 18,
+  "type": "목적",
+  "points": 2,
+  "answer": 1,
+  "topic": "디지털 마케팅 연수 비용 일부를 회사가 지원해 달라는 요청 편지",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 18번",
+    "2026 10월 고1 영어 18번 해설",
+    "고1 10월 모의고사 18번 정답",
+    "고1 모의고사 글의 목적",
+    "연수 비용 지원 요청 편지",
+    "training cost 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 18번은 마케팅 보조원 Karen Whitfield가 상사에게 디지털 마케팅 연수 비용의 일부를 회사가 내 달라고 부탁하는 편지예요. 중간의 I'm requesting that the company cover part of my training cost가 목적을 그대로 말해 줘요. 정답은 ① 업무 관련 연수 비용 지원을 요청하려고예요.",
+  "flow": [
+    [
+      "소개",
+      "마케팅 부서 보조원 Karen Whitfield가 자신을 소개하고, 능력을 키우려고 추가 연수를 받고 싶다고 말한다."
+    ],
+    [
+      "이유",
+      "지난 분기에 부서가 온라인에서 잠재 고객을 더 잘 끌어들여야 한다는 점을 알게 되었다."
+    ],
+    [
+      "요청",
+      "그래서 회사가 연수 비용의 일부를 지원해 주기를 요청한다."
+    ],
+    [
+      "세부",
+      "디지털 마케팅 전략을 다루는 Smart Growth Training의 2주 과정(1,600달러)을 찾았고 현재 업무에 도움이 될 것이라 믿는다."
+    ],
+    [
+      "마무리",
+      "요청을 긍정적으로 검토해 주기를 바란다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "I would like to receive additional training to further develop my skills.",
+      "ko": "저는 제 능력을 더욱 향상시키기 위해 추가적인 연수를 받고 싶습니다.",
+      "note": "편지의 화제가 '연수'라는 것을 먼저 알려 줘요."
+    },
+    {
+      "en": "For this reason, I'm requesting that the company cover part of my training cost.",
+      "ko": "이러한 이유로, 저는 회사가 제 연수 비용의 일부를 지원해 줄 것을 요청합니다.",
+      "note": "For this reason 뒤에 오는 I'm requesting이 목적 문장이에요. '연수 비용 + 지원 요청'이 ①과 정확히 맞아요."
+    },
+    {
+      "en": "I hope you will consider my request positively.",
+      "ko": "저는 귀하께서 제 요청을 긍정적으로 고려해 주기를 바랍니다.",
+      "note": "마지막 문장도 '요청'으로 끝나서 편지 전체가 부탁하는 글임을 확인해 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "업무 관련 연수 비용 지원을 요청하려고",
+      "ko": "연수 비용 지원 요청",
+      "why": "정답. cover part of my training cost(연수 비용 일부 지원)를 요청하는 편지예요. 연수도 현재 업무(디지털 마케팅)와 관련돼 있어요."
+    },
+    {
+      "en": "온라인 마케팅 비용 증액을 요구하려고",
+      "ko": "마케팅 비용 증액",
+      "why": "online, marketing이 본문에 나오지만, 늘려 달라는 건 마케팅 예산이 아니라 개인 연수비 지원이에요."
+    },
+    {
+      "en": "마케팅 부서의 업무 성과를 보고하려고",
+      "ko": "업무 성과 보고",
+      "why": "부서가 개선할 점을 알아챘다고 말할 뿐, 성과를 보고하는 내용은 없어요."
+    },
+    {
+      "en": "마케팅 관련 연수 개설을 제안하려고",
+      "ko": "연수 개설 제안",
+      "why": "연수를 새로 만들자는 게 아니라, 이미 있는 외부 과정을 듣겠다며 비용 지원을 부탁해요."
+    },
+    {
+      "en": "상품 개발비 지원을 문의하려고",
+      "ko": "상품 개발비 문의",
+      "why": "products는 고객을 끌어들일 대상으로만 나와요. 개발비 이야기는 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "as part of ~ / to부정사의 형용사적 용법",
+      "ex": "As part of my efforts to contribute more to the department, I would like to receive additional training …",
+      "d": "as part of는 '~의 일환으로'. to contribute는 앞의 efforts를 꾸며서 '더 기여하려는 노력'이에요."
+    },
+    {
+      "t": "요구·요청 동사 + that + 주어 + (should) 동사원형",
+      "ex": "I'm requesting that the company cover part of my training cost.",
+      "d": "request 뒤 that절에서는 동사원형을 써요. the company covers가 아니라 cover인 이유예요."
+    },
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "… found Smart Growth Training's two-week course that focuses on digital marketing strategies.",
+      "d": "that focuses on ~이 앞의 course를 꾸며요. course가 단수라 focuses예요."
+    },
+    {
+      "t": "believe + (that) 명사절",
+      "ex": "I strongly believe it would be helpful for my current work.",
+      "d": "believe 뒤에 that이 생략된 명사절이에요. it은 앞의 연수 과정을 가리켜요."
+    }
+  ],
+  "vocab": [
+    [
+      "marketing assistant",
+      "마케팅 보조원"
+    ],
+    [
+      "contribute to",
+      "~에 기여하다"
+    ],
+    [
+      "additional",
+      "추가적인"
+    ],
+    [
+      "further",
+      "더욱, 한층 더"
+    ],
+    [
+      "quarter",
+      "분기(3개월)"
+    ],
+    [
+      "attract",
+      "끌어들이다"
+    ],
+    [
+      "potential customer",
+      "잠재 고객"
+    ],
+    [
+      "cover",
+      "(비용을) 대다, 부담하다"
+    ],
+    [
+      "training cost",
+      "연수 비용"
+    ],
+    [
+      "strategy",
+      "전략"
+    ],
+    [
+      "consider",
+      "고려하다"
+    ],
+    [
+      "positively",
+      "긍정적으로"
+    ]
+  ],
+  "summary": {
+    "en": "A marketing assistant asks her company to pay part of the cost of a digital marketing course that would help her work.",
+    "ko": "한 마케팅 보조원이 업무에 도움이 될 디지털 마케팅 과정의 비용 일부를 회사가 지원해 달라고 요청한다."
+  },
+  "writing": {
+    "en": "I'm requesting that the company cover part of my training cost.",
+    "ko": "저는 회사가 제 연수 비용의 일부를 지원해 줄 것을 요청합니다."
+  },
+  "tip": "목적 문제는 I'm requesting, I would like to, I hope you will 같은 '부탁 표현'을 찾으세요. For this reason, So 같은 연결어 바로 뒤에 목적 문장이 자주 와요. 본문 단어(online, marketing, products)만 겹치는 선택지는 내용까지 맞는지 꼭 확인하세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 18번 정답은?",
+      "① 업무 관련 연수 비용 지원을 요청하려고예요. 회사가 연수 비용의 일부를 내 달라고 부탁하는 편지예요."
+    ],
+    [
+      "2026 10월 고1 18번은 어떤 유형인가요?",
+      "글의 목적을 고르는 2점 문항이에요. 마케팅 보조원이 상사에게 쓴 편지예요."
+    ],
+    [
+      "④ 연수 개설 제안이 오답인 이유는?",
+      "글쓴이는 연수를 새로 만들자는 게 아니라, 이미 찾은 외부 과정의 비용을 지원해 달라고 해요. '개설'과 '비용 지원'은 달라요."
+    ]
+  ]
+}

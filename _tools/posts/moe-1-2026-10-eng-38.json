@@ -1,0 +1,197 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 38,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 4,
+  "topic": "반복해서 들은 말일수록 사실처럼 느껴진다 (진실 착각 효과)",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 38번",
+    "2026 10월 고1 영어 38번 해설",
+    "고1 10월 모의고사 38번 정답",
+    "고1 모의고사 문장 삽입",
+    "illusory truth effect 진실 착각 효과",
+    "Hasher Goldstein 반복 실험 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 38번은 같은 말을 여러 번 들으면 더 사실처럼 느낀다는 '진실 착각 효과' 실험을 다룬 문장 삽입 문항이에요. 주어진 문장은 '놀라운 결과'의 구체적 내용이고, 바로 뒤 In other words가 그 내용을 다시 풀어 말해요. 정답은 ④예요.",
+  "flow": [
+    [
+      "실험",
+      "1977년 Hasher와 Goldstein이 대학생들에게 60개 잡학 진술문이 참인지 거짓인지 얼마나 확신하는지 물었다."
+    ],
+    [
+      "방법",
+      "2주 간격으로 세 번 평가하게 했고, 20개는 매번 반복, 40개는 매번 새것이었다."
+    ],
+    [
+      "비교",
+      "반복된 진술문과 새 진술문의 '진실성 평가'를 비교했고, 결과는 놀라웠다."
+    ],
+    [
+      "결과",
+      "참이든 거짓이든 반복될수록 그 말이 사실이라는 믿음이 올라갔다. (주어진 문장)"
+    ],
+    [
+      "정리",
+      "자주 들을수록 더 '참'처럼 들린다. 이를 진실 착각 효과라고 부르게 되었다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "What they found was astonishing.",
+      "ko": "그들이 알아낸 것은 놀라웠다.",
+      "note": "'놀라웠다'고만 하고 무엇을 알아냈는지는 말하지 않아요. 바로 뒤에 구체적인 결과가 와야 하는 자리예요."
+    },
+    {
+      "en": "Regardless of whether the statement was true or false, belief in the truth of the claim went up as a function of repetition.",
+      "ko": "그 진술문이 참이든 거짓이든 상관없이, 그 주장의 진실성에 대한 믿음은 반복에 따라 올라갔다.",
+      "note": "주어진 문장이 바로 그 '놀라운 결과'예요. 반복할수록 믿음이 올라갔다는 내용이에요."
+    },
+    {
+      "en": "In other words, the more often you hear a statement, the more ‘true’ it sounds.",
+      "ko": "다시 말해, 어떤 진술문을 더 자주 들을수록 그것은 더 '참'처럼 들린다.",
+      "note": "In other words는 앞 문장을 쉽게 바꿔 말할 때 써요. 앞에 '반복 → 믿음 상승'이 먼저 나와야 하니 주어진 문장은 ④에 들어가요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① The students were asked to evaluate the sixty statements three times, at two-week intervals. ( ① )",
+      "ko": "평가 방법 설명 뒤",
+      "why": "아직 실험 방법(세 번 평가)을 설명하는 중이에요. 몇 개가 반복됐는지도 나오기 전이라 결과가 올 수 없어요."
+    },
+    {
+      "en": "② Crucially, only twenty of the statements were repeated each time; the other forty were new. ( ② )",
+      "ko": "20개 반복·40개 새것 뒤",
+      "why": "이 뒤에 '반복 vs 비반복을 비교했다'는 절차가 이어져야 자연스러워요. 결과가 먼저 나오면 순서가 뒤집혀요."
+    },
+    {
+      "en": "③ The researchers then compared the ‘truth-ratings’ of the repeated versus non-repeated statements. ( ③ )",
+      "ko": "비교했다 뒤",
+      "why": "비교 다음에 What they found was astonishing.으로 결과를 예고하는 흐름이 끊기지 않아야 해요."
+    },
+    {
+      "en": "④ What they found was astonishing. ( ④ )",
+      "ko": "'놀라웠다' 뒤, In other words 앞",
+      "why": "정답. '놀라웠다' → 무엇이 놀라웠는지(반복할수록 믿음 상승) → In other words로 다시 풀어 말하기가 자연스럽게 이어져요."
+    },
+    {
+      "en": "⑤ In other words, the more often you hear a statement, the more ‘true’ it sounds. ( ⑤ )",
+      "ko": "In other words 뒤",
+      "why": "In other words 문장이 이미 결과를 정리했어요. 그 뒤에 결과를 처음 밝히는 문장이 오면 순서가 어색하고, This became known as ~ 와도 끊겨요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "regardless of whether A or B",
+      "ex": "Regardless of whether the statement was true or false, belief in the truth of the claim went up …",
+      "d": "'A이든 B이든 상관없이'. 참·거짓과 관계없이 믿음이 올라갔다는 게 핵심이에요."
+    },
+    {
+      "t": "as a function of",
+      "ex": "belief in the truth of the claim went up as a function of repetition.",
+      "d": "'~에 따라 (달라져서)'. 반복 횟수에 따라 믿음이 올라갔다는 뜻이에요."
+    },
+    {
+      "t": "the 비교급 ~, the 비교급 …",
+      "ex": "the more often you hear a statement, the more ‘true’ it sounds.",
+      "d": "'~할수록 더 …하다'. 두 번째 the more 뒤는 원래 it sounds more true에서 순서가 바뀐 형태예요."
+    },
+    {
+      "t": "간접의문문 how + 형용사",
+      "ex": "asked a group of college students how certain they were that sixty … statements were either true or false.",
+      "d": "how certain they were는 '그들이 얼마나 확신하는지'. 의문사 + 주어 + 동사 순서예요."
+    },
+    {
+      "t": "what 명사절 주어",
+      "ex": "What they found was astonishing.",
+      "d": "What they found(그들이 알아낸 것)가 문장 전체의 주어예요. 단수 취급해서 was를 써요."
+    }
+  ],
+  "vocab": [
+    [
+      "psychologist",
+      "심리학자"
+    ],
+    [
+      "general-knowledge",
+      "일반 상식의"
+    ],
+    [
+      "trivia",
+      "잡학적 지식"
+    ],
+    [
+      "statement",
+      "진술, 진술문"
+    ],
+    [
+      "evaluate",
+      "평가하다"
+    ],
+    [
+      "interval",
+      "간격"
+    ],
+    [
+      "crucially",
+      "결정적으로"
+    ],
+    [
+      "rating",
+      "평가, 등급"
+    ],
+    [
+      "astonishing",
+      "놀라운"
+    ],
+    [
+      "regardless of",
+      "~에 상관없이"
+    ],
+    [
+      "claim",
+      "주장"
+    ],
+    [
+      "as a function of",
+      "~에 따라"
+    ],
+    [
+      "repetition",
+      "반복"
+    ],
+    [
+      "illusory",
+      "착각의, 환상에 불과한"
+    ],
+    [
+      "be known as",
+      "~로 알려지다"
+    ]
+  ],
+  "summary": {
+    "en": "Hearing a statement repeatedly makes people believe it is true, whether it is actually true or false.",
+    "ko": "어떤 말을 반복해서 들으면, 실제로 참이든 거짓이든 사람들은 그것을 사실이라고 믿게 된다."
+  },
+  "writing": {
+    "en": "Repetition can make even a false claim sound true.",
+    "ko": "반복은 거짓 주장조차 사실처럼 들리게 만들 수 있다."
+  },
+  "tip": "'놀라웠다', '흥미로웠다'처럼 결과를 예고만 하는 문장 뒤에는 구체적 내용이 와야 해요. 그리고 In other words, That is 같은 '바꿔 말하기' 표현 바로 앞에는 바꿔 말할 원래 문장이 있어야 해요. 이 두 가지를 겹치면 자리가 하나로 좁혀져요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 38번 정답은?",
+      "④예요. 주어진 문장이 What they found was astonishing.의 구체적인 결과이고, 뒤의 In other words 문장이 그것을 다시 풀어 말해요."
+    ],
+    [
+      "2026년 10월 고1 영어 38번은 어떤 유형인가요?",
+      "주어진 문장이 들어갈 곳을 고르는 2점 문장 삽입 문항이에요. 반복이 믿음을 높이는 진실 착각 효과 실험을 다뤘어요."
+    ],
+    [
+      "⑤가 오답인 이유는?",
+      "⑤ 앞의 In other words 문장이 이미 결과를 요약했어요. 바꿔 말하기 표현은 원래 내용 뒤에 와야 하니 주어진 문장은 그보다 앞인 ④에 들어가야 해요."
+    ]
+  ],
+  "note": "이 지문은 문제 풀이로 끝내지 말고, 시험 전에 '외운 것 같은 느낌'만으로 안다고 착각하는 것도 같은 원리라고 연결해 줘요. 여러 번 본 것과 진짜 아는 것은 다르다는 걸 꼭 짚고 넘어가요."
+}

@@ -1,0 +1,183 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 32,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 2,
+  "topic": "경청받는다고 느끼게 하려면 들었다는 것을 보여 줘야 한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 32번",
+    "2026 10월 고1 영어 32번 해설",
+    "고1 10월 모의고사 32번 정답",
+    "고1 모의고사 빈칸 추론",
+    "feel heard 경청 지문",
+    "demonstrate that they listened"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 32번은 상대가 '경청받았다'고 느끼게 하는 세 가지 조건을 다룬 빈칸 추론 문항이에요. 빈칸 뒤에서 '반응이 없으면 들었는지 알 수 없다', '들었다는 외적 신호'를 말하니, 셋째 조건은 들었다는 걸 보여 주는 거예요. 정답은 ② demonstrate that they listened예요.",
+  "flow": [
+    [
+      "주장",
+      "사람들은 고객이든 아니든 경청받는다고 느끼고 싶어 한다."
+    ],
+    [
+      "조건",
+      "그러려면 세 가지가 필요하다: 상대가 주의를 기울였다고 느끼고, 이해했다고 느끼고, 셋째로 상대가 들었다는 것을 보여 줘야 한다."
+    ],
+    [
+      "강조",
+      "이 마지막 부분이 핵심이다."
+    ],
+    [
+      "예시",
+      "아무 반응 없는 사람은 다 듣고 이해했을지라도, 겉으로 드러나는 신호가 없으면 정말 들었는지 알 수 없다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "This last part is key. Imagine talking to someone who provided no response.",
+      "ko": "이 마지막 부분이 핵심이다. 아무 반응도 보이지 않는 사람과 이야기한다고 상상해 보라.",
+      "note": "셋째 조건(빈칸)이 '반응을 보이는 것'과 관련 있다는 걸 알려 줘요."
+    },
+    {
+      "en": "But without some sort of outward signal that indicates they listened, it’s impossible to know whether or not they actually did.",
+      "ko": "그러나 그들이 귀를 기울였음을 보여 주는 어떤 외적인 신호 없이는, 그들이 실제로 그랬는지 아닌지 알 수 없다.",
+      "note": "outward signal that indicates they listened = 빈칸 ②의 demonstrate that they listened를 바꿔 말한 표현이에요."
+    },
+    {
+      "en": "They might have attended to everything we said. They might even have understood it completely.",
+      "ko": "그들은 우리가 말한 모든 것에 주의를 기울였을지도 모른다. 심지어 완전히 이해했을지도 모른다.",
+      "note": "첫째(주의)·둘째(이해) 조건은 채워져도 부족하다는 뜻이에요. 그러니 셋째는 '주의·이해'와 다른 '보여 주기'예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "avoid showing their feelings",
+      "ko": "자신의 감정을 드러내지 않다",
+      "why": "글은 오히려 반응·신호를 보여야 한다고 해요. 방향이 반대예요."
+    },
+    {
+      "en": "demonstrate that they listened",
+      "ko": "자신이 들었다는 것을 보여 주다",
+      "why": "정답. 빈칸 뒤의 '반응 없음'의 문제점과 '들었음을 나타내는 외적 신호'가 그대로 이 내용이에요."
+    },
+    {
+      "en": "figure out their hidden intention",
+      "ko": "그들의 숨은 의도를 알아내다",
+      "why": "숨은 의도를 파악하는 이야기는 없어요. 핵심은 겉으로 드러나는 신호예요."
+    },
+    {
+      "en": "collect enough information before deciding",
+      "ko": "결정하기 전에 충분한 정보를 모으다",
+      "why": "결정·정보 수집은 지문과 관계없어요."
+    },
+    {
+      "en": "consider whether their concern makes sense",
+      "ko": "그들의 우려가 타당한지 고려하다",
+      "why": "concern은 본문에 나오지만, 우려의 타당성을 따지는 건 '경청받는 느낌'의 조건이 아니에요. 본문 단어를 재활용한 함정이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "whether A or otherwise",
+      "ex": "People, whether customers or otherwise, want to feel heard.",
+      "d": "'A이든 아니든'. 삽입구라 주어 People과 동사 want 사이를 건너뛰고 읽으세요. feel heard는 '경청받는다고 느끼다'(feel + 과거분사)."
+    },
+    {
+      "t": "feel like + 주어 + 동사",
+      "ex": "they have to feel like the other person paid attention to what they said",
+      "d": "'~인 것처럼 느끼다'. like가 접속사로 쓰여 뒤에 절이 와요. what they said는 '그들이 말한 것'."
+    },
+    {
+      "t": "might have p.p.",
+      "ex": "They might have attended to everything we said. They might even have understood it completely.",
+      "d": "'~했을지도 모른다'. 과거에 대한 약한 추측이에요. 주의·이해는 했을 수도 있지만 확인할 수 없다는 뜻이에요."
+    },
+    {
+      "t": "without + 명사 + that절 / 가주어 it",
+      "ex": "But without some sort of outward signal that indicates they listened, it’s impossible to know whether or not they actually did.",
+      "d": "that indicates ~는 signal을 꾸미는 관계절. it은 가주어, to know ~가 진주어. did는 listened를 대신하는 대동사예요."
+    }
+  ],
+  "vocab": [
+    [
+      "customer",
+      "고객"
+    ],
+    [
+      "otherwise",
+      "그렇지 않으면, 다른 식으로"
+    ],
+    [
+      "feel heard",
+      "경청받는다고 느끼다"
+    ],
+    [
+      "customer service",
+      "고객 서비스 (센터)"
+    ],
+    [
+      "concern",
+      "걱정, 관심사"
+    ],
+    [
+      "address",
+      "(문제를) 다루다, 해결하다"
+    ],
+    [
+      "pay attention to",
+      "~에 주의를 기울이다"
+    ],
+    [
+      "key",
+      "핵심적인"
+    ],
+    [
+      "response",
+      "반응"
+    ],
+    [
+      "attend to",
+      "~에 주의를 기울이다"
+    ],
+    [
+      "outward",
+      "외적인, 겉으로 보이는"
+    ],
+    [
+      "signal",
+      "신호"
+    ],
+    [
+      "indicate",
+      "나타내다"
+    ],
+    [
+      "demonstrate",
+      "보여 주다, 증명하다"
+    ]
+  ],
+  "summary": {
+    "en": "To make people feel heard, we must not only pay attention and understand but also show them outwardly that we listened.",
+    "ko": "사람들이 경청받는다고 느끼게 하려면 주의를 기울이고 이해하는 것뿐 아니라, 우리가 들었다는 것을 겉으로 보여 줘야 한다."
+  },
+  "writing": {
+    "en": "Listening is not enough; you have to show that you listened.",
+    "ko": "듣는 것만으로는 충분하지 않다. 들었다는 것을 보여 줘야 한다."
+  },
+  "tip": "First, Second, third로 조건이 나열되면 빈칸(셋째)은 앞의 두 조건과 '다른' 내용이에요. 그리고 This last part is key 뒤 설명이 빈칸을 풀어 쓴 부분이에요. outward signal that indicates they listened를 선택지와 그대로 맞춰 보세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 32번 정답은?",
+      "② demonstrate that they listened(자신이 들었다는 것을 보여 주다)예요. 들었다는 외적 신호가 없으면 경청받았다고 느낄 수 없다는 내용이에요."
+    ],
+    [
+      "2026 10월 고1 영어 32번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 상대가 경청받는다고 느끼는 조건을 다룬 지문이에요."
+    ],
+    [
+      "⑤ consider whether their concern makes sense가 오답인 이유는?",
+      "concern이 본문에 나오지만, 글은 우려가 타당한지 따지는 게 아니라 들었다는 걸 겉으로 보여 주는 게 핵심이라고 말해요."
+    ]
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 33,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 5,
+  "topic": "장소는 경험의 수동적 배경이 아니라 경험 그 자체의 매개체다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 33번",
+    "2026 10월 고1 영어 33번 해설",
+    "고1 10월 모의고사 33번 정답",
+    "고1 모의고사 빈칸 추론",
+    "place and experience 지문",
+    "Georges Poulet Proust 지문",
+    "고1 영어 빈칸 3점"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 33번은 장소와 공간이 경험과 떼려야 뗄 수 없다는 3점 빈칸 추론 문항이에요. 빈칸 뒤에서 공간은 '단지 경험 바깥의 배경이 아니다(not merely a background)'라고 바로 풀어 주는 게 결정적 단서예요. 정답은 ⑤ challenges the idea of place as passive backdrop이에요.",
+  "flow": [
+    [
+      "도입",
+      "모든 경험은 물리적 공간에서 '일어나기' 때문에, 공간은 그 안에서 일어난 사건과 분리될 수 없다."
+    ],
+    [
+      "예시",
+      "나무와 그 아래 땅은 그곳에서 일어난 일과 떼어 낼 수 없다."
+    ],
+    [
+      "주장(빈칸)",
+      "공간·장소·경험의 뒤얽힘은 장소를 수동적 배경으로 보는 생각에 이의를 제기한다."
+    ],
+    [
+      "부연",
+      "공간적 틀은 모든 행동·생각·기억·감정의 매개체이며, 흔히 생각하듯 경험 바깥의 배경에 그치지 않는다."
+    ],
+    [
+      "인용",
+      "Poulet: 사람은 옷을 두르듯 장소로 자신을 감싼다. 장소가 없으면 존재는 추상 개념일 뿐이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The very fact that all of our experiences “take place” in a physical space makes the space inseparable from what defines it, from the event that took place in it.",
+      "ko": "우리의 모든 경험이 물리적 공간에서 '일어난다'는 바로 그 사실은 그 공간을 그것을 규정하는 것, 즉 그 안에서 일어난 사건과 분리될 수 없게 만든다.",
+      "note": "첫 문장부터 '공간과 경험은 분리할 수 없다(inseparable)'예요. 공간이 경험과 따로 노는 배경이 아니라는 방향이 잡혀요."
+    },
+    {
+      "en": "… we must accept the possibility that the spatial framework is the medium of all experiences—actions, thoughts, memories, and feelings of every place—not merely a background or context exterior to experience (as commonly supposed).",
+      "ko": "… 우리는 공간적 틀이 모든 경험, 즉 모든 장소에서의 행동·생각·기억·감정의 매개체이며, (흔히 생각하듯) 단지 경험 바깥의 배경이나 상황이 아니라는 가능성을 받아들여야 한다.",
+      "note": "빈칸 바로 다음 문장이에요. not merely a background(단지 배경이 아니다)가 ⑤의 '수동적 배경이라는 생각에 이의를 제기한다'와 그대로 겹쳐요."
+    },
+    {
+      "en": "Without places, beings would be only abstractions.",
+      "ko": "장소가 없다면 존재들은 단지 추상적 개념에 불과할 것이다.",
+      "note": "장소가 존재를 구체적으로 만들어 준다는 마무리예요. 장소가 '그냥 뒤에 깔린 배경'보다 훨씬 능동적인 역할을 한다는 뜻이라 ⑤를 뒷받침해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "limits our ability to recall past events",
+      "ko": "과거 사건을 떠올리는 능력을 제한한다",
+      "why": "memories가 본문에 나오지만, 공간이 기억을 '제한한다'는 내용은 없어요. 오히려 공간은 기억의 매개체예요."
+    },
+    {
+      "en": "explains how actions influence thoughts",
+      "ko": "행동이 생각에 어떻게 영향을 주는지 설명한다",
+      "why": "actions, thoughts는 경험의 예로 나열된 단어일 뿐이에요. 행동과 생각 사이의 관계는 글의 주제가 아니에요."
+    },
+    {
+      "en": "shows how time settings work in literature",
+      "ko": "문학에서 시간적 배경이 어떻게 작동하는지 보여 준다",
+      "why": "글은 '시간'이 아니라 '공간·장소' 이야기예요. Proust 소설은 장소에 대한 인용을 위해 나왔을 뿐이에요."
+    },
+    {
+      "en": "makes it difficult for us to define our feelings",
+      "ko": "우리의 감정을 정의하기 어렵게 만든다",
+      "why": "feelings, define 같은 본문 단어를 섞은 함정이에요. 감정을 정의하기 어렵다는 말은 어디에도 없어요."
+    },
+    {
+      "en": "challenges the idea of place as passive backdrop",
+      "ko": "장소를 수동적 배경으로 보는 생각에 이의를 제기한다",
+      "why": "정답. 빈칸 뒤 not merely a background or context exterior to experience (as commonly supposed)를 그대로 바꿔 말한 표현이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "make + 목적어 + 형용사(목적격 보어)",
+      "ex": "The very fact that all of our experiences “take place” in a physical space makes the space inseparable from what defines it",
+      "d": "주어는 The very fact (that ~) 전체, 동사는 makes예요. 'the space를 inseparable한 상태로 만든다'. that절은 fact의 내용을 말하는 동격절이에요."
+    },
+    {
+      "t": "동격의 that",
+      "ex": "we must accept the possibility that the spatial framework is the medium of all experiences",
+      "d": "the possibility 뒤 that절이 '어떤 가능성인지'를 설명해요. 뒤 문장이 완전하니 관계대명사가 아니라 동격 접속사예요."
+    },
+    {
+      "t": "not merely A (but B 생략 구조)",
+      "ex": "… the medium of all experiences … not merely a background or context exterior to experience (as commonly supposed).",
+      "d": "'단지 A가 아니라'. 앞의 the medium과 짝을 이뤄 '매개체이지, 단순한 배경이 아니다'로 읽어요. exterior to experience는 형용사구 후치 수식이에요."
+    },
+    {
+      "t": "the way + 주어 + 동사 (~하는 것처럼)",
+      "ex": "Beings surround themselves with the places where they find themselves, the way one wraps oneself up in a garment …",
+      "d": "the way는 여기서 '~하는 방식으로, ~하듯이'라는 접속사처럼 쓰여요. where는 the places를 꾸미는 관계부사예요."
+    },
+    {
+      "t": "가정법 과거 (Without ~)",
+      "ex": "Without places, beings would be only abstractions.",
+      "d": "Without ~ = If it were not for ~ '~이 없다면'. 주절에 would + 동사원형이 와서 현재 사실의 반대를 가정해요."
+    }
+  ],
+  "vocab": [
+    [
+      "take place",
+      "일어나다 (장소를 차지하다는 말장난)"
+    ],
+    [
+      "physical",
+      "물리적인"
+    ],
+    [
+      "inseparable",
+      "분리할 수 없는"
+    ],
+    [
+      "define",
+      "규정하다, 정의하다"
+    ],
+    [
+      "beneath",
+      "~ 아래에"
+    ],
+    [
+      "intertwining",
+      "뒤얽힘"
+    ],
+    [
+      "central",
+      "중심적인"
+    ],
+    [
+      "spatial",
+      "공간의"
+    ],
+    [
+      "framework",
+      "틀, 체계"
+    ],
+    [
+      "medium",
+      "매개체, 수단"
+    ],
+    [
+      "exterior to",
+      "~의 외부에 있는"
+    ],
+    [
+      "commonly supposed",
+      "흔히 생각되는"
+    ],
+    [
+      "literary critic",
+      "문학 평론가"
+    ],
+    [
+      "elegantly",
+      "유려하게, 우아하게"
+    ],
+    [
+      "garment",
+      "의복"
+    ],
+    [
+      "disguise",
+      "변장"
+    ],
+    [
+      "characterization",
+      "특징 짓기, 성격 묘사"
+    ],
+    [
+      "abstraction",
+      "추상적 개념"
+    ],
+    [
+      "passive",
+      "수동적인"
+    ],
+    [
+      "backdrop",
+      "배경 — 정답 표현"
+    ]
+  ],
+  "summary": {
+    "en": "Because every experience takes place somewhere, place is not a passive background but the very medium through which we act, think, remember, and feel.",
+    "ko": "모든 경험은 어딘가에서 일어나기 때문에, 장소는 수동적인 배경이 아니라 우리가 행동하고 생각하고 기억하고 느끼는 매개체 그 자체이다."
+  },
+  "writing": {
+    "en": "Place is not just the stage of our experiences but a part of them.",
+    "ko": "장소는 경험의 무대일 뿐 아니라 경험의 일부이다."
+  },
+  "tip": "빈칸 다음 문장에 not merely A(단지 A가 아니다)나 as commonly supposed(흔히 생각하듯) 같은 표현이 보이면, 글쓴이가 '일반적인 생각을 뒤집는' 중이라는 신호예요. 빈칸에는 challenge, question, reject처럼 '통념에 반박하는' 말이 잘 어울려요. 본문 단어(memories, feelings)를 그대로 쓴 선택지는 먼저 의심하세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 33번 정답은?",
+      "⑤ challenges the idea of place as passive backdrop(장소를 수동적 배경으로 보는 생각에 이의를 제기한다)예요. 공간·장소·경험은 서로 뒤얽혀 있어서 장소는 단순한 배경이 아니라는 내용이에요."
+    ],
+    [
+      "2026년 10월 고1 영어 33번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 장소와 경험의 관계를 다룬 철학적인 지문이에요."
+    ],
+    [
+      "④ makes it difficult for us to define our feelings가 오답인 이유는?",
+      "feelings와 define은 본문에 나온 단어지만, 글은 감정을 정의하기 어렵다는 이야기가 아니에요. 장소가 경험의 매개체라는 내용이라 ⑤가 답이에요."
+    ]
+  ],
+  "note": "빈칸 바로 뒤에 not merely와 as commonly supposed가 같이 나오면, 저는 '통념 뒤집기'라고 크게 표시하게 해요. 이 문항은 그 한 줄을 영어 선택지로 바꿔 말한 것만 찾으면 3점이 풀려요."
+}

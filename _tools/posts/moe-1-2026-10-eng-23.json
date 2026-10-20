@@ -1,0 +1,203 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 23,
+  "type": "주제",
+  "points": 2,
+  "answer": 5,
+  "topic": "내부 고발자 보호는 개인의 행동과 공익을 함께 지킨다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 23번",
+    "2026 10월 고1 영어 23번 해설",
+    "고1 10월 모의고사 23번 정답",
+    "고1 모의고사 주제",
+    "whistleblower protection 지문",
+    "내부 고발자 보호 영어 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 23번은 기업의 위법 행위를 알리는 내부 고발자(whistleblower)를 왜 보호해야 하는지 다룬 주제 문항이에요. 마지막 두 문장에서 '개인의 행동 보호 + 공익 보호'라는 두 가지 기능을 정리해 주는 게 핵심이에요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "배경",
+      "최근 기업 차원의 위법 행위가 늘었거나, 적어도 드러난 사건이 늘었다."
+    ],
+    [
+      "원인",
+      "이런 위법 행위는 용기 있는 제보자들이 큰 위험을 무릅썼기 때문에 드러났다 → 내부 고발자 보호가 주목받는다."
+    ],
+    [
+      "문제",
+      "직원들이 보복이 두려워 신고하지 못하면 위법 행위가 오래 숨겨져 기업, 제3자, 경제, 대중, 법치까지 피해를 본다."
+    ],
+    [
+      "결론",
+      "내부 고발자 보호는 개인의 행동과 공익을 함께 지키는 두 가지 기능을 하며, 균형 잡힌 보호는 둘 다에 좋은 영향을 준다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Hence, it is no surprise that whistleblower protection has come into focus.",
+      "ko": "따라서 내부 고발자 보호가 주목받게 된 것은 놀라운 일이 아니다.",
+      "note": "Hence(따라서)로 앞 내용을 정리하면서 글의 소재인 whistleblower protection을 처음 꺼내요."
+    },
+    {
+      "en": "Protecting those who would assist in reducing unlawful or even criminal behaviour has two main functions: Protecting the individual's actions as well as protecting the public good.",
+      "ko": "위법하거나 심지어 범죄인 행위를 줄이는 데 도움을 주려는 사람들을 보호하는 것은 두 가지 주요 기능을 지닌다. 즉, 그 사람의 행위를 보호하는 것과 공익을 보호하는 것이다.",
+      "note": "콜론(:) 뒤의 두 기능이 선택지 ⑤의 their actions and the public good과 그대로 연결돼요."
+    },
+    {
+      "en": "A well-balanced whistleblower protection may have positive effects on both of these.",
+      "ko": "균형이 잘 잡힌 내부 고발자 보호는 이 두 가지 모두에 긍정적인 영향을 미칠 수 있다.",
+      "note": "마지막 문장이 '그러니 보호가 필요하다'는 결론이에요. ⑤의 need(필요성)와 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "difficulties in protecting whistleblowers' rights",
+      "ko": "내부 고발자의 권리를 보호하는 것의 어려움",
+      "why": "보호가 '어렵다'는 내용은 없어요. 글은 보호가 왜 필요하고 어떤 좋은 점이 있는지를 말해요."
+    },
+    {
+      "en": "importance of punishment for unlawful corporate activities",
+      "ko": "기업의 불법 행위에 대한 처벌의 중요성",
+      "why": "unpunished(처벌받지 않은)가 나오지만, 초점은 처벌이 아니라 제보한 사람을 보호하는 거예요."
+    },
+    {
+      "en": "causes of individuals' hesitation to become a whistleblower",
+      "ko": "개인이 내부 고발자가 되기를 망설이는 원인",
+      "why": "보복이 두려워 신고를 못 한다는 내용은 일부일 뿐이에요. 글 전체의 중심은 '보호의 필요성'이에요."
+    },
+    {
+      "en": "effects of raising public awareness on reducing corporate corruption",
+      "ko": "대중의 인식을 높이는 것이 기업 부패를 줄이는 데 미치는 효과",
+      "why": "대중의 인식 높이기는 글에 나오지 않아요. public만 겹치는 함정이에요."
+    },
+    {
+      "en": "need of whistleblower protection to guard their actions and the public good",
+      "ko": "내부 고발자의 행동과 공익을 지키기 위한 내부 고발자 보호의 필요성",
+      "why": "정답. 위법 행위를 드러내는 사람을 보호하면 개인의 행동과 공익을 함께 지킬 수 있다는 글 전체 내용을 담아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "or at least ~ (앞말을 고쳐 말하기)",
+      "ex": "… the number of illegal actions in particular at the corporate level has grown, or at least the number of cases that came to light, increased.",
+      "d": "'또는 적어도 ~'. 위법 행위가 늘었다고 단정하지 않고 '드러난 사건 수'로 범위를 좁혀 말해요. that came to light는 cases를 꾸며요."
+    },
+    {
+      "t": "only been p.p. because ~",
+      "ex": "Such misconduct has often only been exposed because brave informants have risked a great deal …",
+      "d": "only가 because절을 강조해서 '~했기 때문에 비로소 드러났다'로 읽어요. 현재완료 수동태(has been exposed)예요."
+    },
+    {
+      "t": "it is no surprise that ~",
+      "ex": "Hence, it is no surprise that whistleblower protection has come into focus.",
+      "d": "가주어 it, 진주어 that절. '~한 것은 놀랄 일이 아니다' = 당연하다. come into focus는 '주목받다'."
+    },
+    {
+      "t": "those who + 동사 / A as well as B",
+      "ex": "Protecting those who would assist in reducing unlawful … behaviour has two main functions: Protecting the individual's actions as well as protecting the public good.",
+      "d": "동명사구 주어(Protecting those who …)라 동사는 단수 has예요. those who는 '~하는 사람들'. A as well as B는 'B뿐 아니라 A도'."
+    }
+  ],
+  "vocab": [
+    [
+      "illegal",
+      "불법의"
+    ],
+    [
+      "corporate",
+      "기업의"
+    ],
+    [
+      "come to light",
+      "드러나다, 밝혀지다"
+    ],
+    [
+      "misconduct",
+      "위법 행위, 비행"
+    ],
+    [
+      "expose",
+      "폭로하다, 드러내다"
+    ],
+    [
+      "informant",
+      "제보자"
+    ],
+    [
+      "risk",
+      "~을 걸다, 무릅쓰다"
+    ],
+    [
+      "whistleblower",
+      "내부 고발자"
+    ],
+    [
+      "come into focus",
+      "주목받다"
+    ],
+    [
+      "violation",
+      "위반"
+    ],
+    [
+      "undetected",
+      "발견되지 않은"
+    ],
+    [
+      "unpunished",
+      "처벌받지 않은"
+    ],
+    [
+      "reprisal",
+      "보복"
+    ],
+    [
+      "third-party",
+      "제3자"
+    ],
+    [
+      "the rule of law",
+      "법치(주의)"
+    ],
+    [
+      "unlawful",
+      "불법의"
+    ],
+    [
+      "criminal",
+      "범죄의"
+    ],
+    [
+      "the public good",
+      "공익"
+    ],
+    [
+      "well-balanced",
+      "균형 잡힌"
+    ]
+  ],
+  "summary": {
+    "en": "Protecting whistleblowers who reveal corporate wrongdoing is needed because it guards both their actions and the public good.",
+    "ko": "기업의 잘못을 드러내는 내부 고발자를 보호하는 것은 그들의 행동과 공익을 함께 지켜 주기 때문에 필요하다."
+  },
+  "writing": {
+    "en": "Protecting those who speak up against wrongdoing also protects the public.",
+    "ko": "잘못에 맞서 목소리를 내는 사람을 보호하는 것은 대중을 보호하는 일이기도 하다."
+  },
+  "tip": "주제 문제는 Hence 같은 연결어 뒤 문장과 마지막 결론 문장을 먼저 보세요. 이 글은 콜론(:) 뒤에 '두 가지 기능'을 직접 나열해 줘서, 그 두 단어(actions, public good)가 모두 들어간 선택지를 고르면 돼요. 본문 단어 하나(punishment, public)만 겹치는 선택지는 의심하세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 23번 정답은?",
+      "⑤ need of whistleblower protection to guard their actions and the public good(내부 고발자의 행동과 공익을 지키기 위한 내부 고발자 보호의 필요성)이에요."
+    ],
+    [
+      "2026 10월 고1 영어 23번은 어떤 유형인가요?",
+      "글의 주제를 고르는 2점 문항이에요. 기업의 위법 행위를 알리는 내부 고발자 보호를 다룬 지문이에요."
+    ],
+    [
+      "③ causes of individuals' hesitation이 오답인 이유는?",
+      "보복이 두려워 신고를 망설인다는 내용은 보호가 필요한 이유 중 하나로 잠깐 나올 뿐이에요. 글의 중심은 망설임의 원인이 아니라 보호의 필요성과 그 기능이에요."
+    ]
+  ]
+}

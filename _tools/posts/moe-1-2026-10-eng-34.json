@@ -1,0 +1,205 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 34,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 5,
+  "topic": "모델은 다른 수준을 다 설명하지 않고도 한 수준에서 유용하게 만들 수 있다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 34번",
+    "2026 10월 고1 영어 34번 해설",
+    "고1 10월 모의고사 34번 정답",
+    "고1 모의고사 빈칸 추론",
+    "simplifying assumptions 지문",
+    "모델 단순화 가정 지문",
+    "고1 영어 빈칸 3점"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 34번은 모든 모델이 어떤 것들을 '주어진 것(a given)'으로 받아들이는 단순화 가정을 한다는 3점 빈칸 추론 문항이에요. Darwin은 유전 원리를 몰랐고, 물리학자는 전자의 질량이 '왜' 그런지 따지지 않고 넘어간다는 예시가 핵심이에요. 정답은 ⑤ without a complete accounting of what's happening at all other levels예요.",
+  "flow": [
+    [
+      "주장",
+      "진화 시스템(예: 휴대 전화)을 어떻게 정하든, 모델은 어떤 것들을 주어진 것으로 받아들여야 한다. 모든 모델은 단순화 가정을 한다."
+    ],
+    [
+      "예시 1",
+      "Wallace와 Darwin은 변이와 유전의 원리를 거의 몰랐지만, 그것이 어떻게든 일어난다고 받아들이고 진화 모델을 세웠다."
+    ],
+    [
+      "예시 2",
+      "가장 미세한 수준에서도 마찬가지로, 물리학자는 기본 입자의 질량과 전하를 주어진 것으로 받아들인다."
+    ],
+    [
+      "예시 2 부연",
+      "원자 결합 모델에서 전자가 '왜' 그 질량·전하를 갖는지 설명하지 않고 측정값을 받아들이고 넘어간다."
+    ],
+    [
+      "결론(빈칸)",
+      "한 분석 수준에서 유용한 모델은 다른 모든 수준에서 일어나는 일을 완전히 설명하지 않고도 만들 수 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Indeed, all models must make simplifying assumptions of this nature.",
+      "ko": "실제로 '모든' 모델은 이러한 성격의 단순화하는 가정을 세워야만 한다.",
+      "note": "글의 주장이에요. 모델은 모든 걸 다 설명하는 게 아니라 일부를 '그냥 받아들이고' 간다는 뜻이에요."
+    },
+    {
+      "en": "When Wallace and Darwin presented their verbal model of biological evolution, there was little knowledge of how variation generation and inheritance worked. They just took as a given that these things happened somehow.",
+      "ko": "Wallace와 Darwin이 생물학적 진화에 대한 언어적 모델을 제시했을 때, 변이 생성과 유전이 어떻게 작동하는지 거의 알지 못했다. 그들은 이런 일들이 어떻게든 일어났다는 것을 그저 주어진 것으로 받아들였다.",
+      "note": "유전이라는 '다른 수준'의 원리를 몰라도 진화 모델은 유용했어요. ⑤의 '다른 수준에 대한 완전한 설명 없이'의 첫 번째 예예요."
+    },
+    {
+      "en": "In a model of atomic bonds, physicists don't attempt to explain why electrons have their particular mass and charge, they just accept the measured values and move on.",
+      "ko": "원자 결합 모델에서 물리학자들은 '왜' 전자가 그 특정한 질량과 전하를 갖는지 설명하려 하지 않고, 그저 측정된 값을 받아들이고 넘어간다.",
+      "note": "'왜'를 설명하지 않고 넘어가도 원자 결합 모델은 쓸모가 있어요. 빈칸 문장 The key point는 이 두 예시를 정리한 결론이라 ⑤가 들어가요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "with enough financial support for quality studies",
+      "ko": "양질의 연구를 위한 충분한 재정 지원으로",
+      "why": "연구비 이야기는 본문에 전혀 없어요."
+    },
+    {
+      "en": "even in the absence of acceptance by other scientists",
+      "ko": "다른 과학자들의 인정이 없더라도",
+      "why": "in the absence of(~ 없이)라는 형태는 그럴듯하지만, 없어도 되는 건 '다른 과학자의 인정'이 아니라 '다른 수준에 대한 설명'이에요."
+    },
+    {
+      "en": "by tracing how science has developed throughout history",
+      "ko": "과학이 역사 속에서 어떻게 발전해 왔는지 추적함으로써",
+      "why": "Darwin이 나와서 역사 이야기처럼 보이지만, 과학사 추적이 모델을 만드는 방법이라는 내용은 없어요."
+    },
+    {
+      "en": "through a detailed examination of higher-level phenomena",
+      "ko": "더 높은 수준의 현상을 자세히 살펴봄으로써",
+      "why": "글은 다른 수준을 '자세히 살피지 않아도' 된다는 이야기예요. 방향이 반대예요."
+    },
+    {
+      "en": "without a complete accounting of what's happening at all other levels",
+      "ko": "다른 모든 수준에서 일어나는 일에 대한 완전한 설명 없이",
+      "why": "정답. 유전 원리를 모른 Darwin, 전자 질량의 이유를 묻지 않는 물리학자 모두 '다른 수준을 다 설명하지 않고도' 유용한 모델을 만든 예예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "No matter how (= However) + 주어 + 동사",
+      "ex": "No matter how you choose to delineate your evolutionary system of interest … there will be some things that your model just needs to take as a given",
+      "d": "'어떻게 ~하든 간에'. 양보의 부사절이고, 주절은 there will be some things예요. that은 things를 꾸미는 관계대명사(take의 목적어 자리가 빔)예요."
+    },
+    {
+      "t": "take A as a given",
+      "ex": "Physicists, for example, must take as a given the mass and charge of fundamental particles.",
+      "d": "'A를 주어진 것(당연한 것)으로 받아들이다'. 목적어 the mass and charge ~가 길어서 as a given 뒤로 갔어요(take as a given + 긴 목적어)."
+    },
+    {
+      "t": "간접의문문 (how / why + 주어 + 동사)",
+      "ex": "there was little knowledge of how variation generation and inheritance worked.",
+      "d": "전치사 of 뒤에 의문사절이 명사처럼 와요. 어순은 '의문사 + 주어 + 동사'. 아래 explain why electrons have ~도 같은 구조예요."
+    },
+    {
+      "t": "The key point is that ~",
+      "ex": "The key point is that we can build useful models at one level of analysis …",
+      "d": "보어 자리 that절이 결론을 담아요. 빈칸 문제에서 The key point, In short 같은 말 뒤는 글 전체 요지라서 앞 예시들을 정리하는 말이 와야 해요."
+    }
+  ],
+  "vocab": [
+    [
+      "delineate",
+      "~의 경계를 정하다"
+    ],
+    [
+      "evolutionary",
+      "진화의"
+    ],
+    [
+      "of interest",
+      "관심 있는"
+    ],
+    [
+      "take as a given",
+      "주어진 것으로 받아들이다"
+    ],
+    [
+      "emerge",
+      "나타나다"
+    ],
+    [
+      "simplifying assumption",
+      "단순화하는 가정"
+    ],
+    [
+      "of this nature",
+      "이런 성격의"
+    ],
+    [
+      "verbal",
+      "언어로 된"
+    ],
+    [
+      "variation",
+      "변이"
+    ],
+    [
+      "generation",
+      "생성"
+    ],
+    [
+      "inheritance",
+      "유전"
+    ],
+    [
+      "somehow",
+      "어떻게든"
+    ],
+    [
+      "fundamental particle",
+      "기본 입자"
+    ],
+    [
+      "charge",
+      "전하"
+    ],
+    [
+      "atomic bond",
+      "원자 결합"
+    ],
+    [
+      "measured value",
+      "측정값"
+    ],
+    [
+      "level of analysis",
+      "분석 수준"
+    ],
+    [
+      "accounting",
+      "설명 — 정답 표현"
+    ]
+  ],
+  "summary": {
+    "en": "Every model takes some things as given, so we can build a useful model at one level without fully explaining what happens at every other level.",
+    "ko": "모든 모델은 어떤 것들을 주어진 것으로 받아들이기 때문에, 다른 모든 수준을 완전히 설명하지 않고도 한 수준에서 유용한 모델을 만들 수 있다."
+  },
+  "writing": {
+    "en": "A good model does not have to explain everything.",
+    "ko": "좋은 모델이 모든 것을 설명할 필요는 없다."
+  },
+  "tip": "예시가 두 개 이상 나오면 공통점을 한 줄로 묶어 보세요. Darwin(유전 원리를 모름)과 물리학자(전자 질량의 '왜'를 묻지 않음)의 공통점은 '다른 수준을 몰라도 모델은 쓸 만하다'예요. ②처럼 in the absence of 형태가 비슷해도, '무엇이' 없어도 되는지가 본문과 맞는지 꼭 확인하세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 34번 정답은?",
+      "⑤ without a complete accounting of what's happening at all other levels(다른 모든 수준에서 일어나는 일에 대한 완전한 설명 없이)예요. 모든 모델은 단순화 가정을 하므로 한 수준에서도 유용한 모델을 만들 수 있다는 내용이에요."
+    ],
+    [
+      "2026년 10월 고1 영어 34번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 과학 모델의 단순화 가정을 Darwin과 물리학자 예시로 설명한 지문이에요."
+    ],
+    [
+      "② even in the absence of acceptance by other scientists가 오답인 이유는?",
+      "'~ 없이도'라는 틀은 비슷하지만, 글에서 없어도 되는 것은 다른 과학자의 인정이 아니라 다른 수준에 대한 완전한 설명이에요. 그래서 ⑤가 답이에요."
+    ]
+  ],
+  "note": "빈칸 문장이 The key point is that ~으로 시작하면 앞의 예시들을 한 문장으로 묶으라는 뜻이에요. 수업에서는 Darwin과 물리학자 예시 옆에 각각 '몰라도 OK'라고 적고 빈칸으로 내려가게 해요."
+}

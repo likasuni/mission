@@ -1,0 +1,200 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 30,
+  "type": "어휘",
+  "points": 3,
+  "answer": 3,
+  "topic": "발전소 보조금은 기업의 자유를 늘리고 개인의 몫을 줄인다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 30번",
+    "2026 10월 고1 영어 30번 해설",
+    "고1 10월 모의고사 30번 정답",
+    "고1 모의고사 어휘",
+    "낱말 쓰임 문맥 어휘",
+    "subsidies power plants 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 30번은 발전소 보조금의 문제점을 다룬 3점 어휘 문항이에요. 보조금으로 전력 회사의 기회가 '확대'되고 개인이 그 대가를 치른다는 흐름이라, ③ decreased는 increased가 되어야 해요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "도입",
+      "보조금·세금·규제는 모두 발전소가 석탄을 떠나 오염을 줄이게 할 수 있다."
+    ],
+    [
+      "선호",
+      "발전소는 비용을 직접 내기보다 정부 돈을 받는 보조금을 더 좋아한다."
+    ],
+    [
+      "대가",
+      "보조금으로 늘어난 회사의 기회는 다른 사람들의 기회 축소로 메워진다. 회사의 '자유'는 세금을 더 내는 개인의 희생으로 늘어난다."
+    ],
+    [
+      "왜곡",
+      "회사가 전체 비용을 마주하지 않으니 보조금은 경제를 왜곡한다."
+    ],
+    [
+      "결과",
+      "전기 가격은 너무 낮아지고 소비는 늘어, 단위당 배출이 줄어도 지구 온난화는 심해질 수 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But the “expansion” of their opportunity set through subsidies has to be matched by the contraction of the opportunity set of others.",
+      "ko": "그러나 보조금을 통한 그들의 기회 집합의 '확대'는 다른 사람들의 기회 집합의 축소에 의해 맞춰져야 한다.",
+      "note": "회사 쪽은 expansion(확대), 다른 사람 쪽은 contraction(축소)이에요. 바로 다음 문장도 같은 대비를 반복해요."
+    },
+    {
+      "en": "The electricity companies’ “freedom” is ③ decreased at the expense of the ordinary individual, who must suffer from increased taxation to pay for the subsidy.",
+      "ko": "전력 회사들의 '자유'는 일반 개인을 희생시켜 감소(→ 증가)하는데, 이들은 보조금을 내기 위해 늘어난 세금으로 고통받아야 한다.",
+      "note": "at the expense of(~을 희생시켜)는 '한쪽이 손해 보고 다른 쪽이 이득'이라는 뜻이에요. 개인이 손해 보니 회사의 자유는 increased가 맞아요."
+    },
+    {
+      "en": "the subsidy ④ distorts the economy because the electricity company is not facing the full costs of what it does",
+      "ko": "보조금은 전력 회사가 자신이 하는 일의 전체 비용을 마주하지 않기 때문에 경제를 왜곡한다",
+      "note": "④ distorts는 because절과 잘 맞아요. 이어서 ⑤ 가격이 lower(더 낮아지고) 소비는 higher가 되는 결과로 연결돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① higher",
+      "ko": "(이익이) 더 높은",
+      "why": "적절. 비용을 고려해도 석탄에서 전환하면 이익이 더 클 수 있다는 내용이라 자연스러워요."
+    },
+    {
+      "en": "② obvious",
+      "ko": "명백한",
+      "why": "적절. 바로 뒤에 '비용을 직접 내기보다 정부 돈을 받는 게 좋다'는 누구나 아는 이유가 나와요."
+    },
+    {
+      "en": "③ decreased",
+      "ko": "감소된",
+      "why": "정답. 회사의 기회는 expansion(확대), 개인은 세금이 늘어 손해를 봐요. at the expense of 개인이니 회사의 자유는 increased(증가)가 맞아요."
+    },
+    {
+      "en": "④ distorts",
+      "ko": "왜곡하다",
+      "why": "적절. 회사가 전체 비용을 마주하지 않으니 효율성 관점에서 경제가 왜곡돼요."
+    },
+    {
+      "en": "⑤ lower",
+      "ko": "더 낮은",
+      "why": "적절. 보조금 때문에 전기 가격은 원래보다 낮아지고 소비는 높아져 온난화가 심해진다는 흐름이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "prefer A over B / A rather than B",
+      "ex": "The power plants prefer subsidies over regulations or taxes. … They prefer to receive money from the government rather than pay the costs themselves.",
+      "d": "'B보다 A를 더 좋아하다'. 두 표현 모두 선호 비교예요. rather than 뒤에는 앞 to부정사와 맞춘 동사원형 pay가 왔어요."
+    },
+    {
+      "t": "at the expense of",
+      "ex": "The electricity companies’ “freedom” is increased at the expense of the ordinary individual",
+      "d": "'~을 희생하여'. A가 이득을 볼 때 B가 손해 본다는 뜻이라, 증감 방향을 정하는 결정적 표현이에요."
+    },
+    {
+      "t": "계속적 용법 관계대명사 who / which",
+      "ex": "the ordinary individual, who must suffer from increased taxation … / electricity consumption higher, which will worsen global warming",
+      "d": "콤마 + who는 앞 사람을 보충 설명, 콤마 + which는 앞 내용 전체를 받아 '그리고 그것은'으로 이어 읽어요."
+    },
+    {
+      "t": "end up + 형용사 / even though",
+      "ex": "electricity prices may end up lower than they should be … even though the emissions per unit of electricity have been reduced.",
+      "d": "end up은 '결국 ~하게 되다'. even though는 '비록 ~이지만'으로 예상과 반대되는 결과를 강조해요."
+    }
+  ],
+  "vocab": [
+    [
+      "subsidy",
+      "보조금"
+    ],
+    [
+      "regulation",
+      "규제"
+    ],
+    [
+      "power plant",
+      "발전소"
+    ],
+    [
+      "pollute",
+      "오염시키다"
+    ],
+    [
+      "transition",
+      "전환"
+    ],
+    [
+      "take ~ into account",
+      "~을 고려하다"
+    ],
+    [
+      "expansion",
+      "확대"
+    ],
+    [
+      "opportunity set",
+      "기회 집합(선택할 수 있는 범위)"
+    ],
+    [
+      "contraction",
+      "축소"
+    ],
+    [
+      "at the expense of",
+      "~을 희생하여"
+    ],
+    [
+      "taxation",
+      "과세, 세금"
+    ],
+    [
+      "perspective",
+      "관점"
+    ],
+    [
+      "efficiency",
+      "효율성"
+    ],
+    [
+      "distort",
+      "왜곡하다"
+    ],
+    [
+      "emission",
+      "배출(량)"
+    ],
+    [
+      "consumption",
+      "소비"
+    ],
+    [
+      "worsen",
+      "악화시키다"
+    ]
+  ],
+  "summary": {
+    "en": "Power companies like subsidies, but subsidies expand their freedom at ordinary people's cost and distort the economy, possibly even making global warming worse.",
+    "ko": "발전소는 보조금을 좋아하지만, 보조금은 일반 사람들의 희생으로 회사의 자유를 늘리고 경제를 왜곡해 오히려 지구 온난화를 악화시킬 수도 있다."
+  },
+  "writing": {
+    "en": "One group's gain from a subsidy is another group's loss.",
+    "ko": "보조금으로 한 집단이 얻는 이익은 다른 집단의 손실이다."
+  },
+  "tip": "어휘 문항은 대비 짝을 먼저 찾으세요. 이 지문은 expansion ↔ contraction, 회사 ↔ 개인이 짝이에요. 밑줄 단어가 그 짝의 방향과 반대로 가면 정답이에요. at the expense of 같은 '희생' 표현은 증감 방향을 알려 주는 신호예요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 30번 정답은?",
+      "③ decreased예요. 보조금으로 전력 회사의 자유는 일반 개인을 희생시켜 늘어나므로 increased가 맞아요."
+    ],
+    [
+      "2026 10월 고1 영어 30번은 어떤 유형인가요?",
+      "문맥상 낱말의 쓰임이 적절하지 않은 것을 고르는 3점 어휘 문항이에요. 발전소 보조금의 문제점을 다룬 지문이에요."
+    ],
+    [
+      "⑤ lower는 왜 맞나요?",
+      "보조금 때문에 회사가 전체 비용을 내지 않으니 전기 가격은 원래보다 낮아지고 소비는 늘어요. 그래서 온난화가 심해진다는 흐름과 맞아요."
+    ]
+  ],
+  "note": "at the expense of 하나만 정확히 알아도 ③이 바로 보여요. '누가 이득, 누가 손해'를 화살표로 그려 보게 하면 증감 어휘 문제가 훨씬 쉬워져요."
+}

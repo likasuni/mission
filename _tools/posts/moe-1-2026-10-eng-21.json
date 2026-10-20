@@ -1,0 +1,188 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 1,
+  "topic": "비슷한 일자리로 옮기기만 하는 건 상황을 바꾸지 못하는 헛수고다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 21번",
+    "2026 10월 고1 영어 21번 해설",
+    "고1 10월 모의고사 21번 정답",
+    "고1 모의고사 함축 의미",
+    "rearranging deck chairs on the Titanic 뜻",
+    "이직 진로 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 21번은 일에 불만인 사람들이 비슷한 직책의 일자리만 계속 찾아다니는 모습을 '타이타닉호의 갑판 의자 재배치'에 빗댄 함축 의미 문항이에요. 가라앉는 배에서 의자만 옮기는 것처럼, 바쁘게 움직이지만 아무것도 나아지지 않는 행동이라는 뜻이에요. 정답은 ① making useless actions that fail to improve an unsatisfactory career예요.",
+  "flow": [
+    [
+      "현상",
+      "불만족한 직업인들은 언젠가 기적처럼 완벽한 일자리를 만날 거라 믿지만, 현재 상황을 바꾸려는 노력은 거의 하지 않는다."
+    ],
+    [
+      "행동",
+      "일이 싫으면 구인란에서 비슷한 직책을 찾으며, 회사나 부서만 바꾸면 마법이 일어나길 바란다."
+    ],
+    [
+      "결과",
+      "무언가 하고 있다고 느끼지만, 실제로는 새 일자리에서도 금세 다시 환상이 깨진다."
+    ],
+    [
+      "비유",
+      "이것은 타이타닉호의 갑판 의자를 재배치하는 것과 같다."
+    ],
+    [
+      "결론",
+      "접근 방식을 완전히 바꿔야 한다. 같은 게임을 하면 같은 결과를 얻는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "At the same time, they (typically) do little to meaningfully alter their current situation.",
+      "ko": "그러면서도 그들은 (대체로) 자신의 현재 상황을 의미 있게 바꾸기 위해 하는 일이 거의 없다.",
+      "note": "do little(거의 하지 않는다)은 '상황을 바꾸지 못하는 행동'이라는 핵심을 미리 알려 줘요."
+    },
+    {
+      "en": "Efforts like this make professionals feel like they are doing something, when really they're just setting themselves up to take a new role and quickly become just as disenchanted as they were before.",
+      "ko": "이와 같은 노력은 직업인들로 하여금 자신들이 무언가를 하고 있는 것처럼 느끼게 하지만, 실제로 그들은 단지 새로운 일자리를 구한 뒤 이전처럼 빠르게 환상이 깨질 상황에 스스로를 처하게 할 뿐이다.",
+      "note": "밑줄 바로 앞 문장이에요. '하는 것처럼 느끼지만 실제론 똑같이 실망한다' = 쓸모없는 행동(useless actions), 경력이 나아지지 않음(fail to improve)이에요."
+    },
+    {
+      "en": "You've got to completely switch up your approach. If you keep playing the same game, you'll win the same prizes.",
+      "ko": "여러분은 자신의 접근 방식을 완전히 바꾸어야 한다. 여러분이 계속해서 같은 게임을 한다면, 똑같은 보상을 얻게 될 것이다.",
+      "note": "밑줄 뒤에서 '같은 방식이면 같은 결과'라고 정리해요. 의자만 옮기는 건 근본 해결이 아니라는 뜻이 확실해져요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "making useless actions that fail to improve an unsatisfactory career",
+      "ko": "불만족스러운 경력을 개선하지 못하는 쓸모없는 행동을 하는 것",
+      "why": "정답. 비슷한 직책으로 옮기기만 해서 다시 실망하는 행동, 즉 바쁘지만 아무것도 바꾸지 못하는 행동이에요."
+    },
+    {
+      "en": "pushing oneself to stay competent in a changing job market",
+      "ko": "변화하는 취업 시장에서 경쟁력을 유지하려고 자신을 몰아붙이는 것",
+      "why": "능력을 키우려는 노력은 본문에 없어요. 오히려 노력 없이 자리만 바꾸는 모습이에요."
+    },
+    {
+      "en": "keeping the current satisfactory office environment as it is",
+      "ko": "현재의 만족스러운 사무 환경을 그대로 유지하는 것",
+      "why": "글 속 사람들은 지금 일에 불만족해요. satisfactory부터 맞지 않아요."
+    },
+    {
+      "en": "following others instead of pursuing the career they want",
+      "ko": "원하는 경력을 추구하는 대신 남을 따라가는 것",
+      "why": "남을 따라 한다는 내용은 없어요. 문제는 같은 방식을 반복하는 거예요."
+    },
+    {
+      "en": "maintaining career stability despite workplace challenges",
+      "ko": "직장의 어려움에도 불구하고 경력의 안정성을 유지하는 것",
+      "why": "안정을 지키는 게 아니라 계속 자리를 옮기는 이야기예요. 긍정적인 의미라서 비유와 방향도 달라요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동격의 that",
+      "ex": "… there's a repeating theme—the belief that someday … things will miraculously change …",
+      "d": "the belief that ~ 은 '~라는 믿음'. that절이 belief의 내용을 설명해요. 대시(—) 뒤가 앞의 theme을 풀어 말한 것이에요."
+    },
+    {
+      "t": "분사구문 (동시 동작)",
+      "ex": "They head to job boards and search for roles with a similar job title, hoping that the universe will sprinkle a bit of magic on their career …",
+      "d": "hoping은 and they hope와 같아요. '~하면서 …을 바란다'로 읽으세요."
+    },
+    {
+      "t": "사역동사 make + 목적어 + 동사원형",
+      "ex": "Efforts like this make professionals feel like they are doing something …",
+      "d": "make 뒤에 to feel이 아니라 feel(동사원형)이 와요. '~가 …하게 만들다'."
+    },
+    {
+      "t": "just as + 형용사 + as",
+      "ex": "… quickly become just as disenchanted as they were before.",
+      "d": "'이전과 똑같이 ~한'. just가 '정확히 똑같이'를 강조해서 '아무것도 안 바뀌었다'는 느낌을 줘요."
+    }
+  ],
+  "vocab": [
+    [
+      "unsatisfied",
+      "만족하지 못한"
+    ],
+    [
+      "professional",
+      "직업인, 전문직 종사자"
+    ],
+    [
+      "miraculously",
+      "기적적으로"
+    ],
+    [
+      "stumble into",
+      "~을 우연히 마주치다"
+    ],
+    [
+      "meaningfully",
+      "의미 있게"
+    ],
+    [
+      "alter",
+      "바꾸다"
+    ],
+    [
+      "job board",
+      "구인 게시판"
+    ],
+    [
+      "sprinkle",
+      "뿌리다"
+    ],
+    [
+      "set oneself up to",
+      "스스로 ~하게 되는 상황을 만들다"
+    ],
+    [
+      "disenchanted",
+      "환상이 깨진"
+    ],
+    [
+      "rearrange",
+      "재배치하다"
+    ],
+    [
+      "deck chair",
+      "갑판 의자"
+    ],
+    [
+      "switch up",
+      "확 바꾸다"
+    ],
+    [
+      "approach",
+      "접근 방식"
+    ]
+  ],
+  "summary": {
+    "en": "Moving to a similar job without changing your approach is like rearranging deck chairs on a sinking ship; it feels like action but changes nothing.",
+    "ko": "접근 방식은 바꾸지 않고 비슷한 일자리로 옮기기만 하는 것은 가라앉는 배의 의자를 옮기는 것과 같아서, 무언가 하는 것 같지만 아무것도 바뀌지 않는다."
+  },
+  "writing": {
+    "en": "If you keep playing the same game, you'll win the same prizes.",
+    "ko": "여러분이 계속해서 같은 게임을 한다면, 똑같은 보상을 얻게 될 것이다."
+  },
+  "tip": "함축 의미는 밑줄 바로 앞뒤 문장이 답을 풀어 써 줘요. 앞 문장(무언가 하는 것 같지만 똑같이 실망한다)과 뒤 문장(같은 게임이면 같은 결과)을 합치면 '쓸모없는 행동'이 나와요. 비유가 부정적인지 긍정적인지도 먼저 정하세요.",
+  "note": "타이타닉호는 결국 가라앉는 배라서, 그 위에서 의자를 어떻게 놓든 결과는 똑같아요. 비유의 배경 지식을 떠올리면 '근본은 그대로 두고 겉만 바꾸는 헛수고'라는 뜻이 바로 잡혀요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 21번 정답은?",
+      "① making useless actions that fail to improve an unsatisfactory career(불만족스러운 경력을 개선하지 못하는 쓸모없는 행동을 하는 것)예요."
+    ],
+    [
+      "2026 10월 고1 21번은 어떤 유형인가요?",
+      "밑줄 친 rearranging deck chairs on the Titanic의 의미를 고르는 3점 함축 의미 문항이에요."
+    ],
+    [
+      "rearranging deck chairs on the Titanic은 무슨 뜻인가요?",
+      "가라앉는 배에서 갑판 의자만 옮기는 것처럼, 근본 문제는 그대로 두고 겉만 바꾸는 쓸모없는 행동을 뜻해요. 이 글에서는 비슷한 직책으로 옮기기만 하는 이직을 가리켜요."
+    ]
+  ]
+}

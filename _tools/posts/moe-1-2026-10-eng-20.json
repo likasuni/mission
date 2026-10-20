@@ -1,0 +1,191 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 20,
+  "type": "주장",
+  "points": 2,
+  "answer": 5,
+  "topic": "세계의 연결과 공통 과제를 생각하면 기존 정체성 위에 세계 시민 정체성을 더해야 한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 20번",
+    "2026 10월 고1 영어 20번 해설",
+    "고1 10월 모의고사 20번 정답",
+    "고1 모의고사 필자의 주장",
+    "global citizenship 지문",
+    "세계 시민 정체성"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 20번은 국가 시민 정체성이 다른 정체성에 더해졌듯이, 이제는 세계 시민 정체성도 더해야 한다는 글이에요. Given the connections … we need to layer global citizenship on to these other identities가 주장 문장이에요. 정답은 ⑤ 세계인의 연결과 공통 과제를 고려해 세계 시민 정체성을 더해야 한다예요.",
+  "flow": [
+    [
+      "도입",
+      "우리는 아직 스스로를 세계 시민이라 생각하지 않을 수 있지만, 그렇게 하는 것은 필요하고 가능하다."
+    ],
+    [
+      "반론 대응",
+      "세계 시민을 의심하는 사람도 있지만, 역사 대부분 동안 사람들은 국가의 시민이라고도 생각하지 않았다. 국민 국가 자체가 없었기 때문이다."
+    ],
+    [
+      "근거",
+      "지난 몇 세기 동안 국민 국가가 생기면서 사람들은 가족·민족·종교 같은 정체성에 국가 시민 정체성을 더했다."
+    ],
+    [
+      "주장",
+      "세계 사람들 간의 연결과 공통 과제를 생각하면, 이 정체성들 위에 세계 시민 정체성을 쌓아야 한다."
+    ],
+    [
+      "보충",
+      "세계 시민 정체성이 다른 정체성을 대체하는 것은 아니다. 우리는 가족, 공동체, 그리고 세계 사람들 모두에게 의무가 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "We might not think of ourselves as global citizens yet, but it's both necessary and possible to do so.",
+      "ko": "우리는 아직 우리 자신을 세계 시민이라고 생각하지 않을 수도 있지만, 그렇게 생각하는 것은 필요하면서도 가능하기도 하다.",
+      "note": "첫 문장부터 '세계 시민으로 생각하는 것이 필요하다'는 방향을 보여 줘요."
+    },
+    {
+      "en": "Given the connections between people around the world and the common challenges we face, we need to layer global citizenship on to these other identities.",
+      "ko": "전 세계 사람들 간의 연결과 우리가 직면한 공통 과제들을 고려할 때, 우리는 이러한 다른 정체성들 위에 세계 시민 정체성을 쌓을 필요가 있다.",
+      "note": "we need to가 들어간 주장 문장이에요. '연결과 공통 과제를 고려해(Given …)' + '세계 시민 정체성을 더해야(layer … on to)'가 ⑤와 그대로 맞아요."
+    },
+    {
+      "en": "This doesn't mean that global citizenship replaces these other identities.",
+      "ko": "이것이 세계 시민 정체성이 이러한 다른 정체성들을 대체한다는 것을 의미하지는 않는다.",
+      "note": "'대체'가 아니라 '더하기'라는 점을 강조해요. 국가 정체성을 버리거나 세계 시민 의무만 앞세우라는 선택지를 거르는 근거예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "국제 문제 해결을 위해 국가 정체성을 강화해야 한다.",
+      "ko": "국가 정체성 강화",
+      "why": "글은 국가 정체성을 키우자는 게 아니라 그 위에 세계 시민 정체성을 더하자는 내용이에요."
+    },
+    {
+      "en": "국제 사회의 발전을 위해 세계 시민의 의무를 우선시해야 한다.",
+      "ko": "세계 시민 의무 우선",
+      "why": "마지막 문장은 가족·공동체·세계 모두에 의무가 있다는 뜻이에요. 세계 쪽을 '우선'하라는 말은 없어요."
+    },
+    {
+      "en": "세계 시민 정체성을 확립하려면 국가 간 협력을 확대해야 한다.",
+      "ko": "국가 간 협력 확대",
+      "why": "국가 간 협력은 언급되지 않아요. 글의 초점은 개인의 정체성이에요."
+    },
+    {
+      "en": "세계 시민 교육을 통해 다른 문화를 존중하는 태도를 길러야 한다.",
+      "ko": "세계 시민 교육",
+      "why": "교육이나 문화 존중 이야기는 본문에 없어요. '세계 시민'이라는 말만 겹친 선택지예요."
+    },
+    {
+      "en": "세계인의 연결과 공통 과제를 고려해 세계 시민 정체성을 더해야 한다.",
+      "ko": "세계 시민 정체성 더하기",
+      "why": "정답. Given the connections … and the common challenges … we need to layer global citizenship on to these other identities를 그대로 옮긴 말이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "가주어 it + to부정사",
+      "ex": "… but it's both necessary and possible to do so.",
+      "d": "it이 가주어, to do so가 진주어예요. do so = think of ourselves as global citizens. both A and B로 '필요하고 가능하다'를 묶었어요."
+    },
+    {
+      "t": "lead + 목적어 + to V",
+      "ex": "The rise of nation-states over the last few centuries has led people to add state citizenship to other identities …",
+      "d": "'~가 …하게 만들다'. 주어가 the rise(단수)라 has led예요."
+    },
+    {
+      "t": "Given ~ (전치사처럼 쓰는 분사)",
+      "ex": "Given the connections between people around the world and the common challenges we face, we need to …",
+      "d": "Given은 '~을 고려할 때'. challenges 뒤에는 목적격 관계대명사(that)가 생략됐어요: the common challenges (that) we face."
+    },
+    {
+      "t": "It is ~ because … 강조 구문",
+      "ex": "Instead, it's precisely because we have obligations to our families, those in our community, and those around the world.",
+      "d": "'바로 ~ 때문이다'. precisely가 이유를 강조해요. those는 '사람들'을 뜻해요."
+    }
+  ],
+  "vocab": [
+    [
+      "global citizen",
+      "세계 시민"
+    ],
+    [
+      "skeptical",
+      "회의적인"
+    ],
+    [
+      "citizenship",
+      "시민권, 시민 정체성"
+    ],
+    [
+      "nation-state",
+      "국민 국가"
+    ],
+    [
+      "after all",
+      "어쨌든, 결국"
+    ],
+    [
+      "rise",
+      "부상, 등장"
+    ],
+    [
+      "identity",
+      "정체성"
+    ],
+    [
+      "people group",
+      "민족 집단"
+    ],
+    [
+      "religion",
+      "종교"
+    ],
+    [
+      "given",
+      "~을 고려할 때"
+    ],
+    [
+      "challenge",
+      "과제, 도전"
+    ],
+    [
+      "layer A on to B",
+      "A를 B 위에 겹쳐 쌓다"
+    ],
+    [
+      "replace",
+      "대체하다"
+    ],
+    [
+      "precisely",
+      "바로, 정확히"
+    ],
+    [
+      "obligation",
+      "의무"
+    ]
+  ],
+  "summary": {
+    "en": "Just as people added state citizenship to their older identities, we should now add global citizenship, without replacing the identities we already have.",
+    "ko": "사람들이 기존 정체성에 국가 시민 정체성을 더했듯이, 이제 우리는 원래의 정체성을 버리지 않고 세계 시민 정체성을 더해야 한다."
+  },
+  "writing": {
+    "en": "We need to layer global citizenship on to these other identities.",
+    "ko": "우리는 이러한 다른 정체성들 위에 세계 시민 정체성을 쌓을 필요가 있다."
+  },
+  "tip": "주장 문제는 need to, should, must가 들어간 문장을 먼저 찾으세요. 이 글은 Given ~ we need to 문장이 주장이고, 바로 뒤 '대체하는 게 아니다'가 범위를 정해 줘요. '우선시', '강화'처럼 글보다 세게 말하는 선택지는 조심하세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 20번 정답은?",
+      "⑤ 세계인의 연결과 공통 과제를 고려해 세계 시민 정체성을 더해야 한다예요."
+    ],
+    [
+      "2026 10월 고1 20번은 어떤 유형인가요?",
+      "필자가 주장하는 바를 고르는 2점 문항이에요. 세계 시민 정체성(global citizenship)을 다룬 글이에요."
+    ],
+    [
+      "② 세계 시민의 의무를 우선시해야 한다가 오답인 이유는?",
+      "글은 세계 시민 정체성이 다른 정체성을 대체하지 않는다고 말해요. 가족·공동체·세계 모두에 의무가 있다는 것이지 세계를 우선하라는 게 아니에요."
+    ]
+  ]
+}

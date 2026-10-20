@@ -1,0 +1,217 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 3,
+  "topic": "번아웃을 개인 문제가 아닌 구조적 문제로 보는 관점 전환",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 35번",
+    "2026 10월 고1 영어 35번 해설",
+    "고1 10월 모의고사 35번 정답",
+    "고1 모의고사 무관한 문장",
+    "burnout WHO 지문",
+    "번아웃 직업적 현상 지문",
+    "무관한 문장 찾기 해설"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 35번은 WHO가 번아웃을 직업적 현상으로 인정하면서 '개인 책임'에서 '조직·구조적 예방'으로 관점이 바뀌었다는 글의 무관한 문장 찾기 문항이에요. ③만 '개인이 스스로 패턴을 바꿔 회복할 수 있다'며 개인 차원의 해결로 돌아가요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "도입",
+      "2019년 WHO가 번아웃을 직업적 현상으로 인정한 것은 직장 정신 건강 담론의 중요한 순간이었다."
+    ],
+    [
+      "전개",
+      "이 지정은 관심을 시스템 차원의 예방으로 옮겨, 고용주가 개인 해결책 대신 구조적 개입을 하도록 이끈다(①)."
+    ],
+    [
+      "구체화",
+      "실제로 임상의는 산업 보건 부서·지도부와 협력해 근본 원인을 다뤄야 한다(②)."
+    ],
+    [
+      "무관(③)",
+      "개인이 스트레스 패턴을 바꿔 스스로 회복할 수 있다 → 개인 차원 해결이라 흐름과 반대."
+    ],
+    [
+      "정리",
+      "번아웃을 개인 실패가 아닌 구조적 문제로 보는 전환이며(④), 이 재구성은 시스템·정책 변화의 문을 연다(⑤)."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "This designation reframes clinical assessment and organizational responsibility, shifting attention to systemic prevention.",
+      "ko": "이 지정은 임상적 평가와 조직의 책임을 재구성하여 관심을 시스템 차원의 예방으로 옮긴다.",
+      "note": "글의 방향이 '개인 → 조직·시스템'이라는 걸 처음부터 밝혀요. 이 기준으로 각 문장을 검사하면 돼요."
+    },
+    {
+      "en": "③ Individuals can help themselves recover from burnout by changing patterns that contribute to stress.",
+      "ko": "③ 개인들은 스트레스의 원인이 되는 패턴을 바꿈으로써 스스로를 번아웃으로부터 회복하도록 도울 수 있다.",
+      "note": "주어가 Individuals, 해결책이 '스스로(themselves)'예요. 글이 벗어나자고 한 individual-level remedies(개인 수준 해결책)를 오히려 권하는 문장이라 무관해요."
+    },
+    {
+      "en": "④ It signaled a shift away from viewing burnout as a personal failing or a matter of individual resilience, toward understanding it as a structural issue …",
+      "ko": "④ 그것은 번아웃을 개인적 실패나 개인 회복 탄력성의 문제로 보는 것에서 벗어나 구조적 문제로 이해하는 쪽으로의 전환을 나타냈다 …",
+      "note": "④의 It은 WHO의 인정(지정)을 가리켜요. ③을 빼면 ② → ④가 '조직 차원 대응 → 구조적 문제로의 전환'으로 자연스럽게 이어져요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① It invites employers to adopt structural interventions rather than relying solely on individual-level remedies.",
+      "ko": "고용주가 구조적 개입을 채택하게 함",
+      "why": "적절. It은 WHO의 지정을 받고, '개인 해결책 대신 구조적 개입'으로 주제를 이어 가요."
+    },
+    {
+      "en": "② In practice, this means clinicians should collaborate with occupational health and leadership to address root causes.",
+      "ko": "임상의가 조직과 협력해 근본 원인을 다룸",
+      "why": "적절. In practice로 ①을 실제 현장의 모습으로 구체화해요."
+    },
+    {
+      "en": "③ Individuals can help themselves recover from burnout by changing patterns that contribute to stress.",
+      "ko": "개인이 스스로 패턴을 바꿔 회복함",
+      "why": "정답(무관). 번아웃 회복이라는 소재는 같지만 '개인 스스로'의 해결이라 구조적 관점이라는 흐름과 반대예요."
+    },
+    {
+      "en": "④ It signaled a shift away from viewing burnout as a personal failing … toward understanding it as a structural issue …",
+      "ko": "개인 실패 → 구조적 문제로 관점 전환",
+      "why": "적절. 글의 핵심 주장을 다시 정리해요."
+    },
+    {
+      "en": "⑤ This reframing is essential, as it opens the door to systemic interventions and policy-level changes …",
+      "ko": "이 재구성이 시스템·정책 변화의 문을 엶",
+      "why": "적절. This reframing이 ④의 관점 전환을 받아 의의를 말하며 마무리해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문 (결과)",
+      "ex": "This designation reframes clinical assessment and organizational responsibility, shifting attention to systemic prevention.",
+      "d": "콤마 뒤 shifting은 '그래서 ~을 옮긴다'는 결과를 나타내는 분사구문이에요. 주어 This designation이 '옮기는' 능동이라 -ing예요."
+    },
+    {
+      "t": "invite + 목적어 + to V",
+      "ex": "It invites employers to adopt structural interventions rather than relying solely on individual-level remedies.",
+      "d": "'~가 …하도록 이끌다'. rather than은 비교 대상을 맞춰서 relying(동명사)으로 썼어요. '~에만 의존하기보다는'."
+    },
+    {
+      "t": "a shift away from A toward B",
+      "ex": "It signaled a shift away from viewing burnout as a personal failing …, toward understanding it as a structural issue rooted in organizational culture …",
+      "d": "'A에서 벗어나 B로 향하는 전환'. view/understand A as B는 'A를 B로 보다/이해하다'. rooted in은 '~에 뿌리를 둔'으로 issue를 뒤에서 꾸며요."
+    },
+    {
+      "t": "이유의 as",
+      "ex": "This reframing is essential, as it opens the door to systemic interventions …",
+      "d": "여기서 as는 because와 같은 '~ 때문에'예요. placing the burden solely on individuals to cope or adapt는 '개인에게만 대처하거나 적응할 부담을 지우는 것'."
+    }
+  ],
+  "vocab": [
+    [
+      "recognition",
+      "인정"
+    ],
+    [
+      "burnout",
+      "번아웃, 극도의 피로"
+    ],
+    [
+      "occupational",
+      "직업의"
+    ],
+    [
+      "phenomenon",
+      "현상"
+    ],
+    [
+      "discourse",
+      "담론"
+    ],
+    [
+      "designation",
+      "지정"
+    ],
+    [
+      "reframe",
+      "재구성하다"
+    ],
+    [
+      "clinical",
+      "임상의"
+    ],
+    [
+      "assessment",
+      "평가"
+    ],
+    [
+      "systemic",
+      "시스템 차원의, 체계적인"
+    ],
+    [
+      "prevention",
+      "예방"
+    ],
+    [
+      "structural",
+      "구조적인"
+    ],
+    [
+      "intervention",
+      "개입"
+    ],
+    [
+      "remedy",
+      "해결책, 치료"
+    ],
+    [
+      "clinician",
+      "임상의"
+    ],
+    [
+      "collaborate",
+      "협력하다"
+    ],
+    [
+      "root cause",
+      "근본 원인"
+    ],
+    [
+      "personal failing",
+      "개인적 결점, 실패"
+    ],
+    [
+      "resilience",
+      "회복 탄력성"
+    ],
+    [
+      "burden",
+      "부담"
+    ],
+    [
+      "cope",
+      "대처하다"
+    ]
+  ],
+  "summary": {
+    "en": "WHO's recognition of burnout as an occupational phenomenon shifted the focus from individual responsibility to structural and systemic prevention at work.",
+    "ko": "WHO가 번아웃을 직업적 현상으로 인정하면서 관심은 개인의 책임에서 직장의 구조적·시스템 차원의 예방으로 옮겨 갔다."
+  },
+  "writing": {
+    "en": "Burnout is not just a personal problem but a problem of how work is organized.",
+    "ko": "번아웃은 단지 개인의 문제가 아니라 일이 조직되는 방식의 문제이다."
+  },
+  "tip": "무관한 문장은 '소재는 같고 방향이 다른' 문장이 정답이 되는 경우가 많아요. 이 글의 방향은 개인(individual) → 조직·구조(structural, systemic)예요. 각 문장의 주어와 해결 주체에 표시해 보면 ③만 Individuals ... themselves로 개인이 해결해요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 35번 정답은?",
+      "③이에요. 글은 번아웃을 조직·구조적 문제로 보는 관점 전환을 다루는데, ③만 개인이 스스로 패턴을 바꿔 회복할 수 있다는 개인 차원의 해결을 말해요."
+    ],
+    [
+      "2026년 10월 고1 영어 35번은 어떤 유형인가요?",
+      "글의 흐름과 관계없는 문장을 고르는 2점 무관한 문장 문항이에요. WHO의 번아웃 인정과 직장 정신 건강을 다룬 지문이에요."
+    ],
+    [
+      "③도 번아웃 이야기인데 왜 무관한가요?",
+      "소재는 같지만 방향이 반대예요. 글은 개인 수준 해결책에서 벗어나 구조적 개입으로 가자는 내용인데, ③은 다시 개인 해결책을 말하고 있어요."
+    ]
+  ],
+  "note": "③처럼 번아웃이라는 단어가 그대로 들어 있어서 그럴듯해 보이는 문장이 함정이에요. 저는 문장마다 해결하는 주체가 '개인'인지 '조직'인지 표시하게 하는데, 이 글은 그것만으로 답이 나와요."
+}
