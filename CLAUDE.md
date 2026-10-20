@@ -35,7 +35,7 @@
 - 블로그용 HTML 박스에는 애드센스가 뚫고 나가지 않게 `box-sizing:border-box; overflow:hidden; width:100%; max-width:100%` 를 모든 박스(중첩 포함)에 넣어요.
 - 연결 정보는 GitHub Secrets `BLOGGER_CLIENT_ID`, `BLOGGER_CLIENT_SECRET`, `BLOGGER_REFRESH_TOKEN`, `BLOGGER_BLOG_ID` (Google Cloud 프로젝트 likasuni-mission, OAuth 클라이언트 '블로그 자동 발행', 2026-10-18 연결).
 - 연결 테스트: Actions → `blog-test` → 날짜 입력 → 블로그에 **임시저장(비공개)** 으로 올라감. 확인 뒤 임시저장 글은 지워 달라고 안내.
-- 자유 형식 글(내신 분석, 카드뉴스 등)을 블로그에 바로 올리는 통로는 아직 없어요. 필요하면 새로 만들어요.
+- 자유 형식 글(업데이트 소식, 내신 분석 등): `_tools/blog_queue/<파일>.html` 에 글을 쓰고 main 에 합친 뒤 Actions → `blog-post` (file·title·labels·draft) 로 발행. `_tools/blogger_publish_file.py` 가 올리고 `blogger_posted.json` 에 `file:<파일>` 로 기록해서 같은 글은 두 번 안 올라가요.
 
 ## 진행 방식
 

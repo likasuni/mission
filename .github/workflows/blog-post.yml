@@ -1,0 +1,48 @@
+name: blog-post
+# 저장소의 _tools/blog_queue/ 글(HTML)을 리카수니 블로그에 발행 (자유 형식 글). 발행 기록을 커밋함
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: '_tools 기준 글 파일 (예: blog_queue/2026-10-update.html)'
+        required: true
+      title:
+        description: '글 제목'
+        required: true
+      labels:
+        description: '라벨 (쉼표로 구분)'
+        required: false
+        default: ''
+      draft:
+        description: '임시저장(비공개)으로만 올리기'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency: drive-sync
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Publish
+        working-directory: _tools
+        env:
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+          F: ${{ inputs.file }}
+          T: ${{ inputs.title }}
+          L: ${{ inputs.labels }}
+        run: python blogger_publish_file.py "$F" "$T" "$L" ${{ inputs.draft && '--draft' || '' }}
+      - name: Commit log
+        run: |
+          git config user.name "likasuni-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add _tools/blogger_posted.json
+          git diff --cached --quiet || git commit -m "블로그 글 발행 기록"
+          git pull --rebase -q && git push
