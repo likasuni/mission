@@ -1,0 +1,218 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 33,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "궁전의 유리는 장식이 아니라 권력 관계를 조용히 집행하는 장치였다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 33번",
+    "2025 10월 고2 영어 33번 해설",
+    "고2 10월 모의고사 33번 정답",
+    "고2 모의고사 빈칸 추론",
+    "궁전 유리 창문 권력 지문",
+    "Palace of Versailles Hall of Mirrors 지문",
+    "빈칸 추론 해설"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 33번은 궁전의 큰 창문과 거울이 단순한 장식이 아니라 왕과 신하 사이의 권력 관계를 드러내고 유지하는 전략적 도구였다는 빈칸 추론 문항이에요. 빈칸 바로 앞 The very architecture dictated social behavior(건축 자체가 사회적 행동을 지시했다)가 결정적 단서예요. 정답은 ① acting as a silent enforcer of the power dynamic이에요.",
+  "flow": [
+    [
+      "도입",
+      "궁전은 단순한 집이 아니라 깊은 인상을 주고 위압하기 위해 설계된 무대였다. 돌이 영속성을 상징했다면 유리는 '가시성'을 주었다."
+    ],
+    [
+      "전개",
+      "큰 창문으로 통치자는 백성을 내려다보며 높은 지위를 강조했고, 백성은 통치자를 올려다보며 경외심과 거리감을 느꼈다."
+    ],
+    [
+      "예시",
+      "베르사유 궁전 거울의 방은 공간의 웅장함을 키우고 왕을 화려한 장면의 중심에 두어 절대 권위를 강화했다."
+    ],
+    [
+      "핵심",
+      "유리의 쓰임은 미적인 것이 아니라 전략적이었다. 탁 트인 시야로 감시와 통제가 쉬워졌고, 늘 관찰된다고 느낀 신하들은 조심스럽게 복종했다."
+    ],
+    [
+      "결론",
+      "건축 자체가 사회적 행동을 지시했고, 유리는 권력 관계를 말없이 집행하는 역할을 했다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The use of glass in palaces wasn’t merely aesthetic; it was strategic.",
+      "ko": "궁전에서 유리의 사용은 단순히 미적인 것이 아니었다. 그것은 전략적이었다.",
+      "note": "글의 방향을 정해 주는 문장이에요. 유리는 '보기 좋으라고'가 아니라 '권력을 위해' 쓰였다는 뜻이라, 빈칸도 권력 쪽 표현이 와야 해요."
+    },
+    {
+      "en": "Courtiers and visitors were constantly aware of being observed, contributing to an atmosphere of careful obedience and respect.",
+      "ko": "신하들과 방문객들은 끊임없이 관찰되고 있음을 의식했고, 이는 조심스러운 복종과 존경의 분위기에 기여했다.",
+      "note": "유리가 말 한마디 없이도 사람들을 복종하게 만들었다는 내용이에요. ①의 silent enforcer(말없는 집행자)와 그대로 연결돼요."
+    },
+    {
+      "en": "The very architecture dictated social behavior, with glass ____________.",
+      "ko": "바로 그 건축 자체가 사회적 행동을 지시했는데, 유리는 ____________.",
+      "note": "dictated(지시했다)와 같은 방향의 말이 빈칸에 와야 해요. 건축이 행동을 '강제'했다 = 유리가 권력 관계의 '집행자' 역할을 했다."
+    }
+  ],
+  "choices": [
+    {
+      "en": "acting as a silent enforcer of the power dynamic",
+      "ko": "권력 역학의 말없는 집행자 역할을 하면서",
+      "why": "정답. 높이 차이(내려다봄·올려다봄), 거울의 방의 권위 강화, 감시로 인한 복종이 모두 '말없이 권력 관계를 유지시킨 유리'를 가리켜요."
+    },
+    {
+      "en": "serving as a tool for a king to reflect on himself",
+      "ko": "왕이 자신을 돌아보는 도구 역할을 하면서",
+      "why": "거울(mirror, reflective)에서 떠올린 함정이에요. reflect on은 '반성하다'인데, 글은 왕의 반성이 아니라 권위 과시를 말해요."
+    },
+    {
+      "en": "opening the king’s eyes to his subjects’ hardships",
+      "ko": "왕이 백성의 고난에 눈을 뜨게 하면서",
+      "why": "왕이 백성을 '내려다본' 건 높은 지위를 강조하고 감시하기 위해서였어요. 백성의 어려움을 이해했다는 내용은 없어요."
+    },
+    {
+      "en": "offering the ruler a window and the ruled a mirror",
+      "ko": "통치자에게는 창문을, 피통치자에게는 거울을 주면서",
+      "why": "window·mirror 모두 본문 소재를 짜깁기한 표현이에요. 백성이 거울로 자신을 본다는 내용은 없고, 글의 핵심인 '통제·복종'도 담지 못해요."
+    },
+    {
+      "en": "representing a bridge between the king and the public",
+      "ko": "왕과 대중 사이의 다리를 상징하면서",
+      "why": "글은 오히려 경외심과 '거리감(distance)'을 만들었다고 해요. 둘을 이어 주는 다리는 반대 방향이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "designed to V (과거분사 후치 수식)",
+      "ex": "… they were carefully constructed stages designed to impress and intimidate.",
+      "d": "designed to ~가 뒤에서 stages를 꾸며요. '깊은 인상을 주고 위압하기 위해 설계된 무대'. impress와 intimidate는 목적어 없이 쓰였어요."
+    },
+    {
+      "t": "allow + 목적어 + to V",
+      "ex": "The introduction of large windows in palaces allowed rulers to literally look down upon their subjects, emphasizing their elevated position.",
+      "d": "'목적어가 ~하게 해 주다'. 뒤의 emphasizing은 분사구문으로 '그래서 ~를 강조했다'는 결과를 나타내요."
+    },
+    {
+      "t": "not only A but also B",
+      "ex": "… its Hall of Mirrors, lined with reflective surfaces, not only magnified the grandeur of the space but also placed the king at the center of a dazzling display …",
+      "d": "주어는 its Hall of Mirrors, 동사는 magnified와 placed예요. 사이의 lined with ~는 주어를 꾸미는 삽입구예요."
+    },
+    {
+      "t": "be aware of being p.p.",
+      "ex": "Courtiers and visitors were constantly aware of being observed …",
+      "d": "전치사 of 뒤라 동명사, '관찰되는' 것이라 수동형 being observed를 써요."
+    },
+    {
+      "t": "with + 명사 + 분사 (부대상황)",
+      "ex": "The very architecture dictated social behavior, with glass ____________.",
+      "d": "'with + 명사 + -ing'는 '~가 …하면서'. 그래서 선택지가 모두 -ing(acting, serving …)로 시작해요. The very는 '바로 그'라는 강조예요."
+    }
+  ],
+  "vocab": [
+    [
+      "intimidate",
+      "위압하다, 겁을 주다"
+    ],
+    [
+      "permanence",
+      "영속성"
+    ],
+    [
+      "visibility",
+      "가시성, 눈에 보임"
+    ],
+    [
+      "literally",
+      "문자 그대로"
+    ],
+    [
+      "subject",
+      "백성, 신하"
+    ],
+    [
+      "elevated",
+      "높은, 고귀한"
+    ],
+    [
+      "conversely",
+      "반대로"
+    ],
+    [
+      "gaze",
+      "응시하다"
+    ],
+    [
+      "awe",
+      "경외심"
+    ],
+    [
+      "grandeur",
+      "웅장함"
+    ],
+    [
+      "dazzling",
+      "눈부신"
+    ],
+    [
+      "reinforce",
+      "강화하다"
+    ],
+    [
+      "absolute",
+      "절대적인"
+    ],
+    [
+      "aesthetic",
+      "미적인"
+    ],
+    [
+      "sightline",
+      "시야, 시선"
+    ],
+    [
+      "surveillance",
+      "감시"
+    ],
+    [
+      "obedience",
+      "복종"
+    ],
+    [
+      "dictate",
+      "지시하다, 좌우하다"
+    ],
+    [
+      "enforcer",
+      "집행자 — 빈칸 정답"
+    ],
+    [
+      "power dynamic",
+      "권력 역학, 권력 관계"
+    ]
+  ],
+  "summary": {
+    "en": "In palaces, glass was used not for beauty but as a strategic tool that displayed and maintained the ruler’s power through visibility and surveillance.",
+    "ko": "궁전에서 유리는 아름다움이 아니라 가시성과 감시를 통해 통치자의 권력을 보여 주고 유지하는 전략적 도구로 쓰였다."
+  },
+  "writing": {
+    "en": "Architecture can quietly shape how people behave.",
+    "ko": "건축은 사람들이 행동하는 방식을 조용히 형성할 수 있다."
+  },
+  "tip": "빈칸이 마지막 문장에 있으면 앞에서 반복된 핵심어를 모아 보세요. 이 글은 elevated position, absolute authority, strategic, surveillance and control, obedience처럼 '권력·통제' 말이 계속 나와요. 이 방향을 담은 선택지는 ①뿐이에요. mirror·window·reflect처럼 소재 단어만 걸린 선택지는 먼저 의심하세요.",
+  "note": "glass, mirror, window 같은 소재 단어에 끌리면 ②, ④에 빠져요. 빈칸 문제는 '무엇에 대한 글인가'보다 '그래서 무슨 말을 하는 글인가'를 먼저 잡으세요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 33번 정답은?",
+      "① acting as a silent enforcer of the power dynamic(권력 역학의 말없는 집행자 역할을 하면서)이에요. 궁전의 유리는 장식이 아니라 감시와 위계로 복종을 끌어낸 전략적 도구였다는 내용이에요."
+    ],
+    [
+      "2025 10월 고2 33번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 궁전 건축에서 유리와 창문, 거울이 맡은 역할을 다룬 지문이에요."
+    ],
+    [
+      "④ offering the ruler a window and the ruled a mirror가 오답인 이유는?",
+      "창문과 거울은 본문 소재지만, 백성이 거울로 자신을 비춰 본다는 내용은 없어요. 글의 핵심인 '감시와 복종, 권력 유지'를 담은 건 ①이에요."
+    ]
+  ]
+}

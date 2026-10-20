@@ -1,0 +1,86 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 23,
+  "type": "주제",
+  "points": 2,
+  "answer": 2,
+  "topic": "새로운 과학 이론은 기존 이론의 성공을 모두 설명하고 그 너머까지 설명해야 인정받는다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 23번",
+    "2025 10월 고2 영어 23번 해설",
+    "고2 10월 모의고사 23번 정답",
+    "고2 모의고사 주제",
+    "Newton Einstein theory of gravity 지문",
+    "과학 이론 인정 영어 지문"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 23번은 뉴턴과 아인슈타인의 중력 이론을 예로 들어, 새 과학 이론이 어떻게 기존 이론을 넘어 인정받는지를 다룬 주제 문항이에요. 새 이론은 기존 이론의 성공을 똑같이 설명하면서, 기존 이론이 못 하는 부분까지 설명해야 한다는 게 핵심이에요. 정답은 ② how a new theory gains acceptance beyond an existing one이에요.",
+  "flow": [
+    ["주장", "과학 이론은 증거를 더 잘 설명하는 방법이 있을 때에만 버리거나 대체할 수 있다."],
+    ["예시 1", "뉴턴의 중력 이론은 많은 증거가 뒷받침했지만, 19세기 후반에 예측과 관찰이 어긋나는 사례가 발견되었다."],
+    ["예시 2", "아인슈타인의 일반 상대성 이론이 그 불일치를 설명했고, 뉴턴 이론의 성공도 똑같이 설명했기에 인정받았다."],
+    ["결론", "그래서 아인슈타인 이론을 더 넓은 이론으로 본다. 앞으로의 새 이론도 아인슈타인 이론의 성공을 모두 맞추고 새 영역까지 설명해야 한다."]
+  ],
+  "evidence": [
+    {
+      "en": "We can discard or replace a scientific theory only if we have a better way of explaining the evidence that supports it.",
+      "ko": "우리는 과학 이론을 뒷받침하는 증거를 설명하는 더 나은 방법이 있을 때에만 그 이론을 버리거나 대체할 수 있다.",
+      "note": "첫 문장이 주제문이에요. 기존 이론을 '대체하는 조건'을 말하고 있어서, 새 이론이 인정받는 방법과 바로 이어져요."
+    },
+    {
+      "en": "Still, the many successes of Newton’s theory could not be ignored, and Einstein’s theory would not have gained acceptance if it had not been able to explain these successes equally well.",
+      "ko": "그래도 뉴턴 이론의 많은 성공은 무시될 수 없었고, 아인슈타인의 이론이 이 성공들을 똑같이 잘 설명할 수 없었다면 인정받지 못했을 것이다.",
+      "note": "gained acceptance가 선택지 ②의 gains acceptance와 그대로 연결돼요. 조건 ① 기존 이론의 성공도 설명해야 한다."
+    },
+    {
+      "en": "If any new theory ever gains acceptance, it will have to match all the successes of Einstein’s theory as well as work in new realms where Einstein’s theory does not.",
+      "ko": "만약 어떤 새로운 이론이 언젠가 인정을 받는다면, 그것은 아인슈타인 이론의 모든 성공을 맞춰야 할 뿐 아니라 아인슈타인 이론이 통하지 않는 새로운 영역에서도 통해야 할 것이다.",
+      "note": "조건 ② 기존 이론이 못 하는 영역까지 설명해야 한다. 이 두 조건이 '기존 이론을 넘어(beyond an existing one)' 인정받는 방법이에요."
+    }
+  ],
+  "choices": [
+    {"en": "danger of hasty acknowledgement of a new theory", "ko": "새로운 이론을 성급하게 인정하는 것의 위험", "why": "글은 새 이론이 인정받는 '조건'을 말할 뿐, 성급한 인정이 위험하다는 경고는 없어요."},
+    {"en": "how a new theory gains acceptance beyond an existing one", "ko": "새로운 이론이 기존 이론을 넘어 어떻게 인정받는가", "why": "정답. 기존 이론의 성공을 똑같이 설명하고, 그 이론이 못 하는 부분까지 설명해야 인정받는다는 글 전체 내용을 담았어요."},
+    {"en": "difficulties scientists may encounter in understanding gravity", "ko": "과학자들이 중력을 이해할 때 마주칠 수 있는 어려움", "why": "중력은 예시의 소재일 뿐이에요. 글의 초점은 중력 자체가 아니라 '이론이 바뀌는 방식'이에요."},
+    {"en": "benefits resulting from the simplification of complex theories", "ko": "복잡한 이론을 단순화해서 생기는 이점", "why": "단순화 이야기는 없어요. 오히려 새 이론은 더 넓은(broader) 범위를 설명해야 해요."},
+    {"en": "what is required to test two theories through a single experiment", "ko": "하나의 실험으로 두 이론을 검증하는 데 필요한 것", "why": "실험 하나로 검증한다는 내용은 없어요. 많은 증거(a vast body of evidence)와 관찰을 말할 뿐이에요."}
+  ],
+  "grammar": [
+    {"t": "only if ~ (~할 때에만)", "ex": "We can discard or replace a scientific theory only if we have a better way of explaining the evidence that supports it.", "d": "only if는 '오직 ~인 경우에만'. 조건을 강하게 제한해요. 끝의 that supports it은 the evidence를 꾸미고, it은 a scientific theory예요."},
+    {"t": "가정법 과거완료", "ex": "Einstein’s theory would not have gained acceptance if it had not been able to explain these successes equally well.", "d": "would have p.p. + if had p.p. = 과거 사실의 반대. '설명하지 못했다면 인정받지 못했을 것이다' → 실제로는 설명했고 인정받았다. 바로 뒤 It did.가 그 사실을 확인해요."},
+    {"t": "대동사 did", "ex": "It did, and that is why we now view Einstein’s theory as a broader theory of gravity than Newton’s theory.", "d": "did = explained these successes equally well. that is why ~는 '그것이 ~한 이유다'로 결과를 이끌어요."},
+    {"t": "A as well as B / 관계부사 where", "ex": "it will have to match all the successes of Einstein’s theory as well as work in new realms where Einstein’s theory does not.", "d": "match와 work가 as well as로 연결된 병렬이에요. where는 realms를 꾸미고, does not 뒤에는 work가 생략됐어요."}
+  ],
+  "vocab": [
+    ["discard", "버리다"],
+    ["replace", "대체하다"],
+    ["evidence", "증거"],
+    ["a vast body of", "방대한 양의"],
+    ["gravity", "중력"],
+    ["prediction", "예측"],
+    ["observation", "관찰"],
+    ["discrepancy", "불일치"],
+    ["general theory of relativity", "일반 상대성 이론"],
+    ["ignore", "무시하다"],
+    ["gain acceptance", "인정받다"],
+    ["view A as B", "A를 B로 여기다"],
+    ["broad", "넓은"],
+    ["seek", "찾다, 추구하다"],
+    ["realm", "영역"]
+  ],
+  "summary": {
+    "en": "A new scientific theory replaces an old one only when it explains all of the old theory's successes and also works where the old theory fails.",
+    "ko": "새로운 과학 이론은 기존 이론의 성공을 모두 설명하고, 기존 이론이 실패하는 곳에서도 통할 때에만 그 이론을 대체한다."
+  },
+  "writing": {
+    "en": "A better theory must explain everything the old one did and more.",
+    "ko": "더 나은 이론은 기존 이론이 설명한 모든 것과 그 이상을 설명해야 한다."
+  },
+  "tip": "뉴턴·아인슈타인처럼 유명한 예시가 길게 나와도, 주제는 예시 앞뒤의 일반 진술(첫 문장과 마지막 문장)에서 찾으세요. ③처럼 예시 속 소재(gravity)만 잡은 선택지는 범위가 너무 좁아요. 본문의 gained acceptance와 선택지 gains acceptance처럼 핵심 표현이 겹치는지도 확인해 보세요.",
+  "note": "would not have gained ~ if it had not been able to ~ 이 가정법 문장을 '실제로는 설명했다'로 뒤집어 읽을 수 있어야 It did.가 바로 이해돼요. 수업 때 이 문장은 꼭 같이 끊어 읽어 봐요.",
+  "faq": [
+    ["2025년 10월 고2 모의고사 영어 23번 정답은?", "② how a new theory gains acceptance beyond an existing one(새로운 이론이 기존 이론을 넘어 어떻게 인정받는가)이에요."],
+    ["2025 10월 고2 영어 23번은 어떤 유형인가요?", "글의 주제를 고르는 2점 문항이에요. 뉴턴과 아인슈타인의 중력 이론을 예로 든 과학 지문이에요."],
+    ["③ difficulties ... understanding gravity가 오답인 이유는?", "중력은 예시에 나오는 소재일 뿐이에요. 글이 말하려는 건 새 이론이 기존 이론을 대체하는 조건이라서 ②가 답이에요."]
+  ]
+}
