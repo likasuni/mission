@@ -1,0 +1,192 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 3,
+  "topic": "2019년과 2025년 7개국에서 유명인·인플루언서 광고를 보고 제품을 구매한 응답자 비율",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 25번",
+    "2026 10월 고2 영어 25번 해설",
+    "고2 10월 모의고사 25번 정답",
+    "고2 모의고사 도표",
+    "celebrities influencers advertised 도표",
+    "인플루언서 광고 구매 비율 영어 도표"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 25번은 2019년과 2025년에 유명인이나 인플루언서가 광고해서 제품을 산 응답자 비율을 7개국으로 비교한 막대 도표 문항이에요. 한국은 17%에서 33%로 가장 크게 늘었지만, 33%는 17%의 두 배(34%)에 조금 못 미쳐서 '두 배 이상'이라고 한 ③이 틀렸어요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "도표",
+      "나라별로 2019년(회색)과 2025년(흰색) 막대가 나란히 있다. 브라질 36%·47%, 인도 27%·42%, 중국 39%·37%, 한국 17%·33%, 이탈리아 18%·24%, 미국 14%·22%, 일본 4%·11%."
+    ],
+    [
+      "①",
+      "2025년 브라질 47%로 1위, 인도 42%로 2위 → 일치"
+    ],
+    [
+      "②",
+      "2019년 중국 39%로 1위, 39%→37%로 유일하게 감소 → 일치"
+    ],
+    [
+      "③",
+      "한국 증가 폭 16%p로 가장 큼(맞음). 하지만 33%는 17%의 두 배 34%보다 작음 → '두 배 이상'은 불일치"
+    ],
+    [
+      "④",
+      "2019년 이탈리아 18%, 미국 14%로 20% 미만 → 2025년 24%, 22%로 20% 넘음 → 일치"
+    ],
+    [
+      "⑤",
+      "일본은 2019년 4%, 2025년 11%로 두 해 모두 꼴찌 → 일치"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "During the same period, South Korea showed the largest increase in the percentage of respondents who purchased those products and its percentage in 2025 was more than double that in 2019.",
+      "ko": "같은 기간 동안, 한국은 그러한 제품들을 구매한 응답자들의 비율에서 가장 큰 증가를 보였고 2025년의 그 비율은 2019년의 그것의 두 배 이상이었다.",
+      "note": "앞부분(가장 큰 증가, +16%p)은 맞지만 뒷부분이 틀렸어요. 17 × 2 = 34인데 2025년은 33%라서 두 배에 못 미쳐요. 그래서 ③이 정답이에요."
+    },
+    {
+      "en": "China had the highest percentage of respondents who purchased those products in 2019, but among the countries, it was the only one whose percentage decreased between 2019 and 2025.",
+      "ko": "중국은 2019년에 그러한 제품들을 구매한 가장 높은 응답자 비율을 보였지만, 그 국가들 중에서, 2019년과 2025년 사이에 그 비율이 감소한 유일한 국가였다.",
+      "note": "2019년 39%로 1위, 2025년 37%로 줄었어요. 다른 나라는 모두 늘었으니 일치해요."
+    },
+    {
+      "en": "Both Italy and the United States had percentages below 20% in 2019, but the percentages exceeded 20% in 2025.",
+      "ko": "이탈리아와 미국은 둘 다 2019년에 20%보다 낮은 비율들을 보였지만, 그 비율들은 2025년에 20%를 넘었다.",
+      "note": "이탈리아 18%→24%, 미국 14%→22%. 두 나라 모두 맞아서 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "In 2025, among the countries, Brazil recorded the highest percentage of respondents who purchased products advertised by celebrities or influencers at 47%, followed by India.",
+      "ko": "2025년에 브라질이 47%로 가장 높은 비율을 기록했고, 인도가 그 뒤를 이었다.",
+      "why": "일치. 2025년 브라질 47%가 1위, 인도 42%가 2위예요."
+    },
+    {
+      "en": "China had the highest percentage of respondents who purchased those products in 2019, but among the countries, it was the only one whose percentage decreased between 2019 and 2025.",
+      "ko": "중국은 2019년에 가장 높은 비율이었지만, 2019년과 2025년 사이에 비율이 감소한 유일한 국가였다.",
+      "why": "일치. 2019년 39%로 1위였고, 37%로 줄어든 나라는 중국뿐이에요."
+    },
+    {
+      "en": "During the same period, South Korea showed the largest increase in the percentage of respondents who purchased those products and its percentage in 2025 was more than double that in 2019.",
+      "ko": "같은 기간 한국은 가장 큰 증가를 보였고, 2025년 비율은 2019년의 두 배 이상이었다.",
+      "why": "정답(불일치). 증가 폭 16%p로 가장 큰 건 맞지만, 33%는 17%의 두 배인 34%에 못 미쳐요."
+    },
+    {
+      "en": "Both Italy and the United States had percentages below 20% in 2019, but the percentages exceeded 20% in 2025.",
+      "ko": "이탈리아와 미국은 2019년에 20% 미만이었지만, 2025년에는 20%를 넘었다.",
+      "why": "일치. 이탈리아 18%→24%, 미국 14%→22%예요."
+    },
+    {
+      "en": "Japan remained the lowest-ranked country among the seven countries in both years in the percentage of respondents who purchased products advertised by celebrities or influencers.",
+      "ko": "일본은 두 해 모두 7개국 중 가장 낮은 순위에 머물렀다.",
+      "why": "일치. 일본은 4%, 11%로 두 해 모두 가장 낮아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "주격 관계대명사 who + 과거분사 수식",
+      "ex": "… Brazil recorded the highest percentage of respondents who purchased products advertised by celebrities or influencers at 47%, followed by India.",
+      "d": "who purchased ~는 respondents를, advertised by ~는 products를 꾸며요. 끝의 followed by India는 '그리고 인도가 뒤를 이었다'는 분사구문이에요."
+    },
+    {
+      "t": "소유격 관계대명사 whose",
+      "ex": "it was the only one whose percentage decreased between 2019 and 2025.",
+      "d": "whose percentage = the only one's percentage. '비율이 감소한 유일한 나라'. the only는 다른 나라를 모두 확인해야 하는 신호예요."
+    },
+    {
+      "t": "배수 비교 more than double that in",
+      "ex": "its percentage in 2025 was more than double that in 2019.",
+      "d": "that은 앞의 its percentage를 받아요. '2019년 비율의 두 배 이상'. 17 × 2 = 34와 33을 직접 비교하세요."
+    },
+    {
+      "t": "remain + 보어",
+      "ex": "Japan remained the lowest-ranked country among the seven countries in both years …",
+      "d": "'~인 채로 남았다'. in both years가 붙었으니 2019년과 2025년 둘 다 꼴찌인지 확인해야 해요."
+    }
+  ],
+  "vocab": [
+    [
+      "illustrate",
+      "보여 주다, 나타내다"
+    ],
+    [
+      "share",
+      "비율, 몫"
+    ],
+    [
+      "respondent",
+      "응답자"
+    ],
+    [
+      "purchase",
+      "구매하다"
+    ],
+    [
+      "celebrity",
+      "유명인"
+    ],
+    [
+      "influencer",
+      "인플루언서"
+    ],
+    [
+      "advertise",
+      "광고하다"
+    ],
+    [
+      "record",
+      "기록하다"
+    ],
+    [
+      "followed by",
+      "그 뒤를 ~가 이어"
+    ],
+    [
+      "decrease",
+      "감소하다"
+    ],
+    [
+      "increase",
+      "증가; 증가하다"
+    ],
+    [
+      "double",
+      "두 배"
+    ],
+    [
+      "exceed",
+      "넘다, 초과하다"
+    ],
+    [
+      "lowest-ranked",
+      "가장 낮은 순위의"
+    ]
+  ],
+  "summary": {
+    "en": "Between 2019 and 2025, the share of people who bought products because of celebrity or influencer ads rose in every country except China, with South Korea showing the largest increase.",
+    "ko": "2019년에서 2025년 사이에 유명인·인플루언서 광고 때문에 제품을 산 사람의 비율은 중국을 뺀 모든 나라에서 늘었고, 한국이 가장 크게 늘었다."
+  },
+  "writing": {
+    "en": "In South Korea, the percentage rose by 16 percentage points, but it did not quite double.",
+    "ko": "한국에서 그 비율은 16퍼센트포인트 올랐지만, 두 배에는 조금 못 미쳤다."
+  },
+  "tip": "도표 문장이 'A이고 B이다'처럼 두 가지를 말하면 둘 다 확인하세요. ③은 앞부분(가장 큰 증가)이 맞아서 넘어가기 쉽지만, 뒷부분 double에서 틀려요. 배수 표현은 반드시 곱셈으로, 증가 폭은 나라별로 빼기를 해서 적어 두면 실수가 줄어요.",
+  "note": "③번은 앞부분이 맞으니까 뒷부분을 대충 읽고 넘기기 쉬워요. 33과 34처럼 1 차이로 갈리는 배수 문장은 꼭 17 × 2를 직접 써 보고 판단하세요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 25번 정답은?",
+      "③이에요. 한국의 2025년 비율 33%는 2019년 17%의 두 배인 34%에 못 미치는데 '두 배 이상'이라고 해서 도표와 맞지 않아요."
+    ],
+    [
+      "2026 10월 고2 영어 25번은 어떤 유형인가요?",
+      "도표의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. 7개국에서 유명인·인플루언서 광고를 보고 제품을 산 응답자 비율을 2019년과 2025년으로 비교한 막대 도표예요."
+    ],
+    [
+      "한국이 가장 크게 증가한 건 맞나요?",
+      "네, 맞아요. 나라별 증가 폭은 브라질 11, 인도 15, 한국 16, 이탈리아 6, 미국 8, 일본 7%p이고 중국은 2%p 줄었어요. 한국이 16%p로 가장 커요."
+    ]
+  ]
+}

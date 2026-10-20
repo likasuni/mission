@@ -1,0 +1,195 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 18,
+  "type": "목적",
+  "points": 2,
+  "answer": 4,
+  "topic": "학생회장이 교장 선생님께 학생 사생활 보호와 안전 강화 방안을 제안하는 편지",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 18번",
+    "2026 10월 고2 영어 18번 해설",
+    "고2 10월 모의고사 18번 정답",
+    "고2 모의고사 글의 목적",
+    "학생 안전 제안 편지",
+    "privacy and safety 지문"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 18번은 학생회장 David Miller가 근처 학교들의 안전 사고 때문에 걱정하는 학생들을 대신해 교장 선생님께 몇 가지 방안을 내놓는 편지예요. We propose a few measures to increase students' privacy and safety가 목적을 그대로 말해 줘요. 정답은 ④ 학생들의 사생활 보호와 안전 강화 방안들을 제안하려고예요.",
+  "flow": [
+    [
+      "배경",
+      "학생회장으로서, 근처 학교들의 최근 안전 사고에 대해 많은 학생이 걱정한다는 이유로 편지를 쓴다."
+    ],
+    [
+      "제안",
+      "학생들의 사생활과 안전을 높이기 위한 몇 가지 방안을 제안한다."
+    ],
+    [
+      "방안 1",
+      "학교 주변에 나무를 심으면 외부인의 시선을 막아 사생활을 지키고 외부 위험 노출을 줄인다."
+    ],
+    [
+      "방안 2",
+      "출입구 근처에 CCTV와 경비원을 늘려 무단 출입을 감지하고 사고에 빨리 대응한다."
+    ],
+    [
+      "마무리",
+      "학생들을 대표해 이 제안들을 고려해 주기를 부탁한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "We propose a few measures to increase students' privacy and safety.",
+      "ko": "저희는 학생들의 사생활과 안전을 강화하기 위한 몇 가지 방안을 제안합니다.",
+      "note": "propose(제안하다) + measures(방안들) + privacy and safety가 ④의 '사생활 보호와 안전 강화 방안 제안'과 그대로 맞아요."
+    },
+    {
+      "en": "First, planting trees around the school would prevent outsiders from watching students, which helps protect students' privacy and reduces their exposure to external risks.",
+      "ko": "먼저, 학교 주변에 나무를 심는 것은 외부인들이 학생들을 볼 수 없도록 막아 줄 것이고, 이는 학생들의 사생활을 보호하는 것을 돕고 외부 위험에 대한 그들의 노출을 줄입니다.",
+      "note": "First로 시작하는 첫 번째 방안이에요. 나무 심기는 경관이 아니라 '사생활·안전'을 위한 수단이에요."
+    },
+    {
+      "en": "On behalf of the students, I hope that you will kindly consider these suggestions.",
+      "ko": "학생들을 대표하여 저는 교장 선생님께서 부디 이 제안들을 고려해 주시기를 바랍니다.",
+      "note": "마지막에 these suggestions(이 제안들)로 다시 묶어 줘서 편지 전체가 '제안'하는 글임을 확인시켜 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "교내 안전시설의 수리를 건의하려고",
+      "ko": "안전시설 수리 건의",
+      "why": "고장 난 시설을 고쳐 달라는 말은 없어요. 나무·CCTV·경비원을 '새로 더하자'는 제안이에요."
+    },
+    {
+      "en": "교내 사생활 침해 사례들에 대해 보고하려고",
+      "ko": "사생활 침해 사례 보고",
+      "why": "incidents는 '근처 학교들'의 안전 사고이고, 그것을 보고하는 게 아니라 걱정의 이유로만 언급해요."
+    },
+    {
+      "en": "나무 심기가 학교 경관 개선에 주는 효과를 설명하려고",
+      "ko": "나무 심기와 경관 효과",
+      "why": "나무 심기는 여러 방안 중 하나이고, 효과도 경관이 아니라 사생활 보호와 위험 노출 감소예요."
+    },
+    {
+      "en": "학생들의 사생활 보호와 안전 강화 방안들을 제안하려고",
+      "ko": "사생활 보호·안전 강화 방안 제안",
+      "why": "정답. We propose a few measures to increase students' privacy and safety가 목적 문장이고, 이어서 방안 두 가지를 제시해요."
+    },
+    {
+      "en": "교내 감시 카메라 설치 확대에 대한 재검토를 요구하려고",
+      "ko": "카메라 설치 확대 재검토 요구",
+      "why": "오히려 CCTV를 더 설치하자고 제안해요. 다시 생각해 보라는 반대 방향이 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "as + 명사 (자격)",
+      "ex": "I am writing as the head student because many students have expressed their concerns …",
+      "d": "여기서 as는 '~로서'라는 자격을 나타내요. 편지를 쓰는 사람이 학생회장이라는 정보예요."
+    },
+    {
+      "t": "prevent A from -ing",
+      "ex": "… planting trees around the school would prevent outsiders from watching students, …",
+      "d": "'A가 ~하지 못하게 막다'. 동명사 주어 planting trees가 문장의 주어라서 동사가 would prevent예요."
+    },
+    {
+      "t": "계속적 용법 관계대명사 which",
+      "ex": "…, which helps protect students' privacy and reduces their exposure to external risks.",
+      "d": "콤마 뒤 which는 앞 내용 전체(나무가 시선을 막는 것)를 받아요. 그래서 단수 동사 helps, reduces를 써요."
+    },
+    {
+      "t": "to부정사의 부사적 용법(목적)",
+      "ex": "… security guards could be added near the entrances to detect unauthorized access and respond quickly to any incidents.",
+      "d": "to detect, (to) respond는 '~하기 위해'. 조동사 수동태 could be added도 함께 확인하세요."
+    }
+  ],
+  "vocab": [
+    [
+      "principal",
+      "교장"
+    ],
+    [
+      "head student",
+      "학생회장"
+    ],
+    [
+      "express concern",
+      "우려를 표하다"
+    ],
+    [
+      "security incident",
+      "안전 사고, 보안 사건"
+    ],
+    [
+      "propose",
+      "제안하다"
+    ],
+    [
+      "measure",
+      "방안, 조치"
+    ],
+    [
+      "privacy",
+      "사생활"
+    ],
+    [
+      "outsider",
+      "외부인"
+    ],
+    [
+      "exposure to",
+      "~에의 노출"
+    ],
+    [
+      "external",
+      "외부의"
+    ],
+    [
+      "security guard",
+      "경비원"
+    ],
+    [
+      "entrance",
+      "출입구"
+    ],
+    [
+      "detect",
+      "감지하다"
+    ],
+    [
+      "unauthorized access",
+      "무단 출입"
+    ],
+    [
+      "on behalf of",
+      "~을 대표하여"
+    ],
+    [
+      "suggestion",
+      "제안"
+    ]
+  ],
+  "summary": {
+    "en": "The head student proposes planting trees and adding CCTV cameras and security guards to protect students' privacy and safety.",
+    "ko": "학생회장이 학생들의 사생활과 안전을 지키기 위해 나무 심기와 CCTV·경비원 추가를 제안한다."
+  },
+  "writing": {
+    "en": "We propose a few measures to increase students' privacy and safety.",
+    "ko": "저희는 학생들의 사생활과 안전을 강화하기 위한 몇 가지 방안을 제안합니다."
+  },
+  "tip": "목적 문제는 We propose, I hope that you will consider 같은 '제안·부탁 표현'을 찾으면 돼요. 그 뒤에 First, Additionally로 나열되는 내용은 목적을 뒷받침하는 세부 사항이에요. 세부 사항 하나(나무 심기, CCTV)만 다룬 선택지는 범위가 너무 좁아요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 18번 정답은?",
+      "④ 학생들의 사생활 보호와 안전 강화 방안들을 제안하려고예요. 학생회장이 나무 심기, CCTV·경비원 추가를 교장 선생님께 제안하는 편지예요."
+    ],
+    [
+      "2026 10월 고2 18번은 어떤 유형인가요?",
+      "글의 목적을 고르는 2점 문항이에요. 학생회장이 교장 선생님께 쓴 편지예요."
+    ],
+    [
+      "③ 나무 심기 선택지가 오답인 이유는?",
+      "나무 심기는 두 방안 중 하나일 뿐이고, 그 효과도 경관 개선이 아니라 외부인의 시선을 막는 사생활 보호예요. 글 전체의 목적이 아니에요."
+    ]
+  ]
+}

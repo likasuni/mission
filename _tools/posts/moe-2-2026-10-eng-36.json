@@ -1,0 +1,198 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 36,
+  "type": "순서",
+  "points": 2,
+  "answer": 5,
+  "topic": "디자이너는 사용자가 아니다: 사용성 테스트로 실제 사용자에게서 배우기",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 36번",
+    "2026 10월 고2 영어 36번 해설",
+    "고2 10월 모의고사 36번 정답",
+    "고2 모의고사 글의 순서",
+    "usability testing 사용성 테스트 지문",
+    "we are not the user 디자이너 지문",
+    "글의 순서 해설"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 36번은 디자이너가 '우리는 사용자가 아니다'라는 사실을 받아들이고 사용성 테스트로 실제 사용자에게서 배워야 한다는 글의 순서 문항이에요. (C) 끝의 질문 how can designers …?에 (B)의 An incredibly effective way가 답하고, (A)의 This technique이 그 방법을 받아요. 정답은 ⑤ (C) － (B) － (A)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "더 효과적인 제품과 경험을 만들기 위해 디자이너가 받아들여야 할 단순한 진리는 '우리는 사용자가 아니다'라는 사실이다."
+    ],
+    [
+      "(C) 이유 + 질문",
+      "우리는 만드는 것에 너무 가까워서 객관적으로 보지 못한다. 최고의 인터페이스는 실제 사용자 관찰로 만들어진다. 그럼 어떻게 해야 할까?"
+    ],
+    [
+      "(B) 답: 방법",
+      "매우 효과적인 방법은 사용성 테스트다. 참가자에게 실제적인 활동을 시켜 문제를 찾고, 기회를 발견하고, 사용자의 행동·선호를 배운다."
+    ],
+    [
+      "(A) 효과",
+      "이 기법은 디자인이 실제 사용자 손에서 얼마나 잘 작동할지 이해하는 데 효과적이고, 대표 사용자의 결과로 수정을 거듭해 작업을 개선할 수 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "We’re much too close to what we build to objectively see it and understand how users will interact with it.",
+      "ko": "우리는 우리가 만드는 것에 너무 가까워서 그것을 객관적으로 보고 사용자들이 그것과 어떻게 상호 작용할지 이해할 수 없다.",
+      "note": "주어진 글의 we are not the user를 '왜 그런지'로 바로 풀어 줘요. 주어 We도 주어진 글의 we를 그대로 이어받아서 (C)가 첫 순서예요."
+    },
+    {
+      "en": "So how can designers shape their work to be more effective? / An incredibly effective way is with usability testing.",
+      "ko": "그렇다면 디자이너들은 어떻게 자신들의 작업을 더 효과적이도록 만들 수 있을까? / 매우 효과적인 방법은 사용성 테스트를 이용하는 것이다.",
+      "note": "(C) 마지막 질문의 how와 effective를 (B) 첫 문장 An incredibly effective way가 그대로 받아 대답해요. (C) → (B)가 확정이에요."
+    },
+    {
+      "en": "This technique is effective for understanding how well a design will perform once it is in the hands of real users.",
+      "ko": "이 기법은 일단 디자인이 실제 사용자의 손에 들어갔을 때 그것이 얼마나 잘 작동할지 이해하는 데 효과적이다.",
+      "note": "This technique은 (B)의 usability testing(this method)을 가리켜요. 사용성 테스트가 먼저 소개돼야 하니 (A)는 (B) 뒤, 맨 마지막이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A) － (C) － (B)",
+      "ko": "기법 → 이유·질문 → 방법",
+      "why": "(A)의 This technique이 가리킬 대상이 주어진 글에 없어요. 무엇을 말하는지 모르는 채로 시작하게 돼요."
+    },
+    {
+      "en": "(B) － (A) － (C)",
+      "ko": "방법 → 기법 → 이유·질문",
+      "why": "(C)의 질문 how can designers …?가 맨 끝에 오면 답(B)이 질문보다 먼저 나온 셈이 돼요."
+    },
+    {
+      "en": "(B) － (C) － (A)",
+      "ko": "방법 → 이유·질문 → 기법",
+      "why": "(B)의 An incredibly effective way는 '무엇을 위한' 방법인지 질문이 먼저 있어야 해요. 주어진 글은 질문이 아니라 사실(we are not the user)만 말해요."
+    },
+    {
+      "en": "(C) － (A) － (B)",
+      "ko": "이유·질문 → 기법 → 방법",
+      "why": "(C)의 질문 뒤에 (A)의 This technique이 오면 '이 기법'이 무엇인지 아직 소개되지 않았어요. usability testing은 (B)에서 처음 나와요."
+    },
+    {
+      "en": "(C) － (B) － (A)",
+      "ko": "이유·질문 → 방법 → 효과",
+      "why": "정답. 우리는 사용자가 아니다(주어진 글) → 너무 가까워 객관적으로 못 본다, 그럼 어떻게?(C) → 사용성 테스트(B) → 이 기법의 효과(A)."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동격의 that",
+      "ex": "A simple truth that designers must embrace … is the fact that we are not the user.",
+      "d": "첫 that은 truth를 꾸미는 관계대명사(embrace의 목적어), 두 번째 that은 the fact의 내용을 말하는 동격 접속사예요. 주어는 A simple truth, 동사는 is예요."
+    },
+    {
+      "t": "too ~ to V",
+      "ex": "We’re much too close to what we build to objectively see it …",
+      "d": "'너무 ~해서 …할 수 없다'. much는 too를 강조해요. what we build는 '우리가 만드는 것'이에요."
+    },
+    {
+      "t": "현재완료 수동태 관계절",
+      "ex": "The best user interfaces are those that have been shaped by observations of real users and their interactions with them.",
+      "d": "those = user interfaces. that have been shaped by ~ '~에 의해 만들어져 온 것들'."
+    },
+    {
+      "t": "ask + 목적어 + to V",
+      "ex": "… by asking participants to engage in realistic activities.",
+      "d": "'목적어에게 ~하도록 요청하다'. by -ing는 수단이에요."
+    },
+    {
+      "t": "접속사 once",
+      "ex": "… how well a design will perform once it is in the hands of real users.",
+      "d": "once는 '일단 ~하면'. 시간·조건 부사절이라 미래 의미여도 현재형 is를 써요."
+    }
+  ],
+  "vocab": [
+    [
+      "embrace",
+      "받아들이다, 수용하다"
+    ],
+    [
+      "objectively",
+      "객관적으로"
+    ],
+    [
+      "interact with",
+      "~와 상호 작용하다"
+    ],
+    [
+      "user interface",
+      "사용자 인터페이스"
+    ],
+    [
+      "observation",
+      "관찰"
+    ],
+    [
+      "shape",
+      "형성하다, 만들다"
+    ],
+    [
+      "usability testing",
+      "사용성 테스트"
+    ],
+    [
+      "uncover",
+      "밝혀내다"
+    ],
+    [
+      "preference",
+      "선호"
+    ],
+    [
+      "participant",
+      "참가자"
+    ],
+    [
+      "engage in",
+      "~에 참여하다"
+    ],
+    [
+      "realistic",
+      "실제적인, 현실적인"
+    ],
+    [
+      "perform",
+      "작동하다, 수행하다"
+    ],
+    [
+      "subsequent",
+      "그 이후의"
+    ],
+    [
+      "revision",
+      "수정"
+    ],
+    [
+      "representative",
+      "대표하는"
+    ]
+  ],
+  "summary": {
+    "en": "Since designers are too close to their own work to see it objectively, they should use usability testing to learn from real users and improve their designs.",
+    "ko": "디자이너는 자신의 작업에 너무 가까워 객관적으로 볼 수 없으므로, 사용성 테스트를 활용해 실제 사용자에게서 배우고 디자인을 개선해야 한다."
+  },
+  "writing": {
+    "en": "To make better designs, watch how real users actually use them.",
+    "ko": "더 나은 디자인을 만들려면 실제 사용자가 그것을 어떻게 쓰는지 지켜보라."
+  },
+  "tip": "단락 끝이 의문문이면 다음 단락 첫 문장이 그 답이에요. (C)의 how can designers … more effective? ↔ (B)의 An incredibly effective way처럼 질문의 단어를 다시 쓰는지 확인하세요. 그리고 This technique·this method 같은 지시어는 가리키는 대상이 먼저 나와야 하니, 지시어로 시작하는 단락은 대개 뒤쪽이에요.",
+  "note": "(C) 마지막 질문, (B) 첫 문장의 대답 — 이 연결 하나만 찾으면 나머지는 저절로 풀려요. 순서 문제에서 의문문이 보이면 동그라미부터 치세요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 36번 정답은?",
+      "⑤ (C) － (B) － (A)예요. '우리는 사용자가 아니다' → 너무 가까워 객관적으로 못 본다, 그럼 어떻게?(C) → 사용성 테스트(B) → 이 기법의 효과(A) 순서예요."
+    ],
+    [
+      "2026 10월 고2 36번은 어떤 유형인가요?",
+      "주어진 글 다음에 이어질 글의 순서를 고르는 2점 문항이에요. 디자이너와 사용성 테스트를 다룬 지문이에요."
+    ],
+    [
+      "(B)가 주어진 글 바로 뒤에 오면 안 되나요?",
+      "(B)의 An incredibly effective way는 '어떻게 하면 더 효과적일까?'라는 질문에 대한 답이에요. 그 질문은 (C)의 마지막 문장에 있으니 (C)가 먼저 와야 해요."
+    ]
+  ]
+}

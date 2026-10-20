@@ -1,0 +1,199 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 22,
+  "type": "요지",
+  "points": 2,
+  "answer": 1,
+  "topic": "콘텐츠 제작자는 자신의 영향력을 사회·환경의 긍정적 변화에 쓸 책임이 있다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 22번",
+    "2026 10월 고2 영어 22번 해설",
+    "고2 10월 모의고사 22번 정답",
+    "고2 모의고사 글의 요지",
+    "콘텐츠 제작자 사회적 책임",
+    "content creators responsibility 지문"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 22번은 콘텐츠 제작자가 자신의 플랫폼으로 사회와 환경에 좋은 변화를 이끌 책임이 있다는 글이에요. they have a responsibility to use that platform for positive change가 요지 문장이에요. 정답은 ① 콘텐츠 제작자는 사회와 환경 개선에 기여하는 창작물을 만들 책임이 있다예요.",
+  "flow": [
+    [
+      "화제",
+      "사회적·환경적 책임은 콘텐츠 제작자에게 점점 더 중요한 윤리적 고려 사항이 되었다."
+    ],
+    [
+      "배경",
+      "사회·환경·지속가능성 문제에 대한 인식이 커지며, 제작자들은 작업의 더 넓은 영향을 고려하라는 요구를 받는다."
+    ],
+    [
+      "요지",
+      "제작자는 청중의 태도와 행동에 영향을 줄 플랫폼을 가졌으니, 그것을 긍정적인 변화에 쓸 책임이 있다."
+    ],
+    [
+      "예시",
+      "친환경 제품을 홍보하거나 평등·정의 관련 대의를 지지하면 인식을 높이고 의미 있는 사회적 영향을 낼 수 있다."
+    ],
+    [
+      "정리",
+      "윤리적인 제작자는 제품 홍보만이 아니라 가치와 대의를 고려해 콘텐츠를 자신의 사회적·환경적 원칙과 일치시킨다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Social and environmental responsibility has become an increasingly important ethical consideration for content creators.",
+      "ko": "사회적 그리고 환경적 책임은 콘텐츠 제작자들에게 점점 더 중요한 윤리적 고려 사항이 되어 왔다.",
+      "note": "첫 문장부터 '콘텐츠 제작자 + 사회·환경적 책임'이라는 화제를 꺼내요."
+    },
+    {
+      "en": "Content creators have a platform that can influence their audience's attitudes and behaviors, and they have a responsibility to use that platform for positive change.",
+      "ko": "콘텐츠 제작자들은 자신의 청중의 태도와 행동에 영향을 미칠 수 있는 플랫폼을 가지고 있으며, 그들은 그 플랫폼을 긍정적인 변화를 위해 사용할 책임을 진다.",
+      "note": "have a responsibility to ~가 요지 문장이에요. '긍정적 변화를 위해 쓸 책임'이 ①의 '사회와 환경 개선에 기여할 책임'과 같아요."
+    },
+    {
+      "en": "Ethical content creators not only focus on promoting their products or services but also consider the values and causes they support, ensuring that their content aligns with their social and environmental principles.",
+      "ko": "윤리적인 콘텐츠 제작자들은 자신의 제품이나 서비스를 홍보하는 데만 초점을 맞추는 것이 아니라, 자신이 지지하는 가치와 대의명분도 고려하며, 자신의 콘텐츠가 자신의 사회적 그리고 환경적 원칙과 반드시 일치하게 한다.",
+      "note": "마지막 문장이 요지를 다시 정리해요. 콘텐츠가 사회·환경 원칙과 맞아야 한다는 말이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "콘텐츠 제작자는 사회와 환경 개선에 기여하는 창작물을 만들 책임이 있다.",
+      "ko": "제작자의 사회·환경 기여 책임",
+      "why": "정답. 플랫폼을 긍정적 변화에 쓸 책임, 콘텐츠를 사회적·환경적 원칙과 일치시키라는 내용과 맞아요."
+    },
+    {
+      "en": "공익을 위한 콘텐츠는 특정 이익 집단에 편향되지 않는 중립성이 요구된다.",
+      "ko": "공익 콘텐츠의 중립성",
+      "why": "오히려 평등·정의 같은 대의를 '지지하라'고 해요. 중립성 이야기는 없어요."
+    },
+    {
+      "en": "콘텐츠 플랫폼은 사회적으로 유해한 콘텐츠를 엄격히 규제할 의무가 있다.",
+      "ko": "플랫폼의 유해 콘텐츠 규제",
+      "why": "platform은 나오지만 책임의 주체는 플랫폼 회사가 아니라 콘텐츠 제작자예요. 규제 이야기도 없어요."
+    },
+    {
+      "en": "콘텐츠 소비자에게는 정보를 비판적으로 수용하는 태도가 필요하다.",
+      "ko": "소비자의 비판적 수용",
+      "why": "글은 만드는 사람(제작자)의 책임을 말해요. 보는 사람(소비자)의 태도는 다루지 않아요."
+    },
+    {
+      "en": "전문가와의 협업은 신뢰할 수 있는 창작물을 만드는 데 중요하다.",
+      "ko": "전문가 협업",
+      "why": "전문가나 협업, 신뢰성에 대한 내용은 전혀 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "현재완료 + 비교급 강조",
+      "ex": "Social and environmental responsibility has become an increasingly important ethical consideration for content creators.",
+      "d": "has become은 '~이 되어 왔다'. increasingly(점점 더)가 important를 꾸며 변화의 흐름을 보여 줘요."
+    },
+    {
+      "t": "be called upon to V",
+      "ex": "… many content creators are being called upon to consider the broader impact of their work.",
+      "d": "'~하도록 요구받다'. are being called는 현재진행 수동태로, 지금 그런 요구를 받고 있는 중이라는 뜻이에요."
+    },
+    {
+      "t": "동명사구 주어 / help + 동사원형",
+      "ex": "For example, promoting environmentally sustainable products or supporting causes related to equality and justice can help raise awareness …",
+      "d": "주어는 promoting ~ or supporting ~ 동명사구예요. help raise처럼 help 뒤에는 동사원형이 바로 올 수 있어요."
+    },
+    {
+      "t": "not only A but also B / 분사구문",
+      "ex": "Ethical content creators not only focus on promoting their products or services but also consider the values and causes they support, ensuring that …",
+      "d": "'A뿐 아니라 B도'. 강조점은 B(가치와 대의)예요. ensuring은 '~하도록 보장하면서'라는 분사구문이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "responsibility",
+      "책임"
+    ],
+    [
+      "ethical",
+      "윤리적인"
+    ],
+    [
+      "consideration",
+      "고려 사항"
+    ],
+    [
+      "content creator",
+      "콘텐츠 제작자"
+    ],
+    [
+      "awareness",
+      "인식"
+    ],
+    [
+      "sustainability",
+      "지속가능성"
+    ],
+    [
+      "be called upon to V",
+      "~하도록 요구받다"
+    ],
+    [
+      "broad",
+      "폭넓은 (broader)"
+    ],
+    [
+      "address",
+      "(문제를) 다루다"
+    ],
+    [
+      "consumerism",
+      "소비주의"
+    ],
+    [
+      "attitude",
+      "태도"
+    ],
+    [
+      "promote",
+      "홍보하다, 촉진하다"
+    ],
+    [
+      "cause",
+      "대의명분"
+    ],
+    [
+      "equality",
+      "평등"
+    ],
+    [
+      "drive",
+      "이끌어 내다"
+    ],
+    [
+      "align with",
+      "~와 일치하다"
+    ],
+    [
+      "principle",
+      "원칙"
+    ]
+  ],
+  "summary": {
+    "en": "Content creators have a responsibility to use their influence for positive social and environmental change.",
+    "ko": "콘텐츠 제작자는 자신의 영향력을 사회와 환경의 긍정적인 변화를 위해 사용할 책임이 있다."
+  },
+  "writing": {
+    "en": "Content creators have a responsibility to use their platform for positive change.",
+    "ko": "콘텐츠 제작자들은 자신의 플랫폼을 긍정적인 변화를 위해 사용할 책임이 있다."
+  },
+  "tip": "요지 문제는 have a responsibility to, should 같은 '당위 표현'이 있는 문장을 찾으세요. 그다음 선택지의 '주체'가 맞는지 확인해요. 이 글의 주체는 콘텐츠 제작자라서, 플랫폼 회사(③)나 소비자(④)가 주어인 선택지는 바로 지울 수 있어요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 22번 정답은?",
+      "① 콘텐츠 제작자는 사회와 환경 개선에 기여하는 창작물을 만들 책임이 있다예요. 제작자가 플랫폼을 긍정적 변화에 써야 한다는 글이에요."
+    ],
+    [
+      "2026 10월 고2 22번은 어떤 유형인가요?",
+      "글의 요지를 고르는 2점 문항이에요. 콘텐츠 제작자의 사회적·환경적 책임을 다룬 지문이에요."
+    ],
+    [
+      "③ 플랫폼의 유해 콘텐츠 규제가 오답인 이유는?",
+      "본문의 platform은 제작자가 가진 영향력의 '무대'라는 뜻이에요. 책임을 지는 쪽은 제작자이고, 규제 이야기는 나오지 않아요."
+    ]
+  ]
+}

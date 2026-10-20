@@ -1,0 +1,196 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 3,
+  "topic": "의학의 과학적 발전이 감염병 치료와 예방에 가져온 큰 진보",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 35번",
+    "2026 10월 고2 영어 35번 해설",
+    "고2 10월 모의고사 35번 정답",
+    "고2 모의고사 무관한 문장",
+    "감염병 치료 예방 지문",
+    "penicillin vaccine 지문",
+    "무관한 문장 찾기 해설"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 35번은 페니실린, 우두 접종, 백신, 위생 관리처럼 의학 발전이 감염병 치료·예방에 큰 진보를 가져왔다는 글의 무관한 문장 찾기 문항이에요. ③만 '약에 너무 의존하면 몸이 상한다'며 의학의 부작용 쪽으로 방향을 틀어요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "주제문",
+      "의료 현장의 과학적 발전과 기술은 감염병의 치료와 예방에 엄청난 진보를 가져왔다."
+    ],
+    [
+      "예시 1(①)",
+      "1928년 Fleming의 페니실린 발견은 감염병과의 싸움에서 가장 큰 돌파구 중 하나였다."
+    ],
+    [
+      "예시 2(②)",
+      "1796년경 Jenner는 우두에 노출된 사람이 천연두로부터 보호된다는 것을 발견했다."
+    ],
+    [
+      "무관(③)",
+      "기대 수명은 늘었지만 약에 지나치게 의존하면 몸이 상한다 → 의학의 부작용 이야기라 흐름에서 벗어남."
+    ],
+    [
+      "예시 3·4(④⑤)",
+      "실험실 백신은 질병 부담을 줄이고 두창 바이러스를 없앴으며, 다른 감염병은 위생 관리와 치료법으로 부담이 줄거나 관리 가능한 만성 질환이 되었다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Scientific developments and technologies in medical practice have brought us enormous progress in the treatment and prevention of infectious diseases.",
+      "ko": "의료 현장에서의 과학적 발전과 기술은 우리에게 감염병의 치료와 예방에 있어 엄청난 진보를 가져다주었다.",
+      "note": "첫 문장이 주제문이에요. 나머지 문장은 모두 '감염병 치료·예방의 진보' 사례여야 해요."
+    },
+    {
+      "en": "③ A human’s average life expectancy has increased, but relying too much on medicine damages our body system.",
+      "ko": "③ 인간의 평균 기대 수명은 늘어났지만, 약에 너무 많이 의존하는 것은 우리의 신체 체계를 손상시킨다.",
+      "note": "but 뒤의 핵심이 '약 의존의 해로움'이에요. 감염병도, 진보도 아닌 이야기라 글의 흐름과 관계없어요."
+    },
+    {
+      "en": "④ Vaccines developed in laboratories have contributed enormously to the reduction of the burden of bacterial and viral diseases and have even led to the elimination of poxvirus.",
+      "ko": "④ 실험실에서 개발된 백신은 세균성·바이러스성 질병의 부담을 줄이는 데 크게 기여했고 심지어 두창 바이러스의 박멸로 이어졌다.",
+      "note": "②의 천연두·우두 이야기가 ④의 백신·poxvirus 박멸로 이어져요. ③을 빼면 ② → ④가 자연스럽게 연결돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① The discovery of penicillin in 1928 by Alexander Fleming, for which he later received the Nobel Prize, was one of the biggest breakthroughs in the battle against infectious diseases.",
+      "ko": "Fleming의 페니실린 발견은 감염병과의 싸움에서 큰 돌파구",
+      "why": "적절. 감염병 '치료'의 진보를 보여 주는 첫 번째 사례예요."
+    },
+    {
+      "en": "② Edward Jenner discovered around 1796 that humans were protected against the deadly smallpox virus after exposure to the cowpox virus, which is harmless to humans.",
+      "ko": "Jenner가 우두 노출로 천연두를 막을 수 있음을 발견",
+      "why": "적절. 감염병 '예방'의 진보 사례로, 뒤의 백신(④) 이야기로 이어지는 출발점이에요."
+    },
+    {
+      "en": "③ A human’s average life expectancy has increased, but relying too much on medicine damages our body system.",
+      "ko": "기대 수명은 늘었지만 약에 지나친 의존은 몸을 해침",
+      "why": "정답(무관). medicine이라는 소재는 같지만 '약 의존의 부작용'이라 감염병 치료·예방의 진보라는 흐름과 맞지 않아요."
+    },
+    {
+      "en": "④ Vaccines developed in laboratories have contributed enormously to the reduction of the burden of bacterial and viral diseases and have even led to the elimination of poxvirus.",
+      "ko": "백신이 질병 부담을 줄이고 두창 바이러스를 박멸",
+      "why": "적절. 백신이라는 예방 기술이 가져온 성과예요."
+    },
+    {
+      "en": "⑤ For other infectious diseases (for example cholera and malaria), control and hygiene management measures have reduced their burden, while for others treatment therapies turned viral diseases that were deadly into chronic manageable diseases.",
+      "ko": "위생 관리·치료법으로 다른 감염병의 부담도 줄어듦",
+      "why": "적절. For other infectious diseases로 범위를 넓혀 예방(위생)과 치료(치료법) 양쪽의 성과를 정리해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "전치사 + 관계대명사 (계속적 용법)",
+      "ex": "The discovery of penicillin in 1928 by Alexander Fleming, for which he later received the Nobel Prize, was one of the biggest breakthroughs …",
+      "d": "for which = for the discovery. '그 발견으로 그는 나중에 노벨상을 받았는데'. 주어 The discovery와 동사 was 사이에 삽입됐어요."
+    },
+    {
+      "t": "동명사 주어 + 단수 동사",
+      "ex": "… relying too much on medicine damages our body system.",
+      "d": "relying too much on medicine(약에 너무 의존하는 것)이 주어라 단수 동사 damages예요."
+    },
+    {
+      "t": "turn A into B",
+      "ex": "… treatment therapies turned viral diseases that were deadly into chronic manageable diseases.",
+      "d": "'A를 B로 바꾸다'. A(viral diseases that were deadly)가 관계절 때문에 길어져서 into가 멀리 떨어져 있어요."
+    },
+    {
+      "t": "while 대조",
+      "ex": "… control and hygiene management measures have reduced their burden, while for others treatment therapies turned …",
+      "d": "while은 '~인 반면'. 어떤 감염병은 위생 관리로, 다른 감염병은 치료법으로 — 두 가지 방법을 나란히 보여 줘요."
+    }
+  ],
+  "vocab": [
+    [
+      "medical practice",
+      "의료 현장, 의료 행위"
+    ],
+    [
+      "treatment",
+      "치료"
+    ],
+    [
+      "prevention",
+      "예방"
+    ],
+    [
+      "infectious disease",
+      "감염병"
+    ],
+    [
+      "breakthrough",
+      "돌파구, 획기적 발견"
+    ],
+    [
+      "exposure",
+      "노출"
+    ],
+    [
+      "deadly",
+      "치명적인"
+    ],
+    [
+      "harmless",
+      "무해한"
+    ],
+    [
+      "life expectancy",
+      "기대 수명"
+    ],
+    [
+      "rely on",
+      "~에 의존하다"
+    ],
+    [
+      "contribute to",
+      "~에 기여하다"
+    ],
+    [
+      "burden",
+      "부담"
+    ],
+    [
+      "elimination",
+      "제거, 박멸"
+    ],
+    [
+      "hygiene",
+      "위생"
+    ],
+    [
+      "chronic",
+      "만성의"
+    ],
+    [
+      "manageable",
+      "관리할 수 있는"
+    ]
+  ],
+  "summary": {
+    "en": "Medical discoveries such as penicillin and vaccines, along with hygiene measures and treatments, have greatly advanced the treatment and prevention of infectious diseases.",
+    "ko": "페니실린과 백신 같은 의학적 발견은 위생 관리와 치료법과 함께 감염병의 치료와 예방을 크게 발전시켰다."
+  },
+  "writing": {
+    "en": "Medical science has changed how we fight infectious diseases.",
+    "ko": "의학은 우리가 감염병과 싸우는 방식을 바꾸어 놓았다."
+  },
+  "tip": "무관한 문장은 첫 문장(주제문)의 키워드를 기준으로 삼으세요. 이 글의 기준은 '감염병 + 치료·예방의 진보'예요. ③은 medicine이라는 같은 소재를 쓰지만 but 뒤에서 '해로움'으로 방향을 틀어요. 같은 단어가 나와도 말하는 방향이 다르면 무관한 문장이에요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 35번 정답은?",
+      "③이에요. 글은 의학 발전이 감염병 치료·예방에 가져온 진보를 말하는데, ③만 약에 지나치게 의존하는 것의 해로움을 말해요."
+    ],
+    [
+      "2026 10월 고2 35번은 어떤 유형인가요?",
+      "글의 전체 흐름과 관계없는 문장을 고르는 2점 문항이에요. 페니실린, 우두, 백신 등 감염병 극복 사례를 다룬 지문이에요."
+    ],
+    [
+      "⑤도 cholera, malaria처럼 새 이야기라 무관하지 않나요?",
+      "아니에요. For other infectious diseases로 '다른 감염병'까지 범위를 넓혔을 뿐, 위생 관리와 치료법으로 부담이 줄었다는 '진보'의 사례라 흐름에 맞아요."
+    ]
+  ]
+}

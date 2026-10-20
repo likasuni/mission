@@ -1,0 +1,201 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 33,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 2,
+  "topic": "가소성: 인간 발달은 평생 이어지며 삶의 모든 단계에 변화의 여지가 있다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 33번",
+    "2026 10월 고2 영어 33번 해설",
+    "고2 10월 모의고사 33번 정답",
+    "고2 모의고사 빈칸 추론",
+    "plasticity 가소성 지문",
+    "인간 발달 평생 과정 지문",
+    "고2 영어 빈칸 해설"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 33번은 인간 발달을 고정된 단계가 아니라 평생 이어지는 유연한 과정으로 보는 '가소성(plasticity)' 개념을 다룬 빈칸 추론 문항이에요. 빈칸 문장은 Although로 '변화의 정도는 단계마다 달라도'라고 양보한 뒤, 모든 시기에 공통으로 해당하는 점을 말해요. 정답은 ② allows room for adaptation and transformation이에요.",
+  "flow": [
+    [
+      "주장",
+      "인간 발달은 고정된 단계의 연속이 아니라 계속되고 유연하며 진화하는 과정으로 이해되고 있다."
+    ],
+    [
+      "핵심 개념",
+      "그 중심에는 가소성이 있다. 경험·환경·생물학적 변화에 따라 인지·정서·행동 패턴을 바꾸고 적응하고 재조직하는 능력이다."
+    ],
+    [
+      "부연",
+      "개인은 발달을 수동적으로 받기만 하는 존재가 아니라 평생 성장할 수 있는 능동적 주체다."
+    ],
+    [
+      "대비",
+      "예전에는 발달이 주로 아동기에 일어나고, 성인기는 안정, 노년기는 쇠퇴의 시기로 여겨졌다."
+    ],
+    [
+      "결론(빈칸)",
+      "가소성은 발달이 전 생애에 걸쳐 계속된다고 강조한다. 변화의 정도는 달라도 삶의 모든 단계는 적응과 변화의 여지를 허용한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Plasticity refers to the human capacity to change, adapt, and reorganize cognitive, emotional, and behavioural patterns in response to life experiences, environmental demands, and biological changes.",
+      "ko": "가소성은 삶의 경험, 환경적 요구, 생물학적 변화에 반응하여 인지적·정서적·행동적 패턴을 바꾸고, 적응하고, 재조직하는 인간의 능력을 말한다.",
+      "note": "change·adapt가 정답의 adaptation and transformation과 그대로 연결돼요. 빈칸은 이 '가소성'의 정의를 다시 말한 거예요."
+    },
+    {
+      "en": "It highlights that individuals are not merely passive recipients of development but active agents capable of growth throughout their lives.",
+      "ko": "그것은 개인이 단지 발달의 수동적인 수용자가 아니라 평생에 걸쳐 성장할 수 있는 능동적인 주체라는 점을 강조한다.",
+      "note": "throughout their lives(평생에 걸쳐)는 빈칸의 every phase of life(삶의 모든 단계)와 같은 말이에요."
+    },
+    {
+      "en": "The concept of plasticity challenges this rigid outlook by emphasizing that development continues across the entire lifespan.",
+      "ko": "가소성 개념은 발달이 전 생애에 걸쳐 계속된다는 점을 강조함으로써 이 경직된 관점에 이의를 제기한다.",
+      "note": "빈칸 바로 앞 문장이에요. '어느 시기든 발달(변화)이 계속된다'는 뜻이라, 모든 단계에 변화의 여지가 있다는 ②가 이어져요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "is independent of the previous change",
+      "ko": "이전의 변화와 무관하다",
+      "why": "이전 단계와의 관계(독립성)는 글에서 다루지 않아요. 글의 초점은 '모든 시기에 변화가 가능하다'는 점이에요."
+    },
+    {
+      "en": "allows room for adaptation and transformation",
+      "ko": "적응과 변화를 위한 여지를 허용한다",
+      "why": "정답. 가소성의 정의(change, adapt, reorganize)와 '발달은 전 생애에 걸쳐 계속된다'는 내용을 그대로 담고 있어요."
+    },
+    {
+      "en": "leads to less variation in human development",
+      "ko": "인간 발달에서 변화를 더 적게 만든다",
+      "why": "글은 평생 변화가 이어진다고 강조해요. '변화가 줄어든다'는 정반대 방향이에요."
+    },
+    {
+      "en": "requires stability for meaningful growth to occur",
+      "ko": "의미 있는 성장이 일어나려면 안정이 필요하다",
+      "why": "stability는 성인기를 '안정의 시기'로 본 예전의 경직된 관점에서 나온 말이에요. 글이 반박하는 쪽의 단어를 재활용한 함정이에요."
+    },
+    {
+      "en": "has its own limit in adjusting to new experiences",
+      "ko": "새로운 경험에 적응하는 데 그 나름의 한계가 있다",
+      "why": "Although 절의 '변화의 정도는 다를 수 있다'만 보고 고르기 쉬워요. 하지만 Although 뒤 주절은 양보의 반대, 즉 '그래도 모든 단계에 변화 가능성이 있다'가 와야 해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "A rather than B",
+      "ex": "Human development is now increasingly understood as an ongoing, flexible, and evolving process rather than a fixed sequence of stages.",
+      "d": "'B라기보다는 A'. 강조점은 A(계속되고 유연한 과정)예요. 첫 문장에서 글의 입장이 바로 드러나요."
+    },
+    {
+      "t": "장소 부사구 도치",
+      "ex": "At the core of this perspective lies the concept of plasticity.",
+      "d": "장소 부사구(At the core of ~)가 앞으로 나오면서 동사 lies가 주어 the concept of plasticity 앞에 왔어요. 주어는 the concept라 단수 동사 lies예요."
+    },
+    {
+      "t": "not merely A but B",
+      "ex": "… individuals are not merely passive recipients of development but active agents capable of growth throughout their lives.",
+      "d": "'단지 A가 아니라 B'. capable of growth가 뒤에서 agents를 꾸며요 (= agents who are capable of growth)."
+    },
+    {
+      "t": "with + 명사 + 분사 (부대상황)",
+      "ex": "… development was believed to occur mainly during childhood, with adulthood seen as a period of stability and old age as a phase of decline.",
+      "d": "'성인기는 ~로 여겨지면서'. adulthood와 see가 수동 관계라 seen이에요. 뒤의 old age 다음에는 seen이 생략됐어요."
+    },
+    {
+      "t": "Although 양보 → 주절의 방향",
+      "ex": "Although the extent of change may vary at different stages, every phase of life allows room for adaptation and transformation.",
+      "d": "양보절이 '차이'를 인정하면, 주절은 그래도 '공통점'을 말해요. 빈칸 자리가 바로 이 주절이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "ongoing",
+      "계속 진행 중인"
+    ],
+    [
+      "evolving",
+      "서서히 발전하는"
+    ],
+    [
+      "sequence",
+      "순서, 연속"
+    ],
+    [
+      "perspective",
+      "관점"
+    ],
+    [
+      "plasticity",
+      "가소성 (변화하고 적응하는 능력)"
+    ],
+    [
+      "reorganize",
+      "재조직하다"
+    ],
+    [
+      "cognitive",
+      "인지의"
+    ],
+    [
+      "in response to",
+      "~에 반응하여"
+    ],
+    [
+      "recipient",
+      "받는 사람, 수용자"
+    ],
+    [
+      "agent",
+      "주체, 행위자"
+    ],
+    [
+      "decline",
+      "쇠퇴"
+    ],
+    [
+      "rigid",
+      "경직된"
+    ],
+    [
+      "outlook",
+      "관점, 견해"
+    ],
+    [
+      "lifespan",
+      "수명, 일생"
+    ],
+    [
+      "extent",
+      "정도, 범위"
+    ],
+    [
+      "room",
+      "여지"
+    ]
+  ],
+  "summary": {
+    "en": "The concept of plasticity shows that human development is not limited to childhood but continues throughout life, with every stage open to adaptation and change.",
+    "ko": "가소성 개념은 인간 발달이 아동기에 한정되지 않고 평생 계속되며, 삶의 모든 단계가 적응과 변화에 열려 있음을 보여 준다."
+  },
+  "writing": {
+    "en": "We can keep changing and growing at any age.",
+    "ko": "우리는 어느 나이에서든 계속 변하고 성장할 수 있다."
+  },
+  "tip": "빈칸이 Although 양보절 뒤 주절에 있으면, 양보절 내용(차이가 있다)과 반대 방향(그래도 공통적으로 변화가 가능하다)을 찾으세요. 그리고 글이 반박하는 '예전 관점'의 단어(stability, limit)가 들어간 선택지는 먼저 지우면 빨라요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 33번 정답은?",
+      "② allows room for adaptation and transformation(적응과 변화를 위한 여지를 허용한다)이에요. 가소성 때문에 삶의 모든 단계에서 변화가 가능하다는 내용이에요."
+    ],
+    [
+      "2026 10월 고2 33번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 인간 발달의 가소성(plasticity)을 다룬 지문이에요."
+    ],
+    [
+      "⑤ has its own limit가 오답인 이유는?",
+      "Although 절에서 '변화의 정도는 다르다'고 인정했지만, 주절은 그 반대로 '그래도 모든 단계에 변화의 여지가 있다'를 말해야 해요. '한계'는 글이 반박하는 예전 관점에 가까워요."
+    ]
+  ]
+}

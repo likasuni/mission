@@ -1,0 +1,66 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 39,
+  "type": "문장 삽입",
+  "points": 3,
+  "answer": 5,
+  "topic": "사회사학자는 엘리트가 남긴 기록을 '거꾸로' 읽는다",
+  "date": "2026-10-21",
+  "keywords": ["2026년 10월 고2 모의고사 영어 39번", "2026 10월 고2 영어 39번 해설", "고2 10월 모의고사 39번 정답", "고2 모의고사 문장 삽입", "social history against the grain 지문", "사회사 역사학자 사료 읽기"],
+  "lead": "2026년 10월 고2 모의고사 영어 39번은 평범한 사람들의 기록이 부족해서, 사회사학자들이 엘리트가 남긴 자료를 액면 그대로 믿지 않고 '거꾸로' 읽는다는 문장 삽입 문항이에요. 주어진 문장의 such sources가 ⑤ 앞의 '정부 관리·고용주·엘리트가 만든 문서'를 받고, ⑤ 뒤의 So, for example이 '거꾸로 읽기'의 예를 보여 줘요. 정답은 ⑤예요.",
+  "flow": [
+    ["도입", "사회사학자도 다양한 원자료를 쓰며, 사회사는 엘리트보다 평범한 사람들을 강조한다."],
+    ["문제", "그러나 엘리트가 아닌 사람들은 교육을 받지 못해 기록을 많이 남기지 못했고, 남긴 기록도 보존되는 일이 드물었다."],
+    ["결과", "이런 기록의 편향 때문에 사회사학자는 매우 창의적이어야 한다."],
+    ["방법", "그들도 정부 관리·고용주 등 엘리트가 만든 문서를 분석하지만, (주어진 문장) 그 자료를 액면 그대로 받아들이지 않고 '결을 거슬러' 읽는다."],
+    ["예시", "법률 문서를 노예 소유주가 준 '사실'만이 아니라, 노예가 된 사람들의 태도를 암시하는 침묵·단절·소문까지 살핀다."]
+  ],
+  "evidence": [
+    {"en": "Like other historians, social historians analyze textual sources produced by government officials, employers, and other elites.", "ko": "다른 역사학자들처럼, 사회사학자들도 정부 관리, 고용주, 그리고 다른 엘리트들이 만든 문서 자료를 분석한다.", "note": "주어진 문장의 such sources(그런 자료들)가 가리킬 대상이 처음 나오는 문장이에요. Like other historians(다른 역사가처럼)와 주어진 문장의 Yet(그러나 다르게)이 대비를 이뤄요."},
+    {"en": "So, for example, a social historian will read legal documents not only for the \"facts\" provided by slaveowners; she will also examine the silences, interruptions, rumors, and other details that offer hints about the enslaved peoples' attitudes and actions.", "ko": "그래서, 예를 들어, 사회사학자는 법률 문서를 노예 소유주가 제공한 '사실'을 위해서만 읽지 않고, 노예가 된 사람들의 태도와 행동에 대한 힌트를 주는 침묵, 단절, 소문, 그리고 다른 세부 사항도 살펴볼 것이다.", "note": "'사실'만 믿지 않고 숨은 단서를 찾는 것 = against the grain(일반적인 방식과 다르게) 읽기의 예예요. 이 예시 바로 앞에 주어진 문장이 있어야 해요."},
+    {"en": "Because of such biases in the historical record, social historians have to be very creative in their work.", "ko": "역사 기록의 이러한 편향 때문에, 사회사학자들은 자신의 작업에서 매우 창의적이어야 한다.", "note": "③ 앞뒤는 '기록 부족 → 편향 → 창의적이어야 함'으로 이미 매끄럽게 이어져요. 여기에는 such sources가 받을 자료가 아직 없어요."}
+  ],
+  "choices": [
+    {"en": "①", "ko": "사회사가 평범한 사람을 강조한다는 문장 뒤", "why": "Yet 다음 문장이 '평범한 사람들은 기록을 못 남겼다'로 자연스럽게 이어져요. 읽을 자료(such sources)도 아직 정해지지 않았어요."},
+    {"en": "②", "ko": "기록을 많이 남기지 못했다는 문장 뒤", "why": "Even when they did produce documentation(남겼을 때조차)이 앞 문장과 바로 이어지므로 끼어들 수 없어요."},
+    {"en": "③", "ko": "기록이 보존되지 못했다는 문장 뒤", "why": "다음 문장의 such biases가 앞의 '기록 부족·보존 실패'를 받아요. 주어진 문장이 들어가면 이 연결이 끊겨요."},
+    {"en": "④", "ko": "창의적이어야 한다는 문장 뒤", "why": "아직 '엘리트가 만든 문서'가 나오지 않아 such sources가 가리킬 대상이 없어요. Like other historians 문장이 먼저 와야 해요."},
+    {"en": "⑤", "ko": "엘리트가 만든 문서를 분석한다는 문장 뒤", "why": "정답. 엘리트 문서를 분석한다(다른 역사가와 같음) → 그러나 액면 그대로 믿지 않고 거꾸로 읽는다(다름) → So, for example, 법률 문서의 침묵·소문까지 살핀다."}
+  ],
+  "grammar": [
+    {"t": "rather than + 동사원형", "ex": "Yet rather than simply take such sources at face value, they read them \"against the grain\".", "d": "'~하기보다는'. rather than 뒤에 주절 동사(read)와 맞춰 원형 take가 왔어요. take ~ at face value는 '~을 액면 그대로 받아들이다'."},
+    {"t": "Like ~ (전치사: ~처럼)", "ex": "Like other historians, social historians analyze textual sources produced by government officials …", "d": "Like는 '~처럼'. produced by ~ 는 과거분사구로 sources를 뒤에서 꾸며요. '~에 의해 만들어진 자료'."},
+    {"t": "강조의 do + 동사원형", "ex": "Even when they did produce documentation, these materials rarely ended up in archives …", "d": "did produce는 '실제로 만들기는 했을 때조차'. rarely는 '거의 ~않다'라는 부정어예요."},
+    {"t": "관계부사 where", "ex": "… archives where they could be preserved and made available to researchers.", "d": "where가 장소 archives를 꾸며요. could be preserved and (be) made available 수동태가 병렬돼요."},
+    {"t": "not only A; (but) also B", "ex": "… read legal documents not only for the \"facts\" provided by slaveowners; she will also examine the silences …", "d": "세미콜론으로 but을 대신한 not only ~ also 구조예요. 강조점은 B(침묵·소문 살피기)에 있어요."}
+  ],
+  "vocab": [
+    ["take ~ at face value", "~을 액면 그대로 받아들이다"],
+    ["against the grain", "일반적인 방식과 다르게, 결을 거슬러"],
+    ["draw from", "~에서 끌어오다, 이용하다"],
+    ["primary source", "원자료, 1차 사료"],
+    ["elite", "엘리트, 상류층"],
+    ["non-elite", "엘리트가 아닌 사람"],
+    ["substantial", "상당한"],
+    ["documentation", "기록, 문서"],
+    ["archive", "기록 보관소"],
+    ["preserve", "보존하다"],
+    ["bias", "편향"],
+    ["textual", "문서의, 글로 된"],
+    ["official", "관리, 공무원"],
+    ["legal document", "법률 문서"],
+    ["slaveowner", "노예 소유주"],
+    ["interruption", "중단, 단절"],
+    ["rumor", "소문"],
+    ["enslaved", "노예가 된"]
+  ],
+  "summary": {"en": "Because ordinary people left few records, social historians read sources made by elites against the grain, looking for hidden clues about ordinary people's attitudes and actions.", "ko": "평범한 사람들은 기록을 거의 남기지 않았기 때문에, 사회사학자들은 엘리트가 만든 자료를 다르게 읽으며 평범한 사람들의 태도와 행동에 대한 숨은 단서를 찾는다."},
+  "writing": {"en": "Historians can find ordinary voices hidden in elite records.", "ko": "역사가들은 엘리트의 기록 속에 숨은 평범한 사람들의 목소리를 찾아낼 수 있다."},
+  "tip": "주어진 문장에 such sources, them 같은 지시어가 있으면, 그 지시어가 가리킬 명사(textual sources produced by … elites)가 처음 나오는 문장을 먼저 찾으세요. 그다음 for example이 주어진 문장의 내용(거꾸로 읽기)을 실제로 보여 주는지 확인하면 자리가 확정돼요.",
+  "faq": [
+    ["2026년 10월 고2 모의고사 영어 39번 정답은?", "⑤예요. 엘리트가 만든 문서를 분석한다는 문장 뒤, So, for example(법률 문서 예시) 앞에 '그 자료를 액면 그대로 받아들이지 않고 거꾸로 읽는다'는 주어진 문장이 들어가요."],
+    ["2026 10월 고2 39번은 어떤 유형인가요?", "주어진 문장이 들어갈 위치를 고르는 3점 문장 삽입 문항이에요. 사회사학자가 엘리트의 기록을 비판적으로 읽는 방법을 다룬 지문이에요."],
+    ["④가 오답인 이유는?", "④ 자리에서는 such sources가 가리킬 '엘리트가 만든 문서'가 아직 나오지 않았어요. 지시어의 대상이 먼저 나온 뒤인 ⑤에 들어가야 해요."]
+  ],
+  "note": "39번은 such sources 하나로 풀리는 문제예요. 수업에서는 주어진 문장의 지시어에 동그라미부터 치고, 그 말이 가리키는 명사를 본문에서 찾아 화살표로 연결해 보라고 해요."
+}

@@ -1,0 +1,196 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 5,
+  "topic": "이자율은 시간의 가치를 반영한다: 지금 가진 돈이 나중의 같은 돈보다 값지다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 21번",
+    "2026 10월 고2 영어 21번 해설",
+    "고2 10월 모의고사 21번 정답",
+    "고2 모의고사 함축 의미",
+    "a bird in the hand is worth two in the bush",
+    "이자율 시간의 가치 지문"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 21번은 돈을 빌려줄 때 붙는 이자가 '기다림'과 '못 받을 위험'의 값, 즉 시간의 가치라는 내용이에요. 밑줄 친 a bird in the hand is worth two in the bush(손안의 새 한 마리가 덤불 속 두 마리만큼 가치 있다)는 This price factors in the value of time을 다르게 말한 속담이에요. 정답은 ⑤ Money you have now is more valuable than the same amount later.예요.",
+  "flow": [
+    [
+      "도입",
+      "돈을 빌리고 빌려주는 일이 세계관을 어떻게 바꾸는지 보려면, 이자율이 시간 인식에 무슨 일을 하는지 생각해 보라."
+    ],
+    [
+      "예시",
+      "연 10퍼센트로 5년간 빌려준다면, 그 이자율은 못 돌려받을 위험과 그 돈을 직접 쓰지 못하는 기회비용을 반영한다."
+    ],
+    [
+      "확장",
+      "대출 기간이 길수록 미래는 알 수 없으니 못 받을 가능성이 커지고, 돈을 쓰기까지 더 오래 기다려야 한다."
+    ],
+    [
+      "원리",
+      "그래서 돈에는 가격(빌린 사람에겐 비용, 빌려준 사람에겐 수입)이 있어야 하고, 이 가격은 시간의 가치를 감안한다."
+    ],
+    [
+      "밑줄",
+      "다시 말해, 손안의 새 한 마리가 덤불 속 두 마리만큼 가치 있다 = 지금의 돈이 나중의 같은 돈보다 값지다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "This rate tells us that the money lent has a cost that reflects the risk of you not being repaid and the opportunity cost of not spending that money yourself.",
+      "ko": "이 이자율은 빌려준 돈이 여러분이 상환받지 못할 위험과 그 돈을 직접 소비하지 않는 기회비용을 반영하는 대가를 가진다는 것을 우리에게 말해 준다.",
+      "note": "나중에 받을 돈에는 '못 받을 위험'과 '지금 못 쓰는 손해'가 붙어요. 그래서 나중의 돈은 지금의 돈보다 덜 확실하고 덜 값져요."
+    },
+    {
+      "en": "The longer the term of the loan, the higher the chance you won't be paid back because it is further into the future — which by definition is unknowable — and the longer you will have to wait before spending the money yourself.",
+      "ko": "대출 기간이 길어질수록, 정의상 알 수 없는 더 먼 미래의 일이 되기 때문에 상환을 못 받을 가능성이 더 높아지고, 여러분이 그 돈을 직접 소비하기 전까지 더 오래 기다려야 할 것이다.",
+      "note": "시간이 길수록 불확실성과 기다림이 커진다는 말이에요. 덤불 속(미래)의 새는 잡을 수 있을지 모르는 새예요."
+    },
+    {
+      "en": "This price factors in the value of time. To put it another way, a bird in the hand is worth two in the bush.",
+      "ko": "이 비용은 시간의 가치를 감안한다. 달리 말하면, 손안의 새 한 마리가 덤불 속의 두 마리만큼의 가치가 있다.",
+      "note": "To put it another way(달리 말하면)가 밑줄 바로 앞에 있어요. 밑줄 = '시간의 가치'를 속담으로 바꾼 말이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Lenders and borrowers benefit from each other.",
+      "ko": "빌려주는 사람과 빌리는 사람은 서로 이익을 얻는다.",
+      "why": "이자가 한쪽에는 비용, 다른 쪽에는 수입이라는 말은 있지만, 서로 이익이라는 게 밑줄의 뜻은 아니에요."
+    },
+    {
+      "en": "Spending money now is wiser than keeping it for later.",
+      "ko": "지금 돈을 쓰는 것이 나중을 위해 남겨 두는 것보다 현명하다.",
+      "why": "'지금'이 낫다는 방향은 비슷해 보이지만, 글은 소비 습관이 아니라 돈의 '가치'가 시간에 따라 다르다는 이야기예요."
+    },
+    {
+      "en": "The lender decides the interest rate for the borrower.",
+      "ko": "빌려주는 사람이 빌리는 사람의 이자율을 정한다.",
+      "why": "누가 이자율을 정하는지는 글에 나오지 않아요."
+    },
+    {
+      "en": "Borrowing money involves the risk of damaging one's credit.",
+      "ko": "돈을 빌리는 것은 신용을 해칠 위험이 따른다.",
+      "why": "risk는 나오지만 빌려준 사람이 돈을 못 받을 위험이에요. 빌린 사람의 신용 이야기가 아니에요."
+    },
+    {
+      "en": "Money you have now is more valuable than the same amount later.",
+      "ko": "지금 가진 돈이 나중의 같은 금액보다 더 가치 있다.",
+      "why": "정답. 손안의 새(지금 가진 돈)가 덤불 속 새 두 마리(불확실한 미래의 돈)만큼 값지다 = 시간의 가치예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사의 의미상 주어",
+      "ex": "… reflects the risk of you not being repaid and the opportunity cost of not spending that money yourself.",
+      "d": "you는 being repaid의 의미상 주어예요. not은 동명사 바로 앞에 와서 '상환받지 못하는 것'. not being repaid는 수동형이에요."
+    },
+    {
+      "t": "the 비교급, the 비교급",
+      "ex": "The longer the term of the loan, the higher the chance you won't be paid back …, and the longer you will have to wait …",
+      "d": "'~할수록 더 …하다'. 첫 부분은 동사(is)가 생략됐어요. 뒤에 the 비교급이 두 번 이어져요."
+    },
+    {
+      "t": "계속적 용법 which (삽입)",
+      "ex": "… because it is further into the future — which by definition is unknowable — …",
+      "d": "줄표 사이 which는 앞의 the future를 설명해요. by definition은 '정의상, 본래'예요."
+    },
+    {
+      "t": "in order to / have to",
+      "ex": "In order to make this worthwhile for the lender, money has to have a price …",
+      "d": "in order to는 '~하기 위해', make + 목적어 + 형용사(worthwhile)는 '…을 ~하게 만들다'예요."
+    }
+  ],
+  "vocab": [
+    [
+      "borrow",
+      "빌리다"
+    ],
+    [
+      "lend",
+      "빌려주다 (lent)"
+    ],
+    [
+      "worldview",
+      "세계관"
+    ],
+    [
+      "rate of interest",
+      "이자율"
+    ],
+    [
+      "perception",
+      "인식"
+    ],
+    [
+      "reflect",
+      "반영하다"
+    ],
+    [
+      "repay",
+      "갚다, 상환하다"
+    ],
+    [
+      "opportunity cost",
+      "기회비용"
+    ],
+    [
+      "term",
+      "기간"
+    ],
+    [
+      "loan",
+      "대출"
+    ],
+    [
+      "pay back",
+      "갚다"
+    ],
+    [
+      "by definition",
+      "정의상"
+    ],
+    [
+      "unknowable",
+      "알 수 없는"
+    ],
+    [
+      "worthwhile",
+      "가치 있는, 할 만한"
+    ],
+    [
+      "factor in",
+      "~을 감안하다"
+    ],
+    [
+      "to put it another way",
+      "달리 말하면"
+    ]
+  ],
+  "summary": {
+    "en": "Interest exists because money now is worth more than money later: lending involves the risk of not being repaid and the cost of waiting.",
+    "ko": "이자가 있는 이유는 지금의 돈이 나중의 돈보다 가치 있기 때문이다. 돈을 빌려주는 데는 못 받을 위험과 기다림의 비용이 따른다."
+  },
+  "writing": {
+    "en": "The price of money factors in the value of time.",
+    "ko": "돈의 가격은 시간의 가치를 감안한다."
+  },
+  "tip": "함축 의미 문제는 밑줄 바로 앞의 To put it another way, In other words 같은 '바꿔 말하기' 신호를 찾으세요. 그 앞 문장(This price factors in the value of time)이 밑줄의 풀이예요. 속담은 손안의 새 = 지금 확실히 가진 것, 덤불 속 새 = 미래의 불확실한 것으로 대응시키면 돼요.",
+  "note": "속담을 몰라도 괜찮아요. 손안의 새는 '지금 확실히 가진 것', 덤불 속 새는 '잡을 수 있을지 모르는 것'으로 바꾸고, 바로 앞 문장의 value of time과 연결하면 ⑤가 바로 보여요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 21번 정답은?",
+      "⑤ Money you have now is more valuable than the same amount later.(지금 가진 돈이 나중의 같은 금액보다 더 가치 있다)예요. 이자율이 시간의 가치를 반영한다는 글이에요."
+    ],
+    [
+      "2026 10월 고2 21번은 어떤 유형인가요?",
+      "밑줄 친 부분이 글에서 의미하는 바를 고르는 3점 함축 의미 문항이에요. 이자율과 시간의 가치를 다룬 경제 지문이에요."
+    ],
+    [
+      "② 지금 돈을 쓰는 게 현명하다가 오답인 이유는?",
+      "글은 소비를 권하는 게 아니라, 같은 돈이라도 지금 가진 쪽이 나중 것보다 가치가 높다는 '시간의 가치'를 설명해요. 그래서 이자가 붙는 거예요."
+    ]
+  ]
+}

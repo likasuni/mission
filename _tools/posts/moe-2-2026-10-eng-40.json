@@ -1,0 +1,67 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 40,
+  "type": "요약문",
+  "points": 3,
+  "answer": 4,
+  "topic": "돌고래의 청각 피질은 반향 정위 신호를 동시에 나눠 처리한다",
+  "date": "2026-10-21",
+  "keywords": ["2026년 10월 고2 모의고사 영어 40번", "2026 10월 고2 영어 40번 해설", "고2 10월 모의고사 40번 정답", "고2 모의고사 요약문 완성", "dolphin echolocation auditory cortex 지문", "돌고래 반향 정위 병렬 처리"],
+  "lead": "2026년 10월 고2 모의고사 영어 40번은 돌고래의 청각 피질이 반향 정위 신호의 여러 측면을 각 구역에서 동시에 처리해, 인지 부담을 줄이고 빠르게 반응할 수 있게 한다는 요약문 완성 문항이에요. (A)는 in parallel, rather than sequentially, (B)는 This parallel processing reduces … allowing dolphins to react quickly가 단서예요. 정답은 ④ simultaneously … enabling이에요.",
+  "flow": [
+    ["주제", "돌고래의 뇌는 반향 정위 전용 구역을 진화시켜 음향 정보를 더 빠르고 적은 에너지로 처리한다."],
+    ["구조", "귀의 신호는 청각 피질로 빠르게 전달되며, 돌고래의 청각 피질에는 반향 정위 신호의 각 측면을 맡는 구역이 따로 있다."],
+    ["분업", "어떤 구역은 메아리의 타이밍을, 다른 구역은 소리의 주파수나 세기를 분석한다."],
+    ["핵심", "이 특화 덕분에 메아리 정보를 순차적이 아니라 병렬로(동시에) 처리한다."],
+    ["비유·결과", "공장 조립 라인처럼 일을 나누어 더 빠르고 효율적으로 처리하고, 인지 부담을 줄여 환경 변화에 빠르게 반응하게 한다."]
+  ],
+  "evidence": [
+    {"en": "This specialization allows the dolphin's brain to process echo information in parallel, rather than sequentially.", "ko": "이러한 특화는 돌고래의 뇌가 메아리 정보를 순차적으로가 아니라 병렬로 처리할 수 있게 해 준다.", "note": "in parallel(병렬로, 동시에) = (A) simultaneously. rather than sequentially가 있으니 ⑤ sequentially는 정반대 함정이에요."},
+    {"en": "By dividing the work among specialized areas, the brain can process information much faster and more efficiently.", "ko": "특화된 구역들 사이에서 일을 나눔으로써, 뇌는 정보를 훨씬 더 빠르고 효율적으로 처리할 수 있다.", "note": "조립 라인 비유로 '나눠서 동시에 한다'를 다시 설명해요. (A)를 한 번 더 확인시켜 줘요."},
+    {"en": "This parallel processing reduces the cognitive load associated with echolocation, allowing dolphins to react quickly to changes in their environment.", "ko": "이러한 병렬 처리는 반향 정위와 관련된 인지 부담을 줄여서, 돌고래가 환경 변화에 빠르게 반응할 수 있게 한다.", "note": "병렬 처리가 부담 감소와 빠른 반응을 '가능하게 한다' = (B) enabling. allowing을 enabling으로 바꿔 말한 거예요."}
+  ],
+  "choices": [
+    {"en": "serially … disrupting", "ko": "연속적으로 … 방해하는", "why": "(A) serially(차례로)는 in parallel과 반대이고, (B) disrupting(방해하는)도 부담을 '줄여 준다'는 내용과 반대예요."},
+    {"en": "independently … preventing", "ko": "독립적으로 … 막는", "why": "(A) independently는 각 구역이 따로 일한다는 점에서 그럴듯하지만, (B) preventing(막는)은 부담 감소와 빠른 반응을 '가능하게 한다'는 내용과 정반대예요."},
+    {"en": "randomly … facilitating", "ko": "무작위로 … 촉진하는", "why": "(B) facilitating은 어울리지만, (A) randomly(무작위로)는 각 구역이 정해진 측면(타이밍·주파수·세기)을 맡는다는 내용과 맞지 않아요."},
+    {"en": "simultaneously … enabling", "ko": "동시에 … 가능하게 하는", "why": "정답. in parallel(병렬로) = simultaneously, allowing dolphins to react quickly = enabling(가능하게 함)이에요."},
+    {"en": "sequentially … allowing", "ko": "순차적으로 … 허용하는", "why": "(B) allowing은 맞지만, (A) sequentially는 본문의 rather than sequentially에서 '아니다'라고 한 바로 그 단어예요. 본문 단어를 그대로 쓴 함정이에요."}
+  ],
+  "grammar": [
+    {"t": "allow A to V", "ex": "Dolphins' brains have evolved specialized areas dedicated to echolocation, allowing them to process acoustic information more quickly and with less energy.", "d": "'A가 ~할 수 있게 하다'. 콤마 뒤 allowing은 분사구문으로 앞 내용의 결과를 나타내요. dedicated to ~ 는 '~에 전념하는, ~ 전용의'로 areas를 꾸며요."},
+    {"t": "동격 콤마", "ex": "The signals from the ears are rapidly transmitted to the auditory cortex, the brain region responsible for processing sound.", "d": "콤마 뒤 the brain region ~ 이 auditory cortex를 다시 설명하는 동격이에요. responsible for ~ 는 '~을 담당하는'."},
+    {"t": "Some ~, while others ~", "ex": "Some areas may be responsible for analyzing the timing of echoes, while others focus on the frequency content or the intensity of the sound.", "d": "'어떤 것은 ~, 반면 다른 것은 ~'. 각 구역이 서로 다른 일을 맡는다는 분업을 보여 줘요."},
+    {"t": "A, rather than B", "ex": "… process echo information in parallel, rather than sequentially.", "d": "'B가 아니라 A'. 요약문 (A)의 정답과 오답(⑤ sequentially)이 한 문장에 함께 들어 있어요."},
+    {"t": "관계부사 where", "ex": "Imagine a factory assembly line, where different workers are responsible for different tasks.", "d": "콤마 + where는 '그런데 거기서는'. 조립 라인 비유로 병렬 분업을 쉽게 설명해요."}
+  ],
+  "vocab": [
+    ["evolve", "진화시키다"],
+    ["dedicated to", "~ 전용의, ~에 쓰이는"],
+    ["echolocation", "반향 정위"],
+    ["acoustic", "음향의, 청각의"],
+    ["adaptation", "적응 (구조)"],
+    ["auditory", "청각의"],
+    ["pathway", "경로"],
+    ["transmit", "전달하다"],
+    ["cortex", "(대뇌) 피질"],
+    ["distinct", "별개의, 뚜렷이 구별되는"],
+    ["frequency", "주파수"],
+    ["intensity", "세기, 강도"],
+    ["specialization", "특화, 전문화"],
+    ["in parallel", "병렬로, 동시에"],
+    ["sequentially", "순차적으로"],
+    ["assembly line", "조립 라인"],
+    ["cognitive load", "인지 부담"],
+    ["simultaneously", "동시에 — (A) 정답"],
+    ["enable", "가능하게 하다 — (B) 정답"]
+  ],
+  "summary": {"en": "A dolphin's auditory cortex processes different aspects of echolocation signals simultaneously in distinct areas, reducing cognitive load and allowing quick responses to environmental changes.", "ko": "돌고래의 청각 피질은 반향 정위 신호의 여러 측면을 서로 다른 구역에서 동시에 처리해 인지 부담을 줄이고 환경 변화에 빠르게 반응할 수 있게 한다."},
+  "writing": {"en": "Dividing the work lets the brain think faster.", "ko": "일을 나누면 뇌가 더 빨리 생각할 수 있다."},
+  "tip": "요약문은 본문의 핵심 표현이 다른 말로 바뀌어 나와요. in parallel → simultaneously, allowing → enabling처럼 짝을 찾으세요. 특히 rather than B 구문이 있으면 B(sequentially)는 오답 선택지에 그대로 나올 가능성이 크니, 본문 단어가 그대로 보인다고 바로 고르지 마세요.",
+  "faq": [
+    ["2026년 10월 고2 모의고사 영어 40번 정답은?", "④ simultaneously … enabling(동시에 … 가능하게 하는)이에요. 본문의 in parallel과 allowing dolphins to react quickly를 바꿔 쓴 표현이에요."],
+    ["2026 10월 고2 40번은 어떤 유형인가요?", "글의 내용을 한 문장으로 요약할 때 빈칸 (A), (B)에 들어갈 말을 고르는 3점 요약문 완성 문항이에요. 돌고래 뇌의 반향 정위 처리 방식을 다룬 지문이에요."],
+    ["⑤ sequentially … allowing이 오답인 이유는?", "본문은 in parallel, rather than sequentially라고 해서 '순차적으로가 아니라 병렬로' 처리한다고 했어요. sequentially는 본문에서 부정한 단어라 (A)에 들어갈 수 없어요."]
+  ],
+  "note": "40번 ⑤ sequentially는 본문에 그대로 있는 단어라 눈에 익어서 고르기 쉬워요. rather than 뒤에 오는 말은 '아닌 쪽'이라는 걸 꼭 표시하면서 읽으라고 해요."
+}
