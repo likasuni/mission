@@ -1,0 +1,124 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 37,
+  "type": "순서",
+  "points": 2,
+  "answer": 5,
+  "topic": "뇌의 작은 속임수: 감각 처리 시차를 맞추고 움직임을 예측하기",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 37번",
+    "2026 10월 고3 영어 37번 해설",
+    "고3 10월 모의고사 37번 정답",
+    "고3 모의고사 글의 순서",
+    "brain trickery 감각 동기화 지문",
+    "starting pistol 출발 신호 피스톨 지문",
+    "글의 순서 해설"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 37번은 모든 감각 정보를 하나의 경험으로 매끄럽게 합치기 위해 뇌가 쓰는 '작은 속임수'를 다룬 글의 순서 문항이에요. (C)의 For instance가 첫 번째 속임수와 출발 피스톨 이야기를 꺼내고, (B)가 피스톨의 이유를 설명하고, (A)의 Moreover가 두 번째 속임수(움직임 예측)를 더해요. 정답은 ⑤ (C) － (B) － (A)예요.",
+  "flow": [
+    ["주어진 글", "모든 감각 정보를 하나의 통합된 경험으로 매끄럽게 합치는 건 쉽지 않아서, 뇌는 약간의 속임수에 의존한다."],
+    ["(C) 예시 1", "예를 들어 뇌는 감각마다 다른 처리 시간을 보정해야 한다. 시각은 조금 더 오래 걸린다. 그래서 단거리 결승은 신호등이 아니라 피스톨로 시작한다."],
+    ["(B) 이유 설명", "피스톨은 전통 때문이 아니라 선수들도 빛보다 소리에 더 빨리 반응하기 때문이다. 뇌가 감각마다 미세한 시차를 두어 모든 걸 맞춘다."],
+    ["(A) 예시 2 추가", "게다가 우리가 경험하는 건 알아차릴 때쯤 이미 일어난 일이다. 이 지연을 보정하려고 뇌는 움직임을 예측한다."]
+  ],
+  "evidence": [
+    {
+      "en": "For instance, it has to compensate for discrepancies in the time it takes to process the different senses: …",
+      "ko": "예를 들어, 그것(뇌)은 서로 다른 감각을 처리하는 데 걸리는 시간의 차이를 보정해야 하는데, …",
+      "note": "For instance와 대명사 it(= the brain)이 주어진 글의 '뇌의 속임수'에 첫 예시를 붙여요. (C)가 맨 앞이에요."
+    },
+    {
+      "en": "That’s why even in the twenty-first century we begin sprint finals with a starting pistol, rather than traffic lights. / The fact that a pistol is used isn’t about tradition; …",
+      "ko": "그것이 우리가 21세기에도 스프린트 결승전을 신호등이 아니라 출발 신호용 피스톨로 시작하는 이유이다. / 피스톨이 사용된다는 사실은 전통에 관한 것이 아니라, …",
+      "note": "(C) 끝의 a starting pistol을 (B)가 The fact that a pistol is used로 받아 이유를 풀어 줘요. (C) → (B) 확정이에요."
+    },
+    {
+      "en": "Moreover, everything we experience has already happened by the time we register it.",
+      "ko": "게다가, 우리가 경험하는 모든 것은 우리가 그것을 알아차릴 즈음이면 이미 일어난 일이다.",
+      "note": "Moreover는 앞의 속임수(감각 시차 맞추기)에 '또 하나'를 더하는 말이에요. 첫 예시가 다 끝난 뒤인 맨 끝에 와야 해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A) － (C) － (B)",
+      "ko": "추가 예시 → 첫 예시 → 이유",
+      "why": "Moreover(게다가)는 앞에 이미 하나의 예가 있어야 쓸 수 있어요. 주어진 글은 속임수를 말만 꺼냈을 뿐이라 (A)가 바로 올 수 없어요."
+    },
+    {
+      "en": "(B) － (A) － (C)",
+      "ko": "이유 → 추가 예시 → 첫 예시",
+      "why": "(B)의 a pistol이 왜 나오는지 알 수 없어요. 피스톨 이야기는 (C)에서 처음 나와요."
+    },
+    {
+      "en": "(B) － (C) － (A)",
+      "ko": "이유 → 첫 예시 → 추가 예시",
+      "why": "(B)가 첫 순서가 될 수 없어요. (C)의 starting pistol이 먼저 나와야 (B)가 그 이유를 설명할 수 있어요."
+    },
+    {
+      "en": "(C) － (A) － (B)",
+      "ko": "첫 예시 → 추가 예시 → 이유",
+      "why": "(C) 끝의 피스톨 이야기가 (B)의 피스톨 설명으로 바로 이어져야 해요. (A)가 끼면 피스톨 설명이 엉뚱하게 떨어져요."
+    },
+    {
+      "en": "(C) － (B) － (A)",
+      "ko": "첫 예시 → 이유 → 추가 예시",
+      "why": "정답. (C) For instance로 첫 속임수와 피스톨 예, (B)가 피스톨을 쓰는 이유와 뇌의 시차 조정, (A) Moreover로 두 번째 속임수(움직임 예측)를 더해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사 주어 + is no easy task",
+      "ex": "The seamless conjoining of all our sensory information into a single, integrated experience is no easy task …",
+      "d": "주어가 The seamless conjoining ~ experience까지 길어요. 동사 is를 찾아 끊어 읽으세요. no easy task는 '결코 쉬운 일이 아니다'."
+    },
+    {
+      "t": "It takes + 시간 + to V",
+      "ex": "it has to compensate for discrepancies in the time it takes to process the different senses",
+      "d": "the time (that) it takes to V는 '~하는 데 걸리는 시간'. 관계대명사가 생략된 구조예요."
+    },
+    {
+      "t": "동격의 that",
+      "ex": "The fact that a pistol is used isn’t about tradition; it’s simply because athletes, like the rest of us, are slightly slower to react to the light than the sound.",
+      "d": "The fact that ~은 '~라는 사실'. that절이 fact의 내용을 설명해요. not A; (but) B 구조로 '전통 때문이 아니라 반응 속도 때문'이에요."
+    },
+    {
+      "t": "가정법 과거 (If it didn’t, we’d be ~)",
+      "ex": "If it didn’t, we’d be hopelessly out of sync.",
+      "d": "현재 사실의 반대를 가정해요. didn’t는 didn’t predict movements를 줄인 말이에요. '뇌가 예측하지 않는다면 동기화가 엉망일 것이다'."
+    }
+  ],
+  "vocab": [
+    ["seamless", "매끄러운"],
+    ["conjoin", "결합하다"],
+    ["integrated", "통합된"],
+    ["rely on", "~에 의존하다"],
+    ["trickery", "속임수"],
+    ["register", "알아차리다, 인식하다"],
+    ["keep up with", "~와 보조를 맞추다"],
+    ["compensate for", "~을 보정하다, 보상하다"],
+    ["delay", "지연"],
+    ["out of sync", "동기화가 안 된, 어긋난"],
+    ["synchronisation", "동기화"],
+    ["impose A on B", "A를 B에 부과하다, 두다"],
+    ["lag", "지연, 시차"],
+    ["line up", "정렬되다, 맞춰지다"],
+    ["discrepancy", "차이, 불일치"],
+    ["sprint", "단거리 경주"]
+  ],
+  "summary": {
+    "en": "To merge all senses into one seamless experience, the brain adjusts for differences in processing time and predicts movements to make up for perceptual delay.",
+    "ko": "모든 감각을 하나의 매끄러운 경험으로 합치기 위해, 뇌는 감각 처리 시간의 차이를 맞추고 지각 지연을 보정하려고 움직임을 예측한다."
+  },
+  "writing": {
+    "en": "Our brain quietly adjusts timing so that we experience the world as one.",
+    "ko": "우리 뇌는 세상을 하나로 경험하도록 조용히 시간을 맞춘다."
+  },
+  "tip": "연결어가 순서를 정해 줘요. For instance는 첫 예시, Moreover는 추가 예시라 For instance 문단이 앞, Moreover 문단이 뒤예요. 여기에 (C) 끝의 starting pistol과 (B) 첫머리 a pistol is used를 이으면 (C) － (B) － (A)가 바로 나와요.",
+  "note": "Moreover 같은 첨가 연결어는 앞에 이미 하나가 나왔다는 신호예요. 맨 앞에 못 오는 문단부터 지우면 순서 문제가 빨라져요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 37번 정답은?", "⑤ (C) － (B) － (A)예요. 감각 시차 보정과 피스톨 예(C) → 피스톨을 쓰는 이유(B) → 움직임 예측이라는 추가 속임수(A) 순서예요."],
+    ["2026 10월 고3 영어 37번은 어떤 유형인가요?", "주어진 글 다음에 이어질 글의 순서를 고르는 2점 문항이에요. 감각 정보를 통합하는 뇌의 속임수를 다룬 지문이에요."],
+    ["(A)가 첫 순서가 될 수 없는 이유는?", "(A)는 Moreover(게다가)로 시작해서 앞에 이미 다른 예가 있어야 해요. 첫 예시인 (C) For instance 문단이 먼저 와야 해요."]
+  ]
+}

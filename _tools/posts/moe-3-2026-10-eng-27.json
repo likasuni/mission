@@ -1,0 +1,122 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "성인 대상 아이스하키 클럽 회원 모집 안내",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 27번",
+    "2026 10월 고3 영어 27번 해설",
+    "고3 10월 모의고사 27번 정답",
+    "고3 모의고사 안내문 불일치",
+    "Ice Hockey Club Recruitment 지문",
+    "아이스하키 클럽 모집 안내문 영어"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 27번은 성인을 대상으로 한 아이스하키 클럽 회원 모집 안내문의 내용 불일치 문항이에요. 안내문에는 클럽 간 경기가 한 달에 한 번(once a month) 열린다고 되어 있는데, 선택지는 '두 번'이라고 했어요. 정답은 ⑤예요.",
+  "flow": [
+    ["모집 대상", "모든 성인에게 열려 있고, 사전 스케이팅 경험은 필요 없다."],
+    ["일정·장소", "연습은 매주 금요일 오후 7시~10시, 장소는 Pinewood Ice Rink."],
+    ["회원 혜택", "신규 회원 무료 입문 강습, 장비 무료 대여, 프로 선수의 일대일 코칭."],
+    ["경기", "클럽 간 경기는 한 달에 한 번 열린다."]
+  ],
+  "evidence": [
+    {
+      "en": "Inter-club matches are held once a month.",
+      "ko": "클럽 간 경기는 한 달에 한 번 열립니다.",
+      "note": "once a month는 '한 달에 한 번'이에요. 선택지 ⑤는 '두 번'이라서 불일치예요."
+    },
+    {
+      "en": "No prior skating experience is necessary.",
+      "ko": "사전 스케이팅 경험은 필요하지 않습니다.",
+      "note": "선택지 ①의 근거예요. No ~ is necessary = '~가 필요 없다'라서 일치해요."
+    },
+    {
+      "en": "Equipment is available for free rental.",
+      "ko": "장비는 무료로 대여할 수 있습니다.",
+      "note": "선택지 ④의 근거예요. for free rental은 '무료 대여로'라서 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "사전 스케이팅 경험이 필요하지 않다.",
+      "ko": "모집 대상",
+      "why": "일치. No prior skating experience is necessary."
+    },
+    {
+      "en": "연습은 매주 금요일에 있다.",
+      "ko": "일정",
+      "why": "일치. Practice is on every Friday, 7:00 p.m. – 10:00 p.m."
+    },
+    {
+      "en": "신규 회원에게는 무료 입문 강습이 제공된다.",
+      "ko": "회원 혜택",
+      "why": "일치. A free introductory lesson is offered to new members."
+    },
+    {
+      "en": "장비를 무료로 대여할 수 있다.",
+      "ko": "장비",
+      "why": "일치. Equipment is available for free rental."
+    },
+    {
+      "en": "클럽 간 경기는 한 달에 두 번 열린다.",
+      "ko": "클럽 간 경기",
+      "why": "정답(불일치). Inter-club matches are held once a month. — 한 달에 한 번이지 두 번이 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "전치사로 끝나는 의문사절 (명사절)",
+      "ex": "Who We Are Looking For",
+      "d": "look for(~을 찾다)의 목적어가 Who로 앞에 나왔어요. '우리가 찾는 사람'이라는 소제목이에요."
+    },
+    {
+      "t": "No + 명사 + is necessary",
+      "ex": "No prior skating experience is necessary.",
+      "d": "'어떤 ~도 필요하지 않다' = ~가 필요 없다. prior는 '이전의, 사전의'."
+    },
+    {
+      "t": "현재 수동태 is offered / are held",
+      "ex": "A free introductory lesson is offered to new members.",
+      "d": "be p.p.로 '제공된다', '열린다'를 나타내요. 안내문은 행사 주체보다 내용을 앞에 두려고 수동태를 자주 써요."
+    },
+    {
+      "t": "빈도 표현 once a month",
+      "ex": "Inter-club matches are held once a month.",
+      "d": "once(한 번), twice(두 번), three times(세 번) + a month/week. 숫자·빈도가 바뀌는 선택지는 이 부분을 꼭 대조하세요."
+    }
+  ],
+  "vocab": [
+    ["recruitment", "모집"],
+    ["look for", "~을 찾다"],
+    ["be open to", "~에게 열려 있다"],
+    ["prior", "사전의, 이전의"],
+    ["experience", "경험"],
+    ["necessary", "필요한"],
+    ["practice", "연습"],
+    ["location", "장소"],
+    ["ice rink", "아이스링크"],
+    ["benefit", "혜택"],
+    ["introductory lesson", "입문 강습"],
+    ["equipment", "장비"],
+    ["rental", "대여"],
+    ["one-on-one", "일대일의"],
+    ["inter-club match", "클럽 간 경기"],
+    ["be held", "열리다, 개최되다"]
+  ],
+  "summary": {
+    "en": "An ice hockey club for all adults practices every Friday at Pinewood Ice Rink and offers free lessons, free equipment rental, coaching, and monthly inter-club matches.",
+    "ko": "모든 성인을 위한 아이스하키 클럽은 매주 금요일 Pinewood Ice Rink에서 연습하며, 무료 입문 강습, 장비 무료 대여, 일대일 코칭, 매달 한 번의 클럽 간 경기를 제공한다."
+  },
+  "writing": {
+    "en": "You can join the club even if you have never skated before.",
+    "ko": "이전에 스케이트를 타 본 적이 없어도 클럽에 가입할 수 있다."
+  },
+  "tip": "안내문 문제는 선택지 순서가 안내문 순서와 거의 같아요. 선택지를 하나씩 읽고 해당 소제목(■) 아래로 바로 가서 숫자·요일·빈도·무료 여부를 대조하세요. once/twice, every/only 같은 작은 단어가 정답을 가르는 경우가 많아요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 27번 정답은?", "⑤예요. 안내문에는 Inter-club matches are held once a month라고 되어 있어서 클럽 간 경기는 한 달에 한 번이에요. '두 번'이라고 한 ⑤가 불일치예요."],
+    ["2026 10월 고3 영어 27번은 어떤 유형인가요?", "안내문의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. 성인 대상 아이스하키 클럽 회원 모집 안내문이에요."],
+    ["①은 왜 일치하나요?", "안내문에 No prior skating experience is necessary라고 되어 있어요. 사전 스케이팅 경험이 필요 없다는 뜻이라 ①과 같아요."]
+  ]
+}
