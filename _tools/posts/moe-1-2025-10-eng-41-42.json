@@ -1,0 +1,284 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "AI는 창의성의 도구이지만, 시행착오의 과정을 건너뛰게 해 독창성을 해칠 수 있다",
+  "date": "2026-10-21",
+  "lead": "2025년 10월 고1 모의고사 영어 41~42번은 AI가 창작에 강력한 도구가 될 수 있지만, 과거 데이터를 따라 하게 만들고 실패와 시행착오를 건너뛰게 해 진짜 창의성을 해칠 수 있다는 장문 세트예요. 41번 제목은 '도구이면서 위험'이라는 양면을 담은 질문형 제목이 답이고, 42번은 마지막 문장의 ultimately inhibiting과 맞지 않는 (e) enhance가 틀린 낱말이에요. 정답은 41번 ②, 42번 ⑤예요.",
+  "flow": [
+    [
+      "정의",
+      "창의성은 새롭고 가치 있는 아이디어를 만드는 능력으로, 확산적 사고·상상력·실험과 위험 감수 의지를 포함한다."
+    ],
+    [
+      "양면",
+      "AI는 창작에 강력한 도구가 될 수 있지만, 독창성과 혁신을 제한할 위험도 있다."
+    ],
+    [
+      "문제 ①",
+      "AI는 기존 데이터의 패턴으로 훈련되어, 비슷한 스타일은 잘 만들지만 독창성 없는 모방작으로 이어질 수 있다. 너무 의존하면 모방의 순환에 갇힌다."
+    ],
+    [
+      "문제 ②",
+      "AI의 편리함은 돌파구로 이어지는 고생과 실험을 막을 수 있다. 창작은 수많은 실패와 좌절을 거치며, 그 어려움을 통해 실력과 관점이 자란다."
+    ],
+    [
+      "결론",
+      "AI가 즉각적인 해결책을 주면 시행착오를 통한 배움을 건너뛰게 되어 결국 진정한 창의적 재능의 발달을 방해한다."
+    ]
+  ],
+  "tip": "41번: 첫 부분의 While AI can be a powerful tool …, it also carries the risk …처럼 '장점 인정 + 위험 지적' 구조면 제목도 양면을 담은 것을 고르세요. 42번: 마지막 문장은 if 절과 결론(ultimately inhibiting)이 같은 방향이어야 해요. '방해한다'로 끝나는데 앞에서 '향상시킨다(enhance)'면 모순이에요.",
+  "keywords": [
+    "2025년 10월 고1 모의고사 영어 41~42번",
+    "2025 10월 고1 영어 41~42번 해설",
+    "고1 10월 모의고사 41번 정답",
+    "고1 10월 모의고사 42번 정답",
+    "고1 모의고사 장문 독해",
+    "AI 창의성 creativity 지문",
+    "시행착오 trial and error 독창성"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "While AI can be a powerful tool for creative efforts, it also carries the risk of limiting originality and innovation.",
+          "ko": "AI는 창의적인 노력을 위한 강력한 도구가 될 수 있지만, 또한 독창성과 혁신을 제한할 위험을 수반한다.",
+          "note": "글 전체의 방향을 정하는 문장이에요. '도구(Help)이면서 위험(Threat)'이라는 양면이 ②의 제목과 그대로 연결돼요."
+        },
+        {
+          "en": "If artists and designers rely too heavily on AI for inspiration and content generation, they may find themselves trapped in a cycle of imitation, …",
+          "ko": "예술가와 디자이너가 영감과 콘텐츠 생성을 위해 AI에 지나치게 의존한다면, 그들은 모방의 순환에 갇힌 자신을 발견할지도 모른다 …",
+          "note": "AI가 창의성에 '위협'이 되는 첫 번째 이유예요."
+        },
+        {
+          "en": "Moreover, the ease with which AI can generate content can discourage the kind of struggle and experimentation that often leads to breakthroughs.",
+          "ko": "더욱이, AI로 콘텐츠를 생성할 수 있는 편리함은 종종 획기적인 발전으로 이어지는 그런 종류의 노력과 실험을 방해할 수 있다.",
+          "note": "Moreover로 위험을 하나 더 보태요. 편리함(Help처럼 보이는 것)이 오히려 창의성의 뿌리를 막는다(Threat)는 점이 ②의 양면성과 맞아요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "How to Regulate AI Art and Protect Artists",
+          "ko": "AI 예술을 규제하고 예술가를 보호하는 방법",
+          "why": "규제나 예술가 보호 방법은 글에 나오지 않아요. 글은 AI가 창의성 자체에 미치는 영향을 말해요."
+        },
+        {
+          "en": "Is AI a Help or Threat to Human Creativity?",
+          "ko": "AI는 인간의 창의성에 도움인가, 위협인가?",
+          "why": "정답. 강력한 도구(Help)라는 점을 인정하면서 독창성과 창의적 재능 발달을 해칠 위험(Threat)을 설명한 글 전체를 담아요."
+        },
+        {
+          "en": "Professions That AI Will Replace in the Future",
+          "ko": "미래에 AI가 대체할 직업들",
+          "why": "AI가 직업을 대체한다는 이야기는 없어요. artists and designers는 AI에 의존하는 사람의 예일 뿐이에요."
+        },
+        {
+          "en": "Unlocking AI Creativity Through Trial and Error",
+          "ko": "시행착오를 통한 AI 창의성 끌어내기",
+          "why": "trial and error는 본문 표현이지만 '인간'이 거쳐야 할 과정이에요. AI의 창의성을 키운다는 내용이 아니라서 주체가 뒤바뀐 함정이에요."
+        },
+        {
+          "en": "A Battle between Humans and AI: Winner Takes All",
+          "ko": "인간과 AI의 대결: 승자 독식",
+          "why": "인간과 AI가 경쟁해서 누가 이기는지를 다루지 않아요. 지나치게 극단적인 제목이에요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "If AI provides instant solutions, it can (e) enhance this essential process of learning through trial and error, ultimately inhibiting the development of true creative talent.",
+          "ko": "AI가 즉각적인 해결책을 제공한다면, 그것은 시행착오를 통한 이 필수적인 학습 과정을 (e) 향상시킬 수 있으며, 궁극적으로 진정한 창의적 재능의 발달을 방해한다.",
+          "note": "과정을 '향상시키는데' 결과는 재능 발달을 '방해한다(inhibiting)'면 앞뒤가 맞지 않아요. 즉각적인 해결책은 시행착오 과정을 '건너뛰게(bypass, skip)' 만들어요."
+        },
+        {
+          "en": "The creative process is often messy and repetitive, involving numerous failures and setbacks. It is through these (d) challenges that we refine our skills, …",
+          "ko": "창의적인 과정은 종종 골치 아프고 반복적이며 수많은 실패와 좌절을 수반한다. 우리가 자신의 기술을 연마하는 것은 바로 이러한 (d) 어려움을 통해서이다 …",
+          "note": "failures and setbacks를 these challenges로 받았어요. (d)는 적절하고, 이 '어려움'이 꼭 필요한 과정이라는 게 (e)를 판단하는 기준이에요."
+        },
+        {
+          "en": "AI algorithms are trained on (b) existing datasets, often identifying patterns and trends in past creations.",
+          "ko": "AI 알고리즘은 (b) 기존의 데이터 세트를 바탕으로 훈련되며, 종종 과거의 창작물에서 패턴과 경향을 식별한다.",
+          "note": "past creations(과거의 창작물)와 연결되니 existing(기존의)은 적절해요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) carries",
+          "ko": "수반하다",
+          "why": "적절. While로 장점을 인정한 뒤 '위험을 수반한다(carries the risk)'로 문제점을 꺼내요."
+        },
+        {
+          "en": "(b) existing",
+          "ko": "기존의",
+          "why": "적절. AI는 이미 있는 데이터로 훈련되고, 그래서 과거 창작물의 패턴을 따라 해요."
+        },
+        {
+          "en": "(c) trapped",
+          "ko": "갇힌",
+          "why": "적절. 뒤의 unable to break free(벗어날 수 없는)와 같은 뜻으로 이어져요."
+        },
+        {
+          "en": "(d) challenges",
+          "ko": "어려움, 도전",
+          "why": "적절. 앞 문장의 failures and setbacks(실패와 좌절)를 가리켜요."
+        },
+        {
+          "en": "(e) enhance",
+          "ko": "향상시키다",
+          "why": "정답. 즉각적인 해결책은 시행착오 과정을 '건너뛰게' 해서 결국 재능 발달을 방해(inhibiting)해요. enhance가 아니라 bypass(건너뛰다)가 와야 해요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "while 양보",
+      "ex": "While AI can be a powerful tool for creative efforts, it also carries the risk of limiting originality and innovation.",
+      "d": "'~이긴 하지만'. 앞은 인정, 주절은 진짜 하고 싶은 말이에요. 제목(41)의 방향을 정해 주는 문장이에요."
+    },
+    {
+      "t": "find oneself + p.p.",
+      "ex": "they may find themselves trapped in a cycle of imitation, unable to break free from the constraints of the AI's training data.",
+      "d": "'자신이 ~된 상태임을 알게 되다'. 뒤의 unable to …는 형용사구로 상태를 덧붙여요."
+    },
+    {
+      "t": "전치사 + 관계대명사",
+      "ex": "Moreover, the ease with which AI can generate content can discourage the kind of struggle and experimentation …",
+      "d": "with which = AI가 콘텐츠를 만드는 '쉬움'. with ease(쉽게)에서 나온 표현이에요. 주어는 the ease, 동사는 can discourage예요."
+    },
+    {
+      "t": "it is ~ that 강조구문",
+      "ex": "It is through these challenges that we refine our skills, develop our unique perspectives, and push the boundaries of what is possible.",
+      "d": "through these challenges를 강조해 '바로 이런 어려움을 통해서'로 해석해요. 동사 세 개(refine, develop, push)가 병렬이에요."
+    },
+    {
+      "t": "분사구문(결과)",
+      "ex": "…, ultimately inhibiting the development of true creative talent.",
+      "d": "콤마 뒤 -ing는 '그 결과 ~하게 된다'. 앞 동사와 같은 방향의 결과라서 42번 (e)를 판단하는 열쇠예요."
+    }
+  ],
+  "vocab": [
+    [
+      "creativity",
+      "창의성"
+    ],
+    [
+      "generate",
+      "만들어 내다"
+    ],
+    [
+      "novel",
+      "새로운"
+    ],
+    [
+      "divergent thinking",
+      "확산적 사고"
+    ],
+    [
+      "willingness",
+      "의지, 기꺼이 하는 마음"
+    ],
+    [
+      "originality",
+      "독창성"
+    ],
+    [
+      "innovation",
+      "혁신"
+    ],
+    [
+      "algorithm",
+      "알고리즘"
+    ],
+    [
+      "dataset",
+      "데이터 세트"
+    ],
+    [
+      "derivative",
+      "모방한, 독창성 없는"
+    ],
+    [
+      "genuine",
+      "진정한"
+    ],
+    [
+      "rely on",
+      "~에 의존하다"
+    ],
+    [
+      "imitation",
+      "모방"
+    ],
+    [
+      "constraint",
+      "제약"
+    ],
+    [
+      "discourage",
+      "막다, 단념시키다"
+    ],
+    [
+      "breakthrough",
+      "돌파구"
+    ],
+    [
+      "setback",
+      "좌절"
+    ],
+    [
+      "refine",
+      "다듬다, 연마하다"
+    ],
+    [
+      "perspective",
+      "관점"
+    ],
+    [
+      "trial and error",
+      "시행착오"
+    ],
+    [
+      "inhibit",
+      "방해하다, 억제하다"
+    ],
+    [
+      "bypass",
+      "건너뛰다 — 42번 (e) 자리에 맞는 말"
+    ]
+  ],
+  "summary": {
+    "en": "AI can help creative work, but relying on it too much can trap people in imitation and let them skip the failures and trial and error that build true creativity.",
+    "ko": "AI는 창작을 도울 수 있지만, 지나치게 의존하면 모방에 갇히고 진정한 창의성을 키우는 실패와 시행착오를 건너뛰게 될 수 있다."
+  },
+  "writing": {
+    "en": "True creativity grows through struggle, not through instant solutions.",
+    "ko": "진정한 창의성은 즉각적인 해결책이 아니라 고생을 통해 자란다."
+  },
+  "faq": [
+    [
+      "2025년 10월 고1 모의고사 영어 41번 정답은?",
+      "② Is AI a Help or Threat to Human Creativity?(AI는 인간의 창의성에 도움인가, 위협인가?)예요. AI의 장점을 인정하면서 창의성을 해칠 위험을 설명한 글이에요."
+    ],
+    [
+      "2025년 10월 고1 모의고사 영어 42번 정답은?",
+      "⑤ (e) enhance예요. 즉각적인 해결책은 시행착오 과정을 건너뛰게 해서 재능 발달을 방해하므로 bypass(건너뛰다) 같은 말이 와야 해요."
+    ],
+    [
+      "41번 ④ Unlocking AI Creativity Through Trial and Error가 오답인 이유는?",
+      "trial and error는 본문에 나오지만, 시행착오를 거쳐야 하는 건 사람이에요. AI의 창의성을 키운다는 내용이 아니라서 주제와 어긋나요."
+    ]
+  ],
+  "note": "42번은 (e)가 있는 마지막 문장 하나만 제대로 끊어 읽어도 풀려요. if 절의 결과와 콤마 뒤 ultimately inhibiting이 같은 방향인지 확인하는 습관을 꼭 들이자고 말해 줘요."
+}

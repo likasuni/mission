@@ -1,0 +1,61 @@
+{
+  "exam": "moe-1-2025-10",
+  "n": 37,
+  "type": "순서",
+  "points": 3,
+  "answer": 2,
+  "topic": "아이들에게 '반대'라는 원리는 낯설다",
+  "date": "2026-10-21",
+  "keywords": ["2025년 10월 고1 모의고사 영어 37번", "2025 10월 고1 영어 37번 해설", "고1 10월 모의고사 37번 정답", "고1 모의고사 글의 순서", "principle of opposites 지문", "아이들 반대 개념 Right Left 지문"],
+  "lead": "2025년 10월 고1 모의고사 영어 37번은 어린아이들이 '오른쪽-왼쪽', '예-아니요' 같은 반대 관계를 바로 연결하지 못한다는 글의 순서 문항이에요. (B)의 for instance가 주어진 글의 예시를 들고, (A)의 The same applies to가 (B)의 Right/Left를 받으며, (C)의 Our confusion이 (A)의 we were confused를 받는 연결이 핵심이에요. 정답은 ② (B)－(A)－(C)예요.",
+  "flow": [
+    ["주어진 글", "어릴 때는 '반대의 원리'가 낯설다. 아이들은 단어와 의미를 따로따로 인식하고, 단어끼리 연결된다는 것은 나중에야 이해한다."],
+    ["(B) 예시 1", "예를 들어 많은 아이들은 '오른쪽'이 '왼쪽'의 반대라는 걸 모른다. 자전거를 배울 때 '왼쪽으로 가지 마'라고 하면 오른쪽으로 꺾지 않고 계속 직진한다."],
+    ["(A) 예시 2", "부모가 말하는 '예'와 '아니요'의 논리적 연결도 마찬가지다. '안 돼, 손으로 먹지 마'라는 말을 듣고 우리는 혼란스러웠다."],
+    ["(C) 마무리", "그 혼란은 계속 먹어야 하는지, 먹는다면 어떻게 먹어야 하는지였다. 나중에야 손 대신 포크나 숟가락으로 계속 먹으라는 뜻임을 이해했다."]
+  ],
+  "evidence": [
+    {"en": "(B) For many children, for instance, it is not clear that 'Right' is the opposite of 'Left'.", "ko": "(B) 예를 들어, 많은 아이들에게 '오른쪽'이 '왼쪽'의 반대라는 것은 분명하지 않다.", "note": "for instance로 주어진 글의 '반대의 원리가 낯설다'에 대한 첫 예시를 들어요. 주어진 글 바로 뒤는 (B)예요."},
+    {"en": "(A) The same applies to the logical connection between 'Yes' and 'No' as perceived by parents. When we were children and were told, for example, \"No, don't eat with your hands,\" we were confused and didn't know what our parents expected from us.", "ko": "(A) 부모가 인식하는 '예'와 '아니요' 사이의 논리적 연결에도 똑같은 것이 적용된다. 우리가 어렸을 때 예를 들어 \"안 돼, 손으로 먹지 마.\"라는 말을 들었을 때, 우리는 혼란스러웠고 부모가 우리에게 무엇을 기대하는지 몰랐다.", "note": "The same(똑같은 것)은 (B)의 Right/Left 이야기를 받아요. 그리고 마지막 we were confused가 (C)로 이어져요."},
+    {"en": "(C) Our confusion was about whether we should continue eating or not and if so, how? Only later did we recognize the connection and understand that we should continue eating, but not with our hands but with a fork or a spoon.", "ko": "(C) 우리의 혼란은 계속 먹어야 하는지 아닌지, 그리고 만약 그렇다면 어떻게 먹어야 하는지에 관한 것이었다. 나중에야 우리는 그 연결을 깨닫고 손이 아니라 포크나 숟가락으로 계속 먹어야 한다는 것을 이해했다.", "note": "Our confusion은 (A)의 we were confused를, eating은 (A)의 \"don't eat with your hands\"를 받아요. 그래서 (A) 다음이 (C)이고, 글도 여기서 마무리돼요."}
+  ],
+  "choices": [
+    {"en": "(A) － (C) － (B)", "ko": "예시 2 → 마무리 → 예시 1", "why": "(A)의 The same applies to는 앞에 비교할 예시가 있어야 해요. 주어진 글에는 구체적 예시가 없어서 (A)가 먼저 올 수 없어요."},
+    {"en": "(B) － (A) － (C)", "ko": "예시 1 → 예시 2 → 마무리", "why": "정답. 반대의 원리가 낯설다(주어진 글) → 예를 들어 오른쪽-왼쪽(B) → 예-아니요도 마찬가지, 손으로 먹지 마(A) → 그 혼란과 나중의 깨달음(C)."},
+    {"en": "(B) － (C) － (A)", "ko": "예시 1 → 마무리 → 예시 2", "why": "(C)의 Our confusion과 eating은 (A)의 식사 장면을 받아요. 자전거 이야기(B) 바로 뒤에 (C)가 오면 무슨 혼란인지 알 수 없어요."},
+    {"en": "(C) － (A) － (B)", "ko": "마무리 → 예시 2 → 예시 1", "why": "(C)의 Our confusion이 가리킬 혼란이 주어진 글에는 없어요. 맨 앞에 올 수 없어요."},
+    {"en": "(C) － (B) － (A)", "ko": "마무리 → 예시 1 → 예시 2", "why": "(C)가 처음에 올 수 없고, 혼란의 원인(A)이 그 설명(C)보다 뒤에 오는 것도 순서가 거꾸로예요."}
+  ],
+  "grammar": [
+    {"t": "It is ~ that 강조 구문", "ex": "It is only in later development that we understood that individual words directly connect to one another.", "d": "only in later development를 강조해요. '나중의 발달 단계에서야 비로소 ~을 이해했다'. 뒤의 that individual words ~는 understood의 목적어절이에요."},
+    {"t": "가주어 it + 진주어 that절", "ex": "For many children, for instance, it is not clear that 'Right' is the opposite of 'Left'.", "d": "it은 가주어, that 'Right' is ~가 진주어예요. '오른쪽이 왼쪽의 반대라는 것은 분명하지 않다'."},
+    {"t": "Only + 부사(구) 문두 도치", "ex": "Only later did we recognize the connection and understand that we should continue eating, …", "d": "Only later가 앞으로 나오면 조동사 did + 주어 + 동사원형 순서로 도치돼요. '나중에야 비로소 우리는 깨달았다'."},
+    {"t": "whether A or not / not A but B", "ex": "Our confusion was about whether we should continue eating or not and if so, how?", "d": "whether ~ or not은 '~인지 아닌지'. 이어지는 문장의 not with our hands but with a fork or a spoon은 'A가 아니라 B'로 혼란의 답을 줘요."}
+  ],
+  "vocab": [
+    ["principle", "원리"],
+    ["opposite", "반대(의 것)"],
+    ["foreign", "낯선, 생소한"],
+    ["perceive", "인식하다, 지각하다"],
+    ["separately", "따로, 별개로"],
+    ["development", "발달"],
+    ["individual", "개별적인"],
+    ["connect to", "~와 연결되다"],
+    ["apply to", "~에 적용되다"],
+    ["logical", "논리적인"],
+    ["confused", "혼란스러운"],
+    ["expect A from B", "B에게 A를 기대하다"],
+    ["vivid", "생생한"],
+    ["automatically", "자동으로, 저절로"],
+    ["recognize", "깨닫다, 인식하다"]
+  ],
+  "summary": {"en": "Young children do not naturally understand opposites like right and left or yes and no, and only later learn how such words connect.", "ko": "어린아이들은 오른쪽과 왼쪽, 예와 아니요 같은 반대 관계를 자연스럽게 이해하지 못하고, 나중에야 그런 단어들이 어떻게 연결되는지 배운다."},
+  "writing": {"en": "Children learn words one by one before they see how words relate to each other.", "ko": "아이들은 단어들이 서로 어떻게 관련되는지 알기 전에 단어를 하나씩 따로 배운다."},
+  "tip": "예시가 두 개 나오는 순서 문항은 for instance(첫 예시)와 The same applies to(두 번째 예시)를 구분하세요. '마찬가지다'는 비교 대상이 앞에 있어야 하니 절대 첫 번째로 올 수 없어요. 마지막은 Our confusion처럼 앞 단락의 단어(confused)를 명사로 받아 정리하는 단락이에요.",
+  "note": "(A)와 (C)를 잇는 고리는 confused → Our confusion, 그리고 eat → eating이에요. 형용사·동사가 다음 단락에서 명사나 -ing로 바뀌어 다시 나오는 것, 순서 문항에서 꼭 찾아보세요.",
+  "faq": [
+    ["2025년 10월 고1 모의고사 영어 37번 정답은?", "② (B)－(A)－(C)예요. 오른쪽-왼쪽 예시(B) → 예-아니요도 마찬가지, 손으로 먹지 마(A) → 그 혼란과 나중의 깨달음(C) 순서예요."],
+    ["2025년 10월 고1 영어 37번은 어떤 유형인가요?", "주어진 글 다음에 이어질 글의 순서를 고르는 3점 순서 배열 문항이에요. 아이들이 반대 개념을 어려워한다는 지문이에요."],
+    ["(A)가 맨 앞에 올 수 없는 이유는?", "(A)는 The same applies to(똑같은 것이 적용된다)로 시작해서 앞에 비교할 예시가 있어야 해요. 첫 예시인 Right/Left는 (B)에 있으니 (B) 다음에 (A)가 와요."]
+  ]
+}

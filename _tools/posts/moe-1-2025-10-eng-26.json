@@ -57,28 +57,28 @@
   "choices": [
     {
       "en": "University of Punjab을 졸업한 후에 미국으로 이주했다.",
-      "ko": "After graduating from the University of Punjab in India, he moved to the U.S. to attend graduate school.",
-      "why": "일치. 졸업 후 대학원 진학을 위해 미국으로 갔어요."
+      "ko": "이주",
+      "why": "일치. After graduating from the University of Punjab in India, he moved to the U.S. to attend graduate school."
     },
     {
       "en": "박사 학위를 받았지만 국적 때문에 직업을 구할 수 없었다.",
-      "ko": "He earned his doctoral degree … but could not get a job because of his nationality.",
-      "why": "일치. 1924년 박사 학위를 받았지만 국적 때문에 취업하지 못했어요."
+      "ko": "박사 학위·취업",
+      "why": "일치. He earned his doctoral degree at the University of California in 1924 but could not get a job because of his nationality."
     },
     {
       "en": "Imperial Valley에서 땅을 구입해서 농사를 시작했다.",
-      "ko": "he began farming in Imperial Valley, but he was not able to buy land without U.S. citizenship.",
-      "why": "정답(불일치). 농사는 시작했지만 시민권이 없어 땅을 살 수 없었어요."
+      "ko": "농사·땅",
+      "why": "정답(불일치). he began farming in Imperial Valley, but he was not able to buy land without U.S. citizenship. 농사는 시작했지만 땅은 살 수 없었어요."
     },
     {
       "en": "인도인이 미국 시민이 될 수 있도록 하는 법안을 홍보했다.",
-      "ko": "He went to Washington, D.C. and promoted a bill that would allow Indians to become U.S. citizens.",
-      "why": "일치. 워싱턴 D.C.에 가서 그 법안을 홍보했어요."
+      "ko": "법안 홍보",
+      "why": "일치. He went to Washington, D.C. and promoted a bill that would allow Indians to become U.S. citizens."
     },
     {
       "en": "미국 의회에 당선된 최초의 아시아인이 되었다.",
-      "ko": "He later became the first Asian to be elected to the U.S. Congress.",
-      "why": "일치. 글의 마지막 문장과 같아요."
+      "ko": "의회 당선",
+      "why": "일치. He later became the first Asian to be elected to the U.S. Congress."
     }
   ],
   "grammar": [
