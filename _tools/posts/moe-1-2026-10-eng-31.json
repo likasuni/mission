@@ -1,0 +1,196 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 2,
+  "topic": "Star Trek 세계에는 희소성이 없다: 풍요로운 사회와 생성형 AI",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 31번",
+    "2026 10월 고1 영어 31번 해설",
+    "고1 10월 모의고사 31번 정답",
+    "고1 모의고사 빈칸 추론",
+    "Star Trek 경제학 지문",
+    "scarcity 희소성 빈칸"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 31번은 Star Trek 세계를 경제학의 눈으로 본 빈칸 추론 문항이에요. 고전 경제학은 '모두에게 줄 만큼 충분하지 않다'는 생각에서 출발하는데, however로 Star Trek은 그 반대라고 말해요. 정답은 ② scarcity(희소성)예요.",
+  "flow": [
+    [
+      "도입",
+      "Star Trek 세계를 경제학적으로 보면 곧 다가올지 모르는 세계를 엿볼 수 있다."
+    ],
+    [
+      "배경",
+      "고전 경제학은 모두가 원하는 것을 다 줄 만큼 충분하지 않다는 생각에 기초해, 시장과 가격으로 자원을 배분한다."
+    ],
+    [
+      "반전",
+      "그러나 Star Trek에는 희소성이 별로 없다."
+    ],
+    [
+      "예시",
+      "기술로 음식을 복제하고, 순간 이동하고, 별 사이를 여행하며, 모두가 교육받아 풍요에 참여한다."
+    ],
+    [
+      "연결",
+      "생성형 AI도 우리 사회의 많은 부분을 이처럼 풍요롭게 만들 잠재력이 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "All of classical economics is based on the notion that there isn’t usually enough of anything to give everyone everything they want or need.",
+      "ko": "고전 경제학 전체는 모두에게 그들이 원하거나 필요로 하는 모든 것을 줄 만큼 대체로 어떤 것도 충분하지 않다는 개념에 기초한다.",
+      "note": "'충분하지 않다' = 희소성(scarcity)의 정의예요. however 앞 문장이라 빈칸은 이것이 '없다'는 말이 돼요."
+    },
+    {
+      "en": "Technology has allowed that society to reproduce any food they want, transport themselves thousands of miles in the blink of an eye, communicate over light-years, and travel among the stars.",
+      "ko": "기술은 그 사회가 원하는 어떤 음식이든 복제하고, 눈 깜짝할 사이에 수천 마일을 이동하며, 수광년 너머로 소통하고, 별들 사이를 여행할 수 있게 해 왔다.",
+      "note": "부족한 것이 없는 세계의 구체적 예시예요."
+    },
+    {
+      "en": "Generative AI has the potential to allow many dimensions of our own society to be similarly highly abundant.",
+      "ko": "생성형 AI는 우리 사회의 많은 측면이 마찬가지로 매우 풍요로워지게 할 잠재력이 있다.",
+      "note": "similarly highly abundant(마찬가지로 풍요로운)는 Star Trek이 '풍요 = 희소성 없음'이라는 걸 다시 확인해 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "bias",
+      "ko": "편견",
+      "why": "글은 공정성이 아니라 물건·자원이 충분한가를 다뤄요."
+    },
+    {
+      "en": "scarcity",
+      "ko": "희소성, 부족",
+      "why": "정답. however 앞의 '충분하지 않다'와 반대로, Star Trek에는 부족함이 별로 없어요. 뒤의 풍요로운 예시와도 맞아요."
+    },
+    {
+      "en": "pollution",
+      "ko": "오염",
+      "why": "환경 이야기는 지문에 나오지 않아요."
+    },
+    {
+      "en": "diversity",
+      "ko": "다양성",
+      "why": "탐험가·연구원·예술가 등 다양한 직업이 나오지만, '다양성이 별로 없다'는 글의 흐름과 반대예요."
+    },
+    {
+      "en": "efficiency",
+      "ko": "효율성",
+      "why": "기술 덕분에 오히려 효율적인 세계예요. '효율성이 별로 없다'는 맞지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사 주어 doing so",
+      "ex": "Few people may view the Star Trek universe through an economic lens, but doing so provides a window into a world that might soon be upon us.",
+      "d": "doing so = 'Star Trek을 경제학 렌즈로 보는 것'. 동명사 주어는 단수 취급이라 provides예요."
+    },
+    {
+      "t": "동격 that",
+      "ex": "All of classical economics is based on the notion that there isn’t usually enough of anything to give everyone everything they want or need.",
+      "d": "the notion that ~은 '~라는 개념'. that 뒤가 완전한 문장이라 동격 접속사예요. give + 사람 + 사물 4형식도 함께 보세요."
+    },
+    {
+      "t": "allow + 목적어 + to V (병렬)",
+      "ex": "Technology has allowed that society to reproduce any food they want, transport themselves …, communicate over light-years, and travel among the stars.",
+      "d": "to 하나에 동사원형 네 개(reproduce, transport, communicate, travel)가 병렬로 이어졌어요."
+    },
+    {
+      "t": "so that + 주어 + can",
+      "ex": "All of humanity in that world has been fully educated so that they can participate in this prosperity.",
+      "d": "'~할 수 있도록'. 목적을 나타내요."
+    }
+  ],
+  "vocab": [
+    [
+      "universe",
+      "세계, 우주"
+    ],
+    [
+      "lens",
+      "렌즈, 관점"
+    ],
+    [
+      "be upon us",
+      "(일이) 닥치다"
+    ],
+    [
+      "classical economics",
+      "고전 경제학"
+    ],
+    [
+      "notion",
+      "개념, 생각"
+    ],
+    [
+      "pricing",
+      "가격 책정"
+    ],
+    [
+      "allocate",
+      "배분하다"
+    ],
+    [
+      "scarcity",
+      "희소성, 부족 — 빈칸 정답"
+    ],
+    [
+      "reproduce",
+      "복제하다, 재생산하다"
+    ],
+    [
+      "transport",
+      "이동시키다, 수송하다"
+    ],
+    [
+      "in the blink of an eye",
+      "눈 깜짝할 사이에"
+    ],
+    [
+      "light-year",
+      "광년"
+    ],
+    [
+      "prosperity",
+      "번영, 풍요"
+    ],
+    [
+      "generative AI",
+      "생성형 AI"
+    ],
+    [
+      "dimension",
+      "측면, 차원"
+    ],
+    [
+      "abundant",
+      "풍부한"
+    ]
+  ],
+  "summary": {
+    "en": "Unlike classical economics, which assumes there is never enough, Star Trek shows a world without scarcity, and generative AI may bring similar abundance to our society.",
+    "ko": "늘 부족하다고 가정하는 고전 경제학과 달리 Star Trek은 희소성이 없는 세계를 보여 주며, 생성형 AI가 우리 사회에도 비슷한 풍요를 가져올 수 있다."
+  },
+  "writing": {
+    "en": "In a world of abundance, there is little need to compete for resources.",
+    "ko": "풍요로운 세계에서는 자원을 두고 경쟁할 필요가 거의 없다."
+  },
+  "tip": "빈칸 문장에 however가 있으면 바로 앞 문장과 반대 내용이 와요. 앞에서 '충분하지 않다'를 말했으니 빈칸 문장은 '부족함이 별로 없다'가 돼요. 그다음 뒤의 예시(음식 복제, 순간 이동)가 그 해석과 맞는지 확인하세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 31번 정답은?",
+      "② scarcity(희소성)예요. Star Trek에는 고전 경제학이 전제하는 '부족함'이 별로 없다는 내용이에요."
+    ],
+    [
+      "2026 10월 고1 영어 31번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. Star Trek 세계를 경제학적으로 본 지문이에요."
+    ],
+    [
+      "④ diversity가 오답인 이유는?",
+      "여러 직업이 나오긴 하지만, 빈칸 문장은 '~이 별로 없다'는 뜻이에요. 다양성이 없다는 말은 글 내용과 맞지 않아요."
+    ]
+  ],
+  "note": "there isn't much ___처럼 빈칸 앞에 부정어가 있으면 '없는 것'을 골라야 해요. 학생들이 abundant 같은 긍정 단어만 보고 반대로 고르지 않도록 부정어에 동그라미 치는 습관을 들여요."
+}

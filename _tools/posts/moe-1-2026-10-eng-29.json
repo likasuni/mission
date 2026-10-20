@@ -1,0 +1,200 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 29,
+  "type": "어법",
+  "points": 3,
+  "answer": 2,
+  "topic": "죽지 않는 생물 히드라와 해파리, 인간 노화 연구에 바로 쓰기 어렵다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 29번",
+    "2026 10월 고1 영어 29번 해설",
+    "고1 10월 모의고사 29번 정답",
+    "고1 모의고사 어법",
+    "주어 동사 수일치 어법",
+    "immortal jellyfish hydra 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 29번은 히드라와 불멸의 해파리를 다룬 3점 어법 문항이에요. 주어 their property 뒤에 긴 수식어가 붙어 있는데 문장에 동사가 없어서, ② making을 동사 makes로 고쳐야 해요. 정답은 ②예요.",
+  "flow": [
+    [
+      "도입",
+      "히드라와 불멸의 해파리는 노화 징후가 없어 '생물학적으로 불멸'이라 불린다."
+    ],
+    [
+      "설명",
+      "죽지 않는다는 뜻은 아니고, 나이가 들어도 죽을 가능성이 늘지 않는다는 뜻이다."
+    ],
+    [
+      "기대",
+      "그래서 노화를 물리칠 단서를 줄 수 있어 노화학자들을 흥분시킨다."
+    ],
+    [
+      "한계",
+      "하지만 몸 전체를 재생하는 특성은 이들을 우리보다 나무에 가깝게 만들어, 인간 노화와의 관련성이 불분명하다."
+    ],
+    [
+      "결론",
+      "쥐 연구조차 인간에게 적용하기 어려우니, 히드라·해파리 연구가 우리에게 쓸모 있으려면 아주 오래 걸릴 수 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But their property of being able to regenerate entire body parts, or even a whole organism, ② making them more similar to trees than to us.",
+      "ko": "하지만 전체 신체 부위나 심지어 한 생물체 전체를 재생할 수 있는 그것들의 특성은 그것들을 우리보다 나무와 더 비슷하게 만든다.",
+      "note": "주어는 their property, of ~ organism까지는 수식어예요. 그 뒤에 동사가 하나도 없어요. 단수 주어에 맞춘 동사 makes가 와야 해요. making → makes."
+    },
+    {
+      "en": "in other cases, even discoveries in rats or mice, ④ which are mammals and biologically much closer to us, are difficult to translate into humans.",
+      "ko": "다른 경우에는, 포유류이며 생물학적으로 우리에게 훨씬 가까운 쥐나 생쥐에서의 발견조차 인간에게 적용하기 어렵다.",
+      "note": "④ which는 rats or mice를 받는 계속적 용법 관계대명사예요. 뒤에 주어가 빠진 are mammals …가 와서 맞아요."
+    },
+    {
+      "en": "it is not at all clear how ③ relevant those findings will be to human aging.",
+      "ko": "그러한 발견들이 인간의 노화에 얼마나 관련이 있을지는 전혀 분명하지 않다.",
+      "note": "③ will be의 보어 자리라 형용사 relevant가 맞아요. how + 형용사 + 주어 + 동사 어순이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① mean",
+      "ko": "Nor 도치",
+      "why": "적절. Nor does it even mean ~. 부정어 Nor가 앞에 나와 does + 주어 + 동사원형으로 도치됐어요."
+    },
+    {
+      "en": "② making",
+      "ko": "making → makes",
+      "why": "정답(틀림). 주어 their property 뒤에 동사가 없어요. 단수 주어에 맞는 본동사 makes가 와야 해요."
+    },
+    {
+      "en": "③ relevant",
+      "ko": "보어 형용사",
+      "why": "적절. those findings will be relevant to ~에서 보어 relevant가 how와 함께 앞으로 나간 어순이에요."
+    },
+    {
+      "en": "④ which",
+      "ko": "계속적 용법 관계대명사",
+      "why": "적절. 콤마 뒤에서 rats or mice를 받고, 뒤 절에 주어가 없으니 관계대명사 which가 맞아요."
+    },
+    {
+      "en": "⑤ are",
+      "ko": "수일치",
+      "why": "적절. before절의 주어는 복수 any findings(gained from ~는 수식어)라 are가 맞아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "주어 + 긴 수식어 + 본동사",
+      "ex": "But their property of being able to regenerate entire body parts, or even a whole organism, makes them more similar to trees than to us.",
+      "d": "주어 뒤가 길면 '진짜 동사'가 있는지부터 찾으세요. 동사가 없으면 -ing·to부정사 밑줄이 정답 후보예요. make + 목적어 + 형용사(similar) 5형식도 함께 보세요."
+    },
+    {
+      "t": "Nor + 조동사 + 주어 도치",
+      "ex": "Nor does it even mean that they cannot die of biological causes.",
+      "d": "'~도 아니다'. 부정어가 문장 앞에 오면 의문문 어순(does it mean)이 돼요. 그래서 동사원형 mean이에요."
+    },
+    {
+      "t": "how + 형용사 + 주어 + 동사",
+      "ex": "it is not at all clear how relevant those findings will be to human aging",
+      "d": "가주어 it, 진주어는 how절이에요. be동사의 보어라 형용사 relevant가 와요. 부사(relevantly)로 바꾼 함정에 주의하세요."
+    },
+    {
+      "t": "과거분사 후치 수식과 수일치",
+      "ex": "before any findings gained from hydra or jellyfish are useful to us",
+      "d": "gained from ~은 findings를 꾸미는 수식어예요. 주어는 복수 findings라 are."
+    }
+  ],
+  "vocab": [
+    [
+      "exhibit",
+      "보이다, 드러내다"
+    ],
+    [
+      "obvious",
+      "명백한"
+    ],
+    [
+      "aging",
+      "노화"
+    ],
+    [
+      "biologically",
+      "생물학적으로"
+    ],
+    [
+      "immortal",
+      "죽지 않는, 불멸의"
+    ],
+    [
+      "likelihood",
+      "가능성"
+    ],
+    [
+      "excite",
+      "흥분시키다"
+    ],
+    [
+      "gerontologist",
+      "노화학자"
+    ],
+    [
+      "defeat",
+      "물리치다"
+    ],
+    [
+      "property",
+      "특성"
+    ],
+    [
+      "regenerate",
+      "재생하다"
+    ],
+    [
+      "organism",
+      "생물체"
+    ],
+    [
+      "apparent",
+      "명백한, 겉으로 보이는"
+    ],
+    [
+      "relevant",
+      "관련 있는"
+    ],
+    [
+      "fundamental",
+      "근본적인"
+    ],
+    [
+      "mammal",
+      "포유류"
+    ],
+    [
+      "translate into",
+      "~으로 옮기다, 적용하다"
+    ]
+  ],
+  "summary": {
+    "en": "Hydra and immortal jellyfish do not age in the usual way, but because they are so different from us, findings about them may take a long time to help humans.",
+    "ko": "히드라와 불멸의 해파리는 보통처럼 늙지 않지만 우리와 너무 달라서, 이들에 대한 발견이 인간에게 도움이 되기까지는 오래 걸릴 수 있다."
+  },
+  "writing": {
+    "en": "What is true for jellyfish is not always true for humans.",
+    "ko": "해파리에게 맞는 것이 항상 인간에게도 맞는 것은 아니다."
+  },
+  "tip": "-ing나 to부정사에 밑줄이 있으면 그 문장의 본동사가 따로 있는지 먼저 확인하세요. 주어 뒤 수식어(of ~, 콤마 삽입)를 괄호로 묶으면 동사 자리가 비어 있는 게 보여요. 비어 있으면 그 밑줄이 동사가 돼야 해요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 29번 정답은?",
+      "② making이에요. 주어 their property에 본동사가 없으므로 단수 동사 makes로 고쳐야 해요."
+    ],
+    [
+      "2026 10월 고1 영어 29번은 어떤 유형인가요?",
+      "밑줄 친 부분 중 어법상 틀린 것을 고르는 3점 어법 문항이에요. 히드라와 불멸의 해파리의 노화를 다룬 지문이에요."
+    ],
+    [
+      "① mean은 왜 맞나요?",
+      "Nor가 문장 앞에 와서 does it mean으로 도치된 형태예요. does 뒤에는 동사원형이 오므로 mean이 맞아요."
+    ]
+  ],
+  "note": "주어 뒤에 of ~, 콤마 삽입이 길게 붙으면 학생들이 동사를 찾다 길을 잃어요. 수업에서는 수식어를 괄호로 묶고 '주어 하나, 동사 하나'를 꼭 손으로 표시하게 해요."
+}

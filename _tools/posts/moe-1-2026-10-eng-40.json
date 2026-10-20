@@ -1,0 +1,204 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 40,
+  "type": "요약문",
+  "points": 2,
+  "answer": 1,
+  "topic": "위험한 곳의 미역취는 누구나 알아듣는 화학 신호를 보낸다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 40번",
+    "2026 10월 고1 영어 40번 해설",
+    "고1 10월 모의고사 40번 정답",
+    "고1 모의고사 요약문 완성",
+    "goldenrod 미역취 화학 신호 지문",
+    "식물 의사소통 chemical alarm calls"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 40번은 포식자가 많은 곳의 미역취가 이웃 모두가 알아듣는 화학 신호를 보내고, 그 신호가 보내는 쪽과 받는 쪽 모두에게 이롭다는 요약문 완성 문항이에요. (A)는 easily understood by all, (B)는 beneficial … to the sender가 단서예요. 정답은 ① broadly … benefiting이에요.",
+  "flow": [
+    [
+      "대비 ①",
+      "평화로운 지역의 미역취는 드물게 공격받을 때 가까운 친족만 알아듣는 매우 특정한 화학 경보를 보낸다."
+    ],
+    [
+      "대비 ②",
+      "적대적인 지역의 미역취는 친족뿐 아니라 그 지역의 모든 미역취가 쉽게 알아듣는 화학 표현으로 신호를 보낸다."
+    ],
+    [
+      "비유",
+      "암호 같은 속삭임 대신, 말하자면 확성기로 위협을 널리 알리는 셈이다."
+    ],
+    [
+      "발견",
+      "이런 화학 신호가 받는 식물뿐 아니라 보내는 식물에게도 이롭다는 것이 처음 확인됐다."
+    ],
+    [
+      "이유",
+      "힘든 시기에 들판에 혼자 남으면 짝짓기 상대도, 꽃가루 매개자를 불러 줄 이웃도 없다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But goldenrods in more hostile territory signal to their neighbors using chemical phrases easily understood by all the goldenrod in the area, not just their biological kin.",
+      "ko": "하지만 더 적대적인 지역의 미역취들은 생물학적 친족뿐 아니라 그 지역의 모든 미역취가 쉽게 이해하는 화학적 표현으로 이웃에게 신호를 보낸다.",
+      "note": "친족만이 아니라 '모두'가 알아듣는다 = (A) broadly(널리) understandable."
+    },
+    {
+      "en": "Instead of using coded whisper networks, these goldenrod broadcast the threat over loudspeaker, so to speak.",
+      "ko": "암호화된 속삭임 네트워크 대신 이 미역취들은 말하자면 확성기로 위협을 널리 알린다.",
+      "note": "속삭임(좁게) ↔ 확성기(넓게)의 비유도 (A) broadly를 뒷받침해요."
+    },
+    {
+      "en": "It is the first time research has confirmed that these chemical communications are beneficial not only to the plant receiving them but also to the sender.",
+      "ko": "이러한 화학적 교신이 받는 식물뿐 아니라 보내는 식물에게도 이롭다는 것을 연구가 확인한 것은 처음이다.",
+      "note": "beneficial(이로운) → (B) benefiting both the senders and the receivers."
+    }
+  ],
+  "choices": [
+    {
+      "en": "broadly … benefiting",
+      "ko": "널리 … 이롭게 하는",
+      "why": "정답. 모두가 쉽게 알아듣는 신호(A)이고, 보내는 쪽과 받는 쪽 모두에게 이롭다(B)는 본문과 딱 맞아요."
+    },
+    {
+      "en": "easily … harming",
+      "ko": "쉽게 … 해치는",
+      "why": "(A) easily는 본문 easily understood와 통하지만, (B) harming은 beneficial과 정반대예요."
+    },
+    {
+      "en": "narrowly … protecting",
+      "ko": "좁게 … 보호하는",
+      "why": "좁게 알아듣는 신호는 평화로운 지역 미역취 쪽이에요. 비교 대상과 뒤바뀐 함정이에요."
+    },
+    {
+      "en": "accidentally … profiting",
+      "ko": "우연히 … 이익을 주는",
+      "why": "(B) profiting은 그럴듯하지만, 신호를 '우연히' 알아듣는다는 내용은 본문에 없어요."
+    },
+    {
+      "en": "specifically … endangering",
+      "ko": "특정하게 … 위험에 빠뜨리는",
+      "why": "specific한 신호는 평화로운 지역 미역취의 특징이고, endangering도 beneficial과 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "주격 관계대명사 + 형용사 보어",
+      "ex": "goldenrods that live in peaceful areas without much threat from predators will issue chemical alarm calls that are incredibly specific",
+      "d": "첫 that은 goldenrods를, 두 번째 that은 chemical alarm calls를 꾸며요. 문장의 진짜 동사는 will issue예요."
+    },
+    {
+      "t": "과거분사 후치 수식",
+      "ex": "chemical phrases easily understood by all the goldenrod in the area",
+      "d": "easily understood by ~가 뒤에서 chemical phrases를 꾸며요. '~에 의해 쉽게 이해되는 화학 표현'."
+    },
+    {
+      "t": "not only A but also B",
+      "ex": "beneficial not only to the plant receiving them but also to the sender.",
+      "d": "'A뿐 아니라 B에게도'. (B)의 both the senders and the receivers로 바꿔 말한 부분이에요."
+    },
+    {
+      "t": "leave + 목적어 + -ing (수동형)",
+      "ex": "you do not want to be left standing in a field alone.",
+      "d": "be left -ing는 '~한 채로 남겨지다'. 혼자 서 있는 상태로 남겨진다는 뜻이에요."
+    },
+    {
+      "t": "no one to V",
+      "ex": "There will be no one to mate with, no one to help bring in pollinators.",
+      "d": "to부정사가 no one을 꾸며요. '함께 짝짓기할 상대', '도와줄 상대'. mate with처럼 전치사가 끝에 남는 것도 확인하세요."
+    }
+  ],
+  "vocab": [
+    [
+      "goldenrod",
+      "미역취(식물)"
+    ],
+    [
+      "predator",
+      "포식자"
+    ],
+    [
+      "issue",
+      "내보내다, 발표하다"
+    ],
+    [
+      "alarm call",
+      "경보 신호"
+    ],
+    [
+      "comprehensible",
+      "이해할 수 있는"
+    ],
+    [
+      "kin",
+      "친족"
+    ],
+    [
+      "hostile",
+      "적대적인"
+    ],
+    [
+      "territory",
+      "지역, 영역"
+    ],
+    [
+      "coded",
+      "암호화된"
+    ],
+    [
+      "broadcast",
+      "널리 알리다, 방송하다"
+    ],
+    [
+      "so to speak",
+      "말하자면"
+    ],
+    [
+      "confirm",
+      "확인하다"
+    ],
+    [
+      "beneficial",
+      "이로운"
+    ],
+    [
+      "mate",
+      "짝짓기하다"
+    ],
+    [
+      "pollinator",
+      "꽃가루 매개자"
+    ],
+    [
+      "broadly",
+      "널리"
+    ],
+    [
+      "endanger",
+      "위험에 빠뜨리다"
+    ]
+  ],
+  "summary": {
+    "en": "Goldenrods under heavy threat send chemical warnings that all their neighbors can understand, which helps both the senders and the receivers.",
+    "ko": "위협이 큰 곳의 미역취는 이웃 모두가 이해할 수 있는 화학 경고를 보내며, 이는 보내는 쪽과 받는 쪽 모두에게 도움이 된다."
+  },
+  "writing": {
+    "en": "In tough times, sharing a warning widely helps everyone survive.",
+    "ko": "힘든 시기에는 경고를 널리 나누는 것이 모두의 생존을 돕는다."
+  },
+  "tip": "요약문 문제는 요약문을 먼저 읽고 '무엇과 무엇을 비교하는지'부터 잡으세요. 이 문제는 평화로운 곳 vs 적대적인 곳이에요. 그다음 본문에서 적대적인 곳의 특징(easily understood by all, beneficial … to the sender)을 찾아 같은 뜻의 선택지를 고르면 돼요. 비교 대상의 특징(specific, narrowly)을 그대로 쓴 선택지는 함정이에요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 40번 정답은?",
+      "① broadly(널리) … benefiting(이롭게 하는)이에요. 적대적인 곳의 미역취는 모두가 알아듣는 신호를 보내고, 그 신호는 보내는 쪽과 받는 쪽 모두에게 이로워요."
+    ],
+    [
+      "2026년 10월 고1 영어 40번은 어떤 유형인가요?",
+      "글의 내용을 한 문장으로 요약할 때 (A), (B)에 들어갈 말을 고르는 2점 요약문 완성 문항이에요."
+    ],
+    [
+      "⑤ specifically가 오답인 이유는?",
+      "specific(특정한) 신호는 평화로운 지역 미역취의 특징이에요. 요약문은 적대적인 지역 미역취를 말하니 반대 대상의 특징을 고른 함정이에요."
+    ]
+  ]
+}

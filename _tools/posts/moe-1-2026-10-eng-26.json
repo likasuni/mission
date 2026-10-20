@@ -1,0 +1,199 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 26,
+  "type": "내용 일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "인간과 컴퓨터의 상호 작용을 바꾼 발명가 Douglas Carl Engelbart",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 26번",
+    "2026 10월 고1 영어 26번 해설",
+    "고1 10월 모의고사 26번 정답",
+    "고1 모의고사 내용 일치",
+    "Douglas Carl Engelbart 지문",
+    "컴퓨터 마우스 발명가 영어 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 26번은 컴퓨터 마우스를 시연한 미국의 엔지니어 Douglas Carl Engelbart의 일생을 다룬 내용 불일치 문항이에요. 1997년에 받은 상은 Turing Award이고, National Medal of Technology는 그 3년 후에 받았어요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "소개",
+      "인간과 컴퓨터의 상호 작용 분야를 바꾼 미국인 엔지니어이자 발명가"
+    ],
+    [
+      "출생",
+      "1925년 Oregon주 Portland의 유럽인 이민자 가정에서 태어남"
+    ],
+    [
+      "군 복무",
+      "제2차 세계 대전 중 필리핀의 미 해군에서 레이더 기술자로 복무, 이때 읽은 글이 비전에 영향을 줌"
+    ],
+    [
+      "학업",
+      "UC Berkeley에서 전기 공학 석사·박사 학위, 컴퓨터 관련 연구에 집중"
+    ],
+    [
+      "업적",
+      "1968년 Fall Joint Computer Conference에서 컴퓨터 마우스 등 기술을 시연"
+    ],
+    [
+      "수상",
+      "1997년 Turing Award, 3년 후(2000년) National Medal of Technology"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "For his contributions to computer science, he received the Turing Award in 1997 and the National Medal of Technology three years later.",
+      "ko": "컴퓨터 과학에 대한 그의 공헌으로 그는 1997년에 Turing Award를 수상했고, 3년 후에는 National Medal of Technology를 수상했다.",
+      "note": "1997년에 받은 건 Turing Award예요. National Medal of Technology는 three years later(2000년)라서 ⑤가 불일치예요."
+    },
+    {
+      "en": "During World War II, he served as a radar technician in the U.S. Navy in the Philippines.",
+      "ko": "제2차 세계 대전 동안, 그는 레이더 기술자로 필리핀에 있는 미 해군에서 복무했다.",
+      "note": "②와 일치해요."
+    },
+    {
+      "en": "In the 1968 Fall Joint Computer Conference held in San Francisco, he demonstrated his technologies including the computer mouse, …",
+      "ko": "San Francisco에서 열린 1968 Fall Joint Computer Conference에서 그는 컴퓨터 마우스를 포함한 자신의 기술들을 시연했는데, …",
+      "note": "④와 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "유럽인 이민자 가정에서 태어났다.",
+      "ko": "출생",
+      "why": "일치. He was born in Portland, Oregon, in 1925 to a European immigrant family."
+    },
+    {
+      "en": "제2차 세계 대전 동안 미 해군에서 복무했다.",
+      "ko": "군 복무",
+      "why": "일치. During World War II, he served as a radar technician in the U.S. Navy in the Philippines."
+    },
+    {
+      "en": "전기 공학으로 석사와 박사 학위를 받았다.",
+      "ko": "학위",
+      "why": "일치. he earned master's and doctoral degrees in electrical engineering"
+    },
+    {
+      "en": "1968년에 컴퓨터 마우스를 포함한 기술을 시연했다.",
+      "ko": "시연",
+      "why": "일치. In the 1968 Fall Joint Computer Conference … he demonstrated his technologies including the computer mouse"
+    },
+    {
+      "en": "1997년에 National Medal of Technology를 수상했다.",
+      "ko": "수상",
+      "why": "정답(불일치). 1997년에 받은 건 Turing Award이고, National Medal of Technology는 three years later, 즉 2000년에 받았어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "관계대명사 who",
+      "ex": "Douglas Carl Engelbart was an American engineer and inventor who transformed the field of human-computer interaction.",
+      "d": "who 이하가 engineer and inventor를 꾸며요. 첫 문장에서 인물의 대표 업적을 소개해요."
+    },
+    {
+      "t": "It was ~ that 강조구문",
+      "ex": "It was during this time that he read an article that influenced his vision of using computers to enhance human abilities …",
+      "d": "during this time(바로 이 시기)을 강조해요. 뒤의 that influenced ~는 article을 꾸미는 관계대명사예요. 두 that을 구별하세요."
+    },
+    {
+      "t": "관계부사 where / 과거분사 수식",
+      "ex": "… from the University of California, Berkeley, where he focused on computer-related research. In the 1968 Fall Joint Computer Conference held in San Francisco, …",
+      "d": "콤마 + where는 '그리고 그곳에서'. held in San Francisco는 Conference를 꾸미는 과거분사구예요."
+    },
+    {
+      "t": "콤마 + which (계속적 용법)",
+      "ex": "he demonstrated his technologies including the computer mouse, which became a monumental event in computer history.",
+      "d": "which는 앞 내용(기술을 시연한 일)을 받아요. '그리고 그것은 ~이 되었다'로 읽어요."
+    }
+  ],
+  "vocab": [
+    [
+      "inventor",
+      "발명가"
+    ],
+    [
+      "transform",
+      "변화시키다, 바꾸다"
+    ],
+    [
+      "interaction",
+      "상호 작용"
+    ],
+    [
+      "immigrant",
+      "이민자"
+    ],
+    [
+      "serve",
+      "복무하다"
+    ],
+    [
+      "technician",
+      "기술자"
+    ],
+    [
+      "navy",
+      "해군"
+    ],
+    [
+      "vision",
+      "비전, 전망"
+    ],
+    [
+      "enhance",
+      "향상시키다"
+    ],
+    [
+      "complex",
+      "복잡한"
+    ],
+    [
+      "master's degree",
+      "석사 학위"
+    ],
+    [
+      "doctoral degree",
+      "박사 학위"
+    ],
+    [
+      "electrical engineering",
+      "전기 공학"
+    ],
+    [
+      "demonstrate",
+      "시연하다"
+    ],
+    [
+      "monumental",
+      "기념비적인"
+    ],
+    [
+      "contribution",
+      "공헌"
+    ]
+  ],
+  "summary": {
+    "en": "Douglas Carl Engelbart, who demonstrated the computer mouse in 1968, changed how people interact with computers and won major awards.",
+    "ko": "1968년에 컴퓨터 마우스를 시연한 Douglas Carl Engelbart는 사람과 컴퓨터가 상호 작용하는 방식을 바꾸었고 큰 상들을 받았다."
+  },
+  "writing": {
+    "en": "He received the Turing Award in 1997 and another award three years later.",
+    "ko": "그는 1997년에 Turing Award를 받았고 3년 후에 또 다른 상을 받았다."
+  },
+  "tip": "인물 내용 일치 문제는 선택지 순서가 글 순서와 같아요. 숫자(연도)가 나오면 그 연도에 '무엇'이 짝지어져 있는지 확인하세요. 이 문항은 1997년이라는 숫자는 본문과 같지만 상 이름을 바꿔치기했고, three years later를 놓치면 틀리기 쉬워요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 26번 정답은?",
+      "⑤ '1997년에 National Medal of Technology를 수상했다'예요. 1997년에 받은 상은 Turing Award이고, National Medal of Technology는 3년 후에 받았어요."
+    ],
+    [
+      "2026 10월 고1 영어 26번은 어떤 유형인가요?",
+      "글의 내용과 일치하지 않는 것을 고르는 2점 내용 일치 문항이에요. 컴퓨터 마우스를 시연한 Douglas Carl Engelbart의 일생을 다뤄요."
+    ],
+    [
+      "④ 1968년 시연은 왜 맞나요?",
+      "In the 1968 Fall Joint Computer Conference … he demonstrated his technologies including the computer mouse라고 나와요. 1968년에 마우스를 포함한 기술을 시연한 게 맞아요."
+    ]
+  ]
+}

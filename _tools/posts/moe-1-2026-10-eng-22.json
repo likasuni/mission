@@ -1,0 +1,195 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 22,
+  "type": "요지",
+  "points": 2,
+  "answer": 5,
+  "topic": "시간을 인식하고 사용하는 방식은 자연이 아니라 사회가 만든 것이다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 22번",
+    "2026 10월 고1 영어 22번 해설",
+    "고1 10월 모의고사 22번 정답",
+    "고1 모의고사 글의 요지",
+    "시간 인식 사회적 산물",
+    "The Seven Day Circle 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 22번은 일주일, 9시~5시 근무, 은퇴 나이 같은 시간 관습이 자연이 정한 것이 아니라 사회가 만든 것이라는 글이에요. Instead 뒤의 how we perceive and understand time is … shaped by tradition and cultural norms가 요지예요. 정답은 ⑤ 시간을 인식하고 사용하는 방식은 사회적인 산물이다예요.",
+  "flow": [
+    [
+      "주장",
+      "사회학자들은 시간의 인식과 사용이 자연의 기본 속성도, 개인의 심리 현상도 아니라고 본다."
+    ],
+    [
+      "핵심",
+      "시간을 인식하고 이해하는 방식은 상당 부분 전통과 문화 규범이 만든다."
+    ],
+    [
+      "사례",
+      "Zerubavel은 시간의 기본 단위인 '주(week)'가 문화마다 다른 사회적 발명품임을 보여 준다."
+    ],
+    [
+      "질문",
+      "왜 9시~5시 근무, 주말 휴무, 월말 납부, 65세 은퇴가 당연할까?"
+    ],
+    [
+      "결론",
+      "이런 숫자와 패턴은 자연이 아니라 사회가 만든 것이고, 우리는 그것을 '정상'으로 받아들인다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Instead, how we perceive and understand time is to a large degree shaped by tradition and cultural norms.",
+      "ko": "오히려, 우리가 시간을 인식하고 이해하는 방식은 상당 부분 전통과 문화 규범에 의해 형성된다.",
+      "note": "not just A, nor B 다음 Instead로 진짜 말하고 싶은 내용이 나와요. 이 문장이 요지예요."
+    },
+    {
+      "en": "… the week, a fundamental unit of time, is a social invention that varies across cultures, influencing how people structure their activities and rhythms of life.",
+      "ko": "… 시간의 기본 단위인 주(week)가 문화마다 다른 사회적 발명품이며, 사람들이 활동과 생활 리듬을 구성하는 방식에 영향을 준다.",
+      "note": "social invention(사회적 발명품)이라는 말이 ⑤의 '사회적인 산물'과 바로 연결돼요."
+    },
+    {
+      "en": "These numbers and patterns aren't really dictated by nature or any essential human characteristic, but are rather social creations that we internalize and come to accept as \"normal.\"",
+      "ko": "이러한 숫자와 패턴은 실제로 자연이나 본질적인 인간 특성에 의해 정해진 것이 아니라, 오히려 우리가 내면화하고 '정상'으로 받아들이게 된 사회적 창조물이다.",
+      "note": "마지막 문장이 not A but B로 요지를 다시 정리해요. social creations = 사회적 산물이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "시간은 희소한 자원이며 기회비용을 갖는다.",
+      "ko": "시간의 희소성",
+      "why": "시간이 부족하다거나 기회비용 이야기는 없어요. 경제 상식으로 고르기 쉬운 함정이에요."
+    },
+    {
+      "en": "시간의 절대성은 자연 과학의 전제 조건이다.",
+      "ko": "시간의 절대성",
+      "why": "글은 오히려 시간 관습이 자연이 정한 것이 아니라고 해요. 방향이 반대예요."
+    },
+    {
+      "en": "시간의 효율적 활용은 삶에 균형을 가져다준다.",
+      "ko": "효율적 시간 활용",
+      "why": "시간을 잘 쓰는 방법이나 삶의 균형은 다루지 않아요."
+    },
+    {
+      "en": "시간의 흐름은 심리 상태에 따라 다르게 인식된다.",
+      "ko": "심리에 따른 시간 인식",
+      "why": "첫 문장에서 시간이 '개인 경험의 심리 현상'만은 아니라고 부정했어요. 본문 단어(psychological)를 쓴 함정이에요."
+    },
+    {
+      "en": "시간을 인식하고 사용하는 방식은 사회적인 산물이다.",
+      "ko": "시간 인식·사용 = 사회적 산물",
+      "why": "정답. shaped by tradition and cultural norms, social invention, social creations가 모두 이 내용을 말해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "not just A, nor B / Instead",
+      "ex": "… our perception and usage of time are not just basic properties of nature, …, nor are they simply psychological phenomena of individual experience. Instead, …",
+      "d": "nor 뒤는 도치(are they)예요. 두 가지를 부정한 뒤 Instead로 진짜 주장이 나오는 구조예요."
+    },
+    {
+      "t": "의문사절 주어 (how + S + V)",
+      "ex": "Instead, how we perceive and understand time is to a large degree shaped by tradition and cultural norms.",
+      "d": "how ~ time 전체가 주어라서 단수 동사 is를 써요. to a large degree(상당 부분)는 중간에 끼어든 부사구예요."
+    },
+    {
+      "t": "동격 콤마 + 분사구문",
+      "ex": "… the week, a fundamental unit of time, is a social invention that varies across cultures, influencing how people structure their activities …",
+      "d": "a fundamental unit of time은 the week을 설명하는 동격이에요. influencing은 앞 내용의 결과를 덧붙이는 분사구문이에요."
+    },
+    {
+      "t": "not A but rather B",
+      "ex": "These numbers and patterns aren't really dictated by nature … , but are rather social creations that we internalize …",
+      "d": "'A가 아니라 오히려 B'. 강조점은 B(social creations)예요. 요지 문제에서 가장 중요한 구조예요."
+    }
+  ],
+  "vocab": [
+    [
+      "sociologist",
+      "사회학자"
+    ],
+    [
+      "perception",
+      "인식"
+    ],
+    [
+      "usage",
+      "사용"
+    ],
+    [
+      "property",
+      "속성"
+    ],
+    [
+      "phenomenon (pl. phenomena)",
+      "현상"
+    ],
+    [
+      "perceive",
+      "인식하다"
+    ],
+    [
+      "to a large degree",
+      "상당 부분"
+    ],
+    [
+      "cultural norm",
+      "문화 규범"
+    ],
+    [
+      "demonstrate",
+      "보여 주다, 입증하다"
+    ],
+    [
+      "fundamental",
+      "기본적인, 근본적인"
+    ],
+    [
+      "invention",
+      "발명품"
+    ],
+    [
+      "vary",
+      "다르다, 달라지다"
+    ],
+    [
+      "retirement age",
+      "은퇴 나이"
+    ],
+    [
+      "dictate",
+      "지시하다, 정하다"
+    ],
+    [
+      "essential",
+      "본질적인"
+    ],
+    [
+      "internalize",
+      "내면화하다"
+    ]
+  ],
+  "summary": {
+    "en": "The way we perceive and use time, such as the week, work hours, and retirement age, is not set by nature but created by society and culture.",
+    "ko": "주, 근무 시간, 은퇴 나이처럼 우리가 시간을 인식하고 사용하는 방식은 자연이 정한 것이 아니라 사회와 문화가 만든 것이다."
+  },
+  "writing": {
+    "en": "How we perceive and understand time is shaped by tradition and cultural norms.",
+    "ko": "우리가 시간을 인식하고 이해하는 방식은 전통과 문화 규범에 의해 형성된다."
+  },
+  "tip": "요지 문제에서 not A, nor B 다음에 Instead가 나오면 그 뒤가 답이에요. 첫 문장에서 부정한 내용(자연의 속성, 심리 현상)을 담은 선택지는 오히려 오답이니 먼저 지우세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 22번 정답은?",
+      "⑤ 시간을 인식하고 사용하는 방식은 사회적인 산물이다예요."
+    ],
+    [
+      "2026 10월 고1 22번은 어떤 유형인가요?",
+      "글의 요지를 고르는 2점 문항이에요. 시간 관습이 사회가 만든 것이라는 사회학 지문이에요."
+    ],
+    [
+      "④ 심리 상태에 따라 다르게 인식된다가 오답인 이유는?",
+      "글은 시간 인식이 개인의 심리 현상만은 아니라고 먼저 부정해요. 핵심은 전통과 문화 규범, 즉 사회가 만든다는 점이에요."
+    ]
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 4,
+  "topic": "2021~2025년 유럽 연합 신차 판매 중 배터리 전기차·플러그인 하이브리드 점유율",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 25번",
+    "2026 10월 고1 영어 25번 해설",
+    "고1 10월 모의고사 25번 정답",
+    "고1 모의고사 도표",
+    "battery-electric plug-in hybrid 도표",
+    "유럽 연합 전기차 점유율 영어 도표"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 25번은 2021~2025년 유럽 연합에서 팔린 신차 중 배터리 전기차와 플러그인 하이브리드의 점유율을 보여 주는 누적 막대 도표 문항이에요. 2023년 배터리 전기차(15%)는 플러그인 하이브리드(7%)의 두 배(14%)보다 높은데 '두 배에 못 미쳤다'고 한 ④가 틀렸어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "도표",
+      "연도별 막대에 배터리 전기차(아래, 회색)와 플러그인 하이브리드(위, 흰색) 점유율이 쌓여 있다. 2021년 9%·9%, 2022년 12%·9%, 2023년 15%·7%, 2024년 14%·7%, 2025년 18%·9%."
+    ],
+    [
+      "①",
+      "플러그인 하이브리드는 매년 10% 미만 (최대 9%) → 일치"
+    ],
+    [
+      "②",
+      "2021년 두 종류 모두 9%로 같음 → 일치"
+    ],
+    [
+      "③",
+      "2022→2023년 플러그인 하이브리드 9%→7% 감소, 배터리 전기차 12%→15% 증가 → 일치"
+    ],
+    [
+      "④",
+      "2023년 배터리 전기차 15%는 플러그인 하이브리드 7%의 두 배(14%)보다 크다 → '두 배 미만'은 불일치"
+    ],
+    [
+      "⑤",
+      "합계 18%→21%→22%→21%→27%. 2024→2025년 +6%p가 가장 큰 증가 → 일치"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In 2023, the share of battery-electric car sales was less than twice that of plug-in hybrid car sales.",
+      "ko": "2023년에 배터리 전기차의 판매 점유율은 플러그인 하이브리드 차 판매 점유율의 두 배에 미치지 못했다.",
+      "note": "2023년: 15% vs 7% × 2 = 14%. 15%가 14%보다 크니 '두 배보다 많다'가 맞아요. less than twice는 틀린 설명이라 ④가 정답이에요."
+    },
+    {
+      "en": "Between 2022 and 2023, the share of plug-in hybrid car sales decreased, while that of battery-electric car sales increased.",
+      "ko": "2022년과 2023년 사이에 플러그인 하이브리드 차의 판매 점유율은 감소했고, 반면 배터리 전기차의 판매 점유율은 증가했다.",
+      "note": "플러그인 하이브리드 9%→7%(감소), 배터리 전기차 12%→15%(증가). 일치해요."
+    },
+    {
+      "en": "The combined share of the two types of car sales showed the largest annual increase from 2024 to 2025.",
+      "ko": "두 유형의 차 판매의 합산된 점유율은 2024년에서 2025년까지 가장 큰 연간 증가를 보였다.",
+      "note": "합계 변화: +3, +1, -1, +6. 2024→2025년(21%→27%)이 가장 커요. 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "In each year, the share of plug-in hybrid car sales remained below 10%.",
+      "ko": "해마다 플러그인 하이브리드 차의 판매 점유율은 10% 미만에 머물렀다.",
+      "why": "일치. 플러그인 하이브리드는 9%, 9%, 7%, 7%, 9%로 모두 10% 미만이에요."
+    },
+    {
+      "en": "In 2021, the share of battery-electric car sales was the same as that of plug-in hybrid car sales, each accounting for 9% of new car sales.",
+      "ko": "2021년에 배터리 전기차와 플러그인 하이브리드 차의 판매 점유율이 같았으며, 각각 신차 판매의 9%를 차지했다.",
+      "why": "일치. 2021년 막대는 아래·위 모두 9%예요."
+    },
+    {
+      "en": "Between 2022 and 2023, the share of plug-in hybrid car sales decreased, while that of battery-electric car sales increased.",
+      "ko": "2022년과 2023년 사이에 플러그인 하이브리드는 감소, 배터리 전기차는 증가했다.",
+      "why": "일치. 플러그인 하이브리드 9%→7%, 배터리 전기차 12%→15%예요."
+    },
+    {
+      "en": "In 2023, the share of battery-electric car sales was less than twice that of plug-in hybrid car sales.",
+      "ko": "2023년에 배터리 전기차 점유율은 플러그인 하이브리드 점유율의 두 배에 미치지 못했다.",
+      "why": "정답(불일치). 15%는 7%의 두 배인 14%보다 커요. '두 배보다 많았다'가 맞아요."
+    },
+    {
+      "en": "The combined share of the two types of car sales showed the largest annual increase from 2024 to 2025.",
+      "ko": "두 유형의 합산 점유율은 2024년에서 2025년까지 가장 큰 연간 증가를 보였다.",
+      "why": "일치. 21%→27%로 6%p 늘어서 다른 해(+3, +1, -1)보다 증가 폭이 가장 커요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "that are + 형용사 (관계대명사 주격)",
+      "ex": "The graph above shows the shares of new cars sold that are battery-electric and plug-in hybrid in the European Union from 2021 to 2025.",
+      "d": "sold는 new cars를 꾸미는 과거분사, that are ~도 new cars를 꾸며요. '팔린 신차 중 배터리 전기차와 플러그인 하이브리드인 것들의 점유율'."
+    },
+    {
+      "t": "remain + 보어",
+      "ex": "In each year, the share of plug-in hybrid car sales remained below 10%.",
+      "d": "remain은 '~인 상태로 남다'. below 10%는 '10% 미만'. 매년 확인해야 하는 문장이에요."
+    },
+    {
+      "t": "each accounting for ~ (독립분사구문)",
+      "ex": "… was the same as that of plug-in hybrid car sales, each accounting for 9% of new car sales.",
+      "d": "each가 분사구문의 주어예요. account for는 '(비율을) 차지하다'. that은 the share를 받아요."
+    },
+    {
+      "t": "배수 비교 less than twice that of",
+      "ex": "the share of battery-electric car sales was less than twice that of plug-in hybrid car sales.",
+      "d": "'~의 두 배 미만'. 직접 곱해서 비교하세요: 7 × 2 = 14 < 15라서 이 문장은 틀렸어요."
+    }
+  ],
+  "vocab": [
+    [
+      "share",
+      "점유율, 비율"
+    ],
+    [
+      "battery-electric",
+      "배터리 전기(차)의"
+    ],
+    [
+      "plug-in hybrid",
+      "플러그인 하이브리드(차)"
+    ],
+    [
+      "the European Union",
+      "유럽 연합"
+    ],
+    [
+      "remain",
+      "~인 채로 남다"
+    ],
+    [
+      "below",
+      "~ 미만의, ~ 아래의"
+    ],
+    [
+      "account for",
+      "(비율을) 차지하다"
+    ],
+    [
+      "decrease",
+      "감소하다"
+    ],
+    [
+      "increase",
+      "증가하다; 증가"
+    ],
+    [
+      "twice",
+      "두 배"
+    ],
+    [
+      "combined",
+      "합쳐진, 합산된"
+    ],
+    [
+      "annual",
+      "연간의, 해마다의"
+    ],
+    [
+      "rounded figure",
+      "반올림한 수치"
+    ]
+  ],
+  "summary": {
+    "en": "From 2021 to 2025, battery-electric cars generally grew in share of new car sales in the EU, while plug-in hybrids stayed below 10%.",
+    "ko": "2021년부터 2025년까지 유럽 연합 신차 판매에서 배터리 전기차의 점유율은 대체로 늘었고, 플러그인 하이브리드는 10% 미만에 머물렀다."
+  },
+  "writing": {
+    "en": "In 2025, battery-electric cars made up twice as large a share as plug-in hybrids.",
+    "ko": "2025년에 배터리 전기차는 플러그인 하이브리드의 두 배의 점유율을 차지했다."
+  },
+  "tip": "누적 막대 도표는 막대 꼭대기가 '합계'라는 점을 기억하세요. 각 칸의 숫자를 더해 합계(18, 21, 22, 21, 27)를 먼저 적어 두면 ⑤ 같은 합계 문장이 쉽게 풀려요. twice, three times 같은 배수 표현은 꼭 곱셈으로 확인하세요.",
+  "note": "④처럼 15와 7은 언뜻 보면 '두 배 정도'라서 넘어가기 쉬워요. 배수 문장이 나오면 꼭 7 × 2 = 14처럼 손으로 계산해서 확인하세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 25번 정답은?",
+      "④예요. 2023년 배터리 전기차 점유율(15%)은 플러그인 하이브리드(7%)의 두 배인 14%보다 커서 '두 배에 미치지 못했다'는 설명이 도표와 맞지 않아요."
+    ],
+    [
+      "2026 10월 고1 영어 25번은 어떤 유형인가요?",
+      "도표의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. 유럽 연합의 배터리 전기차·플러그인 하이브리드 신차 점유율 누적 막대 도표예요."
+    ],
+    [
+      "⑤ 합산 점유율 문장은 왜 맞나요?",
+      "두 칸을 더한 합계는 18%, 21%, 22%, 21%, 27%예요. 2024년에서 2025년이 6%p로 가장 크게 늘어서 일치해요."
+    ]
+  ]
+}

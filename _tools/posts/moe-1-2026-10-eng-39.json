@@ -1,0 +1,201 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 39,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 2,
+  "topic": "잠수부는 물의 압력과 같은 압력으로 공기를 공급받는다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 39번",
+    "2026 10월 고1 영어 39번 해설",
+    "고1 10월 모의고사 39번 정답",
+    "고1 모의고사 문장 삽입",
+    "잠수 수압 diver pressure 지문",
+    "외부 압력 내부 압력 균형"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 39번은 물속에서 잠수부가 압력을 느끼지 않으려면 몸 안팎의 압력을 같게 유지해야 한다는 과학 지문의 문장 삽입 문항이에요. 주어진 문장 뒤에 To achieve this가 바로 이어져야 this가 가리킬 대상이 생겨요. 정답은 ②예요.",
+  "flow": [
+    [
+      "원리",
+      "지표면의 인체는 1제곱미터당 16~18톤의 기압을 받지만, 외부 압력과 폐·공기 공간의 내부 압력이 균형을 이뤄 느끼지 못한다."
+    ],
+    [
+      "문제",
+      "잠수하면 대기압에 더해 물의 압력도 몸에 작용한다."
+    ],
+    [
+      "필요",
+      "물속에서 압력을 느끼지 않으려면 외부와 내부 압력이 같은 상태를 유지해야 한다. (주어진 문장)"
+    ],
+    [
+      "방법",
+      "이를 위해 주변 물의 압력과 같은 압력으로 공기나 호흡용 혼합물을 잠수부에게 공급한다."
+    ],
+    [
+      "예시",
+      "수압은 10미터마다 1바씩 늘어서, 10미터 깊이의 잠수부에게는 2기압의 혼합물이 필요하다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "During dives, in addition to atmospheric pressure, the pressure of the water also acts on the human body.",
+      "ko": "잠수하는 동안에는 대기압 외에 물의 압력 또한 인체에 작용한다.",
+      "note": "물의 압력이 '추가로' 생긴다는 문제 상황이에요. 그러면 '어떻게 해야 하나?'가 다음에 나와야 해요."
+    },
+    {
+      "en": "When submerged underwater, to avoid feeling the pressure of the surrounding environment, it is necessary to maintain the condition of equal external and internal pressure.",
+      "ko": "물속에 잠겼을 때 주변 환경의 압력을 느끼지 않으려면, 외부와 내부 압력이 같은 상태를 유지해야 한다.",
+      "note": "주어진 문장은 해결해야 할 '목표(안팎 압력을 같게)'를 말해요."
+    },
+    {
+      "en": "To achieve this, air or a breathing mixture is supplied to the diver under pressure equal to the pressure applied by the surrounding water.",
+      "ko": "이를 달성하기 위해 공기 또는 호흡용 혼합물이 주변 물이 가하는 압력과 같은 압력으로 잠수부에게 공급된다.",
+      "note": "this가 가리키는 '달성할 목표'가 ② 앞 문장에는 없어요. 주어진 문장의 '안팎 압력을 같게 유지하기'가 this예요. 그래서 ②."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① However, this pressure is not felt because external pressure is balanced by internal pressure … ( ① )",
+      "ko": "압력이 느껴지지 않는 이유 뒤",
+      "why": "아직 잠수 이야기가 나오기 전이에요. 주어진 문장의 '물속에 잠겼을 때'는 During dives 문장 뒤에 와야 자연스러워요."
+    },
+    {
+      "en": "② During dives, in addition to atmospheric pressure, the pressure of the water also acts on the human body. ( ② )",
+      "ko": "물의 압력도 작용한다 뒤, To achieve this 앞",
+      "why": "정답. 물의 압력이 더해짐(문제) → 안팎 압력을 같게 해야 함(목표) → To achieve this(방법)로 이어져요."
+    },
+    {
+      "en": "③ To achieve this, air or a breathing mixture is supplied to the diver … ( ③ )",
+      "ko": "공기 공급 방법 뒤",
+      "why": "방법(To achieve this) 뒤에 목표가 나오면 순서가 거꾸로예요. 게다가 this가 가리킬 '목표'가 그 앞에 없어 연결이 어색해져요."
+    },
+    {
+      "en": "④ Water pressure increases proportionally with depth. ( ④ )",
+      "ko": "수압이 깊이에 비례 뒤",
+      "why": "이 부분은 수압이 깊이에 따라 커진다는 수치 설명이 이어지는 중이라 끼어들 자리가 아니에요."
+    },
+    {
+      "en": "⑤ It increases by 1 bar for every 10 meters. ( ⑤ )",
+      "ko": "10미터마다 1바 뒤",
+      "why": "It follows that(당연히 ~이다)은 바로 앞의 '10미터마다 1바'에서 결론을 끌어내요. 사이에 다른 문장이 들어가면 연결이 끊겨요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "접속사 + 분사 (When submerged)",
+      "ex": "When submerged underwater, to avoid feeling the pressure …",
+      "d": "When (we are) submerged에서 주어와 be동사가 빠진 형태예요. '물속에 잠겼을 때'."
+    },
+    {
+      "t": "가주어 it ~ to V",
+      "ex": "it is necessary to maintain the condition of equal external and internal pressure.",
+      "d": "it은 가주어, to maintain 이하가 진주어예요. '~을 유지하는 것이 필요하다'."
+    },
+    {
+      "t": "avoid + -ing",
+      "ex": "to avoid feeling the pressure of the surrounding environment",
+      "d": "avoid는 동명사를 목적어로 써요. avoid to feel(×)."
+    },
+    {
+      "t": "과거분사 후치 수식",
+      "ex": "under pressure equal to the pressure applied by the surrounding water.",
+      "d": "applied by ~가 뒤에서 the pressure를 꾸며요. '주변 물에 의해 가해지는 압력'."
+    },
+    {
+      "t": "It follows that ~",
+      "ex": "It follows that a diver at a depth of 10 meters experiences a pressure of 2 bar",
+      "d": "'(앞 내용으로 보아) 당연히 ~이다'. 앞 문장에서 결론을 이끌어 낼 때 써요."
+    }
+  ],
+  "vocab": [
+    [
+      "submerge",
+      "물속에 잠기다"
+    ],
+    [
+      "surrounding",
+      "주변의"
+    ],
+    [
+      "maintain",
+      "유지하다"
+    ],
+    [
+      "external",
+      "외부의"
+    ],
+    [
+      "internal",
+      "내부의"
+    ],
+    [
+      "constant",
+      "일정한, 끊임없는"
+    ],
+    [
+      "air pressure",
+      "기압"
+    ],
+    [
+      "balance",
+      "균형을 맞추다"
+    ],
+    [
+      "cavity",
+      "(빈) 공간"
+    ],
+    [
+      "atmospheric",
+      "대기의"
+    ],
+    [
+      "breathing mixture",
+      "호흡용 혼합 기체"
+    ],
+    [
+      "supply",
+      "공급하다"
+    ],
+    [
+      "apply",
+      "(힘을) 가하다"
+    ],
+    [
+      "proportionally",
+      "비례하여"
+    ],
+    [
+      "depth",
+      "깊이"
+    ],
+    [
+      "stabilize",
+      "안정시키다"
+    ]
+  ],
+  "summary": {
+    "en": "To avoid feeling water pressure, divers are given air at a pressure equal to that of the surrounding water, which rises by 1 bar every 10 meters.",
+    "ko": "잠수부가 수압을 느끼지 않도록 주변 물과 같은 압력으로 공기를 공급하며, 이 압력은 10미터마다 1바씩 커진다."
+  },
+  "writing": {
+    "en": "Divers stay safe by keeping the pressure inside and outside their bodies equal.",
+    "ko": "잠수부는 몸 안팎의 압력을 같게 유지함으로써 안전을 지킨다."
+  },
+  "tip": "To achieve this, This way, For this reason처럼 this가 들어간 표현은 바로 앞 문장에 this가 가리킬 내용이 있어야 해요. 각 번호 앞 문장을 this 자리에 넣어 봐서 말이 안 되는 곳이 바로 주어진 문장 자리예요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 39번 정답은?",
+      "②예요. 주어진 문장의 '안팎 압력을 같게 유지하기'가 다음 문장 To achieve this의 this가 돼요."
+    ],
+    [
+      "2026년 10월 고1 영어 39번은 어떤 유형인가요?",
+      "주어진 문장이 들어갈 곳을 고르는 2점 문장 삽입 문항이에요. 잠수와 수압을 다룬 과학 지문이에요."
+    ],
+    [
+      "⑤ 자리는 왜 안 되나요?",
+      "⑤ 뒤 It follows that 문장은 바로 앞 '10미터마다 1바'에서 '10미터면 2바'라는 결론을 끌어내요. 둘 사이에 다른 문장이 끼면 계산 연결이 끊겨요."
+    ]
+  ],
+  "note": "과학 지문이 나오면 숫자부터 붙잡느라 시간을 쓰는 친구들이 있어요. 문장 삽입은 숫자보다 To achieve this 같은 연결 표현이 답을 알려 주니, 그것부터 찾으라고 지도해요."
+}

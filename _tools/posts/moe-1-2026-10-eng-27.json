@@ -1,0 +1,191 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "2026 Flona Valley 디지털 디톡스 캠프 안내",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 27번",
+    "2026 10월 고1 영어 27번 해설",
+    "고1 10월 모의고사 27번 정답",
+    "고1 모의고사 안내문 일치",
+    "Digital Detox Camp 안내문",
+    "디지털 디톡스 캠프 영어 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 27번은 10~14세 아이들을 위한 디지털 디톡스 캠프 안내문의 내용 불일치 문항이에요. 등록은 캠프 시작 '최소 1주 전'까지 해야 하는데 '2주 전'이라고 한 ④가 틀렸어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "소개",
+      "화면에서 잠시 벗어나도록 10~14세 아이들을 위한 디지털 디톡스 프로그램 제공"
+    ],
+    [
+      "일시·장소",
+      "2026년 11월 27~29일, Flona Valley Park"
+    ],
+    [
+      "프로그램",
+      "하이킹, 낚시, 캠프파이어 요리 등 활동 + 건강한 디지털 습관 워크숍"
+    ],
+    [
+      "등록",
+      "캠프 시작 최소 1주 전까지 온라인 등록, 비용 200달러"
+    ],
+    [
+      "참고",
+      "디지털 기기는 안내 데스크에 맡김, 참가자 전원 수료 메달"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Registration should be made online (www.fvpcamp.org) at least a week before the camp starts.",
+      "ko": "등록은 캠프 시작 최소 1주 전까지 온라인으로(www.fvpcamp.org) 해야 합니다.",
+      "note": "a week = 1주예요. 선택지 ④는 '2주 전'이라 불일치예요."
+    },
+    {
+      "en": "We offer various digital detox programs for children aged 10 to 14.",
+      "ko": "저희는 10세부터 14세 아이들을 위한 다양한 디지털 디톡스 프로그램을 제공합니다.",
+      "note": "①과 일치해요."
+    },
+    {
+      "en": "All participants will receive a medal of completion.",
+      "ko": "모든 참가자들은 수료 메달을 받게 됩니다.",
+      "note": "⑤와 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "10세에서 14세 아이들을 위한 프로그램을 제공한다.",
+      "ko": "대상 나이",
+      "why": "일치. We offer various digital detox programs for children aged 10 to 14."
+    },
+    {
+      "en": "Flona Valley Park에서 진행된다.",
+      "ko": "장소",
+      "why": "일치. When & Where에 Flona Valley Park가 있어요."
+    },
+    {
+      "en": "하이킹과 낚시 등의 활동이 있다.",
+      "ko": "활동",
+      "why": "일치. Activities: hiking, fishing, campfire cooking, and more"
+    },
+    {
+      "en": "등록은 캠프 시작 2주 전까지 해야 한다.",
+      "ko": "등록 기한",
+      "why": "정답(불일치). at least a week before the camp starts — 최소 1주 전까지예요."
+    },
+    {
+      "en": "모든 참가자들은 수료 메달을 받는다.",
+      "ko": "메달",
+      "why": "일치. All participants will receive a medal of completion."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "want + 목적어 + to V",
+      "ex": "Do you want your kids to take a break from screens?",
+      "d": "'목적어가 ~하기를 원하다'. take a break from은 '~에서 잠시 쉬다'."
+    },
+    {
+      "t": "과거분사 aged",
+      "ex": "We offer various digital detox programs for children aged 10 to 14.",
+      "d": "aged 10 to 14가 뒤에서 children을 꾸며요. '10세에서 14세인 아이들'."
+    },
+    {
+      "t": "help + 목적어 + 동사원형",
+      "ex": "Help them unplug from their digital devices at our fun camp!",
+      "d": "help 뒤에는 to V와 동사원형 둘 다 올 수 있어요. 여기서는 동사원형 unplug가 왔어요."
+    },
+    {
+      "t": "should be p.p. / at least",
+      "ex": "Registration should be made online (www.fvpcamp.org) at least a week before the camp starts.",
+      "d": "조동사 수동태 '~되어야 한다'. at least는 '최소한'. before절은 시간 부사절이라 미래라도 현재형 starts를 써요."
+    }
+  ],
+  "vocab": [
+    [
+      "digital detox",
+      "디지털 디톡스(디지털 기기 사용 줄이기)"
+    ],
+    [
+      "take a break",
+      "잠시 쉬다"
+    ],
+    [
+      "various",
+      "다양한"
+    ],
+    [
+      "aged",
+      "~세의"
+    ],
+    [
+      "unplug",
+      "(전원·연결을) 끊다, 벗어나다"
+    ],
+    [
+      "device",
+      "기기"
+    ],
+    [
+      "workshop",
+      "워크숍, 연수회"
+    ],
+    [
+      "habit",
+      "습관"
+    ],
+    [
+      "registration",
+      "등록"
+    ],
+    [
+      "at least",
+      "최소한"
+    ],
+    [
+      "fee",
+      "요금, 비용"
+    ],
+    [
+      "participant",
+      "참가자"
+    ],
+    [
+      "drop off",
+      "맡기다, 내려놓다"
+    ],
+    [
+      "reception",
+      "안내 데스크"
+    ],
+    [
+      "completion",
+      "수료, 완료"
+    ]
+  ],
+  "summary": {
+    "en": "The Flona Valley Digital Detox Camp helps children aged 10 to 14 take a break from screens through outdoor activities and workshops.",
+    "ko": "Flona Valley 디지털 디톡스 캠프는 야외 활동과 워크숍으로 10~14세 아이들이 화면에서 잠시 벗어나도록 돕는다."
+  },
+  "writing": {
+    "en": "Registration must be completed at least a week before the camp.",
+    "ko": "등록은 캠프 최소 1주 전까지 마쳐야 한다."
+  },
+  "tip": "안내문 문제는 숫자(나이, 날짜, 기한, 요금)부터 대조하세요. 이 문항은 a week(1주)를 '2주'로 바꾼 ④가 답이에요. a week처럼 숫자가 영어 단어로 쓰여 있으면 놓치기 쉬우니 천천히 읽으세요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 27번 정답은?",
+      "④ '등록은 캠프 시작 2주 전까지 해야 한다'예요. 안내문에는 at least a week before the camp starts, 즉 최소 1주 전까지라고 나와 있어요."
+    ],
+    [
+      "2026 10월 고1 영어 27번은 어떤 유형인가요?",
+      "안내문의 내용과 일치하지 않는 것을 고르는 2점 실용문 문항이에요. 디지털 디톡스 캠프 안내문이에요."
+    ],
+    [
+      "⑤ 수료 메달은 왜 맞나요?",
+      "Note에 All participants will receive a medal of completion이라고 나와요. 참가자 모두 메달을 받으니 일치해요."
+    ]
+  ]
+}

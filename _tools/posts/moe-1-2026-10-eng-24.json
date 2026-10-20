@@ -1,0 +1,200 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 24,
+  "type": "제목",
+  "points": 2,
+  "answer": 4,
+  "topic": "미래에 대한 긍정적 환상은 오히려 행동을 막는다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 24번",
+    "2026 10월 고1 영어 24번 해설",
+    "고1 10월 모의고사 24번 정답",
+    "고1 모의고사 제목",
+    "positive fantasies 지문",
+    "긍정적 환상과 목표 달성 영어 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 24번은 목표를 이룬 미래를 달콤하게 상상하기만 하면 오히려 노력이 줄어든다는 내용의 제목 문항이에요. 환상이 '때 이른 성취감'을 주어 행동할 필요를 느끼지 못하게 한다는 흐름을 잡으면 돼요. 정답은 ④예요.",
+  "flow": [
+    [
+      "문제 제기",
+      "목표에 대한 상상은 그것을 이루는 데 필요한 일상의 현실과 동떨어져 있을 때가 있다."
+    ],
+    [
+      "근거(연구)",
+      "미래에 대한 긍정적 환상은 거짓되고 때 이른 성취감을 줘서 목표에 노력을 '덜' 들이게 할 수 있다."
+    ],
+    [
+      "부연",
+      "우리는 목표를 낭만화하며, 새로운 행동을 삶에 들이는 복잡함과 어려움을 얼버무린다."
+    ],
+    [
+      "결론",
+      "긍정적 미래를 상상하면 지금 여기서 그 미래를 즐기게 되어, 행동할 필요가 생기지 않는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In fact, research even suggests that positive fantasies about our future can lead us to put less effort into our goals because our fantasies provide us with a false and premature sense of accomplishment.",
+      "ko": "실제로, 연구는 심지어 우리의 환상이 우리에게 거짓되고 때 이른 성취감을 주기 때문에 미래에 대한 긍정적 환상이 우리가 목표에 노력을 '덜' 기울이게 할 수 있다는 것을 시사한다.",
+      "note": "긍정적 환상 → 노력 감소. 기울임체 less가 글쓴이가 강조하는 핵심이에요."
+    },
+    {
+      "en": "As one study nicely summed it up, fantasizing about a positive future \"seduces a person to mentally enjoy the desired future in the here and now\"",
+      "ko": "한 연구가 잘 요약했듯이, 긍정적인 미래에 대해 환상을 품는 것은 \"사람을 현혹시켜 원하는 미래를 지금 여기에서 머릿속으로 즐기게 한다.\"",
+      "note": "머릿속으로 이미 미래를 즐기니 실제로 움직일 이유가 사라진다는 뜻이에요. ④의 Fantasizing About the Future와 연결돼요."
+    },
+    {
+      "en": "— and because we don't reflect on why our fantasy is not yet our future, \"a necessity to act is not induced.\"",
+      "ko": "그래서 우리가 우리의 환상이 아직 우리의 미래가 아닌 '이유'에 대해 돌아보지 않기 때문에 \"행동해야 할 필요가 유발되지 않는다.\"",
+      "note": "'행동할 필요가 생기지 않는다' = ④의 A Barrier to Action(행동에 대한 장벽)이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Love Yourself to Better Your Future!",
+      "ko": "더 나은 미래를 위해 자신을 사랑하라!",
+      "why": "fall in love with가 나오지만 '목표에 대한 상상'과 사랑에 빠지는 거예요. 자기 사랑을 권하는 글이 아니에요."
+    },
+    {
+      "en": "When an Ambitious Goal Brings Stress",
+      "ko": "야심 찬 목표가 스트레스를 가져올 때",
+      "why": "글은 스트레스가 아니라 오히려 '때 이른 만족감'이 문제라고 말해요."
+    },
+    {
+      "en": "How Can We Plan Good Daily Routines?",
+      "ko": "우리는 어떻게 좋은 일과를 계획할 수 있을까?",
+      "why": "day-to-day, daily가 나오지만 일과를 짜는 방법은 다루지 않아요."
+    },
+    {
+      "en": "Fantasizing About the Future: A Barrier to Action",
+      "ko": "미래에 대한 환상: 행동에 대한 장벽",
+      "why": "정답. 긍정적 환상이 성취감을 미리 줘서 노력과 행동을 막는다는 글 전체 내용과 맞아요."
+    },
+    {
+      "en": "Too Many Goals, Too Little Time: A Recipe for Failure",
+      "ko": "너무 많은 목표, 너무 적은 시간: 실패의 지름길",
+      "why": "목표의 개수나 시간 부족 이야기는 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "what it will take to V",
+      "ex": "… the idea of a goal is disconnected from the daily reality of what it will take to achieve it.",
+      "d": "it takes ~ to V(~하는 데 …이 필요하다)가 what절로 들어간 형태예요. '그것을 이루는 데 필요한 것'으로 읽어요."
+    },
+    {
+      "t": "분사구문 + 간접의문문",
+      "ex": "We fall in love with the idea of a goal, pushing out of mind how different our day-to-day will need to be for us to make it happen.",
+      "d": "pushing ~은 '~하면서'. push A out of mind에서 목적어(how different … 간접의문문)가 길어서 뒤로 갔어요. for us는 to make의 의미상 주어예요."
+    },
+    {
+      "t": "lead + 목적어 + to V / provide A with B",
+      "ex": "positive fantasies about our future can lead us to put less effort into our goals because our fantasies provide us with a false and premature sense of accomplishment.",
+      "d": "lead A to V는 'A가 ~하게 만들다', provide A with B는 'A에게 B를 주다'. 두 구문이 한 문장에 함께 나와요."
+    },
+    {
+      "t": "seduce + 목적어 + to V / reflect on + 의문사절",
+      "ex": "\"seduces a person to mentally enjoy the desired future in the here and now\" — and because we don't reflect on why our fantasy is not yet our future …",
+      "d": "seduce A to V는 'A를 현혹시켜 ~하게 하다'. reflect on 뒤에 why절(간접의문문, 주어+동사 어순)이 왔어요."
+    }
+  ],
+  "vocab": [
+    [
+      "disconnected",
+      "동떨어진, 단절된"
+    ],
+    [
+      "achieve",
+      "이루다, 달성하다"
+    ],
+    [
+      "push A out of mind",
+      "A를 생각에서 밀어내다"
+    ],
+    [
+      "day-to-day",
+      "일상"
+    ],
+    [
+      "fantasy",
+      "환상, 공상"
+    ],
+    [
+      "premature",
+      "때 이른, 시기상조의"
+    ],
+    [
+      "accomplishment",
+      "성취"
+    ],
+    [
+      "romanticize",
+      "낭만적으로 생각하다, 미화하다"
+    ],
+    [
+      "gloss over",
+      "~에 대해 얼버무리고 넘어가다"
+    ],
+    [
+      "intricacy",
+      "복잡함"
+    ],
+    [
+      "integrate",
+      "통합하다, 들이다"
+    ],
+    [
+      "sum up",
+      "요약하다"
+    ],
+    [
+      "seduce",
+      "현혹시키다"
+    ],
+    [
+      "in the here and now",
+      "지금 여기에서"
+    ],
+    [
+      "reflect on",
+      "~을 돌아보다"
+    ],
+    [
+      "necessity",
+      "필요"
+    ],
+    [
+      "induce",
+      "유발하다"
+    ],
+    [
+      "barrier",
+      "장벽"
+    ]
+  ],
+  "summary": {
+    "en": "Positive fantasies about a goal give us a false sense of accomplishment, so they can reduce our effort and keep us from taking action.",
+    "ko": "목표에 대한 긍정적 환상은 거짓된 성취감을 주어서 노력을 줄이고 행동하지 못하게 만들 수 있다."
+  },
+  "writing": {
+    "en": "Dreaming about success can make us feel we have already succeeded.",
+    "ko": "성공을 꿈꾸는 것은 우리가 이미 성공한 것처럼 느끼게 할 수 있다."
+  },
+  "tip": "제목 문제는 글의 결론을 짧게 바꿔 말한 선택지를 찾으면 돼요. 이 글의 결론은 마지막 인용문 \"a necessity to act is not induced\"(행동할 필요가 생기지 않는다)예요. 이것을 A Barrier to Action으로 바꿔 쓴 ④가 답이에요. daily, goal처럼 본문 단어만 겹치는 ③⑤는 내용을 확인하세요.",
+  "note": "\"긍정적으로 상상하면 다 이루어진다\"는 말과 반대되는 글이라 더 재미있어요. 목표를 꿈꾸는 데서 끝내지 말고, 오늘 할 일 하나를 정해서 바로 해 보는 게 이 글이 주는 공부 팁이에요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 24번 정답은?",
+      "④ Fantasizing About the Future: A Barrier to Action(미래에 대한 환상: 행동에 대한 장벽)이에요."
+    ],
+    [
+      "2026 10월 고1 영어 24번은 어떤 유형인가요?",
+      "글의 제목을 고르는 2점 문항이에요. 미래에 대한 긍정적 환상이 오히려 노력과 행동을 줄인다는 지문이에요."
+    ],
+    [
+      "② When an Ambitious Goal Brings Stress가 오답인 이유는?",
+      "글은 목표가 스트레스를 준다고 하지 않아요. 오히려 환상이 거짓 성취감을 줘서 편안하게 만들고, 그래서 행동하지 않게 된다는 내용이에요."
+    ]
+  ]
+}

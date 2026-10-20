@@ -1,0 +1,184 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 19,
+  "type": "심경",
+  "points": 2,
+  "answer": 1,
+  "topic": "방학 전날 신났던 Rafe가 여름 학교에 가야 한다는 말을 듣고 실망하다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 19번",
+    "2026 10월 고1 영어 19번 해설",
+    "고1 10월 모의고사 19번 정답",
+    "고1 모의고사 심경 변화",
+    "excited disappointed 심경",
+    "summer school 지문"
+  ],
+  "lead": "2026년 10월 고1 모의고사 영어 19번은 방학을 앞두고 들떠 있던 Rafe가 실험 보고서를 안 내서 여름 학교에 가야 한다는 말을 듣는 이야기예요. 앞부분의 couldn't wait, practically danced와 뒷부분의 hit me like cold water, the last thing I wanted가 심경을 보여 줘요. 정답은 ① excited → disappointed예요.",
+  "flow": [
+    [
+      "배경",
+      "여름 방학 전 마지막 날, Rafe는 몇 달간의 퀴즈와 과제를 끝내고 빨리 떠나고 싶다."
+    ],
+    [
+      "들뜬 기분",
+      "사물함을 정리하며 거의 춤을 출 정도로 기분이 좋고, 아무것도 기분을 망칠 수 없을 것 같다."
+    ],
+    [
+      "사건",
+      "과학 선생님 Manta 선생님이 최종 실험 보고서를 내지 않았다고 알려 준다."
+    ],
+    [
+      "충격",
+      "찬물을 맞은 듯 충격을 받고, 보충하려면 여름 학교에 나와야 한다는 말을 듣는다."
+    ],
+    [
+      "실망",
+      "여유로운 방학 대신 실험대에서 보내게 되어, 가장 원하지 않던 일이 되어 버렸다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "After months of quizzes and assignments, I couldn't wait to leave everything behind. Could anything be sweeter?",
+      "ko": "몇 달간의 퀴즈와 과제 후에, 나는 모든 것을 뒤로하고 빨리 떠나고 싶었다. 어떤 것이 더 달콤할 수 있을까?",
+      "note": "couldn't wait to(빨리 ~하고 싶었다)와 '이보다 달콤할 수 있을까'는 신나고 들뜬 기분(excited)이에요."
+    },
+    {
+      "en": "I practically danced while cleaning out my locker, and nothing could ruin my mood.",
+      "ko": "나는 사물함을 정리하면서 거의 춤을 추다시피 했고, 어떤 것도 내 기분을 망칠 수 없었다.",
+      "note": "춤출 만큼 기분이 좋은 상태. 처음 심경이 excited라는 것을 확실히 해 줘요."
+    },
+    {
+      "en": "Instead of lazy mornings and endless free time, I'd be spending my vacation at a lab table—the last thing I wanted to do with my precious summer.",
+      "ko": "여유로운 아침과 끝없는 자유 시간 대신에, 나는 실험대에서 방학을 보내게 되겠지. 이것은 내 소중한 여름에 내가 가장 하고 싶지 않은 것이었다.",
+      "note": "the last thing I wanted는 '가장 원하지 않는 것'. 기대가 무너진 실망(disappointed)이에요. 바로 앞 The words hit me like cold water도 같은 신호예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "excited → disappointed",
+      "ko": "신이 난 → 실망한",
+      "why": "정답. 방학 생각에 춤출 만큼 들떴다가, 여름 학교에 가야 해서 가장 원치 않던 방학을 보내게 돼요."
+    },
+    {
+      "en": "satisfied → jealous",
+      "ko": "만족한 → 질투하는",
+      "why": "처음 기분은 비슷하지만, 누군가를 질투하는 장면은 전혀 없어요."
+    },
+    {
+      "en": "nervous → pleased",
+      "ko": "긴장한 → 기쁜",
+      "why": "흐름이 정반대예요. 처음에 들떴고, 나중에 기분이 나빠져요."
+    },
+    {
+      "en": "frustrated → hopeful",
+      "ko": "좌절한 → 희망에 찬",
+      "why": "이것도 방향이 반대예요. 끝부분은 희망이 아니라 실망이에요."
+    },
+    {
+      "en": "indifferent → worried",
+      "ko": "무관심한 → 걱정하는",
+      "why": "처음에 춤출 만큼 신났으니 무관심이 아니에요. 끝도 걱정보다는 기대가 깨진 실망에 가까워요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "can't wait to V",
+      "ex": "I couldn't wait to leave everything behind.",
+      "d": "'~하는 것을 기다릴 수 없다' → '빨리 ~하고 싶다'. 들뜬 심경을 보여 주는 대표 표현이에요."
+    },
+    {
+      "t": "수사의문문",
+      "ex": "Could anything be sweeter?",
+      "d": "'더 달콤한 게 있을 수 있을까?' = '이보다 좋은 건 없다'. 질문 형태지만 강한 긍정이에요."
+    },
+    {
+      "t": "despite + 명사",
+      "ex": "… you haven't turned in your final lab report, despite all my warnings this past month.",
+      "d": "despite는 전치사라 뒤에 명사(구)가 와요. although처럼 절을 쓰지 않아요."
+    },
+    {
+      "t": "the last thing (that) S want",
+      "ex": "… the last thing I wanted to do with my precious summer.",
+      "d": "'가장 ~하고 싶지 않은 것'. last가 '마지막'이 아니라 '가장 ~할 것 같지 않은'이라는 뜻이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "assignment",
+      "과제"
+    ],
+    [
+      "leave ~ behind",
+      "~을 뒤로하다, 두고 떠나다"
+    ],
+    [
+      "practically",
+      "거의, 사실상"
+    ],
+    [
+      "ruin",
+      "망치다"
+    ],
+    [
+      "zip up",
+      "지퍼를 잠그다"
+    ],
+    [
+      "call ~ aside",
+      "~을 따로 부르다"
+    ],
+    [
+      "turn in",
+      "제출하다"
+    ],
+    [
+      "lab report",
+      "실험 보고서"
+    ],
+    [
+      "warning",
+      "경고"
+    ],
+    [
+      "make up for",
+      "~을 보충하다, 만회하다"
+    ],
+    [
+      "attend",
+      "출석하다"
+    ],
+    [
+      "endless",
+      "끝없는"
+    ],
+    [
+      "precious",
+      "소중한"
+    ]
+  ],
+  "summary": {
+    "en": "Rafe was thrilled about summer vacation, but he became disappointed when he learned he had to attend summer school for a missing lab report.",
+    "ko": "Rafe는 여름 방학에 들떠 있었지만, 내지 않은 실험 보고서 때문에 여름 학교에 가야 한다는 것을 알고 실망했다."
+  },
+  "writing": {
+    "en": "The words hit me like cold water.",
+    "ko": "그 말은 찬물을 끼얹듯이 나에게 충격을 줬다."
+  },
+  "tip": "심경 변화는 '사건 전'과 '사건 후'를 나눠서 각각 감정 표현을 하나씩 찾으세요. 이 글은 선생님이 부르는 장면(called me aside)이 경계예요. 앞은 couldn't wait, danced, 뒤는 hit me like cold water, the last thing I wanted예요.",
+  "note": "hit me like cold water나 the last thing I wanted처럼 감정 단어가 직접 안 나와도 심경을 알려 주는 표현들이 있어요. 이런 표현은 따로 모아서 외워 두면 심경 문제가 훨씬 빨라져요.",
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 19번 정답은?",
+      "① excited → disappointed(신이 난 → 실망한)예요. 방학에 들떴다가 여름 학교에 가야 한다는 말에 실망해요."
+    ],
+    [
+      "2026 10월 고1 19번은 어떤 유형인가요?",
+      "글에 드러난 'I'의 심경 변화를 고르는 2점 문항이에요. 방학 전날의 학생 이야기예요."
+    ],
+    [
+      "⑤ indifferent → worried가 오답인 이유는?",
+      "처음에 춤출 만큼 신이 났기 때문에 무관심(indifferent)이 아니에요. 처음 감정부터 맞지 않아요."
+    ]
+  ]
+}
