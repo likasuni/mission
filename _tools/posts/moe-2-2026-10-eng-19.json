@@ -1,0 +1,191 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 19,
+  "type": "심경 변화",
+  "points": 2,
+  "answer": 2,
+  "topic": "학교 축제 무대에서 얼어붙었던 Beryl이 친구의 말을 떠올리고 자신 있게 노래하게 되는 순간",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 19번",
+    "2026 10월 고2 영어 19번 해설",
+    "고2 10월 모의고사 19번 정답",
+    "고2 모의고사 심경 변화",
+    "nervous confident 심경",
+    "무대 공연 긴장 지문"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 19번은 학교 축제 무대에 선 Beryl이 가사를 잊을까 봐 얼어붙었다가, 친구 Naomi의 말을 떠올리고 노래를 시작하면서 점점 자신감을 찾는 이야기예요. 앞부분의 She almost froze와 뒷부분의 each note rang out without hesitation이 감정의 앞뒤를 보여 줘요. 정답은 ② nervous → confident예요.",
+  "flow": [
+    [
+      "상황",
+      "Beryl이 학교 축제에서 노래 공연을 하려고 무대에 서 있고, 연습했던 도입부 멜로디가 흘러나온다."
+    ],
+    [
+      "긴장",
+      "가사를 외웠지만 머릿속에서 모두 사라진 것 같아 거의 얼어붙고, 가사를 잊거나 형편없이 들릴까 걱정한다."
+    ],
+    [
+      "전환",
+      "'무대에 올라가는 것만으로도 용감한 일을 하는 것'이라는 친구 Naomi의 말을 떠올린다."
+    ],
+    [
+      "변화",
+      "깊게 숨을 쉬고 노래를 시작하자, 떨리던 목소리가 리듬을 찾고 어깨의 부담이 사라진다."
+    ],
+    [
+      "결말",
+      "음 하나하나가 거침없이 울려 퍼지고, 그녀는 지금이 자신의 순간임을 깨닫는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "She knew the lyrics by heart, but now that she was here, everything seemed to have faded from her mind. She almost froze.",
+      "ko": "그녀는 가사를 외웠지만, 이곳에 서자 모든 것이 그녀의 머릿속에서 사라져 버린 것 같았다. 그녀는 거의 얼어붙었다.",
+      "note": "머릿속이 하얘지고 얼어붙는 모습이 '긴장한(nervous)' 상태예요. 이어지는 What if I forgot the words?도 같은 걱정이에요."
+    },
+    {
+      "en": "Her voice, shaky at first, soon found its rhythm as she focused. The weight on her shoulders slowly lifted, and the words began to flow more easily.",
+      "ko": "그녀의 목소리는 처음에는 떨렸지만 그녀가 집중함에 따라 곧 그것의 리듬을 찾았다. 그녀의 어깨 위의 중압감은 서서히 사라졌고, 가사는 더 수월하게 흘러나오기 시작했다.",
+      "note": "shaky(떨리는) → found its rhythm(리듬을 찾음). 감정이 바뀌는 바로 그 지점이에요."
+    },
+    {
+      "en": "As she continued singing, each note rang out without hesitation. She realized that this was her moment.",
+      "ko": "그녀가 노래를 계속 부를수록 각각의 음이 거침없이 울려 퍼졌다. 그녀는 지금이 자신의 순간임을 깨달았다.",
+      "note": "without hesitation(망설임 없이), this was her moment가 '자신감 있는(confident)' 마지막 심경이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "bored → excited",
+      "ko": "지루한 → 신이 난",
+      "why": "처음 감정은 지루함이 아니라 얼어붙을 만큼의 긴장이에요."
+    },
+    {
+      "en": "nervous → confident",
+      "ko": "긴장한 → 자신감 있는",
+      "why": "정답. 얼어붙고 가사를 잊을까 걱정하던 Beryl이 망설임 없이 노래하며 '나의 순간'임을 깨달아요."
+    },
+    {
+      "en": "proud → ashamed",
+      "ko": "자랑스러운 → 부끄러운",
+      "why": "방향이 거꾸로예요. 걱정에서 시작해 당당함으로 끝나요."
+    },
+    {
+      "en": "depressed → surprised",
+      "ko": "우울한 → 놀란",
+      "why": "슬프거나 우울한 장면이 아니고, 끝에서도 놀람보다 자신감이 드러나요."
+    },
+    {
+      "en": "curious → disappointed",
+      "ko": "궁금한 → 실망한",
+      "why": "궁금해하는 장면도, 실망하는 결말도 없어요. 공연은 잘 풀려요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "now that + 주어 + 동사",
+      "ex": "… but now that she was here, everything seemed to have faded from her mind.",
+      "d": "now that은 '~이니까, ~하고 보니'. seemed to have faded는 완료부정사로, 주절(seemed)보다 앞서 이미 사라져 버린 것처럼 보였다는 뜻이에요."
+    },
+    {
+      "t": "What if ~? (걱정·가정)",
+      "ex": "What if I forgot the words? What if I sounded awful?",
+      "d": "'~하면 어떡하지?' 하는 불안을 나타내요. 심경 문제에서 긴장·걱정을 알려 주는 대표 표현이에요."
+    },
+    {
+      "t": "삽입된 형용사구",
+      "ex": "Her voice, shaky at first, soon found its rhythm as she focused.",
+      "d": "콤마 사이 shaky at first는 주어 Her voice를 설명해요. 동사는 found이고, as는 '~함에 따라'예요."
+    },
+    {
+      "t": "by + 동명사 (수단)",
+      "ex": "You're doing something brave by just getting up there.",
+      "d": "'그냥 거기 올라가는 것만으로'. by -ing는 '~함으로써'라는 수단을 나타내요."
+    }
+  ],
+  "vocab": [
+    [
+      "performance",
+      "공연"
+    ],
+    [
+      "opening melody",
+      "도입부 멜로디"
+    ],
+    [
+      "tune",
+      "곡조, 선율"
+    ],
+    [
+      "over and over",
+      "반복해서"
+    ],
+    [
+      "lyrics",
+      "가사"
+    ],
+    [
+      "by heart",
+      "외워서"
+    ],
+    [
+      "fade",
+      "희미해지다, 사라지다"
+    ],
+    [
+      "freeze",
+      "얼어붙다 (froze)"
+    ],
+    [
+      "awful",
+      "형편없는, 끔찍한"
+    ],
+    [
+      "take a deep breath",
+      "깊게 숨을 쉬다"
+    ],
+    [
+      "shaky",
+      "떨리는"
+    ],
+    [
+      "weight",
+      "중압감, 부담"
+    ],
+    [
+      "lift",
+      "사라지다, 걷히다"
+    ],
+    [
+      "ring out",
+      "울려 퍼지다 (rang out)"
+    ],
+    [
+      "hesitation",
+      "망설임"
+    ]
+  ],
+  "summary": {
+    "en": "Frozen with fear on stage, Beryl remembers her friend's encouraging words and sings with growing confidence.",
+    "ko": "무대에서 두려움에 얼어붙었던 Beryl은 친구의 격려를 떠올리고 점점 자신감 있게 노래한다."
+  },
+  "writing": {
+    "en": "You're doing something brave by just getting up there.",
+    "ko": "그냥 거기에 올라가는 것만으로도 너는 용감한 일을 하고 있는 거야."
+  },
+  "tip": "심경 변화 문제는 But then 같은 전환 신호를 찾아 글을 앞뒤로 나누세요. 앞쪽은 froze, What if ~?, 뒤쪽은 without hesitation, her moment처럼 감정 단어가 직접 안 나와도 몸의 반응과 행동이 심경을 알려 줘요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 19번 정답은?",
+      "② nervous → confident(긴장한 → 자신감 있는)예요. 무대에서 얼어붙었던 Beryl이 친구의 말을 떠올리고 자신 있게 노래해요."
+    ],
+    [
+      "2026 10월 고2 19번은 어떤 유형인가요?",
+      "등장인물의 심경 변화를 고르는 2점 문항이에요. 학교 축제 무대에 선 학생의 이야기예요."
+    ],
+    [
+      "감정이 바뀌는 지점은 어디인가요?",
+      "But then she remembered her best friend Naomi's words. 부분이에요. 이 문장 앞은 긴장, 뒤는 점점 자신감을 찾는 장면이에요."
+    ]
+  ]
+}

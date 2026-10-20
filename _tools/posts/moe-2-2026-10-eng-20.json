@@ -1,0 +1,196 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 20,
+  "type": "주장",
+  "points": 2,
+  "answer": 5,
+  "topic": "부모는 목수가 아니라 정원사처럼 아이가 제 속도로 자라는 환경을 마련해야 한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 20번",
+    "2026 10월 고2 영어 20번 해설",
+    "고2 10월 모의고사 20번 정답",
+    "고2 모의고사 필자의 주장",
+    "정원사 목수 부모 비유",
+    "gardeners carpenters parenting 지문"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 20번은 부모를 '정원사'와 '목수'에 빗대어, 아이를 원하는 모양으로 깎으려 하지 말고 스스로 자랄 수 있는 환경을 주라고 말하는 글이에요. As parents, our role should be that of gardeners, … allowing children to grow naturally at their own pace가 주장 문장이에요. 정답은 ⑤ 부모는 자녀의 속도에 맞는 자연스러운 성장이 가능한 환경을 제공해야 한다예요.",
+  "flow": [
+    [
+      "정원사형",
+      "정원사처럼 알맞은 환경을 주고 아이가 제 속도로 자라게 두면, 아이는 호기심·창의성·독립심을 키우며 스스로 세상을 탐구한다."
+    ],
+    [
+      "목수형",
+      "목수처럼 아이를 우리 이상에 맞춰 '형태를 만들려' 하면, 아이는 자율성을 잃고 남의 지시를 따르는 데 익숙해진다."
+    ],
+    [
+      "결과",
+      "그런 아이는 스스로 길을 고르지 않고 정해진 대로 따르는 데 익숙해서 방향 감각을 빨리 잃는다."
+    ],
+    [
+      "주장",
+      "부모의 역할은 햇빛·비·비옥한 토양을 주어 아이가 자연스럽게 자라게 하는 정원사여야 하고, 목수여서는 안 된다."
+    ],
+    [
+      "결론",
+      "교육의 핵심은 삶을 이해하고, 아이가 복잡한 세상에서 자신만의 '지도'를 찾도록 돕는 것이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "As parents, our role should be that of gardeners, providing sunlight, rain, and fertile soil, allowing children to grow naturally at their own pace.",
+      "ko": "부모로서 우리의 역할은 햇빛, 비, 그리고 기름진 토양을 제공하는 것인 정원사의 그것이어야 하고, 이는 아이들이 그들 자신의 속도로 자연스럽게 자라도록 해 준다.",
+      "note": "should be가 들어간 주장 문장이에요. '환경 제공(sunlight, rain, soil) + 자기 속도로 자연스럽게'가 ⑤와 그대로 맞아요."
+    },
+    {
+      "en": "If we, like gardeners, provide a suitable environment and let children grow at their own pace, they will spontaneously explore the world, developing curiosity, creativity, and independence.",
+      "ko": "만약 우리가 정원사처럼 적절한 환경을 제공하고 아이들이 그들 자신의 속도로 자라도록 둔다면, 그들은 호기심, 창의성, 그리고 독립심을 발달시키며 자연스럽게 세상을 탐구할 것이다.",
+      "note": "첫 부분부터 suitable environment, their own pace가 나와요. 글의 처음과 주장 문장이 같은 말을 반복해요."
+    },
+    {
+      "en": "It should not be that of carpenters, trying to carve out a \"perfect\" piece according to our will.",
+      "ko": "그것은 우리의 의지대로 '완벽한' 작품을 조각해 내려고 노력하는 것인 목수의 그것이어서는 안 된다.",
+      "note": "하지 말아야 할 쪽(목수)을 함께 말해서 주장을 더 분명히 해 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "부모는 자녀의 특성을 파악해서 그에 맞는 피드백을 주어야 한다.",
+      "ko": "특성 파악 + 맞춤 피드백",
+      "why": "피드백을 주라는 말은 없어요. 오히려 부모가 덜 개입하고 환경만 마련하라는 글이에요."
+    },
+    {
+      "en": "부모는 자녀가 실패를 두려워하지 않고 도전하도록 격려해야 한다.",
+      "ko": "실패를 두려워 말고 도전하도록 격려",
+      "why": "dare to challenge는 정원사형으로 자란 아이의 특징일 뿐, 부모에게 요구하는 행동이 아니에요."
+    },
+    {
+      "en": "자녀가 방향을 잃지 않도록 부모는 명확한 목표와 기준을 제시해야 한다.",
+      "ko": "명확한 목표·기준 제시",
+      "why": "'방향을 잃는다'는 본문에 나오지만, 그 원인이 부모가 정해 준 대로 따르게 한 것이에요. 목표·기준을 정해 주는 건 목수형이라 정반대예요."
+    },
+    {
+      "en": "자녀를 독립적인 사람으로 키우려면 과도한 물질적 지원을 경계해야 한다.",
+      "ko": "과도한 물질적 지원 경계",
+      "why": "independence는 나오지만 돈이나 물질적 지원 이야기는 전혀 없어요."
+    },
+    {
+      "en": "부모는 자녀의 속도에 맞는 자연스러운 성장이 가능한 환경을 제공해야 한다.",
+      "ko": "자녀 속도에 맞는 자연스러운 성장 환경 제공",
+      "why": "정답. 정원사처럼 햇빛·비·토양(환경)을 주고 아이가 자기 속도로 자라게 하라는 주장과 일치해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문 (동시 동작)",
+      "ex": "… they will spontaneously explore the world, developing curiosity, creativity, and independence.",
+      "d": "콤마 뒤 developing은 '~을 발달시키며'. 주어 they가 세상을 탐구하면서 동시에 하는 일이에요."
+    },
+    {
+      "t": "try to V + 목적어 + into ~",
+      "ex": "But if we, like carpenters, always try to \"shape\" children into our ideal image, …",
+      "d": "shape A into B는 'A를 B 모양으로 만들다'. 목수가 나무를 깎듯 아이를 원하는 틀에 맞춘다는 비유예요."
+    },
+    {
+      "t": "be used to + 동명사 / rather than",
+      "ex": "… because they are used to being arranged for, rather than actively choosing their path.",
+      "d": "be used to 뒤의 to는 전치사라서 동명사 being이 와요. '~하는 데 익숙하다'. rather than은 '~하기보다는'으로 being arranged와 choosing을 대비해요."
+    },
+    {
+      "t": "대명사 that (반복 피하기)",
+      "ex": "As parents, our role should be that of gardeners, …",
+      "d": "that = the role. 앞의 명사 role을 다시 쓰지 않으려고 that of ~로 받아요. '정원사의 역할'이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "possibility",
+      "가능성"
+    ],
+    [
+      "suitable",
+      "적절한"
+    ],
+    [
+      "at one's own pace",
+      "자신의 속도로"
+    ],
+    [
+      "spontaneously",
+      "자발적으로, 자연스럽게"
+    ],
+    [
+      "curiosity",
+      "호기심"
+    ],
+    [
+      "independence",
+      "독립심"
+    ],
+    [
+      "dare to V",
+      "감히 ~하다, 과감히 ~하다"
+    ],
+    [
+      "initiative",
+      "진취성"
+    ],
+    [
+      "carpenter",
+      "목수"
+    ],
+    [
+      "autonomy",
+      "자율성"
+    ],
+    [
+      "accustomed to",
+      "~에 익숙한"
+    ],
+    [
+      "arrange",
+      "정하다, 마련하다"
+    ],
+    [
+      "fertile",
+      "비옥한, 기름진"
+    ],
+    [
+      "carve out",
+      "깎아 만들다"
+    ],
+    [
+      "will",
+      "의지"
+    ],
+    [
+      "core",
+      "핵심"
+    ]
+  ],
+  "summary": {
+    "en": "Parents should act like gardeners who provide a good environment and let children grow at their own pace, not like carpenters who shape them into an ideal image.",
+    "ko": "부모는 아이를 이상적인 모습으로 깎는 목수가 아니라, 좋은 환경을 주고 아이가 제 속도로 자라게 하는 정원사처럼 행동해야 한다."
+  },
+  "writing": {
+    "en": "Parents should let children grow naturally at their own pace.",
+    "ko": "부모는 아이들이 자신의 속도로 자연스럽게 자라도록 해야 한다."
+  },
+  "tip": "주장 문제는 should, must 같은 조동사 문장을 찾으세요. 이 글처럼 '좋은 쪽(정원사)'과 '나쁜 쪽(목수)'을 비교하면 필자는 좋은 쪽을 주장해요. 본문 단어(방향, 독립, 도전)만 걸친 선택지는 내용이 반대이거나 없는 말인지 꼭 확인하세요.",
+  "note": "정원사와 목수 비유만 잡으면 이 글은 끝나요. 정원사는 환경을 주고 기다리는 사람, 목수는 내 뜻대로 깎는 사람. ③번처럼 '명확한 목표와 기준'은 그럴듯하지만 목수 쪽이라는 걸 꼭 구분해 보세요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 20번 정답은?",
+      "⑤ 부모는 자녀의 속도에 맞는 자연스러운 성장이 가능한 환경을 제공해야 한다예요. 부모는 목수가 아니라 정원사가 되어야 한다는 글이에요."
+    ],
+    [
+      "2026 10월 고2 20번은 어떤 유형인가요?",
+      "필자의 주장을 고르는 2점 문항이에요. 정원사와 목수에 빗댄 자녀 교육 글이에요."
+    ],
+    [
+      "③ 명확한 목표와 기준 제시가 오답인 이유는?",
+      "본문에서 아이가 방향 감각을 잃는 이유는 부모가 정해 준 대로 따르는 데 익숙해졌기 때문이에요. 목표·기준을 정해 주는 건 필자가 반대하는 목수형 부모예요."
+    ]
+  ]
+}

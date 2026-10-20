@@ -1,0 +1,63 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 23,
+  "type": "주제",
+  "points": 2,
+  "answer": 5,
+  "topic": "문어 다리가 뇌의 지시 없이 주변 환경과 직접 상호 작용하는 원리",
+  "date": "2026-10-21",
+  "keywords": ["2026년 10월 고2 모의고사 영어 23번", "2026 10월 고2 영어 23번 해설", "고2 10월 모의고사 23번 정답", "고2 모의고사 주제", "octopus neurons arms 지문", "문어 다리 신경 빨판 영어 지문"],
+  "lead": "2026년 10월 고2 모의고사 영어 23번은 문어의 뉴런 절반 이상이 다리에 퍼져 있어서, 다리가 뇌의 자세한 지시 없이도 주변 환경과 직접 상호 작용한다는 글의 주제를 고르는 문항이에요. 다리 속 신경망과 빨판이 '어떻게' 그 일을 해내는지 설명하는 글이라 '메커니즘'이라는 말이 핵심이에요. 정답은 ⑤예요.",
+  "flow": [
+    ["도입", "문어는 약 5억 개의 뉴런을 가지고 있는데, 특이한 점은 그 뉴런들이 어디에 있느냐이다."],
+    ["핵심", "뉴런의 절반 이상이 중앙 뇌가 아니라 다리 전체에 퍼져 있고, 각 다리는 움직임과 감각 입력을 스스로 처리하는 신경망을 가진다."],
+    ["결과", "그래서 많은 행동이 뇌의 자세한 지시가 필요 없고, 다리가 환경과 직접 상호 작용하는 신경계의 연장선 역할을 한다."],
+    ["세부", "다리의 빨판은 강하게 붙잡을 뿐 아니라 접촉한 표면의 화학 신호도 탐지한다."],
+    ["마무리", "결국 문어는 접촉을 통해 화학 정보를 모으며, 사실상 자기가 만지는 것을 맛본다."]
+  ],
+  "evidence": [
+    {"en": "More than half are distributed throughout the arms rather than concentrated entirely in the central brain.", "ko": "절반 이상은 중앙의 뇌에 전적으로 집중되어 있기보다는 다리 전체에 걸쳐 분포되어 있다.", "note": "글 전체의 출발점이에요. 뉴런이 '다리에' 많다는 사실이 이후 설명(다리가 스스로 일한다)의 이유가 돼요."},
+    {"en": "Instead, the arms function as highly capable extensions of the nervous system that interact with the environment directly.", "ko": "대신에, 그 다리들은 환경과 직접적으로 상호 작용하는 대단히 유능한 신경계의 연장선으로서 작동한다.", "note": "선택지 ⑤의 direct interaction with its surroundings를 거의 그대로 바꿔 말한 주제문이에요."},
+    {"en": "These structures provide strong grip but also detect chemical signals on surfaces they contact.", "ko": "이 구조들은 강한 붙잡는 힘을 제공하지만 또한 그것들이 접촉하는 표면의 화학적 신호들도 탐지한다.", "note": "빨판이 '어떻게' 환경과 상호 작용하는지 보여 주는 구체적 장치예요. 그래서 '원리(mechanism)'라는 말이 들어간 ⑤가 딱 맞아요."}
+  ],
+  "choices": [
+    {"en": "characteristics of an environment that suits an octopus", "ko": "문어에게 적합한 환경의 특징", "why": "글은 문어의 몸(신경·빨판) 이야기예요. 어떤 환경이 문어에게 좋은지는 나오지 않아요."},
+    {"en": "function of the octopus’s central brain in controlling its arms", "ko": "문어의 다리를 통제하는 데 있어서 중앙 뇌의 기능", "why": "오히려 반대예요. 많은 행동이 뇌의 자세한 지시가 필요 없다고 했어요. central brain은 본문 단어를 재활용한 함정이에요."},
+    {"en": "benefit of an octopus relying more on vision than touch for survival", "ko": "생존을 위해 촉각보다 시각에 더 의존하는 문어의 이점", "why": "글은 촉각(touch)으로 정보를 모은다고 했어요. 시각(vision)은 나오지도 않고 방향도 반대예요."},
+    {"en": "reasons for octopuses having more neurons than other marine animals", "ko": "문어가 다른 해양 동물들보다 더 많은 뉴런을 가지고 있는 이유", "why": "다른 해양 동물과 뉴런 수를 비교하지 않아요. 글이 강조한 건 뉴런의 '수'가 아니라 '위치'예요."},
+    {"en": "mechanism behind an octopus arms’ direct interaction with its surroundings", "ko": "문어 다리가 주변 환경과 직접 상호 작용하는 데 숨겨진 원리", "why": "정답. 다리에 퍼진 뉴런과 신경망, 화학 신호를 탐지하는 빨판이 다리가 환경과 직접 상호 작용하는 원리를 설명해요."}
+  ],
+  "grammar": [
+    {"t": "What 주어절 + is + 의문사절", "ex": "What makes this system unusual is where many of those neurons are located.", "d": "What makes this system unusual(이 체계를 특이하게 만드는 것)이 주어, where ~ located(그 뉴런들이 어디에 있는지)가 보어예요. make + 목적어 + 형용사(unusual) 구조도 함께 보세요."},
+    {"t": "A rather than B", "ex": "More than half are distributed throughout the arms rather than concentrated entirely in the central brain.", "d": "'B라기보다는 A'. distributed와 concentrated가 둘 다 are에 걸리는 과거분사로 병렬돼요. 글의 핵심 대비(다리 vs 중앙 뇌)가 이 문장에 있어요."},
+    {"t": "형용사구 후치 수식 (capable of -ing)", "ex": "Each arm contains networks of nerve cells capable of controlling complex movements and responding to sensory input locally.", "d": "capable of ~가 뒤에서 nerve cells를 꾸며요. controlling과 responding이 of에 함께 걸리는 병렬 구조예요."},
+    {"t": "allow + 목적어 + to V", "ex": "Marine biologists studying octopus behavior have shown that this allows the animal to gather chemical information through touch.", "d": "'~가 …하게 해 주다'. studying octopus behavior는 Marine biologists를 꾸미는 현재분사구라서 진짜 동사는 have shown이에요."}
+  ],
+  "vocab": [
+    ["neurobiology", "신경 생물학"],
+    ["possess", "가지고 있다"],
+    ["roughly", "대략"],
+    ["neuron", "뉴런, 신경 세포"],
+    ["distribute", "분포시키다, 퍼뜨리다"],
+    ["concentrate", "집중시키다"],
+    ["nerve cell", "신경 세포"],
+    ["sensory input", "감각 입력"],
+    ["locally", "국소적으로, 그 자리에서"],
+    ["extension", "연장(선), 확장"],
+    ["nervous system", "신경계"],
+    ["line", "~을 따라 늘어서다"],
+    ["grip", "붙잡는 힘, 쥐기"],
+    ["detect", "탐지하다, 감지하다"],
+    ["chemical signal", "화학적 신호"],
+    ["in practical terms", "실질적으로 말해서"],
+    ["mechanism", "원리, 작동 방식 — 정답 선택지"]
+  ],
+  "summary": {"en": "Because more than half of an octopus’s neurons are in its arms, the arms can act and sense on their own, even tasting what they touch through their suckers.", "ko": "문어의 뉴런 절반 이상이 다리에 있어서, 다리는 스스로 움직이고 감지하며 빨판을 통해 만지는 것을 맛보기까지 한다."},
+  "writing": {"en": "An octopus’s arms can sense and respond to their surroundings without detailed orders from the brain.", "ko": "문어의 다리는 뇌의 자세한 명령 없이도 주변 환경을 감지하고 반응할 수 있다."},
+  "tip": "주제 문제는 글이 '무엇에 대해, 어떤 방향으로' 말하는지를 잡아야 해요. 이 글은 '다리가 환경과 직접 상호 작용한다'를 신경망과 빨판으로 설명하니 '원리(mechanism)'가 들어간 선택지가 맞아요. central brain처럼 본문에 나온 단어가 들어 있어도 글의 방향과 반대면 오답이에요.",
+  "faq": [
+    ["2026년 10월 고2 모의고사 영어 23번 정답은?", "⑤ mechanism behind an octopus arms’ direct interaction with its surroundings(문어 다리가 주변 환경과 직접 상호 작용하는 원리)예요."],
+    ["2026 10월 고2 영어 23번은 어떤 유형인가요?", "글의 주제를 고르는 2점 문항이에요. 문어의 뉴런이 다리에 퍼져 있어 다리가 스스로 감지하고 움직인다는 내용이에요."],
+    ["② 중앙 뇌의 기능은 왜 오답인가요?", "글은 많은 행동이 뇌의 자세한 지시 없이 이루어진다고 했어요. 중앙 뇌가 다리를 통제하는 이야기가 아니라 다리가 스스로 일하는 이야기라서 오답이에요."]
+  ]
+}

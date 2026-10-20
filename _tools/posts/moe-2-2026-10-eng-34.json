@@ -1,0 +1,193 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 34,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 4,
+  "topic": "서로 연결된 시스템에서는 작은 실패의 영향이 순식간에 퍼진다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 34번",
+    "2026 10월 고2 영어 34번 해설",
+    "고2 10월 모의고사 34번 정답",
+    "고2 모의고사 빈칸 추론",
+    "interconnectedness 상호 연결성 지문",
+    "정보 기술 취약성 Rita McGrath 지문",
+    "고2 영어 빈칸 3점"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 34번은 예전엔 서로 분리돼 보호받던 기관들이 디지털화와 스마트 시스템으로 촘촘히 연결되면서 작은 오류도 멀리까지 번지게 됐다는 3점 빈칸 추론 문항이에요. 본문의 interdependence(상호 의존)와 '분리돼 있던 것들이 부딪친다'는 인용이 핵심 단서예요. 정답은 ④ interconnectedness instantly spreads the impact of small failures예요.",
+  "flow": [
+    [
+      "도입",
+      "소셜 미디어는 사업·정치·친목을 바꿨고, 세계 금융 산업은 모든 은행과 가정을 연결해 지구 반대편의 실수에도 우리를 취약하게 만든다."
+    ],
+    [
+      "대비",
+      "Rita McGrath에 따르면, 예전에는 기관들이 분리돼 있어 바깥의 오류로부터 보호받았지만 이제는 그렇지 않다."
+    ],
+    [
+      "원인",
+      "컴퓨팅 비용이 줄며 디지털화가 크게 늘었고, 스스로 통신하는 스마트 시스템은 무수한 고장 가능성을 낳았다."
+    ],
+    [
+      "핵심",
+      "이런 상호 의존은 복잡한 실패의 온상이다. 분리돼 있던 것들이 서로 부딪치면 다음 일을 예측하기 훨씬 어렵다."
+    ],
+    [
+      "결론(빈칸)",
+      "정보 기술은 상호 연결성이 작은 실패의 영향을 즉시 퍼뜨리기 때문에 새로운 취약성을 만든다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The global financial industry links every bank and countless households in every country, making us vulnerable to human error taking place on the other side of the world.",
+      "ko": "세계 금융 산업은 모든 나라의 모든 은행과 수많은 가정을 연결하여, 우리를 지구 반대편에서 일어나는 인간의 실수에 취약하게 만든다.",
+      "note": "links(연결) → vulnerable(취약) → human error(작은 실수)가 한 문장에 다 있어요. ④를 예시로 먼저 보여 준 문장이에요."
+    },
+    {
+      "en": "years ago most of our institutions were separate and thereby buffered from the effects of errors outside their walls. That is no longer the case.",
+      "ko": "수년 전에는 우리의 기관들 대부분이 분리되어 있었고 그로 인해 그들의 벽 바깥의 오류의 영향으로부터 보호되었다. 그것은 더 이상 사실이 아니다.",
+      "note": "'분리 → 보호'가 더 이상 아니라는 건, 이제는 '연결 → 오류의 영향이 넘어온다'는 뜻이에요."
+    },
+    {
+      "en": "This interdependence is a breeding ground for complex failure.",
+      "ko": "이러한 상호 의존은 복잡한 실패의 온상이다.",
+      "note": "interdependence가 정답의 interconnectedness로 바뀌어 나왔어요. 연결된 구조가 실패를 키운다는 글의 요지예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "complex issues involving smart systems are oversimplified",
+      "ko": "스마트 시스템과 관련된 복잡한 문제들이 지나치게 단순화된다",
+      "why": "smart systems, complex는 본문 단어지만, 문제를 '단순화한다'는 이야기는 없어요. 글은 연결 때문에 실패가 퍼진다는 내용이에요."
+    },
+    {
+      "en": "vast amounts of online information destroy social hierarchy",
+      "ko": "방대한 양의 온라인 정보가 사회적 위계를 무너뜨린다",
+      "why": "사회적 위계는 글에 나오지 않아요."
+    },
+    {
+      "en": "digitization widens the information gap between institutions",
+      "ko": "디지털화가 기관들 사이의 정보 격차를 넓힌다",
+      "why": "글은 기관들이 서로 '연결'되는 쪽을 말해요. 격차가 벌어진다는 건 방향이 달라요."
+    },
+    {
+      "en": "interconnectedness instantly spreads the impact of small failures",
+      "ko": "상호 연결성이 작은 실패의 영향을 즉시 퍼뜨린다",
+      "why": "정답. 금융 산업의 연결, 분리·보호의 소멸, interdependence, '분리된 것들이 부딪친다'는 인용이 모두 이 내용을 가리켜요."
+    },
+    {
+      "en": "digital networks fall like dominoes due to increasing computing costs",
+      "ko": "증가하는 컴퓨팅 비용 때문에 디지털 네트워크가 도미노처럼 무너진다",
+      "why": "도미노처럼 번진다는 느낌은 그럴듯하지만, 본문은 컴퓨팅 비용이 '줄어들었다(has decreased)'고 했어요. 원인이 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문 making + 목적어 + 목적격보어",
+      "ex": "The global financial industry links every bank and countless households in every country, making us vulnerable to human error taking place on the other side of the world.",
+      "d": "앞 문장 전체의 결과를 나타내는 분사구문이에요. make us vulnerable은 '우리를 취약하게 만들다'. taking place 이하가 human error를 뒤에서 꾸며요."
+    },
+    {
+      "t": "thereby + 과거분사",
+      "ex": "… most of our institutions were separate and thereby buffered from the effects of errors outside their walls.",
+      "d": "thereby는 '그로 인해'. were separate and (were) thereby buffered로, be동사가 공유돼요."
+    },
+    {
+      "t": "as 접속사(~함에 따라)",
+      "ex": "The digitization of massive amounts of information has continued to grow enormously as the cost of computing power has decreased.",
+      "d": "as는 '~함에 따라'. 비용이 '줄어든' 결과로 디지털화가 늘었다는 관계를 정확히 잡아야 ⑤를 거를 수 있어요."
+    },
+    {
+      "t": "가주어 it + 진주어 to부정사",
+      "ex": "… it becomes far more difficult to predict what's going to happen next.",
+      "d": "it은 가주어, to predict 이하가 진주어예요. far는 비교급 more difficult를 강조해요."
+    }
+  ],
+  "vocab": [
+    [
+      "alter",
+      "바꾸다"
+    ],
+    [
+      "go viral",
+      "입소문이 나다, 빠르게 퍼지다"
+    ],
+    [
+      "household term",
+      "누구나 아는 말"
+    ],
+    [
+      "vulnerable",
+      "취약한"
+    ],
+    [
+      "institution",
+      "기관"
+    ],
+    [
+      "buffer",
+      "보호하다, 완충하다"
+    ],
+    [
+      "digitization",
+      "디지털화"
+    ],
+    [
+      "computing power",
+      "컴퓨터 처리 능력"
+    ],
+    [
+      "autonomously",
+      "자율적으로"
+    ],
+    [
+      "give rise to",
+      "~을 일으키다, 낳다"
+    ],
+    [
+      "breakdown",
+      "고장, 붕괴"
+    ],
+    [
+      "interdependence",
+      "상호 의존"
+    ],
+    [
+      "breeding ground",
+      "온상"
+    ],
+    [
+      "bump up against",
+      "~와 부딪치다"
+    ],
+    [
+      "interconnectedness",
+      "상호 연결성 — 정답 핵심어"
+    ]
+  ],
+  "summary": {
+    "en": "As institutions become digitally linked and interdependent, they are no longer buffered from outside errors, so small failures can spread quickly and unpredictably.",
+    "ko": "기관들이 디지털로 연결되고 서로 의존하게 되면서 더 이상 바깥의 오류로부터 보호받지 못하고, 작은 실패도 빠르고 예측할 수 없게 퍼질 수 있다."
+  },
+  "writing": {
+    "en": "The more connected our systems are, the faster a small mistake can spread.",
+    "ko": "우리의 시스템이 더 많이 연결될수록 작은 실수는 더 빨리 퍼질 수 있다."
+  },
+  "tip": "빈칸이 because 뒤에 있으면 글 전체가 말한 '원인'을 찾으세요. 이 글은 separate·buffered(분리·보호) ↔ links·interdependence(연결·의존)의 대비라서, '연결'을 말하는 선택지가 답이에요. 선택지에 본문과 반대되는 사실(computing costs 증가)이 섞여 있지 않은지도 꼭 확인하세요.",
+  "note": "⑤는 '도미노'라는 그림이 그럴듯해서 끌리기 쉬워요. 선택지 안의 원인(increasing computing costs)을 본문 has decreased와 꼭 맞춰 보세요. 3점 빈칸은 이 한 번의 확인이 점수를 지켜 줘요.",
+  "faq": [
+    [
+      "2026년 10월 고2 모의고사 영어 34번 정답은?",
+      "④ interconnectedness instantly spreads the impact of small failures(상호 연결성이 작은 실패의 영향을 즉시 퍼뜨린다)예요. 분리돼 있던 기관들이 연결되면서 작은 오류가 멀리까지 번진다는 내용이에요."
+    ],
+    [
+      "2026 10월 고2 34번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 정보 기술과 상호 의존이 만드는 새로운 취약성을 다룬 지문이에요."
+    ],
+    [
+      "⑤ digital networks fall like dominoes가 오답인 이유는?",
+      "연쇄적으로 무너진다는 이미지는 비슷하지만, 원인을 '증가하는 컴퓨팅 비용'이라고 했어요. 본문은 컴퓨팅 비용이 줄어들었다고 했으니 사실과 반대예요."
+    ]
+  ]
+}

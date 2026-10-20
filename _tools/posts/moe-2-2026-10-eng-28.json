@@ -1,0 +1,61 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "2026 한국 문화유산 축제 안내문",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고2 모의고사 영어 28번",
+    "2026 10월 고2 영어 28번 해설",
+    "고2 10월 모의고사 28번 정답",
+    "고2 모의고사 안내문 일치",
+    "Korean Cultural Heritage Festival 지문",
+    "고2 영어 실용문 해설"
+  ],
+  "lead": "2026년 10월 고2 모의고사 영어 28번은 Lindenveil 한인회가 여는 한국 문화유산 축제 안내문에서 내용과 일치하는 것을 고르는 문항이에요. Details 항목의 'Write your name in Korean characters, Hangeul.'이 그대로 선택지가 됐어요. 정답은 ③이에요.",
+  "flow": [
+    ["소개", "Lindenveil 한인회가 매년 여는 한국 문화유산 축제에 와서 한국 문화를 경험해 보라고 초대한다."],
+    ["일시·장소", "10월 23~25일, 오전 10시~오후 4시, Lindenveil 시청 맞은편 Lindenveil 공원."],
+    ["세부 사항", "한복 입고 사진 찍기, 이름을 한글로 써 보기, 다양한 전통 놀이 즐기기."],
+    ["참고 사항", "모든 방문객에게 한국 전통 간식을 주고, 비가 오면 축제 일정이 바뀐다."]
+  ],
+  "evidence": [
+    {"en": "Write your name in Korean characters, Hangeul.", "ko": "자신의 이름을 한글로 써 볼 수 있습니다.", "note": "Details: You can … 아래 항목이에요. 선택지 ③ '자신의 이름을 한글로 써 볼 수 있다'와 그대로 일치해요."},
+    {"en": "Join us for the annual Korean Cultural Heritage Festival held by Lindenveil Korean Association …", "ko": "Lindenveil 한인회가 매년 여는 한국 문화유산 축제에 참여하세요 …", "note": "annual은 '매년의'예요. ① '2년에 한 번'과 맞지 않아요."},
+    {"en": "Location: Lindenveil Park (opposite of Lindenveil City Hall)", "ko": "장소: Lindenveil 공원 (Lindenveil 시청 맞은편)", "note": "장소는 공원이고 시청은 '맞은편'이라는 위치 설명일 뿐이에요. ②가 노린 함정이에요."}
+  ],
+  "choices": [
+    {"en": "2년에 한 번 열리는 축제이다.", "ko": "2년마다 열림", "why": "불일치. the annual Korean Cultural Heritage Festival — annual은 '매년'이에요."},
+    {"en": "Lindenveil 시청에서 열린다.", "ko": "장소가 시청", "why": "불일치. 장소는 Lindenveil Park이고, 시청은 opposite of(맞은편)로 위치를 알려 줄 뿐이에요."},
+    {"en": "자신의 이름을 한글로 써 볼 수 있다.", "ko": "이름을 한글로 쓰기", "why": "정답(일치). Write your name in Korean characters, Hangeul."},
+    {"en": "모든 방문객은 한국 전통 공예품을 받을 것이다.", "ko": "전통 공예품 증정", "why": "불일치. All visitors will receive traditional Korean snacks. 받는 건 공예품이 아니라 간식이에요."},
+    {"en": "비가 와도 예정대로 운영될 것이다.", "ko": "우천 시에도 진행", "why": "불일치. If it rains, the festival will be rescheduled. 비가 오면 일정이 바뀌어요."}
+  ],
+  "grammar": [
+    {"t": "과거분사 후치 수식", "ex": "the annual Korean Cultural Heritage Festival held by Lindenveil Korean Association", "d": "held by ~가 뒤에서 Festival을 꾸며요. '~에 의해 열리는 축제'. 축제는 '열리는' 쪽이라 수동의 과거분사예요."},
+    {"t": "명령문 + and", "ex": "Join us for the … Festival … and experience the beauty of Korean culture!", "d": "안내문에서 자주 보는 권유 표현이에요. 동사원형 두 개(Join, experience)가 and로 나란히 이어졌어요."},
+    {"t": "조건 if절의 현재시제", "ex": "If it rains, the festival will be rescheduled.", "d": "조건을 나타내는 if절은 미래 일이라도 현재시제(rains)를 써요. 주절은 will be p.p. 수동태예요."}
+  ],
+  "vocab": [
+    ["cultural heritage", "문화유산"],
+    ["annual", "매년의, 연례의"],
+    ["association", "협회, 단체"],
+    ["opposite of", "~의 맞은편에"],
+    ["city hall", "시청"],
+    ["try on", "(옷을) 입어 보다"],
+    ["character", "문자, 글자"],
+    ["traditional", "전통적인"],
+    ["visitor", "방문객"],
+    ["reschedule", "일정을 변경하다"]
+  ],
+  "summary": {"en": "The annual Korean Cultural Heritage Festival in Lindenveil Park invites visitors to try on Hanbok, write their names in Hangeul, and play traditional games.", "ko": "Lindenveil 공원에서 매년 열리는 한국 문화유산 축제는 방문객이 한복을 입어 보고, 이름을 한글로 쓰고, 전통 놀이를 즐길 수 있게 한다."},
+  "writing": {"en": "If it rains, the festival will be rescheduled.", "ko": "비가 오면 축제 일정은 변경될 것이다."},
+  "tip": "안내문 일치 문제는 선택지 순서가 대체로 글 순서와 같아요. 선택지 하나씩 해당 항목(Date, Location, Details, Notes)을 찾아 맞춰 보세요. annual(매년), opposite of(맞은편), snacks(간식), rescheduled(일정 변경)처럼 한 단어로 판가름 나는 경우가 많으니 단어 하나하나를 꼼꼼히 확인하세요.",
+  "faq": [
+    ["2026년 10월 고2 모의고사 영어 28번 정답은?", "③ '자신의 이름을 한글로 써 볼 수 있다'예요. 안내문의 Write your name in Korean characters, Hangeul.과 일치해요."],
+    ["2026 10월 고2 28번은 어떤 유형인가요?", "안내문을 읽고 내용과 일치하는 것을 고르는 2점 실용문 문항이에요."],
+    ["② 'Lindenveil 시청에서 열린다'는 왜 틀렸나요?", "장소는 Lindenveil Park예요. City Hall은 opposite of(맞은편)와 함께 공원 위치를 알려 주는 말이라 축제 장소가 아니에요."]
+  ]
+}

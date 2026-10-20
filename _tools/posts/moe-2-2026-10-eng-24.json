@@ -1,0 +1,62 @@
+{
+  "exam": "moe-2-2026-10",
+  "n": 24,
+  "type": "제목",
+  "points": 2,
+  "answer": 1,
+  "topic": "시대와 특권 계층의 시각에 갇힌 아리스토텔레스의 윤리관",
+  "date": "2026-10-21",
+  "keywords": ["2026년 10월 고2 모의고사 영어 24번", "2026 10월 고2 영어 24번 해설", "고2 10월 모의고사 24번 정답", "고2 모의고사 제목", "Aristotle ethics 지문", "아리스토텔레스 윤리 한계 영어 지문"],
+  "lead": "2026년 10월 고2 모의고사 영어 24번은 아리스토텔레스가 위대한 사상가지만, 그가 생각한 옳음과 좋음은 고대 그리스 특권 엘리트의 시각을 반영해서 오늘날 보면 심각한 결함이 있다는 글의 제목을 고르는 문항이에요. '그 시대(time)'와 '특권 계층(class)'이라는 두 가지 한계를 함께 담은 제목을 찾으면 돼요. 정답은 ①이에요.",
+  "flow": [
+    ["도입", "아리스토텔레스는 일관적이지만, 그의 생각 중 일부는 오늘날 낯설게 느껴진다."],
+    ["예시", "그는 노예 제도를 쉽게 정당화했고, 철학자는 최고선을 사유하니 삶의 가장 좋은 것들을 누릴 자격이 있다고 여겨졌다. 이는 이상하게 자기 잇속만 차리는 주장 같다."],
+    ["일반화", "모든 위대한 사상가는 자기 시대에 속하고 특정 청중에게 말한다. 아리스토텔레스도 예외가 아니다."],
+    ["결론", "그가 이해한 옳음과 좋음은 고대 그리스 특권 엘리트의 이해를 보여 주는 지표이며, 장점에도 불구하고 깊은 결함이 있다."]
+  ],
+  "evidence": [
+    {"en": "It serves us to remember that every great thinker is of her own time and speaks to a particular audience, and certainly Aristotle is no exception.", "ko": "그것은 '우리'가 모든 위대한 사상가는 그들 자신의 시대에 속해 있고 특정한 청중들에게 말한다는 것을 기억하는 데 도움이 되며, 확실히 아리스토텔레스도 예외는 아니다.", "note": "'자기 시대에 속한다(of her own time)'가 제목 ①의 Trapped in His Time과 연결돼요."},
+    {"en": "How he understood right and good is best taken to be an indicator of how the privileged elite of ancient Greek society tended to understand right and good.", "ko": "그가 옳음과 선을 어떻게 이해했는가는 고대 그리스 사회의 특권 엘리트 계층이 옳음과 선을 어떻게 이해하는 경향이 있었는가에 대한 척도로 가장 잘 여겨진다.", "note": "the privileged elite(특권 엘리트 계층)가 ①의 Class에 해당해요. 시대 + 계층, 두 한계가 모두 드러나는 문장이에요."},
+    {"en": "As a result, for all it does well, it is also deeply flawed.", "ko": "그 결과, 그것의 장점에도 불구하고, 그것은 또한 심각하게 결함이 있다.", "note": "결론 문장이에요. 아리스토텔레스 윤리관의 '한계'를 말하는 글이라는 게 확실해져요."}
+  ],
+  "choices": [
+    {"en": "Aristotle’s Ethics Trapped in His Time and Class", "ko": "그의 시대와 계층에 갇힌 아리스토텔레스의 윤리", "why": "정답. 자기 시대에 속한 사상가(Time), 특권 엘리트의 시각(Class)이라는 두 한계를 모두 담았어요."},
+    {"en": "Aristotle’s Highest Good for the Underprivileged", "ko": "혜택받지 못한 사람들을 위한 아리스토텔레스의 최고선", "why": "반대예요. 그의 윤리는 특권층(privileged)의 시각이었고, 오늘날만큼 포용적이지 않았다고 했어요."},
+    {"en": "Why Philosophers Deserve the Best Things in Life", "ko": "철학자들이 삶에서 최고의 것들을 누릴 자격이 있는 이유", "why": "당시 사람들의 생각을 소개한 부분일 뿐이고, 필자는 그 주장이 자기 잇속만 차리는 것 같다며 비판해요."},
+    {"en": "Aristotle’s Lonely Struggle to Build an Inclusive Society", "ko": "포용적인 사회를 건설하기 위한 아리스토텔레스의 외로운 투쟁", "why": "그가 이해한 인간 번영은 오늘날 우리가 원하는 만큼 포용적이지 않았다고 했어요. inclusive를 재활용한 함정이에요."},
+    {"en": "Limits of Greek Philosophers: Thoughts Without Actions", "ko": "그리스 철학자들의 한계: 행동 없는 생각", "why": "'한계'라는 말은 맞지만, 글이 말한 한계는 시대·계층에 묶인 시각이에요. 행동하지 않았다는 내용은 없어요."}
+  ],
+  "grammar": [
+    {"t": "형용사 + though + 주어 + 동사 (양보 도치)", "ex": "Consistent though he may be, some of Aristotle’s ideas meet us today as strange.", "d": "= Though he may be consistent. '비록 그가 일관적일지라도'. 보어(형용사)를 though 앞으로 보낸 양보 구문이에요."},
+    {"t": "be considered worthy to V", "ex": "philosophers were considered worthy to have all the best things in life.", "d": "consider + 목적어 + 보어의 수동태예요. '~할 자격이 있다고 여겨졌다'."},
+    {"t": "as + 원급 + as 부정 비교", "ex": "Human flourishing as he understood it probably would not be nearly as inclusive as we would want it to be today.", "d": "not nearly as ~ as는 '~에 훨씬 못 미치는'. 앞의 as he understood it은 '그가 이해한 대로의'로 Human flourishing을 꾸며요."},
+    {"t": "for all ~ (양보)", "ex": "As a result, for all it does well, it is also deeply flawed.", "d": "for all은 '~에도 불구하고'. for all (that) it does well = 그것이 잘하는 모든 것에도 불구하고, 즉 '장점에도 불구하고'."}
+  ],
+  "vocab": [
+    ["consistent", "일관된"],
+    ["justify", "정당화하다"],
+    ["slavery", "노예 제도"],
+    ["era", "시대"],
+    ["privilege", "특권"],
+    ["influence", "영향력"],
+    ["contemplation", "사유, 깊은 생각"],
+    ["worthy", "~할 자격이 있는"],
+    ["assertion", "주장"],
+    ["self-serving", "자기 잇속만 차리는"],
+    ["flourishing", "번영, 번성"],
+    ["inclusive", "포용적인, 모두를 아우르는"],
+    ["indicator", "지표, 척도"],
+    ["elite", "엘리트 계층"],
+    ["flawed", "결함이 있는"],
+    ["underprivileged", "혜택받지 못한, 소외된"]
+  ],
+  "summary": {"en": "Aristotle’s ideas of right and good reflect the views of the privileged elite of his time, so for all their strengths, they are deeply flawed.", "ko": "아리스토텔레스의 옳음과 좋음에 대한 생각은 그 시대 특권 엘리트의 시각을 반영하므로, 장점에도 불구하고 깊은 결함이 있다."},
+  "writing": {"en": "Even great thinkers are shaped by the time and society they live in.", "ko": "위대한 사상가조차 자신이 사는 시대와 사회의 영향을 받는다."},
+  "tip": "제목 문제는 글의 결론을 빠짐없이 담은 선택지를 골라요. 이 글은 '시대에 속한다'와 '특권 엘리트의 시각'이라는 두 축이 있어서 Time과 Class를 모두 가진 ①이 맞아요. 앞부분 예시(철학자가 좋은 것을 누릴 자격)는 필자가 비판하려고 꺼낸 내용이니 제목으로 고르면 안 돼요.",
+  "note": "③번처럼 본문에 나온 주장을 그대로 옮긴 선택지는 필자가 그 주장에 찬성하는지 반대하는지부터 확인하세요. 이 글에서 필자는 oddly self-serving이라며 비판하고 있어요.",
+  "faq": [
+    ["2026년 10월 고2 모의고사 영어 24번 정답은?", "① Aristotle’s Ethics Trapped in His Time and Class(그의 시대와 계층에 갇힌 아리스토텔레스의 윤리)예요."],
+    ["2026 10월 고2 영어 24번은 어떤 유형인가요?", "글의 제목을 고르는 2점 문항이에요. 아리스토텔레스의 윤리관이 고대 그리스 특권층의 시각에 머물렀다는 한계를 다룬 지문이에요."],
+    ["Consistent though he may be는 무슨 뜻인가요?", "'비록 그가 일관적일지라도'라는 뜻이에요. Though he may be consistent에서 형용사 consistent를 앞으로 보낸 양보 구문이에요."]
+  ]
+}
