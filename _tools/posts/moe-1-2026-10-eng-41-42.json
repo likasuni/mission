@@ -1,0 +1,281 @@
+{
+  "exam": "moe-1-2026-10",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "사용자와 환경을 함께 생각하는 웹 디자인 (기본값의 힘)",
+  "date": "2026-10-21",
+  "lead": "2026년 10월 고1 모의고사 영어 41~42번은 무한 스크롤·자동 재생 같은 웹 디자인이 데이터와 에너지를 낭비하게 만들고, 환경 영향이 적은 선택지를 기본값으로 하는 것이 책임 있는 디자인이라는 장문 세트예요. 41번 제목은 사용자의 통제권과 환경을 함께 존중하는 디자인, 42번 어휘는 기본값이 환경 영향을 줄일 수 있다는 문맥이라 (e) powerless가 powerful이어야 해요. 정답은 41번 ①, 42번 ⑤예요.",
+  "flow": [
+    [
+      "문제 제기",
+      "무한 스크롤, 자동 재생, 구매 시 계정 요구 같은 패턴은 사용자의 통제를 방해하고 데이터·주의력의 과잉 소비를 부추긴다."
+    ],
+    [
+      "예시",
+      "무한 스크롤과 자동 재생은 원하지 않아도 데이터와 에너지를 쓰게 한다. 앨범 표지를 영상으로 바꾼 음악 앱은 끄는 옵션을 설정 깊숙이 숨겼다."
+    ],
+    [
+      "전환",
+      "웹 디자인은 언제나 행동을 유도한다. 문제는 유도의 존재가 아니라 투명하고, 되돌릴 수 있고, 사용자 이익과 맞는지이다."
+    ],
+    [
+      "결론",
+      "영향이 적은 선택지를 기본값으로 하고 대안은 분명히 남겨 두는 것이 책임 있는 방법이다. 기본값은 강력해서 사용자 주체성을 해치지 않고도 환경 영향을 줄일 수 있다."
+    ]
+  ],
+  "tip": "41번: 앞 단락의 '문제(사용자 통제 방해 + 자원 낭비)'와 뒤 단락의 '해결(사용자 이익에 맞고 환경 영향이 적은 기본값)'을 둘 다 담은 제목을 고르세요. 42번: 밑줄 낱말 뒤 and로 이어진 내용(환경 영향을 줄일 수 있다)과 앞뒤가 맞는지 확인하면 powerless가 어색하다는 게 보여요.",
+  "keywords": [
+    "2026년 10월 고1 모의고사 영어 41~42번",
+    "2026 10월 고1 영어 41~42번 해설",
+    "고1 10월 모의고사 41번 정답",
+    "고1 10월 모의고사 42번 정답",
+    "고1 모의고사 장문 독해",
+    "웹 디자인 기본값 default nudge 환경 지문",
+    "infinite scroll autoplay 지속가능성"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 3,
+      "answer": 1,
+      "evidence": [
+        {
+          "en": "Patterns such as infinite scroll, autoplaying videos, or requiring an account just to make a purchase all interfere with the user's control over their own experience.",
+          "ko": "무한 스크롤, 자동 재생 영상, 구매하려고 계정을 요구하는 것 같은 패턴은 모두 사용자가 자기 경험을 통제하는 것을 방해한다.",
+          "note": "첫 문장부터 '사용자의 통제권'이 문제라고 해요. ①의 Respects Users와 연결돼요."
+        },
+        {
+          "en": "From a sustainability perspective, many of these patterns encourage overconsumption of data and attention.",
+          "ko": "지속가능성의 관점에서 이러한 패턴 중 많은 것들이 데이터와 주의력의 과잉 소비를 부추긴다.",
+          "note": "두 번째 축은 '환경(지속가능성)'이에요. ①의 the Environment와 연결돼요."
+        },
+        {
+          "en": "In many cases, the most responsible approach is to make the lower-impact option the default, while keeping alternatives clearly available.",
+          "ko": "많은 경우 가장 책임 있는 방법은 대안을 분명히 이용할 수 있게 두면서 영향이 더 적은 선택지를 기본값으로 만드는 것이다.",
+          "note": "해결책도 '환경 영향은 줄이고(lower-impact) 사용자의 선택은 지키는(alternatives available)' 디자인이에요. 두 가지를 다 담은 제목이 ①이에요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "Creating Web Design That Respects Users and the Environment",
+          "ko": "사용자와 환경을 존중하는 웹 디자인 만들기",
+          "why": "정답. 사용자의 통제권과 지속가능성을 함께 지키는 디자인(영향이 적은 기본값 + 분명한 대안)이라는 글의 결론과 맞아요."
+        },
+        {
+          "en": "The Better the Web Design, the More Data Usage Required",
+          "ko": "웹 디자인이 좋을수록 더 많은 데이터 사용이 필요하다",
+          "why": "글은 데이터를 많이 쓰게 하는 디자인을 문제로 봐요. 좋은 디자인일수록 데이터를 덜 쓰게 해야 한다는 쪽이라 반대예요."
+        },
+        {
+          "en": "The Environmental Costs of Making Digital Devices",
+          "ko": "디지털 기기 제조의 환경 비용",
+          "why": "글은 기기를 '만드는' 비용이 아니라 웹 디자인 때문에 '쓰는' 에너지를 다뤄요. device라는 단어만 걸린 함정이에요."
+        },
+        {
+          "en": "Why Do Users Prefer Autoplaying Visual Content?",
+          "ko": "사용자들은 왜 자동 재생 시각 콘텐츠를 선호하는가?",
+          "why": "자동 재생은 문제 사례로 나올 뿐, 사용자가 좋아하는 이유는 글에 없어요. 오히려 보지 않을 사람에게도 강요된다고 해요."
+        },
+        {
+          "en": "User-Friendly Design: Making Purchasing Easier",
+          "ko": "사용자 친화적 디자인: 구매를 더 쉽게 만들기",
+          "why": "구매 시 계정 요구는 첫 문장의 예시 하나일 뿐이에요. 구매를 쉽게 하는 방법은 글의 주제가 아니에요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "Defaults are (e) powerless, and when chosen carefully, they can reduce environmental impact without removing user agency.",
+          "ko": "기본값은 (e) 영향력이 없고, 신중하게 선택되면 사용자 주체성을 없애지 않고도 환경 영향을 줄일 수 있다.",
+          "note": "영향력이 '없다'면서 바로 환경 영향을 '줄일 수 있다'고 하면 앞뒤가 안 맞아요. powerless → powerful(강력한)이어야 해요."
+        },
+        {
+          "en": "This change significantly increases data usage and battery consumption, while the option to disable it is buried (c) deep in the settings. As a result, most users consume more resources unless they actively search for a way to opt out.",
+          "ko": "이 변화는 데이터 사용과 배터리 소비를 크게 늘리는 반면, 그것을 끄는 옵션은 설정 (c) 깊숙이 숨겨져 있다. 그 결과 대부분의 사용자는 적극적으로 빠져나올 방법을 찾지 않으면 더 많은 자원을 쓴다.",
+          "note": "사용자 대부분이 기본값을 그대로 따른다는 사례예요. 이 사례 자체가 '기본값은 힘이 세다'는 증거라 (e) powerless와 충돌해요. (c) deep은 적절해요."
+        },
+        {
+          "en": "In many cases, the most (d) responsible approach is to make the lower-impact option the default, while keeping alternatives clearly available.",
+          "ko": "많은 경우 가장 (d) 책임 있는 방법은 대안을 분명히 이용할 수 있게 두면서 영향이 적은 선택지를 기본값으로 만드는 것이다.",
+          "note": "윤리 기준(투명성, 사용자 이익)에 맞는 방법이니 responsible은 적절해요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) overconsumption",
+          "ko": "과잉 소비",
+          "why": "적절. 뒤에서 무한 스크롤·자동 재생이 데이터와 에너지를 더 쓰게 한다고 설명하니 '과잉 소비'가 맞아요."
+        },
+        {
+          "en": "(b) forces",
+          "ko": "강요하다",
+          "why": "적절. 절대 보지 않을 사람에게도 미디어를 로딩·재생시키니 '강요한다'가 자연스러워요."
+        },
+        {
+          "en": "(c) deep",
+          "ko": "깊이",
+          "why": "적절. 끄는 옵션이 설정 '깊숙이' 묻혀 있어서 대부분의 사용자가 그대로 자원을 더 쓰게 된다는 흐름이에요."
+        },
+        {
+          "en": "(d) responsible",
+          "ko": "책임 있는",
+          "why": "적절. 영향이 적은 선택지를 기본으로 하고 대안도 남겨 두는 방법은 윤리 기준에 맞는 '책임 있는' 접근이에요."
+        },
+        {
+          "en": "(e) powerless",
+          "ko": "영향력이 없는",
+          "why": "정답(부적절). 기본값이 환경 영향을 줄일 수 있다고 이어지고, 앞의 사례도 사용자가 기본값을 그대로 따른다는 내용이라 powerful(강력한)이 와야 해요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "A such as B + 복수 동사",
+      "ex": "Patterns such as infinite scroll, autoplaying videos, or requiring an account just to make a purchase all interfere with …",
+      "d": "주어는 Patterns(복수)라서 동사는 interfere예요. such as ~ purchase는 예시를 넣은 수식어라 사이를 건너뛰고 주어·동사를 찾으세요."
+    },
+    {
+      "t": "whether A or not",
+      "ex": "Infinite scroll keeps loading new content whether the user wants it or not",
+      "d": "'원하든 원하지 않든'. keep -ing는 '계속 ~하다'."
+    },
+    {
+      "t": "force + 목적어 + to V",
+      "ex": "Autoplay forces media to load and play even for people who may never watch it.",
+      "d": "'~가 …하도록 강요하다'. to load and play는 to가 하나에 동사 두 개가 병렬로 붙었어요."
+    },
+    {
+      "t": "not A but B",
+      "ex": "The ethical line is not whether nudging exists, but whether it is transparent, reversible, and aligned with the user's interests.",
+      "d": "'A가 아니라 B'. 핵심은 B 쪽이에요. 행동 유도가 있느냐가 아니라 그것이 투명하고 사용자 이익에 맞느냐가 기준이에요."
+    },
+    {
+      "t": "make + 목적어 + 목적격 보어(명사)",
+      "ex": "the most responsible approach is to make the lower-impact option the default",
+      "d": "make A B는 'A를 B로 만들다'. 영향이 적은 선택지를 기본값으로 만든다는 뜻이에요."
+    },
+    {
+      "t": "접속사 + 분사 (when chosen)",
+      "ex": "when chosen carefully, they can reduce environmental impact without removing user agency.",
+      "d": "when (they are) chosen에서 주어와 be동사가 빠졌어요. '신중하게 선택될 때'."
+    }
+  ],
+  "vocab": [
+    [
+      "infinite scroll",
+      "무한 스크롤"
+    ],
+    [
+      "interfere with",
+      "~을 방해하다"
+    ],
+    [
+      "sustainability",
+      "지속가능성"
+    ],
+    [
+      "perspective",
+      "관점"
+    ],
+    [
+      "overconsumption",
+      "과잉 소비"
+    ],
+    [
+      "processing",
+      "(데이터) 처리"
+    ],
+    [
+      "static",
+      "정적인, 움직이지 않는"
+    ],
+    [
+      "by default",
+      "기본값으로"
+    ],
+    [
+      "disable",
+      "비활성화하다, 끄다"
+    ],
+    [
+      "bury",
+      "묻다, 숨기다"
+    ],
+    [
+      "opt out",
+      "빠져나오다, 거부하다"
+    ],
+    [
+      "acknowledge",
+      "인정하다"
+    ],
+    [
+      "nudge",
+      "(슬쩍) 유도하다"
+    ],
+    [
+      "ethical",
+      "윤리적인"
+    ],
+    [
+      "transparent",
+      "투명한"
+    ],
+    [
+      "reversible",
+      "되돌릴 수 있는"
+    ],
+    [
+      "aligned with",
+      "~와 일치하는"
+    ],
+    [
+      "alternative",
+      "대안"
+    ],
+    [
+      "default",
+      "기본값"
+    ],
+    [
+      "powerless",
+      "힘없는 ↔ 와야 할 말: powerful"
+    ],
+    [
+      "agency",
+      "주체성, 행위 능력"
+    ]
+  ],
+  "summary": {
+    "en": "Web design always nudges users, so designers should make low-impact options the default while keeping choices open, protecting both users and the environment.",
+    "ko": "웹 디자인은 늘 사용자의 행동을 유도하므로, 디자이너는 선택권을 열어 두면서 환경 영향이 적은 선택지를 기본값으로 정해 사용자와 환경을 함께 지켜야 한다."
+  },
+  "writing": {
+    "en": "A well-chosen default can save energy without taking away users' freedom.",
+    "ko": "잘 고른 기본값은 사용자의 자유를 빼앗지 않으면서 에너지를 아낄 수 있다."
+  },
+  "faq": [
+    [
+      "2026년 10월 고1 모의고사 영어 41번 정답은?",
+      "① Creating Web Design That Respects Users and the Environment(사용자와 환경을 존중하는 웹 디자인 만들기)예요. 사용자의 통제권과 지속가능성을 함께 지키는 디자인이 글의 핵심이에요."
+    ],
+    [
+      "2026년 10월 고1 모의고사 영어 42번 정답은?",
+      "⑤ (e) powerless예요. 기본값이 환경 영향을 줄일 수 있다는 문맥이라 powerful(강력한)이 와야 해요."
+    ],
+    [
+      "③ The Environmental Costs of Making Digital Devices가 오답인 이유는?",
+      "글은 기기를 만드는 비용이 아니라, 웹 디자인 때문에 기기와 서버가 더 쓰는 에너지를 다뤄요. device라는 단어만 같은 함정이에요."
+    ]
+  ],
+  "note": "42번처럼 밑줄 낱말 바로 뒤에 and로 이어지는 말이 있으면, 둘이 같은 방향인지부터 확인하라고 해요. '힘이 없다'와 '환경 영향을 줄일 수 있다'는 같이 갈 수 없어요."
+}
