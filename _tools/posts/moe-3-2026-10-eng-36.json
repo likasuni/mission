@@ -1,0 +1,125 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 36,
+  "type": "순서",
+  "points": 3,
+  "answer": 4,
+  "topic": "사회적 인지가 특별한 이유: 직접 볼 수 없는 속성을 추론해야 한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 36번",
+    "2026 10월 고3 영어 36번 해설",
+    "고3 10월 모의고사 36번 정답",
+    "고3 모의고사 글의 순서",
+    "social cognition 사회적 인지 지문",
+    "distal proximal cues 추론 지문",
+    "글의 순서 3점 해설"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 36번은 사회적 인지에서 우리가 알고 싶은 지능·공격성 같은 속성은 직접 관찰할 수 없어서 훨씬 많은 추론이 필요하다는 글의 순서 문항이에요. (C) 끝의 '공격성은 직접 볼 수 없다'를 (A)가 '때리는 걸 보고 추론한다'로 받고, (B)가 One may argue ~ However로 결론을 내려요. 정답은 ④ (C) － (A) － (B)예요.",
+  "flow": [
+    ["주어진 글", "사회적 인지에서 지각자는 지능, 신뢰성, 사랑, 공격성, 유머 같은 속성에 관심이 있다."],
+    ["(C) 문제 제기", "이런 속성을 느끼는 감각 수용기는 없다. 가까운 단서로 추론해야 하는 먼 실재물이다. 예를 들어 공격성은 직접 관찰할 수 없다."],
+    ["(A) 추론 과정", "때리는 행동을 보고 공격성을 추론한다. 그래서 크기·색깔보다 훨씬 많은 구성적 처리가 필요하고, 무생물을 판단할 때보다 정보를 훨씬 넘어서야 한다."],
+    ["(B) 반론 + 결론", "색깔·크기 같은 기본 지각에도 추론이 필요하다고 할 수 있다. 그러나 훨씬 많은 추론이 필요한 건 사회적 판단이고, 이 큰 비중이 사회적 인지를 고유한 과정으로 만든다."]
+  ],
+  "evidence": [
+    {
+      "en": "Individuals have no sensory receptors for these attributes, … For example, we cannot directly observe the “aggressiveness” of a particular person.",
+      "ko": "사람들은 이러한 속성에 대한 감각 수용기를 가지고 있지 않은데, … 예를 들어, 우리는 특정한 사람의 ‘공격성’을 직접 관찰할 수 없다.",
+      "note": "(C)의 these attributes는 주어진 글의 intelligence, aggressiveness 등을 가리켜요. 그래서 (C)가 맨 앞이에요. 마지막에 '공격성'을 예로 들며 끝나요."
+    },
+    {
+      "en": "We can observe whether the person is hitting someone, and we may use this observation to infer aggressiveness.",
+      "ko": "우리는 그 사람이 누군가를 때리고 있는지 관찰할 수 있으며, 공격성을 추론하는 데 이 관찰을 이용할 수도 있다.",
+      "note": "(C)의 '공격성은 직접 볼 수 없다'에 '대신 행동을 보고 추론한다'로 답해요. the person은 (C)의 a particular person이에요. (C) → (A) 확정이에요."
+    },
+    {
+      "en": "One may argue that even basic perceptions such as colour and size require a considerable degree of inference. However, in most cases, it is the social judgments that require far more inferential processes, …",
+      "ko": "어떤 사람은 색깔과 크기 같은 기본적인 지각에도 상당한 정도의 추론이 필요하다고 주장할 수도 있다. 그러나, 대부분의 경우, 훨씬 더 많은 추론 과정이 필요한 것은 바로 사회적 판단이며, …",
+      "note": "(B)의 colour and size는 (A)에서 처음 나온 size or colour와 비교한 말을 이어받은 반론이에요. (A) 뒤에 와야 하고, However로 글 전체 결론을 내려서 맨 끝이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A) － (C) － (B)",
+      "ko": "추론 과정 → 문제 제기 → 결론",
+      "why": "(A)의 the person이 누구인지 주어진 글에 없어요. '공격성은 직접 볼 수 없다'는 (C)가 먼저 나와야 (A)가 이어져요."
+    },
+    {
+      "en": "(B) － (A) － (C)",
+      "ko": "반론·결론 → 추론 과정 → 문제 제기",
+      "why": "(B)의 colour and size, social judgments는 (A)에서 크기·색깔과 사회적 판단을 비교한 뒤에야 나올 수 있어요. 결론이 맨 앞에 오게 돼요."
+    },
+    {
+      "en": "(B) － (C) － (A)",
+      "ko": "반론·결론 → 문제 제기 → 추론 과정",
+      "why": "(B)가 첫 순서가 될 수 없어요. 주어진 글은 속성을 소개만 했고, 색깔·크기 비교는 아직 나오지 않았어요."
+    },
+    {
+      "en": "(C) － (A) － (B)",
+      "ko": "문제 제기 → 추론 과정 → 반론·결론",
+      "why": "정답. (C)가 주어진 글의 속성을 these attributes로 받고, (A)가 (C)의 공격성 예를 이어받아 추론을 설명하고, (B)가 One may argue ~ However로 결론을 내려요."
+    },
+    {
+      "en": "(C) － (B) － (A)",
+      "ko": "문제 제기 → 반론·결론 → 추론 과정",
+      "why": "(C) 끝의 공격성 예가 (A)의 '때리는 걸 보고 추론'과 바로 이어져요. (B)가 끼면 연결이 끊기고 (B)의 colour and size도 근거 없이 나와요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "계속적 용법 which + 병렬",
+      "ex": "… these attributes, which refer to distal entities that have to be inferred from more proximal cues, and sometimes have no objective existence at all.",
+      "d": "which의 동사가 refer to와 have 두 개로 병렬이에요. that have to be inferred는 distal entities를 꾸며요. distal(먼) ↔ proximal(가까운) 대비가 핵심이에요."
+    },
+    {
+      "t": "far more ~ than (비교급 강조)",
+      "ex": "their assessment requires far more constructive processing than the assessment of size or colour.",
+      "d": "far는 비교급 강조로 '훨씬'. much, even, still, a lot도 같은 역할을 해요."
+    },
+    {
+      "t": "It is ~ that 강조 구문",
+      "ex": "it is the social judgments that require far more inferential processes, and it is precisely this large proportion of constructive processes that makes social cognition a specific and unique process.",
+      "d": "It is와 that 사이가 강조되는 말이에요. 두 번째 문장은 make + 목적어 + 명사(목적격 보어)로 '~을 …으로 만들다'."
+    },
+    {
+      "t": "One may argue ~. However, …",
+      "ex": "One may argue that even basic perceptions such as colour and size require a considerable degree of inference. However, …",
+      "d": "예상되는 반론을 먼저 인정하고 However로 자기 주장을 내세우는 양보-반박 구조예요. 순서 문항에서 글의 마지막에 오기 쉬운 흐름이에요."
+    }
+  ],
+  "vocab": [
+    ["social cognition", "사회적 인지"],
+    ["perceiver", "지각자"],
+    ["attribute", "속성"],
+    ["trustworthiness", "신뢰성"],
+    ["aggressiveness", "공격성"],
+    ["sensory receptor", "감각 수용기"],
+    ["distal", "먼 쪽의"],
+    ["entity", "실재물"],
+    ["proximal", "가까운 쪽의"],
+    ["cue", "단서"],
+    ["objective", "객관적인"],
+    ["infer", "추론하다"],
+    ["assessment", "평가"],
+    ["constructive", "구성적인"],
+    ["inanimate", "생명이 없는"],
+    ["inference", "추론"],
+    ["proportion", "비율, 비중"]
+  ],
+  "summary": {
+    "en": "Social cognition is unique because traits like aggressiveness cannot be directly observed and must be inferred from behavior, requiring far more constructive processing than perceiving objects.",
+    "ko": "공격성 같은 특성은 직접 관찰할 수 없고 행동에서 추론해야 해서, 사회적 인지는 사물을 지각할 때보다 훨씬 많은 구성적 처리가 필요한 독특한 과정이다."
+  },
+  "writing": {
+    "en": "We judge people's inner traits by inferring them from what we can see.",
+    "ko": "우리는 눈에 보이는 것으로부터 추론해서 사람의 내면 특성을 판단한다."
+  },
+  "tip": "순서 문항은 지시어와 예시의 연결을 따라가세요. 주어진 글의 속성 목록 → (C) these attributes, (C) 끝의 a particular person의 aggressiveness → (A) the person, aggressiveness. (A)에서 처음 나온 size or colour를 (B)가 colour and size로 받아요. One may argue ~ However처럼 반론을 인정하고 뒤집는 문단은 결론이라 끝에 오는 경우가 많아요.",
+  "note": "(C) 마지막 문장이 For example로 '공격성'을 콕 집어 주는 게 다리예요. 문단 끝 예시가 다음 문단 첫 문장과 어떻게 이어지는지 보세요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 36번 정답은?", "④ (C) － (A) － (B)예요. 속성은 직접 볼 수 없다(C) → 행동을 보고 추론한다(A) → 그래서 사회적 판단이 특별하다(B) 순서예요."],
+    ["2026 10월 고3 영어 36번은 어떤 유형인가요?", "주어진 글 다음에 이어질 글의 순서를 고르는 3점 문항이에요. 사회적 인지와 추론을 다룬 지문이에요."],
+    ["(A)가 첫 순서가 될 수 없는 이유는?", "(A)의 the person과 '때리는 행동'은 (C) 끝의 '특정한 사람의 공격성은 직접 볼 수 없다'를 이어받은 말이에요. (C)가 먼저 나와야 해요."]
+  ]
+}

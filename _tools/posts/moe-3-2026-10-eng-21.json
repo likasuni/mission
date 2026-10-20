@@ -1,0 +1,65 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 1,
+  "topic": "번역은 원문에 이미 있는 것을 새로 만들지 않고 드러내 보이는 '사진 현상'과 같다",
+  "date": "2026-10-21",
+  "keywords": ["2026년 10월 고3 모의고사 영어 21번", "2026 10월 고3 영어 21번 해설", "고3 10월 모의고사 21번 정답", "고3 모의고사 함축 의미 추론", "develops the photograph 의미", "Merleau-Ponty 지각 번역 지문", "révélateur 현상액"],
+  "lead": "2026년 10월 고3 모의고사 영어 21번은 Merleau-Ponty의 지각 이론을 빌려, 번역이 원문을 그대로 비추는 것도 새로 바꾸는 것도 아니라 '사진을 현상하듯' 이미 있는 것을 드러낸다고 말하는 함축 의미 문항이에요. perception neither finds the world nor creates it: it reveals it가 밑줄을 푸는 열쇠예요. 정답은 ① brings into view what already exists without inventing anything new예요.",
+  "flow": [
+    ["문제 제기", "번역이 원문을 '반영'하느냐 '변형'하느냐 하는 철학적 딜레마는 치워야 한다."],
+    ["이론", "Merleau-Ponty는 '보느냐, 구성하느냐'라는 이분법에서 벗어나려 한다. 우리는 사물을 우리가 사는 세상 속에서, 쓸 수 있는 것으로 지각한다."],
+    ["비유", "지각은 세상을 발견하지도 창조하지도 않고 '드러낸다'. 그는 이것을 암실의 현상액(révélateur)에 빗댄다."],
+    ["적용", "마찬가지로 번역은 원문의 '사진을 현상한다'. 번역가는 단순히 인지하지도, 없던 것으로 바꾸지도 않는다."],
+    ["마무리", "번역가는 원문의 행위유발성을 받아들이고 그 세계 속을 움직이며 일정한 방식으로 응답한다."]
+  ],
+  "evidence": [
+    {"en": "One of Merleau-Ponty's many great metaphors is that perception neither finds the world nor creates it: it reveals it, which he expresses using the term révélateur, the developing fluid for photographs in a darkroom.", "ko": "Merleau-Ponty의 여러 뛰어난 비유 가운데 하나는 지각은 세상을 발견하지도 않고 창조하지도 않는다는 것인데, 즉 그것은 세상을 드러내며, 그는 이를 'révélateur', 즉 암실의 사진용 현상액이라는 용어로 표현한다.", "note": "'현상'의 뜻이 여기서 정해져요. creates가 아니라 reveals, 즉 새로 만들지 않고 드러낸다는 거예요."},
+    {"en": "The act of seeing develops what's in the world, like developing a photograph.", "ko": "보는 행위는 사진을 현상하듯 세상 속에 있는 것을 '현상한다'.", "note": "what's in the world(이미 세상에 있는 것)를 현상한다고 했어요. ①의 what already exists와 같은 말이에요."},
+    {"en": "Translators don't simply “recognize” what's there, but nor are we “changing” it into anything it isn't already, …", "ko": "번역가는 거기에 있는 것을 그저 '인지하지' 않고, 우리는 그것을 그것이 이미 존재하지 않는 어떤 것으로 '바꾸지'도 않는다 …", "note": "밑줄 바로 뒤 풀이예요. 원문에 없는 것으로 바꾸지 않는다 = without inventing anything new. ②④⑤를 지우는 근거예요."}
+  ],
+  "choices": [
+    {"en": "brings into view what already exists without inventing anything new", "ko": "새로운 어떤 것도 만들어 내지 않고 이미 존재하는 것을 보이게 한다", "why": "정답. 현상액이 필름에 이미 찍힌 상을 드러내듯, 번역도 원문에 있는 것을 드러낼 뿐 없는 것을 지어내지 않는다는 뜻이에요."},
+    {"en": "invents ideologically driven values that are not grounded in the original", "ko": "원문에 근거하지 않은, 이념에 이끌린 가치를 만들어 낸다", "why": "원문에 없는 것으로 바꾸지 않는다(nor are we “changing” it into anything it isn't already)는 본문과 정반대예요."},
+    {"en": "provides detailed background information of the original text to enhance reader comprehension", "ko": "독자의 이해를 높이려고 원문의 자세한 배경 정보를 제공한다", "why": "배경 정보나 독자 이해는 나오지 않아요. 원문에 없는 정보를 덧붙이는 것이라 오히려 '드러내기'와 맞지 않아요."},
+    {"en": "introduces a completely new interpretation that appeals to the target readers", "ko": "목표 독자의 마음을 끄는 완전히 새로운 해석을 도입한다", "why": "completely new는 '창조'예요. 지각(번역)은 세상을 창조하지 않는다고 했으니 오답이에요."},
+    {"en": "exploits a work of art in order to convey the translator's perspectives", "ko": "번역가의 관점을 전달하려고 예술 작품을 이용한다", "why": "번역가의 관점을 덧씌우는 것은 '변형'에 가까워요. 글은 번역가가 원문의 세계 안에서 그것에 응답한다고 했어요."}
+  ],
+  "grammar": [
+    {"t": "whether A or (instead) B", "ex": "All the philosophical dilemmas about whether translation “reflects” or instead “transforms” what's in the original need to be swept aside.", "d": "주어가 All … original까지 아주 길고 동사는 need예요. whether A or B는 'A인지 B인지'. need to be swept aside는 수동태 '치워져야 한다'예요."},
+    {"t": "neither A nor B", "ex": "… perception neither finds the world nor creates it: it reveals it …", "d": "'A도 아니고 B도 아니다'. 두 가지를 다 부정한 뒤 콜론 뒤에 진짜 답(reveals)을 내놓는 구조예요. 함축 문제의 핵심 단서예요."},
+    {"t": "계속적 용법 which + 동격", "ex": "… which he expresses using the term révélateur, the developing fluid for photographs in a darkroom.", "d": "which는 앞 문장 내용 전체를 받아요. 콤마 뒤 the developing fluid …는 révélateur를 설명하는 동격이에요."},
+    {"t": "nor + 도치", "ex": "… but nor are we “changing” it into anything it isn't already, …", "d": "부정어 nor가 앞으로 나오면 '조동사(be동사) + 주어' 순서로 도치돼요. are we가 그 예예요."}
+  ],
+  "vocab": [
+    ["philosophical", "철학적인"],
+    ["dilemma", "딜레마"],
+    ["reflect", "반영하다"],
+    ["transform", "변형하다"],
+    ["sweep aside", "치워 버리다, 무시하다"],
+    ["dichotomy", "이분법"],
+    ["perception", "지각"],
+    ["constitute", "구성하다"],
+    ["metaphor", "비유, 은유"],
+    ["reveal", "드러내다"],
+    ["developing fluid", "현상액"],
+    ["darkroom", "암실"],
+    ["develop", "(사진을) 현상하다"],
+    ["interventionist", "개입주의적인"],
+    ["affordance", "행위유발성"],
+    ["ideologically", "이념적으로"],
+    ["exploit", "이용하다"]
+  ],
+  "summary": {"en": "Just as perception reveals the world rather than finding or creating it, translation brings out what is already in the original text instead of inventing something new.", "ko": "지각이 세상을 발견하거나 창조하지 않고 드러내듯, 번역도 새로운 것을 만들지 않고 원문에 이미 있는 것을 드러낸다."},
+  "writing": {"en": "A good translation reveals what is already in the original.", "ko": "좋은 번역은 원문에 이미 있는 것을 드러낸다."},
+  "tip": "비유 표현이 밑줄이면 글 안에서 그 비유를 처음 설명한 문장을 찾으세요. 여기선 neither finds … nor creates …: it reveals가 '현상'의 뜻을 정해 줘요. 그다음 선택지에서 invent, new, convey the translator's perspectives처럼 '없던 것을 더하는' 말이 들어간 것을 지우면 답이 남아요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 21번 정답은?", "① brings into view what already exists without inventing anything new예요. 번역은 원문에 이미 있는 것을 현상하듯 드러낸다는 뜻이에요."],
+    ["2026년 10월 고3 영어 21번은 어떤 유형인가요?", "밑줄 친 어구의 함축 의미를 고르는 3점 문항이에요. Merleau-Ponty의 지각 이론을 번역에 적용한 지문이에요."],
+    ["develops the photograph는 무슨 뜻인가요?", "암실에서 현상액이 필름에 이미 찍힌 상을 보이게 하듯, 번역이 원문 속에 있는 것을 새로 만들지 않고 드러낸다는 비유예요."],
+    ["④ completely new interpretation이 오답인 이유는?", "본문은 지각(번역)이 세상을 '창조하지 않는다'고 했어요. 완전히 새로운 해석은 창조에 해당해서 오답이에요."]
+  ],
+  "note": "철학 지문이라 겁먹기 쉬운데, 사진 현상만 떠올리면 돼요. 현상액은 필름에 없는 그림을 그려 넣지 않죠. 그 장면 하나로 ①을 고르고, 새로 만들거나 덧붙이는 말이 있는 선택지는 다 지우세요."
+}

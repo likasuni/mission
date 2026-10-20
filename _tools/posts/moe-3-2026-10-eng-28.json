@@ -1,0 +1,187 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "E-Bike City Tour(전기 자전거 시내 투어) 안내문",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 28번",
+    "2026 10월 고3 영어 28번 해설",
+    "고3 10월 모의고사 28번 정답",
+    "고3 모의고사 안내문 일치",
+    "E-Bike City Tour 지문",
+    "고3 영어 실용문 해설"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 28번은 전기 자전거로 도시 곳곳을 둘러보는 E-Bike City Tour 안내문에서 내용과 일치하는 것을 고르는 문항이에요. Fees 항목의 '10% off the total for groups of 4 or more'가 그대로 선택지가 됐어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "소개",
+      "전기 자전거를 타고 도시의 숨은 명소를 둘러보자고 안내한다."
+    ],
+    [
+      "일정·집결지",
+      "매주 토요일 오전 10시, Riverside Park 북쪽 입구에서 모인다."
+    ],
+    [
+      "프로그램",
+      "제동·수신호 안전 교육(30분) 후 시내 길을 따라 가이드 단체 투어(1시간)를 한다."
+    ],
+    [
+      "참가 조건",
+      "16세 이상(유효한 신분증 필요), 최고 속도는 시속 30km."
+    ],
+    [
+      "요금",
+      "1인 25달러, 4인 이상 단체는 총액 10% 할인. 투어 2일 전 취소 시 전액 환불, 그 이후는 환불 불가."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "10% off the total for groups of 4 or more",
+      "ko": "4인 이상 단체는 총액의 10% 할인",
+      "note": "Fees 아래 항목이에요. 선택지 ④ '4인 이상의 단체는 할인을 받을 수 있다'와 그대로 일치해요."
+    },
+    {
+      "en": "Schedule: Every Saturday at 10 a.m.",
+      "ko": "일정: 매주 토요일 오전 10시",
+      "note": "요일이 토요일이에요. ① '일요일마다'는 요일만 바꾼 함정이에요."
+    },
+    {
+      "en": "(full refund if canceled 2 days before the tour but non-refundable after that)",
+      "ko": "(투어 2일 전에 취소하면 전액 환불되지만 그 이후에는 환불되지 않음)",
+      "note": "전액 환불 기한은 '2일 전'까지예요. 전날 취소는 그 이후라 환불이 안 돼요. ⑤를 지우는 근거예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "일요일마다 오전 10시에 진행된다.",
+      "ko": "요일",
+      "why": "불일치. Every Saturday at 10 a.m. — 시간은 맞지만 요일이 토요일이에요."
+    },
+    {
+      "en": "안전 교육은 1시간 동안 진행된다.",
+      "ko": "안전 교육 시간",
+      "why": "불일치. 안전 교육은 30 mins(30분)이고, 1 hour는 가이드 단체 투어 시간이에요. 두 숫자를 바꿔 놓은 함정이에요."
+    },
+    {
+      "en": "16세 미만은 신분증이 있어야 참여할 수 있다.",
+      "ko": "참가 연령",
+      "why": "불일치. Must be 16 years or older — 16세 이상만 참가할 수 있어요. 신분증은 16세 이상 참가자가 내는 거예요."
+    },
+    {
+      "en": "4인 이상의 단체는 할인을 받을 수 있다.",
+      "ko": "단체 할인",
+      "why": "정답(일치). 10% off the total for groups of 4 or more와 같은 내용이에요."
+    },
+    {
+      "en": "투어 전날 취소하면 전액 환불받을 수 있다.",
+      "ko": "환불 규정",
+      "why": "불일치. 전액 환불은 투어 2일 전 취소까지만 되고, 그 뒤는 non-refundable(환불 불가)이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "명령문으로 시작하는 안내문",
+      "ex": "Explore the city’s hidden spots on an E-Bike!",
+      "d": "동사원형으로 시작하는 명령문이에요. 광고·안내문 첫 줄에서 '~해 보세요'라는 권유로 자주 쓰여요."
+    },
+    {
+      "t": "must be + 나이 + or older",
+      "ex": "Age: Must be 16 years or older (valid ID required)",
+      "d": "'~세 이상이어야 한다'. or older는 그 나이를 포함해서 그 위라는 뜻이에요. 이상·미만을 바꾼 선택지를 조심하세요."
+    },
+    {
+      "t": "if + 과거분사 (조건절 축약)",
+      "ex": "full refund if canceled 2 days before the tour",
+      "d": "if (it is) canceled에서 주어와 be동사가 빠진 형태예요. '취소되면'으로 읽어요."
+    },
+    {
+      "t": "A but B 대조",
+      "ex": "full refund if canceled 2 days before the tour but non-refundable after that",
+      "d": "but 뒤 after that(그 이후)이 기한을 정해 줘요. 환불 문제는 기준 시점을 꼭 확인하세요."
+    }
+  ],
+  "vocab": [
+    [
+      "hidden spot",
+      "숨은 명소"
+    ],
+    [
+      "meeting site",
+      "집결 장소"
+    ],
+    [
+      "entrance",
+      "입구"
+    ],
+    [
+      "braking",
+      "제동, 브레이크 걸기"
+    ],
+    [
+      "signaling",
+      "(손) 신호 보내기"
+    ],
+    [
+      "guided tour",
+      "가이드가 안내하는 투어"
+    ],
+    [
+      "requirement",
+      "요건, 조건"
+    ],
+    [
+      "valid ID",
+      "유효한 신분증"
+    ],
+    [
+      "maximum speed",
+      "최고 속도"
+    ],
+    [
+      "fee",
+      "요금"
+    ],
+    [
+      "off",
+      "할인된"
+    ],
+    [
+      "refund",
+      "환불"
+    ],
+    [
+      "cancel",
+      "취소하다"
+    ],
+    [
+      "non-refundable",
+      "환불되지 않는"
+    ]
+  ],
+  "summary": {
+    "en": "The E-Bike City Tour runs every Saturday morning for riders aged 16 or older, starting with safety training, and offers a 10% group discount for four or more people.",
+    "ko": "E-Bike 시내 투어는 매주 토요일 오전에 16세 이상을 대상으로 안전 교육 후 진행되며, 4인 이상 단체에는 10% 할인을 준다."
+  },
+  "writing": {
+    "en": "Groups of four or more get 10% off the total.",
+    "ko": "4인 이상 단체는 총액에서 10% 할인을 받는다."
+  },
+  "tip": "안내문 일치는 선택지를 먼저 읽고 숫자·요일·조건(이상/미만, ~일 전)에 표시한 뒤 본문 해당 항목만 찾아 대조하세요. 이 문항처럼 30분과 1시간, 2일 전과 전날처럼 본문 숫자를 살짝 바꾼 선택지가 대부분이에요.",
+  "faq": [
+    [
+      "2026년 10월 고3 모의고사 영어 28번 정답은?",
+      "④ '4인 이상의 단체는 할인을 받을 수 있다'예요. Fees 항목에 10% off the total for groups of 4 or more라고 나와 있어요."
+    ],
+    [
+      "2026 10월 고3 영어 28번은 어떤 유형인가요?",
+      "E-Bike City Tour 안내문을 읽고 내용과 일치하는 것을 고르는 2점 실용문 문항이에요."
+    ],
+    [
+      "⑤ '투어 전날 취소하면 전액 환불'은 왜 틀렸나요?",
+      "전액 환불은 투어 2일 전에 취소할 때만 되고, 그 이후(전날 포함)는 non-refundable, 즉 환불이 안 되기 때문이에요."
+    ]
+  ]
+}

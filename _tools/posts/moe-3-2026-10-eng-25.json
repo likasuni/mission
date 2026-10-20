@@ -1,0 +1,123 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 4,
+  "topic": "2025년 캐나다인의 연령대별 선호 독서 형식 (종이책·전자책·오디오북·선호 없음)",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 25번",
+    "2026 10월 고3 영어 25번 해설",
+    "고3 10월 모의고사 25번 정답",
+    "고3 모의고사 도표",
+    "Canadians Preferred Reading Formats 도표",
+    "연령대별 독서 형식 영어 도표"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 25번은 2025년 캐나다인이 선호하는 독서 형식을 연령대별로 나타낸 누적 막대 도표 문항이에요. '선호 없음'이 30-44세에서 11%로 가장 높은 건 맞지만, 45-54세(7%)의 두 배는 14%라서 '두 배 이상'이라고 한 ④가 틀렸어요. 정답은 ④예요.",
+  "flow": [
+    ["도표", "연령대별 종이책·전자책·오디오북·선호 없음 비율. 18-29세 52·24·21·3, 30-44세 49·18·22·11, 45-54세 60·14·18·7, 55-64세 71·13·8·8 (%)."],
+    ["①", "모든 연령대에서 종이책이 가장 높고, 55-64세가 71%로 최고 → 일치"],
+    ["②", "전자책은 18-29세 24%로 최고, 30-44세 18%가 그다음 → 일치"],
+    ["③", "18-29세는 전자책 24% > 오디오북 21%, 30-44세(18<22)와 45-54세(14<18)는 반대 → 일치"],
+    ["④", "선호 없음은 30-44세 11%로 최고(맞음). 하지만 45-54세 7%의 두 배는 14% → 11%는 두 배 이상이 아님 → 불일치"],
+    ["⑤", "55-64세 오디오북 8%, 선호 없음 8% 모두 전자책 13%보다 낮음 → 일치"]
+  ],
+  "evidence": [
+    {
+      "en": "The percentage of people who answered No Preference was highest in the 30-44 age group at 11%, which was more than twice that of the 45-54 age group.",
+      "ko": "선호 없음이라고 응답한 사람들의 비율은 30-44세 연령대에서 11%로 가장 높았는데, 이는 45-54세 연령대의 그것의 두 배보다 더 높았다.",
+      "note": "앞부분(30-44세 11%가 최고)은 맞아요. 하지만 45-54세는 7%라서 두 배는 14%예요. 11%는 14%보다 작으니 '두 배 이상'이 틀렸어요. 그래서 ④가 정답이에요."
+    },
+    {
+      "en": "While the preference for Ebooks was higher than that for Audiobooks in the 18-29 age group, the opposite was true in both the 30-44 and 45-54 age groups.",
+      "ko": "18-29세 연령대에서는 전자책에 대한 선호가 오디오북에 대한 선호보다 더 높았던 반면, 30-44세와 45-54세 연령대 모두에서는 그 반대였다.",
+      "note": "18-29세 24% > 21%, 30-44세 18% < 22%, 45-54세 14% < 18%. 세 연령대 모두 맞아서 일치해요."
+    },
+    {
+      "en": "In the 55-64 age group, the percentage of people who preferred Audiobooks and the percentage of people who showed No Preference were both lower than that for Ebooks.",
+      "ko": "55-64세 연령대에서, 오디오북을 선호한 사람들의 비율과 선호 없음을 보인 사람들의 비율은 둘 다 전자책에 대한 그것보다 더 낮았다.",
+      "note": "오디오북 8%, 선호 없음 8%, 전자책 13%. 둘 다 13%보다 낮으니 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "In all age groups, Print Books were the most preferred reading format, with the 55-64 age group showing the highest preference at 71%.",
+      "ko": "모든 연령대에서 종이책이 가장 선호되는 독서 형식이었고, 55-64세 연령대가 71%로 가장 높은 선호를 보였다.",
+      "why": "일치. 종이책이 네 연령대 모두에서 1위이고(52·49·60·71%), 그중 55-64세 71%가 가장 높아요."
+    },
+    {
+      "en": "The percentage of people who preferred Ebooks was the highest in the 18-29 age group, followed by the 30-44 age group.",
+      "ko": "전자책을 선호한 사람들의 비율은 18-29세 연령대에서 가장 높았고, 30-44세 연령대가 그 뒤를 이었다.",
+      "why": "일치. 전자책은 24% → 18% → 14% → 13% 순이라 18-29세가 1위, 30-44세가 2위예요."
+    },
+    {
+      "en": "While the preference for Ebooks was higher than that for Audiobooks in the 18-29 age group, the opposite was true in both the 30-44 and 45-54 age groups.",
+      "ko": "18-29세에서는 전자책 선호가 오디오북보다 높았던 반면, 30-44세와 45-54세에서는 반대였다.",
+      "why": "일치. 18-29세 24>21, 30-44세 18<22, 45-54세 14<18이에요."
+    },
+    {
+      "en": "The percentage of people who answered No Preference was highest in the 30-44 age group at 11%, which was more than twice that of the 45-54 age group.",
+      "ko": "선호 없음 비율은 30-44세에서 11%로 가장 높았는데, 이는 45-54세의 두 배보다 더 높았다.",
+      "why": "정답(불일치). 30-44세 11%가 최고인 건 맞지만, 45-54세 7%의 두 배는 14%라서 11%는 두 배에 못 미쳐요."
+    },
+    {
+      "en": "In the 55-64 age group, the percentage of people who preferred Audiobooks and the percentage of people who showed No Preference were both lower than that for Ebooks.",
+      "ko": "55-64세에서 오디오북 선호 비율과 선호 없음 비율은 둘 다 전자책보다 낮았다.",
+      "why": "일치. 오디오북 8%, 선호 없음 8%로 둘 다 전자책 13%보다 낮아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "with + 목적어 + 현재분사 (부대상황)",
+      "ex": "In all age groups, Print Books were the most preferred reading format, with the 55-64 age group showing the highest preference at 71%.",
+      "d": "with A -ing는 'A가 ~하면서/~한 채로'. 목적어(the 55-64 age group)와 showing이 능동 관계라 현재분사를 써요."
+    },
+    {
+      "t": "followed by (분사구문)",
+      "ex": "The percentage of people who preferred Ebooks was the highest in the 18-29 age group, followed by the 30-44 age group.",
+      "d": "'그 뒤를 ~가 이었다'. 도표 문장에서 1위 다음 2위를 말할 때 자주 써요. 순위가 맞는지 꼭 확인하세요."
+    },
+    {
+      "t": "the opposite was true",
+      "ex": "While the preference for Ebooks was higher than that for Audiobooks in the 18-29 age group, the opposite was true in both the 30-44 and 45-54 age groups.",
+      "d": "'그 반대가 사실이었다' = 오디오북이 전자책보다 높았다는 뜻이에요. that for Audiobooks의 that은 the preference를 대신해요."
+    },
+    {
+      "t": "계속적 용법 which + 배수 비교",
+      "ex": "… was highest in the 30-44 age group at 11%, which was more than twice that of the 45-54 age group.",
+      "d": "콤마 뒤 which는 앞의 11%를 받아요. more than twice that of ~는 '~의 그것(비율)의 두 배보다 많은'. 배수 표현은 직접 곱해서 확인해요."
+    }
+  ],
+  "vocab": [
+    ["preferred", "선호되는"],
+    ["format", "형식"],
+    ["age group", "연령대"],
+    ["survey", "설문 조사"],
+    ["conduct", "실시하다"],
+    ["print book", "종이책"],
+    ["ebook", "전자책"],
+    ["audiobook", "오디오북"],
+    ["preference", "선호"],
+    ["no preference", "선호 없음"],
+    ["followed by", "그 뒤를 ~가 잇는"],
+    ["opposite", "반대"],
+    ["twice", "두 배"],
+    ["due to rounding", "반올림 때문에"]
+  ],
+  "summary": {
+    "en": "In 2025, print books were the most preferred reading format among Canadians in every age group, while preferences for ebooks, audiobooks, and no preference varied by age.",
+    "ko": "2025년 캐나다인은 모든 연령대에서 종이책을 가장 선호했으며, 전자책·오디오북·선호 없음의 비율은 연령대에 따라 달랐다."
+  },
+  "writing": {
+    "en": "Print books remain the most popular reading format in all age groups.",
+    "ko": "종이책은 모든 연령대에서 여전히 가장 인기 있는 독서 형식이다."
+  },
+  "tip": "누적 막대 도표는 색(무늬)별로 숫자를 먼저 표로 옮겨 적어 두면 빨라요. ④처럼 '가장 높다 + 두 배 이상'처럼 두 가지를 말하는 문장은 둘 다 확인해야 해요. 11과 7을 보면 차이가 커 보여도 7 × 2 = 14를 직접 계산하면 틀린 게 바로 보여요.",
+  "note": "④는 '가장 높다'까지 맞으니까 뒷부분을 눈대중으로 넘기기 쉬워요. twice, half, three times가 보이면 펜으로 곱셈부터 하고 판단하세요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 25번 정답은?", "④예요. 선호 없음 비율이 30-44세에서 11%로 가장 높은 건 맞지만, 45-54세 7%의 두 배는 14%라서 '두 배 이상'은 틀린 설명이에요."],
+    ["2026 10월 고3 영어 25번은 어떤 유형인가요?", "도표의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. 2025년 캐나다인의 연령대별 선호 독서 형식을 나타낸 누적 막대 도표예요."],
+    ["③은 왜 일치하나요?", "18-29세는 전자책 24%가 오디오북 21%보다 높고, 30-44세(18%<22%)와 45-54세(14%<18%)는 오디오북이 더 높아서 '반대'라는 설명이 맞아요."]
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 32,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 5,
+  "topic": "숙고형 챗봇의 자기 평가: 지난 대화의 결과를 분석하는 능력",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 32번",
+    "2026 10월 고3 영어 32번 해설",
+    "고3 10월 모의고사 32번 정답",
+    "고3 모의고사 빈칸 추론",
+    "reflective chatbot self-assessment 지문",
+    "챗봇 자기 평가"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 32번은 고객 서비스 챗봇이 스스로를 평가하며 발전하는 방식을 다룬 빈칸 추론 문항이에요. 빈칸 뒤에서 챗봇이 사용자 피드백과 대화 메트릭스로 응답의 성공·실패를 측정하고, 잘 안 된 대화와 잘된 대화를 모두 분석한다고 설명해요. 정답은 ⑤ to analyze the outcomes of past conversations예요.",
+  "flow": [
+    [
+      "도입",
+      "숙고형 고객 서비스 챗봇은 응답 능력을 계속 높이기 위해 자기 평가 방법을 쓴다."
+    ],
+    [
+      "원리",
+      "지난 대화를 스스로 분석해 패턴·강점·약점·개선 영역을 찾고 지식 기반과 응답 전략을 다듬는다."
+    ],
+    [
+      "핵심",
+      "자기 평가의 중요한 측면은 지난 대화의 결과를 분석하는 능력이다. 피드백·감정 분석·메트릭스로 성공과 실패를 잰다."
+    ],
+    [
+      "실패 사례",
+      "사용자가 좌절·불만을 보인 대화를 찾아 오해, 정보 부족, 부적절한 말투 같은 문제를 짚어 낸다."
+    ],
+    [
+      "성공 사례",
+      "사용자가 만족·감사를 보인 대화도 분석해 효과적인 전략을 강화하고 다음 대화에서 반복한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Chatbots can review user feedback, sentiment analysis, and conversation metrics to measure the success or failure of their responses.",
+      "ko": "챗봇은 사용자 피드백, 감정 분석, 그리고 대화 메트릭스를 검토하여 자기 응답의 성공 혹은 실패를 평가할 수 있다.",
+      "note": "빈칸 바로 뒤 문장이에요. '응답의 성공·실패를 측정한다' = 대화의 결과(outcomes)를 분석한다는 뜻이라 ⑤와 바로 이어져요."
+    },
+    {
+      "en": "By introspecting on past conversations, these chatbots can identify patterns, strengths, weaknesses, and areas for improvement,",
+      "ko": "과거 대화를 자기 분석함으로써, 이러한 챗봇은 행동 양식, 강점, 약점, 그리고 개선을 위한 영역을 식별할 수 있으며,",
+      "note": "past conversations가 ⑤에 그대로 나와요. 자기 평가의 대상이 '지난 대화'라는 걸 빈칸 앞에서 미리 알려 줘요."
+    },
+    {
+      "en": "Conversely, the chatbot can also analyze conversations that went well, where users expressed satisfaction or gratitude for the provided solutions.",
+      "ko": "반대로, 챗봇은 사용자가 제공된 해결책에 만족감이나 감사를 나타낸 잘 진행된 대화도 분석할 수 있다.",
+      "note": "실패한 대화에 이어 잘된 대화도 analyze 한다고 해요. 잘됐든 못됐든 '결과'를 분석한다는 빈칸 내용을 두 사례로 보여 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "to provide scripted responses to users",
+      "ko": "사용자에게 정해진 대본대로 응답을 제공하는 것",
+      "why": "글은 지난 대화를 돌아보며 응답을 계속 고쳐 나간다는 내용이에요. 정해진 대본은 오히려 반대 방향이에요."
+    },
+    {
+      "en": "to find more cost-effective communication channels",
+      "ko": "더 비용 효율적인 소통 경로를 찾는 것",
+      "why": "비용이나 소통 경로 이야기는 글에 나오지 않아요."
+    },
+    {
+      "en": "to keep users from noticing previous conversation errors",
+      "ko": "사용자가 이전 대화의 오류를 알아채지 못하게 하는 것",
+      "why": "글은 오류를 찾아내 고치는 거예요. 숨긴다는 내용은 없어요. previous conversation이라는 비슷한 말을 넣은 함정이에요."
+    },
+    {
+      "en": "to enhance the speed of the system’s responses",
+      "ko": "시스템의 응답 속도를 높이는 것",
+      "why": "글이 말하는 개선은 응답의 질(정보, 말투, 전략)이지 속도가 아니에요."
+    },
+    {
+      "en": "to analyze the outcomes of past conversations",
+      "ko": "지난 대화의 결과를 분석하는 것",
+      "why": "정답. 빈칸 뒤에서 응답의 성공·실패를 측정하고, 불만족 대화와 만족 대화를 모두 분석한다고 설명해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "By -ing (수단)",
+      "ex": "By introspecting on past conversations, these chatbots can identify patterns, strengths, weaknesses, and areas for improvement",
+      "d": "'~함으로써'. 이 글에선 By reflecting …, By studying …처럼 같은 구조가 반복되며 '분석 → 개선'의 흐름을 만들어요."
+    },
+    {
+      "t": "분사구문 (결과) + enable O to V",
+      "ex": "…, enabling them to refine their knowledge base, response strategies, and overall interaction capabilities.",
+      "d": "', enabling ~'은 앞 내용의 결과예요. enable A to V는 'A가 ~할 수 있게 하다'."
+    },
+    {
+      "t": "관계부사 where (상황 선행사)",
+      "ex": "a chatbot might identify conversations where users expressed frustration or dissatisfaction",
+      "d": "where가 장소가 아닌 conversations(상황)를 받아 '~한 대화'로 꾸며요. 뒤에 완전한 절이 와요."
+    },
+    {
+      "t": "A, B, and C 병렬 (동사)",
+      "ex": "the chatbot can reinforce effective response strategies, identify best practices, and replicate them in future conversations",
+      "d": "can 뒤에 동사원형 reinforce, identify, replicate가 나란히 이어져요."
+    }
+  ],
+  "vocab": [
+    [
+      "reflective",
+      "숙고하는, 반성하는"
+    ],
+    [
+      "employ",
+      "사용하다"
+    ],
+    [
+      "self-assessment",
+      "자기 평가"
+    ],
+    [
+      "methodology",
+      "방법론"
+    ],
+    [
+      "introspect",
+      "자기 분석하다"
+    ],
+    [
+      "refine",
+      "다듬다, 개선하다"
+    ],
+    [
+      "knowledge base",
+      "지식 기반"
+    ],
+    [
+      "capability",
+      "능력"
+    ],
+    [
+      "sentiment analysis",
+      "감정 분석"
+    ],
+    [
+      "metrics",
+      "메트릭스, 계량적 분석"
+    ],
+    [
+      "frustration",
+      "좌절감"
+    ],
+    [
+      "pinpoint",
+      "정확히 찾아내다"
+    ],
+    [
+      "inadequate",
+      "불충분한"
+    ],
+    [
+      "conversely",
+      "반대로"
+    ],
+    [
+      "gratitude",
+      "감사"
+    ],
+    [
+      "reinforce",
+      "강화하다"
+    ],
+    [
+      "replicate",
+      "반복하다, 복제하다"
+    ],
+    [
+      "outcome",
+      "결과"
+    ]
+  ],
+  "summary": {
+    "en": "Reflective chatbots improve themselves by analyzing the outcomes of past conversations, learning from both failed and successful interactions.",
+    "ko": "숙고형 챗봇은 지난 대화의 결과를 분석해 실패한 상호 작용과 성공한 상호 작용 모두에서 배우며 스스로를 개선한다."
+  },
+  "writing": {
+    "en": "Chatbots learn from both their failed and successful conversations.",
+    "ko": "챗봇은 실패한 대화와 성공한 대화 모두에서 배운다."
+  },
+  "tip": "One key aspect of ~ is the ability ______처럼 빈칸이 '핵심'을 정의하면, 바로 뒤 문장과 For instance 예시가 빈칸을 풀어 설명해요. measure the success or failure, analyze conversations that went well 같은 말을 모아 한 줄로 요약하면 정답이에요. 본문 단어(previous conversation)만 겹치는 선택지는 의미까지 맞는지 꼭 확인하세요.",
+  "faq": [
+    [
+      "2026년 10월 고3 모의고사 영어 32번 정답은?",
+      "⑤ to analyze the outcomes of past conversations(지난 대화의 결과를 분석하는 것)예요. 빈칸 뒤에서 응답의 성공·실패를 측정하고 대화를 분석한다고 설명해요."
+    ],
+    [
+      "2026 10월 고3 영어 32번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 고객 서비스 챗봇의 자기 평가를 다룬 지문이에요."
+    ],
+    [
+      "③ to keep users from noticing previous conversation errors가 오답인 이유는?",
+      "글은 지난 대화의 오류를 찾아 고치는 내용이지, 사용자가 오류를 모르게 숨기는 내용이 아니에요. 비슷한 단어만 넣은 함정이에요."
+    ]
+  ]
+}

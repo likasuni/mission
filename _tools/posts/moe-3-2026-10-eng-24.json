@@ -1,0 +1,125 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 24,
+  "type": "제목",
+  "points": 2,
+  "answer": 2,
+  "topic": "기업의 도덕적 결정은 이익을 위한 수단이 될 수 있다 (수단적 이해관계자주의)",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 24번",
+    "2026 10월 고3 영어 24번 해설",
+    "고3 10월 모의고사 24번 정답",
+    "고3 모의고사 제목",
+    "instrumental stakeholderism 지문",
+    "기업 윤리와 이익 영어 지문"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 24번은 기업이 옳은 일을 하는 것이 오히려 사업에 이익이 될 수 있다는 '수단적 이해관계자주의'를 다룬 제목 문항이에요. 첫 문장 doing the right thing is sometimes good for business와 마지막 문장 Morality can be seen … as an instrument for … profits가 같은 말을 해요. 정답은 ② When Goodness Pays Off: The Strategic Side of Ethics예요.",
+  "flow": [
+    ["주장", "기업의 도덕적 결정은 많은 경우 손해를 감수하는 거래가 아니며, 옳은 일이 사업에 도움이 되기도 한다."],
+    ["개념", "Bebchuk은 이를 '수단적 이해관계자주의'라 부르며, 이해관계자를 만족시키는 것이 주주에게도 이익일 수 있다고 본다."],
+    ["연결", "그래서 이런 경우는 '이익 극대화'를 주장한 Friedman의 견해와도 충돌하지 않는다."],
+    ["예시", "유급 휴가·출산 휴가는 인재 유치, 책임 있는 원자재 조달은 소비자 호감, 앞선 환경 대응은 규제 강화 대비 우위를 준다."],
+    ["결론", "이런 경우 도덕성은 그 자체가 목표라기보다 이익을 위한 수단으로 볼 수 있다."]
+  ],
+  "evidence": [
+    {
+      "en": "In many situations, corporate moral decisions do not entail a trade-off: doing the right thing is sometimes good for business.",
+      "ko": "많은 상황에서 기업의 윤리적 결정은 타협을 위한 거래를 수반하지 않는데, 옳은 일을 하는 것이 때로는 사업에 도움이 된다.",
+      "note": "첫 문장이 주제문이에요. good for business = ②의 Goodness Pays Off(선함이 이득이 되다)예요."
+    },
+    {
+      "en": "Making stakeholders (customers, the community, employees, and so on) happy, even if it costs a little, may be in the interest of shareholders.",
+      "ko": "(고객, 지역 사회, 직원 등) 이해관계자를 행복하게 하는 것은, 비록 비용이 약간 들더라도, 주주를 위한 것일 수도 있다.",
+      "note": "착한 결정이 결국 주주 이익으로 돌아온다는 설명이에요. 윤리를 '전략'으로 본다는 ②의 부제와 맞아요."
+    },
+    {
+      "en": "Morality can be seen in such cases as an instrument for (current and long-term) profits, not necessarily as a goal for its own sake.",
+      "ko": "그러한 경우에 도덕성은, 반드시 그 자체를 위한 목표가 아닌 (현재와 장기적인) 이익을 위한 수단으로 볼 수 있다.",
+      "note": "마지막 결론 문장이에요. instrument(수단)가 ②의 Strategic Side(전략적 측면)로 바뀌어 표현됐어요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Regulating Business for Sustainability and Its Limitations",
+      "ko": "지속 가능성을 위한 기업 규제와 그 한계",
+      "why": "regulations는 환경 예시에서 잠깐 나올 뿐이에요. 글은 규제의 한계가 아니라 윤리가 이익이 되는 경우를 말해요."
+    },
+    {
+      "en": "When Goodness Pays Off: The Strategic Side of Ethics",
+      "ko": "선함이 이득이 될 때: 윤리의 전략적 측면",
+      "why": "정답. 옳은 일이 사업에 도움이 되고, 도덕성이 이익을 위한 수단(instrument)이 된다는 글 전체를 담았어요."
+    },
+    {
+      "en": "Why Does Profit Maximization Still Come First?",
+      "ko": "왜 이익 극대화가 여전히 우선하는가?",
+      "why": "Friedman의 이익 극대화는 '충돌하지 않는다'는 맥락으로 나올 뿐, 이익이 윤리보다 먼저라는 글이 아니에요."
+    },
+    {
+      "en": "Handling Conflicts: Personal Values vs. Work Ethics",
+      "ko": "갈등 다루기: 개인적 가치관 대 직업 윤리",
+      "why": "글은 오히려 trade-off(충돌)가 없다고 말해요. 개인 가치관과 직업 윤리의 대립도 나오지 않아요."
+    },
+    {
+      "en": "How Trends Are Reshaping Young Consumers' Behaviors",
+      "ko": "트렌드가 어떻게 젊은 소비자들의 행동을 바꾸고 있는가",
+      "why": "millennial consumers는 예시 하나에 나올 뿐이에요. 소비자 행동 변화가 글의 중심이 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사 주어 + 단수 동사",
+      "ex": "Making stakeholders (customers, the community, employees, and so on) happy, even if it costs a little, may be in the interest of shareholders.",
+      "d": "Making ~ happy가 주어예요. make + 목적어 + 형용사(happy) 구조이고, 동사는 may be예요. 괄호와 even if 삽입구를 빼고 읽으면 구조가 보여요."
+    },
+    {
+      "t": "동격 that절",
+      "ex": "such situations do not pose a challenge to economist Milton Friedman's view that managers should aim at maximizing profits.",
+      "d": "view that ~는 '~라는 견해'. that절이 view의 내용을 설명하는 동격절이에요. aim at -ing는 '~을 목표로 하다'."
+    },
+    {
+      "t": "비교급 + than what (관계대명사)",
+      "ex": "Being more environmentally conscious than what current standards require might give a leading edge if one anticipates that regulations will become tighter in the near term.",
+      "d": "what current standards require는 '현재 기준이 요구하는 것'. 동명사 Being ~이 주어, might give가 동사예요."
+    },
+    {
+      "t": "be seen as A, not (necessarily) as B",
+      "ex": "Morality can be seen in such cases as an instrument for (current and long-term) profits, not necessarily as a goal for its own sake.",
+      "d": "see A as B의 수동태예요. '반드시 B로서가 아니라 A로서 여겨진다'. not necessarily는 '반드시 ~인 것은 아닌'이라는 부분 부정이에요."
+    }
+  ],
+  "vocab": [
+    ["corporate", "기업의"],
+    ["moral", "도덕적인"],
+    ["entail", "수반하다"],
+    ["trade-off", "(한쪽을 얻으려 다른 쪽을 포기하는) 거래, 맞바꿈"],
+    ["instrumental", "수단이 되는"],
+    ["stakeholder", "이해관계자"],
+    ["shareholder", "주주"],
+    ["pose a challenge to", "~에 이의를 제기하다, 도전이 되다"],
+    ["maximize", "극대화하다"],
+    ["paid vacation", "유급 휴가"],
+    ["maternity leave", "출산 휴가"],
+    ["source", "(원자재를) 조달하다"],
+    ["input", "투입물, 원자재"],
+    ["millennial", "밀레니얼 세대의"],
+    ["conscious", "의식하는, 관심이 있는"],
+    ["leading edge", "선두, 우위"],
+    ["anticipate", "예상하다"],
+    ["for its own sake", "그 자체를 위해"]
+  ],
+  "summary": {
+    "en": "Doing the right thing can benefit a company, so corporate morality can work as a strategic tool for profits rather than only as a goal in itself.",
+    "ko": "옳은 일을 하는 것은 기업에 이익이 될 수 있으므로, 기업의 도덕성은 그 자체로 목표일 뿐 아니라 이익을 위한 전략적 수단으로 작동할 수 있다."
+  },
+  "writing": {
+    "en": "Being ethical can be a smart business strategy.",
+    "ko": "윤리적인 것은 현명한 사업 전략이 될 수 있다."
+  },
+  "tip": "제목 문제는 첫 문장과 마지막 문장이 같은 말을 하는지 확인하세요. 이 글은 good for business(처음)와 an instrument for profits(끝)가 짝을 이뤄요. 그다음 선택지에서 이 둘을 바꿔 말한 표현(Pays Off, Strategic)을 찾으면 돼요. 예시 속 단어(regulations, millennial consumers)만 담은 선택지는 지우세요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 24번 정답은?", "② When Goodness Pays Off: The Strategic Side of Ethics(선함이 이득이 될 때: 윤리의 전략적 측면)예요."],
+    ["2026 10월 고3 영어 24번은 어떤 유형인가요?", "글의 제목을 고르는 2점 문항이에요. 기업의 윤리적 결정이 이익에 도움이 된다는 '수단적 이해관계자주의'를 다룬 지문이에요."],
+    ["③ Why Does Profit Maximization Still Come First?가 오답인 이유는?", "Friedman의 이익 극대화 견해는 윤리적 결정과 '충돌하지 않는다'는 맥락에서만 나와요. 글의 중심은 윤리가 이익의 수단이 된다는 점이라 ②가 맞아요."]
+  ]
+}

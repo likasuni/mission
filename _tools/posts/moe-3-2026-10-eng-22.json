@@ -1,0 +1,63 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 22,
+  "type": "요지",
+  "points": 2,
+  "answer": 3,
+  "topic": "디지털 기술이 발전해도 문화의 보존과 소실이 맞물리는 법칙은 그대로다",
+  "date": "2026-10-21",
+  "keywords": ["2026년 10월 고3 모의고사 영어 22번", "2026 10월 고3 영어 22번 해설", "고3 10월 모의고사 22번 정답", "고3 모의고사 글의 요지", "디지털 문화 보존과 소실", "unreadable file formats 지문"],
+  "lead": "2026년 10월 고3 모의고사 영어 22번은 디지털 기술 덕분에 과거 문화를 그 어느 때보다 쉽게 보존·공유하지만, 옛 파일과 웹사이트는 빠르게 읽을 수 없게 되고 있다는 글의 요지 문항이에요. Yet 이후, 그리고 기술은 바뀌었어도 문화가 작동하는 법칙은 바뀌지 않았다는 문장이 요지예요. 정답은 ③ 디지털 기술이 발전해도 문화 보존과 소실의 문제는 남아 있다예요.",
+  "flow": [
+    ["통념", "새 저장 기술과 소셜 미디어 덕분에 과거의 텍스트·이미지·음악을 싸게 보존하고 널리 공유할 수 있다."],
+    ["강조", "이전의 문화 유물과 관습이 지금처럼 많은 사람에게 쉽게 열려 있던 적은 없었다."],
+    ["반전", "Yet, 이런 디지털 풍요 속에서도 옛 파일 형식, 웹사이트, 데이터베이스 전체가 무서운 속도로 읽을 수 없게 되고 있다."],
+    ["의문", "그래서 우리가 정말 조상보다 과거를 더 잘 보존하는지 의문이 든다."],
+    ["요지", "기술은 바뀌었어도 문화가 보존·전파·교환·복원되는 법칙은 그대로이고, 보존과 파괴, 상실과 복구의 상호 작용은 계속된다."]
+  ],
+  "evidence": [
+    {"en": "Yet, amid this digital abundance of cultural content, older file formats, websites, and entire databases are becoming unreadable at a frightening speed, …", "ko": "그러나, 문화 콘텐츠의 이러한 디지털 풍요 가운데에, 더 오래된 파일 형식, 웹사이트, 그리고 데이터베이스 전체는 무서운 속도로 읽을 수 없는 상태가 되어 …", "note": "Yet으로 앞의 '디지털 덕분에 보존이 쉬워졌다'를 뒤집어요. 디지털 시대에도 소실이 일어난다는 거예요."},
+    {"en": "And while the technologies of cultural storage and distribution have changed, the laws governing how culture works—how it is preserved, transmitted, exchanged, and recovered—haven't.", "ko": "그리고 문화의 저장과 배포의 기술은 바뀌었지만, 문화가 작용하는 방식, 즉 그것이 보존되고, 전파되고, 교환되고, 그리고 복원되는 방식을 지배하는 법칙은 변하지 않았다.", "note": "요지 문장이에요. '기술은 바뀌었지만 법칙은 그대로' = ③의 '디지털 기술이 발전해도 ~ 문제는 남아 있다'예요."},
+    {"en": "The interplay of preservation and destruction, of loss and recovery, of error and adaptation continues unabated …", "ko": "보존과 파괴, 상실과 복구, 오류와 적응 사이의 상호 작용은 … 약해지지 않고 계속된다.", "note": "마지막 문장이 요지를 한 번 더 확인해요. 보존과 소실이 엇갈리는 일은 지금도 계속된다는 뜻이에요."}
+  ],
+  "choices": [
+    {"en": "디지털 콘텐츠의 공유는 문화 정체성을 약화시킨다.", "ko": "공유가 정체성을 약하게 함", "why": "문화 정체성 이야기는 없어요. 공유는 오히려 긍정적인 변화로 소개돼요."},
+    {"en": "디지털 기술을 통해 콘텐츠 저장 비용을 절감할 수 있다.", "ko": "저장 비용 절감", "why": "at minimal cost로 앞부분에 나오지만, Yet 앞의 '통념' 부분이에요. 글은 이 장점을 뒤집으려고 꺼낸 거예요."},
+    {"en": "디지털 기술이 발전해도 문화 보존과 소실의 문제는 남아 있다.", "ko": "기술이 발전해도 보존·소실 문제는 계속됨", "why": "정답. Yet 이후 옛 파일이 읽을 수 없게 되고, 기술은 바뀌었어도 문화가 작동하는 법칙은 그대로라는 내용과 같아요."},
+    {"en": "소셜 미디어는 콘텐츠를 재생산하여 문화 전파를 촉진한다.", "ko": "소셜 미디어가 전파를 촉진함", "why": "소셜 미디어로 공유가 쉬워졌다는 말은 도입부의 배경일 뿐이에요. '재생산'은 본문에 없어요."},
+    {"en": "문화 콘텐츠 보존을 위해 원작자의 권리 강화가 필요하다.", "ko": "원작자 권리 강화", "why": "저작권이나 원작자 권리는 전혀 나오지 않아요."}
+  ],
+  "grammar": [
+    {"t": "가목적어 it + 목적격 보어", "ex": "New storage technologies make it possible to preserve texts, images, and music at minimal cost, …", "d": "it은 가목적어, 진목적어는 to preserve …. 'make it possible to V' = '~하는 것을 가능하게 하다'. 뒤의 have made it simpler to share도 같은 구조예요."},
+    {"t": "부정어 Never 도치", "ex": "Never have previously produced cultural artifacts and practices been as readily available to as many people as they are now.", "d": "Never가 문장 앞에 나와 have + 주어 + been 순서로 도치됐어요. '지금처럼 ~했던 적이 없다' = 지금이 최고라는 강조예요."},
+    {"t": "분사구문 (결과)", "ex": "… are becoming unreadable at a frightening speed, raising the question of whether we're really so much better at preserving the past than our ancestors were.", "d": "raising은 '그래서 ~을 제기한다'는 결과를 나타내요. the question of whether ~는 '~인지에 대한 의문'이에요."},
+    {"t": "주어 + 대시 삽입 + 생략된 동사", "ex": "… the laws governing how culture works—how it is preserved, transmitted, exchanged, and recovered—haven't.", "d": "주어 the laws, 동사 haven't (changed). 대시 사이는 how culture works를 풀어 쓴 설명이에요. 앞 절의 changed가 반복돼 생략됐어요."}
+  ],
+  "vocab": [
+    ["track down", "찾아내다"],
+    ["recover", "되찾다, 복원하다"],
+    ["storage", "저장"],
+    ["preserve", "보존하다"],
+    ["at minimal cost", "최소 비용으로"],
+    ["cultural artifact", "문화 유물"],
+    ["readily", "손쉽게"],
+    ["amid", "~ 가운데"],
+    ["abundance", "풍부, 풍요"],
+    ["unreadable", "읽을 수 없는"],
+    ["ancestor", "조상"],
+    ["distribution", "배포, 유통"],
+    ["govern", "지배하다"],
+    ["transmit", "전파하다, 전달하다"],
+    ["interplay", "상호 작용"],
+    ["adaptation", "적응"],
+    ["unabated", "약해지지 않는"]
+  ],
+  "summary": {"en": "Although digital technology makes it easy to store and share the past, old digital content is quickly being lost, so the basic pattern of cultural preservation and loss has not changed.", "ko": "디지털 기술로 과거를 저장하고 공유하기는 쉬워졌지만 옛 디지털 콘텐츠는 빠르게 사라지고 있어, 문화가 보존되고 소실되는 기본 원리는 변하지 않았다."},
+  "writing": {"en": "New technology has not freed culture from the risk of being lost.", "ko": "새로운 기술이 문화를 소실의 위험에서 벗어나게 해 주지는 못했다."},
+  "tip": "요지 문항에서 앞부분이 '요즘 이렇게 좋아졌다'로 길게 이어지면 통념일 가능성이 커요. Yet, But 같은 역접 뒤를 보세요. 이 글은 Yet 이후와 while A, B(A는 바뀌었지만 B는 그대로) 문장이 요지예요. 앞부분 장점(비용 절감, 소셜 미디어 공유)만 담은 선택지는 함정이에요.",
+  "faq": [
+    ["2026년 10월 고3 모의고사 영어 22번 정답은?", "③ 디지털 기술이 발전해도 문화 보존과 소실의 문제는 남아 있다예요. 기술은 바뀌었지만 문화가 작동하는 법칙은 그대로라는 글이에요."],
+    ["2026년 10월 고3 영어 22번은 어떤 유형인가요?", "글의 요지를 고르는 2점 문항이에요. 디지털 시대의 문화 보존과 소실을 다룬 지문이에요."],
+    ["② 저장 비용 절감이 오답인 이유는?", "at minimal cost는 Yet 앞의 도입부에 나오는 장점이에요. 글은 그 장점에도 불구하고 소실 문제가 남아 있다고 말하려는 거라 요지가 아니에요."]
+  ]
+}

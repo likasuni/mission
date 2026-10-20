@@ -1,0 +1,204 @@
+{
+  "exam": "moe-3-2026-10",
+  "n": 30,
+  "type": "어휘",
+  "points": 3,
+  "answer": 3,
+  "topic": "커버 밴드와 커버곡이 맡는 미학적·교육적·경제적 역할",
+  "date": "2026-10-21",
+  "keywords": [
+    "2026년 10월 고3 모의고사 영어 30번",
+    "2026 10월 고3 영어 30번 해설",
+    "고3 10월 모의고사 30번 정답",
+    "고3 모의고사 어휘 낱말 쓰임",
+    "cover bands 커버곡 지문",
+    "absent → important"
+  ],
+  "lead": "2026년 10월 고3 모의고사 영어 30번은 커버 밴드와 커버곡의 역할을 다룬 3점 어휘 문항이에요. ③ 뒤 since 이유절이 '경력 상승이 독창성과 직접 연결된다'고 하니, 커버와 원곡의 구별은 '없는(absent)' 게 아니라 '중요한(important)' 것이어야 해요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "통념",
+      "커버 밴드는 연주자 위계의 맨 아래에 있고, 남의 곡에 기대는 건 할 말이 없다는 걸 인정하는 것으로 여겨진다."
+    ],
+    [
+      "반론",
+      "하지만 커버곡 연주는 미학적·교육적·경제적 역할을 한다. 원곡을 출발점 삼아 창의적으로 바꾸기도 한다."
+    ],
+    [
+      "교육적 역할",
+      "막 시작하는 밴드는 커버곡에 기대며 배우는 과정으로 곡을 익힌다. 커버와 원곡의 구별은 경력과 연결되어 중요하지만, 곡을 배우는 건 음악적 전통과 관계 맺는 수습 과정이다."
+    ],
+    [
+      "예시",
+      "1960년대 영국의 '록'은 미국 리듬 앤 블루스 히트곡을 커버한 지역 밴드들을 통해 발전했다."
+    ],
+    [
+      "경제적 역할",
+      "펍 관리자들은 관객이 공감하는 검증된 곡이라 커버곡을 반긴다. 새 세대 청취자에게 좋은 곡은 좋은 곡이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The distinction between ‘cover’ and ‘original’ is ③ absent, since upward career mobility is directly tied to notions of originality.",
+      "ko": "‘커버곡’과 ‘원곡’ 간의 구별은 없는데(→ 중요한데), 왜냐하면 위쪽으로 향하는 경력 이동은 독창성의 개념과 직접 연결되어 있기 때문이다.",
+      "note": "since 뒤 이유가 '경력 상승이 독창성과 직접 묶여 있다'예요. 그렇다면 커버냐 원곡이냐의 구별은 '중요하다'가 자연스러워요. absent(없다)는 이유와 맞지 않아요."
+    },
+    {
+      "en": "At the base of the status hierarchy among performers are cover bands, which are often accorded little critical artistic weight.",
+      "ko": "연주자들 간의 위계 구조 기저에는 커버 밴드가 있으며, 이들은 흔히 비평적으로는 예술적 무게를 거의 부여받지 못한다.",
+      "note": "커버 밴드가 위계의 맨 아래라는 건 커버와 원곡 사이에 분명한 차이(위계)가 있다는 뜻이에요. 구별이 '없다'는 말과 부딪쳐요."
+    },
+    {
+      "en": "Cover songs are literally music to the ears of the managers of pubs and the like, as they are tapping into a ⑤ proven product that the audience can identify with.",
+      "ko": "커버곡은 펍 등의 관리자들에게는 말 그대로 듣기 좋은 소리인데, 그들은 관객이 동질감을 느낄 수 있는 검증된 작품을 활용하기 때문이다.",
+      "note": "⑤ proven(검증된)은 이미 히트한 곡이라 관객이 공감한다는 흐름과 잘 맞아요. 커버곡의 경제적 역할을 보여 주는 부분이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① fulfills",
+      "ko": "충족하다, 수행하다",
+      "why": "적절. However로 앞의 낮은 평가를 뒤집으며 커버곡이 미학적·교육적·경제적 역할을 '한다'고 말하는 자리예요."
+    },
+    {
+      "en": "② mastering",
+      "ko": "숙달하다",
+      "why": "적절. 시작하는 밴드가 배우는 과정의 일부로 커버곡을 '익힌다'는 흐름이라 자연스러워요."
+    },
+    {
+      "en": "③ absent",
+      "ko": "없는, 부재한",
+      "why": "정답(부적절). 경력 상승이 독창성과 직접 묶여 있다는 이유절과 맞으려면 구별이 important(중요한)해야 해요."
+    },
+    {
+      "en": "④ engaging",
+      "ko": "관계를 맺다, 참여하다",
+      "why": "적절. 커버곡을 배우는 건 음악적 전통과 '관계를 맺으며' 기교를 익히는 수습 과정이라는 뜻이에요. 뒤의 1960년대 록 예시와도 이어져요."
+    },
+    {
+      "en": "⑤ proven",
+      "ko": "검증된",
+      "why": "적절. 관객이 공감하는 이미 인기 있는 곡이라 펍 관리자들이 반긴다는 흐름에 맞아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "장소 부사구 도치",
+      "ex": "At the base of the status hierarchy among performers are cover bands, which …",
+      "d": "장소 부사구가 문장 앞에 나와 동사 are와 주어 cover bands가 뒤바뀌었어요. 주어가 복수 cover bands라 are예요."
+    },
+    {
+      "t": "분사구 후치 수식",
+      "ex": "Bands starting out rely on cover versions for a large part of their repertoire out of necessity",
+      "d": "starting out이 Bands를 뒤에서 꾸며요. '막 시작하는 밴드들'. 문장의 진짜 동사는 rely예요."
+    },
+    {
+      "t": "since 이유 접속사",
+      "ex": "The distinction … is important, since upward career mobility is directly tied to notions of originality.",
+      "d": "since는 여기서 '~이기 때문에'. 어휘 문항에선 이유절과 앞 내용이 논리적으로 맞는지 확인하는 게 핵심이에요."
+    },
+    {
+      "t": "목적격 관계대명사 + 전치사",
+      "ex": "a proven product that the audience can identify with",
+      "d": "identify with(~와 동질감을 느끼다)의 목적어가 선행사 product예요. 전치사 with가 뒤에 남은 형태예요."
+    }
+  ],
+  "vocab": [
+    [
+      "status hierarchy",
+      "지위 위계"
+    ],
+    [
+      "accord",
+      "부여하다"
+    ],
+    [
+      "critical",
+      "비평의, 비평적인"
+    ],
+    [
+      "reliance on",
+      "~에 대한 의존"
+    ],
+    [
+      "concede",
+      "인정하다"
+    ],
+    [
+      "fulfill",
+      "충족하다, 수행하다"
+    ],
+    [
+      "aesthetic",
+      "미학적인"
+    ],
+    [
+      "reinvent",
+      "완전히 바꾸다, 재창조하다"
+    ],
+    [
+      "repertoire",
+      "레퍼토리, 연주 목록"
+    ],
+    [
+      "out of necessity",
+      "필요에 의해"
+    ],
+    [
+      "master",
+      "숙달하다"
+    ],
+    [
+      "upward mobility",
+      "상향 이동"
+    ],
+    [
+      "originality",
+      "독창성"
+    ],
+    [
+      "apprenticeship",
+      "수습 기간"
+    ],
+    [
+      "musicianship",
+      "음악적 기교"
+    ],
+    [
+      "music to one's ears",
+      "듣기 좋은 소리, 반가운 것"
+    ],
+    [
+      "tap into",
+      "활용하다"
+    ],
+    [
+      "identify with",
+      "~와 동질감을 느끼다"
+    ]
+  ],
+  "summary": {
+    "en": "Although cover bands are ranked low, playing covers serves aesthetic, educational and economic roles, helping musicians learn their craft and giving audiences proven songs.",
+    "ko": "커버 밴드는 낮게 평가되지만, 커버곡 연주는 미학적·교육적·경제적 역할을 하며 연주자가 기량을 익히게 하고 관객에게 검증된 곡을 준다."
+  },
+  "writing": {
+    "en": "Playing covers is part of how musicians learn their craft.",
+    "ko": "커버곡 연주는 음악가들이 기량을 익히는 방법의 일부이다."
+  },
+  "tip": "어휘 문항에서 밑줄 단어가 since, because 같은 이유절과 붙어 있으면 '이 이유라면 이 말이 나올까?'를 따져 보세요. 경력이 독창성과 묶여 있다면 커버와 원곡의 구별은 중요할 수밖에 없어요. absent처럼 반의어(present, important)로 바꿨을 때 더 자연스러우면 그게 답이에요.",
+  "faq": [
+    [
+      "2026년 10월 고3 모의고사 영어 30번 정답은?",
+      "③ absent예요. 경력 상승이 독창성과 직접 연결되어 있다는 이유가 이어지므로, 커버와 원곡의 구별은 '중요하다(important)'가 되어야 해요."
+    ],
+    [
+      "2026 10월 고3 영어 30번은 어떤 유형인가요?",
+      "밑줄 친 낱말 중 문맥상 쓰임이 적절하지 않은 것을 고르는 3점 어휘 문항이에요. 커버 밴드와 커버곡의 역할을 다룬 지문이에요."
+    ],
+    [
+      "④ engaging은 왜 맞나요?",
+      "커버곡을 배우는 건 음악적 전통과 '관계를 맺으며' 기교를 익히는 수습 과정이라는 뜻이라 자연스러워요. 바로 뒤 1960년대 영국 록 예시가 이를 보여 줘요."
+    ]
+  ],
+  "note": "③은 since 뒤 이유를 읽어야 풀려요. '경력이 독창성에 달려 있다'면 커버냐 원곡이냐는 당연히 중요하겠죠. 밑줄 단어만 보지 말고 붙어 있는 이유절까지 같이 읽는 연습을 해 보세요."
+}
