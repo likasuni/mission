@@ -1,0 +1,189 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 32,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 2,
+  "topic": "너무 방대해진 지식, 분야별로 쪼개져 연구되는 인간의 몸",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 32번",
+    "2025 10월 고2 영어 32번 해설",
+    "고2 10월 모의고사 32번 정답",
+    "고2 모의고사 빈칸 추론 3점",
+    "study the human body in silos 지문",
+    "nobody is an expert in the whole",
+    "고2 영어 빈칸 해설"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 32번은 과학 도구와 신체의 각 부분이 너무 깊은 전문성을 요구해서 인간의 몸이 분야별로 쪼개져 연구된다는 3점 빈칸 추론 문항이에요. 1890년에 이미 지식이 감당하기 어려울 만큼 방대했다는 말에 이어 '오늘날'의 결론을 찾으면 돼요. 정답은 ② nobody is an expert in the whole of anything이에요.",
+  "flow": [
+    [
+      "비유",
+      "와인 전문가가 맛과 색 뒤의 화학을 알면 더 많이 얻듯, 몸에 대한 각 관점도 서로를 높여 줄 수 있다."
+    ],
+    [
+      "반전",
+      "하지만 모든 과학 도구와 몸의 모든 부분이 너무 깊은 전문성을 요구해서 그런 일은 잘 일어나지 않는다."
+    ],
+    [
+      "현실",
+      "우리는 몸을 분야별로 따로(in silos) 연구하고, 각 공동체는 자기만의 전문 어휘로 갈라져 있다."
+    ],
+    [
+      "예시",
+      "연구 공동체는 도구 하나, 세포 한 종류에 전념하고, 세포 간 소통도 독립된 전문 주제가 된다."
+    ],
+    [
+      "결론",
+      "단순한 생명체도 전체로 연구되지 않는데 몸은 훨씬 복잡하다. 1890년에도 지식은 방대했고, 오늘날 아무도 무엇이든 전체에 대한 전문가가 아니다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "… requires such depth of expertise that this tends not to happen: we tend to study the human body in silos, each community sectioned from the others by its own specialised vocabulary.",
+      "ko": "… 너무 깊은 전문 지식을 필요로 해서 이런 일은 잘 발생하지 않는 경향이 있다. 즉, 우리는 각각의 공동체가 그것 자신의 전문적인 어휘에 의해 나머지 다른 것들과는 구분된 채, 인간의 신체를 개별적으로 분리해서 연구하는 경향이 있다.",
+      "note": "전문성이 너무 깊어서 관점끼리 섞이지 못하고, 각자 '부분'만 연구한다는 핵심 문장이에요."
+    },
+    {
+      "en": "Even simple forms of life on Earth are now rarely studied as a whole, and the human body is evidently much more complex.",
+      "ko": "심지어 지구상에 있는 단순한 형태의 생명체조차도 이제는 전체로서 연구되는 경우가 드물며, 인간의 신체는 분명히 훨씬 더 복잡하다.",
+      "note": "as a whole(전체로서)를 아무도 다루지 못한다는 말이에요. 선택지 ②의 the whole과 바로 연결돼요."
+    },
+    {
+      "en": "As long ago as 1890, The Times newspaper commented that knowledge 'had already become too vast to be manageable'.",
+      "ko": "오래전인 1890년에도 'The Times' 신문은 지식이 '이미 너무 방대해져서 다루기 어렵게 되었다'라고 논평했다.",
+      "note": "1890년에도 이미 감당할 수 없었으니, 오늘날(Today)은 더더욱 아무도 전체를 알 수 없다는 결론이 자연스러워요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "a whole is as easy to study as its parts",
+      "ko": "전체는 그 부분들만큼 연구하기 쉽다",
+      "why": "글은 단순한 생명체조차 전체로 연구되기 어렵다고 해요. 정반대 내용이에요."
+    },
+    {
+      "en": "nobody is an expert in the whole of anything",
+      "ko": "아무도 어떤 것의 전체에 대한 전문가가 아니다",
+      "why": "정답. 지식이 너무 방대해져 모두가 한 부분(도구 하나, 세포 한 종류)만 깊이 아는 현실을 요약해요."
+    },
+    {
+      "en": "a single cell speaks for the entire human body",
+      "ko": "하나의 세포가 인간 신체 전체를 대변한다",
+      "why": "one type of cell은 '전문 분야가 그만큼 좁다'는 예시일 뿐, 세포 하나로 몸 전체를 알 수 있다는 말이 아니에요."
+    },
+    {
+      "en": "modern tools simplify the study of the human body",
+      "ko": "현대의 도구들이 인간 신체 연구를 단순화한다",
+      "why": "도구(microscopes, mathematics)는 오히려 깊은 전문성을 요구해서 연구를 쪼개지게 만든다고 했어요."
+    },
+    {
+      "en": "researches across subjects have replaced isolated ones",
+      "ko": "여러 분야를 아우르는 연구가 고립된 연구를 대체했다",
+      "why": "글은 지금도 in silos(분리해서) 연구한다고 해요. 융합 연구가 대체했다는 건 반대예요. 첫 문장의 '관점끼리 서로 높여 줄 수 있다'는 가능성일 뿐이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "Just as A, so B",
+      "ex": "Just as an expert in the taste and colour of wine will gain much by being aware of the chemistry that underlies those qualities, so each perspective on the body can potentially enhance the others.",
+      "d": "'A인 것처럼 B도 그렇다'는 비유 구조예요. 와인 이야기는 B(몸에 대한 관점끼리의 도움)를 설명하기 위한 예시예요."
+    },
+    {
+      "t": "such ~ that 구문",
+      "ex": "every scientific tool … requires such depth of expertise that this tends not to happen",
+      "d": "'너무 ~해서 …하다'. 전문성이 너무 깊어서 관점끼리 돕는 일이 일어나지 않는다는 원인-결과예요."
+    },
+    {
+      "t": "독립분사구문",
+      "ex": "we tend to study the human body in silos, each community sectioned from the others by its own specialised vocabulary",
+      "d": "each community (being) sectioned ~. 주절과 주어가 달라 each community를 남겼어요. '각 공동체가 ~에 의해 구분된 채'."
+    },
+    {
+      "t": "too ~ to V",
+      "ex": "knowledge 'had already become too vast to be manageable'",
+      "d": "'너무 ~해서 …할 수 없다'. 지식이 너무 방대해서 다룰 수 없게 되었다는 뜻이고, 빈칸 결론으로 바로 이어져요."
+    }
+  ],
+  "vocab": [
+    [
+      "underlie",
+      "~의 기저를 이루다"
+    ],
+    [
+      "perspective",
+      "관점"
+    ],
+    [
+      "enhance",
+      "향상시키다"
+    ],
+    [
+      "microorganism",
+      "미생물"
+    ],
+    [
+      "expertise",
+      "전문 지식"
+    ],
+    [
+      "in silos",
+      "개별적으로 분리해서"
+    ],
+    [
+      "section",
+      "구분하다, 나누다"
+    ],
+    [
+      "specialised",
+      "전문적인"
+    ],
+    [
+      "be dedicated to",
+      "~에 전념하다"
+    ],
+    [
+      "component",
+      "구성 요소"
+    ],
+    [
+      "as a whole",
+      "전체로서"
+    ],
+    [
+      "evidently",
+      "분명히"
+    ],
+    [
+      "vast",
+      "방대한"
+    ],
+    [
+      "manageable",
+      "다룰 수 있는"
+    ]
+  ],
+  "summary": {
+    "en": "Because each scientific tool and part of the body demands deep expertise, the human body is studied in separate pieces, and today no one is an expert in the whole of anything.",
+    "ko": "각 과학 도구와 신체 부위가 깊은 전문성을 요구하기 때문에 인간의 몸은 따로따로 나뉘어 연구되며, 오늘날 누구도 어떤 것의 전체에 대한 전문가가 아니다."
+  },
+  "writing": {
+    "en": "Knowledge has become too vast for anyone to master it as a whole.",
+    "ko": "지식은 누구도 전체를 통달할 수 없을 만큼 방대해졌다."
+  },
+  "tip": "'Today, ____.'처럼 글 맨 끝 빈칸은 바로 앞의 과거 사례(1890년)와 연결해 보세요. '그때도 이미 너무 방대했다'면 오늘은 '더 심하다'는 결론이 와요. 첫 문장의 이상(관점끼리 서로 돕기)과 And yet 뒤의 현실(분리 연구)을 구분하고, 결론은 현실 쪽을 따라간다는 것도 기억하세요.",
+  "faq": [
+    [
+      "2025년 10월 고2 모의고사 영어 32번 정답은?",
+      "② nobody is an expert in the whole of anything(아무도 어떤 것의 전체에 대한 전문가가 아니다)이에요. 지식이 너무 방대해져 모두가 부분만 연구한다는 내용이에요."
+    ],
+    [
+      "2025 10월 고2 32번은 어떤 유형인가요?",
+      "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 인간의 몸이 분야별로 쪼개져 연구되는 현실을 다룬 지문이에요."
+    ],
+    [
+      "⑤ researches across subjects have replaced isolated ones는 왜 틀렸나요?",
+      "글은 지금도 몸을 in silos(분리해서) 연구한다고 해요. 첫 문장의 '관점끼리 서로 도울 수 있다'는 가능성일 뿐이고, And yet 뒤에서 그런 일은 잘 일어나지 않는다고 했어요."
+    ]
+  ],
+  "note": "첫 문장의 와인 비유만 읽고 '융합이 중요하다'로 가면 ⑤에 걸려요. And yet 뒤가 글쓴이가 실제로 말하고 싶은 현실이라는 것, 수업에서 이 문장 하나로 꼭 연습해 볼게요."
+}

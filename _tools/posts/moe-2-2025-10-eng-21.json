@@ -1,0 +1,65 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 4,
+  "topic": "사람마다 다른 미각 민감도가 술·음식 같은 식습관을 좌우할 수 있다",
+  "date": "2026-10-21",
+  "keywords": ["2025년 10월 고2 모의고사 영어 21번", "2025 10월 고2 영어 21번 해설", "고2 10월 모의고사 21번 정답", "고2 모의고사 함축 의미", "chemistry could be destiny", "super-tasters non-tasters 미각 지문"],
+  "lead": "2025년 10월 고2 모의고사 영어 21번은 혀의 미각 실험으로 시작해, 맛을 느끼는 정도의 차이가 술이나 채소 같은 식습관까지 바꿀 수 있다고 말하는 글이에요. 밑줄 chemistry, at least in your mouth, could be destiny는 '입안의 화학 작용(미각 차이)이 운명(식습관)을 정할 수 있다'는 뜻이에요. 정답은 ④ Differences in taste sensitivity can shape individual dietary behavior.예요.",
+  "flow": [
+    ["실험", "소금·설탕·레몬주스·커피를 면봉으로 혀 여러 곳에 대 보고 맛이 가장 강한 곳을 기록해 친구들과 비교해 보라."],
+    ["주장", "미각 패턴은 단순한 맛 선호 이상을 드러낼 수 있다. 미각 유형과 행동 장애 사이에 연관성이 있다는 연구가 있다."],
+    ["예시1", "'미각 둔감자'는 술이 덜 쓰게 느껴져서인지 알코올 중독 비율이 더 높은 경향이 있다."],
+    ["예시2", "'초미각자'는 브로콜리처럼 영양가 있지만 약간 쓴 음식을 피해 균형 잡힌 식단을 놓칠 수 있다."],
+    ["결론", "미각은 다른 감각만큼 화려하진 않지만, 입안의 화학 작용이 운명이 될 수 있으니 더 관심을 가질 만하다."]
+  ],
+  "evidence": [
+    {"en": "For example, \"non-tasters\" tend to have a higher incidence of alcoholism, perhaps because liquor seems less bitter to them.", "ko": "예를 들어 '미각 둔감자'는 알코올 중독 발생률이 더 높은 경향이 있는데, 아마도 술이 그들에게 덜 쓰게 느껴지기 때문일 것이다.", "note": "맛을 '약하게' 느끼는 차이 → 술을 더 마시는 행동. 미각 민감도가 식습관을 만든다는 첫 번째 예예요."},
+    {"en": "Conversely, \"super-tasters\" may avoid nutritious but mildly bitter foods such as broccoli, thus depriving themselves of a balanced diet.", "ko": "반대로 '초미각자'는 브로콜리처럼 영양가 있지만 약간 쓴 음식을 피해서, 스스로 균형 잡힌 식단을 놓칠 수도 있다.", "note": "맛을 '강하게' 느끼는 차이 → 쓴 채소를 피하는 행동. 두 예가 모두 ④의 dietary behavior(식습관)로 모여요."},
+    {"en": "Your taste pattern may reveal more than just taste preferences.", "ko": "여러분의 미각 패턴은 단순한 맛 선호보다 더 많은 것을 드러낼 수 있다.", "note": "밑줄의 destiny가 '맛 취향' 정도가 아니라 실제 행동·건강까지 이어진다는 뜻임을 알려 줘요."}
+  ],
+  "choices": [
+    {"en": "Every part of the tongue can sense all the flavors.", "ko": "혀의 모든 부분이 모든 맛을 느낄 수 있다.", "why": "앞의 실험 내용과 관련된 상식처럼 보이지만, 밑줄은 미각 차이가 '행동'에 미치는 영향을 말해요."},
+    {"en": "Intensity of taste could be influenced by your physical condition.", "ko": "맛의 강도는 몸 상태에 영향을 받을 수 있다.", "why": "방향이 반대예요. 글은 미각 → 행동(식습관)이지, 몸 상태 → 미각이 아니에요."},
+    {"en": "Nutritional benefits of food may vary depending on personal traits.", "ko": "음식의 영양적 이점은 개인 특성에 따라 달라질 수 있다.", "why": "nutritious, balanced diet가 나오지만, 달라지는 건 음식의 영양이 아니라 '무엇을 먹느냐'예요."},
+    {"en": "Differences in taste sensitivity can shape individual dietary behavior.", "ko": "미각 민감도의 차이가 개인의 식습관을 형성할 수 있다.", "why": "정답. chemistry in your mouth = 미각 민감도의 차이, destiny = 술을 더 마시거나 쓴 채소를 피하는 식습관이에요."},
+    {"en": "Early exposure to certain food can determine your lifetime preference.", "ko": "특정 음식에 일찍 노출되면 평생의 선호가 결정될 수 있다.", "why": "어릴 때 경험 이야기는 없어요. determine이 destiny와 비슷해 보이는 함정이에요."}
+  ],
+  "grammar": [
+    {"t": "분사구문 (동시 동작)", "ex": "Coat a fresh, wet swab in salt, and gently touch various spots on your tongue, recording where your taste seems strongest.", "d": "recording은 '~을 기록하면서'. 혀에 대면서 동시에 기록하라는 뜻이에요. where 이하는 recording의 목적어인 간접의문문이에요."},
+    {"t": "tend to V / perhaps because", "ex": "\"non-tasters\" tend to have a higher incidence of alcoholism, perhaps because liquor seems less bitter to them.", "d": "tend to는 '~하는 경향이 있다'. perhaps because는 단정하지 않고 '아마 ~때문일 것'이라고 이유를 추측해요."},
+    {"t": "thus + 분사구문 (결과)", "ex": "… may avoid nutritious but mildly bitter foods such as broccoli, thus depriving themselves of a balanced diet.", "d": "thus -ing는 '그래서 ~하게 되다'라는 결과예요. deprive A of B는 'A에게서 B를 빼앗다'."},
+    {"t": "not nearly as ~ as", "ex": "So, although taste is not nearly as glamorous as vision, hearing, or even touch, …", "d": "'~만큼 전혀 …하지 않다'. nearly가 부정을 강조해요. 미각이 다른 감각보다 덜 주목받는다는 양보 내용이에요."}
+  ],
+  "vocab": [
+    ["coat", "(표면에) 바르다, 묻히다"],
+    ["swab", "면봉"],
+    ["gargle", "(입을) 헹구다, 가글하다"],
+    ["thoroughly", "완전히, 철저히"],
+    ["preference", "선호"],
+    ["status", "지위, 상태"],
+    ["behavioral disorder", "행동 장애"],
+    ["incidence", "발생률"],
+    ["alcoholism", "알코올 중독"],
+    ["liquor", "술"],
+    ["conversely", "반대로"],
+    ["nutritious", "영양가 있는"],
+    ["mildly", "약간"],
+    ["deprive A of B", "A에게서 B를 빼앗다"],
+    ["glamorous", "화려한, 매력적인"],
+    ["destiny", "운명"],
+    ["sensitivity", "민감도"],
+    ["dietary", "식사의, 식습관의"]
+  ],
+  "summary": {"en": "How sensitive people are to taste can influence what they eat and drink, so taste deserves more attention than it usually gets.", "ko": "사람마다 다른 미각 민감도는 무엇을 먹고 마시는지에 영향을 줄 수 있으므로, 미각에 더 관심을 가질 필요가 있다."},
+  "writing": {"en": "The way we taste food can shape the way we eat.", "ko": "우리가 음식 맛을 느끼는 방식이 먹는 방식을 만들 수 있다."},
+  "tip": "함축 의미는 밑줄 단어를 하나씩 본문 말로 바꿔 보세요. chemistry in your mouth → 미각 차이(non-tasters, super-tasters), destiny → 그 결과로 생기는 행동(술, 브로콜리 피하기). 두 조각을 다 담은 선택지가 답이에요. 앞부분 실험 설명은 도입일 뿐이니 붙잡지 마세요.",
+  "note": "밑줄 문장은 비유라 막막해 보여도, 바로 앞 예시 두 개가 답을 다 알려 줘요. 둔감자는 술, 초미각자는 브로콜리. 둘 다 '먹는 행동' 이야기라는 것만 잡으면 ④로 가요.",
+  "faq": [
+    ["2025년 10월 고2 모의고사 영어 21번 정답은?", "④ Differences in taste sensitivity can shape individual dietary behavior.(미각 민감도의 차이가 개인의 식습관을 형성할 수 있다)예요."],
+    ["2025 10월 고2 21번은 어떤 유형인가요?", "밑줄 친 chemistry, at least in your mouth, could be destiny의 의미를 고르는 3점 함축 의미 추론 문항이에요."],
+    ["③ 음식의 영양적 이점이 개인에 따라 다르다가 오답인 이유는?", "본문은 음식의 영양이 달라진다는 게 아니라, 맛을 느끼는 정도에 따라 쓴 채소를 피하는 등 '먹는 행동'이 달라진다는 내용이에요."]
+  ]
+}

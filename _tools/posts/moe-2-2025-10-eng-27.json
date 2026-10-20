@@ -1,0 +1,87 @@
+{
+  "exam": "moe-2-2025-10",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 2,
+  "topic": "Manuha 섬 드론 영상 대회 안내",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고2 모의고사 영어 27번",
+    "2025 10월 고2 영어 27번 해설",
+    "고2 10월 모의고사 27번 정답",
+    "고2 모의고사 안내문 불일치",
+    "Manuha Island Drone Film Contest 안내문",
+    "드론 영상 대회 영어 안내문"
+  ],
+  "lead": "2025년 10월 고2 모의고사 영어 27번은 Manuha 섬 드론 영상 대회 안내문의 내용과 일치하지 않는 것을 고르는 문항이에요. Guidelines에 영상 길이는 5분 이하(5 minutes or less)여야 한다고 했는데 ②는 '5분을 넘어야 한다'고 해서 틀렸어요. 정답은 ②예요.",
+  "flow": [
+    ["소개", "드론 촬영에 관심이 있다면 Manuha 섬의 아름다움을 찍어서 공유하자는 대회"],
+    ["제출", "2025년 10월 24일(금) 오후 6시까지, 공식 웹사이트를 통해서만"],
+    ["지침", "영상은 5분 이하, 최소 50%는 드론으로 촬영, 다른 대회에 출품했던 영상은 불가"],
+    ["부문별 상금", "도시 경관 800달러, Manuha의 자연 700달러, Manuha의 삶과 사람들 700달러"],
+    ["참고", "각 부문에서 한 명의 참가자만 수상, 공식 웹사이트 www.manuhadronefilm.org"]
+  ],
+  "evidence": [
+    {
+      "en": "Video length must be 5 minutes or less.",
+      "ko": "영상 길이는 5분 이하여야 합니다.",
+      "note": "5 minutes or less = 5분 이하. ②의 '5분을 넘어야 한다'와 정반대라서 정답이에요."
+    },
+    {
+      "en": "Only through the official website",
+      "ko": "공식 웹사이트를 통해서만",
+      "note": "Submission 항목이에요. ①의 '공식 웹사이트를 통해 출품해야 한다'와 일치해요."
+    },
+    {
+      "en": "A single contestant is awarded for each category.",
+      "ko": "각 부문에서 한 명의 참가자가 상을 받습니다.",
+      "note": "⑤의 '각 부문에서 한 명의 참가자가 상을 받는다'와 일치해요."
+    }
+  ],
+  "choices": [
+    {"en": "공식 웹사이트를 통해 출품해야 한다.", "ko": "제출 방법", "why": "일치. Submission에 Only through the official website라고 했어요."},
+    {"en": "영상의 길이는 5분을 넘어야 한다.", "ko": "영상 길이", "why": "정답(불일치). Video length must be 5 minutes or less. 5분 이하여야 해요."},
+    {"en": "다른 대회에 출품된 적이 있는 영상은 허용되지 않는다.", "ko": "출품 제한", "why": "일치. Films that have been submitted in other contests are not allowed."},
+    {"en": "도시 경관 부문의 상금이 가장 크다.", "ko": "상금", "why": "일치. Landscape of the City가 800달러로, 다른 두 부문(700달러)보다 커요."},
+    {"en": "각 부문에서 한 명의 참가자가 상을 받는다.", "ko": "수상 인원", "why": "일치. A single contestant is awarded for each category."}
+  ],
+  "grammar": [
+    {"t": "A or less (~ 이하)", "ex": "Video length must be 5 minutes or less.", "d": "'5분 또는 그보다 적게' = 5분 이하. 반대로 or more는 '이상'이에요. 안내문 숫자 조건에서 자주 쓰여요."},
+    {"t": "at least + 수동태", "ex": "At least 50% of the video must be shot using drones.", "d": "at least는 '최소한'. must be shot은 '촬영되어야 한다'(shoot-shot-shot). using drones는 '드론을 사용해서'."},
+    {"t": "현재완료 수동태 + 관계대명사", "ex": "Films that have been submitted in other contests are not allowed.", "d": "that have been submitted ~가 Films를 꾸며요. 주어 Films, 동사 are not allowed. '이미 출품된 적 있는 영상은 허용되지 않는다'."},
+    {"t": "be awarded", "ex": "A single contestant is awarded for each category.", "d": "award는 '상을 주다', be awarded는 '상을 받다'. a single은 '단 한 명'을 강조해요."}
+  ],
+  "vocab": [
+    ["drone", "드론"],
+    ["film", "촬영하다; 영상"],
+    ["shoot", "촬영하다"],
+    ["submission", "제출, 출품"],
+    ["official", "공식적인"],
+    ["guideline", "지침"],
+    ["length", "길이"],
+    ["at least", "최소한"],
+    ["submit", "제출하다"],
+    ["contest", "대회"],
+    ["allow", "허용하다"],
+    ["prize", "상금, 상"],
+    ["category", "부문"],
+    ["landscape", "경관, 풍경"],
+    ["contestant", "참가자"],
+    ["award", "상을 주다"]
+  ],
+  "summary": {
+    "en": "The Manuha Island Drone Film Contest accepts videos of 5 minutes or less through its website until October 24, and one winner is chosen in each of three categories.",
+    "ko": "Manuha 섬 드론 영상 대회는 10월 24일까지 웹사이트로 5분 이하의 영상을 받으며, 세 부문에서 각각 한 명의 수상자를 뽑는다."
+  },
+  "writing": {
+    "en": "Each video must be no longer than five minutes.",
+    "ko": "각 영상은 5분보다 길면 안 된다."
+  },
+  "tip": "안내문 문제는 선택지 순서대로 항목(Submission, Guidelines, Prize)을 찾아 숫자와 조건을 하나씩 대조하세요. or less(이하)와 or more(이상), at least(최소) 같은 표현이 방향을 바꾸는 함정이에요. ④처럼 표가 나오면 숫자를 직접 비교해 보세요.",
+  "faq": [
+    ["2025년 10월 고2 모의고사 영어 27번 정답은?", "②예요. 안내문에 영상 길이는 5분 이하(5 minutes or less)여야 한다고 했는데, ②는 '5분을 넘어야 한다'고 해서 맞지 않아요."],
+    ["2025 10월 고2 영어 27번은 어떤 유형인가요?", "안내문의 내용과 일치하지 않는 것을 고르는 2점 문항이에요. Manuha 섬 드론 영상 대회 안내문이에요."],
+    ["④ 도시 경관 부문 상금이 가장 큰 게 맞나요?", "네, 맞아요. Landscape of the City가 800달러이고, Nature of Manuha와 Life & People in Manuha는 각각 700달러예요."]
+  ]
+}
