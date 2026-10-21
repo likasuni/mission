@@ -1,0 +1,208 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 23,
+  "type": "주제",
+  "points": 3,
+  "answer": 1,
+  "topic": "방문객을 끌기 위해 분명한 문화적 정체성을 보여 주어야 하는 오늘날의 장소",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 23번",
+    "2025 10월 고3 영어 23번 해설",
+    "고3 10월 모의고사 23번 정답",
+    "고3 모의고사 글의 주제",
+    "places exhibitions of themselves legible 지문",
+    "장소 정체성 visitability"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 23번은 오늘날 장소가 건축·예술·조경 등에 투자해 자신의 문화적 가치를 정체성으로 내세우고, 그 정체성이 방문객에게 쉽게 '알아볼 수 있게(legible)' 드러나야 목적지가 된다는 글이에요. 정체성이 불분명한 장소는 방문할 만해 보이지 않으니 '자신을 최대한 활용해야' 한다는 흐름이에요. 정답은 ① importance of places showcasing a clear cultural identity예요.",
+  "flow": [
+    [
+      "도입",
+      "오늘날 장소는 스스로에 대한 전시품이 되었다."
+    ],
+    [
+      "방법",
+      "건축·예술·디자인·조경·재개발에 투자해 자연, 역사, 다문화, 재미, 세련됨 같은 문화적 가치를 내세운다."
+    ],
+    [
+      "핵심",
+      "이 문화적 가치가 장소의 정체성이 되었고, 이는 방문객을 끄는 데 핵심이다. 정체성은 쉽게 알아볼 수 있어야 한다."
+    ],
+    [
+      "반례",
+      "정체성이 접근하기 어렵거나 혼란스러운 장소는 목적지가 되지 못한다."
+    ],
+    [
+      "결론",
+      "그러니 장소는 '자신을 최대한 활용해야' 방문 가능성의 문화 경제에서 자리를 찾는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "These cultural values have come to be seen as a place's identity, the possession of which is key to the important task of attracting visitors.",
+      "ko": "이러한 문화적 가치는 장소의 정체성으로 여겨지게 되었고, 이것의 소유는 방문객들을 끌어들이는 중요한 과업의 핵심이다.",
+      "note": "문화적 정체성 = 방문객 유치의 핵심. ①의 cultural identity와 이어져요."
+    },
+    {
+      "en": "And this identity is expected to be easily accessed by those visitors or, … to be legible.",
+      "ko": "그리고 이 정체성은 그러한 방문객들에 의해 쉽게 접근될 수 있거나, … '알아볼 수 있는' 것으로 기대된다.",
+      "note": "easily accessed, legible이 ①의 clear(분명한)를 뒷받침해요."
+    },
+    {
+      "en": "Places whose identity seems inaccessible, confusing or contradictory do not present themselves as destinations.",
+      "ko": "그것의 정체성이 접근하기 어렵거나, 혼란스럽거나 혹은 모순적으로 보이는 장소는 자신을 목적지로 나타내지 않는다.",
+      "note": "반대로 정체성이 불분명하면 실패한다는 문장이에요. '분명한 정체성을 보여 주는 것의 중요성'이 주제라는 증거예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "importance of places showcasing a clear cultural identity",
+      "ko": "장소가 분명한 문화적 정체성을 보여 주는 것의 중요성",
+      "why": "정답. identity, legible, make the most of themselves가 모두 이 말로 모여요."
+    },
+    {
+      "en": "need for preserving traditional lifestyles from urbanization",
+      "ko": "도시화로부터 전통적 생활 방식을 보존할 필요성",
+      "why": "the historic past가 나오지만 여러 문화적 가치 중 하나일 뿐이고, 보존이 아니라 '전시'가 핵심이에요."
+    },
+    {
+      "en": "benefits of mixing foreign and local culture to attract tourists",
+      "ko": "관광객 유치를 위해 외국과 지역 문화를 섞는 것의 이점",
+      "why": "multiculturalism 한 단어를 빌린 함정이에요. 섞으라는 말은 없어요."
+    },
+    {
+      "en": "impact of globalization in weakening the uniqueness of location",
+      "ko": "장소의 고유성을 약화시키는 세계화의 영향",
+      "why": "세계화는 나오지 않아요. 오히려 장소가 자기 정체성을 강하게 드러내는 이야기예요."
+    },
+    {
+      "en": "role of citizen participation in shaping urban identity and design",
+      "ko": "도시 정체성과 디자인을 형성하는 데 시민 참여의 역할",
+      "why": "urban design은 나오지만 시민 참여 이야기는 없어요. 주체는 장소(와 투자), 대상은 방문객이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "계속적 용법 the possession of which",
+      "ex": "a place's identity, the possession of which is key to …",
+      "d": "which = a place's identity. '그리고 그것의 소유는 ~의 핵심이다'로 끊어 읽어요."
+    },
+    {
+      "t": "수동태 to부정사 be expected to be p.p.",
+      "ex": "this identity is expected to be easily accessed by those visitors",
+      "d": "'~될 것으로 기대된다'. to be accessed가 수동형 to부정사예요."
+    },
+    {
+      "t": "소유격 관계대명사 whose",
+      "ex": "Places whose identity seems inaccessible, confusing or contradictory do not present themselves as destinations.",
+      "d": "whose identity가 Places를 꾸며요. 주어가 길어서 진짜 동사 do not present를 찾아야 해요."
+    },
+    {
+      "t": "does not A nor B",
+      "ex": "does not compose itself into a view nor offer itself as an 'experience'",
+      "d": "'A하지도 않고 B하지도 않다'. 조동사 does에 compose와 offer가 병렬로 걸려요."
+    }
+  ],
+  "vocab": [
+    [
+      "exhibition",
+      "전시, 전시품"
+    ],
+    [
+      "heavy investment",
+      "막대한 투자"
+    ],
+    [
+      "landscaping",
+      "조경"
+    ],
+    [
+      "redevelopment",
+      "재개발"
+    ],
+    [
+      "pronounce",
+      "단언하다, 선언하다"
+    ],
+    [
+      "possession",
+      "소유"
+    ],
+    [
+      "multiculturalism",
+      "다문화주의"
+    ],
+    [
+      "stylishness",
+      "세련됨"
+    ],
+    [
+      "identity",
+      "정체성"
+    ],
+    [
+      "attract",
+      "끌어들이다"
+    ],
+    [
+      "access",
+      "접근하다"
+    ],
+    [
+      "legible",
+      "알아볼 수 있는"
+    ],
+    [
+      "inaccessible",
+      "접근하기 어려운"
+    ],
+    [
+      "contradictory",
+      "모순적인"
+    ],
+    [
+      "destination",
+      "목적지"
+    ],
+    [
+      "restore",
+      "복원하다"
+    ],
+    [
+      "make the most of",
+      "~을 최대한 활용하다"
+    ],
+    [
+      "niche",
+      "꼭 맞는 역할, 틈새"
+    ],
+    [
+      "visitability",
+      "방문 가능성"
+    ]
+  ],
+  "summary": {
+    "en": "Today, places must display a clear and easily recognizable cultural identity to attract visitors and become destinations.",
+    "ko": "오늘날 장소는 방문객을 끌어들여 목적지가 되기 위해 분명하고 쉽게 알아볼 수 있는 문화적 정체성을 보여 주어야 한다."
+  },
+  "writing": {
+    "en": "Places today have become exhibitions of themselves.",
+    "ko": "오늘날 장소는 스스로에 대한 전시품이 되었다."
+  },
+  "tip": "주제 문항은 반복되는 핵심어를 세어 보세요. 이 글은 identity가 네 번, '알아볼 수 있는(legible, accessed)'이 이어서 나와요. 오답은 multiculturalism, historic past, urban design처럼 한 번 스쳐 간 단어로 만들어져 있어요. 한 번 나온 단어로 만든 선택지는 일단 의심하세요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 23번 정답은?",
+      "① importance of places showcasing a clear cultural identity예요."
+    ],
+    [
+      "2025년 10월 고3 영어 23번은 어떤 유형인가요?",
+      "글의 주제 유형의 3점 문항이에요. 장소의 문화적 정체성과 방문객 유치를 다룬 지문이에요."
+    ],
+    [
+      "③ 외국과 지역 문화 섞기가 오답인 이유는?",
+      "multiculturalism은 장소가 내세우는 여러 문화적 가치 중 하나로 잠깐 나올 뿐이에요. 문화를 섞으라는 주장은 없어요."
+    ]
+  ],
+  "note": "고3 주제 문항은 어휘가 어려워서 문장을 다 해석하려다 시간이 부족해져요. identity라는 반복어 하나만 잡아도 ①로 갈 수 있어요. 수업에서는 핵심어에 동그라미 치며 읽는 연습을 이 지문으로 해 볼게요."
+}

@@ -1,0 +1,208 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 32,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 4,
+  "topic": "비언어적 단서가 없는 디지털 소통에는 높은 감정 인식이 필요하다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 32번",
+    "2025 10월 고3 영어 32번 해설",
+    "고3 10월 모의고사 32번 정답",
+    "고3 모의고사 빈칸 추론",
+    "digital communication emotional awareness 지문",
+    "nonverbal cues 빈칸"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 32번은 문자나 이메일에는 표정·목소리·몸짓 같은 비언어적 단서가 없어서 상대의 감정을 짐작해야 하므로, 디지털 소통에는 높은 감정 인식이 필요하다는 빈칸 문항이에요. 빈칸은 감정 인식이 필요한 두 번째 이유로, 내 감정을 표현하는 것과 짝을 이루는 '받은 말 뒤의 감정을 해독하기'예요. 정답은 ④ the emotions behind the words we receive예요.",
+  "flow": [
+    [
+      "도입",
+      "디지털 시대는 메시지를 몇 초 만에 보내게 해 주었다."
+    ],
+    [
+      "문제",
+      "하지만 효율을 얻는 대신 대면 상호 작용의 풍부함을 잃었다."
+    ],
+    [
+      "이유",
+      "문자·이메일에는 표정, 어조, 몸짓 같은 비언어적 단서가 없어 감정 이해가 불완전해진다."
+    ],
+    [
+      "예시",
+      "짧은 답장 'Okay.'는 중립, 짜증, 비꼼일 수 있어 우리는 추측할 수밖에 없다."
+    ],
+    [
+      "결론",
+      "그래서 디지털 소통은 나를 표현하고 (받은 말 뒤의 감정을) 해독하기 위해 높은 감정 인식이 필요하다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "These elements carry emotional weight, helping us to interpret meaning and intent. Without them, our understanding of others' emotions is often incomplete, …",
+      "ko": "이러한 요소들은 감정적인 중요성을 지니며, 우리가 의미와 의도를 해석하는 데 도움을 준다. 이것들 없이는 타인의 감정에 대한 우리의 이해는 자주 불완전하며, …",
+      "note": "글의 문제는 '타인의 감정'을 읽기 어렵다는 거예요. 빈칸의 decode(해독하다) 대상과 이어져요."
+    },
+    {
+      "en": "Depending on the context, the sender's intention might be neutral, annoyed, or even sarcastic. But without vocal inflections or facial expressions to guide us, we are left guessing.",
+      "ko": "맥락에 따라 발신자의 의도는 중립적일 수도, 짜증이 났을 수도, 혹은 심지어 비꼬는 것일 수도 있다. 하지만 우리를 안내해 줄 목소리의 억양이나 표정 없이, 우리는 추측하는 상태에 놓이게 된다.",
+      "note": "받은 메시지('Okay.') 뒤에 숨은 감정을 짐작해야 한다는 예시예요. ④와 정확히 같은 상황이에요."
+    },
+    {
+      "en": "This is why digital communication requires heightened emotional awareness — not only to express ourselves effectively but also to decode ______.",
+      "ko": "이것이 디지털 의사소통이 고도의 감정 인식을 요구하는 이유이며, 이는 우리 자신을 효과적으로 표현하기 위한 것뿐만 아니라, ______을 해독하기 위해서다.",
+      "note": "not only (내가) 표현하기 but also (남의 것을) 해독하기. 보내는 쪽과 받는 쪽의 짝이니, 받는 말 속 감정이 와야 해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "the source materials we refer to",
+      "ko": "우리가 참고하는 원자료",
+      "why": "자료 출처 이야기는 없어요."
+    },
+    {
+      "en": "the specific subject being personified",
+      "ko": "의인화되는 특정 대상",
+      "why": "의인화는 글과 관계없어요."
+    },
+    {
+      "en": "the grammatical structures in a speech",
+      "ko": "연설의 문법 구조",
+      "why": "decode를 '문장 분석'으로 오해하게 만드는 함정이에요. 해독할 것은 감정이에요."
+    },
+    {
+      "en": "the emotions behind the words we receive",
+      "ko": "우리가 받는 말 이면의 감정",
+      "why": "정답. 'Okay.' 뒤의 의도를 추측해야 한다는 예시와 '타인의 감정' 이해 문제가 그대로 이어져요."
+    },
+    {
+      "en": "the newly-coined words used in the digital era",
+      "ko": "디지털 시대에 쓰이는 신조어",
+      "why": "digital era만 빌린 함정이에요. 신조어는 나오지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "관계대명사 that절 + might have p.p.",
+      "ex": "A message that might have taken weeks to deliver by mail can now be sent in seconds.",
+      "d": "might have taken은 '(예전이라면) ~걸렸을 수도 있는'. 과거에 대한 추측이에요."
+    },
+    {
+      "t": "분사구문 (결과)",
+      "ex": "These elements carry emotional weight, helping us to interpret meaning and intent.",
+      "d": "helping은 '그래서 ~하도록 돕는다'. help는 목적격 보어로 to부정사와 원형 모두 써요."
+    },
+    {
+      "t": "be left -ing",
+      "ex": "we are left guessing",
+      "d": "'~하는 상태로 남겨진다'. 어쩔 수 없이 추측만 하게 된다는 뜻이에요."
+    },
+    {
+      "t": "not only A but also B (to부정사 병렬)",
+      "ex": "not only to express ourselves effectively but also to decode the emotions …",
+      "d": "to express와 to decode가 짝이에요. 빈칸은 express의 짝을 생각하면 풀려요."
+    }
+  ],
+  "vocab": [
+    [
+      "remarkable",
+      "놀라운"
+    ],
+    [
+      "advancement",
+      "발전"
+    ],
+    [
+      "efficiency",
+      "효율성"
+    ],
+    [
+      "face-to-face",
+      "대면의"
+    ],
+    [
+      "interaction",
+      "상호 작용"
+    ],
+    [
+      "nonverbal cue",
+      "비언어적 단서"
+    ],
+    [
+      "facial expression",
+      "표정"
+    ],
+    [
+      "tone of voice",
+      "목소리의 어조"
+    ],
+    [
+      "body language",
+      "몸짓 언어"
+    ],
+    [
+      "emotional weight",
+      "감정적 중요성"
+    ],
+    [
+      "interpret",
+      "해석하다"
+    ],
+    [
+      "intent",
+      "의도"
+    ],
+    [
+      "frustration",
+      "좌절, 답답함"
+    ],
+    [
+      "neutral",
+      "중립적인"
+    ],
+    [
+      "annoyed",
+      "짜증이 난"
+    ],
+    [
+      "sarcastic",
+      "비꼬는"
+    ],
+    [
+      "inflection",
+      "억양"
+    ],
+    [
+      "heightened",
+      "고조된, 높아진"
+    ],
+    [
+      "decode",
+      "해독하다"
+    ]
+  ],
+  "summary": {
+    "en": "Because digital messages lack nonverbal cues, we need heightened emotional awareness both to express ourselves and to read the feelings behind the messages we receive.",
+    "ko": "디지털 메시지에는 비언어적 단서가 없으므로, 우리는 자신을 표현하고 받은 메시지 뒤의 감정을 읽기 위해 높은 감정 인식이 필요하다."
+  },
+  "writing": {
+    "en": "Without vocal inflections or facial expressions, we are left guessing.",
+    "ko": "목소리의 억양이나 표정 없이 우리는 추측하는 상태에 놓이게 된다."
+  },
+  "tip": "빈칸이 not only A but also B의 B 자리에 있으면 A와 짝을 생각하세요. A가 '내가 표현하기'면 B는 '남의 것을 이해하기'일 가능성이 높아요. 그다음 글 속 예시('Okay.'의 의도 추측)로 확인하면 확실해요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 32번 정답은?",
+      "④ the emotions behind the words we receive예요."
+    ],
+    [
+      "2025년 10월 고3 영어 32번은 어떤 유형인가요?",
+      "빈칸 추론 유형의 2점 문항이에요. 디지털 소통과 감정 인식을 다룬 지문이에요."
+    ],
+    [
+      "③ 연설의 문법 구조가 오답인 이유는?",
+      "decode를 문장 구조 분석으로 오해하면 고르기 쉬워요. 글에서 해독해야 하는 것은 표정·어조가 없어서 알기 어려운 상대의 감정이에요."
+    ]
+  ],
+  "note": "not only A but also B에서 A가 '내 감정 표현'이면 B는 '상대 감정 읽기'예요. 이 짝만 떠올려도 ④로 바로 가요. 빈칸이 문장 끝에 있을 때 앞쪽 짝부터 보는 습관을 들여요."
+}

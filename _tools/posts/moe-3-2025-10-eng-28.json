@@ -1,0 +1,183 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "Bluetooth VR 고글 사용 설명서",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 28번",
+    "2025 10월 고3 영어 28번 해설",
+    "고3 10월 모의고사 28번 정답",
+    "고3 모의고사 안내문 일치",
+    "Bluetooth VR Goggles 안내문",
+    "VR 고글 충전 주의 사항"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 28번은 Bluetooth VR 고글의 작동법, 충전 안내, 충전 시 주의 사항을 담은 설명서예요. Caution When Charging의 Do not charge while wearing the goggles.가 ⑤와 같아요. 정답은 ⑤ 고글을 착용한 채로 충전하면 안 된다예요.",
+  "flow": [
+    [
+      "작동법",
+      "스마트폰 블루투스 켜고 VR Goggles 신호 검색 → 고글 쓰기 전에 앱 실행 → 30분 동안 쓰지 않으면 자동 꺼짐"
+    ],
+    [
+      "충전",
+      "빨간 불 = 충전 필요, 초록 불 = 완전 충전, 전원 연결 장치는 왼쪽 끈"
+    ],
+    [
+      "주의",
+      "착용한 채 충전 금지, 충전할 때는 서늘하고 건조한 곳에 둘 것"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Do not charge while wearing the goggles.",
+      "ko": "고글을 착용한 채로 충전하지 마십시오.",
+      "note": "⑤와 그대로 같아요. 정답이에요."
+    },
+    {
+      "en": "Start the app or content you want to use on your smartphone, before putting on the goggles.",
+      "ko": "고글을 쓰기 전에, 스마트폰에서 사용하고 싶은 앱이나 콘텐츠를 실행하세요.",
+      "note": "앱은 고글을 쓰기 '전에' 실행해요. ① '착용한 후에'는 불일치예요."
+    },
+    {
+      "en": "The power connector is on the left strap.",
+      "ko": "전원 연결 장치는 왼쪽 끈에 있습니다.",
+      "note": "④ '오른쪽 끈'은 불일치예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "고글을 착용한 후에 스마트폰 앱을 실행해야 한다.",
+      "ko": "불일치",
+      "why": "before putting on the goggles. 착용하기 전에 실행해요."
+    },
+    {
+      "en": "10분 동안 사용하지 않으면 자동으로 전원이 꺼진다.",
+      "ko": "불일치",
+      "why": "10분이 아니라 30분(30 minutes)이에요."
+    },
+    {
+      "en": "녹색 불은 충전해야 한다는 의미이다.",
+      "ko": "불일치",
+      "why": "충전이 필요하다는 건 빨간 불이에요. 초록 불은 완전 충전이에요."
+    },
+    {
+      "en": "전원 연결 장치는 오른쪽 끈에 있다.",
+      "ko": "불일치",
+      "why": "왼쪽 끈(left strap)에 있어요."
+    },
+    {
+      "en": "고글을 착용한 채로 충전하면 안 된다.",
+      "ko": "일치",
+      "why": "정답. Do not charge while wearing the goggles."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "before + 동명사",
+      "ex": "before putting on the goggles",
+      "d": "before가 전치사로 쓰여 동명사가 와요. '고글을 쓰기 전에'."
+    },
+    {
+      "t": "while + 분사 (접속사 뒤 주어·be동사 생략)",
+      "ex": "Do not charge while wearing the goggles.",
+      "d": "while (you are) wearing에서 you are가 빠졌어요."
+    },
+    {
+      "t": "If 조건절 + 미래",
+      "ex": "If the goggles remain inactive for 30 minutes, they will automatically shut down.",
+      "d": "조건절은 현재형(remain), 주절은 will. remain + 형용사는 '~인 채로 있다'."
+    },
+    {
+      "t": "put A in B",
+      "ex": "put the goggles in a cool and dry area",
+      "d": "'A를 B에 두다'. 명령문으로 주의 사항을 알려요."
+    }
+  ],
+  "vocab": [
+    [
+      "instruction manual",
+      "사용 설명서"
+    ],
+    [
+      "operate",
+      "작동시키다"
+    ],
+    [
+      "setting",
+      "설정"
+    ],
+    [
+      "signal",
+      "신호"
+    ],
+    [
+      "put on",
+      "착용하다, 쓰다"
+    ],
+    [
+      "remain",
+      "~인 채로 있다"
+    ],
+    [
+      "inactive",
+      "사용하지 않는, 작동하지 않는"
+    ],
+    [
+      "automatically",
+      "자동으로"
+    ],
+    [
+      "shut down",
+      "꺼지다"
+    ],
+    [
+      "charge",
+      "충전하다"
+    ],
+    [
+      "fully charged",
+      "완전히 충전된"
+    ],
+    [
+      "power connector",
+      "전원 연결 장치"
+    ],
+    [
+      "strap",
+      "끈"
+    ],
+    [
+      "caution",
+      "주의"
+    ],
+    [
+      "dry",
+      "건조한"
+    ]
+  ],
+  "summary": {
+    "en": "The manual explains how to connect and use the VR goggles, what the charging lights mean, and that they should not be charged while being worn.",
+    "ko": "설명서는 VR 고글 연결·사용법, 충전 표시등의 의미, 그리고 착용한 채 충전하면 안 된다는 점을 알려 준다."
+  },
+  "writing": {
+    "en": "Do not charge the device while wearing it.",
+    "ko": "기기를 착용한 채로 충전하지 마십시오."
+  },
+  "tip": "안내문 일치 문항은 숫자(10분/30분), 색깔(빨강/초록), 방향(왼쪽/오른쪽), 순서(전/후)를 바꾼 오답이 대부분이에요. 선택지 하나씩 해당 줄을 찾아 단어 하나까지 맞춰 보면 실수 없이 풀 수 있어요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 28번 정답은?",
+      "⑤ 고글을 착용한 채로 충전하면 안 된다예요."
+    ],
+    [
+      "2025년 10월 고3 영어 28번은 어떤 유형인가요?",
+      "안내문 일치 유형의 2점 문항이에요. VR 고글 사용 설명서 안내문이에요."
+    ],
+    [
+      "③ 녹색 불이 오답인 이유는?",
+      "빨간 불이 충전이 필요하다는 뜻이고, 초록 불은 배터리가 완전히 충전되었다는 뜻이에요. 색깔을 바꿔 놓은 함정이에요."
+    ]
+  ]
+}

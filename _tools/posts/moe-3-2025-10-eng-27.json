@@ -1,0 +1,179 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "초등학생 대상 독서 행사 Playtime with Books 안내",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 27번",
+    "2025 10월 고3 영어 27번 해설",
+    "고3 10월 모의고사 27번 정답",
+    "고3 모의고사 안내문 불일치",
+    "Playtime with Books 안내문",
+    "도서관 독서 행사 안내문"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 27번은 Bluebell 도서관의 초등학생 독서 행사 Playtime with Books 안내문이에요. 오전 프로그램은 '나만의 멋진 이야기 만들기(Create Your Own Amazing Tales)'이고, 책 표지 디자인은 오후 프로그램이라 ⑤가 틀렸어요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "행사",
+      "Playtime with Books: 읽고, 쓰고, 노는 토요일"
+    ],
+    [
+      "날짜·대상",
+      "12월 6일, 초등학교 3·4학년"
+    ],
+    [
+      "장소",
+      "Bluebell 도서관 다목적실"
+    ],
+    [
+      "등록",
+      "11월 17일 시작, 홈페이지 배너 클릭, 선착순 마감"
+    ],
+    [
+      "프로그램",
+      "오전: 나만의 이야기 만들기 / 오후: 책 표지 디자인"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "- Morning Program: Create Your Own Amazing Tales",
+      "ko": "오전 프로그램: 나만의 멋진 이야기 만들기",
+      "note": "오전은 이야기 만들기예요. ⑤ '책 표지 디자인'은 오전이 아니에요."
+    },
+    {
+      "en": "- Afternoon Program: Design Your Book Cover",
+      "ko": "오후 프로그램: 책 표지 디자인하기",
+      "note": "책 표지 디자인은 오후 프로그램이에요. 오전·오후를 바꿔 놓은 함정이에요."
+    },
+    {
+      "en": "* Note: First come, first served! Registration will close once all spots are filled.",
+      "ko": "참고: 선착순! 모든 자리가 차면 등록이 마감됩니다.",
+      "note": "④ 일치. First come, first served = 선착순."
+    }
+  ],
+  "choices": [
+    {
+      "en": "날짜는 12월 6일이다.",
+      "ko": "일치",
+      "why": "Date: December 6과 같아요."
+    },
+    {
+      "en": "대상은 초등학교 3학년과 4학년이다.",
+      "ko": "일치",
+      "why": "Target: Elementary school students (Grades 3 & 4)와 같아요."
+    },
+    {
+      "en": "등록은 11월 17일에 시작한다.",
+      "ko": "일치",
+      "why": "Registration starts on November 17.과 같아요."
+    },
+    {
+      "en": "등록은 선착순이다.",
+      "ko": "일치",
+      "why": "First come, first served!와 같아요."
+    },
+    {
+      "en": "오전 프로그램은 책 표지 디자인하기이다.",
+      "ko": "불일치",
+      "why": "정답. 오전은 Create Your Own Amazing Tales, 책 표지 디자인은 오후 프로그램이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "명령문 + and",
+      "ex": "Read, write, and play — your Saturday becomes a story-filled adventure.",
+      "d": "명령문 뒤 줄표가 결과를 이어요. '읽고 쓰고 놀면 토요일이 모험이 된다'."
+    },
+    {
+      "t": "once + 절 (접속사)",
+      "ex": "Registration will close once all spots are filled.",
+      "d": "once는 '일단 ~하면, ~하자마자'라는 접속사예요."
+    },
+    {
+      "t": "복합 형용사 명사-p.p.",
+      "ex": "a story-filled adventure",
+      "d": "'이야기로 가득 찬 모험'. 명사-과거분사로 형용사를 만들어요."
+    },
+    {
+      "t": "First come, first served",
+      "ex": "First come, first served!",
+      "d": "'먼저 온 사람이 먼저 대접받는다' = 선착순."
+    }
+  ],
+  "vocab": [
+    [
+      "target",
+      "대상"
+    ],
+    [
+      "elementary school",
+      "초등학교"
+    ],
+    [
+      "grade",
+      "학년"
+    ],
+    [
+      "multipurpose room",
+      "다목적실"
+    ],
+    [
+      "registration",
+      "등록"
+    ],
+    [
+      "banner",
+      "배너, 현수막"
+    ],
+    [
+      "first come, first served",
+      "선착순"
+    ],
+    [
+      "spot",
+      "자리"
+    ],
+    [
+      "fill",
+      "채우다"
+    ],
+    [
+      "tale",
+      "이야기"
+    ],
+    [
+      "design",
+      "디자인하다"
+    ],
+    [
+      "book cover",
+      "책 표지"
+    ]
+  ],
+  "summary": {
+    "en": "Bluebell Library holds a reading event for 3rd and 4th graders on December 6, with a storytelling program in the morning and a book cover design program in the afternoon.",
+    "ko": "Bluebell 도서관은 12월 6일 3·4학년 대상 독서 행사를 열며, 오전에는 이야기 만들기, 오후에는 책 표지 디자인 프로그램이 있다."
+  },
+  "writing": {
+    "en": "Registration will close once all spots are filled.",
+    "ko": "모든 자리가 차면 등록이 마감됩니다."
+  },
+  "tip": "안내문 문항은 오전/오후, 시작/마감, 대상 학년처럼 짝을 이루는 정보를 서로 바꿔 놓는 함정이 단골이에요. 선택지에서 '오전', '시작' 같은 단어를 보면 안내문의 해당 줄로 바로 가서 짝이 맞는지 확인하세요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 27번 정답은?",
+      "⑤ 오전 프로그램은 책 표지 디자인하기이다예요. 책 표지 디자인은 오후 프로그램이에요."
+    ],
+    [
+      "2025년 10월 고3 영어 27번은 어떤 유형인가요?",
+      "안내문 불일치 유형의 2점 문항이에요. 도서관 독서 행사 안내문이에요."
+    ],
+    [
+      "④ 선착순은 어디에 나와요?",
+      "Note의 First come, first served!예요. 자리가 다 차면 등록이 마감된다는 말도 함께 나와요."
+    ]
+  ]
+}

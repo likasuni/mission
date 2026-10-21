@@ -1,0 +1,212 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 40,
+  "type": "요약문",
+  "points": 2,
+  "answer": 4,
+  "topic": "영화와 법은 모두 인간성을 탐구하지만, 영화는 감정과 마주하게 하고 법은 감정을 제한한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 40번",
+    "2025 10월 고3 영어 40번 해설",
+    "고3 10월 모의고사 40번 정답",
+    "고3 모의고사 요약문 완성",
+    "cinema and law 요약문",
+    "영화와 법 감정 humanity imposes"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 40번은 영화와 법이 모두 인간이 무엇인지 고민하는 인간의 창작물이지만, 영화는 인간의 감정을 표현하고 법은 그것을 억제한다는 요약문 문항이에요. (A)는 what it means to be human, our existence에서 humanity(인간성), (B)는 keeps it in check, suppress에서 imposes (limits)(제한을 부과한다)예요. 정답은 ④ humanity ······· imposes예요.",
+  "flow": [
+    [
+      "공통점",
+      "영화와 법은 같은 주제와 청중을 공유한다. 법은 인간관계의 혼란을 다룬다."
+    ],
+    [
+      "공통점 2",
+      "둘 다 인간임의 의미를 고민하며, 인간을 향한 인간의 인공물이다."
+    ],
+    [
+      "법의 바탕",
+      "인간은 자유를 원하지만 명령과 금지 없이 살기엔 너무 폭력적이라는 불안이 법의 기초다."
+    ],
+    [
+      "차이",
+      "영화는 인간의 감정적 삶을 표현하고, 법은 그것을 억제한다."
+    ],
+    [
+      "정리",
+      "법은 감정을 강박적으로 억누르려 하고, 영화는 가장 견딜 수 없는 감정까지 마주하게 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Both disciplines struggle with what it means to be human and try to communicate to us something about our existence; both are human artifacts directed at man.",
+      "ko": "두 분야 모두 인간임이 무엇을 의미하는지를 고심하며, 우리에게 우리 존재에 대한 무언가를 전달하려고 노력하는데, 즉 둘 다 인간을 향한 인간의 인공물이다.",
+      "note": "what it means to be human = humanity. 요약문 (A) explore humanity와 맞아요."
+    },
+    {
+      "en": "… while cinema expresses man's affective life, the law keeps it in check.",
+      "ko": "… 영화가 인간의 감정적 삶을 표현하는 반면, 법은 그것을 통제한다.",
+      "note": "keeps it in check(억제한다) = imposes limits on it. (B)의 근거예요."
+    },
+    {
+      "en": "The law obsessively tries to suppress affects, … whereas cinema introduces us to our affects, …",
+      "ko": "법은 … 강박적으로 감정을 억제하려 하는 반면, 영화는 우리에게 자신의 감정을 접하게 하며, …",
+      "note": "suppress(억제하다)가 한 번 더 나와요. 요약문의 cinema has us confront it(영화는 감정과 마주하게 한다)도 이 문장이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "symbols ······· places",
+      "ko": "상징 ······· 둔다",
+      "why": "(A) 상징은 글에 없어요. places limits만 보면 (B)는 그럴듯하지만 (A)가 틀렸어요."
+    },
+    {
+      "en": "symbols ······· reinforces",
+      "ko": "상징 ······· 강화한다",
+      "why": "(A)도 틀리고, reinforces limits(제한을 강화한다)도 억제한다는 뜻과 미묘하게 어긋나요."
+    },
+    {
+      "en": "nature ······· removes",
+      "ko": "자연 ······· 제거한다",
+      "why": "법은 감정에 제한을 없애는(removes) 게 아니라 거는 쪽이에요. state of nature를 빌린 함정이에요."
+    },
+    {
+      "en": "humanity ······· imposes",
+      "ko": "인간성 ······· 부과한다",
+      "why": "정답. 둘 다 인간성을 탐구하고(what it means to be human), 법은 감정에 제한을 부과해요(keeps it in check, suppress)."
+    },
+    {
+      "en": "humanity ······· undermines",
+      "ko": "인간성 ······· 약화시킨다",
+      "why": "(A)는 맞지만 undermines limits(제한을 약화시킨다)는 법의 역할과 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "Rather than A, B",
+      "ex": "Rather than an abstract desire for truth as a value in itself, the law deals with the messiness of human relations.",
+      "d": "'A보다는 오히려 B'. 법이 실제로 다루는 것은 B(인간관계의 혼란)예요."
+    },
+    {
+      "t": "too ~ to …",
+      "ex": "man desires freedom but is simultaneously too violent to exist in a state of nature …",
+      "d": "'너무 ~해서 …할 수 없다'."
+    },
+    {
+      "t": "while / whereas (대조)",
+      "ex": "while cinema expresses man's affective life, the law keeps it in check",
+      "d": "'~인 반면'. 요약문 yet they differ의 근거가 되는 대조 구문이에요."
+    },
+    {
+      "t": "force + 목적어 + to부정사",
+      "ex": "often forcing us to identify the most unbearable ones in ourselves",
+      "d": "'우리가 ~하도록 강요하다'. 분사구문으로 앞 절의 결과를 덧붙여요."
+    }
+  ],
+  "vocab": [
+    [
+      "cinema",
+      "영화"
+    ],
+    [
+      "subject",
+      "주제"
+    ],
+    [
+      "abstract",
+      "추상적인"
+    ],
+    [
+      "messiness",
+      "혼란, 엉망"
+    ],
+    [
+      "discipline",
+      "분야, 학문"
+    ],
+    [
+      "artifact",
+      "인공물, 창작물"
+    ],
+    [
+      "foundational",
+      "기초가 되는"
+    ],
+    [
+      "anxiety",
+      "불안"
+    ],
+    [
+      "simultaneously",
+      "동시에"
+    ],
+    [
+      "regime",
+      "체제"
+    ],
+    [
+      "prohibition",
+      "금지"
+    ],
+    [
+      "affective",
+      "감정의, 정서적인"
+    ],
+    [
+      "keep A in check",
+      "A를 억제하다, 통제하다"
+    ],
+    [
+      "overwhelm",
+      "압도하다"
+    ],
+    [
+      "drive",
+      "충동, 욕구"
+    ],
+    [
+      "obsessively",
+      "강박적으로"
+    ],
+    [
+      "suppress",
+      "억제하다"
+    ],
+    [
+      "affect",
+      "감정, 정서"
+    ],
+    [
+      "unbearable",
+      "견딜 수 없는"
+    ],
+    [
+      "impose limits on",
+      "~에 제한을 부과하다"
+    ]
+  ],
+  "summary": {
+    "en": "Cinema and law both explore what it means to be human, but cinema expresses our emotions while law restrains them.",
+    "ko": "영화와 법은 모두 인간임의 의미를 탐구하지만, 영화는 우리의 감정을 표현하고 법은 그것을 억제한다."
+  },
+  "writing": {
+    "en": "While cinema expresses man's affective life, the law keeps it in check.",
+    "ko": "영화가 인간의 감정적 삶을 표현하는 반면, 법은 그것을 통제한다."
+  },
+  "tip": "요약문은 본문의 핵심어를 다른 말로 바꿔 놓아요. what it means to be human → humanity, keeps it in check / suppress → impose limits on. 본문 단어를 그대로 쓴 선택지(nature)는 오히려 함정일 때가 많으니, '뜻이 같은 다른 말'을 찾으세요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 40번 정답은?",
+      "④ humanity ······· imposes예요."
+    ],
+    [
+      "2025년 10월 고3 영어 40번은 어떤 유형인가요?",
+      "요약문 완성 유형의 2점 문항이에요. 영화와 법이 감정을 다루는 방식의 차이를 다룬 지문이에요."
+    ],
+    [
+      "③ nature ······· removes가 오답인 이유는?",
+      "state of nature(자연 상태)는 법이 막으려는 상태로 잠깐 나올 뿐이고, 두 분야가 탐구하는 대상은 '인간성'이에요. 또 법은 감정에 제한을 없애는 게 아니라 부과해요."
+    ]
+  ],
+  "note": "(B) 자리 동사 다섯 개가 모두 limits와 어울려서 헷갈려요. 법이 감정을 '억누른다'는 방향만 잡으면 imposes 하나만 남아요. 동사 뒤의 limits까지 묶어서 한 덩어리로 해석해 보세요."
+}

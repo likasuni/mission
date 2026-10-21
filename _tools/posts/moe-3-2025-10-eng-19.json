@@ -1,0 +1,196 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 19,
+  "type": "심경",
+  "points": 2,
+  "answer": 2,
+  "topic": "마지막 문장이 떠오르지 않아 괴로워하던 Mike가 완벽한 문장을 찾고 기뻐하는 장면",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 19번",
+    "2025 10월 고3 영어 19번 해설",
+    "고3 10월 모의고사 19번 정답",
+    "고3 모의고사 심경 변화",
+    "Mike blinking cursor 지문",
+    "frustrated happy 심경 변화"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 19번은 글의 마지막 문장을 끝내 쓰지 못해 괴로워하던 Mike가 갑자기 떠오른 문장으로 작품을 완성하고 기뻐하는 이야기예요. 앞부분 heart sinking, buried his face with a deep sigh에서 좌절을, 뒷부분 shouted in joy, clapped his hands with delight에서 기쁨을 읽으면 돼요. 정답은 ② frustrated → happy예요.",
+  "flow": [
+    [
+      "상황",
+      "Mike가 깜빡이는 커서를 응시하며 시간이 갈수록 마음이 가라앉는다."
+    ],
+    [
+      "막힘",
+      "마지막 문장을 계속 고쳐 써도 맞지 않고, 끝내야 한다는 압박만 커진다."
+    ],
+    [
+      "좌절",
+      "깊은 한숨과 함께 얼굴을 손에 묻는다."
+    ],
+    [
+      "전환",
+      "Then, 정적 속에서 무언가가 번뜩이고, 문장 하나를 친다."
+    ],
+    [
+      "기쁨",
+      "'완벽해!' 외치며 벌떡 일어나 손뼉을 친다. 오래 꿈꿔 온 것을 완성했다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Mike stared at the blinking cursor on the screen, his heart sinking deeper with each passing hour.",
+      "ko": "Mike는 화면에서 깜빡이는 커서를 응시했고, 매시간이 흐를수록 그의 마음은 더 깊이 가라앉았다.",
+      "note": "heart sinking은 실망·낙담의 대표 표현이에요. 처음 심경은 부정적이에요."
+    },
+    {
+      "en": "He buried his face in his hands with a deep sigh.",
+      "ko": "그는 깊은 한숨을 쉬며 자신의 손에 얼굴을 묻었다.",
+      "note": "얼굴을 묻고 한숨 쉬는 행동은 '좌절(frustrated)'을 보여 줘요. 불안(anxious)보다 '안 풀려서 답답한' 마음이에요."
+    },
+    {
+      "en": "\"This is it! It's perfect!\" Mike shouted in joy, jumping up from his chair. He clapped his hands with delight.",
+      "ko": "\"바로 이거야! 완벽해!\" Mike가 환희에 차 외치며 의자에서 벌떡 일어났다. 그는 기쁨에 겨워 손뼉을 쳤다.",
+      "note": "in joy, with delight가 연달아 나와요. 나중 심경은 happy예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "joyful → regretful",
+      "ko": "기쁜 → 후회하는",
+      "why": "순서가 거꾸로예요. 처음이 괴롭고 나중이 기뻐요."
+    },
+    {
+      "en": "frustrated → happy",
+      "ko": "좌절한 → 행복한",
+      "why": "정답. 문장이 안 떠올라 한숨 쉬다가(좌절) 완벽한 문장을 찾고 손뼉 쳐요(행복)."
+    },
+    {
+      "en": "satisfied → guilty",
+      "ko": "만족한 → 죄책감을 느끼는",
+      "why": "처음부터 만족한 적이 없고, 죄책감을 느낄 일도 없어요."
+    },
+    {
+      "en": "angry → ashamed",
+      "ko": "화난 → 부끄러운",
+      "why": "화를 내는 장면이 없고, 마지막은 부끄러움이 아니라 기쁨이에요."
+    },
+    {
+      "en": "anxious → calm",
+      "ko": "불안한 → 차분한",
+      "why": "압박감(pressure)은 있지만 마지막은 '차분함'이 아니라 소리치고 뛰는 '기쁨'이에요. 강도가 맞지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "독립분사구문 (with 없는 부대상황)",
+      "ex": "Mike stared at the blinking cursor on the screen, his heart sinking deeper …",
+      "d": "his heart가 분사 sinking의 의미상 주어예요. '그의 마음은 가라앉으면서'로 읽어요."
+    },
+    {
+      "t": "over and over",
+      "ex": "He had rewritten the final sentence over and over",
+      "d": "'반복해서, 몇 번이고'. 과거완료 had rewritten으로 그전부터 계속 고쳐 왔음을 나타내요."
+    },
+    {
+      "t": "분사구문 (동시 동작)",
+      "ex": "Mike shouted in joy, jumping up from his chair.",
+      "d": "jumping up은 '벌떡 일어나면서'. 외치는 동작과 동시에 일어나요."
+    },
+    {
+      "t": "관계대명사 what",
+      "ex": "He had finally completed what he had long dreamed of.",
+      "d": "what = the thing which. '그가 오래 꿈꿔 왔던 것'이 completed의 목적어예요."
+    }
+  ],
+  "vocab": [
+    [
+      "stare at",
+      "~을 응시하다"
+    ],
+    [
+      "blinking",
+      "깜빡이는"
+    ],
+    [
+      "cursor",
+      "(컴퓨터 화면의) 커서"
+    ],
+    [
+      "sink",
+      "가라앉다"
+    ],
+    [
+      "rewrite",
+      "다시 쓰다, 고쳐 쓰다"
+    ],
+    [
+      "mount",
+      "증가하다, 커지다"
+    ],
+    [
+      "bury",
+      "묻다"
+    ],
+    [
+      "sigh",
+      "한숨"
+    ],
+    [
+      "stillness",
+      "정적, 고요"
+    ],
+    [
+      "spark",
+      "번뜩이다"
+    ],
+    [
+      "with a rush",
+      "서둘러, 갑자기"
+    ],
+    [
+      "spread across",
+      "~에 번지다"
+    ],
+    [
+      "in joy",
+      "기뻐서"
+    ],
+    [
+      "with delight",
+      "기쁨에 겨워"
+    ],
+    [
+      "slide into place",
+      "제자리에 들어맞다"
+    ],
+    [
+      "frustrated",
+      "좌절한, 답답한"
+    ]
+  ],
+  "summary": {
+    "en": "Mike, stuck on the last sentence of his writing, feels frustrated, but when the perfect line finally comes to him, he is filled with joy.",
+    "ko": "글의 마지막 문장에서 막혀 좌절하던 Mike는 마침내 완벽한 문장이 떠오르자 기쁨에 찬다."
+  },
+  "writing": {
+    "en": "A big smile spread across his face.",
+    "ko": "커다란 미소가 그의 얼굴에 번졌다."
+  },
+  "tip": "심경 변화 문항은 Then, Suddenly, But 같은 전환 신호를 기준으로 앞뒤를 나누세요. 앞쪽은 heart sinking, sigh, buried his face 같은 몸의 반응을, 뒤쪽은 smile, shouted in joy, clapped 같은 동작을 모아서 감정 단어로 바꿔요. anxious와 frustrated처럼 비슷한 말은 '왜 그런 감정인지(막혀서 답답함)'로 골라요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 19번 정답은?",
+      "② frustrated → happy예요. 마지막 문장이 안 떠올라 좌절하던 Mike가 완벽한 문장을 찾고 기뻐해요."
+    ],
+    [
+      "2025년 10월 고3 영어 19번은 어떤 유형인가요?",
+      "심경 변화 유형의 2점 문항이에요. 글을 쓰다 막힌 Mike의 이야기예요."
+    ],
+    [
+      "⑤ anxious → calm이 오답인 이유는?",
+      "끝부분에서 Mike는 소리치고 벌떡 일어나 손뼉을 쳐요. '차분한(calm)'이 아니라 '기쁜(happy)' 상태예요."
+    ]
+  ],
+  "note": "⑤ anxious → calm에서 많이 고민해요. 앞부분만 보면 불안 같지만, 끝이 '차분함'인지 '기쁨'인지를 따져 보면 바로 갈려요. 감정은 앞뒤 둘 다 맞아야 정답이에요."
+}

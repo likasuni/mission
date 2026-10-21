@@ -1,0 +1,212 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 30,
+  "type": "어휘",
+  "points": 2,
+  "answer": 3,
+  "topic": "좋은 결정을 위한 정보 공개를 제한하거나 요구하는 다양한 장치",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 30번",
+    "2025 10월 고3 영어 30번 해설",
+    "고3 10월 모의고사 30번 정답",
+    "고3 모의고사 어휘",
+    "forbidden required 어휘 문제",
+    "정보 공개 의무 disclosure 지문"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 30번은 좋은 결정에 필요한 정보가 어떻게 관리되는지, 즉 공개를 제한하는 법과 반대로 공개를 의무화하는 경우를 함께 보여 주는 어휘 문항이에요. In other contexts, the reverse is true(반대가 사실이다) 뒤이므로 공개가 '금지된다(forbidden)'가 아니라 '요구된다(required)'여야 해요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "도입",
+      "정보는 좋은 결정의 핵심 재료라서, 어떤 정보가 이용 가능한지 정하는 다양한 가드레일이 있다."
+    ],
+    [
+      "제한",
+      "미국 기업 공시법은 경영진이 공개할 수 있는 정보와 시점을 제한한다."
+    ],
+    [
+      "반대",
+      "다른 맥락에서는 반대로 특정 정보 공개가 요구된다. 제약 회사 부작용 공개, 식품 영양 라벨."
+    ],
+    [
+      "고객 의무",
+      "보험 가입자도 위험에 영향을 주는 중요한 사실을 보험사에 공개할 의무가 있다."
+    ],
+    [
+      "국가",
+      "국가도 법을 공개하고, 공공 등록부로 사람들의 결정을 돕는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Share too much information and you risk being fined. In other contexts, the reverse is true, and one is ③ forbidden to make public certain information.",
+      "ko": "너무 많은 정보를 공유하면 벌금을 부과받을 위험이 있다. 다른 맥락에서는 반대가 사실이며 어떤 사람은 특정 정보를 공개하는 것이 금지된다(→ 요구된다).",
+      "note": "앞은 '공개 제한'이에요. the reverse(반대)라고 했으니 뒤는 '공개 의무'여야 해요. forbidden은 앞과 같은 말이라 틀렸어요."
+    },
+    {
+      "en": "Pharmaceutical companies need to disclose possible side effects for the drugs they manufacture and the food industry needs to put nutritional labels on most of their products.",
+      "ko": "제약 회사는 그들이 제조하는 약의 있을 수 있는 부작용을 공개해야 하며, 식품 산업은 그들 제품 대부분에 영양 라벨을 붙여야 한다.",
+      "note": "need to disclose(공개해야 한다)가 바로 뒤 예시예요. ③ 자리는 required가 맞다는 결정적 근거예요."
+    },
+    {
+      "en": "The insured is typically under a duty to ④ disclose material facts that affect the risk to the insurer.",
+      "ko": "피보험자는 일반적으로 위험성에 영향을 미치는 중요한 사실을 보험 회사에게 공개할 의무가 있다.",
+      "note": "under a duty(의무가 있다)와 disclose(공개하다)가 잘 맞아요. ④는 적절해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "exist",
+      "ko": "존재하다",
+      "why": "적절. 다양한 가드레일이 존재한다는 도입이에요."
+    },
+    {
+      "en": "limit",
+      "ko": "제한하다",
+      "why": "적절. 공시법이 경영진이 공유할 수 있는 정보를 제한하고, 뒤에 벌금 이야기가 이어져요."
+    },
+    {
+      "en": "forbidden",
+      "ko": "금지된 → required(요구된)",
+      "why": "정답(부적절). the reverse is true 뒤라 앞의 제한과 반대인 공개 의무가 와야 해요. 뒤 예시도 need to disclose예요."
+    },
+    {
+      "en": "disclose",
+      "ko": "공개하다",
+      "why": "적절. 피보험자가 위험에 영향을 주는 중요한 사실을 공개할 의무가 있다는 예시예요."
+    },
+    {
+      "en": "public",
+      "ko": "공개된",
+      "why": "적절. 시민이 법을 지킬 수 있도록 법이 공개된다는 내용이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "명령문 + and",
+      "ex": "Share too much information and you risk being fined.",
+      "d": "'너무 많이 공유해라, 그러면 벌금을 물 위험이 있다' → '너무 많이 공유하면 ~'."
+    },
+    {
+      "t": "risk + 동명사",
+      "ex": "you risk being fined",
+      "d": "risk는 동명사를 목적어로 써요. being fined는 수동 동명사 '벌금이 부과되는 것'."
+    },
+    {
+      "t": "make public + 목적어 (목적어 도치)",
+      "ex": "one is forbidden to make public certain information",
+      "d": "make A public에서 목적어(certain information)가 길어 뒤로 갔어요. 'make + 형용사 + 목적어'."
+    },
+    {
+      "t": "make + 목적어 + 형용사 (수동태)",
+      "ex": "Laws are made public so that citizens can obey them",
+      "d": "make laws public의 수동태예요. so that ~ can은 '~할 수 있도록'."
+    }
+  ],
+  "vocab": [
+    [
+      "ingredient",
+      "구성 요소, 재료"
+    ],
+    [
+      "guardrail",
+      "가드레일, 안전장치"
+    ],
+    [
+      "corporate",
+      "기업의"
+    ],
+    [
+      "disclosure",
+      "공개, 공시"
+    ],
+    [
+      "executive",
+      "경영진, 임원"
+    ],
+    [
+      "publicly",
+      "공개적으로"
+    ],
+    [
+      "fine",
+      "벌금을 부과하다"
+    ],
+    [
+      "reverse",
+      "반대"
+    ],
+    [
+      "forbid",
+      "금지하다"
+    ],
+    [
+      "make public",
+      "공개하다"
+    ],
+    [
+      "pharmaceutical",
+      "제약의"
+    ],
+    [
+      "disclose",
+      "공개하다"
+    ],
+    [
+      "side effect",
+      "부작용"
+    ],
+    [
+      "nutritional label",
+      "영양 성분 표시"
+    ],
+    [
+      "insurance policy",
+      "보험 증권"
+    ],
+    [
+      "the insured",
+      "피보험자"
+    ],
+    [
+      "material fact",
+      "중요한 사실"
+    ],
+    [
+      "insurer",
+      "보험 회사"
+    ],
+    [
+      "register",
+      "등록부"
+    ],
+    [
+      "transaction",
+      "거래"
+    ]
+  ],
+  "summary": {
+    "en": "To support good decisions, rules both limit and require the disclosure of information, applying to companies, clients, and even the state.",
+    "ko": "좋은 결정을 돕기 위해 규칙들은 정보 공개를 제한하기도 하고 요구하기도 하며, 이는 기업과 고객, 심지어 국가에까지 적용된다."
+  },
+  "writing": {
+    "en": "Information is an important ingredient for good decision-making.",
+    "ko": "정보는 좋은 의사 결정을 위한 중요한 구성 요소이다."
+  },
+  "tip": "어휘 문항에서 the reverse, the opposite, In contrast 같은 '반대' 신호가 나오면 그 앞뒤 내용이 정말 반대인지 확인하세요. 밑줄 단어가 앞 문장과 같은 방향이면 그게 틀린 거예요. 바로 뒤에 나오는 예시(need to disclose)가 정답 단어를 알려 주는 경우가 많아요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 30번 정답은?",
+      "③이에요. the reverse is true(반대가 사실이다) 뒤라 forbidden이 아니라 required(요구된)가 와야 해요."
+    ],
+    [
+      "2025년 10월 고3 영어 30번은 어떤 유형인가요?",
+      "어휘 유형의 2점 문항이에요. 정보 공개를 제한하거나 요구하는 제도를 다룬 지문이에요."
+    ],
+    [
+      "② limit은 왜 적절한가요?",
+      "기업 공시법이 경영진이 공개할 수 있는 정보와 시점을 제한하고, 너무 많이 공유하면 벌금을 문다고 이어져요. 제한이 맞아요."
+    ]
+  ],
+  "note": "the reverse is true 한 줄만 제대로 읽으면 바로 풀리는 문제예요. 그런데 '반대'가 앞 문장과의 반대라는 걸 놓치면 forbidden이 자연스러워 보여요. 신호어 뒤에서 방향을 꼭 확인해요."
+}

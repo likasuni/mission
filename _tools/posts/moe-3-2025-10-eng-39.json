@@ -1,0 +1,207 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 39,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 3,
+  "topic": "모든 자극을 일일이 생각할 수 없어서 우리는 범주화한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 39번",
+    "2025 10월 고3 영어 39번 해설",
+    "고3 10월 모의고사 39번 정답",
+    "고3 모의고사 문장 삽입",
+    "categorization stereotyping stimuli 지문",
+    "범주화 고정 관념 문장 삽입"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 39번은 뇌의 정보 처리에는 한계가 있어 우리는 수많은 자극을 공통 특징에 따라 범주화하고, 이 범주화가 자동화되어 의식을 자유롭게 해 준다는 글이에요. 주어진 문장 '그 모든 자극 하나하나를 신중히 생각해야 한다면 아무것도 못 할 것이다'는 '수천 개의 자극' 뒤, Instead(대신) 앞인 ③에 들어가요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "배경",
+      "뇌의 정보 처리 한계는 새롭지 않았다. Miller가 단기 기억의 제한된 용량을 보여 주었다."
+    ],
+    [
+      "새로운 점",
+      "범주화와 고정 관념화의 연결, 그리고 범주화가 인간 인지의 필연적 측면이라는 점이 새로웠다."
+    ],
+    [
+      "상황",
+      "어느 순간에도 주변에는 수백, 수천 개의 자극이 있다."
+    ],
+    [
+      "주어진 문장(③)",
+      "그 자극 하나하나를 신중히 생각해야 한다면 아무것도 해내지 못할 것이다!"
+    ],
+    [
+      "해결",
+      "대신 우리는 자극을 공통 특징·속성·기능으로 묶는다. 이 과정이 자동화되어 의식을 새로운 것에 쓰게 해 준다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "If we had to constantly think carefully about every one of those stimuli (or even a small subset thereof), in order to understand its nature and function, we would never get anything done!",
+      "ko": "만약 우리가 그 본질과 기능을 이해하기 위해, 그러한 모든 자극 하나하나 (혹은 심지어 그것의 작은 부분 집합)에 대해 계속 신중하게 생각해야 한다면, 우리는 아무 일도 해내지 못할 것이다!",
+      "note": "those stimuli는 앞에 '자극'이 먼저 나와야 받을 수 있어요. 처음 stimuli가 나오는 곳은 ③ 앞 문장이에요."
+    },
+    {
+      "en": "At any given second, there are hundreds, even thousands, of different stimuli that can be perceived in our immediate environment. ( ③ )",
+      "ko": "어떤 순간에도 우리의 인접한 환경에는 인식될 수 있는 수백, 심지어 수천 개의 서로 다른 자극이 있다. ( ③ )",
+      "note": "수천 개의 자극 → (그걸 다 생각하면 아무것도 못 한다) 순서가 자연스러워요."
+    },
+    {
+      "en": "( ③ ) Instead, we learn about different stimuli, and tend to group them in terms of common features, attributes, or functions.",
+      "ko": "대신 우리는 다양한 자극에 대해 배우고, 그것들을 공통된 특징, 속성, 또는 기능에 따라 분류하는 경향이 있다.",
+      "note": "Instead(그렇게 하는 대신)는 '하나하나 생각하는 것' 대신이라는 뜻이에요. 주어진 문장이 바로 앞에 있어야 Instead가 성립해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "Miller의 논문 → 새로웠던 점",
+      "why": "아직 자극(stimuli)이 나오기 전이라 those stimuli가 받을 말이 없어요."
+    },
+    {
+      "en": "②",
+      "ko": "새로웠던 점 → 수천 개의 자극",
+      "why": "여기도 아직 자극이 등장하기 전이에요."
+    },
+    {
+      "en": "③",
+      "ko": "수천 개의 자극 → (일일이 생각하면 아무것도 못 함) → Instead 범주화",
+      "why": "정답. those stimuli가 앞 문장의 stimuli를 받고, 뒤의 Instead가 주어진 문장과 대비돼요."
+    },
+    {
+      "en": "④",
+      "ko": "범주화 → 자동화",
+      "why": "This categorization process가 바로 앞 문장(분류하는 경향)을 받아 자연스럽게 이어져요."
+    },
+    {
+      "en": "⑤",
+      "ko": "자동화 → Thus 결론",
+      "why": "결론 문장 Thus가 앞 내용을 정리해요. 끼어들 틈이 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "가정법 과거",
+      "ex": "If we had to constantly think carefully about every one of those stimuli …, we would never get anything done!",
+      "d": "If + 과거, would + 동사원형. 현재 사실과 반대되는 가정이에요. get anything done은 '무엇이든 해내다'."
+    },
+    {
+      "t": "that절 주어",
+      "ex": "That the brain had limitations on the amount of information processing it could handle was not news to psychologists.",
+      "d": "That ~ handle까지가 주어, 동사는 was예요."
+    },
+    {
+      "t": "What 명사절 주어",
+      "ex": "What was novel was the connection between categorization and stereotyping, and that categorization was …",
+      "d": "What was novel이 주어, 보어는 the connection과 that절 두 개예요."
+    },
+    {
+      "t": "so ~ as to + 동사원형",
+      "ex": "This categorization process then becomes so well practiced as to become automatic",
+      "d": "'너무 ~해서 …하게 되다'. so ~ that과 같은 뜻이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "limitation",
+      "한계"
+    ],
+    [
+      "information processing",
+      "정보 처리"
+    ],
+    [
+      "capacity",
+      "용량"
+    ],
+    [
+      "short-term memory",
+      "단기 기억"
+    ],
+    [
+      "novel",
+      "새로운"
+    ],
+    [
+      "categorization",
+      "범주화"
+    ],
+    [
+      "stereotyping",
+      "고정 관념화"
+    ],
+    [
+      "inevitable",
+      "필연적인"
+    ],
+    [
+      "cognition",
+      "인지"
+    ],
+    [
+      "stimulus (pl. stimuli)",
+      "자극"
+    ],
+    [
+      "perceive",
+      "인식하다"
+    ],
+    [
+      "immediate environment",
+      "인접한 환경"
+    ],
+    [
+      "subset",
+      "부분 집합"
+    ],
+    [
+      "thereof",
+      "그것의"
+    ],
+    [
+      "attribute",
+      "속성"
+    ],
+    [
+      "automatic",
+      "자동적인"
+    ],
+    [
+      "free up",
+      "자유롭게 해 주다"
+    ],
+    [
+      "attend to",
+      "~에 주의를 기울이다"
+    ],
+    [
+      "complexity",
+      "복잡성"
+    ]
+  ],
+  "summary": {
+    "en": "Because the brain cannot carefully process every stimulus, we automatically group stimuli into categories, which reduces complexity and frees our attention.",
+    "ko": "뇌는 모든 자극을 신중히 처리할 수 없으므로 우리는 자극을 자동으로 범주화하며, 이는 복잡성을 줄이고 주의를 자유롭게 해 준다."
+  },
+  "writing": {
+    "en": "Categorization helps us reduce the complexity of the stimuli.",
+    "ko": "범주화는 우리가 자극의 복잡성을 줄이는 데 도움을 준다."
+  },
+  "tip": "주어진 문장에 those, such, this 같은 지시어가 있으면 그 말이 처음 등장하는 문장 뒤로 후보를 좁히세요. 그리고 Instead, However처럼 앞 문장과 대비를 요구하는 연결어 바로 앞이 빈자리일 가능성이 높아요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 39번 정답은?",
+      "③이에요. 수천 개의 자극을 말한 뒤, 그걸 하나하나 생각하면 아무것도 못 한다는 문장이 오고, Instead로 범주화가 이어져요."
+    ],
+    [
+      "2025년 10월 고3 영어 39번은 어떤 유형인가요?",
+      "문장 삽입 유형의 2점 문항이에요. 범주화와 고정 관념을 다룬 심리학 지문이에요."
+    ],
+    [
+      "②에 넣으면 안 되는 이유는?",
+      "주어진 문장의 those stimuli가 가리킬 '자극'이 ② 앞에는 아직 나오지 않았어요. 자극은 ③ 바로 앞 문장에서 처음 나와요."
+    ]
+  ]
+}

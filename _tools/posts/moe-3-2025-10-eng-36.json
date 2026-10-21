@@ -1,0 +1,196 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 36,
+  "type": "순서",
+  "points": 3,
+  "answer": 3,
+  "topic": "복권 명제는 거의 확실히 참인데도 왜 우리는 그것을 안다고 하지 않을까",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 36번",
+    "2025 10월 고3 영어 36번 해설",
+    "고3 10월 모의고사 36번 정답",
+    "고3 모의고사 글의 순서",
+    "lottery proposition knowledge 지문",
+    "복권 명제 확률 지식"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 36번은 '천만 장 중 어떤 복권이든 꽝이다'처럼 참일 가능성이 압도적인 명제도 철학자들은 '안다'고 하지 않는데, 이는 우리가 더 낮은 확률로도 '안다'고 하는 일상 지식과 비교하면 헷갈린다는 글이에요. (B) 철학자들의 입장 → (C) This is puzzling 반박 → (A) 차이가 있어야 한다는 결론 순서예요. 정답은 ③ (B) - (C) - (A)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "복권에 관한 어떤 명제는 참일 가능성이 매우 높다. 예: '천만 장 중 어떤 복권이든 꽝이다'."
+    ],
+    [
+      "(B)",
+      "그런데도 많은 철학자는 확률에만 기반한 명제가 다르다고 본다. 당첨 확률이 낮다는 생각만으로 내가 꽝이라는 걸 '안다'고 하지 않는다."
+    ],
+    [
+      "(C)",
+      "이는 헷갈린다. 틀릴 확률이 천만 분의 일보다 높아도 우리가 '안다'고 하는 것이 많기 때문이다(예: 나중에 회의에 참석할 것)."
+    ],
+    [
+      "(A)",
+      "지식 범위가 생각보다 훨씬 좁다고 인정하기 싫다면, 복권의 확률적 증거와 일상 지식의 증거 사이에 어떤 차이가 있어야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "(B) Despite being overwhelmingly likely to be true, many philosophers think that such propositions, based on probabilities alone, are different …",
+      "ko": "(B) 참일 가능성이 압도적으로 높음에도 불구하고, 많은 철학자는 확률에만 근거하고 있는 그러한 명제가 … 다르다고 생각한다.",
+      "note": "such propositions가 주어진 글의 복권 명제를 받아요. likely to be true도 이어져요. 주어진 글 → (B)."
+    },
+    {
+      "en": "(C) This is puzzling, because there are many things we take ourselves to know even though we presumably have more than a one-in-ten-million chance of being wrong.",
+      "ko": "(C) 이것은 헷갈리는데, 틀릴 가능성이 짐작건대 천만 분의 일보다 높다 할지라도, 우리가 안다고 믿는 '많은' 것이 있기 때문이다.",
+      "note": "This는 (B)의 '복권은 안다고 하지 않는다'를 받아요. (B) → (C)."
+    },
+    {
+      "en": "(A) If we want to avoid conceding that the scope of our knowledge is much more limited than usually supposed, there must be some difference between the probabilistic evidence … and evidence for regular things that we do know.",
+      "ko": "(A) 만약 우리가 우리 지식의 범위가 보통 추정하는 것보다 훨씬 더 제한적이라는 것을 인정하고 싶지 않다면, … 확률적 증거와 … 일반적인 것에 관한 증거 사이에는 어떠한 차이가 있어야만 한다.",
+      "note": "복권(B)과 회의(C) 두 경우를 모두 언급하며 결론을 내요. 그래서 맨 끝이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A) - (C) - (B)",
+      "ko": "결론 → 반박 → 철학자 입장",
+      "why": "(A)의 regular things that we do know는 (C)의 회의 예시가 나온 뒤에야 이해돼요."
+    },
+    {
+      "en": "(B) - (A) - (C)",
+      "ko": "철학자 입장 → 결론 → 반박",
+      "why": "(A)의 결론이 (C)의 퍼즐보다 먼저 오면, 무엇과 무엇의 차이인지 알 수 없어요."
+    },
+    {
+      "en": "(B) - (C) - (A)",
+      "ko": "철학자 입장 → 퍼즐 → 결론",
+      "why": "정답. such propositions → This is puzzling → 둘 사이에 차이가 있어야 한다."
+    },
+    {
+      "en": "(C) - (A) - (B)",
+      "ko": "퍼즐 → 결론 → 철학자 입장",
+      "why": "(C)의 This가 가리킬 내용(철학자들의 입장)이 앞에 없어요."
+    },
+    {
+      "en": "(C) - (B) - (A)",
+      "ko": "퍼즐 → 철학자 입장 → 결론",
+      "why": "(C)의 This is puzzling은 주어진 글(참일 가능성이 높다)만으로는 무엇이 이상한지 알 수 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "Despite + 동명사",
+      "ex": "Despite being overwhelmingly likely to be true, many philosophers think …",
+      "d": "Despite는 전치사라 동명사가 와요. 의미상 주어는 such propositions예요."
+    },
+    {
+      "t": "It has been popular to suppose (가주어)",
+      "ex": "It's been popular to suppose, for instance, that we don't know …",
+      "d": "It은 가주어, to suppose ~가 진주어예요. It's = It has."
+    },
+    {
+      "t": "take oneself to know",
+      "ex": "there are many things we take ourselves to know",
+      "d": "'스스로 안다고 여기다'. things 뒤에 목적격 관계대명사가 생략됐어요."
+    },
+    {
+      "t": "avoid + 동명사",
+      "ex": "If we want to avoid conceding that the scope of our knowledge is much more limited …",
+      "d": "avoid는 동명사를 목적어로 써요. concede는 '(마지못해) 인정하다'."
+    }
+  ],
+  "vocab": [
+    [
+      "proposition",
+      "명제"
+    ],
+    [
+      "lottery",
+      "복권"
+    ],
+    [
+      "extremely",
+      "몹시"
+    ],
+    [
+      "overwhelmingly",
+      "압도적으로"
+    ],
+    [
+      "probability",
+      "확률"
+    ],
+    [
+      "philosopher",
+      "철학자"
+    ],
+    [
+      "rely upon",
+      "~에 의존하다, 믿다"
+    ],
+    [
+      "suppose",
+      "가정하다, 생각하다"
+    ],
+    [
+      "reflect on",
+      "숙고하다"
+    ],
+    [
+      "puzzling",
+      "헷갈리는, 이해하기 힘든"
+    ],
+    [
+      "presumably",
+      "짐작건대"
+    ],
+    [
+      "cancel",
+      "취소하다"
+    ],
+    [
+      "unexpectedly",
+      "예기치 않게"
+    ],
+    [
+      "concede",
+      "인정하다"
+    ],
+    [
+      "scope",
+      "범위"
+    ],
+    [
+      "probabilistic",
+      "확률적인"
+    ],
+    [
+      "evidence",
+      "증거"
+    ]
+  ],
+  "summary": {
+    "en": "Although lottery propositions are almost certainly true, we don't say we know them, while we claim to know less certain everyday facts, so there must be a difference between the two kinds of evidence.",
+    "ko": "복권 명제는 거의 확실히 참이지만 우리는 그것을 안다고 하지 않는 반면 덜 확실한 일상 사실은 안다고 하므로, 두 종류의 증거 사이에는 차이가 있어야 한다."
+  },
+  "writing": {
+    "en": "There are many things we take ourselves to know.",
+    "ko": "우리가 안다고 여기는 많은 것이 있다."
+  },
+  "tip": "순서 문항은 지시어(such, This)가 무엇을 받는지부터 찾으세요. (B)의 such propositions는 주어진 글의 명제를, (C)의 This is puzzling은 (B)의 철학자 입장을 받아요. 결론처럼 두 경우를 모두 비교하는 단락(A)은 보통 맨 끝에 와요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 36번 정답은?",
+      "③ (B) - (C) - (A)예요."
+    ],
+    [
+      "2025년 10월 고3 영어 36번은 어떤 유형인가요?",
+      "글의 순서 유형의 3점 문항이에요. 복권 명제와 지식의 범위를 다룬 철학 지문이에요."
+    ],
+    [
+      "⑤ (C) - (B) - (A)가 오답인 이유는?",
+      "(C)의 This is puzzling은 '철학자들은 복권을 안다고 하지 않는다'는 (B)를 받아야 의미가 통해요. 주어진 글 다음에 바로 (C)가 오면 무엇이 헷갈린다는 건지 알 수 없어요."
+    ]
+  ],
+  "note": "고3 철학 지문은 내용을 다 이해하려다 시간을 많이 써요. 이 문제는 such propositions, This is puzzling 두 연결어만 잡아도 풀려요. 수업에서는 '지시어에 밑줄 → 가리키는 말 찾기'로 순서를 잡는 연습을 할게요."
+}

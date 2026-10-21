@@ -1,0 +1,195 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 20,
+  "type": "주장",
+  "points": 2,
+  "answer": 3,
+  "topic": "과거 경험이 지금의 판단을 좌우하지 않도록 의식적으로 통제하라",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 20번",
+    "2025 10월 고3 영어 20번 해설",
+    "고3 10월 모의고사 20번 정답",
+    "고3 모의고사 필자의 주장",
+    "feedback loop memory quirks 지문",
+    "과거 경험 의식적 통제"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 20번은 과거의 부정적·긍정적 경험이 기억과 피드백 순환 속에서 우리의 판단을 무의식적으로 좌우하니, 그 과정을 의식적으로 통제하고 감정의 뿌리를 찾아보라는 글이에요. The important thing is to take some conscious control over a process that otherwise proceeds unconsciously가 주장 문장이에요. 정답은 ③ 우리가 과거 경험에서 받는 영향을 의식적으로 통제해야 한다예요.",
+  "flow": [
+    [
+      "문제",
+      "우리 기억과 피드백 순환에는 별난 점이 있다. 실제보다 크게 느껴지는 부정적 경험, 과하게 해석하는 긍정적 확언."
+    ],
+    [
+      "주장",
+      "그냥 두면 무의식적으로 진행되어 판단의 주도권을 빼앗는 과정을, 의식적으로 통제하는 것이 중요하다."
+    ],
+    [
+      "예시",
+      "지난 연애가 힘들어 새 관계에 헌신하기 어렵다면, 이전 관계가 나를 정의하지 않는다는 것을 기억해야 한다."
+    ],
+    [
+      "방법",
+      "왜 그렇게 느끼는지 생각하고, 그 감정의 뿌리를 과거 경험 속에서 찾아야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The important thing is to take some conscious control over a process that otherwise proceeds unconsciously, …",
+      "ko": "중요한 점은 그렇게 하지 않으면 무의식적으로 진행되는 과정을 일부 의식적으로 통제하는 것이다, …",
+      "note": "The important thing is ~ 는 주장 신호예요. conscious control(의식적 통제)이 ③과 그대로 이어져요."
+    },
+    {
+      "en": "you need to remember that your previous one does not define you; the weighting of that may be too heavy in your feedback loop, …",
+      "ko": "여러분의 이전 관계가 여러분을 정의하지 않는다는 것을 기억해야 하는데, 여러분의 피드백 순환 내에서 그것의 영향력이 너무 강력할 수 있다, …",
+      "note": "과거 경험의 '무게'가 지금 판단을 막는다는 예시예요. 과거 경험에서 받는 영향이 핵심 소재예요."
+    },
+    {
+      "en": "We need to think about why we feel a certain way, … and try to locate the root of that emotion in the previous experiences …",
+      "ko": "우리는 '왜' 특정 방식으로 느끼는지 생각해야 하며, … 이전 경험 내에서 그 감정의 근원을 찾으려 노력해야 한다.",
+      "note": "We need to로 주장을 한 번 더 말해요. 감정의 원인을 과거 경험에서 찾아 의식하라는 뜻이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "때로는 무의식적 판단이 더 옳다는 것을 인정해야 한다.",
+      "ko": "무의식 판단 인정",
+      "why": "정반대예요. 무의식적으로 진행되는 과정이 판단의 주도권을 빼앗으니 의식적으로 통제하라고 해요."
+    },
+    {
+      "en": "주관보다는 공신력 있는 자료를 바탕으로 결정해야 한다.",
+      "ko": "객관적 자료로 결정",
+      "why": "외부 자료 이야기는 없어요. 내 기억과 감정을 들여다보라는 글이에요."
+    },
+    {
+      "en": "우리가 과거 경험에서 받는 영향을 의식적으로 통제해야 한다.",
+      "ko": "과거 경험의 영향을 의식적으로 통제",
+      "why": "정답. take some conscious control, locate the root of that emotion in the previous experiences가 그대로 담겼어요."
+    },
+    {
+      "en": "낯선 상황에서 빠르게 판단하려면 다양한 경험을 쌓아야 한다.",
+      "ko": "경험 쌓기",
+      "why": "경험을 더 쌓으라는 게 아니라, 이미 쌓인 경험의 영향을 점검하라는 글이에요."
+    },
+    {
+      "en": "중요한 결정을 할 때 그에 따른 장기적인 결과를 고려해야 한다.",
+      "ko": "장기적 결과 고려",
+      "why": "미래의 결과가 아니라 과거 경험이 판단에 주는 영향을 다뤄요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "콜론(:)으로 구체화",
+      "ex": "You probably have quirks in your own memory and feedback loop: the past negative experiences … or the positive affirmations …",
+      "d": "콜론 뒤가 quirks(별난 점)의 구체적인 내용이에요. '즉 ~'으로 읽어요."
+    },
+    {
+      "t": "분사구문 (결과)",
+      "ex": "a process that otherwise proceeds unconsciously, robbing us of complete ownership of …",
+      "d": "robbing은 '그 결과 ~을 빼앗는다'. rob A of B는 'A에게서 B를 빼앗다'예요."
+    },
+    {
+      "t": "분사구문 (결과)",
+      "ex": "the weighting of that may be too heavy in your feedback loop, inhibiting your ability to judge …",
+      "d": "inhibiting은 '그래서 ~ 능력을 억제한다'. 앞 문장의 결과를 덧붙여요."
+    },
+    {
+      "t": "whether A or B",
+      "ex": "whether that is uncertain or overconfident",
+      "d": "'A이든 B이든'. 양보의 부사절이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "quirk",
+      "별난 점, 특이한 버릇"
+    ],
+    [
+      "feedback loop",
+      "피드백 순환"
+    ],
+    [
+      "affirmation",
+      "확언, 긍정"
+    ],
+    [
+      "overinterpret",
+      "지나치게 해석하다"
+    ],
+    [
+      "conscious",
+      "의식적인"
+    ],
+    [
+      "proceed",
+      "진행되다"
+    ],
+    [
+      "unconsciously",
+      "무의식적으로"
+    ],
+    [
+      "rob A of B",
+      "A에게서 B를 빼앗다"
+    ],
+    [
+      "ownership",
+      "소유, 주도권"
+    ],
+    [
+      "commit to",
+      "~에 헌신하다"
+    ],
+    [
+      "define",
+      "정의하다, 규정하다"
+    ],
+    [
+      "weighting",
+      "비중, 무게"
+    ],
+    [
+      "inhibit",
+      "억제하다, 막다"
+    ],
+    [
+      "on its merits",
+      "그 자체의 가치에 따라"
+    ],
+    [
+      "overconfident",
+      "지나치게 자신 있는"
+    ],
+    [
+      "locate",
+      "찾아내다"
+    ],
+    [
+      "condition",
+      "좌우하다, 길들이다"
+    ]
+  ],
+  "summary": {
+    "en": "Since past experiences can unconsciously shape how we judge new situations, we should consciously examine where our feelings come from.",
+    "ko": "과거 경험은 우리가 새 상황을 판단하는 방식을 무의식적으로 좌우할 수 있으므로, 우리는 감정이 어디서 오는지 의식적으로 살펴야 한다."
+  },
+  "writing": {
+    "en": "Your previous experience does not define you.",
+    "ko": "여러분의 이전 경험이 여러분을 정의하지 않는다."
+  },
+  "tip": "주장 문항은 The important thing is ~, need to, should 같은 표현이 붙은 문장을 모아 보세요. 이 글은 처음 주장(conscious control)과 마지막 주장(locate the root of that emotion)이 같은 말을 하고 있어요. 연애 이야기 같은 예시는 주장을 돕는 장치일 뿐이니 예시 자체를 답으로 고르지 마세요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 20번 정답은?",
+      "③ 우리가 과거 경험에서 받는 영향을 의식적으로 통제해야 한다예요."
+    ],
+    [
+      "2025년 10월 고3 영어 20번은 어떤 유형인가요?",
+      "필자의 주장 유형의 2점 문항이에요. 기억과 피드백 순환이 판단에 미치는 영향을 다룬 글이에요."
+    ],
+    [
+      "① 무의식적 판단 인정이 오답인 이유는?",
+      "글은 무의식적으로 진행되는 과정이 판단의 주도권을 빼앗는다고 보고, 그것을 의식적으로 통제하라고 해요. 정반대 내용이에요."
+    ]
+  ]
+}

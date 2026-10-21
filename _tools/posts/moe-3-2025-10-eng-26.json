@@ -1,0 +1,199 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 26,
+  "type": "내용 불일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "미국 최초의 아프리카계 미국인 간호사 Mary Eliza Mahoney",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 26번",
+    "2025 10월 고3 영어 26번 해설",
+    "고3 10월 모의고사 26번 정답",
+    "고3 모의고사 내용 불일치",
+    "Mary Eliza Mahoney 지문",
+    "NACGN co-founded"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 26번은 미국 최초의 아프리카계 미국인 간호사 Mary Eliza Mahoney의 생애를 다룬 내용 불일치 문항이에요. 본문은 1908년에 NACGN을 '공동 설립(co-founded)'했다고 하는데 ④는 '혼자서 설립했다'고 해서 틀렸어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "출생",
+      "1845년 Boston 출생, 미국 최초의 아프리카계 미국인 간호사로 알려짐"
+    ],
+    [
+      "학교",
+      "Boston의 Phillips School(미국 최초의 통합 학교 중 하나)에 다님"
+    ],
+    [
+      "꿈",
+      "십 대 때 간호사가 되고 싶다는 걸 앎 → New England Hospital for Women and Children에서 일함"
+    ],
+    [
+      "합격·졸업",
+      "1878년 33살에 간호 프로그램 합격, 졸업 후 개인 간호사"
+    ],
+    [
+      "업적",
+      "1908년 NACGN 공동 설립, 1936년 NACGN이 Mary Mahoney 상을 만듦"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In 1908, Mahoney co-founded the National Association of Colored Graduate Nurses (NACGN) to promote equality for African American nurses.",
+      "ko": "1908년 Mahoney는 아프리카계 미국인 간호사의 평등을 증진하기 위해 NACGN을 공동 설립했다.",
+      "note": "co-founded는 '함께 설립했다'예요. ④ '혼자서'와 정반대라 불일치, 정답이에요."
+    },
+    {
+      "en": "She was admitted to its nursing program in 1878 at the age of 33.",
+      "ko": "1878년 그녀는 33살에 그곳의 간호 프로그램에 합격했다.",
+      "note": "③ 일치."
+    },
+    {
+      "en": "Recognizing that Mahoney served as an outstanding role model …, NACGN created the Mary Mahoney Award in 1936.",
+      "ko": "Mahoney가 … 뛰어난 본보기가 됨을 인정하여, 1936년 NACGN은 Mary Mahoney 상을 만들었다.",
+      "note": "⑤ 일치. 상을 만든 주체는 Mahoney가 아니라 NACGN이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Boston에 있는 Phillips School을 다녔다.",
+      "ko": "일치",
+      "why": "She attended the Phillips School in Boston과 같아요."
+    },
+    {
+      "en": "십 대 시절에 간호사가 되기를 원했다.",
+      "ko": "일치",
+      "why": "When she was in her teens, Mahoney knew that she wanted to become a nurse와 같아요."
+    },
+    {
+      "en": "33살에 간호 프로그램에 합격했다.",
+      "ko": "일치",
+      "why": "admitted … in 1878 at the age of 33과 같아요."
+    },
+    {
+      "en": "1908년에 NACGN을 혼자서 설립했다.",
+      "ko": "불일치",
+      "why": "정답. co-founded(공동 설립)이니 '혼자서'가 틀렸어요."
+    },
+    {
+      "en": "1936년에 NACGN은 Mary Mahoney 상을 만들었다.",
+      "ko": "일치",
+      "why": "NACGN created the Mary Mahoney Award in 1936과 같아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "과거분사 분사구문",
+      "ex": "Born in 1845 in Boston, Mary Eliza Mahoney was known as …",
+      "d": "Born은 Being born에서 Being이 빠진 분사구문이에요. '1845년 Boston에서 태어난'."
+    },
+    {
+      "t": "동격 콤마",
+      "ex": "the Phillips School in Boston, one of the first integrated schools in the United States",
+      "d": "콤마 뒤가 Phillips School을 다시 설명해요."
+    },
+    {
+      "t": "계속적 용법 which",
+      "ex": "the New England Hospital for Women and Children, which operated one of the first nursing schools",
+      "d": "which = 그 병원. '그리고 그곳은 ~을 운영했다'."
+    },
+    {
+      "t": "Upon -ing / 명사",
+      "ex": "Upon graduation, she became a private duty nurse.",
+      "d": "Upon + 명사는 '~하자마자'. On graduating과 같아요."
+    }
+  ],
+  "vocab": [
+    [
+      "be known as",
+      "~로 알려지다"
+    ],
+    [
+      "attend",
+      "다니다"
+    ],
+    [
+      "integrated school",
+      "통합 학교"
+    ],
+    [
+      "teens",
+      "십 대"
+    ],
+    [
+      "work towards",
+      "~을 향해 나아가다"
+    ],
+    [
+      "operate",
+      "운영하다"
+    ],
+    [
+      "nursing school",
+      "간호 학교"
+    ],
+    [
+      "be admitted to",
+      "~에 합격하다, 입학하다"
+    ],
+    [
+      "upon graduation",
+      "졸업하자마자"
+    ],
+    [
+      "private duty nurse",
+      "개인 간호사"
+    ],
+    [
+      "co-found",
+      "공동 설립하다"
+    ],
+    [
+      "association",
+      "협회"
+    ],
+    [
+      "promote",
+      "증진하다"
+    ],
+    [
+      "equality",
+      "평등"
+    ],
+    [
+      "recognize",
+      "인정하다"
+    ],
+    [
+      "role model",
+      "본보기"
+    ],
+    [
+      "award",
+      "상"
+    ]
+  ],
+  "summary": {
+    "en": "Mary Eliza Mahoney, the first African American nurse in the U.S., trained at one of the first nursing schools and co-founded an association to promote equality for African American nurses.",
+    "ko": "미국 최초의 아프리카계 미국인 간호사 Mary Eliza Mahoney는 초기 간호 학교에서 교육을 받고 아프리카계 미국인 간호사의 평등을 위한 협회를 공동 설립했다."
+  },
+  "writing": {
+    "en": "She served as an outstanding role model for nurses of all races.",
+    "ko": "그녀는 모든 인종의 간호사에게 뛰어난 본보기가 되었다."
+  },
+  "tip": "인물 일치 문항은 연도·나이 같은 숫자와 함께 '혼자서, 처음으로, 유일하게' 같은 강조어를 노려요. co-, with, together가 붙은 동사는 '혼자'가 아니라는 신호이니 꼭 표시하세요. 상을 '누가' 만들었는지처럼 주체를 바꾸는 함정도 자주 나와요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 26번 정답은?",
+      "④ 1908년에 NACGN을 혼자서 설립했다예요. 본문은 공동 설립(co-founded)이라고 해요."
+    ],
+    [
+      "2025년 10월 고3 영어 26번은 어떤 유형인가요?",
+      "내용 불일치 유형의 2점 문항이에요. Mary Eliza Mahoney의 생애를 다룬 인물 지문이에요."
+    ],
+    [
+      "⑤ 상을 만든 주체는 누구인가요?",
+      "Mahoney가 아니라 NACGN이 1936년에 Mary Mahoney 상을 만들었어요. 선택지 ⑤는 주체를 정확히 NACGN으로 써서 일치예요."
+    ]
+  ]
+}

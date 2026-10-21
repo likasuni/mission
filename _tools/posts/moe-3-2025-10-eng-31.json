@@ -1,0 +1,203 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "세대를 빨리 만드는 종이 환경 스트레스에 더 빨리 적응한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 31번",
+    "2025 10월 고3 영어 31번 해설",
+    "고3 10월 모의고사 31번 정답",
+    "고3 모의고사 빈칸 추론",
+    "rapidity 빈칸 해설",
+    "개체군 적응 세대 교체 속도 지문"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 31번은 환경 스트레스를 견딘 개체가 저항력을 자손에게 물려주면 개체군이 적응하는데, 그 핵심은 다음 세대가 얼마나 '빨리' 만들어지느냐라는 빈칸 문항이에요. 빈칸 뒤 It follows that 문장의 very quickly, very quickly와 more time, slower가 단서예요. 정답은 ① rapidity예요.",
+  "flow": [
+    [
+      "원리",
+      "새 환경 스트레스를 만나면 일부는 일찍 죽고 일부는 살아남는다."
+    ],
+    [
+      "유전",
+      "살아남은 이유가 자손에게 전해지면, 다음 세대는 스트레스를 더 잘 견딘다."
+    ],
+    [
+      "빈칸",
+      "그래서 적응을 통한 생존 능력의 핵심은 다음 세대가 생산되는 (신속성)에 있다."
+    ],
+    [
+      "적용",
+      "새 세대를 빨리 만드는 종은 스트레스에 빨리 반응하고, 번식에 시간이 더 걸리는 종은 적응이 느리다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "It follows that those species capable of producing a new generation very quickly should be better able to respond to a stress very quickly.",
+      "ko": "따라서 새로운 세대를 매우 빠르게 생산할 수 있는 그러한 종은 스트레스에 매우 빠르게 더 잘 반응할 수 있어야 한다.",
+      "note": "It follows that(따라서)은 빈칸 문장을 이어받아요. very quickly가 두 번 나오니 빈칸은 '빠름'이에요."
+    },
+    {
+      "en": "Those species that require more time for reproduction will be slower to adapt to the stress …",
+      "ko": "번식에 더 많은 시간이 필요한 그러한 종은 스트레스에 적응하는 것이 더 느릴 것인데, …",
+      "note": "반대 경우(시간이 더 걸림 → 느림)로 같은 원리를 확인해 줘요."
+    },
+    {
+      "en": "Therefore, the key to the ability of a population to survive by adaptation lies in the ______ with which the next generation … is produced by the survivors of this generation.",
+      "ko": "그러므로, 한 개체군이 적응을 통해 생존하는 능력의 핵심은 이 세대의 생존 개체에 의해 다음 세대가 생산되는 ______에 있다.",
+      "note": "with which는 '~으로(~하게) 생산되는'이에요. with rapidity = rapidly. '얼마나 빠르게 생산되는가'가 핵심이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "rapidity",
+      "ko": "신속성",
+      "why": "정답. 새 세대를 빨리 만드는 종이 빨리 적응한다는 뒤 문장과 맞아요. with rapidity = rapidly."
+    },
+    {
+      "en": "precision",
+      "ko": "정확성",
+      "why": "유전이 정확하게 전달되는지는 다루지 않아요. 핵심은 속도예요."
+    },
+    {
+      "en": "simplicity",
+      "ko": "단순성",
+      "why": "번식 과정의 단순함은 나오지 않아요."
+    },
+    {
+      "en": "consistency",
+      "ko": "일관성",
+      "why": "꾸준함이 아니라 '빠름'이에요. very quickly와 맞지 않아요."
+    },
+    {
+      "en": "randomness",
+      "ko": "무작위성",
+      "why": "누가 살아남는지는 우연처럼 보이지만, 글의 핵심은 다음 세대를 만드는 '속도'예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "If 조건절 + should",
+      "ex": "If the reason for their survival … can be passed on to their offspring …, then the next generation should be better able to withstand …",
+      "d": "should는 '~해야 마땅하다, ~일 것이다'라는 추측이에요. 괄호 속 설명은 건너뛰고 뼈대를 먼저 읽어요."
+    },
+    {
+      "t": "전치사 + 관계대명사 with which",
+      "ex": "the rapidity with which the next generation … is produced",
+      "d": "the rapidity with which ~ = how rapidly ~. '다음 세대가 생산되는 속도'."
+    },
+    {
+      "t": "It follows that",
+      "ex": "It follows that those species capable of producing a new generation very quickly should …",
+      "d": "'따라서 ~라는 결론이 나온다'. 앞 문장의 결론을 이끌어요."
+    },
+    {
+      "t": "형용사구 후치 수식",
+      "ex": "those species capable of producing a new generation very quickly",
+      "d": "capable of ~ 가 species를 뒤에서 꾸며요. (which are) capable of에서 which are가 생략됐어요."
+    }
+  ],
+  "vocab": [
+    [
+      "as a general rule",
+      "일반적으로"
+    ],
+    [
+      "population",
+      "개체군"
+    ],
+    [
+      "individual",
+      "개체"
+    ],
+    [
+      "encounter",
+      "맞닥뜨리다"
+    ],
+    [
+      "environmental stress",
+      "환경 스트레스"
+    ],
+    [
+      "prematurely",
+      "정상보다 이르게, 조기에"
+    ],
+    [
+      "enhanced",
+      "향상된"
+    ],
+    [
+      "trait",
+      "형질, 특성"
+    ],
+    [
+      "pass on",
+      "전달하다, 물려주다"
+    ],
+    [
+      "offspring",
+      "자손"
+    ],
+    [
+      "genetically",
+      "유전적으로"
+    ],
+    [
+      "encode",
+      "부호화하다"
+    ],
+    [
+      "withstand",
+      "견디다"
+    ],
+    [
+      "susceptible",
+      "영향을 받기 쉬운"
+    ],
+    [
+      "adaptation",
+      "적응"
+    ],
+    [
+      "resistant",
+      "저항성이 있는"
+    ],
+    [
+      "reproduction",
+      "번식"
+    ],
+    [
+      "stress-tolerant",
+      "스트레스에 내성이 있는"
+    ],
+    [
+      "rapidity",
+      "신속성"
+    ]
+  ],
+  "summary": {
+    "en": "A population adapts to a new stress through survivors passing on their traits, so species that reproduce quickly adapt more quickly.",
+    "ko": "개체군은 생존 개체가 형질을 물려주는 방식으로 새 스트레스에 적응하므로, 빨리 번식하는 종이 더 빨리 적응한다."
+  },
+  "writing": {
+    "en": "The key lies in the rapidity with which the next generation is produced.",
+    "ko": "핵심은 다음 세대가 생산되는 신속성에 있다."
+  },
+  "tip": "빈칸 뒤에 It follows that, Thus, Hence가 오면 그 문장은 빈칸 문장을 다시 풀어 쓴 거예요. 거기 반복되는 단어(very quickly)를 명사로 바꾸면 답이에요. quickly → rapidity, accurately → precision처럼 부사-명사 짝을 익혀 두면 고3 빈칸이 쉬워져요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 31번 정답은?",
+      "① rapidity(신속성)예요. 다음 세대를 빨리 만드는 종이 스트레스에 빨리 적응한다는 내용이에요."
+    ],
+    [
+      "2025년 10월 고3 영어 31번은 어떤 유형인가요?",
+      "빈칸 추론 유형의 2점 문항이에요. 개체군이 환경 스트레스에 적응하는 원리를 다룬 지문이에요."
+    ],
+    [
+      "④ consistency가 오답인 이유는?",
+      "뒤 문장은 '꾸준히'가 아니라 '매우 빠르게(very quickly)' 새 세대를 만드는 종이 더 잘 적응한다고 해요. 핵심은 일관성이 아니라 속도예요."
+    ]
+  ]
+}
