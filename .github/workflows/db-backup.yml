@@ -1,0 +1,40 @@
+name: db-backup
+# 자료실 댓글·요청 데이터(Supabase)를 매주 일요일 새벽 4시 17분(한국 시간)에 받아
+# 암호화해서 _backup/supabase.json.enc 에 저장합니다. 저장소가 공개라서 암호화하지 않은 파일은 절대 올리지 않아요.
+# 필요한 것: GitHub Secret BACKUP_KEY (= Supabase private_config 표의 backup_key 값). 없으면 건너뜀.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 19 * * 6'
+permissions:
+  contents: write
+concurrency: db-backup
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export → encrypt
+        env:
+          BACKUP_KEY: ${{ secrets.BACKUP_KEY }}
+        run: |
+          if [ -z "$BACKUP_KEY" ]; then echo "BACKUP_KEY 가 없어서 건너뜀"; exit 0; fi
+          URL=$(grep -o 'https://[a-z0-9]*\.supabase\.co' common.js | head -1)
+          ANON=$(grep -o 'sb_publishable_[A-Za-z0-9_-]*' common.js | head -1)
+          umask 077
+          curl -sSf -X POST "$URL/rest/v1/rpc/backup_export" -H "apikey: $ANON" -H "Content-Type: application/json" \
+            --data "$(jq -n --arg k "$BACKUP_KEY" '{p_key:$k}')" -o "$RUNNER_TEMP/db.json"
+          jq -e '.exported_at and (.comments|type=="array")' "$RUNNER_TEMP/db.json" > /dev/null
+          jq -r 'to_entries[] | select(.value|type=="array") | "\(.key): \(.value|length)"' "$RUNNER_TEMP/db.json"
+          openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -pass env:BACKUP_KEY -in "$RUNNER_TEMP/db.json" -out _backup/supabase.json.enc
+          # 풀리는지 확인한 뒤에만 저장
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:BACKUP_KEY -in _backup/supabase.json.enc | cmp - "$RUNNER_TEMP/db.json"
+          rm -f "$RUNNER_TEMP/db.json"
+      - name: Commit
+        run: |
+          git config user.name "likasuni-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add _backup/supabase.json.enc
+          git diff --cached --quiet || git commit -m "댓글·요청 데이터 주간 백업 ($(date -u +%F))"
+          git pull --rebase -q && git push
