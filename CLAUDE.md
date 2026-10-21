@@ -18,6 +18,7 @@
 - 공통 스타일 `style.css` 는 모든 페이지에 들어가서, 스타일을 바꾸면 페이지 파일이 수천 개 함께 바뀌어요. 정상이에요.
 - `.github/workflows/drive-sync.yml`: 매일 새벽 3시 7분(한국 시간)에 드라이브 동기화 → 분류 → 빌드 → 블로그 요약 글 발행 → 커밋.
 - 기출 PDF 목록은 `_tools/catalog.json` (드라이브 파일 id 포함). 이 환경에선 드라이브 직접 다운로드가 막혀 있어서, 문제지·정답표는 Google Drive 커넥터(`read_file_content`)로 읽어요. 정답은 정답표 **홀수형** 기준.
+- **데이터 백업**: 댓글·회원·분석노트 요청(Supabase)은 Actions `db-backup` 이 매주 일요일 새벽 4시 17분에 암호화해서 `_backup/supabase.json.enc` 에 저장 (저장소가 공개라 평문 금지). 열쇠는 Secret `BACKUP_KEY` = Supabase `private_config.backup_key`. 푸는 법은 `_backup/README.md`.
 - 이 환경에선 data.likasuni.com 접속이 막혀 있어요. 확인은 로컬 빌드 + playwright 화면 캡처(`/opt/pw-browsers/chromium`)로 해요.
 
 ## 문항별 해설 (자료실 '수업자료')
