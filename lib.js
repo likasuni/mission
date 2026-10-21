@@ -96,13 +96,15 @@ function recentComments() {
     const h = Math.floor(m / 60); if (h < 24) return h + '시간 전';
     const d = new Date(t); return `${d.getMonth() + 1}월 ${d.getDate()}일`;
   };
-  // 자료 요청 댓글: [자료 요청] … 부탁드려요. 진행·완료 구분 없이 최근 요청을 모두 보여 줌
+  // 자료 요청 댓글: [자료 요청] … 부탁드려요. 진행 중을 위에, 카톡으로 보낸 요청(답글에 '보내 드렸어요')은 아래에 초록색으로
   const isReq = c => c.content.startsWith('[자료 요청]');
+  const isDone = c => /보내 드렸어요/.test(c.reply || '');
   const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', '');
   const shown = { rq: 6, cmt: 3 };
   let cache = null;
   function reqItem(c) {
-    return `<li class="rq"><span class="rq-st">요청</span>
+    const done = isDone(c);
+    return `<li class="rq${done ? ' ok' : ''}"><span class="rq-st">${done ? '카톡 발송' : '진행 중'}</span>
       <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${ago(c.created_at)}</span></span>
       ${c.page_key ? `<a class="rq-go" href="/${esc(c.page_key)}/#note-req">나도 받기</a>` : ''}</li>`;
   }
@@ -121,7 +123,7 @@ function recentComments() {
   const more = (key, total) => total > shown[key] ? `<button class="rc-more" data-k="${key}">더보기 (${total - shown[key]}개)</button>` : '';
   function render() {
     const all = cache || [];
-    const rq = all.filter(isReq), cm = all.filter(c => !isReq(c));
+    const rq = all.filter(c => isReq(c) && !isDone(c)).concat(all.filter(c => isReq(c) && isDone(c))), cm = all.filter(c => !isReq(c));
     list.innerHTML = `<div class="rq-col"><h3>최근 자료 요청</h3><ul${shown.rq > 6 ? ' class="open"' : ''}>${rq.slice(0, shown.rq).map(reqItem).join('') || '<li class="rq-empty">필요한 분석노트를 요청해 주세요. 만들어서 카톡으로 보내 드려요.</li>'}</ul>${more('rq', rq.length)}</div>
       <h3 class="rc-sub">최근 댓글</h3>
       <div class="rc-cm${shown.cmt > 3 ? ' open' : ''}">${cm.slice(0, shown.cmt).map(cmtItem).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>'}</div>${more('cmt', cm.length)}`;
@@ -136,6 +138,8 @@ function recentComments() {
   }
   load();
   setInterval(() => { if (!document.hidden) load(); }, 30000);
+  // 이미 로그인한 회원에게는 로그인 버튼을 숨김
+  getUser().then(u => { const b = box.querySelector('.rc-login'); if (u && b) b.remove(); }).catch(() => {});
 }
 
 /* ---------- 분석노트 요청 ---------- */
