@@ -337,6 +337,16 @@ a.nb:hover { filter: brightness(1.12); }
 .g-tab { flex: 1; padding: 11px 0; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--navy); font: inherit; font-weight: 800; font-size: 1.02rem; cursor: pointer; }
 .g-tab small { margin-left: 6px; font-weight: 600; font-size: .78rem; opacity: .7; }
 .g-tab.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+/* 수업자료: 연도 탭 + 회차 버튼 */
+.y-tabs { position: sticky; top: 0; z-index: 5; display: flex; gap: 8px; margin: 0 0 10px; padding: 8px 0; background: var(--bg, #f5f7fb); overflow-x: auto; }
+.y-tab { flex: 1 0 auto; min-width: 88px; padding: 11px 14px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--navy); font: inherit; font-weight: 800; font-size: 1.02rem; cursor: pointer; }
+.y-tab small { margin-left: 6px; font-weight: 600; font-size: .78rem; opacity: .7; }
+.y-tab.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+.s-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+.s-tab { padding: 8px 14px; border-radius: 99px; background: #fff; border: 1.5px solid var(--line); color: var(--navy); font-weight: 700; font-size: .92rem; text-decoration: none; }
+.s-tab small { margin-left: 5px; font-weight: 500; font-size: .76rem; color: var(--muted); }
+.s-tab.on { background: #fff7e6; border-color: #f3a712; }
+.s-tab[hidden], .p-panel[hidden] { display: none; }
 .bw { margin: 0 0 14px; padding: 12px; border-radius: 10px; background: #f0fdf4; border: 1px solid #bbf7d0; }
 .bw .chips { margin-top: 8px; }
 

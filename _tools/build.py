@@ -516,16 +516,38 @@ for p in POSTS:
 def _exam_order(k): return (0 if k[0] == 'sn' else 1, -k[2], -k[3], k[1])
 pb = '''<h1 class="page-h1">수업자료 · 영어 문항별 해설</h1>
 <p class="lead">리카수니 원장이 모의고사반 수업을 준비하며 정리한 문항별 해설이에요. 정답 근거, 오답 이유, 핵심 구문·어휘 위주로 짧게 정리했어요.</p>'''
+# 연도 탭 → 그 연도의 회차 버튼 → 고른 회차 목록 하나만 보임 (JS 없으면 전부 보임). 수능은 '수능' 탭 하나로 묶음.
+def _p_year(k):  # 시행 연도 (평가원 6·9월 모평은 학년도 - 1)
+    ex, g, y, m = k
+    return '수능' if ex == 'sn' else str(y - 1 if g == 3 and m in (6, 9) else y)
+def _p_label(k):
+    ex, g, y, m = k
+    if ex == 'sn': return f'{y}학년도'
+    return f'{m}월 모평(고3)' if g == 3 and m in (6, 9) else f'{m}월 고{g}'
+def _p_id(k): return "-".join(map(str, k))
 if POSTS:
-    pb += '<div class="card"><div class="chips">' + ''.join(
-        f'<a class="chip" href="#{ "-".join(map(str, k)) }">{e(s_name(k))}<small>{len(POSTS_BY[k])}문항</small></a>' for k in sorted(POSTS_BY, key=_exam_order)) + '</div></div>'
-    for i, k in enumerate(sorted(POSTS_BY, key=_exam_order)):
+    pk = sorted(POSTS_BY, key=lambda k: (0 if k[0] == 'moe' else 1, -(int(_p_year(k)) if k[0] == 'moe' else 0), -k[3], k[1], -k[2]))
+    years = list(collections.OrderedDict.fromkeys(_p_year(k) for k in pk))
+    pb += '<div class="y-tabs" role="tablist">' + ''.join(
+        f'<button type="button" class="y-tab" role="tab" data-y="{y}">{y if y == "수능" else y + "년"}'
+        f'<small>{sum(len(POSTS_BY[k]) for k in pk if _p_year(k) == y)}문항</small></button>' for y in years) + '</div>'
+    pb += '<div class="s-tabs">' + ''.join(
+        f'<a class="s-tab" href="#{_p_id(k)}" data-y="{_p_year(k)}" data-k="{_p_id(k)}">{e(_p_label(k))}<small>{len(POSTS_BY[k])}문항</small></a>' for k in pk) + '</div>'
+    for k in pk:
         ps = sorted(POSTS_BY[k], key=lambda p: p['n'])
-        pb += (f'<div class="card" id="{"-".join(map(str, k))}"><h2>{e(s_name(k))} 영어 <small class="muted">{len(ps)}문항</small></h2><div class="plist">' + ''.join(
+        pb += (f'<div class="card p-panel" id="{_p_id(k)}" data-y="{_p_year(k)}"><h2>{e(s_name(k))} 영어 <small class="muted">{len(ps)}문항</small></h2><div class="plist">' + ''.join(
             f'<a href="{post_url(p)}"><b>{post_no(p)}번 · {e(p["type"])}</b><span>{post_ans(p)} · {e(p["topic"])}</span></a>' for p in ps)
             + f'</div><p class="more-l" style="margin:10px 0 0"><a href="{subj_url(k, "영어")}">{e(s_name(k))} 영어 기출·자료 보기 →</a></p></div>')
-        if i % 2 == 1: pb += ad()
-    pb += ad()
+    pb += ad() + '''<script>(function(){var Y=document.querySelectorAll('.y-tab'),S=document.querySelectorAll('.s-tab'),P=document.querySelectorAll('.p-panel');
+function pick(k,push){var p=document.getElementById(k);if(!p||!p.classList.contains('p-panel'))return false;var y=p.dataset.y;
+Y.forEach(function(b){var on=b.dataset.y==y;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});
+S.forEach(function(a){a.hidden=a.dataset.y!=y;a.classList.toggle('on',a.dataset.k==k)});
+P.forEach(function(x){x.hidden=x.id!=k});if(push)history.replaceState(null,'','#'+k);try{localStorage.setItem('postSess',k)}catch(e){}return true}
+function first(y){for(var i=0;i<S.length;i++)if(S[i].dataset.y==y)return S[i].dataset.k}
+Y.forEach(function(b){b.onclick=function(){pick(first(b.dataset.y),true)}});
+S.forEach(function(a){a.onclick=function(ev){ev.preventDefault();pick(a.dataset.k,true)}});
+var s=null;try{s=localStorage.getItem('postSess')}catch(e){}
+if(pick(decodeURIComponent(location.hash.slice(1))))setTimeout(function(){scrollTo(0,0)},0);else(s&&pick(s))||pick(S[0].dataset.k)})();</script>'''
 else:
     pb += '<div class="card"><p class="muted">곧 첫 수업자료가 올라와요.</p></div>'
 page('/posts/', '수업자료 · 수능·모의고사 영어 문항별 해설 모음 | 리카수니 자료실',
