@@ -186,7 +186,7 @@ Deno.serve(async (req) => {
       await db.from('comments').insert({
         user_id: user.id, author_name: name, page_key: pk, page_title: pt, approved: true,
         content: `[자료 요청] ${label} 부탁드려요.`,
-        reply: `${label} 요청 접수했어요. 원장님이 준비해서 완성되면 카카오톡으로 바로 보내 드릴게요.`, replied_at: new Date().toISOString(),
+        reply: `${label} 요청 접수했어요. 원장님이 1~2일 안에 준비할게요. 완성되면 자료실에 로그인해서 받을 수 있어요. (한 번에 여러 개 요청했다면 처음 1개는 카카오톡으로도 보내 드려요)`, replied_at: new Date().toISOString(),
       });
     }
     return reply(req, 200, { missing: true, label });

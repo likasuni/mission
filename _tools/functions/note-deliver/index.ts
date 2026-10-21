@@ -1,6 +1,7 @@
 // 준비된 요청 자료 자동 발송 (pg_cron 이 매일 08~22시 매시 5분에 호출)
 // 그때 없던 자료를 기다리는 회원 중, 드라이브에 자료가 올라온 회원에게 가장 먼저 요청한 1개만 카톡으로 보냄
-// 자동 발송은 회원당 하루 1개만 (모의고사 2개·부교재 1개 한도 안에서). 나머지는 메시지에서 "자료실에서 받아 가세요"로 안내 (재방문 유도)
+// 자동 발송은 회원당 하루 1개, 그리고 한꺼번에 여러 개 요청했으면 그중 첫 1개만 (지난 자동 발송 뒤에 들어온 요청만 대상).
+// 나머지는 자동으로 안 보내고 메시지에서 "자료실에 로그인해서 받아 주세요"로 안내 (재방문 유도). 하루 한도: 모의고사 2개·부교재 1개 (자동 발송 포함)
 // 공통 함수(listTree·hasNum·moeKey·makeSpec·findFiles)는 note-request 와 같게 유지
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
@@ -131,8 +132,15 @@ Deno.serve(async (req) => {
   const log: string[] = [];
   for (const [uid, list] of byUser) {
     // 준비된 자료만
-    const ready = list.map((w) => ({ w, spec: makeSpec({ kind: w.kind, ...(w.query || {}) }) }))
+    const readyAll = list.map((w) => ({ w, spec: makeSpec({ kind: w.kind, ...(w.query || {}) }) }))
       .filter((x) => !('error' in x.spec) && findFiles(all, x.spec as Spec).length);
+    if (!readyAll.length) continue;
+    // 자동 발송은 '지난 자동 발송 뒤에 들어온 요청' 중 1개만. 한꺼번에 여러 개 요청했으면 첫 1개만 카톡으로 가고,
+    // 나머지는 자료실에 로그인해서 받아야 함 (방문 유도). 학생이 다시 와서 새로 요청하면 그 요청은 또 자동 발송 대상
+    const { data: lastAuto } = await db.from('note_orders').select('created_at').eq('user_id', uid).eq('status', 'sent')
+      .eq('query->>auto', 'true').order('created_at', { ascending: false }).limit(1);
+    const after = lastAuto?.[0]?.created_at ? new Date(lastAuto[0].created_at).getTime() : 0;
+    const ready = readyAll.filter((x) => new Date(x.w.created_at).getTime() > after);
     if (!ready.length) continue;
     // 오늘 받은 것: 종류별 한도 확인 + 자동 발송은 하루 1번만
     const { data: got } = await db.from('note_orders').select('kind,query').eq('user_id', uid).eq('status', 'sent').gte('created_at', dayStart);
@@ -165,9 +173,10 @@ Deno.serve(async (req) => {
     const expires = new Date(Date.now() + LINK_HOURS * 3600e3);
     const link = `https://data.likasuni.com/get/?t=${token}`;
     const until = new Date(expires.getTime() + 9 * 3600e3).toISOString().slice(5, 16).replace('-', '/').replace('T', ' ');
-    const rest = ready.length - 1;
-    const text = `[리카수니 자료실]\n요청하신 ${w.label}가 준비돼서 보내드려요 📘\n\n링크는 ${until}까지(24시간) 열 수 있어요.` +
-      (rest > 0 ? `\n\n요청하신 자료 ${rest}개가 더 준비돼 있어요. 자료실(data.likasuni.com)에 로그인하면 바로 받을 수 있어요. (모의고사 하루 2개 · 부교재 하루 1개)` : '');
+    // 나머지 요청(준비된 것 + 아직 준비 중인 것)은 자동으로 안 보냄 → 로그인해서 받기 안내 (카톡 텍스트는 200자 이내)
+    const others = list.length - 1, readyRest = readyAll.length - 1;
+    const text = `[리카수니 자료실]\n요청하신 ${w.label}가 준비돼서 보내드려요 📘\n링크는 ${until}까지(24시간) 열려요.` +
+      (others > 0 ? `\n\n함께 요청한 자료 ${others}개${readyRest > 0 ? `(지금 ${readyRest}개 준비됨)` : ''}는 자동으로 보내지 않아요. 자료실(data.likasuni.com)에 카카오로 로그인해서 받아 주세요.` : '');
     const k = await fetch('https://kapi.kakao.com/v2/api/talk/memo/default/send', {
       method: 'POST',
       headers: { Authorization: `Bearer ${access}`, 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
