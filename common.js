@@ -113,6 +113,22 @@ function renderAuth(user) {
     ${pic ? `<img class="avatar" src="${esc(pic)}" alt="">` : ''}
     <span class="name">${esc(displayName(user))}</span>
     <button class="btn btn-line btn-sm" onclick="logout()">로그아웃</button>`;
+  adminLink(user, el);
+}
+
+// 관리자 계정으로 로그인하면 머리글에 '관리자' 버튼 (관리자 페이지 바로 가기). 확인 결과는 탭을 닫을 때까지 기억
+async function adminLink(user, el) {
+  if (location.pathname.startsWith('/admin')) return;
+  const key = 'is-admin-' + user.id;
+  let v = null;
+  try { v = sessionStorage.getItem(key); } catch (e) { /* 저장소 사용 불가 */ }
+  if (v === null) {
+    let data = false;
+    try { ({ data } = await sb.rpc('is_admin')); } catch (e) { /* 무시 */ }
+    v = data ? '1' : '0';
+    try { sessionStorage.setItem(key, v); } catch (e) { /* 무시 */ }
+  }
+  if (v === '1' && !el.querySelector('.admin-go')) el.insertAdjacentHTML('afterbegin', '<a class="btn btn-gold btn-sm admin-go" href="/admin.html">관리자</a>');
 }
 
 /* ---------- 알림 ---------- */

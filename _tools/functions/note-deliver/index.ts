@@ -137,6 +137,8 @@ Deno.serve(async (req) => {
     if (!readyAll.length) continue;
     // 드라이브에 올라온 요청은 댓글 답글을 '준비됐어요'로 → 자료실 '최근 자료 요청'에 파란 '준비 완료'로 보임 (처음 한 번만 바뀜)
     for (const x of readyAll) {
+      // 관리자 목록: '만들어야 함'(missing) → '올림·수령 대기'(resolved)
+      await db.from('note_orders').update({ status: 'resolved' }).eq('user_id', uid).eq('label', x.w.label).eq('status', 'missing');
       await db.from('comments').update({ reply: `${x.w.label} 준비됐어요! 자료실에 카카오로 로그인해서 '카톡으로 받기'를 누르면 바로 받을 수 있어요.`, replied_at: new Date().toISOString() })
         .eq('user_id', uid).eq('content', `[자료 요청] ${x.w.label} 부탁드려요.`).like('reply', '%접수했어요%');
     }

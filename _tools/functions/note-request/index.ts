@@ -134,11 +134,47 @@ Deno.serve(async (req) => {
   const jwt = (req.headers.get('Authorization') || '').replace('Bearer ', '');
   const { data: { user } } = await db.auth.getUser(jwt);
   if (!user) return reply(req, 401, { error: '로그인이 필요해요.' });
-  const providers: string[] = user.app_metadata?.providers || [user.app_metadata?.provider];
-  if (!providers.includes('kakao')) return reply(req, 403, { error: '카카오로 로그인한 회원만 요청할 수 있어요.' });
-
   let b: any = {};
   try { b = await req.json(); } catch { /* empty */ }
+
+  // 관리자 '드라이브 확인': 없는 자료 요청(missing)을 드라이브와 다시 맞춰 봄 (관리자는 구글 로그인이어도 됨)
+  // 파일이 있으면 '준비 완료'(resolved)로 바꾸고 요청 댓글 답글도 '준비됐어요'로. 없으면 같은 회차·교재 폴더의 파일 이름을 보여 줌 (이름 오류 찾기)
+  if (b.kind === 'admin_scan') {
+    const { count: adm } = await db.from('admins').select('user_id', { count: 'exact', head: true }).eq('user_id', user.id);
+    if (!adm) return reply(req, 403, { error: '관리자만 쓸 수 있어요.' });
+    const { data: cfg } = await db.from('private_config').select('k,v').eq('k', 'notes_root').maybeSingle();
+    if (!cfg?.v) return reply(req, 503, { error: 'notes_root 설정이 없어요.' });
+    cache = null; // 방금 올린 파일도 보이게
+    const all = await listTree(cfg.v, db);
+    const { data: waits } = await db.from('note_orders').select('user_id,kind,label,query').eq('status', 'missing').limit(500);
+    const out = new Map<string, any>();
+    for (const w of waits || []) {
+      const spec = makeSpec({ kind: w.kind, ...(w.query || {}) });
+      if ('error' in spec) continue;
+      const files = findFiles(all, spec);
+      const r = out.get(w.label) || { label: w.label, n: 0, file: '', near: [] as string[] };
+      r.n++;
+      if (files.length) {
+        r.file = [...files[0].path, files[0].name].join('/');
+        await db.from('note_orders').update({ status: 'resolved' }).eq('user_id', w.user_id).eq('label', w.label).eq('status', 'missing');
+        await db.from('comments').update({ reply: `${w.label} 준비됐어요! 자료실에 카카오로 로그인해서 '카톡으로 받기'를 누르면 바로 받을 수 있어요.`, replied_at: new Date().toISOString() })
+          .eq('user_id', w.user_id).eq('content', `[자료 요청] ${w.label} 부탁드려요.`).like('reply', '%접수했어요%');
+      } else if (!r.near.length) {
+        const q = spec.query;
+        r.near = all.filter((f) => {
+          if (spec.kind === 'moe') { const k = moeKey(f); return !!k && k[0] === q.y && k[1] === q.m && k[2] === q.g; }
+          const full = [...f.path, f.name].join(' ');
+          return spec.words.every((re) => re.test(full)) && spec.unitRe.test(full);
+        }).slice(0, 8).map((f) => [...f.path, f.name].join('/'));
+      }
+      out.set(w.label, r);
+    }
+    const list = [...out.values()];
+    return reply(req, 200, { ready: list.filter((x) => x.file), missing: list.filter((x) => !x.file) });
+  }
+
+  const providers: string[] = user.app_metadata?.providers || [user.app_metadata?.provider];
+  if (!providers.includes('kakao')) return reply(req, 403, { error: '카카오로 로그인한 회원만 요청할 수 있어요.' });
 
   const name = user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.nickname || '회원';
 
