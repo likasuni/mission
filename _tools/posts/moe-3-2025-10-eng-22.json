@@ -1,0 +1,199 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 22,
+  "type": "요지",
+  "points": 2,
+  "answer": 1,
+  "topic": "진정한 소속감은 있는 그대로의 나를 드러낼 용기에서 나온다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 22번",
+    "2025 10월 고3 영어 22번 해설",
+    "고3 10월 모의고사 22번 정답",
+    "고3 모의고사 글의 요지",
+    "belonging fit in authentic self 지문",
+    "소속감 자기 수용"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 22번은 집단에 어울리려고 애쓰는 것은 소속의 대체물이자 가장 큰 장벽이며, 가장 진정한 나를 드러낼 용기가 있어야 진짜 소속감을 느낄 수 있다는 글이에요. we can feel belonging only if we have the courage to share our most authentic selves가 요지 문장이에요. 정답은 ① 자신을 있는 그대로 드러내 보일 때 진정한 소속감을 느낄 수 있다예요.",
+  "flow": [
+    [
+      "도입",
+      "소속에 대한 갈망이 너무 강해, 우리는 어울리려 하고 인정받으려 애쓴다."
+    ],
+    [
+      "반전",
+      "이런 노력은 소속의 공허한 대체물일 뿐 아니라 소속의 가장 큰 장벽이다."
+    ],
+    [
+      "이유",
+      "어울리려 애쓰면 소속이 불안정하고, 사람들이 진짜 나를 모르면 진정한 소속은 없다."
+    ],
+    [
+      "요지",
+      "가장 진정한 나를 드러낼 용기가 있을 때만 소속을 느낀다. 소속감은 자기 수용 수준을 넘을 수 없다."
+    ],
+    [
+      "결론",
+      "소속은 수동적으로 남을 따라가는 것이 아니다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Not only are these efforts hollow substitutes for belonging, but they are the greatest barriers to belonging.",
+      "ko": "이러한 노력은 소속에 대한 공허한 대체물일 뿐만 아니라 소속에 대한 가장 큰 장벽이다.",
+      "note": "'어울리려는 노력'을 정면으로 부정해요. ③ '집단과 잘 맞는지 살피기'가 오답인 근거예요."
+    },
+    {
+      "en": "Because we can feel belonging only if we have the courage to share our most authentic selves with people, our sense of belonging can never be greater than our level of self-acceptance.",
+      "ko": "우리가 자신의 가장 진정한 모습을 사람들과 공유할 용기가 있을 때만 소속을 느낄 수 있으므로, 우리의 소속감은 절대 우리의 자기 수용 수준보다 클 수 없다.",
+      "note": "only if(~할 때만) 조건이 요지예요. share our most authentic selves = 있는 그대로 드러내기."
+    },
+    {
+      "en": "If people don't really know who we are and what we believe or think, there's no true belonging.",
+      "ko": "만약 사람들이 우리가 누구인지 그리고 우리가 무엇을 믿거나 생각하는지 정말로 알지 못한다면, 진정한 소속은 없다.",
+      "note": "진짜 나를 보여 줘야 진짜 소속이 생긴다는 같은 말을 반대 방향에서 해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "자신을 있는 그대로 드러내 보일 때 진정한 소속감을 느낄 수 있다.",
+      "ko": "있는 그대로 드러내기 → 진정한 소속감",
+      "why": "정답. share our most authentic selves, there's no true belonging if people don't know who we are가 근거예요."
+    },
+    {
+      "en": "타인의 기대에서 벗어날 때 비로소 진정한 자아를 실현할 수 있다.",
+      "ko": "기대에서 벗어나 자아실현",
+      "why": "글의 목적지는 '자아실현'이 아니라 '소속감'이에요. outside the expectations를 빌린 함정이에요."
+    },
+    {
+      "en": "속하려는 집단과 자신의 성향이 잘 맞는지 살펴볼 필요가 있다.",
+      "ko": "집단과 성향 맞추기",
+      "why": "fit in(어울리기)에 맞추는 이야기라 글이 비판하는 쪽이에요."
+    },
+    {
+      "en": "때로는 개인의 선호가 집단의 목표에 충분히 반영되지 않는다.",
+      "ko": "개인 선호와 집단 목표",
+      "why": "집단 목표에 대한 이야기는 없어요."
+    },
+    {
+      "en": "타인의 비판을 인정할 수 있을 때 자기 수용이 가능해진다.",
+      "ko": "비판 인정 → 자기 수용",
+      "why": "self-acceptance는 나오지만 '비판 인정'과 연결되지 않아요. 순서도 거꾸로예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "so ~ that 구문",
+      "ex": "Our yearning for belonging is so hardwired that we often try to acquire it by any means possible",
+      "d": "'너무 ~해서 …하다'. by any means possible은 '가능한 모든 수단으로'."
+    },
+    {
+      "t": "Not only 도치",
+      "ex": "Not only are these efforts hollow substitutes for belonging, but they are …",
+      "d": "Not only가 문장 앞에 와서 be동사 are가 주어 앞으로 나갔어요. not only A but (also) B 구조예요."
+    },
+    {
+      "t": "only if",
+      "ex": "we can feel belonging only if we have the courage to …",
+      "d": "'~할 때만'. 조건이 하나뿐이라는 강한 표현이라 요지 문장에 자주 써요."
+    },
+    {
+      "t": "It is a mistake to ~ (가주어)",
+      "ex": "That is why it's a mistake to think that belonging is passive …",
+      "d": "it은 가주어, to think ~가 진주어예요. That is why는 '그래서 ~이다'."
+    }
+  ],
+  "vocab": [
+    [
+      "yearning",
+      "갈망"
+    ],
+    [
+      "belonging",
+      "소속, 소속감"
+    ],
+    [
+      "hardwired",
+      "타고난, 생래적인"
+    ],
+    [
+      "by any means possible",
+      "가능한 모든 수단으로"
+    ],
+    [
+      "fit in",
+      "어울리다"
+    ],
+    [
+      "approval",
+      "인정, 승인"
+    ],
+    [
+      "acceptance",
+      "수용, 받아들임"
+    ],
+    [
+      "hollow",
+      "공허한"
+    ],
+    [
+      "substitute",
+      "대체물"
+    ],
+    [
+      "barrier",
+      "장벽"
+    ],
+    [
+      "unstable",
+      "불안정한"
+    ],
+    [
+      "authentic",
+      "진정한, 진짜의"
+    ],
+    [
+      "self-acceptance",
+      "자기 수용"
+    ],
+    [
+      "betray",
+      "배신하다"
+    ],
+    [
+      "ideal",
+      "이상"
+    ],
+    [
+      "passive",
+      "수동적인"
+    ],
+    [
+      "go along with",
+      "~을 따라가다, 동조하다"
+    ]
+  ],
+  "summary": {
+    "en": "Trying to fit in blocks true belonging; we can truly belong only when we have the courage to show our authentic selves.",
+    "ko": "어울리려는 노력은 진정한 소속을 가로막으며, 우리는 진정한 자신을 보여 줄 용기가 있을 때만 진정으로 소속될 수 있다."
+  },
+  "writing": {
+    "en": "Our sense of belonging can never be greater than our level of self-acceptance.",
+    "ko": "우리의 소속감은 절대 우리의 자기 수용 수준보다 클 수 없다."
+  },
+  "tip": "요지 문항에서 Not only A but B처럼 '흔한 생각을 뒤집는' 문장이 나오면 거기서 필자 입장이 시작돼요. 그다음 only if, never 같은 강한 말이 붙은 문장이 요지예요. 선택지에 본문 단어(기대, 자기 수용)가 보여도 글의 목적지(소속감)와 다르면 지우세요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 22번 정답은?",
+      "① 자신을 있는 그대로 드러내 보일 때 진정한 소속감을 느낄 수 있다예요."
+    ],
+    [
+      "2025년 10월 고3 영어 22번은 어떤 유형인가요?",
+      "글의 요지 유형의 2점 문항이에요. 소속감과 진정한 자기 표현의 관계를 다룬 지문이에요."
+    ],
+    [
+      "② 타인의 기대에서 벗어나 자아실현이 오답인 이유는?",
+      "본문에 '기대 밖의 행동'이 나오지만, 글이 말하려는 결론은 자아실현이 아니라 '진정한 소속감'이에요. 주제 단어가 바뀌었어요."
+    ]
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 38,
+  "type": "문장 삽입",
+  "points": 3,
+  "answer": 5,
+  "topic": "인간 운전의 부정적 영향이 드러나며 자율 주행차라는 환상이 시작되었다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 38번",
+    "2025 10월 고3 영어 38번 해설",
+    "고3 10월 모의고사 38번 정답",
+    "고3 모의고사 문장 삽입",
+    "self-driving car automobility 지문",
+    "자율 주행차 문장 삽입"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 38번은 자동차는 발명 이후 늘 인간 운전자가 필요했고 초창기엔 그것이 자유의 상징이었지만, 20세기 초 대규모 자동차 이동이 생기며 사고 같은 인간 운전의 부정적 영향이 문제가 되었고, 그때 자율 주행차라는 환상이 생겼다는 글이에요. 주어진 문장의 But(긍정 → 부정 전환)과 this period(그 시기)를 잇는 자리가 ⑤예요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "도입",
+      "19세기 말 발명 이후 자동차는 인간 운전자가 조종해야 하는 기계였다."
+    ],
+    [
+      "설명",
+      "운전자 없이는 주차장에 서 있는 움직일 수 없는 인공물일 뿐이었다."
+    ],
+    [
+      "긍정",
+      "초창기엔 운전자의 필요성이 장애물로 여겨지지 않았고, 직접 운전은 자유와 자율의 꿈을 약속했다."
+    ],
+    [
+      "주어진 문장(⑤)",
+      "하지만 20세기 초 대규모 자동차 이동과 함께 사고 같은 인간 운전의 부정적 영향이 심각한 우려가 되었다."
+    ],
+    [
+      "결론",
+      "자율 주행차라는 환상이 바로 이 시기로 거슬러 올라가는 것은 놀랍지 않다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But with the emerging mass automobility in the first decades of the twentieth century, the negative effects of human agency behind the steering wheel — accidents for example — became a serious topic of concern.",
+      "ko": "하지만 20세기의 첫 몇십 년 중 자동차에 의한 대규모 이동성이 생겨나면서, (자동차) 사고와 같은 운전대 뒤에 있는 인간 행위자의 부정적인 영향이 심각한 우려의 주제가 되었다.",
+      "note": "But은 앞에 긍정적인 내용이 있어야 해요. negative effects와 대비되는 긍정은 ④ 다음 '자유와 자율의 꿈'이에요."
+    },
+    {
+      "en": "Manual driving promised to fulfill the human dream of individual mobility and freedom, of self-guidance, of autonomy. ( ⑤ )",
+      "ko": "인력을 요하는 운전은 개인 기동성과 자유, 자기 안내, 자율성에 대한 인간의 꿈을 이행할 것을 약속했다. ( ⑤ )",
+      "note": "직접 운전의 긍정적 의미가 여기서 끝나요. 바로 뒤에 But으로 부정적 영향이 와야 해요."
+    },
+    {
+      "en": "It is no surprise that the fantasy of a self-driving car … can be dated to this period.",
+      "ko": "인간 운전자 없이 주행할 수 있는 차라는 자율 주행차에 대한 환상이 이 시기까지 거슬러 올라갈 수 있다는 것은 놀랍지 않다.",
+      "note": "this period는 주어진 문장의 the first decades of the twentieth century예요. 인간 운전이 문제가 되었으니 자율 주행의 꿈이 생긴 게 '놀랍지 않다'는 흐름이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "발명 이후 → 인간 운전 필요",
+      "why": "앞뒤 모두 인간 운전자가 필요했다는 같은 설명이 이어져요. 끊길 곳이 없어요."
+    },
+    {
+      "en": "②",
+      "ko": "운전 기술 필요 → 운전자 없으면 움직일 수 없음",
+      "why": "같은 내용을 반대 방향(Without a driver)으로 이어 가요. 흐름이 자연스러워요."
+    },
+    {
+      "en": "③",
+      "ko": "움직일 수 없는 인공물 → 초창기엔 장애물로 여기지 않음",
+      "why": "아직 긍정 단계(장애물이 아니었다)가 나오기 전이라 But이 올 수 없어요."
+    },
+    {
+      "en": "④",
+      "ko": "장애물 아님 → 자유의 꿈을 약속",
+      "why": "두 문장 모두 직접 운전의 긍정적 의미라 자연스럽게 이어져요."
+    },
+    {
+      "en": "⑤",
+      "ko": "자유의 꿈 → (But 부정적 영향) → 이 시기의 자율 주행 환상",
+      "why": "정답. 긍정에서 부정으로 꺾이는 But 자리이고, this period가 가리킬 시기도 주어진 문장에 있어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "with + 명사 (상황)",
+      "ex": "with the emerging mass automobility in the first decades of the twentieth century",
+      "d": "'~이 생겨나면서'. 시대적 배경을 나타내요."
+    },
+    {
+      "t": "대시(—)로 예시 삽입",
+      "ex": "the negative effects of human agency behind the steering wheel — accidents for example — became …",
+      "d": "대시 사이는 예시예요. 주어 effects, 동사 became을 이어 읽어요."
+    },
+    {
+      "t": "가정법 과거완료 (Without ~)",
+      "ex": "Without human control … none of the billions of miles could have been traversed …",
+      "d": "Without ~ = If it had not been for ~. '~이 없었다면 …할 수 없었을 것이다'."
+    },
+    {
+      "t": "It is no surprise that ~",
+      "ex": "It is no surprise that the fantasy of a self-driving car … can be dated to this period.",
+      "d": "'~은 놀랍지 않다'. 앞 내용의 당연한 결과를 말해요."
+    }
+  ],
+  "vocab": [
+    [
+      "invention",
+      "발명"
+    ],
+    [
+      "automobile",
+      "자동차"
+    ],
+    [
+      "steering wheel",
+      "운전대"
+    ],
+    [
+      "gas pedal",
+      "가속 페달"
+    ],
+    [
+      "traverse",
+      "횡단하다"
+    ],
+    [
+      "fulfill",
+      "이행하다, 다하다"
+    ],
+    [
+      "immobile",
+      "움직일 수 없는"
+    ],
+    [
+      "artifact",
+      "인공물"
+    ],
+    [
+      "motoring",
+      "자동차 운행"
+    ],
+    [
+      "necessity",
+      "필요성"
+    ],
+    [
+      "barrier",
+      "장애물"
+    ],
+    [
+      "manual",
+      "수동의, 인력을 요하는"
+    ],
+    [
+      "mobility",
+      "기동성, 이동성"
+    ],
+    [
+      "self-guidance",
+      "자기 안내"
+    ],
+    [
+      "autonomy",
+      "자율성"
+    ],
+    [
+      "emerging",
+      "생겨나는"
+    ],
+    [
+      "mass automobility",
+      "대규모 자동차 이동"
+    ],
+    [
+      "human agency",
+      "인간 행위자, 인간의 작용"
+    ],
+    [
+      "concern",
+      "우려"
+    ],
+    [
+      "be dated to",
+      "~까지 거슬러 올라가다"
+    ]
+  ],
+  "summary": {
+    "en": "Cars always needed human drivers, which once meant freedom, but when human driving began causing problems like accidents, the idea of self-driving cars emerged.",
+    "ko": "자동차는 늘 인간 운전자가 필요했고 한때 그것은 자유를 의미했지만, 인간 운전이 사고 같은 문제를 일으키기 시작하자 자율 주행차라는 생각이 생겨났다."
+  },
+  "writing": {
+    "en": "It is no surprise that the fantasy of a self-driving car can be dated to this period.",
+    "ko": "자율 주행차에 대한 환상이 이 시기로 거슬러 올라갈 수 있다는 것은 놀랍지 않다."
+  },
+  "tip": "주어진 문장이 But으로 시작하면 '앞은 반대 내용'이어야 해요. 이 글은 ④ 앞뒤가 모두 긍정이라 그 사이엔 못 들어가고, 긍정이 끝나는 ⑤가 자리예요. 뒤 문장의 this period처럼 주어진 문장의 시점을 받는 지시어가 있으면 확정이에요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 38번 정답은?",
+      "⑤예요. 직접 운전의 긍정적 의미(자유의 꿈) 뒤에 But으로 부정적 영향이 오고, 이어서 this period가 그 시기를 받아요."
+    ],
+    [
+      "2025년 10월 고3 영어 38번은 어떤 유형인가요?",
+      "문장 삽입 유형의 3점 문항이에요. 자동차 운전과 자율 주행차의 기원을 다룬 지문이에요."
+    ],
+    [
+      "④에 넣으면 안 되는 이유는?",
+      "④ 뒤 문장 'Manual driving promised to fulfill the human dream ~'은 아직 긍정적 의미예요. But으로 부정적 영향을 말한 뒤 다시 긍정으로 돌아가면 흐름이 꼬여요."
+    ]
+  ],
+  "note": "④와 ⑤ 사이에서 많이 고민해요. 기준은 하나예요. '장애물이 아니었다'와 '자유의 꿈'은 같은 편이니 떼어 놓을 수 없어요. 같은 편 문장 사이에는 But이 들어가지 않아요."
+}

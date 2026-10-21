@@ -1,0 +1,207 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 34,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 5,
+  "topic": "사회적 관심은 실제 관계 밖의 사람들에게도 향한다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 34번",
+    "2025 10월 고3 영어 34번 해설",
+    "고3 10월 모의고사 34번 정답",
+    "고3 모의고사 빈칸 추론",
+    "social attention celebrity 지문",
+    "live outside of the actual relationships"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 34번은 사회적 관심이 다른 사회적 연결과 다른 점은 실제로 맺고 있는 관계 밖의 사람에게도 향할 수 있다는 것이라는 빈칸 문항이에요. 나를 모르는 유명인, 짝사랑하는 선배, 미디어 인물처럼 일방적인 관심이 우리 삶의 큰 부분이라는 예시가 이어져요. 정답은 ⑤ live outside of the actual relationships we have예요.",
+  "flow": [
+    [
+      "빈칸",
+      "사회적 관심을 구별되게 하는 것은 그것이 (우리가 맺은 실제 관계 밖에서도 존재할) 수 있다는 점이다."
+    ],
+    [
+      "대비",
+      "유명인과 서로 알지 못하면 관계는 맺을 수 없지만, 유명인은 내 사회적 관심의 대상이 될 수 있다."
+    ],
+    [
+      "강조",
+      "이런 일방적 관심은 사소하지 않고 삶의 큰 부분이다."
+    ],
+    [
+      "예시",
+      "10학년 때 짝사랑하는 선배, 어른이 되어 미디어 인물과 머릿속 언쟁, 운동선수·유명인·뉴스 속 사람들."
+    ],
+    [
+      "결론",
+      "우리 사회적 관심의 상당 부분은 우리를 전혀 모르는 사람들에게 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "You can't have a relationship with a celebrity unless you know him and he knows you. But a celebrity can be the object of your social attention.",
+      "ko": "여러분이 한 유명 인사를 알고 그가 여러분을 알지 않는 한, 여러분은 그와 '관계'를 맺을 수 없다. 하지만 한 유명 인사는 여러분의 사회적 관심의 대상이 될 '수 있'다.",
+      "note": "관계(relationship)는 서로 알아야 하지만, 관심(attention)은 관계 없이도 가능해요. 빈칸 ⑤의 핵심 대비예요."
+    },
+    {
+      "en": "And this kind of one-sided social attention isn't something trivial or secondary, but an enormous part of our lives.",
+      "ko": "그리고 이런 종류의 일방적인 사회적 관심은 사소하거나 부차적인 것이 아니라, 우리 삶에서 상당한 부분을 차지한다.",
+      "note": "one-sided(일방적인) = 실제 관계 밖. ③ '상호 관계를 깊게 한다'는 반대예요."
+    },
+    {
+      "en": "An enormous part of our social attention falls upon people who do not know us at all.",
+      "ko": "우리의 사회적 관심 중 상당 부분은 우리를 전혀 알지 못하는 사람들에게 있다.",
+      "note": "마지막 문장이 빈칸을 다시 말해요. 나를 모르는 사람 = 실제 관계 밖의 사람."
+    }
+  ],
+  "choices": [
+    {
+      "en": "focus exclusively on figures we admire",
+      "ko": "우리가 존경하는 인물에게만 집중한다",
+      "why": "jeer(야유하다) 대상, 머릿속 언쟁 상대도 나와요. 존경하는 인물'만'이 틀렸어요."
+    },
+    {
+      "en": "depend on someone's in-person presence",
+      "ko": "누군가가 직접 있는 것에 달려 있다",
+      "why": "정반대예요. 직접 만나지 않는 유명인, 뉴스 속 인물에게도 관심을 가져요."
+    },
+    {
+      "en": "deepen our mutual relationship over time",
+      "ko": "시간이 지나며 상호 관계를 깊게 한다",
+      "why": "mutual(상호)이 틀렸어요. 글은 one-sided(일방적) 관심을 말해요."
+    },
+    {
+      "en": "fade away without constant reinforcement",
+      "ko": "지속적인 강화 없이는 사라진다",
+      "why": "관심이 사라진다는 내용은 없어요. 오히려 삶의 큰 부분이라고 해요."
+    },
+    {
+      "en": "live outside of the actual relationships we have",
+      "ko": "우리가 맺고 있는 실제 관계 밖에서 존재한다",
+      "why": "정답. 나를 모르는 유명인도 관심의 대상이 된다는 예시들과 마지막 문장이 모두 이 말이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "What 명사절 주어",
+      "ex": "What makes social attention distinct, and more far-reaching than many other forms of social connection, is that it can …",
+      "d": "What ~ connection까지가 주어, 동사는 is예요. 쉼표 사이 삽입구는 건너뛰고 읽어요."
+    },
+    {
+      "t": "unless",
+      "ex": "You can't have a relationship with a celebrity unless you know him and he knows you.",
+      "d": "'~하지 않는 한'. 서로 알아야만 관계가 성립한다는 조건이에요."
+    },
+    {
+      "t": "not A but B",
+      "ex": "isn't something trivial or secondary, but an enormous part of our lives",
+      "d": "'A가 아니라 B'. B가 필자의 강조점이에요."
+    },
+    {
+      "t": "find oneself -ing",
+      "ex": "you might find yourself having imaginary arguments in your head",
+      "d": "'자신이 ~하고 있음을 발견하다'. 자기도 모르게 그러고 있다는 뉘앙스예요."
+    }
+  ],
+  "vocab": [
+    [
+      "social attention",
+      "사회적 관심"
+    ],
+    [
+      "distinct",
+      "구별되는, 독특한"
+    ],
+    [
+      "far-reaching",
+      "멀리까지 미치는"
+    ],
+    [
+      "social connection",
+      "사회적 관계"
+    ],
+    [
+      "celebrity",
+      "유명 인사"
+    ],
+    [
+      "object",
+      "대상"
+    ],
+    [
+      "one-sided",
+      "일방적인"
+    ],
+    [
+      "trivial",
+      "사소한"
+    ],
+    [
+      "secondary",
+      "부차적인"
+    ],
+    [
+      "enormous",
+      "막대한, 상당한"
+    ],
+    [
+      "waking hours",
+      "깨어 있는 시간"
+    ],
+    [
+      "daydream",
+      "공상하다"
+    ],
+    [
+      "have a crush on",
+      "~에게 반하다"
+    ],
+    [
+      "imaginary",
+      "가상의"
+    ],
+    [
+      "media personality",
+      "미디어 인물"
+    ],
+    [
+      "pantheon",
+      "만신전"
+    ],
+    [
+      "root for",
+      "~을 응원하다"
+    ],
+    [
+      "jeer",
+      "야유하다"
+    ],
+    [
+      "fall upon",
+      "~에게 향하다"
+    ]
+  ],
+  "summary": {
+    "en": "Unlike relationships, social attention can be one-sided, so much of it goes to people who do not know us at all.",
+    "ko": "관계와 달리 사회적 관심은 일방적일 수 있어서, 그 상당 부분은 우리를 전혀 모르는 사람들에게 향한다."
+  },
+  "writing": {
+    "en": "A celebrity can be the object of your social attention.",
+    "ko": "유명 인사는 여러분의 사회적 관심의 대상이 될 수 있다."
+  },
+  "tip": "빈칸이 첫 문장에 있으면 글 전체가 빈칸의 설명이에요. 바로 뒤 대비(relationship은 안 되지만 attention은 된다)와 마지막 문장(do not know us at all)을 연결해 답을 고르세요. mutual, in-person처럼 글의 핵심어(one-sided)와 정반대인 단어가 들어간 선택지는 바로 지워요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 34번 정답은?",
+      "⑤ live outside of the actual relationships we have예요."
+    ],
+    [
+      "2025년 10월 고3 영어 34번은 어떤 유형인가요?",
+      "빈칸 추론 유형의 3점 문항이에요. 일방적인 사회적 관심을 다룬 지문이에요."
+    ],
+    [
+      "③ deepen our mutual relationship이 오답인 이유는?",
+      "글의 핵심은 one-sided(일방적) 관심이에요. mutual(상호)은 그 반대라서 오답이에요."
+    ]
+  ]
+}

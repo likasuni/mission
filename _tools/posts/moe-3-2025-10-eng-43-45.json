@@ -1,0 +1,351 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "다람쥐 때문에 거대 호박의 꿈은 무너졌지만 가족과 파이를 구우며 기쁨을 찾은 Jay",
+  "date": "2026-10-21",
+  "lead": "2025년 10월 고3 모의고사 영어 43~45번은 호박 축제에서 거대한 호박에 반한 Jay가 할아버지와 함께 씨앗을 고르고 심었지만 다람쥐가 씨앗을 모두 먹어 버리고, 대신 파이 호박을 길러 가족과 파이를 구우며 내년을 다짐하는 이야기의 장문 세트예요. 43번 순서는 (A) 축제와 꿈 → (D) 할아버지의 약속과 조언 → (C) 봄에 심었지만 다람쥐 → (B) 파이 호박과 내년 다짐, 44번은 (d)만 할아버지, 45번은 할아버지가 '5월 말'에 심으라고 했으므로 ⑤가 불일치예요. 정답은 43번 ⑤, 44번 ④, 45번 ⑤예요.",
+  "flow": [
+    [
+      "(A)",
+      "Jay는 할아버지와 호박 축제에 가서 상 받은 거대한 호박에 매료되고, 직접 기르겠다는 꿈을 할아버지에게 말한다."
+    ],
+    [
+      "(D)",
+      "할아버지는 돕겠다고 약속하고, 호박 농장에서 큰 품종·가장 큰 호박의 씨앗을 고르고 5월 말에 작은 흙무더기에 심으라고 조언한다. Jay는 씨앗을 고른다."
+    ],
+    [
+      "(C)",
+      "할아버지가 운도 필요하다고 했지만 Jay는 자신 있다. 겨울을 보내고 봄에 트랙터로 텃밭을 준비해 씨앗을 심는다. 그런데 다람쥐가 씨앗을 모두 파먹는다."
+    ],
+    [
+      "(B)",
+      "꿈이 무너졌지만 할아버지의 권유로 파이 호박을 심고, 가족이 그 호박으로 파이를 굽는다. Jay는 내년에 다시 도전하기로 다짐한다."
+    ]
+  ],
+  "tip": "43번: (D)의 Seeing Jay's excitement는 (A)의 꿈 이야기를, (C)의 the seeds he had bought와 reminded him … again은 (D)의 씨앗 구매와 조언을, (B)의 what the squirrel had done은 (C)의 다람쥐 사건을 받아요. 44번: 남자가 둘(Jay, 할아버지)이라 he가 누구인지 문장마다 확인하세요. 45번: 날짜·시기(late May)를 early로 바꾼 함정이에요.",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 43~45번",
+    "2025 10월 고3 영어 43~45번 해설",
+    "고3 10월 모의고사 43번 정답",
+    "고3 10월 모의고사 44번 정답",
+    "고3 10월 모의고사 45번 정답",
+    "고3 모의고사 장문 순서 지칭 내용 일치",
+    "Jay pumpkin grandfather squirrel 지문"
+  ],
+  "qs": [
+    {
+      "n": 43,
+      "type": "장문 순서",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "(A) … he eagerly shared his dream with his grandfather that he wanted to grow the next show-winning pumpkin. / (D) Seeing Jay's excitement, he promised to help him grow a giant pumpkin.",
+          "ko": "(A) … 그는 할아버지에게 자신이 다음으로 상을 받을 호박을 기르고 싶다는 꿈을 열렬히 공유했다. / (D) Jay의 신난 상태를 보고, 그는 그가 거대한 호박 기르는 것을 도와주기로 약속했다.",
+          "note": "(A)에서 꿈을 말하자 (D)에서 할아버지가 그 들뜬 모습(excitement)을 보고 돕겠다고 해요. (A) → (D)."
+        },
+        {
+          "en": "(D) Following his grandfather's advice, he picked out a few promising pumpkin seeds. / (C) Though his grandfather reminded him that a little luck was also needed, … He carefully kept the seeds he had bought …",
+          "ko": "(D) 할아버지의 조언을 따라서, 그는 몇 개의 조짐이 좋은 호박 씨앗을 골랐다. / (C) 할아버지가 약간의 운 또한 필요하다고 다시 한번 알려 주었지만, … 그는 자신이 샀던 씨앗을 신중히 보관했고 …",
+          "note": "(D)에서 산 씨앗을 (C)에서 보관해요. reminded(다시 알려 줬다)도 (D)의 조언 뒤라야 자연스러워요. (D) → (C)."
+        },
+        {
+          "en": "(C) A squirrel dug up and ate every single seed. / (B) When Jay found out what the squirrel had done, he searched through the soil but found nothing.",
+          "ko": "(C) 다람쥐 한 마리가 모든 씨앗을 파내어 먹어 버렸다. / (B) Jay가 다람쥐가 한 짓을 발견했을 때, 그는 흙을 뒤졌지만 아무것도 찾지 못했다.",
+          "note": "the squirrel(그 다람쥐)은 (C)에서 처음 나온 다람쥐를 받아요. (C) → (B)."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(B) － (D) － (C)",
+          "ko": "다람쥐 후 → 약속 → 심기",
+          "why": "(B)의 the squirrel이 무엇인지 아직 나오지 않았어요."
+        },
+        {
+          "en": "(C) － (B) － (D)",
+          "ko": "심기 → 파이 → 약속",
+          "why": "(C)의 씨앗(the seeds he had bought)을 산 장면(D)이 먼저 와야 해요."
+        },
+        {
+          "en": "(C) － (D) － (B)",
+          "ko": "심기 → 약속 → 파이",
+          "why": "씨앗을 심고 다람쥐가 먹은 뒤에 다시 씨앗을 사러 가는 흐름은 맞지 않아요."
+        },
+        {
+          "en": "(D) － (B) － (C)",
+          "ko": "약속 → 다람쥐 후 → 심기",
+          "why": "다람쥐 사건(C) 전에 (B)의 what the squirrel had done이 올 수 없어요."
+        },
+        {
+          "en": "(D) － (C) － (B)",
+          "ko": "약속·씨앗 구매 → 봄에 심기·다람쥐 → 파이 호박·다짐",
+          "why": "정답. 꿈(A) → 할아버지의 약속과 조언(D) → 심었지만 다람쥐(C) → 파이 호박과 내년 다짐(B)."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭 대상",
+      "points": 2,
+      "answer": 4,
+      "evidence": [
+        {
+          "en": "Seeing Jay's excitement, (d) he promised to help him grow a giant pumpkin.",
+          "ko": "Jay의 신난 상태를 보고, (d) 그는 그(Jay)가 거대한 호박 기르는 것을 도와주기로 약속했다.",
+          "note": "Jay의 들뜬 모습을 보고 돕겠다고 약속한 사람은 할아버지예요. (d) = 할아버지."
+        },
+        {
+          "en": "When spring finally arrived, (c) he received help from his grandfather. He used his tractor to prepare the garden with Jay.",
+          "ko": "마침내 봄이 되었을 때, (c) 그는 할아버지로부터 도움을 받았다. 그(할아버지)는 Jay와 텃밭을 준비하기 위해 자신의 트랙터를 사용했다.",
+          "note": "할아버지에게서 도움을 받은 사람은 Jay예요. 바로 뒤 He(트랙터 주인)는 할아버지지만 밑줄이 아니에요."
+        },
+        {
+          "en": "Following his grandfather's advice, (e) he picked out a few promising pumpkin seeds.",
+          "ko": "할아버지의 조언을 따라서, (e) 그는 몇 개의 조짐이 좋은 호박 씨앗을 골랐다.",
+          "note": "'할아버지의 조언'을 따른 사람은 Jay예요. (e) = Jay."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) he",
+          "ko": "Jay",
+          "why": "할아버지에게 꿈을 이야기한 사람은 Jay예요."
+        },
+        {
+          "en": "(b) he",
+          "ko": "Jay",
+          "why": "내년에 가장 큰 호박에 다시 도전하겠다고 스스로 다짐한 사람은 Jay예요."
+        },
+        {
+          "en": "(c) he",
+          "ko": "Jay",
+          "why": "할아버지로부터(from his grandfather) 도움을 받은 사람은 Jay예요."
+        },
+        {
+          "en": "(d) he",
+          "ko": "할아버지",
+          "why": "정답. Jay의 신난 모습을 보고 거대한 호박 기르기를 돕겠다고 약속한 사람은 할아버지예요."
+        },
+        {
+          "en": "(e) he",
+          "ko": "Jay",
+          "why": "할아버지의 조언(his grandfather's advice)을 따라 씨앗을 고른 사람은 Jay예요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "장문 내용 불일치",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "He also advised planting them in late May, when the soil is warm, …",
+          "ko": "그는 또한 토양이 따뜻한 5월 말에 씨앗을 심으라고 조언했다, …",
+          "note": "할아버지는 '5월 말(late May)'에 심으라고 했어요. ⑤ '5월 초'는 불일치, 정답이에요."
+        },
+        {
+          "en": "Jay made up his mind to grow an enormous pumpkin himself.",
+          "ko": "Jay는 거대한 호박을 직접 기르기로 결심했다.",
+          "note": "① 일치."
+        },
+        {
+          "en": "The family baked delicious pies using the pumpkins Jay had harvested.",
+          "ko": "가족은 Jay가 수확한 호박을 이용해 맛있는 파이를 구웠다.",
+          "note": "② 일치."
+        }
+      ],
+      "choices": [
+        {
+          "en": "Jay는 거대한 호박을 직접 기르기로 결심했다.",
+          "ko": "일치",
+          "why": "Jay made up his mind to grow an enormous pumpkin himself.와 같아요."
+        },
+        {
+          "en": "가족은 Jay가 수확한 호박으로 파이를 구웠다.",
+          "ko": "일치",
+          "why": "The family baked delicious pies using the pumpkins Jay had harvested.와 같아요."
+        },
+        {
+          "en": "Jay는 호박을 어떻게 기를지 생각하며 겨울을 보냈다.",
+          "ko": "일치",
+          "why": "spent the winter thinking about how he would grow his pumpkins와 같아요."
+        },
+        {
+          "en": "다람쥐가 모든 씨앗을 파내어 먹었다.",
+          "ko": "일치",
+          "why": "A squirrel dug up and ate every single seed.와 같아요."
+        },
+        {
+          "en": "할아버지는 5월 초에 씨앗을 심으라고 조언했다.",
+          "ko": "불일치",
+          "why": "정답. 할아버지는 토양이 따뜻한 5월 말(late May)에 심으라고 조언했어요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "with + 명사 + 분사 (부대상황)",
+      "ex": "With stars sparkling in his eyes, he eagerly shared his dream with his grandfather …",
+      "d": "'눈이 별처럼 반짝이며'. stars가 sparkling의 의미상 주어예요."
+    },
+    {
+      "t": "동격의 that절",
+      "ex": "he eagerly shared his dream with his grandfather that he wanted to grow the next show-winning pumpkin",
+      "d": "that절이 his dream의 내용을 설명해요. 사이에 with his grandfather가 끼어 있어요."
+    },
+    {
+      "t": "분사구문 (이유·때)",
+      "ex": "Seeing Jay's excitement, he promised to help him grow a giant pumpkin.",
+      "d": "'Jay의 신난 모습을 보고'. help + 목적어 + 동사원형(grow)도 함께 익혀요."
+    },
+    {
+      "t": "advise + 동명사",
+      "ex": "He also advised planting them in late May, when the soil is warm, by forming small hills …",
+      "d": "advise는 목적어로 동명사를 써요. when절은 late May를 보충 설명하는 계속적 용법이에요."
+    },
+    {
+      "t": "과거완료 (had p.p.)",
+      "ex": "When Jay found out what the squirrel had done, he searched through the soil …",
+      "d": "다람쥐가 한 일(had done)이 Jay가 발견한 것(found out)보다 먼저예요."
+    },
+    {
+      "t": "Despite + 명사",
+      "ex": "Despite the setback, Jay found joy in the harvest and the time spent with his family.",
+      "d": "Despite는 전치사라 명사가 와요. the time spent with ~는 과거분사 후치 수식이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "pumpkin",
+      "호박"
+    ],
+    [
+      "festival",
+      "축제"
+    ],
+    [
+      "be fascinated by",
+      "~에 매료되다"
+    ],
+    [
+      "prize-winning",
+      "상을 받은"
+    ],
+    [
+      "on display",
+      "전시된"
+    ],
+    [
+      "make up one's mind",
+      "결심하다"
+    ],
+    [
+      "enormous",
+      "거대한"
+    ],
+    [
+      "sparkle",
+      "반짝이다"
+    ],
+    [
+      "eagerly",
+      "열렬히, 간절히"
+    ],
+    [
+      "show-winning",
+      "상을 받는"
+    ],
+    [
+      "crush",
+      "부수다, 좌절시키다"
+    ],
+    [
+      "on hand",
+      "가지고 있는"
+    ],
+    [
+      "harvest",
+      "수확하다, 수확"
+    ],
+    [
+      "setback",
+      "방해, 차질"
+    ],
+    [
+      "remind",
+      "다시 알려 주다"
+    ],
+    [
+      "confident",
+      "자신 있는"
+    ],
+    [
+      "tractor",
+      "트랙터"
+    ],
+    [
+      "with anticipation",
+      "기대하며"
+    ],
+    [
+      "disaster",
+      "불행, 재앙"
+    ],
+    [
+      "dig up",
+      "파내다"
+    ],
+    [
+      "squirrel",
+      "다람쥐"
+    ],
+    [
+      "excitement",
+      "흥분, 신남"
+    ],
+    [
+      "variety",
+      "품종"
+    ],
+    [
+      "soil",
+      "토양, 흙"
+    ],
+    [
+      "promising",
+      "조짐이 좋은, 유망한"
+    ]
+  ],
+  "summary": {
+    "en": "Jay's dream of growing a giant pumpkin was ruined when a squirrel ate his seeds, but he found joy in baking pies with his family and resolved to try again.",
+    "ko": "거대한 호박을 기르려던 Jay의 꿈은 다람쥐가 씨앗을 먹어 버리며 무너졌지만, 그는 가족과 파이를 구우며 기쁨을 찾았고 다시 도전하기로 다짐했다."
+  },
+  "writing": {
+    "en": "Despite the setback, Jay found joy in the harvest and the time spent with his family.",
+    "ko": "방해에도 불구하고, Jay는 수확과 가족과 보낸 시간에서 즐거움을 발견했다."
+  },
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 43번 정답은?",
+      "⑤ (D) - (C) - (B)예요. 꿈 → 할아버지의 약속과 조언 → 심었지만 다람쥐 → 파이 호박과 다짐 순서예요."
+    ],
+    [
+      "2025년 10월 고3 모의고사 영어 44번 정답은?",
+      "④ (d)예요. (d)만 할아버지이고, 나머지는 모두 Jay예요."
+    ],
+    [
+      "2025년 10월 고3 모의고사 영어 45번 정답은?",
+      "⑤ 할아버지는 5월 초에 씨앗을 심으라고 조언했다예요. 본문은 5월 말(late May)이에요."
+    ],
+    [
+      "44번 (c)는 왜 Jay인가요?",
+      "(c) he received help from his grandfather에서 할아버지로부터 도움을 받은 사람은 Jay예요. 바로 뒤 He used his tractor의 He는 할아버지지만 밑줄이 아니라서 헷갈리지 않게 조심하세요."
+    ]
+  ],
+  "note": "44번은 (c) 바로 뒤 문장의 He가 할아버지라서 많이 헷갈려요. 밑줄 친 그 문장 안에서 from his grandfather를 먼저 보면 (c)는 Jay라는 게 바로 보여요."
+}

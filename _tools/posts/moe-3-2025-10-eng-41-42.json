@@ -1,0 +1,309 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "실재하지 않는 이야기에 끌리는 인간, 픽션의 매력",
+  "date": "2026-10-21",
+  "lead": "2025년 10월 고3 모의고사 영어 41~42번은 일어난 적 없는 이야기와 존재한 적 없는 사람들의 고생에 우리가 왜 그렇게 끌리는지 묻는 픽션에 관한 장문 세트예요. 41번 제목은 Humans are drawn to fiction과 '왜 이것을 즐기는가'라는 질문이 단서이고, 42번은 픽션 산업이 수십억 달러 규모라는 마지막 문장과 이어지려면 우리가 픽션에 시간을 '많이' 써야 해서 (e) insignificant가 틀렸어요. 정답은 41번 ①, 42번 ⑤예요.",
+  "flow": [
+    [
+      "도입",
+      "소설 속 상황과 인물이 실제로 존재하지 않았다고 비판하는 사람은 거의 없다. 픽션은 비웃음에서 벗어난다."
+    ],
+    [
+      "반론",
+      "하지만 픽션은 단지 지어낸 것 이상이다. 그렇지 않다면 우리 삶에서 그렇게 큰 부분을 차지하지 않을 것이다."
+    ],
+    [
+      "핵심",
+      "인간은 동물 중 독특하게 지어낸 이야기에 끌린다."
+    ],
+    [
+      "질문",
+      "일어난 적 없는 이야기에 왜 관심을 갖고 즐기는가? 세상에 대해 배우는 것도, 유용한 경험이나 기술을 얻는 것도 아닌데."
+    ],
+    [
+      "결론",
+      "그래도 대부분은 픽션에 큰 가치가 있다고 말한다. 우리는 픽션에 많은 시간을 쓰고, 영화·게임·소설은 수십억 달러 산업이다."
+    ]
+  ],
+  "tip": "41번: 글이 '왜 우리는 지어낸 이야기에 끌리는가'라는 질문을 중심으로 흘러가요. 픽션을 무엇에 쓰는지(정체성, 비판적 사고)를 답하는 선택지가 아니라, 끌림 자체를 말하는 제목을 고르세요. 42번: 바로 뒤 문장(수십억 달러 산업)과 앞의 so large a part of our lives가 '많은 시간'을 요구해요. insignificant는 정반대예요.",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 41~42번",
+    "2025 10월 고3 영어 41~42번 해설",
+    "고3 10월 모의고사 41번 정답",
+    "고3 10월 모의고사 42번 정답",
+    "고3 모의고사 장문 제목 어휘",
+    "fiction drawn to invented stories 지문",
+    "픽션에 끌리는 이유"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 1,
+      "evidence": [
+        {
+          "en": "Humans are drawn to fiction, to invented stories, in a way unique among animals.",
+          "ko": "인간은 동물 중에서 고유한 방식으로, 픽션에, 즉 지어낸 이야기에 끌린다.",
+          "note": "글의 중심 문장이에요. drawn to fiction이 ①의 Drawn to the Unreal, Fascination with Fiction과 그대로 이어져요."
+        },
+        {
+          "en": "Why do we enjoy this? What do we get out of it?",
+          "ko": "왜 우리는 이것을 즐기는가? 우리는 이것으로부터 무엇을 얻는가?",
+          "note": "글 전체가 '실재하지 않는 것에 끌리는 이유'를 묻고 있어요. 픽션의 구체적 효과를 주장하는 글이 아니에요."
+        },
+        {
+          "en": "We're not learning anything about the world, we're not gaining any kind of useful experience …, we're not learning any new skill …",
+          "ko": "우리는 세상에 대해 아무것도 배우고 있지 않고, … 어떤 종류의 유용한 경험도 얻고 있지 않으며, 어떤 새로운 기술을 배우거나 … 있지 않다.",
+          "note": "픽션이 정체성을 만들거나 비판적 사고를 키운다는 ④⑤와 반대 방향이에요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "Drawn to the Unreal: Our Fascination with Fiction",
+          "ko": "실재하지 않는 것에 끌림: 픽션에 대한 우리의 매료",
+          "why": "정답. 일어난 적 없는 이야기에 끌리는 인간의 특성과 그 이유에 대한 질문이 글의 중심이에요."
+        },
+        {
+          "en": "What True Stories Can Teach Us About Life",
+          "ko": "실화가 삶에 대해 가르쳐 줄 수 있는 것",
+          "why": "글은 실화가 아니라 지어낸 이야기(fiction)에 관한 거예요."
+        },
+        {
+          "en": "The Science Behind Reading and Its Effects",
+          "ko": "독서 이면의 과학과 그 효과",
+          "why": "과학적 연구나 독서 효과는 나오지 않아요."
+        },
+        {
+          "en": "Can Reading Fiction Help Shape Our Identity?",
+          "ko": "픽션 읽기가 정체성 형성에 도움이 될 수 있을까?",
+          "why": "정체성 이야기는 없어요. 오히려 세상에 대해 아무것도 배우지 않는다고 해요."
+        },
+        {
+          "en": "Fiction as a Tool for Improving Critical Thinking",
+          "ko": "비판적 사고를 향상시키는 도구로서의 픽션",
+          "why": "criticize가 첫 문장에 나오지만 '비판적 사고 향상'과는 관계없어요. 새로운 기술을 배우는 것도 아니라고 해요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "After all, we spend (e) insignificant amounts of our time engaging with such fiction. It is no surprise that films, television and sports, video games, novels, and the like, are billion-dollar industries.",
+          "ko": "결국, 우리는 그러한 픽션에 몰두하는 데 우리 시간 중 얼마 안 되는(→ 많은) 부분을 보낸다. 영화, TV와 스포츠, 비디오 게임, 소설, 그리고 그 비슷한 것들이 십억 달러 산업들이라는 것은 놀랍지 않다.",
+          "note": "수십억 달러 산업이 '놀랍지 않은' 이유는 우리가 시간을 '많이' 쓰기 때문이에요. insignificant(사소한, 얼마 안 되는)를 significant(상당한)로 바꿔야 해요."
+        },
+        {
+          "en": "If it were only that, we would not bother engaging with it, and it would not (b) occupy such a large part of our lives.",
+          "ko": "만약 그것이 단지 그것뿐이라면, 우리는 굳이 그것에 몰두하려 하지 않을 것이고, 그것은 우리의 삶에 그렇게 큰 부분을 차지하지 않을 것이다.",
+          "note": "픽션이 실제로는 삶의 큰 부분을 차지한다는 뜻이에요. (b) occupy는 적절하고, (e)가 이와 모순돼요."
+        },
+        {
+          "en": "If we think about this, it may seem (c) odd — why should we be interested in … a story that never happened …?",
+          "ko": "우리가 이것에 대해 생각해 보면, 이것은 이상하게 보일 수도 있는데, 왜 우리는 일어난 적이 없는 … 이야기 … 에 관심을 가져야 하는가?",
+          "note": "뒤에 '왜?'라는 질문이 이어지니 odd(이상한)가 적절해요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) escapes",
+          "ko": "벗어나다",
+          "why": "적절. 픽션은 비판받아야 할 때도 보통 우리의 비웃음에서 벗어나요. 바로 뒤 It's only fiction, we say.와 맞아요."
+        },
+        {
+          "en": "(b) occupy",
+          "ko": "차지하다",
+          "why": "적절. 단지 지어낸 것이라면 삶의 큰 부분을 차지하지 않을 거라는 가정법이에요."
+        },
+        {
+          "en": "(c) odd",
+          "ko": "이상한",
+          "why": "적절. 일어난 적 없는 이야기에 끌리는 게 '이상해 보일 수 있다'며 질문을 던져요."
+        },
+        {
+          "en": "(d) useful",
+          "ko": "유용한",
+          "why": "적절. 삶을 더 효과적으로 헤쳐 나가게 돕는 유용한 경험을 얻는 건 아니라는 내용이에요."
+        },
+        {
+          "en": "(e) insignificant",
+          "ko": "사소한, 얼마 안 되는 → significant(상당한)",
+          "why": "정답(부적절). 픽션 산업이 수십억 달러 규모인 게 놀랍지 않으려면 우리가 시간을 많이 써야 해요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "가정법 과거",
+      "ex": "If it were only that, we would not bother engaging with it, and it would not occupy such a large part of our lives.",
+      "d": "If + 과거(were), would + 동사원형. 실제로는 픽션이 '그 이상'이라는 뜻이에요. bother -ing는 '굳이 ~하다'."
+    },
+    {
+      "t": "a way unique among ~",
+      "ex": "Humans are drawn to fiction, to invented stories, in a way unique among animals.",
+      "d": "unique among animals가 a way를 뒤에서 꾸며요. '동물 중에서 독특한 방식으로'."
+    },
+    {
+      "t": "동격의 대시와 병렬 목적어",
+      "ex": "a story that never happened, and in many cases that could never happen, the travails of people who never existed and could never exist",
+      "d": "reading or watching의 목적어가 a story와 the travails 두 개예요. 관계절이 길어서 쉼표 단위로 끊어 읽어요."
+    },
+    {
+      "t": "even though + 절 (양보)",
+      "ex": "even though these things may teach us nothing about the world or generate art-independent skills",
+      "d": "'비록 ~일지라도'. 그럼에도 픽션에 가치가 있다고 주장한다는 흐름이에요."
+    },
+    {
+      "t": "spend + 시간 + -ing",
+      "ex": "we spend significant amounts of our time engaging with such fiction",
+      "d": "'~하는 데 시간을 쓰다'. engaging이 동명사예요."
+    },
+    {
+      "t": "It is no surprise that ~",
+      "ex": "It is no surprise that films, television and sports, … are billion-dollar industries.",
+      "d": "'~은 놀랍지 않다'. 앞 문장(많은 시간)의 당연한 결과를 말해요."
+    }
+  ],
+  "vocab": [
+    [
+      "novel",
+      "소설"
+    ],
+    [
+      "criticize",
+      "비판하다"
+    ],
+    [
+      "inaccurate",
+      "부정확한"
+    ],
+    [
+      "biased",
+      "편향된"
+    ],
+    [
+      "escape",
+      "벗어나다"
+    ],
+    [
+      "scorn",
+      "비웃음"
+    ],
+    [
+      "make up",
+      "지어내다"
+    ],
+    [
+      "bother -ing",
+      "굳이 ~하다"
+    ],
+    [
+      "engage with",
+      "~에 몰두하다, 관여하다"
+    ],
+    [
+      "occupy",
+      "차지하다"
+    ],
+    [
+      "be drawn to",
+      "~에 끌리다"
+    ],
+    [
+      "invented",
+      "지어낸"
+    ],
+    [
+      "unique",
+      "고유한, 독특한"
+    ],
+    [
+      "odd",
+      "이상한"
+    ],
+    [
+      "travail",
+      "고생"
+    ],
+    [
+      "get out of",
+      "~에서 얻다"
+    ],
+    [
+      "navigate",
+      "헤쳐 나가다"
+    ],
+    [
+      "effectively",
+      "효과적으로"
+    ],
+    [
+      "material",
+      "자료"
+    ],
+    [
+      "value",
+      "가치"
+    ],
+    [
+      "generate",
+      "만들어 내다"
+    ],
+    [
+      "art-independent",
+      "예술과 무관한"
+    ],
+    [
+      "after all",
+      "결국"
+    ],
+    [
+      "insignificant",
+      "사소한, 하찮은"
+    ],
+    [
+      "significant",
+      "상당한"
+    ],
+    [
+      "billion-dollar industry",
+      "수십억 달러 산업"
+    ],
+    [
+      "fascination",
+      "매료"
+    ]
+  ],
+  "summary": {
+    "en": "Although fiction teaches us nothing practical about the world, humans are uniquely drawn to invented stories and spend a great deal of time engaging with them.",
+    "ko": "픽션은 세상에 대해 실용적인 것을 가르쳐 주지 않지만, 인간은 독특하게 지어낸 이야기에 끌리고 그것에 몰두하는 데 많은 시간을 쓴다."
+  },
+  "writing": {
+    "en": "Humans are drawn to invented stories in a way unique among animals.",
+    "ko": "인간은 동물 중에서 고유한 방식으로 지어낸 이야기에 끌린다."
+  },
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 41번 정답은?",
+      "① Drawn to the Unreal: Our Fascination with Fiction이에요. 실재하지 않는 이야기에 끌리는 인간을 다룬 글이에요."
+    ],
+    [
+      "2025년 10월 고3 모의고사 영어 42번 정답은?",
+      "⑤ (e)예요. 픽션 산업이 수십억 달러 규모인 게 놀랍지 않으려면 우리가 픽션에 시간을 많이 써야 하므로 insignificant가 아니라 significant가 맞아요."
+    ],
+    [
+      "41번 ④ 정체성 형성이 오답인 이유는?",
+      "글은 픽션이 세상에 대해 아무것도 가르쳐 주지 않고 새 기술도 주지 않는다고 하면서도 우리가 끌린다는 점에 주목해요. 픽션이 정체성을 만든다는 내용은 없어요."
+    ]
+  ],
+  "note": "42번은 밑줄 다음 문장 하나가 결정적이에요. 수십억 달러 산업이 '놀랍지 않다'려면 우리가 시간을 많이 써야겠죠. 어휘 문제는 밑줄 앞뒤 한 문장씩을 꼭 같이 읽는 습관을 들여요."
+}

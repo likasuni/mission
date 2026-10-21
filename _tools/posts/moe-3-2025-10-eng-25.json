@@ -1,0 +1,184 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 3,
+  "topic": "2022년 4개국의 곡물 용도별(식용·사료·산업·가공) 배분 비율",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 25번",
+    "2025 10월 고3 영어 25번 해설",
+    "고3 10월 모의고사 25번 정답",
+    "고3 모의고사 도표",
+    "곡물 용도별 배분 비율 도표",
+    "share of cereals animal feed"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 25번은 2022년 중국·미국·호주·프랑스 네 나라가 곡물을 식용, 동물 사료, 산업용, 가공용에 각각 얼마나 배분했는지 비교한 도표 문항이에요. 호주의 사료 비율은 식용 비율의 세 배를 넘는데 '세 배보다 적다(less than three times)'고 한 ③이 틀렸어요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "도표",
+      "네 나라(중국, 미국, 호주, 프랑스)별로 곡물의 식용·사료·산업용·가공용 비율을 보여 준다."
+    ],
+    [
+      "①",
+      "네 나라 모두 사료 비율이 40%를 넘고, 중국을 빼면 각 나라에서 사료가 가장 높은 용도 → 일치"
+    ],
+    [
+      "②",
+      "식용 비율은 중국이 가장 높고 미국이 가장 낮음 → 일치"
+    ],
+    [
+      "③",
+      "호주에서 사료 비율이 가장 높은 건 맞지만, 식용 비율의 세 배를 넘어요 → 'less than three times' 불일치"
+    ],
+    [
+      "④",
+      "산업용 비율은 미국이 가장 높고 호주가 가장 낮음 → 일치"
+    ],
+    [
+      "⑤",
+      "프랑스는 가공용 > 산업용, 나머지 세 나라는 산업용 > 가공용으로 반대 → 일치"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Within Australia, the share of cereals allocated to animal feed showed the highest percentage, which was less than three times that of cereals allocated to human food.",
+      "ko": "호주 내에서, 동물 사료에 배분된 곡물 비율이 가장 높았는데, 이는 식용에 배분된 곡물 비율의 세 배보다 적었다.",
+      "note": "앞부분(사료가 가장 높음)은 맞아요. 하지만 사료 비율이 식용 비율의 세 배 이상이라 '세 배보다 적다'가 틀렸어요. 식용 비율에 3을 곱해 보고 판단하세요."
+    },
+    {
+      "en": "Each of the four countries allocated more than 40 percent of cereals to animal feed, which was also the highest share among all cereal uses within each country except in China.",
+      "ko": "네 나라 각각은 곡물의 40퍼센트 넘게를 동물 사료에 배분했는데, 이는 또한 중국을 제외한 각 나라 내 모든 곡물 용도 중 가장 높은 비율이었다.",
+      "note": "except in China처럼 '예외'가 붙은 문장은 그 예외까지 맞는지 꼭 확인해요. 중국만 사료가 1위가 아니어서 일치해요."
+    },
+    {
+      "en": "Within France, more cereals were allocated to processing than to industrial use and this was reversed in all the other countries.",
+      "ko": "프랑스 내에서는 산업용보다 가공용으로 더 많은 곡물이 배분되었고 이는 다른 모든 나라에서 반대였다.",
+      "note": "this was reversed(반대였다)는 나머지 세 나라를 모두 확인해야 해요. 셋 다 산업용이 더 높아서 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Each of the four countries allocated more than 40 percent of cereals to animal feed, … except in China.",
+      "ko": "네 나라 모두 사료 40% 초과, 중국 외에는 사료가 최고",
+      "why": "일치. 네 나라 사료 비율이 모두 40%를 넘고, 중국만 사료가 가장 높은 용도가 아니에요."
+    },
+    {
+      "en": "Among the four countries, China had the highest share of cereals allocated to human food whereas the United States had the lowest.",
+      "ko": "식용 비율 중국 최고, 미국 최저",
+      "why": "일치. 식용 막대는 중국이 가장 길고 미국이 가장 짧아요."
+    },
+    {
+      "en": "Within Australia, the share of cereals allocated to animal feed showed the highest percentage, which was less than three times that of cereals allocated to human food.",
+      "ko": "호주 사료 비율 최고, 식용의 세 배 미만",
+      "why": "정답(불일치). 호주의 사료 비율은 식용 비율의 세 배를 넘어요. 'less than'이 틀렸어요."
+    },
+    {
+      "en": "In terms of industrial use, the United States had the highest percentage of cereals allocated to industrial use while Australia had the lowest.",
+      "ko": "산업용 비율 미국 최고, 호주 최저",
+      "why": "일치. 산업용 비율은 미국이 가장 높고 호주가 가장 낮아요."
+    },
+    {
+      "en": "Within France, more cereals were allocated to processing than to industrial use and this was reversed in all the other countries.",
+      "ko": "프랑스 가공용 > 산업용, 다른 나라는 반대",
+      "why": "일치. 프랑스만 가공용이 산업용보다 높아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "be allocated to",
+      "ex": "the share of cereals allocated to human food",
+      "d": "allocated to가 cereals를 뒤에서 꾸며요. '~에 배분된 곡물의 비율'."
+    },
+    {
+      "t": "배수 비교 (three times that of)",
+      "ex": "which was less than three times that of cereals allocated to human food",
+      "d": "that은 the share를 받아요. '식용 곡물 비율의 세 배'. 배수 표현은 꼭 곱셈으로 확인해요."
+    },
+    {
+      "t": "whereas / while (대조)",
+      "ex": "China had the highest share … whereas the United States had the lowest.",
+      "d": "'반면에'. 앞뒤로 최고와 최저를 대조해요."
+    },
+    {
+      "t": "this was reversed",
+      "ex": "and this was reversed in all the other countries",
+      "d": "'이것은 다른 모든 나라에서 반대였다'. 앞 문장 비교 관계가 뒤집혔다는 뜻이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "share",
+      "비율, 몫"
+    ],
+    [
+      "cereal",
+      "곡물"
+    ],
+    [
+      "allocate",
+      "배분하다, 할당하다"
+    ],
+    [
+      "animal feed",
+      "동물 사료"
+    ],
+    [
+      "industrial use",
+      "산업용"
+    ],
+    [
+      "processing",
+      "가공"
+    ],
+    [
+      "percentage",
+      "비율"
+    ],
+    [
+      "except",
+      "~을 제외하고"
+    ],
+    [
+      "whereas",
+      "반면에"
+    ],
+    [
+      "in terms of",
+      "~ 면에서"
+    ],
+    [
+      "reverse",
+      "반대로 하다, 뒤집다"
+    ],
+    [
+      "three times",
+      "세 배"
+    ]
+  ],
+  "summary": {
+    "en": "The graph compares how China, the United States, Australia, and France allocated cereals to food, feed, industrial use, and processing in 2022.",
+    "ko": "도표는 2022년 중국, 미국, 호주, 프랑스가 곡물을 식용, 사료, 산업용, 가공용에 어떻게 배분했는지 비교한다."
+  },
+  "writing": {
+    "en": "This was reversed in all the other countries.",
+    "ko": "이것은 다른 모든 나라에서 반대였다."
+  },
+  "tip": "도표 문항에서 배수 표현(twice, three times)과 예외 표현(except), 그리고 '나머지 모두(all the other)'가 나오면 그 문장부터 확인하세요. 특히 '~배보다 적다/많다'는 눈대중으로 보지 말고 작은 값에 배수를 곱해 실제로 비교해야 해요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 25번 정답은?",
+      "③이에요. 호주의 사료 비율은 식용 비율의 세 배를 넘는데, 세 배보다 적다고 해서 도표와 맞지 않아요."
+    ],
+    [
+      "2025년 10월 고3 영어 25번은 어떤 유형인가요?",
+      "도표 유형의 2점 문항이에요. 네 나라의 곡물 용도별 배분 비율을 비교한 도표예요."
+    ],
+    [
+      "①의 except in China는 왜 일치인가요?",
+      "네 나라 모두 사료 비율이 40%를 넘고, 중국만 사료가 가장 높은 용도가 아니에요. 예외까지 도표와 맞아서 일치예요."
+    ]
+  ],
+  "note": "도표 문항은 '세 배' 같은 배수가 나오면 눈으로 판단하지 말고 시험지에 곱셈을 한 줄 꼭 써 보세요. 고3도 이 한 줄을 건너뛰어서 틀려요."
+}

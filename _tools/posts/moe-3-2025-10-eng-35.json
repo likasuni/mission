@@ -1,0 +1,204 @@
+{
+  "exam": "moe-3-2025-10",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 4,
+  "topic": "무지의 인정이 과학적 담론의 시작이다",
+  "date": "2026-10-21",
+  "keywords": [
+    "2025년 10월 고3 모의고사 영어 35번",
+    "2025 10월 고3 영어 35번 해설",
+    "고3 10월 모의고사 35번 정답",
+    "고3 모의고사 무관한 문장",
+    "ignorance scientific discourse 지문",
+    "David Helfand wind 무관한 문장"
+  ],
+  "lead": "2025년 10월 고3 모의고사 영어 35번은 '설명'은 오히려 원시적일 수 있고, 무지를 인정하는 것이 과학적 담론의 시작이라는 글의 무관한 문장 문항이에요. ④는 무지가 과학적 발견의 가장 큰 장애물이라고 해서 글의 주장과 정반대예요. 정답은 ④예요.",
+  "flow": [
+    [
+      "통념",
+      "우리는 '무지'를 원시적이거나 어리석은 믿음을 가리키는 데 쓴다."
+    ],
+    [
+      "주장",
+      "오히려 '설명'이 흔히 원시적이고, 무지의 인정이 과학적 담론의 시작이다."
+    ],
+    [
+      "①",
+      "알려지지 않았다고 인정하면 조사할 가치도 인정하는 것이다."
+    ],
+    [
+      "②③",
+      "바람에 대한 관점: '화났다' → '바람 신이 화났다' → '측정 가능한 에너지'. 앞의 둘은 완전한 설명이지만 무지하고, 셋째는 무지를 드러내지만 덜 무지하다."
+    ],
+    [
+      "⑤",
+      "무지가 아니라 설명이 지적 편협함의 특징이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In fact, I would say that \"explanation\" is often primitive or foolish, and the recognition of ignorance is the beginning of scientific discourse.",
+      "ko": "사실, 나는 '설명'이 흔히 원시적이거나 어리석으며, 무지에 대한 인식이 과학적 담론의 시작이라고 말할 것이다.",
+      "note": "필자 주장: 무지의 인정 = 과학의 시작. 무지를 긍정적으로 봐요."
+    },
+    {
+      "en": "④ It is undeniable that ignorance stands as the greatest barrier to scientific discovery and thus it fails to function as a support to scientists.",
+      "ko": "무지가 과학적 발견에 있어서 가장 큰 장애물로 있다는 것은 부인할 수 없고, 그러므로 그것이 과학자들에게 도움으로 기능하는 것에는 실패한다.",
+      "note": "무지를 '가장 큰 장애물'이라 해서 필자의 주장과 정반대예요. 흐름에서 빠져야 해요."
+    },
+    {
+      "en": "⑤ Explanation rather than ignorance is the hallmark of intellectual narrowness.",
+      "ko": "무지보다는 설명이 지적 편협함의 특징이다.",
+      "note": "④를 빼면 ③(셋째 진술이 덜 무지하다) 다음에 ⑤의 결론이 자연스럽게 이어져요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① When we admit that something is unknown …",
+      "ko": "모른다고 인정하면 조사 가치도 인정",
+      "why": "무지 인정 = 과학의 출발이라는 주장을 풀어 줘요. 흐름에 맞아요."
+    },
+    {
+      "en": "② David Helfand … traces how our view of the wind evolved …",
+      "ko": "바람 관점의 발달 예시",
+      "why": "원시적 설명에서 과학적 관점으로 가는 예시예요. 흐름에 맞아요."
+    },
+    {
+      "en": "③ The first two statements provide a complete explanation but are clearly ignorant …",
+      "ko": "앞 두 진술은 완전한 설명이지만 무지",
+      "why": "예시를 해석해 주장(설명이 원시적)을 뒷받침해요. 흐름에 맞아요."
+    },
+    {
+      "en": "④ It is undeniable that ignorance stands as the greatest barrier …",
+      "ko": "무지는 과학적 발견의 가장 큰 장애물",
+      "why": "정답(무관). 무지의 인정이 과학의 시작이라는 글의 주장과 정반대예요."
+    },
+    {
+      "en": "⑤ Explanation rather than ignorance is the hallmark of intellectual narrowness.",
+      "ko": "설명이 지적 편협함의 특징",
+      "why": "글의 결론이에요. 흐름에 맞아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "to부정사 (목적)",
+      "ex": "We often use the word ignorance to denote a primitive or foolish set of beliefs.",
+      "d": "to denote는 '~을 나타내기 위해'. use A to do는 'A를 ~하는 데 쓰다'."
+    },
+    {
+      "t": "admit that ~, then ~",
+      "ex": "When we admit that something is unknown and inexplicable, then we admit also that it is worthy of investigation.",
+      "d": "When절과 then 주절이 짝을 이뤄요. be worthy of는 '~할 가치가 있다'."
+    },
+    {
+      "t": "간접의문문 how",
+      "ex": "traces how our view of the wind evolved from the primitive to the scientific",
+      "d": "how ~ evolved가 traces의 목적어예요. '어떻게 발달했는지를 추적하다'."
+    },
+    {
+      "t": "A rather than B",
+      "ex": "Explanation rather than ignorance is the hallmark of intellectual narrowness.",
+      "d": "'B라기보다는 A'. 동사는 A(Explanation)에 맞춰 is예요."
+    }
+  ],
+  "vocab": [
+    [
+      "ignorance",
+      "무지"
+    ],
+    [
+      "denote",
+      "나타내다, 가리키다"
+    ],
+    [
+      "primitive",
+      "원시적인"
+    ],
+    [
+      "explanation",
+      "설명"
+    ],
+    [
+      "recognition",
+      "인식, 인정"
+    ],
+    [
+      "discourse",
+      "담론"
+    ],
+    [
+      "admit",
+      "인정하다"
+    ],
+    [
+      "inexplicable",
+      "설명할 수 없는"
+    ],
+    [
+      "be worthy of",
+      "~할 가치가 있다"
+    ],
+    [
+      "investigation",
+      "조사"
+    ],
+    [
+      "astronomer",
+      "천문학자"
+    ],
+    [
+      "trace",
+      "추적하다"
+    ],
+    [
+      "evolve",
+      "발달하다, 진화하다"
+    ],
+    [
+      "measurable",
+      "측정 가능한"
+    ],
+    [
+      "undeniable",
+      "부인할 수 없는"
+    ],
+    [
+      "barrier",
+      "장애물"
+    ],
+    [
+      "hallmark",
+      "특징, 특질"
+    ],
+    [
+      "narrowness",
+      "편협함"
+    ]
+  ],
+  "summary": {
+    "en": "Recognizing ignorance, rather than settling for complete-sounding explanations, is what begins scientific inquiry.",
+    "ko": "그럴듯한 완전한 설명에 만족하기보다 무지를 인정하는 것이 과학적 탐구를 시작하게 한다."
+  },
+  "writing": {
+    "en": "The recognition of ignorance is the beginning of scientific discourse.",
+    "ko": "무지에 대한 인식이 과학적 담론의 시작이다."
+  },
+  "tip": "무관한 문장 문항은 글의 주제어(ignorance)가 들어 있어도 '방향'이 같은지 확인해야 해요. 이 글은 무지를 긍정(과학의 시작)하는데 ④는 부정(가장 큰 장애물)해요. 같은 단어로 정반대 말을 하는 문장이 단골 정답이에요.",
+  "faq": [
+    [
+      "2025년 10월 고3 모의고사 영어 35번 정답은?",
+      "④예요. 무지를 과학의 가장 큰 장애물이라고 해서 글의 주장과 정반대예요."
+    ],
+    [
+      "2025년 10월 고3 영어 35번은 어떤 유형인가요?",
+      "무관한 문장 유형의 2점 문항이에요. 무지와 과학적 탐구의 관계를 다룬 지문이에요."
+    ],
+    [
+      "③은 왜 흐름에 맞나요?",
+      "바람 예시의 세 진술을 해석해 '완전한 설명은 오히려 무지하다'는 필자 주장을 뒷받침하고, ⑤의 결론으로 이어져요."
+    ]
+  ],
+  "note": "④는 ignorance, scientific 같은 주제어가 다 들어 있어서 그럴듯해 보여요. 단어가 아니라 '필자가 무지를 좋게 보는지 나쁘게 보는지' 방향을 따라가면 바로 걸러져요."
+}
