@@ -222,9 +222,9 @@ Deno.serve(async (req) => {
   });
   // 기다리던 같은 자료 요청은 '받음' 처리 (준비 알림·관리자 목록에서 빠짐)
   await db.from('note_orders').update({ status: 'done' }).eq('user_id', user.id).eq('label', label).in('status', ['missing', 'resolved']);
-  // 접수 댓글이 있으면 답글을 '전송 완료'로 바꿈
+  // 접수(진행 중)·준비 완료 댓글이 있으면 답글을 '전송 완료'로 바꿈
   await db.from('comments').update({ reply: `${label} 완성돼서 카카오톡으로 보내 드렸어요. 공부에 도움이 되면 좋겠어요!`, replied_at: new Date().toISOString() })
-    .eq('user_id', user.id).eq('content', `[자료 요청] ${label} 부탁드려요.`).like('reply', '%접수했어요%');
+    .eq('user_id', user.id).eq('content', `[자료 요청] ${label} 부탁드려요.`).not('reply', 'like', '%보내 드렸어요%');
   const left = { moe: LIMIT.moe - today.moe - (b.kind === 'moe' ? 1 : 0), book: LIMIT.book - today.book - (b.kind === 'book' ? 1 : 0) };
   return reply(req, 200, { ok: true, label, link, left, expires_at: expires.toISOString(), kakao, kakao_scope: kakaoError.includes('insufficient') || kakaoError.includes('-402') });
 });
