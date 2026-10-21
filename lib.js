@@ -39,7 +39,7 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
         <div class="row">
           <strong>${OWNER_IDS.includes(c.user_id) ? '리카수니 원장 <span class="rc-badge">운영자</span>' : esc(maskName(c.author_name))}</strong>
           ${!c.approved ? '<span class="tag wait">비공개</span>' : ''}
-          ${c.content.startsWith('[자료 요청]') ? (/보내 드렸어요/.test(c.reply || '') ? '<span class="rq-st ok">완료 · 카톡 발송</span>' : '<span class="rq-st">진행 중</span>') : ''}
+          ${c.content.startsWith('[자료 요청]') ? (/보내 드렸어요/.test(c.reply || '') ? '<span class="rq-st ok">완료 · 카톡 발송</span>' : /준비됐어요/.test(c.reply || '') ? '<span class="rq-st rd">준비 완료</span>' : '<span class="rq-st">진행 중</span>') : ''}
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
         <p class="body">${esc(c.content)}</p>
@@ -96,17 +96,27 @@ function recentComments() {
     const h = Math.floor(m / 60); if (h < 24) return h + '시간 전';
     const d = new Date(t); return `${d.getMonth() + 1}월 ${d.getDate()}일`;
   };
-  // 자료 요청 댓글: [자료 요청] … 부탁드려요. 진행 중을 위에, 카톡으로 보낸 요청(답글에 '보내 드렸어요')은 아래에 초록색으로
+  // 자료 요청 댓글: [자료 요청] … 부탁드려요. 상태 3단계 (답글 문구로 구분)
+  // 진행 중(주황, '접수했어요') → 준비 완료(파랑, '준비됐어요' — 드라이브에 올라옴, 요청하면 바로 카톡) → 카톡 발송(초록, '보내 드렸어요')
   const isReq = c => c.content.startsWith('[자료 요청]');
   const isDone = c => /보내 드렸어요/.test(c.reply || '');
+  const isReady = c => !isDone(c) && /준비됐어요/.test(c.reply || '');
+  // '나도 받기' 링크: 요청 칸에 같은 회차·번호가 미리 골라져 있게 (y·m·g·n 또는 book·unit·n)
+  const reqLink = c => {
+    const t = c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '');
+    let m = t.match(/^(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번$/), q = '';
+    if (m) q = `?y=${m[1]}&m=${m[2]}&g=${m[3]}&n=${m[4]}`;
+    else if ((m = t.match(/^(.+) (\d+)(?:강|회) (?:Gateway|(\d+)번)$/))) q = `?book=${encodeURIComponent(m[1])}&unit=${m[2]}&n=${m[3] || 0}`;
+    return `/${c.page_key}/${q}#note-req`;
+  };
   const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', '');
   const shown = { rq: 6, cmt: 3 };
   let cache = null;
   function reqItem(c) {
-    const done = isDone(c);
-    return `<li class="rq${done ? ' ok' : ''}"><span class="rq-st">${done ? '카톡 발송' : '진행 중'}</span>
+    const done = isDone(c), ready = isReady(c);
+    return `<li class="rq${done ? ' ok' : ready ? ' rd' : ''}"><span class="rq-st">${done ? '카톡 발송' : ready ? '준비 완료' : '진행 중'}</span>
       <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${ago(c.created_at)}</span></span>
-      ${c.page_key ? `<a class="rq-go" href="/${esc(c.page_key)}/#note-req">나도 받기</a>` : ''}</li>`;
+      ${c.page_key ? `<a class="rq-go" href="${esc(reqLink(c))}"${ready ? ' title="요청하면 기다리지 않고 바로 카톡으로 받아요"' : ''}>나도 받기</a>` : ''}</li>`;
   }
   function cmtItem(c) {
     const own = OWNER_IDS.includes(c.user_id);
@@ -123,7 +133,7 @@ function recentComments() {
   const more = (key, total) => total > shown[key] ? `<button class="rc-more" data-k="${key}">더보기 (${total - shown[key]}개)</button>` : '';
   function render() {
     const all = cache || [];
-    const rq = all.filter(c => isReq(c) && !isDone(c)).concat(all.filter(c => isReq(c) && isDone(c))), cm = all.filter(c => !isReq(c));
+    const rq = all.filter(c => isReq(c) && !isDone(c) && !isReady(c)).concat(all.filter(c => isReq(c) && isReady(c)), all.filter(c => isReq(c) && isDone(c))), cm = all.filter(c => !isReq(c));
     list.innerHTML = `<div class="rq-col"><h3>최근 자료 요청</h3><ul${shown.rq > 6 ? ' class="open"' : ''}>${rq.slice(0, shown.rq).map(reqItem).join('') || '<li class="rq-empty">필요한 분석노트를 요청해 주세요. 만들어서 카톡으로 보내 드려요.</li>'}</ul>${more('rq', rq.length)}</div>
       <h3 class="rc-sub">최근 댓글</h3>
       <div class="rc-cm${shown.cmt > 3 ? ' open' : ''}">${cm.slice(0, shown.cmt).map(cmtItem).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>'}</div>${more('cmt', cm.length)}`;
@@ -147,7 +157,7 @@ async function noteRequest(user) {
   const card = document.getElementById('note-req');
   if (!card) return;
   const qs = new URLSearchParams(location.search);
-  const d = { y: card.dataset.y || qs.get('y'), m: card.dataset.m || qs.get('m'), g: card.dataset.g || qs.get('g'), book: qs.get('book') }; // 회차·교재 미리 채움
+  const d = { y: qs.get('y') || card.dataset.y, m: qs.get('m') || card.dataset.m, g: qs.get('g') || card.dataset.g, book: qs.get('book') }; // 회차·교재 미리 채움
   let startBook = d.book && NOTE_BOOKS.includes(d.book);
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const head = `<h2>분석노트 요청</h2>
@@ -187,8 +197,9 @@ async function noteRequest(user) {
   const curBook = () => (document.getElementById('nr-b') || {}).value || d.book || NOTE_BOOKS[0];
   const numOpts = k => {
     if (k !== 'book') return opt(range(30, 40), +qs.get('n') >= 30 && +qs.get('n') <= 40 ? +qs.get('n') : 30); // 모의고사는 30~40번만 요청 (나머지는 페이지에서 바로 보기)
-    const c = bcfg(curBook());
-    return (c.gw ? '<option value="0">Gateway</option>' : '') + opt(range(c.from || 1, c.n), c.from || 1);
+    const c = bcfg(curBook()), qn = qs.get('n'); // 주소의 번호(나도 받기)는 같은 교재일 때만
+    const sel = qn !== null && curBook() === d.book && (+qn === 0 ? c.gw : +qn >= (c.from || 1) && +qn <= c.n) ? +qn : (c.from || 1);
+    return (c.gw ? `<option value="0"${sel === 0 ? ' selected' : ''}>Gateway</option>` : '') + opt(range(c.from || 1, c.n), sel);
   };
   card.innerHTML = head + gotHtml + `
     <div class="tabs mt"><button class="tab${startBook ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button></div>
@@ -199,7 +210,7 @@ async function noteRequest(user) {
     </div>
     <div id="nr-book" class="row"${startBook ? '' : ' style="display:none"'}>
       <select id="nr-b">${opt(NOTE_BOOKS, d.book)}</select>
-      <select id="nr-u">${opt(range(1, bcfg(startBook ? d.book : NOTE_BOOKS[0]).max), 1)}</select><span id="nr-ul">${bcfg(startBook ? d.book : NOTE_BOOKS[0]).u}</span>
+      <select id="nr-u">${opt(range(1, bcfg(startBook ? d.book : NOTE_BOOKS[0]).max), startBook && +qs.get('unit') ? +qs.get('unit') : 1)}</select><span id="nr-ul">${bcfg(startBook ? d.book : NOTE_BOOKS[0]).u}</span>
     </div>
     <div class="row mt"><select id="nr-n">${numOpts(startBook ? 'book' : 'moe')}</select><span id="nr-nl">${startBook ? '' : '번 '}분석노트</span>
       <button class="btn btn-navy" id="nr-go">카톡으로 받기</button></div>

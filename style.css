@@ -407,6 +407,8 @@ a.nb:hover { filter: brightness(1.12); }
 .rq-tx .meta { font-size: .74rem; }
 .rq-st { flex: none; display: inline-block; padding: 2px 7px; border-radius: 6px; background: #f59e0b; color: #fff; font-size: .7rem; font-weight: 800; }
 .rq.ok .rq-st, .rq-st.ok { background: #16a34a; }
+.rq.rd .rq-st, .rq-st.rd { background: #2563eb; }
+.rq.rd .rq-go { border-color: #93b4f5; color: #1d4ed8; }
 .rq-go { flex: none; padding: 3px 8px; border-radius: 6px; background: #fff; border: 1px solid #e5d3a1; font-size: .74rem; font-weight: 700; color: #7a4b00; text-decoration: none; }
 .rq.ok .rq-go { border-color: #a7dcb8; color: #166534; }
 .rq-empty { padding: 6px 0; font-size: .8rem; color: #8a93a8; }

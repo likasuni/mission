@@ -135,6 +135,11 @@ Deno.serve(async (req) => {
     const readyAll = list.map((w) => ({ w, spec: makeSpec({ kind: w.kind, ...(w.query || {}) }) }))
       .filter((x) => !('error' in x.spec) && findFiles(all, x.spec as Spec).length);
     if (!readyAll.length) continue;
+    // 드라이브에 올라온 요청은 댓글 답글을 '준비됐어요'로 → 자료실 '최근 자료 요청'에 파란 '준비 완료'로 보임 (처음 한 번만 바뀜)
+    for (const x of readyAll) {
+      await db.from('comments').update({ reply: `${x.w.label} 준비됐어요! 자료실에 카카오로 로그인해서 '카톡으로 받기'를 누르면 바로 받을 수 있어요.`, replied_at: new Date().toISOString() })
+        .eq('user_id', uid).eq('content', `[자료 요청] ${x.w.label} 부탁드려요.`).like('reply', '%접수했어요%');
+    }
     // 자동 발송은 '지난 자동 발송 뒤에 들어온 요청' 중 1개만. 한꺼번에 여러 개 요청했으면 첫 1개만 카톡으로 가고,
     // 나머지는 자료실에 로그인해서 받아야 함 (방문 유도). 학생이 다시 와서 새로 요청하면 그 요청은 또 자동 발송 대상
     const { data: lastAuto } = await db.from('note_orders').select('created_at').eq('user_id', uid).eq('status', 'sent')
@@ -189,7 +194,7 @@ Deno.serve(async (req) => {
     });
     await db.from('note_orders').update({ status: 'done' }).eq('user_id', uid).eq('label', w.label).in('status', ['missing', 'resolved']);
     await db.from('comments').update({ reply: `${w.label} 완성돼서 카카오톡으로 보내 드렸어요. 공부에 도움이 되면 좋겠어요!`, replied_at: new Date().toISOString() })
-      .eq('user_id', uid).eq('content', `[자료 요청] ${w.label} 부탁드려요.`).like('reply', '%접수했어요%');
+      .eq('user_id', uid).eq('content', `[자료 요청] ${w.label} 부탁드려요.`).not('reply', 'like', '%보내 드렸어요%');
     log.push(`${uid}: sent ${w.label}`);
   }
   console.log(log.join(' | '));
