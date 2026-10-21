@@ -174,7 +174,7 @@ function copyText(t) {
 /* ---------- 분석노트 요청 (카톡 자동 발송 기록) ---------- */
 async function tabNotes() {
   const { data, error } = await sb.from('note_orders')
-    .select('id,author_name,label,status,file_name,kakao_sent,expires_at,created_at')
+    .select('id,author_name,label,status,file_name,kakao_sent,expires_at,created_at,query')
     .order('created_at', { ascending: false }).limit(300);
   if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
   const missing = data.filter(o => o.status === 'missing');
@@ -183,15 +183,15 @@ async function tabNotes() {
     <div class="card"><div class="row between">
       <div><strong>${esc(o.label)}</strong><br>
         <span class="meta">${esc(o.author_name || '회원')} · ${fmtDate(o.created_at)}
-        ${o.status === 'sent' ? ` · ${o.kakao_sent ? '카톡 발송' : '카톡 미발송(페이지에서 열람)'} · ${esc(o.file_name || '')}` : ''}</span></div>
+        ${o.status === 'sent' ? ` · ${o.query && o.query.auto ? '<b style="color:#b7791f">자동 카톡</b>' : '<b style="color:#2f855a">자료실에서 받음</b>'}${o.kakao_sent ? ' (카톡 발송)' : ' (카톡 미발송 · 페이지에서 열기)'} · ${esc(o.file_name || '')}` : ''}</span></div>
       ${o.status === 'missing' ? `<button class="btn btn-line btn-sm" onclick="resolveNote(${o.id})">자료 준비 완료</button>` : ''}
     </div></div>`;
   $('#panel').innerHTML = `
-    <div class="card"><p class="muted">학생이 요청하면 구글드라이브에서 파일 이름으로 찾아 24시간 링크를 카톡으로 자동 발송해요.<br>
+    <div class="card"><p class="muted">학생이 요청하면 구글드라이브에서 파일 이름으로 찾아 24시간 링크를 카톡으로 보내요. 없던 자료는 올리면 <b>처음 요청한 1개만 자동 카톡</b>으로 가고, 나머지는 학생이 자료실에 로그인해서 받아요.<br>
     파일 이름 규칙 — 모의고사: <b>2026-09_고1_30번_분석노트.pdf</b> · 부교재: <b>2026 수능특강 라이트 20강 1번 분석노트.pdf</b></p></div>
     <h2>⚠️ 드라이브에 없는 자료 요청 ${missing.length}건</h2>
     ${missing.map(row).join('') || '<div class="card"><p class="muted">없어요. 👍</p></div>'}
-    <h2 class="mt">✅ 보낸 자료 ${sent.length}건</h2>
+    <h2 class="mt">✅ 보낸 자료 ${sent.length}건 <span class="meta">자동 카톡 ${sent.filter(o => o.query && o.query.auto).length} · 자료실에서 받음 ${sent.filter(o => !(o.query && o.query.auto)).length}</span></h2>
     ${sent.map(row).join('') || '<div class="card"><p class="muted">아직 없어요.</p></div>'}`;
 }
 
