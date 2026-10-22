@@ -19,7 +19,7 @@
 - `.github/workflows/drive-sync.yml`: 매일 새벽 3시 7분(한국 시간)에 드라이브 동기화 → 분류 → 빌드 → 블로그 요약 글 발행 → 커밋.
 - 기출 PDF 목록은 `_tools/catalog.json` (드라이브 파일 id 포함). 이 환경에선 드라이브 직접 다운로드가 막혀 있어서, 문제지·정답표는 Google Drive 커넥터(`read_file_content`)로 읽어요. 정답은 정답표 **홀수형** 기준.
 - **데이터 백업**: 댓글·회원·분석노트 요청(Supabase)은 Actions `db-backup` 이 매주 일요일 새벽 4시 17분에 암호화해서 `_backup/supabase.json.enc` 에 저장 (저장소가 공개라 평문 금지). 열쇠는 Secret `BACKUP_KEY` = Supabase `private_config.backup_key`. 푸는 법은 `_backup/README.md`.
-- **분석노트 요청**(Supabase `note_orders`, 함수 `_tools/functions/note-request`·`note-deliver`): 상태 missing(만들어야 함) → resolved(드라이브에 올라옴·학생 수령 대기) → sent(보냄). 자동 카톡은 한 번에 여러 개 요청해도 첫 1개만, 나머지는 학생이 로그인해서 받음. 하루 한도 모의고사 2개·부교재 1개. 요청 댓글 답글 문구(접수했어요/준비됐어요/보내 드렸어요)로 자료실 표시(진행 중/준비 완료/카톡 발송)가 정해짐. 자동 카톡 실패 이유는 `note_orders.kakao_issue`(no_consent·no_token·fail)에 기록돼 관리자 페이지에 '직접 안내 필요'로 보이고, 학생이 다시 로그인할 때까지 재시도하지 않음. 함수는 저장소 코드와 똑같이 Supabase 에 배포.
+- **분석노트 요청**(Supabase `note_orders`, 함수 `_tools/functions/note-request`·`note-deliver`): 상태 missing(만들어야 함) → resolved(드라이브에 올라옴·학생 수령 대기) → sent(보냄). 자동 카톡은 한 번에 여러 개 요청해도 첫 1개만, 나머지는 학생이 로그인해서 받음. 하루 한도 모의고사 2개·부교재 1개 (받기도, 새 번호 요청도 같은 한도. 예전에 요청해 둔 자료를 받는 건 요청으로 안 셈). 요청 댓글 답글 문구(접수했어요/준비됐어요/보내 드렸어요)로 자료실 표시(진행 중/준비 완료/카톡 발송)가 정해짐. 자동 카톡 실패 이유는 `note_orders.kakao_issue`(no_consent·no_token·fail)에 기록돼 관리자 페이지에 '직접 안내 필요'로 보이고, 학생이 다시 로그인할 때까지 재시도하지 않음. 함수는 저장소 코드와 똑같이 Supabase 에 배포.
 - 관리자 페이지 `admin.html`: 관리자 계정(Supabase `admins`)으로 로그인하면 자료실 머리글에 '관리자' 버튼이 보여요.
 - 이 환경에선 data.likasuni.com 접속이 막혀 있어요. 확인은 로컬 빌드 + playwright 화면 캡처(`/opt/pw-browsers/chromium`)로 해요.
 

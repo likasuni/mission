@@ -116,10 +116,15 @@ function findFiles(all: Entry[], sp: Spec) {
   });
 }
 
+// 오늘(한국 시간 자정) 시작 시각
+function dayStartIso() {
+  const kst = new Date(Date.now() + 9 * 3600e3);
+  return new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate()) - 9 * 3600e3).toISOString();
+}
+
 // 오늘(한국 시간) 받은 개수: 종류별
 async function todayCounts(db: any, uid: string) {
-  const kst = new Date(Date.now() + 9 * 3600e3);
-  const dayStart = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate()) - 9 * 3600e3).toISOString();
+  const dayStart = dayStartIso();
   const { data } = await db.from('note_orders').select('kind').eq('user_id', uid).eq('status', 'sent').gte('created_at', dayStart);
   const c: Record<string, number> = { moe: 0, book: 0 };
   for (const r of data || []) c[r.kind] = (c[r.kind] || 0) + 1;
@@ -201,7 +206,22 @@ Deno.serve(async (req) => {
   if ('error' in spec) return reply(req, 400, { error: spec.error });
   const { label, query } = spec;
 
-  // 하루 개수 제한 (한국 시간 자정 기준, 실제로 받은 것만 계산) — 모의고사 2개 · 부교재 1개
+  // 하루 '요청' 개수 제한 (한국 시간 자정 기준) — 새로 요청하는 번호만 셈: 모의고사 2개 · 부교재 1개
+  // 자료가 있든 없든(나도 받기 포함) 오늘 처음 요청한 번호를 셈. 예전에 요청해 둔 자료를 받는 것('준비 완료' 받기)과
+  // 자동 카톡 발송 기록은 새 요청이 아니라서 세지 않음 (받는 개수는 아래 '받기' 제한이 따로 막음)
+  {
+    const ds = new Date(dayStartIso()).getTime();
+    const { data: mine } = await db.from('note_orders').select('kind,label,query,created_at').eq('user_id', user.id).limit(2000);
+    const isToday = (r: any) => new Date(r.created_at).getTime() >= ds;
+    const before = new Set((mine || []).filter((r: any) => !isToday(r)).map((r: any) => r.label));
+    if (!before.has(label)) {
+      const fresh = new Set((mine || []).filter((r: any) => isToday(r) && r.kind === b.kind && !r.query?.auto && !before.has(r.label)).map((r: any) => r.label));
+      if (!fresh.has(label) && fresh.size >= LIMIT[b.kind])
+        return reply(req, 429, { error: `${LIMIT_MSG[b.kind]}까지 요청할 수 있어요. 오늘 요청은 다 쓰셨어요. 내일 다시 요청해 주세요.` });
+    }
+  }
+
+  // 하루 받기 개수 제한 (한국 시간 자정 기준, 실제로 받은 것만 계산) — 모의고사 2개 · 부교재 1개
   const today = await todayCounts(db, user.id);
   if (today[b.kind] >= LIMIT[b.kind]) return reply(req, 429, { error: `${LIMIT_MSG[b.kind]}까지 받을 수 있어요. 내일 다시 요청해 주세요.` });
 
