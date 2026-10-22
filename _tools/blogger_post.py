@@ -118,6 +118,13 @@ def publish(tok, title, content, labels, draft=False):
     return call(req)
 
 
+def update(tok, post_id, title, content, labels):  # 이미 발행한 글의 제목·내용·라벨을 고침 (주소는 그대로)
+    body = json.dumps({'kind': 'blogger#post', 'id': post_id, 'title': title, 'content': content, 'labels': labels}).encode()
+    req = urllib.request.Request(f"https://www.googleapis.com/blogger/v3/blogs/{env('BLOGGER_BLOG_ID')}/posts/{post_id}",
+                                 body, {'Authorization': f'Bearer {tok}', 'Content-Type': 'application/json'}, method='PATCH')
+    return call(req)
+
+
 def main():
     ps = load_posts()
     if sys.argv[1:2] == ['--preview']:

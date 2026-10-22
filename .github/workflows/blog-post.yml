@@ -17,6 +17,10 @@ on:
         description: '임시저장(비공개)으로만 올리기'
         type: boolean
         default: false
+      update:
+        description: '이미 발행한 글 내용 고치기 (발행 기록 있는 파일만)'
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency: drive-sync
@@ -38,7 +42,7 @@ jobs:
           F: ${{ inputs.file }}
           T: ${{ inputs.title }}
           L: ${{ inputs.labels }}
-        run: python blogger_publish_file.py "$F" "$T" "$L" ${{ inputs.draft && '--draft' || '' }}
+        run: python blogger_publish_file.py "$F" "$T" "$L" ${{ inputs.draft && '--draft' || '' }} ${{ inputs.update && '--update' || '' }}
       - name: Commit log
         run: |
           git config user.name "likasuni-bot"
