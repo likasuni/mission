@@ -484,3 +484,8 @@ a.nb:hover { filter: brightness(1.12); }
 .tk-rp b { color: var(--navy); margin-right: 6px; }
 .tk-rp p { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
 @media (max-width: 640px) { #talk .rc-head { padding: 14px 16px; } #talk .rc-title { font-size: 1rem; } .tk-rp { margin-left: 6px; } }
+.tk-item.pin { margin: 6px 0; padding: 12px 14px; border: 1px solid #f3d48a; border-radius: 12px; background: #fffbf0; }
+.tk-item.pin + .tk-item { border-top: 0; }
+.tk-pin { padding: 2px 8px; border-radius: 6px; background: #f59e0b; color: #fff; font-size: .72rem; font-weight: 800; }
+.tk-item.pin.own .tk-tx { background: #fff; }
+.tk-pbtn { margin-left: auto; padding: 2px 8px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #475569; font-size: .72rem; font-weight: 700; cursor: pointer; }

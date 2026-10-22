@@ -78,14 +78,14 @@
       '<span style="font-size: 12px; color: #8a93a8;">' + esc(mask(c.author_name)) + ' · ' + ago(c.created_at) + '</span></span>' +
       (c.page_key ? '<a href="' + esc(reqLink(c)) + '"' + (ready ? ' title="요청하면 기다리지 않고 바로 카톡으로 받아요"' : '') + ' style="flex: none; padding: 3px 8px; border-radius: 6px; background: #fff; border: 1px solid ' + st[2] + '; font-size: 12px; font-weight: 700; color: ' + st[3] + ';">나도 받기</a>' : '') + '</li>';
   }
-  // 소통하기 글 (talk_posts: 비밀글은 내용이 비어 옴)
+  // 소통하기 글 (talk_list: 비밀글은 내용이 비어 옴, 고정 공지가 맨 위)
   function talkItem(p) {
     var hidden = p.secret && p.content == null, nm = p.staff ? '리카수니 원장' : mask(p.author_name);
     var tx = hidden ? '비밀글이에요. 글쓴이와 원장님만 볼 수 있어요.' : (p.content.length > 120 ? p.content.slice(0, 120) + '...' : p.content);
     var rp = p.reply ? (p.reply.length > 120 ? p.reply.slice(0, 120) + '...' : p.reply) : '';
     var st = p.staff ? '' : '<span style="padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 800; ' + (p.reply ? 'background: #16a34a; color: #fff;' : 'background: #e5e7eb; color: #4b5563;') + '">' + (p.reply ? '답변 완료' : '답변 대기') + '</span>';
-    return '<div style="' + BOX + ' padding: 11px 0; border-bottom: 1px solid #e5e7eb;">' +
-      '<div style="display: flex; gap: 6px 8px; align-items: center; flex-wrap: wrap; font-size: 14px;">' + st + '<b>' + esc(nm) + '</b>' +
+    return '<div style="' + BOX + ' padding: 11px ' + (p.pinned ? '12px; margin: 6px 0; border: 1px solid #f3d48a; border-radius: 10px; background: #fffbf0;' : '0; border-bottom: 1px solid #e5e7eb;') + '">' +
+      '<div style="display: flex; gap: 6px 8px; align-items: center; flex-wrap: wrap; font-size: 14px;">' + (p.pinned ? '<span style="padding: 2px 8px; border-radius: 6px; background: #f59e0b; color: #fff; font-size: 11px; font-weight: 800;">📌 공지</span>' : '') + st + '<b>' + esc(nm) + '</b>' +
       (p.staff ? '<span style="padding: 2px 8px; border-radius: 999px; background: #ffc857; color: #4a3000; font-size: 11px; font-weight: 800;">운영자</span>' : '') +
       (p.secret ? '<span style="font-size: 12px; color: #64748b; font-weight: 700;">🔒 비밀글</span>' : '') +
       '<span style="font-size: 12px; color: #8a93a8;">' + ago(p.created_at) + '</span></div>' +
@@ -129,7 +129,7 @@
       .catch(function () { if (!cache.length) render(); });
   }
   function loadTalk() {
-    fetch(URL + '/rest/v1/rpc/talk_posts', { method: 'POST', headers: { apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_limit: 5, p_offset: 0 }) })
+    fetch(URL + '/rest/v1/rpc/talk_list', { method: 'POST', headers: { apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_limit: 5, p_offset: 0 }) })
       .then(function (r) { return r.ok ? r.json() : []; })
       .then(function (d) { talk = Array.isArray(d) ? d : []; render(); })
       .catch(function () {});
