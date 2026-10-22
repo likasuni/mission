@@ -81,7 +81,7 @@ def post_ans(p):
     if p.get('n2'): return ' · '.join(f"{q['n']}번 {CIRC[q['answer'] - 1]}" for q in p['qs'])
     return f"정답 {CIRC[p['answer'] - 1]}"
 def post_card(ps, title):
-    return (f'<div class="card"><h2>{e(title)}</h2><div class="plist">' + ''.join(
+    return (f'<div class="card" id="posts"><h2>{e(title)}</h2><div class="plist">' + ''.join(
         f'<a href="{post_url(p)}"><b>{e(post_name(p))}</b><span>{post_ans(p)} · {e(p["type"])} · {e(p["topic"])}</span></a>' for p in ps)
         + '</div></div>')
 
@@ -412,7 +412,7 @@ for idx, k in enumerate(keys_sorted):
 {en_top}
 {extra}
 {ad()}
-<div class="card"><h2>{e(full)} 기출 원본</h2>{files}</div>
+<div class="card" id="orig"><h2>{e(full)} 기출 원본</h2>{files}</div>
 {sinfo}'''
         else:
             body = f'''<h1 class="page-h1">{e(full)} 문제·정답·해설 PDF</h1>
