@@ -150,8 +150,9 @@ function recentComments() {
 }
 
 /* ---------- 소통하기 게시판 (첫 화면): 회원 질문 + 원장 답변, 비밀글은 글쓴이·관리자만 ---------- */
-// 글은 comments 의 page_key='talk'. 목록은 talk_posts RPC (비밀글 내용 가림). 답변은 관리자 페이지 '댓글 → 소통하기'에서
-function talkBoard(user) {
+// 글은 comments 의 page_key='talk'. 목록은 talk_list RPC (비밀글 내용 가림, 고정 공지가 맨 위). 답변은 관리자 페이지 '댓글 → 소통하기'에서
+// 관리자 계정으로 로그인하면 '공지로 고정'으로 쓰고, 목록에서 고정/해제할 수 있음 (해제하면 날짜 순서로 내려감)
+async function talkBoard(user) {
   const box = document.getElementById('talk');
   if (!box) return;
   const formEl = box.querySelector('.tk-form'), listEl = box.querySelector('.tk-list');
@@ -162,10 +163,11 @@ function talkBoard(user) {
     const d = new Date(t); return `${d.getMonth() + 1}월 ${d.getDate()}일`;
   };
   let limit = 10;
+  const admin = user ? !!(await sb.rpc('is_admin')).data : false;
   formEl.innerHTML = user ? `
     <textarea id="tk-body" maxlength="1000" placeholder="예) 고1 9월 모의고사 32번 빈칸 근거를 어디서 찾아야 할지 모르겠어요. / 분석노트는 어떻게 공부하면 좋을까요?"></textarea>
-    <div class="row between mt tk-bar"><label class="tk-secret"><input type="checkbox" id="tk-secret"> 🔒 비밀글 <span class="meta">(나와 원장님만 볼 수 있어요)</span></label>
-    <span class="row" style="gap:8px"><span class="meta"><span id="tk-count">0</span>/1000</span><button class="btn btn-navy" id="tk-btn">질문 올리기</button></span></div>
+    <div class="row between mt tk-bar">${admin ? '<label class="tk-secret"><input type="checkbox" id="tk-pin" checked> 📌 공지로 고정</label>' : ''}<label class="tk-secret"><input type="checkbox" id="tk-secret"> 🔒 비밀글 <span class="meta">(나와 원장님만 볼 수 있어요)</span></label>
+    <span class="row" style="gap:8px"><span class="meta"><span id="tk-count">0</span>/1000</span><button class="btn btn-navy" id="tk-btn">${admin ? '글 올리기' : '질문 올리기'}</button></span></div>
     <p class="meta tk-note">분석노트가 필요하면 질문 대신 위 <b>자료 요청</b>을 이용해 주세요. 욕설·광고 글은 지워질 수 있어요.</p>`
     : `<p class="muted tk-login">카카오로 로그인하면 원장님께 질문을 남길 수 있어요. 성적·진로 같은 개인 고민은 <b>비밀글</b>로 남길 수 있어요.</p>${loginButtons()}`;
   if (user) {
@@ -177,7 +179,7 @@ function talkBoard(user) {
       const btn = document.getElementById('tk-btn'); btn.disabled = true;
       const { error } = await sb.from('comments').insert({
         page_key: 'talk', page_title: '소통하기', author_name: displayName(user), content,
-        secret: document.getElementById('tk-secret').checked
+        secret: document.getElementById('tk-secret').checked, pinned: admin && document.getElementById('tk-pin').checked
       });
       btn.disabled = false;
       if (error) return toast('등록 실패: ' + error.message);
@@ -190,20 +192,26 @@ function talkBoard(user) {
     const hidden = p.secret && p.content == null;
     const nm = p.staff ? '리카수니 원장' : maskName(p.author_name);
     const st = p.staff ? '' : p.reply ? '<span class="tk-st ok">답변 완료</span>' : '<span class="tk-st">답변 대기</span>';
-    return `<div class="tk-item${p.staff ? ' own' : ''}">
-      <div class="tk-top">${st}<b>${esc(nm)}</b>${p.staff ? '<span class="rc-badge">운영자</span>' : ''}${p.mine ? '<span class="tk-mine">내 글</span>' : ''}${p.secret ? '<span class="tk-lock">🔒 비밀글</span>' : ''}<span class="meta">${ago(p.created_at)}</span></div>
+    return `<div class="tk-item${p.staff ? ' own' : ''}${p.pinned ? ' pin' : ''}">
+      <div class="tk-top">${p.pinned ? '<span class="tk-pin">📌 공지</span>' : ''}${st}<b>${esc(nm)}</b>${p.staff ? '<span class="rc-badge">운영자</span>' : ''}${p.mine ? '<span class="tk-mine">내 글</span>' : ''}${p.secret ? '<span class="tk-lock">🔒 비밀글</span>' : ''}<span class="meta">${ago(p.created_at)}</span>${admin ? `<button class="tk-pbtn" data-id="${p.id}" data-p="${p.pinned ? 1 : 0}">${p.pinned ? '고정 해제' : '📌 고정'}</button>` : ''}</div>
       <p class="tk-tx${hidden ? ' tk-hid' : ''}">${hidden ? '비밀글이에요. 글쓴이와 원장님만 볼 수 있어요.' : esc(p.content)}</p>
       ${p.reply ? `<div class="tk-rp"><b>리카수니 원장</b><span class="meta">${p.replied_at ? ago(p.replied_at) : ''}</span><p>${esc(p.reply)}</p></div>` : ''}
     </div>`;
   }
   async function load() {
-    const { data, error } = await sb.rpc('talk_posts', { p_limit: limit, p_offset: 0 });
+    const { data, error } = await sb.rpc('talk_list', { p_limit: limit, p_offset: 0 });
     if (error) { listEl.innerHTML = '<p class="muted">게시판을 불러오지 못했어요. 잠시 후 다시 열어 주세요.</p>'; return; }
     const rows = data || [], total = rows.length ? Number(rows[0].total) : 0;
     listEl.innerHTML = (rows.map(item).join('') || '<p class="muted">아직 글이 없어요. 첫 질문을 남겨 주세요!</p>') +
       (total > rows.length ? `<button class="rc-more" id="tk-more">더보기 (${total - rows.length}개)</button>` : '');
     const mb = document.getElementById('tk-more');
     if (mb) mb.onclick = () => { limit += 10; load(); };
+    listEl.querySelectorAll('.tk-pbtn').forEach(b => b.onclick = async () => {
+      const { error } = await sb.from('comments').update({ pinned: b.dataset.p !== '1' }).eq('id', +b.dataset.id);
+      if (error) return toast('오류: ' + error.message);
+      toast(b.dataset.p === '1' ? '고정을 풀었어요. 날짜 순서로 내려가요.' : '맨 위에 공지로 고정했어요.');
+      load();
+    });
   }
   load();
   setInterval(() => { if (!document.hidden) load(); }, 60000);

@@ -62,7 +62,7 @@ async function updateBadges() {
 let cFilter = 'all', cUser = null;
 async function tabComments() {
   let q = sb.from('comments')
-    .select('id,author_name,content,created_at,approved,reply,user_id,page_key,page_title,secret,materials(title)')
+    .select('id,author_name,content,created_at,approved,reply,user_id,page_key,page_title,secret,pinned,materials(title)')
     .order('created_at', { ascending: false }).limit(200);
   if (cFilter === 'pending') q = q.eq('approved', false);
   if (cFilter === 'noreply') q = q.is('reply', null);
@@ -87,6 +87,7 @@ async function tabComments() {
           <span class="tag" style="background:${c.approved ? '#e8f7ee;color:#166534' : '#fff4e0;color:#9a5b00'}">${c.approved ? '공개' : '승인 대기'}</span>
           <span class="tag">${c.page_key ? `<a href="${c.page_key === 'talk' ? '/#talk' : '/' + esc(c.page_key) + '/'}" target="_blank">${esc(c.page_title || c.page_key)}</a>` : esc(c.materials?.title || '')}</span>
           ${c.secret ? '<span class="tag" style="background:#f1f5f9;color:#475569">🔒 비밀글</span>' : ''}
+          ${c.pinned ? '<span class="tag" style="background:#fff4e0;color:#9a5b00">📌 고정 공지</span>' : ''}
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
         <p class="body" style="white-space:pre-wrap;margin:8px 0">${esc(c.content)}</p>
@@ -98,12 +99,20 @@ async function tabComments() {
         <div class="row mt" style="gap:6px">
           ${c.approved ? '' : `<button class="btn btn-gold btn-sm" onclick="approve(${c.id})">승인</button>`}
           <button class="btn btn-line btn-sm" onclick="document.getElementById('rp-${c.id}').style.display=''">${c.reply ? '답글 수정' : '답글 달기'}</button>
+          ${c.page_key === 'talk' ? `<button class="btn btn-line btn-sm" onclick="togglePin(${c.id}, ${!c.pinned})">${c.pinned ? '고정 해제' : '📌 공지 고정'}</button>` : ''}
           <button class="btn btn-danger btn-sm" onclick="removeComment(${c.id})">삭제</button>
         </div>
       </div>`).join('') : '<div class="card"><p class="muted">해당하는 댓글이 없어요.</p></div>'}`;
 }
 function setCFilter(k) { cFilter = k; showTab('comments'); }
 
+// 소통하기: 공지 고정/해제 (해제하면 날짜 순서로 내려감)
+async function togglePin(id, on) {
+  const { error } = await sb.from('comments').update({ pinned: on }).eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast(on ? '소통하기 맨 위에 고정했어요.' : '고정을 풀었어요.');
+  showTab('comments');
+}
 async function saveReply(id) {
   const reply = document.getElementById('rt-' + id).value.trim();
   const { error } = await sb.from('comments').update({ reply: reply || null, replied_at: reply ? new Date().toISOString() : null, approved: true }).eq('id', id);
