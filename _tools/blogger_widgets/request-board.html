@@ -53,12 +53,25 @@
     var d = new Date(t); return (d.getMonth() + 1) + '월 ' + d.getDate() + '일';
   }
   function isReq(c) { return c.content.indexOf('[자료 요청]') === 0; }
+  // 상태 3단계 (자료실 lib.js 와 같게): 진행 중(주황, '접수했어요') → 준비 완료(파랑, '준비됐어요') → 카톡 발송(초록, '보내 드렸어요')
+  function isDone(c) { return /보내 드렸어요/.test(c.reply || ''); }
+  function isReady(c) { return !isDone(c) && /준비됐어요/.test(c.reply || ''); }
+  // '나도 받기': 자료실 요청 칸에 같은 회차·번호가 미리 골라져 있게
+  function reqLink(c) {
+    var t = c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', ''), q = '';
+    var m = t.match(/^(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번$/);
+    if (m) q = '?y=' + m[1] + '&m=' + m[2] + '&g=' + m[3] + '&n=' + m[4];
+    else if ((m = t.match(/^(.+) (\d+)(?:강|회) (?:Gateway|(\d+)번)$/))) q = '?book=' + encodeURIComponent(m[1]) + '&unit=' + m[2] + '&n=' + (m[3] || 0);
+    return SITE + c.page_key + '/' + q + '#note-req';
+  }
   function short(c) { return c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', ''); }
   function reqItem(c) {
-    return '<li><span style="flex: none; padding: 2px 7px; border-radius: 6px; background: #f59e0b; color: #fff; font-size: 11px; font-weight: 800;">요청</span>' +
+    var done = isDone(c), ready = isReady(c);
+    var st = done ? ['카톡 발송', '#16a34a', '#a7dcb8', '#166534'] : ready ? ['준비 완료', '#2563eb', '#93b4f5', '#1d4ed8'] : ['진행 중', '#f59e0b', '#e5d3a1', '#7a4b00'];
+    return '<li><span style="flex: none; padding: 2px 7px; border-radius: 6px; background: ' + st[1] + '; color: #fff; font-size: 11px; font-weight: 800;">' + st[0] + '</span>' +
       '<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.35;"><b style="font-weight: 700; overflow-wrap: anywhere;">' + esc(short(c)) + '</b>' +
       '<span style="font-size: 12px; color: #8a93a8;">' + esc(mask(c.author_name)) + ' · ' + ago(c.created_at) + '</span></span>' +
-      (c.page_key ? '<a href="' + SITE + esc(c.page_key) + '/#note-req" style="flex: none; padding: 3px 8px; border-radius: 6px; background: #fff; border: 1px solid #e5d3a1; font-size: 12px; font-weight: 700; color: #7a4b00;">나도 받기</a>' : '') + '</li>';
+      (c.page_key ? '<a href="' + esc(reqLink(c)) + '"' + (ready ? ' title="요청하면 기다리지 않고 바로 카톡으로 받아요"' : '') + ' style="flex: none; padding: 3px 8px; border-radius: 6px; background: #fff; border: 1px solid ' + st[2] + '; font-size: 12px; font-weight: 700; color: ' + st[3] + ';">나도 받기</a>' : '') + '</li>';
   }
   function cmtItem(c) {
     var own = OWNER_IDS.indexOf(c.user_id) >= 0, nm = own ? '리카수니 원장' : mask(c.author_name);
@@ -75,7 +88,9 @@
   }
   function more(k, total) { return total > shown[k] ? '<button class="lks-more" data-k="' + k + '">더보기 (' + (total - shown[k]) + '개)</button>' : ''; }
   function render() {
-    var rq = cache.filter(isReq), cm = cache.filter(function (c) { return !isReq(c); });
+    // 진행 중 → 준비 완료 → 카톡 발송 순서
+    var rq = cache.filter(function (c) { return isReq(c) && !isDone(c) && !isReady(c); })
+      .concat(cache.filter(function (c) { return isReq(c) && isReady(c); }), cache.filter(function (c) { return isReq(c) && isDone(c); })), cm = cache.filter(function (c) { return !isReq(c); });
     list.innerHTML =
       '<div style="' + BOX + ' margin: 12px 0 4px; border: 1px solid #f3d48a; border-radius: 12px; background: #fffbf0; padding: 10px 12px;">' +
         '<div style="margin: 0 0 6px; font-size: 15px; font-weight: 800; color: #7a4b00;">최근 자료 요청</div>' +
