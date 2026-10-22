@@ -254,7 +254,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=25'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=26'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -262,7 +262,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
   addEventListener('load', function () {{ setTimeout(function () {{ if (window.adsbygoogle && window.adsbygoogle.loaded) return; document.querySelectorAll('.ad-slot').forEach(function (d) {{ d.style.display = 'none'; }}); }}, 8000); }});
   var had = false; try {{ had = !!localStorage.getItem('sb-iiyhmskvdjgstoikonwu-auth-token'); }} catch (e) {{}}
   if (had || location.hash.indexOf('access_token') > -1) {{ go(); return; }}
-  var els = ['note-req', 'comments', 'recent-cmt'].map(function (id) {{ return document.getElementById(id); }}).filter(Boolean);
+  var els = ['note-req', 'comments', 'recent-cmt', 'talk'].map(function (id) {{ return document.getElementById(id); }}).filter(Boolean);
   if (els.length && 'IntersectionObserver' in window) {{
     var io = new IntersectionObserver(function (es) {{ if (es.some(function (x) {{ return x.isIntersecting; }})) {{ io.disconnect(); go(); }} }}, {{ rootMargin: '600px' }});
     els.forEach(function (el) {{ io.observe(el); }});
@@ -597,9 +597,11 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <a class="svc-c c5" href="/english/#words"><b>영어 단어 총정리</b><span>회차별 18~45번 핵심 어휘 정리</span><em>{len(word_sess)}개 회차</em></a>
 <a class="svc-c c4" href="/books/"><b>부교재 자료</b><span>수능특강 라이트·올림포스 등 분석노트·단어</span><em>{{NBOOKS}}권</em></a>
 </div>
-<section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청 · 최근 댓글</b></div>
-<div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 궁금한 점은 각 페이지 아래 <b>댓글</b>로 남겨 주세요.<button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
+<section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청</b></div>
+<div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 궁금한 점은 아래 <b>소통하기</b>에 남겨 주세요.<button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div></div></section>
+<section id="talk"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">소통하기</b><span class="tk-sub">공부·자료·수업 무엇이든 원장님께 물어보세요</span></div>
+<div class="rc-body"><div class="tk-form"></div><div class="tk-list"><p class="muted">불러오는 중...</p></div></div></section>
 <h2 class="sec-h">최근 영어 모의고사</h2>
 <div class="card"><div class="chips">''' + ''.join(
     f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-k[2], -k[3], k[1]))[:9]) + '''</div>
