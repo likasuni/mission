@@ -439,3 +439,20 @@ a.nb:hover { filter: brightness(1.12); }
 .gr { padding: 10px 0; border-top: 1px dashed var(--line); } .gr:first-of-type { border-top: 0; } .gr b { color: var(--navy); } .gr p { margin: 4px 0; }
 .vocab th { width: 40%; font-family: Georgia, 'Times New Roman', serif; }
 .faq details { padding: 10px 0; border-top: 1px dashed var(--line); } .faq details:first-of-type { border-top: 0; } .faq summary { cursor: pointer; font-weight: 700; } .faq p { margin: 6px 0 0; }
+
+/* 최근 자료 요청: 왼쪽 만드는 중 · 오른쪽 받을 수 있어요, 위에 학년 필터 */
+.rq-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 12px 0 6px; }
+.rq-top .rc-sub { margin: 0; }
+.rq-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.rq-chip { border: 1px solid #e5d3a1; background: #fff; color: #7a4b00; border-radius: 999px; padding: 3px 11px; font-size: .78rem; font-weight: 700; cursor: pointer; }
+.rq-chip small { font-weight: 600; opacity: .7; }
+.rq-chip.on { background: #7a4b00; border-color: #7a4b00; color: #fff; }
+.rq-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+@media (max-width: 640px) { .rq-cols { grid-template-columns: 1fr; } }
+.rq-cols .rq-col { margin: 0; }
+.rq-cols .rq-col ul { grid-template-columns: 1fr; }
+.rq-cols .rq:nth-child(2) { border-top: 1px dashed #ead9ad; }
+.rq-col.rd { border-color: #bcd0fa; background: #f3f7ff; }
+.rq-col.rd h3 { color: #1d4ed8; }
+.rq-col.rd h3 span { background: #2563eb; }
+.rq-col.rd .rq { border-top-color: #d3e0fb; }
