@@ -111,7 +111,7 @@ Deno.serve(async (req) => {
   const REST = Deno.env.get('KAKAO_REST_KEY') || '', SECRET = Deno.env.get('KAKAO_CLIENT_SECRET') || '';
   if (!REST) return Response.json({ ok: false, reason: 'KAKAO_REST_KEY 미설정' });
 
-  const { data: waits } = await db.from('note_orders').select('user_id,author_name,kind,label,query,created_at')
+  const { data: waits } = await db.from('note_orders').select('user_id,author_name,kind,label,query,created_at,kakao_issue_at')
     .in('status', ['missing', 'resolved']).order('created_at', { ascending: true }).limit(500);
   if (!waits?.length) return Response.json({ ok: true, sent: 0 });
 
@@ -157,16 +157,22 @@ Deno.serve(async (req) => {
     const pick = ready.findIndex((x) => used[x.w.kind] < LIMIT[x.w.kind]);
     if (pick < 0) continue;
     if (pick > 0) ready.unshift(ready.splice(pick, 1)[0]);
+    // 카톡을 못 보낸 이유를 기다리는 요청에 기록 → 관리자 페이지에 '직접 안내 필요'로 보이고, 같은 실패를 매시간 되풀이하지 않음
+    // (학생이 카카오로 다시 로그인해 토큰이 새로 저장되면 그때 한 번 다시 시도)
+    const markIssue = (issue: string) => db.from('note_orders').update({ kakao_issue: issue, kakao_issue_at: new Date().toISOString() })
+      .eq('user_id', uid).in('status', ['missing', 'resolved']);
+    const issueAt = Math.max(0, ...list.map((x) => (x.kakao_issue_at ? new Date(x.kakao_issue_at).getTime() : 0)));
     // 카카오 토큰 (없으면 자료실 로그인 시 '준비됐어요' 알림으로 받음)
     const { data: tk } = await db.from('kakao_tokens').select('*').eq('user_id', uid).maybeSingle();
-    if (!tk) { log.push(`${uid}: no token`); continue; }
+    if (!tk) { if (!issueAt) await markIssue('no_token'); log.push(`${uid}: no token`); continue; }
+    if (issueAt && !(tk.updated_at && new Date(tk.updated_at).getTime() > issueAt)) { log.push(`${uid}: skip (kakao issue)`); continue; }
     let access = tk.access_token as string | null;
     if (!access || !tk.access_expires || new Date(tk.access_expires).getTime() < Date.now() + 10 * 60e3) {
       const p = new URLSearchParams({ grant_type: 'refresh_token', client_id: REST, refresh_token: tk.refresh_token });
       if (SECRET) p.set('client_secret', SECRET);
       const r = await fetch('https://kauth.kakao.com/oauth/token', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' }, body: p });
       const j = await r.json().catch(() => ({}));
-      if (!r.ok || !j.access_token) { log.push(`${uid}: refresh fail ${r.status}`); continue; }
+      if (!r.ok || !j.access_token) { await markIssue('fail'); log.push(`${uid}: refresh fail ${r.status}`); continue; }
       access = j.access_token;
       await db.from('kakao_tokens').update({
         access_token: access, access_expires: new Date(Date.now() + (j.expires_in || 3600) * 1000).toISOString(),
@@ -189,12 +195,17 @@ Deno.serve(async (req) => {
       headers: { Authorization: `Bearer ${access}`, 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
       body: new URLSearchParams({ template_object: JSON.stringify({ object_type: 'text', text, link: { web_url: link, mobile_web_url: link }, button_title: '분석노트 받기' }) }),
     });
-    if (!k.ok) { log.push(`${uid}: send fail ${k.status} ${await k.text()}`); continue; }
+    if (!k.ok) {
+      const err = await k.text();
+      await markIssue(/-402|insufficient/.test(err) ? 'no_consent' : 'fail'); // -402: '카톡 메시지 받기' 동의 안 함
+      log.push(`${uid}: send fail ${k.status} ${err}`); continue;
+    }
     await db.from('note_orders').insert({
       user_id: uid, author_name: w.author_name, kind: w.kind, label: w.label, query: { ...(w.query || {}), auto: true }, status: 'sent',
       drive_id: f.id, file_name: [...f.path, f.name].join('/'), link_token: token, expires_at: expires.toISOString(), kakao_sent: true,
     });
     await db.from('note_orders').update({ status: 'done' }).eq('user_id', uid).eq('label', w.label).in('status', ['missing', 'resolved']);
+    if (issueAt) await db.from('note_orders').update({ kakao_issue: null, kakao_issue_at: null }).eq('user_id', uid).in('status', ['missing', 'resolved']);
     await db.from('comments').update({ reply: `${w.label} 완성돼서 카카오톡으로 보내 드렸어요. 공부에 도움이 되면 좋겠어요!`, replied_at: new Date().toISOString() })
       .eq('user_id', uid).eq('content', `[자료 요청] ${w.label} 부탁드려요.`).not('reply', 'like', '%보내 드렸어요%');
     log.push(`${uid}: sent ${w.label}`);
