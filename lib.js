@@ -23,6 +23,7 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
   renderAuth(user);
   noteRequest(user);
   recentComments();
+  talkBoard(user);
 
   const box = document.getElementById('comments');
   if (!box) return;
@@ -110,7 +111,7 @@ function recentComments() {
     return `/${c.page_key}/${q}#note-req`;
   };
   const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', '');
-  const shown = { pre: 6, rdy: 6, cmt: 3 };
+  const shown = { pre: 6, rdy: 6 };
   let cache = null, gf = 'all';  // gf: 학년 필터 (all·1·2·3·b=부교재)
   const gradeOf = c => { const m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; };
   function reqItem(c) {
@@ -119,22 +120,10 @@ function recentComments() {
       <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${ago(c.created_at)}</span></span>
       ${c.page_key ? `<a class="rq-go" href="${esc(reqLink(c))}"${ready ? ' title="요청하면 기다리지 않고 바로 카톡으로 받아요"' : ''}>나도 받기</a>` : ''}</li>`;
   }
-  function cmtItem(c) {
-    const own = OWNER_IDS.includes(c.user_id);
-    return `<div class="rc-item${own ? ' own' : ''}">
-        <div class="rc-av">${own ? '리' : esc(maskName(c.author_name)[0])}</div>
-        <div class="rc-bd">
-          <div class="rc-nm"><b>${own ? '리카수니 원장' : esc(maskName(c.author_name))}</b>${own ? '<span class="rc-badge">운영자</span>' : ''}<span class="meta">${ago(c.created_at)}</span></div>
-          <p class="rc-tx">${esc(c.content.length > 80 ? c.content.slice(0, 80) + '...' : c.content)}</p>
-          ${c.reply ? `<div class="rc-rp"><b>리카수니 원장</b> ${esc(c.reply.length > 70 ? c.reply.slice(0, 70) + '...' : c.reply)}</div>` : ''}
-          ${c.page_key ? `<a class="rc-pg" href="/${esc(c.page_key)}/#comments">${esc(c.page_title || '글 보기')} →</a>` : ''}
-        </div>
-      </div>`;
-  }
   const more = (key, total) => total > shown[key] ? `<button class="rc-more" data-k="${key}">더보기 (${total - shown[key]}개)</button>` : '';
   function render() {
     const all = cache || [];
-    const reqs = all.filter(isReq), cm = all.filter(c => !isReq(c));
+    const reqs = all.filter(isReq);
     const cnt = k => k === 'all' ? reqs.length : reqs.filter(c => gradeOf(c) === k).length;
     const chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재']].filter(([k]) => k === 'all' || cnt(k))
       .map(([k, t]) => `<button class="rq-chip${gf === k ? ' on' : ''}" data-g="${k}">${t} <small>${cnt(k)}</small></button>`).join('');
@@ -143,16 +132,14 @@ function recentComments() {
     const rdy = rf.filter(isReady).concat(rf.filter(isDone));  // 받을 수 있어요 (준비 완료 → 카톡 발송)
     const col = (cls, title, items, key, empty) => `<div class="rq-col ${cls}"><h3>${title} <span>${items.length}</span></h3><ul${shown[key] > 6 ? ' class="open"' : ''}>${items.slice(0, shown[key]).map(reqItem).join('') || `<li class="rq-empty">${empty}</li>`}</ul>${more(key, items.length)}</div>`;
     list.innerHTML = `<div class="rq-top"><h3 class="rc-sub">최근 자료 요청</h3><div class="rq-chips">${chips}</div></div>
-      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>
-      <h3 class="rc-sub">최근 댓글</h3>
-      <div class="rc-cm${shown.cmt > 3 ? ' open' : ''}">${cm.slice(0, shown.cmt).map(cmtItem).join('') || '<p class="muted">아직 댓글이 없어요. 자료 페이지 아래에서 첫 댓글을 남겨 주세요!</p>'}</div>${more('cmt', cm.length)}`;
+      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
     list.querySelectorAll('.rq-chip').forEach(b => b.onclick = () => { gf = b.dataset.g; shown.pre = shown.rdy = 6; render(); });
     list.querySelectorAll('.rc-more').forEach(btn => btn.onclick = () => { shown[btn.dataset.k] += 6; render(); });
   }
   async function load() {
     const { data } = await sb.from('comments')
       .select('id,user_id,author_name,content,created_at,reply,replied_at,page_key,page_title')
-      .eq('approved', true).order('created_at', { ascending: false }).limit(80);
+      .eq('approved', true).like('content', '[자료 요청]%').order('created_at', { ascending: false }).limit(80);
     cache = data || [];
     render();
   }
@@ -160,6 +147,66 @@ function recentComments() {
   setInterval(() => { if (!document.hidden) load(); }, 30000);
   // 이미 로그인한 회원에게는 로그인 버튼을 숨김
   getUser().then(u => { const b = box.querySelector('.rc-login'); if (u && b) b.remove(); }).catch(() => {});
+}
+
+/* ---------- 소통하기 게시판 (첫 화면): 회원 질문 + 원장 답변, 비밀글은 글쓴이·관리자만 ---------- */
+// 글은 comments 의 page_key='talk'. 목록은 talk_posts RPC (비밀글 내용 가림). 답변은 관리자 페이지 '댓글 → 소통하기'에서
+function talkBoard(user) {
+  const box = document.getElementById('talk');
+  if (!box) return;
+  const formEl = box.querySelector('.tk-form'), listEl = box.querySelector('.tk-list');
+  const ago = t => {
+    const m = Math.floor((Date.now() - new Date(t)) / 60000);
+    if (m < 1) return '방금'; if (m < 60) return m + '분 전';
+    const h = Math.floor(m / 60); if (h < 24) return h + '시간 전';
+    const d = new Date(t); return `${d.getMonth() + 1}월 ${d.getDate()}일`;
+  };
+  let limit = 10;
+  formEl.innerHTML = user ? `
+    <textarea id="tk-body" maxlength="1000" placeholder="예) 고1 9월 모의고사 32번 빈칸 근거를 어디서 찾아야 할지 모르겠어요. / 분석노트는 어떻게 공부하면 좋을까요?"></textarea>
+    <div class="row between mt tk-bar"><label class="tk-secret"><input type="checkbox" id="tk-secret"> 🔒 비밀글 <span class="meta">(나와 원장님만 볼 수 있어요)</span></label>
+    <span class="row" style="gap:8px"><span class="meta"><span id="tk-count">0</span>/1000</span><button class="btn btn-navy" id="tk-btn">질문 올리기</button></span></div>
+    <p class="meta tk-note">분석노트가 필요하면 질문 대신 위 <b>자료 요청</b>을 이용해 주세요. 욕설·광고 글은 지워질 수 있어요.</p>`
+    : `<p class="muted tk-login">카카오로 로그인하면 원장님께 질문을 남길 수 있어요. 성적·진로 같은 개인 고민은 <b>비밀글</b>로 남길 수 있어요.</p>${loginButtons()}`;
+  if (user) {
+    const t = document.getElementById('tk-body');
+    t.oninput = () => (document.getElementById('tk-count').textContent = t.value.trim().length);
+    document.getElementById('tk-btn').onclick = async () => {
+      const content = t.value.trim();
+      if (content.length < 2) return toast('질문 내용을 입력해 주세요.');
+      const btn = document.getElementById('tk-btn'); btn.disabled = true;
+      const { error } = await sb.from('comments').insert({
+        page_key: 'talk', page_title: '소통하기', author_name: displayName(user), content,
+        secret: document.getElementById('tk-secret').checked
+      });
+      btn.disabled = false;
+      if (error) return toast('등록 실패: ' + error.message);
+      t.value = ''; document.getElementById('tk-count').textContent = '0'; document.getElementById('tk-secret').checked = false;
+      toast('질문을 올렸어요! 원장님이 확인하고 답변해 드려요.');
+      load();
+    };
+  }
+  function item(p) {
+    const hidden = p.secret && p.content == null;
+    const nm = p.staff ? '리카수니 원장' : maskName(p.author_name);
+    const st = p.staff ? '' : p.reply ? '<span class="tk-st ok">답변 완료</span>' : '<span class="tk-st">답변 대기</span>';
+    return `<div class="tk-item${p.staff ? ' own' : ''}">
+      <div class="tk-top">${st}<b>${esc(nm)}</b>${p.staff ? '<span class="rc-badge">운영자</span>' : ''}${p.mine ? '<span class="tk-mine">내 글</span>' : ''}${p.secret ? '<span class="tk-lock">🔒 비밀글</span>' : ''}<span class="meta">${ago(p.created_at)}</span></div>
+      <p class="tk-tx${hidden ? ' tk-hid' : ''}">${hidden ? '비밀글이에요. 글쓴이와 원장님만 볼 수 있어요.' : esc(p.content)}</p>
+      ${p.reply ? `<div class="tk-rp"><b>리카수니 원장</b><span class="meta">${p.replied_at ? ago(p.replied_at) : ''}</span><p>${esc(p.reply)}</p></div>` : ''}
+    </div>`;
+  }
+  async function load() {
+    const { data, error } = await sb.rpc('talk_posts', { p_limit: limit, p_offset: 0 });
+    if (error) { listEl.innerHTML = '<p class="muted">게시판을 불러오지 못했어요. 잠시 후 다시 열어 주세요.</p>'; return; }
+    const rows = data || [], total = rows.length ? Number(rows[0].total) : 0;
+    listEl.innerHTML = (rows.map(item).join('') || '<p class="muted">아직 글이 없어요. 첫 질문을 남겨 주세요!</p>') +
+      (total > rows.length ? `<button class="rc-more" id="tk-more">더보기 (${total - rows.length}개)</button>` : '');
+    const mb = document.getElementById('tk-more');
+    if (mb) mb.onclick = () => { limit += 10; load(); };
+  }
+  load();
+  setInterval(() => { if (!document.hidden) load(); }, 60000);
 }
 
 /* ---------- 분석노트 요청 ---------- */

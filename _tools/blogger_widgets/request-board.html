@@ -1,5 +1,5 @@
-<!-- 리카수니 블로그(www.likasuni.com)용 '자료 요청 · 최근 댓글' 상자
-     자료실 첫 화면(lib.js recentComments)과 같은 내용. 자료실 Supabase 의 승인된 댓글을 30초마다 읽어 옴.
+<!-- 리카수니 블로그(www.likasuni.com)용 '자료 요청 · 소통하기' 상자
+     자료실 첫 화면(lib.js recentComments·talkBoard)과 같은 내용. 자료 요청은 30초마다, 소통하기는 1분마다 읽어 옴 (글쓰기는 자료실에서).
      Blogger 레이아웃 → 가젯 추가 → HTML/JavaScript 에 통째로 붙여 넣기 (제목 칸은 비워 두기) -->
 <style>
 /* 가젯 제목(관리용 이름)은 블로그 화면에서 숨김 */
@@ -27,11 +27,11 @@
 <div id="lks-rc" style="box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden; margin: 20px 0; border: 2px solid #1e3a8a; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(30,58,138,.12); font-family: 'Pretendard', 'Noto Sans KR', sans-serif; color: #1f2937; line-height: 1.5;">
   <div class="lks-head" style="box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden; padding: 16px 20px; background: linear-gradient(135deg, #172554, #1e3a8a); color: #fff;">
     <span class="lks-live" style="display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; background: rgba(255,255,255,.14); font-size: 12px; font-weight: 800; color: #fff;"><i style="display: inline-block;"></i>실시간</span>
-    <b class="lks-title" style="color: #fff; font-size: 18px; font-weight: 800;">자료 요청 · 최근 댓글</b>
+    <b class="lks-title" style="color: #fff; font-size: 18px; font-weight: 800;">자료 요청 · 소통하기</b>
   </div>
   <div style="box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden; padding: 4px 20px 10px;">
     <div style="box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden; margin: 12px 0 4px; padding: 8px 12px; border-radius: 10px; background: #fff8e6; border: 1px solid #f3d48a; color: #6b4e00; font-size: 13px;">
-      없는 분석노트도 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 요청은 <a href="https://data.likasuni.com/" style="color: #6b4e00; font-weight: 800; text-decoration: underline;">리카수니 자료실</a>에서 할 수 있어요.
+      없는 분석노트도 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 요청과 질문은 <a href="https://data.likasuni.com/" style="color: #6b4e00; font-weight: 800; text-decoration: underline;">리카수니 자료실</a>에서 할 수 있어요.
     </div>
     <div class="lks-list" style="box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden;"><p style="color: #8a93a8; font-size: 14px;">불러오는 중...</p></div>
   </div>
@@ -47,7 +47,7 @@
   var w = root.closest ? root.closest('.widget') : null;
   if (w) for (var j = 0; j < w.children.length; j++) { var ch = w.children[j]; if (/^H[23]$/.test(ch.tagName) || ch.classList.contains('title')) ch.style.display = 'none'; }
   var list = root.querySelector('.lks-list');
-  var shown = { pre: 6, rdy: 6, cmt: 3 }, cache = [], gf = 'all'; // gf: 학년 필터 (all·1·2·3·b=부교재)
+  var shown = { pre: 6, rdy: 6, cmt: 3 }, cache = [], talk = [], gf = 'all'; // gf: 학년 필터 (all·1·2·3·b=부교재)
   function gradeOf(c) { var m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function mask(n) { n = String(n || '회원').trim(); if (n === '리카수니' || n.length < 2) return n; return n.length === 2 ? n[0] + '*' : n[0] + new Array(n.length - 1).join('*') + n[n.length - 1]; }
@@ -78,18 +78,20 @@
       '<span style="font-size: 12px; color: #8a93a8;">' + esc(mask(c.author_name)) + ' · ' + ago(c.created_at) + '</span></span>' +
       (c.page_key ? '<a href="' + esc(reqLink(c)) + '"' + (ready ? ' title="요청하면 기다리지 않고 바로 카톡으로 받아요"' : '') + ' style="flex: none; padding: 3px 8px; border-radius: 6px; background: #fff; border: 1px solid ' + st[2] + '; font-size: 12px; font-weight: 700; color: ' + st[3] + ';">나도 받기</a>' : '') + '</li>';
   }
-  function cmtItem(c) {
-    var own = OWNER_IDS.indexOf(c.user_id) >= 0, nm = own ? '리카수니 원장' : mask(c.author_name);
-    var tx = c.content.length > 80 ? c.content.slice(0, 80) + '...' : c.content;
-    var rp = c.reply ? (c.reply.length > 70 ? c.reply.slice(0, 70) + '...' : c.reply) : '';
-    return '<div style="display: flex; gap: 10px; padding: 11px 0; border-bottom: 1px solid #e5e7eb;">' +
-      '<div style="flex: none; width: 34px; height: 34px; border-radius: 50%; background: ' + (own ? '#1e3a8a' : '#9aa5ba') + '; color: #fff; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center;">' + (own ? '리' : esc(nm[0])) + '</div>' +
-      '<div style="flex: 1; min-width: 0;">' +
-      '<div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;"><b>' + esc(nm) + '</b>' + (own ? '<span style="padding: 2px 8px; border-radius: 999px; background: #ffc857; color: #4a3000; font-size: 11px; font-weight: 800;">운영자</span>' : '') + '<span style="font-size: 12px; color: #8a93a8;">' + ago(c.created_at) + '</span></div>' +
-      '<div style="' + BOX + ' margin: 4px 0 0; font-size: 15px; overflow-wrap: anywhere;' + (own ? ' padding: 10px 12px; border-radius: 10px; background: #f3f6ff;' : '') + '">' + esc(tx) + '</div>' +
-      (rp ? '<div style="' + BOX + ' margin-top: 6px; padding: 6px 10px; border-radius: 8px; background: #f3f6ff; font-size: 13px;"><b style="color: #1e3a8a; margin-right: 4px;">리카수니 원장</b>' + esc(rp) + '</div>' : '') +
-      (c.page_key ? '<a href="' + SITE + esc(c.page_key) + '/#comments" style="display: inline-block; margin-top: 6px; padding: 3px 10px; border-radius: 8px; background: #eef1f6; font-size: 12px; font-weight: 700; color: #1e3a8a;">' + esc(c.page_title || '글 보기') + ' →</a>' : '') +
-      '</div></div>';
+  // 소통하기 글 (talk_posts: 비밀글은 내용이 비어 옴)
+  function talkItem(p) {
+    var hidden = p.secret && p.content == null, nm = p.staff ? '리카수니 원장' : mask(p.author_name);
+    var tx = hidden ? '비밀글이에요. 글쓴이와 원장님만 볼 수 있어요.' : (p.content.length > 120 ? p.content.slice(0, 120) + '...' : p.content);
+    var rp = p.reply ? (p.reply.length > 120 ? p.reply.slice(0, 120) + '...' : p.reply) : '';
+    var st = p.staff ? '' : '<span style="padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 800; ' + (p.reply ? 'background: #16a34a; color: #fff;' : 'background: #e5e7eb; color: #4b5563;') + '">' + (p.reply ? '답변 완료' : '답변 대기') + '</span>';
+    return '<div style="' + BOX + ' padding: 11px 0; border-bottom: 1px solid #e5e7eb;">' +
+      '<div style="display: flex; gap: 6px 8px; align-items: center; flex-wrap: wrap; font-size: 14px;">' + st + '<b>' + esc(nm) + '</b>' +
+      (p.staff ? '<span style="padding: 2px 8px; border-radius: 999px; background: #ffc857; color: #4a3000; font-size: 11px; font-weight: 800;">운영자</span>' : '') +
+      (p.secret ? '<span style="font-size: 12px; color: #64748b; font-weight: 700;">🔒 비밀글</span>' : '') +
+      '<span style="font-size: 12px; color: #8a93a8;">' + ago(p.created_at) + '</span></div>' +
+      '<div style="' + BOX + ' margin: 4px 0 0; font-size: 15px; overflow-wrap: anywhere;' + (hidden ? ' color: #94a3b8; font-style: italic;' : '') + (p.staff ? ' padding: 10px 12px; border-radius: 10px; background: #f3f6ff;' : '') + '">' + esc(tx) + '</div>' +
+      (rp ? '<div style="' + BOX + ' margin: 6px 0 0 10px; padding: 8px 10px; border-left: 3px solid #1e3a8a; border-radius: 0 8px 8px 0; background: #f3f6ff; font-size: 13px;"><b style="color: #1e3a8a; margin-right: 4px;">리카수니 원장</b>' + esc(rp) + '</div>' : '') +
+      '</div>';
   }
   function more(k, total) { return total > shown[k] ? '<button class="lks-more" data-k="' + k + '">더보기 (' + (total - shown[k]) + '개)</button>' : ''; }
   function col(title, items, key, empty, rd) {
@@ -99,7 +101,7 @@
       '<ul class="lks-rq"' + (shown[key] > 6 ? ' style="max-height: 330px; overflow-y: auto;"' : '') + '>' + (items.slice(0, shown[key]).map(reqItem).join('') || '<li style="font-size: 13px; color: #8a93a8;">' + empty + '</li>') + '</ul>' + more(key, items.length) + '</div>';
   }
   function render() {
-    var reqs = cache.filter(isReq), cm = cache.filter(function (c) { return !isReq(c); });
+    var reqs = cache.filter(isReq), cm = talk, total = talk.length ? Number(talk[0].total) : 0;
     function cnt(k) { return k === 'all' ? reqs.length : reqs.filter(function (c) { return gradeOf(c) === k; }).length; }
     var chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재']].filter(function (x) { return x[0] === 'all' || cnt(x[0]); })
       .map(function (x) { return '<button class="lks-chip' + (gf === x[0] ? ' on' : '') + '" data-g="' + x[0] + '">' + x[1] + ' ' + cnt(x[0]) + '</button>'; }).join('');
@@ -110,21 +112,30 @@
       '<div style="margin: 12px 0 6px; font-size: 16px; font-weight: 800; color: #1e3a8a;">최근 자료 요청</div>' +
       '<div>' + chips + '</div>' +
       '<div class="lks-cols">' + col('만드는 중', pre, 'pre', '기다리는 요청이 없어요.', false) + col('받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.', true) + '</div>' +
-      '<div style="margin: 14px 0 0; font-size: 16px; font-weight: 800; color: #1e3a8a;">최근 댓글</div>' +
-      '<div style="' + BOX + (shown.cmt > 3 ? ' max-height: 330px; overflow-y: auto;' : '') + '">' + (cm.slice(0, shown.cmt).map(cmtItem).join('') || '<p style="color: #8a93a8; font-size: 14px;">아직 댓글이 없어요. 자료실 페이지 아래에서 첫 댓글을 남겨 주세요!</p>') + '</div>' + more('cmt', cm.length);
+      '<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 0;"><span style="font-size: 16px; font-weight: 800; color: #1e3a8a;">소통하기</span><span style="font-size: 13px; color: #6b7280;">원장님께 무엇이든 물어보세요</span>' +
+        '<a href="' + SITE + '#talk" style="margin-left: auto; padding: 5px 12px; border-radius: 8px; background: #1e3a8a; color: #fff; font-size: 13px; font-weight: 800;">질문하러 가기 →</a></div>' +
+      '<div style="' + BOX + (shown.cmt > 3 ? ' max-height: 420px; overflow-y: auto;' : '') + '">' + (cm.slice(0, shown.cmt).map(talkItem).join('') || '<p style="color: #8a93a8; font-size: 14px;">아직 글이 없어요. 자료실에서 첫 질문을 남겨 주세요!</p>') + '</div>' +
+      (total > shown.cmt ? '<a href="' + SITE + '#talk" class="lks-more" style="text-align: center;">소통하기 전체 보기 (' + total + '개) →</a>' : '');
     var cs = list.querySelectorAll('.lks-chip');
     for (var k = 0; k < cs.length; k++) cs[k].onclick = function () { gf = this.getAttribute('data-g'); shown.pre = shown.rdy = 6; render(); };
-    var bs = list.querySelectorAll('.lks-more');
+    var bs = list.querySelectorAll('button.lks-more');
     for (var i = 0; i < bs.length; i++) bs[i].onclick = function () { shown[this.getAttribute('data-k')] += 6; render(); };
   }
   function load() {
-    fetch(URL + '/rest/v1/comments?select=id,user_id,author_name,content,created_at,reply,page_key,page_title&approved=eq.true&order=created_at.desc&limit=80',
+    fetch(URL + '/rest/v1/comments?select=id,user_id,author_name,content,created_at,reply,page_key,page_title&approved=eq.true&content=like.' + encodeURIComponent('[자료 요청]*') + '&order=created_at.desc&limit=80',
       { headers: { apikey: KEY } })
       .then(function (r) { return r.ok ? r.json() : []; })
       .then(function (d) { cache = Array.isArray(d) ? d : []; render(); })
       .catch(function () { if (!cache.length) render(); });
   }
-  load();
+  function loadTalk() {
+    fetch(URL + '/rest/v1/rpc/talk_posts', { method: 'POST', headers: { apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_limit: 5, p_offset: 0 }) })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (d) { talk = Array.isArray(d) ? d : []; render(); })
+      .catch(function () {});
+  }
+  load(); loadTalk();
   setInterval(function () { if (!document.hidden) load(); }, 30000);
+  setInterval(function () { if (!document.hidden) loadTalk(); }, 60000);
 })();
 </script>

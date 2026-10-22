@@ -456,3 +456,31 @@ a.nb:hover { filter: brightness(1.12); }
 .rq-col.rd h3 { color: #1d4ed8; }
 .rq-col.rd h3 span { background: #2563eb; }
 .rq-col.rd .rq { border-top-color: #d3e0fb; }
+
+/* 소통하기 게시판 (첫 화면 '자료 요청' 아래 독립 상자) */
+#talk { margin: 26px 0; border-radius: 16px; overflow: hidden; border: 2px solid #1e3a8a; background: #fff; box-shadow: 0 8px 24px rgba(30, 58, 138, .12); }
+#talk .rc-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 16px 20px; background: linear-gradient(135deg, #172554, #1e3a8a); color: #fff; }
+#talk .rc-head > :not(.rc-live):not(.rc-title):not(.tk-sub) { flex: 0 0 100%; order: -1; max-width: 100%; }
+#talk .rc-title { margin: 0; color: #fff; font-size: 1.12rem; font-weight: 800; }
+#talk .tk-sub { font-size: .82rem; color: #c7d2fe; }
+.tk-form { margin: 14px 0 6px; }
+.tk-form textarea { width: 100%; min-height: 84px; box-sizing: border-box; }
+.tk-bar { flex-wrap: wrap; gap: 8px; }
+.tk-secret { display: inline-flex; align-items: center; gap: 6px; font-size: .86rem; font-weight: 700; cursor: pointer; }
+.tk-note { margin: 6px 0 0; }
+.tk-login { margin: 12px 0 8px; }
+.tk-list { margin-top: 8px; }
+.tk-item { padding: 12px 0; border-top: 1px solid var(--line); }
+.tk-item:first-child { border-top: 0; }
+.tk-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: .9rem; }
+.tk-st { padding: 2px 8px; border-radius: 6px; background: #e5e7eb; color: #4b5563; font-size: .72rem; font-weight: 800; }
+.tk-st.ok { background: #16a34a; color: #fff; }
+.tk-mine { padding: 1px 7px; border-radius: 999px; background: #eef2ff; color: #3730a3; font-size: .72rem; font-weight: 700; }
+.tk-lock { font-size: .76rem; color: #64748b; font-weight: 700; }
+.tk-tx { margin: 6px 0 0; font-size: .95rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.tk-tx.tk-hid { color: #94a3b8; font-style: italic; }
+.tk-item.own .tk-tx { padding: 10px 12px; border-radius: 10px; background: #f3f6ff; }
+.tk-rp { margin: 8px 0 0 14px; padding: 10px 12px; border-left: 3px solid #1e3a8a; border-radius: 0 10px 10px 0; background: #f3f6ff; font-size: .9rem; }
+.tk-rp b { color: var(--navy); margin-right: 6px; }
+.tk-rp p { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 640px) { #talk .rc-head { padding: 14px 16px; } #talk .rc-title { font-size: 1rem; } .tk-rp { margin-left: 6px; } }

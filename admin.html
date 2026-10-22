@@ -62,10 +62,11 @@ async function updateBadges() {
 let cFilter = 'all', cUser = null;
 async function tabComments() {
   let q = sb.from('comments')
-    .select('id,author_name,content,created_at,approved,reply,user_id,page_key,page_title,materials(title)')
+    .select('id,author_name,content,created_at,approved,reply,user_id,page_key,page_title,secret,materials(title)')
     .order('created_at', { ascending: false }).limit(200);
   if (cFilter === 'pending') q = q.eq('approved', false);
   if (cFilter === 'noreply') q = q.is('reply', null);
+  if (cFilter === 'talk') q = q.eq('page_key', 'talk');
   if (cUser) q = q.eq('user_id', cUser.id);
   const { data, error } = await q;
   if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
@@ -74,7 +75,7 @@ async function tabComments() {
   $('#panel').innerHTML = `
     <div class="card">
       <div class="row between" style="flex-wrap:wrap;gap:8px">
-        <div class="row" style="gap:6px;flex-wrap:wrap">${fb('all', '전체 댓글')}${fb('pending', '승인 대기')}${fb('noreply', '답글 안 단 댓글')}</div>
+        <div class="row" style="gap:6px;flex-wrap:wrap">${fb('all', '전체 댓글')}${fb('pending', '승인 대기')}${fb('noreply', '답글 안 단 댓글')}${fb('talk', '소통하기')}</div>
         ${pend ? `<button class="btn btn-gold btn-sm" onclick="approveAll()">대기 ${pend}개 전체 승인</button>` : ''}
       </div>
       ${cUser ? `<p class="mt"><b>${esc(cUser.name)}</b> 님의 댓글만 보는 중 · <a href="#" onclick="cUser=null;showTab('comments');return false">전체로 돌아가기</a></p>` : '<p class="meta mt">회원 이름을 누르면 그 회원이 쓴 댓글만 모아 볼 수 있어요.</p>'}
@@ -84,7 +85,8 @@ async function tabComments() {
         <div class="row" style="flex-wrap:wrap;gap:6px">
           <a href="#" onclick="cUser={id:'${c.user_id}',name:${esc(JSON.stringify(c.author_name || '회원'))}};showTab('comments');return false"><strong>${esc(c.author_name || '익명')}</strong></a>
           <span class="tag" style="background:${c.approved ? '#e8f7ee;color:#166534' : '#fff4e0;color:#9a5b00'}">${c.approved ? '공개' : '승인 대기'}</span>
-          <span class="tag">${c.page_key ? `<a href="/${esc(c.page_key)}/" target="_blank">${esc(c.page_title || c.page_key)}</a>` : esc(c.materials?.title || '')}</span>
+          <span class="tag">${c.page_key ? `<a href="${c.page_key === 'talk' ? '/#talk' : '/' + esc(c.page_key) + '/'}" target="_blank">${esc(c.page_title || c.page_key)}</a>` : esc(c.materials?.title || '')}</span>
+          ${c.secret ? '<span class="tag" style="background:#f1f5f9;color:#475569">🔒 비밀글</span>' : ''}
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
         <p class="body" style="white-space:pre-wrap;margin:8px 0">${esc(c.content)}</p>
@@ -104,7 +106,7 @@ function setCFilter(k) { cFilter = k; showTab('comments'); }
 
 async function saveReply(id) {
   const reply = document.getElementById('rt-' + id).value.trim();
-  const { error } = await sb.from('comments').update({ reply: reply || null, approved: true }).eq('id', id);
+  const { error } = await sb.from('comments').update({ reply: reply || null, replied_at: reply ? new Date().toISOString() : null, approved: true }).eq('id', id);
   if (error) return toast('오류: ' + error.message);
   toast(reply ? '답글을 저장하고 공개했어요.' : '답글을 지웠어요.');
   showTab('comments');
