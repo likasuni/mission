@@ -9,14 +9,18 @@
 #lks-rc .lks-head > :not(.lks-live):not(.lks-title) { flex: 0 0 100%; order: -1; max-width: 100%; }
 #lks-rc .lks-live i { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; animation: lkspulse 1.6s infinite; }
 @keyframes lkspulse { 0% { box-shadow: 0 0 0 0 rgba(74,222,128,.7); } 70% { box-shadow: 0 0 0 8px rgba(74,222,128,0); } 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0); } }
-#lks-rc .lks-rq { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 20px; }
+#lks-rc .lks-rq { list-style: none; margin: 0; padding: 0; }
 #lks-rc .lks-rq li { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-top: 1px dashed #ead9ad; font-size: 14px; margin: 0; }
-#lks-rc .lks-rq li:first-child, #lks-rc .lks-rq li:nth-child(2) { border-top: 0; }
+#lks-rc .lks-rq li:first-child { border-top: 0; }
+#lks-rc .lks-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+#lks-rc .lks-cols .lks-rd .lks-rq li { border-top-color: #d3e0fb; }
+#lks-rc .lks-cols .lks-rd .lks-rq li:first-child { border-top: 0; }
+#lks-rc .lks-chip { border: 1px solid #e5d3a1; background: #fff; color: #7a4b00; border-radius: 999px; padding: 3px 11px; font-size: 13px; font-weight: 700; cursor: pointer; margin: 0 6px 6px 0; }
+#lks-rc .lks-chip.on { background: #7a4b00; border-color: #7a4b00; color: #fff; }
 #lks-rc a { text-decoration: none; }
 #lks-rc .lks-more { display: block; width: 100%; margin: 6px 0 4px; padding: 6px; border: 0; border-radius: 8px; background: rgba(30,58,138,.06); color: #1e3a8a; font-size: 13px; font-weight: 700; cursor: pointer; }
 @media (max-width: 640px) {
-  #lks-rc .lks-rq { grid-template-columns: 1fr; }
-  #lks-rc .lks-rq li:nth-child(2) { border-top: 1px dashed #ead9ad; }
+  #lks-rc .lks-cols { grid-template-columns: 1fr; }
   #lks-rc .lks-title { font-size: 16px !important; }
 }
 </style>
@@ -43,7 +47,8 @@
   var w = root.closest ? root.closest('.widget') : null;
   if (w) for (var j = 0; j < w.children.length; j++) { var ch = w.children[j]; if (/^H[23]$/.test(ch.tagName) || ch.classList.contains('title')) ch.style.display = 'none'; }
   var list = root.querySelector('.lks-list');
-  var shown = { rq: 6, cmt: 3 }, cache = [];
+  var shown = { pre: 6, rdy: 6, cmt: 3 }, cache = [], gf = 'all'; // gf: 학년 필터 (all·1·2·3·b=부교재)
+  function gradeOf(c) { var m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function mask(n) { n = String(n || '회원').trim(); if (n === '리카수니' || n.length < 2) return n; return n.length === 2 ? n[0] + '*' : n[0] + new Array(n.length - 1).join('*') + n[n.length - 1]; }
   function ago(t) {
@@ -87,17 +92,28 @@
       '</div></div>';
   }
   function more(k, total) { return total > shown[k] ? '<button class="lks-more" data-k="' + k + '">더보기 (' + (total - shown[k]) + '개)</button>' : ''; }
+  function col(title, items, key, empty, rd) {
+    var c = rd ? ['#bcd0fa', '#f3f7ff', '#1d4ed8', '#2563eb'] : ['#f3d48a', '#fffbf0', '#7a4b00', '#f59e0b'];
+    return '<div class="lks-col' + (rd ? ' lks-rd' : '') + '" style="' + BOX + ' border: 1px solid ' + c[0] + '; border-radius: 12px; background: ' + c[1] + '; padding: 10px 12px;">' +
+      '<div style="margin: 0 0 6px; font-size: 15px; font-weight: 800; color: ' + c[2] + ';">' + title + ' <span style="display: inline-block; padding: 1px 8px; border-radius: 999px; background: ' + c[3] + '; color: #fff; font-size: 12px;">' + items.length + '</span></div>' +
+      '<ul class="lks-rq"' + (shown[key] > 6 ? ' style="max-height: 330px; overflow-y: auto;"' : '') + '>' + (items.slice(0, shown[key]).map(reqItem).join('') || '<li style="font-size: 13px; color: #8a93a8;">' + empty + '</li>') + '</ul>' + more(key, items.length) + '</div>';
+  }
   function render() {
-    // 진행 중 → 준비 완료 → 카톡 발송 순서
-    var rq = cache.filter(function (c) { return isReq(c) && !isDone(c) && !isReady(c); })
-      .concat(cache.filter(function (c) { return isReq(c) && isReady(c); }), cache.filter(function (c) { return isReq(c) && isDone(c); })), cm = cache.filter(function (c) { return !isReq(c); });
+    var reqs = cache.filter(isReq), cm = cache.filter(function (c) { return !isReq(c); });
+    function cnt(k) { return k === 'all' ? reqs.length : reqs.filter(function (c) { return gradeOf(c) === k; }).length; }
+    var chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재']].filter(function (x) { return x[0] === 'all' || cnt(x[0]); })
+      .map(function (x) { return '<button class="lks-chip' + (gf === x[0] ? ' on' : '') + '" data-g="' + x[0] + '">' + x[1] + ' ' + cnt(x[0]) + '</button>'; }).join('');
+    var rf = reqs.filter(function (c) { return gf === 'all' || gradeOf(c) === gf; });
+    var pre = rf.filter(function (c) { return !isDone(c) && !isReady(c); });          // 만드는 중 (진행 중)
+    var rdy = rf.filter(isReady).concat(rf.filter(isDone));                            // 받을 수 있어요 (준비 완료 → 카톡 발송)
     list.innerHTML =
-      '<div style="' + BOX + ' margin: 12px 0 4px; border: 1px solid #f3d48a; border-radius: 12px; background: #fffbf0; padding: 10px 12px;">' +
-        '<div style="margin: 0 0 6px; font-size: 15px; font-weight: 800; color: #7a4b00;">최근 자료 요청</div>' +
-        '<ul class="lks-rq"' + (shown.rq > 6 ? ' style="max-height: 330px; overflow-y: auto;"' : '') + '>' + (rq.slice(0, shown.rq).map(reqItem).join('') || '<li style="font-size: 13px; color: #8a93a8;">필요한 분석노트를 요청해 주세요. 만들어서 카톡으로 보내 드려요.</li>') + '</ul>' + more('rq', rq.length) +
-      '</div>' +
+      '<div style="margin: 12px 0 6px; font-size: 16px; font-weight: 800; color: #1e3a8a;">최근 자료 요청</div>' +
+      '<div>' + chips + '</div>' +
+      '<div class="lks-cols">' + col('만드는 중', pre, 'pre', '기다리는 요청이 없어요.', false) + col('받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.', true) + '</div>' +
       '<div style="margin: 14px 0 0; font-size: 16px; font-weight: 800; color: #1e3a8a;">최근 댓글</div>' +
       '<div style="' + BOX + (shown.cmt > 3 ? ' max-height: 330px; overflow-y: auto;' : '') + '">' + (cm.slice(0, shown.cmt).map(cmtItem).join('') || '<p style="color: #8a93a8; font-size: 14px;">아직 댓글이 없어요. 자료실 페이지 아래에서 첫 댓글을 남겨 주세요!</p>') + '</div>' + more('cmt', cm.length);
+    var cs = list.querySelectorAll('.lks-chip');
+    for (var k = 0; k < cs.length; k++) cs[k].onclick = function () { gf = this.getAttribute('data-g'); shown.pre = shown.rdy = 6; render(); };
     var bs = list.querySelectorAll('.lks-more');
     for (var i = 0; i < bs.length; i++) bs[i].onclick = function () { shown[this.getAttribute('data-k')] += 6; render(); };
   }
