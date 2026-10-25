@@ -511,3 +511,20 @@ a.nb:hover { filter: brightness(1.12); }
 #push-news a:hover b { text-decoration: underline; }
 #push-news .pn-d { color: var(--muted); font-size: .82rem; min-width: 34px; }
 #push-news .pn-b { color: var(--muted); font-size: .88rem; flex: 1 1 200px; }
+
+/* 학교별 내신 분석 (코코스 학원생 전용) */
+.ns-lock { display: inline-block; margin-left: 6px; padding: 2px 9px; border-radius: 99px; background: #fff7e6; border: 1px solid #f3d48a; color: #7a4b00; font-size: .78rem; font-weight: 800; vertical-align: 3px; }
+.ns-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.ns-school { display: flex; flex-direction: column; gap: 2px; padding: 14px; border-radius: 12px; border: 1.5px solid var(--line); background: #fff; color: var(--navy); text-decoration: none; }
+.ns-school:hover { border-color: var(--navy); }
+.ns-school b { font-size: 1.1rem; }
+.ns-school span { font-size: .8rem; color: var(--muted); }
+.ns-school em { align-self: flex-start; margin-top: 6px; padding: 2px 8px; border-radius: 6px; background: #eef1f6; color: #6b7280; font-style: normal; font-size: .74rem; font-weight: 700; }
+.ns-school em.ok { background: #dcfce7; color: #166534; }
+.ns-exams { list-style: none; margin: 0; padding: 0; }
+.ns-exams li { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 10px 0; border-top: 1px solid var(--line); }
+.ns-cocos { background: linear-gradient(135deg, #fffbeb, #fff7e6); border-color: #f3d48a; }
+.btn-cocos { display: inline-block; padding: 9px 16px; border-radius: 10px; background: var(--navy); color: #fff; font-weight: 800; text-decoration: none; }
+.ns-banner { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 12px 0 0; padding: 14px 18px; border-radius: 14px; background: linear-gradient(135deg, #0f766e, #14b8a6); color: #fff; text-decoration: none; }
+.ns-banner b { font-size: 1.05rem; } .ns-banner b small { margin-left: 6px; font-size: .78rem; opacity: .9; }
+.ns-banner span { flex: 1; font-size: .86rem; opacity: .95; } .ns-banner em { font-style: normal; font-weight: 800; font-size: .86rem; }
