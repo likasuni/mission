@@ -199,7 +199,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/exams/', '전과목 기출'), ('/notes/', '분석노트 요청')]
+NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/naesin/', '내신 분석'), ('/exams/', '전과목 기출'), ('/notes/', '분석노트 요청')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -559,6 +559,45 @@ page('/posts/', '수업자료 · 수능·모의고사 영어 문항별 해설 �
      '수능·고3·고2·고1 모의고사 영어 문항별 해설. 정답 근거, 오답 이유, 핵심 구문과 어휘를 짧게 정리. 리카수니 자료실', pb,
      [('/', '홈'), ('/posts/', '수업자료')], '/posts/', comments=('posts', '수업자료'))
 
+# ---------- 학교별 내신 분석 (코코스 학원생 전용) ----------
+# 공개 페이지에는 학교 목록과 시험 제목만. 분석 내용은 공개 저장소에 두지 않고 학원생 인증 후 Supabase 에서 불러올 예정.
+NAESIN = json.load(open(os.path.join(ROOT, '_tools', 'naesin.json')))['schools']
+ACADEMY = ('<div class="card ns-cocos"><h2>이매동 코코스학원</h2><p>리카수니 원장이 직접 가르치는 성남 분당 이매동 영어학원이에요. '
+           '학교별 기출을 분석해 내신 대비 수업에 그대로 반영해요. 상담·등록 문의는 학원으로 연락 주세요.</p>'
+           '<p><a class="btn-cocos" href="https://cocosedu.co.kr" target="_blank" rel="noopener">코코스학원 홈페이지 →</a></p></div>')
+NS_HOW = ('<div class="card"><h2>학원생 이용 방법</h2><ol class="sum">'
+          '<li>카카오로 로그인해요.</li><li>학원생 인증을 신청하면 원장님이 확인 후 승인해요.</li>'
+          '<li>승인되면 학교 → 시험을 골라 분석 내용을 볼 수 있어요.</li></ol>'
+          '<p class="muted">학교 시험지의 저작권은 각 학교에 있어요. 분석 내용은 코코스 학원생 수업용으로만 공개하고, 외부 공유는 하지 말아 주세요.</p></div>')
+def ns_card(sc):
+    n = len(sc.get('exams', []))
+    return (f'<a class="ns-school" href="/naesin/{sc["slug"]}/"><b>{e(sc["short"])}</b><span>{e(sc["name"])}</span>'
+            f'<em class="{"ok" if n else ""}">{f"분석 {n}개" if n else "준비 중"}</em></a>')
+nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
+      '<p class="lead">이매동 코코스학원 리카수니 원장이 학교 기출 시험지를 직접 분석해요. 출제 범위, 문항별 포인트, 서술형 대비까지 정리하고, '
+      '<b>분석 내용은 코코스 학원생만</b> 볼 수 있어요. 학교별 분석은 시험이 끝날 때마다 계속 채워 가요.</p>')
+for lv, lname in (('고', '고등학교'), ('중', '중학교')):
+    nb += f'<div class="card"><h2>{lname}</h2><div class="ns-grid">' + ''.join(ns_card(sc) for sc in NAESIN if sc['level'] == lv) + '</div></div>'
+nb += NS_HOW + ACADEMY
+page('/naesin/', '학교별 영어 내신 분석 · 태원고 송림고 이매고 돌마고 판교고 · 이매중 야탑중 하탑중 송림중 | 리카수니 자료실',
+     '분당 태원고·송림고·이매고·돌마고·판교고, 이매중·야탑중·하탑중·송림중 영어 내신 기출 분석. 이매동 코코스학원 학원생 전용. 리카수니 원장 직접 분석.',
+     nb, [('/', '홈'), ('/naesin/', '내신 분석')], '/naesin/')
+for sc in NAESIN:
+    ex = sc.get('exams', [])
+    sb_ = (f'<h1 class="page-h1">{e(sc["name"])} 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
+           f'<p class="lead">{e(sc["short"])} 영어 내신 기출을 이매동 코코스학원 리카수니 원장이 직접 분석했어요. 출제 범위와 문항별 포인트, 서술형 대비 방법을 정리해요. '
+           '분석 내용은 코코스 학원생 인증 후 볼 수 있어요.</p>'
+           '<div class="card"><h2>시험별 분석</h2>'
+           + ('<ul class="ns-exams">' + ''.join(f'<li><b>{e(x)}</b><span class="ns-lock">🔒 학원생 전용</span></li>' for x in ex) + '</ul>' if ex
+              else '<p class="muted">첫 분석을 준비하고 있어요. 시험이 끝나면 차례대로 올라와요.</p>') + '</div>'
+           + NS_HOW
+           + '<div class="card"><h2>다른 학교</h2><div class="chips">' + ''.join(
+               f'<a class="chip" href="/naesin/{o["slug"]}/">{e(o["short"])}</a>' for o in NAESIN if o is not sc) + '</div></div>'
+           + ACADEMY)
+    page(f'/naesin/{sc["slug"]}/', f'{sc["name"]} 영어 내신 기출 분석 ({sc["short"]}) | 리카수니 자료실',
+         f'{sc["name"]}({sc["short"]}) 영어 내신 기출문제 분석. 출제 범위, 문항별 포인트, 서술형 대비. 이매동 코코스학원 학원생 전용, 리카수니 원장 직접 분석.',
+         sb_, [('/', '홈'), ('/naesin/', '내신 분석'), (f'/naesin/{sc["slug"]}/', sc['short'])], '/naesin/')
+
 # ---------- 학년 / 수능 목록 ----------
 for g in (1, 2, 3):
     ks = [k for k in sessions if k[0] == 'moe' and k[1] == g]
@@ -603,6 +642,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <a class="svc-c c5" href="/english/#words"><b>영어 단어 총정리</b><span>회차별 18~45번 핵심 어휘 정리</span><em>{len(word_sess)}개 회차</em></a>
 <a class="svc-c c4" href="/books/"><b>부교재 자료</b><span>수능특강 라이트·올림포스 등 분석노트·단어</span><em>{{NBOOKS}}권</em></a>
 </div>
+<a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>
 <section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청</b></div>
 <div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 궁금한 점은 아래 <b>소통하기</b>에 남겨 주세요.<button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div></div></section>
