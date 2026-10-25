@@ -489,3 +489,15 @@ a.nb:hover { filter: brightness(1.12); }
 .tk-pin { padding: 2px 8px; border-radius: 6px; background: #f59e0b; color: #fff; font-size: .72rem; font-weight: 800; }
 .tk-item.pin.own .tk-tx { background: #fff; }
 .tk-pbtn { margin-left: auto; padding: 2px 8px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #475569; font-size: .72rem; font-weight: 700; cursor: pointer; }
+
+/* 새 자료 알림 버튼 (push.js) */
+.push-ic { background: rgba(255,255,255,.14); border: 0; color: #fff; width: 32px; height: 32px; border-radius: 99px; font-size: 1rem; line-height: 1; cursor: pointer; padding: 0; flex: none; }
+.push-ic:hover { background: rgba(255,255,255,.28); }
+.push-ic.on { background: var(--gold); }
+.push-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; width: 100%; box-sizing: border-box; margin: 0 0 18px; padding: 12px 16px; border: 1px solid #f1d58a; border-radius: 12px; background: #fff8e6; color: var(--navy-d); font: inherit; text-align: left; cursor: pointer; }
+.push-bar .pt { font-weight: 800; }
+.push-bar small { color: var(--muted); flex: 1 1 220px; }
+.push-bar.on { background: #eef7ee; border-color: #b9dcb9; }
+.push-bar.on small { display: none; }
+@media (max-width: 640px) { .top-r { gap: 6px; } .push-ic { width: 28px; height: 28px; font-size: .85rem; } }
+@media (max-width: 400px) { .brand { font-size: .95rem; } .hdr-cta { padding: 6px 8px; } .top-r { gap: 4px; } }

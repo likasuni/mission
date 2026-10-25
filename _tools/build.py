@@ -233,13 +233,16 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <meta name="google-site-verification" content="BckdSBCPVseYvq2HonB5Q7G9pfCOG10GZvoCOIoK4sk">
 <meta name="naver-site-verification" content="7e1745db79feaa04ab25201be2de4645c4641c34">
 <link rel="icon" href="/favicon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<meta name="theme-color" content="#172556">
 <style>{CSS}</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_CLIENT}" crossorigin="anonymous"></script>
 {GA}
 {''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
 <body>
-<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><a class="hdr-cta" href="/notes/">분석노트 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
+<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><button class="push-btn push-ic" type="button" title="새 자료 알림 받기" aria-label="새 자료 알림 받기">🔔</button><a class="hdr-cta" href="/notes/">분석노트 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
 <nav class="nav"><div class="nav-in">{nav}</div></nav>
 <main class="wrap">
 {crumb_html}
@@ -251,6 +254,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <a href="/privacy.html">개인정보처리방침</a> <a href="/admin.html" rel="nofollow">관리자</a>
 <div class="biz">기출문제 저작권은 한국교육과정평가원·각 시도교육청에 있으며, 학습 목적으로 공개 자료를 정리해 제공합니다.<br>상호: 리카수니</div>
 </footer>
+<script src="/push.js?v=1" defer></script>
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
@@ -590,6 +594,7 @@ note_files = sum(len(NOTES[k]) for k in en_sess)
 word_sess = [k for k in en_sess if k in WORDS]
 body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <p>고1·고2·고3 영어 모의고사를 회차별로 정리했어요. 리카수니 원장이 직접 만든 <b>분석노트·변형문제·단어</b>를 무료로 받아 가세요.</p></section>
+<button class="push-btn push-bar" type="button"><span class="pi">🔔</span><span class="pt">새 자료 알림 받기</span><small>새 분석노트·해설이 올라오면 휴대폰으로 바로 알려 드려요</small></button>
 <h2 class="sec-h">영어 모의고사 핵심 자료</h2>
 <div class="svc">
 <a class="svc-c c3" href="/english/"><b>문항별 분석노트</b><span>18~29번·41~45번 바로 보기, 30~40번 최신 자료는 카톡 요청</span><em>{note_files}개 문항</em></a>

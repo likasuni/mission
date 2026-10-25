@@ -41,6 +41,19 @@
 - 연결 테스트: Actions → `blog-test` → 날짜 입력 → 블로그에 **임시저장(비공개)** 으로 올라감. 확인 뒤 임시저장 글은 지워 달라고 안내.
 - 자유 형식 글(업데이트 소식, 내신 분석 등): `_tools/blog_queue/<파일>.html` 에 글을 쓰고 main 에 합친 뒤 Actions → `blog-post` (file·title·labels·draft) 로 발행. `_tools/blogger_publish_file.py` 가 올리고 `blogger_posted.json` 에 `file:<파일>` 로 기록해서 같은 글은 두 번 안 올라가요.
 
+## 자료 완료 알림 (원장님이 "완료"라고 하면)
+
+두 가지를 바로 보내요. Supabase 프로젝트 `iiyhmskvdjgstoikonwu` 에서 `execute_sql` 로 실행해요 (이 환경은 supabase.co 직접 접속이 막혀 있어서 DB 의 `net.http_post` 로 불러요).
+
+1. **요청한 학생 카톡**: `note-deliver` 함수(평소엔 매시 5분 자동)를 바로 실행. 드라이브에 올라온 요청 자료를 그 학생에게 카톡 '나와의 채팅'으로 보내요 (회원당 하루 1개 규칙 그대로).
+   `select net.http_post(url := 'https://iiyhmskvdjgstoikonwu.supabase.co/functions/v1/note-deliver', headers := jsonb_build_object('Content-Type','application/json','x-cron-key',(select v from public.private_config where k='cron_key')), body := '{}'::jsonb, timeout_milliseconds := 60000);`
+2. **알림 켠 모든 학생 웹 푸시**: `push` 함수 `send`. 제목·내용·주소(자료실 안 경로)는 원장님께 보여 드리고 확인받은 뒤 보내요.
+   `select net.http_post(url := 'https://iiyhmskvdjgstoikonwu.supabase.co/functions/v1/push', headers := jsonb_build_object('Content-Type','application/json','x-cron-key',(select v from public.private_config where k='cron_key')), body := jsonb_build_object('action','send','title','리카수니 자료실','body','2025년 10월 고2 영어 분석노트가 올라왔어요','url','/moe/go2/2025-10/eng/'));`
+   결과는 `select status_code, content from net._http_response where id = <위 결과 번호>;` 로 확인 (sent·gone·fail 개수). 기록은 `push_log` 테이블.
+- 웹 푸시 구조: 사이트 `push.js`(🔔 버튼, `.push-btn`) + `sw.js` + `manifest.webmanifest`, 서버 `_tools/functions/push` (구독은 `push_subs`, VAPID 키는 `private_config` 의 vapid_public·vapid_private, 비밀키는 밖으로 꺼내지 않아요).
+- 아이폰은 사파리 '홈 화면에 추가' 후 그 아이콘으로 열어야 알림을 켤 수 있어요 (iOS 16.4 이상).
+- 알림은 너무 자주 보내지 않아요 (하루 1~2번 정도). 학생이 알림을 끄면 효과가 사라져요.
+
 ## 진행 방식
 
 - 작업 브랜치에서 커밋 → PR → main 에 합치기까지 해요 (원장님이 이 흐름에 동의함). 바꾼 뒤엔 로컬 빌드와 화면 캡처로 확인하고 결과 이미지를 보여 드려요.
