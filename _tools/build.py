@@ -612,6 +612,22 @@ for sc in NAESIN:
          f'{sc["name"]}({sc["short"]}) 영어 내신 기출문제 분석. 출제 범위, 문항별 포인트, 서술형 대비. 이매동 코코스학원 학원생 전용, 리카수니 원장 직접 분석.',
          sb_, [('/', '홈'), ('/naesin/', '내신 분석'), (f'/naesin/{sc["slug"]}/', sc['short'])], '/naesin/')
 
+def ns_text(t):
+    """공개 문항 본문: ' / ', '<br>', ①②… 로 이어 쓴 항목을 줄 목록으로 나눠 읽기 쉽게 (○·✗ 표시는 색 배지)"""
+    mk = lambda x: x.replace('○', '<span class="mk ok">○</span>').replace('✗', '<span class="mk ng">✗</span>')
+    if isinstance(t, list): parts, intro = t, ''
+    elif ' / ' in t: parts, intro = t.split(' / '), ''
+    elif '<br>' in t: parts, intro = t.split('<br>'), ''
+    else:
+        parts = _re.split(r'\s(?=[①②③④⑤⑥⑦⑧⑨]\s)', t)
+        intro = '' if parts[0][:1] in '①②③④⑤⑥⑦⑧⑨' else parts.pop(0)
+        if len(parts) < 2:
+            sents = [x + ('' if x.endswith('.') else '.') for x in _re.split(r'(?<=요\.)\s+', t) if x.strip()]
+            if len(t) > 140 and len(sents) >= 3:  # 긴 문단은 문장마다 한 줄씩
+                return '<ul class="ns-list">' + ''.join(f'<li>{mk(x)}</li>' for x in sents) + '</ul>'
+            return f'<p>{mk(t)}</p>'
+    return (f'<p>{mk(intro)}</p>' if intro else '') + '<ul class="ns-list">' + ''.join(f'<li>{mk(x.strip())}</li>' for x in parts if x.strip()) + '</ul>'
+
 for sc in NAESIN:
     for x in sc.get('exams', []):
         for it in NS_PUB[(sc['slug'], x['key'])]:
@@ -627,13 +643,18 @@ for sc in NAESIN:
                 body += ('<div class="card"><h2>선택지 단어 짝 한눈에</h2><table class="ns-pairs"><tr><th>밑줄 단어</th><th>바꾼 단어</th><th>같은 뜻?</th><th>설명</th></tr>'
                          + ''.join(f'<tr class="{"bad" if ok == "✗" else ""}"><td><b>{e(w)}</b></td><td>{e(a2)}</td><td>{e(ok)}</td><td>{e(d)}</td></tr>' for w, a2, ok, d in it['pairs'])
                          + '</table></div>')
-            body += ''.join(f'<div class="card"><h2>{e(h)}</h2><p>{t}</p></div>' for h, t in it.get('sections', []))
+            body += ''.join(f'<div class="card"><h2>{e(h)}</h2>{ns_text(t)}</div>' for h, t in it.get('sections', []))
             if it.get('tip'): body += f'<div class="tip"><b>풀이 팁</b>{e(it["tip"])}</div>'
             body += (f'<div class="card ns-cta"><h2>🔒 {e(sc["short"])} {e(x["title"])} 전체 분석</h2><p>{e(x["info"])} 전체 문항 분석, 시험 총평, 다음 시험 대비 포인트는 <b>코코스 학원생 전용</b>이에요.</p>'
                      f'<p><a class="btn-cocos" href="/naesin/{sc["slug"]}/#ns-member">학원생으로 전체 분석 보기 →</a></p></div>' + ACADEMY)
-            page(url, f'{nm} 해설·분석 ({it["type"]}) | 리카수니 자료실',
+            LASTMOD[url] = it.get('updated', it['date'])
+            ld = [{"@context": "https://schema.org", "@type": "Article", "headline": f'{nm} 분석 · {it["type"]}', "description": it['lead'][:200],
+                   "datePublished": it['date'], "dateModified": LASTMOD[url], "inLanguage": "ko", "keywords": ', '.join(it.get('keywords', [])),
+                   "author": {"@type": "Person", "name": "리카수니 원장"}, "publisher": {"@type": "Organization", "name": "리카수니 자료실"},
+                   "about": f'{sc["name"]} 영어 내신 기출', "mainEntityOfPage": SITE + url}]
+            page(url, f'{nm} 영어 내신 기출 해설·분석 ({it["type"]}) | 리카수니 자료실',
                  it['lead'][:150], body,
-                 [('/', '홈'), ('/naesin/', '내신 분석'), (f'/naesin/{sc["slug"]}/', sc['short']), (url, lbl)], '/naesin/', og_type='article')
+                 [('/', '홈'), ('/naesin/', '내신 분석'), (f'/naesin/{sc["slug"]}/', sc['short']), (url, lbl)], '/naesin/', extra_ld=ld, og_type='article')
 
 # ---------- 학년 / 수능 목록 ----------
 for g in (1, 2, 3):
