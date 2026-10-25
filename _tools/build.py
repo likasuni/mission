@@ -254,7 +254,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <a href="/privacy.html">개인정보처리방침</a> <a href="/admin.html" rel="nofollow">관리자</a>
 <div class="biz">기출문제 저작권은 한국교육과정평가원·각 시도교육청에 있으며, 학습 목적으로 공개 자료를 정리해 제공합니다.<br>상호: 리카수니</div>
 </footer>
-<script src="/push.js?v=2" defer></script>
+<script src="/push.js?v=3" defer></script>
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
@@ -595,6 +595,7 @@ word_sess = [k for k in en_sess if k in WORDS]
 body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <p>고1·고2·고3 영어 모의고사를 회차별로 정리했어요. 리카수니 원장이 직접 만든 <b>분석노트·변형문제·단어</b>를 무료로 받아 가세요.</p></section>
 <button class="push-btn push-bar" type="button"><span class="pi">🔔</span><span class="pt">새 자료 알림 받기</span><small>새 분석노트·해설이 올라오면 휴대폰으로 바로 알려 드려요</small></button>
+<section class="card" id="push-news" hidden><h2>최근 알림</h2><ul></ul></section>
 <h2 class="sec-h">영어 모의고사 핵심 자료</h2>
 <div class="svc">
 <a class="svc-c c3" href="/english/"><b>문항별 분석노트</b><span>18~29번·41~45번 바로 보기, 30~40번 최신 자료는 카톡 요청</span><em>{note_files}개 문항</em></a>

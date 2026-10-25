@@ -50,6 +50,7 @@
 2. **알림 켠 모든 학생 웹 푸시**: `push` 함수 `send`. 제목·내용·주소(자료실 안 경로)는 원장님께 보여 드리고 확인받은 뒤 보내요.
    `select net.http_post(url := 'https://iiyhmskvdjgstoikonwu.supabase.co/functions/v1/push', headers := jsonb_build_object('Content-Type','application/json','x-cron-key',(select v from public.private_config where k='cron_key')), body := jsonb_build_object('action','send','title','리카수니 자료실','body','2025년 10월 고2 영어 분석노트가 올라왔어요','url','/moe/go2/2025-10/eng/'));`
    결과는 `select status_code, content from net._http_response where id = <위 결과 번호>;` 로 확인 (sent·gone·fail 개수). 기록은 `push_log` 테이블.
+   보낸 알림은 자료실 첫 화면 '최근 알림'(최근 5개)에 보여요. 시험 발송은 body 에 `'test', true` 를 넣으면 목록에 안 나와요 (`push_log.hidden`).
 - 웹 푸시 구조: 사이트 `push.js`(🔔 버튼, `.push-btn`) + `sw.js` + `manifest.webmanifest`, 서버 `_tools/functions/push` (구독은 `push_subs`, VAPID 키는 `private_config` 의 vapid_public·vapid_private, 비밀키는 밖으로 꺼내지 않아요).
 - 아이폰은 사파리 '홈 화면에 추가' 후 그 아이콘으로 열어야 알림을 켤 수 있어요 (iOS 16.4 이상).
 - 알림은 너무 자주 보내지 않아요 (하루 1~2번 정도). 학생이 알림을 끄면 효과가 사라져요.
