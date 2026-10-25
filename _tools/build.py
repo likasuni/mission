@@ -875,7 +875,18 @@ page('/', '리카수니 자료실 | 모의고사·수능 기출문제 PDF, 영�
                 "alternateName": ["리카수니", "Likasuni"], "url": SITE + '/'}])
 
 # ---------- sitemap / robots ----------
-urls = ''.join(f'<url><loc>{SITE}{p}</loc>' + (f'<lastmod>{LASTMOD[p]}</lastmod>' if p in LASTMOD else '') + '</url>' for p in ['/mission/', '/privacy.html'] + PAGES)
+# 사이트맵: 구글이 새 사이트를 조금씩 읽으니 내용 많은 페이지만, 중요한 순서로 (얇은 영어 외 과목 페이지는 사이트엔 그대로 두고 사이트맵에서만 뺌)
+def _sm_rank(p):
+    q = p.strip('/').split('/')
+    if p == '/': return 0
+    if q[0] == 'naesin': return 1
+    if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/'): return 2
+    if q[0] in ('moe', 'suneung') and q[-1].isdigit() or '-' in q[-1] and q[-2:-1] == ['eng']: return 3  # 문항별 해설
+    if q[0] in ('moe', 'suneung') and q[-1] == 'eng': return 4  # 회차별 영어
+    if q[0] in ('moe', 'suneung') and (len(q) <= 3 and (q[0] == 'moe' or len(q) <= 2)): return 5  # 학년 목록·회차·수능 학년도
+    return None
+_sm = sorted([p for p in PAGES if _sm_rank(p) is not None], key=lambda p: (_sm_rank(p), -PAGES.index(p) if _sm_rank(p) in (3, 4) else PAGES.index(p)))
+urls = ''.join(f'<url><loc>{SITE}{p}</loc>' + (f'<lastmod>{LASTMOD[p]}</lastmod>' if p in LASTMOD else '') + '</url>' for p in _sm)
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
     f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
 open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /get/\nSitemap: {SITE}/sitemap.xml\n')
