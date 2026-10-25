@@ -457,17 +457,18 @@ function nsExamHTML(p) {
   const it = p.items || [];
   const li = a => (a || []).map(x => `<li>${x}</li>`).join('');
   const card = q => `<section class="nq" data-n="${esc(q.n)}">
-    <div class="nq-h"><b>${esc(q.n)}번</b><span>${esc(q.type)}</span><span class="meta">${esc(q.points)}</span><span class="nq-ans">정답 ${esc(q.answer)}</span></div>
+    <div class="nq-h"><b>${esc(q.n)}${/^\d+$/.test(q.n) ? '번' : ''}</b><span>${esc(q.type)}</span><span class="meta">${esc(q.points)}</span>${q.answer.length <= 3 ? `<span class="nq-ans">정답 ${esc(q.answer)}</span>` : ''}</div>
+    ${q.answer.length > 3 ? `<div class="nq-model"><b>모범 답안</b> ${esc(q.answer)}</div>` : ''}
     ${q.where ? `<div class="nq-where">📄 <b>시험지에서 볼 곳</b> ${q.where}</div>` : ''}
     ${q.steps ? `<h4>풀이 흐름</h4><ol>${li(q.steps)}</ol>` : ''}
-    ${q.choices ? `<h4>선택지 판단</h4><table class="nq-ch">${q.choices.map(([c, ok, why]) => `<tr class="${ok === '✗' ? 'bad' : ''}"><td>${c}</td><td>${esc(ok)}</td><td>${why}</td></tr>`).join('')}</table>` : ''}
+    ${q.choices ? `<h4>선택지 판단</h4><table class="nq-ch">${q.choices.map(([c, ok, why]) => `<tr class="${String(c).trim().startsWith(q.answer) ? 'bad' : ''}"><td>${c}</td><td>${esc(ok)}</td><td>${why}</td></tr>`).join('')}</table>` : ''}
     ${q.points_more ? `<h4>꼭 알아 둘 문법·어휘</h4><ul>${li(q.points_more)}</ul>` : ''}
     ${q.checks ? `<h4>✍️ 확인 문제 <span class="meta">원장님이 새로 만든 문제예요</span></h4><ol class="nq-checks">${q.checks.map(c => `<li>${c.q}<details><summary>정답·해설</summary>${c.a}</details></li>`).join('')}</ol>` : ''}
     ${q.next ? `<div class="nq-next">🎯 <b>다음 시험 대비</b> ${q.next}</div>` : ''}
   </section>`;
   return `${p.body || ''}
     <div class="nq-pick no-print"><b>틀린 번호만 보기</b> <span class="meta">번호를 누르면 그 문항만 남아요. 여러 개 고를 수 있어요.</span>
-      <div class="nq-nums">${it.map(q => `<button type="button" class="nq-num" data-n="${esc(q.n)}">${esc(q.n)}</button>`).join('')}</div>
+      <div class="nq-nums">${it.map(q => `<button type="button" class="nq-num" data-n="${esc(q.n)}">${esc(q.n.replace('논술형 ', '서'))}</button>`).join('')}</div>
       <p><button type="button" class="btn btn-line btn-sm nq-all">전체 보기</button> <button type="button" class="btn btn-gold btn-sm nq-print">🖨️ 확인 학습지 인쇄</button></p></div>
     <div class="nq-list">${it.map(card).join('')}</div>`;
 }

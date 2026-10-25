@@ -258,7 +258,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=28'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=29'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -599,8 +599,8 @@ for sc in NAESIN:
            '<div class="card"><h2>시험별 분석</h2>'
            + (''.join(f'<div class="ns-exam"><div class="ns-exam-h"><b>{e(x["full"])}</b><span class="meta">{e(x["date"])} 시행 · {e(x["info"])}</span></div>'
                       + (('<p class="ns-free">무료 공개 문항</p><ul class="ns-exams">' + ''.join(
-                          f'<li><a href="/naesin/{sc["slug"]}/{x["key"]}/{it["n"]}/"><b>{e(it["n"])}번 · {e(it["type"])}</b> {e(it["title"])}</a><span class="ns-open">공개</span></li>'
-                          for it in sorted(NS_PUB[(sc['slug'], x['key'])], key=lambda it: int(''.join(c for c in it['n'] if c.isdigit()) or 0) + (100 if '논술' in it['n'] else 0))) + '</ul>')
+                          f'<li><a href="/naesin/{sc["slug"]}/{x["key"]}/{it["n"]}/"><b>{e(it.get("label") or it["n"] + "번")} · {e(it["type"])}</b> {e(it["title"])}</a><span class="ns-open">공개</span></li>'
+                          for it in sorted(NS_PUB[(sc['slug'], x['key'])], key=lambda it: int(''.join(c for c in it['n'] if c.isdigit()) or 0) + (100 if it['n'].startswith('seo') else 0))) + '</ul>')
                          if NS_PUB[(sc['slug'], x['key'])] else '')
                       + '<p class="ns-rest">🔒 전체 문항 분석·시험 총평은 코코스 학원생 전용이에요 (아래 학원생 칸)</p></div>' for x in ex) if ex
               else '<p class="muted">첫 분석을 준비하고 있어요. 시험이 끝나면 차례대로 올라와요.</p>') + '</div>'
@@ -616,11 +616,12 @@ for sc in NAESIN:
     for x in sc.get('exams', []):
         for it in NS_PUB[(sc['slug'], x['key'])]:
             url = f'/naesin/{sc["slug"]}/{x["key"]}/{it["n"]}/'
-            nm = f'{sc["short"]} {x["title"]} {it["n"]}번'
+            lbl = it.get('label') or f'{it["n"]}번'
+            nm = f'{sc["short"]} {x["title"]} {lbl}'
             body = (f'<h1 class="page-h1">{e(nm)} 분석 · {e(it["type"])}</h1><p class="lead">{e(it["lead"])}</p>'
                     f'<div class="card"><table class="info"><tr><th>시험</th><td>{e(sc["name"])} {e(x["full"])} ({e(x["date"])} 시행)</td></tr>'
-                    f'<tr><th>문항</th><td>{e(it["n"])}번 · {e(it["type"])} [{e(it["points"])}]</td></tr>'
-                    f'<tr><th>정답</th><td><b>{e(it["answer"])}</b></td></tr><tr><th>구성</th><td>{e(x["info"])}</td></tr></table>'
+                    f'<tr><th>문항</th><td>{e(lbl)} · {e(it["type"])} [{e(it["points"])}]</td></tr>'
+                    f'<tr><th>{"모범 답안" if len(it["answer"]) > 3 else "정답"}</th><td><b>{e(it["answer"])}</b></td></tr><tr><th>구성</th><td>{e(x["info"])}</td></tr></table>'
                     '<p class="muted">시험 문제의 저작권은 학교와 관할 교육청에 있어요. 이 글은 문제 원문을 옮기지 않고 리카수니 원장의 분석만 담았어요.</p></div>')
             if it.get('pairs'):
                 body += ('<div class="card"><h2>선택지 단어 짝 한눈에</h2><table class="ns-pairs"><tr><th>밑줄 단어</th><th>바꾼 단어</th><th>같은 뜻?</th><th>설명</th></tr>'
@@ -632,7 +633,7 @@ for sc in NAESIN:
                      f'<p><a class="btn-cocos" href="/naesin/{sc["slug"]}/#ns-member">학원생으로 전체 분석 보기 →</a></p></div>' + ACADEMY)
             page(url, f'{nm} 해설·분석 ({it["type"]}) | 리카수니 자료실',
                  it['lead'][:150], body,
-                 [('/', '홈'), ('/naesin/', '내신 분석'), (f'/naesin/{sc["slug"]}/', sc['short']), (url, f'{it["n"]}번')], '/naesin/', og_type='article')
+                 [('/', '홈'), ('/naesin/', '내신 분석'), (f'/naesin/{sc["slug"]}/', sc['short']), (url, lbl)], '/naesin/', og_type='article')
 
 # ---------- 학년 / 수능 목록 ----------
 for g in (1, 2, 3):

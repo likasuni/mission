@@ -568,3 +568,7 @@ a.nb:hover { filter: brightness(1.12); }
   body.ns-printing .ns-member { border: 0; box-shadow: none; }
   body.ns-printing .nq { break-inside: avoid; }
 }
+.nq-model { margin: 10px 0; padding: 10px 12px; border-radius: 10px; background: #eef4ff; border: 1px solid #c9dbfb; font-weight: 600; }
+.nq-model b { color: var(--navy); margin-right: 6px; }
+.ns-sum { padding: 4px 0 8px; } .ns-sum h3 { color: var(--navy); } .ns-sum h4 { margin: 14px 0 6px; color: var(--navy); } .ns-sum li { margin: 4px 0; }
+.ns-sum .nq-ch td { text-align: left !important; } .ns-sum .nq-ch td:first-child { white-space: nowrap; }

@@ -1,0 +1,38 @@
+{
+  "school": "taewon-hs",
+  "exam": "2026-2-mid-g1",
+  "date": "2026-10-25",
+  "n": "seo3",
+  "label": "논술형 3",
+  "type": "조건 영작 (부정 주어 + 비교급)",
+  "points": "4점",
+  "answer": "No nation in the world buys more bottled water than Americans do.",
+  "title": "비교급으로 최상급 뜻 만들기, 어형 변화 두 곳",
+  "keywords": [
+    "태원고 1학년 영어 서술형",
+    "태원고 2학기 중간고사 논술형",
+    "태원고 공통영어2 서술형",
+    "부정 주어 비교급 최상급 영작",
+    "고1 영어 서술형 조건 영작"
+  ],
+  "lead": "태원고 2026학년도 2학기 중간고사(1학년 공통영어2) 논술형 3번은 미국인의 생수 소비를 다룬 글의 빈칸을 보기 단어로 완성하는 4점 서술형이에요. 보기의 no와 than을 살려 '세계 어느 나라도 미국인보다 생수를 많이 사지 않는다'로 써야 하고, much → more, buy → buys 두 곳을 어형 변화해야 해요.",
+  "sections": [
+    [
+      "조건과 보기",
+      "조건: 보기 단어를 모두 쓸 것, 어형 변화 가능, 단어 추가·중복 사용 불가. 보기: Americans / in the world / bottled water / nation / buy / much / than / no / do"
+    ],
+    [
+      "완성 과정",
+      "① 빈칸 뒤 '한 해에 290억 개의 생수병이 더해진다'를 보면 '미국인이 생수를 가장 많이 산다'는 뜻이 필요해요. ② no와 than이 있으니 <b>No + 명사 + 비교급 + than</b>(최상급 의미) 틀을 써요. ③ much → <b>more</b>, No nation은 단수라 buy → <b>buys</b>. ④ 마지막 do는 buy를 대신하는 대동사예요. → No nation in the world buys more bottled water than Americans do."
+    ],
+    [
+      "감점되기 쉬운 곳",
+      "buy를 그대로 두거나, much를 바꾸지 않거나, do를 빼는 경우예요. 보기 단어를 모두 써야 하니 대동사 do까지 꼭 넣어야 해요."
+    ],
+    [
+      "다음 시험 대비법",
+      "최상급 뜻을 나타내는 세 가지 표현을 바꿔 쓰는 연습을 해요. ① Americans buy the most bottled water in the world. ② No nation in the world buys more bottled water than Americans do. ③ Americans buy more bottled water than any other nation. 이 학교 서술형은 과거완료(논술형 1), 간접의문문(논술형 2)처럼 <b>문법 조건 영작</b>이 중심이었어요."
+    ]
+  ],
+  "tip": "서술형을 다 쓴 뒤에는 주어의 수(단수·복수)와 시제를 마지막에 한 번 더 확인하세요. 어형 변화 감점이 가장 흔해요."
+}
