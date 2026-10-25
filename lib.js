@@ -423,7 +423,7 @@ async function naesinMember(user) {
     };
   }
   async function posts() {
-    let q = sb.from('naesin_posts').select('id,school,title,body,created_at,updated_at').eq('published', true).order('created_at', { ascending: false });
+    let q = sb.from('naesin_posts').select('id,school,title,body,items,created_at,updated_at').eq('published', true).order('created_at', { ascending: false });
     if (school) q = q.eq('school', school);
     const { data, error } = await q;
     if (error) { box.innerHTML = head + '<p class="muted">분석을 불러오지 못했어요. 잠시 후 다시 열어 주세요.</p>'; return; }
@@ -435,12 +435,12 @@ async function naesinMember(user) {
       return;
     }
     box.innerHTML = head + '<p class="ok-line">✅ 학원생 인증 완료</p>' + (list.length
-      ? list.map((p, i) => `<details class="ns-post"${i === 0 ? ' open' : ''}><summary><b>${esc(p.title)}</b><span class="meta">${fmtDate(p.updated_at || p.created_at)}</span></summary><div class="ns-body">${p.body}</div></details>`).join('')
+      ? list.map((p, i) => `<details class="ns-post"${i === 0 ? ' open' : ''}><summary><b>${esc(p.title)}</b><span class="meta">${fmtDate(p.updated_at || p.created_at)}</span></summary><div class="ns-body">${p.items ? nsExamHTML(p) : p.body}</div></details>`).join('')
       : '<p class="muted">이 학교 분석을 준비하고 있어요. 시험이 끝나면 차례대로 올라와요.</p>')
       + '<p class="muted">분석 내용은 코코스 학원생 수업용이에요. 캡처·외부 공유는 하지 말아 주세요.</p>';
   }
   const { data: isAdmin } = await sb.rpc('is_admin');
-  if (isAdmin) return posts();
+  if (isAdmin) return posts().then(nsBind);
   const { data: m } = await sb.from('naesin_members').select('name,school,grade,status,created_at').eq('user_id', user.id).maybeSingle();
   if (!m) return form(null, false);
   if (m.status === 'rejected') return form(m, true);
@@ -448,5 +448,38 @@ async function naesinMember(user) {
     box.innerHTML = head + `<p class="info-box">⏳ <b>${esc(m.name)}</b> (${esc(m.school)} ${esc(m.grade)}) 학원생 인증을 신청했어요. 원장님이 확인하면 이 칸에서 바로 분석을 볼 수 있어요.<br><span class="meta">신청: ${fmtDate(m.created_at)}</span></p>`;
     return;
   }
-  return posts();
+  return posts().then(nsBind);
+}
+
+/* 내신 분석 한 시험: 총평(body) + 문항별 카드(items). 학생은 자기 시험지를 펴 놓고 근거 위치를 따라가며 다시 풀어요.
+   틀린 번호를 고르면 그 문항만 남기고, '학습지 인쇄'로 개인별 확인 학습지를 만들어요. */
+function nsExamHTML(p) {
+  const it = p.items || [];
+  const li = a => (a || []).map(x => `<li>${x}</li>`).join('');
+  const card = q => `<section class="nq" data-n="${esc(q.n)}">
+    <div class="nq-h"><b>${esc(q.n)}${/^\d+$/.test(q.n) ? '번' : ''}</b><span>${esc(q.type)}</span><span class="meta">${esc(q.points)}</span>${q.answer.length <= 3 ? `<span class="nq-ans">정답 ${esc(q.answer)}</span>` : ''}</div>
+    ${q.answer.length > 3 ? `<div class="nq-model"><b>모범 답안</b> ${esc(q.answer)}</div>` : ''}
+    ${q.where ? `<div class="nq-where">📄 <b>시험지에서 볼 곳</b> ${q.where}</div>` : ''}
+    ${q.steps ? `<h4>풀이 흐름</h4><ol>${li(q.steps)}</ol>` : ''}
+    ${q.choices ? `<h4>선택지 판단</h4><table class="nq-ch">${q.choices.map(([c, ok, why]) => `<tr class="${String(c).trim().startsWith(q.answer) ? 'bad' : ''}"><td>${c}</td><td>${esc(ok)}</td><td>${why}</td></tr>`).join('')}</table>` : ''}
+    ${q.points_more ? `<h4>꼭 알아 둘 문법·어휘</h4><ul>${li(q.points_more)}</ul>` : ''}
+    ${q.checks ? `<h4>✍️ 확인 문제 <span class="meta">원장님이 새로 만든 문제예요</span></h4><ol class="nq-checks">${q.checks.map(c => `<li>${c.q}<details><summary>정답·해설</summary>${c.a}</details></li>`).join('')}</ol>` : ''}
+    ${q.next ? `<div class="nq-next">🎯 <b>다음 시험 대비</b> ${q.next}</div>` : ''}
+  </section>`;
+  return `${p.body || ''}
+    <div class="nq-pick no-print"><b>틀린 번호만 보기</b> <span class="meta">번호를 누르면 그 문항만 남아요. 여러 개 고를 수 있어요.</span>
+      <div class="nq-nums">${it.map(q => `<button type="button" class="nq-num" data-n="${esc(q.n)}">${esc(q.n.replace('논술형 ', '서'))}</button>`).join('')}</div>
+      <p><button type="button" class="btn btn-line btn-sm nq-all">전체 보기</button> <button type="button" class="btn btn-gold btn-sm nq-print">🖨️ 확인 학습지 인쇄</button></p></div>
+    <div class="nq-list">${it.map(card).join('')}</div>`;
+}
+function nsBind() {
+  document.querySelectorAll('.ns-body').forEach(body => {
+    const nums = body.querySelectorAll('.nq-num'), cards = body.querySelectorAll('.nq');
+    if (!nums.length) return;
+    const sel = new Set();
+    const apply = () => cards.forEach(c => (c.hidden = sel.size > 0 && !sel.has(c.dataset.n)));
+    nums.forEach(b => (b.onclick = () => { sel.has(b.dataset.n) ? sel.delete(b.dataset.n) : sel.add(b.dataset.n); b.classList.toggle('on'); apply(); }));
+    body.querySelector('.nq-all').onclick = () => { sel.clear(); nums.forEach(b => b.classList.remove('on')); apply(); };
+    body.querySelector('.nq-print').onclick = () => { body.closest('details').open = true; body.querySelectorAll('.nq-checks details').forEach(d => (d.open = false)); document.body.classList.add('ns-printing'); print(); document.body.classList.remove('ns-printing'); };
+  });
 }

@@ -1,14 +1,68 @@
 {
-  "_설명": "학교별 영어 내신 분석 목록. 학교를 추가하려면 schools 에 한 줄 넣어요. exams 에는 공개 목록에 보일 시험 제목만 넣고(예: 2026 1학기 중간 고1), 분석 내용 자체는 학원생만 보도록 Supabase 에 넣어요 (공개 저장소라 여기에 쓰면 누구나 볼 수 있음).",
+  "_설명": "학교별 영어 내신 분석 목록. 학교를 추가하려면 schools 에 한 줄 넣어요. exams 에는 시험 정보(key·title·full·date·info)만 넣고, 공개 문항 분석은 _tools/naesin_public/<학교>-<시험key>-<번호>.json, 학원생 전용 전체 분석은 Supabase naesin_posts 에 넣어요 (공개 저장소라 여기 쓰면 누구나 봄). 시험 문제·지문 원문은 옮겨 쓰지 않아요 (시험지 저작권: 학교·교육청).",
   "schools": [
-    {"slug": "taewon-hs", "name": "태원고등학교", "short": "태원고", "level": "고"},
-    {"slug": "songrim-hs", "name": "송림고등학교", "short": "송림고", "level": "고"},
-    {"slug": "imae-hs", "name": "이매고등학교", "short": "이매고", "level": "고"},
-    {"slug": "dolma-hs", "name": "돌마고등학교", "short": "돌마고", "level": "고"},
-    {"slug": "pangyo-hs", "name": "판교고등학교", "short": "판교고", "level": "고"},
-    {"slug": "imae-ms", "name": "이매중학교", "short": "이매중", "level": "중"},
-    {"slug": "yatap-ms", "name": "야탑중학교", "short": "야탑중", "level": "중"},
-    {"slug": "hatap-ms", "name": "하탑중학교", "short": "하탑중", "level": "중"},
-    {"slug": "songrim-ms", "name": "송림중학교", "short": "송림중", "level": "중"}
+    {
+      "slug": "taewon-hs",
+      "name": "태원고등학교",
+      "short": "태원고",
+      "level": "고",
+      "exams": [
+        {
+          "key": "2026-2-mid-g1",
+          "title": "2026 2학기 중간고사 고1 공통영어2",
+          "full": "2026학년도 2학기 1차 정기시험(중간고사) 1학년 공통영어2",
+          "date": "2026-10-12",
+          "info": "선택형 25문항 80점 · 논술형 4문항 20점"
+        }
+      ]
+    },
+    {
+      "slug": "songrim-hs",
+      "name": "송림고등학교",
+      "short": "송림고",
+      "level": "고"
+    },
+    {
+      "slug": "imae-hs",
+      "name": "이매고등학교",
+      "short": "이매고",
+      "level": "고"
+    },
+    {
+      "slug": "dolma-hs",
+      "name": "돌마고등학교",
+      "short": "돌마고",
+      "level": "고"
+    },
+    {
+      "slug": "pangyo-hs",
+      "name": "판교고등학교",
+      "short": "판교고",
+      "level": "고"
+    },
+    {
+      "slug": "imae-ms",
+      "name": "이매중학교",
+      "short": "이매중",
+      "level": "중"
+    },
+    {
+      "slug": "yatap-ms",
+      "name": "야탑중학교",
+      "short": "야탑중",
+      "level": "중"
+    },
+    {
+      "slug": "hatap-ms",
+      "name": "하탑중학교",
+      "short": "하탑중",
+      "level": "중"
+    },
+    {
+      "slug": "songrim-ms",
+      "name": "송림중학교",
+      "short": "송림중",
+      "level": "중"
+    }
   ]
 }

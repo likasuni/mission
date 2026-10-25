@@ -61,5 +61,7 @@
 - 아침 6시 48분 알림(예약 작업 '자료 요청·댓글 아침 알림'): 오늘 공개된 해설, 없는 자료 요청, 새 댓글을 휴대폰으로 알려요. 공개 확인은 GitHub 의 사이트 파일로 해요.
 - **비밀값(보안 비밀번호, refresh token, 비밀번호)은 채팅에 붙여 넣거나 캡처하지 않게** 매번 안내해요. 클라이언트 ID·블로그 ID 는 비밀이 아니에요.
 - 학교 내신 시험지는 저작권이 학교에 있어요. 사진을 통째로 올리지 말고 문항을 다시 타이핑하고 원장님 분석 중심으로 써요. 
-- **내신 분석 (코코스 학원생 전용)**: 공개 페이지 `/naesin/`, `/naesin/<학교>/` 는 학교 목록·시험 제목만 (학원 홍보용, 학교 목록 `_tools/naesin.json`, 학원 홈페이지는 https://www.cocosedu.co.kr/ — www 없으면 인증서 경고). **분석 내용은 저장소에 쓰지 않고** Supabase `naesin_posts`(school=slug, title, body HTML)에 넣어요. 보기는 `naesin_members` 에서 원장님이 **한 명씩 승인**한 학원생만 (RLS, `is_naesin_member()`). 승인은 admin.html '학원생 승인' 탭. 글을 넣으면 `naesin.json` 의 그 학교 `exams` 에 시험 제목도 추가해 공개 목록에 보이게 해요.
+- **내신 분석 (코코스 학원생 전용)**: 공개 페이지 `/naesin/`, `/naesin/<학교>/` 는 학교 목록·시험 제목만 (학원 홍보용, 학교 목록 `_tools/naesin.json`, 학원 홈페이지는 https://www.cocosedu.co.kr/ — www 없으면 인증서 경고). **분석 내용은 저장소에 쓰지 않고** Supabase `naesin_posts`(school=slug, title, body HTML)에 넣어요. 보기는 `naesin_members` 에서 원장님이 **한 명씩 승인**한 학원생만 (RLS, `is_naesin_member()`). 승인은 admin.html '학원생 승인' 탭. 글을 넣으면 `naesin.json` 의 그 학교 `exams` 에 시험 정보(key·title·full·date·info)도 추가해 공개 목록에 보이게 해요.
+  - **학원생 전용 글 형식** (원장님 확정, 2026-10-25): 시험 1개 = `naesin_posts` 1줄(school, exam_key, title, body=시험 총평 HTML, items=문항 카드 배열). 문항 카드: n·type·points·answer·**where(시험지에서 볼 곳: 쪽·위치·짧은 근거 구절)**·steps(풀이 흐름)·choices([선택지, 판단, 이유])·points_more(문법·어휘)·**checks(원장님이 새로 만든 확인 문제 3~4개, q·a)**·next(다음 시험 대비). 학생은 자기 시험지를 펴 놓고 봐요. 원문 통째 타이핑 금지(시험지에 학교·교육청 저작권 안내). 페이지에서 '틀린 번호만 보기'·'확인 학습지 인쇄'로 개인별 확인 학습.
+  - **공개 문항** (검색·학원 홍보용, 시험당 5문항 정도): `_tools/naesin_public/<학교>-<시험key>-<번호>.json` (lead·sections·tip, 논술형은 n=`seo3`·label=`논술형 3`). 문제 원문은 옮기지 않고 분석만. 태원고 2026 2학기 중간 고1: 3·7·10·11·논술형 3 공개.
 - 목표: 좋은 영어 자료, 코코스학원 홍보, 블로그·자료실 애드센스 수익.
