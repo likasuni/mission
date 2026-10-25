@@ -1,0 +1,38 @@
+{
+  "school": "yatap-ms",
+  "exam": "2026-2-mid-g3",
+  "date": "2026-10-25",
+  "n": "seo1",
+  "label": "논술형 1",
+  "type": "서술형 (원급 비교 단서로 범인 찾기)",
+  "points": "4점",
+  "answer": "(1) Sora (2) The girl reading a book is a thief. (예시 답안)",
+  "title": "as ~ as 단서 네 개로 범인 찾고 현재분사로 묘사하기",
+  "keywords": [
+    "야탑중 3학년 영어 서술형",
+    "야탑중 2학기 1차 정기시험 논술형",
+    "야탑중 영어 기출 서술형",
+    "원급 비교 not as as",
+    "중3 영어 서술형 현재분사"
+  ],
+  "lead": "야탑중 2026학년도 2학기 1차 정기시험(3학년 영어) 논술형 1번은 원급 비교(as ~ as, not as ~ as) 단서 네 개로 그림 속 범인을 찾고, 범인이 하는 일을 현재분사로 묘사하는 4점 서술형이에요. 단서를 따라가면 범인은 Sora이고, (2)는 'The girl reading a book is a thief.'처럼 써요. 학교 채점 기준이 공개되지 않아 원장님 예시 답안이에요.",
+  "sections": [
+    [
+      "단서 풀이",
+      "(a) Mike is not as tall as the thief → 범인은 Mike보다 <b>크다</b>. (b) Jina's hair is not as short as the thief's → 범인 머리가 Jina보다 <b>짧다</b>. (c) The thief's sneakers are as white as Tom's → Tom처럼 <b>흰 운동화</b>. (d) The thief is not as tall as Tom → 범인은 Tom보다 <b>작다</b>."
+    ],
+    [
+      "답 쓰기",
+      "(1) 범인 이름은 영어로: <b>Sora</b> (1점). (2) 범인이 하는 일을 <b>현재분사</b>로 뒤에서 꾸며 써요: The girl <b>reading a book</b> is a thief. (3점) — 명사(the girl) 뒤에 '-ing + 목적어'를 붙이는 현재분사 후치 수식이에요."
+    ],
+    [
+      "감점되기 쉬운 곳",
+      "not as ~ as를 '같다'로 잘못 읽는 경우, (2)에서 'The girl is reading a book'처럼 문장을 따로 만들어 조건(현재분사)을 어긴 경우, 이름을 한글로 쓴 경우예요."
+    ],
+    [
+      "다음 시험 대비법",
+      "<b>A is not as 형용사 as B</b> = A가 B보다 덜 ~하다 = B가 A보다 더 ~하다. 원급·비교급 바꿔 쓰기와 <b>현재분사·과거분사 후치 수식</b>(the boy playing soccer, a car made in Korea)을 서술형으로 연습해 두세요."
+    ]
+  ],
+  "tip": "비교 단서는 부등호로 바꿔 적어 보세요. Mike < 범인 < Tom처럼 쓰면 후보가 한눈에 줄어요."
+}

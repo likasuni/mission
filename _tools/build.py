@@ -629,7 +629,7 @@ for sc in NAESIN:
                          + '</table></div>')
             body += ''.join(f'<div class="card"><h2>{e(h)}</h2><p>{t}</p></div>' for h, t in it.get('sections', []))
             if it.get('tip'): body += f'<div class="tip"><b>풀이 팁</b>{e(it["tip"])}</div>'
-            body += (f'<div class="card ns-cta"><h2>🔒 {e(sc["short"])} {e(x["title"])} 전체 분석</h2><p>선택형 25문항과 논술형 4문항 전체 분석, 시험 총평, 다음 시험 대비 포인트는 <b>코코스 학원생 전용</b>이에요.</p>'
+            body += (f'<div class="card ns-cta"><h2>🔒 {e(sc["short"])} {e(x["title"])} 전체 분석</h2><p>{e(x["info"])} 전체 문항 분석, 시험 총평, 다음 시험 대비 포인트는 <b>코코스 학원생 전용</b>이에요.</p>'
                      f'<p><a class="btn-cocos" href="/naesin/{sc["slug"]}/#ns-member">학원생으로 전체 분석 보기 →</a></p></div>' + ACADEMY)
             page(url, f'{nm} 해설·분석 ({it["type"]}) | 리카수니 자료실',
                  it['lead'][:150], body,
