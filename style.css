@@ -572,3 +572,8 @@ a.nb:hover { filter: brightness(1.12); }
 .nq-model b { color: var(--navy); margin-right: 6px; }
 .ns-sum { padding: 4px 0 8px; } .ns-sum h3 { color: var(--navy); } .ns-sum h4 { margin: 14px 0 6px; color: var(--navy); } .ns-sum li { margin: 4px 0; }
 .ns-sum .nq-ch td { text-align: left !important; } .ns-sum .nq-ch td:first-child { white-space: nowrap; }
+.ns-list { margin: 4px 0 0; padding-left: 0; list-style: none; }
+.ns-list li { padding: 9px 0 9px 12px; border-top: 1px dashed var(--line); border-left: 3px solid #c9dbfb; margin: 0 0 4px; line-height: 1.65; }
+.ns-list li:first-child { border-top: 0; }
+.mk { display: inline-block; min-width: 1.6em; padding: 0 6px; border-radius: 6px; font-weight: 800; text-align: center; }
+.mk.ok { background: #dcfce7; color: #166534; } .mk.ng { background: #fee2e2; color: #b91c1c; }
