@@ -146,6 +146,14 @@ function recentComments() {
     cache = data || [];
     render();
   }
+  // 자동 광고가 요청 목록 칸 사이(첫 줄 옆)에 끼어들면 줄이 한 글자 폭으로 찌그러지고, 30초마다 다시 그릴 때 광고도 지워짐
+  // → 목록 안에 들어온 자동 광고는 바로 목록 아래로 옮김 (광고는 그대로 보임)
+  new MutationObserver(() => {
+    list.querySelectorAll('.google-auto-placed, ins.adsbygoogle').forEach(ad => {
+      const w = ad.closest('.google-auto-placed') || ad;
+      if (list.contains(w)) list.after(w);
+    });
+  }).observe(list, { childList: true, subtree: true });
   load();
   setInterval(() => { if (!document.hidden) load(); }, 30000);
   // 이미 로그인한 회원에게는 로그인 버튼을 숨김
