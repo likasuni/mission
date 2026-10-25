@@ -2,6 +2,7 @@
 //   key         공개키 돌려줌 (처음 부를 때 키 한 쌍을 만들어 private_config 에 보관, 비밀키는 서버 밖으로 안 나감)
 //   subscribe   학생 브라우저의 구독 정보 저장 (서버 전용 테이블 push_subs)
 //   unsubscribe 구독 삭제
+//   last        가장 최근 알림 내용 (서비스 워커가 알림을 받으면 여기서 제목·내용을 읽어 옴)
 //   send        모든 구독자에게 발송 (x-cron-key 필요: 원장님 '완료' 때 SQL 로 호출). 끊긴 구독(404·410)은 지움
 import { createClient } from 'npm:@supabase/supabase-js@2';
 import webpush from 'npm:web-push@3.6.7';
@@ -41,6 +42,10 @@ Deno.serve(async (req) => {
   try { b = await req.json(); } catch { /* empty */ }
 
   if (b.action === 'key') return reply(req, 200, { key: (await vapid(db)).pub });
+  if (b.action === 'last') {
+    const { data } = await db.from('push_log').select('title,body,url').order('id', { ascending: false }).limit(1).maybeSingle();
+    return reply(req, 200, data || {});
+  }
 
   if (b.action === 'subscribe' || b.action === 'unsubscribe') {
     const s = b.sub || {}, ep = String(s.endpoint || '');
@@ -62,12 +67,13 @@ Deno.serve(async (req) => {
     const { pub, priv } = await vapid(db);
     webpush.setVapidDetails('https://data.likasuni.com', pub, priv);
     const { data: subs } = await db.from('push_subs').select('endpoint,p256dh,auth').limit(5000);
-    const payload = JSON.stringify({ title, body, url });
+    // 내용은 암호화해서 싣지 않고(브라우저마다 복호화 문제 방지) 기록에 먼저 남김 → 서비스 워커가 'last' 로 읽어 감
+    const { data: logRow } = await db.from('push_log').insert({ title, body, url }).select('id').single();
     let sent = 0, gone = 0, fail = 0;
     for (let i = 0; i < (subs || []).length; i += 50) {
       await Promise.all(subs!.slice(i, i + 50).map(async (s: any) => {
         try {
-          await webpush.sendNotification({ endpoint: s.endpoint, keys: { p256dh: s.p256dh, auth: s.auth } }, payload, { TTL: 86400 });
+          await webpush.sendNotification({ endpoint: s.endpoint, keys: { p256dh: s.p256dh, auth: s.auth } }, null, { TTL: 86400, urgency: 'high' });
           sent++;
         } catch (e: any) {
           if (e?.statusCode === 404 || e?.statusCode === 410) { gone++; await db.from('push_subs').delete().eq('endpoint', s.endpoint); }
@@ -75,7 +81,7 @@ Deno.serve(async (req) => {
         }
       }));
     }
-    await db.from('push_log').insert({ title, body, url, sent, gone, fail });
+    await db.from('push_log').update({ sent, gone, fail }).eq('id', logRow?.id);
     return reply(req, 200, { ok: true, total: subs?.length || 0, sent, gone, fail });
   }
   return reply(req, 400, { error: 'action' });
