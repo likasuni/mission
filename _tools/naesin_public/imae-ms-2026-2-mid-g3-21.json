@@ -1,0 +1,45 @@
+{
+  "school": "imae-ms",
+  "exam": "2026-2-mid-g3",
+  "date": "2026-10-25",
+  "n": "21",
+  "type": "어법 (옳은 것의 개수)",
+  "points": "5점",
+  "answer": "③",
+  "title": "수 일치, 동격 that, 완료 분사구문",
+  "keywords": [
+    "이매중 3학년 영어 내신",
+    "이매중 2학기 1차 정기시험 영어",
+    "이매중 영어 기출",
+    "어법 옳은 것 개수 문제",
+    "bystander effect 지문 어법",
+    "중3 영어 수 일치 분사구문"
+  ],
+  "lead": "이매중 2026학년도 2학기 1차 정기시험(3학년 영어) 21번은 방관자 효과(bystander effect) 글의 밑줄 ⓐ~ⓕ 중 어법상 옳은 것의 개수를 고르는 5점 문항이에요. ⓐ, ⓔ, ⓕ 세 개가 옳아서 정답은 ③ 3개예요.",
+  "sections": [
+    [
+      "밑줄별 판단",
+      [
+        "ⓐ are less likely to offer help — 주어 individuals(복수) + are, be likely to ~ ○",
+        "ⓑ As the number of witnesses increase ✗ → <b>increases</b> (주어 the number 단수)",
+        "ⓒ If everyone remain passive ✗ → <b>remains</b> (everyone 단수)",
+        "ⓓ a false sense of security which someone else will handle ✗ → <b>that</b> (뒤가 완전한 절인 동격 that)",
+        "ⓔ Having seen others doing nothing — 완료 분사구문(먼저 본 일) ○",
+        "ⓕ the fear of social embarrassment can alter — 주어 the fear + 조동사 can ○"
+      ]
+    ],
+    [
+      "핵심 원리",
+      "the number of + 복수 명사는 <b>단수</b>(the number가 주어), a number of + 복수 명사는 복수예요. everyone, each는 단수예요. 명사 뒤 '~라는'의 뜻으로 완전한 절이 오면 which가 아니라 <b>동격 that</b>이에요."
+    ],
+    [
+      "함정 포인트",
+      "개수형은 하나만 잘못 판단해도 틀려요. ⓑ, ⓒ는 모두 <b>수 일치</b>, ⓓ는 which/that 구별이에요. 주어 찾기 → 동사 확인 → 관계사 뒤 완전·불완전 순서로 하나씩 표시하세요."
+    ],
+    [
+      "다음 시험 대비법",
+      "이 시험은 어법 문항(3, 19, 21, 23번)이 많고 5점짜리 고배점이에요. 교과서 본문에서 <b>수 일치, 관계대명사 that/which/what, 분사구문, 비교급(the 비교급, the 비교급)</b>이 쓰인 문장을 찾아 표시해 두세요."
+    ]
+  ],
+  "tip": "어법 개수 문제는 맞는 것에 ○, 틀린 것에 ✗를 모두 표시한 뒤 마지막에 ○만 세요. 중간에 세면 실수가 생겨요."
+}
