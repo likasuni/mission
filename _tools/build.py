@@ -258,7 +258,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=27'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=28'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -266,7 +266,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
   addEventListener('load', function () {{ setTimeout(function () {{ if (window.adsbygoogle && window.adsbygoogle.loaded) return; document.querySelectorAll('.ad-slot').forEach(function (d) {{ d.style.display = 'none'; }}); }}, 8000); }});
   var had = false; try {{ had = !!localStorage.getItem('sb-iiyhmskvdjgstoikonwu-auth-token'); }} catch (e) {{}}
   if (had || location.hash.indexOf('access_token') > -1) {{ go(); return; }}
-  var els = ['note-req', 'comments', 'recent-cmt', 'talk'].map(function (id) {{ return document.getElementById(id); }}).filter(Boolean);
+  var els = ['note-req', 'comments', 'recent-cmt', 'talk', 'ns-member'].map(function (id) {{ return document.getElementById(id); }}).filter(Boolean);
   if (els.length && 'IntersectionObserver' in window) {{
     var io = new IntersectionObserver(function (es) {{ if (es.some(function (x) {{ return x.isIntersecting; }})) {{ io.disconnect(); go(); }} }}, {{ rootMargin: '600px' }});
     els.forEach(function (el) {{ io.observe(el); }});
@@ -564,11 +564,15 @@ page('/posts/', '수업자료 · 수능·모의고사 영어 문항별 해설 �
 NAESIN = json.load(open(os.path.join(ROOT, '_tools', 'naesin.json')))['schools']
 ACADEMY = ('<div class="card ns-cocos"><h2>이매동 코코스학원</h2><p>리카수니 원장이 직접 가르치는 성남 분당 이매동 영어학원이에요. '
            '학교별 기출을 분석해 내신 대비 수업에 그대로 반영해요. 상담·등록 문의는 학원으로 연락 주세요.</p>'
-           '<p><a class="btn-cocos" href="https://cocosedu.co.kr" target="_blank" rel="noopener">코코스학원 홈페이지 →</a></p></div>')
-NS_HOW = ('<div class="card"><h2>학원생 이용 방법</h2><ol class="sum">'
-          '<li>카카오로 로그인해요.</li><li>학원생 인증을 신청하면 원장님이 확인 후 승인해요.</li>'
-          '<li>승인되면 학교 → 시험을 골라 분석 내용을 볼 수 있어요.</li></ol>'
-          '<p class="muted">학교 시험지의 저작권은 각 학교에 있어요. 분석 내용은 코코스 학원생 수업용으로만 공개하고, 외부 공유는 하지 말아 주세요.</p></div>')
+           '<p><a class="btn-cocos" href="https://www.cocosedu.co.kr/" target="_blank" rel="noopener">코코스학원 홈페이지 →</a></p></div>')  # www 없는 주소는 인증서 경고가 떠서 www 로
+# 학원생 칸: JS 가 로그인 → 인증 신청 → 승인 대기 → (승인되면) 분석 글을 Supabase 에서 불러와 채움. JS 전 내용은 이용 방법 안내.
+def ns_member(slug=''):
+    sj = e(json.dumps([[x['slug'], x['short']] for x in NAESIN], ensure_ascii=False))
+    return (f'<div class="card ns-member" id="ns-member" data-school="{slug}" data-schools="{sj}"><h2>🔒 학원생 전용 분석</h2><ol class="sum">'
+            '<li>카카오로 로그인해요.</li><li>학원생 인증을 신청하면 원장님이 한 명씩 확인 후 승인해요.</li>'
+            '<li>승인되면 학교별 시험 분석을 볼 수 있어요.</li></ol>'
+            '<p><button type="button" class="btn btn-kakao" onclick="lazyLogin()">💬 카카오로 로그인</button></p>'
+            '<p class="muted">학교 시험지의 저작권은 각 학교에 있어요. 분석 내용은 코코스 학원생 수업용으로만 공개하고, 외부 공유는 하지 말아 주세요.</p></div>')
 def ns_card(sc):
     n = len(sc.get('exams', []))
     return (f'<a class="ns-school" href="/naesin/{sc["slug"]}/"><b>{e(sc["short"])}</b><span>{e(sc["name"])}</span>'
@@ -578,7 +582,7 @@ nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock"
       '<b>분석 내용은 코코스 학원생만</b> 볼 수 있어요. 학교별 분석은 시험이 끝날 때마다 계속 채워 가요.</p>')
 for lv, lname in (('고', '고등학교'), ('중', '중학교')):
     nb += f'<div class="card"><h2>{lname}</h2><div class="ns-grid">' + ''.join(ns_card(sc) for sc in NAESIN if sc['level'] == lv) + '</div></div>'
-nb += NS_HOW + ACADEMY
+nb += ns_member() + ACADEMY
 page('/naesin/', '학교별 영어 내신 분석 · 태원고 송림고 이매고 돌마고 판교고 · 이매중 야탑중 하탑중 송림중 | 리카수니 자료실',
      '분당 태원고·송림고·이매고·돌마고·판교고, 이매중·야탑중·하탑중·송림중 영어 내신 기출 분석. 이매동 코코스학원 학원생 전용. 리카수니 원장 직접 분석.',
      nb, [('/', '홈'), ('/naesin/', '내신 분석')], '/naesin/')
@@ -590,7 +594,7 @@ for sc in NAESIN:
            '<div class="card"><h2>시험별 분석</h2>'
            + ('<ul class="ns-exams">' + ''.join(f'<li><b>{e(x)}</b><span class="ns-lock">🔒 학원생 전용</span></li>' for x in ex) + '</ul>' if ex
               else '<p class="muted">첫 분석을 준비하고 있어요. 시험이 끝나면 차례대로 올라와요.</p>') + '</div>'
-           + NS_HOW
+           + ns_member(sc['slug'])
            + '<div class="card"><h2>다른 학교</h2><div class="chips">' + ''.join(
                f'<a class="chip" href="/naesin/{o["slug"]}/">{e(o["short"])}</a>' for o in NAESIN if o is not sc) + '</div></div>'
            + ACADEMY)
