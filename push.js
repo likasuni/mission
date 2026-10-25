@@ -4,6 +4,7 @@
   var FN = 'https://iiyhmskvdjgstoikonwu.supabase.co/functions/v1/push';
   var KEY = 'BNanG8J9rFSAYaR5PEI4VsWkOsWM0rIkSnnPMGzPAL07jte7xwrS3owgePJ1nW5Aetz7zV8ruhV6n9Jort-DXv8'; // 공개키 (비밀 아님)
   var btns = document.querySelectorAll('.push-btn');
+  recent();
   if (!btns.length) return;
   var ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   var app = navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
@@ -43,4 +44,22 @@
     } catch (e) { alert('알림을 켜지 못했어요. 잠시 뒤 다시 눌러 주세요.'); }
   }
   btns.forEach(function (b) { b.addEventListener('click', click); });
+
+  // 첫 화면 '최근 알림' (#push-news): 지금까지 보낸 알림 5개. 없으면 칸을 숨긴 채로 둠
+  function recent() {
+    var box = document.getElementById('push-news');
+    if (!box) return;
+    fetch(FN, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{"action":"recent"}' })
+      .then(function (r) { return r.json(); }).then(function (j) {
+        var it = (j && j.items) || [];
+        if (!it.length) return;
+        var esc = function (t) { return String(t || '').replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+        box.querySelector('ul').innerHTML = it.map(function (x) {
+          var d = new Date(x.created_at), when = (d.getMonth() + 1) + '/' + d.getDate();
+          var href = String(x.url || '/').replace(/^https:\/\/data\.likasuni\.com/, '') || '/';
+          return '<li><a href="' + esc(href) + '"><span class="pn-d">' + when + '</span><b>' + esc(x.title) + '</b><span class="pn-b">' + esc(x.body) + '</span></a></li>';
+        }).join('');
+        box.hidden = false;
+      }).catch(function () {});
+  }
 })();

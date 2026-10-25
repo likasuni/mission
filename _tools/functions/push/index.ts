@@ -3,6 +3,7 @@
 //   subscribe   학생 브라우저의 구독 정보 저장 (서버 전용 테이블 push_subs)
 //   unsubscribe 구독 삭제
 //   last        가장 최근 알림 내용 (서비스 워커가 알림을 받으면 여기서 제목·내용을 읽어 옴)
+//   recent      자료실 '최근 알림' 목록 (숨김 아닌 최근 5개)
 //   send        모든 구독자에게 발송 (x-cron-key 필요: 원장님 '완료' 때 SQL 로 호출). 끊긴 구독(404·410)은 지움
 import { createClient } from 'npm:@supabase/supabase-js@2';
 import webpush from 'npm:web-push@3.6.7';
@@ -42,6 +43,11 @@ Deno.serve(async (req) => {
   try { b = await req.json(); } catch { /* empty */ }
 
   if (b.action === 'key') return reply(req, 200, { key: (await vapid(db)).pub });
+  if (b.action === 'recent') {
+    const { data } = await db.from('push_log').select('title,body,url,created_at').eq('hidden', false).gt('sent', 0)
+      .order('id', { ascending: false }).limit(5);
+    return reply(req, 200, { items: data || [] });
+  }
   if (b.action === 'last') {
     const { data } = await db.from('push_log').select('title,body,url').order('id', { ascending: false }).limit(1).maybeSingle();
     return reply(req, 200, data || {});
@@ -68,7 +74,7 @@ Deno.serve(async (req) => {
     webpush.setVapidDetails('https://data.likasuni.com', pub, priv);
     const { data: subs } = await db.from('push_subs').select('endpoint,p256dh,auth').limit(5000);
     // 내용은 암호화해서 싣지 않고(브라우저마다 복호화 문제 방지) 기록에 먼저 남김 → 서비스 워커가 'last' 로 읽어 감
-    const { data: logRow } = await db.from('push_log').insert({ title, body, url }).select('id').single();
+    const { data: logRow } = await db.from('push_log').insert({ title, body, url, hidden: !!b.test }).select('id').single();
     let sent = 0, gone = 0, fail = 0;
     for (let i = 0; i < (subs || []).length; i += 50) {
       await Promise.all(subs!.slice(i, i + 50).map(async (s: any) => {
