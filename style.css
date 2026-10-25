@@ -536,3 +536,15 @@ a.nb:hover { filter: brightness(1.12); }
 .ns-post summary { display: flex; justify-content: space-between; gap: 10px; cursor: pointer; color: var(--navy); }
 .ns-body { margin-top: 10px; line-height: 1.7; overflow-wrap: anywhere; }
 .ns-body img { max-width: 100%; height: auto; }
+.ns-exam { padding: 12px 0; border-top: 1px solid var(--line); }
+.ns-exam:first-of-type { border-top: 0; }
+.ns-exam-h { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.ns-free { margin: 10px 0 4px; font-weight: 800; color: #0f766e; font-size: .9rem; }
+.ns-exams a { color: var(--navy); text-decoration: none; } .ns-exams a:hover { text-decoration: underline; }
+.ns-open { flex: none; padding: 2px 8px; border-radius: 6px; background: #ccfbf1; color: #0f766e; font-size: .74rem; font-weight: 800; }
+.ns-rest { margin: 8px 0 0; color: #7a4b00; font-size: .88rem; }
+.ns-pairs { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.ns-pairs th, .ns-pairs td { padding: 9px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.ns-pairs td:nth-child(3), .ns-pairs th:nth-child(3) { text-align: center; white-space: nowrap; }
+.ns-pairs tr.bad td { background: #fef2f2; }
+.ns-cta { border-color: #99f6e4; background: #f0fdfa; }
