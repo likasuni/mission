@@ -528,3 +528,11 @@ a.nb:hover { filter: brightness(1.12); }
 .ns-banner { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 12px 0 0; padding: 14px 18px; border-radius: 14px; background: linear-gradient(135deg, #0f766e, #14b8a6); color: #fff; text-decoration: none; }
 .ns-banner b { font-size: 1.05rem; } .ns-banner b small { margin-left: 6px; font-size: .78rem; opacity: .9; }
 .ns-banner span { flex: 1; font-size: .86rem; opacity: .95; } .ns-banner em { font-style: normal; font-weight: 800; font-size: .86rem; }
+.ns-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+.ns-form label { display: flex; flex-direction: column; gap: 4px; font-size: .84rem; font-weight: 700; color: var(--navy); }
+.ns-form input, .ns-form select { padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px; font: inherit; min-width: 110px; }
+.ok-line { color: #166534; font-weight: 800; }
+.ns-post { margin: 10px 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.ns-post summary { display: flex; justify-content: space-between; gap: 10px; cursor: pointer; color: var(--navy); }
+.ns-body { margin-top: 10px; line-height: 1.7; overflow-wrap: anywhere; }
+.ns-body img { max-width: 100%; height: auto; }

@@ -34,6 +34,7 @@ function shell() {
       <button class="tab" data-t="notes" onclick="showTab('notes')">분석노트 요청 <span id="n-notes"></span></button>
       <button class="tab" data-t="requests" onclick="showTab('requests')">자료 요청 <span id="n-requests"></span></button>
       <button class="tab" data-t="materials" onclick="showTab('materials')">자료 관리</button>
+      <button class="tab" data-t="naesin" onclick="showTab('naesin')">학원생 승인 <span id="n-naesin"></span></button>
     </div>
     <section id="panel"></section>`;
 }
@@ -46,6 +47,7 @@ async function showTab(t) {
   if (t === 'requests') await tabRequests();
   if (t === 'materials') await tabMaterials();
   if (t === 'notes') await tabNotes();
+  if (t === 'naesin') await tabNaesin();
   updateBadges();
 }
 
@@ -56,6 +58,8 @@ async function updateBadges() {
   $('#n-requests').textContent = r.count ? `(${r.count})` : '';
   const n = await sb.from('note_orders').select('id', { count: 'exact', head: true }).eq('status', 'missing');
   $('#n-notes').textContent = n.count ? `(자료 없음 ${n.count})` : '';
+  const ns = await sb.from('naesin_members').select('user_id', { count: 'exact', head: true }).eq('status', 'pending');
+  $('#n-naesin').textContent = ns.count ? `(${ns.count})` : '';
 }
 
 /* ---------- 댓글 (한눈에 보기 · 승인 · 답글 · 회원별 모아보기) ---------- */
@@ -180,6 +184,33 @@ async function markSent(id) {
 
 function copyText(t) {
   navigator.clipboard.writeText(t).then(() => toast('복사했어요: ' + t));
+}
+
+/* ---------- 학원생 승인 (내신 분석은 승인된 코코스 학원생만 봄) ---------- */
+const NS_ST = { pending: ['승인 대기', ''], approved: ['승인됨', 'ok'], rejected: ['거절', 'no'] };
+async function tabNaesin() {
+  const { data, error } = await sb.from('naesin_members').select('user_id,name,school,grade,status,created_at,decided_at')
+    .order('status', { ascending: false }).order('created_at', { ascending: false });
+  if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
+  const rank = { pending: 0, approved: 1, rejected: 2 };
+  const list = (data || []).sort((a, b) => rank[a.status] - rank[b.status]);
+  $('#panel').innerHTML = `<div class="card"><h2>학원생 인증 ${list.length}명 <span class="meta">대기 ${list.filter(m => m.status === 'pending').length} · 승인 ${list.filter(m => m.status === 'approved').length}</span></h2>
+    <p class="muted">코코스 학원생이 맞으면 승인, 아니면 거절을 눌러 주세요. 퇴원한 학생은 '승인 취소'를 누르면 바로 못 봐요.</p></div>`
+    + (list.length ? list.map(m => `
+    <div class="card"><div class="row between">
+      <div><strong>${esc(m.name)}</strong> <span>${esc(m.school)} ${esc(m.grade)}</span>
+        <span class="tag ${NS_ST[m.status][1]}">${NS_ST[m.status][0]}</span><br>
+        <span class="meta">신청 ${fmtDate(m.created_at)}${m.decided_at ? ' · 처리 ' + fmtDate(m.decided_at) : ''}</span></div>
+      <div class="row">
+        ${m.status !== 'approved' ? `<button class="btn btn-gold btn-sm" onclick="nsSet('${m.user_id}','approved')">승인</button>` : `<button class="btn btn-line btn-sm" onclick="nsSet('${m.user_id}','rejected')">승인 취소</button>`}
+        ${m.status === 'pending' ? `<button class="btn btn-line btn-sm" onclick="nsSet('${m.user_id}','rejected')">거절</button>` : ''}
+      </div></div></div>`).join('') : '<div class="card"><p class="muted">아직 신청한 학생이 없어요.</p></div>');
+}
+async function nsSet(uid, status) {
+  const { error } = await sb.from('naesin_members').update({ status, decided_at: new Date().toISOString() }).eq('user_id', uid);
+  if (error) return toast('오류: ' + error.message);
+  toast(status === 'approved' ? '승인했어요.' : '거절(취소)했어요.');
+  showTab('naesin');
 }
 
 /* ---------- 분석노트 요청 (카톡 자동 발송 기록) ---------- */

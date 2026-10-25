@@ -24,6 +24,7 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
   noteRequest(user);
   recentComments();
   talkBoard(user);
+  naesinMember(user);
 
   const box = document.getElementById('comments');
   if (!box) return;
@@ -388,4 +389,64 @@ async function noteRequest(user) {
       <p class="mt"><a class="btn btn-gold btn-sm" href="${esc(r.link)}" target="_blank" rel="noopener">지금 열기</a></p>
       ${r.left && (r.left.moe > 0 || r.left.book > 0) ? `<p class="meta mt">오늘 더 받을 수 있어요: 모의고사 ${r.left.moe}개 · 부교재 ${r.left.book}개 <a href="#" onclick="location.reload();return false"><b>다른 번호 받기 →</b></a></p>` : '<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요.</p>'}</div>`;
   }
+}
+
+/* ---------- 학교별 내신 분석 (코코스 학원생 전용): 카카오 로그인 → 인증 신청 → 원장님 승인 → 분석 글 ---------- */
+async function naesinMember(user) {
+  const box = document.getElementById('ns-member');
+  if (!box) return;
+  const school = box.dataset.school;
+  const schools = JSON.parse(box.dataset.schools || '[]');
+  const short = Object.fromEntries(schools);
+  const head = '<h2>🔒 학원생 전용 분석</h2>';
+  if (!user) return; // 로그인 전: 빌드 때 넣은 이용 방법·로그인 버튼 그대로
+  const grades = ['중1', '중2', '중3', '고1', '고2', '고3'];
+  const opt = (v, t, sel) => `<option value="${esc(v)}"${sel ? ' selected' : ''}>${esc(t)}</option>`;
+  function form(m, again) {
+    box.innerHTML = head + `${again ? '<p class="info-box">신청이 승인되지 않았어요. 이름·학교를 확인하고 다시 신청해 주세요. 궁금하면 원장님께 말씀해 주세요.</p>' : '<p>코코스학원 학생이면 아래 정보를 적어 <b>학원생 인증</b>을 신청해 주세요. 원장님이 확인하고 승인해요.</p>'}
+      <div class="ns-form">
+        <label>이름 <input id="ns-name" maxlength="20" placeholder="실명" value="${esc(m?.name || displayName(user) || '')}"></label>
+        <label>학교 <select id="ns-school">${schools.map(([v, t]) => opt(t, t, (m?.school || short[school]) === t)).join('')}${opt('기타', '기타', m?.school === '기타')}</select></label>
+        <label>학년 <select id="ns-grade">${grades.map(g => opt(g, g, m?.grade === g)).join('')}</select></label>
+        <button type="button" class="btn btn-gold" id="ns-go">학원생 인증 신청</button>
+      </div>`;
+    document.getElementById('ns-go').onclick = async () => {
+      const row = { name: document.getElementById('ns-name').value.trim(), school: document.getElementById('ns-school').value, grade: document.getElementById('ns-grade').value };
+      if (row.name.length < 2) return toast('이름을 2글자 이상 적어 주세요.');
+      const btn = document.getElementById('ns-go'); btn.disabled = true;
+      const { error } = again
+        ? await sb.from('naesin_members').update({ ...row, status: 'pending' }).eq('user_id', user.id)
+        : await sb.from('naesin_members').insert(row);
+      if (error) { btn.disabled = false; return toast('신청 오류: ' + error.message); }
+      toast('신청했어요. 원장님이 승인하면 바로 볼 수 있어요.');
+      naesinMember(user);
+    };
+  }
+  async function posts() {
+    let q = sb.from('naesin_posts').select('id,school,title,body,created_at,updated_at').eq('published', true).order('created_at', { ascending: false });
+    if (school) q = q.eq('school', school);
+    const { data, error } = await q;
+    if (error) { box.innerHTML = head + '<p class="muted">분석을 불러오지 못했어요. 잠시 후 다시 열어 주세요.</p>'; return; }
+    const list = data || [];
+    if (!school) {
+      const cnt = {}; list.forEach(p => (cnt[p.school] = (cnt[p.school] || 0) + 1));
+      box.innerHTML = head + '<p class="ok-line">✅ 학원생 인증 완료. 학교를 골라 분석을 보세요.</p><div class="chips">'
+        + schools.map(([v, t]) => `<a class="chip" href="/naesin/${esc(v)}/">${esc(t)}<small>${cnt[v] ? '분석 ' + cnt[v] + '개' : '준비 중'}</small></a>`).join('') + '</div>';
+      return;
+    }
+    box.innerHTML = head + '<p class="ok-line">✅ 학원생 인증 완료</p>' + (list.length
+      ? list.map((p, i) => `<details class="ns-post"${i === 0 ? ' open' : ''}><summary><b>${esc(p.title)}</b><span class="meta">${fmtDate(p.updated_at || p.created_at)}</span></summary><div class="ns-body">${p.body}</div></details>`).join('')
+      : '<p class="muted">이 학교 분석을 준비하고 있어요. 시험이 끝나면 차례대로 올라와요.</p>')
+      + '<p class="muted">분석 내용은 코코스 학원생 수업용이에요. 캡처·외부 공유는 하지 말아 주세요.</p>';
+  }
+  const { data: isAdmin } = await sb.rpc('is_admin');
+  if (isAdmin) return posts();
+  const { data: m } = await sb.from('naesin_members').select('name,school,grade,status,created_at').eq('user_id', user.id).maybeSingle();
+  if (!m) return form(null, false);
+  if (m.status === 'rejected') return form(m, true);
+  if (m.status === 'pending') {
+    box.innerHTML = head + `<p class="info-box">⏳ <b>${esc(m.name)}</b> (${esc(m.school)} ${esc(m.grade)}) 학원생 인증을 신청했어요. 원장님이 확인하면 이 칸에서 바로 분석을 볼 수 있어요.<br><span class="meta">신청: ${fmtDate(m.created_at)}</span></p>`;
+    return;
+  }
+  return posts();
 }
