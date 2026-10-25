@@ -112,7 +112,7 @@ function recentComments() {
     return `/${c.page_key}/${q}#note-req`;
   };
   const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', '');
-  const shown = { pre: 6, rdy: 6 };
+  const shown = { pre: 6, rdy: 6, done: 6 };
   let cache = null, gf = 'all';  // gf: 학년 필터 (all·1·2·3·b=부교재)
   const gradeOf = c => { const m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; };
   function reqItem(c) {
@@ -129,12 +129,14 @@ function recentComments() {
     const chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재']].filter(([k]) => k === 'all' || cnt(k))
       .map(([k, t]) => `<button class="rq-chip${gf === k ? ' on' : ''}" data-g="${k}">${t} <small>${cnt(k)}</small></button>`).join('');
     const rf = reqs.filter(c => gf === 'all' || gradeOf(c) === gf);
-    const pre = rf.filter(c => !isDone(c) && !isReady(c));  // 만드는 중 (진행 중)
-    const rdy = rf.filter(isReady).concat(rf.filter(isDone));  // 받을 수 있어요 (준비 완료 → 카톡 발송)
+    // 3단계를 한눈에: 만드는 중(진행 중) → 준비 완료(드라이브에 올라옴) → 카톡으로 받음(보냄)
+    const pre = rf.filter(c => !isDone(c) && !isReady(c));
+    const rdy = rf.filter(isReady);
+    const dn = rf.filter(isDone);
     const col = (cls, title, items, key, empty) => `<div class="rq-col ${cls}"><h3>${title} <span>${items.length}</span></h3><ul${shown[key] > 6 ? ' class="open"' : ''}>${items.slice(0, shown[key]).map(reqItem).join('') || `<li class="rq-empty">${empty}</li>`}</ul>${more(key, items.length)}</div>`;
     list.innerHTML = `<div class="rq-top"><h3 class="rc-sub">최근 자료 요청</h3><div class="rq-chips">${chips}</div></div>
-      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
-    list.querySelectorAll('.rq-chip').forEach(b => b.onclick = () => { gf = b.dataset.g; shown.pre = shown.rdy = 6; render(); });
+      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', '기다리는 요청이 없어요.')}${col('rd', '준비 완료', rdy, 'rdy', '지금 준비된 자료가 없어요.')}${col('ok', '카톡으로 받음', dn, 'done', '아직 보낸 자료가 없어요.')}</div>`;
+    list.querySelectorAll('.rq-chip').forEach(b => b.onclick = () => { gf = b.dataset.g; shown.pre = shown.rdy = shown.done = 6; render(); });
     list.querySelectorAll('.rc-more').forEach(btn => btn.onclick = () => { shown[btn.dataset.k] += 6; render(); });
   }
   async function load() {

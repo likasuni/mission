@@ -447,15 +447,18 @@ a.nb:hover { filter: brightness(1.12); }
 .rq-chip { border: 1px solid #e5d3a1; background: #fff; color: #7a4b00; border-radius: 999px; padding: 3px 11px; font-size: .78rem; font-weight: 700; cursor: pointer; }
 .rq-chip small { font-weight: 600; opacity: .7; }
 .rq-chip.on { background: #7a4b00; border-color: #7a4b00; color: #fff; }
-.rq-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
-@media (max-width: 640px) { .rq-cols { grid-template-columns: 1fr; } }
+.rq-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; align-items: start; }
+@media (max-width: 860px) { .rq-cols { grid-template-columns: 1fr; } }
 .rq-cols .rq-col { margin: 0; }
+.rq-cols .rq-st { display: none; } /* 칸 제목이 상태를 알려 줘서 줄마다 뱃지는 뺌 */
 .rq-cols .rq-col ul { grid-template-columns: 1fr; }
 .rq-cols .rq:nth-child(2) { border-top: 1px dashed #ead9ad; }
 .rq-col.rd { border-color: #bcd0fa; background: #f3f7ff; }
 .rq-col.rd h3 { color: #1d4ed8; }
 .rq-col.rd h3 span { background: #2563eb; }
 .rq-col.rd .rq { border-top-color: #d3e0fb; }
+.rq-cols .rq-col.ok .rq:nth-child(2) { border-top-color: #cfe9d8; }
+.rq-cols .rq-col.rd .rq:nth-child(2) { border-top-color: #d3e0fb; }
 
 /* 소통하기 게시판 (첫 화면 '자료 요청' 아래 독립 상자) */
 #talk { margin: 26px 0; border-radius: 16px; overflow: hidden; border: 2px solid #1e3a8a; background: #fff; box-shadow: 0 8px 24px rgba(30, 58, 138, .12); }
