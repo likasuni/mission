@@ -16,7 +16,7 @@
   function mark(v) { try { v ? localStorage.setItem('push-sync', v) : localStorage.removeItem('push-sync'); } catch (e) { /* 무시 */ } }
   function today() { return new Date().toISOString().slice(0, 10); }
 
-  if (ok) navigator.serviceWorker.register('/sw.js').then(function (r) { return r.pushManager.getSubscription(); }).then(function (s) {
+  if (ok) navigator.serviceWorker.register('/sw.js').then(function (r) { r.update().catch(function () {}); return r.pushManager.getSubscription(); }).then(function (s) {
     var on = !!s && Notification.permission === 'granted'; set(on);
     var last = ''; try { last = localStorage.getItem('push-sync') || ''; } catch (e) { /* 무시 */ }
     if (on && last !== today()) post('subscribe', s.toJSON()).then(function (r) { if (r.ok) mark(today()); }); // 하루 한 번 서버 구독 정보 확인
