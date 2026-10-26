@@ -588,8 +588,8 @@ nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock"
 for lv, lname in (('고', '고등학교'), ('중', '중학교')):
     nb += f'<div class="card"><h2>{lname}</h2><div class="ns-grid">' + ''.join(ns_card(sc) for sc in NAESIN if sc['level'] == lv) + '</div></div>'
 nb += ns_member() + ACADEMY
-page('/naesin/', '학교별 영어 내신 분석 · 태원고 송림고 이매고 돌마고 판교고 · 이매중 야탑중 하탑중 송림중 | 리카수니 자료실',
-     '분당 태원고·송림고·이매고·돌마고·판교고, 이매중·야탑중·하탑중·송림중 영어 내신 기출 분석. 이매동 코코스학원 학원생 전용. 리카수니 원장 직접 분석.',
+page('/naesin/', '학교별 영어 내신 분석 · 태원고 송림고 이매고 돌마고 판교고 · 이매중 야탑중 하탑중 송림중 매송중 | 리카수니 자료실',
+     '분당 태원고·송림고·이매고·돌마고·판교고, 이매중·야탑중·하탑중·송림중·매송중 영어 내신 기출 분석. 이매동 코코스학원 학원생 전용. 리카수니 원장 직접 분석.',
      nb, [('/', '홈'), ('/naesin/', '내신 분석')], '/naesin/')
 for sc in NAESIN:
     ex = sc.get('exams', [])
