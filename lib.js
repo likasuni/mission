@@ -22,6 +22,7 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
   const user = await getUser();
   renderAuth(user);
   noteRequest(user);
+  readyBanner(user);
   recentComments();
   talkBoard(user);
   naesinMember(user);
@@ -228,6 +229,53 @@ async function talkBoard(user) {
 }
 
 /* ---------- 분석노트 요청 ---------- */
+/* ---------- 재방문 이어 주기 ----------
+   ① 알림 권유 칸: 받은 직후·없는 자료 요청 직후·'내일 받기'가 남았을 때 "🔔 알림 켜기"를 권함 (이미 켰으면 안 보임)
+   ② 첫 화면 배너: 로그인한 학생에게 '요청하신 자료 N개 준비됐어요 / 만드는 중 N개'를 보여 주고 받으러 가게 함 */
+function pushAsk(msg) {
+  const P = window.likaPush;
+  if (!P || !P.supported || P.isOn()) return '';
+  return `<div class="push-ask"><span>🔔 ${msg}</span><button type="button" class="btn btn-navy btn-sm" onclick="window.likaPush && window.likaPush.click()">알림 켜기</button></div>`;
+}
+function nextResetText() { // 하루 한도는 한국 시간 자정에 다시 채워짐
+  return '내일(자정 지나면) 다시 받을 수 있어요';
+}
+async function myNotes(user) { // 내 요청: 준비된 것(받기 가능) · 만드는 중
+  const { data: { session } } = await sb.auth.getSession();
+  if (!session) return null;
+  let r = {};
+  try {
+    const res = await fetch(`${SUPABASE_URL}/functions/v1/note-request`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
+      body: JSON.stringify({ kind: 'check' })
+    });
+    r = await res.json();
+  } catch (e) { return null; }
+  const ready = r.ready || [];
+  const { data: waits } = await sb.from('note_orders').select('label,status').eq('user_id', user.id).in('status', ['missing', 'resolved']);
+  const readySet = new Set(ready.map(x => x.label));
+  const making = [...new Set((waits || []).filter(w => !readySet.has(w.label)).map(w => w.label))];
+  return { ready, making, today: r.today || {}, limit: r.limit || NOTE_LIMIT };
+}
+async function readyBanner(user) {
+  const hero = document.querySelector('.hero');
+  if (!hero || document.getElementById('note-req') || !user) return;
+  const isKakao = (user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao');
+  if (!isKakao) return;
+  const m = await myNotes(user);
+  if (!m || (!m.ready.length && !m.making.length)) return;
+  const short = l => esc(l.replace(' 영어 모의고사', '').replace(/ 분석노트$/, ''));
+  const el = document.createElement('section');
+  el.className = 'card my-notes';
+  el.innerHTML = `<h2>📦 내 분석노트 요청</h2>` +
+    (m.ready.length ? `<p class="mn-ready"><b>준비됐어요 ${m.ready.length}개</b> · ${m.ready.slice(0, 3).map(x => short(x.label)).join(', ')}${m.ready.length > 3 ? ' 외' : ''}</p>
+      <p><a class="btn btn-gold" href="/notes/#note-req">받으러 가기 →</a> <span class="meta">하루 모의고사 2개 · 부교재 1개씩 받아요</span></p>` : '') +
+    (m.making.length ? `<p class="meta">원장님이 만드는 중 ${m.making.length}개 · ${m.making.slice(0, 3).map(short).join(', ')}${m.making.length > 3 ? ' 외' : ''}</p>` : '') +
+    pushAsk(m.making.length ? '완성되면 알림으로 바로 알려 드릴까요?' : '새 분석노트가 올라오면 알려 드릴까요?');
+  hero.after(el);
+}
+
 async function noteRequest(user) {
   const card = document.getElementById('note-req');
   if (!card) return;
@@ -238,7 +286,7 @@ async function noteRequest(user) {
   const head = `<h2>분석노트 요청</h2>
     <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. 요청과 받기 모두 <b>하루 모의고사 2개 · 부교재 1개</b>까지예요. 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>
     <p class="meta"><b>받는 방법:</b> 번호를 <b>하나씩</b> 골라 받아요. 모의고사는 하나를 받은 뒤 <b>"다른 번호 받기"</b>를 눌러 두 번째 번호를 받을 수 있어요.</p>
-    <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 다시 로그인했을 때 이 칸 위에 <b>"요청하신 자료가 준비됐어요"</b> 알림이 떠요.</p>
+    <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 <b>처음 요청한 1개는 카톡으로 자동</b> 보내 드리고, 나머지는 다시 로그인했을 때 이 칸 위 <b>"요청하신 자료가 준비됐어요"</b>에서 받아요.</p>
     <div id="nr-ready"></div>`;
 
   if (!isKakao) {
@@ -259,7 +307,7 @@ async function noteRequest(user) {
       <a class="btn btn-gold btn-sm" href="/get/?t=${o.link_token}" target="_blank" rel="noopener">열기</a></div>`).join('') +
     `<p class="meta mt">오늘 남은 횟수: 모의고사 <b>${leftOf('moe')}개</b> · 부교재 <b>${leftOf('book')}개</b> · 링크는 받은 뒤 24시간 동안 열려요.</p></div>` : '';
   if (!leftOf('moe') && !leftOf('book')) {
-    card.innerHTML = head + gotHtml + '<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요. 내일 다시 요청해 주세요.</p>';
+    card.innerHTML = head + gotHtml + `<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요. ${nextResetText()}.</p>` + pushAsk('새 분석노트가 올라오면 알려 드릴까요?');
     showReady(used);
     return;
   }
@@ -340,24 +388,26 @@ async function noteRequest(user) {
   // 예전에 요청했지만 그때 없던 자료가 지금 준비됐으면 알림 (하루 1개씩 받기)
   async function showReady(used) {
     const slot = document.getElementById('nr-ready');
-    const { data: { session } } = await sb.auth.getSession();
-    if (!slot || !session) return;
-    let r = {};
-    try {
-      const res = await fetch(`${SUPABASE_URL}/functions/v1/note-request`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
-        body: JSON.stringify({ kind: 'check' })
-      });
-      r = await res.json();
-    } catch (e) { return; }
-    const list = r.ready || [];
-    if (!list.length) return;
-    slot.innerHTML = `<div class="ready-box"><b>요청하신 자료가 준비됐어요</b><ul>` + list.map((x, i) =>
-      `<li><span>${esc(x.label)}</span>${NOTE_LIMIT[x.kind] - (used[x.kind] || 0) > 0 ? `<button class="btn btn-gold btn-sm" data-i="${i}">받기</button>` : '<span class="meta">내일 받기</span>'}</li>`).join('') +
-      `</ul><p class="meta">하루에 모의고사 2개 · 부교재 1개까지 받을 수 있어요. 남은 자료는 내일 다시 와서 받아 주세요.</p></div>`;
+    if (!slot) return;
+    const m = await myNotes(user);
+    if (!m || (!m.ready.length && !m.making.length)) return;
+    const list = m.ready;
+    const left = { moe: NOTE_LIMIT.moe - (used.moe || 0), book: NOTE_LIMIT.book - (used.book || 0) };
+    const ok = list.map(x => left[x.kind]-- > 0);  // 오늘 남은 횟수만큼만 '받기', 나머지는 '내일 받기'
+    const canGet = x => ok[list.indexOf(x)];
+    const later = ok.filter(v => !v).length;
+    slot.innerHTML = (list.length ? `<div class="ready-box"><b>요청하신 자료가 준비됐어요</b><ul>` + list.map((x, i) =>
+      `<li><span>${esc(x.label)}</span>${canGet(x) ? `<button class="btn btn-gold btn-sm" data-i="${i}">받기</button>` : '<span class="meta" style="white-space:nowrap">내일 받기</span>'}</li>`).join('') +
+      `</ul><p class="meta">하루에 모의고사 2개 · 부교재 1개까지 받을 수 있어요.${later ? ` 남은 ${later}개는 ${nextResetText()}.` : ''}</p>` +
+      (later ? pushAsk('내일 잊지 않게, 새 자료 소식을 알림으로 받아 볼까요?') : '') + `</div>` : '') +
+      (m.making.length ? `<div class="making-box"><b>원장님이 만드는 중 ${m.making.length}개</b><ul>${m.making.map(l => `<li>${esc(l)}</li>`).join('')}</ul>
+        <p class="meta">완성되면 이 칸 위 '준비됐어요'에 나타나요. (처음 요청한 1개는 카톡으로 자동 발송)</p>${later ? '' : pushAsk('완성되면 알림으로 바로 알려 드릴까요?')}</div>` : '');
     slot.querySelectorAll('button[data-i]').forEach(btn => btn.onclick = () => {
       const x = list[+btn.dataset.i];
+      if (!document.getElementById('nr-go')) { // 받은 직후 화면에서 누르면 요청 칸을 다시 열고 이어서 받기
+        try { sessionStorage.setItem('note-pending', JSON.stringify({ kind: x.kind, ...x.query })); } catch (e) { /* 무시 */ }
+        return location.reload();
+      }
       slot.innerHTML = '';
       send({ kind: x.kind, ...x.query });
     });
@@ -388,7 +438,7 @@ async function noteRequest(user) {
     if (r.missing) {
       const d = new Date(Date.now() + 2 * 86400e3);
       const when = `${d.getMonth() + 1}월 ${d.getDate()}일(${'일월화수목금토'[d.getDay()]})`;
-      box.innerHTML = `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 1~2일 뒤(${when}쯤) 다시 로그인하면 이 칸 위에 <b>"준비됐어요"</b> 알림이 떠요. 그때 받기를 눌러 주세요. (오늘 요청 횟수는 차감되지 않아요)<br><span class="meta">아래 댓글 창에도 요청이 접수됐다고 남겨 두었어요.</span>`;
+      box.innerHTML = `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 1~2일 뒤(${when}쯤) 다시 로그인하면 이 칸 위에 <b>"준비됐어요"</b> 알림이 떠요. 그때 받기를 눌러 주세요. (오늘 요청 횟수는 차감되지 않아요)<br><span class="meta">아래 댓글 창에도 요청이 접수됐다고 남겨 두었어요.</span>` + pushAsk('완성되면 알림으로 바로 알려 드릴까요?');
       if (window.reloadComments) window.reloadComments();
       return;
     }
@@ -396,7 +446,8 @@ async function noteRequest(user) {
       ${r.kakao ? '를 카카오톡 <b>\'나와의 채팅\'</b>으로 보냈어요!' : '가 준비됐어요. (카톡 발송이 안 돼서 아래 버튼으로 바로 열어 주세요)'}
       <br><span class="meta">링크는 ${fmtDate(r.expires_at)}까지(24시간) 열려요.</span>
       <p class="mt"><a class="btn btn-gold btn-sm" href="${esc(r.link)}" target="_blank" rel="noopener">지금 열기</a></p>
-      ${r.left && (r.left.moe > 0 || r.left.book > 0) ? `<p class="meta mt">오늘 더 받을 수 있어요: 모의고사 ${r.left.moe}개 · 부교재 ${r.left.book}개 <a href="#" onclick="location.reload();return false"><b>다른 번호 받기 →</b></a></p>` : '<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요.</p>'}</div>`;
+      ${r.left && (r.left.moe > 0 || r.left.book > 0) ? `<p class="meta mt">오늘 더 받을 수 있어요: 모의고사 ${r.left.moe}개 · 부교재 ${r.left.book}개 <a href="#" onclick="location.reload();return false"><b>다른 번호 받기 →</b></a></p>` : `<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요. ${nextResetText()}.</p>`}</div>` + pushAsk('다음 분석노트가 올라오면 바로 알려 드릴까요?');
+    showReady({ ...used, [b.kind]: (used[b.kind] || 0) + 1 });
   }
 }
 

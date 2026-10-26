@@ -5,13 +5,16 @@
   var KEY = 'BNanG8J9rFSAYaR5PEI4VsWkOsWM0rIkSnnPMGzPAL07jte7xwrS3owgePJ1nW5Aetz7zV8ruhV6n9Jort-DXv8'; // 공개키 (비밀 아님)
   var btns = document.querySelectorAll('.push-btn');
   recent();
-  if (!btns.length) return;
+  var state = { on: false };
+  window.likaPush = { supported: false, isOn: function () { return state.on; }, click: function () { return click(); } }; // lib.js 의 '알림 켜기' 권유 칸에서 씀
+  if (!btns.length && !document.getElementById('note-req') && !document.querySelector('.hero')) return;
   var ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   var app = navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
   var ok = 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
   if (!ok && !ios) { btns.forEach(function (b) { b.style.display = 'none'; }); return; }
+  window.likaPush.supported = true;
 
-  function set(on) { btns.forEach(function (b) { b.classList.toggle('on', on); b.title = on ? '새 자료 알림 켜짐' : '새 자료 알림 받기'; var t = b.querySelector('.pt'); if (t) t.textContent = on ? '알림 켜짐' : '새 자료 알림 받기'; }); }
+  function set(on) { state.on = on; document.querySelectorAll('.push-ask').forEach(function (a) { if (on) a.remove(); }); btns.forEach(function (b) { b.classList.toggle('on', on); b.title = on ? '새 자료 알림 켜짐' : '새 자료 알림 받기'; var t = b.querySelector('.pt'); if (t) t.textContent = on ? '알림 켜짐' : '새 자료 알림 받기'; }); }
   function key(s) { var p = '='.repeat((4 - s.length % 4) % 4), r = atob((s + p).replace(/-/g, '+').replace(/_/g, '/')), a = new Uint8Array(r.length); for (var i = 0; i < r.length; i++) a[i] = r.charCodeAt(i); return a; }
   function post(action, sub) { return fetch(FN, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: action, sub: sub }) }); }
   function mark(v) { try { v ? localStorage.setItem('push-sync', v) : localStorage.removeItem('push-sync'); } catch (e) { /* 무시 */ } }
