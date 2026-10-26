@@ -1,0 +1,60 @@
+{
+  "school": "maesong-ms",
+  "exam": "2026-2-mid-g3",
+  "date": "2026-10-26",
+  "n": "seo1",
+  "label": "논술형 1",
+  "type": "서술형 (조건 영작: 계속적 용법 + 감정 형용사 to 부정사)",
+  "points": "5점",
+  "answer": "I was surprised to see the cliffs, which were much more impressive than I (had) expected. (예시 답안)",
+  "title": "surprised to see + , which 계속적 용법 한 문장에",
+  "keywords": [
+    "매송중 3학년 영어 내신",
+    "매송중 2학기 1차 정기시험 영어",
+    "매송중 영어 기출",
+    "매송중 영어 서술형",
+    "관계대명사 계속적 용법 서술형",
+    "감정 형용사 to부정사 영작"
+  ],
+  "lead": "매송중 2026학년도 2학기 1차 정기시험(3학년 영어) 논술형 1번은 아일랜드 여행 글의 빈칸 'I was ____.'를 보기 단어로 완성하는 5점 서술형이에요. 관계대명사 계속적 용법과 '감정 형용사 + to 부정사'를 함께 써야 해서 'I was surprised to see the cliffs, which were much more impressive than I (had) expected.'처럼 써요. 학교 채점 기준이 공개되지 않아 원장님 예시 답안이에요.",
+  "sections": [
+    [
+      "빈칸 앞뒤 (해석)",
+      [
+        "앞: 둘째 날 아일랜드의 유명한 명소인 모허 절벽(the Cliffs of Moher)에 갔다.",
+        "빈칸: I was ____.",
+        "뒤: 전에 사진으로 본 적은 있지만 실제 절벽은 훨씬 더 인상적이었다. → <b>놀람</b>"
+      ]
+    ],
+    [
+      "조건 정리",
+      [
+        "보기 단어 모두 사용(be / see / surprise / impressive / expect / I / the cliffs / much more), 필요하면 단어·문장부호 추가와 어형 변화 가능",
+        "관계대명사의 <b>계속적 용법</b> → 콤마 + which",
+        "감정 형용사가 <b>to 부정사의 수식</b>을 받는 구조 → surprised to see"
+      ]
+    ],
+    [
+      "완성 과정",
+      [
+        "① surprise → <b>surprised</b>(내가 놀란 것) + to see the cliffs",
+        "② 콤마 + <b>which</b>(the cliffs를 받음) → 복수라 be → <b>were</b>",
+        "③ much more impressive than I <b>expected</b>(기대했던 것보다 훨씬 더 인상적인)",
+        "→ I was surprised to see the cliffs, which were much more impressive than I (had) expected."
+      ]
+    ],
+    [
+      "예상 감점",
+      [
+        "콤마를 빼거나 which 대신 that을 쓴 경우(계속적 용법에는 that 불가)",
+        "the cliffs가 복수인데 was를 쓴 경우",
+        "surprising처럼 감정 형용사 형태를 틀린 경우"
+      ]
+    ],
+    [
+      "다음 시험 대비법",
+      "이 학교 서술형은 <b>문법 조건 두 개를 한 문장에</b> 넣는 형태였어요. 계속적 용법(, which), 감정 형용사 + to 부정사(glad to hear, sad to leave), 비교급 강조(much more)를 각각 짧은 문장으로 써 본 뒤 합치는 연습을 해요."
+    ]
+  ],
+  "tip": "조건마다 밑줄을 긋고, 다 쓴 뒤 콤마·수 일치·시제를 하나씩 체크하세요."
+}

@@ -1,0 +1,47 @@
+{
+  "school": "maesong-ms",
+  "exam": "2026-2-mid-g3",
+  "date": "2026-10-26",
+  "n": "13",
+  "type": "글의 순서",
+  "points": "4점",
+  "answer": "①",
+  "title": "these·combined가 앞 단락을 받는 순서",
+  "keywords": [
+    "매송중 3학년 영어 내신",
+    "매송중 2학기 1차 정기시험 영어",
+    "매송중 영어 기출",
+    "마오리족 지문 순서",
+    "중3 영어 글의 순서 문제",
+    "these combined efforts 순서 배열"
+  ],
+  "lead": "매송중 2026학년도 2학기 1차 정기시험(3학년 영어) 13번은 뉴질랜드 마오리족 글에서 (A) 다음에 이어질 순서를 고르는 4점 문항이에요. (B)의 교육·미디어 노력을 (D)가 'these educational and media efforts'로 받고, (C)가 'these combined efforts'로 둘을 합쳐 받아서 (B)-(D)-(C), 정답은 ①이에요.",
+  "sections": [
+    [
+      "단락별 핵심 (해석)",
+      [
+        "(A) 마오리족은 뉴질랜드 원주민으로, 자연과 이어진 문화와 말로 전한 지혜를 가졌다.",
+        "(B) <b>Today</b> 전통은 국가 정체성의 바탕이다. 학교 수업과 라디오·TV가 마오리어를 지킨다. → 교육·미디어",
+        "(D) <b>In addition to these educational and media efforts</b>, 지역 마을에서도 문화가 살아 있다. → (B)를 받음",
+        "(C) <b>Thanks to these combined efforts — both</b> 교육·미디어 <b>and</b> 지역 마을 → (B)+(D)를 모두 받음"
+      ]
+    ],
+    [
+      "연결 신호",
+      [
+        "these + 명사: 바로 앞 단락 내용을 가리켜요.",
+        "combined(합쳐진), both A and B: 앞에 나온 두 가지가 모두 나온 뒤에 와요.",
+        "in addition to: 앞 내용에 새 내용을 더해요."
+      ]
+    ],
+    [
+      "함정 포인트",
+      "④ (D)-(B)-(C)는 (D)가 '이런 교육·미디어 노력'이라고 했는데 그 노력이 아직 나오지 않아서 틀려요. 같은 시험 17번도 Originally → As time went on → Today 순서를 묻는 순서 문제였어요."
+    ],
+    [
+      "다음 시험 대비법",
+      "교과서 본문에서 these, such, this change, in addition 같은 말에 동그라미를 치고, 무엇을 가리키는지 화살표로 연결해 보세요. 순서 문제가 시험에 2개 나왔으니 꼭 연습해요."
+    ]
+  ],
+  "tip": "순서 문제는 각 단락 첫 문장의 지시어(these, this)가 가리키는 것을 먼저 찾으세요."
+}
