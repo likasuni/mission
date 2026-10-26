@@ -677,6 +677,99 @@ page('/suneung/', '수능 기출문제 전과목 PDF 모음 | 리카수니 자�
 cnt = collections.Counter(k[1] if k[0] == 'moe' else 'sn' for k in sessions)
 latest = sorted([k for k in sessions if k[0] == 'moe'], key=lambda k: (-k[2], -k[3], k[1]))[:9]
 var_sess = sorted([k for k in VAR if k in sessions], key=lambda k: (k[1], -k[2], -k[3]))
+# ---------- 원장님 노트 (_tools/memos/<slug>.json → /memo/<slug>/) ----------
+# 원장님이 채팅으로 준 분석노트 메모를 Claude 가 JSON 으로 정리. date 가 미래면 그날 공개 (해설과 같게)
+# 원장님이 쓴 설명은 그대로, Claude 가 덧붙인 예문·확인 문제는 'Claude 추가' 표시
+MEMO_CSS = _re.sub(r'\s+', ' ', """
+.mm{max-width:780px;margin:0 auto}
+.mm-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.mm-tag{font-size:.78rem;font-weight:800;padding:3px 10px;border-radius:999px;background:#eef1fa;color:var(--navy)}
+.mm-tag.bk{background:var(--navy);color:#fff}
+.mm h1{font-size:1.5rem;line-height:1.35;margin:4px 0}
+.mm .sub{color:var(--muted);margin:0 0 16px}
+.mm h2{font-size:1.1rem;margin:22px 0 10px;padding-left:10px;border-left:4px solid var(--navy)}
+.mm-one{border-left:5px solid var(--gold);background:#fff8e6;border-radius:0 12px 12px 0;padding:14px 18px;margin:0 0 6px}
+.mm-one small{display:block;color:#92400e;font-weight:800;margin-bottom:2px}
+.mm-one b{color:var(--navy)} .mm-one span{color:var(--muted)}
+.mm-sent{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.mm-sent .en{font-family:Georgia,'Times New Roman',serif;font-size:1.08rem;line-height:1.7;margin:0 0 8px}
+.mm-sent .en i{color:#94a3b8;font-style:normal;padding:0 2px}
+.mm-sent .ko{margin:0;color:#334155}
+.mm-flow{display:inline-block;margin-top:10px;font-size:.88rem;font-weight:700;color:#166534;background:#ecfdf3;border-radius:8px;padding:4px 10px}
+.mm-pt{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 10px;background:#fff}
+.mm-pt h3{margin:0 0 6px;font-size:.98rem} .mm-pt p{margin:4px 0} .mm-pt .en{font-family:Georgia,serif}
+.mm u{text-decoration-color:var(--gold);text-decoration-thickness:3px} .mm .rs{color:#2563eb}
+.mm-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:640px){.mm-grid{grid-template-columns:1fr}.mm h1{font-size:1.28rem}}
+.mm-k{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.mm-k h3{margin:0 0 4px;font-size:.82rem;color:var(--muted)} .mm-k p{margin:0}
+.mm-k.warn{border-color:#fecaca;background:#fff5f5} .mm-k.warn h3{color:#dc2626}
+.mm-add{font-size:.72rem;font-weight:700;color:#6366f1;background:#eef2ff;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle}
+.mm-ex{background:#f3f6ff;border-radius:12px;padding:12px 16px;margin:0 0 8px} .mm-ex p{margin:4px 0} .mm-ex .en{font-family:Georgia,serif;font-size:1.04rem}
+.mm-q{border:1px dashed #c7d2fe;border-radius:12px;padding:10px 16px;margin:0 0 8px} .mm-q p{margin:4px 0} .mm-q summary{cursor:pointer;color:var(--navy);font-weight:700}
+.mm-cta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.mm-foot{margin-top:14px;color:var(--muted);font-size:.86rem}
+.mm-list{list-style:none;margin:0;padding:0} .mm-list li+li{border-top:1px dashed var(--line)}
+.mm-list a{display:block;padding:10px 0;color:inherit;text-decoration:none} .mm-list a:hover b{text-decoration:underline}
+.mm-list small{color:var(--muted);font-size:.8rem} .mm-list b{display:block;color:var(--navy-d);margin:2px 0} .mm-list span{color:var(--muted);font-size:.9rem}
+""").strip()
+MEMOS = []
+_md = os.path.join(ROOT, '_tools', 'memos')
+for f in sorted(os.listdir(_md)) if os.path.isdir(_md) else []:
+    if f.endswith('.json'):
+        m = json.load(open(os.path.join(_md, f), encoding='utf-8'))
+        if m['date'] <= TODAY: MEMOS.append(m)
+MEMOS.sort(key=lambda m: (m['date'], m['slug']), reverse=True)
+def memo_line(m):  # 목록·첫 화면 한 줄
+    o = m['one']
+    return (f'<li><a href="/memo/{m["slug"]}/"><small>{m["date"][5:].replace("-", ".")} · {e(m["book"])} {e(m["where"])}</small>'
+            f'<b>{e(m["h1"])}</b><span>{e(o["key"])}: {e(o["text"])}</span></a></li>')
+for m in MEMOS:
+    url = f'/memo/{m["slug"]}/'
+    LASTMOD[url] = m.get('updated', m['date'])
+    o, st = m['one'], m.get('sentence')
+    add = '<span class="mm-add">Claude 추가</span>'
+    h = [f'<style>{MEMO_CSS}</style><article class="mm card">',
+         '<div class="mm-tags">' + f'<span class="mm-tag bk">{e(m["book"])}</span><span class="mm-tag">{e(m["where"])}</span>' + ''.join(f'<span class="mm-tag">{e(t)}</span>' for t in m.get('tags', [])) + '</div>',
+         f'<h1>{e(m["h1"])}</h1><p class="sub">{e(m.get("sub", ""))}</p>',
+         f'<div class="mm-one"><small>✏️ 분석노트 한 줄</small><b>{e(o["key"])}</b>: {e(o["text"])}' + (f' <span>— {e(o["note"])}</span>' if o.get('note') else '') + '</div>']
+    if st:
+        h.append('<h2>문장 끊어 읽기</h2><div class="mm-sent"><p class="en">' + e(st['en']).replace(' / ', ' <i>/</i> ') + f'</p><p class="ko">{e(st["ko"])}</p>'
+                 + (f'<span class="mm-flow">✔ {e(st["flow"])}</span>' if st.get('flow') else '') + '</div>')
+    if m.get('points'):
+        h.append('<h2>구문 포인트</h2>' + ''.join(f'<div class="mm-pt"><h3>{"①②③④⑤⑥"[i]} {e(pt["title"])}</h3>' + (f'<p class="en">{pt["en"]}</p>' if pt.get('en') else '') + f'<p>{e(pt["body"])}</p></div>' for i, pt in enumerate(m['points'])))
+    if m.get('vocab'):
+        h.append(f'<h2>어휘 포인트: {e(m["vocab"]["title"])}</h2><div class="mm-grid">' + ''.join(
+            f'<div class="mm-k{" warn" if len(c) > 2 and c[2] == "warn" else ""}"><h3>{e(c[0])}</h3><p>{e(c[1])}</p></div>' for c in m['vocab']['cards']) + '</div>')
+    if m.get('examples'):
+        h.append(f'<h2>예문으로 한 번 더{add}</h2>' + ''.join(f'<div class="mm-ex"><p class="en">{x["en"]}</p><p>{e(x["ko"])}</p></div>' for x in m['examples']))
+    if m.get('quiz'):
+        h.append(f'<h2>확인 문제{add}</h2>' + ''.join(f'<div class="mm-q"><p>{i + 1}. {q["q"]}</p><details><summary>정답 보기</summary><p>{q["a"]}</p></details></div>' for i, q in enumerate(m['quiz'])))
+    if m.get('faq'):
+        h.append('<h2>자주 묻는 질문</h2><div class="faq">' + ''.join(f'<details><summary>{e(q["q"])}</summary><p>{e(q["a"])}</p></details>' for q in m['faq']) + '</div>')
+    cta = [x for x in (m.get('cta'), m.get('more')) if x]
+    if cta:
+        h.append('<div class="mm-cta">' + ''.join(f'<a class="btn {"btn-navy" if i == 0 else "btn-line"}" href="{e(x["href"])}">{e(x["label"])}</a>' for i, x in enumerate(cta)) + '</div>')
+    h.append(f'<p class="mm-foot">리카수니 원장 · {m["date"].replace("-", ".")} · <a href="/memo/">원장님 노트 전체 보기</a></p></article>')
+    others = [x for x in MEMOS if x is not m][:5]
+    if others:
+        h.append(f'<div class="card mm" style="margin-top:16px"><h2 style="font-size:1rem;margin:0 0 4px">다른 원장님 노트</h2><ul class="mm-list">{"".join(memo_line(x) for x in others)}</ul></div>')
+    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": m['h1'], "description": m['desc'], "datePublished": m['date'],
+           "dateModified": LASTMOD[url], "inLanguage": "ko", "author": {"@type": "Person", "name": "리카수니"},
+           "publisher": {"@type": "Organization", "name": "리카수니 자료실"}, "keywords": ', '.join(m.get('keywords', [])), "mainEntityOfPage": SITE + url}]
+    if m.get('faq'):
+        ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q['q'], "acceptedAnswer": {"@type": "Answer", "text": q['a']}} for q in m['faq']]})
+    page(url, f'{m["title"]} | 리카수니 자료실', m['desc'], ''.join(h),
+         [('/', '홈'), ('/memo/', '원장님 노트'), (url, f'{m["book"]} {m["where"]}')], '/', extra_ld=ld, og_type='article')
+page('/memo/', '원장님 노트 – 수능특강·모의고사 영어 구문·어휘 분석 메모 | 리카수니 자료실',
+     '리카수니 원장이 분석노트를 만들며 정리한 영어 구문·어휘 포인트. 수능특강 라이트·모의고사 문장별 핵심 설명을 짧게 모았어요.',
+     f'<style>{MEMO_CSS}</style><section class="hero"><h1>원장님 노트</h1><p>분석노트를 만들면서 짚은 구문·어휘 포인트를 짧게 모아 두는 곳이에요.</p></section>'
+     + (f'<div class="card mm"><ul class="mm-list">{"".join(memo_line(m) for m in MEMOS)}</ul></div>' if MEMOS else '<div class="card"><p class="muted">곧 첫 노트가 올라와요.</p></div>'),
+     [('/', '홈'), ('/memo/', '원장님 노트')], '/')
+memo_home = (f'<section class="card mm-home"><style>{MEMO_CSS}</style><h2 style="margin:0 0 4px">✏️ 원장님 노트 <small class="muted" style="font-size:.8rem;font-weight:600">분석노트 만들며 정리한 포인트</small></h2>'
+             f'<ul class="mm-list">{"".join(memo_line(m) for m in MEMOS[:5])}</ul><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
+
 var_files = sum(len(dict(VAR[k])) for k in var_sess)
 tiles = f'''<div class="grid4">
 <a class="tile" href="/moe/go1/"><b>고1</b><span>{cnt[1]}개 회차</span></a>
@@ -700,6 +793,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <a class="svc-c c5" href="/english/#words"><b>영어 단어 총정리</b><span>회차별 18~45번 핵심 어휘 정리</span><em>{len(word_sess)}개 회차</em></a>
 <a class="svc-c c4" href="/books/"><b>부교재 자료</b><span>수능특강 라이트·올림포스 등 분석노트·단어</span><em>{{NBOOKS}}권</em></a>
 </div>
+{memo_home}
 <a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>
 <section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청</b></div>
 <div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 궁금한 점은 아래 <b>소통하기</b>에 남겨 주세요.<button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
@@ -880,7 +974,8 @@ def _sm_rank(p):
     q = p.strip('/').split('/')
     if p == '/': return 0
     if q[0] == 'naesin': return 1
-    if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/'): return 2
+    if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/', '/memo/'): return 2
+    if q[0] == 'memo': return 3  # 원장님 노트
     if q[0] in ('moe', 'suneung') and q[-1].isdigit() or '-' in q[-1] and q[-2:-1] == ['eng']: return 3  # 문항별 해설
     if q[0] in ('moe', 'suneung') and q[-1] == 'eng': return 4  # 회차별 영어
     if q[0] in ('moe', 'suneung') and (len(q) <= 3 and (q[0] == 'moe' or len(q) <= 2)): return 5  # 학년 목록·회차·수능 학년도

@@ -41,6 +41,14 @@
 - 연결 테스트: Actions → `blog-test` → 날짜 입력 → 블로그에 **임시저장(비공개)** 으로 올라감. 확인 뒤 임시저장 글은 지워 달라고 안내.
 - 자유 형식 글(업데이트 소식, 내신 분석 등): `_tools/blog_queue/<파일>.html` 에 글을 쓰고 main 에 합친 뒤 Actions → `blog-post` (file·title·labels·draft) 로 발행. `_tools/blogger_publish_file.py` 가 올리고 `blogger_posted.json` 에 `file:<파일>` 로 기록해서 같은 글은 두 번 안 올라가요.
 
+## 원장님 노트 (자료실 `/memo/`)
+
+- 원장님이 채팅으로 분석노트 메모(문장·해석·구문·어휘 설명)를 주면 **바로 포스팅**: `_tools/memos/<slug>.json` 작성 → 빌드 → PR → main 합치기 → 화면 캡처 보여 드리기.
+- 형식은 `sutk-light-2026-21-gateway-2.json` 과 같게: slug·date·book·where·title·h1·sub·desc·tags·keywords·one(분석노트 한 줄)·sentence(en·ko·flow)·points·vocab(cards)·examples·quiz·faq·cta·more.
+- **검색 최적화**: 책 이름(연도 포함, 예: `2026 수능특강 라이트 영어`)을 title·h1 맨 앞에, 검색어(예: rather later 뜻)를 뒤에. faq 는 FAQPage 구조화 데이터로 들어감. 부교재는 `수능특강 라이트(Light)` 표기도 desc 에.
+- 원장님이 쓴 설명은 바꾸지 않고 칸만 나눔. Claude 가 덧붙인 예문·확인 문제는 'Claude 추가'로 표시. 확인할 수 없는 통계·학생 사례는 쓰지 않음.
+- 노트 페이지는 첫 화면 '원장님 노트'(최근 5개), `/memo/` 목록, 사이트맵에 들어가요. date 가 미래면 그날 공개.
+
 ## 자료 완료 알림 (원장님이 "완료"라고 하면)
 
 두 가지를 바로 보내요. Supabase 프로젝트 `iiyhmskvdjgstoikonwu` 에서 `execute_sql` 로 실행해요 (이 환경은 supabase.co 직접 접속이 막혀 있어서 DB 의 `net.http_post` 로 불러요).
