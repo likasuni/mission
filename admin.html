@@ -218,9 +218,13 @@ async function nsSet(uid, status) {
 // 자동 카톡을 못 보낸 이유 (note-deliver 가 기록)
 const KAKAO_ISSUE = { no_consent: '카톡 동의 안 함', no_token: '카카오 연결 없음', fail: '카톡 발송 실패' };
 async function tabNotes() {
-  const { data, error } = await sb.from('note_orders')
-    .select('id,author_name,label,status,file_name,kakao_sent,expires_at,created_at,query,kakao_issue')
-    .order('created_at', { ascending: false }).limit(300);
+  const [{ data, error }, { data: cm }] = await Promise.all([
+    sb.from('note_orders')
+      .select('id,user_id,author_name,label,status,file_name,kakao_sent,expires_at,created_at,query,kakao_issue')
+      .order('created_at', { ascending: false }).limit(500),
+    sb.from('comments').select('user_id,content,reply,replied_at')
+      .like('content', '[자료 요청]%').order('created_at', { ascending: false }).limit(1000),
+  ]);
   if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
   const missing = data.filter(o => o.status === 'missing');
   const waiting = data.filter(o => o.status === 'resolved');
@@ -236,39 +240,100 @@ async function tabNotes() {
     }
     return [...m.values()];
   };
-  const gRow = (g, btn) => `
-    <div class="card"><div class="row between">
-      <div><strong>${esc(g.label)}</strong><br>
-        <span class="meta">${g.names.length}명 · ${g.names.join(', ')} · 첫 요청 ${fmtDate(g.at)}</span>
-        ${g.issue && !btn ? '<br><span class="meta" style="color:#c2410c">자동 카톡을 못 보냈어요 · 학생에게 자료실 로그인(카톡 메시지 받기 동의)을 직접 안내해 주세요</span>' : ''}</div>
-      ${btn ? `<button class="btn btn-line btn-sm" onclick="resolveNote([${g.ids.join(',')}])">직접 준비 완료 표시</button>` : ''}
-    </div></div>`;
-  const row = o => `
-    <div class="card"><div class="row between">
-      <div><strong>${esc(o.label)}</strong><br>
-        <span class="meta">${esc(o.author_name || '회원')} · ${fmtDate(o.created_at)}
-        · ${o.query && o.query.auto ? '<b style="color:#b7791f">자동 카톡</b>' : '<b style="color:#2f855a">자료실에서 받음</b>'}${o.kakao_sent ? ' (카톡 발송)' : ' (카톡 미발송 · 페이지에서 열기)'} · ${esc(o.file_name || '')}</span></div>
-    </div></div>`;
+
+  // 완료한 자료 (최근 7일): 기다리던 요청(missing)이 드라이브에 올라와 resolved/done 이 된 것
+  // 완료 시각 = 자동 카톡 발송 시각 → '준비됐어요/보내 드렸어요' 답글 시각 → 요청 시각 중 먼저 있는 것
+  const key = (u, l) => u + '|' + l;
+  const autoAt = new Map(), replyAt = new Map();
+  for (const o of sent) if (o.query && o.query.auto) {
+    const k = key(o.user_id, o.label);
+    if (!autoAt.has(k) || o.created_at < autoAt.get(k)) autoAt.set(k, o.created_at);
+  }
+  for (const c of cm || []) {
+    if (!c.replied_at || !/준비됐어요|보내 드렸어요/.test(c.reply || '')) continue;
+    const l = (c.content.match(/^\[자료 요청\] (.+) 부탁드려요\.$/) || [])[1];
+    if (!l) continue;
+    const k = key(c.user_id, l);
+    if (!replyAt.has(k) || c.replied_at < replyAt.get(k)) replyAt.set(k, c.replied_at);
+  }
+  const since = Date.now() - 7 * 86400e3;
+  const doneMap = new Map();
+  for (const o of data.filter(o => o.status === 'resolved' || o.status === 'done')) {
+    const k = key(o.user_id, o.label);
+    const at = autoAt.get(k) || replyAt.get(k) || o.created_at;
+    if (new Date(at).getTime() < since) continue;
+    const g = doneMap.get(o.label) || { label: o.label, at, n: 0 };
+    if (at < g.at) g.at = at;
+    g.n++; doneMap.set(o.label, g);
+  }
+  const done = [...doneMap.values()].sort((x, y) => (x.at < y.at ? 1 : -1));
+  const md = t => { const d = new Date(t); return `${d.getMonth() + 1}/${d.getDate()}`; };
+
   const gm = group(missing), gw = group(waiting);
+  const issues = waiting.filter(o => KAKAO_ISSUE[o.kakao_issue]);
+  const short = l => esc(String(l || '').replace(' 영어 모의고사', '').replace(/ 분석노트$/, ''));
+  const todoRow = g => `
+    <div class="nc-item"><div class="nc-main"><strong>${short(g.label)}</strong>
+      <span class="meta">${md(g.at)} 첫 요청</span></div>
+      <span class="nc-cnt">${g.names.length}명</span>
+      <button class="btn btn-line btn-sm" onclick="resolveNote([${g.ids.join(',')}])">완료 표시</button></div>`;
+  const doneRow = g => `
+    <div class="nc-item"><span class="nc-date">${md(g.at)}</span>
+      <div class="nc-main"><strong>${short(g.label)}</strong></div>
+      <span class="nc-cnt">${g.n}명</span></div>`;
+  const gRow = g => `
+    <div class="card"><strong>${esc(g.label)}</strong><br>
+      <span class="meta">${g.names.length}명 · ${g.names.join(', ')} · 첫 요청 ${fmtDate(g.at)}</span></div>`;
+  const row = o => `
+    <div class="card"><strong>${esc(o.label)}</strong><br>
+      <span class="meta">${esc(o.author_name || '회원')} · ${fmtDate(o.created_at)}
+      · ${o.query && o.query.auto ? '자동 카톡' : '자료실에서 받음'}${o.kakao_sent ? ' (카톡 발송)' : ' (카톡 미발송)'} · ${esc(o.file_name || '')}</span></div>`;
+
   $('#panel').innerHTML = `
-    <div class="card"><p class="muted">학생이 요청하면 구글드라이브에서 파일 이름으로 찾아 24시간 링크를 카톡으로 보내요. 없던 자료는 올리면 <b>처음 요청한 1개만 자동 카톡</b>으로 가고, 나머지는 학생이 자료실에 로그인해서 받아요.<br>
-    파일 이름 규칙 — 모의고사: <b>2026-09_고1_30번_분석노트.pdf</b> (또는 <b>2026년 9월 고1</b> 폴더 안 <b>30번.pdf</b>) · 부교재: <b>2026 수능특강 라이트 20강 1번 분석노트.pdf</b><br>
-    파일 이름에 <b>문제·정답·해설·듣기</b>가 들어가면 건너뛰어요.</p>
-    <p class="mt"><button class="btn btn-navy btn-sm" id="scan-btn" onclick="scanDrive()">드라이브 확인</button>
-    <span class="meta">자료를 올린 뒤 누르면 바로 '준비 완료'로 바뀌어요. (안 눌러도 매시 5분, 08~22시에 자동 확인)</span></p>
+    <style>
+      .nc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; margin-top: 14px; }
+      @media (max-width: 720px) { .nc-cols { grid-template-columns: 1fr; } }
+      .nc-col { background: var(--card, #fff); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; min-width: 0; }
+      .nc-col h2 { margin: 0 0 8px; font-size: 1.05rem; }
+      .nc-col.todo { border-top: 4px solid #c2410c; }
+      .nc-col.done { border-top: 4px solid #2f855a; }
+      .nc-item { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid var(--line); }
+      .nc-main { flex: 1; min-width: 0; }
+      .nc-main strong { display: block; font-size: .95rem; word-break: keep-all; }
+      .nc-cnt { font-weight: 700; color: var(--navy); white-space: nowrap; font-size: .9rem; }
+      .nc-date { color: var(--muted); font-size: .85rem; white-space: nowrap; min-width: 38px; }
+      .nc-empty { color: var(--muted); padding: 10px 0; border-top: 1px solid var(--line); margin: 0; }
+      .nc-warn { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 10px; padding: 8px 12px; margin-bottom: 8px; font-size: .88rem; color: #9a3412; }
+      details.nc-log { margin-top: 18px; }
+      details.nc-log summary { cursor: pointer; color: var(--muted); font-weight: 700; padding: 8px 0; }
+    </style>
+    <div class="card"><p class="mt" style="margin:0"><button class="btn btn-navy btn-sm" id="scan-btn" onclick="scanDrive()">드라이브 확인</button>
+    <span class="meta">자료를 올린 뒤 누르면 바로 '완료'로 옮겨져요. (안 눌러도 매시 5분, 08~22시에 자동 확인)</span></p>
     <div id="scan-out"></div></div>
-    <h2>🛠️ 만들어야 할 자료 ${gm.length}개 <span class="meta">요청 ${missing.length}건</span></h2>
-    ${gm.map(g => gRow(g, true)).join('') || '<div class="card"><p class="muted">없어요. 👍</p></div>'}
-    <h2 class="mt">📦 올림 · 학생 수령 대기 ${gw.length}개 <span class="meta">학생이 자료실에 로그인해서 받으면 '보낸 자료'로 옮겨져요</span></h2>
-    ${gw.map(g => gRow(g, false)).join('') || '<div class="card"><p class="muted">없어요.</p></div>'}
-    <h2 class="mt">✅ 보낸 자료 ${sent.length}건 <span class="meta">자동 카톡 ${sent.filter(o => o.query && o.query.auto).length} · 자료실에서 받음 ${sent.filter(o => !(o.query && o.query.auto)).length}</span></h2>
-    ${sent.map(row).join('') || '<div class="card"><p class="muted">아직 없어요.</p></div>'}`;
+    <div class="nc-cols">
+      <section class="nc-col todo">
+        <h2>🛠️ 만들어야 할 자료 ${gm.length}개</h2>
+        ${issues.length ? `<div class="nc-warn"><b>⚠️ 직접 안내 필요 ${issues.length}건</b> <span style="opacity:.8">자동 카톡을 못 보냈어요 · 자료실 로그인(카톡 메시지 받기 동의) 안내</span>${issues.map(o => `<br>· ${esc(o.author_name || '회원')} — ${short(o.label)} (${KAKAO_ISSUE[o.kakao_issue]})`).join('')}</div>` : ''}
+        ${gm.map(todoRow).join('') || '<p class="nc-empty">없어요. 👍</p>'}
+      </section>
+      <section class="nc-col done">
+        <h2>✅ 완료한 자료 ${done.length}개 <span class="meta">최근 7일</span></h2>
+        ${done.map(doneRow).join('') || '<p class="nc-empty">최근 7일 동안 완료한 자료가 없어요.</p>'}
+      </section>
+    </div>
+    <details class="nc-log"><summary>전송 기록 보기 (수령 대기 ${gw.length}개 · 보낸 자료 ${sent.length}건)</summary>
+      <p class="muted">파일 이름 규칙 — 모의고사: <b>2026-09_고1_30번_분석노트.pdf</b> (또는 <b>2026년 9월 고1</b> 폴더 안 <b>30번.pdf</b>) · 부교재: <b>2026 수능특강 라이트 20강 1번 분석노트.pdf</b> · 이름에 <b>문제·정답·해설·듣기</b>가 들어가면 건너뛰어요. 올리면 처음 요청한 1개만 자동 카톡, 나머지는 학생이 자료실에 로그인해서 받아요.</p>
+      <h2 class="mt">📦 올림 · 학생 수령 대기 ${gw.length}개</h2>
+      ${gw.map(gRow).join('') || '<div class="card"><p class="muted">없어요.</p></div>'}
+      <h2 class="mt">보낸 자료 ${sent.length}건</h2>
+      ${sent.map(row).join('') || '<div class="card"><p class="muted">아직 없어요.</p></div>'}
+    </details>`;
 }
 
 async function resolveNote(ids) {
   const { error } = await sb.from('note_orders').update({ status: 'resolved' }).in('id', [].concat(ids));
   if (error) return toast('오류: ' + error.message);
-  toast('준비 완료로 표시했어요. 드라이브에 파일이 있어야 학생이 받을 수 있어요.');
+  toast('완료로 표시했어요. 드라이브에 파일이 있어야 학생이 받을 수 있어요.');
   showTab('notes');
 }
 
