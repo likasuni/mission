@@ -1,0 +1,43 @@
+{
+  "slug": "sutk-light-2026-21-gateway-2",
+  "date": "2026-10-27",
+  "book": "2026 수능특강 라이트 영어",
+  "where": "21강 Gateway ②",
+  "title": "2026 수능특강 라이트 영어 21강 Gateway 분석 – rather later 뜻, Although 분사구문",
+  "h1": "2026 수능특강 라이트 영어 21강 Gateway ② 문장 분석",
+  "sub": "rather later 뜻 · Although + 분사 구문 · 생략 복원",
+  "desc": "2026 수능특강 라이트(Light) 영어 21강 Gateway ②번 문장 분석. Although originally invented(접속사+분사) 구문과 rather later(정도 부사, 그보다 다소 더 늦게) 해석 주의점을 원장님 분석노트로 정리했어요.",
+  "tags": ["구문", "어휘"],
+  "keywords": ["2026 수능특강 라이트", "수능특강 Light", "수능특강 라이트 21강", "Gateway", "rather later 뜻", "정도 부사", "분사구문", "분석노트"],
+  "one": {"key": "rather later", "text": "그보다 다소(꽤) 더 늦게", "note": "rather는 later를 수식하는 정도 부사"},
+  "sentence": {
+    "en": "② Although originally invented towards the end of the nineteenth century, / it started to become a mass form of transport / in the 1920s in the USA and rather later in Britain.",
+    "ko": "원래 19세기 말에 접어들면서 발명되었지만, / 그것은 대중적인 교통수단이 되기 시작했다 / 1920년대에 미국에서 그리고 약간 더 늦게 영국에서.",
+    "flow": "흐름 맞음 · 자동차가 대중적인 교통수단이 된 과정"
+  },
+  "points": [
+    {"title": "접속사 + 분사: Although invented",
+     "en": "<u>Although</u> <span class=\"rs\">(it was)</span> originally <u>invented</u> …",
+     "body": "접속사 Although 뒤에 '주어 + be동사'가 생략되고 과거분사 invented만 남은 형태예요. 주절의 주어(it)와 같아서 생략할 수 있어요."},
+    {"title": "반복되는 말 생략",
+     "en": "in the 1920s in the USA and <span class=\"rs\">(it started to become a mass form of transport)</span> rather later in Britain",
+     "body": "and 뒤에서 앞과 같은 내용이 빠지고 '시점 + 장소'만 남았어요. 괄호를 채워 읽으면 해석이 바로 잡혀요."}
+  ],
+  "vocab": {"title": "rather later 뜻", "cards": [
+    ["뜻", "비교급 later 앞에서 \"꽤, 다소\"라는 정도를 나타내요."],
+    ["해석", "rather later = 그보다 다소(꽤) 더 늦게"],
+    ["강도", "문맥에 따라 \"다소\"에서 \"꽤\"까지 폭이 있어서, 정도를 단정하지 않는 표현이 안전해요."],
+    ["주의", "\"오히려\"로 해석하지 않아요. rather than, would rather와는 다른 쓰임이에요.", "warn"]
+  ]},
+  "examples": [{"en": "Prices began to rise in Seoul in 2020 and <u>rather later</u> in other cities.", "ko": "물가는 2020년에 서울에서, 그리고 그보다 다소 늦게 다른 도시들에서 오르기 시작했다."}],
+  "quiz": [
+    {"q": "다음 중 rather의 쓰임이 나머지와 <u>다른</u> 것은?<br>① rather later &nbsp; ② rather better &nbsp; ③ rather than", "a": "③ — rather than은 '~보다는'. ①②는 비교급을 꾸미는 정도 부사예요."},
+    {"q": "Although originally invented에서 생략된 말을 채워 보세요.", "a": "Although <b>it was</b> originally invented"}
+  ],
+  "faq": [
+    {"q": "rather later는 무슨 뜻인가요?", "a": "'그보다 다소(꽤) 더 늦게'예요. rather가 비교급 later를 꾸미는 정도 부사라서 '오히려'로 해석하지 않아요."},
+    {"q": "Although originally invented는 어떤 구문인가요?", "a": "접속사 + 분사 구문이에요. Although (it was) originally invented에서 주어와 be동사가 생략됐어요."}
+  ],
+  "cta": {"label": "21강 Gateway 분석노트 받기", "href": "/notes/?book=%EC%88%98%EB%8A%A5%ED%8A%B9%EA%B0%95%20%EB%9D%BC%EC%9D%B4%ED%8A%B8&unit=21&n=0#note-req"},
+  "more": {"label": "수능특강 라이트 자료 더 보기", "href": "/books/"}
+}
