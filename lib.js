@@ -12,8 +12,8 @@ const NOTE_BOOK_CFG = {
   '올림포스 영어독해 기본1': { u: '강', max: 30, n: 10, ex: true },
   '하루 6개 1등급 모의고사 고1': { u: '회', max: 40, n: 6 },
   '하루 6개 1등급 모의고사 고2': { u: '회', max: 40, n: 6 },
-  '올림포스 전국연합학력평가 기출문제집 고1': { u: '회', max: 30, from: 18, n: 45 },
-  '올림포스 전국연합학력평가 기출문제집 고2': { u: '회', max: 30, from: 18, n: 45 },
+  '올림포스 전국연합학력평가 기출문제집 고1': { u: '회', max: 30, from: 18, n: 45, ex: true },
+  '올림포스 전국연합학력평가 기출문제집 고2': { u: '회', max: 30, from: 18, n: 45, ex: true },
 };
 const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 const zeroName = b => { const c = NOTE_BOOK_CFG[b] || {}; return c.gw ? 'Gateway' : c.ex ? '예시문제' : ''; }; // 번호 0 이름
