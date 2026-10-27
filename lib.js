@@ -133,8 +133,8 @@ function recentComments() {
   const gradeOf = c => { const m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; };
   function reqItem(c) {
     const done = isDone(c), ready = isReady(c);
-    return `<li class="rq${done || ready ? ' ok' : ''}"><span class="rq-st">${done ? '카톡 발송' : ready ? '준비 완료' : '진행 중'}</span>
-      <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${done || ready ? ago(c.replied_at || c.created_at) + ' 완성' : ago(c.created_at)}</span></span>
+    return `<li class="rq${done ? ' ok' : ready ? ' rd' : ''}"><span class="rq-st">${done ? '카톡 발송' : ready ? '준비 완료' : '진행 중'}</span>
+      <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${ago(c.created_at)}</span></span>
       ${c.page_key ? `<a class="rq-go" href="${esc(reqLink(c))}"${ready || done ? ' title="요청하면 기다리지 않고 바로 받아요"' : ''}>나도 받기</a>` : ''}</li>`;
   }
   const more = (key, total) => total > shown[key] ? `<button class="rc-more" data-k="${key}">더보기 (${total - shown[key]}개)</button>` : '';
@@ -145,12 +145,12 @@ function recentComments() {
     const chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재']].filter(([k]) => k === 'all' || cnt(k))
       .map(([k, t]) => `<button class="rq-chip${gf === k ? ' on' : ''}" data-g="${k}">${t} <small>${cnt(k)}</small></button>`).join('');
     const rf = reqs.filter(c => gf === 'all' || gradeOf(c) === gf);
-    // 두 칸: 만드는 중(진행 중) · 받을 수 있어요(드라이브에 올라옴 — 준비 완료·카톡 발송 합침, 최근 완성 순)
+    // 두 칸 (블로그 위젯과 같게): 만드는 중(진행 중) · 받을 수 있어요(준비 완료 → 카톡 발송), 줄마다 상태 뱃지
     const pre = rf.filter(c => !isDone(c) && !isReady(c));
-    const rdy = rf.filter(c => isDone(c) || isReady(c)).sort((a, b) => ((b.replied_at || b.created_at) > (a.replied_at || a.created_at) ? 1 : -1));
+    const rdy = rf.filter(isReady).concat(rf.filter(isDone));
     const col = (cls, title, items, key, empty) => `<div class="rq-col ${cls}"><h3>${title} <span>${items.length}</span></h3><ul${shown[key] > 6 ? ' class="open"' : ''}>${items.slice(0, shown[key]).map(reqItem).join('') || `<li class="rq-empty">${empty}</li>`}</ul>${more(key, items.length)}</div>`;
     list.innerHTML = `<div class="rq-top"><h3 class="rc-sub">최근 자료 요청</h3><div class="rq-chips">${chips}</div></div>
-      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', '기다리는 요청이 없어요.')}${col('ok', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
+      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
     list.querySelectorAll('.rq-chip').forEach(b => b.onclick = () => { gf = b.dataset.g; shown.pre = shown.rdy = 6; render(); });
     list.querySelectorAll('.rc-more').forEach(btn => btn.onclick = () => { shown[btn.dataset.k] += 6; render(); });
   }
