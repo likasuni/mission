@@ -9,6 +9,8 @@ const LINK_HOURS = 24;
 const LIMIT: Record<string, number> = { moe: 2, book: 1 };
 // 부교재 목록 → 단위(강/회). 이름의 각 단어가 드라이브 폴더 이름에 들어가야 함 (lib.js NOTE_BOOK_CFG 와 같게)
 const BOOKS: Record<string, string> = { '수능특강 라이트': '강', '리딩파워 기본': '강', '리딩파워 완성': '강', '올림포스 영어독해 기본1': '강', '하루 6개 1등급 모의고사 고1': '회', '하루 6개 1등급 모의고사 고2': '회', '올림포스 전국연합학력평가 기출문제집 고1': '회', '올림포스 전국연합학력평가 기출문제집 고2': '회' };
+// 번호 0(1번 앞) 이름: 수능특강 라이트는 Gateway, 아래 교재는 예시문제 (lib.js zeroName 과 같게)
+const ZERO: Record<string, string> = { '리딩파워 기본': '예시문제', '리딩파워 완성': '예시문제', '올림포스 영어독해 기본1': '예시문제' };
 
 // 공개 폴더 목록 읽기 (하위 폴더 포함, 5분 캐시)
 type Entry = { id: string; name: string; path: string[] };
@@ -52,7 +54,7 @@ async function listTree(root: string, db?: any): Promise<Entry[]> {
 }
 // 파일 이름에 번호가 있는지: '30번', '41-42번', 또는 이름 자체가 '30.pdf', '41-42.pdf'
 function hasNum(name: string, n: number) {
-  if (n === 0) return /gateway|게이트웨이/i.test(name); // 부교재 Gateway
+  if (n === 0) return /gateway|게이트웨이|예시|예제/i.test(name); // 부교재 Gateway·예시문제
   const re = /(\d+)\s*(?:[-~]\s*(\d+))?\s*번/g;
   let m;
   while ((m = re.exec(name))) { const a = +m[1], b = m[2] ? +m[2] : a; if (n >= a && n <= b) return true; }
@@ -85,7 +87,7 @@ function makeSpec(b: any): Spec | { error: string } {
   if (b.kind === 'book') {
     const book = String(b.book || ''), unit = Number(b.unit);
     if (!BOOKS[book] || !(unit >= 1 && unit <= 60)) return { error: '교재와 강을 확인해 주세요.' };
-    return { kind: 'book', label: `${book} ${unit}${BOOKS[book]} ${n === 0 ? 'Gateway' : n + '번'} 분석노트`, query: { book, unit, n },
+    return { kind: 'book', label: `${book} ${unit}${BOOKS[book]} ${n === 0 ? (ZERO[book] || 'Gateway') : n + '번'} 분석노트`, query: { book, unit, n },
       words: book.split(/\s+/).map((w) => new RegExp(esc(w))), unitRe: new RegExp(`(^|\\D)${unit}\\s*${BOOKS[book]}`), n };
   }
   return { error: '요청 종류를 확인해 주세요.' };
@@ -97,7 +99,7 @@ function findFiles(all: Entry[], sp: Spec) {
     if (sp.kind === 'moe') { const k = moeKey(f); return hasNum(f.name, n) && !!k && k[0] === query.y && k[1] === query.m && k[2] === query.g; }
     const full = [...f.path, f.name].join(' ');
     if (!sp.words.every((re) => re.test(full))) return false;
-    // 부교재 파일 이름 '강-번호.pdf' (0 = Gateway) 예: 1-0.pdf, 20-3.pdf
+    // 부교재 파일 이름 '강-번호.pdf' (0 = Gateway·예시문제) 예: 1-0.pdf, 20-3.pdf
     const ku = f.name.match(/^(\d+)\s*-\s*(\d+)\s*\.pdf$/i);
     if (ku) return +ku[1] === query.unit && +ku[2] === n;
     return hasNum(f.name, n) && sp.unitRe.test(full); // 또는 '1강' 폴더 안 '1.pdf', 'gateway.pdf'
