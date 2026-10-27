@@ -307,8 +307,9 @@ async function noteRequest(user) {
   // 오늘 받은 기록 (종류별 개수)
   const kst = new Date(Date.now() + 9 * 3600e3);
   const dayStart = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate()) - 9 * 3600e3).toISOString();
+  // 내 기록만 (관리자 계정은 모든 회원 기록을 볼 수 있어서, 거르지 않으면 남의 받은 개수까지 세어 요청 칸이 사라짐)
   const { data: todayList } = await sb.from('note_orders').select('kind,label,link_token,expires_at,kakao_sent')
-    .eq('status', 'sent').gte('created_at', dayStart).order('created_at', { ascending: false });
+    .eq('user_id', user.id).eq('status', 'sent').gte('created_at', dayStart).order('created_at', { ascending: false });
   const used = { moe: 0, book: 0 };
   (todayList || []).forEach(o => { used[o.kind] = (used[o.kind] || 0) + 1; });
   const leftOf = k => Math.max(0, NOTE_LIMIT[k] - used[k]);
