@@ -258,7 +258,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=37'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=38'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -889,10 +889,10 @@ BOOKS = [  # name 은 드라이브 '부교재 분석노트' 안 폴더 이름과
          intro='하루 6문항씩 모의고사 유형을 꾸준히 푸는 EBS 고1 독해 교재예요. 회차·문항별 분석노트를 준비하고 있어요.'),
     dict(cover='haru6-go2', name='하루 6개 1등급 모의고사 고2', full='EBS 하루 6개 1등급 영어독해 모의고사 고2', meta='회차별 6문항', who='고2 · 모의고사 대비',
          intro='하루 6문항씩 모의고사 유형을 꾸준히 푸는 EBS 고2 독해 교재예요. 회차·문항별 분석노트를 준비하고 있어요.'),
-    dict(cover='olympos-gichul-go1', name='올림포스 전국연합학력평가 기출문제집 고1', full='EBS 올림포스 전국연합학력평가 기출문제집 고1 영어', meta='회차별 18~45번', who='고1 · 모의고사 기출',
-         intro='고1 전국연합학력평가 기출을 회차별로 모은 EBS 문제집이에요. 회차·문항별 분석노트를 준비하고 있어요.'),
-    dict(cover='olympos-gichul-go2', name='올림포스 전국연합학력평가 기출문제집 고2', full='EBS 올림포스 전국연합학력평가 기출문제집 고2 영어', meta='회차별 18~45번', who='고2 · 모의고사 기출',
-         intro='고2 전국연합학력평가 기출을 회차별로 모은 EBS 문제집이에요. 회차·문항별 분석노트를 준비하고 있어요.'),
+    dict(cover='olympos-gichul-go1', name='올림포스 전국연합학력평가 기출문제집 고1', full='EBS 올림포스 전국연합학력평가 기출문제집 고1 영어', meta='20강 · 강별 예시문제 + 1~12번', who='고1 · 모의고사 기출',
+         intro='고1 전국연합학력평가 기출을 유형별 20강으로 묶은 EBS 문제집이에요. 강별 예시문제와 1~12번 분석노트를 준비하고 있어요.'),
+    dict(cover='olympos-gichul-go2', name='올림포스 전국연합학력평가 기출문제집 고2', full='EBS 올림포스 전국연합학력평가 기출문제집 고2 영어', meta='20강 · 강별 예시문제 + 1~12번', who='고2 · 모의고사 기출',
+         intro='고2 전국연합학력평가 기출을 유형별 20강으로 묶은 EBS 문제집이에요. 강별 예시문제와 1~12번 분석노트를 준비하고 있어요.'),
     dict(cover='olympos-basic1', name='올림포스 영어독해 기본1', full='EBS 올림포스 영어독해의 기본 1', meta='강별 문항', who='고1 · 내신 부교재',
          intro='학교 내신 부교재로 많이 쓰는 EBS 고등 기본 독해 교재예요. 강·문항별 분석노트를 준비하고 있어요.'),
     dict(cover='readingpower-basic', name='리딩파워 기본', full='리딩파워 기본', meta='강별 문항', who='고1~고2 · 독해 기본',
