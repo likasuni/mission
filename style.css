@@ -454,7 +454,6 @@ a.nb:hover { filter: brightness(1.12); }
 .rq-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
 @media (max-width: 720px) { .rq-cols { grid-template-columns: 1fr; } }
 .rq-cols .rq-col { margin: 0; }
-.rq-cols .rq-st { display: none; } /* 칸 제목이 상태를 알려 줘서 줄마다 뱃지는 뺌 */
 .rq-cols .rq-col ul { display: block; } /* 한 줄 목록은 grid 대신 block: 사파리에서 첫 줄이 한 글자 폭으로 찌그러지던 문제 */
 .rq-cols .rq { width: 100%; }
 .rq-cols .rq-tx b { overflow-wrap: break-word; }
@@ -466,7 +465,11 @@ a.nb:hover { filter: brightness(1.12); }
 .rq-cols .rq-col.ok .rq:nth-child(2) { border-top-color: #cfe9d8; }
 .rq-cols .rq-col.rd .rq:nth-child(2) { border-top-color: #d3e0fb; }
 
-/* 소통하기 게시판 (첫 화면 '자료 요청' 아래 독립 상자) */
+/* 소통하기: 블로그 위젯처럼 '자료 요청 · 소통하기' 한 상자 안 아래쪽 (#talk.tk-in) */
+#talk.tk-in { margin: 18px 0 4px; border: 0; border-radius: 0; box-shadow: none; overflow: visible; background: transparent; }
+.tk-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; padding-top: 14px; border-top: 1px solid var(--line); }
+.tk-h b { font-size: 1rem; color: var(--navy); } .tk-h span { font-size: .82rem; color: var(--muted); }
+/* 소통하기 게시판 (예전: 첫 화면 '자료 요청' 아래 독립 상자) */
 #talk { margin: 26px 0; border-radius: 16px; overflow: hidden; border: 2px solid #1e3a8a; background: #fff; box-shadow: 0 8px 24px rgba(30, 58, 138, .12); }
 #talk .rc-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 16px 20px; background: linear-gradient(135deg, #172554, #1e3a8a); color: #fff; }
 #talk .rc-head > :not(.rc-live):not(.rc-title):not(.tk-sub) { flex: 0 0 100%; order: -1; max-width: 100%; }
