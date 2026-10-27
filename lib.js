@@ -4,18 +4,19 @@
    - 분석노트 요청: 카카오 회원, 하루 모의고사 2개 · 부교재 1개, 24시간 링크를 카톡으로 자동 발송
    ========================================= */
 // 부교재 목록: 이름은 드라이브 '부교재 분석노트' 안 폴더 이름과 같게 (note-request 함수의 BOOKS, build.py BOOKS와 같게)
-// u: 단위(강/회), max: 마지막 강·회, n: 문항 수, gw: Gateway 있음
+// u: 단위(강/회), max: 마지막 강·회, n: 문항 수, gw: Gateway 있음, ex: 1번 앞 예시문제 있음 (둘 다 번호 0, 파일 이름 '강-0.pdf')
 const NOTE_BOOK_CFG = {
   '수능특강 라이트': { u: '강', max: 22, n: 10, gw: true },
-  '리딩파워 기본': { u: '강', max: 30, n: 10 },
-  '리딩파워 완성': { u: '강', max: 30, n: 10 },
-  '올림포스 영어독해 기본1': { u: '강', max: 30, n: 10 },
+  '리딩파워 기본': { u: '강', max: 30, n: 10, ex: true },
+  '리딩파워 완성': { u: '강', max: 30, n: 10, ex: true },
+  '올림포스 영어독해 기본1': { u: '강', max: 30, n: 10, ex: true },
   '하루 6개 1등급 모의고사 고1': { u: '회', max: 40, n: 6 },
   '하루 6개 1등급 모의고사 고2': { u: '회', max: 40, n: 6 },
   '올림포스 전국연합학력평가 기출문제집 고1': { u: '회', max: 30, from: 18, n: 45 },
   '올림포스 전국연합학력평가 기출문제집 고2': { u: '회', max: 30, from: 18, n: 45 },
 };
 const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
+const zeroName = b => { const c = NOTE_BOOK_CFG[b] || {}; return c.gw ? 'Gateway' : c.ex ? '예시문제' : ''; }; // 번호 0 이름
 const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (note-request 함수 LIMIT 와 같게)
 
 (async function () {
@@ -123,7 +124,7 @@ function recentComments() {
     const t = c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '');
     let m = t.match(/^(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번$/), q = '';
     if (m) q = `?y=${m[1]}&m=${m[2]}&g=${m[3]}&n=${m[4]}`;
-    else if ((m = t.match(/^(.+) (\d+)(?:강|회) (?:Gateway|(\d+)번)$/))) q = `?book=${encodeURIComponent(m[1])}&unit=${m[2]}&n=${m[3] || 0}`;
+    else if ((m = t.match(/^(.+) (\d+)(?:강|회) (?:Gateway|예시문제|(\d+)번)$/))) q = `?book=${encodeURIComponent(m[1])}&unit=${m[2]}&n=${m[3] || 0}`;
     return `/${c.page_key}/${q}#note-req`;
   };
   const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', '');
@@ -332,8 +333,9 @@ async function noteRequest(user) {
   const numOpts = k => {
     if (k !== 'book') return opt(range(30, 40), +qs.get('n') >= 30 && +qs.get('n') <= 40 ? +qs.get('n') : 30); // 모의고사는 30~40번만 요청 (나머지는 페이지에서 바로 보기)
     const c = bcfg(curBook()), qn = qs.get('n'); // 주소의 번호(나도 받기)는 같은 교재일 때만
-    const sel = qn !== null && curBook() === d.book && (+qn === 0 ? c.gw : +qn >= (c.from || 1) && +qn <= c.n) ? +qn : (c.from || 1);
-    return (c.gw ? `<option value="0"${sel === 0 ? ' selected' : ''}>Gateway</option>` : '') + opt(range(c.from || 1, c.n), sel);
+    const z = zeroName(curBook());
+    const sel = qn !== null && curBook() === d.book && (+qn === 0 ? !!z : +qn >= (c.from || 1) && +qn <= c.n) ? +qn : (c.from || 1);
+    return (z ? `<option value="0"${sel === 0 ? ' selected' : ''}>${z}</option>` : '') + opt(range(c.from || 1, c.n), sel);
   };
   card.innerHTML = head + gotHtml + `
     <div class="tabs mt"><button class="tab${startBook ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button></div>
@@ -357,7 +359,7 @@ async function noteRequest(user) {
     const n = $v('nr-n');
     document.getElementById('nr-preview').textContent = kind === 'moe'
       ? `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${n}번 분석노트`
-      : `요청: ${$v('nr-b')} ${$v('nr-u')}${bcfg($v('nr-b')).u} ${n === '0' ? 'Gateway' : n + '번'} 분석노트`;
+      : `요청: ${$v('nr-b')} ${$v('nr-u')}${bcfg($v('nr-b')).u} ${n === '0' ? zeroName($v('nr-b')) : n + '번'} 분석노트`;
   };
   card.querySelectorAll('.tab').forEach(t => t.onclick = () => {
     kind = t.dataset.k;
