@@ -88,6 +88,20 @@ function maskName(n) {
   return n.length === 2 ? n[0] + '*' : n[0] + '*'.repeat(n.length - 2) + n[n.length - 1];
 }
 
+/* ---------- 상자 안 자동 광고 밖으로 ----------
+   자동 광고(관련 검색 '자세히 알아보기' 등)가 '자료 요청'·'소통하기' 상자 안에 끼어들면 목록이 찌그러지고 30초마다 다시 그릴 때 지워짐
+   → 상자 안에 들어온 자동 광고는 바로 상자 바로 아래로 옮김 (광고는 그대로 보임, 수익 유지) */
+function keepAdsOut(sec) {
+  if (!sec || sec.dataset.adsOut) return;
+  sec.dataset.adsOut = '1';
+  const sweep = () => sec.querySelectorAll('.google-auto-placed, ins.adsbygoogle').forEach(ad => {
+    const w = ad.closest('.google-auto-placed') || ad;
+    if (sec.contains(w)) sec.after(w);
+  });
+  sweep();
+  new MutationObserver(sweep).observe(sec, { childList: true, subtree: true });
+}
+
 /* ---------- 최근 댓글 (첫 화면): 30초마다 새로 불러옴 ---------- */
 function recentComments() {
   const box = document.getElementById('recent-cmt');
@@ -148,12 +162,7 @@ function recentComments() {
   }
   // 자동 광고가 요청 목록 칸 사이(첫 줄 옆)에 끼어들면 줄이 한 글자 폭으로 찌그러지고, 30초마다 다시 그릴 때 광고도 지워짐
   // → 목록 안에 들어온 자동 광고는 바로 목록 아래로 옮김 (광고는 그대로 보임)
-  new MutationObserver(() => {
-    list.querySelectorAll('.google-auto-placed, ins.adsbygoogle').forEach(ad => {
-      const w = ad.closest('.google-auto-placed') || ad;
-      if (list.contains(w)) list.after(w);
-    });
-  }).observe(list, { childList: true, subtree: true });
+  keepAdsOut(box);
   load();
   setInterval(() => { if (!document.hidden) load(); }, 30000);
   // 이미 로그인한 회원에게는 로그인 버튼을 숨김
@@ -166,6 +175,7 @@ function recentComments() {
 async function talkBoard(user) {
   const box = document.getElementById('talk');
   if (!box) return;
+  keepAdsOut(box);
   const formEl = box.querySelector('.tk-form'), listEl = box.querySelector('.tk-list');
   const ago = t => {
     const m = Math.floor((Date.now() - new Date(t)) / 60000);
