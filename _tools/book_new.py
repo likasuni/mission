@@ -15,6 +15,7 @@ OUT = os.path.join(HERE, 'book_candidates.json')
 DAYS = 60
 QUERIES = ['수능 영어', '고등 영어 독해', '고등 영어 어휘', '고등 영어 문법', '수능 영어 듣기', '영어 모의고사', '고1 영어', '고2 영어', '고3 영어', '영어 구문 독해', '영어 내신']
 LEVEL = re.compile(r'수능|고등|고[123]|모의고사|내신|EBS')
+NOT = re.compile(r'공무원|공단기|독학사|중학|중등|토익|TOEIC|토플|편입|초등|자습서|평가문제집')  # 고등 영어 부교재가 아닌 것
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
 
@@ -67,7 +68,7 @@ def main():
             isbn = (it.get('isbn') or '').split()[-1] if it.get('isbn') else ''
             title, desc, pd = clean(it.get('title')), clean(it.get('description')), it.get('pubdate', '')
             text = title + ' ' + desc
-            if not isbn or isbn in have or not (since <= pd <= upto) or '영어' not in text or not LEVEL.search(text):
+            if not isbn or isbn in have or not (since <= pd <= upto) or '영어' not in text or not LEVEL.search(text) or NOT.search(title):
                 continue
             data['books'].append({'isbn13': isbn, 'title': title, 'author': clean(it.get('author')).replace('^', ', '),
                                   'publisher': clean(it.get('publisher')), 'pubDate': f'{pd[:4]}-{pd[4:6]}-{pd[6:8]}',
