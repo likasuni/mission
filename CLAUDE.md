@@ -49,6 +49,12 @@
 - 원장님이 쓴 설명은 바꾸지 않고 칸만 나눔. Claude 가 덧붙인 예문·확인 문제는 'Claude 추가'로 표시. 확인할 수 없는 통계·학생 사례는 쓰지 않음.
 - 노트 페이지는 첫 화면 '원장님 노트'(최근 5개), `/memo/` 목록, 사이트맵에 들어가요. date 가 미래면 그날 공개.
 
+## 학원 소식 (자료실 `/news/`, 메뉴 '학원 소식')
+
+- 학원 홍보·대비반 안내·시험 대비 정리 글. 폴더 `_tools/news/<slug>/` 에 `meta.json`(slug·date·tag·title·desc·summary·keywords·faq) + `body.html`(받은 본문 그대로) + `thumb.png`(있으면 썸네일·og:image·목록 이미지).
+- body.html 의 `<!--THUMB-->` 자리에 썸네일, `<!--AD-->` 자리에 자료실 수동 광고가 들어가요. 주소는 `/news/<slug>/`, 사이트맵 포함.
+- 교습비·주소는 학원 홈페이지(수강료 페이지)와 같게 써요 (교습비 표시 규정). 주소는 "경기 성남시 분당구 판교로 476 2층".
+
 ## 자료 완료 알림 (원장님이 "완료"라고 하면)
 
 두 가지를 바로 보내요. Supabase 프로젝트 `iiyhmskvdjgstoikonwu` 에서 `execute_sql` 로 실행해요 (이 환경은 supabase.co 직접 접속이 막혀 있어서 DB 의 `net.http_post` 로 불러요).

@@ -199,14 +199,14 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/naesin/', '내신 분석'), ('/exams/', '전과목 기출'), ('/notes/', '분석노트 요청')]
+NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/naesin/', '내신 분석'), ('/exams/', '전과목 기출'), ('/news/', '학원 소식'), ('/notes/', '분석노트 요청')]
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
             f'data-ad-slot="{AD_SLOT}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
             f'<script>(adsbygoogle=window.adsbygoogle||[]).push({{}});</script></div>')
 
-def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website'):
+def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website', og_image=None):
     url = SITE + path
     ld = list(extra_ld) + ([{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else [])
@@ -229,7 +229,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/og.png">
+<meta property="og:image" content="{og_image or SITE + '/og.png'}">
 <meta name="google-site-verification" content="BckdSBCPVseYvq2HonB5Q7G9pfCOG10GZvoCOIoK4sk">
 <meta name="naver-site-verification" content="7e1745db79feaa04ab25201be2de4645c4641c34">
 <link rel="icon" href="/favicon.png">
@@ -677,6 +677,47 @@ page('/suneung/', '수능 기출문제 전과목 PDF 모음 | 리카수니 자�
 cnt = collections.Counter(k[1] if k[0] == 'moe' else 'sn' for k in sessions)
 latest = sorted([k for k in sessions if k[0] == 'moe'], key=lambda k: (-k[2], -k[3], k[1]))[:9]
 var_sess = sorted([k for k in VAR if k in sessions], key=lambda k: (k[1], -k[2], -k[3]))
+# ---------- 학원 소식 (_tools/news/<slug>/meta.json + body.html [+ thumb.png] → /news/<slug>/) ----------
+# 본문은 받은 HTML 그대로. <!--THUMB--> 자리에 썸네일(있을 때만), <!--AD--> 자리에 자료실 수동 광고. date 가 미래면 그날 공개
+NEWS = []
+_nd = os.path.join(ROOT, '_tools', 'news')
+for d in sorted(os.listdir(_nd)) if os.path.isdir(_nd) else []:
+    mp = os.path.join(_nd, d, 'meta.json')
+    if os.path.exists(mp):
+        m = json.load(open(mp, encoding='utf-8'))
+        if m['date'] <= TODAY: m['_dir'] = os.path.join(_nd, d); NEWS.append(m)
+NEWS.sort(key=lambda m: (m['date'], m['slug']), reverse=True)
+NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}'
+def news_line(m):
+    th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
+    return (f'<li><a href="/news/{m["slug"]}/">' + (f'<img src="/news/{m["slug"]}/thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '') +
+            f'<div><small>{m["date"].replace("-", ".")} · {e(m.get("tag", "학원 소식"))}</small><b>{e(m["title"])}</b><span>{e(m.get("summary", ""))}</span></div></a></li>')
+for m in NEWS:
+    url = f'/news/{m["slug"]}/'
+    LASTMOD[url] = m.get('updated', m['date'])
+    body = open(os.path.join(m['_dir'], 'body.html'), encoding='utf-8').read()
+    has_th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
+    th_html = (f'<div style="box-sizing:border-box;margin:0 0 16px;max-width:100%;overflow:hidden;text-align:center;width:100%;"><img src="thumb.png" alt="{e(m["title"])}" width="1080" height="1080" loading="eager" style="border-radius:10px;height:auto;max-width:560px;width:100%;"></div>') if has_th else ''
+    body = body.replace('<!--THUMB-->', th_html).replace('<!--AD-->', ad())
+    others = [x for x in NEWS if x is not m][:5]
+    body = f'<div class="card">{body}</div>' + (f'<div class="card"><style>{NEWS_CSS}</style><h2 style="font-size:1rem;margin:0 0 4px">다른 학원 소식</h2><ul class="nw-list">{"".join(news_line(x) for x in others)}</ul></div>' if others else '')
+    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": m['title'], "description": m['desc'], "datePublished": m['date'],
+           "dateModified": LASTMOD[url], "inLanguage": "ko", "author": {"@type": "Person", "name": "리카수니"},
+           "publisher": {"@type": "Organization", "name": "리카수니 자료실"}, "keywords": ', '.join(m.get('keywords', [])), "mainEntityOfPage": SITE + url}
+          | ({"image": SITE + url + 'thumb.png'} if has_th else {})]
+    if m.get('faq'):
+        ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q['q'], "acceptedAnswer": {"@type": "Answer", "text": q['a']}} for q in m['faq']]})
+    page(url, f'{m["title"]} | 리카수니 자료실', m['desc'], body,
+         [('/', '홈'), ('/news/', '학원 소식'), (url, m.get('tag', '학원 소식'))], '/news/', extra_ld=ld, og_type='article',
+         og_image=(SITE + url + 'thumb.png') if has_th else None)
+    if has_th: shutil.copyfile(os.path.join(m['_dir'], 'thumb.png'), os.path.join(ROOT, 'news', m['slug'], 'thumb.png'))
+page('/news/', '학원 소식 – 이매동 코코스학원 시험 대비 · 수업 안내 | 리카수니 자료실',
+     '이매동 코코스학원 소식. 중등·고등 시험 대비 핵심 정리와 대비반·수업 안내를 모았어요.',
+     f'<style>{NEWS_CSS}</style><section class="hero"><h1>학원 소식</h1><p>이매동 코코스학원의 시험 대비 정리와 수업 안내를 모아 두는 곳이에요.</p></section>'
+     + (f'<div class="card"><ul class="nw-list">{"".join(news_line(m) for m in NEWS)}</ul></div>' if NEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
+     [('/', '홈'), ('/news/', '학원 소식')], '/news/')
+
 # ---------- 원장님 노트 (_tools/memos/<slug>.json → /memo/<slug>/) ----------
 # 원장님이 채팅으로 준 분석노트 메모를 Claude 가 JSON 으로 정리. date 가 미래면 그날 공개 (해설과 같게)
 # 원장님이 쓴 설명은 그대로, Claude 가 덧붙인 예문·확인 문제는 'Claude 추가' 표시
@@ -974,7 +1015,8 @@ def _sm_rank(p):
     q = p.strip('/').split('/')
     if p == '/': return 0
     if q[0] == 'naesin': return 1
-    if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/', '/memo/'): return 2
+    if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/', '/memo/', '/news/'): return 2
+    if q[0] == 'news': return 3  # 학원 소식
     if q[0] == 'memo': return 3  # 원장님 노트
     if q[0] in ('moe', 'suneung') and q[-1].isdigit() or '-' in q[-1] and q[-2:-1] == ['eng']: return 3  # 문항별 해설
     if q[0] in ('moe', 'suneung') and q[-1] == 'eng': return 4  # 회차별 영어
