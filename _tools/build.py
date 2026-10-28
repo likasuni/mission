@@ -594,11 +594,21 @@ NEWS.sort(key=lambda m: (m['date'], m['slug']), reverse=True)
 def nurl(m): return f'/books/news/{m["slug"]}/' if m.get('cat') == 'book' else f'/news/{m["slug"]}/'  # cat=book → 부교재 메뉴 '교재 소식'
 BOOKNEWS = [m for m in NEWS if m.get('cat') == 'book']
 NEWS = [m for m in NEWS if m.get('cat') != 'book']  # 학원 소식만
-NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}'
+NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}.nw-list em{display:block;font-style:normal;color:#475569;font-size:.88rem;line-height:1.45}.nw-chip{display:inline-block;font-style:normal;font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:999px;background:#eef2ff;color:#1f3a8a;margin-right:6px}.nw-chip.new{background:#fff1e6;color:#c2410c}.nw-chip.buy{background:#fee2e2;color:#b42318}.nw-cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}.nw-cols h3{font-size:1rem;margin:4px 0 0;color:var(--navy-d)}.nw-cols h3 small{color:var(--muted);font-weight:500}.nw-cols img{width:64px;height:64px}@media(max-width:760px){.nw-cols{grid-template-columns:1fr}}'
+def news_kind(m):  # 교재 소식 분류: 신간 소개 / 자료·정보
+    return 'new' if m.get('tag', '').startswith('교재 신간') else 'info'
 def news_line(m):
     th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
+    main, _, sub = m['title'].partition(' — ')  # 목록에선 긴 제목을 두 줄로: 굵은 이름 + 작은 설명
+    sub = _re.sub(r'\s*\((이매동 )?코코스학원[^)]*\)\s*$', '', sub)
+    tag = m.get('tag', '학원 소식')
+    chip = f'<i class="nw-chip{" new" if tag.startswith("교재 신간") else ""}">{e(tag)}</i>'
+    buy = '<i class="nw-chip buy">🛒 구매 링크</i>' if 'link.coupang.com' in open(os.path.join(m['_dir'], 'body.html'), encoding='utf-8').read() else ''
     return (f'<li><a href="{nurl(m)}">' + (f'<img src="{nurl(m)}thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '') +
-            f'<div><small>{m["date"].replace("-", ".")} · {e(m.get("tag", "학원 소식"))}</small><b>{e(m["title"])}</b><span>{e(m.get("summary", ""))}</span></div></a></li>')
+            f'<div><small>{chip}{buy}{m["date"].replace("-", ".")}</small><b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a></li>')
+def book_groups(ms, n=None):  # 교재 소식을 신간 소개 / 자료·정보 두 칸으로
+    cols = [(k, h, [m for m in ms if news_kind(m) == k]) for k, h in (('new', '📘 신간 소개'), ('info', '🔗 자료·정보'))]
+    return '<div class="nw-cols">' + ''.join(f'<section><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'
 nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
       '<p class="lead">이매동 코코스학원 리카수니 원장이 학교 기출 시험지를 직접 분석해요. 출제 범위, 문항별 포인트, 서술형 대비까지 정리하고, '
       '<b>분석 내용은 코코스 학원생만</b> 볼 수 있어요. 학교별 분석은 시험이 끝날 때마다 계속 채워 가요.</p>')
@@ -723,7 +733,7 @@ for m in NEWS + BOOKNEWS:
 page('/books/news/', '교재 소식 – 고등 영어 부교재 신간 · 개정 정보 | 리카수니 자료실',
      '고등 영어 부교재 신간·개정 소식을 리카수니 원장이 요약해 알려 드려요. 교재 구성과 대상, 출판사 이벤트 정보.',
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>교재 소식</h1><p>고등 영어 부교재 신간·개정 소식을 요약해 알려 드려요.</p></section>'
-     + (f'<div class="card"><ul class="nw-list">{"".join(news_line(m) for m in BOOKNEWS)}</ul></div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
+     + (f'<div class="card">{book_groups(BOOKNEWS)}</div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
      [('/', '홈'), ('/books/', '부교재'), ('/books/news/', '교재 소식')], '/books/')
 page('/news/', '학원 소식 – 이매동 코코스학원 시험 대비 · 수업 안내 | 리카수니 자료실',
      '이매동 코코스학원 소식. 중등·고등 시험 대비 핵심 정리와 대비반·수업 안내를 모았어요.',
@@ -1014,8 +1024,8 @@ show(h,true)||show(s)||show(t[0]&&t[0].dataset.b)})();</script>''' +
          '<li>다른 부교재 분석노트가 필요하면 아래 댓글로 교재 이름을 남겨 주세요. 요청이 많은 교재부터 추가해요.</li>'
          '</ul></div>' + ad())
 if BOOKNEWS:
-    bbody = bbody.replace('</p>', '</p>' + f'<div class="card"><style>{NEWS_CSS}</style><h2>📚 교재 소식</h2><ul class="nw-list">{"".join(news_line(m) for m in BOOKNEWS[:3])}</ul>'
-                          + (f'<p style="margin:6px 0 0"><a href="/books/news/">교재 소식 전체 보기 ({len(BOOKNEWS)}개) →</a></p>' if len(BOOKNEWS) > 3 else '') + '</div>', 1)
+    bbody = bbody.replace('</p>', '</p>' + f'<div class="card"><style>{NEWS_CSS}</style><h2>📚 교재 소식</h2>{book_groups(BOOKNEWS, 3)}'
+                          + f'<p style="margin:10px 0 0"><a href="/books/news/">교재 소식 전체 보기 ({len(BOOKNEWS)}개) →</a></p></div>', 1)
 page('/books/', 'EBS 부교재 영어 분석노트 요청 · 수능특강 라이트 | 리카수니 자료실',
      '수능특강 라이트 등 EBS 부교재 영어 분석노트. 문항 1개는 카카오톡으로 무료, 강 단위 구매도 가능. 리카수니 원장 직접 제작.', bbody,
      [('/', '홈'), ('/books/', '부교재')], '/books/', comments=('books', '부교재 요청방'))
