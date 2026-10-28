@@ -1,0 +1,29 @@
+name: book-new
+# 고등 영어 부교재 신간 후보를 알라딘 도서 API 로 모아 _tools/book_candidates.json 에 커밋 (매주 월요일 새벽 4시 37분, 한국 시간)
+on:
+  schedule:
+    - cron: '37 19 * * 0'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: drive-sync
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Collect
+        working-directory: _tools
+        env:
+          ALADIN_TTB_KEY: ${{ secrets.ALADIN_TTB_KEY }}
+        run: python book_new.py
+      - name: Commit
+        run: |
+          git config user.name "likasuni-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add _tools/book_candidates.json
+          git diff --cached --quiet || git commit -m "교재 신간 후보 모으기"
+          git pull --rebase -q && git push
