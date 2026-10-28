@@ -591,10 +591,13 @@ for d in sorted(os.listdir(_nd)) if os.path.isdir(_nd) else []:
         m = json.load(open(mp, encoding='utf-8'))
         if m['date'] <= TODAY: m['_dir'] = os.path.join(_nd, d); NEWS.append(m)
 NEWS.sort(key=lambda m: (m['date'], m['slug']), reverse=True)
+def nurl(m): return f'/books/news/{m["slug"]}/' if m.get('cat') == 'book' else f'/news/{m["slug"]}/'  # cat=book → 부교재 메뉴 '교재 소식'
+BOOKNEWS = [m for m in NEWS if m.get('cat') == 'book']
+NEWS = [m for m in NEWS if m.get('cat') != 'book']  # 학원 소식만
 NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}'
 def news_line(m):
     th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
-    return (f'<li><a href="/news/{m["slug"]}/">' + (f'<img src="/news/{m["slug"]}/thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '') +
+    return (f'<li><a href="{nurl(m)}">' + (f'<img src="{nurl(m)}thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '') +
             f'<div><small>{m["date"].replace("-", ".")} · {e(m.get("tag", "학원 소식"))}</small><b>{e(m["title"])}</b><span>{e(m.get("summary", ""))}</span></div></a></li>')
 nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
       '<p class="lead">이매동 코코스학원 리카수니 원장이 학교 기출 시험지를 직접 분석해요. 출제 범위, 문항별 포인트, 서술형 대비까지 정리하고, '
@@ -696,15 +699,15 @@ latest = sorted([k for k in sessions if k[0] == 'moe'], key=lambda k: (-k[2], -k
 var_sess = sorted([k for k in VAR if k in sessions], key=lambda k: (k[1], -k[2], -k[3]))
 # ---------- 학원 소식 (_tools/news/<slug>/meta.json + body.html [+ thumb.png] → /news/<slug>/) ----------
 # 본문은 받은 HTML 그대로. <!--THUMB--> 자리에 썸네일(있을 때만), <!--AD--> 자리에 자료실 수동 광고. date 가 미래면 그날 공개
-for m in NEWS:
-    url = f'/news/{m["slug"]}/'
+for m in NEWS + BOOKNEWS:
+    url = nurl(m); isbook = m.get('cat') == 'book'
     LASTMOD[url] = m.get('updated', m['date'])
     body = open(os.path.join(m['_dir'], 'body.html'), encoding='utf-8').read()
     has_th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
     th_html = (f'<div style="box-sizing:border-box;margin:0 0 16px;max-width:100%;overflow:hidden;text-align:center;width:100%;"><img src="thumb.png" alt="{e(m["title"])}" width="1080" height="1080" loading="eager" style="border-radius:10px;height:auto;max-width:560px;width:100%;"></div>') if has_th else ''
     body = body.replace('<!--THUMB-->', th_html).replace('<!--AD-->', ad())
-    others = [x for x in NEWS if x is not m][:5]
-    body = f'<div class="card">{body}</div>' + (f'<div class="card"><style>{NEWS_CSS}</style><h2 style="font-size:1rem;margin:0 0 4px">다른 학원 소식</h2><ul class="nw-list">{"".join(news_line(x) for x in others)}</ul></div>' if others else '')
+    others = [x for x in (BOOKNEWS if isbook else NEWS) if x is not m][:5]
+    body = f'<div class="card">{body}</div>' + (f'<div class="card"><style>{NEWS_CSS}</style><h2 style="font-size:1rem;margin:0 0 4px">{"다른 교재 소식" if isbook else "다른 학원 소식"}</h2><ul class="nw-list">{"".join(news_line(x) for x in others)}</ul></div>' if others else '')
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": m['title'], "description": m['desc'], "datePublished": m['date'],
            "dateModified": LASTMOD[url], "inLanguage": "ko", "author": {"@type": "Person", "name": "리카수니"},
            "publisher": {"@type": "Organization", "name": "리카수니 자료실"}, "keywords": ', '.join(m.get('keywords', [])), "mainEntityOfPage": SITE + url}
@@ -713,9 +716,15 @@ for m in NEWS:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q['q'], "acceptedAnswer": {"@type": "Answer", "text": q['a']}} for q in m['faq']]})
     page(url, f'{m["title"]} | 리카수니 자료실', m['desc'], body,
-         [('/', '홈'), ('/naesin/', '코코스학원'), ('/news/', '학원 소식'), (url, m.get('tag', '학원 소식'))], '/news/', extra_ld=ld, og_type='article',
+         ([('/', '홈'), ('/books/', '부교재'), ('/books/news/', '교재 소식'), (url, m.get('tag', '교재 소식'))] if isbook else
+          [('/', '홈'), ('/naesin/', '코코스학원'), ('/news/', '학원 소식'), (url, m.get('tag', '학원 소식'))]), '/books/' if isbook else '/news/', extra_ld=ld, og_type='article',
          og_image=(SITE + url + 'thumb.png') if has_th else None)
-    if has_th: shutil.copyfile(os.path.join(m['_dir'], 'thumb.png'), os.path.join(ROOT, 'news', m['slug'], 'thumb.png'))
+    if has_th: shutil.copyfile(os.path.join(m['_dir'], 'thumb.png'), os.path.join(ROOT, url.strip('/'), 'thumb.png'))
+page('/books/news/', '교재 소식 – 고등 영어 부교재 신간 · 개정 정보 | 리카수니 자료실',
+     '고등 영어 부교재 신간·개정 소식을 리카수니 원장이 요약해 알려 드려요. 교재 구성과 대상, 출판사 이벤트 정보.',
+     f'<style>{NEWS_CSS}</style><section class="hero"><h1>교재 소식</h1><p>고등 영어 부교재 신간·개정 소식을 요약해 알려 드려요.</p></section>'
+     + (f'<div class="card"><ul class="nw-list">{"".join(news_line(m) for m in BOOKNEWS)}</ul></div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
+     [('/', '홈'), ('/books/', '부교재'), ('/books/news/', '교재 소식')], '/books/')
 page('/news/', '학원 소식 – 이매동 코코스학원 시험 대비 · 수업 안내 | 리카수니 자료실',
      '이매동 코코스학원 소식. 중등·고등 시험 대비 핵심 정리와 대비반·수업 안내를 모았어요.',
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>학원 소식</h1><p>이매동 코코스학원의 시험 대비 정리와 수업 안내를 모아 두는 곳이에요.</p></section>'
@@ -1004,6 +1013,9 @@ show(h,true)||show(s)||show(t[0]&&t[0].dataset.b)})();</script>''' +
          '<li>아직 준비되지 않은 강·번호는 원장님께 요청이 전달돼요. 1~2일 뒤 다시 요청해 주세요.</li>'
          '<li>다른 부교재 분석노트가 필요하면 아래 댓글로 교재 이름을 남겨 주세요. 요청이 많은 교재부터 추가해요.</li>'
          '</ul></div>' + ad())
+if BOOKNEWS:
+    bbody = bbody.replace('</p>', '</p>' + f'<div class="card"><style>{NEWS_CSS}</style><h2>📚 교재 소식</h2><ul class="nw-list">{"".join(news_line(m) for m in BOOKNEWS[:3])}</ul>'
+                          + (f'<p style="margin:6px 0 0"><a href="/books/news/">교재 소식 전체 보기 ({len(BOOKNEWS)}개) →</a></p>' if len(BOOKNEWS) > 3 else '') + '</div>', 1)
 page('/books/', 'EBS 부교재 영어 분석노트 요청 · 수능특강 라이트 | 리카수니 자료실',
      '수능특강 라이트 등 EBS 부교재 영어 분석노트. 문항 1개는 카카오톡으로 무료, 강 단위 구매도 가능. 리카수니 원장 직접 제작.', bbody,
      [('/', '홈'), ('/books/', '부교재')], '/books/', comments=('books', '부교재 요청방'))
@@ -1021,6 +1033,8 @@ def _sm_rank(p):
     if q[0] == 'naesin': return 1
     if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/', '/memo/', '/news/'): return 2
     if q[0] == 'news': return 3  # 학원 소식
+    if p == '/books/news/': return 2
+    if q[0] == 'books' and len(q) == 3 and q[1] == 'news': return 3  # 교재 소식
     if q[0] == 'memo': return 3  # 원장님 노트
     if q[0] in ('moe', 'suneung') and q[-1].isdigit() or '-' in q[-1] and q[-2:-1] == ['eng']: return 3  # 문항별 해설
     if q[0] in ('moe', 'suneung') and q[-1] == 'eng': return 4  # 회차별 영어
