@@ -1,5 +1,5 @@
 name: blog-post
-# 저장소의 _tools/blog_queue/ 글(HTML)을 리카수니 블로그에 발행 (자유 형식 글). 발행 기록을 커밋함
+# 저장소의 _tools/blog_queue/ 글(HTML)을 리카수니 블로그(또는 blog=cocos 면 코코스학원 홈페이지)에 발행 (자유 형식 글). 발행 기록을 커밋함
 on:
   workflow_dispatch:
     inputs:
@@ -21,6 +21,11 @@ on:
         description: '이미 발행한 글 내용 고치기 (발행 기록 있는 파일만)'
         type: boolean
         default: false
+      blog:
+        description: '올릴 곳 (likasuni = 리카수니 블로그, cocos = 코코스학원 홈페이지)'
+        type: choice
+        options: [likasuni, cocos]
+        default: likasuni
 permissions:
   contents: write
 concurrency: drive-sync
@@ -42,7 +47,7 @@ jobs:
           F: ${{ inputs.file }}
           T: ${{ inputs.title }}
           L: ${{ inputs.labels }}
-        run: python blogger_publish_file.py "$F" "$T" "$L" ${{ inputs.draft && '--draft' || '' }} ${{ inputs.update && '--update' || '' }}
+        run: python blogger_publish_file.py "$F" "$T" "$L" ${{ inputs.draft && '--draft' || '' }} ${{ inputs.update && '--update' || '' }} --blog=${{ inputs.blog }}
       - name: Commit log
         run: |
           git config user.name "likasuni-bot"

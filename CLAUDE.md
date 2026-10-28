@@ -39,7 +39,8 @@
 - 블로그용 HTML 박스에는 애드센스가 뚫고 나가지 않게 `box-sizing:border-box; overflow:hidden; width:100%; max-width:100%` 를 모든 박스(중첩 포함)에 넣어요.
 - 연결 정보는 GitHub Secrets `BLOGGER_CLIENT_ID`, `BLOGGER_CLIENT_SECRET`, `BLOGGER_REFRESH_TOKEN`, `BLOGGER_BLOG_ID` (Google Cloud 프로젝트 likasuni-mission, OAuth 클라이언트 '블로그 자동 발행', 2026-10-18 연결).
 - 연결 테스트: Actions → `blog-test` → 날짜 입력 → 블로그에 **임시저장(비공개)** 으로 올라감. 확인 뒤 임시저장 글은 지워 달라고 안내.
-- 자유 형식 글(업데이트 소식, 내신 분석 등): `_tools/blog_queue/<파일>.html` 에 글을 쓰고 main 에 합친 뒤 Actions → `blog-post` (file·title·labels·draft) 로 발행. `_tools/blogger_publish_file.py` 가 올리고 `blogger_posted.json` 에 `file:<파일>` 로 기록해서 같은 글은 두 번 안 올라가요.
+- 자유 형식 글(업데이트 소식, 내신 분석 등): `_tools/blog_queue/<파일>.html` 에 글을 쓰고 main 에 합친 뒤 Actions → `blog-post` (file·title·labels·draft) 로 발행.
+- **코코스학원 홈페이지(www.cocosedu.co.kr, Blogger)** 에도 같은 통로로 발행: `blog-post` 의 `blog` = `cocos` (블로그 ID 는 주소로 자동으로 찾음, 같은 구글 계정 연결 사용, 기록 키 `cocos:file:<파일>`). 파일 이름은 `cocos-…html`. 자료실 글을 통째로 복사하지 않고 **학부모용으로 구성을 바꾼 글**(대비반 안내 중심, 자세한 분석은 자료실 링크). 처음엔 임시저장으로 올려 확인받기. `_tools/blogger_publish_file.py` 가 올리고 `blogger_posted.json` 에 `file:<파일>` 로 기록해서 같은 글은 두 번 안 올라가요.
 
 ## 원장님 노트 (자료실 `/memo/`)
 
