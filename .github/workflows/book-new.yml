@@ -1,5 +1,5 @@
 name: book-new
-# 고등 영어 부교재 신간 후보를 네이버 책 검색 API 로 모아 _tools/book_candidates.json 에 커밋 (매주 월요일 새벽 4시 37분, 한국 시간)
+# 고등 영어 부교재 신간 후보를 카카오(또는 네이버) 책 검색 API 로 모아 _tools/book_candidates.json 에 커밋 (매주 월요일 새벽 4시 37분, 한국 시간)
 on:
   schedule:
     - cron: '37 19 * * 0'
@@ -18,6 +18,7 @@ jobs:
       - name: Collect
         working-directory: _tools
         env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: python book_new.py
