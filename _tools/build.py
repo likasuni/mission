@@ -199,7 +199,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/naesin/', '내신 분석'), ('/exams/', '전과목 기출'), ('/news/', '학원 소식'), ('/notes/', '분석노트 요청')]
+NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/naesin/', '코코스학원'), ('/exams/', '전과목 기출'), ('/notes/', '분석노트 요청')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -211,7 +211,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
     ld = list(extra_ld) + ([{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else [])
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
-    act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else ('/english/' if active == '/variants/' else active)  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
+    act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else ('/english/' if active == '/variants/' else ('/naesin/' if active == '/news/' else active))  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
     nav = ''.join(f'<a href="{u}" class="{"on " if u == act else ""}">{n}</a>' for u, n in NAV)
     cm = ''
     if comments:
@@ -582,15 +582,32 @@ def ns_card(sc):
     n = len(sc.get('exams', []))
     return (f'<a class="ns-school" href="/naesin/{sc["slug"]}/"><b>{e(sc["short"])}</b><span>{e(sc["name"])}</span>'
             f'<em class="{"ok" if n else ""}">{f"시험 {n}개 분석" if n else "준비 중"}</em></a>')
+# 학원 소식 목록 (내신 목록 위 '학원 소식' 칸과 /news/ 에서 씀)
+NEWS = []
+_nd = os.path.join(ROOT, '_tools', 'news')
+for d in sorted(os.listdir(_nd)) if os.path.isdir(_nd) else []:
+    mp = os.path.join(_nd, d, 'meta.json')
+    if os.path.exists(mp):
+        m = json.load(open(mp, encoding='utf-8'))
+        if m['date'] <= TODAY: m['_dir'] = os.path.join(_nd, d); NEWS.append(m)
+NEWS.sort(key=lambda m: (m['date'], m['slug']), reverse=True)
+NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}'
+def news_line(m):
+    th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
+    return (f'<li><a href="/news/{m["slug"]}/">' + (f'<img src="/news/{m["slug"]}/thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '') +
+            f'<div><small>{m["date"].replace("-", ".")} · {e(m.get("tag", "학원 소식"))}</small><b>{e(m["title"])}</b><span>{e(m.get("summary", ""))}</span></div></a></li>')
 nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
       '<p class="lead">이매동 코코스학원 리카수니 원장이 학교 기출 시험지를 직접 분석해요. 출제 범위, 문항별 포인트, 서술형 대비까지 정리하고, '
       '<b>분석 내용은 코코스 학원생만</b> 볼 수 있어요. 학교별 분석은 시험이 끝날 때마다 계속 채워 가요.</p>')
+if NEWS:  # 코코스학원 메뉴: 위에 학원 소식, 아래 학교별 내신 분석
+    nb += (f'<div class="card"><style>{NEWS_CSS}</style><h2>📢 학원 소식</h2><ul class="nw-list">{"".join(news_line(m) for m in NEWS[:3])}</ul>'
+           + (f'<p style="margin:6px 0 0"><a href="/news/">학원 소식 전체 보기 ({len(NEWS)}개) →</a></p>' if len(NEWS) > 3 else '') + '</div>')
 for lv, lname in (('고', '고등학교'), ('중', '중학교')):
     nb += f'<div class="card"><h2>{lname}</h2><div class="ns-grid">' + ''.join(ns_card(sc) for sc in NAESIN if sc['level'] == lv) + '</div></div>'
 nb += ns_member() + ACADEMY
 page('/naesin/', '학교별 영어 내신 분석 · 태원고 송림고 이매고 돌마고 판교고 · 이매중 야탑중 하탑중 송림중 매송중 | 리카수니 자료실',
      '분당 태원고·송림고·이매고·돌마고·판교고, 이매중·야탑중·하탑중·송림중·매송중 영어 내신 기출 분석. 이매동 코코스학원 학원생 전용. 리카수니 원장 직접 분석.',
-     nb, [('/', '홈'), ('/naesin/', '내신 분석')], '/naesin/')
+     nb, [('/', '홈'), ('/naesin/', '코코스학원')], '/naesin/')
 for sc in NAESIN:
     ex = sc.get('exams', [])
     sb_ = (f'<h1 class="page-h1">{e(sc["name"])} 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
@@ -679,19 +696,6 @@ latest = sorted([k for k in sessions if k[0] == 'moe'], key=lambda k: (-k[2], -k
 var_sess = sorted([k for k in VAR if k in sessions], key=lambda k: (k[1], -k[2], -k[3]))
 # ---------- 학원 소식 (_tools/news/<slug>/meta.json + body.html [+ thumb.png] → /news/<slug>/) ----------
 # 본문은 받은 HTML 그대로. <!--THUMB--> 자리에 썸네일(있을 때만), <!--AD--> 자리에 자료실 수동 광고. date 가 미래면 그날 공개
-NEWS = []
-_nd = os.path.join(ROOT, '_tools', 'news')
-for d in sorted(os.listdir(_nd)) if os.path.isdir(_nd) else []:
-    mp = os.path.join(_nd, d, 'meta.json')
-    if os.path.exists(mp):
-        m = json.load(open(mp, encoding='utf-8'))
-        if m['date'] <= TODAY: m['_dir'] = os.path.join(_nd, d); NEWS.append(m)
-NEWS.sort(key=lambda m: (m['date'], m['slug']), reverse=True)
-NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}'
-def news_line(m):
-    th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
-    return (f'<li><a href="/news/{m["slug"]}/">' + (f'<img src="/news/{m["slug"]}/thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '') +
-            f'<div><small>{m["date"].replace("-", ".")} · {e(m.get("tag", "학원 소식"))}</small><b>{e(m["title"])}</b><span>{e(m.get("summary", ""))}</span></div></a></li>')
 for m in NEWS:
     url = f'/news/{m["slug"]}/'
     LASTMOD[url] = m.get('updated', m['date'])
@@ -709,14 +713,14 @@ for m in NEWS:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q['q'], "acceptedAnswer": {"@type": "Answer", "text": q['a']}} for q in m['faq']]})
     page(url, f'{m["title"]} | 리카수니 자료실', m['desc'], body,
-         [('/', '홈'), ('/news/', '학원 소식'), (url, m.get('tag', '학원 소식'))], '/news/', extra_ld=ld, og_type='article',
+         [('/', '홈'), ('/naesin/', '코코스학원'), ('/news/', '학원 소식'), (url, m.get('tag', '학원 소식'))], '/news/', extra_ld=ld, og_type='article',
          og_image=(SITE + url + 'thumb.png') if has_th else None)
     if has_th: shutil.copyfile(os.path.join(m['_dir'], 'thumb.png'), os.path.join(ROOT, 'news', m['slug'], 'thumb.png'))
 page('/news/', '학원 소식 – 이매동 코코스학원 시험 대비 · 수업 안내 | 리카수니 자료실',
      '이매동 코코스학원 소식. 중등·고등 시험 대비 핵심 정리와 대비반·수업 안내를 모았어요.',
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>학원 소식</h1><p>이매동 코코스학원의 시험 대비 정리와 수업 안내를 모아 두는 곳이에요.</p></section>'
      + (f'<div class="card"><ul class="nw-list">{"".join(news_line(m) for m in NEWS)}</ul></div>' if NEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
-     [('/', '홈'), ('/news/', '학원 소식')], '/news/')
+     [('/', '홈'), ('/naesin/', '코코스학원'), ('/news/', '학원 소식')], '/news/')
 
 # ---------- 원장님 노트 (_tools/memos/<slug>.json → /memo/<slug>/) ----------
 # 원장님이 채팅으로 준 분석노트 메모를 Claude 가 JSON 으로 정리. date 가 미래면 그날 공개 (해설과 같게)
