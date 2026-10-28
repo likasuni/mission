@@ -1,0 +1,26 @@
+name: blog-read
+# 블로그 글 하나를 Blogger API 로 읽어 로그에 출력 (작업 환경에서 블로그 주소가 막혀 있을 때 내용 확인용, 아무것도 바꾸지 않음)
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: '글 주소 (예: https://www.likasuni.com/2025/09/blog-post_30.html)'
+        required: true
+permissions:
+  contents: read
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Read
+        working-directory: _tools
+        env:
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          U: ${{ inputs.url }}
+        run: python blogger_read.py "$U"
