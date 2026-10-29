@@ -6,14 +6,15 @@
 - DRY_RUN=1 이면 고른 결과만 보여 주고 파일은 안 바꿈.
 - 키: 환경변수 COUPANG_ACCESS_KEY, COUPANG_SECRET_KEY (GitHub Secrets).
 """
-import datetime, hashlib, hmac, json, os, sys, time, urllib.error, urllib.parse, urllib.request
+import datetime, hashlib, hmac, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PATH = os.path.join(ROOT, '_tools', 'coupang.json')
 HOST = 'https://api-gateway.coupang.com'
 SEARCH = '/v2/providers/affiliate_open_api/apis/openapi/v1/products/search'
 # 다른 출판사 변형문제·분석서는 고르지 않음 (원래 교재만)
-SKIP = ['변형', '분석', '올바른', 'E기적', '싸인', '불꽃', '워크북', '해설집', '자습서', '평가문제집', '중고']
+SKIP = ['변형', '분석', '올바른', 'E기적', '싸인', '불꽃', '워크북', '해설집', '자습서', '평가문제집', '중고', '세트', '중학', '전4권', '전3권']
+OLD = datetime.date.today().year - 2  # 상품 이름에 이보다 오래된 연도(예: 2017년)만 있으면 옛 판이라 건너뜀
 
 AK, SK = os.environ.get('COUPANG_ACCESS_KEY', ''), os.environ.get('COUPANG_SECRET_KEY', '')
 DRY = os.environ.get('DRY_RUN') == '1'
@@ -39,6 +40,9 @@ def pick(b, items):  # must 의 'A|B' 는 둘 중 하나만 있어도 됨 (예: 
     must, skip = b.get('must') or [], SKIP + (b.get('not') or [])
     for it in items:
         name = it.get('productName', '').lower()
+        years = [int(y) for y in re.findall(r'20\d\d', name)]
+        if years and max(years) < OLD:
+            continue
         if all(any(a.lower() in name for a in w.split('|')) for w in must) and not any(w.lower() in name for w in skip):
             return it
 
@@ -63,7 +67,7 @@ def main():
             if not it:
                 lines.append(f'- [{g}] {b["name"]}: ⚠️ 맞는 상품 없음, 그대로 둠 (검색어: {b["query"]})')
             else:
-                lines.append(f'- [{g}] {b["name"]}: {it["productName"]} · {it.get("productPrice", "")}원')
+                lines.append(f'- [{g}] {b["name"]}: {it["productName"]} · {int(float(it.get("productPrice") or 0)):,}원')
                 if b.get('url') != it['productUrl'] or b.get('product') != it['productName']:
                     changed += 1
                 b.update(url=it['productUrl'], product=it['productName'], checked=today)
