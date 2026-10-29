@@ -14,6 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'book_candidates.json')
 DAYS = 60
 QUERIES = ['수능 영어', '고등 영어 독해', '고등 영어 어휘', '고등 영어 문법', '수능 영어 듣기', '영어 모의고사', '고1 영어', '고2 영어', '고3 영어', '영어 구문 독해', '영어 내신']
+PUBLISHERS = ['쎄듀', 'NE능률', '능률', 'YBM', '비상교육', '미래엔', '메가스터디북스', '마더텅', '이투스북', '해커스', '좋은책신사고', '수경출판사', '천재교육']  # 출판사 이름 + 영어로도 검색 (제목에 '수능·고등'이 없는 신간도 잡으려고)
 LEVEL = re.compile(r'수능|고등|고[123]|모의고사|내신|EBS')
 NOT = re.compile(r'공무원|공단기|독학사|중학|중등|토익|TOEIC|토플|편입|초등|자습서|평가문제집')  # 고등 영어 부교재가 아닌 것
 KST = datetime.timezone(datetime.timedelta(hours=9))
@@ -63,7 +64,7 @@ def main():
     data = json.load(open(OUT, encoding='utf-8')) if os.path.exists(OUT) else {'books': []}
     have = {b['isbn13'] for b in data['books']}
     added = 0
-    for q in QUERIES:
+    for q in QUERIES + [p + ' 영어' for p in PUBLISHERS]:
         for it in search(q):
             isbn = (it.get('isbn') or '').split()[-1] if it.get('isbn') else ''
             title, desc, pd = clean(it.get('title')), clean(it.get('description')), it.get('pubdate', '')
