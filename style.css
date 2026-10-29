@@ -591,3 +591,13 @@ a.nb:hover { filter: brightness(1.12); }
 .ns-list li:first-child { border-top: 0; }
 .mk { display: inline-block; min-width: 1.6em; padding: 0 6px; border-radius: 6px; font-weight: 800; text-align: center; }
 .mk.ok { background: #dcfce7; color: #166534; } .mk.ng { background: #fee2e2; color: #b91c1c; }
+
+/* 학년별 부교재 쿠팡 상자 */
+.cp-box { border-color: #f5c2b8; background: #fff8f6; }
+.cp-box h2 { color: #b42318; }
+.cp-dis { font-size: .78rem; color: #9a3412; margin: 0 0 8px; }
+.cp-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin: 0 0 8px; }
+.cp-list a { display: block; padding: 10px 12px; border-radius: 10px; background: #e8331f; color: #fff; text-decoration: none; line-height: 1.35; }
+.cp-list a:hover { background: #c2281a; }
+.cp-list b { display: block; font-size: .92rem; }
+.cp-list small { display: block; font-size: .76rem; opacity: .9; margin-top: 2px; }

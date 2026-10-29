@@ -206,6 +206,19 @@ def ad():
             f'data-ad-slot="{AD_SLOT}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
             f'<script>(adsbygoogle=window.adsbygoogle||[]).push({{}});</script></div>')
 
+# 학년별 부교재 쿠팡 상자 (_tools/coupang.json, url 있는 책만 표시)
+COUPANG = json.load(open(os.path.join(ROOT, '_tools', 'coupang.json'), encoding='utf-8'))
+def cp_box(k):
+    g = f'go{k[1]}' if k[0] == 'moe' else 'go3'
+    bs = [b for b in COUPANG.get(g, []) if b.get('url')]
+    if not bs: return ''
+    who = '수능' if k[0] == 'sn' else f'고{k[1]}'
+    return (f'<div class="card cp-box"><h2>📘 {who} 부교재 구매하기</h2>'
+            '<p class="cp-dis">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p><div class="cp-list">'
+            + ''.join(f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener"><b>🛒 {e(b["name"])}</b>'
+                      + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs)
+            + '</div><p class="cp-dis">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>')
+
 def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website', og_image=None):
     url = SITE + path
     ld = list(extra_ld) + ([{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -417,6 +430,7 @@ for idx, k in enumerate(keys_sorted):
 {extra}
 {ad()}
 <div class="card" id="orig"><h2>{e(full)} 기출 원본</h2>{files}</div>
+{cp_box(k)}
 {sinfo}'''
         else:
             body = f'''<h1 class="page-h1">{e(full)} 문제·정답·해설 PDF</h1>
@@ -494,6 +508,7 @@ for p in POSTS:
 {f'<div class="card"><h2>한 줄 요약</h2><p class="en">{e(sm["en"])}</p><p class="ko">{e(sm["ko"])}</p></div>' if sm else ''}
 {f'<div class="card"><h2>서술형 대비 문장</h2><p class="en">{e(wr["en"])}</p><p class="ko">{e(wr["ko"])}</p></div>' if wr else ''}
 {vcard}
+{cp_box(k) if p['subj'] == '영어' else ''}
 {f'<div class="card faq"><h2>자주 묻는 질문</h2>{faq}</div>' if faq else ''}
 <div class="card"><h2>함께 보면 좋은 자료</h2><div class="chips">
 <a class="chip" href="{subj_url(k, p['subj'])}">{e(s_name(k))} {e(sn)} 기출 원본 PDF</a>

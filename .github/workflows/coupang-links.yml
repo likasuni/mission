@@ -1,0 +1,39 @@
+name: coupang-links
+# 학년별 부교재 쿠팡 상자 링크를 쿠팡 파트너스 Open API 로 채움 (매주 월요일 새벽 5시 7분, 한국 시간)
+# 손으로 돌릴 때 dry_run 을 켜면 고른 상품만 요약에 보여 주고 저장하지 않아요.
+on:
+  schedule:
+    - cron: '7 20 * * 0'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '미리보기만 (저장 안 함)'
+        type: boolean
+        default: true
+permissions:
+  contents: write
+concurrency: drive-sync
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Find links
+        env:
+          COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
+          COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: python _tools/coupang_links.py
+      - name: Build and commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git diff --quiet _tools/coupang.json && exit 0
+          python _tools/build.py
+          git config user.name "likasuni-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git commit -m "쿠팡 부교재 링크 갱신"
+          git pull --rebase -q && git push
