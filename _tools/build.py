@@ -863,7 +863,14 @@ note_files = sum(len(NOTES[k]) for k in en_sess)
 word_sess = [k for k in en_sess if k in WORDS]
 body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <p>고1·고2·고3 영어 모의고사를 회차별로 정리했어요. 리카수니 원장이 직접 만든 <b>분석노트·변형문제·단어</b>를 무료로 받아 가세요.</p></section>
-<button class="push-btn push-bar" type="button"><span class="pi">🔔</span><span class="pt">새 자료 알림 받기</span><small>새 분석노트·해설이 올라오면 휴대폰으로 바로 알려 드려요</small></button>
+<div class="push-wrap"><button class="push-btn push-bar" type="button"><span class="pi">🔔</span><span class="pt">새 자료 알림 받기</span><small>새 분석노트·해설이 올라오면 휴대폰으로 바로 알려 드려요</small></button>
+<details class="push-help"><summary>알림 이용법</summary><ol>
+<li><b>켜기</b>: 위 칸을 누르고 알림 <b>'허용'</b>을 눌러 주세요. 휴대폰·PC 크롬, 삼성 인터넷, 엣지에서 바로 돼요.</li>
+<li><b>아이폰·아이패드</b>: 사파리 아래 공유 버튼 → <b>'홈 화면에 추가'</b> → 홈 화면의 '리카수니' 아이콘으로 열고 칸을 눌러 주세요 (iOS 16.4 이상).</li>
+<li><b>언제 오나요</b>: 새 분석노트·해설이 올라오면 알려 드려요. 하루 1~2번 정도만 보내요.</li>
+<li><b>끄기</b>: '알림 켜짐' 칸을 다시 누르면 꺼져요.</li>
+<li><b>알림이 안 오면</b>: 휴대폰·브라우저 설정에서 data.likasuni.com 알림이 '허용'인지 확인해 주세요.</li>
+</ol></details></div>
 <section class="card" id="push-news" hidden><h2>최근 알림</h2><ul></ul></section>
 <h2 class="sec-h">영어 모의고사 핵심 자료</h2>
 <div class="svc">
