@@ -37,12 +37,12 @@ def search(keyword, limit=10):
     return (d.get('data') or {}).get('productData') or []
 
 
-def pick(b, items):  # must 의 'A|B' 는 둘 중 하나만 있어도 됨 (예: '기본 1|기본1'), not 은 그 책에서만 빼는 단어
-    must, skip = b.get('must') or [], SKIP + (b.get('not') or [])
+def pick(b, items, book=True):  # must 의 'A|B' 는 둘 중 하나만 있어도 됨 (예: '기본 1|기본1'), not 은 그 책에서만 빼는 단어
+    must, skip = b.get('must') or [], (SKIP if book else []) + (b.get('not') or [])  # 책이 아닌 것(인쇄 용품)엔 책용 거르기·연도 규칙을 쓰지 않음
     for it in items:
         name = it.get('productName', '').lower()
         years = [int(y) for y in re.findall(r'20\d\d', name)]
-        if years and max(years) < OLD:
+        if book and years and max(years) < OLD:
             continue
         if all(any(a.lower() in name for a in w.split('|')) for w in must) and not any(w.lower() in name for w in skip):
             return it
@@ -53,7 +53,7 @@ def main():
         sys.exit('COUPANG_ACCESS_KEY / COUPANG_SECRET_KEY 가 없어요.')
     # 학년별 상자 (coupang.json) + 교재 소식 글마다 폴더의 coupang.json
     files = {PATH: json.load(open(PATH, encoding='utf-8'))}
-    jobs = [(g, b, PATH) for g in ('go1', 'go2', 'go3') for b in files[PATH].get(g, [])]
+    jobs = [(g, b, PATH) for g in ('go1', 'go2', 'go3', 'print') for b in files[PATH].get(g, [])]
     for f in sorted(glob.glob(os.path.join(ROOT, '_tools', 'news', '*', 'coupang.json'))):
         files[f] = json.load(open(f, encoding='utf-8'))
         jobs += [(os.path.basename(os.path.dirname(f)), b, f) for b in files[f]]
@@ -64,7 +64,7 @@ def main():
             lines.append(f'- [{g}] {b["name"]}: 그대로 (직접 넣은 링크)')
             continue
         try:
-            it = pick(b, search(b['query']))
+            it = pick(b, search(b['query']), book=g != 'print')
         except (urllib.error.URLError, RuntimeError, ValueError) as ex:
             lines.append(f'- [{g}] {b["name"]}: ⚠️ API 실패, 그대로 둠 ({ex})')
             time.sleep(3)

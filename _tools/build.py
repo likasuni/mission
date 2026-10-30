@@ -208,16 +208,18 @@ def ad():
 
 # 학년별 부교재 쿠팡 상자 (_tools/coupang.json, url 있는 책만 표시)
 COUPANG = json.load(open(os.path.join(ROOT, '_tools', 'coupang.json'), encoding='utf-8'))
-def cp_box(k):
+def cp_box(k, books=True):  # books=False 면 인쇄 준비물 줄만 (영어 아닌 과목 기출 페이지)
     g = f'go{k[1]}' if k[0] == 'moe' else 'go3'
-    bs = [b for b in COUPANG.get(g, []) if b.get('url')]
-    if not bs: return ''
+    bs = [b for b in COUPANG.get(g, []) if b.get('url')] if books else []
+    ps = [b for b in COUPANG.get('print', []) if b.get('url')]
+    if not (bs or ps): return ''
     who = '수능' if k[0] == 'sn' else f'고{k[1]}'
-    return (f'<div class="card cp-box"><h2>📘 {who} 부교재 구매하기</h2>'
-            '<p class="cp-dis">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p><div class="cp-list">'
-            + ''.join(f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener"><b>🛒 {e(b["name"])}</b>'
-                      + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs)
-            + '</div><p class="cp-dis">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>')
+    a = lambda b: f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener">'
+    return (f'<div class="card cp-box"><h2>{f"📘 {who} 부교재 구매하기" if bs else "🖨 기출 인쇄 준비물"}</h2>'
+            '<p class="cp-dis">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>'
+            + ('<div class="cp-list">' + ''.join(a(b) + f'<b>🛒 {e(b["name"])}</b>' + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs) + '</div>' if bs else '')
+            + (f'<p class="cp-print"><span>{"🖨 인쇄해서 푸는 학생 준비물" if bs else "PDF를 인쇄해서 푸는 학생을 위한 준비물"}</span>' + ''.join(a(b) + e(b['name']) + '</a>' for b in ps) + '</p>' if ps else '')
+            + '<p class="cp-dis">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>')
 
 # 교재 소식 글의 쿠팡 자리 (글 폴더의 coupang.json, Actions coupang-links 가 url 을 채움). url 이 없으면 자리째 사라짐
 #   <!--CPDIS--> 맨 위 수수료 문구 · <!--BUY:key--> 책 하나 버튼 · <!--BUYBOX--> 구매 상자 · <!--CPNOTE--> 끝 표기에 붙는 수수료 한 줄
@@ -456,6 +458,7 @@ for idx, k in enumerate(keys_sorted):
 {ad()}
 {extra}
 <div class="card"><h2>{e(name)} 다른 과목</h2>{sibs}</div>
+{cp_box(k, books=False)}
 {rel}
 {ad()}'''
         if POSTS_BY.get(k) and any(p['subj'] == s for p in POSTS_BY[k]):

@@ -609,3 +609,7 @@ a.nb:hover { filter: brightness(1.12); }
 .cp-list a:hover { background: #c2281a; }
 .cp-list b { display: block; font-size: .92rem; }
 .cp-list small { display: block; font-size: .76rem; opacity: .9; margin-top: 2px; }
+.cp-print { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 8px; }
+.cp-print span { font-size: .82rem; font-weight: 700; color: #9a3412; margin-right: 2px; }
+.cp-print a { font-size: .8rem; font-weight: 700; padding: 5px 10px; border-radius: 999px; border: 1px solid #f5c2b8; background: #fff; color: #b42318; text-decoration: none; }
+.cp-print a:hover { background: #fee2e2; }
