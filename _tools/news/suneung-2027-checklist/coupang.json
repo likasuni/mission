@@ -2,8 +2,9 @@
   {
     "key": "watch",
     "name": "수능용 아날로그 시계",
-    "query": "수능 아날로그 손목시계",
+    "query": "수능 아날로그 손목시계 학생",
     "must": [
+      "손목|시계줄|밴드",
       "아날로그|수능"
     ],
     "not": [
@@ -15,8 +16,7 @@
       "블루투스"
     ],
     "goods": true,
-    "url": "https://link.coupang.com/re/AFFSDP?lptag=AF0931331&pageKey=8291745370&itemId=23913503914&vendorItemId=87552953093&traceid=V0-153-c41afca47e2f4221&clickBeacon=332dfdb0-d46a-11f1-9788-29b6a60fa569%7E3&requestid=20261030230001491181692052&token=31850C%7CMIXED&pt=1&slot=3",
-    "product": "수능시계.큰숫자.저소음.시험.실습.여행용 시계",
+    "url": "",
     "checked": "2026-10-30"
   },
   {
