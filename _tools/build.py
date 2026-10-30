@@ -219,6 +219,22 @@ def cp_box(k):
                       + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs)
             + '</div><p class="cp-dis">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>')
 
+# 교재 소식 글의 쿠팡 자리 (글 폴더의 coupang.json, Actions coupang-links 가 url 을 채움). url 이 없으면 자리째 사라짐
+#   <!--CPDIS--> 맨 위 수수료 문구 · <!--BUY:key--> 책 하나 버튼 · <!--BUYBOX--> 구매 상자 · <!--CPNOTE--> 끝 표기에 붙는 수수료 한 줄
+_BTN = 'display:inline-block;background-color:#e8331f;color:#ffffff;font-weight:800;font-size:15px;padding:9px 14px;border-radius:8px;text-decoration:none;margin:3px;'
+def cp_news(body, d):
+    f = os.path.join(d, 'coupang.json')
+    bs = [b for b in (json.load(open(f, encoding='utf-8')) if os.path.exists(f) else []) if b.get('url')]
+    a = lambda b, t: f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener" style="{_BTN}">🛒 {e(t)}</a>'
+    body = _re.sub(r'<!--BUY:([\w-]+)-->', lambda mm: next((f'<p style="margin:10px 0;text-align:center;">{a(b, b["name"] + " 구매하기")}</p>' for b in bs if b.get('key') == mm.group(1)), ''), body)
+    box = ('<div style="width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;background:#fff5f3;border:1px solid #f5c2b8;border-radius:10px;padding:12px 16px;margin:14px 0;text-align:center;">'
+           '<p style="margin:0 0 6px;font-weight:800;color:#b42318;">교재 구매하기</p><p style="margin:0;">' + ''.join(a(b, b['name']) for b in bs)
+           + '</p><p style="margin:8px 0 0;font-size:13px;color:#9a3412;">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>') if bs else ''
+    dis = ('<p style="font-size:14.5px;color:#92400e;background:#fffaf0;border:1px solid #f3d38a;border-radius:8px;padding:10px 14px;margin:0 0 16px;width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;">'
+           '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>') if bs else ''
+    note = ' 글 안의 쿠팡 링크로 구매하시면 쿠팡 파트너스 수수료를 받을 수 있어요.' if bs else ''
+    return body.replace('<!--BUYBOX-->', box).replace('<!--CPDIS-->', dis).replace('<!--CPNOTE-->', note)
+
 def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website', og_image=None):
     url = SITE + path
     ld = list(extra_ld) + ([{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -618,7 +634,9 @@ def news_line(m):
     sub = _re.sub(r'\s*\((이매동 )?코코스학원[^)]*\)\s*$', '', sub)
     tag = m.get('tag', '학원 소식')
     chip = f'<i class="nw-chip{" new" if tag.startswith("교재 신간") else ""}">{e(tag)}</i>'
-    buy = '<i class="nw-chip buy">🛒 구매 링크</i>' if 'link.coupang.com' in open(os.path.join(m['_dir'], 'body.html'), encoding='utf-8').read() else ''
+    _cf = os.path.join(m['_dir'], 'coupang.json')
+    buy = '<i class="nw-chip buy">🛒 구매 링크</i>' if ('link.coupang.com' in open(os.path.join(m['_dir'], 'body.html'), encoding='utf-8').read()
+                                                     or (os.path.exists(_cf) and any(b.get('url') for b in json.load(open(_cf, encoding='utf-8'))))) else ''
     return (f'<li><a href="{nurl(m)}">' + (f'<img src="{nurl(m)}thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '') +
             f'<div><small>{chip}{buy}{m["date"].replace("-", ".")}</small><b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a></li>')
 def book_groups(ms, n=None):  # 교재 소식을 신간 소개 / 자료·정보 두 칸으로
@@ -731,7 +749,8 @@ for m in NEWS + BOOKNEWS:
     has_th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
     th_html = (f'<div style="box-sizing:border-box;margin:0 0 16px;max-width:100%;overflow:hidden;text-align:center;width:100%;"><img src="thumb.png" alt="{e(m["title"])}" width="1080" height="1080" loading="eager" style="border-radius:10px;height:auto;max-width:560px;width:100%;"></div>') if has_th else ''
     body = body.replace('<!--THUMB-->', th_html).replace('<!--AD-->', ad())
-    others = [x for x in (BOOKNEWS if isbook else NEWS) if x is not m][:5]
+    body = cp_news(body, m['_dir'])
+    others =[x for x in (BOOKNEWS if isbook else NEWS) if x is not m][:5]
     body = f'<div class="card">{body}</div>' + (f'<div class="card"><style>{NEWS_CSS}</style><h2 style="font-size:1rem;margin:0 0 4px">{"다른 교재 소식" if isbook else "다른 학원 소식"}</h2><ul class="nw-list">{"".join(news_line(x) for x in others)}</ul></div>' if others else '')
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": m['title'], "description": m['desc'], "datePublished": m['date'],
            "dateModified": LASTMOD[url], "inLanguage": "ko", "author": {"@type": "Person", "name": "리카수니"},

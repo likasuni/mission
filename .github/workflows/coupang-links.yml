@@ -1,9 +1,12 @@
 name: coupang-links
-# 학년별 부교재 쿠팡 상자 링크를 쿠팡 파트너스 Open API 로 채움 (매주 월요일 새벽 5시 7분, 한국 시간)
+# 학년별 부교재 쿠팡 상자와 교재 소식 글의 링크를 쿠팡 파트너스 Open API 로 채움 (매주 월요일 새벽 5시 7분, 한국 시간)
 # 손으로 돌릴 때 dry_run 을 켜면 고른 상품만 요약에 보여 주고 저장하지 않아요.
 on:
   schedule:
     - cron: '7 20 * * 0'
+  push:  # 새 교재 소식(글 폴더 coupang.json)이나 목록이 main 에 들어오면 바로 링크 채우기
+    branches: [main]
+    paths: ['_tools/coupang.json', '_tools/news/*/coupang.json']
   workflow_dispatch:
     inputs:
       dry_run:
@@ -30,7 +33,7 @@ jobs:
       - name: Build and commit
         if: ${{ !inputs.dry_run }}
         run: |
-          git diff --quiet _tools/coupang.json && exit 0
+          git diff --quiet -- _tools/coupang.json '_tools/news/*/coupang.json' && exit 0
           python _tools/build.py
           git config user.name "likasuni-bot"
           git config user.email "bot@users.noreply.github.com"
