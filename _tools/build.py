@@ -223,15 +223,18 @@ def cp_box(k, books=True):  # books=False 면 인쇄 준비물 줄만 (영어 �
 
 # 교재 소식 글의 쿠팡 자리 (글 폴더의 coupang.json, Actions coupang-links 가 url 을 채움). url 이 없으면 자리째 사라짐
 #   <!--CPDIS--> 맨 위 수수료 문구 · <!--BUY:key--> 책 하나 버튼 · <!--BUYBOX--> 구매 상자 · <!--CPNOTE--> 끝 표기에 붙는 수수료 한 줄
-_BTN = 'display:inline-block;background-color:#e8331f;color:#ffffff;font-weight:800;font-size:15px;padding:9px 14px;border-radius:8px;text-decoration:none;margin:3px;'
+def cp_card(b, sub=None):  # 표지(쿠팡 상품 사진)가 보이는 구매 카드. 사진이 없으면 글자 카드
+    img = f'<img src="{e(b["image"])}" alt="{e(b["name"])}" loading="lazy" referrerpolicy="no-referrer">' if b.get('image') else ''
+    sub = sub if sub is not None else b.get('note', '')
+    return (f'<a class="cp-card" href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener">{img}<span><b>{e(b["name"])}</b>'
+            + (f'<small>{e(sub)}</small>' if sub else '') + '<i>🛒 구매하기</i></span></a>')
 def cp_news(body, d):
     f = os.path.join(d, 'coupang.json')
     bs = [b for b in (json.load(open(f, encoding='utf-8')) if os.path.exists(f) else []) if b.get('url')]
-    a = lambda b, t: f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener" style="{_BTN}">🛒 {e(t)}</a>'
-    body = _re.sub(r'<!--BUY:([\w-]+)-->', lambda mm: next((f'<p style="margin:10px 0;text-align:center;">{a(b, b["name"] + " 구매하기")}</p>' for b in bs if b.get('key') == mm.group(1)), ''), body)
+    body = _re.sub(r'<!--BUY:([\w-]+)-->', lambda mm: next((f'<div class="cp-cards one">{cp_card(b)}</div>' for b in bs if b.get('key') == mm.group(1)), ''), body)
     box = ('<div style="width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;background:#fff5f3;border:1px solid #f5c2b8;border-radius:10px;padding:12px 16px;margin:14px 0;text-align:center;">'
-           '<p style="margin:0 0 6px;font-weight:800;color:#b42318;">교재 구매하기</p><p style="margin:0;">' + ''.join(a(b, b['name']) for b in bs)
-           + '</p><p style="margin:8px 0 0;font-size:13px;color:#9a3412;">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>') if bs else ''
+           '<p style="margin:0 0 6px;font-weight:800;color:#b42318;">교재 구매하기</p><div class="cp-cards">' + ''.join(cp_card(b) for b in bs)
+           + '</div><p style="margin:8px 0 0;font-size:13px;color:#9a3412;">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>') if bs else ''
     dis = ('<p style="font-size:14.5px;color:#92400e;background:#fffaf0;border:1px solid #f3d38a;border-radius:8px;padding:10px 14px;margin:0 0 16px;width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;">'
            '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>') if bs else ''
     note = ' 글 안의 쿠팡 링크로 구매하시면 쿠팡 파트너스 수수료를 받을 수 있어요.' if bs else ''
@@ -780,7 +783,7 @@ def _kit_btns(bs, small=False):
     bs = [b for b in bs if b.get('url')]
     if small:
         return '<p class="cp-print">' + ''.join(f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener">{e(b["name"])}</a>' for b in bs) + '</p>' if bs else ''
-    return '<div class="cp-list">' + ''.join(f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener"><b>🛒 {e(b["name"])}</b>' + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs) + '</div>' if bs else ''
+    return '<div class="cp-cards">' + ''.join(cp_card(b) for b in bs) + '</div>' if bs else ''
 _snf = os.path.join(ROOT, '_tools', 'news', 'suneung-2027-checklist', 'coupang.json')
 _sn = json.load(open(_snf, encoding='utf-8')) if os.path.exists(_snf) else []
 _kd = os.path.join(ROOT, 'books', 'kit'); os.makedirs(_kd, exist_ok=True)

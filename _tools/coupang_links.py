@@ -73,9 +73,9 @@ def main():
             lines.append(f'- [{g}] {b["name"]}: ⚠️ 맞는 상품 없음, 그대로 둠 (검색어: {b["query"]})')
         else:
             lines.append(f'- [{g}] {b["name"]}: {it["productName"]} · {int(float(it.get("productPrice") or 0)):,}원')
-            if b.get('url') != it['productUrl'] or b.get('product') != it['productName']:
+            if b.get('url') != it['productUrl'] or b.get('product') != it['productName'] or b.get('image') != it.get('productImage', ''):
                 changed += 1
-            b.update(url=it['productUrl'], product=it['productName'], checked=today)
+            b.update(url=it['productUrl'], product=it['productName'], image=it.get('productImage', ''), checked=today)  # image = 쿠팡 상품 사진 (구매 카드에만 씀)
         time.sleep(3)
     report = '\n'.join(lines) + f'\n\n바뀐 책 {changed}권' + (' (미리보기라 저장 안 함)' if DRY else '')
     print(report)

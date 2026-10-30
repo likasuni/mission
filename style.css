@@ -613,3 +613,14 @@ a.nb:hover { filter: brightness(1.12); }
 .cp-print span { font-size: .82rem; font-weight: 700; color: #9a3412; margin-right: 2px; }
 .cp-print a { font-size: .8rem; font-weight: 700; padding: 5px 10px; border-radius: 999px; border: 1px solid #f5c2b8; background: #fff; color: #b42318; text-decoration: none; }
 .cp-print a:hover { background: #fee2e2; }
+
+/* 표지가 보이는 쿠팡 구매 카드 (수험생 준비물 가이드 · 교재 소식) */
+.cp-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin: 8px 0; text-align: left; }
+.cp-cards.one { grid-template-columns: minmax(0, 340px); justify-content: center; }
+.cp-card { display: flex; gap: 12px; align-items: center; min-width: 0; padding: 10px; border: 1px solid #f5c2b8; border-radius: 12px; background: #fff; color: inherit; text-decoration: none; box-sizing: border-box; }
+.cp-card:hover { border-color: #e8331f; }
+.cp-card img { flex: none; width: 64px; height: 84px; object-fit: contain; border-radius: 4px; background: #f8fafc; }
+.cp-card span { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.cp-card b { font-size: .92rem; line-height: 1.35; color: var(--navy-d); }
+.cp-card small { font-size: .76rem; color: var(--muted); }
+.cp-card i { align-self: flex-start; margin-top: 4px; font-style: normal; font-size: .78rem; font-weight: 700; color: #fff; background: #e8331f; border-radius: 6px; padding: 3px 10px; }

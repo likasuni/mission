@@ -6,7 +6,7 @@ on:
     - cron: '7 20 * * 0'
   push:  # 새 교재 소식(글 폴더 coupang.json)이나 목록이 main 에 들어오면 바로 링크 채우기
     branches: [main]
-    paths: ['_tools/coupang.json', '_tools/news/*/coupang.json']
+    paths: ['_tools/coupang.json', '_tools/news/*/coupang.json', '_tools/coupang_links.py']
   workflow_dispatch:
     inputs:
       dry_run:
