@@ -64,7 +64,7 @@ def main():
             lines.append(f'- [{g}] {b["name"]}: 그대로 (직접 넣은 링크)')
             continue
         try:
-            it = pick(b, search(b['query']), book=g != 'print')
+            it = pick(b, search(b['query']), book=g != 'print' and not b.get('goods'))  # goods: true = 책이 아닌 물건
         except (urllib.error.URLError, RuntimeError, ValueError) as ex:
             lines.append(f'- [{g}] {b["name"]}: ⚠️ API 실패, 그대로 둠 ({ex})')
             time.sleep(3)

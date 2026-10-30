@@ -1,0 +1,8 @@
+[
+  {"key": "watch", "name": "수능용 아날로그 시계", "query": "수능 아날로그 손목시계", "must": ["아날로그|수능"], "not": ["스마트", "디지털", "전자", "LED", "LCD", "블루투스"], "goods": true, "url": ""},
+  {"key": "pen", "name": "컴퓨터용 사인펜 (연습용)", "query": "컴퓨터용 사인펜", "must": ["컴퓨터용|컴싸|OMR"], "goods": true, "url": ""},
+  {"key": "tape", "name": "수정테이프", "query": "수정테이프", "must": ["수정테이프"], "goods": true, "url": ""},
+  {"key": "lunch", "name": "보온 도시락", "query": "보온도시락 수험생", "must": ["보온"], "goods": true, "url": ""},
+  {"key": "blanket", "name": "무릎담요", "query": "무릎담요", "must": ["담요"], "goods": true, "url": ""},
+  {"key": "gift", "name": "수능 합격 엿", "query": "수능 합격엿 선물", "must": ["엿"], "goods": true, "url": ""}
+]
