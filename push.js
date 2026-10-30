@@ -48,7 +48,7 @@
   }
   btns.forEach(function (b) { b.addEventListener('click', click); });
 
-  // 첫 화면 '최근 알림' (#push-news): 지금까지 보낸 알림 5개. 없으면 칸을 숨긴 채로 둠
+  // 첫 화면 '최근 알림' (#push-news): 가장 최근 1개만 보이고, 나머지 4개는 '이전 알림 보기'로 펼침. 없으면 칸을 숨긴 채로 둠
   function recent() {
     var box = document.getElementById('push-news');
     if (!box) return;
@@ -62,6 +62,15 @@
           var href = String(x.url || '/').replace(/^https:\/\/data\.likasuni\.com/, '') || '/';
           return '<li><a href="' + esc(href) + '"><span class="pn-d">' + when + '</span><b>' + esc(x.title) + '</b><span class="pn-b">' + esc(x.body) + '</span></a></li>';
         }).join('');
+        var old = box.querySelector('.pn-more');
+        if (old) old.remove();
+        if (it.length > 1) {
+          var b = document.createElement('button');
+          b.type = 'button'; b.className = 'pn-more';
+          b.textContent = '이전 알림 ' + (it.length - 1) + '개 보기 ▾';
+          b.onclick = function () { var o = box.classList.toggle('open'); b.textContent = o ? '접기 ▴' : '이전 알림 ' + (it.length - 1) + '개 보기 ▾'; };
+          box.appendChild(b);
+        }
         box.hidden = false;
       }).catch(function () {});
   }
