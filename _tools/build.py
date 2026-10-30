@@ -628,7 +628,7 @@ NEWS.sort(key=lambda m: (m['date'], m['slug']), reverse=True)
 def nurl(m): return f'/books/news/{m["slug"]}/' if m.get('cat') == 'book' else f'/news/{m["slug"]}/'  # cat=book → 부교재 메뉴 '교재 소식'
 BOOKNEWS = [m for m in NEWS if m.get('cat') == 'book']
 NEWS = [m for m in NEWS if m.get('cat') != 'book']  # 학원 소식만
-NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}.nw-list em{display:block;font-style:normal;color:#475569;font-size:.88rem;line-height:1.45}.nw-chip{display:inline-block;font-style:normal;font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:999px;background:#eef2ff;color:#1f3a8a;margin-right:6px}.nw-chip.new{background:#fff1e6;color:#c2410c}.nw-chip.buy{background:#fee2e2;color:#b42318}.nw-cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}.nw-cols h3{font-size:1rem;margin:4px 0 0;color:var(--navy-d)}.nw-cols h3 small{color:var(--muted);font-weight:500}.nw-cols img{width:64px;height:64px}@media(max-width:760px){.nw-cols{grid-template-columns:1fr}}.nw-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:28px}.nw-grid li+li{border-top:0}.nw-grid li{border-bottom:1px dashed var(--line)}@media(max-width:760px){.nw-grid{grid-template-columns:1fr}}' + '.nw-compact{display:block}.nw-compact section+section{margin-top:14px}.nw-compact .nw-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.nw-compact .nw-info .nw-list{grid-template-columns:1fr}.nw-compact .nw-list li,.nw-compact .nw-list li+li{border:1px solid var(--line);border-radius:12px;background:#fff;min-width:0}.nw-compact .nw-list li:hover{border-color:#c9d6f5;box-shadow:0 2px 8px rgba(30,58,138,.08)}.nw-compact a{padding:10px 12px;gap:12px}.nw-compact img{width:64px;height:64px}.nw-compact a>div{min-width:0}.nw-compact b{font-size:.95rem;margin:1px 0}.nw-compact small{font-size:.74rem}.nw-compact em{font-size:.82rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media(max-width:760px){.nw-compact .nw-list{grid-template-columns:1fr}}'
+NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}.nw-list em{display:block;font-style:normal;color:#475569;font-size:.88rem;line-height:1.45}.nw-chip{display:inline-block;font-style:normal;font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:999px;background:#eef2ff;color:#1f3a8a;margin-right:6px}.nw-chip.new{background:#fff1e6;color:#c2410c}.nw-chip.buy{background:#fee2e2;color:#b42318}.nw-cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}.nw-cols h3{font-size:1rem;margin:4px 0 0;color:var(--navy-d)}.nw-cols h3 small{color:var(--muted);font-weight:500}.nw-cols img{width:64px;height:64px}@media(max-width:760px){.nw-cols{grid-template-columns:1fr}}.nw-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:28px}.nw-grid li+li{border-top:0}.nw-grid li{border-bottom:1px dashed var(--line)}@media(max-width:760px){.nw-grid{grid-template-columns:1fr}}' + '.nw-compact{display:block}.nw-compact section+section{margin-top:14px}.nw-compact .nw-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.nw-compact .nw-list li,.nw-compact .nw-list li+li{border:1px solid var(--line);border-radius:12px;background:#fff;min-width:0}.nw-compact .nw-list li:hover{border-color:#c9d6f5;box-shadow:0 2px 8px rgba(30,58,138,.08)}.nw-compact a{padding:10px 12px;gap:12px}.nw-compact img{width:64px;height:64px}.nw-compact a>div{min-width:0}.nw-compact b{font-size:.95rem;margin:1px 0}.nw-compact small{font-size:.74rem}.nw-compact em{font-size:.82rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media(max-width:760px){.nw-compact .nw-list{grid-template-columns:1fr}}'
 def news_kind(m):  # 교재 소식 분류: 신간 소개 / 자료·정보
     return 'new' if m.get('tag', '').startswith('교재 신간') else 'info'
 def news_line(m):
@@ -644,7 +644,9 @@ def news_line(m):
             f'<div><small>{chip}{buy}{m["date"].replace("-", ".")}</small><b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a></li>')
 def book_groups(ms, n=None):  # 교재 소식: 위에 자료·정보 한 단, 아래 신간 소개 두 단 (칸마다 테두리, 썸네일 포함)
     cols = [(k, h, [m for m in ms if news_kind(m) == k]) for k, h in (('info', '🔗 자료·정보'), ('new', '📘 신간 소개'))]
-    return '<div class="nw-cols nw-compact">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'
+    kit = ('<li><a href="/books/kit/"><img src="/books/kit/thumb.png" alt="" loading="lazy" width="84" height="84"><div><small><i class="nw-chip buy">🎒 수험생 준비물</i>학년별 · 시기별</small>'
+           '<b>수험생 준비물 가이드</b><em>학년별 EBS 부교재 · 기출 인쇄 준비물 · 수능 당일 준비물</em></div></a></li>')
+    return '<div class="nw-cols nw-compact">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g) + (k == "info")}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}{kit if k == "info" else ""}</ul></section>' for k, h, g in cols if g) + '</div>'
 
 nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
       '<p class="lead">이매동 코코스학원 리카수니 원장이 학교 기출 시험지를 직접 분석해요. 출제 범위, 문항별 포인트, 서술형 대비까지 정리하고, '
@@ -773,6 +775,39 @@ page('/books/news/', '교재 소식 – 고등 영어 부교재 신간 · 개정
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>교재 소식</h1><p>고등 영어 부교재 신간·개정 소식을 요약해 알려 드려요.</p></section>'
      + (f'<div class="card">{book_groups(BOOKNEWS)}</div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
      [('/', '홈'), ('/books/', '부교재'), ('/books/news/', '교재 소식')], '/books/')
+# ---------- 수험생 준비물 가이드 (/books/kit/) — 학년별 부교재·인쇄 준비물·수능 당일 준비물, 쿠팡 링크는 coupang.json·글 폴더에서 (url 있는 것만) ----------
+def _kit_btns(bs, small=False):
+    bs = [b for b in bs if b.get('url')]
+    if small:
+        return '<p class="cp-print">' + ''.join(f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener">{e(b["name"])}</a>' for b in bs) + '</p>' if bs else ''
+    return '<div class="cp-list">' + ''.join(f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener"><b>🛒 {e(b["name"])}</b>' + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs) + '</div>' if bs else ''
+_snf = os.path.join(ROOT, '_tools', 'news', 'suneung-2027-checklist', 'coupang.json')
+_sn = json.load(open(_snf, encoding='utf-8')) if os.path.exists(_snf) else []
+_kd = os.path.join(ROOT, 'books', 'kit'); os.makedirs(_kd, exist_ok=True)
+if os.path.exists(os.path.join(ROOT, '_tools', 'kit-thumb.png')): shutil.copy(os.path.join(ROOT, '_tools', 'kit-thumb.png'), os.path.join(_kd, 'thumb.png'))
+kit_body = (f'<style>{NEWS_CSS}</style><section class="hero"><h1>🎒 수험생 준비물 가이드</h1><p>학년별 EBS 부교재부터 기출 인쇄 준비물, 수능 당일 준비물까지 리카수니 원장이 한곳에 정리했어요.</p></section>'
+    '<div class="card cp-box"><p class="cp-dis" style="margin:0">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>'
+    '<div class="card"><h2>📘 학년별 부교재</h2><p class="muted">학교 부교재로 많이 쓰는 EBS 교재 위주예요. 새 판이 나오면 링크가 자동으로 바뀌어요.</p>'
+    + ''.join(f'<h3 style="margin:14px 0 6px;color:var(--navy-d)">{t}</h3><p style="margin:0 0 8px">{d}</p>{_kit_btns(COUPANG.get(g, []))}' for g, t, d in (
+        ('go1', '고1', '올림포스 기출문제집으로 교육청 모의고사 유형에 익숙해지고, 올림포스 영어독해 기본·리딩파워로 내신 지문을 다져요.'),
+        ('go2', '고2', '모의고사 기출은 계속 풀고, 수능특강 Light로 EBS 연계 교재에 미리 익숙해지면 고3 수능특강이 훨씬 편해요.'),
+        ('go3', '고3 · 수능', '수능특강·수능완성은 수능 연계 교재예요. 지문 내용과 흐름을 정리해 두면 실전에서 시간을 줄일 수 있어요.')))
+    + '<p style="margin:12px 0 0"><a href="/books/news/">교재 신간 소식 보기 →</a></p></div>'
+    + ad()
+    + '<div class="card"><h2>🖨 기출 인쇄 공부</h2><p>자료실 기출·분석노트 PDF는 <b>인쇄해서 직접 풀고 표시하는 것</b>이 가장 오래 남아요. 회차별로 클리어파일에 모아 두면 시험 전에 오답만 다시 보기 쉬워요. 형광펜은 근거 문장에만 칠해요.</p>'
+    + _kit_btns(COUPANG.get('print', []), small=True) + '<p style="margin:8px 0 0"><a href="/english/">영어 모의고사 분석노트 · 변형문제 →</a></p></div>'
+    + '<div class="card"><h2>⏱ 시험 당일</h2><p>수능·모의고사 당일엔 <b>수험표·신분증·아날로그 손목시계</b>를 꼭 챙겨요. 샤프와 컴퓨터용 사인펜은 시험실에서 나눠 주고, 전자기기는 반입 금지예요.</p>'
+    + _kit_btns(_sn, small=True) + '<p style="margin:8px 0 0"><a href="/news/suneung-2027-checklist/">2027학년도 수능 준비물 체크리스트 전체 보기 →</a></p></div>'
+    + '<div class="card"><h2>📅 시기별로 챙길 것</h2><ul style="margin:0;padding-left:18px;line-height:1.9">'
+      '<li><b>11월~2월 (예비 고1)</b> · 반 배치고사와 3월 모의고사 대비로 고1 기출을 먼저 풀어 봐요. 위 고1 교재를 참고하세요.</li>'
+      '<li><b>2~3월</b> · 3월 교육청 모의고사 전에 지난해 3월 기출을 시간 재고 풀어요.</li>'
+      '<li><b>내신 시험 3~4주 전</b> · 학교 부교재 지문 정리와 서술형 대비. <a href="/books/news/cedu-rank-seosulhyeong/">서술형 교재 소식</a>도 참고하세요.</li>'
+      '<li><b>수능 D-30</b> · 새 문제보다 기출 다시 풀기, 오답 노트 한 권으로 정리.</li></ul></div>'
+    + '<p class="muted" style="font-size:.85rem">상품 링크는 매주 쿠팡에서 자동으로 다시 찾아요. 이매동 코코스학원 리카수니 원장이 정리했어요.</p>')
+page('/books/kit/', '수험생 준비물 가이드 – 학년별 EBS 부교재 · 기출 인쇄 준비물 · 수능 당일 준비물 | 리카수니 자료실',
+     '고1·고2·고3 학년별 EBS 부교재(올림포스, 수능특강 Light, 수능특강·수능완성), 기출 PDF 인쇄 준비물, 수능 당일 준비물(아날로그 시계 등)과 시기별로 챙길 것을 리카수니 원장이 정리했어요.',
+     kit_body, [('/', '홈'), ('/books/', '부교재'), ('/books/kit/', '수험생 준비물')], '/books/', og_image=SITE + '/books/kit/thumb.png')
+
 page('/news/', '학원 소식 – 이매동 코코스학원 시험 대비 · 수업 안내 | 리카수니 자료실',
      '이매동 코코스학원 소식. 중등·고등 시험 대비 핵심 정리와 대비반·수업 안내를 모았어요.',
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>학원 소식</h1><p>이매동 코코스학원의 시험 대비 정리와 수업 안내를 모아 두는 곳이에요.</p></section>'
@@ -1088,7 +1123,7 @@ def _sm_rank(p):
     if q[0] == 'naesin': return 1
     if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/', '/memo/', '/news/'): return 2
     if q[0] == 'news': return 3  # 학원 소식
-    if p == '/books/news/': return 2
+    if p in ('/books/news/', '/books/kit/'): return 2  # 교재 소식 목록 · 수험생 준비물 가이드
     if q[0] == 'books' and len(q) == 3 and q[1] == 'news': return 3  # 교재 소식
     if q[0] == 'memo': return 3  # 원장님 노트
     if q[0] in ('moe', 'suneung') and q[-1].isdigit() or '-' in q[-1] and q[-2:-1] == ['eng']: return 3  # 문항별 해설
