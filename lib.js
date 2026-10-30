@@ -103,6 +103,20 @@ function keepAdsOut(sec) {
   new MutationObserver(sweep).observe(sec, { childList: true, subtree: true });
 }
 
+/* ---------- 분석노트 미리보기 팝업: 첫 쪽 윗부분 그림 + '나도 받기' ---------- */
+function showPreview(key, title, go) {
+  const d = document.createElement('div');
+  d.className = 'pv-wrap';
+  d.innerHTML = `<div class="pv-box" role="dialog" aria-label="${esc(title)} 분석노트 미리보기"><div class="pv-hd"><b>${esc(title)} 분석노트 미리보기</b><button type="button" class="pv-x" aria-label="닫기">✕</button></div>
+    <img src="/notes/pv/${key}.jpg" alt="${esc(title)} 분석노트 첫 쪽 미리보기"><p class="meta">첫 쪽 윗부분만 보여 드려요. 전체 PDF는 카카오로 로그인해서 카톡으로 받아요.</p>
+    <a class="pv-go" href="${esc(go)}">나도 받기 →</a></div>`;
+  const close = () => { d.remove(); document.removeEventListener('keydown', esc_); };
+  const esc_ = e => { if (e.key === 'Escape') close(); };
+  d.onclick = e => { if (e.target === d || e.target.closest('.pv-x')) close(); };
+  document.addEventListener('keydown', esc_);
+  document.body.appendChild(d);
+}
+
 /* ---------- 최근 댓글 (첫 화면): 30초마다 새로 불러옴 ---------- */
 function recentComments() {
   const box = document.getElementById('recent-cmt');
@@ -131,10 +145,15 @@ function recentComments() {
   const shown = { pre: 6, rdy: 6 };
   let cache = null, gf = 'all';  // gf: 학년 필터 (all·1·2·3·b=부교재)
   const gradeOf = c => { const m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; };
+  // 미리보기: notes/pv/index.json 에 있는 번호만 (분석노트 첫 쪽 윗부분 그림, _tools/note_preview.py 로 만듦)
+  let pv = new Set();
+  fetch('/notes/pv/index.json').then(r => r.ok ? r.json() : []).then(a => { pv = new Set(a); if (cache) render(); }).catch(() => {});
+  const pvKey = c => { const m = c.content.match(/(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번/); return m ? `moe-g${m[3]}-${m[1]}-${+m[2]}-${+m[4]}` : ''; };
   function reqItem(c) {
-    const done = isDone(c), ready = isReady(c);
+    const done = isDone(c), ready = isReady(c), k = (ready || done) && pv.has(pvKey(c)) ? pvKey(c) : '';
     return `<li class="rq${done ? ' ok' : ready ? ' rd' : ''}"><span class="rq-st">${done ? '카톡 발송' : ready ? '준비 완료' : '진행 중'}</span>
       <span class="rq-tx"><b>${esc(short(c))}</b><span class="meta">${esc(maskName(c.author_name))} · ${ago(c.created_at)}</span></span>
+      ${k ? `<button type="button" class="rq-go rq-pv" data-pv="${k}" data-t="${esc(short(c))}" data-go="${esc(reqLink(c))}">미리보기</button>` : ''}
       ${c.page_key ? `<a class="rq-go" href="${esc(reqLink(c))}"${ready || done ? ' title="요청하면 기다리지 않고 바로 받아요"' : ''}>나도 받기</a>` : ''}</li>`;
   }
   const more = (key, total) => total > shown[key] ? `<button class="rc-more" data-k="${key}">더보기 (${total - shown[key]}개)</button>` : '';
@@ -147,12 +166,13 @@ function recentComments() {
     const rf = reqs.filter(c => gf === 'all' || gradeOf(c) === gf);
     // 두 칸 (블로그 위젯과 같게): 만드는 중(진행 중) · 받을 수 있어요(준비 완료 → 카톡 발송), 줄마다 상태 뱃지
     const pre = rf.filter(c => !isDone(c) && !isReady(c));
-    const rdy = rf.filter(isReady).concat(rf.filter(isDone));
+    const rdy = rf.filter(c => isReady(c) || isDone(c)).sort((a, b) => new Date(b.replied_at || b.created_at) - new Date(a.replied_at || a.created_at));  // 방금 완성된 자료가 위로
     const col = (cls, title, items, key, empty) => `<div class="rq-col ${cls}"><h3>${title} <span>${items.length}</span></h3><ul${shown[key] > 6 ? ' class="open"' : ''}>${items.slice(0, shown[key]).map(reqItem).join('') || `<li class="rq-empty">${empty}</li>`}</ul>${more(key, items.length)}</div>`;
     list.innerHTML = `<div class="rq-top"><h3 class="rc-sub">최근 자료 요청</h3><div class="rq-chips">${chips}</div></div>
       <div class="rq-cols">${col('', '만드는 중', pre, 'pre', '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
     list.querySelectorAll('.rq-chip').forEach(b => b.onclick = () => { gf = b.dataset.g; shown.pre = shown.rdy = 6; render(); });
     list.querySelectorAll('.rc-more').forEach(btn => btn.onclick = () => { shown[btn.dataset.k] += 6; render(); });
+    list.querySelectorAll('.rq-pv').forEach(b => b.onclick = () => showPreview(b.dataset.pv, b.dataset.t, b.dataset.go));
   }
   async function load() {
     const { data } = await sb.from('comments')

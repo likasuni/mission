@@ -292,7 +292,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=39'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=40'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -1137,5 +1137,8 @@ _sm = sorted([p for p in PAGES if _sm_rank(p) is not None], key=lambda p: (_sm_r
 urls = ''.join(f'<url><loc>{SITE}{p}</loc>' + (f'<lastmod>{LASTMOD[p]}</lastmod>' if p in LASTMOD else '') + '</url>' for p in _sm)
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
     f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
-open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /get/\nSitemap: {SITE}/sitemap.xml\n')
+open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /get/\nDisallow: /notes/pv/\nSitemap: {SITE}/sitemap.xml\n')
+# 분석노트 미리보기 목록 (notes/pv/*.jpg → index.json, 첫 화면 '받을 수 있어요' 칸의 [미리보기] 버튼이 읽음)
+_pvd = os.path.join(ROOT, 'notes', 'pv'); os.makedirs(_pvd, exist_ok=True)
+json.dump(sorted(f[:-4] for f in os.listdir(_pvd) if f.endswith('.jpg')), open(os.path.join(_pvd, 'index.json'), 'w'))
 print('pages', len(PAGES), 'sessions', len(sessions), 'files', len(R))

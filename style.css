@@ -624,3 +624,13 @@ a.nb:hover { filter: brightness(1.12); }
 .cp-card b { font-size: .92rem; line-height: 1.35; color: var(--navy-d); }
 .cp-card small { font-size: .76rem; color: var(--muted); }
 .cp-card i { align-self: flex-start; margin-top: 4px; font-style: normal; font-size: .78rem; font-weight: 700; color: #fff; background: #e8331f; border-radius: 6px; padding: 3px 10px; }
+
+/* 분석노트 미리보기 (첫 화면 '받을 수 있어요' 칸의 [미리보기]) */
+.rq-pv { cursor: pointer; margin-right: 4px; }
+.pv-wrap { position: fixed; inset: 0; z-index: 50; background: rgba(15, 23, 42, .55); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.pv-box { background: #fff; border-radius: 14px; max-width: 760px; width: 100%; max-height: 92vh; overflow: auto; padding: 14px 16px 16px; box-sizing: border-box; }
+.pv-hd { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; color: var(--navy-d); }
+.pv-x { border: 0; background: #f1f5f9; border-radius: 8px; width: 34px; height: 34px; font-size: 1rem; cursor: pointer; }
+.pv-box img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
+.pv-box .meta { margin: 10px 0; }
+.pv-go { display: block; text-align: center; padding: 11px; border-radius: 10px; background: var(--navy); color: #fff; font-weight: 800; text-decoration: none; }
