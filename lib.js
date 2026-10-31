@@ -23,7 +23,6 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
   const user = await getUser();
   renderAuth(user);
   noteRequest(user);
-  etcRequest(user);
   readyBanner(user);
   recentComments();
   talkBoard(user);
@@ -332,23 +331,23 @@ async function readyBanner(user) {
   hero.after(el);
 }
 
-/* ---------- 기타 자료 요청 (/notes/ #etc-req): 단어 시험지·변형문제·다른 교재 등. 카카오 로그인 → 요청 댓글 → 원장님이 관리자 페이지에서 '준비 완료 · 카톡 보내기' ---------- */
+/* ---------- 기타 자료 요청: /notes/ 자료 요청 칸의 [기타 자료] 탭 (#etc-req). 단어 시험지·변형문제·다른 교재 등.
+   카카오 로그인 → 요청 댓글 → 원장님이 관리자 페이지에서 '준비 완료 · 카톡 보내기' ---------- */
 // 이메일을 받지 않아요 (공개 댓글에 개인정보가 남지 않게). 원장님이 직접 만든 자료만 나눠요 (출판사 원본 파일은 안 됨)
-async function etcRequest(user) {
-  const box = document.getElementById('etc-req');
-  if (!box) return;
-  const head = `<h2>기타 자료 요청 <small>단어 시험지 · 변형문제 · 다른 교재</small></h2>
-    <p class="muted">모의고사·부교재 분석노트 말고 <b>다른 자료</b>가 필요하면 남겨 주세요. 원장님이 준비되면 <b>카카오톡으로</b> 보내 드려요. 이메일은 적지 않아도 돼요.</p>
-    <p class="meta">원장님이 직접 만든 자료(단어 시험지, 분석노트, 변형문제)만 나눠 드려요. 출판사 교재 원본 파일은 저작권 때문에 드릴 수 없어요.</p><div id="etc-talk"></div>`;
-  const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
-  if (!isKakao) { box.innerHTML = head + `<p class="muted">카카오로 로그인한 회원만 요청할 수 있어요.</p>${loginButtons()}`; return; }
-  box.innerHTML = head + `<div class="ns-form">
-      <label>종류 <select id="etc-kind"><option>단어 시험지</option><option>변형문제</option><option>분석노트</option><option>기타 자료</option></select></label>
-      <label style="flex:1 1 220px">교재·회차 이름 <input id="etc-name" maxlength="50" placeholder="예: 하루 6개 1등급 영어독해 고2 단어"></label>
-      <button type="button" class="btn btn-gold" id="etc-go">카톡으로 요청</button></div><div id="etc-msg"></div>`;
-  talkScope().then(t => { const el = document.getElementById('etc-talk'); if (t === false && el) el.innerHTML = talkWarn(); });
+const ETC_KINDS = [['단어 시험지', '단어 시험지', '예: 하루 6개 1등급 영어독해 고2 단어'], ['변형문제', '변형문제', '예: 2026년 9월 고2 32번'],
+  ['분석노트', '분석노트', '예: 리딩파워 유형편 완성 3강'], ['기타 자료', '기타', '예: 필요한 자료를 짧게 적어 주세요']];
+function etcForm(user, el) {
+  let kind = ETC_KINDS[0][0];
+  el.innerHTML = `<div class="etc-kinds">${ETC_KINDS.map(([v, t], i) => `<button type="button" class="chip${i ? '' : ' on'}" data-v="${v}">${t}</button>`).join('')}</div>
+    <div class="row mt"><input id="etc-name" maxlength="50" placeholder="${ETC_KINDS[0][2]}" style="flex:1 1 220px">
+      <button type="button" class="btn btn-navy" id="etc-go">카톡으로 요청</button></div><div id="etc-msg"></div>`;
+  el.querySelectorAll('.etc-kinds .chip').forEach(c => c.onclick = () => {
+    kind = c.dataset.v;
+    el.querySelectorAll('.etc-kinds .chip').forEach(x => x.classList.toggle('on', x === c));
+    document.getElementById('etc-name').placeholder = ETC_KINDS.find(k => k[0] === kind)[2];
+  });
   document.getElementById('etc-go').onclick = async () => {
-    const name = document.getElementById('etc-name').value.trim().replace(/\s+/g, ' '), kind = document.getElementById('etc-kind').value;
+    const name = document.getElementById('etc-name').value.trim().replace(/\s+/g, ' ');
     if (name.length < 3) return toast('교재나 회차 이름을 적어 주세요.');
     if (/@|\d{3}-?\d{3,4}-?\d{4}/.test(name)) return toast('이메일·전화번호는 적지 않아도 돼요. 카톡으로 보내 드려요.');
     const btn = document.getElementById('etc-go'); btn.disabled = true;
@@ -369,12 +368,23 @@ async function noteRequest(user) {
   const qs = new URLSearchParams(location.search);
   const d = { y: qs.get('y') || card.dataset.y, m: qs.get('m') || card.dataset.m, g: qs.get('g') || card.dataset.g, book: qs.get('book') }; // 회차·교재 미리 채움
   let startBook = d.book && NOTE_BOOKS.includes(d.book);
+  const hasEtc = location.pathname.startsWith('/notes'); // /notes/ 에서만 [기타 자료] 탭
+  let startEtc = hasEtc && location.hash === '#etc-req';
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
-  const head = `<h2>분석노트 요청</h2>
-    <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. 요청과 받기 모두 <b>하루 모의고사 2개 · 부교재 1개</b>까지예요. 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>
-    <p class="meta"><b>받는 방법:</b> 번호를 <b>하나씩</b> 골라 받아요. 모의고사는 하나를 받은 뒤 <b>"다른 번호 받기"</b>를 눌러 두 번째 번호를 받을 수 있어요.</p>
+  const HINT = {
+    moe: '모의고사 분석노트는 <b>하루 2개</b>까지 받아요 (30~40번). 받은 링크는 <b>24시간</b> 열려요.',
+    book: '부교재 분석노트는 <b>하루 1개</b>까지 받아요. 없는 자료는 원장님이 <b>1~2일</b> 안에 만들어요.',
+    etc: '단어 시험지·변형문제처럼 <b>다른 자료</b>를 요청해요. 원장님이 직접 만든 자료만 드려요 (출판사 교재 원본은 안 돼요).'
+  };
+  const head = `<h2>${hasEtc ? '자료 요청' : '분석노트 요청'}</h2>
+    <p class="muted">원하는 자료를 <b>카카오톡으로</b> 보내 드려요.</p>
+    <details class="nr-more"><summary>자세히 보기</summary>
+    <p class="meta"><b>받는 방법:</b> 번호를 <b>하나씩</b> 골라 받아요. 모의고사는 하나를 받은 뒤 <b>"다른 번호 받기"</b>를 눌러 두 번째 번호를 받을 수 있어요. 요청과 받기 모두 하루 모의고사 2개 · 부교재 1개까지예요.</p>
     <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 <b>처음 요청한 1개는 카톡으로 자동</b> 보내 드리고, 나머지는 다시 로그인했을 때 이 칸 위 <b>"요청하신 자료가 준비됐어요"</b>에서 받아요.</p>
+    ${hasEtc ? '<p class="meta">기타 자료는 원장님이 준비되면 카톡으로 보내 드려요. 이메일·전화번호는 적지 않아도 돼요.</p>' : ''}</details>
     <div id="nr-talk"></div><div id="nr-ready"></div>`;
+  const TALK_NOTE = `<p class="nr-talknote">📩 자료는 카카오톡 <b>'나와의 채팅'</b>으로 와요. 알림이 울리지 않으니 카톡에서 직접 열어 확인해 주세요.</p>`;
+  const etcPanel = on => hasEtc ? `<div id="etc-req"${on ? '' : ' style="display:none"'}></div>` : '';
 
   if (!isKakao) {
     card.innerHTML = head + `<p class="muted">카카오로 로그인한 회원만 요청할 수 있어요.</p>${loginButtons()}`;
@@ -397,7 +407,9 @@ async function noteRequest(user) {
       <a class="btn btn-gold btn-sm" href="/get/?t=${o.link_token}" target="_blank" rel="noopener">열기</a></div>`).join('') +
     `<p class="meta mt">오늘 남은 횟수: 모의고사 <b>${leftOf('moe')}개</b> · 부교재 <b>${leftOf('book')}개</b> · 링크는 받은 뒤 24시간 동안 열려요.</p></div>` : '';
   if (!leftOf('moe') && !leftOf('book')) {
-    card.innerHTML = head + gotHtml + `<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요. ${nextResetText()}.</p>` + pushAsk('새 분석노트가 올라오면 알려 드릴까요?');
+    card.innerHTML = head + gotHtml + `<p class="meta mt">오늘 받을 수 있는 분석노트를 모두 받았어요. ${nextResetText()}.</p>` +
+      (hasEtc ? `<p class="meta mt"><b>다른 자료</b>(단어 시험지·변형문제)는 지금도 요청할 수 있어요.</p>` + etcPanel(true) : '') + TALK_NOTE + pushAsk('새 분석노트가 올라오면 알려 드릴까요?');
+    if (hasEtc) etcForm(user, document.getElementById('etc-req'));
     showReady(used);
     return;
   }
@@ -415,8 +427,11 @@ async function noteRequest(user) {
     const sel = qn !== null && curBook() === d.book && (+qn === 0 ? !!z : +qn >= (c.from || 1) && +qn <= c.n) ? +qn : (c.from || 1);
     return (z ? `<option value="0"${sel === 0 ? ' selected' : ''}>${z}</option>` : '') + opt(range(c.from || 1, c.n), sel);
   };
+  if (startEtc) startBook = false;
   card.innerHTML = head + gotHtml + `
-    <div class="tabs mt"><button class="tab${startBook ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button></div>
+    <div class="tabs mt"><button class="tab${startBook || startEtc ? '' : ' on'}" data-k="moe">모의고사</button><button class="tab${startBook ? ' on' : ''}" data-k="book">부교재</button>${hasEtc ? `<button class="tab${startEtc ? ' on' : ''}" data-k="etc">기타 자료</button>` : ''}</div>
+    <p class="nr-hint" id="nr-hint">${HINT[startEtc ? 'etc' : startBook ? 'book' : 'moe']}</p>
+    <div id="nr-pick"${startEtc ? ' style="display:none"' : ''}>
     <div id="nr-moe" class="row"${startBook ? ' style="display:none"' : ''}>
       <select id="nr-y">${opt(range(2020, y0).reverse(), d.y || y0)}</select>
       <select id="nr-m">${opt([3, 4, 5, 6, 7, 9, 10, 11], d.m || 9)}</select><span>월</span>
@@ -429,9 +444,11 @@ async function noteRequest(user) {
     <div class="row mt"><select id="nr-n">${numOpts(startBook ? 'book' : 'moe')}</select><span id="nr-nl">${startBook ? '' : '번 '}분석노트</span>
       <button class="btn btn-navy" id="nr-go">카톡으로 받기</button></div>
     <p class="meta mt" id="nr-preview"></p>
-    <p class="meta">부교재 분석노트 소개·샘플·구매는 <a href="/books/">부교재 요청방 →</a></p>`;
+    <p class="meta" id="nr-booklink"${startBook ? '' : ' style="display:none"'}>부교재 분석노트 소개·샘플·구매는 <a href="/books/">부교재 요청방 →</a></p>
+    </div>${etcPanel(startEtc)}${TALK_NOTE}`;
+  if (hasEtc) etcForm(user, document.getElementById('etc-req'));
 
-  let kind = startBook ? 'book' : 'moe';
+  let kind = startBook ? 'book' : 'moe'; // 분석노트 종류 ([기타 자료] 탭을 눌러도 마지막 분석노트 종류를 기억)
   const $v = id => document.getElementById(id).value;
   const preview = () => {
     const n = $v('nr-n');
@@ -439,9 +456,16 @@ async function noteRequest(user) {
       ? `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${n}번 분석노트`
       : `요청: ${$v('nr-b')} ${$v('nr-u')}${bcfg($v('nr-b')).u} ${n === '0' ? zeroName($v('nr-b')) : n + '번'} 분석노트`;
   };
-  card.querySelectorAll('.tab').forEach(t => t.onclick = () => {
+  const tabs = [...card.querySelectorAll('.tabs .tab')];
+  tabs.forEach(t => t.onclick = () => {
+    tabs.forEach(x => x.classList.toggle('on', x === t));
+    document.getElementById('nr-hint').innerHTML = HINT[t.dataset.k];
+    const etc = t.dataset.k === 'etc';
+    document.getElementById('nr-pick').style.display = etc ? 'none' : '';
+    if (hasEtc) document.getElementById('etc-req').style.display = etc ? '' : 'none';
+    if (etc) return;
     kind = t.dataset.k;
-    card.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x === t));
+    document.getElementById('nr-booklink').style.display = kind === 'book' ? '' : 'none';
     document.getElementById('nr-moe').style.display = kind === 'moe' ? '' : 'none';
     document.getElementById('nr-book').style.display = kind === 'book' ? '' : 'none';
     document.getElementById('nr-n').innerHTML = numOpts(kind);
@@ -451,7 +475,7 @@ async function noteRequest(user) {
   card.querySelectorAll('select').forEach(s => s.onchange = preview);
   // 페이지의 주황 번호 버튼(30~40번)을 누르면 요청 칸에 그 번호를 바로 선택
   document.querySelectorAll('a.nb.req[data-n]').forEach(a => a.addEventListener('click', () => {
-    if (kind !== 'moe') card.querySelector('.tab[data-k="moe"]').click();
+    if (kind !== 'moe' || document.getElementById('nr-pick').style.display) card.querySelector('.tab[data-k="moe"]').click();
     document.getElementById('nr-n').value = a.dataset.n; preview();
   }));
   document.getElementById('nr-b').onchange = () => { // 교재를 바꾸면 강/회 범위와 번호 목록도 바꿈
@@ -468,6 +492,10 @@ async function noteRequest(user) {
     : { kind, book: $v('nr-b'), unit: +$v('nr-u'), n: +$v('nr-n') };
 
   document.getElementById('nr-go').onclick = () => send(body());
+  // '다른 자료 요청 →' 링크(#etc-req)로 오면 [기타 자료] 탭을 열고 그 칸으로
+  const goEtc = () => { if (hasEtc && location.hash === '#etc-req') { card.querySelector('.tab[data-k="etc"]').click(); card.scrollIntoView({ block: 'start' }); } };
+  if (startEtc) setTimeout(goEtc, 50);
+  window.addEventListener('hashchange', goEtc);
   showReady(used);
 
   // 카카오 메시지 권한을 받으러 다녀온 경우 이어서 요청

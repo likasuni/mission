@@ -152,6 +152,15 @@ ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
   border-radius: 99px; padding: 6px 14px; font-weight: 700; font-family: inherit; cursor: pointer;
 }
 .tab.on { background: var(--navy); color: #fff; }
+/* 자료 요청 칸: 탭별 한 줄 안내 · 자세히 보기 · 기타 자료 종류 칩 · 나와의 채팅 안내 */
+.nr-hint { margin: -4px 0 12px; font-size: .92rem; color: var(--ink, #1f2937); }
+.nr-more { margin: 4px 0 8px; }
+.nr-more summary { cursor: pointer; color: var(--navy); font-weight: 700; font-size: .88rem; }
+.etc-kinds { display: flex; flex-wrap: wrap; gap: 8px; }
+.etc-kinds .chip { cursor: pointer; font-family: inherit; }
+.etc-kinds .chip.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+#etc-name { border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; font: inherit; background: #fff; min-width: 0; }
+.nr-talknote { margin: 14px 0 0; padding: 8px 12px; border-radius: 10px; background: #fff8e6; border: 1px solid #f3d48a; color: #6b4e00; font-size: .86rem; }
 
 /* 알림 */
 .toast {
