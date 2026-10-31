@@ -148,7 +148,12 @@ function recentComments() {
   // 미리보기: notes/pv/index.json 에 있는 번호만 (분석노트 첫 쪽 윗부분 그림, _tools/note_preview.py 로 만듦)
   let pv = new Set();
   fetch('/notes/pv/index.json').then(r => r.ok ? r.json() : []).then(a => { pv = new Set(a); if (cache) render(); }).catch(() => {});
-  const pvKey = c => { const m = c.content.match(/(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번/); return m ? `moe-g${m[3]}-${m[1]}-${+m[2]}-${+m[4]}` : ''; };
+  const pvKey = c => {  // 모의고사 moe-g2-2026-10-37 · 부교재 bk-수능특강라이트-20-1 (Gateway·예시문제는 0)
+    let m = c.content.match(/(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번/);
+    if (m) return `moe-g${m[3]}-${m[1]}-${+m[2]}-${+m[4]}`;
+    m = c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').match(/^(.+) (\d+)(?:강|회) (?:Gateway|예시문제|(\d+)번)$/);
+    return m ? `bk-${m[1].replace(/ /g, '')}-${+m[2]}-${+(m[3] || 0)}` : '';
+  };
   function reqItem(c) {
     const done = isDone(c), ready = isReady(c), k = (ready || done) && pv.has(pvKey(c)) ? pvKey(c) : '';
     return `<li class="rq${done ? ' ok' : ready ? ' rd' : ''}"><span class="rq-st">${done ? '카톡 발송' : ready ? '준비 완료' : '진행 중'}</span>
