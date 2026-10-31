@@ -167,7 +167,7 @@ function recentComments() {
     const all = cache || [];
     const reqs = all.filter(isReq);
     const cnt = k => k === 'all' ? reqs.length : reqs.filter(c => gradeOf(c) === k).length;
-    const chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재'], ['e', '기타']].filter(([k]) => k === 'all' || cnt(k))
+    const chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재'], ['e', '기타']].filter(([k]) => k === 'all' || k === 'e' || cnt(k))  // '기타'는 0개여도 보여 줌 (요청할 수 있다는 걸 알리게)
       .map(([k, t]) => `<button class="rq-chip${gf === k ? ' on' : ''}" data-g="${k}">${t} <small>${cnt(k)}</small></button>`).join('');
     const rf = reqs.filter(c => gf === 'all' || gradeOf(c) === gf);
     // 두 칸 (블로그 위젯과 같게): 만드는 중(진행 중) · 받을 수 있어요(준비 완료 → 카톡 발송), 줄마다 상태 뱃지
@@ -175,7 +175,7 @@ function recentComments() {
     const rdy = rf.filter(c => isReady(c) || isDone(c)).sort((a, b) => new Date(b.replied_at || b.created_at) - new Date(a.replied_at || a.created_at));  // 방금 완성된 자료가 위로
     const col = (cls, title, items, key, empty) => `<div class="rq-col ${cls}"><h3>${title} <span>${items.length}</span></h3><ul${shown[key] > 6 ? ' class="open"' : ''}>${items.slice(0, shown[key]).map(reqItem).join('') || `<li class="rq-empty">${empty}</li>`}</ul>${more(key, items.length)}</div>`;
     list.innerHTML = `<div class="rq-top"><h3 class="rc-sub">최근 자료 요청</h3><div class="rq-chips">${chips}</div></div>
-      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
+      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', gf === 'e' ? '기타 자료 요청이 아직 없어요. <a href="/notes/#etc-req"><b>단어 시험지·변형문제 요청하기 →</b></a>' : '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
     list.querySelectorAll('.rq-chip').forEach(b => b.onclick = () => { gf = b.dataset.g; shown.pre = shown.rdy = 6; render(); });
     list.querySelectorAll('.rc-more').forEach(btn => btn.onclick = () => { shown[btn.dataset.k] += 6; render(); });
     list.querySelectorAll('.rq-pv').forEach(b => b.onclick = () => showPreview(b.dataset.pv, b.dataset.t, b.dataset.go));

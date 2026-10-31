@@ -96,7 +96,7 @@
   function render() {
     var reqs = cache.filter(isReq), cm = talk, total = talk.length ? Number(talk[0].total) : 0;
     function cnt(k) { return k === 'all' ? reqs.length : reqs.filter(function (c) { return gradeOf(c) === k; }).length; }
-    var chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재'], ['e', '기타']].filter(function (x) { return x[0] === 'all' || cnt(x[0]); })
+    var chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재'], ['e', '기타']].filter(function (x) { return x[0] === 'all' || x[0] === 'e' || cnt(x[0]); }) // '기타'는 0개여도 보여 줌
       .map(function (x) { return '<button class="lks-chip' + (gf === x[0] ? ' on' : '') + '" data-g="' + x[0] + '">' + x[1] + ' ' + cnt(x[0]) + '</button>'; }).join('');
     var rf = reqs.filter(function (c) { return gf === 'all' || gradeOf(c) === gf; });
     var pre = rf.filter(function (c) { return !isDone(c) && !isReady(c); });          // 만드는 중 (진행 중)
@@ -104,7 +104,7 @@
     list.innerHTML =
       '<div style="margin: 12px 0 6px; font-size: 16px; font-weight: 800; color: #1e3a8a;">최근 자료 요청</div>' +
       '<div>' + chips + '</div>' +
-      '<div class="lks-cols">' + col('만드는 중', pre, 'pre', '기다리는 요청이 없어요.', false) + col('받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.', true) + '</div>' +
+      '<div class="lks-cols">' + col('만드는 중', pre, 'pre', gf === 'e' ? '기타 자료 요청이 아직 없어요. <a href="' + SITE + 'notes/#etc-req" style="color: #7a4b00; font-weight: 800;">단어 시험지·변형문제 요청하기 →</a>' : '기다리는 요청이 없어요.', false) + col('받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.', true) + '</div>' +
       '<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 0;"><span style="font-size: 16px; font-weight: 800; color: #1e3a8a;">소통하기</span><span style="font-size: 13px; color: #6b7280;">원장님께 무엇이든 물어보세요</span>' +
         '<a href="' + SITE + '#talk" style="margin-left: auto; padding: 5px 12px; border-radius: 8px; background: #1e3a8a; color: #fff; font-size: 13px; font-weight: 800;">질문하러 가기 →</a></div>' +
       '<div style="' + BOX + (shown.cmt > 3 ? ' max-height: 420px; overflow-y: auto;' : '') + '">' + (cm.slice(0, shown.cmt).map(talkItem).join('') || '<p style="color: #8a93a8; font-size: 14px;">아직 글이 없어요. 자료실에서 첫 질문을 남겨 주세요!</p>') + '</div>' +
