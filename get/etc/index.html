@@ -7,10 +7,9 @@ a.b{display:inline-block;margin-top:14px;padding:12px 20px;border-radius:12px;ba
 <body><div class="c"><b>리카수니 자료실 · 기타 자료</b><p>자료가 있는 구글 드라이브로 이동하고 있어요...</p><a class="b" id="go" href="#">자료 열기</a></div>
 <script>
 // 카톡 버튼은 카카오에 등록한 도메인(data.likasuni.com)만 열 수 있어서, 여기서 구글 드라이브로 넘겨요 (함수 etc-notify)
-// ?u= 는 구글 드라이브·문서 주소만 받아요 (다른 사이트로 넘기는 데 쓰이지 않게). 없으면 기타 자료 공유 폴더
-var FOLDER = 'https://drive.google.com/drive/folders/1FryHlXrnXc7gzP8e3xQrM-TBR6L-KkXY?usp=sharing';
-var to = FOLDER;
+// ?u= 는 구글 드라이브·문서 주소만 받아요 (다른 사이트로 넘기는 데 쓰이지 않게). 기타자료 폴더 파일은 /get/?t= 로 보내요
+var to = '';
 try { var u = new URL(new URLSearchParams(location.search).get('u') || ''); if (u.protocol === 'https:' && /^(drive|docs)\.google\.com$/.test(u.hostname)) to = u.href; } catch (e) {}
-document.getElementById('go').href = to;
-location.replace(to);
+if (to) { document.getElementById('go').href = to; location.replace(to); }
+else { document.querySelector('.c p').textContent = '잘못된 링크예요. 받은 카톡 링크를 다시 확인해 주세요.'; document.getElementById('go').href = '/notes/'; document.getElementById('go').textContent = '자료 요청으로 가기'; }
 </script></body></html>

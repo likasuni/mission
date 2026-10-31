@@ -18,7 +18,7 @@
 <h2>분석노트 받기</h2>
 <p class="muted" id="msg">파일을 여는 중이에요...</p>
 <p><a class="btn btn-gold" id="go" href="#">PDF 열기</a></p>
-<p class="meta">파일이 열리지 않으면 위 버튼을 눌러주세요. 링크는 받은 뒤 24시간 동안만 열 수 있어요.</p>
+<p class="meta">파일이 열리지 않으면 위 버튼을 눌러주세요. 링크는 정해진 기간(분석노트 24시간 · 기타 자료 7일) 동안만 열 수 있어요.</p>
 </div></main>
 <script>
 const qs = new URLSearchParams(location.search);
@@ -27,7 +27,7 @@ const go = document.getElementById('go');
 const ERR = {
   bad: '잘못된 링크예요. 받은 링크를 다시 확인해 주세요.',
   notfound: '링크를 찾을 수 없어요. 자료실에서 다시 요청해 주세요.',
-  expired: '링크 사용 기간(24시간)이 지났어요. 자료실에서 다시 요청해 주세요.',
+  expired: '링크 사용 기간이 지났어요. 자료실에서 다시 요청해 주세요.',
   fail: '파일을 가져오지 못했어요. 잠시 후 다시 시도해 주세요.'
 };
 if (err) {

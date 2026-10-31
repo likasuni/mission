@@ -8,11 +8,13 @@
  *  2) 자료실 서버(Supabase)가 비밀키로 요청하면 파일 목록과 파일 내용을 전달합니다.
  *  3) 자료실 목록 만들기(깃허브)에는 공개 파일 목록만 알려 줍니다 (비공개 파일 주소는 절대 안 내보냄).
  *  4) 매시간 자동으로 새로 올린 파일의 공개/비공개를 맞춥니다.
+ *  5) '기타자료' 폴더(기타 자료 요청)도 비공개로 두고, 원장님이 고른 파일 하나만 학생에게 열기 링크로 보냅니다 (2026-10-31).
  *
  * 처음 한 번: 위쪽 함수 선택에서 setup → 실행 → 권한 허용
  */
 const KEY = '여기에_비밀키';
-const ROOTS = { '모의고사 분석노트': '1jSEPdOdM4RD7GplBWwF3jiRKFWToBOBq', '부교재 분석노트': '1vg17CVTqjIRk-hdoA3PhrJ1RTUn84lSO' };
+const ROOTS = { '모의고사 분석노트': '1jSEPdOdM4RD7GplBWwF3jiRKFWToBOBq', '부교재 분석노트': '1vg17CVTqjIRk-hdoA3PhrJ1RTUn84lSO', '기타자료': '1FryHlXrnXc7gzP8e3xQrM-TBR6L-KkXY' };
+const ETC = '기타자료'; // 기타 자료 요청 폴더 — 모두 비공개, 분석노트 목록(list)에는 안 섞음
 const KEEP_PUBLIC = ['105f20gSuhZvR44gCK6oW5mxn2-ZFG12J']; // 부교재 샘플(수능특강 라이트) — 공개 유지
 const PRIVATE_FROM = 30, PRIVATE_TO = 40; // 모의고사 30~40번은 비공개
 
@@ -29,6 +31,7 @@ function nums(name) {
 function isPublic(f) {
   if (KEEP_PUBLIC.indexOf(f.id) > -1) return true;
   if (String(f.path[0]).normalize('NFC') === '부교재 분석노트') return false;            // 부교재 분석노트는 모두 비공개
+  if (String(f.path[0]).normalize('NFC') === ETC) return false;                         // 기타자료도 모두 비공개
   if (/문제|정답|해설|듣기/.test(String(f.name).normalize('NFC'))) return true;          // 같은 폴더의 시험지 원본은 공개 그대로
   const ns = nums(f.name);
   if (!ns.length) return false;                                   // 번호를 모르면 안전하게 비공개
@@ -85,18 +88,35 @@ function doGet(e) {
     return out({ files: cachedList(60).filter(function (f) { return f.pub; }).map(function (f) { return { id: f.id, title: f.name, path: f.path }; }) });
   }
   if (p.key !== KEY) return out({ error: 'forbidden' });
-  // 전체 목록 (요청 처리용)
+  // 전체 목록 (요청 처리용). scope=etc 이면 기타자료 폴더만, 아니면 분석노트 폴더만
   if (p.action === 'list') {
-    return out({ files: cachedList(5).map(function (f) { return { id: f.id, name: f.name, path: f.path }; }) });
+    if (p.scope === 'etc') return out({ files: listEtc() });
+    return out({ files: cachedList(5).filter(function (f) { return f.path[0] !== ETC; })
+      .map(function (f) { return { id: f.id, name: f.name, path: f.path }; }) });
   }
   // 파일 내용 (분석노트 폴더 안 파일만)
   if (p.action === 'get') {
-    const ok = cachedList(5).some(function (f) { return f.id === p.id; });
+    const has = function (f) { return f.id === p.id; };
+    const ok = cachedList(5).some(has) || listEtc().some(has); // 기타자료는 방금 올린 파일도 바로 (캐시 없이)
     if (!ok) return out({ error: 'notfound' });
     const f = DriveApp.getFileById(p.id);
     return out({ name: f.getName(), b64: Utilities.base64Encode(f.getBlob().getBytes()) });
   }
   return out({ error: 'unknown action' });
+}
+// 기타자료 폴더 파일 목록 (작은 폴더라 캐시 없이 바로 훑음 → 방금 올린 파일도 보임)
+function listEtc() {
+  const files = [], stack = [{ f: DriveApp.getFolderById(ROOTS[ETC]), path: [ETC] }];
+  while (stack.length) {
+    const cur = stack.pop(), fs = cur.f.getFiles();
+    while (fs.hasNext()) {
+      const x = fs.next(), nm = x.getName().trim().normalize('NFC');
+      if (/\.pdf$/i.test(nm) && !x.isTrashed()) files.push({ id: x.getId(), name: nm, path: cur.path });
+    }
+    const ds = cur.f.getFolders();
+    while (ds.hasNext()) { const d = ds.next(); stack.push({ f: d, path: cur.path.concat([d.getName().normalize('NFC')]) }); }
+  }
+  return files;
 }
 function out(o) {
   return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON);

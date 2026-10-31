@@ -108,8 +108,10 @@ async function tabComments() {
           <button class="btn btn-danger btn-sm" onclick="removeComment(${c.id})">삭제</button>
         </div>
         ${c.content.startsWith('[자료 요청] 기타 ·') ? `<div class="mt" style="padding:10px;border:1px dashed #f3d48a;border-radius:10px;background:#fffbf0">
-          <b>기타 자료 요청</b> <span class="meta">자료를 <a href="https://drive.google.com/drive/folders/1FryHlXrnXc7gzP8e3xQrM-TBR6L-KkXY" target="_blank" rel="noopener"><b>기타 자료 드라이브 폴더</b></a>에 올리고 누르면, 요청한 학생에게 카톡으로 폴더 링크를 보내고 답글을 '보내 드렸어요'로 바꿔요. 파일 하나만 보내려면 그 파일 링크를 넣어요.</span>
-          <div class="row mt" style="gap:6px;flex-wrap:wrap"><input id="el-${c.id}" placeholder="비워 두면 기타 자료 폴더 링크로 보내요" style="flex:1 1 220px"><input id="em-${c.id}" maxlength="120" placeholder="한 줄 메시지 (선택)" style="flex:1 1 220px">
+          <b>기타 자료 요청</b> <span class="meta">PDF 를 <a href="https://drive.google.com/drive/folders/1FryHlXrnXc7gzP8e3xQrM-TBR6L-KkXY" target="_blank" rel="noopener"><b>기타자료 드라이브 폴더</b></a>(비공개)에 올리고 <b>자료 고르기</b>에서 파일을 고른 뒤 누르면, 요청한 학생에게 <b>그 파일 하나만</b> 여는 링크(7일)를 카톡으로 보내고 답글을 '보내 드렸어요'로 바꿔요.</span>
+          <div class="row mt" style="gap:6px;flex-wrap:wrap"><select id="ef-${c.id}" style="flex:1 1 260px" onfocus="etcFiles(${c.id})"><option value="">자료 고르기 (기타자료 폴더)</option></select>
+          <input id="em-${c.id}" maxlength="120" placeholder="한 줄 메시지 (선택)" style="flex:1 1 220px"></div>
+          <div class="row mt" style="gap:6px;flex-wrap:wrap"><input id="el-${c.id}" placeholder="또는 다른 링크 직접 넣기 (선택)" style="flex:1 1 220px">
           <button class="btn btn-gold btn-sm" onclick="etcSend(${c.id})">준비 완료 · 카톡 보내기</button></div></div>` : ''}
       </div>`).join('') : '<div class="card"><p class="muted">해당하는 댓글이 없어요.</p></div>'}`;
 }
@@ -123,11 +125,31 @@ async function togglePin(id, on) {
   showTab('comments');
 }
 // 기타 자료 요청: 요청한 학생에게 카톡 (함수 etc-notify)
+// 자료 고르기: 기타자료 폴더 PDF 목록 (칸을 누를 때 한 번 불러옴, 같은 화면의 다른 요청 칸도 같은 목록)
+let etcList = null;
+async function etcFiles(id) {
+  const sel = document.getElementById('ef-' + id);
+  if (sel.dataset.loaded) return;
+  sel.dataset.loaded = '1';
+  if (!etcList) {
+    sel.options[0].text = '불러오는 중...';
+    const { data: { session } } = await sb.auth.getSession();
+    const res = await fetch(`${SUPABASE_URL}/functions/v1/etc-notify`, { method: 'POST',
+      headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` }, body: JSON.stringify({ action: 'list' }) });
+    const r = await res.json().catch(() => ({}));
+    if (!res.ok) { sel.dataset.loaded = ''; sel.options[0].text = '자료 고르기 (기타자료 폴더)'; return toast('오류: ' + (r.error || res.status)); }
+    if (!r.files.length) { sel.dataset.loaded = ''; sel.options[0].text = '자료 고르기 (기타자료 폴더)'; return toast(r.hint || '폴더에 PDF 가 없어요.'); }
+    etcList = r.files.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+  }
+  sel.innerHTML = '<option value="">자료 고르기 (기타자료 폴더)</option>' + etcList.map(f => `<option value="${esc(f.id)}">${esc(f.name)}</option>`).join('');
+}
 async function etcSend(id) {
+  const file_id = document.getElementById('ef-' + id).value, link = document.getElementById('el-' + id).value.trim();
+  if (!file_id && !link) return toast('보낼 자료를 골라 주세요.');
   const { data: { session } } = await sb.auth.getSession();
   const res = await fetch(`${SUPABASE_URL}/functions/v1/etc-notify`, { method: 'POST',
     headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
-    body: JSON.stringify({ id, link: document.getElementById('el-' + id).value, memo: document.getElementById('em-' + id).value }) });
+    body: JSON.stringify({ id, file_id, link, memo: document.getElementById('em-' + id).value }) });
   const r = await res.json().catch(() => ({}));
   if (!res.ok) return toast('오류: ' + (r.error || res.status));
   toast(r.sent ? '카톡으로 보냈어요!' : `카톡을 못 보냈어요 (${{ no_token: '카카오 연결 없음', no_consent: '카톡 동의 안 함', fail: '발송 실패' }[r.why] || r.why}). 답글로 '준비됐어요' 안내를 남겼어요.`);
