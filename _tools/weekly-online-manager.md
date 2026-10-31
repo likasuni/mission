@@ -16,6 +16,9 @@
 - _tools/coupang.json: url 이 빈 책, checked 가 8일 넘게 지난 책.
 - Actions 최근 실패: curl -s 'https://api.github.com/repos/likasuni/mission/actions/runs?per_page=30' 에서 지난 7일 failure.
 - 다가오는 시험(학력평가 3·6·9·10월, 수능 11월)까지 남은 날과 준비 제안.
+- **깃허브 토큰 만료 확인**: 아래 명령으로 만료일만 읽어요 (토큰 값은 화면에 내지 않음).
+  `t=$(printf "protocol=https\nhost=github.com\n\n" | git credential fill 2>/dev/null | sed -n 's/^password=//p'); curl -sI -H "Authorization: Bearer $t" https://api.github.com/repos/likasuni/mission | grep -i github-authentication-token-expiration; unset t`
+  만료까지 **14일 이하**면 보고 맨 위에 "⚠️ 깃허브 토큰이 N일 뒤(날짜) 만료돼요"와 갱신 방법(GitHub → Settings → Developer settings → Fine-grained tokens → 새 토큰: mission 저장소, Contents·Workflows Read and write → ⧉ 복사 → Documents/mission/깃허브_로그인.command 실행)을 넣어요. 만료가 지났거나 확인이 안 되면 그것도 알려요. (2026-10-30 만든 토큰은 2027-01-27 만료)
 
 ## 2. 교재 소식 초안 1편 (많아야 2편)
 - 고르기: status new 중 고등 영어 학습자에게 쓸모 있는 원래 교재. 변형문제집·분석노트·공무원·토익·중등·독학사 제외. 이미 posted 인 시리즈와 겹치면 건너뜀.
