@@ -476,6 +476,28 @@ for idx, k in enumerate(keys_sorted):
                  body, crumbs + [(subj_url(k, s), sn)], active, comments=(subj_url(k, s).strip('/'), full))
 
 # ---------- 문항별 해설 ----------
+# 원장님 분석노트 그림 (_tools/note_view.py 가 만든 notes/view/*.webp + index.json) → 해설 페이지 '원장님 분석노트' 칸
+_nvf = os.path.join(ROOT, 'notes', 'view', 'index.json')
+NV = json.load(open(_nvf, encoding='utf-8')) if os.path.exists(_nvf) else {}
+def note_view(p, nm):
+    k = p['k']
+    key = f"moe-g{k[1]}-{k[2]}-{k[3]}-{post_no(p).replace('~', '-')}" if k[0] == 'moe' else ''
+    nv = NV.get(key)
+    if not nv: return ''
+    pgs = []
+    for i in range(nv['pages']):
+        src = f"/notes/view/{key}-{i + 1}.webp?v={nv['v']}"
+        lazy = 'fetchpriority="high"' if i == 0 else 'loading="lazy"'
+        pgs.append(f'<a class="nv-pg" href="{src}" target="_blank" rel="noopener"><img src="{src}" width="1600" height="2264" '
+                   f'alt="{e(nm)} 분석노트 {i + 1}쪽 - 리카수니 원장" {lazy} decoding="async"></a>')
+    txt = ''.join(f'<p class="en">{e(x)}</p>' for x in nv.get('en', []))
+    return (f'<div class="card nv"><h2>📘 원장님 분석노트 <small>끊어읽기 · 해석 · 어휘</small></h2>'
+            f'<p class="muted">다운로드 없이 바로 보세요. 그림을 누르면 크게 열려요.</p>'
+            + f'</div>{ad()}<div class="card nv">'.join(pgs)
+            + f'<p class="nv-src">지문 출처: {e(s_name(k))} 영어 {post_no(p)}번 · {e(s_org(k))}<br>분석·해석·어휘 정리: 리카수니 원장 (이매동 코코스학원)</p>'
+            + (f'<details class="nv-text"><summary>분석노트 속 영어 문장 글자로 보기</summary>{txt}</details>' if txt else '')
+            + '<div class="dl"><a href="/notes/">인쇄용 PDF 카톡으로 받기</a></div></div>')
+
 for p in POSTS:
     k, n = p['k'], p['n']
     nm, url = post_name(p), post_url(p)
@@ -511,6 +533,8 @@ for p in POSTS:
         return a[0] <= p.get('n2', n) and n <= a[-1]
     vid = next((i for r, i in VAR.get(k, []) if _cov(r)), None) if p['subj'] == '영어' else None
     vtag = ' · 변형문제' if vid else ''
+    ncard = note_view(p, nm)
+    if ncard: vtag = ' · 분석노트' + vtag
     vcard = (f'<div class="card"><h2>{e(nm)} 변형문제</h2><p class="muted">같은 지문으로 만든 리카수니 변형문제예요. 해설로 정리한 뒤 바로 풀어 보세요.</p>'
              f'<div class="dl"><a href="{view(vid)}" target="_blank" rel="noopener">변형문제 PDF 보기</a></div></div>') if vid else ''
     body = f'''<h1 class="page-h1">{e(h1)}</h1>
@@ -521,6 +545,7 @@ for p in POSTS:
 <tr><th>정답</th><td>{atd}</td></tr>
 <tr><th>핵심</th><td>{e(p["topic"])}</td></tr>
 </table></div>
+{ncard}
 <div class="card"><h2>글의 흐름 한눈에</h2><ol class="flow">{flow}</ol></div>
 {qcards}{f'<div class="tip"><b>풀이 요령</b> {e(p["tip"])}</div>' if p.get("tip") else ''}
 {f'<div class="note"><b>원장님 한마디</b><p>{e(p["note"])}</p><small>— 리카수니 원장</small></div>' if p.get("note") else ''}

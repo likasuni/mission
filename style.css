@@ -669,3 +669,10 @@ a.nb:hover { filter: brightness(1.12); }
 .rq-box-ft a { color: var(--navy); font-weight: 700; }
 @media (max-width: 760px) { .rq-box { padding: 16px 14px; } .rq-box-btns { grid-template-columns: minmax(0, 1fr); gap: 8px; } .rqb { min-height: 64px; } }
 
+
+/* 원장님 분석노트 그림 (문항 해설 페이지) */
+.nv .nv-pg { display: block; margin: 10px 0 4px; border: 1px solid #e3e6ee; border-radius: 8px; overflow: hidden; background: #fff; }
+.nv .nv-pg img { display: block; width: 100%; height: auto; }
+.nv-src { margin: 10px 0 4px; font-size: .82rem; color: var(--muted); line-height: 1.6; }
+.nv-text { margin: 8px 0; } .nv-text summary { cursor: pointer; font-weight: 700; color: var(--navy); font-size: .92rem; }
+.nv-text p { font-size: .92rem; line-height: 1.75; margin: 8px 0; }
