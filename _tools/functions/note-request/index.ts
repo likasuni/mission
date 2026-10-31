@@ -118,6 +118,22 @@ function findFiles(all: Entry[], sp: Spec) {
   });
 }
 
+// 카카오 '카톡 메시지 받기'(talk_message) 동의 여부: true/false, 확인 못 하면 null
+// 토큰은 화면이 보낸 것(방금 로그인) → 없으면 서버에 저장된 토큰(만료 전일 때만)
+async function talkScope(db: any, uid: string, token?: string): Promise<boolean | null> {
+  if (!token) {
+    const { data: tk } = await db.from('kakao_tokens').select('access_token,access_expires').eq('user_id', uid).maybeSingle();
+    if (tk?.access_token && tk.access_expires && new Date(tk.access_expires).getTime() > Date.now() + 60e3) token = tk.access_token;
+  }
+  if (!token) return null;
+  const r = await fetch('https://kapi.kakao.com/v2/user/scopes', { headers: { Authorization: `Bearer ${token}` } }).catch(() => null);
+  if (!r?.ok) return null;
+  const j = await r.json().catch(() => ({}));
+  const sc = (j.scopes || []).find((x: any) => x.id === 'talk_message');
+  return sc ? !!sc.agreed : null;
+}
+const NO_CONSENT_NOTE = ' (카톡 받기 동의가 꺼져 있어서 완성돼도 카톡으로는 못 보내요. 완성되면 자료실에 로그인해서 받아 주세요.)';
+
 // 오늘(한국 시간 자정) 시작 시각
 function dayStartIso() {
   const kst = new Date(Date.now() + 9 * 3600e3);
@@ -185,6 +201,14 @@ Deno.serve(async (req) => {
 
   const name = user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.nickname || '회원';
 
+  // 카톡 받기 동의 확인 (요청 칸을 열 때). 동의돼 있으면 '동의 안 함'으로 멈춰 둔 기다리는 요청을 풀어서 다음 자동 발송 때 다시 시도
+  if (b.kind === 'scope') {
+    const talk = await talkScope(db, user.id, b.kakao_token);
+    if (talk) await db.from('note_orders').update({ kakao_issue: null, kakao_issue_at: null })
+      .eq('user_id', user.id).eq('kakao_issue', 'no_consent').in('status', ['missing', 'resolved']);
+    return reply(req, 200, { talk });
+  }
+
   // 준비된 자료 확인: 이 회원이 요청했지만 그때 없던 자료 중, 지금 드라이브에 올라온 것 (알림용, 횟수 차감 없음)
   if (b.kind === 'check') {
     const { data: waits } = await db.from('note_orders').select('kind,label,query,created_at')
@@ -237,17 +261,19 @@ Deno.serve(async (req) => {
     // 같은 자료를 이미 기다리고 있으면 중복으로 쌓지 않음
     const { count: dup } = await db.from('note_orders').select('id', { count: 'exact', head: true })
       .eq('user_id', user.id).eq('label', label).in('status', ['missing', 'resolved']);
+    const talk = await talkScope(db, user.id, b.kakao_token);
     if (!dup) {
-      await db.from('note_orders').insert({ user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'missing' });
+      await db.from('note_orders').insert({ user_id: user.id, author_name: name, kind: b.kind, label, query, status: 'missing',
+        ...(talk === false ? { kakao_issue: 'no_consent', kakao_issue_at: new Date().toISOString() } : {}) });
       // 요청한 페이지 댓글 창에 접수 댓글 + 원장 답글 (이름은 화면에서 김*윤처럼 가려짐)
       const pk = String(b.page_key || 'notes').slice(0, 200), pt = String(b.page_title || '분석노트 요청').slice(0, 200);
       await db.from('comments').insert({
         user_id: user.id, author_name: name, page_key: pk, page_title: pt, approved: true,
         content: `[자료 요청] ${label} 부탁드려요.`,
-        reply: `${label} 요청 접수했어요. 원장님이 1~2일 안에 준비할게요. 완성되면 자료실에 로그인해서 받을 수 있어요. (한 번에 여러 개 요청했다면 처음 1개는 카카오톡으로도 보내 드려요)`, replied_at: new Date().toISOString(),
+        reply: `${label} 요청 접수했어요. 원장님이 1~2일 안에 준비할게요. 완성되면 자료실에 로그인해서 받을 수 있어요. (한 번에 여러 개 요청했다면 처음 1개는 카카오톡으로도 보내 드려요)${talk === false ? NO_CONSENT_NOTE : ''}`, replied_at: new Date().toISOString(),
       });
     }
-    return reply(req, 200, { missing: true, label });
+    return reply(req, 200, { missing: true, label, talk });
   }
 
   const f = files[0];

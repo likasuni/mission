@@ -130,7 +130,7 @@ function recentComments() {
   };
   // 자료 요청 댓글: [자료 요청] … 부탁드려요. 상태 3단계 (답글 문구로 구분)
   // 진행 중(주황, '접수했어요') → 준비 완료(파랑, '준비됐어요' — 드라이브에 올라옴, 요청하면 바로 카톡) → 카톡 발송(초록, '보내 드렸어요')
-  const isReq = c => c.content.startsWith('[자료 요청]');
+  const isReq = c => c.content.startsWith('[자료 요청]') && !/다시 요청해 주세요/.test(c.reply || '');  // 연락이 안 돼 정리된 요청(3일)은 목록에서 뺌
   const isDone = c => /보내 드렸어요/.test(c.reply || '');
   const isReady = c => !isDone(c) && /준비됐어요/.test(c.reply || '');
   // '나도 받기' 링크: 요청 칸에 같은 회차·번호가 미리 골라져 있게 (y·m·g·n 또는 book·unit·n)
@@ -276,6 +276,25 @@ function pushAsk(msg) {
 function nextResetText() { // 하루 한도는 한국 시간 자정에 다시 채워짐
   return '내일(자정 지나면) 다시 받을 수 있어요';
 }
+// 카카오 '카톡 메시지 받기' 동의 확인 (true/false, 모르면 null). 동의돼 있으면 서버가 멈춰 둔 자동 발송을 다시 풀어 줌
+async function talkScope() {
+  try {
+    const { data: { session } } = await sb.auth.getSession();
+    if (!session) return null;
+    const res = await fetch(`${SUPABASE_URL}/functions/v1/note-request`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
+      body: JSON.stringify({ kind: 'scope', kakao_token: session.provider_token || '' })
+    });
+    return (await res.json()).talk ?? null;
+  } catch (e) { return null; }
+}
+function talkWarn(after) {
+  return `<div class="talk-warn"><b>⚠️ 카톡 받기 동의가 꺼져 있어요</b>
+    <p>${after ? '요청은 접수됐어요. 그런데 ' : ''}이대로면 자료가 완성돼도 <b>카톡으로 보내 드릴 수 없어요.</b> 아래 버튼을 눌러 카카오 화면에서 <b>'카카오톡 메시지 전송'</b>에 체크해 주세요.</p>
+    <button type="button" class="btn btn-gold btn-sm" onclick="login('kakao', 'talk_message')">카톡 받기 동의하기</button>
+    <p class="meta">동의하지 않으면 완성된 뒤 자료실에 직접 로그인해서 받아야 하고, <b>3일 안에 받지 않으면 요청이 정리돼요.</b></p>${pushAsk('완성 소식만이라도 알림으로 받아 볼까요?')}</div>`;
+}
 async function myNotes(user) { // 내 요청: 준비된 것(받기 가능) · 만드는 중
   const { data: { session } } = await sb.auth.getSession();
   if (!session) return null;
@@ -323,12 +342,14 @@ async function noteRequest(user) {
     <p class="muted">원하는 문항의 분석노트를 <b>카카오톡으로 바로</b> 보내드려요. 요청과 받기 모두 <b>하루 모의고사 2개 · 부교재 1개</b>까지예요. 받은 링크는 <b>24시간</b> 동안 열 수 있어요.</p>
     <p class="meta"><b>받는 방법:</b> 번호를 <b>하나씩</b> 골라 받아요. 모의고사는 하나를 받은 뒤 <b>"다른 번호 받기"</b>를 눌러 두 번째 번호를 받을 수 있어요.</p>
     <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 <b>처음 요청한 1개는 카톡으로 자동</b> 보내 드리고, 나머지는 다시 로그인했을 때 이 칸 위 <b>"요청하신 자료가 준비됐어요"</b>에서 받아요.</p>
-    <div id="nr-ready"></div>`;
+    <div id="nr-talk"></div><div id="nr-ready"></div>`;
 
   if (!isKakao) {
     card.innerHTML = head + `<p class="muted">카카오로 로그인한 회원만 요청할 수 있어요.</p>${loginButtons()}`;
     return;
   }
+  // 카톡 받기 동의 확인: 꺼져 있으면 요청 칸 맨 위에 안내 (자료가 완성돼도 카톡으로 못 보내서)
+  talkScope().then(t => { const el = document.getElementById('nr-talk'); if (t === false && el) el.innerHTML = talkWarn(); });
 
   // 오늘 받은 기록 (종류별 개수)
   const kst = new Date(Date.now() + 9 * 3600e3);
@@ -476,7 +497,7 @@ async function noteRequest(user) {
     if (r.missing) {
       const d = new Date(Date.now() + 2 * 86400e3);
       const when = `${d.getMonth() + 1}월 ${d.getDate()}일(${'일월화수목금토'[d.getDay()]})`;
-      box.innerHTML = `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 1~2일 뒤(${when}쯤) 다시 로그인하면 이 칸 위에 <b>"준비됐어요"</b> 알림이 떠요. 그때 받기를 눌러 주세요. (오늘 요청 횟수는 차감되지 않아요)<br><span class="meta">아래 댓글 창에도 요청이 접수됐다고 남겨 두었어요.</span>` + pushAsk('완성되면 알림으로 바로 알려 드릴까요?');
+      box.innerHTML = (r.talk === false ? talkWarn(true) : '') + `<b>${esc(r.label)}</b>는 지금 원장님이 준비하고 있어요. 1~2일 뒤(${when}쯤) 다시 로그인하면 이 칸 위에 <b>"준비됐어요"</b> 알림이 떠요. 그때 받기를 눌러 주세요. (오늘 요청 횟수는 차감되지 않아요)<br><span class="meta">아래 댓글 창에도 요청이 접수됐다고 남겨 두었어요.</span>` + pushAsk('완성되면 알림으로 바로 알려 드릴까요?');
       if (window.reloadComments) window.reloadComments();
       return;
     }

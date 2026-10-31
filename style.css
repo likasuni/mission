@@ -638,3 +638,8 @@ a.nb:hover { filter: brightness(1.12); }
 /* 첫 화면 '최근 알림': 최근 1개만, 나머지는 펼쳐서 */
 #push-news:not(.open) li:nth-child(n+2) { display: none; }
 .pn-more { margin-top: 8px; border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 5px 14px; font-size: .82rem; font-weight: 700; color: var(--navy); cursor: pointer; }
+
+/* 카톡 받기 동의가 꺼진 학생에게 보이는 안내 (분석노트 요청 칸) */
+.talk-warn { border: 1px solid #f3c47a; background: #fff8eb; border-radius: 12px; padding: 12px 14px; margin: 10px 0; }
+.talk-warn b:first-child { color: #9a3412; }
+.talk-warn p { margin: 6px 0; }
