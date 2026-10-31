@@ -292,7 +292,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=42'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=43'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -943,7 +943,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 {memo_home}
 <a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>
 <section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청 · 소통하기</b></div>
-<div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 궁금한 점은 아래 <b>소통하기</b>에 남겨 주세요.<button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
+<div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 궁금한 점은 아래 <b>소통하기</b>에 남겨 주세요. 단어 시험지 같은 <a href="/notes/#etc-req"><b>다른 자료 요청 →</b></a><button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div>
 <div id="talk" class="tk-in"><div class="tk-h"><b>소통하기</b><span>공부·자료·수업 무엇이든 원장님께 물어보세요</span></div>
 <div class="tk-form"></div><div class="tk-list"><p class="muted">불러오는 중...</p></div></div></div></section>
@@ -1014,6 +1014,7 @@ page('/variants/', '고1·고2 모의고사 영어 변형문제 PDF 무료 | 리
 nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
 <p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트를 카카오톡으로 받아보세요.</p>
 <section class="card mission" id="note-req"><h2>분석노트 요청</h2><p class="muted">불러오는 중...</p></section>
+<section class="card" id="etc-req"><h2>기타 자료 요청 <small>단어 시험지 · 변형문제 · 다른 교재</small></h2><p class="muted">불러오는 중...</p></section>
 <div class="card"><h2>이용 방법</h2><ul class="sum">
 <li>카카오로 로그인한 회원만 요청할 수 있어요.</li>
 <li>모의고사는 연도·월·학년·번호를, 부교재는 교재·강·번호를 골라 요청해요. (예: 2026년 9월 고1 30번, 수능특강 라이트 20강 1번)</li>

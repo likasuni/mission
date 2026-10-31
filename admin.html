@@ -71,6 +71,7 @@ async function tabComments() {
   if (cFilter === 'pending') q = q.eq('approved', false);
   if (cFilter === 'noreply') q = q.is('reply', null);
   if (cFilter === 'talk') q = q.eq('page_key', 'talk');
+  if (cFilter === 'etc') q = q.like('content', '[자료 요청] 기타 ·%');  // 기타 자료 요청 (카톡 보내기 버튼)
   if (cUser) q = q.eq('user_id', cUser.id);
   const { data, error } = await q;
   if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
@@ -79,7 +80,7 @@ async function tabComments() {
   $('#panel').innerHTML = `
     <div class="card">
       <div class="row between" style="flex-wrap:wrap;gap:8px">
-        <div class="row" style="gap:6px;flex-wrap:wrap">${fb('all', '전체 댓글')}${fb('pending', '승인 대기')}${fb('noreply', '답글 안 단 댓글')}${fb('talk', '소통하기')}</div>
+        <div class="row" style="gap:6px;flex-wrap:wrap">${fb('all', '전체 댓글')}${fb('pending', '승인 대기')}${fb('noreply', '답글 안 단 댓글')}${fb('talk', '소통하기')} ${fb('etc', '기타 자료 요청')}</div>
         ${pend ? `<button class="btn btn-gold btn-sm" onclick="approveAll()">대기 ${pend}개 전체 승인</button>` : ''}
       </div>
       ${cUser ? `<p class="mt"><b>${esc(cUser.name)}</b> 님의 댓글만 보는 중 · <a href="#" onclick="cUser=null;showTab('comments');return false">전체로 돌아가기</a></p>` : '<p class="meta mt">회원 이름을 누르면 그 회원이 쓴 댓글만 모아 볼 수 있어요.</p>'}
@@ -106,6 +107,10 @@ async function tabComments() {
           ${c.page_key === 'talk' ? `<button class="btn btn-line btn-sm" onclick="togglePin(${c.id}, ${!c.pinned})">${c.pinned ? '고정 해제' : '📌 공지 고정'}</button>` : ''}
           <button class="btn btn-danger btn-sm" onclick="removeComment(${c.id})">삭제</button>
         </div>
+        ${c.content.startsWith('[자료 요청] 기타 ·') ? `<div class="mt" style="padding:10px;border:1px dashed #f3d48a;border-radius:10px;background:#fffbf0">
+          <b>기타 자료 요청</b> <span class="meta">자료를 드라이브 등에 올리고 링크를 넣은 뒤 누르면, 요청한 학생에게 카톡으로 보내고 답글을 '보내 드렸어요'로 바꿔요.</span>
+          <div class="row mt" style="gap:6px;flex-wrap:wrap"><input id="el-${c.id}" placeholder="자료 링크 (선택)" style="flex:1 1 220px"><input id="em-${c.id}" maxlength="120" placeholder="한 줄 메시지 (선택)" style="flex:1 1 220px">
+          <button class="btn btn-gold btn-sm" onclick="etcSend(${c.id})">준비 완료 · 카톡 보내기</button></div></div>` : ''}
       </div>`).join('') : '<div class="card"><p class="muted">해당하는 댓글이 없어요.</p></div>'}`;
 }
 function setCFilter(k) { cFilter = k; showTab('comments'); }
@@ -115,6 +120,17 @@ async function togglePin(id, on) {
   const { error } = await sb.from('comments').update({ pinned: on }).eq('id', id);
   if (error) return toast('오류: ' + error.message);
   toast(on ? '소통하기 맨 위에 고정했어요.' : '고정을 풀었어요.');
+  showTab('comments');
+}
+// 기타 자료 요청: 요청한 학생에게 카톡 (함수 etc-notify)
+async function etcSend(id) {
+  const { data: { session } } = await sb.auth.getSession();
+  const res = await fetch(`${SUPABASE_URL}/functions/v1/etc-notify`, { method: 'POST',
+    headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Authorization: `Bearer ${session.access_token}` },
+    body: JSON.stringify({ id, link: document.getElementById('el-' + id).value, memo: document.getElementById('em-' + id).value }) });
+  const r = await res.json().catch(() => ({}));
+  if (!res.ok) return toast('오류: ' + (r.error || res.status));
+  toast(r.sent ? '카톡으로 보냈어요!' : `카톡을 못 보냈어요 (${{ no_token: '카카오 연결 없음', no_consent: '카톡 동의 안 함', fail: '발송 실패' }[r.why] || r.why}). 답글로 '준비됐어요' 안내를 남겼어요.`);
   showTab('comments');
 }
 async function saveReply(id) {

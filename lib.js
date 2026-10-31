@@ -23,6 +23,7 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
   const user = await getUser();
   renderAuth(user);
   noteRequest(user);
+  etcRequest(user);
   readyBanner(user);
   recentComments();
   talkBoard(user);
@@ -141,10 +142,10 @@ function recentComments() {
     else if ((m = t.match(/^(.+) (\d+)(?:강|회) (?:Gateway|예시문제|(\d+)번)$/))) q = `?book=${encodeURIComponent(m[1])}&unit=${m[2]}&n=${m[3] || 0}`;
     return `/${c.page_key}/${q}#note-req`;
   };
-  const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 영어 모의고사', '');
+  const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 부탁드려요.', '').replace(' 영어 모의고사', '');
   const shown = { pre: 6, rdy: 6 };
   let cache = null, gf = 'all';  // gf: 학년 필터 (all·1·2·3·b=부교재)
-  const gradeOf = c => { const m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; };
+  const gradeOf = c => { if (c.content.startsWith('[자료 요청] 기타 ·')) return 'e'; const m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; };  // e = 기타 자료 요청
   // 미리보기: notes/pv/index.json 에 있는 번호만 (분석노트 첫 쪽 윗부분 그림, _tools/note_preview.py 로 만듦)
   let pv = new Set();
   fetch('/notes/pv/index.json').then(r => r.ok ? r.json() : []).then(a => { pv = new Set(a); if (cache) render(); }).catch(() => {});
@@ -166,7 +167,7 @@ function recentComments() {
     const all = cache || [];
     const reqs = all.filter(isReq);
     const cnt = k => k === 'all' ? reqs.length : reqs.filter(c => gradeOf(c) === k).length;
-    const chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재']].filter(([k]) => k === 'all' || cnt(k))
+    const chips = [['all', '전체'], ['1', '고1'], ['2', '고2'], ['3', '고3'], ['b', '부교재'], ['e', '기타']].filter(([k]) => k === 'all' || cnt(k))
       .map(([k, t]) => `<button class="rq-chip${gf === k ? ' on' : ''}" data-g="${k}">${t} <small>${cnt(k)}</small></button>`).join('');
     const rf = reqs.filter(c => gf === 'all' || gradeOf(c) === gf);
     // 두 칸 (블로그 위젯과 같게): 만드는 중(진행 중) · 받을 수 있어요(준비 완료 → 카톡 발송), 줄마다 상태 뱃지
@@ -329,6 +330,37 @@ async function readyBanner(user) {
     (m.making.length ? `<p class="meta">원장님이 만드는 중 ${m.making.length}개 · ${m.making.slice(0, 3).map(short).join(', ')}${m.making.length > 3 ? ' 외' : ''}</p>` : '') +
     pushAsk(m.making.length ? '완성되면 알림으로 바로 알려 드릴까요?' : '새 분석노트가 올라오면 알려 드릴까요?');
   hero.after(el);
+}
+
+/* ---------- 기타 자료 요청 (/notes/ #etc-req): 단어 시험지·변형문제·다른 교재 등. 카카오 로그인 → 요청 댓글 → 원장님이 관리자 페이지에서 '준비 완료 · 카톡 보내기' ---------- */
+// 이메일을 받지 않아요 (공개 댓글에 개인정보가 남지 않게). 원장님이 직접 만든 자료만 나눠요 (출판사 원본 파일은 안 됨)
+async function etcRequest(user) {
+  const box = document.getElementById('etc-req');
+  if (!box) return;
+  const head = `<h2>기타 자료 요청 <small>단어 시험지 · 변형문제 · 다른 교재</small></h2>
+    <p class="muted">모의고사·부교재 분석노트 말고 <b>다른 자료</b>가 필요하면 남겨 주세요. 원장님이 준비되면 <b>카카오톡으로</b> 보내 드려요. 이메일은 적지 않아도 돼요.</p>
+    <p class="meta">원장님이 직접 만든 자료(단어 시험지, 분석노트, 변형문제)만 나눠 드려요. 출판사 교재 원본 파일은 저작권 때문에 드릴 수 없어요.</p><div id="etc-talk"></div>`;
+  const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
+  if (!isKakao) { box.innerHTML = head + `<p class="muted">카카오로 로그인한 회원만 요청할 수 있어요.</p>${loginButtons()}`; return; }
+  box.innerHTML = head + `<div class="ns-form">
+      <label>종류 <select id="etc-kind"><option>단어 시험지</option><option>변형문제</option><option>분석노트</option><option>기타 자료</option></select></label>
+      <label style="flex:1 1 220px">교재·회차 이름 <input id="etc-name" maxlength="50" placeholder="예: 하루 6개 1등급 영어독해 고2 단어"></label>
+      <button type="button" class="btn btn-gold" id="etc-go">카톡으로 요청</button></div><div id="etc-msg"></div>`;
+  talkScope().then(t => { const el = document.getElementById('etc-talk'); if (t === false && el) el.innerHTML = talkWarn(); });
+  document.getElementById('etc-go').onclick = async () => {
+    const name = document.getElementById('etc-name').value.trim().replace(/\s+/g, ' '), kind = document.getElementById('etc-kind').value;
+    if (name.length < 3) return toast('교재나 회차 이름을 적어 주세요.');
+    if (/@|\d{3}-?\d{3,4}-?\d{4}/.test(name)) return toast('이메일·전화번호는 적지 않아도 돼요. 카톡으로 보내 드려요.');
+    const btn = document.getElementById('etc-go'); btn.disabled = true;
+    const content = `[자료 요청] 기타 · ${name} ${kind} 부탁드려요.`;
+    const { data: same } = await sb.from('comments').select('id').eq('user_id', user.id).eq('content', content).limit(1);
+    if (same?.length) { btn.disabled = false; return toast('이미 요청한 자료예요. 준비되면 카톡으로 보내 드려요.'); }
+    const { error } = await sb.from('comments').insert({ page_key: 'notes', page_title: '기타 자료 요청', author_name: displayName(user), content });
+    btn.disabled = false;
+    if (error) return toast('요청 실패: ' + error.message);
+    document.getElementById('etc-name').value = '';
+    document.getElementById('etc-msg').innerHTML = `<div class="info-box"><b>${esc(name)} ${esc(kind)}</b> 요청을 원장님께 전했어요. 준비되면 카카오톡으로 보내 드려요.</div>` + pushAsk('준비되면 알림으로도 알려 드릴까요?');
+  };
 }
 
 async function noteRequest(user) {
