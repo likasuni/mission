@@ -1,7 +1,10 @@
 // 기타 자료 요청 → 원장님이 관리자 페이지에서 '준비 완료 · 카톡 보내기'를 누르면 요청한 학생에게 카톡 '나와의 채팅'으로 보냄
-// 요청은 comments 의 '[자료 요청] 기타 · <자료> 부탁드려요.' 글. 링크는 원장님이 넣은 주소(드라이브 등), 없으면 자료실 요청 칸
+// 요청은 comments 의 '[자료 요청] 기타 · <자료> 부탁드려요.' 글. 링크는 원장님이 넣은 주소(드라이브 등), 없으면 기타 자료 드라이브 폴더(ETC_FOLDER)
 // 카카오 토큰은 kakao_tokens (note-deliver 와 같은 방식으로 새로 받음). 관리자만 부를 수 있음
 import { createClient } from 'npm:@supabase/supabase-js@2';
+// 기타 자료 요청 자료실 (구글 드라이브 공유 폴더, 2026-10-31 원장님). 원장님이 만든 자료를 여기에 올리고 카톡으로 이 폴더를 보내요
+const ETC_FOLDER = 'https://drive.google.com/drive/folders/1FryHlXrnXc7gzP8e3xQrM-TBR6L-KkXY?usp=sharing'; // 실제 이동은 /get/etc/ 페이지가 해요
+const ETC_GO = 'https://data.likasuni.com/get/etc/';
 
 const ORIGINS = ['https://data.likasuni.com', 'http://localhost:8765'];
 const cors = (req: Request) => {
@@ -23,7 +26,9 @@ Deno.serve(async (req) => {
   const { data: c } = await db.from('comments').select('id,user_id,content').eq('id', Number(b.id)).maybeSingle();
   if (!c || !c.content.startsWith('[자료 요청] 기타 ·')) return reply(req, 404, { error: '기타 자료 요청 글이 아니에요.' });
   const label = c.content.replace('[자료 요청] 기타 · ', '').replace(' 부탁드려요.', '');
-  const link = /^https?:\/\//.test(String(b.link || '').trim()) ? String(b.link).trim() : 'https://data.likasuni.com/notes/#etc-req';
+  // 카톡 버튼은 카카오에 등록한 도메인만 열려서, 드라이브 주소는 자료실 /get/etc/ 를 거쳐 넘겨요 (비우면 기타 자료 폴더)
+  const raw = String(b.link || '').trim();
+  const link = !/^https?:\/\//.test(raw) ? ETC_GO : raw.startsWith('https://data.likasuni.com/') ? raw : `${ETC_GO}?u=${encodeURIComponent(raw)}`;
   const memo = String(b.memo || '').trim().slice(0, 120);
 
   // 카카오 토큰 (만료 10분 전이면 새로 받음)

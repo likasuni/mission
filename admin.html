@@ -108,8 +108,8 @@ async function tabComments() {
           <button class="btn btn-danger btn-sm" onclick="removeComment(${c.id})">삭제</button>
         </div>
         ${c.content.startsWith('[자료 요청] 기타 ·') ? `<div class="mt" style="padding:10px;border:1px dashed #f3d48a;border-radius:10px;background:#fffbf0">
-          <b>기타 자료 요청</b> <span class="meta">자료를 드라이브 등에 올리고 링크를 넣은 뒤 누르면, 요청한 학생에게 카톡으로 보내고 답글을 '보내 드렸어요'로 바꿔요.</span>
-          <div class="row mt" style="gap:6px;flex-wrap:wrap"><input id="el-${c.id}" placeholder="자료 링크 (선택)" style="flex:1 1 220px"><input id="em-${c.id}" maxlength="120" placeholder="한 줄 메시지 (선택)" style="flex:1 1 220px">
+          <b>기타 자료 요청</b> <span class="meta">자료를 <a href="https://drive.google.com/drive/folders/1FryHlXrnXc7gzP8e3xQrM-TBR6L-KkXY" target="_blank" rel="noopener"><b>기타 자료 드라이브 폴더</b></a>에 올리고 누르면, 요청한 학생에게 카톡으로 폴더 링크를 보내고 답글을 '보내 드렸어요'로 바꿔요. 파일 하나만 보내려면 그 파일 링크를 넣어요.</span>
+          <div class="row mt" style="gap:6px;flex-wrap:wrap"><input id="el-${c.id}" placeholder="비워 두면 기타 자료 폴더 링크로 보내요" style="flex:1 1 220px"><input id="em-${c.id}" maxlength="120" placeholder="한 줄 메시지 (선택)" style="flex:1 1 220px">
           <button class="btn btn-gold btn-sm" onclick="etcSend(${c.id})">준비 완료 · 카톡 보내기</button></div></div>` : ''}
       </div>`).join('') : '<div class="card"><p class="muted">해당하는 댓글이 없어요.</p></div>'}`;
 }
