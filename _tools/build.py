@@ -942,6 +942,11 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 </div>
 {memo_home}
 <a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>
+<section class="rq-box"><div class="rq-box-h"><b>자료 요청</b><span>필요한 자료를 고르면 카카오톡으로 받아요</span></div>
+<div class="rq-box-btns"><a class="rqb r1" href="/notes/"><b>모의고사 분석노트</b><small>30~40번 · 하루 2개 무료</small></a>
+<a class="rqb r2" href="/notes/?book=%EC%88%98%EB%8A%A5%ED%8A%B9%EA%B0%95%20%EB%9D%BC%EC%9D%B4%ED%8A%B8"><b>부교재 분석노트</b><small>수능특강 라이트·올림포스 등 · 하루 1개</small></a>
+<a class="rqb r3" href="/notes/#etc-req"><b>기타 자료 요청</b><small>단어 시험지·변형문제·워크북</small></a></div>
+<p class="rq-box-ft">자료는 카톡 <b>'나와의 채팅'</b>으로 와요. · <a href="https://contents.premium.naver.com/likasuni/cocos/category" rel="noopener">부교재 강 단위 구매</a> · <a href="https://drive.google.com/open?id=105f20gSuhZvR44gCK6oW5mxn2-ZFG12J" target="_blank" rel="noopener">분석노트 샘플 보기</a></p></section>
 <section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청 · 소통하기</b></div>
 <div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 궁금한 점은 아래 <b>소통하기</b>에 남겨 주세요. 단어 시험지 같은 <a href="/notes/#etc-req"><b>다른 자료 요청 →</b></a><button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div>
