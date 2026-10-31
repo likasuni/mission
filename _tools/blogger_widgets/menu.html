@@ -1,0 +1,101 @@
+<!-- ================= 리카수니 블로그 상단 메뉴 v4 (2026-10-31 &#183; 요청자료&#183;공지&#183;질문 요청을 "자료 요청" 하나로) =================
+     블로그는 "통로와 소통", 자료는 리카수니 자료실(data.likasuni.com)에 둡니다.
+     메뉴 5개: 영어 모의고사 / 부교재 / 전과목 기출 / 자료 요청 / 코코스학원
+     "자료 요청"은 자료실 요청 칸(data.likasuni.com/notes/)으로 연결됩니다 (모의고사&#183;부교재&#183;기타 자료 탭).
+     기존 li 메뉴 전체를 이 코드로 교체하세요. <style>, <li>, <script> 를 모두 복사해야 합니다.
+     자료 데이터는 더 이상 메뉴에 적지 않습니다. 자료를 올리면 자료실에 자동 반영됩니다.
+     주의: 따옴표는 반드시 곧은 따옴표(")를 쓰세요.
+     ============================================================================================== -->
+<style>
+li.cgm-item{list-style:none!important;position:static!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important}
+li.cgm-item::before,li.cgm-item::after{content:none!important;display:none!important}
+.cgm-item details{position:static!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important}
+.cgm-item summary,.cgm-item .cgm-direct{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:18px 13px!important;margin:0!important;font:700 16px/1.4 "Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:inherit!important;text-decoration:none!important;background:transparent!important;border:0!important;white-space:nowrap}
+.cgm-item summary::-webkit-details-marker{display:none}
+.cgm-item summary::marker{content:""}
+.cgm-item summary::before,.cgm-item summary::after,.cgm-item a::before,.cgm-item a::after{content:none!important;display:none!important}
+.cgm-item details[open]>summary{color:#157e80!important}
+.cgm-item .cgm-direct.hl{color:#b45309!important}
+.cgm-admin{display:block;width:20px;color:transparent!important}
+
+/* 영어 모의고사 펼침 카드 */
+.cgm-panel{box-sizing:border-box;position:fixed!important;top:var(--cgm-top,80px);left:50%;transform:translateX(-50%);width:min(980px,calc(100vw - 24px));max-width:100%;overflow:hidden;background:#fff;color:#162d43;z-index:999999;border:1px solid #d9e3ed;border-radius:0 0 18px 18px;box-shadow:0 22px 45px #132d4333;padding:22px;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;text-align:left;white-space:normal}
+.cgm-item details:not([open])>.cgm-panel{display:none!important}
+.cgm-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.cgm-head strong{font-size:20px}
+.cgm-head p{font-size:13.5px;color:#5a6e80;margin:6px 0 0}
+.cgm-close{flex:none;cursor:pointer;background:#edf3f7;color:#193349;border:0;border-radius:8px;padding:9px 13px;font-size:14px}
+.cgm-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cgm-grid a{box-sizing:border-box;display:flex!important;flex-direction:column;gap:6px;width:100%;max-width:100%;overflow:hidden;padding:16px!important;min-height:96px;border-radius:12px;color:#fff!important;text-decoration:none!important;line-height:1.4!important}
+.cgm-grid a b{font-size:18px}
+.cgm-grid a small{font-size:14px;opacity:.92}
+.cgm-grid a.c1{background:#1e3a8a}.cgm-grid a.c2{background:#b45309}.cgm-grid a.c3{background:#6d28d9}.cgm-grid a.c4{background:#15803d}
+.cgm-grid a:hover{filter:brightness(1.1)}
+.cgm-sub{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.cgm-sub a{display:inline-block;padding:8px 14px;border:1px solid #d5dbea;border-radius:999px;font-size:13.5px;font-weight:700;color:#1a2a6c!important;text-decoration:none!important;background:#f7f9fb}
+.cgm-sub a:hover{border-color:#1a2a6c}
+@media(max-width:760px){
+ .cgm-item summary,.cgm-item .cgm-direct{font-size:14px;padding:12px 7px!important}
+ .cgm-panel{padding:16px}
+ .cgm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .cgm-grid a{min-height:84px;padding:13px!important}
+}
+</style>
+
+<!-- 보이지 않는 관리자 링크 -->
+<li class="cgm-item"><a class="cgm-admin" href="https://www.blogger.com/blog/layout/1410172824926610478" aria-hidden="true" tabindex="-1">&nbsp;</a></li>
+
+<!-- 1. 영어 모의고사 (펼침) -->
+<li class="cgm-item"><details id="cgm-en"><summary>영어 모의고사</summary><div class="cgm-panel">
+<div class="cgm-head"><div><strong>리카수니 영어 자료실</strong><p>회차별 분석노트&#183;변형문제&#183;단어를 자료실에서 무료로 받아 가세요</p></div><button type="button" class="cgm-close" aria-label="메뉴 닫기">닫기 &#215;</button></div>
+<div class="cgm-grid">
+<a class="c1" href="https://data.likasuni.com/english/"><b>문항별 분석노트</b><small>18~29&#183;41~45번 바로 보기<br />30~40번은 카톡 요청</small></a>
+<a class="c3" href="https://data.likasuni.com/variants/"><b>변형문제</b><small>문항별 PDF 전체 공개</small></a>
+<a class="c4" href="https://data.likasuni.com/english/"><b>단어 총정리</b><small>회차별 핵심 어휘</small></a>
+<a class="c2" href="https://data.likasuni.com/notes/"><b>자료 요청</b><small>분석노트&#183;단어장 카톡으로 받기</small></a>
+</div>
+<div class="cgm-sub">
+<a href="https://data.likasuni.com/moe/go1/">고1 모의고사</a>
+<a href="https://data.likasuni.com/moe/go2/">고2 모의고사</a>
+<a href="https://data.likasuni.com/moe/go3/">고3 모의고사</a>
+<a href="https://data.likasuni.com/suneung/">수능</a>
+</div>
+</div></details></li>
+
+<!-- 2~5. 바로가기 -->
+<li class="cgm-item"><a class="cgm-direct" href="https://data.likasuni.com/books/">부교재</a></li>
+<li class="cgm-item"><a class="cgm-direct" href="https://data.likasuni.com/exams/">전과목 기출</a></li>
+<li class="cgm-item"><a class="cgm-direct hl" href="https://data.likasuni.com/notes/">자료 요청</a></li>
+<li class="cgm-item"><a class="cgm-direct" href="https://www.cocosedu.co.kr/">코코스학원</a></li>
+
+<script>
+(function(){
+  var ds=Array.prototype.slice.call(document.querySelectorAll(".cgm-item > details"));
+  function place(d){var r=d.querySelector("summary").getBoundingClientRect();d.style.setProperty("--cgm-top",Math.max(0,r.bottom+8)+"px");}
+  ds.forEach(function(d){
+    d.addEventListener("toggle",function(){if(d.open){ds.forEach(function(o){if(o!==d)o.open=false;});place(d);}});
+    var c=d.querySelector(".cgm-close");if(c)c.addEventListener("click",function(){d.open=false;});
+  });
+  document.addEventListener("click",function(e){if(!e.target.closest(".cgm-item"))ds.forEach(function(d){d.open=false;});});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")ds.forEach(function(d){d.open=false;});});
+  window.addEventListener("resize",function(){ds.forEach(function(d){if(d.open)place(d);});});
+  window.addEventListener("scroll",function(){ds.forEach(function(d){if(d.open)place(d);});},{passive:true});
+})();
+</script>
+
+<script>
+/* 수능특강 라이트 글 하단 이전/다음 버튼 주소 자동 보정 (기존 글을 위해 유지합니다) */
+(function(){
+  var BASE="https://www.likasuni.com/2026/10/";
+  var EX={"2-1":"2026-2-1-ryanna","17-1":"2026-17-1-agnes-pockels","17-2":"2026-17-2-william-james","17-3":"2026-17-3-emotional-contagion","17-4":"2026-17-4-depth-perception","18-2":"2026-18-2-poetry-therapy","18-4":"2026-18-4-ethical-particularism","20-3":"2026-20-3_0812766301","22-gateway":"2026-22-gateway-2024-green-future"};
+  function path(k,x){return BASE+(EX[k+"-"+x]||("2026-"+k+"-"+x))+".html";}
+  function fix(){
+    var as=document.querySelectorAll('a[href*="/2026/10/2026-"]'),i,m;
+    for(i=0;i<as.length;i++){
+      m=as[i].getAttribute("href").match(/^https?:\/\/www\.likasuni\.com\/2026\/10\/2026-(0?)(\d+)-(gateway|\d)(?:[-_][^\/]*)?\.html$/);
+      if(m)as[i].setAttribute("href",path(m[2],m[3]));
+    }
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",fix);else fix();
+})();
+</script>

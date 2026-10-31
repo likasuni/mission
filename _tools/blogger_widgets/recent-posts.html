@@ -1,0 +1,416 @@
+
+<div id="lkh">
+<style>
+/* ===== 리카수니 최근 글 (2026-10-31 v4: 최근 댓글 칸을 빼고 최근 글을 넓게 두 줄로. 분석노트 받는 방법은 홈 위젯 자료 요청 상자로) =====
+   저장소 _tools/blogger_widgets/recent-posts.html */
+#lkh{box-sizing:border-box;width:100%;max-width:100%;overflow:hidden;margin-top:14px;color:#1b2237;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",Roboto,sans-serif;
+  font-size:15px;line-height:1.55;text-align:left}
+#lkh *{box-sizing:border-box;max-width:100%;min-width:0}
+#lkh a{text-decoration:none!important}
+#lkh a:focus-visible,#lkh button:focus-visible{outline:3px solid #1a73e8;outline-offset:2px}
+
+/* 공지사항 ("공지" 라벨 글 자동 표시. 글이 없으면 박스가 숨겨집니다) */
+#lkh .nt{box-sizing:border-box;width:100%;max-width:100%;overflow:hidden;margin:0 0 16px;background:#fff;border:1px solid #f1c9c1;border-radius:14px}
+#lkh .nt[hidden]{display:none}
+#lkh .nt-hd{display:flex;align-items:center;gap:8px;padding:13px 18px;background:#fff4f1;border-bottom:1px solid #f6dbd4}
+#lkh .nt-hd b{font-size:16px;font-weight:800;color:#c2321f}
+#lkh .nt-hd a{margin-left:auto;font-size:13px;font-weight:700;color:#c2321f!important}
+#lkh .nt-list{padding:4px 18px}
+#lkh .nt-row{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #f3eeee;color:#1b2237!important}
+#lkh .nt-row:last-child{border-bottom:0}
+#lkh .nt-row:hover .nt-t{color:#c2321f}
+#lkh .nt-bd{flex:none;display:inline-block;padding:3px 8px;border-radius:6px;background:#e2432f;color:#fff;font-size:12px;font-weight:800;line-height:1.4}
+#lkh .nt-t{flex:1 1 auto;font-size:15px;font-weight:700;line-height:1.45;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#lkh .nt-new{flex:none;font-size:10.5px;font-weight:800;color:#fff;background:#ff8a00;border-radius:999px;padding:2px 7px}
+#lkh .nt-d{flex:none;font-size:12.5px;color:#8a93a8}
+
+/* 좌우 2단 */
+#lkh .cols{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:16px;align-items:start}
+#lkh .col{box-sizing:border-box;width:100%;max-width:100%;background:#fff;border:1px solid #dce5ed;border-radius:14px;overflow:hidden;min-width:0}
+#lkh .hd{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid #e8ecf3}
+#lkh .hd b{font-size:16.5px;font-weight:800;color:#1a2a6c}
+#lkh .hd span{font-size:12.5px;color:#8a93a8}
+#lkh .hd a{margin-left:auto;font-size:13px;font-weight:700;color:#1a2a6c!important}
+#lkh .tip{margin:0;padding:10px 18px;background:#f7f9fb;border-bottom:1px solid #e8ecf3;font-size:13px;color:#526778;line-height:1.5}
+#lkh .list{padding:2px 18px}
+#lkh .msg{padding:22px 14px;text-align:center;color:#8a93a8;font-size:13.5px;margin:0}
+#lkh .more{display:block;width:100%;font:inherit;font-size:14px;font-weight:700;cursor:pointer;
+  color:#1a2a6c;background:#f7f9fb;border:0;border-top:1px solid #e8ecf3;padding:12px;min-height:46px}
+#lkh .more:hover{background:#eef3ff}
+
+/* 분석노트 받는 방법 박스 (최근 글 칸 맨 위) */
+#lkh .pr-wrap{box-sizing:border-box;display:block;width:100%;max-width:100%;overflow:hidden;padding:16px 18px 4px}
+#lkh .pr{box-sizing:border-box;display:block;width:100%;max-width:100%;overflow:hidden;
+  background:#f3f6ff;border:1px solid #d5ddf5;border-radius:12px;padding:18px 18px 14px;text-align:left}
+#lkh .pr-t{margin:0 0 4px;font-size:17px;font-weight:800;line-height:1.4;color:#1a2a6c;word-break:keep-all}
+#lkh .pr-b{margin:0 0 14px;font-size:13.5px;line-height:1.6;color:#526778;word-break:keep-all}
+#lkh .pr-b b{color:#1a2a6c;font-weight:800}
+#lkh .pr-btns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;width:100%;max-width:100%}
+#lkh .pr-btn{box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;gap:2px;
+  width:100%;max-width:100%;overflow:hidden;min-height:62px;padding:10px 14px;border-radius:10px;text-align:left;word-break:keep-all}
+#lkh .pr-btn b{font-size:15px;font-weight:800;line-height:1.3}
+#lkh .pr-btn small{font-size:12px;line-height:1.35}
+#lkh .pr-btn.k{background:#fee500;color:#191600!important}
+#lkh .pr-btn.k small{color:#4a4300}
+#lkh .pr-btn.k:hover{background:#f5dc00}
+#lkh .pr-btn.s{background:#1a2a6c;color:#fff!important}
+#lkh .pr-btn.s small{color:#c9d3f5}
+#lkh .pr-btn.s:hover{background:#27398a}
+#lkh .pr-sample{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:#1a2a6c!important}
+
+/* 최근 글 */
+#lkh .it{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #eef1f7}
+#lkh .it:last-child{border-bottom:0}
+#lkh .it.off{display:none}
+#lkh .it .body{flex:1 1 160px}
+#lkh .tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px}
+#lkh .tg{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:#eef1f6;color:#526778}
+#lkh .tg.g{background:#1a2a6c;color:#fff}
+#lkh .ttl{font-size:15.5px;font-weight:700;line-height:1.45;overflow-wrap:anywhere;word-break:keep-all}
+#lkh .ttl a:hover{color:#1a2a6c!important;text-decoration:underline!important}
+#lkh .nw{display:inline-block;margin-left:6px;font-size:10.5px;font-weight:800;color:#fff;background:#ff8a00;border-radius:999px;padding:1px 7px;vertical-align:2px}
+#lkh .sm{margin:4px 0 0;font-size:13px;color:#5a6b7d;line-height:1.5;overflow-wrap:anywhere}
+#lkh .dt{margin:4px 0 0;font-size:12px;color:#8a93a8}
+#lkh .go{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:58px;min-height:38px;padding:0 12px;border-radius:8px;border:1px solid #c9d3e6;background:#fff;color:#1a2a6c!important;font-size:13px;font-weight:800}
+#lkh .go:hover{background:#1a2a6c;border-color:#1a2a6c;color:#fff!important}
+
+/* 최근 댓글 */
+#lkh .c{display:flex;align-items:flex-start;gap:10px;padding:14px 0;border-bottom:1px solid #eef1f7}
+#lkh .c:last-child{border-bottom:0}
+#lkh .av{flex:none;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:800;color:#fff;background:#9aa5ba;margin-top:1px}
+#lkh .c.own .av{background:#1a2a6c}
+#lkh .c .bd{flex:1 1 140px}
+#lkh .nm{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13.5px;font-weight:800}
+#lkh .nm .og{font-size:10.5px;font-weight:800;color:#4a3000;background:#ffc857;border-radius:999px;padding:2px 7px}
+#lkh .nm .dt{margin:0;font-weight:400}
+#lkh .tx{margin:4px 0 0;font-size:14.5px;line-height:1.55;overflow-wrap:anywhere}
+#lkh .c.own .tx{padding:8px 10px;border-radius:8px;background:#f3f6ff}
+#lkh .pt{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;color:#1a2a6c!important;background:#eef1f6;border-radius:6px;
+  padding:3px 8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+
+@media (max-width:860px){ #lkh .cols{grid-template-columns:minmax(0,1fr)} }
+@media (max-width:600px){
+  #lkh .nt-hd{padding:12px 14px}
+  #lkh .nt-list{padding:2px 14px}
+  #lkh .nt-t{font-size:14.5px}
+  #lkh .nt-d{display:none}
+  #lkh .hd{padding:13px 14px}
+  #lkh .tip{padding:10px 14px}
+  #lkh .list{padding:2px 14px}
+  #lkh .pr-wrap{padding:14px 14px 4px}
+  #lkh .pr{padding:16px 14px 12px}
+  #lkh .pr-t{font-size:16px}
+  #lkh .pr-btn{min-height:58px;padding:10px 12px}
+  #lkh .pr-btn b{font-size:14px}
+  #lkh .ttl{font-size:15px}
+}
+
+/* 라벨 안 검색 (라벨 페이지에서만 보입니다) */
+#lkh .srch{display:flex;gap:6px;padding:12px 18px;border-bottom:1px solid #eef1f7}
+#lkh .srch input{flex:1 1 auto;min-width:0;height:40px;padding:0 12px;border:1px solid #c9d3e6;border-radius:8px;font-size:14px;color:#1b2237;background:#fff;outline:none}
+#lkh .srch input:focus{border-color:#1a2a6c;box-shadow:0 0 0 3px #dfe5fa}
+#lkh .srch button{flex:none;height:40px;padding:0 16px;border:0;border-radius:8px;background:#1a2a6c;color:#fff;font-size:13.5px;font-weight:700;cursor:pointer}
+#lkh .srch button:hover{background:#27398a}
+#lkh .srch .x{flex:none;height:40px;padding:0 12px;border:1px solid #c9d3e6;border-radius:8px;background:#fff;color:#526778;font-size:13px;font-weight:600;cursor:pointer}
+#lkh .srch .x:hover{border-color:#1a2a6c;color:#1a2a6c}
+/* v4: 한 칸 + 최근 글 두 줄 */
+#lkh .col[hidden]{display:none!important}
+#lkh .cols{grid-template-columns:minmax(0,1fr)!important}
+@media (min-width:861px){
+  #lkh #lkhP{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}
+  #lkh #lkhP .it:nth-last-child(2):nth-child(odd){border-bottom:0}
+}
+</style>
+
+<!-- 공지사항은 홈 위젯(파란 박스) 안으로 옮겼어요 -->
+<div class="cols">
+  <section class="col" aria-label="최근 글">
+    <div class="hd"><b>최근 글</b><span id="lkhPN"></span>
+      <a href="https://www.likasuni.com/search">모두 보기 &#8594;</a>
+    </div>
+
+    <div class="list" id="lkhP"></div>
+    <button type="button" class="more" id="lkhPMore">더 보기</button>
+  </section>
+  <section class="col" aria-label="최근 댓글" hidden>
+    <div class="hd"><b>최근 댓글</b><span id="lkhCN"></span></div>
+    <p class="tip">자료에서 궁금한 부분은 댓글로 남겨 주세요. 원장님이 확인 후 답변드립니다.</p>
+    <div class="list" id="lkhC"></div>
+    <button type="button" class="more" id="lkhCMore">더 보기</button>
+  </section>
+</div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var root = document.getElementById("lkh");
+  if (!root) return;
+
+  /* ===== 설정 =====
+     &#8251; 주의: 아래 글자에 줄표, 가운뎃점, 말줄임표 같은 특수문자를 쓰지 마세요.
+        블로그가 &#8230; 처럼 바꿔버려 화면에 그대로 보입니다. */
+  var POSTS_N = 8, COMMENTS_N = 5;
+  var SHOW_COMMENTS = false;    /* 최근 댓글 칸 (자료 요청&#183;질문은 위 자료 요청 위젯에서). true 로 바꾸면 다시 보여요 */
+  var MIN_KEEP = 3;             /* 높이를 맞춰도 최근 글은 최소 이만큼은 남깁니다 */
+  var HIDE_THEME_FEED = true;   /* 홈, 라벨에서 테마 기본 게시물 목록(#Blog1) 숨김 */
+  var ON_POST_PAGES = false;    /* true로 바꾸면 게시글 페이지에서도 표시 */
+  var OWNER = "리카수니";
+  var NEW_DAYS = 7;
+  var SITE = "https://www.likasuni.com";
+  var NOTICE_LABEL = "공지";    /* 이 라벨이 붙은 글이 상단 공지사항에 표시됩니다 */
+  var MUST_LABEL = "필독";      /* 공지 글에 이 라벨도 붙이면 맨 위에 빨간 필독 배지로 고정됩니다 */
+  var NOTICE_N = 3;             /* 상단에 보여줄 공지 개수 */
+
+  var p = location.pathname;
+  var isPost = /^\/\d{4}\/\d{1,2}\/[^\/]+\.html$/.test(p) || /^\/p\/[^\/]+\.html$/.test(p);
+  var isHome = (p === "/" || p === "");
+  var label = null, m = p.match(/^\/search\/label\/([^\/?#]+)/);
+  if (m){ try { label = decodeURIComponent(m[1]); } catch(e){ label = m[1]; } }
+  if (isPost && !ON_POST_PAGES){ root.style.display = "none"; return; }
+  if (!isPost && !isHome && !label){ root.style.display = "none"; return; }
+
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(s){ return String(s).replace(/[&<>"]/g,function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); };
+  var DAYS = ["일","월","화","수","목","금","토"];
+  function fmt(iso, wd){ var d = new Date(iso); if (isNaN(d)) return "";
+    var mm = d.getMonth()+1, dd = d.getDate();
+    return d.getFullYear() + "." + (mm<10?"0":"") + mm + "." + (dd<10?"0":"") + dd + (wd ? " (" + DAYS[d.getDay()] + ")" : ""); }
+  /* 글 앞부분의 style, script 내용이 요약에 섞이지 않도록 먼저 지웁니다 */
+  function strip(html){ var d = document.createElement("div"); d.innerHTML = html || "";
+    var junk = d.querySelectorAll("style,script,noscript");
+    for (var i=0;i<junk.length;i++){ if (junk[i].parentNode) junk[i].parentNode.removeChild(junk[i]); }
+    return (d.textContent || d.innerText || "").replace(/\s+/g," ").trim(); }
+  /* 잘린 표시는 보통 마침표 3개로 씁니다. 특수문자를 쓰면 블로그가 바꿔버립니다. */
+  function trunc(t,n){ return t.length > n ? t.slice(0,n) + "..." : t; }
+  function altLink(links){ if (!links) return ""; for (var i=0;i<links.length;i++){ if (links[i].rel==="alternate") return links[i].href; } return ""; }
+  function cleanTitle(t){ return t.replace(/^\s*\[[^\]]*\]\s*/, "").replace(/\s*다운로드\s*$/, "").trim(); }
+  function isNew(iso){ return (Date.now() - new Date(iso).getTime()) < NEW_DAYS*86400000; }
+  function tagsOf(title, cats){
+    var out = [], g = title.match(/고\s?([123])/); if (g) out.push(['g',"고"+g[1]]);
+    var kinds = [["분석노트","분석노트"],["변형문제","변형문제"],["예상문제","변형문제"],["어휘","어휘"],["단어","어휘"],
+                 ["문법","문법"],["구문","구문"],["내신","내신"],["학습현황","학습 리포트"]];
+    for (var i=0;i<kinds.length;i++){ if (title.indexOf(kinds[i][0]) > -1){ out.push(['k',kinds[i][1]]); break; } }
+    if (!out.length && cats && cats.length) out.push(['k', cats[0].term]);
+    return out;
+  }
+  function getJSON(url){ return fetch(url, { credentials:"same-origin" }).then(function(r){ return r.json(); }); }
+
+  /* =========================================================
+     두 칸 높이 맞추기
+
+     왼쪽(최근 글)이 오른쪽(최근 댓글)보다 길어서 오른쪽 아래가
+     허전하게 비는 문제를 없앱니다. 글을 몇 개 보일지 숫자로 정해두면
+     글 제목 길이에 따라 높이가 들쭉날쭉하므로, 개수를 1개씩 줄여가며
+     실제 높이를 재서 오른쪽과 가장 가까운 개수를 고릅니다.
+     (위쪽 분석노트 안내 박스 높이도 함께 계산됩니다)
+
+     접힌 글은 사라진 것이 아니라 "더 보기"를 누르면 펼쳐집니다.
+     한 칸으로 쌓이는 좁은 화면에서는 접지 않습니다.
+     ========================================================= */
+  var userExpanded = false, pTotal = 0, fitTimer = 0;
+  function fitCols(){
+    if (userExpanded) return;
+    if (!SHOW_COMMENTS) { syncMore(); return; } /* 댓글 칸이 없으면 높이 맞추기 안 함 */
+    var secs = root.querySelectorAll(".col");
+    if (secs.length < 2) return;
+    var items = pList.querySelectorAll(".it");
+    if (!items.length) return;
+    var i, k;
+    for (i=0;i<items.length;i++) items[i].classList.remove("off");
+    /* 두 칸이 위아래로 쌓였으면(좁은 화면) 그대로 둡니다 */
+    var a = secs[0].getBoundingClientRect(), b = secs[1].getBoundingClientRect();
+    if (a.bottom <= b.top + 1 || b.bottom <= a.top + 1) { syncMore(); return; }
+    var right = b.height, best = items.length, bestDiff = Infinity;
+    for (i = items.length; i >= MIN_KEEP; i--){
+      for (k = 0; k < items.length; k++) items[k].classList.toggle("off", k >= i);
+      var diff = Math.abs(secs[0].getBoundingClientRect().height - right);
+      if (diff < bestDiff){ bestDiff = diff; best = i; }
+    }
+    for (i = 0; i < items.length; i++) items[i].classList.toggle("off", i >= best);
+    syncMore();
+  }
+  function syncMore(){
+    var hidden = pList.querySelectorAll(".it.off").length;
+    pMore.hidden = !(hidden > 0 || pStart <= pTotal);
+  }
+  function scheduleFit(){ clearTimeout(fitTimer); fitTimer = setTimeout(fitCols, 60); }
+  window.addEventListener("resize", scheduleFit);
+
+  /* ========== 최근 글 ========== */
+  var pStart = 1, pList = $("lkhP"), pMore = $("lkhPMore");
+  var pBase = SITE + "/feeds/posts/summary" + (label ? "/-/" + encodeURIComponent(label) : "");
+  if (label) $("lkhPN").textContent = "라벨: " + label;
+
+  function renderPosts(entries){
+    var html = entries.map(function(e){
+      var title = e.title ? e.title.$t : "", url = altLink(e.link), when = e.published ? e.published.$t : "";
+      var tags = tagsOf(title, e.category);
+      return '<div class="it"><div class="body">' +
+        (tags.length ? '<div class="tags">' + tags.map(function(t){ return '<span class="tg' + (t[0]==='g'?' g':'') + '">' + esc(t[1]) + '</span>'; }).join("") + '</div>' : '') +
+        '<div class="ttl"><a href="' + esc(url) + '" style="color:#1b2237;text-decoration:none;">' + esc(cleanTitle(title)) + '</a>' +
+        (isNew(when) ? '<span class="nw">NEW</span>' : '') + '</div>' +
+        '<p class="sm">' + esc(trunc(strip(e.summary ? e.summary.$t : "").replace(/^\[[^\]]*\]\s*/,""), 60)) + '</p>' +
+        '<p class="dt">' + esc(fmt(when)) + '</p></div>' +
+        '<a class="go" href="' + esc(url) + '">보기</a></div>';
+    }).join("");
+    if (pStart === 1) pList.innerHTML = html; else pList.insertAdjacentHTML("beforeend", html);
+  }
+  function loadPosts(){
+    pMore.hidden = true;
+    getJSON(pBase + "?alt=json&max-results=" + POSTS_N + "&start-index=" + pStart).then(function(j){
+      var f = j.feed || {}, entries = f.entry || [];
+      pTotal = f.openSearch$totalResults ? parseInt(f.openSearch$totalResults.$t,10) : 0;
+      if (pStart === 1 && !entries.length){ pList.innerHTML = '<p class="msg">아직 글이 없습니다.</p>'; return; }
+      renderPosts(entries); pStart += entries.length;
+      if (pStart <= pTotal) pMore.hidden = false;
+      if (HIDE_THEME_FEED && !isPost){ var b = document.getElementById("Blog1"); if (b) b.style.display = "none"; }
+      scheduleFit();
+    }).catch(function(){ pList.innerHTML = '<p class="msg">글을 불러오지 못했습니다.</p>'; });
+  }
+  pMore.addEventListener("click", function(){
+    var hid = pList.querySelectorAll(".it.off");
+    if (hid.length){                       /* 높이 맞추려 접어둔 글부터 펼칩니다 */
+      userExpanded = true;
+      for (var i=0;i<hid.length;i++) hid[i].classList.remove("off");
+      pMore.hidden = !(pStart <= pTotal);
+      return;
+    }
+    userExpanded = true;
+    loadPosts();
+  });
+  loadPosts();
+
+  /* ========== 라벨 안 검색 (라벨 페이지에서만) ==========
+     라벨 메뉴(예: 문법&구문)로 들어온 페이지에서만 검색창을 보여주고,
+     그 라벨에 걸린 글만 대상으로 검색합니다. 사이트 전체 검색이 아닙니다. */
+  if (label){
+    var pCol = pList.parentNode;
+    var srch = document.createElement("div");
+    srch.className = "srch";
+    srch.innerHTML =
+      '<input type="search" id="lkhSQ" placeholder="' + esc(label) + ' 안에서 검색" aria-label="' + esc(label) + ' 라벨 안에서 검색" autocomplete="off">' +
+      '<button type="button" id="lkhSBtn">검색</button>' +
+      '<button type="button" class="x" id="lkhSX" hidden>지우기</button>';
+    pCol.insertBefore(srch, pList);
+
+    var sInput = $("lkhSQ"), sBtn = $("lkhSBtn"), sClear = $("lkhSX");
+    var searchAll = null, searchLoading = false, searchMode = false;
+
+    function fetchAllForSearch(cb){
+      if (searchAll){ cb(searchAll); return; }
+      if (searchLoading) return;
+      searchLoading = true;
+      var acc = [], start = 1, CAP = 500, PAGE = 150;
+      (function step(){
+        getJSON(pBase + "?alt=json&max-results=" + PAGE + "&start-index=" + start).then(function(j){
+          var f = j.feed || {}, entries = f.entry || [];
+          acc = acc.concat(entries);
+          var total = f.openSearch$totalResults ? parseInt(f.openSearch$totalResults.$t,10) : acc.length;
+          start += entries.length;
+          if (entries.length && start <= total && acc.length < CAP) step();
+          else { searchAll = acc; searchLoading = false; cb(searchAll); }
+        }).catch(function(){ searchLoading = false; cb(acc); });
+      })();
+    }
+    function runSearch(q){
+      q = (q || "").trim();
+      if (!q){ exitSearch(); return; }
+      searchMode = true; sClear.hidden = false;
+      pMore.hidden = true;
+      pList.innerHTML = '<p class="msg">' + esc(label) + ' 안에서 찾는 중...</p>';
+      fetchAllForSearch(function(all){
+        if (!searchMode) return;             /* 검색 중 지우기를 누른 경우 */
+        var qq = q.toLowerCase();
+        var hits = all.filter(function(e){
+          var t = (e.title ? e.title.$t : "").toLowerCase();
+          var s = (e.summary ? strip(e.summary.$t) : "").toLowerCase();
+          return t.indexOf(qq) > -1 || s.indexOf(qq) > -1;
+        });
+        if (!hits.length){ pList.innerHTML = '<p class="msg">' + esc(label) + ' 안에서 "' + esc(q) + '" 검색 결과가 없습니다.</p>'; return; }
+        pStart = 1; renderPosts(hits.slice(0,50));
+        pMore.hidden = true;
+      });
+    }
+    function exitSearch(){
+      searchMode = false; sClear.hidden = true; sInput.value = "";
+      pStart = 1; loadPosts();
+    }
+    sBtn.addEventListener("click", function(){ runSearch(sInput.value); });
+    sClear.addEventListener("click", exitSearch);
+    sInput.addEventListener("keydown", function(e){ if (e.key === "Enter"){ e.preventDefault(); runSearch(sInput.value); } });
+    sInput.addEventListener("input", function(){ if (!sInput.value.trim() && searchMode) exitSearch(); });
+  }
+
+  /* ========== 최근 댓글 ========== */
+  var cStart = 1, cList = $("lkhC"), cMore = $("lkhCMore"), titleCache = {};
+  function nameOf(e){ var n = (e.author && e.author[0] && e.author[0].name) ? e.author[0].name.$t : "";
+    if (!n || /^(anonymous|unknown|익명)$/i.test(n)) n = "요청회원"; return n; }
+  function postIdOf(e){ var r = e["thr$in-reply-to"] && e["thr$in-reply-to"].ref; var mm = r && r.match(/post-(\d+)/); return mm ? mm[1] : ""; }
+  function postUrlOf(e){ return (e["thr$in-reply-to"] && e["thr$in-reply-to"].href) || altLink(e.link) || "#"; }
+
+  function renderComments(entries){
+    var html = entries.map(function(e){
+      var name = nameOf(e), own = (name === OWNER), pid = postIdOf(e);
+      var text = trunc(strip(e.content ? e.content.$t : (e.summary ? e.summary.$t : "")), 80);
+      var when = e.published ? e.published.$t : (e.updated ? e.updated.$t : "");
+      var cUrl = altLink(e.link) || postUrlOf(e);
+      return '<div class="c' + (own?' own':'') + '"><div class="av">' + esc(name.charAt(0)) + '</div>' +
+        '<div class="bd"><div class="nm">' + esc(name) + (own ? '<span class="og">운영자</span>' : '') +
+        '<span class="dt">' + esc(fmt(when,true)) + '</span></div>' +
+        '<p class="tx"><a href="' + esc(cUrl) + '" style="color:#151a28;text-decoration:none;">' + esc(text) + '</a></p>' +
+        '<a class="pt" data-pid="' + esc(pid) + '" href="' + esc(postUrlOf(e)) + '" style="color:#1a2a6c;text-decoration:none;">📄 글 보기</a>' +
+        '</div></div>';
+    }).join("");
+    if (cStart === 1) cList.innerHTML = html; else cList.insertAdjacentHTML("beforeend", html);
+    fillTitles();
+    scheduleFit();
+  }
+    var titleQueue = [], titleRunning = false, titleStarted = false;
+  function runTitleQueue(){
+    var job = titleQueue.shift();
+    if (!job){ titleRunning = false; return; }
+    titleRunning = true;
+    getJSON(SITE + "/feeds/posts/summary/" + job.pid + "?alt=json").then(function(j){
+      var t = j.entry && j.entry.title ? cleanTitle(j.entry.title.$t) : "";
+      if (t){ titleCache[job.pid] = t; job.el.textContent = "📄 " + t; scheduleFit(); }
+    }).catch(function(){}).then(function(){ setTimeout(runTitleQueue, 250); });
+  }
+  function startTitles(){
+    if (titleStarted){ if (!titleRunning) runTitleQueue(); return; }
+    titleStarted = true;
+    var go = function(){ if (!titleRunning) runTitleQueue(); };
+    if ("requestIdleCallback" in window) requestIdleCallback(go, { timeout: 4000 });
+    else setTimeout(go, 2500);
+  }
+  function fillTitles(){
+    var els = cList.querySelectorAll(".pt[data-pid]");
+    for (var i = 0; i < els.length; i++){
+      var el = els[i], pid = el.getAttribute("data-pid");
+      if (!pid || el.getAttribute("data-done")) continue;
+      el.setAttribute("data-done", "1");
+      if (titleCache[pid]){ el.textContent = "📄 " + titleCache[pid]; continue; }
+      titleQueue.push({ el: el, pid: pid });
+    }
+    if (document.readyState === "complete") setTimeout(startTitles, 1200);
+    else window.addEventListener("load", function(){ setTimeout(startTitles, 1200); });
+  }
+  function loadComments(){
+    if (!SHOW_COMMENTS) return;
+    cMore.hidden = true;
+    getJSON(SITE + "/feeds/comments/default?alt=json&max-results=" + COMMENTS_N + "&start-index=" + cStart).then(function(j){
+      var f = j.feed || {}, entries = f.entry || [];
+      var total = f.openSearch$totalResults ? parseInt(f.openSearch$totalResults.$t,10) : 0;
+      if (total) $("lkhCN").textContent = total + "개";
+      if (cStart === 1 && !entries.length){ cList.innerHTML = '<p class="msg">아직 댓글이 없습니다.</p>'; return; }
+      renderComments(entries); cStart += entries.length;
+      if (cStart <= total) cMore.hidden = false;
+    }).catch(function(){ cList.innerHTML = '<p class="msg">댓글을 불러오지 못했습니다.</p>'; });
+  }
+  cMore.addEventListener("click", function(){ userExpanded = true; loadComments(); });
+  loadComments();
+})();
+</script>

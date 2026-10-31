@@ -18,7 +18,7 @@
   var w = root.closest ? root.closest('.widget') : null;
   if (w) for (var j = 0; j < w.children.length; j++) { var ch = w.children[j]; if (/^H[23]$/.test(ch.tagName) || ch.classList.contains('title')) ch.style.display = 'none'; }
   var list = root.querySelector('.lks-list');
-  var shown = { pre: 6, rdy: 6, cmt: 1 }, cache = [], talk = [], gf = 'all'; // gf: 학년 필터 (all·1·2·3·b=부교재)
+  var shown = { pre: 4, rdy: 4, cmt: 1 }, cache = [], talk = [], gf = 'all'; // gf: 학년 필터 (all·1·2·3·b=부교재)
   function gradeOf(c) { if (c.content.indexOf('[자료 요청] 기타 ·') === 0) return 'e'; var m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; } // e = 기타 자료 요청
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function mask(n) { n = String(n || '회원').trim(); if (n === '리카수니' || n.length < 2) return n; return n.length === 2 ? n[0] + '*' : n[0] + new Array(n.length - 1).join('*') + n[n.length - 1]; }
@@ -110,7 +110,7 @@
       '<div style="' + BOX + (shown.cmt > 1 ? ' max-height: 420px; overflow-y: auto;' : '') + '">' + (cm.slice(0, shown.cmt).map(talkItem).join('') || '<p style="color: #8a93a8; font-size: 14px;">아직 글이 없어요. 자료실에서 첫 질문을 남겨 주세요!</p>') + '</div>' +
       (total > shown.cmt ? '<a href="' + SITE + '#talk" class="lks-more" style="text-align: center;">소통하기 전체 보기 (' + total + '개) →</a>' : '');
     var cs = list.querySelectorAll('.lks-chip');
-    for (var k = 0; k < cs.length; k++) cs[k].onclick = function () { gf = this.getAttribute('data-g'); shown.pre = shown.rdy = 6; render(); };
+    for (var k = 0; k < cs.length; k++) cs[k].onclick = function () { gf = this.getAttribute('data-g'); shown.pre = shown.rdy = 4; render(); };
     var ps = list.querySelectorAll('.lks-pv');
     for (var p = 0; p < ps.length; p++) ps[p].onclick = function () { showPreview(this.getAttribute('data-pv'), this.getAttribute('data-t'), this.getAttribute('data-go')); };
     var bs = list.querySelectorAll('button.lks-more');
