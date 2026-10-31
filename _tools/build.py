@@ -1140,5 +1140,5 @@ open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
 open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /get/\nDisallow: /notes/pv/\nSitemap: {SITE}/sitemap.xml\n')
 # 분석노트 미리보기 목록 (notes/pv/*.jpg → index.json, 첫 화면 '받을 수 있어요' 칸의 [미리보기] 버튼이 읽음)
 _pvd = os.path.join(ROOT, 'notes', 'pv'); os.makedirs(_pvd, exist_ok=True)
-json.dump(sorted(f[:-4] for f in os.listdir(_pvd) if f.endswith('.jpg')), open(os.path.join(_pvd, 'index.json'), 'w'))
+json.dump(sorted(unicodedata.normalize('NFC', f[:-4]) for f in os.listdir(_pvd) if f.endswith('.jpg')), open(os.path.join(_pvd, 'index.json'), 'w'))  # macOS 가 한글 파일 이름을 자모 분리(NFD)로 돌려줄 수 있어 NFC 로 맞춤 (화면의 키와 같게)
 print('pages', len(PAGES), 'sessions', len(sessions), 'files', len(R))
