@@ -209,7 +209,7 @@ async function talkBoard(user) {
     const h = Math.floor(m / 60); if (h < 24) return h + '시간 전';
     const d = new Date(t); return `${d.getMonth() + 1}월 ${d.getDate()}일`;
   };
-  let limit = 10;
+  let limit = 10, open = false; // 처음엔 맨 위 글 1개만 (공지가 있으면 공지), '이전 글 보기'로 펼침
   const admin = user ? !!(await sb.rpc('is_admin')).data : false;
   formEl.innerHTML = user ? `
     <textarea id="tk-body" maxlength="1000" placeholder="예) 고1 9월 모의고사 32번 빈칸 근거를 어디서 찾아야 할지 모르겠어요. / 분석노트는 어떻게 공부하면 좋을까요?"></textarea>
@@ -249,10 +249,14 @@ async function talkBoard(user) {
     const { data, error } = await sb.rpc('talk_list', { p_limit: limit, p_offset: 0 });
     if (error) { listEl.innerHTML = '<p class="muted">게시판을 불러오지 못했어요. 잠시 후 다시 열어 주세요.</p>'; return; }
     const rows = data || [], total = rows.length ? Number(rows[0].total) : 0;
-    listEl.innerHTML = (rows.map(item).join('') || '<p class="muted">아직 글이 없어요. 첫 질문을 남겨 주세요!</p>') +
-      (total > rows.length ? `<button class="rc-more" id="tk-more">더보기 (${total - rows.length}개)</button>` : '');
+    const shownRows = open ? rows : rows.slice(0, 1);
+    listEl.innerHTML = (shownRows.map(item).join('') || '<p class="muted">아직 글이 없어요. 첫 질문을 남겨 주세요!</p>') +
+      (!open && total > 1 ? `<button class="pn-more" id="tk-open">이전 글 보기 (${total - 1}개)</button>`
+        : open ? (total > rows.length ? `<button class="rc-more" id="tk-more">더보기 (${total - rows.length}개)</button>` : '') + `<button class="pn-more" id="tk-open">접기</button>` : '');
     const mb = document.getElementById('tk-more');
     if (mb) mb.onclick = () => { limit += 10; load(); };
+    const ob = document.getElementById('tk-open');
+    if (ob) ob.onclick = () => { open = !open; if (!open) { limit = 10; box.scrollIntoView({ block: 'start' }); } load(); };
     listEl.querySelectorAll('.tk-pbtn').forEach(b => b.onclick = async () => {
       const { error } = await sb.from('comments').update({ pinned: b.dataset.p !== '1' }).eq('id', +b.dataset.id);
       if (error) return toast('오류: ' + error.message);
