@@ -199,7 +199,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/naesin/', '코코스학원'), ('/exams/', '전과목 기출'), ('/notes/', '자료 요청')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
+NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '전자책 보기'), ('/books/', '부교재'), ('/naesin/', '코코스학원'), ('/exams/', '전과목 기출'), ('/notes/', '자료 요청')]  # 전자책 보기 = 분석노트 전자책 + 문항별 해설(/posts/), 코코스학원 = 학교별 내신 분석 + 학원 소식
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -292,7 +292,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=46'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=47'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -476,22 +476,26 @@ for idx, k in enumerate(keys_sorted):
                  body, crumbs + [(subj_url(k, s), sn)], active, comments=(subj_url(k, s).strip('/'), full))
 
 # ---------- 문항별 해설 ----------
-# 원장님 분석노트 그림 (_tools/note_view.py 가 만든 notes/view/*.webp + index.json) → 해설 페이지 '원장님 분석노트' 칸
+# 분석노트 전자책 (_tools/note_view.py 가 만든 notes/view/*.webp + index.json) → 해설 페이지 '분석노트 전자책' 칸 (#ebook)
+# 첫 화면·블로그 '받을 수 있어요'의 [전자책 보기] 버튼은 notes/view/list.json(번호 키 → 해설 주소#ebook)을 읽음
 _nvf = os.path.join(ROOT, 'notes', 'view', 'index.json')
 NV = json.load(open(_nvf, encoding='utf-8')) if os.path.exists(_nvf) else {}
+EBOOK = {}  # 요청 번호 키(moe-g1-2026-10-41) → 주소, 세트(41-42)는 번호마다
 def note_view(p, nm):
     k = p['k']
     key = f"moe-g{k[1]}-{k[2]}-{k[3]}-{post_no(p).replace('~', '-')}" if k[0] == 'moe' else ''
     nv = NV.get(key)
     if not nv: return ''
+    for x in range(p['n'], p.get('n2', p['n']) + 1):
+        EBOOK[f"moe-g{k[1]}-{k[2]}-{k[3]}-{x}"] = post_url(p) + '#ebook'
     pgs = []
     for i in range(nv['pages']):
         src = f"/notes/view/{key}-{i + 1}.webp?v={nv['v']}"
         lazy = 'fetchpriority="high"' if i == 0 else 'loading="lazy"'
         pgs.append(f'<a class="nv-pg" href="{src}" target="_blank" rel="noopener"><img src="{src}" width="1600" height="2264" '
-                   f'alt="{e(nm)} 분석노트 {i + 1}쪽 - 리카수니 원장" {lazy} decoding="async"></a>')
+                   f'alt="{e(nm)} 분석노트 전자책 {i + 1}쪽 - 리카수니 원장" {lazy} decoding="async"></a>')
     txt = ''.join(f'<p class="en">{e(x)}</p>' for x in nv.get('en', []))
-    return (f'<div class="card nv"><h2>📘 원장님 분석노트 <small>끊어읽기 · 해석 · 어휘</small></h2>'
+    return (f'<div class="card nv" id="ebook"><h2>📘 분석노트 전자책 <small>리카수니 원장 · 끊어읽기 · 해석 · 어휘</small></h2>'
             f'<p class="muted">다운로드 없이 바로 보세요. 그림을 누르면 크게 열려요.</p>'
             + f'</div>{ad()}<div class="card nv">'.join(pgs)
             + f'<p class="nv-src">지문 출처: {e(s_name(k))} 영어 {post_no(p)}번 · {e(s_org(k))}<br>분석·해석·어휘 정리: 리카수니 원장 (이매동 코코스학원)</p>'
@@ -559,7 +563,7 @@ for p in POSTS:
 {f'<div class="card faq"><h2>자주 묻는 질문</h2>{faq}</div>' if faq else ''}
 <div class="card"><h2>함께 보면 좋은 자료</h2><div class="chips">
 <a class="chip" href="{subj_url(k, p['subj'])}">{e(s_name(k))} {e(sn)} 기출 원본 PDF</a>
-<a class="chip" href="/notes/">분석노트 카톡 요청</a><a class="chip" href="/posts/">수업자료 전체</a></div></div>
+<a class="chip" href="/notes/">분석노트 카톡 요청</a><a class="chip" href="/posts/">전자책·해설 전체</a></div></div>
 {post_card(others, f"{s_name(k)} {sn} 다른 문항 해설") if others else ''}'''
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": h1, "description": p['lead'], "datePublished": p['date'],
            "dateModified": LASTMOD[url], "inLanguage": "ko", "keywords": ', '.join(p.get('keywords', [])), "mainEntityOfPage": SITE + url,
@@ -579,10 +583,11 @@ for p in POSTS:
             f'<!DOCTYPE html><meta charset="UTF-8"><title>{e(nm)} 해설</title><link rel="canonical" href="{SITE}{url}">'
             f'<meta http-equiv="refresh" content="0; url={url}"><a href="{url}">{e(nm)} 해설로 이동</a>')
 
-# 수업자료 (회차별 목록)
+# 전자책 보기 (옛 이름 '수업자료', 회차별 목록) — 전자책이 있는 문항은 📘 표시
 def _exam_order(k): return (0 if k[0] == 'sn' else 1, -k[2], -k[3], k[1])
-pb = '''<h1 class="page-h1">수업자료 · 영어 문항별 해설</h1>
-<p class="lead">리카수니 원장이 모의고사반 수업을 준비하며 정리한 문항별 해설이에요. 정답 근거, 오답 이유, 핵심 구문·어휘 위주로 짧게 정리했어요.</p>'''
+EB_URLS = set(EBOOK.values())
+pb = '''<h1 class="page-h1">전자책 보기 · 영어 분석노트 전자책과 문항별 해설</h1>
+<p class="lead">리카수니 원장이 모의고사반 수업을 준비하며 만든 분석노트를 다운로드 없이 바로 보는 전자책이에요. <b class="eb-b">📘 전자책</b> 표시가 있는 문항은 끊어읽기·해석·어휘 노트를 바로 볼 수 있고, 모든 문항에 정답 근거·오답 이유·핵심 구문 해설이 있어요.</p>'''
 # 연도 탭 → 그 연도의 회차 버튼 → 고른 회차 목록 하나만 보임 (JS 없으면 전부 보임). 수능은 '수능' 탭 하나로 묶음.
 def _p_year(k):  # 시행 연도 (평가원 6·9월 모평은 학년도 - 1)
     ex, g, y, m = k
@@ -603,7 +608,7 @@ if POSTS:
     for k in pk:
         ps = sorted(POSTS_BY[k], key=lambda p: p['n'])
         pb += (f'<div class="card p-panel" id="{_p_id(k)}" data-y="{_p_year(k)}"><h2>{e(s_name(k))} 영어 <small class="muted">{len(ps)}문항</small></h2><div class="plist">' + ''.join(
-            f'<a href="{post_url(p)}"><b>{post_no(p)}번 · {e(p["type"])}</b><span>{post_ans(p)} · {e(p["topic"])}</span></a>' for p in ps)
+            f'<a href="{post_url(p)}"><b>{post_no(p)}번 · {e(p["type"])}{" <i class=eb-b>📘 전자책</i>" if post_url(p) + "#ebook" in EB_URLS else ""}</b><span>{post_ans(p)} · {e(p["topic"])}</span></a>' for p in ps)
             + f'</div><p class="more-l" style="margin:10px 0 0"><a href="{subj_url(k, "영어")}">{e(s_name(k))} 영어 기출·자료 보기 →</a></p></div>')
     pb += ad() + '''<script>(function(){var Y=document.querySelectorAll('.y-tab'),S=document.querySelectorAll('.s-tab'),P=document.querySelectorAll('.p-panel');
 function pick(k,push){var p=document.getElementById(k);if(!p||!p.classList.contains('p-panel'))return false;var y=p.dataset.y;
@@ -616,10 +621,10 @@ S.forEach(function(a){a.onclick=function(ev){ev.preventDefault();pick(a.dataset.
 var s=null;try{s=localStorage.getItem('postSess')}catch(e){}
 if(pick(decodeURIComponent(location.hash.slice(1))))setTimeout(function(){scrollTo(0,0)},0);else(s&&pick(s))||pick(S[0].dataset.k)})();</script>'''
 else:
-    pb += '<div class="card"><p class="muted">곧 첫 수업자료가 올라와요.</p></div>'
-page('/posts/', '수업자료 · 수능·모의고사 영어 문항별 해설 모음 | 리카수니 자료실',
-     '수능·고3·고2·고1 모의고사 영어 문항별 해설. 정답 근거, 오답 이유, 핵심 구문과 어휘를 짧게 정리. 리카수니 자료실', pb,
-     [('/', '홈'), ('/posts/', '수업자료')], '/posts/', comments=('posts', '수업자료'))
+    pb += '<div class="card"><p class="muted">곧 첫 전자책이 올라와요.</p></div>'
+page('/posts/', '영어 모의고사 분석노트 전자책 · 문항별 해설 모음 | 리카수니 자료실',
+     '고1·고2·고3 모의고사와 수능 영어 분석노트를 다운로드 없이 보는 전자책과 문항별 해설. 끊어읽기·해석·어휘, 정답 근거와 오답 이유. 리카수니 자료실', pb,
+     [('/', '홈'), ('/posts/', '전자책 보기')], '/posts/', comments=('posts', '전자책 보기'))
 
 # ---------- 학교별 내신 분석 (코코스 학원생 전용) ----------
 # 공개 페이지에는 학교 목록과 시험 제목만. 분석 내용은 공개 저장소에 두지 않고 학원생 인증 후 Supabase 에서 불러올 예정.
@@ -1169,6 +1174,7 @@ urls = ''.join(f'<url><loc>{SITE}{p}</loc>' + (f'<lastmod>{LASTMOD[p]}</lastmod>
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
     f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
 open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /get/\nDisallow: /notes/pv/\nSitemap: {SITE}/sitemap.xml\n')
+json.dump(EBOOK, open(os.path.join(ROOT, 'notes', 'view', 'list.json'), 'w'), sort_keys=True)  # [전자책 보기] 버튼용
 # 분석노트 미리보기 목록 (notes/pv/*.jpg → index.json, 첫 화면 '받을 수 있어요' 칸의 [미리보기] 버튼이 읽음)
 _pvd = os.path.join(ROOT, 'notes', 'pv'); os.makedirs(_pvd, exist_ok=True)
 json.dump(sorted(_ud.normalize('NFC', f[:-4]) for f in os.listdir(_pvd) if f.endswith('.jpg')), open(os.path.join(_pvd, 'index.json'), 'w'))  # macOS 가 한글 파일 이름을 자모 분리(NFD)로 돌려줄 수 있어 NFC 로 맞춤 (화면의 키와 같게)

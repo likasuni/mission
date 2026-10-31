@@ -43,6 +43,9 @@
   // 미리보기 (자료실 notes/pv/index.json 에 있는 번호만): 모의고사 moe-g2-2026-10-37 · 부교재 bk-수능특강라이트-20-1
   var pv = {};
   fetch(SITE + 'notes/pv/index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (a) { pv = {}; a.forEach(function (k) { pv[k] = 1; }); render(); }).catch(function () {});
+  // 전자책 (자료실 notes/view/list.json: 번호 키 → 해설 페이지 #ebook) — 있으면 [미리보기] 대신 [전자책 보기]
+  var eb = {};
+  fetch(SITE + 'notes/view/list.json').then(function (r) { return r.ok ? r.json() : {}; }).then(function (a) { eb = a; render(); }).catch(function () {});
   function pvKey(c) {
     var t = c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '');
     var m = t.match(/^(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번$/);
@@ -68,7 +71,8 @@
     return '<li><span style="flex: none; padding: 2px 7px; border-radius: 6px; background: ' + st[1] + '; color: #fff; font-size: 11px; font-weight: 800;">' + st[0] + '</span>' +
       '<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.35;"><b style="font-weight: 700; overflow-wrap: anywhere;">' + esc(short(c)) + '</b>' +
       '<span style="font-size: 12px; color: #8a93a8;">' + esc(mask(c.author_name)) + ' · ' + ago(c.created_at) + '</span></span>' +
-      ((ready || done) && pv[pvKey(c)] ? '<button type="button" class="lks-pv" data-pv="' + esc(pvKey(c)) + '" data-t="' + esc(short(c)) + '" data-go="' + esc(reqLink(c)) + '" style="flex: none; padding: 3px 8px; border-radius: 6px; background: #fff; border: 1px solid ' + st[2] + '; font-size: 12px; font-weight: 700; color: ' + st[3] + '; cursor: pointer;">미리보기</button>' : '') +
+      ((ready || done) && eb[pvKey(c)] ? '<a href="' + SITE + esc(eb[pvKey(c)].slice(1)) + '" style="flex: none; padding: 3px 8px; border-radius: 6px; background: #1e3a8a; border: 1px solid #1e3a8a; font-size: 12px; font-weight: 800; color: #fff;">전자책 보기</a>' :
+       (ready || done) && pv[pvKey(c)] ? '<button type="button" class="lks-pv" data-pv="' + esc(pvKey(c)) + '" data-t="' + esc(short(c)) + '" data-go="' + esc(reqLink(c)) + '" style="flex: none; padding: 3px 8px; border-radius: 6px; background: #fff; border: 1px solid ' + st[2] + '; font-size: 12px; font-weight: 700; color: ' + st[3] + '; cursor: pointer;">미리보기</button>' : '') +
       (c.page_key ? '<a href="' + esc(reqLink(c)) + '"' + (ready ? ' title="요청하면 기다리지 않고 바로 카톡으로 받아요"' : '') + ' style="flex: none; padding: 3px 8px; border-radius: 6px; background: #fff; border: 1px solid ' + st[2] + '; font-size: 12px; font-weight: 700; color: ' + st[3] + ';">나도 받기</a>' : '') + '</li>';
   }
   // 소통하기 글 (talk_list: 비밀글은 내용이 비어 옴, 고정 공지가 맨 위)

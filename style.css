@@ -676,3 +676,5 @@ a.nb:hover { filter: brightness(1.12); }
 .nv-src { margin: 10px 0 4px; font-size: .82rem; color: var(--muted); line-height: 1.6; }
 .nv-text { margin: 8px 0; } .nv-text summary { cursor: pointer; font-weight: 700; color: var(--navy); font-size: .92rem; }
 .nv-text p { font-size: .92rem; line-height: 1.75; margin: 8px 0; }
+.rq-go.rq-eb, .rq.rd .rq-go.rq-eb, .rq.ok .rq-go.rq-eb { background: #1e3a8a; border-color: #1e3a8a; color: #fff; font-weight: 800; }
+.eb-b { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 6px; background: #1e3a8a; color: #fff; font-size: .72rem; font-weight: 800; font-style: normal; vertical-align: 1px; }

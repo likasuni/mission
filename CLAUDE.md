@@ -27,7 +27,7 @@
 - 관리자 페이지 `admin.html`: 관리자 계정(Supabase `admins` — 원장님 구글 계정 + 카카오 계정, 2026-10-23 카카오 추가)으로 로그인하면 자료실 머리글에 '관리자' 버튼이 보여요.
 - 이 환경에선 data.likasuni.com 접속이 막혀 있어요. 확인은 로컬 빌드 + playwright 화면 캡처(`/opt/pw-browsers/chromium`)로 해요.
 
-## 문항별 해설 (자료실 '수업자료')
+## 문항별 해설 (자료실 메뉴 '전자책 보기', 옛 이름 '수업자료')
 
 - 파일: `_tools/posts/<시험>-eng-<번호>.json`. 시험 키는 `sn-2022`(수능, 학년도 기준) 또는 `moe-<학년>-<연도>-<월>`.
 - 형식은 기존 파일(예: `sn-2022-eng-32.json`)과 똑같이: type, points, answer, topic, date, keywords, lead, flow, evidence, choices(5개), grammar, vocab, summary, writing, tip, faq.
@@ -74,7 +74,7 @@
    결과는 `select status_code, content from net._http_response where id = <위 결과 번호>;` 로 확인 (sent·gone·fail 개수). 기록은 `push_log` 테이블.
    보낸 알림은 자료실 첫 화면 '최근 알림'(최근 5개)에 보여요. 시험 발송은 body 에 `'test', true` 를 넣으면 목록에 안 나와요 (`push_log.hidden`).
 3. **미리보기 그림** (모의고사 분석노트, 2026-10-31~): `python3 _tools/note_preview.py <학년> <연도> <월> <번호>` → `notes/pv/moe-g<학년>-<연도>-<월>-<번호>.jpg` (이 Mac 의 구글 드라이브 '깃허브 홈페이지 자료실/모의고사 분석노트' PDF 첫 쪽 윗부분 + 워터마크, 드라이브 업로드가 끝난 뒤). 빌드하면 `notes/pv/index.json` 이 생기고, 첫 화면 '받을 수 있어요' 칸 그 번호에 [미리보기] 버튼(팝업 + '나도 받기')이 생겨요. 검색엔진에선 뺌(robots `Disallow: /notes/pv/`). 첫 쪽 윗부분만 — 전체 PDF 를 공개하지 않아요 (로그인·카톡 받기로 재방문 유도).
-4. **분석노트 웹 보기 그림** (모의고사, 2026-11-01~, 원장님 확정: 워터마크 없이 전체 공개, PDF 파일은 카톡으로만): `python3 _tools/note_view.py <학년> <연도> <월> [번호…]` (번호 없으면 그 회차 폴더 전부, 바뀐 PDF 만 다시) → `notes/view/moe-g<학년>-<연도>-<월>-<번호>-<쪽>.webp` (Quick Look 으로 선명하게, 폭 1600 WebP, Pillow 필요) + `notes/view/index.json`(쪽 수·PDF 수정 시각·검색용 영어 문장). 빌드하면 그 문항 해설 페이지 정답 표 아래에 '📘 원장님 분석노트' 칸(쪽 사이 광고 1개, 지문 출처, 영어 문장 글자 보기, 인쇄용 PDF 카톡 받기 버튼)이 생기고 제목에 '· 분석노트'. 한글은 PDF 글꼴 때문에 글자로 못 뽑아서 영어만 넣어요. 2026년 10월 고1 30번부터 시작.
+4. **분석노트 전자책** (모의고사, 2026-11-01~, 원장님 확정: 워터마크 없이 전체 공개, PDF 파일은 카톡으로만. **최근 회차만** 만들어요 — 10월엔 10월 모의고사, 3월엔 3월 모의고사. 지금은 2026년 10월 고1·고2·고3. 부교재는 저작권(EBS) 때문에 미리보기만): `python3 _tools/note_view.py <학년> <연도> <월> [번호…]` (번호 없으면 그 회차 폴더 전부, 바뀐 PDF 만 다시) → `notes/view/moe-g<학년>-<연도>-<월>-<번호>-<쪽>.webp` (Quick Look 으로 선명하게, 폭 1600 WebP, Pillow 필요) + `notes/view/index.json`(쪽 수·PDF 수정 시각·검색용 영어 문장). 빌드하면 그 문항 해설 페이지 정답 표 아래에 '📘 분석노트 전자책' 칸(`#ebook`)(쪽 사이 광고 1개, 지문 출처, 영어 문장 글자 보기, 인쇄용 PDF 카톡 받기 버튼)이 생기고 제목에 '· 분석노트'. 한글은 PDF 글꼴 때문에 글자로 못 뽑아서 영어만 넣어요. 빌드가 `notes/view/list.json`(요청 번호 키 → 해설 주소#ebook)을 만들고, 첫 화면·블로그(board.js) '받을 수 있어요' 칸은 전자책이 있는 번호에 [미리보기] 대신 **[전자책 보기]**(남색)를 보여요. 메뉴 '수업자료'는 **'전자책 보기'**(/posts/, 전자책 있는 문항에 📘 전자책 표시)로 이름을 바꿨어요. 전자책은 해설 페이지가 있는 회차에만 들어가요.
 - 웹 푸시 구조: 사이트 `push.js`(🔔 버튼, `.push-btn`) + `sw.js` + `manifest.webmanifest`, 서버 `_tools/functions/push` (구독은 `push_subs`, VAPID 키는 `private_config` 의 vapid_public·vapid_private, 비밀키는 밖으로 꺼내지 않아요).
 - 아이폰은 사파리 '홈 화면에 추가' 후 그 아이콘으로 열어야 알림을 켤 수 있어요 (iOS 16.4 이상).
 - 알림은 너무 자주 보내지 않아요 (하루 1~2번 정도). 학생이 알림을 끄면 효과가 사라져요.
