@@ -199,7 +199,7 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/naesin/', '코코스학원'), ('/exams/', '전과목 기출'), ('/notes/', '분석노트 요청')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
+NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '수업자료'), ('/books/', '부교재'), ('/naesin/', '코코스학원'), ('/exams/', '전과목 기출'), ('/notes/', '자료 요청')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -276,7 +276,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 {''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
 </head>
 <body>
-<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><button class="push-btn push-ic" type="button" title="새 자료 알림 받기" aria-label="새 자료 알림 받기">🔔</button><a class="hdr-cta" href="/notes/">분석노트 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
+<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><button class="push-btn push-ic" type="button" title="새 자료 알림 받기" aria-label="새 자료 알림 받기">🔔</button><a class="hdr-cta" href="/notes/">자료 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
 <nav class="nav"><div class="nav-in">{nav}</div></nav>
 <main class="wrap">
 {crumb_html}
@@ -1011,8 +1011,8 @@ page('/variants/', '고1·고2 모의고사 영어 변형문제 PDF 무료 | 리
      '전국연합학력평가 고1·고2 영어 문항별 변형문제 PDF 무료 다운로드. 리카수니 원장 직접 제작.', vbody,
      [('/', '홈'), ('/variants/', '변형문제')], '/variants/')
 
-nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요청</h1>
-<p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트를 카카오톡으로 받아보세요.</p>
+nbody = '''<h1 class="page-h1">자료 요청 <small>분석노트 · 단어 시험지 · 변형문제</small></h1>
+<p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트, 그리고 단어 시험지 같은 다른 자료도 여기서 요청하면 카카오톡으로 받아요.</p>
 <section class="card mission" id="note-req"><h2>분석노트 요청</h2><p class="muted">불러오는 중...</p></section>
 <section class="card" id="etc-req"><h2>기타 자료 요청 <small>단어 시험지 · 변형문제 · 다른 교재</small></h2><p class="muted">불러오는 중...</p></section>
 <div class="card"><h2>이용 방법</h2><ul class="sum">
@@ -1022,9 +1022,9 @@ nbody = '''<h1 class="page-h1">모의고사·부교재 영어 분석노트 요�
 <li>하루에 모의고사 2개, 부교재 1개까지 받을 수 있고, 링크는 24시간 동안 열려요.</li><li>번호를 <b>하나씩</b> 골라 받아요. 모의고사는 하나를 받은 뒤 "다른 번호 받기"를 눌러 두 번째 번호를 받을 수 있어요.</li>
 <li>아직 준비되지 않은 자료는 원장님께 요청이 전달돼요. 준비에 1~2일 걸리니 그 뒤에 다시 요청해 주세요. (그날 요청 횟수는 차감되지 않아요)</li>
 </ul></div>''' + ad()
-page('/notes/', '영어 모의고사·수능특강 분석노트 요청 | 리카수니 자료실',
+page('/notes/', '자료 요청 · 영어 모의고사·수능특강 분석노트 요청 | 리카수니 자료실',
      '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 하루 모의고사 2개·부교재 1개.', nbody,
-     [('/', '홈'), ('/notes/', '분석노트 요청')], '/notes/', comments=('notes', '분석노트 요청'))
+     [('/', '홈'), ('/notes/', '자료 요청')], '/notes/', comments=('notes', '분석노트 요청'))
 
 # ---------- 부교재 요청방 ----------
 # 새 부교재는 BOOKS 에 한 줄 추가 (name 은 lib.js NOTE_BOOKS, note-request 함수 BOOKS 와 같게)
