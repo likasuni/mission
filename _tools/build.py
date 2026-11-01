@@ -927,6 +927,8 @@ for m in MEMOS:
          '<div class="mm-tags">' + f'<span class="mm-tag bk">{e(m["book"])}</span><span class="mm-tag">{e(m["where"])}</span>' + ''.join(f'<span class="mm-tag">{e(t)}</span>' for t in m.get('tags', [])) + '</div>',
          f'<h1>{e(m["h1"])}</h1><p class="sub">{e(m.get("sub", ""))}</p>',
          f'<div class="mm-one"><small>✏️ 분석노트 한 줄</small><b>{e(o["key"])}</b>: {e(o["text"])}' + (f' <span>— {e(o["note"])}</span>' if o.get('note') else '') + '</div>']
+    if m.get('html'):  # 원장님이 준 HTML 본문 그대로 (_tools/memos/<파일>.html, <!--AD--> 자리에 광고)
+        h.append(open(os.path.join(_md, m['html']), encoding='utf-8').read().replace('<!--AD-->', ad()))
     if st:
         h.append('<h2>문장 끊어 읽기</h2><div class="mm-sent"><p class="en">' + e(st['en']).replace(' / ', ' <i>/</i> ') + f'</p><p class="ko">{e(st["ko"])}</p>'
                  + (f'<span class="mm-flow">✔ {e(st["flow"])}</span>' if st.get('flow') else '') + '</div>')

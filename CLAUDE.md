@@ -60,6 +60,7 @@
 - 형식은 `sutk-light-2026-21-gateway-2.json` 과 같게: slug·date·book·where·title·h1·sub·desc·tags·keywords·one(분석노트 한 줄)·sentence(en·ko·flow)·points·vocab(cards)·examples·quiz·faq·cta·more.
 - **검색 최적화**: 책 이름(연도 포함, 예: `2026 수능특강 라이트 영어`)을 title·h1 맨 앞에, 검색어(예: rather later 뜻)를 뒤에. faq 는 FAQPage 구조화 데이터로 들어감. 부교재는 `수능특강 라이트(Light)` 표기도 desc 에.
 - 원장님이 쓴 설명은 바꾸지 않고 칸만 나눔. Claude 가 덧붙인 예문·확인 문제는 'Claude 추가'로 표시. 확인할 수 없는 통계·학생 사례는 쓰지 않음.
+- 원장님이 **완성된 HTML 을 주며 '그대로' 올려 달라고 하면**: `_tools/memos/<slug>.html` 에 그대로 두고 JSON 에 `"html": "<slug>.html"` (one·faq·cta 는 JSON 에, sentence·points 등은 생략). 본문 중간 `<!--AD-->` 자리에 광고. 그림 파일이 안 왔으면 `<figure>` 는 빼고 알려 드림.
 - 노트 페이지는 첫 화면 '원장님 노트'(최근 5개), `/memo/` 목록, 사이트맵에 들어가요. date 가 미래면 그날 공개.
 
 ## 학원 소식 (자료실 `/news/`, 메뉴 '코코스학원' = /naesin/ 위쪽 '학원 소식' 칸 + 아래 학교별 내신 분석)
