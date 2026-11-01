@@ -253,6 +253,7 @@ def cp_news(body, d):
 
 def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website', og_image=None):
     url = SITE + path
+    META[path] = (title, desc)
     ld = list(extra_ld) + ([{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else [])
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
@@ -274,6 +275,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{url}">
+<link rel="alternate" type="application/rss+xml" title="리카수니 자료실 새 글" href="{SITE}/rss.xml">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="리카수니 자료실">
 <meta property="og:title" content="{e(title)}">
@@ -332,6 +334,8 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
     PAGES.append(path)
 
 PAGES = []
+PUB = {}  # RSS 발행일 (해설·노트·소식의 date)
+META = {}  # RSS 용 페이지 제목·설명
 LASTMOD = {}  # 사이트맵 lastmod: 실제 날짜를 아는 페이지(해설)만 넣음
 
 def dl_buttons(rs):
@@ -526,6 +530,7 @@ for p in POSTS:
     pts = f' [{p["points"]}점]' if p.get('points') == 3 else ''
     ans_s = post_ans(p)
     LASTMOD[url] = p.get('updated', p['date'])
+    PUB[url] = p['date']
     desc = f'{nm} {ans_s}. ' + _re.sub('^' + _re.escape(nm) + '[은는]\\s*', '', p['lead'])
     h1 = f'{nm} 해설·분석 · {p["type"]} {ans_s}'
     flow = ''.join(f'<li><b>{e(a)}</b> {e(b)}</li>' for a, b in p.get('flow', []))
@@ -766,6 +771,7 @@ for sc in NAESIN:
             body += (f'<div class="card ns-cta"><h2>🔒 {e(sc["short"])} {e(x["title"])} 전체 분석</h2><p>{e(x["info"])} 전체 문항 분석, 시험 총평, 다음 시험 대비 포인트는 <b>코코스 학원생 전용</b>이에요.</p>'
                      f'<p><a class="btn-cocos" href="/naesin/{sc["slug"]}/#ns-member">학원생으로 전체 분석 보기 →</a></p></div>' + ACADEMY)
             LASTMOD[url] = it.get('updated', it['date'])
+            PUB[url] = it['date']
             ld = [{"@context": "https://schema.org", "@type": "Article", "headline": f'{nm} 분석 · {it["type"]}', "description": it['lead'][:200],
                    "datePublished": it['date'], "dateModified": LASTMOD[url], "inLanguage": "ko", "keywords": ', '.join(it.get('keywords', [])),
                    "author": {"@type": "Person", "name": "리카수니 원장"}, "publisher": {"@type": "Organization", "name": "리카수니 자료실"},
@@ -800,6 +806,7 @@ var_sess = sorted([k for k in VAR if k in sessions], key=lambda k: (k[1], -s_yea
 for m in NEWS + BOOKNEWS:
     url = nurl(m); isbook = m.get('cat') == 'book'
     LASTMOD[url] = m.get('updated', m['date'])
+    PUB[url] = m['date']
     body = open(os.path.join(m['_dir'], 'body.html'), encoding='utf-8').read()
     has_th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
     th_html = (f'<div style="box-sizing:border-box;margin:0 0 16px;max-width:100%;overflow:hidden;text-align:center;width:100%;"><img src="thumb.png" alt="{e(m["title"])}" width="1080" height="1080" loading="eager" style="border-radius:10px;height:auto;max-width:560px;width:100%;"></div>') if has_th else ''
@@ -913,6 +920,7 @@ def memo_line(m):  # 목록·첫 화면 한 줄
 for m in MEMOS:
     url = f'/memo/{m["slug"]}/'
     LASTMOD[url] = m.get('updated', m['date'])
+    PUB[url] = m['date']
     o, st = m['one'], m.get('sentence')
     add = '<span class="mm-add">Claude 추가</span>'
     h = [f'<style>{MEMO_CSS}</style><article class="mm card">',
@@ -1201,6 +1209,7 @@ for b in BPOSTS: _bp_by[(b['bslug'], b['unit'])].append(b)
 for i, b in enumerate(BPOSTS):
     url, nm = bp_url(b), bp_name(b)
     LASTMOD[url] = b.get('updated', b['date'])
+    PUB[url] = b['date']
     ev, pt, one = b['evidence'], b['point'], b['one']
     sib = _bp_by[(b['bslug'], b['unit'])]
     j = sib.index(b)
@@ -1280,6 +1289,18 @@ _sm = sorted([p for p in PAGES if _sm_rank(p) is not None], key=lambda p: (_sm_r
 urls = ''.join(f'<url><loc>{SITE}{p}</loc>' + (f'<lastmod>{LASTMOD[p]}</lastmod>' if p in LASTMOD else '') + '</url>' for p in _sm)
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
     f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
+# RSS: 네이버 서치어드바이저 제출용 — 최근 공개된 해설·원장님 노트·소식 50개 (새 글을 빨리 수집하게)
+_ri = sorted([p for p in PUB if p in META and PUB[p] <= TODAY], key=lambda p: (PUB[p], LASTMOD.get(p, '')), reverse=True)[:50]
+def _rfc(d): return datetime.datetime.fromisoformat(d[:10] + 'T06:00:00+09:00').strftime('%a, %d %b %Y %H:%M:%S +0900')
+def _x(t): return t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+open(os.path.join(ROOT, 'rss.xml'), 'w').write(
+    '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
+    f'<title>리카수니 자료실</title><link>{SITE}/</link><description>모의고사·수능 영어 문항별 해설, 분석노트 전자책, 원장님 노트 (이매동 코코스학원 리카수니 원장)</description>'
+    f'<language>ko</language><atom:link href="{SITE}/rss.xml" rel="self" type="application/rss+xml"/>'
+    + (f'<lastBuildDate>{_rfc(PUB[_ri[0]])}</lastBuildDate>' if _ri else '')
+    + ''.join(f'<item><title>{_x(META[p][0])}</title><link>{SITE}{p}</link><guid isPermaLink="true">{SITE}{p}</guid>'
+              f'<description>{_x(META[p][1])}</description><pubDate>{_rfc(PUB[p])}</pubDate></item>' for p in _ri)
+    + '</channel></rss>')
 open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /get/\nDisallow: /notes/pv/\nSitemap: {SITE}/sitemap.xml\n')
 json.dump(EBOOK, open(os.path.join(ROOT, 'notes', 'view', 'list.json'), 'w'), sort_keys=True)  # [전자책 보기] 버튼용
 # 분석노트 미리보기 목록 (notes/pv/*.jpg → index.json, 첫 화면 '받을 수 있어요' 칸의 [미리보기] 버튼이 읽음)
