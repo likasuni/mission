@@ -1241,7 +1241,8 @@ for slug in sorted({b['bslug'] for b in BPOSTS}):
          f'{full}(수능특강 라이트) 강별·문항별 해설. 정답, 글의 흐름, 정답 근거, 오답 판단, 핵심 어휘. 리카수니 원장 분석.',
          f'<h1 class="page-h1">{e(full)} 문항별 해설</h1><p class="lead">교재를 펴 놓고 보는 리카수니 원장의 문항 분석이에요. 정답·글의 흐름·정답 근거·오답 판단·핵심 어휘를 정리했어요. '
          '지문 원문은 교재에서 확인해 주세요.</p>'
-         + ''.join(f'<div class="card"><h2>{u}강 <small class="muted">{len([b for b in bs if b["unit"] == u])}문항</small></h2>{bp_list([b for b in bs if b["unit"] == u])}</div>' for u in units)
+         + '<div class="chips">' + ''.join(f'<a class="chip" href="#u{u}">{u}강</a>' for u in units) + '</div>'
+         + ''.join(f'<div class="card" id="u{u}"><h2>{u}강 <small class="muted">{len([b for b in bs if b["unit"] == u])}문항</small></h2>{bp_list([b for b in bs if b["unit"] == u])}</div>' for u in units)
          + ad() + f'<div class="card"><h2>분석노트 PDF 받기</h2><p class="muted">끊어읽기·해석까지 담은 분석노트는 카카오톡으로 하루 1개 무료로 받아요.</p><div class="dl"><a href="/notes/?book={urllib.parse.quote(bs[0]["book"])}#note-req">카톡으로 분석노트 요청</a></div></div>',
          [('/', '홈'), ('/books/', '부교재'), (f'/books/{slug}/', '수능특강 라이트 해설')], '/books/', comments=(f'books-{slug}', f'{full} 해설'))
 

@@ -1,0 +1,123 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 10,
+ "n": 2,
+ "label": "2번",
+ "type": "빈칸",
+ "answer": "①",
+ "topic": "고통스러운 생각의 되새김을 멈추려면 머리로만 하지 말고 몸을 움직여라",
+ "keywords": [
+  "수능특강 라이트 10강 2번",
+  "수능특강 라이트 10강 2번 정답",
+  "수능특강 라이트 10강 2번 해설",
+  "수능특강 라이트 10강"
+ ],
+ "lead": "10강 2번은 빈칸 문제예요. 빈칸 앞에 '몸을 움직이는' 구체적 방법이 계속 나와요.",
+ "flow": [
+  [
+   "문제",
+   "고통스러운 생각을 되새길수록 더 쉽게 떠올라서, 계속 괴로움에 빠지는 덫에 걸려요."
+  ],
+  [
+   "어려움",
+   "머릿속 생각만으로 새로운 것에 다시 집중하기는 아주 어려워요. 그래서 능동적인 방법이 효과적이에요."
+  ],
+  [
+   "방법",
+   "'Stop!' 하고 손을 내밀고, 일어나 자리를 옮기거나 잠깐 걷고 밖에 나가요. 몸을 움직이는 것이 마음을 바꿔 줘요."
+  ]
+ ],
+ "evidence": {
+  "where": "빈칸 앞 두 문장",
+  "quote": "quickly followed by physical movement, such as standing up",
+  "why": "physical movement, standing up, walk around, step outside 가 모두 '몸을 움직이기'예요. 원장님 노트 근거: active approach, physical movement."
+ },
+ "traps": [
+  [
+   "①",
+   "몸을 움직이는 것 — 정답."
+  ],
+  [
+   "②",
+   "믿는 사람과 함께 있기 — 언급 없어요."
+  ],
+  [
+   "③",
+   "다른 것 생각하기 — 머리로만 하는 건 어렵다고 했어요."
+  ],
+  [
+   "④",
+   "현재 감정에 집중하기 — 오히려 벗어나려는 거예요."
+  ],
+  [
+   "⑤",
+   "몸과 마음의 균형 — 너무 일반적이에요."
+  ]
+ ],
+ "point": {
+  "title": "the 비교급 ~, the 비교급 …",
+  "quote": "The more you churn over painful thoughts, the easier it becomes for you to bring those things to mind",
+  "body": "'~할수록 더 …하다'. 뒤 절은 가주어 it, 의미상 주어 for you, 진주어 to bring이에요."
+ },
+ "vocab": [
+  [
+   "churn over",
+   "곱씹다"
+  ],
+  [
+   "retrigger",
+   "다시 일으키다"
+  ],
+  [
+   "distress",
+   "괴로움"
+  ],
+  [
+   "rumination",
+   "되새김, 반추"
+  ],
+  [
+   "purely",
+   "순전히"
+  ],
+  [
+   "to good effect",
+   "효과적으로"
+  ],
+  [
+   "slippery slope",
+   "미끄러운 비탈"
+  ],
+  [
+   "firm",
+   "단호한"
+  ]
+ ],
+ "one": {
+  "en": "Physically moving your body can stop painful rumination when mental effort alone fails.",
+  "ko": "머리로만 노력해서 안 될 때, 몸을 움직이면 고통스러운 되새김을 멈출 수 있다."
+ },
+ "checks": [
+  {
+   "q": "필자가 권하는 한 단어 외침은?",
+   "a": "'Stop!'"
+  },
+  {
+   "q": "rumination의 뜻은?",
+   "a": "(괴로운 생각의) 되새김, 반추"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 10강 2번 정답은?",
+   "①번이에요. 몸을 움직이는 것 —"
+  ],
+  [
+   "수능특강 라이트 10강 2번의 핵심 내용은?",
+   "고통스러운 생각의 되새김을 멈추려면 머리로만 하지 말고 몸을 움직여라."
+  ]
+ ]
+}

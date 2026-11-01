@@ -1,0 +1,126 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 2,
+ "n": 0,
+ "label": "Gateway",
+ "type": "심경 변화",
+ "answer": "③",
+ "topic": "비행기를 놓칠까 초조하던 Sophie가 지연 방송을 듣고 안도한다",
+ "keywords": [
+  "수능특강 라이트 2강 Gateway",
+  "수능특강 라이트 2강 Gateway 정답",
+  "수능특강 라이트 2강 Gateway 해설",
+  "수능특강 라이트 2강",
+  "2025학년도 9월 모평 19번",
+  "심경 변화"
+ ],
+ "lead": "2강 Gateway는 2025학년도 9월 모의평가 19번 심경 변화 문제예요. 앞은 '초조', 뒤는 '안도'를 보여 주는 단서가 분명해요.",
+ "flow": [
+  [
+   "혼란",
+   "알람이 안 울려 아침부터 서두르고, 교통 체증에 끝없는 보안 검색 줄까지 만나요."
+  ],
+  [
+   "초조",
+   "1초가 1시간 같고, 탑승구에 제때 못 갈까 걱정하며 사람들 사이를 뛰어가요."
+  ],
+  [
+   "안도",
+   "항공편이 지연됐다는 방송에 깊은 한숨을 쉬며 마음이 놓이고, 쇼핑할 여유까지 생겨요."
+  ]
+ ],
+ "evidence": {
+  "where": "앞: Worried that ~ / 뒤: Letting out a deep sigh ~",
+  "quote": "she finally felt at ease",
+  "why": "앞부분 kept glancing at her watch, Worried 가 불안, 뒷부분 felt at ease, time to relax 가 안도예요."
+ },
+ "traps": [
+  [
+   "①",
+   "차분한 → 기쁜 — 처음부터 차분하지 않았어요."
+  ],
+  [
+   "②",
+   "기쁜 → 무관심한 — 둘 다 맞지 않아요."
+  ],
+  [
+   "③",
+   "불안한 → 안도하는 — 정답."
+  ],
+  [
+   "④",
+   "즐거운 → 실망한 — 방향이 반대예요."
+  ],
+  [
+   "⑤",
+   "지루한 → 만족스러운 — 아침은 지루함이 아니라 혼란이었어요."
+  ]
+ ],
+ "point": {
+  "title": "분사구문 (Worried / Letting out)",
+  "quote": "Letting out a deep sigh, she finally felt at ease.",
+  "body": "Letting out ~ = As she let out ~ (깊은 한숨을 내쉬며). Worried that ~ 도 Being이 생략된 분사구문으로 '걱정하며'예요. 심경 문제의 단서가 분사구문에 자주 숨어요."
+ },
+ "vocab": [
+  [
+   "chaotic",
+   "혼란스러운"
+  ],
+  [
+   "intense",
+   "극심한"
+  ],
+  [
+   "endless",
+   "끝없는"
+  ],
+  [
+   "glance at",
+   "~을 힐끗 보다"
+  ],
+  [
+   "boarding gate",
+   "탑승구"
+  ],
+  [
+   "delayed",
+   "지연된"
+  ],
+  [
+   "at ease",
+   "마음이 편안한"
+  ],
+  [
+   "browse",
+   "둘러보다"
+  ]
+ ],
+ "one": {
+  "en": "A delayed flight turned Sophie’s anxious rush into relief and spare time to relax.",
+  "ko": "항공편 지연이 Sophie의 불안한 서두름을 안도와 쉴 수 있는 여유로 바꾸었다."
+ },
+ "checks": [
+  {
+   "q": "Sophie의 마음을 놓이게 한 방송 내용은?",
+   "a": "항공편이 지연되었다는 것"
+  },
+  {
+   "q": "at ease와 비슷한 뜻의 형용사 하나는?",
+   "a": "relieved (안도하는)"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 2강 Gateway 정답은?",
+   "③번이에요. 불안한 → 안도하는 —"
+  ],
+  [
+   "수능특강 라이트 2강 Gateway의 핵심 내용은?",
+   "비행기를 놓칠까 초조하던 Sophie가 지연 방송을 듣고 안도한다."
+  ]
+ ],
+ "src": "2025학년도 9월 모의평가 19번"
+}

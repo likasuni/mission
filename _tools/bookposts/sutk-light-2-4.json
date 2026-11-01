@@ -1,0 +1,123 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 2,
+ "n": 4,
+ "label": "4번",
+ "type": "분위기",
+ "answer": "④",
+ "topic": "바다 다이빙 중 귀상어 떼를 만나는 놀랍고 매혹적인 장면",
+ "keywords": [
+  "수능특강 라이트 2강 4번",
+  "수능특강 라이트 2강 4번 정답",
+  "수능특강 라이트 2강 4번 해설",
+  "수능특강 라이트 2강"
+ ],
+ "lead": "2강 4번은 분위기 문제예요. 상어가 나오지만 위험이 아니라 '경이로움'을 그린 글이에요.",
+ "flow": [
+  [
+   "시작",
+   "사방이 수평선인 바다에서 Ann Marie가 다이버들과 함께 물에 들어가요."
+  ],
+  [
+   "발견",
+   "다이브마스터가 탱크를 두드려 알리고, 멀리서 독특한 머리 모양의 거대한 귀상어가 나타나요."
+  ],
+  [
+   "절정",
+   "수십 마리가 다이버 곁을 미끄러지듯 지나가고, 그 순간이 계속되길 바랄 만큼 놀랍고 아름다워요."
+  ]
+ ],
+ "evidence": {
+  "where": "마지막 두 문장",
+  "quote": "It was astonishing and beautiful.",
+  "why": "상어가 나와도 urgent/dangerous 표현은 없고, astonishing, beautiful, wished … to make the moment last 가 분위기를 정해요."
+ },
+ "traps": [
+  [
+   "①",
+   "단조롭고 지루한 — 긴장감 있게 전개돼요."
+  ],
+  [
+   "②",
+   "시끄럽고 축제 같은 — 조용한 바닷속이에요."
+  ],
+  [
+   "③",
+   "긴박하고 위험한 — 상어가 공격하지 않아요."
+  ],
+  [
+   "④",
+   "놀랍고 매혹적인 — 정답."
+  ],
+  [
+   "⑤",
+   "비참하고 우울한 — 정반대예요."
+  ]
+ ],
+ "point": {
+  "title": "시간 + into + 활동 (~한 지 …만에)",
+  "quote": "Several minutes into the dive",
+  "body": "'다이빙을 시작한 지 몇 분 만에'라는 뜻이에요. Ten minutes into the movie(영화 시작 10분 만에)처럼 써요. A followed by B(A 뒤에 B가 이어지는)도 함께 보세요."
+ },
+ "vocab": [
+  [
+   "horizon",
+   "수평선"
+  ],
+  [
+   "gear",
+   "장비"
+  ],
+  [
+   "interrupt",
+   "방해하다, 끊다"
+  ],
+  [
+   "emerge",
+   "나타나다"
+  ],
+  [
+   "streamlined",
+   "유선형의"
+  ],
+  [
+   "unmistakable",
+   "틀림없는"
+  ],
+  [
+   "glide",
+   "미끄러지듯 움직이다"
+  ],
+  [
+   "effortlessly",
+   "힘들이지 않고"
+  ]
+ ],
+ "one": {
+  "en": "Meeting dozens of hammerhead sharks during a dive was an astonishing and beautiful moment for Ann Marie.",
+  "ko": "다이빙 중 수십 마리의 귀상어를 만난 것은 Ann Marie에게 놀랍고 아름다운 순간이었다."
+ },
+ "checks": [
+  {
+   "q": "Ann Marie가 본 거대한 생물은?",
+   "a": "귀상어 (great hammerhead shark)"
+  },
+  {
+   "q": "'공연 시작 5분 만에'를 영어로? (into 사용)",
+   "a": "Five minutes into the show"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 2강 4번 정답은?",
+   "④번이에요. 놀랍고 매혹적인 —"
+  ],
+  [
+   "수능특강 라이트 2강 4번의 핵심 내용은?",
+   "바다 다이빙 중 귀상어 떼를 만나는 놀랍고 매혹적인 장면."
+  ]
+ ]
+}

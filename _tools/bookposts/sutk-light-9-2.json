@@ -1,0 +1,131 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 9,
+ "n": 2,
+ "label": "2번",
+ "type": "어휘(낱말 쓰임)",
+ "answer": "④",
+ "topic": "편향 없는 데이터로도 AI 편향은 생길 수 있다",
+ "keywords": [
+  "수능특강 라이트 9강 2번",
+  "수능특강 라이트 9강 2번 정답",
+  "수능특강 라이트 9강 2번 해설",
+  "수능특강 라이트 9강"
+ ],
+ "lead": "9강 2번은 낱말 쓰임 문제예요. '편향 없는 데이터면 해결된다'는 통념을 Although 문장이 뒤집어요.",
+ "flow": [
+  [
+   "기대",
+   "처음엔 AI가 사람의 편견을 빼 차별을 없앨 거라 여겼지만, 편향은 여전히 생겼어요. 백인을 더 잘 알아보는 AI가 그 예예요."
+  ],
+  [
+   "통념",
+   "흔히 편향된 학습 데이터가 AI 편향의 원인이니, 편향 없는 데이터면 해결된다고 봐요."
+  ],
+  [
+   "반박",
+   "하지만 편향은 편향 없는 데이터에서도 생겨요. 성 중립 광고도 여성 타깃 비용이 비싸서 여성에게 광고가 덜 가는 차별이 생겼어요."
+  ]
+ ],
+ "evidence": {
+  "where": "④와 바로 뒤 문장",
+  "quote": "such bias can emerge even from unbiased data",
+  "why": "뒤에서 편향 없는 데이터로도 편향이 생긴다고 반박하니, 통념은 '사실이 아니다(false)'여야 해요."
+ },
+ "traps": [
+  [
+   "①",
+   "occur — 편향이 여전히 '생긴다'라 적절해요."
+  ],
+  [
+   "②",
+   "biased — 성능 문제를 '편향된' 데이터 탓으로 돌렸으니 적절해요."
+  ],
+  [
+   "③",
+   "cause — 통념의 내용(편향된 데이터가 원인)이라 적절해요."
+  ],
+  [
+   "④",
+   "true → false 가 맞아요. 정답."
+  ],
+  [
+   "⑤",
+   "fewer — 비싸서 여성 대상 광고가 '더 적어지니' 적절해요."
+  ]
+ ],
+ "point": {
+  "title": "blame A for B / blame B on A",
+  "quote": "The bad performance was blamed on biased training data",
+  "body": "blame B(나쁜 일) on A(원인). 수동태로 B was blamed on A가 됐어요. blame A for B와 전치사를 구별하세요."
+ },
+ "vocab": [
+  [
+   "discrimination",
+   "차별"
+  ],
+  [
+   "bigotry",
+   "편견"
+  ],
+  [
+   "out of the loop",
+   "과정에서 빠진"
+  ],
+  [
+   "indicate",
+   "보여 주다"
+  ],
+  [
+   "algorithm",
+   "알고리즘"
+  ],
+  [
+   "conventional wisdom",
+   "통념"
+  ],
+  [
+   "imply",
+   "암시하다"
+  ],
+  [
+   "emerge",
+   "생겨나다"
+  ],
+  [
+   "gender-neutral",
+   "성 중립적인"
+  ],
+  [
+   "ironic",
+   "역설적인"
+  ]
+ ],
+ "one": {
+  "en": "AI bias can emerge even from unbiased training data.",
+  "ko": "AI 편향은 편향 없는 학습 데이터에서도 생길 수 있다."
+ },
+ "checks": [
+  {
+   "q": "성 중립 광고가 여성을 차별하게 된 역설적 이유는?",
+   "a": "여성을 대상으로 하는 광고가 더 비싸서"
+  },
+  {
+   "q": "빈칸: They blamed the accident ___ the driver.",
+   "a": "on"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 9강 2번 정답은?",
+   "④번이에요. true → false 가 맞아요."
+  ],
+  [
+   "수능특강 라이트 9강 2번의 핵심 내용은?",
+   "편향 없는 데이터로도 AI 편향은 생길 수 있다."
+  ]
+ ]
+}

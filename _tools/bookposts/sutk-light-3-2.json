@@ -1,0 +1,127 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 3,
+ "n": 2,
+ "label": "2번",
+ "type": "주장",
+ "answer": "⑤",
+ "topic": "바쁜 기업가일수록 쉬고 노는 시간을 가져야 생산성과 창의성이 높아진다",
+ "keywords": [
+  "수능특강 라이트 3강 2번",
+  "수능특강 라이트 3강 2번 정답",
+  "수능특강 라이트 3강 2번 해설",
+  "수능특강 라이트 3강"
+ ],
+ "lead": "3강 2번은 필자의 주장 문제예요. 첫 문장의 주장을 번아웃 문제와 아인슈타인의 예로 뒷받침해요.",
+ "flow": [
+  [
+   "주장",
+   "쉬고 노는 시간은 바쁜 기업가에게 매우 귀중해요. 사치라고 생각하면 나중에 대가를 치러요."
+  ],
+  [
+   "문제",
+   "항상 연결되어 일하는 문화 때문에 기업가들 사이에 번아웃이 퍼져 있어요."
+  ],
+  [
+   "근거",
+   "마음을 쉬고 놀게 하는 시간은 생산성과 창의성으로 돌아와요. 아인슈타인도 막히면 바이올린을 켜며 돌파구를 얻었어요."
+  ]
+ ],
+ "evidence": {
+  "where": "첫 문장과 But whatever time 문장",
+  "quote": "will pay back in both productivity and creativity",
+  "why": "첫 문장의 invaluable, 중간의 pay back이 같은 주장을 반복해요."
+ },
+ "traps": [
+  [
+   "①",
+   "초심을 잊지 말기 — 관계없어요."
+  ],
+  [
+   "②",
+   "보상 체계 만들기 — 언급 없어요."
+  ],
+  [
+   "③",
+   "건전한 기업 문화 — 문화는 번아웃 원인으로만 나와요."
+  ],
+  [
+   "④",
+   "성공 사고방식 기르기 — mindset을 바꾸라는 말은 '휴식이 필요하다'는 쪽으로예요."
+  ],
+  [
+   "⑤",
+   "휴식과 놀이 시간 갖기 — 정답."
+  ]
+ ],
+ "point": {
+  "title": "복합관계형용사 whatever + 명사",
+  "quote": "But whatever time you can pull away … will pay back",
+  "body": "whatever time ~ = any time that ~ (~하는 어떤 시간이든). 주어 덩어리가 길어서 동사 will pay back을 찾는 게 포인트예요."
+ },
+ "vocab": [
+  [
+   "invaluable",
+   "매우 귀중한"
+  ],
+  [
+   "frivolous",
+   "하찮은, 경박한"
+  ],
+  [
+   "consequence",
+   "결과, 대가"
+  ],
+  [
+   "epidemic",
+   "유행, 만연"
+  ],
+  [
+   "burnout",
+   "번아웃, 극도의 피로"
+  ],
+  [
+   "stem from",
+   "~에서 비롯되다"
+  ],
+  [
+   "par for the course",
+   "흔히 있는 일"
+  ],
+  [
+   "attribute A to B",
+   "A를 B 덕분으로 돌리다"
+  ],
+  [
+   "breakthrough",
+   "돌파구"
+  ]
+ ],
+ "one": {
+  "en": "Time away and play are invaluable to busy entrepreneurs, and ignoring their importance can lead to serious consequences.",
+  "ko": "쉬는 시간과 놀이는 바쁜 기업가에게 매우 귀중하며, 그 중요성을 무시하면 심각한 결과를 낳을 수 있다."
+ },
+ "checks": [
+  {
+   "q": "아인슈타인이 문제에 막혔을 때 한 일은?",
+   "a": "바이올린을 켜며 시간을 보냈어요"
+  },
+  {
+   "q": "Easier said than done의 뜻은?",
+   "a": "말은 쉽지만 실천은 어렵다"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 3강 2번 정답은?",
+   "⑤번이에요. 휴식과 놀이 시간 갖기 —"
+  ],
+  [
+   "수능특강 라이트 3강 2번의 핵심 내용은?",
+   "바쁜 기업가일수록 쉬고 노는 시간을 가져야 생산성과 창의성이 높아진다."
+  ]
+ ]
+}

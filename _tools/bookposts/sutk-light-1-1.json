@@ -1,0 +1,123 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 1,
+ "n": 1,
+ "label": "1번",
+ "type": "목적",
+ "answer": "⑤",
+ "topic": "여행 책자에 나온 오페라 하우스 정보가 바뀌었으니 다음 판에서 고쳐 달라고 권한다",
+ "keywords": [
+  "수능특강 라이트 1강 1번",
+  "수능특강 라이트 1강 1번 정답",
+  "수능특강 라이트 1강 1번 해설",
+  "수능특강 라이트 1강"
+ ],
+ "lead": "1강 1번은 여행 책자 편집자에게 보낸 편지예요. 칭찬으로 시작하지만 However 뒤에 진짜 목적이 나와요.",
+ "flow": [
+  [
+   "칭찬",
+   "이탈리아 여행에서 책자가 아주 유용하고 재미있었다고 감사해요."
+  ],
+  [
+   "문제 제기",
+   "However, 한 가지 정보는 갱신이 필요하다고 말해요. 책에는 베네치아 오페라 하우스에 들어갈 수 있다고 나오지만, 실제로는 보수 공사로 약 3년간 문을 닫는대요."
+  ],
+  [
+   "요청",
+   "독자들이 정확히 계획하고 혼란을 피하도록 다음 판에서 정보를 고쳐 달라고 권해요."
+  ]
+ ],
+ "evidence": {
+  "where": "However 문장과 끝에서 둘째 문장",
+  "quote": "I recommend updating the information",
+  "why": "편지의 앞부분 칭찬은 분위기를 만드는 말이고, However 뒤의 갱신 필요 → recommend updating 이 목적이에요."
+ },
+ "traps": [
+  [
+   "①",
+   "감상평 발송 통지 — 칭찬은 있지만 감상평을 보낸다는 말은 없어요."
+  ],
+  [
+   "②",
+   "출간 일정 확인 — 새 책 이야기가 아니에요."
+  ],
+  [
+   "③",
+   "원고 투고 — 글쓴이는 독자예요."
+  ],
+  [
+   "④",
+   "절판된 책 구매 문의 — 관계없어요."
+  ],
+  [
+   "⑤",
+   "책 정보의 수정 권유 — 정답."
+  ]
+ ],
+ "point": {
+  "title": "need -ing = need to be p.p.",
+  "quote": "one piece of information may need updating",
+  "body": "need updating은 '갱신될 필요가 있다'라는 수동의 뜻이에요 (= need to be updated). recommend 뒤에도 동명사(updating)가 와요."
+ },
+ "vocab": [
+  [
+   "informative",
+   "유익한, 정보를 주는"
+  ],
+  [
+   "resource",
+   "자료"
+  ],
+  [
+   "update",
+   "최신으로 고치다"
+  ],
+  [
+   "maintenance",
+   "보수, 유지 관리"
+  ],
+  [
+   "restoration",
+   "복구"
+  ],
+  [
+   "edition",
+   "(책의) 판"
+  ],
+  [
+   "accurately",
+   "정확하게"
+  ],
+  [
+   "confusion",
+   "혼란"
+  ]
+ ],
+ "one": {
+  "en": "The writer recommends updating this information in future editions so readers can plan more accurately and avoid confusion.",
+  "ko": "글쓴이는 독자들이 더 정확히 계획하고 혼란을 피하도록 향후 판에서 이 정보를 갱신할 것을 권한다."
+ },
+ "checks": [
+  {
+   "q": "O/X: 글쓴이는 오페라 하우스에 들어가 내부를 구경했다.",
+   "a": "X — 보수 공사로 문을 닫아서 들어가지 못했어요."
+  },
+  {
+   "q": "need updating을 to부정사로 바꾸면?",
+   "a": "need to be updated"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 1강 1번 정답은?",
+   "⑤번이에요. 책 정보의 수정 권유 —"
+  ],
+  [
+   "수능특강 라이트 1강 1번의 핵심 내용은?",
+   "여행 책자에 나온 오페라 하우스 정보가 바뀌었으니 다음 판에서 고쳐 달라고 권한다."
+  ]
+ ]
+}

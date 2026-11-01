@@ -1,0 +1,131 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 5,
+ "n": 0,
+ "label": "Gateway",
+ "type": "제목",
+ "answer": "⑤",
+ "topic": "미국 시트콤은 유머로 진보적 가치를 더 받아들이기 쉽게 만들었다",
+ "keywords": [
+  "수능특강 라이트 5강 Gateway",
+  "수능특강 라이트 5강 Gateway 정답",
+  "수능특강 라이트 5강 Gateway 해설",
+  "수능특강 라이트 5강"
+ ],
+ "lead": "5강 Gateway는 제목 문제예요. 1950년대부터 미국 시트콤이 사회 갈등을 유머로 다뤄 온 방식을 설명해요.",
+ "flow": [
+  [
+   "배경",
+   "미국 시트콤은 1950년대부터 시민권, 여성·아동 인권, 이민과 다문화, 가족 개념의 변화 같은 사회 갈등을 다뤄 왔어요."
+  ],
+  [
+   "방식",
+   "이 문제들을 유머로 다뤄서, 진보적 가치를 전보다 받아들이기 쉽게 만들었어요."
+  ],
+  [
+   "예시·결론",
+   "변화에 반대하는 편견 많은 인물을 우스꽝스럽게 그려 깎아내렸고, 그렇게 유머는 다원적이고 관용적인 사회를 받아들이게 하는 저렴한 수단이 됐어요."
+  ]
+ ],
+ "evidence": {
+  "where": "둘째 문장과 마지막 문장",
+  "quote": "helped to make more progressive values more acceptable",
+  "why": "시트콤 유머 → 진보적 가치의 수용이 처음과 끝에서 반복돼요."
+ },
+ "traps": [
+  [
+   "①",
+   "시트콤이 진보적 생각을 비판한다 — 정반대예요."
+  ],
+  [
+   "②",
+   "다문화 사회에서 유머의 수용 가능성 — 유머 자체의 수용이 아니에요."
+  ],
+  [
+   "③",
+   "미국 시트콤의 쇠퇴 — 쇠퇴 이야기는 없어요."
+  ],
+  [
+   "④",
+   "제작비와 광고 — cost-effective를 이용한 함정이에요."
+  ],
+  [
+   "⑤",
+   "시트콤의 유머가 진보적 가치 수용을 돕는다 — 정답."
+  ]
+ ],
+ "point": {
+  "title": "make + 목적어 + 형용사 비교급 + than",
+  "quote": "make more progressive values more acceptable than previously",
+  "body": "than previously는 than (they had been) previously (acceptable)이 줄어든 말이에요. '예전보다 더 받아들일 만하게'."
+ },
+ "vocab": [
+  [
+   "chart",
+   "기록하다, 보여 주다"
+  ],
+  [
+   "civil rights",
+   "시민권"
+  ],
+  [
+   "immigration",
+   "이민"
+  ],
+  [
+   "evolving",
+   "변화하는"
+  ],
+  [
+   "progressive",
+   "진보적인"
+  ],
+  [
+   "bigot",
+   "편견이 심한 사람"
+  ],
+  [
+   "ridiculous",
+   "우스꽝스러운"
+  ],
+  [
+   "scolding",
+   "꾸지람"
+  ],
+  [
+   "pluralistic",
+   "다원적인"
+  ],
+  [
+   "tolerant",
+   "관용적인"
+  ]
+ ],
+ "one": {
+  "en": "U.S. television sitcoms have used humor to make progressive values more acceptable.",
+  "ko": "미국 텔레비전 시트콤은 유머로 진보적 가치를 더 받아들이기 쉽게 만들어 왔다."
+ },
+ "checks": [
+  {
+   "q": "시트콤에서 변화에 반대하는 인물은 어떻게 그려지나요?",
+   "a": "우스꽝스럽게 그려져 깎아내려져요"
+  },
+  {
+   "q": "cost-effective의 뜻은?",
+   "a": "비용 대비 효과가 좋은"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 5강 Gateway 정답은?",
+   "⑤번이에요. 시트콤의 유머가 진보적 가치 수용을 돕는다 —"
+  ],
+  [
+   "수능특강 라이트 5강 Gateway의 핵심 내용은?",
+   "미국 시트콤은 유머로 진보적 가치를 더 받아들이기 쉽게 만들었다."
+  ]
+ ]
+}

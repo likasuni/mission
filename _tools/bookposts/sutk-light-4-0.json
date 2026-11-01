@@ -1,0 +1,125 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 4,
+ "n": 0,
+ "label": "Gateway",
+ "type": "함축 의미",
+ "answer": "①",
+ "topic": "성공의 화려함 뒤에는 원치 않는 행동을 해야 하는 자유의 상실이 있다",
+ "keywords": [
+  "수능특강 라이트 4강 Gateway",
+  "수능특강 라이트 4강 Gateway 정답",
+  "수능특강 라이트 4강 Gateway 해설",
+  "수능특강 라이트 4강",
+  "Slavery resides under marble and gold",
+  "함축 의미"
+ ],
+ "lead": "4강 Gateway는 밑줄 함축 의미 문제예요. 세네카의 말 \"Slavery resides under marble and gold.\"가 무슨 뜻인지 앞 내용으로 풀어요.",
+ "flow": [
+  [
+   "관점 바꾸기",
+   "부자와 유명인의 화려한 성공 대신, 성공이 그들에게서 앗아 간 대가를 보라고 해요."
+  ],
+  [
+   "대가",
+   "대부분은 자유예요. 정장을 입고, 싫은 사람에게 아부하고, 생각을 말하지 못하고, 다른 사람이 되거나 나쁜 일까지 해야 해요."
+  ],
+  [
+   "결론",
+   "대리석과 금(성공) 아래 노예 상태가 있다. 많은 성공한 사람이 스스로 만든 감옥의 죄수예요."
+  ]
+ ],
+ "evidence": {
+  "where": "밑줄 바로 앞 단락",
+  "quote": "look at what success has cost them … Freedom.",
+  "why": "marble and gold = 성공의 화려함, slavery = 원치 않는 방식으로 살아야 하는 부자유. 그래서 ①이에요."
+ },
+ "traps": [
+  [
+   "①",
+   "성공은 원치 않는 방식으로 행동하길 요구한다 — 정답."
+  ],
+  [
+   "②",
+   "명성은 남의 도움이 필요하다 — 도움 이야기가 아니에요."
+  ],
+  [
+   "③",
+   "남과 비교하면 비참해진다 — 비교 이야기는 없어요."
+  ],
+  [
+   "④",
+   "노동이 영광을 보장한다 — 반대 방향이에요."
+  ],
+  [
+   "⑤",
+   "성공의 겉모습에 자유가 있다 — 정반대예요."
+  ]
+ ],
+ "point": {
+  "title": "demand that + 주어 + (should) 동사원형",
+  "quote": "Their work demands they wear a suit.",
+  "body": "요구 동사 demand 뒤 that절(that 생략)에는 동사원형 wear, become이 와요. it demands that they become ~ 도 같은 구조예요."
+ },
+ "vocab": [
+  [
+   "trappings",
+   "(성공·지위의) 겉치레"
+  ],
+  [
+   "trade",
+   "맞바꾸다"
+  ],
+  [
+   "in return",
+   "대가로"
+  ],
+  [
+   "kiss up to",
+   "~에게 아부하다"
+  ],
+  [
+   "inevitably",
+   "불가피하게"
+  ],
+  [
+   "transaction",
+   "거래"
+  ],
+  [
+   "reside",
+   "존재하다, 살다"
+  ],
+  [
+   "prisoner",
+   "죄수"
+  ]
+ ],
+ "one": {
+  "en": "Rather than focusing on the visible signs of success, we should examine what successful people had to sacrifice for their status.",
+  "ko": "성공의 눈에 보이는 표시에 집중하기보다, 성공한 사람들이 그 지위를 위해 무엇을 희생해야 했는지 살펴야 한다."
+ },
+ "checks": [
+  {
+   "q": "필자가 말하는 성공의 가장 큰 대가는? (한 단어)",
+   "a": "Freedom (자유)"
+  },
+  {
+   "q": "jails of their own making의 뜻은?",
+   "a": "스스로 만든 감옥"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 4강 Gateway 정답은?",
+   "①번이에요. 성공은 원치 않는 방식으로 행동하길 요구한다 —"
+  ],
+  [
+   "수능특강 라이트 4강 Gateway의 핵심 내용은?",
+   "성공의 화려함 뒤에는 원치 않는 행동을 해야 하는 자유의 상실이 있다."
+  ]
+ ]
+}

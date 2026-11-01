@@ -1,0 +1,133 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 9,
+ "n": 0,
+ "label": "Gateway",
+ "type": "어휘(낱말 쓰임)",
+ "answer": "⑤",
+ "topic": "우리는 예측 가능하게 비합리적이며, 마음의 작동을 알면 더 합리적이 될 수 있다",
+ "keywords": [
+  "수능특강 라이트 9강 Gateway",
+  "수능특강 라이트 9강 Gateway 정답",
+  "수능특강 라이트 9강 Gateway 해설",
+  "수능특강 라이트 9강",
+  "낱말 쓰임",
+  "predictably irrational"
+ ],
+ "lead": "9강 Gateway는 낱말 쓰임 문제예요. 글 전체가 '인간은 비합리적이다'를 말하는데, 마지막 밑줄이 그 반대말로 바뀌어 있어요.",
+ "flow": [
+  [
+   "통념",
+   "우리는 스스로를 신중하고 합리적인 판단자라고 생각해요."
+  ],
+  [
+   "반박",
+   "사실 우리는 '예측 가능하게 비합리적'이에요. 자동적으로 쉬운 길을 택하고, 즉석 판단을 하며, 여러 편향이 숙고를 방해해요."
+  ],
+  [
+   "결론",
+   "마음의 작동과 편향을 이해하면 잘못된 추론에 덜 빠지고 더 합리적이 될 수 있어요. 마음속 비합리성을 알면 남에게도 더 잘 알릴 수 있어요."
+  ]
+ ],
+ "evidence": {
+  "where": "마지막 문장 ⑤",
+  "quote": "the built-in ⑤rationality of our mental processes",
+  "why": "글 내내 '타고난 비합리성(predictably irrational, biases)'을 말했으니, 이해해야 할 대상은 rationality가 아니라 irrationality예요."
+ },
+ "traps": [
+  [
+   "①",
+   "informed — 우리가 '정보에 근거한' 결정을 한다고 '믿는다'는 통념이라 적절해요."
+  ],
+  [
+   "②",
+   "easier — 정신적 노력을 아끼려 쉬운 길을 택하니 적절해요."
+  ],
+  [
+   "③",
+   "acceptance — 직관적 이론이 정확한 과학 설명의 '수용'을 방해하니 적절해요."
+  ],
+  [
+   "④",
+   "less — 이해하면 오류에 '덜' 빠지니 적절해요."
+  ],
+  [
+   "⑤",
+   "rationality → irrationality 가 맞아요. 정답."
+  ]
+ ],
+ "point": {
+  "title": "be subject to (~에 빠지기 쉽다)",
+  "quote": "can make us each less subject to fallacious reasoning",
+  "body": "subject는 형용사로 '~을 받기 쉬운'. make + 목적어 + 형용사 구조에서 less subject, more rational, more aware가 병렬이에요."
+ },
+ "vocab": [
+  [
+   "rational",
+   "합리적인"
+  ],
+  [
+   "sound",
+   "건전한, 타당한"
+  ],
+  [
+   "predictably",
+   "예측 가능하게"
+  ],
+  [
+   "reflexive",
+   "반사적인"
+  ],
+  [
+   "conserve",
+   "아끼다"
+  ],
+  [
+   "snap judgment",
+   "즉석 판단"
+  ],
+  [
+   "bias",
+   "편향"
+  ],
+  [
+   "override",
+   "무시하다, 압도하다"
+  ],
+  [
+   "deliberative",
+   "숙고하는"
+  ],
+  [
+   "fallacious",
+   "잘못된"
+  ]
+ ],
+ "one": {
+  "en": "We often think irrationally, but understanding how our minds work can make us more rational.",
+  "ko": "우리는 흔히 비합리적으로 생각하지만, 마음이 작동하는 방식을 이해하면 더 합리적이 될 수 있다."
+ },
+ "checks": [
+  {
+   "q": "Dan Ariely의 책 제목에 나온 표현은?",
+   "a": "predictably irrational (예측 가능하게 비합리적인)"
+  },
+  {
+   "q": "⑤ 자리에 알맞은 낱말은?",
+   "a": "irrationality"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 9강 Gateway 정답은?",
+   "⑤번이에요. rationality → irrationality 가 맞아요."
+  ],
+  [
+   "수능특강 라이트 9강 Gateway의 핵심 내용은?",
+   "우리는 예측 가능하게 비합리적이며, 마음의 작동을 알면 더 합리적이 될 수 있다."
+  ]
+ ]
+}

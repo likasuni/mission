@@ -1,0 +1,127 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 8,
+ "n": 3,
+ "label": "3번",
+ "type": "어법",
+ "answer": "③",
+ "topic": "노인의 장내 미생물은 노화뿐 아니라 식단·약·생활 환경 변화로도 달라진다",
+ "keywords": [
+  "수능특강 라이트 8강 3번",
+  "수능특강 라이트 8강 3번 정답",
+  "수능특강 라이트 8강 3번 해설",
+  "수능특강 라이트 8강"
+ ],
+ "lead": "8강 3번은 밑줄 어법 문제예요. 관계대명사 which의 선행사를 제대로 찾는지가 핵심이에요.",
+ "flow": [
+  [
+   "주장",
+   "노화 자체뿐 아니라 다른 요인들도 장내 미생물을 바꿔요. 미생물은 우리가 먹는 걸 함께 먹으니 식단이 크게 영향을 줘요."
+  ],
+  [
+   "식단",
+   "이가 빠지면 과일을 덜 먹는 것처럼 사소한 이유로 식단이 바뀌어요. 그래서 노화를 통째로 봐야 하고, 치과 치료도 식단에 영향을 줘요."
+  ],
+  [
+   "약과 환경",
+   "노인은 항생제를 더 많이 처방받아 미생물이 손상되고, 요양 시설 노인은 집에 사는 노인과 미생물 구성이 달라요."
+  ]
+ ],
+ "evidence": {
+  "where": "③이 있는 문장",
+  "quote": "it also has impacts on diet which ③has wider knock-on effects of their own",
+  "why": "which의 선행사는 diet가 아니라 impacts(복수)예요. of their own의 their도 복수를 가리켜요. has → have."
+ },
+ "traps": [
+  [
+   "①",
+   "what — share의 목적어이자 '~하는 것'이라 맞아요."
+  ],
+  [
+   "②",
+   "to eat — 가주어 it의 진주어 to부정사라 맞아요."
+  ],
+  [
+   "③",
+   "has → have. 정답."
+  ],
+  [
+   "④",
+   "making — 박테리아가 '아프게 만드는' 능동이라 현재분사가 맞아요."
+  ],
+  [
+   "⑤",
+   "those — 앞의 spectrum이 아니라 older people(복수)을 받아 맞아요."
+  ]
+ ],
+ "point": {
+  "title": "As well as A (A뿐 아니라)",
+  "quote": "As well as the ageing process itself, getting old is associated with other factors",
+  "body": "문장 맨 앞 As well as A = A뿐 아니라. 주어는 getting old(동명사)라 단수 동사 is가 와요."
+ },
+ "vocab": [
+  [
+   "microbiome",
+   "미생물 군집"
+  ],
+  [
+   "flora",
+   "(장내) 세균총"
+  ],
+  [
+   "trivial",
+   "사소한"
+  ],
+  [
+   "in silos",
+   "따로따로, 칸막이식으로"
+  ],
+  [
+   "dentistry",
+   "치과 치료"
+  ],
+  [
+   "knock-on effect",
+   "연쇄 효과"
+  ],
+  [
+   "prescribe",
+   "처방하다"
+  ],
+  [
+   "antibiotic",
+   "항생제"
+  ],
+  [
+   "spectrum",
+   "범위, 구성"
+  ]
+ ],
+ "one": {
+  "en": "Changes in diet, medication, and living environment also reshape the gut microbiome of older people.",
+  "ko": "식단, 약, 생활 환경의 변화도 노인의 장내 미생물을 바꾼다."
+ },
+ "checks": [
+  {
+   "q": "노인이 과일을 덜 먹게 되는 사소한 이유는?",
+   "a": "이가 빠져서 먹기 어려워져요"
+  },
+  {
+   "q": "O/X: 항생제는 미생물 군집을 손상시킬 수 있다.",
+   "a": "O"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 8강 3번 정답은?",
+   "③번이에요. has → have."
+  ],
+  [
+   "수능특강 라이트 8강 3번의 핵심 내용은?",
+   "노인의 장내 미생물은 노화뿐 아니라 식단·약·생활 환경 변화로도 달라진다."
+  ]
+ ]
+}

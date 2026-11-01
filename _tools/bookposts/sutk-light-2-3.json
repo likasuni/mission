@@ -1,0 +1,119 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 2,
+ "n": 3,
+ "label": "3번",
+ "type": "심경 변화",
+ "answer": "②",
+ "topic": "혼자 산길을 걸으며 평온하던 Ryan이 수상한 소리에 긴장한다",
+ "keywords": [
+  "수능특강 라이트 2강 3번",
+  "수능특강 라이트 2강 3번 정답",
+  "수능특강 라이트 2강 3번 해설",
+  "수능특강 라이트 2강"
+ ],
+ "lead": "2강 3번은 심경 변화 문제예요. 평화로운 하이킹이 뒤에서 들린 이상한 소리로 바뀌어요.",
+ "flow": [
+  [
+   "평온",
+   "하이킹하기 완벽한 10월 날씨, 숲의 소리와 햇살 속에서 혼자만의 평화를 즐겨요."
+  ],
+  [
+   "전환",
+   "Then, 뒤에서 이상한 소리가 들려 재빨리 돌아봐요."
+  ],
+  [
+   "긴장",
+   "바람이나 나뭇가지 소리가 아니라 누군가 근처에 있다고 확신하며, 오싹하고 심장이 빨리 뛰어요."
+  ]
+ ],
+ "evidence": {
+  "where": "앞: he felt pleased / 뒤: A sudden chill ~",
+  "quote": "his heart began beating fast",
+  "why": "pleased, enjoying the quiet peace 가 기쁨, sudden chill, heart beating fast 가 긴장이에요."
+ },
+ "traps": [
+  [
+   "①",
+   "외로운 → 호기심 있는 — 혼자인 걸 즐기고 있었어요."
+  ],
+  [
+   "②",
+   "매우 기쁜 → 긴장한 — 정답."
+  ],
+  [
+   "③",
+   "짜증 난 → 신이 난 — 둘 다 맞지 않아요."
+  ],
+  [
+   "④",
+   "자신감 있는 → 후회하는 — 후회는 없어요."
+  ],
+  [
+   "⑤",
+   "지루한 → 당황한 — 처음은 지루함이 아니라 평온함이에요."
+  ]
+ ],
+ "point": {
+  "title": "couldn’t have been better (최고였다)",
+  "quote": "the weather couldn't have been better for hiking",
+  "body": "'이보다 더 좋을 수는 없었다' = 최고였다. 부정어 + 비교급으로 최상급 뜻을 나타내요."
+ },
+ "vocab": [
+  [
+   "pause",
+   "잠시 멈추다"
+  ],
+  [
+   "now and then",
+   "때때로"
+  ],
+  [
+   "gentle",
+   "부드러운"
+  ],
+  [
+   "certain",
+   "확신하는"
+  ],
+  [
+   "twig",
+   "잔가지"
+  ],
+  [
+   "chill",
+   "오싹함"
+  ],
+  [
+   "nearby",
+   "근처에서"
+  ]
+ ],
+ "one": {
+  "en": "Ryan’s peaceful solo hike turned tense when he heard a strange sound behind him.",
+  "ko": "Ryan의 평화로운 혼자만의 하이킹은 뒤에서 이상한 소리를 듣자 긴장으로 바뀌었다."
+ },
+ "checks": [
+  {
+   "q": "Ryan이 그 소리가 아니라고 확신한 것 두 가지는?",
+   "a": "바람 소리, 나뭇가지 떨어지는 소리"
+  },
+  {
+   "q": "now and then과 같은 뜻의 단어 하나는?",
+   "a": "sometimes / occasionally"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 2강 3번 정답은?",
+   "②번이에요. 매우 기쁜 → 긴장한 —"
+  ],
+  [
+   "수능특강 라이트 2강 3번의 핵심 내용은?",
+   "혼자 산길을 걸으며 평온하던 Ryan이 수상한 소리에 긴장한다."
+  ]
+ ]
+}

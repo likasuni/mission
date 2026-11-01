@@ -1,0 +1,123 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 7,
+ "n": 1,
+ "label": "1번",
+ "type": "내용 불일치",
+ "answer": "④",
+ "topic": "테니스와 골프에서 흑인 최초의 기록을 세운 Althea Gibson의 생애",
+ "keywords": [
+  "수능특강 라이트 7강 1번",
+  "수능특강 라이트 7강 1번 정답",
+  "수능특강 라이트 7강 1번 해설",
+  "수능특강 라이트 7강"
+ ],
+ "lead": "7강 1번은 내용 불일치 문제예요. 숫자(음반 수, 연도)를 꼼꼼히 확인해야 해요.",
+ "flow": [
+  [
+   "성장",
+   "1927년생, 뉴욕 Harlem에서 자라 7학년에 학교를 그만뒀다가 다시 돌아가 고등학교를 마쳐요. 농구 장학금으로 Florida A&M에 다녀요."
+  ],
+  [
+   "테니스",
+   "흑인 최초로 US 오픈과 윔블던에 출전하고, 1957·1958년 두 대회를 연속 우승해요. 1971년 명예의 전당에 들어가요."
+  ],
+  [
+   "다양한 활동",
+   "음반 한 장을 내고 영화에도 출연했으며, 1964년 아프리카계 미국 여성 최초로 LPGA에 들어가요."
+  ]
+ ],
+ "evidence": {
+  "where": "끝에서 둘째 문장",
+  "quote": "She released one record album",
+  "why": "음반은 한 장(one)이에요. 두 장이라는 ④가 불일치예요."
+ },
+ "traps": [
+  [
+   "①",
+   "농구 장학금으로 대학 — 일치."
+  ],
+  [
+   "②",
+   "US 오픈·윔블던 출전 최초의 흑인 — 일치."
+  ],
+  [
+   "③",
+   "1971년 명예의 전당 — 일치."
+  ],
+  [
+   "④",
+   "음반 두 장 발매 — 불일치. 한 장이에요."
+  ],
+  [
+   "⑤",
+   "LPGA 최초의 아프리카계 미국 여성 — 일치."
+  ]
+ ],
+ "point": {
+  "title": "the first + 명사 + to V",
+  "quote": "the first Black tennis player ever to compete",
+  "body": "the first ~ to V = ~한 최초의 …. to부정사가 앞 명사를 꾸며요. the first African American woman to enter도 같은 구조예요."
+ },
+ "vocab": [
+  [
+   "drop out of",
+   "중퇴하다"
+  ],
+  [
+   "scholarship",
+   "장학금"
+  ],
+  [
+   "compete",
+   "출전하다, 경쟁하다"
+  ],
+  [
+   "championship",
+   "선수권 대회"
+  ],
+  [
+   "Hall of Fame",
+   "명예의 전당"
+  ],
+  [
+   "pursue",
+   "추구하다"
+  ],
+  [
+   "diverse",
+   "다양한"
+  ],
+  [
+   "release",
+   "발매하다"
+  ]
+ ],
+ "one": {
+  "en": "Althea Gibson broke racial barriers in both tennis and professional golf.",
+  "ko": "Althea Gibson은 테니스와 프로 골프 모두에서 인종 장벽을 깼다."
+ },
+ "checks": [
+  {
+   "q": "Gibson이 처음 우승한 대회와 연도는?",
+   "a": "1956년 프랑스 선수권 대회"
+  },
+  {
+   "q": "enter the Hall of Fame에서 enter 뒤에 into를 쓰나요?",
+   "a": "아니요 — enter는 타동사라 바로 목적어가 와요."
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 7강 1번 정답은?",
+   "④번이에요. 음반 두 장 발매 — 불일치. 한 장이에요."
+  ],
+  [
+   "수능특강 라이트 7강 1번의 핵심 내용은?",
+   "테니스와 골프에서 흑인 최초의 기록을 세운 Althea Gibson의 생애."
+  ]
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 9,
+ "n": 1,
+ "label": "1번",
+ "type": "어휘 (A)(B)(C)",
+ "answer": "③",
+ "topic": "끼리끼리 모이는 경향은 기존 생각을 강화해 양극화를 낳지만 소속감도 준다",
+ "keywords": [
+  "수능특강 라이트 9강 1번",
+  "수능특강 라이트 9강 1번 정답",
+  "수능특강 라이트 9강 1번 해설",
+  "수능특강 라이트 9강"
+ ],
+ "lead": "9강 1번은 (A)(B)(C) 낱말 고르기예요. '유유상종(birds of a feather flock together)'이 글의 열쇠예요.",
+ "flow": [
+  [
+   "연구",
+   "2017년 Kosinski 연구팀은 페이스북 디지털 흔적을 분석해, 사람들이 온라인에서 자신과 비슷한 사람과 주로 어울린다는 걸 밝혔어요."
+  ],
+  [
+   "부작용",
+   "끼리끼리 모이면 패거리, 반향실, 내집단 편향이 생기고, 이미 배타적인 태도와 믿음을 더 강화해요. 양극화도 그 증상이에요."
+  ],
+  [
+   "다른 면",
+   "하지만 자기 무리와 뭉치는 것은 지지와 소속감을 줄 수도 있어요."
+  ]
+ ],
+ "evidence": {
+  "where": "(A)(B)(C) 각 문장",
+  "quote": "birds of a feather do indeed flock together",
+  "why": "(A) 유유상종이니 similar. (B) 패거리·반향실은 기존 태도를 reinforce. (C) 양극화는 그 현상의 증상이지 '도움이 되는' 게 아니니 not helpful."
+ },
+ "traps": [
+  [
+   "(A)",
+   "similar — '깃털이 같은 새끼리' 모인다는 연구 결과예요."
+  ],
+  [
+   "(B)",
+   "reinforce — 반향실은 기존 생각을 '강화'해요."
+  ],
+  [
+   "(C)",
+   "helpful — not helpful(도움이 안 되는). not harmful이면 뜻이 반대가 돼요."
+  ],
+  [
+   "③",
+   "similar / reinforce / helpful — 정답."
+  ]
+ ],
+ "point": {
+  "title": "all of which (앞 내용 전체를 받는 관계대명사)",
+  "quote": "cliques, echo chambers and in-group biases, all of which can reinforce",
+  "body": "all of which = and all of them. 앞의 세 가지 모두가 주어예요."
+ },
+ "vocab": [
+  [
+   "concrete",
+   "구체적인"
+  ],
+  [
+   "flock",
+   "모이다"
+  ],
+  [
+   "digital footprint",
+   "디지털 흔적"
+  ],
+  [
+   "belonging",
+   "소속감"
+  ],
+  [
+   "clique",
+   "패거리"
+  ],
+  [
+   "echo chamber",
+   "반향실 (같은 의견만 울리는 공간)"
+  ],
+  [
+   "exclusive",
+   "배타적인"
+  ],
+  [
+   "marginalize",
+   "소외시키다"
+  ],
+  [
+   "polarization",
+   "양극화"
+  ],
+  [
+   "foster",
+   "기르다"
+  ]
+ ],
+ "one": {
+  "en": "People online tend to interact with similar others, which strengthens existing beliefs but also gives a sense of belonging.",
+  "ko": "사람들은 온라인에서 비슷한 사람과 어울리는 경향이 있어, 기존 믿음을 강화하지만 소속감도 준다."
+ },
+ "checks": [
+  {
+   "q": "birds of a feather flock together를 우리말 사자성어로?",
+   "a": "유유상종"
+  },
+  {
+   "q": "O/X: 필자는 끼리끼리 모이는 것이 좋은 점이 전혀 없다고 본다.",
+   "a": "X — 지지와 소속감을 줄 수 있다고 해요."
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 9강 1번 정답은?",
+   "③번이에요. similar / reinforce / helpful —"
+  ],
+  [
+   "수능특강 라이트 9강 1번의 핵심 내용은?",
+   "끼리끼리 모이는 경향은 기존 생각을 강화해 양극화를 낳지만 소속감도 준다."
+  ]
+ ]
+}

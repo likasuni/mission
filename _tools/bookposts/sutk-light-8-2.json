@@ -1,0 +1,131 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 8,
+ "n": 2,
+ "label": "2번",
+ "type": "어법",
+ "answer": "③",
+ "topic": "불쾌한 정보를 일부러 피하는 '타조 효과'",
+ "keywords": [
+  "수능특강 라이트 8강 2번",
+  "수능특강 라이트 8강 2번 정답",
+  "수능특강 라이트 8강 2번 해설",
+  "수능특강 라이트 8강"
+ ],
+ "lead": "8강 2번은 밑줄 어법 문제예요. 문장의 진짜 동사 자리에 분사가 들어간 곳을 찾아요.",
+ "flow": [
+  [
+   "개념",
+   "목표 진행에 도움이 되는 정보라도 불쾌하면 일부러 피하는 경향을 '타조 효과'라고 해요."
+  ],
+  [
+   "예시",
+   "혈당 확인을 피하는 당뇨 환자, 에너지 사용량이나 잔액 확인을 피하는 사람들, 시장 하락 뒤 계좌를 안 보는 투자자가 있어요."
+  ],
+  [
+   "이유",
+   "모르는 건 기분을 해치지 않는다고 여겨서예요. 하지만 모르면 건강이나 재산을 해칠 수 있어요."
+  ]
+ ],
+ "evidence": {
+  "where": "③이 있는 문장",
+  "quote": "many people strategically ③failing to monitor …",
+  "why": "and 뒤 many people의 동사가 필요해요. failing은 동사가 아니라서 fail로 고쳐요 (앞 avoid와 병렬)."
+ },
+ "traps": [
+  [
+   "①",
+   "monitor — help + 목적어 + 동사원형이라 맞아요."
+  ],
+  [
+   "②",
+   "to hide — '숨기 위해' 목적의 to부정사라 맞아요."
+  ],
+  [
+   "③",
+   "failing → fail. 정답."
+  ],
+  [
+   "④",
+   "that — documented의 목적어인 명사절 접속사라 맞아요."
+  ],
+  [
+   "⑤",
+   "what — '~하는 것', can't hurt의 주어 역할이라 맞아요."
+  ]
+ ],
+ "point": {
+  "title": "독립분사구문 (의미상 주어 + 분사)",
+  "quote": "— our threat being emotional",
+  "body": "분사 being 앞에 의미상 주어 our threat가 있어요 (= and our threat is emotional). 주절 주어와 다를 때 써요."
+ },
+ "vocab": [
+  [
+   "tendency",
+   "경향"
+  ],
+  [
+   "intentionally",
+   "일부러"
+  ],
+  [
+   "monitor",
+   "확인하다, 점검하다"
+  ],
+  [
+   "ostrich",
+   "타조"
+  ],
+  [
+   "threat",
+   "위협"
+  ],
+  [
+   "diabetic",
+   "당뇨 환자"
+  ],
+  [
+   "strategically",
+   "전략적으로"
+  ],
+  [
+   "consumption",
+   "소비"
+  ],
+  [
+   "balance",
+   "잔액"
+  ],
+  [
+   "decline",
+   "하락"
+  ]
+ ],
+ "one": {
+  "en": "We tend to avoid unpleasant information to protect our mood, even when it could help us.",
+  "ko": "우리는 도움이 될 때조차 기분을 지키려고 불쾌한 정보를 피하는 경향이 있다."
+ },
+ "checks": [
+  {
+   "q": "'타조 효과'라는 이름은 어떤 잘못된 믿음에서 왔나요?",
+   "a": "타조가 위험을 피하려고 모래에 머리를 묻는다는 믿음"
+  },
+  {
+   "q": "투자자들이 계좌 확인을 피하는 때는?",
+   "a": "시장이 하락한 뒤"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 8강 2번 정답은?",
+   "③번이에요. failing → fail."
+  ],
+  [
+   "수능특강 라이트 8강 2번의 핵심 내용은?",
+   "불쾌한 정보를 일부러 피하는 '타조 효과'."
+  ]
+ ]
+}

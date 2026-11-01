@@ -1,0 +1,127 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 7,
+ "n": 3,
+ "label": "3번",
+ "type": "내용 불일치",
+ "answer": "②",
+ "topic": "컴퓨터 과학의 기초를 놓은 수학자 Alan Turing의 업적",
+ "keywords": [
+  "수능특강 라이트 7강 3번",
+  "수능특강 라이트 7강 3번 정답",
+  "수능특강 라이트 7강 3번 해설",
+  "수능특강 라이트 7강"
+ ],
+ "lead": "7강 3번은 내용 불일치 문제예요. 독일의 암호를 '만들었는지' '풀었는지'가 함정이에요.",
+ "flow": [
+  [
+   "초기",
+   "컴퓨터의 수학적 모델인 튜링 기계를 발명해 처치-튜링 논제와 계산 가능성 개념에 기여해요."
+  ],
+  [
+   "전쟁",
+   "2차 세계 대전 중 독일 에니그마 암호를 푸는 데 도움을 줘 연합국 승리에 중요한 역할을 해요."
+  ],
+  [
+   "이후",
+   "초기 컴퓨터를 연구하고 인공지능 테스트인 튜링 테스트를 만들었으며, 말년엔 생물학(형태 형성)에도 공헌해요."
+  ]
+ ],
+ "evidence": {
+  "where": "둘째 단락 첫 문장",
+  "quote": "he helped break the secret German code",
+  "why": "break the code = 암호를 풀다. 독일이 암호를 '만드는' 걸 도운 게 아니라 '푸는' 쪽이었어요."
+ },
+ "traps": [
+  [
+   "①",
+   "컴퓨터의 수학적 모델 발명 — 일치."
+  ],
+  [
+   "②",
+   "독일의 암호 제작을 도움 — 불일치. 독일 암호를 풀었어요."
+  ],
+  [
+   "③",
+   "연합국 승리에 중요한 역할 — 일치."
+  ],
+  [
+   "④",
+   "튜링 테스트 개발 — 일치."
+  ],
+  [
+   "⑤",
+   "말년에 생물학 공헌 — 일치."
+  ]
+ ],
+ "point": {
+  "title": "of + 추상명사 = 형용사",
+  "quote": "This work was of considerable importance",
+  "body": "of importance = important. of considerable importance = considerably important (상당히 중요한)."
+ },
+ "vocab": [
+  [
+   "brilliant",
+   "뛰어난"
+  ],
+  [
+   "elegant",
+   "정교한, 우아한"
+  ],
+  [
+   "thesis",
+   "논제"
+  ],
+  [
+   "computable",
+   "계산 가능한"
+  ],
+  [
+   "break a code",
+   "암호를 풀다"
+  ],
+  [
+   "considerable",
+   "상당한"
+  ],
+  [
+   "the Allies",
+   "연합국"
+  ],
+  [
+   "deceive",
+   "속이다"
+  ],
+  [
+   "morphogenesis",
+   "형태 형성"
+  ]
+ ],
+ "one": {
+  "en": "Alan Turing laid the foundation for computer science and helped the Allies by breaking the Enigma code.",
+  "ko": "Alan Turing은 컴퓨터 과학의 기초를 놓았고, 에니그마 암호를 풀어 연합국을 도왔다."
+ },
+ "checks": [
+  {
+   "q": "튜링 테스트는 무엇을 기준으로 하나요?",
+   "a": "프로그램이 사람인 척해서 사람을 속일 수 있는지"
+  },
+  {
+   "q": "of great value를 형용사 한 단어로 바꾸면?",
+   "a": "very valuable (valuable)"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 7강 3번 정답은?",
+   "②번이에요. 독일의 암호 제작을 도움 — 불일치. 독일 암호를 풀었어요."
+  ],
+  [
+   "수능특강 라이트 7강 3번의 핵심 내용은?",
+   "컴퓨터 과학의 기초를 놓은 수학자 Alan Turing의 업적."
+  ]
+ ]
+}

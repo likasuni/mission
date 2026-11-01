@@ -1,0 +1,123 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 7,
+ "n": 2,
+ "label": "2번",
+ "type": "내용 불일치",
+ "answer": "③",
+ "topic": "가난을 딛고 '블루스의 여제'가 된 Bessie Smith의 생애",
+ "keywords": [
+  "수능특강 라이트 7강 2번",
+  "수능특강 라이트 7강 2번 정답",
+  "수능특강 라이트 7강 2번 해설",
+  "수능특강 라이트 7강"
+ ],
+ "lead": "7강 2번은 내용 불일치 문제예요. 첫 음반이 '성공'했는지 '실패'했는지가 함정이에요.",
+ "flow": [
+  [
+   "어린 시절",
+   "1894년 테네시주에서 태어나, 아홉 살 무렵까지 부모를 모두 잃고 큰언니 손에 자라 교육을 받지 못했어요."
+  ],
+  [
+   "데뷔",
+   "1913년쯤 블루스 가수 Ma Rainey와 순회공연을 했고, 1923년 첫 녹음 Down Hearted Blues가 200만 장 넘게 팔리며 대성공해요."
+  ],
+  [
+   "업적",
+   "Louis Armstrong 같은 음악가와 약 160곡을 녹음했고, 1937년 세상을 떠났지만 지금도 '블루스의 여제'로 기억돼요."
+  ]
+ ],
+ "evidence": {
+  "where": "셋째 단락 첫 문장",
+  "quote": "which became an enormous success, selling more than two million copies",
+  "why": "첫 음반은 엄청난 성공이었어요. 실패했다는 ③이 불일치예요."
+ },
+ "traps": [
+  [
+   "①",
+   "10세 전에 부모를 여읨 — 일치 (8~9세)."
+  ],
+  [
+   "②",
+   "1913년경 Ma Rainey와 순회공연 — 일치."
+  ],
+  [
+   "③",
+   "첫 음반은 실패 — 불일치. 200만 장 넘게 팔렸어요."
+  ],
+  [
+   "④",
+   "Louis Armstrong과 녹음 — 일치."
+  ],
+  [
+   "⑤",
+   "지금도 '블루스의 여제' — 일치."
+  ]
+ ],
+ "point": {
+  "title": "계속적 용법 , which + 분사구문",
+  "quote": "Down Hearted Blues, which became an enormous success, selling more than two million copies",
+  "body": ", which = and it, selling ~ = and it sold ~. 앞 명사에 정보를 덧붙이는 흔한 구조예요."
+ },
+ "vocab": [
+  [
+   "unnoticed",
+   "주목받지 못한"
+  ],
+  [
+   "rear",
+   "기르다"
+  ],
+  [
+   "as a consequence",
+   "그 결과"
+  ],
+  [
+   "tour",
+   "순회공연하다"
+  ],
+  [
+   "big break",
+   "큰 기회, 출세의 계기"
+  ],
+  [
+   "enormous",
+   "엄청난"
+  ],
+  [
+   "accompany",
+   "반주하다, 동행하다"
+  ],
+  [
+   "empress",
+   "여제"
+  ]
+ ],
+ "one": {
+  "en": "Despite a poor childhood, Bessie Smith became the \"Empress of the Blues.\"",
+  "ko": "가난한 어린 시절에도 불구하고 Bessie Smith는 '블루스의 여제'가 되었다."
+ },
+ "checks": [
+  {
+   "q": "Bessie를 키운 사람은?",
+   "a": "큰언니 Viola"
+  },
+  {
+   "q": "Bessie가 녹음한 곡은 약 몇 곡?",
+   "a": "약 160곡"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 7강 2번 정답은?",
+   "③번이에요. 첫 음반은 실패 — 불일치. 200만 장 넘게 팔렸어요."
+  ],
+  [
+   "수능특강 라이트 7강 2번의 핵심 내용은?",
+   "가난을 딛고 '블루스의 여제'가 된 Bessie Smith의 생애."
+  ]
+ ]
+}

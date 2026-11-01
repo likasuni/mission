@@ -1,0 +1,123 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 1,
+ "n": 4,
+ "label": "4번",
+ "type": "목적",
+ "answer": "⑤",
+ "topic": "온라인 환경 강좌를 더 깊이 이해하도록 책과 논문을 참고 자료로 추천한다",
+ "keywords": [
+  "수능특강 라이트 1강 4번",
+  "수능특강 라이트 1강 4번 정답",
+  "수능특강 라이트 1강 4번 해설",
+  "수능특강 라이트 1강"
+ ],
+ "lead": "1강 4번은 교수가 수강생에게 보낸 답장이에요. 추가 자료를 찾는 학생에게 책 두 권과 논문 한 편을 권해요.",
+ "flow": [
+  [
+   "격려",
+   "지속 가능성 온라인 강좌를 흥미롭게 듣고 추가 자료를 찾는 학생을 칭찬해요."
+  ],
+  [
+   "추천",
+   "Silent Spring, Cradle to Cradle 두 권과 Planetary Boundaries 논문을 각각 이유와 함께 추천해요."
+  ],
+  [
+   "마무리",
+   "질문이나 추천이 더 필요하면 언제든 연락하라고 해요."
+  ]
+ ],
+ "evidence": {
+  "where": "둘째~넷째 문장 (I suggest reading …)",
+  "quote": "I suggest reading Silent Spring",
+  "why": "suggest reading, Another excellent choice, Also, check out 처럼 추천 표현이 이어져요. 강좌 이해를 돕는 참고 자료 추천이 목적이에요."
+ },
+ "traps": [
+  [
+   "①",
+   "강좌 신청 방법 — 이미 듣고 있는 학생이에요."
+  ],
+  [
+   "②",
+   "환경 정책 제안 — 책이 정책에 영향을 줬다는 설명만 나와요."
+  ],
+  [
+   "③",
+   "학습 자료 요청 — 요청하는 쪽이 아니라 추천하는 쪽이에요."
+  ],
+  [
+   "④",
+   "신간 도서 소개 — 신간이 아니라 참고 자료예요."
+  ],
+  [
+   "⑤",
+   "강좌 이해를 도울 참고 자료 추천 — 정답."
+  ]
+ ],
+ "point": {
+  "title": "suggest -ing",
+  "quote": "I suggest reading Silent Spring",
+  "body": "suggest 뒤에는 to부정사가 아니라 동명사가 와요. 원장님 노트에도 to read는 틀린 표현으로 표시돼 있어요."
+ },
+ "vocab": [
+  [
+   "sustainability",
+   "지속 가능성"
+  ],
+  [
+   "engaging",
+   "흥미로운"
+  ],
+  [
+   "additional",
+   "추가의"
+  ],
+  [
+   "comprehensive",
+   "포괄적인"
+  ],
+  [
+   "overview",
+   "개관"
+  ],
+  [
+   "significantly",
+   "상당히"
+  ],
+  [
+   "innovative",
+   "혁신적인"
+  ],
+  [
+   "perspective",
+   "관점"
+  ]
+ ],
+ "one": {
+  "en": "The professor recommends books and an article to help the student further understand the course on environmental sustainability.",
+  "ko": "교수는 학생이 환경 지속 가능성 강좌를 더 깊이 이해하도록 책과 논문을 추천한다."
+ },
+ "checks": [
+  {
+   "q": "O/X: 교수는 학생에게 강좌 신청 방법을 알려 준다.",
+   "a": "X — 이미 듣고 있는 학생에게 참고 자료를 추천해요."
+  },
+  {
+   "q": "suggest 뒤 동사 형태: I suggest ___ (read) this book.",
+   "a": "reading"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 1강 4번 정답은?",
+   "⑤번이에요. 강좌 이해를 도울 참고 자료 추천 —"
+  ],
+  [
+   "수능특강 라이트 1강 4번의 핵심 내용은?",
+   "온라인 환경 강좌를 더 깊이 이해하도록 책과 논문을 참고 자료로 추천한다."
+  ]
+ ]
+}

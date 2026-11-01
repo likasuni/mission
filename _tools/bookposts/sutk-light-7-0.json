@@ -1,0 +1,126 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 7,
+ "n": 0,
+ "label": "Gateway",
+ "type": "내용 불일치",
+ "answer": "②",
+ "topic": "과학 교육 분야의 선구자 Mary Budd Rowe의 생애",
+ "keywords": [
+  "수능특강 라이트 7강 Gateway",
+  "수능특강 라이트 7강 Gateway 정답",
+  "수능특강 라이트 7강 Gateway 해설",
+  "수능특강 라이트 7강",
+  "2026학년도 6월 모평 26번",
+  "내용 일치"
+ ],
+ "lead": "7강 Gateway는 2026학년도 6월 모의평가 26번 내용 불일치 문제예요. 연도와 학위가 여러 개 나와서 짝을 정확히 맞춰야 해요.",
+ "flow": [
+  [
+   "어린 시절",
+   "중학생 때 아인슈타인을 만나 과학을 공부하기로 마음먹어요."
+  ],
+  [
+   "학위와 연구",
+   "1954년 UC 버클리 동물학 석사, 1964년 스탠퍼드 과학 교육 박사. 교사의 '기다리는 시간'을 늘리면 학습이 나아진다는 걸 밝혀요."
+  ],
+  [
+   "경력",
+   "Harlem 과학 교육 프로그램 감독, 전미 과학 교사 협회장, 1990년 책 출간. 1996년 세상을 떠나며 과학 교육의 선도적 인물로 기억돼요."
+  ]
+ ],
+ "evidence": {
+  "where": "셋째·넷째 문장",
+  "quote": "her doctorate degree in science education from Stanford University in 1964",
+  "why": "동물학(zoology)은 1954년 석사, 1964년 박사는 과학 교육이에요. 학위와 전공을 바꿔 놓은 함정이에요."
+ },
+ "traps": [
+  [
+   "①",
+   "아인슈타인을 만났을 때 중학생 — 일치."
+  ],
+  [
+   "②",
+   "1964년 동물학 박사 — 불일치. 1964년은 과학 교육 박사, 동물학은 석사예요."
+  ],
+  [
+   "③",
+   "Harlem 과학 교육 프로그램 감독 — 일치."
+  ],
+  [
+   "④",
+   "1990년 책 출간 — 일치."
+  ],
+  [
+   "⑤",
+   "과학 교육의 선도적 인물로 기억 — 일치."
+  ]
+ ],
+ "point": {
+  "title": "be inspired by A to V",
+  "quote": "was inspired by him to study science",
+  "body": "'A에게 영감을 받아 ~하게 되다'. 능동태 He inspired her to study science.의 수동태예요."
+ },
+ "vocab": [
+  [
+   "achievement",
+   "업적"
+  ],
+  [
+   "inspire",
+   "영감을 주다"
+  ],
+  [
+   "master’s degree",
+   "석사 학위"
+  ],
+  [
+   "zoology",
+   "동물학"
+  ],
+  [
+   "doctorate",
+   "박사 학위"
+  ],
+  [
+   "response",
+   "응답"
+  ],
+  [
+   "direct",
+   "감독하다"
+  ],
+  [
+   "leading figure",
+   "선도적 인물"
+  ]
+ ],
+ "one": {
+  "en": "Mary Budd Rowe, inspired by Einstein, became a leading figure in science education.",
+  "ko": "아인슈타인에게 영감을 받은 Mary Budd Rowe는 과학 교육의 선도적 인물이 되었다."
+ },
+ "checks": [
+  {
+   "q": "Rowe가 연구에서 밝힌 학습 향상 방법은?",
+   "a": "학생 대답을 기다리는 교사의 평균 시간(wait time)을 늘리기"
+  },
+  {
+   "q": "1954년에 받은 학위와 전공은?",
+   "a": "동물학 석사"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 7강 Gateway 정답은?",
+   "②번이에요. 1964년 동물학 박사 — 불일치. 1964년은 과학 교육 박사, 동물학은 석사예요."
+  ],
+  [
+   "수능특강 라이트 7강 Gateway의 핵심 내용은?",
+   "과학 교육 분야의 선구자 Mary Budd Rowe의 생애."
+  ]
+ ],
+ "src": "2026학년도 6월 모의평가 26번"
+}

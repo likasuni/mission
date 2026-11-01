@@ -1,0 +1,122 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 1,
+ "n": 0,
+ "label": "Gateway",
+ "type": "목적",
+ "answer": "①",
+ "topic": "역사 전시회를 보고 금광 시절 경험을 살려 자원봉사 안내자 자리가 있는지 묻는다",
+ "keywords": [
+  "수능특강 라이트 1강 Gateway",
+  "수능특강 라이트 1강 Gateway 정답",
+  "수능특강 라이트 1강 Gateway 해설",
+  "수능특강 라이트 1강",
+  "2026학년도 6월 모평 18번",
+  "목적 문제"
+ ],
+ "lead": "1강 Gateway는 2026학년도 6월 모의평가 18번 목적 문제예요. 전시회 감상으로 시작하지만, 글을 쓴 진짜 이유는 뒤쪽 부탁에 있어요.",
+ "flow": [
+  [
+   "계기",
+   "Qukkon 골드러시 전시회를 보고, 그곳에서 광산 일을 했던 자신의 과거가 떠올랐어요."
+  ],
+  [
+   "요청",
+   "그래서 이 전시회에 자원봉사 안내자 자리가 있는지 궁금하다고 말해요."
+  ],
+  [
+   "강조",
+   "혹독한 추위 속에서 일한 경험을 나눌 수 있다며, 자리가 있는지 알려 달라고 다시 부탁해요."
+  ]
+ ],
+ "evidence": {
+  "where": "Because of this 뒤 문장, 마지막 Again 문장",
+  "quote": "I'm wondering if there are volunteer guide positions",
+  "why": "목적 글은 Because of this, Again 같은 말 뒤에 진짜 용건이 나와요. 두 번이나 자원봉사 안내자 자리를 묻고 있어요."
+ },
+ "traps": [
+  [
+   "①",
+   "자원봉사 안내자 자리 문의 — 정답."
+  ],
+  [
+   "②",
+   "박물관 경력직 지원 — 유급 근무 지원이 아니라 자원봉사 문의예요."
+  ],
+  [
+   "③",
+   "예술품 기부 부탁 — 기부 이야기는 없어요."
+  ],
+  [
+   "④",
+   "채굴 도구 설명 요청 — 도구는 전시물로만 나와요."
+  ],
+  [
+   "⑤",
+   "전시회 주제 소개 — 전시회는 글을 쓰게 된 계기일 뿐이에요."
+  ]
+ ],
+ "point": {
+  "title": "I wonder if ~ (~인지 궁금하다)",
+  "quote": "I'm wondering if there are volunteer guide positions",
+  "body": "if는 여기서 '~인지'라는 뜻의 명사절 접속사예요. I'm wondering if ~ / I would be thankful if you could ~ 는 정중하게 묻고 부탁하는 편지 표현이니 함께 외워 두세요."
+ },
+ "vocab": [
+  [
+   "exhibition",
+   "전시회"
+  ],
+  [
+   "come to life",
+   "생생하게 살아나다"
+  ],
+  [
+   "remind A of B",
+   "A에게 B를 떠올리게 하다"
+  ],
+  [
+   "mining industry",
+   "광산업"
+  ],
+  [
+   "volunteer",
+   "자원봉사(의)"
+  ],
+  [
+   "position",
+   "자리, 직책"
+  ],
+  [
+   "availability",
+   "(이용·채용) 가능성"
+  ]
+ ],
+ "one": {
+  "en": "The author visited a history foundation's exhibition about the Qukkon Gold Rush.",
+  "ko": "글쓴이는 Qukkon 골드러시에 관한 역사 재단의 전시회를 방문했다."
+ },
+ "checks": [
+  {
+   "q": "O/X: 글쓴이는 전시회에 예술품을 기부하고 싶어 한다.",
+   "a": "X — 자원봉사 안내자 자리가 있는지 물어요."
+  },
+  {
+   "q": "글쓴이가 안내자로서 나눌 수 있다고 한 경험은? (우리말)",
+   "a": "Qukkon의 혹독한 추위 속에서 일한 경험"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 1강 Gateway 정답은?",
+   "①번이에요. 자원봉사 안내자 자리 문의 —"
+  ],
+  [
+   "수능특강 라이트 1강 Gateway의 핵심 내용은?",
+   "역사 전시회를 보고 금광 시절 경험을 살려 자원봉사 안내자 자리가 있는지 묻는다."
+  ]
+ ],
+ "src": "2026학년도 6월 모의평가 18번"
+}

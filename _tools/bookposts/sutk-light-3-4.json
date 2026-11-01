@@ -1,0 +1,123 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 3,
+ "n": 4,
+ "label": "4번",
+ "type": "요지",
+ "answer": "⑤",
+ "topic": "같은 일을 하는 사람들의 공동체와 경험을 나누면 자기 일의 큰 그림을 볼 수 있다",
+ "keywords": [
+  "수능특강 라이트 3강 4번",
+  "수능특강 라이트 3강 4번 정답",
+  "수능특강 라이트 3강 4번 해설",
+  "수능특강 라이트 3강"
+ ],
+ "lead": "3강 4번은 요지 문제예요. However 뒤에 '간단한 해결책'이 나오고, 그 해결책이 요지예요.",
+ "flow": [
+  [
+   "배경",
+   "일에 관점을 주는 목적의식은 번아웃을 막아 줘요. 종교·영적 믿음과 낮은 번아웃이 관련 있다는 연구도 있어요."
+  ],
+  [
+   "해결책",
+   "However, 간단한 방법으로도 큰 그림에 집중하게 할 수 있어요. 바로 같은 경험을 하는 더 넓은 공동체와 연결되는 거예요."
+  ],
+  [
+   "이유",
+   "남이 경험을 나누면 그 행동이 얼마나 중요했는지 쉽게 보여요. 한 사무실에 모으는 게 아니라 공통 경험의 이야기를 나누는 게 중요해요."
+  ]
+ ],
+ "evidence": {
+  "where": "One such approach 문장",
+  "quote": "workers are connected to a wider community of people who share their experience",
+  "why": "Solution. 뒤 첫 문장이 해결책이에요. 마지막 문장 sharing stories about the common experience가 다시 확인해 줘요."
+ },
+ "traps": [
+  [
+   "①",
+   "원활한 의사소통과 스트레스 — 소통 일반이 아니라 경험 공유 공동체예요."
+  ],
+  [
+   "②",
+   "자율·유연한 환경 — 언급 없어요."
+  ],
+  [
+   "③",
+   "명확한 목표 설정 — 언급 없어요."
+  ],
+  [
+   "④",
+   "창의적·도전적 업무 — 언급 없어요."
+  ],
+  [
+   "⑤",
+   "경험을 나누는 공동체와 연결 → 큰 그림 — 정답."
+  ]
+ ],
+ "point": {
+  "title": "강조의 do",
+  "quote": "in jobs that do inherently have a meaningful purpose",
+  "body": "do have = 정말 가지고 있다. 동사 앞 do/does/did는 강조예요."
+ },
+ "vocab": [
+  [
+   "perspective",
+   "관점, 균형 잡힌 시각"
+  ],
+  [
+   "burnout",
+   "번아웃"
+  ],
+  [
+   "correlation",
+   "상관관계"
+  ],
+  [
+   "inherently",
+   "본질적으로"
+  ],
+  [
+   "induce",
+   "유도하다"
+  ],
+  [
+   "intervention",
+   "개입, 조치"
+  ],
+  [
+   "frame of reference",
+   "판단 기준"
+  ],
+  [
+   "stuff",
+   "쑤셔 넣다"
+  ]
+ ],
+ "one": {
+  "en": "Being connected to a community that shares the same work experience helps people see the bigger picture of their work.",
+  "ko": "같은 업무 경험을 나누는 공동체와 연결되면 자기 일의 큰 그림을 보는 데 도움이 된다."
+ },
+ "checks": [
+  {
+   "q": "O/X: 필자는 모두를 한 사무실에 모아 일하게 하라고 한다.",
+   "a": "X — 중요한 건 공통 경험의 이야기를 나누는 거예요."
+  },
+  {
+   "q": "강조의 do: She ___ love music. (정말 좋아한다, 현재)",
+   "a": "does"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 3강 4번 정답은?",
+   "⑤번이에요. 경험을 나누는 공동체와 연결 → 큰 그림 —"
+  ],
+  [
+   "수능특강 라이트 3강 4번의 핵심 내용은?",
+   "같은 일을 하는 사람들의 공동체와 경험을 나누면 자기 일의 큰 그림을 볼 수 있다."
+  ]
+ ]
+}

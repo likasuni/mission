@@ -1,0 +1,119 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "date": "2026-11-01",
+ "unit": 2,
+ "n": 1,
+ "label": "1번",
+ "type": "심경",
+ "answer": "③",
+ "topic": "호수에 뛰어들라는 재촉 앞에서 Ryanna는 두려움에 얼어붙는다",
+ "keywords": [
+  "수능특강 라이트 2강 1번",
+  "수능특강 라이트 2강 1번 정답",
+  "수능특강 라이트 2강 1번 해설",
+  "수능특강 라이트 2강"
+ ],
+ "lead": "2강 1번은 한 가지 심경을 고르는 문제예요. 몸의 반응(가슴이 조이고 손이 떨림)이 감정을 말해 줘요.",
+ "flow": [
+  [
+   "상황",
+   "친구 Diya가 호수로 뛰어들자고 외치지만 Ryanna는 가만히 서 있어요."
+  ],
+  [
+   "몸의 반응",
+   "가슴이 조이고 손이 떨리며, 이유 모를 두려움(dread)에 속이 뒤틀려요."
+  ],
+  [
+   "고조",
+   "어른들도 지켜보기만 하고, 모두의 시선에 더 괴로워져요. 도망치고 싶지만 두려움에 얼어붙은 듯해요."
+  ]
+ ],
+ "evidence": {
+  "where": "중간과 마지막 문장",
+  "quote": "like the fear had frozen her",
+  "why": "dread, trembling, heart beat faster, fear 가 모두 '겁에 질린' 상태를 가리켜요."
+ },
+ "traps": [
+  [
+   "①",
+   "화난 — 화를 내는 표현은 없어요."
+  ],
+  [
+   "②",
+   "흥분한 — 신나는 게 아니라 무서워해요."
+  ],
+  [
+   "③",
+   "겁에 질린 — 정답."
+  ],
+  [
+   "④",
+   "질투하는 — Diya를 부러워하는 내용은 없어요."
+  ],
+  [
+   "⑤",
+   "실망한 — 기대가 꺾인 상황이 아니에요."
+  ]
+ ],
+ "point": {
+  "title": "see + 목적어 + (동사원형) 생략",
+  "quote": "She felt like crying, but she didn't want anyone to see.",
+  "body": "see 뒤에 her crying이 생략됐어요. 바로 뒤 Especially not Diya 는 (she did) not (want) Diya (to see)가 줄어든 말이에요."
+ },
+ "vocab": [
+  [
+   "stand still",
+   "가만히 서 있다"
+  ],
+  [
+   "tremble",
+   "떨다"
+  ],
+  [
+   "dread",
+   "두려움"
+  ],
+  [
+   "twist",
+   "뒤틀리다"
+  ],
+  [
+   "dock",
+   "부두"
+  ],
+  [
+   "trapped",
+   "갇힌"
+  ],
+  [
+   "frozen",
+   "얼어붙은"
+  ]
+ ],
+ "one": {
+  "en": "While Diya eagerly invited her to the lake, Ryanna stood paralyzed by dread.",
+  "ko": "Diya가 열심히 호수로 부르는 동안, Ryanna는 두려움에 얼어붙어 서 있었다."
+ },
+ "checks": [
+  {
+   "q": "Ryanna의 두려움을 보여 주는 몸의 반응 두 가지는?",
+   "a": "가슴이 조임, 손이 떨림 (또는 심장이 빨리 뜀)"
+  },
+  {
+   "q": "O/X: Ryanna는 수영복을 이미 입고 있었다.",
+   "a": "X — 수영복은 아직 가방 안에 있었어요."
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 2강 1번 정답은?",
+   "③번이에요. 겁에 질린 —"
+  ],
+  [
+   "수능특강 라이트 2강 1번의 핵심 내용은?",
+   "호수에 뛰어들라는 재촉 앞에서 Ryanna는 두려움에 얼어붙는다."
+  ]
+ ]
+}
