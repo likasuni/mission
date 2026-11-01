@@ -199,7 +199,10 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-NAV = [('/', '홈'), ('/english/', '영어 모의고사'), ('/posts/', '전자책 보기'), ('/books/', '부교재'), ('/naesin/', '코코스학원'), ('/exams/', '전과목 기출'), ('/notes/', '자료 요청')]  # 전자책 보기 = 분석노트 전자책 + 문항별 해설(/posts/), 코코스학원 = 학교별 내신 분석 + 학원 소식
+# 메뉴 (2026-11-01 원장님 확정): 홈 · 모의고사▾ · 부교재 · 자료 요청 · 코코스학원
+# '모의고사'는 누르면 아래 줄(nav-sub)이 펼쳐짐 — 묶음 페이지(PDF 자료받기·전자책·기출시험지)에선 처음부터 펼쳐져 탭 줄 역할
+NAV = [('/', '홈'), ('moe', '모의고사'), ('/books/', '부교재'), ('/notes/', '자료 요청'), ('/naesin/', '코코스학원')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
+MOE_NAV = [('/english/', '영어 PDF 자료받기'), ('/posts/', '📘 분석노트 전자책'), ('/exams/', '전과목 기출시험지')]  # /posts/ = 전자책 + 문항별 해설 (옛 '수업자료')
 
 def ad():
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
@@ -246,7 +249,12 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (u, n) in enumerate(crumbs)]}] if crumbs else [])
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
     act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else ('/english/' if active == '/variants/' else ('/naesin/' if active == '/news/' else active))  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
-    nav = ''.join(f'<a href="{u}" class="{"on " if u == act else ""}">{n}</a>' for u, n in NAV)
+    g_on = act in [u for u, _ in MOE_NAV]
+    nav = ''.join((f'<button type="button" class="nav-g{" on" if g_on else ""}" aria-expanded="{"true" if g_on else "false"}" '
+                   f'onclick="var s=document.getElementById(\'nav-sub\');s.hidden=!s.hidden;this.setAttribute(\'aria-expanded\',!s.hidden)">{n}<i class="cr">▾</i></button>')
+                  if u == 'moe' else f'<a href="{u}" class="{"on " if u == act else ""}">{n}</a>' for u, n in NAV)
+    nav_sub = (f'<div class="nav-sub" id="nav-sub"{"" if g_on else " hidden"}><div class="nav-sub-in">'
+               + ''.join(f'<a href="{u}"{" class=on" if u == act else ""}>{n}</a>' for u, n in MOE_NAV) + '</div></div>')
     cm = ''
     if comments:
         cm = f'<section class="card" id="comments" data-page-key="{e(comments[0])}" data-page-title="{e(comments[1])}"><h2>댓글</h2><p class="muted">댓글 불러오는 중...</p></section>'
@@ -277,7 +285,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 </head>
 <body>
 <header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><button class="push-btn push-ic" type="button" title="새 자료 알림 받기" aria-label="새 자료 알림 받기">🔔</button><a class="hdr-cta" href="/notes/">자료 요청</a><div class="auth" id="auth"><button class="btn btn-gold btn-sm" onclick="lazyLogin()">로그인</button></div></div></div></header>
-<nav class="nav"><div class="nav-in">{nav}</div></nav>
+<nav class="nav"><div class="nav-in">{nav}</div>{nav_sub}</nav>
 <main class="wrap">
 {crumb_html}
 {body}
@@ -583,10 +591,10 @@ for p in POSTS:
             f'<!DOCTYPE html><meta charset="UTF-8"><title>{e(nm)} 해설</title><link rel="canonical" href="{SITE}{url}">'
             f'<meta http-equiv="refresh" content="0; url={url}"><a href="{url}">{e(nm)} 해설로 이동</a>')
 
-# 전자책 보기 (옛 이름 '수업자료', 회차별 목록) — 전자책이 있는 문항은 📘 표시
+# 분석노트 전자책 (메뉴 모의고사 ▸ 분석노트 전자책, 옛 이름 '수업자료'·'전자책 보기', 회차별 목록) — 전자책이 있는 문항은 📘 표시
 def _exam_order(k): return (0 if k[0] == 'sn' else 1, -k[2], -k[3], k[1])
 EB_URLS = set(EBOOK.values())
-pb = '''<h1 class="page-h1">전자책 보기 · 영어 분석노트 전자책과 문항별 해설</h1>
+pb = '''<h1 class="page-h1">분석노트 전자책 · 영어 모의고사 문항별 해설</h1>
 <p class="lead">리카수니 원장이 모의고사반 수업을 준비하며 만든 분석노트를 다운로드 없이 바로 보는 전자책이에요. <b class="eb-b">📘 전자책</b> 표시가 있는 문항은 끊어읽기·해석·어휘 노트를 바로 볼 수 있고, 모든 문항에 정답 근거·오답 이유·핵심 구문 해설이 있어요.</p>'''
 # 연도 탭 → 그 연도의 회차 버튼 → 고른 회차 목록 하나만 보임 (JS 없으면 전부 보임). 수능은 '수능' 탭 하나로 묶음.
 def _p_year(k):  # 시행 연도 (평가원 6·9월 모평은 학년도 - 1)
@@ -624,7 +632,7 @@ else:
     pb += '<div class="card"><p class="muted">곧 첫 전자책이 올라와요.</p></div>'
 page('/posts/', '영어 모의고사 분석노트 전자책 · 문항별 해설 모음 | 리카수니 자료실',
      '고1·고2·고3 모의고사와 수능 영어 분석노트를 다운로드 없이 보는 전자책과 문항별 해설. 끊어읽기·해석·어휘, 정답 근거와 오답 이유. 리카수니 자료실', pb,
-     [('/', '홈'), ('/posts/', '전자책 보기')], '/posts/', comments=('posts', '전자책 보기'))
+     [('/', '홈'), ('/posts/', '분석노트 전자책')], '/posts/', comments=('posts', '분석노트 전자책'))
 
 # ---------- 학교별 내신 분석 (코코스 학원생 전용) ----------
 # 공개 페이지에는 학교 목록과 시험 제목만. 분석 내용은 공개 저장소에 두지 않고 학원생 인증 후 Supabase 에서 불러올 예정.

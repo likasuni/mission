@@ -186,6 +186,16 @@ footer a { color: var(--muted); margin: 0 6px; }
 .nav-in { max-width: 1040px; margin: 0 auto; padding: 0 16px; display: flex; gap: 4px; overflow-x: auto; }
 .nav-in a { padding: 11px 12px; font-weight: 700; font-size: .92rem; color: var(--navy); text-decoration: none; white-space: nowrap; border-bottom: 3px solid transparent; }
 .nav-in a.on, .nav-in a:hover { border-bottom-color: var(--gold); }
+.nav-in .nav-g { padding: 11px 12px; font: inherit; font-weight: 700; font-size: .92rem; color: var(--navy); background: none; border: 0; border-bottom: 3px solid transparent; white-space: nowrap; cursor: pointer; }
+.nav-in .nav-g.on, .nav-in .nav-g:hover { border-bottom-color: var(--gold); } .nav-g .cr { font-style: normal; font-size: .7em; margin-left: 3px; }
+.nav-sub { background: #f3f6fd; border-top: 1px solid var(--line); }
+.nav-sub-in { max-width: 1040px; margin: 0 auto; padding: 7px 16px; display: flex; gap: 6px; overflow-x: auto; }
+.nav-sub-in a { padding: 6px 12px; border-radius: 99px; background: #fff; border: 1px solid #d6def0; font-size: .85rem; font-weight: 700; color: var(--navy); text-decoration: none; white-space: nowrap; }
+.nav-sub-in a.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+@media (max-width: 480px) {
+  .nav-in { gap: 0; justify-content: space-between; padding: 0 8px; } .nav-in a, .nav-in .nav-g { padding: 11px 7px; font-size: .88rem; }
+  .nav-sub-in { gap: 4px; padding: 7px 8px; justify-content: space-between; } .nav-sub-in a { padding: 5px 8px; font-size: .78rem; }
+}
 
 .crumb { font-size: .82rem; color: var(--muted); margin: 0 0 10px; }
 .crumb a { color: var(--muted); text-decoration: none; }

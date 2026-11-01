@@ -1,6 +1,6 @@
-<!-- ================= 리카수니 블로그 상단 메뉴 v4 (2026-10-31 &#183; 요청자료&#183;공지&#183;질문 요청을 "자료 요청" 하나로) =================
+<!-- ================= 리카수니 블로그 상단 메뉴 v5 (2026-11-01 &#183; 자료실 메뉴와 같게: 모의고사 묶음) =================
      블로그는 "통로와 소통", 자료는 리카수니 자료실(data.likasuni.com)에 둡니다.
-     메뉴 5개: 영어 모의고사 / 부교재 / 전과목 기출 / 자료 요청 / 코코스학원
+     메뉴 4개: 모의고사(영어 PDF 자료받기&#183;분석노트 전자책&#183;전과목 기출시험지) / 부교재 / 자료 요청 / 코코스학원
      "자료 요청"은 자료실 요청 칸(data.likasuni.com/notes/)으로 연결됩니다 (모의고사&#183;부교재&#183;기타 자료 탭).
      기존 li 메뉴 전체를 이 코드로 교체하세요. <style>, <li>, <script> 를 모두 복사해야 합니다.
      자료 데이터는 더 이상 메뉴에 적지 않습니다. 자료를 올리면 자료실에 자동 반영됩니다.
@@ -18,14 +18,14 @@ li.cgm-item::before,li.cgm-item::after{content:none!important;display:none!impor
 .cgm-item .cgm-direct.hl{color:#b45309!important}
 .cgm-admin{display:block;width:20px;color:transparent!important}
 
-/* 영어 모의고사 펼침 카드 */
+/* 모의고사 펼침 카드 */
 .cgm-panel{box-sizing:border-box;position:fixed!important;top:var(--cgm-top,80px);left:50%;transform:translateX(-50%);width:min(980px,calc(100vw - 24px));max-width:100%;overflow:hidden;background:#fff;color:#162d43;z-index:999999;border:1px solid #d9e3ed;border-radius:0 0 18px 18px;box-shadow:0 22px 45px #132d4333;padding:22px;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;text-align:left;white-space:normal}
 .cgm-item details:not([open])>.cgm-panel{display:none!important}
 .cgm-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
 .cgm-head strong{font-size:20px}
 .cgm-head p{font-size:13.5px;color:#5a6e80;margin:6px 0 0}
 .cgm-close{flex:none;cursor:pointer;background:#edf3f7;color:#193349;border:0;border-radius:8px;padding:9px 13px;font-size:14px}
-.cgm-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cgm-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .cgm-grid a{box-sizing:border-box;display:flex!important;flex-direction:column;gap:6px;width:100%;max-width:100%;overflow:hidden;padding:16px!important;min-height:96px;border-radius:12px;color:#fff!important;text-decoration:none!important;line-height:1.4!important}
 .cgm-grid a b{font-size:18px}
 .cgm-grid a small{font-size:14px;opacity:.92}
@@ -37,7 +37,7 @@ li.cgm-item::before,li.cgm-item::after{content:none!important;display:none!impor
 @media(max-width:760px){
  .cgm-item summary,.cgm-item .cgm-direct{font-size:14px;padding:12px 7px!important}
  .cgm-panel{padding:16px}
- .cgm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .cgm-grid{grid-template-columns:1fr}
  .cgm-grid a{min-height:84px;padding:13px!important}
 }
 </style>
@@ -45,14 +45,13 @@ li.cgm-item::before,li.cgm-item::after{content:none!important;display:none!impor
 <!-- 보이지 않는 관리자 링크 -->
 <li class="cgm-item"><a class="cgm-admin" href="https://www.blogger.com/blog/layout/1410172824926610478" aria-hidden="true" tabindex="-1">&nbsp;</a></li>
 
-<!-- 1. 영어 모의고사 (펼침) -->
-<li class="cgm-item"><details id="cgm-en"><summary>영어 모의고사</summary><div class="cgm-panel">
-<div class="cgm-head"><div><strong>리카수니 영어 자료실</strong><p>회차별 분석노트&#183;변형문제&#183;단어를 자료실에서 무료로 받아 가세요</p></div><button type="button" class="cgm-close" aria-label="메뉴 닫기">닫기 &#215;</button></div>
+<!-- 1. 모의고사 (펼침) -->
+<li class="cgm-item"><details id="cgm-en"><summary>모의고사 &#9662;</summary><div class="cgm-panel">
+<div class="cgm-head"><div><strong>리카수니 모의고사 자료실</strong><p>PDF로 받거나, 다운로드 없이 전자책으로 바로 보세요</p></div><button type="button" class="cgm-close" aria-label="메뉴 닫기">닫기 &#215;</button></div>
 <div class="cgm-grid">
-<a class="c1" href="https://data.likasuni.com/english/"><b>문항별 분석노트</b><small>18~29&#183;41~45번 바로 보기<br />30~40번은 카톡 요청</small></a>
-<a class="c3" href="https://data.likasuni.com/variants/"><b>변형문제</b><small>문항별 PDF 전체 공개</small></a>
-<a class="c4" href="https://data.likasuni.com/english/"><b>단어 총정리</b><small>회차별 핵심 어휘</small></a>
-<a class="c2" href="https://data.likasuni.com/notes/"><b>자료 요청</b><small>분석노트&#183;단어장 카톡으로 받기</small></a>
+<a class="c1" href="https://data.likasuni.com/english/"><b>영어 PDF 자료받기</b><small>회차별 분석노트&#183;변형문제&#183;단어<br />기출 원본 PDF</small></a>
+<a class="c3" href="https://data.likasuni.com/posts/"><b>&#128216; 분석노트 전자책</b><small>다운로드 없이 바로 보기<br />문항별 해설</small></a>
+<a class="c4" href="https://data.likasuni.com/exams/"><b>전과목 기출시험지</b><small>국어&#183;수학&#183;영어 등<br />문제지&#183;정답 PDF</small></a>
 </div>
 <div class="cgm-sub">
 <a href="https://data.likasuni.com/moe/go1/">고1 모의고사</a>
@@ -62,9 +61,8 @@ li.cgm-item::before,li.cgm-item::after{content:none!important;display:none!impor
 </div>
 </div></details></li>
 
-<!-- 2~5. 바로가기 -->
+<!-- 2~4. 바로가기 -->
 <li class="cgm-item"><a class="cgm-direct" href="https://data.likasuni.com/books/">부교재</a></li>
-<li class="cgm-item"><a class="cgm-direct" href="https://data.likasuni.com/exams/">전과목 기출</a></li>
 <li class="cgm-item"><a class="cgm-direct hl" href="https://data.likasuni.com/notes/">자료 요청</a></li>
 <li class="cgm-item"><a class="cgm-direct" href="https://www.cocosedu.co.kr/">코코스학원</a></li>
 
