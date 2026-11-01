@@ -1,3 +1,5 @@
+import unicodedata as _ud_c
+_nfc=lambda x:_ud_c.normalize('NFC',x)
 import json,collections,re,unicodedata
 import re as _re
 out=json.load(open('files.json'))
@@ -49,7 +51,8 @@ for o in out:
     if not s or not k: bad.append((p,t)); continue
     try:
       if p[0]=='모의고사':
-        r=dict(exam='moe',year=int(p[1]),grade=int(p[2][1]),month=int(p[3][:-1]),subject=s,group=GROUP.get(s,'기타'),kind=k,id=o['id'],size=o['size'],title=t)
+        r=dict(exam='moe',year=int(p[1])+(1 if _nfc(p[2])=='고3' and _nfc(p[3]) in ('6월','9월') else 0),grade=int(p[2][1]),month=int(p[3][:-1]),  # 드라이브 폴더는 시행 연도 (2026-11-01 정리), 고3 6·9월 내부 키·주소는 학년도(시행+1) 유지
+          subject=s,group=GROUP.get(s,'기타'),kind=k,id=o['id'],size=o['size'],title=t)
       else:
         r=dict(exam='sn',year=int(p[1][:4]),subject=s,group=GROUP.get(s,'기타'),kind=k,id=o['id'],size=o['size'],title=t)
     except (ValueError, IndexError): bad.append((p,t)); continue

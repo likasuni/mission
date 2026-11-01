@@ -179,7 +179,7 @@ def s_year(k):  # 화면·정렬용 시행 연도 (평가원 6·9월 모평은 �
 def s_name(k, short=False):
     ex, g, y, m = k
     if ex == 'moe':
-        if g == 3 and m in (6, 9):  # 평가원 모의평가는 학년도 기준 (폴더 연도 = 학년도, 시행은 전년도)
+        if g == 3 and m in (6, 9):  # 평가원 모의평가: 내부 키 y = 학년도 (드라이브 폴더 연도 + 1, classify.py), 시행은 y - 1
             return f'{y - 1}년 {m}월 고3 모의고사' if not short else f'{m}월'  # 화면은 시행 연도로 통일 (2026-11-01 원장님 확정), 주소·내부 키는 학년도 그대로
         return f'{y}년 {m}월 고{g} 모의고사' if not short else f'{m}월'
     return f'{y}학년도 수능'
