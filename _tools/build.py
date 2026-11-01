@@ -1199,7 +1199,7 @@ for i, b in enumerate(BPOSTS):
     prv, nxt = (sib[j - 1] if j else None), (sib[j + 1] if j + 1 < len(sib) else None)
     req = f'/notes/?book={urllib.parse.quote(b["book"])}&unit={b["unit"]}&n={b["n"]}#note-req'
     h1 = f'{nm} 해설 · {b["type"]} 정답 {b["answer"]}'
-    body = (f'<style>{BP_CSS}</style><div class="bp-tags"><span class="bk">{e(b["full"])}</span><span>{b["unit"]}강</span><span>{e(b["type"])}</span>'
+    bpb = (f'<style>{BP_CSS}</style><div class="bp-tags"><span class="bk">{e(b["full"])}</span><span>{b["unit"]}강</span><span>{e(b["type"])}</span>'
             + (f'<span>{e(b["src"])}</span>' if b.get('src') else '') + '</div>'
             f'<h1 class="page-h1">{e(h1)}</h1><p class="lead">{e(b["lead"])}</p>'
             '<p class="bp-book">📖 <b>교재를 펴 놓고 보세요.</b> 이 페이지는 리카수니 원장의 분석 정리예요. 지문·선택지 원문은 교재에서 확인해 주세요.</p>'
@@ -1230,7 +1230,7 @@ for i, b in enumerate(BPOSTS):
           {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
               {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in b['faq']]}]
     page(url, f'{nm} 해설 정답 {b["answer"]} | {b["type"]} · {b["topic"]} - 리카수니 자료실',
-         f'{nm} 정답 {b["answer"]} ({b["type"]}). 수능특강 라이트(Light) {b["lead"]}'[:150], body,
+         f'{nm} 정답 {b["answer"]} ({b["type"]}). 수능특강 라이트(Light) {b["lead"]}'[:150], bpb,
          [('/', '홈'), ('/books/', '부교재'), (f'/books/{b["bslug"]}/', '수능특강 라이트 해설'), (url, f'{b["unit"]}강 {b["label"]}')], '/books/',
          comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
 for slug in sorted({b['bslug'] for b in BPOSTS}):
