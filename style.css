@@ -688,3 +688,13 @@ a.nb:hover { filter: brightness(1.12); }
 .nv-text p { font-size: .92rem; line-height: 1.75; margin: 8px 0; }
 .rq-go.rq-eb, .rq.rd .rq-go.rq-eb, .rq.ok .rq-go.rq-eb { background: #1e3a8a; border-color: #1e3a8a; color: #fff; font-weight: 800; }
 .eb-b { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 6px; background: #1e3a8a; color: #fff; font-size: .72rem; font-weight: 800; font-style: normal; vertical-align: 1px; }
+
+/* 내 자료함 · 받은 뒤 이어서 공부하기 */
+.got-box { margin: 12px 0 4px; padding: 12px 14px; border-radius: 12px; background: #f1f5ff; border: 1.5px solid #c7d2fe; }
+.got-box > b { color: #1e3a8a; }
+.got-box ul { list-style: none; margin: 6px 0 4px; padding: 0; }
+.got-box li { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; padding: 7px 0; border-bottom: 1px solid #e0e7ff; }
+.got-box li:last-child { border-bottom: 0; }
+.got-go { display: flex; gap: 6px; flex-wrap: wrap; }
+.next-box { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: #fff; border: 1px dashed #93c5fd; }
+.next-box p { margin: 6px 0 0; }
