@@ -904,6 +904,15 @@ MEMO_CSS = _re.sub(r'\s+', ' ', """
 .mm-foot{margin-top:14px;color:var(--muted);font-size:.86rem}
 .mm-list{list-style:none;margin:0;padding:0} .mm-list li+li{border-top:1px dashed var(--line)}
 .mm-list a{display:block;padding:10px 0;color:inherit;text-decoration:none} .mm-list a:hover b{text-decoration:underline}
+.mm-hero{display:block;width:100%;height:auto;border-radius:12px;margin:0 0 14px;border:1px solid var(--line)}
+.mm-row{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 10px;margin:0 -2px;-webkit-overflow-scrolling:touch}
+.mm-row a{flex:0 0 240px;scroll-snap-align:start;display:block;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;color:inherit;text-decoration:none}
+.mm-row a:hover{border-color:#c9d6f5;box-shadow:0 2px 8px rgba(30,58,138,.08)} .mm-row a:hover b{text-decoration:underline}
+.mm-row .th{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:#eef1fa}
+.mm-row .th.ph{display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;font-weight:800;color:var(--navy);font-size:1.05rem}
+.mm-row .tx{display:block;padding:8px 12px 10px} .mm-row small{display:block;color:var(--muted);font-size:.76rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mm-row b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:var(--navy-d);font-size:.92rem;line-height:1.4;margin-top:2px}
+@media(max-width:640px){.mm-row a{flex-basis:72%}}
 .mm-list small{color:var(--muted);font-size:.8rem} .mm-list b{display:block;color:var(--navy-d);margin:2px 0} .mm-list span{color:var(--muted);font-size:.9rem}
 """).strip()
 MEMOS = []
@@ -926,6 +935,8 @@ for m in MEMOS:
     h = [f'<style>{MEMO_CSS}</style><article class="mm card">',
          '<div class="mm-tags">' + f'<span class="mm-tag bk">{e(m["book"])}</span><span class="mm-tag">{e(m["where"])}</span>' + ''.join(f'<span class="mm-tag">{e(t)}</span>' for t in m.get('tags', [])) + '</div>',
          f'<h1>{e(m["h1"])}</h1><p class="sub">{e(m.get("sub", ""))}</p>',
+         (f'<img class="mm-hero" src="images/og.jpg" alt="{e(m["h1"])}" width="1200" height="800" loading="eager">'
+          if not m.get('html') and os.path.exists(os.path.join(_md, 'img', m['slug'], 'og.jpg')) else ''),  # 대표 그림 (HTML 노트는 본문 첫 그림이 대신)
          f'<div class="mm-one"><small>✏️ 분석노트 한 줄</small><b>{e(o["key"])}</b>: {e(o["text"])}' + (f' <span>— {e(o["note"])}</span>' if o.get('note') else '') + '</div>']
     if m.get('html'):  # 원장님이 준 HTML 본문 그대로 (_tools/memos/<파일>.html, <!--AD--> 자리에 광고)
         h.append(open(os.path.join(_md, m['html']), encoding='utf-8').read().replace('<!--AD-->', ad()))
@@ -966,8 +977,14 @@ page('/memo/', '원장님 노트 – 수능특강·모의고사 영어 구문·�
      f'<style>{MEMO_CSS}</style><section class="hero"><h1>원장님 노트</h1><p>분석노트를 만들면서 짚은 구문·어휘 포인트를 짧게 모아 두는 곳이에요.</p></section>'
      + (f'<div class="card mm"><ul class="mm-list">{"".join(memo_line(m) for m in MEMOS)}</ul></div>' if MEMOS else '<div class="card"><p class="muted">곧 첫 노트가 올라와요.</p></div>'),
      [('/', '홈'), ('/memo/', '원장님 노트')], '/')
+def memo_card(m):  # 첫 화면 썸네일 카드 (한 줄 가로 나열, 넘치면 옆으로 밀기)
+    th = os.path.exists(os.path.join(_md, 'img', m['slug'], 'thumb.webp'))
+    img = (f'<img class="th" src="/memo/{m["slug"]}/images/thumb.webp" alt="{e(m["h1"])}" width="480" height="320" loading="lazy">' if th
+           else f'<span class="th ph">{e(m["one"]["key"])}</span>')
+    return (f'<a href="/memo/{m["slug"]}/">{img}<span class="tx"><small>{m["date"][5:].replace("-", ".")} · {e(m["book"])} {e(m["where"])}</small>'
+            f'<b>{e(m["h1"])}</b></span></a>')
 memo_home = (f'<section class="card mm-home"><style>{MEMO_CSS}</style><h2 style="margin:0 0 4px">✏️ 원장님 노트 <small class="muted" style="font-size:.8rem;font-weight:600">분석노트 만들며 정리한 포인트</small></h2>'
-             f'<ul class="mm-list">{"".join(memo_line(m) for m in MEMOS[:5])}</ul><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
+             f'<div class="mm-row">{"".join(memo_card(m) for m in MEMOS[:8])}</div><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
 
 var_files = sum(len(dict(VAR[k])) for k in var_sess)
 tiles = f'''<div class="grid4">
