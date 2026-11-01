@@ -52,7 +52,11 @@ for v in (json.load(open(_vp)) if os.path.exists(_vp) else []):
     _ex = r'(\d{4})\s*(년|학년도)[\s_]*(\d{1,2})\s*월[\s_]*고\s*(\d)'
     m = _re.search(_ex, t) or _re.search(_ex, v['path'][-1])  # 파일명에 회차가 없으면(예: 18번_변형문제.pdf) 폴더 이름에서
     nm = _re.search(r'[_\s](\d{1,2}(?:\s*[~-]\s*\d{1,2})?)\s*번', '_' + t)
-    if not m or not nm: continue
+    m2 = None if m else _re.match(r'고(\d)_(\d{4})_(\d{1,2})월', v['path'][-1])  # 폴더 이름 '고3_2025_6월_변형문제_18-45번' (연도는 학년도, PDF 제목 기준)
+    if not (m or m2) or not nm: continue
+    if m2:
+        VAR[('moe', int(m2.group(1)), int(m2.group(2)), int(m2.group(3)))].append((nm.group(1).replace(' ', '').replace('-', '~'), v['id']))
+        continue
     y, mo, g = int(m.group(1)), int(m.group(3)), int(m.group(4))
     if g == 3 and mo in (6, 9) and m.group(2) == '년': y += 1  # 고3 모의평가는 학년도 기준 회차로
     VAR[('moe', g, y, mo)].append((nm.group(1).replace(' ', '').replace('-', '~'), v['id']))
