@@ -38,6 +38,12 @@
 - **원장님 한마디**: `note` 칸. 수업에서 짚을 포인트가 있는 문항에만 원장님 말투로. **확인할 수 없는 통계·학생 사례는 쓰지 않아요.**
 - 회차는 18~45번을 끝까지 채우는 게 목표. 최근 수능 → 고3 6·9월 모평 → 고1·고2 학평 순서를 추천했어요.
 
+## 부교재 문항별 해설 (자료실 `/books/<교재>/<강>/<번호>/`, 2026-11-01~ 원장님 확정)
+
+- 파일 `_tools/bookposts/<교재>-<강>-<번호>.json` (예: `sutk-light-18-1.json`, Gateway·예시문제는 n=0 → 주소 `…/gateway/`). 칸: book·full·bslug·unit·n·label·src(Gateway 기출 출처)·date·type·answer·topic·keywords·lead·flow·evidence(where·quote·why)·traps·point(title·quote·body)·vocab·one(원장님 분석노트 '서술형 대비 한 문장')·checks(Claude 추가)·faq.
+- **저작권**: 지문·선택지 원문·전문 해석은 싣지 않아요. 근거는 위치 + 짧은 구절, 오답은 우리말로 줄인 판단만, 구문 인용은 1개 짧게. '교재를 펴 놓고 보세요' 안내와 출처(한국교육방송공사) 표시.
+- 내용은 원장님 분석노트 PDF(드라이브 '부교재 분석노트', 한글은 글자로 못 뽑아 그림으로 읽음)를 바탕으로 정리. 목록 `/books/<bslug>/`, 부교재 페이지 교재 카드에 [📝 문항별 해설] 버튼, 사이트맵 포함. 첫 시범: 수능특강 라이트 18강 Gateway·1~4번.
+
 ## 블로그 자동 발행
 
 - `_tools/blogger_post.py`: 그날 공개된 자료실 해설을 회차별로 묶어 **심플 요약 글**(번호·유형·정답, 핵심 한 줄, 원장님/풀이 포인트, 전체 해설 버튼, 내일 예고)을 Blogger 에 발행. 발행 기록은 `_tools/blogger_posted.json`.
