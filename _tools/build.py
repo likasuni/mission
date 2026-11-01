@@ -172,11 +172,15 @@ def s_url(k):
     ex, g, y, m = k
     return f'/moe/go{g}/{y}-{m:02d}/' if ex == 'moe' else f'/suneung/{y}/'
 
+def s_year(k):  # 화면·정렬용 시행 연도 (평가원 6·9월 모평은 학년도 - 1)
+    ex, g, y, m = k
+    return y - 1 if ex == 'moe' and g == 3 and m in (6, 9) else y
+
 def s_name(k, short=False):
     ex, g, y, m = k
     if ex == 'moe':
         if g == 3 and m in (6, 9):  # 평가원 모의평가는 학년도 기준 (폴더 연도 = 학년도, 시행은 전년도)
-            return f'{y}학년도 {m}월 모의평가(고3)' if not short else f'{y}학년도 {m}월 모평'
+            return f'{y - 1}년 {m}월 고3 모의고사' if not short else f'{m}월'  # 화면은 시행 연도로 통일 (2026-11-01 원장님 확정), 주소·내부 키는 학년도 그대로
         return f'{y}년 {m}월 고{g} 모의고사' if not short else f'{m}월'
     return f'{y}학년도 수능'
 
@@ -189,7 +193,7 @@ def s_org(k):
 def s_when(k):
     ex, g, y, m = k
     if ex == 'sn': return '2020년 12월 시행' if y == 2021 else f'{y - 1}년 11월 시행'
-    if g == 3 and m in (6, 9): return f'{y - 1}년 {m}월 시행'
+    if g == 3 and m in (6, 9): return f'{y - 1}년 {m}월 시행 ({y}학년도 {m}월 모의평가)'  # 검색어 '학년도 모의평가'를 남김
     return f'{y}년 {m}월 시행'
 
 import hashlib
@@ -336,8 +340,8 @@ def dl_buttons(rs):
 
 def session_list(keys):
     by_year = collections.OrderedDict()
-    for k in sorted(keys, key=lambda k: (-k[2], k[3])):
-        by_year.setdefault(k[2], []).append(k)
+    for k in sorted(keys, key=lambda k: (-s_year(k), k[3])):
+        by_year.setdefault(s_year(k), []).append(k)
     h = ''
     for y, ks in by_year.items():
         h += f'<h3 class="year">{y}년</h3><div class="chips">' + ''.join(
@@ -376,7 +380,7 @@ for idx, k in enumerate(keys_sorted):
     inf = INFO.get(ikey(k), {})
     note_banner = ''
     if k[0] == 'moe' and '영어' in subs:
-        note_banner = (f'<a class="banner note" href="/notes/?y={k[2]}&m={k[3]}&g={k[1]}"><b>이 회차 영어 문항별 분석노트, 카톡으로 받기</b>'
+        note_banner = (f'<a class="banner note" href="/notes/?y={s_year(k)}&m={k[3]}&g={k[1]}"><b>이 회차 영어 문항별 분석노트, 카톡으로 받기</b>'
                        '<p>번호만 고르면 카카오톡으로 바로 보내드려요. 하루 모의고사 2개 · 부교재 1개 · 링크 24시간</p></a>')
     info_html = ''
     if inf.get('summary'):
@@ -434,7 +438,7 @@ for idx, k in enumerate(keys_sorted):
                 + (f'<section class="card en-sec" id="words"><h2>영어 단어 총정리</h2><p class="muted">이 회차 18~45번 지문의 핵심 어휘를 한 장에 정리했어요.</p><div class="dl"><a href="{view(wd)}" target="_blank" rel="noopener">미리보기</a><a href="{down(wd)}" rel="noopener">다운로드</a></div></section>'
                    if wd else '<section class="card en-sec" id="words"><h2>영어 단어 총정리</h2><p class="muted">이 회차 단어 자료는 준비 중이에요.</p></section>'))
         if s == '영어':
-            pre = f' data-y="{k[2]}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else ''
+            pre = f' data-y="{s_year(k)}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else ''
             vs = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
             var_html = ('<div class="soon"><b>변형문제</b> · 준비 중이에요</div>' if not vs else
                         '<div class="var" id="var"><b>리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
@@ -443,7 +447,7 @@ for idx, k in enumerate(keys_sorted):
             if k[0] != 'moe': extra += f'<div class="card">{var_html}</div>'
         # 같은 과목 다른 회차
         others = [x for x in same if x != k and s in {r['subject'] for r in sessions[x]}]
-        others = sorted(others, key=lambda x: (-x[2], -x[3]))[:12]
+        others = sorted(others, key=lambda x: (-s_year(x), -x[3]))[:12]
         rel = ''
         if others:
             rel = '<div class="card"><h2>다른 회차 ' + e(sn) + '</h2><div class="chips">' + ''.join(
@@ -495,11 +499,11 @@ NV = json.load(open(_nvf, encoding='utf-8')) if os.path.exists(_nvf) else {}
 EBOOK = {}  # 요청 번호 키(moe-g1-2026-10-41) → 주소, 세트(41-42)는 번호마다
 def note_view(p, nm):
     k = p['k']
-    key = f"moe-g{k[1]}-{k[2]}-{k[3]}-{post_no(p).replace('~', '-')}" if k[0] == 'moe' else ''
+    key = f"moe-g{k[1]}-{s_year(k)}-{k[3]}-{post_no(p).replace('~', '-')}" if k[0] == 'moe' else ''
     nv = NV.get(key)
     if not nv: return ''
     for x in range(p['n'], p.get('n2', p['n']) + 1):
-        EBOOK[f"moe-g{k[1]}-{k[2]}-{k[3]}-{x}"] = post_url(p) + '#ebook'
+        EBOOK[f"moe-g{k[1]}-{s_year(k)}-{k[3]}-{x}"] = post_url(p) + '#ebook'
     pgs = []
     for i in range(nv['pages']):
         src = f"/notes/view/{key}-{i + 1}.webp?v={nv['v']}"
@@ -596,7 +600,7 @@ for p in POSTS:
             f'<meta http-equiv="refresh" content="0; url={url}"><a href="{url}">{e(nm)} 해설로 이동</a>')
 
 # 분석노트 전자책 (메뉴 모의고사 ▸ 분석노트 전자책, 옛 이름 '수업자료'·'전자책 보기', 회차별 목록) — 전자책이 있는 문항은 📘 표시
-def _exam_order(k): return (0 if k[0] == 'sn' else 1, -k[2], -k[3], k[1])
+def _exam_order(k): return (0 if k[0] == 'sn' else 1, -s_year(k), -k[3], k[1])
 EB_URLS = set(EBOOK.values())
 pb = '''<h1 class="page-h1">분석노트 전자책 · 영어 모의고사 문항별 해설</h1>
 <p class="lead">리카수니 원장이 모의고사반 수업을 준비하며 만든 분석노트를 다운로드 없이 바로 보는 전자책이에요. <b class="eb-b">📘 전자책</b> 표시가 있는 문항은 끊어읽기·해석·어휘 노트를 바로 볼 수 있고, 모든 문항에 정답 근거·오답 이유·핵심 구문 해설이 있어요.</p>'''
@@ -607,7 +611,7 @@ def _p_year(k):  # 시행 연도 (평가원 6·9월 모평은 학년도 - 1)
 def _p_label(k):
     ex, g, y, m = k
     if ex == 'sn': return f'{y}학년도'
-    return f'{m}월 모평(고3)' if g == 3 and m in (6, 9) else f'{m}월 고{g}'
+    return f'{m}월 고{g}'
 def _p_id(k): return "-".join(map(str, k))
 if POSTS:
     pk = sorted(POSTS_BY, key=lambda k: (0 if k[0] == 'moe' else 1, -(int(_p_year(k)) if k[0] == 'moe' else 0), -k[3], k[1], -k[2]))
@@ -789,8 +793,8 @@ page('/suneung/', '수능 기출문제 전과목 PDF 모음 | 리카수니 자�
 
 # ---------- 홈 ----------
 cnt = collections.Counter(k[1] if k[0] == 'moe' else 'sn' for k in sessions)
-latest = sorted([k for k in sessions if k[0] == 'moe'], key=lambda k: (-k[2], -k[3], k[1]))[:9]
-var_sess = sorted([k for k in VAR if k in sessions], key=lambda k: (k[1], -k[2], -k[3]))
+latest = sorted([k for k in sessions if k[0] == 'moe'], key=lambda k: (-s_year(k), -k[3], k[1]))[:9]
+var_sess = sorted([k for k in VAR if k in sessions], key=lambda k: (k[1], -s_year(k), -k[3]))
 # ---------- 학원 소식 (_tools/news/<slug>/meta.json + body.html [+ thumb.png] → /news/<slug>/) ----------
 # 본문은 받은 HTML 그대로. <!--THUMB--> 자리에 썸네일(있을 때만), <!--AD--> 자리에 자료실 수동 광고. date 가 미래면 그날 공개
 for m in NEWS + BOOKNEWS:
@@ -961,7 +965,7 @@ tiles = f'''<div class="grid4">
 </div>'''
 recent = '<div class="card"><h2>최근 회차</h2><div class="chips">' + ''.join(
     f'<a class="chip" href="{s_url(k)}">{e(s_name(k))}</a>' for k in latest) + '</div></div>'
-en_sess = sorted([k for k in sessions if k[0] == 'moe' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: (k[1], -k[2], -k[3]))
+en_sess = sorted([k for k in sessions if k[0] == 'moe' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: (k[1], -s_year(k), -k[3]))
 note_files = sum(len(NOTES[k]) for k in en_sess)
 word_sess = [k for k in en_sess if k in WORDS]
 body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
@@ -996,7 +1000,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <div class="tk-form"></div><div class="tk-list"><p class="muted">불러오는 중...</p></div></div></div></section>
 <h2 class="sec-h">최근 영어 모의고사</h2>
 <div class="card"><div class="chips">''' + ''.join(
-    f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-k[2], -k[3], k[1]))[:9]) + '''</div>
+    f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-s_year(k), -k[3], k[1]))[:9]) + '''</div>
 <p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>''' + ad() + f'''
 <h2 class="sec-h">전과목 기출문제</h2>
 <p class="muted">국어·수학·사회·과학·한국사까지 전과목 문제지·정답·해설 PDF도 함께 제공해요. 총 {len(sessions)}개 회차, {len(R):,}개 파일.</p>''' + tiles
@@ -1006,7 +1010,7 @@ def en_table(g):
     ks = [k for k in en_sess if k[1] == g]
     if not ks: return ''
     rows = ''
-    for k in sorted(ks, key=lambda k: (-k[2], -k[3])):
+    for k in sorted(ks, key=lambda k: (-s_year(k), -k[3])):
         nn = len(NOTES.get(k, {})); vv = len(dict(VAR.get(k, [])))
         mark = lambda ok, t: f'<span class="ok">{t}</span>' if ok else '<span class="no">–</span>'
         rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{e(s_name(k))}</a></td>'
@@ -1042,14 +1046,14 @@ def var_block(g):
     ks = [k for k in var_sess if k[1] == g]
     if not ks: return ''
     out = f'<div class="card"><h2>고{g} 영어 변형문제</h2>'
-    for y in sorted({k[2] for k in ks}, reverse=True):
+    for y in sorted({s_year(k) for k in ks}, reverse=True):
         out += f'<p class="grp">{y}년</p><div class="chips">' + ''.join(
             f'<a class="chip" href="{subj_url(k, "영어")}#var">{k[3]}월<small>{len(dict(VAR[k]))}문항</small></a>'
-            for k in sorted([x for x in ks if x[2] == y], key=lambda x: x[3])) + '</div>'
+            for k in sorted([x for x in ks if s_year(x) == y], key=lambda x: x[3])) + '</div>'
     return out + '</div>'
 vbody = ('''<h1 class="page-h1">모의고사 영어 변형문제 (무료)</h1>
 <p class="lead">리카수니 원장이 전국연합학력평가 영어 지문으로 직접 만든 문항별 변형문제예요. 회차를 고르면 18번부터 45번까지 번호별 PDF를 바로 받을 수 있어요.</p>'''
-         + var_block(1) + var_block(2) + '''<div class="card"><h2>이용 방법</h2><ul class="sum">
+         + var_block(1) + var_block(2) + var_block(3) + '''<div class="card"><h2>이용 방법</h2><ul class="sum">
 <li>회차를 누르면 해당 회차 영어 페이지의 변형문제로 이동해요.</li>
 <li>번호를 누르면 PDF 미리보기가 열리고, 그 화면에서 바로 내려받을 수 있어요.</li>
 <li>같은 페이지에서 원본 기출문제와 문항별 분석노트(카톡 요청)도 함께 이용할 수 있어요.</li>

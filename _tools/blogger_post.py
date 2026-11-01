@@ -43,7 +43,7 @@ def exam_name(exam):
     x = exam.split('-')
     if x[0] == 'sn': return f'{x[1]} 수능 영어'
     g, y, m = int(x[1]), int(x[2]), int(x[3])
-    if g == 3 and m in (6, 9): return f'{y}학년도 {m}월 모평 영어'
+    if g == 3 and m in (6, 9): return f'{y - 1}년 {m}월 고3 영어'
     return f'{y}년 {m}월 고{g} 모의고사 영어'
 
 
