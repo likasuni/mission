@@ -957,7 +957,10 @@ for m in MEMOS:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q['q'], "acceptedAnswer": {"@type": "Answer", "text": q['a']}} for q in m['faq']]})
     page(url, f'{m["title"]} | 리카수니 자료실', m['desc'], ''.join(h),
-         [('/', '홈'), ('/memo/', '원장님 노트'), (url, f'{m["book"]} {m["where"]}')], '/', extra_ld=ld, og_type='article')
+         [('/', '홈'), ('/memo/', '원장님 노트'), (url, f'{m["book"]} {m["where"]}')], '/', extra_ld=ld, og_type='article',
+         og_image=(SITE + url + 'images/og.jpg') if os.path.exists(os.path.join(_md, 'img', m['slug'], 'og.jpg')) else None)
+    _mi = os.path.join(_md, 'img', m['slug'])  # 노트 그림: _tools/memos/img/<slug>/ → /memo/<slug>/images/ (og.jpg 는 대표 이미지)
+    if os.path.isdir(_mi): shutil.copytree(_mi, os.path.join(ROOT, url.strip('/'), 'images'), dirs_exist_ok=True)
 page('/memo/', '원장님 노트 – 수능특강·모의고사 영어 구문·어휘 분석 메모 | 리카수니 자료실',
      '리카수니 원장이 분석노트를 만들며 정리한 영어 구문·어휘 포인트. 수능특강 라이트·모의고사 문장별 핵심 설명을 짧게 모았어요.',
      f'<style>{MEMO_CSS}</style><section class="hero"><h1>원장님 노트</h1><p>분석노트를 만들면서 짚은 구문·어휘 포인트를 짧게 모아 두는 곳이에요.</p></section>'
