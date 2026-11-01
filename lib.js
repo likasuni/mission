@@ -339,7 +339,7 @@ function gotList(got, eb, more) {
   if (!got.length) return '';
   return `<div class="got-box"><b>받은 자료</b> <span class="meta">최근 30일</span><ul>` + got.map(o =>
     `<li><span>${esc(o.label.replace(' 영어 모의고사', '').replace(/ 분석노트$/, ''))}</span><span class="got-go">${noteLinks(o.kind, o.query, eb)}</span></li>`).join('') +
-    `</ul>${more ? '<p class="meta"><a href="/notes/#note-req">받은 자료 모두 보기 →</a></p>' : '<p class="meta">다시 볼 땐 다운로드 없이 전자책으로 바로 봐요.</p>'}</div>`;
+    `</ul>${more ? '<p class="meta"><a href="/notes/#note-req">받은 자료 모두 보기 →</a></p>' : (got.some(o => noteLinks(o.kind, o.query, eb).includes('전자책')) ? '<p class="meta">다시 볼 땐 다운로드 없이 전자책으로 바로 봐요.</p>' : '')}</div>`;
 }
 async function readyBanner(user) {
   const hero = document.querySelector('.hero');
@@ -356,8 +356,7 @@ async function readyBanner(user) {
     (m.ready.length ? `<p class="mn-ready"><b>준비됐어요 ${m.ready.length}개</b> · ${m.ready.slice(0, 3).map(x => short(x.label)).join(', ')}${m.ready.length > 3 ? ' 외' : ''}</p>
       <p><a class="btn btn-gold" href="/notes/#note-req">받으러 가기 →</a> <span class="meta">하루 모의고사 2개 · 부교재 1개씩 받아요</span></p>` : '') +
     (m.making.length ? `<p class="meta">원장님이 만드는 중 ${m.making.length}개 · ${m.making.slice(0, 3).map(short).join(', ')}${m.making.length > 3 ? ' 외' : ''}</p>` : '') +
-    gotList(m.got.slice(0, 3), eb, m.got.length > 3) +
-    pushAsk(m.making.length ? '완성되면 알림으로 바로 알려 드릴까요?' : '새 분석노트가 올라오면 알려 드릴까요?');
+    gotList(m.got.slice(0, 3), eb, m.got.length > 3);  // 알림 권유는 바로 아래 '새 자료 알림 받기' 칸과 겹쳐서 넣지 않음
   hero.after(el);
 }
 
