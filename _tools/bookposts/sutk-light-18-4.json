@@ -1,0 +1,152 @@
+{
+ "book": "수능특강 라이트",
+ "full": "2026 EBS 수능특강 Light 영어",
+ "bslug": "sutk-light",
+ "unit": 18,
+ "date": "2026-11-01",
+ "n": 4,
+ "label": "4번",
+ "type": "어휘(낱말 쓰임)",
+ "answer": "②",
+ "topic": "윤리적 특수주의는 경직된 보편 원칙 대신 상황 하나하나의 미묘한 차이에 민감하게 반응하라고 한다",
+ "keywords": [
+  "수능특강 라이트 18강 4번",
+  "수능특강 라이트 18강 4번 정답",
+  "윤리적 특수주의",
+  "ethical particularism",
+  "낱말 쓰임"
+ ],
+ "lead": "18강 4번은 낱말 쓰임 문제예요. 윤리적 특수주의(ethical particularism)가 왜 보편적인 도덕 원칙을 거부하는지, 거짓말 예시로 설명해요.",
+ "flow": [
+  [
+   "주장",
+   "윤리적 특수주의는 보편적인 도덕 원칙을 적용하는 것을 거부해요."
+  ],
+  [
+   "예시",
+   "'언제나 정직해야 한다'는 원칙도, 도끼 든 악당이 할머니가 숨은 곳을 물을 때라면 거짓말이 맞지 않느냐고 반문해요."
+  ],
+  [
+   "이유",
+   "특수주의자에게 보편 원칙은 너무 경직돼 있어요. 윤리는 규칙 따르기가 아니라, 마주한 상황의 미묘한 차이에 민감하게 반응하는 일이에요."
+  ],
+  [
+   "마무리",
+   "특수주의도 일반화된 접근 아니냐는 반론에는 '그건 너무 까다로운 것'이라고 말장난으로 받아요."
+  ]
+ ],
+ "evidence": {
+  "where": "② 문장과 그 뒤",
+  "quote": "It's not possible to develop any meaningful … instructions",
+  "why": "특수주의자는 원칙이 상황마다의 차이를 무시하고 똑같이 적용된다는 점을 비판해요. 그러니 보편 원칙은 '너무 유연한(flexible)' 게 아니라 '너무 경직된(rigid)' 것이에요. 바로 앞의 거짓말 예시(원칙을 고집하면 생명을 못 구함)도 같은 방향이에요."
+ },
+ "traps": [
+  [
+   "①",
+   "save — 거짓말이 '생명을 구할' 수 있는 상황을 묻는 예라 적절해요."
+  ],
+  [
+   "②",
+   "flexible → rigid 가 맞아요. 정답."
+  ],
+  [
+   "③",
+   "engagement — 규칙 대신 상황에 '관여'하는 것에 초점을 둔다는 뜻으로 적절해요."
+  ],
+  [
+   "④",
+   "sensitive — 상황의 미묘한 차이에 '민감해야' 한다는 뜻으로 적절해요."
+  ],
+  [
+   "⑤",
+   "generalized — '특수주의도 결국 일반화된 접근 아니냐'는 반론이라 적절해요."
+  ]
+ ],
+ "point": {
+  "title": "Take A, for instance. (A를 예로 들어 보자)",
+  "quote": "Take honesty, for instance.",
+  "body": "take는 '예로 들다'(= Take honesty as an example). 주장 뒤에 예시가 시작된다는 신호예요. 마지막 문장 particularly particular는 '특수주의(particular)'를 비튼 말장난으로 '유난히 까다로운'이라는 뜻이에요."
+ },
+ "vocab": [
+  [
+   "ethical particularism",
+   "윤리적 특수주의"
+  ],
+  [
+   "universal",
+   "보편적인"
+  ],
+  [
+   "principle",
+   "원칙"
+  ],
+  [
+   "regardless of",
+   "~와 상관없이"
+  ],
+  [
+   "axe-wielding",
+   "도끼를 휘두르는"
+  ],
+  [
+   "villain",
+   "악당"
+  ],
+  [
+   "rigid",
+   "경직된"
+  ],
+  [
+   "flexible",
+   "유연한"
+  ],
+  [
+   "engagement",
+   "관여, 참여"
+  ],
+  [
+   "nuance",
+   "미묘한 차이"
+  ],
+  [
+   "encounter",
+   "마주침, (마주한) 상황"
+  ],
+  [
+   "generalized",
+   "일반화된"
+  ]
+ ],
+ "one": {
+  "en": "Ethical particularism holds that good judgment comes from sensitivity to each situation, not from rigid universal rules.",
+  "ko": "윤리적 특수주의는 좋은 판단이 경직된 보편 규칙이 아니라 각 상황에 대한 민감성에서 나온다고 본다."
+ },
+ "checks": [
+  {
+   "q": "O/X: 특수주의자는 '항상 정직하라' 같은 원칙을 모든 상황에 적용해야 한다고 본다.",
+   "a": "X — 상황에 따라 판단해야 한다고 봐요."
+  },
+  {
+   "q": "flexible의 반대말로 ② 자리에 들어갈 단어는?",
+   "a": "rigid (경직된)"
+  },
+  {
+   "q": "'정직을 예로 들어 보자'를 영어로 쓰면? (take 사용)",
+   "a": "Take honesty, for instance. (= Take honesty as an example.)"
+  }
+ ],
+ "faq": [
+  [
+   "수능특강 라이트 18강 4번 정답은?",
+   "②번이에요. flexible(유연한)을 rigid(경직된)로 고쳐야 해요."
+  ],
+  [
+   "윤리적 특수주의란?",
+   "모든 상황에 똑같이 적용되는 보편 원칙을 거부하고, 각 상황의 구체적인 사정에 맞게 판단해야 한다는 입장이에요."
+  ],
+  [
+   "particularly particular는 무슨 뜻인가요?",
+   "'유난히 까다로운'이라는 뜻의 말장난이에요. 특수주의(particularism)를 비꼬는 반론을 재치 있게 받아쳐요."
+  ]
+ ]
+}

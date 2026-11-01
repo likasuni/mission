@@ -1072,6 +1072,11 @@ page('/notes/', '자료 요청 · 영어 모의고사·수능특강 분석노트
 # ---------- 부교재 요청방 ----------
 # 새 부교재는 BOOKS 에 한 줄 추가 (name 은 lib.js NOTE_BOOKS, note-request 함수 BOOKS 와 같게)
 SAMPLE = 'https://drive.google.com/file/d/105f20gSuhZvR44gCK6oW5mxn2-ZFG12J/view'  # 샘플은 수능특강 라이트로 통일
+BP_SLUG = {}  # 부교재 해설이 있는 교재 이름 → 주소 (아래 '부교재 문항별 해설'에서 페이지를 만듦)
+for _f in sorted(os.listdir(os.path.join(ROOT, '_tools', 'bookposts'))) if os.path.isdir(os.path.join(ROOT, '_tools', 'bookposts')) else []:
+    if _f.endswith('.json'):
+        _b = json.load(open(os.path.join(ROOT, '_tools', 'bookposts', _f), encoding='utf-8'))
+        if _b['date'] <= TODAY: BP_SLUG[_b['book']] = _b['bslug']
 BOOKS = [  # name 은 드라이브 '부교재 분석노트' 안 폴더 이름과 같게 (lib.js NOTE_BOOK_CFG, note-request 함수 BOOKS 와 같게)
     dict(cover='suteuk-light', name='수능특강 라이트', full='2026 EBS 수능특강 Light 영어', meta='22강 · 강별 Gateway + 문항별', who='고1~고2 · 수능특강 입문',
          intro='수능특강 본책 전에 유형별 감을 잡는 EBS 입문 교재예요. 강마다 Gateway와 문항별로 끊어읽기·구문·어휘·정답 근거를 정리한 분석노트를 제공해요.',
@@ -1128,6 +1133,7 @@ def book_card(b):
                '<p class="book-soon">분석노트 준비 중이에요. 필요한 강·번호를 요청해 주시면 요청이 많은 것부터 먼저 만들어요.</p>')
             + f'<div class="book-btns"><a class="btn btn-kakao" href="/notes/?book={q}">{"카톡으로 무료 요청" if b.get("ready") else "이 교재 분석노트 요청하기"}</a>'
             + (f'<a class="btn btn-navy" href="{e(b["buy"])}" target="_blank" rel="noopener">강 단위 구매</a>' if b.get('buy') else '')
+            + (f'<a class="btn btn-navy" href="/books/{BP_SLUG[b["name"]]}/">📝 문항별 해설</a>' if b['name'] in BP_SLUG else '')
             + f'<a class="btn btn-line" href="{SAMPLE}" target="_blank" rel="noopener">분석노트 샘플 보기</a>{blog}</div></section>')
 bbody = ('<h1 class="page-h1">부교재 영어 분석노트 요청방</h1>'
          '<p class="lead">리카수니 원장이 직접 만든 부교재 분석노트예요. <b>문항 1개는 카톡으로 무료</b>, 강 전체가 필요하면 <b>강 단위로 구매</b>할 수 있어요.</p>'
@@ -1157,6 +1163,88 @@ page('/books/', 'EBS 부교재 영어 분석노트 요청 · 수능특강 라이
      '수능특강 라이트 등 EBS 부교재 영어 분석노트. 문항 1개는 카카오톡으로 무료, 강 단위 구매도 가능. 리카수니 원장 직접 제작.', bbody,
      [('/', '홈'), ('/books/', '부교재')], '/books/', comments=('books', '부교재 요청방'))
 
+# ---------- 부교재 문항별 해설 (/books/<교재>/<강>/<번호>/, 2026-11-01~) — _tools/bookposts/*.json ----------
+# 저작권: 교재 지문·선택지·전문 해석은 싣지 않아요. 유형·정답·흐름 요약·근거 위치+짧은 구절·오답 판단·어휘·구문 1개(짧게)·원장님 한 문장만.
+# 학생은 교재를 펴 놓고 보는 페이지. 확인 문제는 새로 만든 문장 (Claude 추가 표시)
+BPOSTS = []
+_bpd = os.path.join(ROOT, '_tools', 'bookposts')
+for f in sorted(os.listdir(_bpd)) if os.path.isdir(_bpd) else []:
+    if f.endswith('.json'):
+        b = json.load(open(os.path.join(_bpd, f), encoding='utf-8'))
+        if b['date'] <= TODAY: BPOSTS.append(b)
+BPOSTS.sort(key=lambda b: (b['bslug'], b['unit'], b['n']))
+def bp_url(b): return f'/books/{b["bslug"]}/{b["unit"]}/{"gateway" if b["n"] == 0 else b["n"]}/'
+def bp_name(b): return f'{b["full"].replace("EBS ", "").replace(" Light", " 라이트").replace("수능특강 라이트", "수능특강 라이트")} {b["unit"]}강 {b["label"]}'
+def bp_list(bs):
+    return '<div class="plist">' + ''.join(f'<a href="{bp_url(b)}"><b>{b["unit"]}강 {e(b["label"])} · {e(b["type"])}</b><span>정답 {b["answer"]} · {e(b["topic"])}</span></a>' for b in bs) + '</div>'
+BP_CSS = _re.sub(r'\s+', ' ', """
+.bp-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}.bp-tags span{font-size:.8rem;font-weight:700;padding:3px 10px;border-radius:999px;background:#eef2ff;color:#1e3a8a}
+.bp-tags span.bk{background:#fff4e5;color:#b45309}
+.bp-book{font-size:.9rem;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:10px;padding:10px 14px;margin:0 0 14px;color:#475569}
+.bp-ev .q{font-family:Georgia,serif;background:#f1f5f9;border-left:4px solid #1e3a8a;padding:6px 12px;margin:8px 0;border-radius:0 8px 8px 0}
+.bp-tr{list-style:none;padding:0;margin:0}.bp-tr li{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid #eef2f7}.bp-tr li:last-child{border:0}
+.bp-tr li b{flex:none;width:1.6em;color:#64748b}.bp-tr li.ok b,.bp-tr li.ok{color:#15803d;font-weight:700}
+.bp-one{background:#fffaf0;border:1.5px solid #f3d38a;border-radius:12px;padding:14px 16px}.bp-one .en{font-weight:700;margin:6px 0}
+.bp-q{padding:8px 0;border-bottom:1px solid #eef2f7}.bp-q:last-child{border:0}.bp-q p{margin:0 0 4px}.bp-add{font-size:.72rem;font-weight:700;background:#ede9fe;color:#6d28d9;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.bp-nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+""")
+_bp_by = collections.defaultdict(list)
+for b in BPOSTS: _bp_by[(b['bslug'], b['unit'])].append(b)
+for i, b in enumerate(BPOSTS):
+    url, nm = bp_url(b), bp_name(b)
+    LASTMOD[url] = b.get('updated', b['date'])
+    ev, pt, one = b['evidence'], b['point'], b['one']
+    sib = _bp_by[(b['bslug'], b['unit'])]
+    j = sib.index(b)
+    prv, nxt = (sib[j - 1] if j else None), (sib[j + 1] if j + 1 < len(sib) else None)
+    req = f'/notes/?book={urllib.parse.quote(b["book"])}&unit={b["unit"]}&n={b["n"]}#note-req'
+    h1 = f'{nm} 해설 · {b["type"]} 정답 {b["answer"]}'
+    body = (f'<style>{BP_CSS}</style><div class="bp-tags"><span class="bk">{e(b["full"])}</span><span>{b["unit"]}강</span><span>{e(b["type"])}</span>'
+            + (f'<span>{e(b["src"])}</span>' if b.get('src') else '') + '</div>'
+            f'<h1 class="page-h1">{e(h1)}</h1><p class="lead">{e(b["lead"])}</p>'
+            '<p class="bp-book">📖 <b>교재를 펴 놓고 보세요.</b> 이 페이지는 리카수니 원장의 분석 정리예요. 지문·선택지 원문은 교재에서 확인해 주세요.</p>'
+            f'<div class="card"><table class="info"><tr><th>교재</th><td>{e(b["full"])} {b["unit"]}강</td></tr>'
+            f'<tr><th>문항</th><td>{e(b["label"])} · {e(b["type"])}</td></tr><tr><th>정답</th><td><b class="ans">{b["answer"]}</b></td></tr>'
+            f'<tr><th>핵심</th><td>{e(b["topic"])}</td></tr></table></div>'
+            '<div class="card"><h2>글의 흐름 한눈에</h2><ol class="flow">' + ''.join(f'<li><b>{e(x)}</b> {e(y)}</li>' for x, y in b['flow']) + '</ol></div>'
+            f'<div class="card bp-ev"><h2>정답 근거</h2><p><b>어디를 보나요?</b> {e(ev["where"])}</p><p class="q">“{e(ev["quote"])}”</p><p>{e(ev["why"])}</p></div>'
+            + ad()
+            + '<div class="card"><h2>선택지 판단</h2><ul class="bp-tr">' + ''.join(f'<li class="{"ok" if x == b["answer"] else ""}"><b>{x}</b><span>{e(y)}</span></li>' for x, y in b['traps']) + '</ul></div>'
+            f'<div class="card"><h2>꼭 알아야 할 구문</h2><div class="gr"><b>{e(pt["title"])}</b><p class="en">{e(pt["quote"])}</p><p>{e(pt["body"])}</p></div></div>'
+            '<div class="card"><h2>핵심 어휘</h2><table class="info vocab">' + ''.join(f'<tr><th>{e(x)}</th><td>{e(y)}</td></tr>' for x, y in b['vocab']) + '</table></div>'
+            f'<div class="card bp-one"><h2>원장님 분석노트 한 문장</h2><p class="en">{e(one["en"])}</p><p class="ko">{e(one["ko"])}</p><small class="muted">서술형 대비로 외워 두세요 — 리카수니 원장</small></div>'
+            + ad()
+            + f'<div class="card"><h2>확인 문제<span class="bp-add">Claude 추가</span></h2>' + ''.join(
+                f'<div class="bp-q"><p>{k + 1}. {e(q["q"])}</p><details><summary>정답 보기</summary><p>{e(q["a"])}</p></details></div>' for k, q in enumerate(b['checks'])) + '</div>'
+            + f'<div class="card"><h2>📘 {b["unit"]}강 {e(b["label"])} 분석노트 받기</h2><p class="muted">끊어읽기·해석·구문·어휘를 정리한 원장님 분석노트(PDF)는 카카오톡으로 받아요. 하루 1개 무료.</p>'
+            f'<div class="dl"><a href="{req}">카톡으로 분석노트 받기</a></div></div>'
+            + cp_box(('moe', 2))
+            + '<div class="card faq"><h2>자주 묻는 질문</h2>' + ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in b['faq']) + '</div>'
+            + '<div class="card bp-nav">' + (f'<a class="btn btn-line" href="{bp_url(prv)}">← {prv["unit"]}강 {e(prv["label"])}</a>' if prv else '<span></span>')
+            + f'<a class="btn btn-line" href="/books/{b["bslug"]}/">강별 해설 목록</a>'
+            + (f'<a class="btn btn-navy" href="{bp_url(nxt)}">{nxt["unit"]}강 {e(nxt["label"])} →</a>' if nxt else '<span></span>') + '</div>'
+            + f'<p class="meta">출처: {e(b["full"])} {b["unit"]}강 {e(b["label"])} (한국교육방송공사){" · " + e(b["src"]) if b.get("src") else ""}. 분석·정리: 리카수니 원장 (이매동 코코스학원)</p>')
+    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": h1, "description": b['lead'], "datePublished": b['date'],
+           "dateModified": LASTMOD[url], "inLanguage": "ko", "keywords": ', '.join(b.get('keywords', [])), "mainEntityOfPage": SITE + url,
+           "author": {"@type": "Person", "name": "리카수니 원장"}, "publisher": {"@type": "Organization", "name": "리카수니 자료실"}},
+          {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+              {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in b['faq']]}]
+    page(url, f'{nm} 해설 정답 {b["answer"]} | {b["type"]} · {b["topic"]} - 리카수니 자료실',
+         f'{nm} 정답 {b["answer"]} ({b["type"]}). 수능특강 라이트(Light) {b["lead"]}'[:150], body,
+         [('/', '홈'), ('/books/', '부교재'), (f'/books/{b["bslug"]}/', '수능특강 라이트 해설'), (url, f'{b["unit"]}강 {b["label"]}')], '/books/',
+         comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
+for slug in sorted({b['bslug'] for b in BPOSTS}):
+    bs = [b for b in BPOSTS if b['bslug'] == slug]
+    full = bs[0]['full']
+    units = sorted({b['unit'] for b in bs})
+    page(f'/books/{slug}/', f'{full} 문항별 해설 · 정답 · 주제 | 리카수니 자료실',
+         f'{full}(수능특강 라이트) 강별·문항별 해설. 정답, 글의 흐름, 정답 근거, 오답 판단, 핵심 어휘. 리카수니 원장 분석.',
+         f'<h1 class="page-h1">{e(full)} 문항별 해설</h1><p class="lead">교재를 펴 놓고 보는 리카수니 원장의 문항 분석이에요. 정답·글의 흐름·정답 근거·오답 판단·핵심 어휘를 정리했어요. '
+         '지문 원문은 교재에서 확인해 주세요.</p>'
+         + ''.join(f'<div class="card"><h2>{u}강 <small class="muted">{len([b for b in bs if b["unit"] == u])}문항</small></h2>{bp_list([b for b in bs if b["unit"] == u])}</div>' for u in units)
+         + ad() + f'<div class="card"><h2>분석노트 PDF 받기</h2><p class="muted">끊어읽기·해석까지 담은 분석노트는 카카오톡으로 하루 1개 무료로 받아요.</p><div class="dl"><a href="/notes/?book={urllib.parse.quote(bs[0]["book"])}#note-req">카톡으로 분석노트 요청</a></div></div>',
+         [('/', '홈'), ('/books/', '부교재'), (f'/books/{slug}/', '수능특강 라이트 해설')], '/books/', comments=(f'books-{slug}', f'{full} 해설'))
+
 page('/', '리카수니 자료실 | 모의고사·수능 기출문제 PDF, 영어 변형문제, 분석노트',
      '고1·고2·고3 모의고사와 수능 기출문제 전과목 PDF, 리카수니 영어 변형문제와 문항별 분석노트를 무료로. 리카수니 자료실', body.replace('{NBOOKS}', str(len(BOOKS))), (), '/',
      extra_ld=[{"@context": "https://schema.org", "@type": "WebSite", "name": "리카수니 자료실",  # 검색 결과 사이트 이름
@@ -1172,6 +1260,8 @@ def _sm_rank(p):
     if q[0] == 'news': return 3  # 학원 소식
     if p in ('/books/news/', '/books/kit/'): return 2  # 교재 소식 목록 · 수험생 준비물 가이드
     if q[0] == 'books' and len(q) == 3 and q[1] == 'news': return 3  # 교재 소식
+    if q[0] == 'books' and len(q) == 2 and q[1] not in ('news', 'kit'): return 2  # 부교재 해설 목록
+    if q[0] == 'books' and len(q) == 4: return 3  # 부교재 문항별 해설
     if q[0] == 'memo': return 3  # 원장님 노트
     if q[0] in ('moe', 'suneung') and q[-1].isdigit() or '-' in q[-1] and q[-2:-1] == ['eng']: return 3  # 문항별 해설
     if q[0] in ('moe', 'suneung') and q[-1] == 'eng': return 4  # 회차별 영어
