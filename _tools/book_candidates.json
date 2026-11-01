@@ -1,6 +1,30 @@
 {
  "books": [
   {
+   "isbn13": "9791175801578",
+   "title": "자이스토리 전국연합 모의고사 고2 영어(2027)",
+   "author": "김현아, 박새별, 박선욱, 유미주, 이탁균, 정유진",
+   "publisher": "수경출판사",
+   "pubDate": "2026-11-10",
+   "price": 18000,
+   "description": "최신 3개년 학력평가 기출 모의고사로 절대평가 수능 영어 1등급을 준비하는 교재이다.  1 최신 3개년 학력평가 기출 모의고사 12회 최신 3개년 학력평가를 집중 학습할 수 있도록 월별로 구분해서 최신 연도를 제일 우선 수록하였습니다. 시간을 제한해서 풀어보고 채점하면 자신의 영어 실력 위치를 정확히 확인할 수 있습니다.  2 듣기 만점을 위한 Dictation 듣기 스크립트를 다시 들으면서 핵심 단어나 표현을 받아쓰는 문제를 통해 듣기 만점을 위한",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7342327&q=%EC%9E%90%EC%9D%B4%EC%8A%A4%ED%86%A0%EB%A6%AC+%EC%A0%84%EA%B5%AD%EC%97%B0%ED%95%A9+%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC+%EA%B3%A02+%EC%98%81%EC%96%B4%282027%29",
+   "found": "2026-11-02",
+   "status": "new"
+  },
+  {
+   "isbn13": "9791175801516",
+   "title": "자이스토리 영어 듣기 기본 모의고사 24회(2027)",
+   "author": "김도원, 김현아, 박선욱, 신수진, 유미주, 이아영",
+   "publisher": "수경출판사",
+   "pubDate": "2026-11-10",
+   "price": 15750,
+   "description": "2026년 9월 ~ 2020년 10월 고1 전국연합학력평가 문제 중 듣기 17문항을 실제 모의고사와 동일하게 수록하였습니다. 전국연합학력평가 진도에 맞춰 학습할 수 있도록 3, 6, 9, 10월 순으로 월별로 묶어 수록하였습니다. QR코드를 통해 유튜브로 연결되어 배속 조절이 가능하고, 전체 듣기 파일과 문항별 선택적 듣기 파일을 함께 제공합니다. 듣기 파일은 www.book-sk.kr에서도 다운로드 받으실 수 있습니다.",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7342403&q=%EC%9E%90%EC%9D%B4%EC%8A%A4%ED%86%A0%EB%A6%AC+%EC%98%81%EC%96%B4+%EB%93%A3%EA%B8%B0+%EA%B8%B0%EB%B3%B8+%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC+24%ED%9A%8C%282027%29",
+   "found": "2026-11-02",
+   "status": "new"
+  },
+  {
    "isbn13": "9791176494984",
    "title": "2027 박문각 공무원 진가영 영어 9·8·8 데일리 모의고사 시즌2",
    "author": "진가영",
@@ -11,6 +35,30 @@
    "link": "https://search.daum.net/search?w=bookpage&bookId=7338009&q=2027+%EB%B0%95%EB%AC%B8%EA%B0%81+%EA%B3%B5%EB%AC%B4%EC%9B%90+%EC%A7%84%EA%B0%80%EC%98%81+%EC%98%81%EC%96%B4+9%C2%B78%C2%B78+%EB%8D%B0%EC%9D%BC%EB%A6%AC+%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC+%EC%8B%9C%EC%A6%8C2",
    "found": "2026-10-29",
    "status": "skip"
+  },
+  {
+   "isbn13": "9791160184693",
+   "title": "2027 이동기 영어 하프 모의고사 Vol 1",
+   "author": "이앤미래(대표 이동기)",
+   "publisher": "지금",
+   "pubDate": "2026-11-06",
+   "price": 17100,
+   "description": "전 영역 균형 학습: 어휘·생활영어·문법·독해(학술문/실용문) 전 영역을 실제 시험의 출제 유형과 비중에 맞춰 구성 ㆍ 실전 시간 훈련: 매회 시간을 재고 풀며 25문항 체제에 필요한 문제풀이 속도와 실전 감각 강화 ㆍ 친절하고 자세한 해설: 핵심 어휘, 문법 포인트, 독해 정답의 근거와 문제 접근법까지 꼼꼼하게 제시 ㆍ 체계적인 오답 관리: 틀린 이유와 풀이 과정을 분석하고 취약점을 보완할 수 있는 오답 노트 제공 ㆍ 모의고사 모바일 앱: 모의고사 앱",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7343891&q=2027+%EC%9D%B4%EB%8F%99%EA%B8%B0+%EC%98%81%EC%96%B4+%ED%95%98%ED%94%84+%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC+Vol+1",
+   "found": "2026-11-02",
+   "status": "new"
+  },
+  {
+   "isbn13": "9791194320470",
+   "title": "2027 성정혜 영어 단짠 피드백 모의고사 vol.1",
+   "author": "성정혜",
+   "publisher": "제이엔비인싸이트",
+   "pubDate": "2026-11-06",
+   "price": 17100,
+   "description": "능력' 중심으로 바뀌면서, 같은 시간 안에 더 많이 읽고 더 깊이 판단해야 하는 시험이 되었습니다.  매해 시험장에 직접 입실해 출제 경향을 분석해 온 성정혜 선생님이 이 변화에 맞춘 해답을 한 권에 담았습니다.  〈단짠 피드백 모의고사〉는 문항 수만 늘린 모의고사가 아닙니다. 늘어난 5문항이 가져올 인지적 부담과 시간 압박까지 정밀하게 계산해 두 종류의 회차를 교차 배열했습니다. 빠르고 정확하게 푸는 '단' 회차, 까다로운 시험을 끝까지 견디는 '짠' 회차",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7342382&q=2027+%EC%84%B1%EC%A0%95%ED%98%9C+%EC%98%81%EC%96%B4+%EB%8B%A8%EC%A7%A0+%ED%94%BC%EB%93%9C%EB%B0%B1+%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC+vol.1",
+   "found": "2026-11-02",
+   "status": "new"
   },
   {
    "isbn13": "9791175801561",
@@ -46,6 +94,18 @@
    "description": "2026년 9월 ~ 2020년 11월 고2 전국연합학력평가 문제 중 듣기 17문항을 실제 모의고사와 동일하게 수록하였습니다. 전국연합학력평가 진도에 맞춰 학습할 수 있도록 3, 6, 9, 10월 순으로 월별로 묶어 수록하였습니다. QR코드를 통해 유튜브로 연결되어 배속 조절이 가능하고, 전체 듣기 파일과 문항별 선택적 듣기 파일을 함께 제공합니다. 듣기 파일은 www.book-sk.kr에서도 다운로드 받으실 수 있습니다.  최신 7개년 고2 학력",
    "link": "https://search.daum.net/search?w=bookpage&bookId=7336737&q=%EC%9E%90%EC%9D%B4%EC%8A%A4%ED%86%A0%EB%A6%AC+%EC%98%81%EC%96%B4+%EB%93%A3%EA%B8%B0+%EC%99%84%EC%84%B1+%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC%282027%29",
    "found": "2026-10-29",
+   "status": "new"
+  },
+  {
+   "isbn13": "9791175801523",
+   "title": "자이스토리 영어 독해 완성(2027)",
+   "author": "김도원, 김현아, 박새별, 박선욱, 신수진, 유미주",
+   "publisher": "수경출판사",
+   "pubDate": "2026-11-01",
+   "price": 19800,
+   "description": "최신 7개년 고2 학력평가에서 선별한 독해 문제를 유형별로 나누어 배열하였고, 각 유형마다 문제를 어떻게 풀어야 하는지 문제 이해 순서와 풀이 방법을 제시하여 그대로 따라가기만 하면 독해 공부가 저절로 되는 교재이다.",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7342225&q=%EC%9E%90%EC%9D%B4%EC%8A%A4%ED%86%A0%EB%A6%AC+%EC%98%81%EC%96%B4+%EB%8F%85%ED%95%B4+%EC%99%84%EC%84%B1%282027%29",
+   "found": "2026-11-02",
    "status": "new"
   },
   {
@@ -157,6 +217,42 @@
    "status": "posted"
   },
   {
+   "isbn13": "9791138939768",
+   "title": "Listening Master 수능 영어듣기 모의고사 실전 20 (2026)(2027 수능대비)",
+   "author": "강소엽, 김대성, 육상태, 이장원, 이혜원, 이혜은",
+   "publisher": "이투스북",
+   "pubDate": "2026-10-28",
+   "price": 14400,
+   "description": "ㆍ 최신 수능 유형을 완벽 반영한 수능 영어 듣기 훈련서 ㆍ 수능 영어 듣기 입문부터 만점 공략까지, 단계별 3종 라인업",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7343410&q=Listening+Master+%EC%88%98%EB%8A%A5+%EC%98%81%EC%96%B4%EB%93%A3%EA%B8%B0+%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC+%EC%8B%A4%EC%A0%84+20+%282026%29%282027+%EC%88%98%EB%8A%A5%EB%8C%80%EB%B9%84%29",
+   "found": "2026-11-02",
+   "status": "new"
+  },
+  {
+   "isbn13": "9791138939744",
+   "title": "Listening Master 수능 영어듣기 모의고사 베이직 30 (2026)(2027 수능대비)",
+   "author": "강소엽, 김대성, 육상태, 이장원, 장정근, 조정훈 외 1명",
+   "publisher": "이투스북",
+   "pubDate": "2026-10-28",
+   "price": 15300,
+   "description": "ㆍ 최신 수능 유형을 완벽 반영한 수능 영어 듣기 훈련서 ㆍ 수능 영어 듣기 입문부터 만점 공략까지, 단계별 3종 라인업",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7343845&q=Listening+Master+%EC%88%98%EB%8A%A5+%EC%98%81%EC%96%B4%EB%93%A3%EA%B8%B0+%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC+%EB%B2%A0%EC%9D%B4%EC%A7%81+30+%282026%29%282027+%EC%88%98%EB%8A%A5%EB%8C%80%EB%B9%84%29",
+   "found": "2026-11-02",
+   "status": "new"
+  },
+  {
+   "isbn13": "9791175984721",
+   "title": "ECAS Voca MAX 5500+2026",
+   "author": "박병규",
+   "publisher": "북랩",
+   "pubDate": "2026-10-27",
+   "price": 13300,
+   "description": "전문 강사의 노하우로 완성한 내신수능 1등급 어휘 가이드    진도만 나가도 핵심 어휘 가 자연스럽게 반복되고 고등 필수 부터 최고 난도 어휘까지 차곡차곡 쌓인다. 영어 1등급 을 위한 어휘 자신감 , 지금부터 시작된다! 영어 내신과 수능에서 높은 성적을 얻으려면 탄탄한 어휘력이 필수다. 그러나 단어를 외워도 금세 잊어버리고, 새로운 진도를 나가느라 이전에 공부한 단어를 제때 복습하지 못하는 학생이 많다. 지금 외우는 단어가 어느 수준인지 알기 어렵고, 형태",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7344105&q=ECAS+Voca+MAX+5500%2B2026",
+   "found": "2026-11-02",
+   "status": "new"
+  },
+  {
    "isbn13": "9788968067020",
    "title": "고등 영어 서술형 RANK 주제·요지·요약문 쓰기",
    "author": "쎄듀 영어교육연구센터",
@@ -179,6 +275,30 @@
    "link": "https://search.daum.net/search?w=bookpage&bookId=7337547&q=%EA%B3%A0%EB%93%B1+%EC%98%81%EC%96%B4+%EC%84%9C%EC%88%A0%ED%98%95+RANK+77+%EA%B0%90%EC%A0%90%ED%8F%AC%EC%9D%B8%ED%8A%B8",
    "found": "2026-10-29",
    "status": "posted"
+  },
+  {
+   "isbn13": "9791199377462",
+   "title": "TSD VOCA LV.7 VIOLET",
+   "author": "탁서담, 탁서담 영어훈련소 교재연구실",
+   "publisher": "꿈으로북스",
+   "pubDate": "2026-10-26",
+   "price": 12000,
+   "description": "수능 영어 1등급은 마지막 몇 문제에서 갈립니다. 빈칸 추론, 순서·삽입, 심경 변화 문제의 지문에는 교과서에서 보기 힘든 고난도 어휘가 나옵니다. preclude, belie, attenuate 같은 동사를 모르면 문장의 논리가 무너지고, ambivalent와 resigned를 구별하지 못하면 심경 문제를 틀립니다. 기본 어휘를 마친 학생에게 남은 마지막 관문은 바로 이 고난도 어휘입니다.  TSD VOCA LV.7 VIOLET은 고3과 N수생을",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7344257&q=TSD+VOCA+LV.7+VIOLET",
+   "found": "2026-11-02",
+   "status": "new"
+  },
+  {
+   "isbn13": "9791199377455",
+   "title": "TSD VOCA LV.6 INDIGO",
+   "author": "탁서담, 탁서담 영어훈련소 교재연구실",
+   "publisher": "꿈으로북스",
+   "pubDate": "2026-10-26",
+   "price": 12000,
+   "description": "수능 영어는 단어를 따로 묻지 않습니다. 150단어가 넘는 지문 속에서 그 단어가 어떤 논리로 쓰였는지를 묻습니다. admittedly가 양보의 신호라는 것을 모르면 글의 흐름을 놓치고, complement와 compliment를 구별하지 못하면 어휘 문제를 틀립니다. 고2가 되면 단어를 '아는 것'과 '읽어 내는 것'의 차이가 그대로 점수 차이가 됩니다.  TSD VOCA LV.6 INDIGO는 고1~2 학생이 수능을 준비하며 반드시 넘어야 할 핵심",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7343970&q=TSD+VOCA+LV.6+INDIGO",
+   "found": "2026-11-02",
+   "status": "new"
   },
   {
    "isbn13": "9791199377431",
@@ -1705,5 +1825,5 @@
    "status": "new"
   }
  ],
- "updated": "2026-10-29"
+ "updated": "2026-11-02"
 }
