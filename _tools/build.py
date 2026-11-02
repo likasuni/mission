@@ -310,7 +310,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=49'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=50'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -429,12 +429,14 @@ for idx, k in enumerate(keys_sorted):
                     return f'<a class="nb req" href="#note-req" data-n="{vkey(n)}" title="카톡으로 요청">{e(n)}번</a>'
                 if n in nt:
                     return f'<a class="nb open" href="{view(nt[n])}" target="_blank" rel="noopener">{e(n)}번</a>'
+                if vkey(n) <= 40:  # 18~29번 중 아직 없는 번호도 요청 (2026-11-02). 41~45번은 준비 중으로
+                    return f'<a class="nb req" href="#note-req" data-n="{vkey(n)}" title="아직 없어요. 요청하면 원장님이 만들어요">{e(n)}번</a>'
                 return f'<span class="nb off" title="준비 중">{e(n)}번</span>'
             vs0 = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
             wd = WORDS.get(k)
             en_top = (f'''<section class="card en-sec" id="notes"><h2>문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
-<p class="hot"><b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 2개</b>까지, 번호를 <b>하나씩</b> 골라 받아요. (하나 받은 뒤 "다른 번호 받기"로 두 번째 번호)</p>
+<p class="hot"><b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 2개</b>까지, 번호를 <b>하나씩</b> 골라 받아요. (하나 받은 뒤 "다른 번호 받기"로 두 번째 번호) 18~29번 중 <b>아직 없는 번호</b>도 주황 버튼을 눌러 요청할 수 있어요.</p>
 <div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>' + ad()
                 + ('<section class="card en-sec" id="var"><h2>변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
@@ -447,7 +449,7 @@ for idx, k in enumerate(keys_sorted):
             var_html = ('<div class="soon"><b>변형문제</b> · 준비 중이에요</div>' if not vs else
                         '<div class="var" id="var"><b>리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
                         + ''.join(f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs) + '</div></div>')
-            extra = f'''<section class="card mission" id="note-req"{pre}><h2>분석노트 카톡 요청 <small>30~40번 · 최신 자료</small></h2><p class="muted">이 회차 30~40번 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>'''
+            extra = f'''<section class="card mission" id="note-req"{pre}><h2>분석노트 카톡 요청 <small>18~40번</small></h2><p class="muted">이 회차 18~40번 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></section>'''
             if k[0] != 'moe': extra += f'<div class="card">{var_html}</div>'
         # 같은 과목 다른 회차
         others = [x for x in same if x != k and s in {r['subject'] for r in sessions[x]}]
@@ -1019,7 +1021,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 {memo_home}
 <a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>
 <section class="rq-box"><div class="rq-box-h"><b>자료 요청</b><span>필요한 자료를 고르면 카카오톡으로 받아요</span></div>
-<div class="rq-box-btns"><a class="rqb r1" href="/notes/"><b>모의고사 분석노트</b><small>30~40번 · 하루 2개 무료</small></a>
+<div class="rq-box-btns"><a class="rqb r1" href="/notes/"><b>모의고사 분석노트</b><small>18~40번 · 하루 2개 무료</small></a>
 <a class="rqb r2" href="/notes/?book=%EC%88%98%EB%8A%A5%ED%8A%B9%EA%B0%95%20%EB%9D%BC%EC%9D%B4%ED%8A%B8"><b>부교재 분석노트</b><small>수능특강 라이트·올림포스 등 · 하루 1개</small></a>
 <a class="rqb r3" href="/notes/#etc-req"><b>기타 자료 요청</b><small>단어 시험지·변형문제·워크북</small></a></div>
 <p class="rq-box-ft">자료는 카톡 <b>'나와의 채팅'</b>으로 와요. · <a href="https://contents.premium.naver.com/likasuni/cocos/category" rel="noopener">부교재 강 단위 구매</a> · <a href="https://drive.google.com/open?id=105f20gSuhZvR44gCK6oW5mxn2-ZFG12J" target="_blank" rel="noopener">분석노트 샘플 보기</a></p></section>

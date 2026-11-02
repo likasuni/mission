@@ -401,7 +401,7 @@ async function noteRequest(user) {
   let startEtc = hasEtc && location.hash === '#etc-req';
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const HINT = {
-    moe: '모의고사 분석노트는 <b>하루 2개</b>까지 받아요 (30~40번). 받은 링크는 <b>24시간</b> 열려요.',
+    moe: '모의고사 분석노트는 <b>하루 2개</b>까지 받아요 (18~40번, 없는 번호는 요청하면 원장님이 만들어요). 받은 링크는 <b>24시간</b> 열려요.',
     book: '부교재 분석노트는 <b>하루 1개</b>까지 받아요. 없는 자료는 원장님이 <b>1~2일</b> 안에 만들어요.',
     etc: '단어 시험지·변형문제처럼 <b>다른 자료</b>를 요청해요. 원장님이 직접 만든 자료만 드려요 (출판사 교재 원본은 안 돼요).'
   };
@@ -450,7 +450,7 @@ async function noteRequest(user) {
   const bcfg = b => NOTE_BOOK_CFG[b] || { u: '강', max: 30, n: 10 };
   const curBook = () => (document.getElementById('nr-b') || {}).value || d.book || NOTE_BOOKS[0];
   const numOpts = k => {
-    if (k !== 'book') return opt(range(30, 40), +qs.get('n') >= 30 && +qs.get('n') <= 40 ? +qs.get('n') : 30); // 모의고사는 30~40번만 요청 (나머지는 페이지에서 바로 보기)
+    if (k !== 'book') return opt(range(18, 40), +qs.get('n') >= 18 && +qs.get('n') <= 40 ? +qs.get('n') : 30); // 모의고사는 18~40번 요청 (2026-11-02, 18~29번 중 아직 없는 번호도 요청하도록. 41~45번은 페이지에서 바로 보기)
     const c = bcfg(curBook()), qn = qs.get('n'); // 주소의 번호(나도 받기)는 같은 교재일 때만
     const z = zeroName(curBook());
     const sel = qn !== null && curBook() === d.book && (+qn === 0 ? !!z : +qn >= (c.from || 1) && +qn <= c.n) ? +qn : (c.from || 1);
@@ -502,7 +502,7 @@ async function noteRequest(user) {
     preview();
   });
   card.querySelectorAll('select').forEach(s => s.onchange = preview);
-  // 페이지의 주황 번호 버튼(30~40번)을 누르면 요청 칸에 그 번호를 바로 선택
+  // 페이지의 주황 번호 버튼(요청 가능한 번호)을 누르면 요청 칸에 그 번호를 바로 선택
   document.querySelectorAll('a.nb.req[data-n]').forEach(a => a.addEventListener('click', () => {
     if (kind !== 'moe' || document.getElementById('nr-pick').style.display) card.querySelector('.tab[data-k="moe"]').click();
     document.getElementById('nr-n').value = a.dataset.n; preview();
