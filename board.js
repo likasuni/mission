@@ -28,7 +28,7 @@
     var h = Math.floor(m / 60); if (h < 24) return h + '시간 전';
     var d = new Date(t); return (d.getMonth() + 1) + '월 ' + d.getDate() + '일';
   }
-  function isReq(c) { return c.content.indexOf('[자료 요청]') === 0 && !/다시 요청해 주세요/.test(c.reply || ''); } // 연락이 안 돼 정리된 요청(3일)은 뺌
+  function isReq(c) { return c.content.indexOf('[자료 요청]') === 0 && !/다시 요청해 주세요|제공이 어려워요/.test(c.reply || ''); } // 연락이 안 돼 정리된 요청(3일)·제공이 어려운 기타 요청은 뺌
   // 상태 3단계 (자료실 lib.js 와 같게): 진행 중(주황, '접수했어요') → 준비 완료(파랑, '준비됐어요') → 카톡 발송(초록, '보내 드렸어요')
   function isDone(c) { return /보내 드렸어요/.test(c.reply || ''); }
   function isReady(c) { return !isDone(c) && /준비됐어요/.test(c.reply || ''); }

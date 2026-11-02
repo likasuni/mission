@@ -112,7 +112,8 @@ async function tabComments() {
           <div class="row mt" style="gap:6px;flex-wrap:wrap"><select id="ef-${c.id}" style="flex:1 1 260px" onfocus="etcFiles(${c.id})"><option value="">자료 고르기 (기타자료 폴더)</option></select>
           <input id="em-${c.id}" maxlength="120" placeholder="한 줄 메시지 (선택)" style="flex:1 1 220px"></div>
           <div class="row mt" style="gap:6px;flex-wrap:wrap"><input id="el-${c.id}" placeholder="또는 다른 링크 직접 넣기 (선택)" style="flex:1 1 220px">
-          <button class="btn btn-gold btn-sm" onclick="etcSend(${c.id})">준비 완료 · 카톡 보내기</button></div></div>` : ''}
+          <button class="btn btn-gold btn-sm" onclick="etcSend(${c.id})">준비 완료 · 카톡 보내기</button>
+          ${/제공이 어려워요/.test(c.reply || '') ? '<span class="meta"><b>제공 어려움</b> 처리됨 · 공개 목록에서 빠졌어요</span>' : /보내 드렸어요/.test(c.reply || '') ? '' : `<button class="btn btn-line btn-sm" onclick="etcDecline(${c.id})">제공 어려워요</button>`}</div></div>` : ''}
       </div>`).join('') : '<div class="card"><p class="muted">해당하는 댓글이 없어요.</p></div>'}`;
 }
 function setCFilter(k) { cFilter = k; showTab('comments'); }
@@ -153,6 +154,18 @@ async function etcSend(id) {
   const r = await res.json().catch(() => ({}));
   if (!res.ok) return toast('오류: ' + (r.error || res.status));
   toast(r.sent ? '카톡으로 보냈어요!' : `카톡을 못 보냈어요 (${{ no_token: '카카오 연결 없음', no_consent: '카톡 동의 안 함', fail: '발송 실패' }[r.why] || r.why}). 답글로 '준비됐어요' 안내를 남겼어요.`);
+  showTab('comments');
+}
+// 기타 자료 요청: 제공이 어려운 자료 → 답글을 달고 첫 화면·블로그 요청 목록에서 뺌 (카톡은 보내지 않음, 답글 문구 '제공이 어려워요'로 구분)
+const ETC_DECLINE = '요청 감사해요. 이 자료는 제공이 어려워요. 자료실의 모의고사 단어 총정리, 변형문제, 부교재 단어 학습노트는 무료로 받을 수 있어요.';
+async function etcDecline(id) {
+  let reply = prompt('학생에게 보일 답글이에요. 고쳐도 돼요.', ETC_DECLINE);
+  if (reply === null) return;
+  reply = reply.trim();
+  if (!/제공이 어려워요/.test(reply)) reply = (reply + ' 이 자료는 제공이 어려워요.').trim();
+  const { error } = await sb.from('comments').update({ reply, replied_at: new Date().toISOString(), approved: true }).eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast('답글을 달고 요청 목록에서 뺐어요.');
   showTab('comments');
 }
 async function saveReply(id) {

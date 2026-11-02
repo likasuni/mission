@@ -43,7 +43,7 @@ const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (n
         <div class="row">
           <strong>${OWNER_IDS.includes(c.user_id) ? '리카수니 원장 <span class="rc-badge">운영자</span>' : esc(maskName(c.author_name))}</strong>
           ${!c.approved ? '<span class="tag wait">비공개</span>' : ''}
-          ${c.content.startsWith('[자료 요청]') ? (/보내 드렸어요/.test(c.reply || '') ? '<span class="rq-st ok">완료 · 카톡 발송</span>' : /준비됐어요/.test(c.reply || '') ? '<span class="rq-st rd">준비 완료</span>' : '<span class="rq-st">진행 중</span>') : ''}
+          ${c.content.startsWith('[자료 요청]') ? (/제공이 어려워요/.test(c.reply || '') ? '<span class="rq-st">제공 어려움</span>' : /보내 드렸어요/.test(c.reply || '') ? '<span class="rq-st ok">완료 · 카톡 발송</span>' : /준비됐어요/.test(c.reply || '') ? '<span class="rq-st rd">준비 완료</span>' : '<span class="rq-st">진행 중</span>') : ''}
           <span class="meta">${fmtDate(c.created_at)}</span>
         </div>
         <p class="body">${esc(c.content)}</p>
@@ -130,7 +130,7 @@ function recentComments() {
   };
   // 자료 요청 댓글: [자료 요청] … 부탁드려요. 상태 3단계 (답글 문구로 구분)
   // 진행 중(주황, '접수했어요') → 준비 완료(파랑, '준비됐어요' — 드라이브에 올라옴, 요청하면 바로 카톡) → 카톡 발송(초록, '보내 드렸어요')
-  const isReq = c => c.content.startsWith('[자료 요청]') && !/다시 요청해 주세요/.test(c.reply || '');  // 연락이 안 돼 정리된 요청(3일)은 목록에서 뺌
+  const isReq = c => c.content.startsWith('[자료 요청]') && !/다시 요청해 주세요|제공이 어려워요/.test(c.reply || '');  // 연락이 안 돼 정리된 요청(3일)·제공이 어려운 기타 요청(관리자 버튼)은 목록에서 뺌
   const isDone = c => /보내 드렸어요/.test(c.reply || '');
   const isReady = c => !isDone(c) && /준비됐어요/.test(c.reply || '');
   // '나도 받기' 링크: 요청 칸에 같은 회차·번호가 미리 골라져 있게 (y·m·g·n 또는 book·unit·n)
