@@ -3,14 +3,30 @@
     "key": "listen1",
     "name": "듣기 기본 모의고사 (고1)",
     "query": "자이스토리 영어 듣기 기본 모의고사 2027",
-    "must": ["자이스토리", "듣기", "기본", "2027"],
-    "url": ""
+    "must": [
+      "자이스토리",
+      "듣기",
+      "기본",
+      "2027"
+    ],
+    "url": "https://link.coupang.com/re/AFFSDP?lptag=AF0931331&pageKey=9803259847&itemId=29355786831&vendorItemId=96268747243&traceid=V0-153-0b33b1e7dd71ac3a&requestid=20261104083513843292896330&token=31850C%7CMIXED&pt=0&slot=6",
+    "product": "자이스토리 영어 듣기 기본 모의고사 / 2027년",
+    "image": "https://ads-partners.coupang.com/image1/qCeVHRxcbIQwuUD8qHTELYfCOOVGLyB95pwddLF7YbJp2-saEkrPY23eysbhd_cv7YV1BbF5tkw2JTYPGdu7tnmdUBGw9tInwtRnor_CTUC7y-3Nv3lSd4y76nlanYVpNwjBC68sdiumbCmmI2M6iRQPS-cAd3kVIsCjVgfxgqt3Z0jM8_HyMFlRt1G1QOZ7TfjLKX8lPeEE2_G66x4vKg7yuEMnHoNrEEjasIsxQPowh6_-Dki4slWTv2iRzG6nOoqN9EMQqnFFmFcgwcNWd-ZfwdNNyhM7jUPwqhzNxNyvM9qttg3IWMbmHp7VCMfdt6UrHA4BcJsdF5g9k5yw6BBlDoamh3zukJPO4HZP36lgbxr1GX0hoSoXpPB6W3Wrkpv4CrOxevwRCLqsOT4sgmjLu4Iqt-ZbV8j28GoMUcp2V7fKTU6iUFbrV3JDJWDXeAOUStgVgVQCS4E58j16XIm7CyaVwoNu3picMQjOtAi3jxbMsc8KmMsdgwgbuOFJPtixV2Q9pVTfNl-DanAQFIeGoWuFH08nl_dSStYJ0hni9A==",
+    "checked": "2026-11-03"
   },
   {
     "key": "listen2",
     "name": "듣기 완성 모의고사 (고2)",
     "query": "자이스토리 영어 듣기 완성 모의고사 2027",
-    "must": ["자이스토리", "듣기", "완성", "2027"],
-    "url": ""
+    "must": [
+      "자이스토리",
+      "듣기",
+      "완성",
+      "2027"
+    ],
+    "url": "https://link.coupang.com/re/AFFSDP?lptag=AF0931331&pageKey=9788636502&itemId=29307465173&vendorItemId=96224116932&traceid=V0-153-65d07dcdae2b8b94&requestid=20261104083517232275954865&token=31850C%7CGM&pt=0&slot=1",
+    "product": "Xistory 자이스토리 영어 듣기 완성 모의고사 (2027년)",
+    "image": "https://ads-partners.coupang.com/image1/IIYwJ3hTEdvswaH4IEq4EaW1pCNk_OPiT0hZGTYL6kMOgViDU_WAmJ9pMcMPXgW0BmpSLO_pr-Q4O7UXIw4cALhYK1Zvi08nCwZHLzOXVW-jXtsyEvhDMxx0pOP1-AgJdLwYyZQ4kqGLLXb6vkHLpteHP2keOqYFuHAwPf21w30qBellS8IGD0hIXy61hUoMsRO2F9PSlcxFt6uM_IkfEjVHuUuZJhNozBrKGNlqo5pgixDXlX_ryMkYYHN0sVi722KdLvCGpaa0T81lZrYYpYQdYq-DAjwiHLQzyYHIMnb84BTz1PR7tJWhbQ8PTAkKxfjRdOkkyAFuIhOJPpLPc8G8x8w5kQ1zTdG0sK-l9PNXNXjkV-w6AbihUEs0Vg8gUBPpU01IIZTUs4lqLFthebhWslcQ87kaNa8McAmyaZwQeeJOYz-Kr1ECFVpUjf6PygNPGDvsBXFpmfgc0QxI1PuKgX0Rw5nQYQ_6qqoDpkZrAykIbU8VP6onk1I9UZG_wFURDAIxgAqLzXs1PPnxPOMWk9QYQj4grRJo5jMJv0s=",
+    "checked": "2026-11-03"
   }
 ]
