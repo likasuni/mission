@@ -3,8 +3,8 @@
  *
  * 하는 일
  *  1) 분석노트 폴더 2개(모의고사·부교재)를 '제한됨'(비공개)으로 바꾸고,
- *     바로 보기 자료(모의고사 18~29번, 41~45번)만 파일별로 '링크가 있는 모든 사용자' 공개로 둡니다.
- *     30~40번과 부교재 분석노트는 비공개 → 카톡 요청으로만 받을 수 있어요.
+ *     바로 보기 자료(모의고사 18~20·25~29번, 41~45번)만 파일별로 '링크가 있는 모든 사용자' 공개로 둡니다.
+ *     21~24번·30~40번과 부교재 분석노트는 비공개 → 카톡 요청으로만 받을 수 있어요.
  *  2) 자료실 서버(Supabase)가 비밀키로 요청하면 파일 목록과 파일 내용을 전달합니다.
  *  3) 자료실 목록 만들기(깃허브)에는 공개 파일 목록만 알려 줍니다 (비공개 파일 주소는 절대 안 내보냄).
  *  4) 매시간 자동으로 새로 올린 파일의 공개/비공개를 맞춥니다.
@@ -16,7 +16,7 @@ const KEY = '여기에_비밀키';
 const ROOTS = { '모의고사 분석노트': '1jSEPdOdM4RD7GplBWwF3jiRKFWToBOBq', '부교재 분석노트': '1vg17CVTqjIRk-hdoA3PhrJ1RTUn84lSO', '기타자료': '1FryHlXrnXc7gzP8e3xQrM-TBR6L-KkXY' };
 const ETC = '기타자료'; // 기타 자료 요청 폴더 — 모두 비공개, 분석노트 목록(list)에는 안 섞음
 const KEEP_PUBLIC = ['105f20gSuhZvR44gCK6oW5mxn2-ZFG12J']; // 부교재 샘플(수능특강 라이트) — 공개 유지
-const PRIVATE_FROM = 30, PRIVATE_TO = 40; // 모의고사 30~40번은 비공개
+const PRIVATE = [[21, 24], [30, 40]]; // 모의고사 21~24번·30~40번은 비공개 (21~24번 2026-11-04 추가, build.py REQ_RANGES 와 같게)
 
 /* ---------- 공개/비공개 규칙 ---------- */
 function nums(name) {
@@ -35,7 +35,7 @@ function isPublic(f) {
   if (/문제|정답|해설|듣기/.test(String(f.name).normalize('NFC'))) return true;          // 같은 폴더의 시험지 원본은 공개 그대로
   const ns = nums(f.name);
   if (!ns.length) return false;                                   // 번호를 모르면 안전하게 비공개
-  return ns.every(function (r) { return r[1] < PRIVATE_FROM || r[0] > PRIVATE_TO; });
+  return ns.every(function (r) { return PRIVATE.every(function (p) { return r[1] < p[0] || r[0] > p[1]; }); });
 }
 
 /* ---------- 폴더 훑기 ---------- */

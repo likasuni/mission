@@ -450,7 +450,7 @@ async function noteRequest(user) {
   const bcfg = b => NOTE_BOOK_CFG[b] || { u: '강', max: 30, n: 10 };
   const curBook = () => (document.getElementById('nr-b') || {}).value || d.book || NOTE_BOOKS[0];
   const numOpts = k => {
-    if (k !== 'book') return opt(range(18, 40), +qs.get('n') >= 18 && +qs.get('n') <= 40 ? +qs.get('n') : 30); // 모의고사는 18~40번 요청 (2026-11-02, 18~29번 중 아직 없는 번호도 요청하도록. 41~45번은 페이지에서 바로 보기)
+    if (k !== 'book') return opt(range(18, 40), +qs.get('n') >= 18 && +qs.get('n') <= 40 ? +qs.get('n') : 30); // 모의고사는 18~40번 요청 (2026-11-02, 바로 보기 번호 중 아직 없는 번호도 요청. 21~24·30~40번은 요청으로만 (2026-11-04))
     const c = bcfg(curBook()), qn = qs.get('n'); // 주소의 번호(나도 받기)는 같은 교재일 때만
     const z = zeroName(curBook());
     const sel = qn !== null && curBook() === d.book && (+qn === 0 ? !!z : +qn >= (c.from || 1) && +qn <= c.n) ? +qn : (c.from || 1);

@@ -97,7 +97,7 @@ def skey(t):  # 제목·폴더 이름에서 회차 (moe, 학년, 연도, 월)
     if g == 3 and mo in (6, 9) and m.group(2) == '년': y += 1
     return ('moe', g, y, mo)
 
-# 분석노트(18~29·41~45 공개, 30~40 카톡 요청) · 모의고사 단어 · 부교재 단어 (sync_drive.py → extras.json)
+# 분석노트(18~20·25~29·41~45 공개, 21~24·30~40 카톡 요청) · 모의고사 단어 · 부교재 단어 (sync_drive.py → extras.json)
 NOTES = collections.defaultdict(dict); WORDS = {}; BWORDS = collections.defaultdict(list)
 _xp = os.path.join(ROOT, '_tools', 'extras.json')
 import unicodedata as _ud
@@ -117,7 +117,8 @@ for x in (json.load(open(_xp)) if os.path.exists(_xp) else []):
     elif p0 == '부교재 단어':
         BWORDS[x['path'][1] if len(x['path']) > 1 else '기타'].append((t, x['id']))
 NOTE_NUMS = [str(i) for i in range(18, 41)] + ['41~42', '43~45']
-def is_req(n): return 30 <= vkey(n) <= 40   # 30~40번은 카톡 요청(최근 업데이트 자료)
+REQ_RANGES = [(21, 24), (30, 40)]  # 카톡 요청으로만 받는 번호 (21~24번 추가 2026-11-04). Apps Script PRIVATE 와 같게
+def is_req(n): return any(a <= vkey(n) <= b for a, b in REQ_RANGES)
 
 def ikey(k):
     ex, g, y, m = k
@@ -429,14 +430,14 @@ for idx, k in enumerate(keys_sorted):
                     return f'<a class="nb req" href="#note-req" data-n="{vkey(n)}" title="카톡으로 요청">{e(n)}번</a>'
                 if n in nt:
                     return f'<a class="nb open" href="{view(nt[n])}" target="_blank" rel="noopener">{e(n)}번</a>'
-                if vkey(n) <= 40:  # 18~29번 중 아직 없는 번호도 요청 (2026-11-02). 41~45번은 준비 중으로
+                if vkey(n) <= 40:  # 바로 보기 번호 중 아직 없는 번호도 요청 (2026-11-02). 41~45번은 준비 중으로
                     return f'<a class="nb req" href="#note-req" data-n="{vkey(n)}" title="아직 없어요. 요청하면 원장님이 만들어요">{e(n)}번</a>'
                 return f'<span class="nb off" title="준비 중">{e(n)}번</span>'
             vs0 = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
             wd = WORDS.get(k)
             en_top = (f'''<section class="card en-sec" id="notes"><h2>문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
-<p class="hot"><b>30~40번은 최근 업데이트 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 2개</b>까지, 번호를 <b>하나씩</b> 골라 받아요. (하나 받은 뒤 "다른 번호 받기"로 두 번째 번호) 18~29번 중 <b>아직 없는 번호</b>도 주황 버튼을 눌러 요청할 수 있어요.</p>
+<p class="hot"><b>21~24번·30~40번은 카톡 요청 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 2개</b>까지, 번호를 <b>하나씩</b> 골라 받아요. (하나 받은 뒤 "다른 번호 받기"로 두 번째 번호) 나머지 번호 중 <b>아직 없는 번호</b>도 주황 버튼을 눌러 요청할 수 있어요.</p>
 <div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>' + ad()
                 + ('<section class="card en-sec" id="var"><h2>변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
@@ -1013,7 +1014,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <section class="card" id="push-news" hidden><h2>최근 알림</h2><ul></ul></section>
 <h2 class="sec-h">영어 모의고사 핵심 자료</h2>
 <div class="svc">
-<a class="svc-c c3" href="/english/"><b>문항별 분석노트</b><span>18~29번·41~45번 바로 보기, 30~40번 최신 자료는 카톡 요청</span><em>{note_files}개 문항</em></a>
+<a class="svc-c c3" href="/english/"><b>문항별 분석노트</b><span>18~20·25~29·41~45번 바로 보기, 21~24·30~40번은 카톡 요청</span><em>{note_files}개 문항</em></a>
 <a class="svc-c c2" href="/variants/"><b>변형문제</b><span>문항별 변형문제 PDF 전체 공개</span><em>{len(var_sess)}개 회차 · {var_files}개 문항</em></a>
 <a class="svc-c c5" href="/english/#words"><b>영어 단어 총정리</b><span>회차별 18~45번 핵심 어휘 정리</span><em>{len(word_sess)}개 회차</em></a>
 <a class="svc-c c4" href="/books/"><b>부교재 자료</b><span>수능특강 라이트·올림포스 등 분석노트·단어</span><em>{{NBOOKS}}권</em></a>
@@ -1051,7 +1052,7 @@ def en_table(g):
             f'<tbody>{rows}</tbody></table></div>')
 enbody = ('''<h1 class="page-h1">영어 모의고사 분석노트·변형문제·단어</h1>
 <p class="lead">회차를 누르면 문항별 분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
-<b>30~40번 분석노트는 최근 업데이트 자료</b>라 카카오톡 요청으로 받을 수 있어요.</p>'''
+<b>21~24번·30~40번 분석노트</b>는 카카오톡 요청으로 받을 수 있어요.</p>'''
           # 고1·고2·고3 탭: 누른 학년 표만 보임 (JS 없으면 세 표 모두 보임), 고른 학년은 주소(#go2)와 브라우저에 기억
           + '<div class="g-tabs" role="tablist">' + ''.join(
               f'<button type="button" class="g-tab" role="tab" data-g="{g}">고{g}<small>{sum(1 for k in en_sess if k[1] == g)}회차</small></button>'
