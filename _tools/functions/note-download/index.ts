@@ -1,4 +1,5 @@
 // 분석노트 링크 열기: GET ?t=토큰 → 유효기간(24시간) 확인 → 공개 구글드라이브에서 파일을 가져와 PDF로 전달
+// GET ?t=토큰&info=1 → 받기 페이지(/get/)가 '이어서 공부하기' 링크를 그리도록 자료 이름·회차만 JSON 으로 (파일 id·경로는 안 줌, 2026-11-04~)
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 // 오류는 자료실 안내 페이지로 보냄 (Supabase 함수는 HTML 화면을 그대로 보여주지 못함)
@@ -12,7 +13,14 @@ Deno.serve(async (req) => {
   if (!/^[a-f0-9]{32}$/.test(t)) return page(400, 'bad');
   const db = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!);
 
-  const { data: o } = await db.from('note_orders').select('label,drive_id,file_name,expires_at,status').eq('link_token', t).maybeSingle();
+  const { data: o } = await db.from('note_orders').select('kind,label,query,drive_id,file_name,expires_at,status').eq('link_token', t).maybeSingle();
+  if (new URL(req.url).searchParams.get('info')) {
+    const ok = !!o && o.status === 'sent' && !!o.drive_id;
+    const q = o?.query || {}, keep = ['y', 'm', 'g', 'n', 'book', 'unit'];
+    const info = ok ? { ok: true, expired: Date.now() > new Date(o.expires_at).getTime(), kind: o.kind, label: o.label,
+      query: Object.fromEntries(Object.entries(q).filter(([k]) => keep.includes(k))), expires_at: o.expires_at } : { ok: false };
+    return new Response(JSON.stringify(info), { headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Cache-Control': 'no-store' } });
+  }
   if (!o || o.status !== 'sent' || !o.drive_id) return page(404, 'notfound');
   if (Date.now() > new Date(o.expires_at).getTime()) return page(410, 'expired');
 

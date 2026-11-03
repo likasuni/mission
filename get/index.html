@@ -10,36 +10,129 @@
 <meta property="og:image" content="https://data.likasuni.com/og.png">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/style.css?v=4">
+<style>
+/* 받기 페이지 (2026-11-04~): PDF 버튼은 맨 위에 크게, 광고는 버튼과 떨어진 '이어서 공부하기' 아래에만 */
+.gt-card { text-align: center; }
+.gt-card h2 { margin-bottom: 6px; }
+.gt-label { font-weight: 700; color: var(--navy); font-size: 1.05rem; margin: 4px 0 14px; word-break: keep-all; }
+.gt-open { display: block; width: 100%; max-width: 360px; margin: 0 auto; padding: 16px 18px; font-size: 1.1rem; box-sizing: border-box; }
+.gt-tip { margin-top: 12px; }
+.gt-next h3 { margin: 0 0 4px; }
+.gt-next .gt-links { display: grid; gap: 10px; margin-top: 12px; }
+.gt-next .gt-links .btn { display: block; text-align: center; padding: 13px 14px; box-sizing: border-box; }
+.gt-more { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.gt-more a { flex: 1 1 140px; text-align: center; }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3951386769813957" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J12SZ4Z4K7"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J12SZ4Z4K7');</script>
 </head>
 <body>
-<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a></div></header>
-<main class="wrap"><div class="card" style="text-align:center">
-<h2>분석노트 받기</h2>
-<p class="muted" id="msg">파일을 여는 중이에요...</p>
-<p><a class="btn btn-gold" id="go" href="#">PDF 열기</a></p>
-<p class="meta">파일이 열리지 않으면 위 버튼을 눌러주세요. 링크는 정해진 기간(분석노트 24시간 · 기타 자료 7일) 동안만 열 수 있어요.</p>
-</div></main>
+<header class="top"><div class="top-in"><a class="brand" href="/">리카수니 <b>자료실</b></a><div class="top-r"><a class="hdr-cta" href="/notes/">자료 요청</a></div></div></header>
+<main class="wrap">
+<div class="card gt-card">
+<h2 id="ttl">📘 분석노트가 도착했어요</h2>
+<p class="gt-label" id="lbl"></p>
+<p><a class="btn btn-gold gt-open" id="go" href="#">PDF 열기</a></p>
+<p class="muted" id="msg"></p>
+<p class="meta gt-tip" id="tip">카카오톡 안에서 파일이 안 열리면 오른쪽 위 메뉴(⋮)에서 <b>다른 브라우저로 열기</b>를 눌러 주세요.</p>
+</div>
+
+<div class="card gt-next" id="next" style="display:none">
+<h3>📚 이어서 공부하기</h3>
+<p class="meta" id="next-sub">받은 자료와 같이 보면 좋아요.</p>
+<div class="gt-links" id="links"></div>
+</div>
+
+<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3951386769813957" data-ad-slot="8157681795" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div class="card">
+<h3>🔎 다른 자료도 둘러보기</h3>
+<div class="gt-more">
+<a class="btn btn-line" href="/posts/" data-go="ebooks">📘 분석노트 전자책</a>
+<a class="btn btn-line" href="/memo/" data-go="memo">원장님 노트</a>
+<a class="btn btn-line" href="/english/" data-go="english">영어 PDF 자료받기</a>
+<a class="btn btn-line" href="/notes/" data-go="notes">자료 요청하기</a>
+</div>
+</div>
+</main>
+<footer>
+© 리카수니 자료실 · <a href="https://www.likasuni.com" target="_blank" rel="noopener">리카수니 블로그</a>
+<div class="biz">이매동 코코스학원 리카수니 원장이 만든 분석노트예요. 링크는 받은 사람만 정해진 기간 동안 열 수 있어요.</div>
+</footer>
 <script>
-const qs = new URLSearchParams(location.search);
-const t = qs.get('t') || '', err = qs.get('e');
-const go = document.getElementById('go');
-const ERR = {
-  bad: '잘못된 링크예요. 받은 링크를 다시 확인해 주세요.',
-  notfound: '링크를 찾을 수 없어요. 자료실에서 다시 요청해 주세요.',
-  expired: '링크 사용 기간이 지났어요. 자료실에서 다시 요청해 주세요.',
-  fail: '파일을 가져오지 못했어요. 잠시 후 다시 시도해 주세요.'
-};
-if (err) {
-  document.getElementById('msg').innerHTML = (ERR[err] || ERR.fail) + '<br><a href="/notes/">분석노트 요청하러 가기 →</a>';
-  go.style.display = 'none';
-} else if (!/^[a-f0-9]{32}$/.test(t)) {
-  document.getElementById('msg').textContent = '잘못된 링크예요. 받은 링크를 다시 확인해 주세요.';
-  go.style.display = 'none';
-} else {
-  go.href = 'https://iiyhmskvdjgstoikonwu.supabase.co/functions/v1/note-download?t=' + t;
-  setTimeout(() => location.replace(go.href), 600);
-}
+(function () {
+  var FN = 'https://iiyhmskvdjgstoikonwu.supabase.co/functions/v1/note-download';
+  var qs = new URLSearchParams(location.search);
+  var t = qs.get('t') || '', err = qs.get('e');
+  var go = document.getElementById('go'), msg = document.getElementById('msg');
+  var ERR = {
+    bad: '잘못된 링크예요. 받은 링크를 다시 확인해 주세요.',
+    notfound: '링크를 찾을 수 없어요. 자료실에서 다시 요청해 주세요.',
+    expired: '링크 사용 기간이 지났어요. 자료실에서 다시 요청해 주세요.',
+    fail: '파일을 가져오지 못했어요. 잠시 후 다시 시도해 주세요.'
+  };
+  function ev(name, p) { try { gtag('event', name, p || {}); } catch (e) {} }
+  function stop(text, retry) {
+    document.getElementById('ttl').textContent = '분석노트 받기';
+    msg.innerHTML = text + '<br><a href="/notes/">자료 요청하러 가기 →</a>';
+    document.getElementById('tip').style.display = 'none';
+    if (!retry) go.style.display = 'none';
+  }
+  function pad(m) { return String(m).padStart(2, '0'); }
+  function until(iso) {
+    var d = new Date(new Date(iso).getTime() + 9 * 3600e3);
+    return (d.getUTCMonth() + 1) + '월 ' + d.getUTCDate() + '일 ' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes());
+  }
+  function btn(cls, href, text, kind) { return '<a class="btn ' + cls + '" href="' + href + '" data-go="' + kind + '">' + text + '</a>'; }
+
+  // '이어서 공부하기': 모의고사면 그 번호 전자책·해설(있으면) 또는 회차 페이지 + 같은 회차 다른 번호 요청
+  function nextLinks(info) {
+    var q = info.query || {}, html = '';
+    if (info.kind === 'moe' && q.g && q.y && q.m) {
+      var round = '/moe/go' + q.g + '/' + q.y + '-' + pad(q.m) + '/eng/';
+      var name = q.y + '년 ' + q.m + '월 고' + q.g;
+      fetch('/notes/view/list.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (eb) {
+        var e = eb['moe-g' + q.g + '-' + q.y + '-' + q.m + '-' + q.n];
+        if (e) html += btn('btn-navy', e, '📘 ' + q.n + '번 전자책 보기 (화면으로 바로)', 'ebook') + btn('btn-line', e.replace('#ebook', ''), q.n + '번 문항 해설 보기', 'post');
+        html += btn('btn-line', round, name + ' 영어 회차 자료 보기', 'round');
+        html += btn('btn-line', '/notes/?g=' + q.g + '&y=' + q.y + '&m=' + q.m, '같은 회차 다른 번호 받기', 'more');
+        show(html, name + ' 영어 ' + q.n + '번을 받았어요. 같은 회차 자료를 이어서 볼 수 있어요.');
+      });
+    } else if (info.kind === 'book') {
+      html += btn('btn-line', '/books/', '부교재 자료·문항별 해설 보기', 'books');
+      html += btn('btn-line', '/notes/', '다른 강·번호 받기', 'more');
+      show(html);
+    } else {
+      show(btn('btn-line', '/notes/', '다른 자료 요청하기', 'more'));
+    }
+  }
+  function show(html, sub) {
+    document.getElementById('links').innerHTML = html;
+    if (sub) document.getElementById('next-sub').textContent = sub;
+    document.getElementById('next').style.display = '';
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-go]');
+    if (a) ev('get_next', { link_type: a.getAttribute('data-go') });
+  });
+
+  if (err) { stop(ERR[err] || ERR.fail, err === 'fail'); if (err === 'fail' && /^[a-f0-9]{32}$/.test(t)) go.href = FN + '?t=' + t; return; }
+  if (!/^[a-f0-9]{32}$/.test(t)) { stop(ERR.bad); return; }
+  go.href = FN + '?t=' + t;   // 바로 누를 수 있게 먼저 걸어 둠 (자동으로 넘기지 않음)
+  go.addEventListener('click', function () { ev('get_open'); });
+  fetch(FN + '?t=' + t + '&info=1', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (info) {
+    if (!info.ok) { stop(ERR.notfound); return; }
+    if (info.expired) { stop(ERR.expired); return; }
+    document.getElementById('lbl').textContent = info.label;
+    if (info.kind === 'etc') document.getElementById('ttl').textContent = '📦 요청하신 자료가 도착했어요';
+    msg.textContent = until(info.expires_at) + '까지 열 수 있어요.';
+    nextLinks(info);
+  }).catch(function () {
+    msg.textContent = '버튼을 누르면 PDF가 열려요.';
+    show(btn('btn-line', '/notes/', '다른 자료 요청하기', 'more'));
+  });
+  addEventListener('load', function () { setTimeout(function () { if (window.adsbygoogle && window.adsbygoogle.loaded) return; document.querySelectorAll('.ad-slot').forEach(function (d) { d.style.display = 'none'; }); }, 8000); });
+})();
 </script>
 </body>
 </html>
