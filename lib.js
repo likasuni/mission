@@ -401,7 +401,7 @@ async function noteRequest(user) {
   let startEtc = hasEtc && location.hash === '#etc-req';
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const HINT = {
-    moe: '모의고사 분석노트는 <b>하루 2개</b>까지 받아요 (18~40번, 없는 번호는 요청하면 원장님이 만들어요). 받은 링크는 <b>24시간</b> 열려요.',
+    moe: '모의고사 분석노트는 <b>하루 2개</b>까지 받아요 (18~45번, 없는 번호는 요청하면 원장님이 만들어요). 받은 링크는 <b>24시간</b> 열려요.',
     book: '부교재 분석노트는 <b>하루 1개</b>까지 받아요. 없는 자료는 원장님이 <b>1~2일</b> 안에 만들어요.',
     etc: '단어 시험지·변형문제처럼 <b>다른 자료</b>를 요청해요. 원장님이 직접 만든 자료만 드려요 (출판사 교재 원본은 안 돼요).'
   };
@@ -450,7 +450,11 @@ async function noteRequest(user) {
   const bcfg = b => NOTE_BOOK_CFG[b] || { u: '강', max: 30, n: 10 };
   const curBook = () => (document.getElementById('nr-b') || {}).value || d.book || NOTE_BOOKS[0];
   const numOpts = k => {
-    if (k !== 'book') return opt(range(18, 40), +qs.get('n') >= 18 && +qs.get('n') <= 40 ? +qs.get('n') : 30); // 모의고사는 18~40번 요청 (2026-11-02, 바로 보기 번호 중 아직 없는 번호도 요청. 21~24·30~40번은 요청으로만 (2026-11-04))
+    if (k !== 'book') {  // 모의고사 18~40번 + 묶음 41~42번·43~45번 (값 41·43 — 서버가 '41-42.pdf'·'43-45.pdf' 이름의 범위로 찾음, 2026-11-04)
+      const q = +qs.get('n'), sel = q >= 18 && q <= 40 ? q : q === 41 || q === 42 ? 41 : q >= 43 && q <= 45 ? 43 : 30;
+      return range(18, 40).map(v => `<option value="${v}"${v === sel ? ' selected' : ''}>${v}</option>`).join('')
+        + `<option value="41"${sel === 41 ? ' selected' : ''}>41~42</option><option value="43"${sel === 43 ? ' selected' : ''}>43~45</option>`;
+    }
     const c = bcfg(curBook()), qn = qs.get('n'); // 주소의 번호(나도 받기)는 같은 교재일 때만
     const z = zeroName(curBook());
     const sel = qn !== null && curBook() === d.book && (+qn === 0 ? !!z : +qn >= (c.from || 1) && +qn <= c.n) ? +qn : (c.from || 1);
@@ -482,7 +486,7 @@ async function noteRequest(user) {
   const preview = () => {
     const n = $v('nr-n');
     document.getElementById('nr-preview').textContent = kind === 'moe'
-      ? `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${n}번 분석노트`
+      ? `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${n === '41' ? '41~42' : n === '43' ? '43~45' : n}번 분석노트`
       : `요청: ${$v('nr-b')} ${$v('nr-u')}${bcfg($v('nr-b')).u} ${n === '0' ? zeroName($v('nr-b')) : n + '번'} 분석노트`;
   };
   const tabs = [...card.querySelectorAll('.tabs .tab')];
