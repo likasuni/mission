@@ -145,13 +145,15 @@ function applySharing() {
       try { d.setSharing(DriveApp.Access.PRIVATE, DriveApp.Permission.NONE); folders++; } catch (e) { fail.push('폴더 ' + d.getName()); }
     }
   });
-  // ③ 비공개여야 하는데 아직 공개인 파일
-  if (done) for (let i = 0; i < w.files.length; i++) {
-    if (late()) { done = false; break; }
+  // ③ 비공개여야 하는데 아직 공개인 파일 — 시간이 모자라면 멈춘 자리(pos3)를 기억했다가 다음 실행 때 이어서 (2026-11-04)
+  const P = PropertiesService.getScriptProperties(), from = Number(P.getProperty('pos3') || 0);
+  if (done) for (let i = from < w.files.length ? from : 0; i < w.files.length; i++) {
+    if (late()) { done = false; P.setProperty('pos3', String(i)); break; }
     const f = w.files[i];
     if (isPublic(f) || f.file.getSharingAccess() === DriveApp.Access.PRIVATE) continue;
     try { f.file.setSharing(DriveApp.Access.PRIVATE, DriveApp.Permission.NONE); toPriv++; } catch (e) { fail.push(f.path.slice(1).join('/') + '/' + f.name); }
   }
+  if (done) P.deleteProperty('pos3');
   CacheService.getScriptCache().remove('l2_n');
   const msg = '파일 ' + w.files.length + '개 확인 · 공개로 ' + toPub + ' · 폴더 제한 ' + folders + ' · 비공개로 ' + toPriv +
     (done ? ' · 완료' : ' · 아직 남았어요 (setup 을 한 번 더 실행하세요)') +
