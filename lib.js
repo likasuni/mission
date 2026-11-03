@@ -542,8 +542,7 @@ async function noteRequest(user) {
     const slot = document.getElementById('nr-ready');
     if (!slot) return;
     const m = await myNotes(user);
-    if (!m || (!m.ready.length && !m.making.length && !m.got.length)) return;
-    const eb = await ebList();
+    if (!m || (!m.ready.length && !m.making.length)) return;
     const list = m.ready;
     const left = { moe: NOTE_LIMIT.moe - (used.moe || 0), book: NOTE_LIMIT.book - (used.book || 0) };
     const ok = list.map(x => left[x.kind]-- > 0);  // 오늘 남은 횟수만큼만 '받기', 나머지는 '내일 받기'
@@ -554,8 +553,7 @@ async function noteRequest(user) {
       `</ul><p class="meta">하루에 모의고사 2개 · 부교재 1개까지 받을 수 있어요.${later ? ` 남은 ${later}개는 ${nextResetText()}.` : ''}</p>` +
       (later ? pushAsk('내일 잊지 않게, 새 자료 소식을 알림으로 받아 볼까요?') : '') + `</div>` : '') +
       (m.making.length ? `<div class="making-box"><b>원장님이 만드는 중 ${m.making.length}개</b><ul>${m.making.map(l => `<li>${esc(l)}</li>`).join('')}</ul>
-        <p class="meta">완성되면 이 칸 위 '준비됐어요'에 나타나요. (처음 요청한 1개는 카톡으로 자동 발송)</p>${later ? '' : pushAsk('완성되면 알림으로 바로 알려 드릴까요?')}</div>` : '') +
-      gotList(m.got, eb);
+        <p class="meta">완성되면 이 칸 위 '준비됐어요'에 나타나요. (처음 요청한 1개는 카톡으로 자동 발송)</p>${later ? '' : pushAsk('완성되면 알림으로 바로 알려 드릴까요?')}</div>` : '');  // 받은 자료는 첫 화면 '내 자료함'에만 (요청 칸은 간단하게, 2026-11-04)
     slot.querySelectorAll('button[data-i]').forEach(btn => btn.onclick = () => {
       const x = list[+btn.dataset.i];
       if (!document.getElementById('nr-go')) { // 받은 직후 화면에서 누르면 요청 칸을 다시 열고 이어서 받기
