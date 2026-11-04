@@ -916,6 +916,8 @@ MEMO_CSS = _re.sub(r'\s+', ' ', """
 .mm-row .tx{display:block;padding:8px 12px 10px} .mm-row small{display:block;color:var(--muted);font-size:.76rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .mm-row b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:var(--navy-d);font-size:.92rem;line-height:1.4;margin-top:2px}
 @media(max-width:640px){.mm-row a{flex-basis:72%}}
+.mm-two{overflow:visible;flex-wrap:wrap} .mm-two .mm-ad{flex:1 1 260px;min-width:0;min-height:250px} .mm-two .mm-ad .ad-slot{margin:0}
+@media(max-width:640px){.mm-two a{flex:1 1 calc(50% - 6px)} .mm-two .mm-ad{flex-basis:100%;border-top:1px dashed var(--line);padding-top:10px}}
 .mm-list small{color:var(--muted);font-size:.8rem} .mm-list b{display:block;color:var(--navy-d);margin:2px 0} .mm-list span{color:var(--muted);font-size:.9rem}
 """).strip()
 MEMOS = []
@@ -987,7 +989,7 @@ def memo_card(m):  # 첫 화면 썸네일 카드 (한 줄 가로 나열, 넘치�
     return (f'<a href="/memo/{m["slug"]}/">{img}<span class="tx"><small>{m["date"][5:].replace("-", ".")} · {e(m["book"])} {e(m["where"])}</small>'
             f'<b>{e(m["h1"])}</b></span></a>')
 memo_home = (f'<section class="card mm-home"><style>{MEMO_CSS}</style><h2 style="margin:0 0 4px">✏️ 원장님 노트 <small class="muted" style="font-size:.8rem;font-weight:600">분석노트 만들며 정리한 포인트</small></h2>'
-             f'<div class="mm-row">{"".join(memo_card(m) for m in MEMOS[:8])}</div><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
+             f'<div class="mm-row mm-two">{"".join(memo_card(m) for m in MEMOS[:2])}<div class="mm-ad">{ad()}</div></div><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
 
 var_files = sum(len(dict(VAR[k])) for k in var_sess)
 tiles = f'''<div class="grid4">
