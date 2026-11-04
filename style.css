@@ -531,7 +531,7 @@ a.nb:hover { filter: brightness(1.12); }
 .push-bar.on { background: #eef7ee; border-color: #b9dcb9; }
 .push-bar.on small { display: none; }
 .push-wrap { position: relative; margin: 0 0 18px; }
-.push-wrap .push-bar { margin: 0; padding-right: 112px; }
+.push-wrap .push-bar { margin: 0; }  /* 알림 이용법은 처음부터 펼쳐 두고 그 아래 광고 (2026-11-04) — 누르는 칸 바로 밑엔 광고를 두지 않음 */
 .push-help summary { position: absolute; top: 12px; right: 12px; list-style: none; cursor: pointer; font-size: .85rem; font-weight: 700; color: var(--navy-d); background: #fff; border: 1px solid #d9dee8; border-radius: 99px; padding: 3px 10px; line-height: 1.4; }
 .push-help summary::-webkit-details-marker { display: none; }
 .push-help summary::after { content: ' ▾'; }
