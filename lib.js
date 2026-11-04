@@ -347,17 +347,17 @@ async function readyBanner(user) {
   const isKakao = (user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao');
   if (!isKakao) return;
   const m = await myNotes(user);
-  if (!m || (!m.ready.length && !m.making.length && !m.got.length)) return;
+  if (!m || (!m.ready.length && !m.making.length)) return;  // 확인할 것(준비됐어요·만드는 중)이 있을 때만 (받은 자료 목록은 뺌, 2026-11-04)
   const short = l => esc(l.replace(' 영어 모의고사', '').replace(/ 분석노트$/, ''));
-  const eb = await ebList();
   const el = document.createElement('section');
   el.className = 'card my-notes';
   el.innerHTML = `<h2>📦 내 자료함</h2>` +
     (m.ready.length ? `<p class="mn-ready"><b>준비됐어요 ${m.ready.length}개</b> · ${m.ready.slice(0, 3).map(x => short(x.label)).join(', ')}${m.ready.length > 3 ? ' 외' : ''}</p>
       <p><a class="btn btn-gold" href="/notes/#note-req">받으러 가기 →</a> <span class="meta">하루 모의고사 2개 · 부교재 1개씩 받아요</span></p>` : '') +
     (m.making.length ? `<p class="meta">원장님이 만드는 중 ${m.making.length}개 · ${m.making.slice(0, 3).map(short).join(', ')}${m.making.length > 3 ? ' 외' : ''}</p>` : '') +
-    gotList(m.got.slice(0, 3), eb, m.got.length > 3);  // 알림 권유는 바로 아래 '새 자료 알림 받기' 칸과 겹쳐서 넣지 않음
+    `<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3951386769813957" data-ad-slot="8157681795" data-ad-format="auto" data-full-width-responsive="true"></ins></div>`;  // 광고는 네모칸 안 맨 아래 (버튼과 떨어지게)
   hero.after(el);
+  try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
 }
 
 /* ---------- 기타 자료 요청: /notes/ 자료 요청 칸의 [기타 자료] 탭 (#etc-req). 단어 시험지·변형문제·다른 교재 등.
