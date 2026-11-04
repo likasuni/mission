@@ -213,7 +213,9 @@ def bysubj(rs):
 NAV = [('/', '홈'), ('moe', '모의고사'), ('/books/', '부교재'), ('/notes/', '자료 요청'), ('/naesin/', '코코스학원')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
 MOE_NAV = [('/english/', '영어 PDF 자료받기'), ('/posts/', '📘 분석노트 전자책'), ('/exams/', '전과목 기출시험지')]  # /posts/ = 전자책 + 문항별 해설 (옛 '수업자료')
 
+MANUAL_ADS = False  # 직접 넣은 광고(섹션 사이 반응형) 끄기 — 자동광고만 (원장님 요청 2026-11-05). 다시 켜려면 True
 def ad():
+    if not MANUAL_ADS: return ''
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
             f'data-ad-slot="{AD_SLOT}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
             f'<script>(adsbygoogle=window.adsbygoogle||[]).push({{}});</script></div>')
@@ -989,7 +991,7 @@ def memo_card(m):  # 첫 화면 썸네일 카드 (한 줄 가로 나열, 넘치�
     return (f'<a href="/memo/{m["slug"]}/">{img}<span class="tx"><small>{m["date"][5:].replace("-", ".")} · {e(m["book"])} {e(m["where"])}</small>'
             f'<b>{e(m["h1"])}</b></span></a>')
 memo_home = (f'<section class="card mm-home"><style>{MEMO_CSS}</style><h2 style="margin:0 0 4px">✏️ 원장님 노트 <small class="muted" style="font-size:.8rem;font-weight:600">분석노트 만들며 정리한 포인트</small></h2>'
-             f'<div class="mm-row mm-two">{"".join(memo_card(m) for m in MEMOS[:2])}<div class="mm-ad">{ad()}</div></div><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
+             f'<div class="mm-row mm-two">{"".join(memo_card(m) for m in MEMOS[:2])}{f'<div class="mm-ad">{ad()}</div>' if MANUAL_ADS else ''}</div><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
 
 var_files = sum(len(dict(VAR[k])) for k in var_sess)
 tiles = f'''<div class="grid4">

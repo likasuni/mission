@@ -354,10 +354,8 @@ async function readyBanner(user) {
   el.innerHTML = `<h2>📦 내 자료함</h2>` +
     (m.ready.length ? `<p class="mn-ready"><b>준비됐어요 ${m.ready.length}개</b> · ${m.ready.slice(0, 3).map(x => short(x.label)).join(', ')}${m.ready.length > 3 ? ' 외' : ''}</p>
       <p><a class="btn btn-gold" href="/notes/#note-req">받으러 가기 →</a> <span class="meta">하루 모의고사 2개 · 부교재 1개씩 받아요</span></p>` : '') +
-    (m.making.length ? `<p class="meta">원장님이 만드는 중 ${m.making.length}개 · ${m.making.slice(0, 3).map(short).join(', ')}${m.making.length > 3 ? ' 외' : ''}</p>` : '') +
-    `<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3951386769813957" data-ad-slot="8157681795" data-ad-format="auto" data-full-width-responsive="true"></ins></div>`;  // 광고는 네모칸 안 맨 아래 (버튼과 떨어지게)
+    (m.making.length ? `<p class="meta">원장님이 만드는 중 ${m.making.length}개 · ${m.making.slice(0, 3).map(short).join(', ')}${m.making.length > 3 ? ' 외' : ''}</p>` : '');
   hero.after(el);
-  try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
 }
 
 /* ---------- 기타 자료 요청: /notes/ 자료 요청 칸의 [기타 자료] 탭 (#etc-req). 단어 시험지·변형문제·다른 교재 등.
