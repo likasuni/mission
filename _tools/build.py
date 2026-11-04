@@ -311,7 +311,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=53'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=54'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -1034,7 +1034,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <h2 class="sec-h">최근 영어 모의고사</h2>
 <div class="card"><div class="chips">''' + ''.join(
     f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-s_year(k), -k[3], k[1]))[:9]) + '''</div>
-<p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>''' + ad() + f'''
+<p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>''' + f'''
 <h2 class="sec-h">전과목 기출문제</h2>
 <p class="muted">국어·수학·사회·과학·한국사까지 전과목 문제지·정답·해설 PDF도 함께 제공해요. 총 {len(sessions)}개 회차, {len(R):,}개 파일.</p>''' + tiles
 
@@ -1095,10 +1095,10 @@ page('/variants/', '고1·고2 모의고사 영어 변형문제 PDF 무료 | 리
      '전국연합학력평가 고1·고2 영어 문항별 변형문제 PDF 무료 다운로드. 리카수니 원장 직접 제작.', vbody,
      [('/', '홈'), ('/variants/', '변형문제')], '/variants/')
 
-# 자료 요청: 맨 위 광고 → 제목·설명(버튼과 떨어뜨리는 완충) → 요청 칸 (2026-11-04 원장님 제안)
-nbody = ad() + '''<h1 class="page-h1">자료 요청 <small>분석노트 · 단어 시험지 · 변형문제</small></h1>
+# 자료 요청: 광고는 요청 네모칸 안 맨 아래에만 (따로 떨어진 광고는 뺌, 2026-11-04 원장님 확정). lib.js 가 #note-req 안만 다시 그려서 광고는 그대로 남음
+nbody = '''<h1 class="page-h1">자료 요청 <small>분석노트 · 단어 시험지 · 변형문제</small></h1>
 <p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트, 그리고 단어 시험지 같은 다른 자료도 여기서 요청하면 카카오톡으로 받아요.</p>
-<section class="card mission" id="note-req"><h2>자료 요청 <small>모의고사 · 부교재 · 기타 자료</small></h2><p class="muted">불러오는 중...</p></section>''' + ad() + '''
+<section class="card mission req-box"><div id="note-req"><h2>자료 요청 <small>모의고사 · 부교재 · 기타 자료</small></h2><p class="muted">불러오는 중...</p></div>''' + ad() + '''</section>
 <div class="card"><h2>이용 방법</h2><ul class="sum">
 <li>카카오로 로그인한 회원만 요청할 수 있어요.</li>
 <li>모의고사는 연도·월·학년·번호를, 부교재는 교재·강·번호를 골라 요청해요. (예: 2026년 9월 고1 30번, 수능특강 라이트 20강 1번)</li>
