@@ -1010,7 +1010,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <li><b>언제 오나요</b>: 새 분석노트·해설이 올라오면 알려 드려요. 하루 1~2번 정도만 보내요.</li>
 <li><b>끄기</b>: '알림 켜짐' 칸을 다시 누르면 꺼져요.</li>
 <li><b>알림이 안 오면</b>: 휴대폰·브라우저 설정에서 data.likasuni.com 알림이 '허용'인지 확인해 주세요.</li>
-</ol></div>''' + ad() + f'''</div>
+</ol>''' + ad() + f'''</div></div>
 <section class="card" id="push-news" hidden><h2>최근 알림</h2><ul></ul></section>
 <h2 class="sec-h">영어 모의고사 핵심 자료</h2>
 <div class="svc">
