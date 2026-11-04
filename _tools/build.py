@@ -1095,7 +1095,8 @@ page('/variants/', '고1·고2 모의고사 영어 변형문제 PDF 무료 | 리
      '전국연합학력평가 고1·고2 영어 문항별 변형문제 PDF 무료 다운로드. 리카수니 원장 직접 제작.', vbody,
      [('/', '홈'), ('/variants/', '변형문제')], '/variants/')
 
-nbody = '''<h1 class="page-h1">자료 요청 <small>분석노트 · 단어 시험지 · 변형문제</small></h1>
+# 자료 요청: 맨 위 광고 → 제목·설명(버튼과 떨어뜨리는 완충) → 요청 칸 (2026-11-04 원장님 제안)
+nbody = ad() + '''<h1 class="page-h1">자료 요청 <small>분석노트 · 단어 시험지 · 변형문제</small></h1>
 <p class="lead">고1·고2·고3 영어 모의고사와 부교재(수능특강 라이트 등)의 문항별 분석노트, 그리고 단어 시험지 같은 다른 자료도 여기서 요청하면 카카오톡으로 받아요.</p>
 <section class="card mission" id="note-req"><h2>자료 요청 <small>모의고사 · 부교재 · 기타 자료</small></h2><p class="muted">불러오는 중...</p></section>''' + ad() + '''
 <div class="card"><h2>이용 방법</h2><ul class="sum">
