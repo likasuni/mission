@@ -701,3 +701,10 @@ a.nb:hover { filter: brightness(1.12); }
 .got-go { display: flex; gap: 6px; flex-wrap: wrap; }
 .next-box { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: #fff; border: 1px dashed #93c5fd; }
 .next-box p { margin: 6px 0 0; }
+
+/* 영어 회차 '한눈에 보기' (build.py eng_glance) */
+.glance .gl { list-style: none; margin: 0; padding: 0; }
+.glance .gl li { padding: 8px 0; border-top: 1px dashed var(--line); line-height: 1.6; }
+.glance .gl li:first-child { border-top: 0; }
+.glance .gl b:first-child { display: block; margin-bottom: 2px; color: var(--navy-d); font-size: .9rem; }
+.glance .gl a { color: var(--navy); font-weight: 600; }

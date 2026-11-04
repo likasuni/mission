@@ -197,6 +197,47 @@ def s_when(k):
     if g == 3 and m in (6, 9): return f'{y - 1}년 {m}월 시행 ({y}학년도 {m}월 모의평가)'  # 검색어 '학년도 모의평가'를 남김
     return f'{y}년 {m}월 시행'
 
+
+# ---------- 영어 회차 '한눈에 보기' (2026-11-04~): 객관적인 데이터만 — 교육청·평가원 채점 결과(exam_info.json) + 우리 문항별 해설(정답·배점)
+# 데이터가 없는 칸은 만들지 않아요 (똑같은 틀 문장만 반복하면 저품질로 보임). 회차 범위는 GLANCE_YEARS(시행 연도)로 넓혀요.
+GLANCE_YEARS = {2026}
+def _eng_r1(key):
+    for r in INFO.get(key, {}).get('rows', []):
+        if r.get('s') == '영어' and r.get('rates'): return r['rates']
+    return None
+def eng_glance(k):
+    if k[0] != 'moe' or s_year(k) not in GLANCE_YEARS: return ''
+    inf = INFO.get(ikey(k), {}); rates = _eng_r1(ikey(k)); g = k[1]
+    li = []
+    if inf.get('date'): li.append(f'<li><b>시행</b>{e(inf["date"])}</li>')
+    if rates:
+        cum = ' · '.join(f'{i + 1}등급까지 {v}%' for i, v in enumerate(rates[1:3], 1))
+        li.append(f'<li><b>영어 1등급 비율</b>{rates[0]}% (90점 이상){" · " + cum if cum else ""}</li>')
+        pool = [(kk, _eng_r1(kk)[0]) for kk in INFO if kk.startswith(f'moe-{g}-') and _eng_r1(kk)]
+        if len(pool) >= 5:
+            avg = sum(v for _, v in pool) / len(pool)
+            rank = sorted(v for _, v in pool).index(rates[0]) + 1
+            diff = rates[0] - avg
+            lvl = '평균과 비슷했어요' if abs(diff) < 1 else ('평균보다 낮아 <b>어려운 편</b>이었어요' if diff < 0 else '평균보다 높아 <b>비교적 쉬운 편</b>이었어요')
+            li.append(f'<li><b>난이도 비교</b>자료실에 있는 고{g} 영어 {len(pool)}개 회차의 1등급 비율 평균은 {avg:.1f}%예요. '
+                      f'이 회차는 {lvl}. ({len(pool)}개 회차 중 ' + ('1등급 비율이 가장 낮았어요' if rank == 1 else '1등급 비율이 가장 높았어요' if rank == len(pool) else f'1등급 비율이 {rank}번째로 낮아요') + ')</li>')
+    if (inf.get('wrong') or {}).get('영어'):
+        li.append(f'<li><b>오답이 많았던 문항</b>{e(inf["wrong"]["영어"])}</li>')
+    qs = [q for p in POSTS_BY.get(k, []) if p['subj'] == '영어' for q in p['qs']]
+    if len({q['n'] for q in qs}) >= 28:  # 18~45번이 다 있을 때만 정답 분포
+        cnt = collections.Counter(q['answer'] for q in qs)
+        li.append('<li><b>정답 분포 (18~45번)</b>' + ' · '.join(f'{CIRC[i]} {cnt.get(i + 1, 0)}개' for i in range(5)) + '</li>')
+    three = sorted({q['n']: q for q in qs if q.get('points') == 3}.values(), key=lambda q: q['n'])
+    if three:
+        byn = {q['n']: p for p in POSTS_BY.get(k, []) if p['subj'] == '영어' for q in p['qs']}
+        li.append(f'<li><b>3점 문항 {len(three)}개</b>' + ', '.join(
+            f'<a href="{post_url(byn[q["n"]])}">{q["n"]}번({e(q["type"])})</a>' for q in three) + '</li>')
+    if len(li) - (1 if inf.get('date') else 0) < 1: return ''  # 시행일만 있으면 만들지 않음
+    src = ' · '.join(x for x in [('교육청·평가원 채점 결과' if rates or (inf.get('wrong') or {}).get('영어') else ''), ('정답·배점은 리카수니 문항별 해설 기준' if qs else '')] if x)
+    later = ' 영어 1등급 비율은 채점 결과가 발표되면 추가할게요.' if not rates and (TODAY[:7] == f'{s_year(k)}-{k[3]:02d}' or k[3] >= 10 and s_year(k) == int(TODAY[:4])) else ''
+    return (f'<section class="card glance" id="glance"><h2>📊 {e(s_name(k))} 영어 한눈에 보기</h2><ul class="gl">{"".join(li)}</ul>'
+            f'<p class="meta">출처: {src}.{later}</p></section>')
+
 import hashlib
 def sslug(s): return SLUG.get(s) or ('all' if s == '전과목' else 'x-' + hashlib.md5(s.encode()).hexdigest()[:6])  # 제2외국어·직업탐구 등
 def subj_url(k, s): return s_url(k) + sslug(s) + '/'
@@ -470,6 +511,7 @@ for idx, k in enumerate(keys_sorted):
         if en_top:
             body = f'''<h1 class="page-h1">{e(full)} 분석노트·변형문제·단어</h1>
 <p class="lead">{e(s_when(k))} · 리카수니 원장이 직접 만든 영어 자료와 기출 원본을 한곳에 모았어요.</p>
+{eng_glance(k)}
 {en_top}
 {extra}
 {ad()}
