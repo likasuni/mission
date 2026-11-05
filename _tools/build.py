@@ -213,9 +213,10 @@ def bysubj(rs):
 NAV = [('/', '홈'), ('moe', '모의고사'), ('/books/', '부교재'), ('/notes/', '자료 요청'), ('/naesin/', '코코스학원')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
 MOE_NAV = [('/english/', '영어 PDF 자료받기'), ('/posts/', '📘 분석노트 전자책'), ('/exams/', '전과목 기출시험지')]  # /posts/ = 전자책 + 문항별 해설 (옛 '수업자료')
 
-MANUAL_ADS = False  # 직접 넣은 광고(섹션 사이 반응형) 끄기 — 자동광고만 (원장님 요청 2026-11-05). 다시 켜려면 True
-def ad():
-    if not MANUAL_ADS: return ''
+MANUAL_ADS = False  # 전체 페이지 직접 광고 끄기 (원장님 요청 2026-11-05). 다시 켜려면 True
+# 많이 보는 자리만 직접 광고 (2026-11-05 원장님 확정): 해설(어휘 아래 · 전자책 없으면 정답 근거 아래), 전자책 1쪽 아래, 영어 회차(문항 목록 아래). 자동광고는 애드센스에서 줄이기
+def ad(on=False):
+    if not (MANUAL_ADS or on): return ''
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
             f'data-ad-slot="{AD_SLOT}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
             f'<script>(adsbygoogle=window.adsbygoogle||[]).push({{}});</script></div>')
@@ -440,7 +441,7 @@ for idx, k in enumerate(keys_sorted):
             en_top = (f'''<section class="card en-sec" id="notes"><h2>문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
 <p class="hot"><b>21~24번·30~40번은 카톡 요청 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 2개</b>까지, 번호를 <b>하나씩</b> 골라 받아요. (하나 받은 뒤 "다른 번호 받기"로 두 번째 번호) 나머지 번호 중 <b>아직 없는 번호</b>도 주황 버튼을 눌러 요청할 수 있어요.</p>
-<div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>' + ad()
+<div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>' + ad(True)
                 + ('<section class="card en-sec" id="var"><h2>변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
                    if vs0 else '<section class="card en-sec" id="var"><h2>변형문제</h2><p class="muted">이 회차 변형문제는 준비 중이에요.</p></section>') + ad()
@@ -522,7 +523,7 @@ def note_view(p, nm):
     txt = ''.join(f'<p class="en">{e(x)}</p>' for x in nv.get('en', []))
     return (f'<div class="card nv" id="ebook"><h2>📘 분석노트 전자책 <small>리카수니 원장 · 끊어읽기 · 해석 · 어휘</small></h2>'
             f'<p class="muted">다운로드 없이 바로 보세요. 그림을 누르면 크게 열려요.</p>'
-            + f'</div>{ad()}<div class="card nv">'.join(pgs)
+            + (pgs[0] + (f'</div>{ad(True)}<div class="card nv">' if len(pgs) > 1 else '') + '</div><div class="card nv">'.join(pgs[1:]) if pgs else '')
             + f'<p class="nv-src">지문 출처: {e(s_name(k))} 영어 {post_no(p)}번 · {e(s_org(k))}<br>분석·해석·어휘 정리: 리카수니 원장 (이매동 코코스학원)</p>'
             + (f'<details class="nv-text"><summary>분석노트 속 영어 문장 글자로 보기</summary>{txt}</details>' if txt else '')
             + '<div class="dl"><a href="/notes/">인쇄용 PDF 카톡으로 받기</a></div></div>')
@@ -548,8 +549,9 @@ for p in POSTS:
     else:
         qtd = f'{n}번 · {e(p["type"])}{pts}'
         atd = f'<b class="ans">{CIRC[p["answer"] - 1]}</b> {e(p["choices"][p["answer"] - 1]["en"]) if p.get("choices") else ""}'
+    ncard = note_view(p, nm)
     qcards = ''.join(f'''<div class="card"><h2>{e(_qh(q, "정답 근거 문장"))}</h2>{_ev(q)}</div>
-{ad() if i == 0 else ''}
+{ad(True) if i == 0 and not ncard else ''}
 <div class="card"><h2>{e(_qh(q, "선택지 해석과 오답 이유"))}</h2><ol class="chs">{_ch(q)}</ol></div>
 ''' for i, q in enumerate(qs))
     gr = ''.join(f'<div class="gr"><b>{e(g["t"])}</b><p class="en">{e(g["ex"])}</p><p>{e(g["d"])}</p></div>' for g in p.get('grammar', []))
@@ -563,7 +565,6 @@ for p in POSTS:
         return a[0] <= p.get('n2', n) and n <= a[-1]
     vid = next((i for r, i in VAR.get(k, []) if _cov(r)), None) if p['subj'] == '영어' else None
     vtag = ' · 변형문제' if vid else ''
-    ncard = note_view(p, nm)
     if ncard: vtag = ' · 분석노트' + vtag
     vcard = (f'<div class="card"><h2>{e(nm)} 변형문제</h2><p class="muted">같은 지문으로 만든 리카수니 변형문제예요. 해설로 정리한 뒤 바로 풀어 보세요.</p>'
              f'<div class="dl"><a href="{view(vid)}" target="_blank" rel="noopener">변형문제 PDF 보기</a></div></div>') if vid else ''
@@ -581,7 +582,7 @@ for p in POSTS:
 {f'<div class="note"><b>원장님 한마디</b><p>{e(p["note"])}</p><small>— 리카수니 원장</small></div>' if p.get("note") else ''}
 <div class="card"><h2>꼭 알아야 할 구문</h2>{gr}</div>
 <div class="card"><h2>핵심 어휘</h2><table class="info vocab">{vo}</table></div>
-{ad()}
+{ad(True)}
 {f'<div class="card"><h2>한 줄 요약</h2><p class="en">{e(sm["en"])}</p><p class="ko">{e(sm["ko"])}</p></div>' if sm else ''}
 {f'<div class="card"><h2>서술형 대비 문장</h2><p class="en">{e(wr["en"])}</p><p class="ko">{e(wr["ko"])}</p></div>' if wr else ''}
 {vcard}
