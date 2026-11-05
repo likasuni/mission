@@ -230,11 +230,12 @@ def cp_box(k, books=True):  # books=False 면 인쇄 준비물 줄만 (영어 �
     if not (bs or ps): return ''
     who = '수능' if k[0] == 'sn' else f'고{k[1]}'
     a = lambda b: f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener">'
-    return (f'<div class="card cp-box"><h2>{f"📘 {who} 부교재 구매하기" if bs else "🖨 기출 인쇄 준비물"}</h2>'
+    # 쿠팡 문구는 한 번만, 링크보다 위(제목 바로 아래)에 — 쿠팡 파트너스·공정위 표시 기준 (2026-11-05 원장님: 최소화)
+    return (f'<div class="card cp-box"><h2>{f"📘 {who} 부교재" if bs else "🖨 기출 인쇄 준비물"}</h2>'
             '<p class="cp-dis">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>'
-            + ('<div class="cp-list">' + ''.join(a(b) + f'<b>🛒 {e(b["name"])}</b>' + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs) + '</div>' if bs else '')
+            + ('<div class="cp-list">' + ''.join(a(b) + f'<b>{e(b["name"])}</b>' + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs) + '</div>' if bs else '')
             + (f'<p class="cp-print"><span>{"🖨 인쇄해서 푸는 학생 준비물" if bs else "PDF를 인쇄해서 푸는 학생을 위한 준비물"}</span>' + ''.join(a(b) + e(b['name']) + '</a>' for b in ps) + '</p>' if ps else '')
-            + '<p class="cp-dis">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>')
+            + '</div>')
 
 # 교재 소식 글의 쿠팡 자리 (글 폴더의 coupang.json, Actions coupang-links 가 url 을 채움). url 이 없으면 자리째 사라짐
 #   <!--CPDIS--> 맨 위 수수료 문구 · <!--BUY:key--> 책 하나 버튼 · <!--BUYBOX--> 구매 상자 · <!--CPNOTE--> 끝 표기에 붙는 수수료 한 줄
@@ -249,10 +250,10 @@ def cp_news(body, d):
     body = _re.sub(r'<!--BUY:([\w-]+)-->', lambda mm: next((f'<div class="cp-cards one">{cp_card(b)}</div>' for b in bs if b.get('key') == mm.group(1)), ''), body)
     box = ('<div style="width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;background:#fff5f3;border:1px solid #f5c2b8;border-radius:10px;padding:12px 16px;margin:14px 0;text-align:center;">'
            '<p style="margin:0 0 6px;font-weight:800;color:#b42318;">교재 구매하기</p><div class="cp-cards">' + ''.join(cp_card(b) for b in bs)
-           + '</div><p style="margin:8px 0 0;font-size:13px;color:#9a3412;">구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>') if bs else ''
+           + '</div></div>') if bs else ''  # 쿠팡 문구는 글 맨 위 <!--CPDIS--> 한 번만
     dis = ('<p style="font-size:14.5px;color:#92400e;background:#fffaf0;border:1px solid #f3d38a;border-radius:8px;padding:10px 14px;margin:0 0 16px;width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;">'
            '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>') if bs else ''
-    note = ' 글 안의 쿠팡 링크로 구매하시면 쿠팡 파트너스 수수료를 받을 수 있어요.' if bs else ''
+    note = ''  # 쿠팡 문구는 맨 위 한 번만 (끝 표기엔 '출판사 대가 없음'만)
     return body.replace('<!--BUYBOX-->', box).replace('<!--CPDIS-->', dis).replace('<!--CPNOTE-->', note)
 
 def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website', og_image=None):
@@ -846,7 +847,7 @@ _sn = json.load(open(_snf, encoding='utf-8')) if os.path.exists(_snf) else []
 _kd = os.path.join(ROOT, 'books', 'kit'); os.makedirs(_kd, exist_ok=True)
 if os.path.exists(os.path.join(ROOT, '_tools', 'kit-thumb.png')): shutil.copy(os.path.join(ROOT, '_tools', 'kit-thumb.png'), os.path.join(_kd, 'thumb.png'))
 kit_body = (f'<style>{NEWS_CSS}</style><section class="hero"><h1>🎒 수험생 준비물 가이드</h1><p>학년별 EBS 부교재부터 기출 인쇄 준비물, 수능 당일 준비물까지 리카수니 원장이 한곳에 정리했어요.</p></section>'
-    '<div class="card cp-box"><p class="cp-dis" style="margin:0">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 구매 버튼은 쿠팡 상품 페이지로 연결돼요.</p></div>'
+    '<div class="card cp-box"><p class="cp-dis" style="margin:0">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div>'
     '<div class="card"><h2>📘 학년별 부교재</h2><p class="muted">학교 부교재로 많이 쓰는 EBS 교재 위주예요. 새 판이 나오면 링크가 자동으로 바뀌어요.</p>'
     + ''.join(f'<h3 style="margin:14px 0 6px;color:var(--navy-d)">{t}</h3><p style="margin:0 0 8px">{d}</p>{_kit_btns(COUPANG.get(g, []))}' for g, t, d in (
         ('go1', '고1', '올림포스 기출문제집으로 교육청 모의고사 유형에 익숙해지고, 올림포스 영어독해 기본·리딩파워로 내신 지문을 다져요.'),
