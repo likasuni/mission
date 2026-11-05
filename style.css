@@ -538,7 +538,7 @@ a.nb:hover { filter: brightness(1.12); }
 .push-help[open] summary::after { content: ' ▴'; }
 .push-help { box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden; margin: 8px 0 0; padding: 12px 16px; background: #fff; border: 1px solid #e3e7ef; border-radius: 12px; }  /* 설명 + 광고가 한 네모 안 (2026-11-04) */
 .push-help ol { margin: 0; padding: 0 0 0 18px; font-size: .92rem; line-height: 1.6; }
-.push-help .ad-slot, .my-notes .ad-slot, .req-box > .ad-slot { margin: 14px 0 0; padding-top: 14px; border-top: 1px dashed #e3e7ef; }  /* 광고는 네모칸 안 맨 아래에만 */
+.push-help .ad-slot, .my-notes .ad-slot, .req-box > .ad-slot, .card > .ad-slot { margin: 14px 0 0; padding-top: 14px; border-top: 1px dashed #e3e7ef; }  /* 광고는 네모칸 안 맨 아래에만 */
 .my-notes, .req-box { overflow: hidden; }
 .push-help li + li { margin-top: 4px; }
 @media (max-width: 640px) { .top-r { gap: 6px; } .push-ic { width: 28px; height: 28px; font-size: .85rem; } }
