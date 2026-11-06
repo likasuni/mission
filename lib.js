@@ -95,7 +95,7 @@ function maskName(n) {
 function keepAdsOut(sec) {
   if (!sec || sec.dataset.adsOut) return;
   sec.dataset.adsOut = '1';
-  const sweep = () => sec.querySelectorAll('.google-auto-placed, ins.adsbygoogle').forEach(ad => {
+  const sweep = () => sec.querySelectorAll('.google-auto-placed, ins.adsbygoogle:not(.rc-ad ins)').forEach(ad => {  // .rc-ad = 원장님이 넣은 직접 광고(소통하기 위)는 그대로
     const w = ad.closest('.google-auto-placed') || ad;
     if (sec.contains(w)) sec.after(w);
   });

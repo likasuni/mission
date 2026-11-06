@@ -485,6 +485,7 @@ a.nb:hover { filter: brightness(1.12); }
 .rq-cols .rq-col.rd .rq:nth-child(2) { border-top-color: #d3e0fb; }
 
 /* 소통하기: 블로그 위젯처럼 '자료 요청 · 소통하기' 한 상자 안 아래쪽 (#talk.tk-in) */
+#recent-cmt .rc-ad { margin: 18px 0 0; padding-top: 14px; border-top: 1px dashed #e3e7ef; }  /* 첫 화면 '자료 요청 · 소통하기' 상자 안, 소통하기 바로 위 직접 광고 (2026-11-07 원장님 요청) */
 #talk.tk-in { margin: 18px 0 4px; border: 0; border-radius: 0; box-shadow: none; overflow: visible; background: transparent; }
 .tk-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; padding-top: 14px; border-top: 1px solid var(--line); }
 .tk-h b { font-size: 1rem; color: var(--navy); } .tk-h span { font-size: .82rem; color: var(--muted); }

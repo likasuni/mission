@@ -1033,6 +1033,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청 · 소통하기</b></div>
 <div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 궁금한 점은 아래 <b>소통하기</b>에 남겨 주세요. 단어 시험지 같은 <a href="/notes/#etc-req"><b>다른 자료 요청 →</b></a><button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div>
+''' + ad(True).replace('class="ad-slot"', 'class="ad-slot rc-ad"') + '''
 <div id="talk" class="tk-in"><div class="tk-h"><b>소통하기</b><span>공부·자료·수업 무엇이든 원장님께 물어보세요</span></div>
 <div class="tk-form"></div><div class="tk-list"><p class="muted">불러오는 중...</p></div></div></div></section>
 <h2 class="sec-h">최근 영어 모의고사</h2>
