@@ -10,7 +10,10 @@ SCOPE = 'https://www.googleapis.com/auth/blogger'
 BLOG_URL = 'https://www.likasuni.com/'
 
 cid = input('클라이언트 ID: ').strip()
-csec = getpass.getpass('클라이언트 보안 비밀번호 (붙여 넣기, 글자는 안 보여요): ').strip()
+if '--show' in sys.argv:   # 붙여 넣기가 안 될 때: 글자가 화면에 보이게 받아요 (끝나면 터미널을 닫거나 clear)
+    csec = input('클라이언트 보안 비밀번호 (붙여 넣기, 글자가 보여요): ').strip()
+else:
+    csec = getpass.getpass('클라이언트 보안 비밀번호 (붙여 넣기, 글자는 안 보여요): ').strip()
 if not cid or not csec: sys.exit('값이 비었어요.')
 
 verifier = base64.urlsafe_b64encode(os.urandom(48)).rstrip(b'=').decode()
