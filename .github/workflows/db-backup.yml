@@ -4,8 +4,7 @@ name: db-backup
 # 필요한 것: GitHub Secret BACKUP_KEY (= Supabase private_config 표의 backup_key 값). 없으면 건너뜀.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 19 * * 6'
+  # 주간 자동 실행은 이 Mac 으로 옮겼어요 (_tools/auto/README.md). 필요하면 손으로만 돌려요.
 permissions:
   contents: write
 concurrency: db-backup
