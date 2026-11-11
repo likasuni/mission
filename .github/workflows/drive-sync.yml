@@ -2,10 +2,7 @@ name: drive-sync
 # 구글드라이브 기출 폴더를 읽어 자료실을 다시 만듭니다 (매일 새벽 3시 + 수동 실행 + _tools/sync.trigger 변경 시)
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '7 18 * * *'
-  push:
-    paths: ['_tools/sync.trigger', '_tools/sync_drive.py', '.github/workflows/drive-sync.yml']
+  # 새벽 자동 실행은 이 Mac 으로 옮겼어요 (_tools/auto/README.md). 필요하면 손으로만 돌려요.
 permissions:
   contents: write
 concurrency: drive-sync
