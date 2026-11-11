@@ -1,0 +1,53 @@
+{
+ "slug": "common-eng2-park-not-until",
+ "date": "2026-11-09",
+ "book": "고1 공통영어2 교과서(박준언)",
+ "where": "본문",
+ "title": "고1 공통영어2 박준언 교과서 본문 분석 – It was not until ~ that 해석과 도치, Not until·Only after 서술형 전환",
+ "h1": "고1 공통영어2(박준언) 본문 It was not until ~ that 구문 · Not until 도치 서술형",
+ "sub": "It was not until ~ that · Not until + 도치 · Only after + 도치",
+ "desc": "고1 공통영어2(박준언) 교과서 본문 문장 It was not until he met Jim Cybulski that ~ 분석. '~하고 나서야 비로소'로 해석하는 법, Not until·Only after 도치(did + 주어 + 동사원형), 강조구문 that 뒤 평서문 어순을 내신 서술형 전환과 어법 함정으로 리카수니 원장이 정리했어요.",
+ "tags": [
+  "구문",
+  "문법",
+  "내신 서술형"
+ ],
+ "keywords": [
+  "공통영어2 박준언",
+  "공통영어2 교과서 본문 분석",
+  "It was not until that 해석",
+  "not until 도치",
+  "Only after 도치",
+  "not until 강조구문",
+  "고1 영어 내신 서술형",
+  "분석노트"
+ ],
+ "one": {
+  "key": "It was not until A that B",
+  "text": "'A하고 나서야 비로소 B했다' — that 뒤는 평서문 어순",
+  "note": "Not until A를 문두에 쓰면 뒤 주절을 도치(did + 주어 + 동사원형)해요"
+ },
+ "html": "common-eng2-park-not-until.html",
+ "faq": [
+  {
+   "q": "It was not until A that B는 어떻게 해석하나요?",
+   "a": "'A하고 나서야 비로소 B했다'예요. A가 일어나기 전에는 B가 일어나지 않았다는 점을 강조해요."
+  },
+  {
+   "q": "Not until 뒤의 절도 도치하나요?",
+   "a": "아니에요. Not until he met Jim의 he met Jim은 그대로 두고, 뒤의 주절만 did his idea begin처럼 도치해요."
+  },
+  {
+   "q": "It was not until ~ that 뒤에도 did를 써야 하나요?",
+   "a": "아니에요. 강조구문의 that 뒤는 평서문 어순이라 that his idea began처럼 써요."
+  }
+ ],
+ "cta": {
+  "label": "학교별 내신 분석 보기",
+  "href": "/naesin/"
+ },
+ "more": {
+  "label": "분석노트 카톡으로 요청하기",
+  "href": "/notes/"
+ }
+}

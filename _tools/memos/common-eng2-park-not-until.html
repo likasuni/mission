@@ -1,0 +1,69 @@
+<div class="glance-wrap" style="max-width:820px;margin:auto;padding:14px;font-family:Arial,sans-serif"><style>
+.gl-card { background:#ffffff; border:1.5px solid #d3e3fd; border-radius:16px; padding:28px 30px 26px; box-shadow:0 4px 14px rgba(26,115,232,0.10); }
+.gl-tag { display:inline-block; background:#1a73e8; color:#fff; font-size:15px; font-weight:800; border-radius:20px; padding:5px 14px; margin-bottom:12px; }
+.gl-title { color:#14213d; font-size:26px; font-weight:900; margin:0 0 6px; line-height:1.4; }
+.gl-sub { color:#7a7a84; font-size:16px; margin:0 0 18px; }
+.gl-finding { background:#eef4ff; border:1px solid #d3e3fd; border-radius:10px; padding:14px 18px; margin:0 0 18px; font-size:17px; color:#1a4d99; line-height:1.7; }
+.gl-finding b { color:#1a73e8; }
+.gl-h { color:#1a73e8; font-size:17px; font-weight:800; margin:0 0 10px; }
+.gl-step { display:inline-block; background:#14213d; color:#fff; font-size:13px; font-weight:800; border-radius:6px; padding:2px 8px; margin-right:8px; }
+.gl-cond { background:#f0f7ff; border:1.5px dashed #9ec1f5; border-radius:12px; padding:14px 16px 15px; margin:0 0 18px; }
+.gl-cond-head { margin-bottom:10px; }
+.gl-cond-title { color:#14213d; font-size:17.5px; font-weight:800; }
+.gl-chip { display:inline-block; background:#fff; border:1px solid #9ec1f5; color:#1a4d99; font-size:15px; font-weight:700; border-radius:20px; padding:4px 12px; margin:0 6px 6px 0; }
+.gl-ans { background:#ffffff; border:1.5px solid #b7e4c7; border-radius:12px; margin:0 0 14px; }
+.gl-ans-head { background:#eafaf1; padding:12px 16px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.gl-ans-tag { background:#1e7d4b; color:#fff; font-size:14px; font-weight:800; border-radius:14px; padding:3px 12px; }
+.gl-ans-val { color:#1e7d4b; font-size:17px; font-weight:900; }
+.gl-ans-ev { background:#ffffff; padding:14px 16px 15px; }
+.gl-row { margin:0 0 10px; }
+.gl-row:last-child { margin-bottom:0; }
+.gl-rlabel { display:block; font-size:14.5px; font-weight:800; margin-bottom:6px; }
+.gl-l-ev { color:#1a73e8; }
+.gl-l-trap { color:#c0392b; }
+.gl-l-tip { color:#b7791f; }
+.gl-rtext { display:block; font-size:15.5px; line-height:1.7; color:#444; }
+.gl-rtext b { color:#333; }
+.gl-ans-q { background:#f8f9fa; border-left:5px solid #1a73e8; border-radius:6px; padding:12px 14px; font-size:16px; line-height:1.85; color:#555; }
+.gl-ans-q b { color:#1a73e8; }
+.gl-ans-why { display:block; margin-top:9px; font-size:15.5px; line-height:1.7; color:#444; }
+.gl-ans-why b { color:#1e7d4b; }
+.gl-trap { background:#fdf5f4; border:1px solid #f5c6cb; border-radius:8px; padding:11px 14px; }
+.gl-trap .wrong { color:#c0392b; text-decoration:line-through; }
+.gl-trap .right { color:#1e7d4b; font-weight:800; }
+.gl-tip { background:#fcf8e3; border:1px solid #faebcc; border-radius:8px; padding:11px 14px; }
+.gl-sentence { background:#f0f7ff; border:1px dashed #9ec1f5; border-radius:10px; padding:16px 18px; margin:0 0 18px; font-size:17px; line-height:1.8; color:#333; }
+.gl-sentence b { color:#1e7d4b; }
+.gl-sentence .ko { display:block; margin-top:6px; font-size:15.5px; color:#666; }
+.gl-check { display:grid; grid-template-columns:1fr; gap:10px; margin:0 0 4px; }
+.gl-check .row { border-radius:10px; padding:12px 14px; font-size:15.5px; line-height:1.7; }
+.gl-check .row.ok { background:#eafaf1; border:1px solid #b7e4c7; }
+.gl-check .row.no { background:#fdf5f4; border:1px solid #f5c6cb; }
+.gl-check .mark { font-weight:900; margin-right:6px; }
+.gl-check .row.ok .mark { color:#1e7d4b; }
+.gl-check .row.no .mark { color:#c0392b; }
+.gl-check .sent { color:#333; }
+.gl-check .sent .wrong { color:#c0392b; text-decoration:line-through; }
+.gl-check .sent .right { color:#1e7d4b; font-weight:800; }
+.gl-check .why { display:block; margin-top:5px; color:#555; }
+.gl-vocab { display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; margin:0 0 18px; }
+.gl-vocab .item { display:flex; gap:8px; font-size:16px; line-height:1.5; padding:8px 10px; background:#f8f9fa; border-radius:8px; }
+.gl-vocab .item b { color:#1a4d99; flex-shrink:0; }
+.gl-img { margin:0 0 18px; text-align:center; }
+.gl-img img { display:block; width:100%; max-width:380px; height:auto; margin:0 auto; border:1px solid #e5e5e5; border-radius:10px; }
+@media (max-width:520px) { .gl-vocab { grid-template-columns:1fr; } .gl-card { padding:22px 18px 20px; } .gl-title { font-size:22px; } }
+.gl-cta { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.gl-cta .pt { font-size:15px; color:#999; }
+.gl-cta a { flex-shrink:0; background:#03c75a; color:#fff; font-size:16px; font-weight:800; padding:11px 18px; border-radius:8px; text-decoration:none; }
+
+.glance-wrap *{box-sizing:border-box}.glance-wrap{overflow-wrap:break-word}.gl-vocab .item{flex-wrap:wrap}.gl-ans{overflow:hidden} .glance-wrap p{font-size:17px;line-height:1.9}.glance-wrap h2{margin-top:32px}.glance-wrap h3{font-size:18px}.glance-wrap .gl-vocab{grid-template-columns:1fr}</style><article class="gl-card"><span class="gl-tag">영어 문법·구문 · 내신 서술형</span><div class="gl-title">It was not until ~ that 해석과 도치｜Not until·Only after 서술형 전환</div><img src="images/01.webp" alt="Not until 도치와 It was not until that 강조구문" width="1200" height="800" style="display:block;width:100%;height:auto;border-radius:14px;margin:24px 0"><div class="gl-finding"><b>It was not until A that B는 어떻게 해석하나요?</b><br>‘A하고 나서야 비로소 B했다’라는 뜻입니다. A가 일어나기 전에는 B가 일어나지 않았다는 점을 강조합니다.<br><b>Not until A</b>를 문두에 쓰면 뒤의 <b>주절을 도치</b>하지만, <b>It was not until A that B</b>에서는 that 뒤를 평서문 어순으로 씁니다.</div>
+<h2 class="gl-h">본문 — 끊어 읽기</h2><div class="gl-sentence"><b>It was not until he met Jim Cybulski / that</b> his idea of an affordable and accessible microscope / <b>began to take shape</b>.<span class="ko">그가 Jim Cybulski를 만나고 나서야 비로소 / 저렴하고 접근하기 쉬운 현미경에 대한 그의 아이디어가 / 구체화되기 시작했다.</span></div><div class="gl-ans-q"><b>전체 해석</b><br>그가 Jim Cybulski를 만나고 나서야 비로소 저렴하고 접근하기 쉬운 현미경에 대한 그의 아이디어가 구체화되기 시작했다.</div>
+<h2 class="gl-h">STEP 1 · 기본형: not A until B</h2><div class="gl-cond"><b>A하지 않다가 B한 뒤에야 A하다</b><p>He <b>didn't stop until</b> the police arrived.<br>경찰이 도착하고 나서야 그는 멈췄다.</p></div><p>not은 stop을 부정합니다. 경찰이 도착하기 전까지는 멈추지 않았다는 뜻입니다. until 뒤에는 <b>명사구 또는 절</b>이 올 수 있습니다.</p>
+<h2 class="gl-h">STEP 2 · 도치형: Not until B + 조동사 + 주어 + 동사</h2><div class="gl-sentence"><b>Not until the police arrived did he stop.</b><span class="ko">경찰이 도착하고 나서야 그는 멈췄다.</span></div><p>부정 의미의 Not until 구가 문두에 나오면 <b>주절</b>에서 주어와 조동사의 순서가 바뀝니다. 일반동사 과거형에는 did를 쓰고 본동사는 원형으로 바꿉니다.</p><div class="gl-tip"><b>도치 범위 주의</b><br>the police arrived는 그대로 둡니다.<br>주절 he stopped → <b>did he stop</b><br>문장 전체를 의문문으로 바꾸는 것이 아니므로 끝에는 마침표를 씁니다.</div>
+<h2 class="gl-h">STEP 3 · 강조구문: It was not until B that A</h2><div class="gl-sentence"><b>It was not until the police arrived that he stopped.</b></div><p>강조되는 부분은 <b>not until the police arrived</b>입니다. that 뒤에는 <b>he stopped</b>라는 평서문 어순을 사용하며, 여기에는 도치를 적용하지 않습니다.</p><div class="gl-tip">본문에 맞춰 과거형 was를 사용합니다. is/was는 문맥의 시제에 맞게 고르세요. 구조상 A와 B라는 기호보다 ‘시점을 나타내는 부분’과 ‘주절의 사건’을 구분하는 것이 안전합니다.</div>
+<h2 class="gl-h">본문을 네 가지 형태로 바꾸기</h2><div class="gl-check"><div class="row ok"><b>① 기본형</b><br>His idea of an affordable and accessible microscope <b>did not begin</b> to take shape <b>until he met Jim Cybulski</b>.</div><div class="row ok"><b>② Not until 도치</b><br><b>Not until he met Jim Cybulski did his idea</b> of an affordable and accessible microscope <b>begin</b> to take shape.</div><div class="row ok"><b>③ It was … that 강조구문</b><br><b>It was not until he met Jim Cybulski that his idea</b> of an affordable and accessible microscope <b>began</b> to take shape.</div><div class="row ok"><b>④ Only after 도치</b><br><b>Only after he met Jim Cybulski did his idea</b> of an affordable and accessible microscope <b>begin</b> to take shape.</div></div><p>이 문맥에서 Only after는 ‘만난 뒤에야 비로소’라는 뜻으로 바꿔 쓸 수 있습니다. Only after절을 문두에 놓을 때에도 <b>뒤 주절에서 도치</b>가 일어납니다.</p>
+<h2 class="gl-h">전체 문장 구조와 해석 팁</h2><div class="gl-cond"><b>It was [not until he met Jim Cybulski] that<br>[his idea of an affordable and accessible microscope] [began to take shape].</b></div><p>주절의 의미상 주어는 <b>his idea</b>입니다. of an affordable and accessible microscope는 어떤 아이디어인지 설명하는 전치사구입니다. 이 부분을 동격 명사구로 분류하지 않습니다.</p><p><b>affordable</b>은 가격을 감당할 수 있는, <b>accessible</b>은 접근하거나 이용하기 쉬운이라는 뜻입니다. <b>take shape</b>는 ‘모양을 취하다’보다 ‘구체화되다’로 해석하면 자연스럽습니다. <b>begin to take shape</b>는 ‘완성되었다’가 아니라 ‘구체화되기 시작했다’입니다.</p>
+<h2 class="gl-h">어법 함정 — 틀린 이유 확인</h2><div class="gl-check"><div class="row no"><b>✕ Not until he met Jim his idea began to take shape.</b><br>주절 도치가 필요합니다 → did his idea begin</div><div class="row no"><b>✕ Not until he met Jim did his idea began to take shape.</b><br>did 뒤에는 동사원형 → begin</div><div class="row no"><b>✕ It was not until he met Jim that did his idea begin to take shape.</b><br>강조구문의 that 뒤는 평서문 어순 → his idea began</div></div>
+<h2 class="gl-h">내신 서술형 연습</h2><p><b>문제</b> 다음 문장을 Not until로 시작하는 문장과 It was로 시작하는 문장으로 각각 바꾸세요.</p><div class="gl-sentence">She did not understand the problem until she read the explanation.</div><div class="gl-ans-q"><b>정답</b><br>Not until she read the explanation <b>did she understand</b> the problem.<br>It was not until she read the explanation <b>that she understood</b> the problem.</div><p><b>확인할 세 가지:</b> until절 어순 유지 · 도치형에서 did + 동사원형 · 강조구문에서 that + 주어 + 동사</p>
+<h2 class="gl-h">자주 묻는 질문</h2><h3>Not until 뒤의 절도 도치하나요?</h3><p>아닙니다. Not until he met Jim에서 he met Jim은 그대로 두고, 뒤의 주절을 did his idea begin으로 바꿉니다.</p><h3>It was not until 뒤에도 did를 써야 하나요?</h3><p>강조구문이라는 이유로 did를 추가하지 않습니다. 본문에서는 that his idea began처럼 씁니다.</p><h3>until과 not until의 해석은 어떻게 다른가요?</h3><p>He waited until noon은 ‘정오까지 기다렸다’, He did not leave until noon은 ‘정오가 되어서야 떠났다’입니다. 긍정문에서는 지속, 부정문에서는 그 시점 이전에 사건이 일어나지 않았다는 점을 살펴보세요.</p>
+<h2 class="gl-h">핵심 어휘</h2><div class="gl-vocab"><div class="item"><b>affordable</b>가격이 부담되지 않는</div><div class="item"><b>accessible</b>접근·이용하기 쉬운</div><div class="item"><b>microscope</b>현미경</div><div class="item"><b>take shape</b>구체화되다</div></div><div class="gl-tip"><b>추가 어휘 · make a difference</b><br>영향을 미치다, 차이를 만들어 내다<br>Small changes can make a difference.<br>작은 변화도 차이를 만들어 낼 수 있다.<br><small>제시된 본문에는 없는 별도 학습 표현입니다.</small></div><div class="gl-finding"><b>기억할 공식</b><br>주어 + did not + 동사원형 + until …<br>→ Not until … + did + 주어 + 동사원형<br>→ It was not until … + that + 주어 + 과거동사<br><b>해석: …하고 나서야 비로소 ~했다</b></div></article></div>

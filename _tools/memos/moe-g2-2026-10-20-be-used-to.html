@@ -1,0 +1,67 @@
+<div class="glance-wrap" style="max-width:820px;margin:auto;padding:15px;font-family:Arial,sans-serif"><style>
+.gl-card { background:#ffffff; border:1.5px solid #d3e3fd; border-radius:16px; padding:28px 30px 26px; box-shadow:0 4px 14px rgba(26,115,232,0.10); }
+.gl-tag { display:inline-block; background:#1a73e8; color:#fff; font-size:15px; font-weight:800; border-radius:20px; padding:5px 14px; margin-bottom:12px; }
+.gl-title { color:#14213d; font-size:26px; font-weight:900; margin:0 0 6px; line-height:1.4; }
+.gl-sub { color:#7a7a84; font-size:16px; margin:0 0 18px; }
+.gl-finding { background:#eef4ff; border:1px solid #d3e3fd; border-radius:10px; padding:14px 18px; margin:0 0 18px; font-size:17px; color:#1a4d99; line-height:1.7; }
+.gl-finding b { color:#1a73e8; }
+.gl-h { color:#1a73e8; font-size:17px; font-weight:800; margin:0 0 10px; }
+.gl-step { display:inline-block; background:#14213d; color:#fff; font-size:13px; font-weight:800; border-radius:6px; padding:2px 8px; margin-right:8px; }
+.gl-cond { background:#f0f7ff; border:1.5px dashed #9ec1f5; border-radius:12px; padding:14px 16px 15px; margin:0 0 18px; }
+.gl-cond-head { margin-bottom:10px; }
+.gl-cond-title { color:#14213d; font-size:17.5px; font-weight:800; }
+.gl-chip { display:inline-block; background:#fff; border:1px solid #9ec1f5; color:#1a4d99; font-size:15px; font-weight:700; border-radius:20px; padding:4px 12px; margin:0 6px 6px 0; }
+.gl-ans { background:#ffffff; border:1.5px solid #b7e4c7; border-radius:12px; margin:0 0 14px; }
+.gl-ans-head { background:#eafaf1; padding:12px 16px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.gl-ans-tag { background:#1e7d4b; color:#fff; font-size:14px; font-weight:800; border-radius:14px; padding:3px 12px; }
+.gl-ans-val { color:#1e7d4b; font-size:17px; font-weight:900; }
+.gl-ans-ev { background:#ffffff; padding:14px 16px 15px; }
+.gl-row { margin:0 0 10px; }
+.gl-row:last-child { margin-bottom:0; }
+.gl-rlabel { display:block; font-size:14.5px; font-weight:800; margin-bottom:6px; }
+.gl-l-ev { color:#1a73e8; }
+.gl-l-trap { color:#c0392b; }
+.gl-l-tip { color:#b7791f; }
+.gl-rtext { display:block; font-size:15.5px; line-height:1.7; color:#444; }
+.gl-rtext b { color:#333; }
+.gl-ans-q { background:#f8f9fa; border-left:5px solid #1a73e8; border-radius:6px; padding:12px 14px; font-size:16px; line-height:1.85; color:#555; }
+.gl-ans-q b { color:#1a73e8; }
+.gl-ans-why { display:block; margin-top:9px; font-size:15.5px; line-height:1.7; color:#444; }
+.gl-ans-why b { color:#1e7d4b; }
+.gl-trap { background:#fdf5f4; border:1px solid #f5c6cb; border-radius:8px; padding:11px 14px; }
+.gl-trap .wrong { color:#c0392b; text-decoration:line-through; }
+.gl-trap .right { color:#1e7d4b; font-weight:800; }
+.gl-tip { background:#fcf8e3; border:1px solid #faebcc; border-radius:8px; padding:11px 14px; }
+.gl-sentence { background:#f0f7ff; border:1px dashed #9ec1f5; border-radius:10px; padding:16px 18px; margin:0 0 18px; font-size:17px; line-height:1.8; color:#333; }
+.gl-sentence b { color:#1e7d4b; }
+.gl-sentence .ko { display:block; margin-top:6px; font-size:15.5px; color:#666; }
+.gl-check { display:grid; grid-template-columns:1fr; gap:10px; margin:0 0 4px; }
+.gl-check .row { border-radius:10px; padding:12px 14px; font-size:15.5px; line-height:1.7; }
+.gl-check .row.ok { background:#eafaf1; border:1px solid #b7e4c7; }
+.gl-check .row.no { background:#fdf5f4; border:1px solid #f5c6cb; }
+.gl-check .mark { font-weight:900; margin-right:6px; }
+.gl-check .row.ok .mark { color:#1e7d4b; }
+.gl-check .row.no .mark { color:#c0392b; }
+.gl-check .sent { color:#333; }
+.gl-check .sent .wrong { color:#c0392b; text-decoration:line-through; }
+.gl-check .sent .right { color:#1e7d4b; font-weight:800; }
+.gl-check .why { display:block; margin-top:5px; color:#555; }
+.gl-vocab { display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; margin:0 0 18px; }
+.gl-vocab .item { display:flex; gap:8px; font-size:16px; line-height:1.5; padding:8px 10px; background:#f8f9fa; border-radius:8px; }
+.gl-vocab .item b { color:#1a4d99; flex-shrink:0; }
+.gl-img { margin:0 0 18px; text-align:center; }
+.gl-img img { display:block; width:100%; max-width:380px; height:auto; margin:0 auto; border:1px solid #e5e5e5; border-radius:10px; }
+@media (max-width:520px) { .gl-vocab { grid-template-columns:1fr; } .gl-card { padding:22px 18px 20px; } .gl-title { font-size:22px; } }
+.gl-cta { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.gl-cta .pt { font-size:15px; color:#999; }
+.gl-cta a { flex-shrink:0; background:#03c75a; color:#fff; font-size:16px; font-weight:800; padding:11px 18px; border-radius:8px; text-decoration:none; }
+
+.glance-wrap *{box-sizing:border-box}.glance-wrap{overflow-wrap:break-word}.gl-vocab .item{flex-wrap:wrap}.gl-ans{overflow:hidden} .glance-wrap p{line-height:1.85;font-size:17px}.glance-wrap h2{margin-top:30px}.glance-wrap h3{font-size:18px}.glance-wrap .gl-vocab{grid-template-columns:1fr}</style><div class="gl-card"><span class="gl-tag">영어 문법·구문</span><div class="gl-title">be used to -ing 뜻과 used to 차이｜be accustomed to·being p.p. 구문 해석</div><div class="gl-finding"><b>be used to -ing는 무슨 뜻인가요?</b><br>‘~하는 데 익숙하다’라는 뜻입니다. 이때 to는 전치사이므로 뒤에 명사나 동명사를 씁니다. 수동의 뜻이면 <b>be used to being + 과거분사</b>를 사용합니다. ‘과거에 ~하곤 했다’라는 <b>used to + 동사원형</b>과 구별하세요.</div><img src="images/01.webp" alt="be used to -ing와 be accustomed to -ing 동명사 구문 썸네일" width="1200" height="675" style="width:100%;height:auto;border-radius:14px;margin:20px 0">
+<h2 class="gl-h">본문 — 끊어 읽기와 전체 해석</h2><div class="gl-sentence">But if we, like carpenters, always try to "shape" children into our ideal image, / they will gradually lose autonomy, / <b>becoming accustomed to following</b> others' instructions. / Such children quickly lose their sense of direction as they grow, / because they <b>are used to being arranged for</b>, / rather than actively choosing their path.</div>
+<p>그러나 우리가 목수처럼 항상 아이들을 우리의 이상적인 모습으로 ‘만들려고’ 한다면, 아이들은 다른 사람의 지시를 따르는 데 익숙해지면서 점차 자율성을 잃을 것이다. 그러한 아이들은 자라면서 삶의 방향 감각을 빠르게 잃는다. 능동적으로 자신의 길을 선택하기보다 남이 자신을 위해 정해 주는 것에 익숙하기 때문이다.</p>
+<h2 class="gl-h">STEP 1 · be accustomed to following</h2><div class="gl-cond"><b>be accustomed to + 명사 / 동명사</b><p>~에 익숙하다, ~하는 데 익숙하다</p><p>본문은 <b>becoming accustomed to following</b>입니다. become은 익숙해지는 변화를, be는 익숙한 상태를 나타냅니다. following은 전치사 to의 목적어 역할을 하는 동명사입니다.</p></div><p>becoming …은 주어 they에 대해 부가적으로 설명하는 분사구문입니다. 자율성을 잃어 가면서 타인의 지시에 익숙해지는 과정을 나타냅니다.</p>
+<h2 class="gl-h">STEP 2 · be used to being p.p.</h2><div class="gl-cond"><b>are used to [being arranged for]</b><p>are used to: ~에 익숙하다<br>being + arranged: 수동형 동명사<br>for: 원문에서 남아 있는 전치사</p></div><div class="gl-tip"><b>원문 표현은 문맥과 함께 읽으세요.</b><p>being arranged for는 이 문맥에서 ‘남이 자신을 위해 정해 주는 것’으로 이해할 수 있지만, 사람을 주어로 한 이 표현은 다소 어색합니다. 작문에서는 <b>They are used to having things arranged for them.</b>(그들은 남이 자신을 위해 일을 정해 주는 것에 익숙하다.)이 더 자연스럽습니다. arranged for를 모든 문맥에서 ‘남이 정해 주다’로 외우지는 마세요.</p></div><p>수동형 동명사를 익히기 위한 별도 예문: <b>She is used to being told what to do.</b><br>그녀는 무엇을 해야 하는지 지시받는 데 익숙하다.</p>
+<h2 class="gl-h">STEP 3 · 전체 문장 구조</h2><div class="gl-sentence">If we try to shape children …,<br>→ they will lose autonomy,<br>→ becoming accustomed to following …<br><br>Such children lose their sense of direction<br>→ as they grow (자라면서)<br>→ because they are used to … (익숙하기 때문에)</div><p><b>shape A into B</b>는 A를 B의 모습으로 만들다, <b>rather than actively choosing their path</b>는 ‘능동적으로 자신의 길을 선택하기보다는’이라는 대조를 더합니다. 이 글의 sense of direction은 지리적인 방향 감각보다 <b>삶의 방향을 스스로 정하는 감각</b>으로 읽는 것이 자연스럽습니다.</p>
+<h2 class="gl-h">used to와 be used to, 어떻게 다른가요?</h2><div class="gl-check"><div class="row ok"><b>① I used to follow instructions.</b><br>나는 예전에 지시를 따르곤 했다.<br>used to + 동사원형: 과거의 습관·상태</div><div class="row ok"><b>② I am used to following instructions.</b><br>나는 지시를 따르는 데 익숙하다.<br>be used to + 동명사: 익숙한 상태</div><div class="row ok"><b>③ I am used to being guided.</b><br>나는 안내받는 데 익숙하다.<br>be used to + 수동형 동명사</div><div class="row no"><b>✕ I am used to follow instructions.</b><br>‘익숙하다’라는 뜻으로 쓸 때는 follow가 아니라 following을 씁니다.</div></div>
+<h2 class="gl-h">자주 묻는 질문</h2><h3>왜 to 뒤에 동사원형이 아니라 -ing가 오나요?</h3><p>‘익숙하다’라는 뜻의 be used to와 be accustomed to에서 to는 전치사입니다. 따라서 동작을 넣으려면 동명사 형태로 씁니다.</p><h3>being은 언제 필요한가요?</h3><p>익숙한 대상이 ‘내가 하는 행동’이면 doing, ‘내가 받거나 당하는 행동’이면 being + 과거분사로 표현합니다. following은 따르는 것, being guided는 안내받는 것입니다.</p><h3>be used to는 항상 ‘익숙하다’인가요?</h3><p>아닙니다. <b>This tool is used to cut wood.</b>는 ‘이 도구는 나무를 자르는 데 사용된다’입니다. 여기서는 use의 수동태와 목적의 to부정사입니다. 뒤의 형태와 문맥을 함께 확인하세요.</p>
+<h2 class="gl-h">핵심 어휘</h2><div class="gl-vocab"><div class="item"><b>autonomy</b>자율성</div><div class="item"><b>instruction</b>지시</div><div class="item"><b>gradually</b>점차</div><div class="item"><b>ideal image</b>이상적인 모습</div><div class="item"><b>choose one's path</b>자신의 길을 선택하다</div></div><div class="gl-finding"><b>기억할 공식</b><br>be accustomed to doing ≈ be used to doing<br>be used to being p.p. = ~되는 것에 익숙하다<br>used to + 동사원형 = 과거에 ~하곤 했다</div><p style="font-size:13px">문법 참고: <a href="https://dictionary.cambridge.org/grammar/british-grammar/used-to">Cambridge Dictionary · Used to</a><br>분석 문장: 2026년 10월 고2 영어 모의고사 20번</p></div></div>
