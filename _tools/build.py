@@ -1072,7 +1072,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <div id="talk" class="tk-in"><div class="tk-h"><b>소통하기</b><span>공부·자료·수업 무엇이든 원장님께 물어보세요</span></div>
 <div class="tk-form"></div><div class="tk-list"><p class="muted">불러오는 중...</p></div></div></div></section>
 <h2 class="sec-h">최근 영어 모의고사</h2>
-<div class="card"><div class="chips">''' + ''.join(
+<div class="card"><div class="chips chip-grid">''' + ''.join(
     f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-s_year(k), -k[3], k[1]))[:9]) + '''</div>
 <p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>''' + f'''
 <h2 class="sec-h">전과목 기출문제</h2>

@@ -788,3 +788,7 @@ body { font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSy
 .dl a { border-radius: 6px; background: #eef4ff; color: var(--navy); }
 .tab { border-radius: 6px; }
 textarea:focus, input:focus { outline-color: var(--navy); }
+/* 첫 화면 '최근 영어 모의고사': 칸 개수 맞춰 격자 정렬 (PC 3칸 × 3줄, 휴대폰 2칸 × 4줄 — 9번째는 휴대폰에서 숨김, 2026-11-13) */
+.chip-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.chip-grid .chip { text-align: center; padding: 12px 10px; }
+@media (max-width: 640px) { .chip-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; } .chip-grid .chip { padding: 10px 6px; font-size: .84rem; } .chip-grid .chip:nth-child(n+9) { display: none; } }
