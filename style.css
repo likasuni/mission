@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');  /* 프리텐다드 글꼴 (학원 홈페이지와 같게, 2026-11-13) — @import 는 맨 위에 있어야 해요 */
 /* =========================================
    리카수니 자료실 - 스타일
    ========================================= */
@@ -702,3 +703,88 @@ a.nb:hover { filter: brightness(1.12); }
 .got-go { display: flex; gap: 6px; flex-wrap: wrap; }
 .next-box { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: #fff; border: 1px dashed #93c5fd; }
 .next-box p { margin: 6px 0 0; }
+
+/* =========================================
+   디자인: 코코스학원 홈페이지(cocosedu.co.kr) 느낌 (2026-11-13)
+   흰 바탕 · 프리텐다드 · 진한 남색 글씨 + 파란 포인트 하나 · 파스텔 타일 · 각진 버튼
+   2026-11-13 원장님 확정 — 아래 규칙이 위쪽 색·모양을 덮어써요. 글꼴은 맨 위 @import.
+   ========================================= */
+:root {
+  --navy: #2456c7;      /* 학원 홈페이지 파란 포인트 (버튼·링크) */
+  --navy-d: #182c44;    /* 학원 홈페이지 제목 남색 */
+  --gold: #2456c7;      /* 금색 밑줄·강조도 파란색 하나로 */
+  --bg: #f5f7fa;
+  --text: #272733;
+  --muted: #536471;
+  --line: #e1e6ef;
+}
+body { font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; letter-spacing: -.01em; }
+
+/* 머리글: 흰색 + 파란 버튼 */
+.top { background: #fff; color: var(--navy-d); border-bottom: 1px solid var(--line); }
+.brand { color: var(--navy-d); font-weight: 800; letter-spacing: -.02em; }
+.brand b { color: var(--navy); }
+.hdr-cta { background: var(--navy); color: #fff; border-radius: 6px; padding: 8px 14px; }
+.hdr-cta:hover { background: #1b45a6; }
+.btn { border-radius: 6px; }
+.btn-gold { background: var(--navy); color: #fff; }
+.auth .btn-gold { background: #fff; color: var(--navy-d); border: 1px solid #c9d2e3; }   /* 로그인은 테두리 버튼 (학원 홈페이지 '무료 레벨테스트 안내'처럼) */
+.push-ic { filter: grayscale(1); }
+
+/* 메뉴: 남색 글씨, 지금 칸만 파란 밑줄 */
+.nav { border-bottom: 1px solid var(--line); }
+.nav-in a, .nav-in .nav-g { color: var(--navy-d); font-weight: 700; }
+.nav-in a.on, .nav-in .nav-g.on { color: var(--navy); }
+.nav-sub { background: #fff; }
+.nav-sub-in a { border-radius: 6px; border-color: var(--line); color: var(--navy-d); }
+.nav-sub-in a.on { background: var(--navy-d); border-color: var(--navy-d); }
+
+/* 첫 화면 큰 제목: 상자 없이 크고 굵게 */
+.hero { background: none; color: var(--navy-d); border-radius: 0; padding: 18px 2px 8px; margin-bottom: 18px; }
+.hero h1 { color: var(--navy-d); font-size: 2.05rem; font-weight: 800; line-height: 1.25; letter-spacing: -.03em; margin-bottom: 12px; }
+.hero p { color: var(--muted); font-size: 1rem; }
+.hero p b, .hero p strong { color: var(--navy); }
+
+/* 상자: 흰 바탕 · 얇은 테두리 · 12px */
+.card, .item, .tile, .file { border-radius: 12px; border-color: var(--line); }
+.sec-h, h2 { color: var(--navy-d); font-weight: 800; letter-spacing: -.02em; }
+.page-h1 { font-weight: 800; letter-spacing: -.03em; }
+
+/* 핵심 자료 타일: 진한 그라데이션 → 학원 홈페이지 파스텔 타일 */
+.svc-c { color: var(--navy-d); border: 1px solid transparent; }
+.svc-c span { color: #3a4a68; opacity: 1; }
+.svc-c em { background: #fff; color: var(--navy-d); }
+.svc-c.c1 { background: #eef4ff; border-color: #cddbf3; }
+.svc-c.c2 { background: #f3eefa; border-color: #ddd0f0; }
+.svc-c.c3 { background: #fff8e2; border-color: #f1dfa6; }
+.svc-c.c4 { background: #ecf7f3; border-color: #bfe0d6; }
+.svc-c.c5 { background: #ecf7f3; border-color: #bfe0d6; }
+.svc-c:hover { filter: none; border-color: var(--navy); }
+.tile.gold { background: var(--navy-d); }
+.tile.gold b { color: #fff; }
+
+/* 띠 배너: 남색 한 가지 */
+.banner, .banner.book, .ns-banner { background: var(--navy-d); }
+.banner b, .banner.book b { color: #fff; }
+.banner.note { background: #fff8e2; border: 1px solid #f1dfa6; }
+.banner.note b { color: var(--navy-d); } .banner.note p { color: #3a4a68; }
+
+/* 알림 받기 · 자료 요청 */
+.push-bar { background: #fff; border-color: var(--line); }
+.rq-box { border: 1px solid var(--line); border-radius: 12px; }
+.rq-box-h b { color: var(--navy-d); }
+.rqb { border-radius: 8px; }
+.rqb.r2 { background: var(--navy); }
+.rqb.r3 { background: #f5f7fa; color: var(--navy-d); border-color: var(--line); }
+
+/* 자료 요청 · 소통하기 머리 */
+#recent-cmt { border: 1px solid var(--line); border-radius: 12px; box-shadow: none; }
+#recent-cmt .rc-head, #talk .rc-head { background: var(--navy-d); }
+
+/* 칩·태그·다운로드 버튼 */
+.chip { border-radius: 6px; border-width: 1px; color: var(--navy-d); }
+.chip:hover { border-color: var(--navy); color: var(--navy); }
+.tag { border-radius: 4px; background: #eef4ff; color: var(--navy); }
+.dl a { border-radius: 6px; background: #eef4ff; color: var(--navy); }
+.tab { border-radius: 6px; }
+textarea:focus, input:focus { outline-color: var(--navy); }
