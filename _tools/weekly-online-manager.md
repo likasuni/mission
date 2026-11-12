@@ -22,7 +22,6 @@
 
 ## 2. 교재 소식 초안 1편 (많아야 2편)
 - 고르기: status new 중 고등 영어 학습자에게 쓸모 있는 원래 교재. 변형문제집·분석노트·공무원·토익·중등·독학사 제외. 이미 posted 인 시리즈와 겹치면 건너뜀.
-  - 보류 중인 쎄듀 「고등 영어 서술형 RANK」 2권 초안(로컬 브랜치 book-news-cedu-rank-2026, 폴더 _tools/news/cedu-rank-seosulhyeong)이 있으면 그걸 먼저: 쿠팡 임시 자리(__COUPANG_SUMMARY__, __COUPANG_77__, 손으로 넣은 수수료 문구·구매 상자)를 아래 자리 표시 방식으로 바꿔요.
 - 정보: 출판사·교보문고·예스24 공개 페이지에서 확인한 사실만. 본문 인용·변형 문제 금지.
 - 형식: _tools/news/mothertongue-mock-2027/ 와 같은 구조 + 1080×1080 thumb.png (남색 그라데이션, 골드 #FFC857, '교재 소식 · 리카수니 자료실' 알약, data.likasuni.com; HTML 을 만들어 headless Chrome `--screenshot` 으로 캡처). 가격은 '따로 확인' 한 줄.
 - 쿠팡: 링크를 원장님께 받지 않아요. 글 폴더에 coupang.json = [{"key","name","query","must","url":""}] + body.html 에 <!--CPDIS-->(n-lead 앞), <!--BUY:key-->(책 설명 아래), <!--BUYBOX-->(표 아래·글 끝), 끝 표기 "출판사로부터 받은 대가는 없어요.<!--CPNOTE-->". main 에 합치면 Actions coupang-links 가 링크를 채워요.
