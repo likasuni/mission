@@ -1,85 +1,25 @@
-<!-- ================= 리카수니 블로그 상단 메뉴 v5 (2026-11-01 &#183; 자료실 메뉴와 같게: 모의고사 묶음) =================
-     블로그는 "통로와 소통", 자료는 리카수니 자료실(data.likasuni.com)에 둡니다.
-     메뉴 4개: 모의고사(영어 PDF 자료받기&#183;분석노트 전자책&#183;전과목 기출시험지) / 부교재 / 자료 요청 / 코코스학원
-     "자료 요청"은 자료실 요청 칸(data.likasuni.com/notes/)으로 연결됩니다 (모의고사&#183;부교재&#183;기타 자료 탭).
+<!-- ================= 리카수니 블로그 상단 메뉴 v6 (2026-11-13 · 세 사이트 입구) =================
+     첫 화면 위젯(home-hub.html)과 같은 세 메뉴: 자료실 / 코코스학원 / 학원 찾기(성남학원찾기)
+     디자인은 코코스학원 홈페이지·자료실과 같게 (남색 #182c44 · 파랑 #2456c7 · 프리텐다드).
      기존 li 메뉴 전체를 이 코드로 교체하세요. <style>, <li>, <script> 를 모두 복사해야 합니다.
-     자료 데이터는 더 이상 메뉴에 적지 않습니다. 자료를 올리면 자료실에 자동 반영됩니다.
-     주의: 따옴표는 반드시 곧은 따옴표(")를 쓰세요.
+     이전 v5(모의고사 펼침 메뉴)는 git 기록에 있어요. 주의: 따옴표는 반드시 곧은 따옴표(")를 쓰세요.
      ============================================================================================== -->
 <style>
 li.cgm-item{list-style:none!important;position:static!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important}
 li.cgm-item::before,li.cgm-item::after{content:none!important;display:none!important}
-.cgm-item details{position:static!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important}
-.cgm-item summary,.cgm-item .cgm-direct{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:18px 13px!important;margin:0!important;font:700 16px/1.4 "Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:inherit!important;text-decoration:none!important;background:transparent!important;border:0!important;white-space:nowrap}
-.cgm-item summary::-webkit-details-marker{display:none}
-.cgm-item summary::marker{content:""}
-.cgm-item summary::before,.cgm-item summary::after,.cgm-item a::before,.cgm-item a::after{content:none!important;display:none!important}
-.cgm-item details[open]>summary{color:#157e80!important}
-.cgm-item .cgm-direct.hl{color:#b45309!important}
+.cgm-item .cgm-direct{display:flex;align-items:center;padding:18px 14px!important;margin:0!important;font:700 16px/1.4 "Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;letter-spacing:-.01em;color:#182c44!important;text-decoration:none!important;background:transparent!important;border:0!important;white-space:nowrap}
+.cgm-item .cgm-direct::before,.cgm-item .cgm-direct::after{content:none!important;display:none!important}
+.cgm-item .cgm-direct:hover{color:#2456c7!important}
 .cgm-admin{display:block;width:20px;color:transparent!important}
-
-/* 모의고사 펼침 카드 */
-.cgm-panel{box-sizing:border-box;position:fixed!important;top:var(--cgm-top,80px);left:50%;transform:translateX(-50%);width:min(980px,calc(100vw - 24px));max-width:100%;overflow:hidden;background:#fff;color:#162d43;z-index:999999;border:1px solid #d9e3ed;border-radius:0 0 18px 18px;box-shadow:0 22px 45px #132d4333;padding:22px;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;text-align:left;white-space:normal}
-.cgm-item details:not([open])>.cgm-panel{display:none!important}
-.cgm-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
-.cgm-head strong{font-size:20px}
-.cgm-head p{font-size:13.5px;color:#5a6e80;margin:6px 0 0}
-.cgm-close{flex:none;cursor:pointer;background:#edf3f7;color:#193349;border:0;border-radius:8px;padding:9px 13px;font-size:14px}
-.cgm-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.cgm-grid a{box-sizing:border-box;display:flex!important;flex-direction:column;gap:6px;width:100%;max-width:100%;overflow:hidden;padding:16px!important;min-height:96px;border-radius:12px;color:#fff!important;text-decoration:none!important;line-height:1.4!important}
-.cgm-grid a b{font-size:18px}
-.cgm-grid a small{font-size:14px;opacity:.92}
-.cgm-grid a.c1{background:#1e3a8a}.cgm-grid a.c2{background:#b45309}.cgm-grid a.c3{background:#6d28d9}.cgm-grid a.c4{background:#15803d}
-.cgm-grid a:hover{filter:brightness(1.1)}
-.cgm-sub{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.cgm-sub a{display:inline-block;padding:8px 14px;border:1px solid #d5dbea;border-radius:999px;font-size:13.5px;font-weight:700;color:#1a2a6c!important;text-decoration:none!important;background:#f7f9fb}
-.cgm-sub a:hover{border-color:#1a2a6c}
-@media(max-width:760px){
- .cgm-item summary,.cgm-item .cgm-direct{font-size:14px;padding:12px 7px!important}
- .cgm-panel{padding:16px}
- .cgm-grid{grid-template-columns:1fr}
- .cgm-grid a{min-height:84px;padding:13px!important}
-}
+@media(max-width:760px){.cgm-item .cgm-direct{font-size:15px;padding:12px 8px!important}}
 </style>
 
 <!-- 보이지 않는 관리자 링크 -->
 <li class="cgm-item"><a class="cgm-admin" href="https://www.blogger.com/blog/layout/1410172824926610478" aria-hidden="true" tabindex="-1">&nbsp;</a></li>
 
-<!-- 1. 모의고사 (펼침) -->
-<li class="cgm-item"><details id="cgm-en"><summary>모의고사 &#9662;</summary><div class="cgm-panel">
-<div class="cgm-head"><div><strong>리카수니 모의고사 자료실</strong><p>PDF로 받거나, 다운로드 없이 전자책으로 바로 보세요</p></div><button type="button" class="cgm-close" aria-label="메뉴 닫기">닫기 &#215;</button></div>
-<div class="cgm-grid">
-<a class="c1" href="https://data.likasuni.com/english/"><b>영어 PDF 자료받기</b><small>회차별 분석노트&#183;변형문제&#183;단어<br />기출 원본 PDF</small></a>
-<a class="c3" href="https://data.likasuni.com/posts/"><b>&#128216; 분석노트 전자책</b><small>다운로드 없이 바로 보기<br />문항별 해설</small></a>
-<a class="c4" href="https://data.likasuni.com/exams/"><b>전과목 기출시험지</b><small>국어&#183;수학&#183;영어 등<br />문제지&#183;정답 PDF</small></a>
-</div>
-<div class="cgm-sub">
-<a href="https://data.likasuni.com/moe/go1/">고1 모의고사</a>
-<a href="https://data.likasuni.com/moe/go2/">고2 모의고사</a>
-<a href="https://data.likasuni.com/moe/go3/">고3 모의고사</a>
-<a href="https://data.likasuni.com/suneung/">수능</a>
-</div>
-</div></details></li>
-
-<!-- 2~4. 바로가기 -->
-<li class="cgm-item"><a class="cgm-direct" href="https://data.likasuni.com/books/">부교재</a></li>
-<li class="cgm-item"><a class="cgm-direct hl" href="https://data.likasuni.com/notes/">자료 요청</a></li>
+<li class="cgm-item"><a class="cgm-direct" href="https://data.likasuni.com/">자료실</a></li>
 <li class="cgm-item"><a class="cgm-direct" href="https://www.cocosedu.co.kr/">코코스학원</a></li>
-
-<script>
-(function(){
-  var ds=Array.prototype.slice.call(document.querySelectorAll(".cgm-item > details"));
-  function place(d){var r=d.querySelector("summary").getBoundingClientRect();d.style.setProperty("--cgm-top",Math.max(0,r.bottom+8)+"px");}
-  ds.forEach(function(d){
-    d.addEventListener("toggle",function(){if(d.open){ds.forEach(function(o){if(o!==d)o.open=false;});place(d);}});
-    var c=d.querySelector(".cgm-close");if(c)c.addEventListener("click",function(){d.open=false;});
-  });
-  document.addEventListener("click",function(e){if(!e.target.closest(".cgm-item"))ds.forEach(function(d){d.open=false;});});
-  document.addEventListener("keydown",function(e){if(e.key==="Escape")ds.forEach(function(d){d.open=false;});});
-  window.addEventListener("resize",function(){ds.forEach(function(d){if(d.open)place(d);});});
-  window.addEventListener("scroll",function(){ds.forEach(function(d){if(d.open)place(d);});},{passive:true});
-})();
-</script>
+<li class="cgm-item"><a class="cgm-direct" href="https://snhw.co.kr/">학원 찾기</a></li>
 
 <script>
 /* 수능특강 라이트 글 하단 이전/다음 버튼 주소 자동 보정 (기존 글을 위해 유지합니다) */
