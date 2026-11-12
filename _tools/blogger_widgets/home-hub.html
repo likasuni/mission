@@ -1,87 +1,95 @@
-<!-- ================= 리카수니 블로그 홈 위젯 v4 (2026-10-31 &#183; 길 안내 + 자료 요청 상자) =================
+<!-- ================= 리카수니 블로그 홈 위젯 v5 (2026-11-13 · 세 사이트 입구) =================
      기존 홈 위젯(id=lk) 내용을 이 코드로 통째로 교체하세요. (저장소 _tools/blogger_widgets/home-hub.html)
-     구성: &#9312; 자료실 소개 + 핵심 자료 4개 + 학년 바로가기
-           &#9313; 자료 요청 상자: 모의고사 / 부교재 / 기타 자료 요청 (자료실 /notes/ 의 그 탭으로 바로)
-     공지&#183;최근 요청자료 칸과 '질문&#183;요청' 안내는 뺐어요 (요청은 자료실 한 곳에서, 카톡으로).
+     구성: ① 코코스학원 홈페이지처럼 큰 제목 + 버튼 두 개 + 세 칸 줄 (자료실 · 코코스학원 · 성남학원찾기)
+           ② 자료 요청 상자: 모의고사 / 부교재 / 기타 자료 요청 (자료실 /notes/ 의 그 탭으로 바로)
+     디자인은 코코스학원 홈페이지·자료실과 같게 (흰 바탕 · 남색 #182c44 · 파랑 #2456c7 · 프리텐다드).
      게시글 화면에서는 "블로그 홈" + "자료실" 버튼만 보입니다.
-     주의: 따옴표는 반드시 곧은 따옴표(")를 쓰세요.
+     이전 v4 코드는 git 기록에 있어요. 주의: 따옴표는 반드시 곧은 따옴표(")를 쓰세요.
      ============================================================================================== -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 <style>
-#lk{box-sizing:border-box;width:100%;max-width:100%;overflow:hidden;margin:0 0 24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:#1b2237;line-height:1.5}
+#lk{box-sizing:border-box;width:100%;max-width:100%;overflow:hidden;margin:0 0 24px;font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#272733;line-height:1.55;letter-spacing:-.01em}
 #lk *{box-sizing:border-box;min-width:0}
 #lk a{text-decoration:none!important}
-#lk .hero{box-sizing:border-box;width:100%;max-width:100%;overflow:hidden;padding:26px;border-radius:16px;background:linear-gradient(135deg,#172554,#1e3a8a);color:#fff}
-#lk .hero h2{margin:0!important;padding:0!important;border:0!important;background:none!important;font-family:inherit!important;font-size:26px!important;font-weight:800!important;line-height:1.35!important;color:#fff!important}
+/* 첫 줄: 코코스학원 홈페이지처럼 흰 바탕 · 큰 제목 · 버튼 두 개 · 세 칸 줄 */
+#lk .hero{width:100%;max-width:100%;overflow:hidden;padding:34px 28px 8px;background:#ffffff;border-radius:14px}
+#lk .eyebrow{margin:0 0 14px!important;padding:0!important;font-size:14px;font-weight:700;color:#536471}
+#lk .hero h2{margin:0!important;padding:0!important;border:0!important;background:none!important;font-family:inherit!important;font-size:40px!important;font-weight:800!important;line-height:1.28!important;letter-spacing:-.035em!important;color:#182c44!important}
+#lk .hero h2 em{font-style:normal;color:#2456c7}
 #lk .hero h2::before,#lk .hero h2::after{content:none!important;display:none!important}
-#lk .hero p.lead{margin:8px 0 18px!important;padding:0!important;font-size:16px;color:#d9e1ff}
-#lk .hero p.lead b{color:#ffc857}
-#lk .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-#lk .cd{box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;gap:6px;width:100%;max-width:100%;overflow:hidden;min-height:116px;padding:18px;border-radius:12px;color:#fff!important}
-#lk .cd b{font-size:20px;font-weight:800;line-height:1.3;word-break:keep-all}
-#lk .cd small{font-size:14.5px;opacity:.95;line-height:1.45;word-break:keep-all}
-#lk .cd:hover{filter:brightness(1.1)}
-#lk .c1{background:#d97706}#lk .c2{background:#7c3aed}#lk .c3{background:#16a34a}#lk .c4{background:#0f766e}
-/* 학년 바로가기: 블로그 테마의 링크 스타일에 덮이지 않도록 모든 값을 고정 */
-#lk .hero .lkg-row{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:14px 0 0!important;padding:0!important;visibility:visible!important;opacity:1!important;height:auto!important;overflow:visible!important;position:static!important}
-#lk .hero .lkg-row a.lkg{display:inline-block!important;width:auto!important;margin:0!important;padding:9px 16px!important;border-radius:999px!important;background:#ffffff!important;border:0!important;color:#1e3a8a!important;font-size:15px!important;font-weight:800!important;line-height:1.3!important;text-decoration:none!important;box-shadow:none!important;visibility:visible!important;opacity:1!important;position:static!important;height:auto!important}
-#lk .hero .lkg-row a.lkg:hover{background:#ffc857!important;color:#172554!important}
-/* 자료 요청 상자 (2026-10-31): 버튼을 누르면 자료실 요청 칸의 그 탭이 바로 열려요 */
-#lk .req{box-sizing:border-box;width:100%;max-width:100%;overflow:hidden;margin-top:14px;padding:20px;border-radius:16px;background:#ffffff;border:1.5px solid #f3d48a}
+#lk .hero p.lead{margin:18px 0 26px!important;padding:0!important;font-size:16.5px;line-height:1.75;color:#536471}
+#lk .cta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:640px}
+#lk .cta a{display:flex;align-items:center;justify-content:center;min-height:54px;padding:0 14px;border-radius:5px;font-size:16px;font-weight:700}
+#lk .cta .p{background:#2456c7;color:#fff!important}
+#lk .cta .p:hover{background:#1b45a6}
+#lk .cta .o{background:#fff;color:#182c44!important;border:1px solid #c9d2e3}
+#lk .cta .o:hover{border-color:#2456c7}
+#lk .sites{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:30px 0 0;border-top:1px solid #e1e6ef}
+#lk .st{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;padding:24px 10px 26px;color:#182c44!important}
+#lk .st+.st{border-left:1px solid #e1e6ef}
+#lk .st b{font-size:26px;font-weight:800;line-height:1.25;letter-spacing:-.03em;word-break:keep-all}
+#lk .st strong{font-size:15px;font-weight:700;color:#182c44}
+#lk .st span{font-size:13.5px;line-height:1.5;color:#536471;word-break:keep-all}
+#lk .st em{margin-top:6px;font-style:normal;font-size:13.5px;font-weight:700;color:#2456c7}
+#lk .st:hover b{color:#2456c7}
+/* 자료 요청 상자: 버튼을 누르면 자료실 요청 칸의 그 탭이 바로 열려요 */
+#lk .req{width:100%;max-width:100%;overflow:hidden;margin-top:14px;padding:20px;border-radius:14px;background:#ffffff;border:1px solid #e1e6ef}
 #lk .req-hd{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 0 12px}
-#lk .req-hd b{font-size:20px;font-weight:800;color:#172554}
-#lk .req-hd span{font-size:14.5px;color:#5b6478}
+#lk .req-hd b{font-size:19px;font-weight:800;color:#182c44}
+#lk .req-hd span{font-size:14.5px;color:#536471}
 #lk .req-btns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-#lk .rb{box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;gap:4px;width:100%;max-width:100%;overflow:hidden;min-height:84px;padding:14px 16px;border-radius:12px}
-#lk .rb b{font-size:17px;font-weight:800;line-height:1.3;word-break:keep-all}
-#lk .rb small{font-size:13.5px;line-height:1.4;word-break:keep-all;opacity:.9}
+#lk .rb{display:flex;flex-direction:column;justify-content:center;gap:4px;width:100%;max-width:100%;overflow:hidden;min-height:78px;padding:14px 16px;border-radius:8px}
+#lk .rb b{font-size:16.5px;font-weight:800;line-height:1.3;word-break:keep-all}
+#lk .rb small{font-size:13.5px;line-height:1.4;word-break:keep-all;opacity:.92}
 #lk .rb:hover{filter:brightness(1.05)}
 #lk .r1{background:#fee500;color:#191600!important}
-#lk .r2{background:#1e3a8a;color:#ffffff!important}
-#lk .r3{background:#fff4dc;color:#7a4b00!important;border:1px solid #f3d48a}
-#lk .req-ft{margin:12px 0 0!important;padding:0!important;font-size:13.5px;line-height:1.6;color:#5b6478}
-#lk .req-ft a{color:#1e3a8a!important;font-weight:700}
+#lk .r2{background:#2456c7;color:#ffffff!important}
+#lk .r3{background:#f5f7fa;color:#182c44!important;border:1px solid #e1e6ef}
+#lk .req-ft{margin:12px 0 0!important;padding:0!important;font-size:13.5px;line-height:1.6;color:#536471}
+#lk .req-ft a{color:#2456c7!important;font-weight:700}
 /* 게시글 화면 버튼 */
 #lk .post{display:flex;flex-wrap:wrap;gap:8px}
-#lk .post a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-weight:800;font-size:15px}
-#lk .post .b1{background:#1e3a8a;color:#fff!important}
-#lk .post .b2{background:#fee500;color:#191600!important}
+#lk .post a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:5px;font-weight:700;font-size:15px}
+#lk .post .b1{background:#fff;color:#182c44!important;border:1px solid #c9d2e3}
+#lk .post .b2{background:#2456c7;color:#fff!important}
 @media(max-width:760px){
- #lk .hero{padding:20px 16px}
- #lk .hero h2{font-size:22px!important}
- #lk .hero p.lead{font-size:15px}
- #lk .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
- #lk .cd{min-height:104px;padding:14px}
- #lk .cd b{font-size:17px}
- #lk .cd small{font-size:13px}
+ #lk .hero{padding:24px 16px 4px}
+ #lk .hero h2{font-size:30px!important}
+ #lk .hero p.lead{font-size:15px;margin:14px 0 20px!important}
+ #lk .hero p.lead br{display:none}
+ #lk .cta{gap:8px}
+ #lk .cta a{min-height:50px;padding:0 8px;font-size:14.5px;white-space:nowrap}
+ #lk .sites{margin-top:22px}
+ #lk .st{padding:18px 4px 20px}
+ #lk .st b{font-size:20px}
+ #lk .st strong{font-size:13.5px}
+ #lk .st span{font-size:12px}
  #lk .req{padding:16px 14px}
  #lk .req-btns{grid-template-columns:minmax(0,1fr);gap:8px}
- #lk .rb{min-height:64px}
+ #lk .rb{min-height:60px}
 }
 </style>
 
 <div id="lk">
   <div class="hero">
-    <h2>리카수니 영어 자료실</h2>
-    <p class="lead">모의고사 영어 <b>분석노트&#183;변형문제&#183;단어</b>를 회차별로 정리했어요. 모두 자료실에서 무료로 받아 가세요.</p>
-    <div class="cards">
-      <a class="cd c1" href="https://data.likasuni.com/english/"><b>문항별 분석노트</b><small>18~29&#183;41~45번 바로 보기<br />30~40번 카톡 요청</small></a>
-      <a class="cd c2" href="https://data.likasuni.com/variants/"><b>변형문제</b><small>문항별 PDF 전체 공개</small></a>
-      <a class="cd c3" href="https://data.likasuni.com/english/"><b>단어 총정리</b><small>회차별 핵심 어휘</small></a>
-      <a class="cd c4" href="https://data.likasuni.com/books/"><b>부교재</b><small>수능특강 라이트&#183;올림포스 등</small></a>
+    <p class="eyebrow">분당 이매동 &#183; 코코스학원 리카수니 원장</p>
+    <h2>영어 공부 자료부터<br /><em>우리 동네 학원 찾기까지</em><br /><em>한곳에서</em></h2>
+    <p class="lead">학생은 모의고사 해설과 분석노트를 자료실에서 무료로, <br />학부모님은 코코스학원 수업 안내와 성남 학원 찾기를 이용해 보세요.</p>
+    <div class="cta">
+      <a class="p" href="https://data.likasuni.com/">자료실 바로 가기 &#8594;</a>
+      <a class="o" href="https://www.cocosedu.co.kr/">무료 레벨테스트 안내</a>
     </div>
-    <div class="lkg-row">
-      <a class="lkg" href="https://data.likasuni.com/moe/go1/">고1 모의고사</a>
-      <a class="lkg" href="https://data.likasuni.com/moe/go2/">고2 모의고사</a>
-      <a class="lkg" href="https://data.likasuni.com/moe/go3/">고3 모의고사</a>
-      <a class="lkg" href="https://data.likasuni.com/suneung/">수능</a>
-      <a class="lkg" href="https://data.likasuni.com/exams/">전과목 기출 &#8594;</a>
+    <div class="sites">
+      <a class="st" href="https://data.likasuni.com/"><b>자료실</b><strong>학생용 영어 자료</strong><span>해설&#183;분석노트&#183;변형문제</span><em>바로 가기 &#8250;</em></a>
+      <a class="st" href="https://www.cocosedu.co.kr/"><b>코코스학원</b><strong>이매동 초&#183;중&#183;고</strong><span>국영수과 &#183; 학년별 수업</span><em>바로 가기 &#8250;</em></a>
+      <a class="st" href="https://snhw.co.kr/"><b>학원 찾기</b><strong>성남학원찾기</strong><span>분당&#183;수정&#183;중원 동네&#183;과목별</span><em>바로 가기 &#8250;</em></a>
     </div>
   </div>
 
   <div class="req">
     <div class="req-hd"><b>자료 요청</b><span>필요한 자료를 고르면 카카오톡으로 받아요</span></div>
     <div class="req-btns">
-      <a class="rb r1" href="https://data.likasuni.com/notes/"><b>모의고사 분석노트</b><small>30~40번 &#183; 하루 2개 무료</small></a>
+      <a class="rb r1" href="https://data.likasuni.com/notes/"><b>모의고사 분석노트</b><small>18~45번 &#183; 하루 2개 무료</small></a>
       <a class="rb r2" href="https://data.likasuni.com/notes/?book=%EC%88%98%EB%8A%A5%ED%8A%B9%EA%B0%95%20%EB%9D%BC%EC%9D%B4%ED%8A%B8"><b>부교재 분석노트</b><small>수능특강 라이트&#183;올림포스 등 &#183; 하루 1개</small></a>
       <a class="rb r3" href="https://data.likasuni.com/notes/#etc-req"><b>기타 자료 요청</b><small>단어 시험지&#183;변형문제&#183;워크북</small></a>
     </div>
@@ -97,7 +105,7 @@
   var p=location.pathname;
   /* 게시글&#183;페이지 화면에서는 버튼 두 개만 보여 줍니다 */
   if(/^\/\d{4}\/\d{1,2}\/[^\/]+\.html$/.test(p) || /^\/p\/[^\/]+\.html$/.test(p)){
-    root.innerHTML='<div class="post"><a class="b1" href="https://www.likasuni.com/">&#8592; 블로그 홈</a><a class="b2" href="https://data.likasuni.com/english/">리카수니 자료실</a></div>';
+    root.innerHTML='<div class="post"><a class="b1" href="https://www.likasuni.com/">&#8592; 블로그 홈</a><a class="b2" href="https://data.likasuni.com/">리카수니 자료실</a></div>';
     return;
   }
 })();
