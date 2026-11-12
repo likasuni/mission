@@ -53,7 +53,7 @@ def main():
         sys.exit('COUPANG_ACCESS_KEY / COUPANG_SECRET_KEY 가 없어요.')
     # 학년별 상자 (coupang.json) + 교재 소식 글마다 폴더의 coupang.json
     files = {PATH: json.load(open(PATH, encoding='utf-8'))}
-    jobs = [(g, b, PATH) for g in ('go1', 'go2', 'go3', 'print') for b in files[PATH].get(g, [])]
+    jobs = [(g, b, PATH) for g in ('go1', 'go2', 'go3', 'print', 'shop') for b in files[PATH].get(g, [])]
     for f in sorted(glob.glob(os.path.join(ROOT, '_tools', 'news', '*', 'coupang.json'))):
         files[f] = json.load(open(f, encoding='utf-8'))
         jobs += [(os.path.basename(os.path.dirname(f)), b, f) for b in files[f]]
@@ -64,7 +64,7 @@ def main():
             lines.append(f'- [{g}] {b["name"]}: 그대로 (직접 넣은 링크)')
             continue
         try:
-            it = pick(b, search(b['query']), book=g != 'print' and not b.get('goods'))  # goods: true = 책이 아닌 물건
+            it = pick(b, search(b['query']), book=g not in ('print', 'shop') and not b.get('goods'))  # goods: true = 책이 아닌 물건
         except (urllib.error.URLError, RuntimeError, ValueError) as ex:
             lines.append(f'- [{g}] {b["name"]}: ⚠️ API 실패, 그대로 둠 ({ex})')
             time.sleep(3)

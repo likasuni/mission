@@ -210,7 +210,7 @@ def bysubj(rs):
 # ---------- 공통 레이아웃 ----------
 # 메뉴 (2026-11-01 원장님 확정): 홈 · 모의고사▾ · 부교재 · 자료 요청 · 코코스학원
 # '모의고사'는 누르면 아래 줄(nav-sub)이 펼쳐짐 — 묶음 페이지(PDF 자료받기·전자책·기출시험지)에선 처음부터 펼쳐져 탭 줄 역할
-NAV = [('/', '홈'), ('moe', '모의고사'), ('/books/', '부교재'), ('/notes/', '자료 요청'), ('/naesin/', '코코스학원')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
+NAV = [('/', '홈'), ('moe', '모의고사'), ('/books/', '부교재'), ('/notes/', '자료 요청'), ('/shop/', '쇼핑'), ('/naesin/', '코코스학원')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
 MOE_NAV = [('/english/', '영어 PDF 자료받기'), ('/posts/', '📘 분석노트 전자책'), ('/exams/', '전과목 기출시험지')]  # /posts/ = 전자책 + 문항별 해설 (옛 '수업자료')
 
 MANUAL_ADS = False  # 전체 페이지 직접 광고 끄기 (원장님 요청 2026-11-05). 다시 켜려면 True
@@ -869,6 +869,41 @@ page('/books/kit/', '수험생 준비물 가이드 – 학년별 EBS 부교재 �
      '고1·고2·고3 학년별 EBS 부교재(올림포스, 수능특강 Light, 수능특강·수능완성), 기출 PDF 인쇄 준비물, 수능 당일 준비물(아날로그 시계 등)과 시기별로 챙길 것을 리카수니 원장이 정리했어요.',
      kit_body, [('/', '홈'), ('/books/', '부교재'), ('/books/kit/', '수험생 준비물')], '/books/', og_image=SITE + '/books/kit/thumb.png')
 
+# ---------- 쇼핑 (/shop/, 메뉴 '쇼핑', 2026-11-12 원장님 요청) — 쿠팡 링크만 모은 곳: 시기별 추천 · 학년별 부교재 · 새 교재(교재 소식) · 공부 준비물 · 학원·공부 용품 ----------
+# 링크는 모두 기존 쿠팡 목록에서 (url 있는 것만). 학원·공부 용품은 _tools/coupang.json 의 'shop' 묶음 (goods: true, 매주 Mac 쿠팡 작업이 채움). 비어 있으면 칸째 안 보여요
+def _shop_news():
+    out = []
+    for m in BOOKNEWS[:8]:
+        f = os.path.join(m['_dir'], 'coupang.json')
+        bs = [b for b in (json.load(open(f, encoding='utf-8')) if os.path.exists(f) else []) if b.get('url')]
+        if bs: out.append((m, bs))
+    return out
+_month = int(TODAY[5:7])
+if _month == 11 and int(TODAY[8:]) <= 20:  # 수능(11월 셋째 주 목요일) 전까지
+    _season = ('⏱ 지금 챙길 것 · 수능 당일 준비물', '수험표·신분증·아날로그 손목시계는 꼭 챙기고, 전자기기는 반입 금지예요.', _kit_btns(_sn, small=True), '/news/suneung-2027-checklist/', '수능 준비물 체크리스트 전체 보기 →')
+elif _month in (11, 12, 1, 2):
+    _season = ('⏱ 지금 챙길 것 · 예비 고1 겨울방학', '반 배치고사와 3월 모의고사를 앞두고 고1 기출 교재로 미리 형식을 익혀요.', _kit_btns(COUPANG.get('go1', [])), '/moe/go1/', '고1 모의고사 기출 보기 →')
+else:
+    _season = ('⏱ 지금 챙길 것 · 기출 인쇄 공부', '자료실 기출·분석노트 PDF를 인쇄해서 풀 때 필요한 준비물이에요.', _kit_btns(COUPANG.get('print', []), small=True), '/english/', '영어 모의고사 분석노트 →')
+_sh_goods = [b for b in COUPANG.get('shop', []) if b.get('url')]
+shop_body = (f'<style>{NEWS_CSS}</style><section class="hero"><h1>🛒 쇼핑</h1><p>리카수니 원장이 고른 고등 영어 부교재와 공부 준비물을 한곳에 모았어요.</p></section>'
+    '<div class="card cp-box"><p class="cp-dis" style="margin:0">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div>'
+    + (f'<div class="card"><h2>{_season[0]}</h2><p>{_season[1]}</p>{_season[2]}<p style="margin:8px 0 0"><a href="{_season[3]}">{_season[4]}</a></p></div>' if _season[2] else '')
+    + '<div class="card"><h2>📘 학년별 부교재</h2><p class="muted">학교 부교재와 모의고사 대비로 많이 쓰는 교재예요. 새 판이 나오면 링크가 자동으로 바뀌어요.</p>'
+    + ''.join(f'<h3 style="margin:14px 0 6px;color:var(--navy-d)">{t}</h3>{_kit_btns(COUPANG.get(g, []))}' for g, t in (('go1', '고1'), ('go2', '고2'), ('go3', '고3 · 수능')))
+    + '</div>'
+    + ('<div class="card"><h2>📚 새로 나온 교재</h2><p class="muted">교재 소식에서 정리한 신간이에요. 책 아래 링크에서 구성과 고르는 법을 볼 수 있어요.</p>'
+       + ''.join(f'<h3 style="margin:14px 0 6px;color:var(--navy-d)">{e(m["title"].split(" — ")[0])}</h3>{_kit_btns(bs)}<p style="margin:4px 0 0"><a href="{nurl(m)}">구성과 고르는 법 보기 →</a></p>' for m, bs in _shop_news())
+       + '<p style="margin:12px 0 0"><a href="/books/news/">교재 소식 전체 보기 →</a></p></div>' if _shop_news() else '')
+    + ('<div class="card"><h2>✏️ 학원·공부 용품</h2><p class="muted">이매동 코코스학원 수업에서 쓰는 용품이에요.</p>' + _kit_btns(_sh_goods) + '</div>' if _sh_goods else '')
+    + '<div class="card"><h2>🎒 시험·공부 준비물</h2><p>기출 PDF를 인쇄해서 풀 때와 시험 당일에 필요한 것들이에요.</p>'
+    + _kit_btns(COUPANG.get('print', []), small=True) + ('' if _season[3] == '/news/suneung-2027-checklist/' else _kit_btns(_sn, small=True))  # 수능 준비물이 위 '지금 챙길 것'에 있으면 한 번만
+    + '<p style="margin:8px 0 0"><a href="/books/kit/">수험생 준비물 가이드 →</a></p></div>'
+    + '<p class="muted" style="font-size:.85rem">상품 링크는 매주 쿠팡에서 자동으로 다시 찾아요. 가격과 재고는 구매 화면에서 확인해 주세요. 이매동 코코스학원 리카수니 원장이 정리했어요.</p>')
+page('/shop/', '쇼핑 – 고등 영어 부교재 · 신간 교재 · 공부 준비물 모음 | 리카수니 자료실',
+     '고1·고2·고3 학년별 영어 부교재(올림포스, 수능특강 Light, 수능특강·수능완성), 새로 나온 교재, 기출 인쇄·수능 당일 준비물을 리카수니 원장이 한곳에 모았어요.',
+     shop_body, [('/', '홈'), ('/shop/', '쇼핑')], '/shop/', og_image=SITE + '/books/kit/thumb.png')
+
 page('/news/', '학원 소식 – 이매동 코코스학원 시험 대비 · 수업 안내 | 리카수니 자료실',
      '이매동 코코스학원 소식. 중등·고등 시험 대비 핵심 정리와 대비반·수업 안내를 모았어요.',
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>학원 소식</h1><p>이매동 코코스학원의 시험 대비 정리와 수업 안내를 모아 두는 곳이에요.</p></section>'
@@ -1307,7 +1342,7 @@ def _sm_rank(p):
     if q[0] == 'naesin': return 1
     if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/', '/memo/', '/news/'): return 2
     if q[0] == 'news': return 3  # 학원 소식
-    if p in ('/books/news/', '/books/kit/'): return 2  # 교재 소식 목록 · 수험생 준비물 가이드
+    if p in ('/books/news/', '/books/kit/', '/shop/'): return 2  # 교재 소식 목록 · 수험생 준비물 가이드 · 쇼핑
     if q[0] == 'books' and len(q) == 3 and q[1] == 'news': return 3  # 교재 소식
     if q[0] == 'books' and len(q) == 2 and q[1] not in ('news', 'kit'): return 2  # 부교재 해설 목록
     if q[0] == 'books' and len(q) == 4: return 3  # 부교재 문항별 해설
