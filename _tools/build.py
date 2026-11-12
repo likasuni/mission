@@ -1002,7 +1002,7 @@ for m in MEMOS:
     h.append(f'<p class="mm-foot">리카수니 원장 · {m["date"].replace("-", ".")} · <a href="/memo/">원장님 노트 전체 보기</a></p></article>')
     others = [x for x in MEMOS if x is not m][:5]
     if others:
-        h.append(f'<div class="card mm" style="margin-top:16px"><h2 style="font-size:1rem;margin:0 0 4px">다른 원장님 노트</h2><ul class="mm-list">{"".join(memo_line(x) for x in others)}</ul></div>')
+        h.append(f'<div class="card mm" style="margin-top:16px"><h2 style="font-size:1rem;margin:0 0 4px">원장님 노트 더보기</h2><ul class="mm-list">{"".join(memo_line(x) for x in others)}</ul></div>')
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": m['h1'], "description": m['desc'], "datePublished": m['date'],
            "dateModified": LASTMOD[url], "inLanguage": "ko", "author": {"@type": "Person", "name": "리카수니"},
            "publisher": {"@type": "Organization", "name": "리카수니 자료실"}, "keywords": ', '.join(m.get('keywords', [])), "mainEntityOfPage": SITE + url}]
