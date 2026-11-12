@@ -2,11 +2,7 @@ name: coupang-links
 # 학년별 부교재 쿠팡 상자와 교재 소식 글의 링크를 쿠팡 파트너스 Open API 로 채움 (매주 월요일 새벽 5시 7분, 한국 시간)
 # 손으로 돌릴 때 dry_run 을 켜면 고른 상품만 요약에 보여 주고 저장하지 않아요.
 on:
-  schedule:
-    - cron: '7 20 * * 0'
-  push:  # 새 교재 소식(글 폴더 coupang.json)이나 목록이 main 에 들어오면 바로 링크 채우기
-    branches: [main]
-    paths: ['_tools/coupang.json', '_tools/news/*/coupang.json', '_tools/coupang_links.py']
+  # 주간 자동 실행은 이 Mac 으로 옮겼어요 (_tools/auto/README.md). 필요하면 손으로만 돌려요.
   workflow_dispatch:
     inputs:
       dry_run:
