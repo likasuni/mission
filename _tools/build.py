@@ -390,7 +390,7 @@ for idx, k in enumerate(keys_sorted):
     note_banner = ''
     if k[0] == 'moe' and '영어' in subs:
         note_banner = (f'<a class="banner note" href="/notes/?y={s_year(k)}&m={k[3]}&g={k[1]}"><b>이 회차 영어 문항별 분석노트, 카톡으로 받기</b>'
-                       '<p>번호만 고르면 카카오톡으로 바로 보내드려요. 하루 모의고사 2개 · 부교재 1개 · 링크 24시간</p></a>')
+                       '<p>번호만 고르면 카카오톡으로 바로 보내드려요. 하루 모의고사 1개 · 부교재 1개 · 링크 24시간</p></a>')
     info_html = ''
     if inf.get('summary'):
         info_html += '<div class="card"><h2>시험 요약</h2>' + (f'<p class="muted">{e(inf["date"])}</p>' if inf.get('date') else '') + \
@@ -441,7 +441,7 @@ for idx, k in enumerate(keys_sorted):
             wd = WORDS.get(k)
             en_top = (f'''<section class="card en-sec" id="notes"><h2>문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
-<p class="hot"><b>21~24번·30~40번은 카톡 요청 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 2개</b>까지, 번호를 <b>하나씩</b> 골라 받아요. (하나 받은 뒤 "다른 번호 받기"로 두 번째 번호) 나머지 번호 중 <b>아직 없는 번호</b>도 주황 버튼을 눌러 요청할 수 있어요.</p>
+<p class="hot"><b>21~24번·30~40번은 카톡 요청 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 1개</b>까지 받아요. 나머지 번호 중 <b>아직 없는 번호</b>도 주황 버튼을 눌러 요청할 수 있어요.</p>
 <div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>'
                 + ('<section class="card en-sec" id="var"><h2>변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
@@ -1061,7 +1061,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 {memo_home}
 <a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>
 <section class="rq-box"><div class="rq-box-h"><b>자료 요청</b><span>필요한 자료를 고르면 카카오톡으로 받아요</span></div>
-<div class="rq-box-btns"><a class="rqb r1" href="/notes/"><b>모의고사 분석노트</b><small>18~45번 · 하루 2개 무료</small></a>
+<div class="rq-box-btns"><a class="rqb r1" href="/notes/"><b>모의고사 분석노트</b><small>18~45번 · 하루 1개 무료</small></a>
 <a class="rqb r2" href="/notes/?book=%EC%88%98%EB%8A%A5%ED%8A%B9%EA%B0%95%20%EB%9D%BC%EC%9D%B4%ED%8A%B8"><b>부교재 분석노트</b><small>수능특강 라이트·올림포스 등 · 하루 1개</small></a>
 <a class="rqb r3" href="/notes/#etc-req"><b>기타 자료 요청</b><small>단어 시험지·변형문제·워크북</small></a></div>
 <p class="rq-box-ft">자료는 카톡 <b>'나와의 채팅'</b>으로 와요. · <a href="https://contents.premium.naver.com/likasuni/cocos/category" rel="noopener">부교재 강 단위 구매</a> · <a href="https://drive.google.com/open?id=105f20gSuhZvR44gCK6oW5mxn2-ZFG12J" target="_blank" rel="noopener">분석노트 샘플 보기</a></p></section>
@@ -1144,11 +1144,11 @@ nbody = '''<h1 class="page-h1">자료 요청 <small>분석노트 · 단어 시�
 <li>모의고사는 연도·월·학년·번호를, 부교재는 교재·강·번호를 골라 요청해요. (예: 2026년 9월 고1 30번, 수능특강 라이트 20강 1번)</li>
 <li>단어 시험지·변형문제 같은 다른 자료는 <b>[기타 자료]</b> 탭에서 종류를 고르고 교재·회차 이름을 적어 요청해요. 이메일·전화번호는 적지 않아도 돼요.</li>
 <li>요청하면 카카오톡 '나와의 채팅'으로 분석노트 링크가 바로 와요.</li>
-<li>하루에 모의고사 2개, 부교재 1개까지 받을 수 있고, 링크는 24시간 동안 열려요.</li><li>번호를 <b>하나씩</b> 골라 받아요. 모의고사는 하나를 받은 뒤 "다른 번호 받기"를 눌러 두 번째 번호를 받을 수 있어요.</li>
+<li>하루에 모의고사 1개, 부교재 1개까지 받을 수 있고, 링크는 24시간 동안 열려요.</li><li>다른 번호는 다음 날 받을 수 있어요.</li>
 <li>아직 준비되지 않은 자료는 원장님께 요청이 전달돼요. 준비에 1~2일 걸리니 그 뒤에 다시 요청해 주세요. (그날 요청 횟수는 차감되지 않아요)</li>
 </ul></div>'''  # 광고는 요청 칸 바로 아래(이용 방법 위) — 2026-11-04 원장님 요청
 page('/notes/', '자료 요청 · 영어 모의고사·수능특강 분석노트 요청 | 리카수니 자료실',
-     '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 하루 모의고사 2개·부교재 1개.', nbody,
+     '고1·고2·고3 영어 모의고사와 수능특강 라이트 문항별 분석노트를 카카오톡으로 받아보세요. 하루 모의고사 1개·부교재 1개.', nbody,
      [('/', '홈'), ('/notes/', '자료 요청')], '/notes/', comments=('notes', '분석노트 요청'))
 
 # ---------- 부교재 요청방 ----------
@@ -1232,7 +1232,7 @@ t.forEach(function(b){b.onclick=function(){show(b.dataset.b,true);history.replac
 var h=(location.hash.match(/^#book-(.+)/)||[])[1],s=null;try{s=localStorage.getItem('bookSel')}catch(e){}
 show(h,true)||show(s)||show(t[0]&&t[0].dataset.b)})();</script>''' +
          '<div class="card"><h2>이용 방법</h2><ul class="sum">'
-         "<li><b>무료 요청:</b> 카카오 로그인 후 교재·강·번호를 고르면 카카오톡 '나와의 채팅'으로 24시간 링크가 와요. 부교재는 하루 1개 (모의고사는 따로 하루 2개).</li>"
+         "<li><b>무료 요청:</b> 카카오 로그인 후 교재·강·번호를 고르면 카카오톡 '나와의 채팅'으로 24시간 링크가 와요. 부교재는 하루 1개 (모의고사는 따로 하루 1개).</li>"
          '<li><b>유료 구매:</b> 네이버 프리미엄 콘텐츠에서 필요한 강만 골라 구매해요.</li>'
          '<li><b>샘플:</b> 먼저 샘플을 보고 분석노트 구성을 확인해 보세요.</li>'
          '<li>아직 준비되지 않은 강·번호는 원장님께 요청이 전달돼요. 1~2일 뒤 다시 요청해 주세요.</li>'

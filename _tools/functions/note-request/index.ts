@@ -1,11 +1,11 @@
-// 분석노트 요청: 카카오 로그인 회원, 하루 모의고사 2개 · 부교재 1개 (한국 시간 기준)
+// 분석노트 요청: 카카오 로그인 회원, 하루 모의고사 1개 · 부교재 1개 (한국 시간 기준)
 // 구글드라이브 분석노트 폴더에서 파일을 찾아 24시간짜리 링크를 만들고 카카오톡 '나에게 보내기'로 전송
 // 파일이 없으면 'missing'으로 기록 → 관리자 페이지에 알림
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 const LINK_HOURS = 24;
-const LIMIT: Record<string, number> = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (lib.js NOTE_LIMIT 와 같게)
-const LIMIT_MSG: Record<string, string> = { moe: '모의고사 분석노트는 하루 2개', book: '부교재 분석노트는 하루 1개' };
+const LIMIT: Record<string, number> = { moe: 1, book: 1 }; // 하루에 받을 수 있는 개수 (lib.js NOTE_LIMIT 와 같게)
+const LIMIT_MSG: Record<string, string> = { moe: '모의고사 분석노트는 하루 1개', book: '부교재 분석노트는 하루 1개' };
 const ORIGINS = ['https://data.likasuni.com', 'http://localhost:8765'];
 // 부교재 목록 → 단위(강/회). 이름의 각 단어가 드라이브 폴더 이름에 들어가야 함 (lib.js NOTE_BOOK_CFG 와 같게)
 const BOOKS: Record<string, string> = { '수능특강 라이트': '강', '리딩파워 기본': '강', '리딩파워 완성': '강', '올림포스 영어독해 기본1': '강', '하루 6개 1등급 모의고사 고1': '회', '하루 6개 1등급 모의고사 고2': '회', '올림포스 전국연합학력평가 기출문제집 고1': '강', '올림포스 전국연합학력평가 기출문제집 고2': '강' };
@@ -232,7 +232,7 @@ Deno.serve(async (req) => {
   if ('error' in spec) return reply(req, 400, { error: spec.error });
   const { label, query } = spec;
 
-  // 하루 '요청' 개수 제한 (한국 시간 자정 기준) — 새로 요청하는 번호만 셈: 모의고사 2개 · 부교재 1개
+  // 하루 '요청' 개수 제한 (한국 시간 자정 기준) — 새로 요청하는 번호만 셈: 모의고사 1개 · 부교재 1개
   // 자료가 있든 없든(나도 받기 포함) 오늘 처음 요청한 번호를 셈. 예전에 요청해 둔 자료를 받는 것('준비 완료' 받기)과
   // 자동 카톡 발송 기록은 새 요청이 아니라서 세지 않음 (받는 개수는 아래 '받기' 제한이 따로 막음)
   {
@@ -247,7 +247,7 @@ Deno.serve(async (req) => {
     }
   }
 
-  // 하루 받기 개수 제한 (한국 시간 자정 기준, 실제로 받은 것만 계산) — 모의고사 2개 · 부교재 1개
+  // 하루 받기 개수 제한 (한국 시간 자정 기준, 실제로 받은 것만 계산) — 모의고사 1개 · 부교재 1개
   const today = await todayCounts(db, user.id);
   if (today[b.kind] >= LIMIT[b.kind]) return reply(req, 429, { error: `${LIMIT_MSG[b.kind]}까지 받을 수 있어요. 내일 다시 요청해 주세요.` });
 

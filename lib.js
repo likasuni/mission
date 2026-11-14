@@ -1,7 +1,7 @@
 /* =========================================
    자료실 페이지 공통: 로그인 표시 + 페이지 댓글 + 분석노트 요청
    - 댓글은 어느 페이지에 달든 미션 개수에 합산
-   - 분석노트 요청: 카카오 회원, 하루 모의고사 2개 · 부교재 1개, 24시간 링크를 카톡으로 자동 발송
+   - 분석노트 요청: 카카오 회원, 하루 모의고사 1개 · 부교재 1개, 24시간 링크를 카톡으로 자동 발송
    ========================================= */
 // 부교재 목록: 이름은 드라이브 '부교재 분석노트' 안 폴더 이름과 같게 (note-request 함수의 BOOKS, build.py BOOKS와 같게)
 // u: 단위(강/회), max: 마지막 강·회, n: 문항 수, gw: Gateway 있음, ex: 1번 앞 예시문제 있음 (둘 다 번호 0, 파일 이름 '강-0.pdf')
@@ -17,7 +17,7 @@ const NOTE_BOOK_CFG = {
 };
 const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 const zeroName = b => { const c = NOTE_BOOK_CFG[b] || {}; return c.gw ? 'Gateway' : c.ex ? '예시문제' : ''; }; // 번호 0 이름
-const NOTE_LIMIT = { moe: 2, book: 1 }; // 하루에 받을 수 있는 개수 (note-request 함수 LIMIT 와 같게)
+const NOTE_LIMIT = { moe: 1, book: 1 }; // 하루에 받을 수 있는 개수 (note-request 함수 LIMIT 와 같게)
 
 (async function () {
   const user = await getUser();
@@ -353,7 +353,7 @@ async function readyBanner(user) {
   el.className = 'card my-notes';
   el.innerHTML = `<h2>📦 내 자료함</h2>` +
     (m.ready.length ? `<p class="mn-ready"><b>준비됐어요 ${m.ready.length}개</b> · ${m.ready.slice(0, 3).map(x => short(x.label)).join(', ')}${m.ready.length > 3 ? ' 외' : ''}</p>
-      <p><a class="btn btn-gold" href="/notes/#note-req">받으러 가기 →</a> <span class="meta">하루 모의고사 2개 · 부교재 1개씩 받아요</span></p>` : '') +
+      <p><a class="btn btn-gold" href="/notes/#note-req">받으러 가기 →</a> <span class="meta">하루 모의고사 1개 · 부교재 1개씩 받아요</span></p>` : '') +
     (m.making.length ? `<p class="meta">원장님이 만드는 중 ${m.making.length}개 · ${m.making.slice(0, 3).map(short).join(', ')}${m.making.length > 3 ? ' 외' : ''}</p>` : '');
   hero.after(el);
 }
@@ -399,14 +399,14 @@ async function noteRequest(user) {
   let startEtc = hasEtc && location.hash === '#etc-req';
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const HINT = {
-    moe: '모의고사 분석노트는 <b>하루 2개</b>까지 받아요 (18~45번, 없는 번호는 요청하면 원장님이 만들어요). 받은 링크는 <b>24시간</b> 열려요.',
+    moe: '모의고사 분석노트는 <b>하루 1개</b>까지 받아요 (18~45번, 없는 번호는 요청하면 원장님이 만들어요). 받은 링크는 <b>24시간</b> 열려요.',
     book: '부교재 분석노트는 <b>하루 1개</b>까지 받아요. 없는 자료는 원장님이 <b>1~2일</b> 안에 만들어요.',
     etc: '단어 시험지·변형문제처럼 <b>다른 자료</b>를 요청해요. 원장님이 직접 만든 자료만 드려요 (출판사 교재 원본은 안 돼요).'
   };
   const head = `<h2>${hasEtc ? '자료 요청' : '분석노트 요청'}</h2>
     <p class="muted">원하는 자료를 <b>카카오톡으로</b> 보내 드려요.</p>
     <details class="nr-more"><summary>자세히 보기</summary>
-    <p class="meta"><b>받는 방법:</b> 번호를 <b>하나씩</b> 골라 받아요. 모의고사는 하나를 받은 뒤 <b>"다른 번호 받기"</b>를 눌러 두 번째 번호를 받을 수 있어요. 요청과 받기 모두 하루 모의고사 2개 · 부교재 1개까지예요.</p>
+    <p class="meta"><b>받는 방법:</b> 번호를 <b>하나</b> 골라 받아요. 요청과 받기 모두 하루 모의고사 1개 · 부교재 1개까지예요. 다른 번호는 다음 날 받을 수 있어요.</p>
     <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 <b>처음 요청한 1개는 카톡으로 자동</b> 보내 드리고, 나머지는 다시 로그인했을 때 이 칸 위 <b>"요청하신 자료가 준비됐어요"</b>에서 받아요.</p>
     ${hasEtc ? '<p class="meta">기타 자료는 원장님이 준비되면 카톡으로 보내 드려요. 이메일·전화번호는 적지 않아도 돼요.</p>' : ''}</details>
     <div id="nr-talk"></div><div id="nr-ready"></div>`;
@@ -548,7 +548,7 @@ async function noteRequest(user) {
     const later = ok.filter(v => !v).length;
     slot.innerHTML = (list.length ? `<div class="ready-box"><b>요청하신 자료가 준비됐어요</b><ul>` + list.map((x, i) =>
       `<li><span>${esc(x.label)}</span>${canGet(x) ? `<button class="btn btn-gold btn-sm" data-i="${i}">받기</button>` : '<span class="meta" style="white-space:nowrap">내일 받기</span>'}</li>`).join('') +
-      `</ul><p class="meta">하루에 모의고사 2개 · 부교재 1개까지 받을 수 있어요.${later ? ` 남은 ${later}개는 ${nextResetText()}.` : ''}</p>` +
+      `</ul><p class="meta">하루에 모의고사 1개 · 부교재 1개까지 받을 수 있어요.${later ? ` 남은 ${later}개는 ${nextResetText()}.` : ''}</p>` +
       (later ? pushAsk('내일 잊지 않게, 새 자료 소식을 알림으로 받아 볼까요?') : '') + `</div>` : '') +
       (m.making.length ? `<div class="making-box"><b>원장님이 만드는 중 ${m.making.length}개</b><ul>${m.making.map(l => `<li>${esc(l)}</li>`).join('')}</ul>
         <p class="meta">완성되면 이 칸 위 '준비됐어요'에 나타나요. (처음 요청한 1개는 카톡으로 자동 발송)</p>${later ? '' : pushAsk('완성되면 알림으로 바로 알려 드릴까요?')}</div>` : '');  // 받은 자료는 첫 화면 '내 자료함'에만 (요청 칸은 간단하게, 2026-11-04)
