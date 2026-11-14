@@ -289,13 +289,18 @@ async function nsSet(uid, status) {
 // 자동 카톡을 못 보낸 이유 (note-deliver 가 기록)
 const KAKAO_ISSUE = { no_consent: '카톡 동의 안 함', no_token: '카카오 연결 없음', fail: '카톡 발송 실패' };
 async function tabNotes() {
-  const [{ data, error }, { data: cm }] = await Promise.all([
+  const [{ data, error }, { data: cm }, { data: mr }] = await Promise.all([
     sb.from('note_orders')
       .select('id,user_id,author_name,label,status,file_name,kakao_sent,expires_at,created_at,query,kakao_issue')
       .order('created_at', { ascending: false }).limit(500),
     sb.from('comments').select('user_id,content,reply,replied_at')
       .like('content', '[자료 요청]%').order('created_at', { ascending: false }).limit(1000),
+    sb.from('member_roles').select('user_id,role').limit(5000), // 회원 구분 (2026-11-15~, 첫 요청 때 한 번 고름)
   ]);
+  const ROLE = { student: '학생', teacher: '선생님·강사', parent: '학부모' };
+  const roleOf = new Map((mr || []).map(r => [r.user_id, r.role]));
+  const rtag = uid => roleOf.has(uid) ? ` <span style="font-size:.78rem;font-weight:700;color:${roleOf.get(uid) === 'teacher' ? '#b45309' : roleOf.get(uid) === 'parent' ? '#2f855a' : '#1e3a8a'}">[${ROLE[roleOf.get(uid)]}]</span>` : '';
+  const rcnt = k => (mr || []).filter(r => r.role === k).length;
   if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
   const missing = data.filter(o => o.status === 'missing');
   const waiting = data.filter(o => o.status === 'resolved');
@@ -305,7 +310,7 @@ async function tabNotes() {
     const m = new Map();
     for (const o of [...list].reverse()) {
       const g = m.get(o.label) || { label: o.label, ids: [], names: [], at: o.created_at };
-      g.ids.push(o.id); g.names.push(esc(o.author_name || '회원') + (KAKAO_ISSUE[o.kakao_issue] ? ` <b style="color:#c2410c">(${KAKAO_ISSUE[o.kakao_issue]})</b>` : ''));
+      g.ids.push(o.id); g.names.push(esc(o.author_name || '회원') + rtag(o.user_id) + (KAKAO_ISSUE[o.kakao_issue] ? ` <b style="color:#c2410c">(${KAKAO_ISSUE[o.kakao_issue]})</b>` : ''));
       if (o.kakao_issue) g.issue = true;
       m.set(o.label, g);
     }
@@ -357,7 +362,7 @@ async function tabNotes() {
       <span class="meta">${g.names.length}명 · ${g.names.join(', ')} · 첫 요청 ${fmtDate(g.at)}</span></div>`;
   const row = o => `
     <div class="card"><strong>${esc(o.label)}</strong><br>
-      <span class="meta">${esc(o.author_name || '회원')} · ${fmtDate(o.created_at)}
+      <span class="meta">${esc(o.author_name || '회원')}${rtag(o.user_id)} · ${fmtDate(o.created_at)}
       · ${o.query && o.query.auto ? '자동 카톡' : '자료실에서 받음'}${o.kakao_sent ? ' (카톡 발송)' : ' (카톡 미발송)'} · ${esc(o.file_name || '')}</span></div>`;
 
   $('#panel').innerHTML = `
@@ -381,6 +386,9 @@ async function tabNotes() {
     <div class="card"><p class="mt" style="margin:0"><button class="btn btn-navy btn-sm" id="scan-btn" onclick="scanDrive()">드라이브 확인</button>
     <span class="meta">자료를 올린 뒤 누르면 바로 '완료'로 옮겨져요. (안 눌러도 매시 5분, 08~22시에 자동 확인)</span></p>
     <div id="scan-out"></div></div>
+    <div class="card"><b>👥 요청하는 분들</b> <span class="meta">첫 요청 때 한 번 고름 · 2026-11-15부터</span>
+      <p style="margin:6px 0 0">학생 <b>${rcnt('student')}명</b> · 선생님·강사 <b>${rcnt('teacher')}명</b> · 학부모 <b>${rcnt('parent')}명</b> <span class="meta">(모두 ${(mr || []).length}명)</span></p>
+      <p class="meta" style="margin:4px 0 0">이름 옆 [학생]·[선생님·강사]·[학부모] 표시는 아래 '전송 기록 보기'에서 볼 수 있어요.</p></div>
     <div class="nc-cols">
       <section class="nc-col todo">
         <h2>🛠️ 만들어야 할 자료 ${gm.length}개</h2>
