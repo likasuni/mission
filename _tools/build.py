@@ -84,6 +84,21 @@ def post_name(p): return f"{s_name(p['k'])} {dname(p['subj'])} {post_no(p)}번"
 def post_ans(p):
     if p.get('n2'): return ' · '.join(f"{q['n']}번 {CIRC[q['answer'] - 1]}" for q in p['qs'])
     return f"정답 {CIRC[p['answer'] - 1]}"
+_nvf = os.path.join(ROOT, 'notes', 'view', 'index.json')
+NV = json.load(open(_nvf, encoding='utf-8')) if os.path.exists(_nvf) else {}  # 분석노트 전자책 목록 (note_view.py)
+def post_quick(ps):
+    # 영어 회차 페이지 맨 위 '화면으로 바로 보기' (2026-11-15 원장님 확정): 광고가 있는 전자책·해설 페이지로 가는 번호 칩.
+    # 수익이 회차 페이지에 몰려 있어서, 들어온 학생이 해설을 한 장 더 보게 하는 자리. 자세한 목록(#posts)은 아래에 그대로 둠.
+    def chip(p):
+        k = p['k']
+        eb = k[0] == 'moe' and f"moe-g{k[1]}-{s_year(k)}-{k[3]}-{post_no(p).replace('~', '-')}" in NV
+        return f'<a class="nb rd{" eb" if eb else ""}" href="{post_url(p)}{"#ebook" if eb else ""}">{"📘 " if eb else ""}{post_no(p)}번</a>'
+    has_eb = '📘 ' in ''.join(chip(p) for p in ps)
+    return ('<section class="card en-sec" id="read"><style>.nb.rd{background:#fff;color:#1e3a8a;border:1.5px solid #c7d2fe}.nb.rd.eb{background:#eef2ff;border-color:#1e3a8a}</style>'
+            '<h2>화면으로 바로 보기 <small>다운로드 없이 · 무료</small></h2>'
+            + (f'<p class="muted"><b>📘 번호는 분석노트 전자책</b>(끊어읽기·해석·어휘)까지, 나머지 번호는 정답 근거·오답 이유 해설을 바로 볼 수 있어요.</p>' if has_eb
+               else '<p class="muted">번호를 누르면 정답 근거·오답 이유 해설을 바로 볼 수 있어요.</p>')
+            + '<div class="nbs">' + ''.join(chip(p) for p in sorted(ps, key=lambda p: p['n'])) + '</div></section>')
 def post_card(ps, title):
     return (f'<div class="card" id="posts"><h2>{e(title)}</h2><div class="plist">' + ''.join(
         f'<a href="{post_url(p)}"><b>{e(post_name(p))}</b><span>{post_ans(p)} · {e(p["type"])} · {e(p["topic"])}</span></a>' for p in ps)
@@ -428,7 +443,7 @@ for idx, k in enumerate(keys_sorted):
             en_top = (f'''<section class="card en-sec" id="notes"><h2>문항별 분석노트</h2>
 <div class="legend"><span><i class="nb open"></i>바로 보기</span><span><i class="nb req"></i>카톡 요청</span><span><i class="nb off"></i>준비 중</span></div>
 <p class="hot"><b>21~24번·30~40번은 카톡 요청 자료</b>예요. 번호를 누르고 아래 요청 칸에서 카카오톡으로 받아 가세요. <b>하루 1개</b>까지 받아요. 나머지 번호 중 <b>아직 없는 번호</b>도 주황 버튼을 눌러 요청할 수 있어요.</p>
-<div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section>'
+<div class="nbs">''' + ''.join(nbtn(n) for n in NOTE_NUMS) + '</div></section><!--READ-->'
                 + ('<section class="card en-sec" id="var"><h2>변형문제 <small>무료 · 번호별 전체 공개</small></h2><div class="nbs">'
                    + ''.join(f'<a class="nb var" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs0) + '</div></section>'
                    if vs0 else '<section class="card en-sec" id="var"><h2>변형문제</h2><p class="muted">이 회차 변형문제는 준비 중이에요.</p></section>') + ad()
@@ -476,7 +491,9 @@ for idx, k in enumerate(keys_sorted):
 {rel}
 {ad()}'''
         if POSTS_BY.get(k) and any(p['subj'] == s for p in POSTS_BY[k]):
+            if en_top: body = body.replace('<!--READ-->', post_quick([p for p in POSTS_BY[k] if p['subj'] == s]))
             body += post_card([p for p in POSTS_BY[k] if p['subj'] == s], f'{full} 문항별 해설')
+        body = body.replace('<!--READ-->', '')
         if en_top:
             page(subj_url(k, s), f'{full} 분석노트·변형문제·단어 PDF | 리카수니 자료실',
                  f'{full} 문항별 분석노트, 변형문제, 영어 단어 총정리와 기출 원본 PDF 무료. 리카수니 자료실',
@@ -489,8 +506,6 @@ for idx, k in enumerate(keys_sorted):
 # ---------- 문항별 해설 ----------
 # 분석노트 전자책 (_tools/note_view.py 가 만든 notes/view/*.webp + index.json) → 해설 페이지 '분석노트 전자책' 칸 (#ebook)
 # 첫 화면·블로그 '받을 수 있어요'의 [전자책 보기] 버튼은 notes/view/list.json(번호 키 → 해설 주소#ebook)을 읽음
-_nvf = os.path.join(ROOT, 'notes', 'view', 'index.json')
-NV = json.load(open(_nvf, encoding='utf-8')) if os.path.exists(_nvf) else {}
 EBOOK = {}  # 요청 번호 키(moe-g1-2026-10-41) → 주소, 세트(41-42)는 번호마다
 def note_view(p, nm):
     k = p['k']
