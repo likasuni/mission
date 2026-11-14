@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 39,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 3,
+  "topic": "잎꾼개미는 잎을 먹지 않고 비료로 써서 균류를 키우는 농부다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 39번",
+    "2026 9월 고1 영어 39번 해설",
+    "고1 9월 모의고사 39번 정답",
+    "고1 모의고사 문장 삽입",
+    "잎꾼개미 leaf-cutter ants",
+    "균류 fungus 농사"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 39번은 잎꾼개미가 잎을 잘라 나르지만 먹지 않고, 비료로 써서 지하 정원에서 균류를 키운다는 글이에요. However, the ants don't eat these leaves. 바로 뒤에 Instead로 시작하는 주어진 문장이 와야 해요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "소개",
+      "수백만 마리의 잎꾼개미는 인간처럼 먹이를 경작하는 농부다."
+    ],
+    [
+      "잎 모으기",
+      "일부 개미가 신선한 식물을 찾아 큰 조각을 잘라 둥지로 나른다."
+    ],
+    [
+      "전환",
+      "However, 개미들은 이 잎을 먹지 않는다. Instead, 작은 일개미가 잎을 씹어 비료로 균류를 키운다."
+    ],
+    [
+      "결과",
+      "균류가 피운 자실체를 개미가 먹고, 이 전략으로 거대한 지하 둥지와 농업 문명을 이룬다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "However, the ants don't eat these leaves.",
+      "ko": "하지만, 개미들은 이 잎을 먹지 않는다.",
+      "note": "주어진 문장의 Instead(대신에)가 받을 부정문이에요."
+    },
+    {
+      "en": "Instead, smaller worker ants take the pieces of leaves, … to grow fungus in large underground 'gardens.'",
+      "ko": "대신에, 더 작은 일개미들이 잎 조각을 가져가 … 거대한 지하 '정원'에서 균류를 키운다.",
+      "note": "fungus가 여기서 처음 나와요."
+    },
+    {
+      "en": "The ants feed the fungus, and the fungus blossoms into small fruiting bodies which the ants later eat.",
+      "ko": "개미들은 균류에게 먹이를 주고, 균류는 개미들이 나중에 먹는 작은 자실체로 피어난다.",
+      "note": "the fungus는 앞에서 이미 나온 균류를 가리켜요. 그래서 주어진 문장은 이 문장 앞(③)이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① Just like humans, they're farmers. ( ① )",
+      "ko": "소개 다음",
+      "why": "아직 잎을 모으는 장면도 안 나왔어요."
+    },
+    {
+      "en": "② … that they carry back to the nest. ( ② )",
+      "ko": "잎 나르기 다음",
+      "why": "바로 뒤 However, the ants don't eat these leaves가 먼저 와야 Instead가 이어져요."
+    },
+    {
+      "en": "③ However, the ants don't eat these leaves. ( ③ )",
+      "ko": "'먹지 않는다' 다음",
+      "why": "정답. 먹지 않는다 → Instead, 비료로 균류를 키운다 → the fungus."
+    },
+    {
+      "en": "④ … which the ants later eat. ( ④ )",
+      "ko": "균류 먹기 다음",
+      "why": "이미 균류가 나온 뒤라 늦어요."
+    },
+    {
+      "en": "⑤ … spanning hundreds of square meters. ( ⑤ )",
+      "ko": "거대한 둥지 다음",
+      "why": "결론 부분이라 맞지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동사 병렬",
+      "ex": "smaller worker ants take the pieces of leaves, chew them into smaller pieces, and use these as fertilizer",
+      "d": "take, chew, use가 병렬."
+    },
+    {
+      "t": "use A as B",
+      "ex": "use these as fertilizer to grow fungus",
+      "d": "이것들을 균류를 키우는 비료로 쓰다."
+    },
+    {
+      "t": "목적격 관계대명사 which",
+      "ex": "small fruiting bodies which the ants later eat",
+      "d": "개미들이 나중에 먹는 작은 자실체."
+    }
+  ],
+  "vocab": [
+    [
+      "colony",
+      "군락"
+    ],
+    [
+      "cultivate",
+      "경작하다"
+    ],
+    [
+      "set forth",
+      "길을 나서다"
+    ],
+    [
+      "vegetation",
+      "식물"
+    ],
+    [
+      "fertilizer",
+      "비료"
+    ],
+    [
+      "fungus",
+      "균류"
+    ],
+    [
+      "blossom",
+      "피어나다"
+    ],
+    [
+      "strategy",
+      "전략"
+    ],
+    [
+      "enormous",
+      "거대한"
+    ],
+    [
+      "agricultural",
+      "농업의"
+    ],
+    [
+      "civilization",
+      "문명"
+    ]
+  ],
+  "summary": {
+    "en": "Leaf-cutter ants don't eat leaves but use them as fertilizer to grow fungus, which they eat, so they are farmers just like humans.",
+    "ko": "잎꾼개미는 잎을 먹지 않고 균류를 키우는 비료로 사용해 그 균류를 먹으므로, 인간처럼 농부이다."
+  },
+  "writing": {
+    "en": "The ants don't eat these leaves; instead, they use them as fertilizer to grow fungus.",
+    "ko": "개미들은 이 잎을 먹지 않고, 대신 그것들을 균류를 키우는 비료로 쓴다."
+  },
+  "tip": "Instead로 시작하는 문장은 바로 앞에 부정문(don't eat)이 있어야 해요. 또 주어진 문장에서 처음 나오는 명사(fungus)가 뒤에서 the fungus로 받아지는지 확인하세요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 39번 정답은?",
+      "③이에요."
+    ],
+    [
+      "②가 아닌 이유는?",
+      "② 자리에 넣으면 Instead 앞에 '먹지 않는다'는 문장이 없어서 무엇 대신인지 알 수 없어요."
+    ],
+    [
+      "잎꾼개미는 무엇을 먹나요?",
+      "잎으로 키운 균류가 피운 작은 자실체를 먹어요."
+    ]
+  ],
+  "date": "2026-11-19"
+}

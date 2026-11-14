@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 24,
+  "type": "제목",
+  "points": 2,
+  "answer": 4,
+  "topic": "계획은 좋지만, 계획대로 되지 않아도 괜찮다고 받아들여야 한다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 24번",
+    "2026 9월 고1 영어 24번 해설",
+    "고1 9월 모의고사 24번 정답",
+    "고1 모의고사 글의 제목",
+    "Plans are worthless but planning is everything",
+    "불확실성 uncertainty 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 24번은 우리는 불확실성이 두려워 계획에 매달리지만, 계획을 세우는 것과 모든 계획이 이루어져야 한다고 믿는 것은 다르다는 글이에요. 달력에 잉크 대신 연필로 쓰듯, 계획대로 되지 않을 수 있음을 받아들이라고 해요. 정답은 ④ It's Okay If Your Plans Don't Come True예요.",
+  "flow": [
+    [
+      "출발",
+      "통제 욕구를 내려놓는 것은 불확실성에 맞설 용기를 모으는 일이다."
+    ],
+    [
+      "문제",
+      "불확실하면 두려워 경직되고, 상황이 예측 가능한 척하며 계획에 절박하게 매달린다."
+    ],
+    [
+      "구분",
+      "계획 자체는 좋다. 하지만 계획하는 것과 모든 계획이 결실을 맺어야 한다고 생각하는 것은 다르다."
+    ],
+    [
+      "당부",
+      "연필로 쓰듯, 일어날 거라 생각한 일이 안 일어날 수도 있음을 받아들이고 괜찮아져라."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But there's a difference between planning and thinking all your plans have to come to fruition.",
+      "ko": "하지만 계획을 세우는 것과 모든 계획이 결실을 맺어야 한다고 생각하는 것 사이에는 차이가 있다.",
+      "note": "계획은 좋지만 꼭 이루어져야 한다고 믿을 필요는 없다는 핵심이에요."
+    },
+    {
+      "en": "Imagine if we all used pencil instead of ink to write in our calendars and planners.",
+      "ko": "우리 모두가 달력과 플래너에 잉크 대신 연필로 쓴다고 상상해 보라.",
+      "note": "언제든 바꿀 수 있는 계획 = 연필."
+    },
+    {
+      "en": "… what we think is going to happen, might not be what actually happens. And if we could try our best to be all right with that.",
+      "ko": "… 우리가 일어날 거라고 생각하는 것이 실제로 일어나는 것이 아닐 수도 있다는 것을. 그리고 그것에 대해 괜찮아지도록 최선을 다할 수 있다면.",
+      "note": "be all right with that = 계획대로 안 돼도 괜찮다. ④의 It's Okay와 연결돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "How Does Living with Certainty Save Your Time?",
+      "ko": "확실성을 가지고 사는 것이 어떻게 시간을 절약하는가?",
+      "why": "글은 확실성이 아니라 불확실성을 받아들이라고 해요."
+    },
+    {
+      "en": "Predictability: When Life Goes According to Plan",
+      "ko": "예측 가능성: 삶이 계획대로 흘러갈 때",
+      "why": "반대 내용이에요. 삶은 계획대로 안 될 수 있다고 해요."
+    },
+    {
+      "en": "Where Preparation Ends and Control Begins",
+      "ko": "준비가 끝나고 통제가 시작되는 곳",
+      "why": "통제를 시작하라는 게 아니라 통제 욕구를 내려놓으라는 글이에요."
+    },
+    {
+      "en": "It's Okay If Your Plans Don't Come True",
+      "ko": "계획이 이루어지지 않아도 괜찮다",
+      "why": "정답. be all right with that, 연필로 쓰는 계획."
+    },
+    {
+      "en": "The More Specific Your Plan, the Better",
+      "ko": "계획은 구체적일수록 더 좋다",
+      "why": "계획을 더 구체적으로 세우라는 말은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사 주어",
+      "ex": "Letting go of our need for control, being aware, is a lot about …",
+      "d": "Letting go of ~가 주어, being aware는 그것을 다시 말한 것. 동사는 is."
+    },
+    {
+      "t": "비교급 than 대동사",
+      "ex": "things are more predictable than they really are",
+      "d": "실제 그런 것보다 더 예측 가능한."
+    },
+    {
+      "t": "Imagine if + 가정법 과거",
+      "ex": "Imagine if we all used pencil instead of ink …",
+      "d": "~한다고 상상해 보라. 현재 사실의 반대라서 과거형 used."
+    }
+  ],
+  "vocab": [
+    [
+      "let go of",
+      "~을 내려놓다"
+    ],
+    [
+      "uncertainty",
+      "불확실성"
+    ],
+    [
+      "inflexible",
+      "경직된"
+    ],
+    [
+      "predictable",
+      "예측 가능한"
+    ],
+    [
+      "enormous",
+      "막대한"
+    ],
+    [
+      "cling to",
+      "~에 매달리다"
+    ],
+    [
+      "desperately",
+      "절박하게"
+    ],
+    [
+      "fruition",
+      "결실"
+    ],
+    [
+      "figuratively",
+      "비유적으로"
+    ],
+    [
+      "literally",
+      "문자 그대로"
+    ],
+    [
+      "bear in mind",
+      "~을 염두에 두다"
+    ]
+  ],
+  "summary": {
+    "en": "Planning is good, but we should accept that our plans might not come true and be okay with that uncertainty.",
+    "ko": "계획하는 것은 좋지만, 계획이 이루어지지 않을 수도 있음을 받아들이고 그 불확실성에 괜찮아져야 한다."
+  },
+  "writing": {
+    "en": "There's a difference between planning and thinking all your plans have to come to fruition.",
+    "ko": "계획을 세우는 것과 모든 계획이 결실을 맺어야 한다고 생각하는 것 사이에는 차이가 있다."
+  },
+  "tip": "제목 문제는 글이 '하라'고 하는 마지막 부분을 담은 선택지를 고르세요. 이 글의 끝은 be all right with that(그래도 괜찮아져라)이에요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 24번 정답은?",
+      "④ It's Okay If Your Plans Don't Come True예요."
+    ],
+    [
+      "Eisenhower의 말은 무슨 뜻인가요?",
+      "Plans are worthless, but planning is everything. 계획 자체보다 계획하는 과정이 중요하다는 뜻이에요."
+    ],
+    [
+      "② Predictability가 오답인 이유는?",
+      "글은 삶이 계획대로 흘러간다고 하지 않아요. 계획대로 안 될 수 있음을 받아들이라고 해요."
+    ]
+  ],
+  "date": "2026-11-16"
+}

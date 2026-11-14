@@ -1,0 +1,162 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 23,
+  "type": "주제",
+  "points": 2,
+  "answer": 2,
+  "topic": "종의 생존에 변이가 중요하듯, 인간 마음의 다양성이 우리를 멸종에서 지킨다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 23번",
+    "2026 9월 고1 영어 23번 해설",
+    "고1 9월 모의고사 23번 정답",
+    "고1 모의고사 글의 주제",
+    "variation 변이 다윈",
+    "다양한 마음 kinds of minds"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 23번은 Darwin의 통찰처럼 변이가 종의 생존에 결정적이며, 이 원리가 인간의 마음에도 적용된다는 글이에요. 마음이 한 가지뿐이면 재난 때 멸종할 수 있지만, 다양한 마음 덕분에 우리는 살아남을 가능성이 크다고 해요. 정답은 ② 우리의 생존에서 인간 마음의 다양성의 중요성이에요.",
+  "flow": [
+    [
+      "주제",
+      "인간이 다양한 마음을 갖는 것은 중요하다. 변이는 종의 생존에 결정적이기 때문이다."
+    ],
+    [
+      "원리",
+      "Darwin: 변이는 자연선택의 선행 조건. 변이가 없는 종은 큰 환경 변화에 사라질 수 있다."
+    ],
+    [
+      "적용",
+      "같은 원리가 인간의 마음에도 적용된다. 마음이 한 가지뿐이면 재난 때 멸종할 수 있다."
+    ],
+    [
+      "결론",
+      "다행히 우리는 다양한 마음을 가져 사라질 가능성이 낮고, 이 변이가 진화 가능성을 보존한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "It's important for humans to have many kinds of minds, because variation is critical for the survival of a species.",
+      "ko": "인간이 다양한 유형의 마음을 갖는 것은 중요한데, 변이는 종의 생존에 결정적이기 때문이다.",
+      "note": "첫 문장이 주제문이에요."
+    },
+    {
+      "en": "Darwin observed variation in the bodies of animals, and the same principle applies to human minds.",
+      "ko": "Darwin은 동물의 몸에서 변이를 관찰했고, 같은 원리가 인간의 마음에도 적용된다.",
+      "note": "몸의 변이 → 마음의 변이로 연결해요."
+    },
+    {
+      "en": "Thankfully, our species has many kinds of minds, … so we're less likely to be wiped out.",
+      "ko": "다행히도, 우리 종은 다양한 유형의 마음을 가지고 있어서 … 우리는 사라질 가능성이 더 낮다.",
+      "note": "마음의 다양성 = 생존. ②와 그대로 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "differences in learning styles across generations",
+      "ko": "세대에 따른 학습 방식의 차이",
+      "why": "세대나 학습 방식 이야기는 없어요."
+    },
+    {
+      "en": "importance of varieties of human minds in our survival",
+      "ko": "우리의 생존에서 인간 마음의 다양성의 중요성",
+      "why": "정답. 다양한 마음 = 변이 = 생존."
+    },
+    {
+      "en": "benefits of mental health care for succeeding in a given field",
+      "ko": "주어진 분야에서 성공하기 위한 정신 건강 관리의 이점",
+      "why": "mind가 나오지만 정신 건강 관리 이야기가 아니에요."
+    },
+    {
+      "en": "environmental advantages of a species with a large population",
+      "ko": "개체 수가 많은 종의 환경적 이점",
+      "why": "중요한 건 개체 수가 아니라 변이(다양성)예요."
+    },
+    {
+      "en": "human creativity that contributes to problem-solving in crises",
+      "ko": "위기 속 문제 해결에 기여하는 인간의 창의성",
+      "why": "위기(catastrophe)는 나오지만 창의성 이야기가 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "가주어 it + for 의미상 주어",
+      "ex": "It's important for humans to have many kinds of minds",
+      "d": "for humans가 to have의 의미상 주어예요."
+    },
+    {
+      "t": "가정법 과거",
+      "ex": "If we all had the same kind of mind …, we might become extinct.",
+      "d": "실제로는 아니지만 만약 ~라면 멸종할지도 모른다."
+    },
+    {
+      "t": "be likely to",
+      "ex": "so we're less likely to be wiped out",
+      "d": "~할 가능성이 더 낮다."
+    }
+  ],
+  "vocab": [
+    [
+      "variation",
+      "변이, 다양성"
+    ],
+    [
+      "critical",
+      "결정적인"
+    ],
+    [
+      "insight",
+      "통찰"
+    ],
+    [
+      "prerequisite",
+      "선행 조건"
+    ],
+    [
+      "catastrophic",
+      "재앙적인"
+    ],
+    [
+      "wipe out",
+      "완전히 없애다"
+    ],
+    [
+      "be suited for",
+      "~에 적합하다"
+    ],
+    [
+      "apply to",
+      "~에 적용되다"
+    ],
+    [
+      "extinct",
+      "멸종한"
+    ],
+    [
+      "preserve",
+      "보존하다"
+    ]
+  ],
+  "summary": {
+    "en": "Just as variation in bodies helps species survive, the variety of human minds makes our species less likely to be wiped out.",
+    "ko": "몸의 변이가 종의 생존을 돕듯이, 인간 마음의 다양성은 우리 종이 사라질 가능성을 낮춘다."
+  },
+  "writing": {
+    "en": "Variation is critical for the survival of a species.",
+    "ko": "변이는 종의 생존에 결정적이다."
+  },
+  "tip": "주제 문제는 첫 문장과 마지막 문장을 비교하세요. many kinds of minds(첫 문장)와 This variation preserves …(마지막 문장)가 같은 말을 해요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 23번 정답은?",
+      "② importance of varieties of human minds in our survival이에요."
+    ],
+    [
+      "23번에서 variation은 무슨 뜻인가요?",
+      "같은 종 안의 차이, 즉 다양성이에요. 몸의 변이처럼 마음의 다양성도 생존에 중요하다고 해요."
+    ],
+    [
+      "④가 오답인 이유는?",
+      "중요한 건 개체 수가 많은 것이 아니라 변이(다양성)가 큰 것이에요."
+    ]
+  ],
+  "date": "2026-11-16"
+}

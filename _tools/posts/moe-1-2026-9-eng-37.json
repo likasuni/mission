@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 37,
+  "type": "순서",
+  "points": 2,
+  "answer": 5,
+  "topic": "망원경 이전의 관측에서 Copernicus의 지동설, Galileo의 망원경까지",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 37번",
+    "2026 9월 고1 영어 37번 해설",
+    "고1 9월 모의고사 37번 정답",
+    "고1 모의고사 글의 순서",
+    "Copernicus Galileo 망원경",
+    "(C)-(B)-(A)"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 37번은 망원경이 없던 시대부터 사람들이 우주를 이해하려 한 과정을 시간 순서로 소개해요. (C) 고대 민족과 Copernicus의 맨눈 관측 → (B) He(Copernicus)의 지동설과 망원경 개발 → (A) 망원경을 쓴 Galileo 순서예요. 정답은 ⑤ (C)-(B)-(A)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "망원경 이전에도 사람들은 우주를 이해하려 했다."
+    ],
+    [
+      "(C)",
+      "고대 민족들이 별의 움직임을 기록했고, 16세기 Copernicus가 맨눈으로 관측하며 혁명적 아이디어를 냈다."
+    ],
+    [
+      "(B)",
+      "그는 지구가 태양 주위를 돈다고 결론 내리고 책으로 냈다. 17세기 초 망원경이 개발되었다."
+    ],
+    [
+      "(A)",
+      "Galileo가 망원경으로 목성의 위성과 달의 분화구를 관찰하고 Copernicus의 이론을 확인했다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "(C) … a 16th-century Polish mathematician named Nicolaus Copernicus put forth a revolutionary idea. Copernicus watched the stars and took measurements by eye.",
+      "ko": "(C) … Nicolaus Copernicus라는 16세기 폴란드 수학자가 혁명적인 아이디어를 제기했다. Copernicus는 별을 관찰하고 맨눈으로 측정했다.",
+      "note": "망원경 이전(by eye)이라 주어진 글 바로 뒤, Copernicus 이름이 처음 나와요."
+    },
+    {
+      "en": "(B) He concluded that the view of the universe accepted at the time … was wrong … Technological improvements led to the development of the telescope in the early 17th century.",
+      "ko": "(B) 그는 당시 받아들여진 우주관이 틀렸다고 결론지었다 … 기술의 발전은 17세기 초 망원경의 개발로 이어졌다.",
+      "note": "He = (C)의 Copernicus. 끝에서 망원경이 등장해요."
+    },
+    {
+      "en": "(A) Using a telescope, the Italian scientist Galileo Galilei discovered …",
+      "ko": "(A) 망원경을 사용하여, 이탈리아 과학자 Galileo Galilei는 … 발견했다.",
+      "note": "(B) 끝의 망원경을 이어받아 마지막에 와요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A) - (C) - (B)",
+      "ko": "망원경 → 맨눈 → 지동설",
+      "why": "망원경 이전 이야기 다음에 바로 망원경 사용(A)이 올 수 없어요."
+    },
+    {
+      "en": "(B) - (A) - (C)",
+      "ko": "지동설 → 망원경 → 맨눈",
+      "why": "(B)의 He가 누구인지 알 수 없어요."
+    },
+    {
+      "en": "(B) - (C) - (A)",
+      "ko": "지동설 → 맨눈 → 망원경",
+      "why": "He(Copernicus)가 (C)보다 먼저 나올 수 없어요."
+    },
+    {
+      "en": "(C) - (A) - (B)",
+      "ko": "맨눈 → 망원경 → 지동설",
+      "why": "망원경 개발(B) 전에 망원경 사용(A)이 올 수 없어요."
+    },
+    {
+      "en": "(C) - (B) - (A)",
+      "ko": "맨눈 → 지동설·망원경 개발 → 망원경 사용",
+      "why": "정답. 시간 순서와 대명사 He가 맞아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "과거분사 후치 수식",
+      "ex": "a … mathematician named Nicolaus Copernicus",
+      "d": "Nicolaus Copernicus라는 이름의 수학자."
+    },
+    {
+      "t": "It was ~ that 강조",
+      "ex": "it was in fact Earth that traveled around the Sun",
+      "d": "태양 주위를 돈 것은 사실 바로 지구였다."
+    },
+    {
+      "t": "despite + 명사",
+      "ex": "Despite widespread objections to his ideas, …",
+      "d": "널리 퍼진 반대에도 불구하고."
+    }
+  ],
+  "vocab": [
+    [
+      "telescope",
+      "망원경"
+    ],
+    [
+      "mathematician",
+      "수학자"
+    ],
+    [
+      "put forth",
+      "제기하다"
+    ],
+    [
+      "revolutionary",
+      "혁명적인"
+    ],
+    [
+      "measurement",
+      "측정"
+    ],
+    [
+      "conclude",
+      "결론짓다"
+    ],
+    [
+      "objection",
+      "반대"
+    ],
+    [
+      "astronomer",
+      "천문학자"
+    ],
+    [
+      "build on",
+      "~을 바탕으로 삼다"
+    ],
+    [
+      "confirm",
+      "확인하다"
+    ],
+    [
+      "advance",
+      "발전시키다"
+    ]
+  ],
+  "summary": {
+    "en": "People studied the stars by eye, Copernicus proposed that Earth travels around the Sun, and telescopes later helped Galileo confirm his theory.",
+    "ko": "사람들은 맨눈으로 별을 연구했고, Copernicus는 지구가 태양 주위를 돈다고 제안했으며, 이후 망원경이 Galileo가 그의 이론을 확인하도록 도왔다."
+  },
+  "writing": {
+    "en": "Technological improvements led to the development of the telescope in the early 17th century.",
+    "ko": "기술의 발전은 17세기 초 망원경의 개발로 이어졌다."
+  },
+  "tip": "역사 순서 글은 시대(16세기 → 17세기 초)와 대명사(He)로 이어 보세요. 이름이 처음 나오는 단락이 먼저예요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 37번 정답은?",
+      "⑤ (C)-(B)-(A)예요."
+    ],
+    [
+      "(B)의 He는 누구인가요?",
+      "(C)에서 처음 소개된 Copernicus예요."
+    ],
+    [
+      "(A)가 마지막인 이유는?",
+      "(B) 끝에서 망원경이 개발되고, (A)에서 그 망원경을 사용하기 때문이에요."
+    ]
+  ],
+  "date": "2026-11-18"
+}

@@ -1,0 +1,170 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 18,
+  "type": "목적",
+  "points": 2,
+  "answer": 4,
+  "topic": "혹한 예보 때문에 현장체험학습 장소를 놀이공원에서 과학 박물관으로 바꾼다는 안내",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 18번",
+    "2026 9월 고1 영어 18번 해설",
+    "고1 9월 모의고사 18번 정답",
+    "고1 모의고사 글의 목적",
+    "현장체험학습 장소 변경 안내",
+    "Dreamland Amusement Park 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 18번은 교감 선생님이 학부모님께 보내는 편지예요. 원래 놀이공원으로 가려던 금요일 현장체험학습을, 매우 낮은 기온 예보 때문에 시립 과학 박물관으로 바꾼다고 알려요. However 뒤의 날씨 이야기와 we have decided to change the location이 핵심이고, 정답은 ④ 현장체험학습 장소 변경을 안내하려고예요.",
+  "flow": [
+    [
+      "인사",
+      "학교 프로그램에 보내 준 성원과 협조에 감사하며 금요일 현장체험학습 소식을 알린다."
+    ],
+    [
+      "원래 계획",
+      "원래는 Dreamland 놀이공원으로 야외 체험학습을 가려고 했다."
+    ],
+    [
+      "변경 이유",
+      "However, 금요일 내내 매우 낮은 기온이 예상되어 오래 야외에 있는 것은 위험할 수 있다."
+    ],
+    [
+      "결정",
+      "장소를 시립 과학 박물관으로 바꾸고, 학생들은 안내 전시와 체험 활동에 참여한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "However, according to the latest weather forecast, extremely low temperatures are expected throughout Friday.",
+      "ko": "그러나 최신 날씨 예보에 따르면, 금요일 내내 매우 낮은 기온이 예상됩니다.",
+      "note": "However로 글의 방향이 바뀌어요. 원래 계획을 바꿀 이유가 나와요."
+    },
+    {
+      "en": "After careful consideration, we have decided to change the location.",
+      "ko": "신중한 검토 후에, 저희는 장소를 변경하기로 결정했습니다.",
+      "note": "편지의 목적이 그대로 드러나는 문장이에요. change the location = 장소 변경."
+    },
+    {
+      "en": "Instead of the amusement park, students will visit the City Science Museum, …",
+      "ko": "놀이공원 대신, 학생들은 시립 과학 박물관을 방문할 것입니다 …",
+      "note": "바뀐 장소를 구체적으로 알려 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "현장체험학습 학부모 자원봉사자를 모집하려고",
+      "ko": "현장체험학습 학부모 자원봉사자를 모집하려고",
+      "why": "자원봉사자를 모집하는 내용은 없어요."
+    },
+    {
+      "en": "실내활동 시 안전 수칙을 설명하려고",
+      "ko": "실내활동 시 안전 수칙을 설명하려고",
+      "why": "안전이 언급되지만 야외 활동이 위험하다는 이유로만 나와요. 실내 안전 수칙은 없어요."
+    },
+    {
+      "en": "박물관 단체 관람의 유의사항을 당부하려고",
+      "ko": "박물관 단체 관람의 유의사항을 당부하려고",
+      "why": "박물관이 나오지만 관람 유의사항은 없어요. 바뀐 장소로만 소개돼요."
+    },
+    {
+      "en": "현장체험학습 장소 변경을 안내하려고",
+      "ko": "현장체험학습 장소 변경을 안내하려고",
+      "why": "정답. we have decided to change the location이 편지의 목적이에요."
+    },
+    {
+      "en": "현장체험학습 시 학생 복장 규정을 공지하려고",
+      "ko": "현장체험학습 시 학생 복장 규정을 공지하려고",
+      "why": "추운 날씨가 나오지만 옷차림 규정은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "과거완료 had p.p.",
+      "ex": "Our school had originally planned an outdoor field trip …",
+      "d": "지금 장소를 바꾸기 전에 이미 세워 둔 계획이라 과거완료로 써요."
+    },
+    {
+      "t": "동명사 주어",
+      "ex": "Spending long hours outdoors under these conditions may be potentially unsafe …",
+      "d": "Spending ~ conditions 전체가 주어이고 동사는 may be예요."
+    },
+    {
+      "t": "계속적 용법 where",
+      "ex": ", where they will participate in guided exhibitions …",
+      "d": "콤마 뒤 where = and there. 그 박물관에서 학생들이 할 활동을 덧붙여요."
+    }
+  ],
+  "vocab": [
+    [
+      "guardian",
+      "보호자"
+    ],
+    [
+      "appreciate",
+      "감사하다"
+    ],
+    [
+      "cooperation",
+      "협조"
+    ],
+    [
+      "regarding",
+      "~에 관하여"
+    ],
+    [
+      "field trip",
+      "현장체험학습"
+    ],
+    [
+      "originally",
+      "원래"
+    ],
+    [
+      "forecast",
+      "예보"
+    ],
+    [
+      "potentially",
+      "잠재적으로"
+    ],
+    [
+      "consideration",
+      "검토, 고려"
+    ],
+    [
+      "location",
+      "장소"
+    ],
+    [
+      "participate in",
+      "~에 참여하다"
+    ],
+    [
+      "hands-on",
+      "실제 체험의"
+    ]
+  ],
+  "summary": {
+    "en": "Because of extremely low temperatures, the school field trip will be moved from an amusement park to a science museum.",
+    "ko": "매우 낮은 기온 때문에 학교 현장체험학습 장소가 놀이공원에서 과학 박물관으로 바뀐다."
+  },
+  "writing": {
+    "en": "After careful consideration, we have decided to change the location.",
+    "ko": "신중한 검토 후에, 저희는 장소를 변경하기로 결정했습니다."
+  },
+  "tip": "목적 문제는 However, So, After careful consideration처럼 글의 방향이 바뀌거나 결정이 나오는 문장을 찾으세요. 앞부분 인사말(We appreciate …)은 목적이 아니에요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 18번 정답은?",
+      "④ 현장체험학습 장소 변경을 안내하려고예요."
+    ],
+    [
+      "18번의 핵심 문장은?",
+      "After careful consideration, we have decided to change the location.이에요."
+    ],
+    [
+      "③ 박물관 관람 유의사항이 오답인 이유는?",
+      "박물관은 바뀐 장소로 소개될 뿐, 관람할 때 주의할 점은 나오지 않아요."
+    ]
+  ],
+  "date": "2026-11-15"
+}

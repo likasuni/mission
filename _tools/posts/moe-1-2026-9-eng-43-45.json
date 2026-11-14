@@ -1,0 +1,264 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용)",
+  "points": 2,
+  "topic": "새장 속 앵무새 Tuti가 죽은 척해 자유를 되찾고, 상인은 자유가 부보다 소중함을 깨닫는다",
+  "lead": "2026년 9월 고1 모의고사 영어 43~45번은 페르시아 상인과 앵무새 Tuti의 이야기예요. 상인이 인도의 앵무새 친구에게 Tuti의 말을 전하자 친구가 쓰러지고, 그 소식을 들은 Tuti도 쓰러지지만 사실은 자유를 얻으려는 속임수였어요. 43번 ⑤ (D)-(C)-(B), 44번 ② (b), 45번 ③이 정답이에요.",
+  "flow": [
+    [
+      "(A)",
+      "상인은 선물받은 앵무새 Tuti를 황금 새장에 넣고 사랑했지만 Tuti는 슬퍼 보였다. 인도에서 무슨 선물을 원하는지 묻는다."
+    ],
+    [
+      "(D)",
+      "Tuti는 인도의 친구에게 새장에 살아 만날 수 없다고 전해 달라고 하고, 상인은 그 말을 그대로 전한다."
+    ],
+    [
+      "(C)",
+      "말을 듣자 친구가 떨며 쓰러지고, 집에 돌아와 그 이야기를 들은 Tuti도 똑같이 쓰러진다."
+    ],
+    [
+      "(B)",
+      "상인이 Tuti를 안자 Tuti는 날아가 탈출하며, 자유를 되찾는 속임수였다고 말한다. 상인은 자유가 부보다 소중함을 깨닫는다."
+    ]
+  ],
+  "tip": "43번은 대화의 질문과 대답(무슨 선물? → 친구에게 전해 주세요), 시간 표현(The moment, A few days later), 같은 사건의 반복(쓰러짐 → 쓰러짐 → 탈출)으로 이어 보세요. 44번은 따옴표 속 you, me가 누가 누구에게 하는 말인지 확인하세요.",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 43~45번",
+    "2026 9월 고1 영어 43~45번 해설",
+    "고1 9월 모의고사 43번 정답",
+    "고1 9월 모의고사 44번 정답",
+    "고1 9월 모의고사 45번 정답",
+    "앵무새 Tuti 상인 지문"
+  ],
+  "qs": [
+    {
+      "n": 43,
+      "type": "순서",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "(D) \"When you see the parrots of India, look for my friend and tell her all about me. …,\" Tuti answered.",
+          "ko": "(D) \"인도의 앵무새들을 보면, 제 친구를 찾아 저에 대한 모든 것을 말해 주세요. …\" Tuti가 대답했다.",
+          "note": "(A)의 '무슨 선물을 원하니?'에 대한 대답이라 (A) 바로 뒤."
+        },
+        {
+          "en": "(C) The moment the merchant finished the last sentence, Tuti's friend began to tremble and fell down dead.",
+          "ko": "(C) 상인이 마지막 문장을 끝낸 순간, Tuti의 친구가 떨기 시작하더니 쓰러져 죽었다.",
+          "note": "(D) 끝에서 전한 Tuti의 말(the last sentence)을 받아요."
+        },
+        {
+          "en": "(B) Shocked and with tears trickling down his face, the merchant held Tuti in his arms.",
+          "ko": "(B) 충격을 받고 눈물이 얼굴을 타고 흘러내린 채, 상인은 Tuti를 품에 안았다.",
+          "note": "(C) 끝에서 Tuti가 쓰러진 뒤의 장면이라 마지막."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(B) - (D) - (C)",
+          "ko": "탈출 → 부탁 → 쓰러짐",
+          "why": "Tuti가 쓰러지기 전에 상인이 울며 안을 수 없어요."
+        },
+        {
+          "en": "(C) - (B) - (D)",
+          "ko": "쓰러짐 → 탈출 → 부탁",
+          "why": "부탁(D)보다 친구가 쓰러지는 장면(C)이 먼저 올 수 없어요."
+        },
+        {
+          "en": "(C) - (D) - (B)",
+          "ko": "쓰러짐 → 부탁 → 탈출",
+          "why": "(C)의 the last sentence는 (D)에서 전한 말이라 (D)가 먼저예요."
+        },
+        {
+          "en": "(D) - (B) - (C)",
+          "ko": "부탁 → 탈출 → 쓰러짐",
+          "why": "Tuti가 쓰러지는 장면(C) 없이 바로 울며 안을 수 없어요."
+        },
+        {
+          "en": "(D) - (C) - (B)",
+          "ko": "부탁 → 쓰러짐 → 탈출",
+          "why": "정답. 질문의 대답 → 말 전달 후 쓰러짐 → 속임수 고백."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭",
+      "points": 2,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "\"Why are (b) you acting like this?\" he asked Tuti.",
+          "ko": "\"(b) 너는 왜 이렇게 행동하는 거니?\" 그가 Tuti에게 물었다.",
+          "note": "상인이 Tuti에게 묻는 말이라 (b) you = Tuti."
+        },
+        {
+          "en": "\"Did (d) you give my message to my friend?\" his parrot asked him happily.",
+          "ko": "\"(d) 당신은 제 친구에게 제 메시지를 전해 주었나요?\" 앵무새가 그에게 기쁘게 물었다.",
+          "note": "Tuti가 상인에게 묻는 말이라 (d) you = 상인."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) me",
+          "ko": "상인",
+          "why": "상인이 Tuti에게 '내가 무엇을 가져다주기를 원하니?'라고 묻는 말이에요."
+        },
+        {
+          "en": "(b) you",
+          "ko": "Tuti",
+          "why": "정답. 상인이 Tuti에게 '너는 왜 이렇게 행동하니?'라고 물어요."
+        },
+        {
+          "en": "(c) he",
+          "ko": "상인",
+          "why": "자유의 소중함을 깨닫고 두 앵무새와 함께해 행복한 사람은 상인이에요."
+        },
+        {
+          "en": "(d) you",
+          "ko": "상인",
+          "why": "Tuti가 상인에게 '제 메시지를 전해 주었나요?'라고 물어요."
+        },
+        {
+          "en": "(e) he",
+          "ko": "상인",
+          "why": "앵무새를 잃을까 봐 새장 밖으로 내보내지 못하는 사람은 상인이에요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "내용 불일치",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "You are a good master, but I am a bird and I wish to be free, not live my life in a cage,",
+          "ko": "당신은 좋은 주인이지만, 저는 새이고 새장 속에서 제 삶을 사는 게 아니라 자유롭고 싶어요,",
+          "note": "③ '새장에서 계속 살고 싶다'와 반대예요."
+        },
+        {
+          "en": "A few days later, he arrived home and went straight to Tuti.",
+          "ko": "며칠 후, 그는 집에 도착해 곧장 Tuti에게 갔다.",
+          "note": "④ 일치."
+        }
+      ],
+      "choices": [
+        {
+          "en": "상인은 Tuti를 빛나는 황금 새장에 넣었다.",
+          "ko": "황금 새장",
+          "why": "일치. put him in a shiny golden cage."
+        },
+        {
+          "en": "상인은 눈물을 흘리며 Tuti를 품에 안았다.",
+          "ko": "눈물 흘리며 안음",
+          "why": "일치. with tears trickling down his face, held Tuti in his arms."
+        },
+        {
+          "en": "Tuti는 새장에서 계속 살고 싶다고 말했다.",
+          "ko": "새장에서 살고 싶음",
+          "why": "불일치(정답). I wish to be free, not live my life in a cage."
+        },
+        {
+          "en": "상인은 집에 도착해서 곧장 Tuti에게 갔다.",
+          "ko": "곧장 Tuti에게",
+          "why": "일치. went straight to Tuti."
+        },
+        {
+          "en": "상인은 Tuti의 친구를 찾아 Tuti의 말을 그대로 전했다.",
+          "ko": "말 그대로 전달",
+          "why": "일치. repeated Tuti's exact words."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "no matter how",
+      "ex": "no matter how much the merchant cared for his parrot, the colorful bird seemed sad",
+      "d": "상인이 아무리 많이 돌봐도."
+    },
+    {
+      "t": "so ~ that + for fear of",
+      "ex": "loved his parrot so much that he couldn't imagine letting him out of the cage for fear of losing him",
+      "d": "너무 사랑해서 잃을까 두려워 새장 밖으로 내보내는 걸 상상할 수 없었다."
+    },
+    {
+      "t": "the moment (~하자마자)",
+      "ex": "The moment the merchant finished the last sentence, …",
+      "d": "상인이 마지막 문장을 끝낸 순간."
+    }
+  ],
+  "vocab": [
+    [
+      "merchant",
+      "상인"
+    ],
+    [
+      "parrot",
+      "앵무새"
+    ],
+    [
+      "cage",
+      "새장"
+    ],
+    [
+      "deliver",
+      "전하다"
+    ],
+    [
+      "tremble",
+      "떨다"
+    ],
+    [
+      "trickle",
+      "흘러내리다"
+    ],
+    [
+      "escape",
+      "탈출하다"
+    ],
+    [
+      "regain",
+      "되찾다"
+    ],
+    [
+      "play dead",
+      "죽은 척하다"
+    ],
+    [
+      "wealth",
+      "부"
+    ],
+    [
+      "occasionally",
+      "가끔"
+    ]
+  ],
+  "summary": {
+    "en": "A merchant's caged parrot played dead to regain its freedom, and the merchant realized that freedom is more precious than wealth.",
+    "ko": "상인의 새장 속 앵무새는 자유를 되찾기 위해 죽은 척했고, 상인은 자유가 부보다 더 소중하다는 것을 깨달았다."
+  },
+  "writing": {
+    "en": "The merchant realized that freedom mattered more than all the wealth in the world.",
+    "ko": "상인은 자유가 세상의 모든 부보다 더 중요하다는 것을 깨달았다."
+  },
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 43번 정답은?",
+      "⑤ (D)-(C)-(B)예요."
+    ],
+    [
+      "44번에서 가리키는 대상이 다른 것은?",
+      "② (b) you예요. (b)만 Tuti이고 나머지는 모두 상인이에요."
+    ],
+    [
+      "45번 정답은?",
+      "③이에요. Tuti는 새장이 아니라 자유롭게 살고 싶다고 했어요."
+    ]
+  ],
+  "date": "2026-11-19"
+}

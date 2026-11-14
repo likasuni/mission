@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 38,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 5,
+  "topic": "측정 단위에는 일관된 정의가 필요하다: 공동체가 커지자 신체 기반 단위의 한계가 드러났다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 38번",
+    "2026 9월 고1 영어 38번 해설",
+    "고1 9월 모의고사 38번 정답",
+    "고1 모의고사 문장 삽입",
+    "측정 단위 measurement 일관성",
+    "technology of distance"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 38번은 측정 단위가 제 역할을 하려면 일관된 정의가 필요하다는 글이에요. 초기 정착지에서는 '신체 부위만큼'이라는 단순한 정의로 충분했지만, 공동체가 커지자 그 한계가 드러났다는 주어진 문장은 ⑤에 들어가요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "주장",
+      "측정 단위의 잠재력을 쓰려면 일관성이 필요하다. 주관적 측정은 공유하기 어렵다."
+    ],
+    [
+      "측정 = 언어",
+      "Porter: 측정은 '거리의 기술'. 언어처럼 단위에도 신뢰할 만한 정의가 필요하다."
+    ],
+    [
+      "초기 사회",
+      "정의는 한 정착지 안에서만 공유되면 되어 '신체 부위만큼' 정도로 단순했다."
+    ],
+    [
+      "주어진 문장 + ⑤",
+      "공동체가 커지자 이 체계의 한계가 드러났다. 무역·조공 분쟁은 더 큰 일관성을 요구한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In the earliest societies, these definitions might need to be shared no more widely than a single settlement, … a unit was equal to a certain body part.",
+      "ko": "가장 초기의 사회에서, 이러한 정의는 하나의 정착지보다 더 넓게 공유될 필요가 없었을 것이다 … 한 단위가 특정 신체 부위와 같다는 것.",
+      "note": "주어진 문장의 these communities(작은 정착지)와 this system(신체 부위 단위)이 가리킬 대상이 여기서 나와요."
+    },
+    {
+      "en": "As these communities grew in size, though, the inadequacies of this system would become evident.",
+      "ko": "하지만 이러한 공동체들이 규모가 커지면서, 이 체계의 불충분함이 분명해졌을 것이다.",
+      "note": "though로 작은 사회 → 커진 사회로 전환해요."
+    },
+    {
+      "en": "Imagine a disagreement over trade or tribute: it is a moment of conflict that demands greater consistency in measurement.",
+      "ko": "무역이나 조공을 둘러싼 의견 불일치를 상상해 보라: 그것은 측정에서 더 큰 일관성을 요구하는 갈등의 순간이다.",
+      "note": "커진 공동체에서 생기는 갈등의 예. 주어진 문장 바로 뒤에 와야 해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① To harness … some degree of consistency. ( ① )",
+      "ko": "일관성 필요 다음",
+      "why": "주관적 측정의 한계 설명이 자연스럽게 이어져요. these communities가 가리킬 대상도 없어요."
+    },
+    {
+      "en": "② … based as it is on an individual's experience. ( ② )",
+      "ko": "주관적 측정 다음",
+      "why": "Porter의 '거리의 기술' 설명으로 이어져요."
+    },
+    {
+      "en": "③ … allowing for the exchange of information. ( ③ )",
+      "ko": "거리의 기술 다음",
+      "why": "Following this logic으로 바로 이어지는 자리예요."
+    },
+    {
+      "en": "④ … individual units need reliable definitions in order to communicate. ( ④ )",
+      "ko": "신뢰할 만한 정의 다음",
+      "why": "초기 사회의 정의 설명이 와야 해요. 아직 this system이 없어요."
+    },
+    {
+      "en": "⑤ … a unit was equal to a certain body part. ( ⑤ )",
+      "ko": "초기 사회 다음",
+      "why": "정답. 작은 정착지·신체 부위 단위(this system) → 커지면서 한계 → 무역 분쟁."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "양보·이유의 as 도치",
+      "ex": "based as it is on an individual's experience",
+      "d": "그것이 개인의 경험에 기반하고 있기 때문에."
+    },
+    {
+      "t": "no more ~ than",
+      "ex": "no more widely than a single settlement",
+      "d": "하나의 정착지보다 더 넓지 않게 = 한 정착지 정도로만."
+    },
+    {
+      "t": "describe A as B",
+      "ex": "describes measurement as a 'technology of distance'",
+      "d": "측정을 '거리의 기술'로 묘사하다."
+    }
+  ],
+  "vocab": [
+    [
+      "harness",
+      "이용하다"
+    ],
+    [
+      "potential",
+      "잠재력"
+    ],
+    [
+      "consistency",
+      "일관성"
+    ],
+    [
+      "subjective",
+      "주관적인"
+    ],
+    [
+      "bridge",
+      "(차이를) 메우다"
+    ],
+    [
+      "reliable",
+      "신뢰할 만한"
+    ],
+    [
+      "definition",
+      "정의"
+    ],
+    [
+      "settlement",
+      "정착지"
+    ],
+    [
+      "inadequacy",
+      "불충분함"
+    ],
+    [
+      "evident",
+      "분명한"
+    ],
+    [
+      "tribute",
+      "조공"
+    ]
+  ],
+  "summary": {
+    "en": "Measurement needs consistent definitions, and simple body-based units became inadequate as communities grew and conflicts arose.",
+    "ko": "측정에는 일관된 정의가 필요하며, 공동체가 커지고 갈등이 생기면서 신체 기반의 단순한 단위는 불충분해졌다."
+  },
+  "writing": {
+    "en": "As these communities grew in size, the inadequacies of this system would become evident.",
+    "ko": "이러한 공동체들이 규모가 커지면서 이 체계의 불충분함이 분명해졌을 것이다."
+  },
+  "tip": "주어진 문장의 these, this가 가리키는 대상이 바로 앞에 있어야 해요. these communities = 정착지, this system = 신체 부위 단위가 나온 ④ 문장 뒤(⑤)가 자리예요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 38번 정답은?",
+      "⑤예요."
+    ],
+    [
+      "this system은 무엇을 가리키나요?",
+      "한 단위를 특정 신체 부위와 같다고 정한 초기의 단순한 측정 체계예요."
+    ],
+    [
+      "④가 아닌 이유는?",
+      "④ 앞에는 아직 초기 사회의 정의(신체 부위)가 나오지 않아 this system이 가리킬 대상이 없어요."
+    ]
+  ],
+  "date": "2026-11-19"
+}

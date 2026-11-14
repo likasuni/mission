@@ -1,0 +1,167 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 1,
+  "topic": "움직이도록 만들어진 우리가 움직이지 않는 삶을 살며 본래의 설계에서 멀어지고 있다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 21번",
+    "2026 9월 고1 영어 21번 해설",
+    "고1 9월 모의고사 21번 정답",
+    "고1 모의고사 함축 의미",
+    "getting further and further away from our design",
+    "움직임 movement 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 21번은 우리는 움직이도록 만들어졌는데, 하루 종일 의자에 앉아 있고 아이들은 스마트 기기에 사로잡혀 밖에서 뛰어놀지 않는다는 글이에요. 밑줄 친 '우리의 설계에서 점점 멀어지고 있다'는 바로 뒤의 We were made to move와 연결돼요. 정답은 ① 우리가 생물학적으로 그렇게 만들어진 신체적으로 활동적인 삶을 살지 못하는 것이에요.",
+  "flow": [
+    [
+      "문제",
+      "우리는 경이롭게 만들어졌지만, 어디로도 움직이지 않으며 매일 몇 시간씩 의자에 앉아 있다."
+    ],
+    [
+      "예시",
+      "많은 아이들이 스마트 기기에 사로잡혀 밖에서 놀지 않고, 달리고 뛰고 오르는 법도 배우지 않는다."
+    ],
+    [
+      "결과",
+      "대신 불안, 우울, 원래 가질 일이 없던 질병과 사는 법을 배운다."
+    ],
+    [
+      "핵심",
+      "우리는 설계에서 점점 멀어지고 있다. 우리는 움직이도록 만들어졌고 움직임은 곧 삶이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Instead of moving anywhere and everywhere, most of us spend our time moving nowhere.",
+      "ko": "어디로든 사방으로 움직이는 대신에, 우리 대부분은 어디로도 움직이지 않으며 시간을 보낸다.",
+      "note": "움직이지 않는 삶이 문제의 출발점이에요."
+    },
+    {
+      "en": "They are not even learning how to run, how to skip, or how to climb.",
+      "ko": "그들은 심지어 달리는 법, 깡충 뛰는 법, 기어오르는 법조차 배우고 있지 않다.",
+      "note": "몸을 쓰는 활동이 사라지는 구체적 예예요."
+    },
+    {
+      "en": "We were made to move ― and through movement, we are meant to live extraordinary lives.",
+      "ko": "우리는 움직이도록 만들어졌고, 움직임을 통해 특별한 삶을 살도록 되어 있다.",
+      "note": "our design = 움직이도록 만들어진 것. 밑줄 바로 뒤에서 뜻을 풀어 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "failing to live physically active lives we were biologically built for",
+      "ko": "우리가 생물학적으로 그렇게 만들어진, 신체적으로 활동적인 삶을 살지 못하는 것",
+      "why": "정답. design = 움직이도록 만들어진 몸, 그 삶에서 멀어진다는 뜻이에요."
+    },
+    {
+      "en": "becoming unable to create ideas without relying on smart devices",
+      "ko": "스마트 기기에 의존하지 않고는 아이디어를 만들어 내지 못하게 되는 것",
+      "why": "스마트 기기가 나오지만 아이디어 창출 이야기가 아니라 움직임 부족 이야기예요."
+    },
+    {
+      "en": "focusing more on physical appearance than on emotional maturity",
+      "ko": "정서적 성숙보다 외모에 더 집중하는 것",
+      "why": "외모 이야기는 없어요."
+    },
+    {
+      "en": "losing the ability to design creative tools for human convenience",
+      "ko": "인간의 편의를 위한 창의적 도구를 설계하는 능력을 잃는 것",
+      "why": "design을 '설계하다'로 잘못 연결한 함정이에요. 여기 design은 우리 몸이 만들어진 방식이에요."
+    },
+    {
+      "en": "struggling to build meaningful relationships in the virtual world",
+      "ko": "가상 세계에서 의미 있는 관계를 맺으려고 애쓰는 것",
+      "why": "사회화를 못 배운다는 말은 있지만 가상 세계의 관계 맺기가 핵심은 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "전치사 + 관계대명사",
+      "ex": "the wonder for which we were created",
+      "d": "우리가 그것을 위해 창조된 경이로움 = 우리가 창조된 목적."
+    },
+    {
+      "t": "비교급 and 비교급",
+      "ex": "we are getting further and further away from our design",
+      "d": "점점 더 멀어지는."
+    },
+    {
+      "t": "be meant to",
+      "ex": "diseases they were never meant to have",
+      "d": "결코 가지기로 되어 있지 않았던 질병."
+    }
+  ],
+  "vocab": [
+    [
+      "occupy",
+      "차지하다"
+    ],
+    [
+      "captive",
+      "사로잡힌"
+    ],
+    [
+      "socialize",
+      "사회화하다"
+    ],
+    [
+      "cue",
+      "신호, 단서"
+    ],
+    [
+      "repertoire",
+      "레퍼토리"
+    ],
+    [
+      "mature",
+      "성숙한"
+    ],
+    [
+      "skip",
+      "깡충 뛰다"
+    ],
+    [
+      "anxiety",
+      "불안"
+    ],
+    [
+      "depression",
+      "우울"
+    ],
+    [
+      "be meant to",
+      "~하도록 되어 있다"
+    ],
+    [
+      "extraordinary",
+      "특별한"
+    ]
+  ],
+  "summary": {
+    "en": "Humans were designed to move, but many people, especially kids held captive by smart devices, are losing the active lives they were built for.",
+    "ko": "인간은 움직이도록 만들어졌지만, 많은 사람, 특히 스마트 기기에 사로잡힌 아이들은 원래 살도록 만들어진 활동적인 삶을 잃어 가고 있다."
+  },
+  "writing": {
+    "en": "We were made to move, and through movement, we are meant to live extraordinary lives.",
+    "ko": "우리는 움직이도록 만들어졌고, 움직임을 통해 특별한 삶을 살도록 되어 있다."
+  },
+  "tip": "함축 의미는 밑줄 바로 앞뒤 문장에서 풀이를 찾으세요. 이 글은 밑줄 바로 다음 We were made to move가 our design의 뜻이에요.",
+  "note": "design을 '디자인하다'로 읽으면 ④를 고르기 쉬워요. 여기서 our design은 우리가 만들어진 방식, 즉 '움직이도록 만들어진 몸'이에요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 21번 정답은?",
+      "① failing to live physically active lives we were biologically built for예요."
+    ],
+    [
+      "our design은 무슨 뜻인가요?",
+      "우리가 만들어진 방식, 즉 움직이도록 만들어진 몸을 말해요. 바로 뒤 We were made to move가 풀이예요."
+    ],
+    [
+      "④가 오답인 이유는?",
+      "design을 '도구를 설계하다'로 읽은 함정이에요. 글은 창의적 도구 설계와 관계없어요."
+    ]
+  ],
+  "date": "2026-11-15"
+}

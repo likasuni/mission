@@ -1,0 +1,162 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 32,
+  "type": "빈칸 추론",
+  "points": 3,
+  "answer": 2,
+  "topic": "스토아 철학: 감정은 무작위가 아니라 우리의 판단에서 생겨난다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 32번",
+    "2026 9월 고1 영어 32번 해설",
+    "고1 9월 모의고사 32번 정답",
+    "고1 모의고사 빈칸 추론",
+    "arise from our judgments",
+    "스토아 철학 감정 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 32번은 스토아 철학의 통찰을 소개하는 글이에요. 감정은 자동 반응이 아니라 우리가 사건을 어떻게 해석하는지에 따라 생기므로, 판단을 바꾸면 감정도 바뀐다고 해요. 정답은 ② arise from our judgments예요.",
+  "flow": [
+    [
+      "빈칸",
+      "감정은 무작위가 아니다. (우리의 판단에서 생겨난다)."
+    ],
+    [
+      "스토아학파",
+      "감정은 자동 반응이 아니라 우리가 사건을 해석하는 방식으로 형성된다."
+    ],
+    [
+      "과정",
+      "사건 → 해석 → 감정 반응."
+    ],
+    [
+      "예와 결론",
+      "비난·실직 때의 감정도 해석 때문. 판단을 바꾸면 감정이 바뀐다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "They're shaped by how we interpret events.",
+      "ko": "그것들은 우리가 사건을 어떻게 해석하는지에 의해 형성된다.",
+      "note": "감정 = 해석(판단)의 결과."
+    },
+    {
+      "en": "… something happens, you interpret what it means, and that interpretation triggers an emotional response.",
+      "ko": "… 무언가가 일어나면, 여러분은 그것이 무엇을 의미하는지 해석하고, 그 해석이 감정적 반응을 일으킨다.",
+      "note": "해석이 감정을 일으켜요."
+    },
+    {
+      "en": "Change the judgment, and you change the emotion.",
+      "ko": "판단을 바꿔라, 그러면 감정이 바뀐다.",
+      "note": "judgment가 그대로 나와요. 빈칸 = arise from our judgments."
+    }
+  ],
+  "choices": [
+    {
+      "en": "are beyond our control",
+      "ko": "우리가 통제할 수 없다",
+      "why": "반대예요. 판단을 바꾸면 감정을 바꿀 수 있다고 해요."
+    },
+    {
+      "en": "arise from our judgments",
+      "ko": "우리의 판단으로부터 생겨난다",
+      "why": "정답. 감정은 해석(판단)으로 형성된다."
+    },
+    {
+      "en": "disappear over time naturally",
+      "ko": "시간이 지나면 자연스럽게 사라진다",
+      "why": "시간 이야기는 없어요."
+    },
+    {
+      "en": "give us insights into our future",
+      "ko": "우리의 미래에 대한 통찰을 준다",
+      "why": "future가 나오지만 감정이 미래를 알려 준다는 내용이 아니에요."
+    },
+    {
+      "en": "change our initial interpretations",
+      "ko": "우리의 처음 해석을 바꾼다",
+      "why": "방향이 거꾸로예요. 해석이 감정을 바꾸지, 감정이 해석을 바꾸는 게 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "one of + 최상급 + 복수명사",
+      "ex": "One of the most fascinating and empowering insights … is that …",
+      "d": "주어의 머리는 One이라 동사는 is."
+    },
+    {
+      "t": "not A but B",
+      "ex": "not due to the words themselves but because you perceive the comment as unfair",
+      "d": "그 말 자체 때문이 아니라 ~라고 인식하기 때문에."
+    },
+    {
+      "t": "명령문 + and",
+      "ex": "Change the judgment, and you change the emotion.",
+      "d": "~하라, 그러면 ~할 것이다."
+    }
+  ],
+  "vocab": [
+    [
+      "empowering",
+      "힘을 주는"
+    ],
+    [
+      "random",
+      "무작위의"
+    ],
+    [
+      "overwhelmed",
+      "압도된"
+    ],
+    [
+      "interpret",
+      "해석하다"
+    ],
+    [
+      "trigger",
+      "일으키다"
+    ],
+    [
+      "criticize",
+      "비난하다"
+    ],
+    [
+      "perceive A as B",
+      "A를 B로 인식하다"
+    ],
+    [
+      "devastated",
+      "망연자실한"
+    ],
+    [
+      "suppress",
+      "억누르다"
+    ],
+    [
+      "judgment",
+      "판단"
+    ]
+  ],
+  "summary": {
+    "en": "According to Stoic philosophy, emotions arise from how we judge events, so changing our judgment can change our emotions.",
+    "ko": "스토아 철학에 따르면 감정은 우리가 사건을 판단하는 방식에서 생겨나므로, 판단을 바꾸면 감정을 바꿀 수 있다."
+  },
+  "writing": {
+    "en": "Change the judgment, and you change the emotion.",
+    "ko": "판단을 바꿔라, 그러면 감정이 바뀐다."
+  },
+  "tip": "빈칸 문장 바로 뒤의 But 문장(감정은 자동 반응이 아니다)과 마지막의 Change the judgment …를 이으면 빈칸이 보여요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 32번 정답은?",
+      "② arise from our judgments예요."
+    ],
+    [
+      "⑤ change our initial interpretations가 오답인 이유는?",
+      "글은 해석이 감정을 만든다고 해요. 감정이 해석을 바꾼다는 건 방향이 반대예요."
+    ],
+    [
+      "감정을 억누르라는 뜻인가요?",
+      "아니요. 스스로에게 하는 이야기를 점검하고 더 도움이 되는 해석을 고르라는 뜻이에요."
+    ]
+  ],
+  "date": "2026-11-17"
+}

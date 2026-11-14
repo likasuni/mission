@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 36,
+  "type": "순서",
+  "points": 3,
+  "answer": 2,
+  "topic": "수학의 핵심은 숫자가 아니라 패턴이다 (스도쿠 예)",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 36번",
+    "2026 9월 고1 영어 36번 해설",
+    "고1 9월 모의고사 36번 정답",
+    "고1 모의고사 글의 순서",
+    "스도쿠 Sudoku 수학 패턴",
+    "(B)-(A)-(C)"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 36번은 수학의 주요 관심사는 숫자가 아니라 패턴이라는 주장을 스도쿠로 보여 주는 글이에요. 주어진 글 → (B) 스도쿠 예 → (A) But 숫자 값은 무관, '수학 없음' 문구 → (C) 그 생각 비판 순서예요. 정답은 ② (B)-(A)-(C)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "수학의 관심사는 숫자가 아니라 패턴, 구조, 대칭, 연결이다."
+    ],
+    [
+      "(B)",
+      "예: 스도쿠. 각 행·열·블록에 1~9를 한 번씩 넣어 격자를 완성한다."
+    ],
+    [
+      "(A)",
+      "But 숫자의 값은 관련 없고 아홉 개의 다른 기호면 된다. 중요한 건 패턴. 한 신문은 '수학 없음'이라고 싣는다."
+    ],
+    [
+      "(C)",
+      "수학이라는 생각만으로도 사람들을 겁주는 것 같다. 스도쿠를 할 수 있다면 수학을 할 수 있다!"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "(B) Take, for example, the Sudoku puzzles that appear daily in newspapers.",
+      "ko": "(B) 예를 들어, 매일 신문에 실리는 스도쿠 퍼즐을 보자.",
+      "note": "for example로 주어진 글(패턴)의 예를 들어요. 주어진 글 바로 뒤."
+    },
+    {
+      "en": "(A) But the numerical values of the digits are irrelevant; what is important is that there are nine distinct symbols.",
+      "ko": "(A) 하지만 숫자의 수치적 값은 관련이 없다. 중요한 것은 아홉 개의 서로 다른 기호가 있다는 것이다.",
+      "note": "But이 (B)의 digits(숫자)를 받아 '숫자 값은 상관없다'고 반박해요."
+    },
+    {
+      "en": "(C) It seems that even the idea that something might be spoiled by mathematics is enough to scare off potential solvers!",
+      "ko": "(C) 무언가가 수학으로 망쳐질지도 모른다는 생각만으로도 잠재적 풀이자들을 쫓아 버리기에 충분한 것 같다!",
+      "note": "(A) 끝의 'There's no maths involved' 문구에 대한 반응이라 (A) 뒤예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A) - (C) - (B)",
+      "ko": "반박 → 비판 → 예시",
+      "why": "(A)의 But과 digits는 앞에 스도쿠(B)가 있어야 해요."
+    },
+    {
+      "en": "(B) - (A) - (C)",
+      "ko": "예시 → 반박 → 비판",
+      "why": "정답. 스도쿠 예 → 숫자 값은 무관 + 신문 문구 → 그 문구 비판."
+    },
+    {
+      "en": "(B) - (C) - (A)",
+      "ko": "예시 → 비판 → 반박",
+      "why": "(C)의 비판 대상('수학 없음' 문구)은 (A)에서 나와요."
+    },
+    {
+      "en": "(C) - (A) - (B)",
+      "ko": "비판 → 반박 → 예시",
+      "why": "주어진 글 바로 뒤에 (C)가 오면 무엇을 비판하는지 알 수 없어요."
+    },
+    {
+      "en": "(C) - (B) - (A)",
+      "ko": "비판 → 예시 → 반박",
+      "why": "(C)가 처음에 올 수 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "관계대명사 what 주어",
+      "ex": "what is important is that there are nine distinct symbols",
+      "d": "중요한 것은 ~라는 것이다."
+    },
+    {
+      "t": "It is ~ that 강조",
+      "ex": "It's the pattern that matters.",
+      "d": "중요한 것은 바로 패턴이다."
+    },
+    {
+      "t": "동격의 that",
+      "ex": "even the idea that something might be spoiled by mathematics",
+      "d": "무언가가 수학으로 망쳐질지도 모른다는 생각."
+    }
+  ],
+  "vocab": [
+    [
+      "symmetry",
+      "대칭"
+    ],
+    [
+      "objective",
+      "목표"
+    ],
+    [
+      "grid",
+      "격자"
+    ],
+    [
+      "ensure",
+      "확실하게 하다"
+    ],
+    [
+      "digit",
+      "숫자"
+    ],
+    [
+      "numerical",
+      "수치의"
+    ],
+    [
+      "irrelevant",
+      "관련 없는"
+    ],
+    [
+      "distinct",
+      "서로 다른"
+    ],
+    [
+      "reasoning",
+      "추론"
+    ],
+    [
+      "spoil",
+      "망치다"
+    ],
+    [
+      "scare off",
+      "겁주어 쫓아 버리다"
+    ]
+  ],
+  "summary": {
+    "en": "Mathematics is about patterns rather than numbers, as Sudoku shows, so if you can do Sudoku, you can do maths.",
+    "ko": "스도쿠가 보여 주듯 수학은 숫자보다 패턴에 관한 것이므로, 스도쿠를 할 수 있다면 수학을 할 수 있다."
+  },
+  "writing": {
+    "en": "It's the pattern that matters.",
+    "ko": "중요한 것은 바로 패턴이다."
+  },
+  "tip": "순서 문제는 for example(예시 시작), But(반박), 따옴표 속 문구가 어디서 처음 나오는지를 연결하세요. (C)의 비판은 (A)의 신문 문구를 받아요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 36번 정답은?",
+      "② (B)-(A)-(C)예요."
+    ],
+    [
+      "주어진 글 바로 다음이 (B)인 이유는?",
+      "Take, for example로 주어진 글의 '패턴'을 스도쿠 예로 보여 주기 때문이에요."
+    ],
+    [
+      "(C)가 마지막인 이유는?",
+      "(A)의 'There's no maths involved' 문구를 국립 미술관 예로 비판하며 글을 마무리하기 때문이에요."
+    ]
+  ],
+  "date": "2026-11-18"
+}

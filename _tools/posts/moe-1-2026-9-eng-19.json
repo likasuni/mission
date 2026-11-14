@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 19,
+  "type": "심경",
+  "points": 2,
+  "answer": 1,
+  "topic": "혼자 노래하다 떨던 Maggie가 Durwood가 함께 불러 주자 긴장이 풀린다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 19번",
+    "2026 9월 고1 영어 19번 해설",
+    "고1 9월 모의고사 19번 정답",
+    "고1 모의고사 심경 변화",
+    "nervous relieved",
+    "Maggie Durwood 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 19번은 처음 혼자 노래하게 된 Maggie가 목소리가 떨리고 심장이 빨리 뛰다가, 옆에서 Durwood가 함께 노래해 주자 긴장이 풀리는 이야기예요. 앞은 voice started shaking, heart began to race, 뒤는 tension eased, no longer frozen이 단서예요. 정답은 ① nervous → relieved예요.",
+  "flow": [
+    [
+      "긴장",
+      "혼자 노래한 적이 없는 Maggie는 노래를 시작하자 목소리가 떨리고, 아이들이 쳐다보자 심장이 빨리 뛴다."
+    ],
+    [
+      "전환",
+      "Durwood가 조용히 일어나 차분한 목소리로 함께 노래한다."
+    ],
+    [
+      "안도",
+      "참고 있던 숨을 내쉬고, 어깨와 가슴의 긴장이 풀린다."
+    ],
+    [
+      "마무리",
+      "더 이상 얼어붙지 않고 함께 노래를 끝낸다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "… as she opened her mouth to begin, her voice started shaking. … her heart began to race.",
+      "ko": "… 노래를 시작하려고 입을 열자, 그녀의 목소리가 떨리기 시작했다. … 그녀의 심장이 빠르게 뛰기 시작했다.",
+      "note": "떨리는 목소리, 빨리 뛰는 심장 = nervous(긴장한)."
+    },
+    {
+      "en": "Maggie let out a breath she hadn't realized she was holding. The tightness in her shoulders slowly faded.",
+      "ko": "Maggie는 자신이 참고 있다는 것을 깨닫지 못했던 숨을 내쉬었다. 그녀의 어깨의 경직이 서서히 사라졌다.",
+      "note": "숨을 내쉬고 몸이 풀리는 장면이 안도로 바뀌는 순간이에요."
+    },
+    {
+      "en": "With Durwood singing beside her, the tension in her chest eased.",
+      "ko": "Durwood가 그녀 옆에서 노래하자, 그녀 가슴속의 긴장이 누그러졌다.",
+      "note": "tension eased = relieved(안도한)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "nervous → relieved",
+      "ko": "긴장한 → 안도한",
+      "why": "정답. 목소리가 떨리고 심장이 뛰던 긴장이 Durwood 덕분에 풀려요."
+    },
+    {
+      "en": "anxious → horrified",
+      "ko": "불안한 → 겁에 질린",
+      "why": "뒤로 갈수록 더 무서워지는 게 아니라 편해져요."
+    },
+    {
+      "en": "worried → furious",
+      "ko": "걱정하는 → 몹시 화가 난",
+      "why": "화를 내는 장면은 없어요."
+    },
+    {
+      "en": "jealous → confident",
+      "ko": "질투하는 → 자신감 있는",
+      "why": "Durwood를 질투하지 않아요. 도움을 받아 안도해요."
+    },
+    {
+      "en": "thrilled → upset",
+      "ko": "신이 난 → 속상한",
+      "why": "처음에 신이 난 게 아니라 긴장했고, 끝은 속상함이 아니라 안도예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "독립분사구문",
+      "ex": "Maggie stood up, her hands gripping the seat in front of her.",
+      "d": "her hands가 분사 gripping의 주어예요. 손이 좌석을 꽉 잡은 채로."
+    },
+    {
+      "t": "with + 명사 + -ing",
+      "ex": "With Durwood singing beside her, the tension in her chest eased.",
+      "d": "Durwood가 옆에서 노래하면서(동시 상황)."
+    },
+    {
+      "t": "목적격 관계대명사 생략",
+      "ex": "a breath (that) she hadn't realized she was holding",
+      "d": "자신이 참고 있다는 것을 깨닫지 못했던 숨."
+    }
+  ],
+  "vocab": [
+    [
+      "grip",
+      "꽉 붙잡다"
+    ],
+    [
+      "race",
+      "(심장이) 빠르게 뛰다"
+    ],
+    [
+      "lyrics",
+      "가사"
+    ],
+    [
+      "notice",
+      "알아차리다"
+    ],
+    [
+      "sing along",
+      "따라 부르다"
+    ],
+    [
+      "steady",
+      "안정된"
+    ],
+    [
+      "let out a breath",
+      "숨을 내쉬다"
+    ],
+    [
+      "fade",
+      "사라지다"
+    ],
+    [
+      "tension",
+      "긴장"
+    ],
+    [
+      "ease",
+      "누그러지다"
+    ],
+    [
+      "frozen",
+      "얼어붙은"
+    ]
+  ],
+  "summary": {
+    "en": "Maggie was nervous singing alone, but she felt relieved when Durwood stood up and sang with her.",
+    "ko": "Maggie는 혼자 노래하는 것이 긴장되었지만, Durwood가 일어나 함께 노래하자 안도했다."
+  },
+  "writing": {
+    "en": "With Durwood singing beside her, the tension in her chest eased.",
+    "ko": "Durwood가 그녀 옆에서 노래하자, 그녀 가슴속의 긴장이 누그러졌다."
+  },
+  "tip": "심경 변화는 Then처럼 사건이 바뀌는 곳을 기준으로 앞뒤를 나누세요. 앞은 몸의 반응(목소리 떨림, 심장 뜀), 뒤는 긴장이 풀리는 표현(let out a breath, eased)을 잡으면 돼요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 19번 정답은?",
+      "① nervous → relieved(긴장한 → 안도한)예요."
+    ],
+    [
+      "19번에서 심경이 바뀌는 지점은?",
+      "Then she noticed movement beside her. Durwood가 함께 노래하기 시작하는 부분이에요."
+    ],
+    [
+      "② anxious → horrified가 오답인 이유는?",
+      "처음은 불안했다고 볼 수 있지만, 끝은 겁에 질리는 게 아니라 긴장이 풀려 안도해요."
+    ]
+  ],
+  "date": "2026-11-15"
+}

@@ -1,0 +1,157 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "해양 보호를 주제로 한 국제 학생 공모전 Blue Voice Award",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 27번",
+    "2026 9월 고1 영어 27번 해설",
+    "고1 9월 모의고사 27번 정답",
+    "고1 모의고사 안내문 불일치",
+    "Blue Voice Award",
+    "Ocean Protection 공모전"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 27번은 해양 보호를 주제로 한 국제 학생 공모전 Blue Voice Award 안내문이에요. 배지는 '선정된 참가자(Selected participants)'만 받으므로 '모든 참가자'라고 한 ④가 틀렸어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "대회",
+      "젊은 창작자들이 창의적인 작품으로 생각을 표현하는 국제 학생 대회."
+    ],
+    [
+      "지침",
+      "전 세계 고등학생 대상, 주제는 '해양 보호'."
+    ],
+    [
+      "제출",
+      "마감 2026년 9월 10일, 형식 자유, 웹사이트에 업로드."
+    ],
+    [
+      "시상·평가",
+      "선정 작품은 온라인·국제 전람회 전시, 선정 참가자는 배지. 평가: 명료성·창의성·환경적 이해."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Participation is for high school students from all countries.",
+      "ko": "참가는 전 세계 고등학생을 대상으로 합니다.",
+      "note": "① 일치."
+    },
+    {
+      "en": "Selected participants will receive a Blue Voice badge.",
+      "ko": "선정된 참가자는 Blue Voice 배지를 받을 것입니다.",
+      "note": "Selected(선정된)가 핵심. 모든 참가자가 아니에요. ④ 불일치."
+    },
+    {
+      "en": "Evaluation Criteria · Clarity · Creativity · Environmental Understanding",
+      "ko": "평가 기준 · 명료성 · 창의성 · 환경적 이해",
+      "note": "⑤ 일치."
+    }
+  ],
+  "choices": [
+    {
+      "en": "참가 대상은 전 세계 고등학생이다.",
+      "ko": "참가 대상은 전 세계 고등학생이다.",
+      "why": "일치. high school students from all countries."
+    },
+    {
+      "en": "제출 마감일은 2026년 9월 10일이다.",
+      "ko": "제출 마감일은 2026년 9월 10일이다.",
+      "why": "일치. Deadline: September 10, 2026."
+    },
+    {
+      "en": "작품을 웹사이트에 업로드해야 한다.",
+      "ko": "작품을 웹사이트에 업로드해야 한다.",
+      "why": "일치. Upload your work to our website."
+    },
+    {
+      "en": "모든 참가자는 Blue Voice 배지를 받을 것이다.",
+      "ko": "모든 참가자는 Blue Voice 배지를 받을 것이다.",
+      "why": "불일치(정답). Selected participants만 받아요."
+    },
+    {
+      "en": "평가 기준에 창의성이 포함된다.",
+      "ko": "평가 기준에 창의성이 포함된다.",
+      "why": "일치. Creativity."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "현재분사 후치 수식",
+      "ex": "an international student competition inviting young creators to express their ideas",
+      "d": "젊은 창작자들이 생각을 표현하도록 초대하는 대회."
+    },
+    {
+      "t": "미래 수동태 병렬",
+      "ex": "Selected works will be showcased online and featured in international exhibitions.",
+      "d": "will be showcased and (will be) featured."
+    }
+  ],
+  "vocab": [
+    [
+      "competition",
+      "대회"
+    ],
+    [
+      "participation",
+      "참가"
+    ],
+    [
+      "protection",
+      "보호"
+    ],
+    [
+      "submission",
+      "제출"
+    ],
+    [
+      "deadline",
+      "마감"
+    ],
+    [
+      "format",
+      "형식"
+    ],
+    [
+      "showcase",
+      "전시하다"
+    ],
+    [
+      "feature",
+      "특별히 다루다"
+    ],
+    [
+      "exhibition",
+      "전람회"
+    ],
+    [
+      "clarity",
+      "명료성"
+    ]
+  ],
+  "summary": {
+    "en": "The Blue Voice Award invites high school students worldwide to submit creative work on ocean protection, and only selected participants receive a badge.",
+    "ko": "Blue Voice Award는 전 세계 고등학생에게 해양 보호에 관한 창의적인 작품을 제출하게 하며, 선정된 참가자만 배지를 받는다."
+  },
+  "writing": {
+    "en": "Selected participants will receive a Blue Voice badge.",
+    "ko": "선정된 참가자는 Blue Voice 배지를 받을 것이다."
+  },
+  "tip": "안내문은 all, every, only, selected 같은 범위 표현을 선택지와 꼭 비교하세요. '모든 참가자'와 '선정된 참가자'는 다른 말이에요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 27번 정답은?",
+      "④예요. 배지는 선정된 참가자만 받아요."
+    ],
+    [
+      "Blue Voice Award의 주제는?",
+      "'Ocean Protection(해양 보호)'이에요."
+    ],
+    [
+      "작품은 어떻게 제출하나요?",
+      "웹사이트에 업로드해요. 비디오, 포스터, 그림 등 형식은 자유예요."
+    ]
+  ],
+  "date": "2026-11-16"
+}

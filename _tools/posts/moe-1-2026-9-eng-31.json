@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 31,
+  "type": "빈칸 추론",
+  "points": 2,
+  "answer": 1,
+  "topic": "입맛은 다른 사람에게서 배우고 사람을 따라 퍼지는 사회적인 것이다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 31번",
+    "2026 9월 고1 영어 31번 해설",
+    "고1 9월 모의고사 31번 정답",
+    "고1 모의고사 빈칸 추론",
+    "Our tastes are social",
+    "입맛 taste 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 31번은 우리의 입맛이 가족·친구에게서 배우고, 우리가 누구인지 때문에 원하며, 바이러스처럼 사람에서 사람으로 퍼진다는 글이에요. 그래서 빈칸에는 '사회적인'이 들어가요. 정답은 ① social이에요.",
+  "flow": [
+    [
+      "빈칸",
+      "우리의 입맛은 (사회적)이다."
+    ],
+    [
+      "예 1",
+      "처음 우유를 마실 때도 그 뒤에는 음식과의 관계를 만든 사람이 있었다."
+    ],
+    [
+      "예 2",
+      "가족·친구·학교·직장에서 먹는 법을 배우고, 마을마다 그 마을만의 조리법이 있다."
+    ],
+    [
+      "정리",
+      "입맛은 음식의 특성과 거의 관계없이 사람에서 사람으로 퍼지고, 우리는 남의 식생활을 관찰한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "… but there was also the person behind the milk …",
+      "ko": "… 하지만 그 우유 뒤에는 사람도 있었다 …",
+      "note": "처음 입맛부터 사람이 관여해요."
+    },
+    {
+      "en": "We learn to eat from our families and friends, at school and in work.",
+      "ko": "우리는 가족과 친구들에게서, 학교와 직장에서 먹는 법을 배운다.",
+      "note": "입맛은 다른 사람에게서 배우는 것 = social."
+    },
+    {
+      "en": "Tastes spread like this, person to person, like viruses, almost irrespective of the qualities of the food involved.",
+      "ko": "입맛은 이렇게, 사람에서 사람으로, 바이러스처럼 퍼진다, 관련된 음식의 특성과 거의 관계없이.",
+      "note": "음식 자체보다 사람 사이의 관계로 퍼진다 → social."
+    }
+  ],
+  "choices": [
+    {
+      "en": "social",
+      "ko": "사회적인",
+      "why": "정답. 사람에게서 배우고 사람을 따라 퍼진다."
+    },
+    {
+      "en": "fixed",
+      "ko": "고정된",
+      "why": "입맛은 사람을 따라 퍼지고 바뀌어요. 고정된 게 아니에요."
+    },
+    {
+      "en": "simple",
+      "ko": "단순한",
+      "why": "단순하다는 근거는 없어요."
+    },
+    {
+      "en": "objective",
+      "ko": "객관적인",
+      "why": "음식의 특성과 거의 관계없다고 하니 객관적인 것과 반대예요."
+    },
+    {
+      "en": "biological",
+      "ko": "생물학적인",
+      "why": "타고난 생물학적 성질이 아니라 배우는 것이라고 해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "미래완료(추측)",
+      "ex": "the person … who will have presumably either made or messed up your relationship with food",
+      "d": "아마 형성했거나 망쳐 놓았을 사람."
+    },
+    {
+      "t": "not just A but B",
+      "ex": "not just because of what they are, but who we are",
+      "d": "그것들이 무엇인지 때문만이 아니라 우리가 누구인지 때문에."
+    },
+    {
+      "t": "부정 주어 + 비교급",
+      "ex": "Nothing turns me off something quicker than the wrong people liking it",
+      "d": "어울리지 않는 사람이 좋아하는 것만큼 나를 빨리 질리게 하는 것은 없다."
+    }
+  ],
+  "vocab": [
+    [
+      "taste",
+      "입맛, 취향"
+    ],
+    [
+      "presumably",
+      "아마"
+    ],
+    [
+      "mess up",
+      "망쳐 놓다"
+    ],
+    [
+      "recipe",
+      "조리법"
+    ],
+    [
+      "spread",
+      "퍼지다"
+    ],
+    [
+      "irrespective of",
+      "~와 관계없이"
+    ],
+    [
+      "observe",
+      "관찰하다"
+    ],
+    [
+      "judgmentally",
+      "비판적으로"
+    ],
+    [
+      "identical",
+      "동일한"
+    ],
+    [
+      "flatter",
+      "돋보이게 하다"
+    ],
+    [
+      "by the skin of one's teeth",
+      "간신히"
+    ]
+  ],
+  "summary": {
+    "en": "Our tastes are social because we learn what to eat from other people and want foods because of who we are.",
+    "ko": "우리는 다른 사람들에게서 무엇을 먹을지 배우고 우리가 누구인지 때문에 음식을 원하므로 입맛은 사회적이다."
+  },
+  "writing": {
+    "en": "We learn to eat from our families and friends.",
+    "ko": "우리는 가족과 친구들에게서 먹는 법을 배운다."
+  },
+  "tip": "첫 문장 빈칸은 뒤에 나오는 예시를 묶어 주는 말을 고르세요. 사람, 가족, 친구, 마을, person to person이 계속 나오니 '사회적인'이에요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 31번 정답은?",
+      "① social이에요."
+    ],
+    [
+      "⑤ biological이 오답인 이유는?",
+      "입맛은 타고난 것이 아니라 다른 사람에게서 배우고 퍼진다고 해요."
+    ],
+    [
+      "by the skin of my teeth는 무슨 뜻인가요?",
+      "'간신히'라는 뜻이에요. 유행하던 샐러드를 간신히 피했다는 말이에요."
+    ]
+  ],
+  "date": "2026-11-17"
+}

@@ -1,0 +1,167 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 29,
+  "type": "어법",
+  "points": 2,
+  "answer": 4,
+  "topic": "무산소 호흡과 유산소 호흡으로 본 운동 초반의 괴로움",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 29번",
+    "2026 9월 고1 영어 29번 해설",
+    "고1 9월 모의고사 29번 정답",
+    "고1 모의고사 어법",
+    "is → are 수 일치",
+    "유산소 무산소 호흡 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 29번은 몸이 에너지를 만드는 두 방식(유산소·무산소 호흡)으로 고강도 운동 처음 몇 분이 왜 괴로운지 설명하는 글이에요. why 뒤 간접의문문의 주어가 the first few minutes(복수)라서 ④ is는 are가 되어야 해요. 정답은 ④예요.",
+  "flow": [
+    [
+      "두 방식",
+      "산소를 쓰는 유산소 호흡, 산소 없이 하는 무산소 호흡."
+    ],
+    [
+      "무산소",
+      "포도당만으로 빠르고 쉽게 얻지만 비효율적이고 젖산이 쌓여 독성이 있다."
+    ],
+    [
+      "운동 초반",
+      "폐와 호흡계가 아직 산소 공급을 못 따라가 무산소 호흡을 써서 괴롭다."
+    ],
+    [
+      "몸이 풀린 뒤",
+      "유산소 호흡으로 바뀌어 운동이 더 쉽게 느껴진다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "This process explains why the first few minutes of an intense workout ④ is often so miserable.",
+      "ko": "이 과정은 왜 고강도 운동의 처음 몇 분이 흔히 그렇게 괴로운지를 설명해 준다.",
+      "note": "why 뒤 간접의문문의 주어는 the first few minutes(복수). of an intense workout에 속지 말고 동사는 are."
+    },
+    {
+      "en": "… and without it, ① which is called anaerobic respiration.",
+      "ko": "… 그리고 산소 없이 하는 것, 그것은 무산소 호흡이라고 불린다.",
+      "note": "콤마 뒤 계속적 용법이라 which가 맞아요. that은 못 써요."
+    },
+    {
+      "en": "But anaerobic energy is inefficient and can be toxic, ③ creating too much lactic acid.",
+      "ko": "하지만 무산소 에너지는 비효율적이고 독성을 띨 수 있다, 너무 많은 젖산을 만들어 내면서.",
+      "note": "앞 절의 결과를 보여 주는 분사구문, 능동이라 creating."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① which",
+      "ko": "계속적 용법 관계대명사",
+      "why": "적절. 콤마 뒤, 뒤가 주어 없는 불완전한 절이라 which."
+    },
+    {
+      "en": "② to access",
+      "ko": "형용사 수식 to부정사",
+      "why": "적절. quicker and easier를 꾸미는 to부정사(for our bodies는 의미상 주어)."
+    },
+    {
+      "en": "③ creating",
+      "ko": "결과의 분사구문",
+      "why": "적절. 무산소 에너지가 젖산을 만드는 능동 관계."
+    },
+    {
+      "en": "④ is",
+      "ko": "is → are",
+      "why": "정답(틀림). 간접의문문 주어 the first few minutes가 복수라 are."
+    },
+    {
+      "en": "⑤ warmed",
+      "ko": "be warmed up",
+      "why": "적절. 몸이 '풀리는' 것이라 수동 의미의 과거분사."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "간접의문문 주어 수 일치",
+      "ex": "why the first few minutes of an intense workout are often so miserable",
+      "d": "주어 the first few minutes(복수) → are. 수식어구 of ~에 속지 말기."
+    },
+    {
+      "t": "형용사 + to부정사",
+      "ex": "it's quicker and easier for our bodies to access",
+      "d": "우리 몸이 이용하기에 더 빠르고 쉽다."
+    },
+    {
+      "t": "과거분사 후치 수식",
+      "ex": "a process known as aerobic respiration",
+      "d": "유산소 호흡이라고 알려진 과정."
+    }
+  ],
+  "vocab": [
+    [
+      "aerobic",
+      "유산소의"
+    ],
+    [
+      "respiration",
+      "호흡"
+    ],
+    [
+      "anaerobic",
+      "무산소의"
+    ],
+    [
+      "generate",
+      "생성하다"
+    ],
+    [
+      "glucose",
+      "포도당"
+    ],
+    [
+      "inefficient",
+      "비효율적인"
+    ],
+    [
+      "toxic",
+      "독성의"
+    ],
+    [
+      "lactic acid",
+      "젖산"
+    ],
+    [
+      "intense",
+      "고강도의"
+    ],
+    [
+      "miserable",
+      "괴로운"
+    ],
+    [
+      "switch",
+      "전환하다"
+    ]
+  ],
+  "summary": {
+    "en": "At the start of intense exercise, the body uses inefficient anaerobic respiration, but after warming up, it switches to aerobic respiration and exercise feels easier.",
+    "ko": "고강도 운동 초반에 몸은 비효율적인 무산소 호흡을 사용하지만, 몸이 풀린 뒤에는 유산소 호흡으로 전환되어 운동이 더 쉽게 느껴진다."
+  },
+  "writing": {
+    "en": "This process explains why the first few minutes of an intense workout are often so miserable.",
+    "ko": "이 과정은 왜 고강도 운동의 처음 몇 분이 흔히 그렇게 괴로운지 설명해 준다."
+  },
+  "tip": "동사 밑줄은 진짜 주어를 찾아 수를 맞추세요. 주어 뒤에 of ~ 수식어가 길게 붙으면 바로 앞 명사(workout)에 맞추는 실수를 하기 쉬워요.",
+  "note": "the first few minutes of an intense workout에서 바로 앞 workout만 보고 is를 고르는 학생이 많아요. 주어의 머리는 minutes예요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 29번 정답은?",
+      "④ is예요. are로 고쳐야 해요."
+    ],
+    [
+      "왜 is가 틀렸나요?",
+      "간접의문문의 주어가 the first few minutes(복수)이기 때문이에요."
+    ],
+    [
+      "① which는 왜 맞나요?",
+      "콤마 뒤 계속적 용법이고, 뒤가 주어가 빠진 불완전한 절이라 which가 맞아요."
+    ]
+  ],
+  "date": "2026-11-17"
+}
