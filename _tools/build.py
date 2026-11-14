@@ -208,9 +208,10 @@ def bysubj(rs):
     return d
 
 # ---------- 공통 레이아웃 ----------
-# 메뉴 (2026-11-01 원장님 확정): 홈 · 모의고사▾ · 부교재 · 자료 요청 · 코코스학원
+# 메뉴 (2026-11-01 원장님 확정, 2026-11-14 쇼핑 → 신간 소개): 홈 · 모의고사▾ · 부교재 · 자료 요청 · 신간 소개 · 코코스학원
+# 쿠팡 링크는 신간 소개(교재 소식) 글 안에만 (2026-11-14 원장님: 회차·해설·기출 페이지 쿠팡 상자, /shop/, /books/kit/ 뺌)
 # '모의고사'는 누르면 아래 줄(nav-sub)이 펼쳐짐 — 묶음 페이지(PDF 자료받기·전자책·기출시험지)에선 처음부터 펼쳐져 탭 줄 역할
-NAV = [('/', '홈'), ('moe', '모의고사'), ('/books/', '부교재'), ('/notes/', '자료 요청'), ('/shop/', '쇼핑'), ('/naesin/', '코코스학원')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
+NAV = [('/', '홈'), ('moe', '모의고사'), ('/books/', '부교재'), ('/notes/', '자료 요청'), ('/books/news/', '신간 소개'), ('/naesin/', '코코스학원')]  # 코코스학원 = 학교별 내신 분석 + 학원 소식
 MOE_NAV = [('/english/', '영어 PDF 자료받기'), ('/posts/', '📘 분석노트 전자책'), ('/exams/', '전과목 기출시험지')]  # /posts/ = 전자책 + 문항별 해설 (옛 '수업자료')
 
 MANUAL_ADS = False  # 전체 페이지 직접 광고 끄기 (원장님 요청 2026-11-05). 다시 켜려면 True
@@ -220,22 +221,6 @@ def ad(on=False):
     return (f'<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="{ADS_CLIENT}" '
             f'data-ad-slot="{AD_SLOT}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
             f'<script>(adsbygoogle=window.adsbygoogle||[]).push({{}});</script></div>')
-
-# 학년별 부교재 쿠팡 상자 (_tools/coupang.json, url 있는 책만 표시)
-COUPANG = json.load(open(os.path.join(ROOT, '_tools', 'coupang.json'), encoding='utf-8'))
-def cp_box(k, books=True):  # books=False 면 인쇄 준비물 줄만 (영어 아닌 과목 기출 페이지)
-    g = f'go{k[1]}' if k[0] == 'moe' else 'go3'
-    bs = [b for b in COUPANG.get(g, []) if b.get('url')] if books else []
-    ps = [b for b in COUPANG.get('print', []) if b.get('url')]
-    if not (bs or ps): return ''
-    who = '수능' if k[0] == 'sn' else f'고{k[1]}'
-    a = lambda b: f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener">'
-    # 쿠팡 문구는 한 번만, 링크보다 위(제목 바로 아래)에 — 쿠팡 파트너스·공정위 표시 기준 (2026-11-05 원장님: 최소화)
-    return (f'<div class="card cp-box"><h2>{f"📘 {who} 부교재" if bs else "🖨 기출 인쇄 준비물"}</h2>'
-            '<p class="cp-dis">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>'
-            + ('<div class="cp-list">' + ''.join(a(b) + f'<b>{e(b["name"])}</b>' + (f'<small>{e(b["note"])}</small>' if b.get('note') else '') + '</a>' for b in bs) + '</div>' if bs else '')
-            + (f'<p class="cp-print"><span>{"🖨 인쇄해서 푸는 학생 준비물" if bs else "PDF를 인쇄해서 푸는 학생을 위한 준비물"}</span>' + ''.join(a(b) + e(b['name']) + '</a>' for b in ps) + '</p>' if ps else '')
-            + '</div>')
 
 # 교재 소식 글의 쿠팡 자리 (글 폴더의 coupang.json, Actions coupang-links 가 url 을 채움). url 이 없으면 자리째 사라짐
 #   <!--CPDIS--> 맨 위 수수료 문구 · <!--BUY:key--> 책 하나 버튼 · <!--BUYBOX--> 구매 상자 · <!--CPNOTE--> 끝 표기에 붙는 수수료 한 줄
@@ -479,7 +464,6 @@ for idx, k in enumerate(keys_sorted):
 {extra}
 {ad()}
 <div class="card" id="orig"><h2>{e(full)} 기출 원본</h2>{files}</div>
-{cp_box(k)}
 {sinfo}'''
         else:
             body = f'''<h1 class="page-h1">{e(full)} 문제·정답·해설 PDF</h1>
@@ -489,7 +473,6 @@ for idx, k in enumerate(keys_sorted):
 {ad()}
 {extra}
 <div class="card"><h2>{e(name)} 다른 과목</h2>{sibs}</div>
-{cp_box(k, books=False)}
 {rel}
 {ad()}'''
         if POSTS_BY.get(k) and any(p['subj'] == s for p in POSTS_BY[k]):
@@ -586,7 +569,6 @@ for p in POSTS:
 {f'<div class="card"><h2>한 줄 요약</h2><p class="en">{e(sm["en"])}</p><p class="ko">{e(sm["ko"])}</p></div>' if sm else ''}
 {f'<div class="card"><h2>서술형 대비 문장</h2><p class="en">{e(wr["en"])}</p><p class="ko">{e(wr["ko"])}</p></div>' if wr else ''}
 {vcard}
-{cp_box(k) if p['subj'] == '영어' else ''}
 {f'<div class="card faq"><h2>자주 묻는 질문</h2>{faq}</div>' if faq else ''}
 <div class="card"><h2>함께 보면 좋은 자료</h2><div class="chips">
 <a class="chip" href="{subj_url(k, p['subj'])}">{e(s_name(k))} {e(sn)} 기출 원본 PDF</a>
@@ -702,11 +684,9 @@ def news_line(m):
                                                      or (os.path.exists(_cf) and any(b.get('url') for b in json.load(open(_cf, encoding='utf-8'))))) else ''
     return (f'<li><a href="{nurl(m)}">' + (f'<img src="{nurl(m)}thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '') +
             f'<div><small>{chip}{buy}{m["date"].replace("-", ".")}</small><b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a></li>')
-def book_groups(ms, n=None):  # 교재 소식: 위에 자료·정보 한 단, 아래 신간 소개 두 단 (칸마다 테두리, 썸네일 포함)
-    cols = [(k, h, [m for m in ms if news_kind(m) == k]) for k, h in (('info', '🔗 자료·정보'), ('new', '📘 신간 소개'))]
-    kit = ('<li><a href="/books/kit/"><img src="/books/kit/thumb.png" alt="" loading="lazy" width="84" height="84"><div><small><i class="nw-chip buy">🎒 수험생 준비물</i>학년별 · 시기별</small>'
-           '<b>수험생 준비물 가이드</b><em>학년별 EBS 부교재 · 기출 인쇄 준비물 · 수능 당일 준비물</em></div></a></li>')
-    return '<div class="nw-cols nw-compact">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g) + (k == "info")}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}{kit if k == "info" else ""}</ul></section>' for k, h, g in cols if g) + '</div>'
+def book_groups(ms, n=None):  # 교재 소식: 신간 소개 · 자료·정보 두 칸 (칸마다 테두리, 썸네일 포함)
+    cols = [(k, h, [m for m in ms if news_kind(m) == k]) for k, h in (('new', '📘 신간 소개'), ('info', '🔗 자료·정보'))]
+    return '<div class="nw-cols nw-compact">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'
 
 nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
       '<p class="lead">이매동 코코스학원 리카수니 원장이 학교 기출 시험지를 직접 분석해요. 출제 범위, 문항별 포인트, 서술형 대비까지 정리하고, '
@@ -828,82 +808,21 @@ for m in NEWS + BOOKNEWS:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q['q'], "acceptedAnswer": {"@type": "Answer", "text": q['a']}} for q in m['faq']]})
     page(url, f'{m["title"]} | 리카수니 자료실', m['desc'], body,
-         ([('/', '홈'), ('/books/', '부교재'), ('/books/news/', '교재 소식'), (url, m.get('tag', '교재 소식'))] if isbook else
-          [('/', '홈'), ('/naesin/', '코코스학원'), ('/news/', '학원 소식'), (url, m.get('tag', '학원 소식'))]), '/books/' if isbook else '/news/', extra_ld=ld, og_type='article',
+         ([('/', '홈'), ('/books/news/', '신간 소개'), (url, m.get('tag', '교재 소식'))] if isbook else
+          [('/', '홈'), ('/naesin/', '코코스학원'), ('/news/', '학원 소식'), (url, m.get('tag', '학원 소식'))]), '/books/news/' if isbook else '/news/', extra_ld=ld, og_type='article',
          og_image=(SITE + url + 'thumb.png') if has_th else None)
     if has_th: shutil.copyfile(os.path.join(m['_dir'], 'thumb.png'), os.path.join(ROOT, url.strip('/'), 'thumb.png'))
-page('/books/news/', '교재 소식 – 고등 영어 부교재 신간 · 개정 정보 | 리카수니 자료실',
+page('/books/news/', '신간 소개 – 고등 영어 부교재 신간 · 개정 교재 정리 | 리카수니 자료실',
      '고등 영어 부교재 신간·개정 소식을 리카수니 원장이 요약해 알려 드려요. 교재 구성과 대상, 출판사 이벤트 정보.',
-     f'<style>{NEWS_CSS}</style><section class="hero"><h1>교재 소식</h1><p>고등 영어 부교재 신간·개정 소식을 요약해 알려 드려요.</p></section>'
+     f'<style>{NEWS_CSS}</style><section class="hero"><h1>📘 신간 소개</h1><p>고등 영어 부교재 신간·개정 교재를 리카수니 원장이 정리해요. 책 구성과 고르는 법을 보고, 필요한 책은 글 안에서 바로 구매할 수 있어요.</p></section>'
      + (f'<div class="card">{book_groups(BOOKNEWS)}</div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
-     [('/', '홈'), ('/books/', '부교재'), ('/books/news/', '교재 소식')], '/books/')
-# ---------- 수험생 준비물 가이드 (/books/kit/) — 학년별 부교재·인쇄 준비물·수능 당일 준비물, 쿠팡 링크는 coupang.json·글 폴더에서 (url 있는 것만) ----------
-def _kit_btns(bs, small=False):
-    bs = [b for b in bs if b.get('url')]
-    if small:
-        return '<p class="cp-print">' + ''.join(f'<a href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener">{e(b["name"])}</a>' for b in bs) + '</p>' if bs else ''
-    return '<div class="cp-cards">' + ''.join(cp_card(b) for b in bs) + '</div>' if bs else ''
-_snf = os.path.join(ROOT, '_tools', 'news', 'suneung-2027-checklist', 'coupang.json')
-_sn = json.load(open(_snf, encoding='utf-8')) if os.path.exists(_snf) else []
-_kd = os.path.join(ROOT, 'books', 'kit'); os.makedirs(_kd, exist_ok=True)
-if os.path.exists(os.path.join(ROOT, '_tools', 'kit-thumb.png')): shutil.copy(os.path.join(ROOT, '_tools', 'kit-thumb.png'), os.path.join(_kd, 'thumb.png'))
-kit_body = (f'<style>{NEWS_CSS}</style><section class="hero"><h1>🎒 수험생 준비물 가이드</h1><p>학년별 EBS 부교재부터 기출 인쇄 준비물, 수능 당일 준비물까지 리카수니 원장이 한곳에 정리했어요.</p></section>'
-    '<div class="card cp-box"><p class="cp-dis" style="margin:0">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div>'
-    '<div class="card"><h2>📘 학년별 부교재</h2><p class="muted">학교 부교재로 많이 쓰는 EBS 교재 위주예요. 새 판이 나오면 링크가 자동으로 바뀌어요.</p>'
-    + ''.join(f'<h3 style="margin:14px 0 6px;color:var(--navy-d)">{t}</h3><p style="margin:0 0 8px">{d}</p>{_kit_btns(COUPANG.get(g, []))}' for g, t, d in (
-        ('go1', '고1', '올림포스 기출문제집으로 교육청 모의고사 유형에 익숙해지고, 올림포스 영어독해 기본·리딩파워로 내신 지문을 다져요.'),
-        ('go2', '고2', '모의고사 기출은 계속 풀고, 수능특강 Light로 EBS 연계 교재에 미리 익숙해지면 고3 수능특강이 훨씬 편해요.'),
-        ('go3', '고3 · 수능', '수능특강·수능완성은 수능 연계 교재예요. 지문 내용과 흐름을 정리해 두면 실전에서 시간을 줄일 수 있어요.')))
-    + '<p style="margin:12px 0 0"><a href="/books/news/">교재 신간 소식 보기 →</a></p></div>'
-    + ad()
-    + '<div class="card"><h2>🖨 기출 인쇄 공부</h2><p>자료실 기출·분석노트 PDF는 <b>인쇄해서 직접 풀고 표시하는 것</b>이 가장 오래 남아요. 회차별로 클리어파일에 모아 두면 시험 전에 오답만 다시 보기 쉬워요. 형광펜은 근거 문장에만 칠해요.</p>'
-    + _kit_btns(COUPANG.get('print', []), small=True) + '<p style="margin:8px 0 0"><a href="/english/">영어 모의고사 분석노트 · 변형문제 →</a></p></div>'
-    + '<div class="card"><h2>⏱ 시험 당일</h2><p>수능·모의고사 당일엔 <b>수험표·신분증·아날로그 손목시계</b>를 꼭 챙겨요. 샤프와 컴퓨터용 사인펜은 시험실에서 나눠 주고, 전자기기는 반입 금지예요.</p>'
-    + _kit_btns(_sn, small=True) + '<p style="margin:8px 0 0"><a href="/news/suneung-2027-checklist/">2027학년도 수능 준비물 체크리스트 전체 보기 →</a></p></div>'
-    + '<div class="card"><h2>📅 시기별로 챙길 것</h2><ul style="margin:0;padding-left:18px;line-height:1.9">'
-      '<li><b>11월~2월 (예비 고1)</b> · 반 배치고사와 3월 모의고사 대비로 고1 기출을 먼저 풀어 봐요. 위 고1 교재를 참고하세요.</li>'
-      '<li><b>2~3월</b> · 3월 교육청 모의고사 전에 지난해 3월 기출을 시간 재고 풀어요.</li>'
-      '<li><b>내신 시험 3~4주 전</b> · 학교 부교재 지문 정리와 서술형 대비. <a href="/books/news/cedu-rank-seosulhyeong/">서술형 교재 소식</a>도 참고하세요.</li>'
-      '<li><b>수능 D-30</b> · 새 문제보다 기출 다시 풀기, 오답 노트 한 권으로 정리.</li></ul></div>'
-    + '<p class="muted" style="font-size:.85rem">상품 링크는 매주 쿠팡에서 자동으로 다시 찾아요. 이매동 코코스학원 리카수니 원장이 정리했어요.</p>')
-page('/books/kit/', '수험생 준비물 가이드 – 학년별 EBS 부교재 · 기출 인쇄 준비물 · 수능 당일 준비물 | 리카수니 자료실',
-     '고1·고2·고3 학년별 EBS 부교재(올림포스, 수능특강 Light, 수능특강·수능완성), 기출 PDF 인쇄 준비물, 수능 당일 준비물(아날로그 시계 등)과 시기별로 챙길 것을 리카수니 원장이 정리했어요.',
-     kit_body, [('/', '홈'), ('/books/', '부교재'), ('/books/kit/', '수험생 준비물')], '/books/', og_image=SITE + '/books/kit/thumb.png')
-
-# ---------- 쇼핑 (/shop/, 메뉴 '쇼핑', 2026-11-12 원장님 요청) — 쿠팡 링크만 모은 곳: 시기별 추천 · 학년별 부교재 · 새 교재(교재 소식) · 공부 준비물 · 학원·공부 용품 ----------
-# 링크는 모두 기존 쿠팡 목록에서 (url 있는 것만). 학원·공부 용품은 _tools/coupang.json 의 'shop' 묶음 (goods: true, 매주 Mac 쿠팡 작업이 채움). 비어 있으면 칸째 안 보여요
-def _shop_news():
-    out = []
-    for m in BOOKNEWS[:8]:
-        f = os.path.join(m['_dir'], 'coupang.json')
-        bs = [b for b in (json.load(open(f, encoding='utf-8')) if os.path.exists(f) else []) if b.get('url')]
-        if bs: out.append((m, bs))
-    return out
-_month = int(TODAY[5:7])
-if _month == 11 and int(TODAY[8:]) <= 20:  # 수능(11월 셋째 주 목요일) 전까지
-    _season = ('⏱ 지금 챙길 것 · 수능 당일 준비물', '수험표·신분증·아날로그 손목시계는 꼭 챙기고, 전자기기는 반입 금지예요.', _kit_btns(_sn, small=True), '/news/suneung-2027-checklist/', '수능 준비물 체크리스트 전체 보기 →')
-elif _month in (11, 12, 1, 2):
-    _season = ('⏱ 지금 챙길 것 · 예비 고1 겨울방학', '반 배치고사와 3월 모의고사를 앞두고 고1 기출 교재로 미리 형식을 익혀요.', _kit_btns(COUPANG.get('go1', [])), '/moe/go1/', '고1 모의고사 기출 보기 →')
-else:
-    _season = ('⏱ 지금 챙길 것 · 기출 인쇄 공부', '자료실 기출·분석노트 PDF를 인쇄해서 풀 때 필요한 준비물이에요.', _kit_btns(COUPANG.get('print', []), small=True), '/english/', '영어 모의고사 분석노트 →')
-_sh_goods = [b for b in COUPANG.get('shop', []) if b.get('url')]
-shop_body = (f'<style>{NEWS_CSS}</style><section class="hero"><h1>🛒 쇼핑</h1><p>리카수니 원장이 고른 고등 영어 부교재와 공부 준비물을 한곳에 모았어요.</p></section>'
-    '<div class="card cp-box"><p class="cp-dis" style="margin:0">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p></div>'
-    + (f'<div class="card"><h2>{_season[0]}</h2><p>{_season[1]}</p>{_season[2]}<p style="margin:8px 0 0"><a href="{_season[3]}">{_season[4]}</a></p></div>' if _season[2] else '')
-    + '<div class="card"><h2>📘 학년별 부교재</h2><p class="muted">학교 부교재와 모의고사 대비로 많이 쓰는 교재예요. 새 판이 나오면 링크가 자동으로 바뀌어요.</p>'
-    + ''.join(f'<h3 style="margin:14px 0 6px;color:var(--navy-d)">{t}</h3>{_kit_btns(COUPANG.get(g, []))}' for g, t in (('go1', '고1'), ('go2', '고2'), ('go3', '고3 · 수능')))
-    + '</div>'
-    + ('<div class="card"><h2>📚 새로 나온 교재</h2><p class="muted">교재 소식에서 정리한 신간이에요. 책 아래 링크에서 구성과 고르는 법을 볼 수 있어요.</p>'
-       + ''.join(f'<h3 style="margin:14px 0 6px;color:var(--navy-d)">{e(m["title"].split(" — ")[0])}</h3>{_kit_btns(bs)}<p style="margin:4px 0 0"><a href="{nurl(m)}">구성과 고르는 법 보기 →</a></p>' for m, bs in _shop_news())
-       + '<p style="margin:12px 0 0"><a href="/books/news/">교재 소식 전체 보기 →</a></p></div>' if _shop_news() else '')
-    + ('<div class="card"><h2>✏️ 학원·공부 용품</h2><p class="muted">이매동 코코스학원 수업에서 쓰는 용품이에요.</p>' + _kit_btns(_sh_goods) + '</div>' if _sh_goods else '')
-    + '<div class="card"><h2>🎒 시험·공부 준비물</h2><p>기출 PDF를 인쇄해서 풀 때와 시험 당일에 필요한 것들이에요.</p>'
-    + _kit_btns(COUPANG.get('print', []), small=True) + ('' if _season[3] == '/news/suneung-2027-checklist/' else _kit_btns(_sn, small=True))  # 수능 준비물이 위 '지금 챙길 것'에 있으면 한 번만
-    + '<p style="margin:8px 0 0"><a href="/books/kit/">수험생 준비물 가이드 →</a></p></div>'
-    + '<p class="muted" style="font-size:.85rem">상품 링크는 매주 쿠팡에서 자동으로 다시 찾아요. 가격과 재고는 구매 화면에서 확인해 주세요. 이매동 코코스학원 리카수니 원장이 정리했어요.</p>')
-page('/shop/', '쇼핑 – 고등 영어 부교재 · 신간 교재 · 공부 준비물 모음 | 리카수니 자료실',
-     '고1·고2·고3 학년별 영어 부교재(올림포스, 수능특강 Light, 수능특강·수능완성), 새로 나온 교재, 기출 인쇄·수능 당일 준비물을 리카수니 원장이 한곳에 모았어요.',
-     shop_body, [('/', '홈'), ('/shop/', '쇼핑')], '/shop/', og_image=SITE + '/books/kit/thumb.png')
+     [('/', '홈'), ('/books/news/', '신간 소개')], '/books/news/')
+# 옛 쿠팡 모음 페이지 (/books/kit/ 수험생 준비물, /shop/ 쇼핑) → 신간 소개로 넘김 (2026-11-14 원장님: 쿠팡은 신간 소개 글 안에만)
+for _old in ('books/kit', 'shop'):
+    os.makedirs(os.path.join(ROOT, _old), exist_ok=True)
+    open(os.path.join(ROOT, _old, 'index.html'), 'w', encoding='utf-8').write(
+        '<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="' + SITE + '/books/news/">'
+        '<meta http-equiv="refresh" content="0;url=/books/news/"><title>신간 소개 | 리카수니 자료실</title><a href="/books/news/">신간 소개로 가기</a>')
 
 page('/news/', '학원 소식 – 이매동 코코스학원 시험 대비 · 수업 안내 | 리카수니 자료실',
      '이매동 코코스학원 소식. 중등·고등 시험 대비 핵심 정리와 대비반·수업 안내를 모았어요.',
@@ -1302,7 +1221,6 @@ for i, b in enumerate(BPOSTS):
                 f'<div class="bp-q"><p>{k + 1}. {e(q["q"])}</p><details><summary>정답 보기</summary><p>{e(q["a"])}</p></details></div>' for k, q in enumerate(b['checks'])) + '</div>'
             + f'<div class="card"><h2>📘 {b["unit"]}강 {e(b["label"])} 분석노트 받기</h2><p class="muted">끊어읽기·해석·구문·어휘를 정리한 원장님 분석노트(PDF)는 카카오톡으로 받아요. 하루 1개 무료.</p>'
             f'<div class="dl"><a href="{req}">카톡으로 분석노트 받기</a></div></div>'
-            + cp_box(('moe', 2))
             + '<div class="card faq"><h2>자주 묻는 질문</h2>' + ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in b['faq']) + '</div>'
             + '<div class="card bp-nav">' + (f'<a class="btn btn-line" href="{bp_url(prv)}">← {prv["unit"]}강 {e(prv["label"])}</a>' if prv else '<span></span>')
             + f'<a class="btn btn-line" href="/books/{b["bslug"]}/">강별 해설 목록</a>'
@@ -1343,7 +1261,7 @@ def _sm_rank(p):
     if q[0] == 'naesin': return 1
     if p in ('/english/', '/posts/', '/books/', '/variants/', '/exams/', '/notes/', '/memo/', '/news/'): return 2
     if q[0] == 'news': return 3  # 학원 소식
-    if p in ('/books/news/', '/books/kit/', '/shop/'): return 2  # 교재 소식 목록 · 수험생 준비물 가이드 · 쇼핑
+    if p == '/books/news/': return 2  # 신간 소개 목록
     if q[0] == 'books' and len(q) == 3 and q[1] == 'news': return 3  # 교재 소식
     if q[0] == 'books' and len(q) == 2 and q[1] not in ('news', 'kit'): return 2  # 부교재 해설 목록
     if q[0] == 'books' and len(q) == 4: return 3  # 부교재 문항별 해설
