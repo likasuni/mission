@@ -291,6 +291,17 @@ function pushAsk(msg) {
 function nextResetText() { // 하루 한도는 한국 시간 자정에 다시 채워짐
   return '내일(자정 지나면) 다시 받을 수 있어요';
 }
+// 회원 구분 (학생·선생님·학부모, 2026-11-15~): 첫 요청 때 한 번만 묻고 Supabase member_roles 에 저장 (본인 것만 읽고 한 번만 씀). 고르지 않으면 요청이 나가지 않음
+const ROLE_NAMES = { student: '학생', teacher: '선생님·강사', parent: '학부모' };
+let _role = null;
+function getRole(uid) {
+  if (!_role) try { const v = localStorage.getItem('lks-role-' + uid); if (ROLE_NAMES[v]) _role = v; } catch (e) { /* 저장소 사용 불가 */ }
+  return _role;
+}
+function setRole(uid, v) {
+  _role = ROLE_NAMES[v] ? v : null;
+  try { _role ? localStorage.setItem('lks-role-' + uid, _role) : localStorage.removeItem('lks-role-' + uid); } catch (e) { /* 무시 */ }
+}
 // 카카오 '카톡 메시지 받기' 동의 확인 (true/false, 모르면 null). 동의돼 있으면 서버가 멈춰 둔 자동 발송을 다시 풀어 줌
 async function talkScope() {
   try {
@@ -571,7 +582,26 @@ async function noteRequest(user) {
     });
   }
 
+  // 첫 요청 때 한 번: 학생·선생님·학부모 중 고르면 이어서 요청
+  function askRole(b) {
+    const box = document.getElementById('nr-preview');
+    box.innerHTML = `<div class="info-box"><b>처음 한 번만 알려 주세요. 어떤 분이세요?</b>
+      <div class="row mt" style="gap:8px;flex-wrap:wrap">${Object.entries(ROLE_NAMES).map(([k, v]) => `<button type="button" class="btn btn-navy btn-sm" data-role="${k}">${v}</button>`).join('')}</div>
+      <p class="meta mt">골라 주셔야 자료를 보내 드려요. 어떤 분들이 쓰시는지 알고 자료를 준비하려고 여쭤봐요. 다음부터는 묻지 않아요.</p></div>`;
+    box.querySelectorAll('button[data-role]').forEach(x => x.onclick = async () => {
+      box.innerHTML = '저장하는 중...';
+      const { error } = await sb.from('member_roles').insert({ user_id: user.id, role: x.dataset.role });
+      if (error && error.code !== '23505') { box.innerHTML = '<span style="color:var(--danger)">저장하지 못했어요. 잠시 후 다시 눌러 주세요.</span>'; return; } // 23505 = 이미 저장돼 있음
+      setRole(user.id, x.dataset.role); box.innerHTML = ''; send(b);
+    });
+    box.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+
   async function send(b, retried) {
+    if (!getRole(user.id)) { // 다른 기기에서 이미 골랐으면 다시 묻지 않음
+      const { data: mr } = await sb.from('member_roles').select('role').eq('user_id', user.id).maybeSingle();
+      if (mr && mr.role) setRole(user.id, mr.role); else return askRole(b);
+    }
     const btn = document.getElementById('nr-go'); btn.disabled = true; btn.textContent = '찾는 중...';
     const { data: { session } } = await sb.auth.getSession();
     if (!session.provider_token && !retried) {
