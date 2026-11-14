@@ -66,7 +66,7 @@ async function updateBadges() {
 let cFilter = 'all', cUser = null;
 async function tabComments() {
   let q = sb.from('comments')
-    .select('id,author_name,content,created_at,approved,reply,user_id,page_key,page_title,secret,pinned,materials(title)')
+    .select('id,author_name,content,created_at,approved,reply,user_id,page_key,page_title,secret,pinned,ask_status,ask_link,materials(title)')
     .order('created_at', { ascending: false }).limit(200);
   if (cFilter === 'pending') q = q.eq('approved', false);
   if (cFilter === 'noreply') q = q.is('reply', null);
@@ -80,7 +80,7 @@ async function tabComments() {
   $('#panel').innerHTML = `
     <div class="card">
       <div class="row between" style="flex-wrap:wrap;gap:8px">
-        <div class="row" style="gap:6px;flex-wrap:wrap">${fb('all', '전체 댓글')}${fb('pending', '승인 대기')}${fb('noreply', '답글 안 단 댓글')}${fb('talk', '소통하기')} ${fb('etc', '기타 자료 요청')}</div>
+        <div class="row" style="gap:6px;flex-wrap:wrap">${fb('all', '전체 댓글')}${fb('pending', '승인 대기')}${fb('noreply', '답글 안 단 댓글')}${fb('talk', '자료 문의')} ${fb('etc', '기타 자료 요청')}</div>
         ${pend ? `<button class="btn btn-gold btn-sm" onclick="approveAll()">대기 ${pend}개 전체 승인</button>` : ''}
       </div>
       ${cUser ? `<p class="mt"><b>${esc(cUser.name)}</b> 님의 댓글만 보는 중 · <a href="#" onclick="cUser=null;showTab('comments');return false">전체로 돌아가기</a></p>` : '<p class="meta mt">회원 이름을 누르면 그 회원이 쓴 댓글만 모아 볼 수 있어요.</p>'}
@@ -107,6 +107,12 @@ async function tabComments() {
           ${c.page_key === 'talk' ? `<button class="btn btn-line btn-sm" onclick="togglePin(${c.id}, ${!c.pinned})">${c.pinned ? '고정 해제' : '📌 공지 고정'}</button>` : ''}
           <button class="btn btn-danger btn-sm" onclick="removeComment(${c.id})">삭제</button>
         </div>
+        ${c.page_key === 'talk' ? `<div class="mt" style="padding:10px;border:1px dashed #b9c8ea;border-radius:10px;background:#f5f8ff">
+          <b>자료 문의 상태</b> <span class="meta">지금: ${c.ask_status === 'added' ? '✅ 추가했어요' : c.ask_status === 'no' ? '어려워요' : c.reply ? '답변 완료' : '검토 중'} · 답글과 함께 학생에게 보여요</span>
+          <div class="row mt" style="gap:6px;flex-wrap:wrap"><input id="al-${c.id}" value="${esc(c.ask_link || '/notes/')}" placeholder="요청하러 가기 주소 (자료실 안 경로, 예: /notes/)" style="flex:1 1 220px">
+          <button class="btn btn-gold btn-sm" onclick="askSet(${c.id}, 'added')">✅ 추가했어요</button>
+          <button class="btn btn-line btn-sm" onclick="askSet(${c.id}, 'no')">어려워요</button>
+          ${c.ask_status ? `<button class="btn btn-line btn-sm" onclick="askSet(${c.id}, null)">상태 지우기</button>` : ''}</div></div>` : ''}
         ${c.content.startsWith('[자료 요청] 기타 ·') ? `<div class="mt" style="padding:10px;border:1px dashed #f3d48a;border-radius:10px;background:#fffbf0">
           <b>기타 자료 요청</b> <span class="meta">PDF 를 <a href="https://drive.google.com/drive/folders/1FryHlXrnXc7gzP8e3xQrM-TBR6L-KkXY" target="_blank" rel="noopener"><b>기타자료 드라이브 폴더</b></a>(비공개)에 올리고 <b>자료 고르기</b>에서 파일을 고른 뒤 누르면, 요청한 학생에게 <b>그 파일 하나만</b> 여는 링크(7일)를 카톡으로 보내고 답글을 '보내 드렸어요'로 바꿔요.</span>
           <div class="row mt" style="gap:6px;flex-wrap:wrap"><select id="ef-${c.id}" style="flex:1 1 260px" onfocus="etcFiles(${c.id})"><option value="">자료 고르기 (기타자료 폴더)</option></select>
@@ -118,6 +124,20 @@ async function tabComments() {
 }
 function setCFilter(k) { cFilter = k; showTab('comments'); }
 
+// 자료 문의(옛 소통하기) 상태: 'added' = 추가했어요(+ 요청하러 가기 주소), 'no' = 어려워요, null = 지우기.
+// 답글이 비어 있으면 기본 답글도 함께 달아요 (고치려면 '답글 수정')
+const ASK_REPLY = { added: '문의하신 자료를 요청 목록에 추가했어요. 아래 버튼으로 요청해 주세요.', no: '문의 감사해요. 이 자료는 지금은 준비하기 어려워요. 자료실의 모의고사·부교재 분석노트는 무료로 받을 수 있어요.' };
+async function askSet(id, status) {
+  const link = (document.getElementById('al-' + id)?.value || '').trim();
+  if (status === 'added' && !/^\/[^/]/.test(link)) return toast('요청하러 가기 주소는 /notes/ 처럼 자료실 안 경로로 넣어 주세요.');
+  const cur = document.getElementById('rt-' + id)?.value.trim();
+  const upd = { ask_status: status, ask_link: status === 'added' ? link : null, approved: true };
+  if (status && !cur) Object.assign(upd, { reply: ASK_REPLY[status], replied_at: new Date().toISOString() });
+  const { error } = await sb.from('comments').update(upd).eq('id', id);
+  if (error) return toast('오류: ' + error.message);
+  toast(status === 'added' ? '추가했어요로 표시했어요.' : status === 'no' ? '어려워요로 표시했어요.' : '상태를 지웠어요.');
+  showTab('comments');
+}
 // 소통하기: 공지 고정/해제 (해제하면 날짜 순서로 내려감)
 async function togglePin(id, on) {
   const { error } = await sb.from('comments').update({ pinned: on }).eq('id', id);

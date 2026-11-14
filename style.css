@@ -508,6 +508,9 @@ a.nb:hover { filter: brightness(1.12); }
 .tk-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: .9rem; }
 .tk-st { padding: 2px 8px; border-radius: 6px; background: #e5e7eb; color: #4b5563; font-size: .72rem; font-weight: 800; }
 .tk-st.ok { background: #16a34a; color: #fff; }
+.tk-st.no { background: #f1f5f9; color: #64748b; }  /* 자료 문의: 어려워요 */
+.tk-go { display: inline-flex; margin-top: 8px; }  /* 자료 문의: 추가했어요 → 요청하러 가기 */
+.nr-ask { margin: 10px 0 0; } .nr-ask a { color: var(--navy); }
 .tk-mine { padding: 1px 7px; border-radius: 999px; background: #eef2ff; color: #3730a3; font-size: .72rem; font-weight: 700; }
 .tk-lock { font-size: .76rem; color: #64748b; font-weight: 700; }
 .tk-tx { margin: 6px 0 0; font-size: .95rem; white-space: pre-wrap; overflow-wrap: anywhere; }

@@ -19,6 +19,9 @@ const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 const zeroName = b => { const c = NOTE_BOOK_CFG[b] || {}; return c.gw ? 'Gateway' : c.ex ? '예시문제' : ''; }; // 번호 0 이름
 const NOTE_LIMIT = { moe: 1, book: 1 }; // 하루에 받을 수 있는 개수 (note-request 함수 LIMIT 와 같게)
 
+// 옛 '기타 자료 요청' 링크(/notes/#etc-req)는 첫 화면 '자료 문의'로 (2026-11-14)
+if (location.pathname.startsWith('/notes') && location.hash === '#etc-req') location.replace('/#talk');
+
 (async function () {
   const user = await getUser();
   renderAuth(user);
@@ -178,7 +181,7 @@ function recentComments() {
     const rdy = rf.filter(c => isReady(c) || isDone(c)).sort((a, b) => new Date(b.replied_at || b.created_at) - new Date(a.replied_at || a.created_at));  // 방금 완성된 자료가 위로
     const col = (cls, title, items, key, empty) => `<div class="rq-col ${cls}"><h3>${title} <span>${items.length}</span></h3><ul${shown[key] > 6 ? ' class="open"' : ''}>${items.slice(0, shown[key]).map(reqItem).join('') || `<li class="rq-empty">${empty}</li>`}</ul>${more(key, items.length)}</div>`;
     list.innerHTML = `<div class="rq-top"><h3 class="rc-sub">최근 자료 요청</h3><div class="rq-chips">${chips}</div></div>
-      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', gf === 'e' ? '기타 자료 요청이 아직 없어요. <a href="/notes/#etc-req"><b>단어 시험지·변형문제 요청하기 →</b></a>' : '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
+      <div class="rq-cols">${col('', '만드는 중', pre, 'pre', gf === 'e' ? '기타 자료 요청이 아직 없어요. 필요한 자료는 <a href="/#talk"><b>자료 문의 →</b></a>' : '기다리는 요청이 없어요.')}${col('rd', '받을 수 있어요', rdy, 'rdy', '아직 준비된 자료가 없어요. 필요한 분석노트를 요청해 주세요.')}</div>`;
     list.querySelectorAll('.rq-chip').forEach(b => b.onclick = () => { gf = b.dataset.g; shown.pre = shown.rdy = 6; render(); });
     list.querySelectorAll('.rc-more').forEach(btn => btn.onclick = () => { shown[btn.dataset.k] += 6; render(); });
     list.querySelectorAll('.rq-pv').forEach(b => b.onclick = () => showPreview(b.dataset.pv, b.dataset.t, b.dataset.go));
@@ -199,7 +202,9 @@ function recentComments() {
   getUser().then(u => { const b = box.querySelector('.rc-login'); if (u && b) b.remove(); }).catch(() => {});
 }
 
-/* ---------- 소통하기 게시판 (첫 화면): 회원 질문 + 원장 답변, 비밀글은 글쓴이·관리자만 ---------- */
+/* ---------- 자료 문의 게시판 (첫 화면, 옛 '소통하기'): 목록에 없는 자료를 먼저 묻는 곳 + 원장 답변, 비밀글은 글쓴이·관리자만 ----------
+   2026-11-14 원장님: 기타 자료 바로 요청 대신 '이런 자료 가능할까요?' 문의 → 가능하면 부교재·모의고사 요청 목록에 추가.
+   답변 상태(ask_status): 없음 = 검토 중/답변 완료, 'added' = 추가했어요(ask_link 로 요청하러 가기), 'no' = 어려워요 — 관리자 페이지에서 정함 */
 // 글은 comments 의 page_key='talk'. 목록은 talk_list RPC (비밀글 내용 가림, 고정 공지가 맨 위). 답변은 관리자 페이지 '댓글 → 소통하기'에서
 // 관리자 계정으로 로그인하면 '공지로 고정'으로 쓰고, 목록에서 고정/해제할 수 있음 (해제하면 날짜 순서로 내려감)
 async function talkBoard(user) {
@@ -216,37 +221,39 @@ async function talkBoard(user) {
   let limit = 10, open = false; // 처음엔 맨 위 글 1개만 (공지가 있으면 공지), '이전 글 보기'로 펼침
   const admin = user ? !!(await sb.rpc('is_admin')).data : false;
   formEl.innerHTML = user ? `
-    <textarea id="tk-body" maxlength="1000" placeholder="예) 고1 9월 모의고사 32번 빈칸 근거를 어디서 찾아야 할지 모르겠어요. / 분석노트는 어떻게 공부하면 좋을까요?"></textarea>
+    <textarea id="tk-body" maxlength="1000" placeholder="예) 리딩파워 유형편 완성 분석노트도 받을 수 있나요? / 2024년 6월 고2 모의고사 자료도 가능할까요? / 올림포스 단어 시험지 있나요?"></textarea>
     <div class="row between mt tk-bar">${admin ? '<label class="tk-secret"><input type="checkbox" id="tk-pin" checked> 📌 공지로 고정</label>' : ''}<label class="tk-secret"><input type="checkbox" id="tk-secret"> 🔒 비밀글 <span class="meta">(나와 원장님만 볼 수 있어요)</span></label>
-    <span class="row" style="gap:8px"><span class="meta"><span id="tk-count">0</span>/1000</span><button class="btn btn-navy" id="tk-btn">${admin ? '글 올리기' : '질문 올리기'}</button></span></div>
-    <p class="meta tk-note">분석노트가 필요하면 질문 대신 위 <b>자료 요청</b>을 이용해 주세요. 욕설·광고 글은 지워질 수 있어요.</p>`
-    : `<p class="muted tk-login">카카오로 로그인하면 원장님께 질문을 남길 수 있어요. 성적·진로 같은 개인 고민은 <b>비밀글</b>로 남길 수 있어요.</p>${loginButtons()}`;
+    <span class="row" style="gap:8px"><span class="meta"><span id="tk-count">0</span>/1000</span><button class="btn btn-navy" id="tk-btn">${admin ? '글 올리기' : '문의 올리기'}</button></span></div>
+    <p class="meta tk-note">요청 목록에 있는 모의고사·부교재는 위 <b>자료 요청</b>에서 바로 받아요. 목록에 없는 교재·단어 시험지·변형문제는 여기에 물어봐 주세요. 가능한 자료는 원장님이 <b>요청 목록에 추가</b>해 드려요. 욕설·광고 글은 지워질 수 있어요.</p>`
+    : `<p class="muted tk-login">목록에 없는 자료가 필요하면 카카오로 로그인해서 원장님께 물어봐 주세요. 가능한 자료는 요청 목록에 추가해 드려요. 개인적인 내용은 <b>비밀글</b>로 남길 수 있어요.</p>${loginButtons()}`;
   if (user) {
     const t = document.getElementById('tk-body');
     t.oninput = () => (document.getElementById('tk-count').textContent = t.value.trim().length);
     document.getElementById('tk-btn').onclick = async () => {
       const content = t.value.trim();
-      if (content.length < 2) return toast('질문 내용을 입력해 주세요.');
+      if (content.length < 2) return toast('문의 내용을 입력해 주세요.');
       const btn = document.getElementById('tk-btn'); btn.disabled = true;
       const { error } = await sb.from('comments').insert({
-        page_key: 'talk', page_title: '소통하기', author_name: displayName(user), content,
+        page_key: 'talk', page_title: '자료 문의', author_name: displayName(user), content,
         secret: document.getElementById('tk-secret').checked, pinned: admin && document.getElementById('tk-pin').checked
       });
       btn.disabled = false;
       if (error) return toast('등록 실패: ' + error.message);
       t.value = ''; document.getElementById('tk-count').textContent = '0'; document.getElementById('tk-secret').checked = false;
-      toast('질문을 올렸어요! 원장님이 확인하고 답변해 드려요.');
+      toast('문의를 올렸어요! 원장님이 확인하고 답변해 드려요.');
       load();
     };
   }
   function item(p) {
     const hidden = p.secret && p.content == null;
     const nm = p.staff ? '리카수니 원장' : maskName(p.author_name);
-    const st = p.staff ? '' : p.reply ? '<span class="tk-st ok">답변 완료</span>' : '<span class="tk-st">답변 대기</span>';
+    const st = p.staff ? '' : p.ask_status === 'added' ? '<span class="tk-st ok">✅ 추가했어요</span>' : p.ask_status === 'no' ? '<span class="tk-st no">어려워요</span>'
+      : p.reply ? '<span class="tk-st ok">답변 완료</span>' : '<span class="tk-st">검토 중</span>';
+    const go = p.ask_status === 'added' && p.ask_link && /^\//.test(p.ask_link) ? `<a class="btn btn-gold btn-sm tk-go" href="${esc(p.ask_link)}">요청하러 가기 →</a>` : '';
     return `<div class="tk-item${p.staff ? ' own' : ''}${p.pinned ? ' pin' : ''}">
       <div class="tk-top">${p.pinned ? '<span class="tk-pin">📌 공지</span>' : ''}${st}<b>${esc(nm)}</b>${p.staff ? '<span class="rc-badge">운영자</span>' : ''}${p.mine ? '<span class="tk-mine">내 글</span>' : ''}${p.secret ? '<span class="tk-lock">🔒 비밀글</span>' : ''}<span class="meta">${ago(p.created_at)}</span>${admin ? `<button class="tk-pbtn" data-id="${p.id}" data-p="${p.pinned ? 1 : 0}">${p.pinned ? '고정 해제' : '📌 고정'}</button>` : ''}</div>
       <p class="tk-tx${hidden ? ' tk-hid' : ''}">${hidden ? '비밀글이에요. 글쓴이와 원장님만 볼 수 있어요.' : esc(p.content)}</p>
-      ${p.reply ? `<div class="tk-rp"><b>리카수니 원장</b><span class="meta">${p.replied_at ? ago(p.replied_at) : ''}</span><p>${esc(p.reply)}</p></div>` : ''}
+      ${p.reply ? `<div class="tk-rp"><b>리카수니 원장</b><span class="meta">${p.replied_at ? ago(p.replied_at) : ''}</span><p>${esc(p.reply)}</p>${go}</div>` : go}
     </div>`;
   }
   async function load() {
@@ -254,7 +261,7 @@ async function talkBoard(user) {
     if (error) { listEl.innerHTML = '<p class="muted">게시판을 불러오지 못했어요. 잠시 후 다시 열어 주세요.</p>'; return; }
     const rows = data || [], total = rows.length ? Number(rows[0].total) : 0;
     const shownRows = open ? rows : rows.slice(0, 1);
-    listEl.innerHTML = (shownRows.map(item).join('') || '<p class="muted">아직 글이 없어요. 첫 질문을 남겨 주세요!</p>') +
+    listEl.innerHTML = (shownRows.map(item).join('') || '<p class="muted">아직 문의가 없어요. 필요한 자료를 물어봐 주세요!</p>') +
       (!open && total > 1 ? `<button class="pn-more" id="tk-open">이전 글 보기 (${total - 1}개)</button>`
         : open ? (total > rows.length ? `<button class="rc-more" id="tk-more">더보기 (${total - rows.length}개)</button>` : '') + `<button class="pn-more" id="tk-open">접기</button>` : '');
     const mb = document.getElementById('tk-more');
@@ -395,7 +402,7 @@ async function noteRequest(user) {
   const qs = new URLSearchParams(location.search);
   const d = { y: qs.get('y') || card.dataset.y, m: qs.get('m') || card.dataset.m, g: qs.get('g') || card.dataset.g, book: qs.get('book') }; // 회차·교재 미리 채움
   let startBook = d.book && NOTE_BOOKS.includes(d.book);
-  const hasEtc = location.pathname.startsWith('/notes'); // /notes/ 에서만 [기타 자료] 탭
+  const hasEtc = false; // [기타 자료] 바로 요청 탭은 2026-11-14 '자료 문의'(첫 화면 #talk)로 합침 (etcForm 은 남겨 둠)
   let startEtc = hasEtc && location.hash === '#etc-req';
   const isKakao = user && ((user.app_metadata?.providers || [user.app_metadata?.provider]).includes('kakao'));
   const HINT = {
@@ -409,6 +416,7 @@ async function noteRequest(user) {
     <p class="meta"><b>받는 방법:</b> 번호를 <b>하나</b> 골라 받아요. 요청과 받기 모두 하루 모의고사 1개 · 부교재 1개까지예요. 다른 번호는 다음 날 받을 수 있어요.</p>
     <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 <b>처음 요청한 1개는 카톡으로 자동</b> 보내 드리고, 나머지는 다시 로그인했을 때 이 칸 위 <b>"요청하신 자료가 준비됐어요"</b>에서 받아요.</p>
     ${hasEtc ? '<p class="meta">기타 자료는 원장님이 준비되면 카톡으로 보내 드려요. 이메일·전화번호는 적지 않아도 돼요.</p>' : ''}</details>
+    <p class="meta nr-ask">목록에 없는 교재·단어 시험지·변형문제는 <a href="/#talk"><b>자료 문의</b></a>에 먼저 물어봐 주세요. 가능한 자료는 요청 목록에 추가해 드려요.</p>
     <div id="nr-talk"></div><div id="nr-ready"></div>`;
   const TALK_NOTE = `<p class="nr-talknote">📩 자료는 카카오톡 <b>'나와의 채팅'</b>으로 와요. 알림이 울리지 않으니 카톡에서 직접 열어 확인해 주세요.</p>`;
   const etcPanel = on => hasEtc ? `<div id="etc-req"${on ? '' : ' style="display:none"'}></div>` : '';
