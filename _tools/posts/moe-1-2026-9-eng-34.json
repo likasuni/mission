@@ -1,0 +1,162 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 34,
+  "type": "빈칸 추론",
+  "points": 3,
+  "answer": 2,
+  "topic": "달리기가 쉬워 보이는 것은 몸이 그것을 아주 잘하기 때문이다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 34번",
+    "2026 9월 고1 영어 34번 해설",
+    "고1 9월 모의고사 34번 정답",
+    "고1 모의고사 빈칸 추론",
+    "our bodies are so very good at it",
+    "달리기 running 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 34번은 달리기가 쉬워 보이지만 사실 슈퍼컴퓨터도 처리 못 할 만큼 복잡한 일이고, 그 지식은 근섬유·세포·DNA 속에 깊이 묻혀 있다는 글이에요. 쉬워 보이는 건 몸이 그걸 아주 잘하기 때문이라는 흐름이에요. 정답은 ② our bodies are so very good at it이에요.",
+  "flow": [
+    [
+      "질문",
+      "몸이 가장 잘 안다면 왜 달리기처럼 자연스러운 일에서 쉽게 다칠까?"
+    ],
+    [
+      "빈칸",
+      "달리기가 쉬워 보이는 건 오직 (우리 몸이 그것을 아주 잘하기) 때문이다."
+    ],
+    [
+      "복잡성",
+      "가장 강력한 슈퍼컴퓨터도 두 다리로 달리는 데 필요한 계산을 처리할 수 없다."
+    ],
+    [
+      "결론",
+      "달리기 지식은 몸 깊이 묻혀 있어 설명할 수 없지만, 몸은 우리보다 달리기를 더 잘 안다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The most powerful supercomputer on the planet cannot administer the enormous number of computations it takes to run, untethered, on two legs.",
+      "ko": "지구상의 가장 강력한 슈퍼컴퓨터도 두 다리로 자유롭게 달리는 데 필요한 엄청난 수의 계산을 처리할 수 없다.",
+      "note": "달리기는 사실 엄청나게 복잡해요. 쉬워 보이는 건 몸이 잘 해내기 때문."
+    },
+    {
+      "en": "That doesn't mean our bodies don't know how to do it.",
+      "ko": "그것이 우리 몸이 그것을 하는 법을 모른다는 뜻은 아니다.",
+      "note": "설명은 못 해도 몸은 알아요."
+    },
+    {
+      "en": "… accepting that our bodies know more about running than we ever will.",
+      "ko": "… 우리의 몸이 우리가 앞으로 알게 될 것보다 달리기에 대해 더 잘 안다는 것을 받아들이며.",
+      "note": "몸이 달리기를 아주 잘한다 = ②."
+    }
+  ],
+  "choices": [
+    {
+      "en": "it doesn’t need much equipment",
+      "ko": "그것은 많은 장비가 필요하지 않다",
+      "why": "장비 이야기는 없어요."
+    },
+    {
+      "en": "our bodies are so very good at it",
+      "ko": "우리의 몸이 그것을 아주 잘한다",
+      "why": "정답. 복잡한 일을 몸이 잘 해내서 쉬워 보여요."
+    },
+    {
+      "en": "it requires less energy than imagined",
+      "ko": "그것은 상상보다 에너지가 덜 든다",
+      "why": "에너지가 아니라 계산의 복잡성 이야기예요."
+    },
+    {
+      "en": "we have practiced it since our early childhood",
+      "ko": "우리는 어린 시절부터 그것을 연습해 왔다",
+      "why": "연습 때문이 아니라 몸 깊이 묻힌 지식 때문이라고 해요."
+    },
+    {
+      "en": "its simple movements demand conscious thought",
+      "ko": "그것의 단순한 움직임은 의식적인 생각을 요구한다",
+      "why": "달리기는 의식적이지 않다(not all conscious)고 해서 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "so + 형용사 + as",
+      "ex": "something so seemingly natural as running",
+      "d": "달리기처럼 겉보기에 그렇게 자연스러운 것."
+    },
+    {
+      "t": "it takes ~ to",
+      "ex": "the enormous number of computations it takes to run",
+      "d": "달리는 데 필요한 엄청난 수의 계산."
+    },
+    {
+      "t": "so ~ that",
+      "ex": "is so complicated that only the T-1000 Terminators … are able to do it",
+      "d": "너무 복잡해서 ~만 할 수 있다."
+    }
+  ],
+  "vocab": [
+    [
+      "seemingly",
+      "겉보기에"
+    ],
+    [
+      "injure",
+      "다치게 하다"
+    ],
+    [
+      "administer",
+      "처리하다"
+    ],
+    [
+      "enormous",
+      "엄청난"
+    ],
+    [
+      "computation",
+      "계산"
+    ],
+    [
+      "untethered",
+      "매인 줄이 풀린"
+    ],
+    [
+      "conscious",
+      "의식적인"
+    ],
+    [
+      "complexity",
+      "복잡성"
+    ],
+    [
+      "alchemy",
+      "연금술"
+    ],
+    [
+      "capable of",
+      "~을 할 수 있는"
+    ]
+  ],
+  "summary": {
+    "en": "Running seems easy only because our bodies are very good at it, even though it is too complex for us to fully explain.",
+    "ko": "달리기는 우리가 완전히 설명하기에 너무 복잡하지만, 우리 몸이 그것을 아주 잘하기 때문에 쉬워 보일 뿐이다."
+  },
+  "writing": {
+    "en": "Our bodies know more about running than we ever will.",
+    "ko": "우리의 몸은 우리가 앞으로 알게 될 것보다 달리기에 대해 더 잘 안다."
+  },
+  "tip": "'쉬워 보이는 건 오직 ~ 때문'이라는 빈칸은, 실제로는 어렵다는 내용(슈퍼컴퓨터도 못 함) 다음에 그런데도 왜 쉬워 보이는지를 찾으면 돼요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 34번 정답은?",
+      "② our bodies are so very good at it이에요."
+    ],
+    [
+      "④ 어릴 때부터 연습해서가 오답인 이유는?",
+      "글은 연습이 아니라 몸 깊이 묻힌 달리기 지식 때문이라고 해요."
+    ],
+    [
+      "⑤가 오답인 이유는?",
+      "달리기는 완전히 의식적이지 않다고 해요. 의식적인 생각을 요구한다는 건 반대예요."
+    ]
+  ],
+  "date": "2026-11-18"
+}

@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 20,
+  "type": "주장",
+  "points": 2,
+  "answer": 2,
+  "topic": "학습 게임은 재미보다 참여와 상호작용에 초점을 둬야 한다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 20번",
+    "2026 9월 고1 영어 20번 해설",
+    "고1 9월 모의고사 20번 정답",
+    "고1 모의고사 필자의 주장",
+    "학습 게임 fun enough",
+    "engagement rather than entertainment"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 20번은 학습 게임은 '필요한 만큼만 재미있게' 만들어야 하고, 오락보다 참여와 상호작용에 집중해야 한다는 글이에요. Focus on engagement rather than entertainment.가 그대로 주장이에요. 정답은 ② 학습 게임은 재미보다 참여와 상호작용을 통한 학습에 초점을 두어야 한다예요.",
+  "flow": [
+    [
+      "주장 제시",
+      "학습 게임은 '필요한 만큼 재미있는' 것이어야 한다."
+    ],
+    [
+      "문제",
+      "개발자들이 재미있게만 만들려 해서 오히려 학습이 어려워진다."
+    ],
+    [
+      "당부",
+      "규칙과 요소를 잔뜩 넣으려는 유혹을 참고, 오락이 아니라 참여에 집중하라."
+    ],
+    [
+      "근거",
+      "게임을 교육적으로 만드는 건 상호작용과 참여의 수준이므로, 즐거움보다 참여가 훨씬 중요하다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Yes, the game should be engaging with a mild level of fun, but learning should be the goal. Focus on engagement rather than entertainment.",
+      "ko": "그렇다, 게임은 가벼운 수준의 재미로 참여를 이끌어야 하지만, 학습이 목표가 되어야 한다. 오락이 아니라 참여에 집중하라.",
+      "note": "명령문으로 주장이 바로 나와요."
+    },
+    {
+      "en": "Research shows that what makes games instructional is the level of interactivity and engagement the learners have with the content.",
+      "ko": "연구는 게임을 교육적으로 만드는 것은 학습자가 콘텐츠와 갖는 상호작용성과 참여의 수준임을 보여 준다.",
+      "note": "주장을 뒷받침하는 연구 근거예요."
+    },
+    {
+      "en": "… making sure the learners are engaged and active is far more important than making sure they are entertained.",
+      "ko": "… 학습자가 참여하고 능동적이도록 보장하는 것이 그들이 즐거워하도록 보장하는 것보다 훨씬 더 중요하다.",
+      "note": "마지막 문장에서 주장을 한 번 더 정리해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "유아기의 학습 목표는 교육적 성취보다 정서적 즐거움을 우선시해야 한다.",
+      "ko": "유아기의 학습 목표는 교육적 성취보다 정서적 즐거움을 우선시해야 한다.",
+      "why": "글과 반대예요. 즐거움보다 학습(참여)이 목표예요. 유아기 이야기도 없어요."
+    },
+    {
+      "en": "학습 게임은 재미보다 참여와 상호작용을 통한 학습에 초점을 두어야 한다.",
+      "ko": "학습 게임은 재미보다 참여와 상호작용을 통한 학습에 초점을 두어야 한다.",
+      "why": "정답. Focus on engagement rather than entertainment."
+    },
+    {
+      "en": "학습 게임의 정교한 규칙과 다양한 보상으로 교육적 효과를 높여야 한다.",
+      "ko": "학습 게임의 정교한 규칙과 다양한 보상으로 교육적 효과를 높여야 한다.",
+      "why": "글은 규칙을 잔뜩 만들려는 유혹을 참으라고(Resist) 해요."
+    },
+    {
+      "en": "매시간 명확하고 구체적인 목표를 제시하여 학습 동기를 강화해야 한다.",
+      "ko": "매시간 명확하고 구체적인 목표를 제시하여 학습 동기를 강화해야 한다.",
+      "why": "수업 목표 제시는 나오지 않아요."
+    },
+    {
+      "en": "다양한 시청각 학습자료를 제공하여 학습자의 참여를 유도해야 한다.",
+      "ko": "다양한 시청각 학습자료를 제공하여 학습자의 참여를 유도해야 한다.",
+      "why": "참여는 맞지만 시청각 자료 이야기는 없어요. 글은 게임 설계에 관한 거예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "관계대명사 what",
+      "ex": "Learning games need to be what we call 'fun enough.'",
+      "d": "what we call ~ = 우리가 ~이라고 부르는 것."
+    },
+    {
+      "t": "A rather than B",
+      "ex": "… that often makes learning harder rather than easier.",
+      "d": "더 쉽게라기보다는 더 어렵게."
+    },
+    {
+      "t": "전치사 + 관계대명사",
+      "ex": "a learning game in which success will be measured by …",
+      "d": "그 안에서 성공이 ~으로 측정될 학습 게임."
+    }
+  ],
+  "vocab": [
+    [
+      "commercial",
+      "상업용의"
+    ],
+    [
+      "achievement",
+      "달성, 성취"
+    ],
+    [
+      "outcome",
+      "성과, 결과"
+    ],
+    [
+      "resist",
+      "억제하다, 저항하다"
+    ],
+    [
+      "temptation",
+      "유혹"
+    ],
+    [
+      "incorporate",
+      "포함하다"
+    ],
+    [
+      "engaging",
+      "참여를 이끄는"
+    ],
+    [
+      "engagement",
+      "참여"
+    ],
+    [
+      "interactivity",
+      "상호작용성"
+    ],
+    [
+      "instructional",
+      "교육적인"
+    ],
+    [
+      "given",
+      "~을 고려할 때"
+    ]
+  ],
+  "summary": {
+    "en": "Learning games should be just fun enough and focus on engagement and interactivity rather than entertainment.",
+    "ko": "학습 게임은 필요한 만큼만 재미있어야 하며 오락보다 참여와 상호작용에 집중해야 한다."
+  },
+  "writing": {
+    "en": "Making sure the learners are engaged and active is far more important than making sure they are entertained.",
+    "ko": "학습자가 참여하고 능동적이도록 보장하는 것이 그들이 즐거워하도록 보장하는 것보다 훨씬 더 중요하다."
+  },
+  "tip": "주장 문제는 명령문(Remember, Resist, Focus on …)과 should 문장을 모아 보세요. 이 글은 명령문 세 개가 모두 '재미보다 학습·참여'를 말해요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 20번 정답은?",
+      "② 학습 게임은 재미보다 참여와 상호작용을 통한 학습에 초점을 두어야 한다예요."
+    ],
+    [
+      "20번 주장이 가장 잘 드러나는 문장은?",
+      "Focus on engagement rather than entertainment.예요."
+    ],
+    [
+      "③ 정교한 규칙과 보상이 오답인 이유는?",
+      "글은 규칙과 요소를 잔뜩 넣으려는 유혹을 참으라고(Resist the temptation) 해요. 반대 내용이에요."
+    ]
+  ],
+  "date": "2026-11-15"
+}

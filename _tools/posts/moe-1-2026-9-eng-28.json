@@ -1,0 +1,149 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "7~12세 어린이를 위한 우주 캠프 2026 Beyond the Stars Camp",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 28번",
+    "2026 9월 고1 영어 28번 해설",
+    "고1 9월 모의고사 28번 정답",
+    "고1 모의고사 안내문 일치",
+    "Beyond the Stars Camp",
+    "우주 캠프 안내문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 28번은 7~12세 어린이를 위한 우주 캠프 안내문이에요. 캠프 내용에 '실제 우주비행사와의 화상 통화(Video calls with real astronauts)'가 있으므로 ③이 일치해요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "대상",
+      "7~12세."
+    ],
+    [
+      "일시·장소",
+      "10월 27~31일, 오후 1시~6시, Grand Moon Space Center."
+    ],
+    [
+      "내용",
+      "우주비행사와 화상 통화, 우주로 엽서 보내기, 로켓 조립·발사."
+    ],
+    [
+      "공지",
+      "하루만 참가 가능, 우주비행사 서명 수료증, 무료 셔틀 버스 하루 두 번."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Who: Ages 7-12",
+      "ko": "누가: 7세-12세",
+      "note": "나이 제한이 있어요. ① 불일치."
+    },
+    {
+      "en": "This camp includes: · Video calls with real astronauts",
+      "ko": "이 캠프는 다음을 포함합니다: · 실제 우주비행사와의 화상 통화",
+      "note": "③ 일치(정답)."
+    },
+    {
+      "en": "Participants can attend only one day of the camp. … Free shuttle bus service is provided twice a day.",
+      "ko": "참가자는 캠프 중 하루만 참석할 수 있습니다. … 무료 셔틀 버스 서비스가 하루에 두 번 제공됩니다.",
+      "note": "④ 이틀 X, ⑤ 유료 X."
+    }
+  ],
+  "choices": [
+    {
+      "en": "참가자의 나이 제한이 없다.",
+      "ko": "참가자의 나이 제한이 없다.",
+      "why": "불일치. Ages 7-12."
+    },
+    {
+      "en": "오전에 진행된다.",
+      "ko": "오전에 진행된다.",
+      "why": "불일치. from 1:00 p.m. to 6:00 p.m., 오후예요."
+    },
+    {
+      "en": "실제 우주비행사와의 화상 통화가 포함되어 있다.",
+      "ko": "실제 우주비행사와의 화상 통화가 포함되어 있다.",
+      "why": "일치(정답). Video calls with real astronauts."
+    },
+    {
+      "en": "참가자는 이틀을 참석할 수 있다.",
+      "ko": "참가자는 이틀을 참석할 수 있다.",
+      "why": "불일치. only one day."
+    },
+    {
+      "en": "셔틀 버스 서비스는 유료로 제공된다.",
+      "ko": "셔틀 버스 서비스는 유료로 제공된다.",
+      "why": "불일치. Free shuttle bus."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "계속적 용법 where",
+      "ex": "Welcome to 2026 Beyond the Stars Camp, where the cosmos becomes your playground.",
+      "d": "where = and there(그 캠프에서)."
+    },
+    {
+      "t": "과거분사 후치 수식",
+      "ex": "a certificate signed by astronauts",
+      "d": "우주비행사들이 서명한 수료증."
+    }
+  ],
+  "vocab": [
+    [
+      "cosmos",
+      "우주"
+    ],
+    [
+      "release",
+      "풀어 주다"
+    ],
+    [
+      "explorer",
+      "탐험가"
+    ],
+    [
+      "astronaut",
+      "우주비행사"
+    ],
+    [
+      "launch",
+      "발사하다"
+    ],
+    [
+      "attend",
+      "참석하다"
+    ],
+    [
+      "certificate",
+      "수료증"
+    ],
+    [
+      "provide",
+      "제공하다"
+    ]
+  ],
+  "summary": {
+    "en": "The space camp for children aged 7 to 12 runs in the afternoon, includes video calls with real astronauts, and offers a free shuttle bus.",
+    "ko": "7세에서 12세 어린이를 위한 우주 캠프는 오후에 진행되며, 실제 우주비행사와의 화상 통화가 포함되고 무료 셔틀 버스를 제공한다."
+  },
+  "writing": {
+    "en": "Participants will take home a certificate signed by astronauts.",
+    "ko": "참가자는 우주비행사들이 서명한 수료증을 집으로 가져갈 것이다."
+  },
+  "tip": "일치하는 것을 고르는 문제는 오답 넷을 지우는 게 빨라요. 나이, 시간(a.m./p.m.), 참가 일수, 유료/무료처럼 숫자·조건 표현을 하나씩 확인하세요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 28번 정답은?",
+      "③ 실제 우주비행사와의 화상 통화가 포함되어 있다예요."
+    ],
+    [
+      "캠프는 몇 시에 하나요?",
+      "오후 1시부터 6시까지예요. 오전이 아니에요."
+    ],
+    [
+      "셔틀 버스는 유료인가요?",
+      "아니요. 무료이고 하루에 두 번 운행해요."
+    ]
+  ],
+  "date": "2026-11-17"
+}

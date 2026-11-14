@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 26,
+  "type": "내용 불일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "가난한 사람들의 건강을 위해 평생 일한 의학 인류학자 Paul Farmer",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 26번",
+    "2026 9월 고1 영어 26번 해설",
+    "고1 9월 모의고사 26번 정답",
+    "고1 모의고사 내용 불일치",
+    "Paul Farmer",
+    "Partners In Health"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 26번은 의학 인류학자이자 의사인 Paul Farmer의 일생을 소개하는 글이에요. 마지막 문장에서 WHO 상은 사망 후(after his death)에 받았다고 했으니 '생전에 수상했다'는 ⑤가 틀렸어요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "출생·성장",
+      "1959년 매사추세츠에서 태어나 사회적 불평등을 일찍 인식하며 자랐다."
+    ],
+    [
+      "대학",
+      "Duke 대학교 시절 반년간 파리에 살며 프랑스어에 유창해졌다."
+    ],
+    [
+      "활동",
+      "졸업 후 아이티 Cangé의 병원에서 자원봉사, Harvard에서 석·박사, 1987년 Partners In Health 공동 설립."
+    ],
+    [
+      "업적",
+      "10권 넘는 책과 100편 넘는 논문, 사후에 WHO 상 수상."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "During his time at Duke University, he lived in Paris for half a year …",
+      "ko": "Duke 대학교에 다니는 동안, 그는 반년간 파리에 살았다 …",
+      "note": "① 일치."
+    },
+    {
+      "en": "In 1987, he co-founded Partners In Health, …",
+      "ko": "1987년에, 그는 Partners In Health를 공동 설립했다 …",
+      "note": "③ 일치."
+    },
+    {
+      "en": "… and after his death, he was also honored with the WHO Director-General's Global Health Leaders Award …",
+      "ko": "… 그리고 사망 후에, 그는 또한 WHO Director-General's Global Health Leaders Award를 수상했다 …",
+      "note": "after his death = 사후. ⑤ '생전에'와 맞지 않아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Duke University에 다니는 동안 반년간 파리에 살았다.",
+      "ko": "Duke University에 다니는 동안 반년간 파리에 살았다.",
+      "why": "일치. lived in Paris for half a year."
+    },
+    {
+      "en": "Cangé에 있는 병원에서 자원봉사 활동을 했다.",
+      "ko": "Cangé에 있는 병원에서 자원봉사 활동을 했다.",
+      "why": "일치. began volunteer work at a hospital in Cangé."
+    },
+    {
+      "en": "1987년에 Partners In Health를 공동 설립했다.",
+      "ko": "1987년에 Partners In Health를 공동 설립했다.",
+      "why": "일치. In 1987, he co-founded."
+    },
+    {
+      "en": "생애 동안 10권이 넘는 책과 100편이 넘는 학술 논문을 저술했다.",
+      "ko": "생애 동안 10권이 넘는 책과 100편이 넘는 학술 논문을 저술했다.",
+      "why": "일치. more than ten books and over a hundred academic papers."
+    },
+    {
+      "en": "WHO Director-General’s Global Health Leaders Award를 생전에 수상했다.",
+      "ko": "WHO 상을 생전에 수상했다.",
+      "why": "불일치(정답). after his death, 사후에 받았어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "계속적 용법 which",
+      "ex": "… became fluent in French, which benefited him in his future work in Haiti.",
+      "d": "which = 프랑스어에 유창해진 것(앞 절 전체)."
+    },
+    {
+      "t": "동격 콤마",
+      "ex": "Partners In Health, an organization that works in countries like Haiti …",
+      "d": "단체 이름 뒤에서 어떤 단체인지 풀어 줘요."
+    },
+    {
+      "t": "the + 형용사",
+      "ex": "to improve health for the poor",
+      "d": "the poor = poor people(가난한 사람들)."
+    }
+  ],
+  "vocab": [
+    [
+      "anthropologist",
+      "인류학자"
+    ],
+    [
+      "physician",
+      "의사"
+    ],
+    [
+      "awareness",
+      "인식"
+    ],
+    [
+      "inequality",
+      "불평등"
+    ],
+    [
+      "fluent",
+      "유창한"
+    ],
+    [
+      "volunteer work",
+      "자원봉사 활동"
+    ],
+    [
+      "co-found",
+      "공동 설립하다"
+    ],
+    [
+      "strengthen",
+      "강화하다"
+    ],
+    [
+      "academic",
+      "학술의"
+    ],
+    [
+      "honor",
+      "영예를 주다"
+    ],
+    [
+      "lifelong",
+      "평생의"
+    ]
+  ],
+  "summary": {
+    "en": "Paul Farmer was a medical anthropologist who worked to improve health for the poor and received a major award after his death.",
+    "ko": "Paul Farmer는 가난한 사람들의 건강을 개선하기 위해 일한 의학 인류학자로, 사후에 주요 상을 받았다."
+  },
+  "writing": {
+    "en": "After his death, he was honored with the WHO Director-General's Global Health Leaders Award.",
+    "ko": "사망 후에 그는 WHO Director-General's Global Health Leaders Award를 받았다."
+  },
+  "tip": "인물 일치 문제는 시간 표현(during, after graduating, after his death)을 꼭 확인하세요. 생전/사후, 전/후가 자주 바뀌어 나와요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 26번 정답은?",
+      "⑤예요. WHO 상은 생전이 아니라 사후(after his death)에 받았어요."
+    ],
+    [
+      "Partners In Health는 어떤 단체인가요?",
+      "아이티, 르완다, 페루 같은 나라에서 의료를 제공하고 공중 보건 체계를 강화하는 단체예요."
+    ],
+    [
+      "프랑스어는 어디에 도움이 되었나요?",
+      "훗날 아이티에서의 활동에 도움이 되었어요."
+    ]
+  ],
+  "date": "2026-11-16"
+}

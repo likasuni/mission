@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 33,
+  "type": "빈칸 추론",
+  "points": 3,
+  "answer": 1,
+  "topic": "아무것도 모방하지 않은 Pollock의 그림은 '예술 = 모방'이라는 정의가 부족함을 보여 준다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 33번",
+    "2026 9월 고1 영어 33번 해설",
+    "고1 9월 모의고사 33번 정답",
+    "고1 모의고사 빈칸 추론",
+    "mimesis 모방 Jackson Pollock",
+    "예술의 정의 지문"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 33번은 고대 그리스인들이 예술을 '현실의 모방'으로 보았지만, Jackson Pollock은 일부러 아무것도 모방하지 않은 작품을 만들었다는 글이에요. 그러니 '모방으로서의 예술'이라는 정의로는 예술을 다 설명할 수 없어요. 정답은 ① does not sufficiently define art예요.",
+  "flow": [
+    [
+      "고대 그리스",
+      "예술가의 목표는 시각적 경험을 모방하는 것. 조각·도자기의 사실주의."
+    ],
+    [
+      "문제 제기",
+      "하지만 현실 모방이라는 예술의 정의에는 문제가 있다."
+    ],
+    [
+      "반례",
+      "Pollock과 동료들은 알아볼 수 있는 사물을 닮지 않게 의식적으로 피했다."
+    ],
+    [
+      "결론",
+      "모방하지 않은 예술이 성공했으니, 모방으로서의 예술관은 예술을 충분히 정의하지 못한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "This definition of art as copying reality has a problem, though.",
+      "ko": "하지만 현실을 모방하는 것으로서의 예술의 이 정의에는 문제가 있다.",
+      "note": "정의에 '문제가 있다' = 충분하지 않다."
+    },
+    {
+      "en": "Jackson Pollock … intentionally did not copy existing objects in his art.",
+      "ko": "Jackson Pollock은 … 자신의 예술에서 기존 사물을 의도적으로 모방하지 않았다.",
+      "note": "모방 없는 예술이라는 반례예요."
+    },
+    {
+      "en": "They succeeded at making artwork that did not copy anything, thus demonstrating that the ancient Greek view of art as mimesis …",
+      "ko": "그들은 어떤 것도 모방하지 않은 예술 작품을 만드는 데 성공했고, 그리하여 모사로서의 고대 그리스 예술관이 …임을 보여 주었다.",
+      "note": "모방 없는 예술이 있다 → 모방이라는 정의는 예술을 충분히 정의하지 못한다."
+    }
+  ],
+  "choices": [
+    {
+      "en": "does not sufficiently define art",
+      "ko": "예술을 충분히 정의하지 못한다",
+      "why": "정답. 모방하지 않은 예술이 존재하니까요."
+    },
+    {
+      "en": "is historically preferred to abstract art",
+      "ko": "역사적으로 추상 예술보다 선호된다",
+      "why": "어느 쪽이 선호되었는지는 나오지 않아요."
+    },
+    {
+      "en": "cannot be criticized as much as modern art",
+      "ko": "현대 예술만큼 비판받을 수는 없다",
+      "why": "글은 오히려 그리스 예술관의 문제를 지적해요."
+    },
+    {
+      "en": "proves art is universal regardless of time period",
+      "ko": "예술이 시대와 관계없이 보편적임을 증명한다",
+      "why": "시대에 따라 예술관이 다르다는 쪽이에요."
+    },
+    {
+      "en": "inspires modern artists to revive the Greek style",
+      "ko": "현대 예술가들이 그리스 양식을 되살리도록 영감을 준다",
+      "why": "Pollock은 그리스식 모방을 일부러 피했어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "보어 to부정사",
+      "ex": "the visual artist's goal was to copy visual experience",
+      "d": "목표는 시각적 경험을 모방하는 것이었다."
+    },
+    {
+      "t": "would (과거의 습관)",
+      "ex": "Pollock and his fellow artists would consciously avoid making marks …",
+      "d": "~하곤 했다. avoid 뒤는 동명사."
+    },
+    {
+      "t": "결과의 분사구문",
+      "ex": "They succeeded at making artwork …, thus demonstrating that …",
+      "d": "그리하여 ~을 보여 주었다."
+    }
+  ],
+  "vocab": [
+    [
+      "realism",
+      "사실주의"
+    ],
+    [
+      "sculpture",
+      "조각"
+    ],
+    [
+      "pottery",
+      "도자기"
+    ],
+    [
+      "surmise",
+      "짐작하다"
+    ],
+    [
+      "intentionally",
+      "의도적으로"
+    ],
+    [
+      "consciously",
+      "의식적으로"
+    ],
+    [
+      "resemble",
+      "닮다"
+    ],
+    [
+      "recognizable",
+      "알아볼 수 있는"
+    ],
+    [
+      "demonstrate",
+      "보여 주다"
+    ],
+    [
+      "mimesis",
+      "모사, 모방"
+    ],
+    [
+      "sufficiently",
+      "충분히"
+    ]
+  ],
+  "summary": {
+    "en": "The ancient Greeks defined art as copying reality, but Pollock's art that copied nothing showed this definition is not enough to define art.",
+    "ko": "고대 그리스인들은 예술을 현실의 모방으로 정의했지만, 아무것도 모방하지 않은 Pollock의 예술은 이 정의가 예술을 정의하기에 충분하지 않음을 보여 주었다."
+  },
+  "writing": {
+    "en": "They succeeded at making artwork that did not copy anything.",
+    "ko": "그들은 어떤 것도 모방하지 않은 예술 작품을 만드는 데 성공했다."
+  },
+  "tip": "빈칸이 마지막에 있으면 중간의 though(하지만) 문장이 결론을 미리 알려 줘요. has a problem → 빈칸도 '부족하다'는 방향이에요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 33번 정답은?",
+      "① does not sufficiently define art예요."
+    ],
+    [
+      "mimesis는 무슨 뜻인가요?",
+      "모사, 즉 단순한 모방이에요. 글에서 simple copying이라고 풀어 줘요."
+    ],
+    [
+      "② 추상 예술보다 선호된다가 오답인 이유는?",
+      "선호를 비교하는 내용은 없어요. 모방이라는 정의의 한계를 말하는 글이에요."
+    ]
+  ],
+  "date": "2026-11-18"
+}

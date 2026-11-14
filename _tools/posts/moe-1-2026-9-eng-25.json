@@ -1,0 +1,158 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 3,
+  "topic": "미국 네 산업 부문의 원격 근로자 비율 (2019·2021·2022)",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 25번",
+    "2026 9월 고1 영어 25번 해설",
+    "고1 9월 모의고사 25번 정답",
+    "고1 모의고사 도표",
+    "원격 근로자 remote workers 도표",
+    "industry sector 도표"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 25번은 미국 네 산업 부문의 원격 근로자 비율을 2019·2021·2022년으로 비교한 도표예요. 교육 서비스 부문은 9%에서 18%로 두 배가 되었는데 ③은 세 배라고 해서 틀렸어요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "정보",
+      "11% → 45% → 39%. 2021년 최고, 2019→2022 격차(28%p)도 최대."
+    ],
+    [
+      "교육 서비스",
+      "9% → 23% → 18%. 2022년은 2019년의 2배."
+    ],
+    [
+      "농림어업",
+      "14% → 15% → 14%. 2021년 15%는 교육(23%)보다 8%p 낮음."
+    ],
+    [
+      "숙박·음식",
+      "2% → 5% → 5%. 매년 최저, 2019년 2%는 2022년 5%의 절반보다 낮음."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In the educational services sector, the percentage of remote workers in 2022 was three times as high as that in 2019.",
+      "ko": "교육 서비스업 부문에서, 2022년의 원격 근로자 비율은 2019년의 그것의 세 배만큼 높았다.",
+      "note": "2019년 9%, 2022년 18%. 9 × 3 = 27이므로 세 배가 아니라 두 배예요. ③이 불일치."
+    },
+    {
+      "en": "In 2021, the percentage of remote workers in the agriculture, forestry, fishing and hunting sector was eight percentage points lower than that in the educational services sector.",
+      "ko": "2021년에 농업, 임업, 어업 및 수렵업 부문의 원격 근로자 비율은 교육 서비스업 부문의 그것보다 8퍼센트포인트 낮았다.",
+      "note": "15%와 23%, 차이 8%p로 일치해요."
+    },
+    {
+      "en": "… its percentage in 2019 was less than half of that in 2022.",
+      "ko": "… 2019년의 그것의 비율은 2022년의 그것의 절반보다 낮았다.",
+      "note": "2%는 5%의 절반(2.5%)보다 낮아서 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "In 2021, the percentage of remote workers in the information sector was the highest among all industry sectors.",
+      "ko": "2021년 정보 부문 비율이 가장 높았다.",
+      "why": "일치. 45%로 최고예요."
+    },
+    {
+      "en": "Among all industry sectors, the industry sector with the largest gap between … 2019 and … 2022 was the information sector.",
+      "ko": "2019년과 2022년 격차가 가장 큰 부문은 정보 부문이다.",
+      "why": "일치. 정보 +28%p, 교육 +9%p, 농림어업 0, 숙박 +3%p."
+    },
+    {
+      "en": "In the educational services sector, the percentage of remote workers in 2022 was three times as high as that in 2019.",
+      "ko": "교육 서비스 부문의 2022년 비율은 2019년의 세 배였다.",
+      "why": "불일치(정답). 9% → 18%로 두 배예요."
+    },
+    {
+      "en": "In 2021, the percentage … in the agriculture, forestry, fishing and hunting sector was eight percentage points lower than that in the educational services sector.",
+      "ko": "2021년 농림어업 부문 비율은 교육 서비스보다 8%p 낮았다.",
+      "why": "일치. 15% vs 23%."
+    },
+    {
+      "en": "The accommodation and food services sector showed the lowest percentage … and its percentage in 2019 was less than half of that in 2022.",
+      "ko": "숙박·음식 부문은 매년 최저였고, 2019년 비율은 2022년의 절반보다 낮았다.",
+      "why": "일치. 2 / 5 / 5, 2 < 2.5."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "배수 + as ~ as",
+      "ex": "three times as high as that in 2019",
+      "d": "~의 세 배만큼 높은. 두 배는 twice as high as."
+    },
+    {
+      "t": "대명사 that",
+      "ex": "the gap between the percentage … in 2019 and that in 2022",
+      "d": "that = the percentage of remote workers."
+    },
+    {
+      "t": "less than half of",
+      "ex": "its percentage in 2019 was less than half of that in 2022",
+      "d": "~의 절반보다 적은."
+    }
+  ],
+  "vocab": [
+    [
+      "remote",
+      "원격의"
+    ],
+    [
+      "sector",
+      "부문"
+    ],
+    [
+      "industry",
+      "산업"
+    ],
+    [
+      "gap",
+      "격차"
+    ],
+    [
+      "educational",
+      "교육의"
+    ],
+    [
+      "agriculture",
+      "농업"
+    ],
+    [
+      "forestry",
+      "임업"
+    ],
+    [
+      "accommodation",
+      "숙박"
+    ],
+    [
+      "percentage point",
+      "퍼센트포인트"
+    ]
+  ],
+  "summary": {
+    "en": "In the educational services sector, the share of remote workers rose from 9% in 2019 to 18% in 2022, which is twice, not three times, as high.",
+    "ko": "교육 서비스업 부문의 원격 근로자 비율은 2019년 9%에서 2022년 18%로 세 배가 아니라 두 배가 되었다."
+  },
+  "writing": {
+    "en": "The percentage of remote workers in 2022 was twice as high as that in 2019.",
+    "ko": "2022년의 원격 근로자 비율은 2019년의 두 배였다."
+  },
+  "tip": "배수 표현(twice, three times)과 절반(half)은 직접 곱하고 나눠 보세요. 9 × 3 = 27인데 실제는 18이라 ③이 틀려요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 25번 정답은?",
+      "③이에요. 교육 서비스 부문은 9%에서 18%로 두 배가 됐어요."
+    ],
+    [
+      "②의 격차가 가장 큰 부문은?",
+      "정보 부문이에요. 11% → 39%로 28%p 차이예요."
+    ],
+    [
+      "⑤ 2%가 5%의 절반보다 낮다는 건 맞나요?",
+      "네. 5의 절반은 2.5이고 2는 그보다 낮아서 일치해요."
+    ]
+  ],
+  "date": "2026-11-16"
+}

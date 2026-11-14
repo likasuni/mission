@@ -1,0 +1,170 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 40,
+  "type": "요약문",
+  "points": 2,
+  "answer": 1,
+  "topic": "자아존중감은 관계의 문제를 알려 관계를 개선하도록 하는 감시 기제다",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 40번",
+    "2026 9월 고1 영어 40번 해설",
+    "고1 9월 모의고사 40번 정답",
+    "고1 모의고사 요약문 완성",
+    "self-esteem 자아존중감 감시 기제",
+    "problems relationships"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 40번은 진화적으로 자아존중감이 우리 관계의 질을 감시하는 기제로 발달했다는 글이에요. 관계에 위협(문제)이 생기면 경보를 울려, 관계를 바로잡도록 행동을 조정하게 해요. 정답은 ① problems … relationships예요.",
+  "flow": [
+    [
+      "정의",
+      "자아존중감은 관계의 질을 감시하는 기제로 발달했다."
+    ],
+    [
+      "작동",
+      "다른 사람들의 반응을 감시하다가 관계적 가치가 떨어지면 경보를 울린다."
+    ],
+    [
+      "반응",
+      "위협이 의식으로 올라와 상황을 평가하고, 관계를 바로잡기 위해 행동을 조정할지 생각한다."
+    ],
+    [
+      "의미",
+      "거절은 줄이고 수용은 늘리려는 기제이며, 지속적인 점검은 정상적인 인간다움이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The system monitors other people's reactions to our behaviors and sends an alarm that alerts us to any possible changes in our inclusion status.",
+      "ko": "그 시스템은 우리 행동에 대한 다른 사람들의 반응을 감시하고, 우리의 포함 상태의 가능한 변화에 대해 경보를 보낸다.",
+      "note": "관계의 이상(문제)을 알린다 → (A) problems."
+    },
+    {
+      "en": "When the alarm bell rings, the threat to our social bonds is pushed into conscious awareness …",
+      "ko": "경보가 울리면, 우리의 사회적 유대에 대한 위협이 의식으로 밀려 들어온다 …",
+      "note": "social bonds에 대한 threat = 사회적 유대의 문제."
+    },
+    {
+      "en": "Do I need to adjust my behaviors to fix the relationship?",
+      "ko": "관계를 바로잡기 위해 내 행동을 조정해야 하는가?",
+      "note": "행동 조정의 목적은 관계 → (B) relationships."
+    }
+  ],
+  "choices": [
+    {
+      "en": "problems … relationships",
+      "ko": "문제 … 관계",
+      "why": "정답. 유대에 문제가 있을 수 있다고 알려 관계를 향상시키게 한다."
+    },
+    {
+      "en": "improvements … interactions",
+      "ko": "향상 … 상호작용",
+      "why": "경보는 좋아진 것이 아니라 위협(문제)을 알려요."
+    },
+    {
+      "en": "improvements … adaptation",
+      "ko": "향상 … 적응",
+      "why": "(A)가 틀렸어요. 경보는 문제를 알려요."
+    },
+    {
+      "en": "patterns … comfort",
+      "ko": "패턴 … 편안함",
+      "why": "패턴이나 편안함은 글의 핵심이 아니에요."
+    },
+    {
+      "en": "problems … worry",
+      "ko": "문제 … 걱정",
+      "why": "(B)에 '걱정을 향상시킨다'는 말이 안 돼요. 목표는 관계 개선이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "alert A to B",
+      "ex": "an alarm that alerts us to any possible changes",
+      "d": "~에 대해 우리를 경계시키는 경보."
+    },
+    {
+      "t": "가주어 it + that절",
+      "ex": "it makes sense that the way we mobilize our internal resources … would be highly networked",
+      "d": "~은 타당하다."
+    },
+    {
+      "t": "attend to + 동명사",
+      "ex": "to attend to minimizing rejection and enhancing acceptance",
+      "d": "거절을 최소화하고 수용을 높이는 데 주의를 기울이다."
+    }
+  ],
+  "vocab": [
+    [
+      "evolutionary",
+      "진화적인"
+    ],
+    [
+      "self-esteem",
+      "자아존중감"
+    ],
+    [
+      "mechanism",
+      "기제"
+    ],
+    [
+      "monitor",
+      "감시하다"
+    ],
+    [
+      "alert",
+      "경계시키다"
+    ],
+    [
+      "inclusion",
+      "포함"
+    ],
+    [
+      "detect",
+      "탐지하다"
+    ],
+    [
+      "evaluate",
+      "평가하다"
+    ],
+    [
+      "mobilize",
+      "동원하다"
+    ],
+    [
+      "rejection",
+      "거절"
+    ],
+    [
+      "interpersonal",
+      "대인 관계의"
+    ],
+    [
+      "assess",
+      "평가하다"
+    ]
+  ],
+  "summary": {
+    "en": "Self-esteem monitors our relationships and alerts us to possible problems so that we can adjust our behavior to improve relationships.",
+    "ko": "자아존중감은 우리의 관계를 감시하고 가능한 문제를 알려 주어, 관계를 개선하도록 행동을 조정하게 한다."
+  },
+  "writing": {
+    "en": "Self-esteem has developed as a monitoring mechanism for the quality of our relationships.",
+    "ko": "자아존중감은 우리 관계의 질을 위한 감시 기제로서 발달해 왔다."
+  },
+  "tip": "요약문은 본문의 핵심어를 다른 말로 바꿔 넣어요. threat to our social bonds → problems, fix the relationship → enhance relationships처럼 짝을 찾으세요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 40번 정답은?",
+      "① problems … relationships예요."
+    ],
+    [
+      "(A)가 problems인 근거는?",
+      "경보가 울릴 때 '사회적 유대에 대한 위협(threat)'이 의식으로 올라온다고 해요."
+    ],
+    [
+      "⑤ problems … worry가 오답인 이유는?",
+      "(B)는 행동을 조정해 '향상시킬' 대상이라 걱정이 아니라 관계(relationships)예요."
+    ]
+  ],
+  "date": "2026-11-19"
+}

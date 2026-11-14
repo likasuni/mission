@@ -1,0 +1,166 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 4,
+  "topic": "반려동물 돌봄은 내가 원하는 것이 아니라 그들에게 필요한 것을 기준으로 (개 목욕)",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 35번",
+    "2026 9월 고1 영어 35번 해설",
+    "고1 9월 모의고사 35번 정답",
+    "고1 모의고사 흐름 무관 문장",
+    "반려견 목욕 지문",
+    "pet check-ups"
+  ],
+  "lead": "2026년 9월 고1 모의고사 영어 35번은 반려동물을 돌볼 때 '내가 원하는 것'보다 '그들에게 필요한 것'을 기준으로 해야 한다며, 개를 너무 자주 목욕시키지 말라고 하는 글이에요. 정기 건강 검진 이야기인 ④는 목욕이라는 흐름과 관계없어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "기준",
+      "돌봄의 기준은 '그들이 실제로 필요로 하는가'여야 한다."
+    ],
+    [
+      "예",
+      "냄새가 싫어 개를 일주일에 여러 번 씻기지만, 피부과 전문의는 피부에 나쁘다고 경고한다."
+    ],
+    [
+      "대안",
+      "냄새가 걱정되면 물 없는 샴푸와 빗질, 목욕은 일주일에 한두 번까지."
+    ],
+    [
+      "정리",
+      "대부분의 개는 정기적인 목욕이 필요 없고, 털이 많은 개도 6~8주마다면 된다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "④ Regular pet check-ups can help identify health problems before they become severe, …",
+      "ko": "④ 정기적인 반려동물 건강 검진은 건강 문제가 심각해지기 전에 확인하는 데 도움을 줄 수 있다 …",
+      "note": "건강 검진 이야기라 목욕 횟수라는 흐름에서 벗어나요."
+    },
+    {
+      "en": "③ Unless they have a skin condition …, most dogs don't need to be bathed on a regular basis.",
+      "ko": "③ 피부 질환이 있는 게 아니라면 … 대부분의 개는 정기적으로 목욕할 필요가 없다.",
+      "note": "목욕 이야기가 계속돼요."
+    },
+    {
+      "en": "⑤ Even dogs with thick, heavy coats generally only need baths every 6 to 8 weeks.",
+      "ko": "⑤ 빽빽하고 무거운 털을 가진 개들조차 일반적으로 6주에서 8주마다 목욕이 필요할 뿐이다.",
+      "note": "③에서 ⑤로 바로 이어져요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "잦은 목욕의 문제",
+      "why": "흐름 맞음. 주인 마음대로 자주 씻기는 것이 피부에 나쁘다."
+    },
+    {
+      "en": "②",
+      "ko": "냄새 대안",
+      "why": "흐름 맞음. 물 없는 샴푸와 빗질, 목욕은 줄이기."
+    },
+    {
+      "en": "③",
+      "ko": "정기 목욕 불필요",
+      "why": "흐름 맞음. 대부분의 개는 정기적인 목욕이 필요 없다."
+    },
+    {
+      "en": "④",
+      "ko": "정기 건강 검진",
+      "why": "정답(무관). 목욕이 아니라 건강 검진 이야기예요."
+    },
+    {
+      "en": "⑤",
+      "ko": "털 많은 개도 드물게",
+      "why": "흐름 맞음. ③을 이어 목욕 간격을 알려 줘요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "A rather than B",
+      "ex": "\"Is this what they actually need?\" rather than, \"What do I want?\"",
+      "d": "내가 원하는 것보다 그들에게 필요한 것."
+    },
+    {
+      "t": "unless",
+      "ex": "Unless they have a skin condition …",
+      "d": "~하지 않는다면."
+    },
+    {
+      "t": "가목적어 it",
+      "ex": "making it easier to treat and manage them",
+      "d": "it은 가목적어, to treat ~가 진목적어."
+    }
+  ],
+  "vocab": [
+    [
+      "criterion",
+      "기준"
+    ],
+    [
+      "encounter",
+      "마주치다"
+    ],
+    [
+      "bathe",
+      "목욕시키다"
+    ],
+    [
+      "religiously",
+      "꼬박꼬박"
+    ],
+    [
+      "warn against",
+      "~에 대해 경고하다"
+    ],
+    [
+      "practice",
+      "관행"
+    ],
+    [
+      "thoroughly",
+      "꼼꼼히"
+    ],
+    [
+      "prescribe",
+      "처방하다"
+    ],
+    [
+      "on a regular basis",
+      "정기적으로"
+    ],
+    [
+      "severe",
+      "심각한"
+    ],
+    [
+      "coat",
+      "(동물의) 털"
+    ]
+  ],
+  "summary": {
+    "en": "We should care for pets based on what they actually need, and most dogs don't need frequent baths because they are bad for their skin.",
+    "ko": "반려동물은 그들이 실제로 필요로 하는 것을 기준으로 돌봐야 하며, 잦은 목욕은 피부에 좋지 않아 대부분의 개에게 필요하지 않다."
+  },
+  "writing": {
+    "en": "Most dogs don't need to be bathed on a regular basis.",
+    "ko": "대부분의 개는 정기적으로 목욕할 필요가 없다."
+  },
+  "tip": "무관한 문장은 같은 소재(반려동물 건강)를 쓰면서 화제(목욕 → 건강 검진)만 살짝 바꿔요. ④를 빼고 ③ → ⑤로 바로 읽어 보면 자연스러워요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 35번 정답은?",
+      "④예요. 정기 건강 검진 이야기라 목욕 흐름과 관계없어요."
+    ],
+    [
+      "④도 반려동물 건강 이야기인데 왜 무관한가요?",
+      "글은 '목욕을 얼마나 자주 하느냐'를 말하고 있어요. 건강 검진은 다른 화제예요."
+    ],
+    [
+      "개는 얼마나 자주 목욕시키면 되나요?",
+      "글에 따르면 털이 많은 개도 보통 6~8주마다면 돼요."
+    ]
+  ],
+  "date": "2026-11-18"
+}

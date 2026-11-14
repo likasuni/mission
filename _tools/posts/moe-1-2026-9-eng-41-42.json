@@ -1,0 +1,225 @@
+{
+  "exam": "moe-1-2026-9",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "소셜 미디어가 언어 규칙의 장벽을 허물어 속어가 빠르게 퍼진다",
+  "lead": "2026년 9월 고1 모의고사 영어 41~42번은 인터넷과 소셜 미디어 때문에 속어(slang)의 역할이 근본적으로 바뀌었다는 장문 세트예요. 예전엔 표준 영어의 규칙을 따라야 대중에게 목소리를 낼 수 있었지만, 이제는 누구나 콘텐츠 제작자가 되어 속어를 빠르게 퍼뜨려요. 41번 제목은 ① When Slang Meets New Media, 42번은 밈이 빠르게 퍼진다는 흐름과 맞지 않는 (e) weaker가 틀린 낱말이에요.",
+  "flow": [
+    [
+      "변화",
+      "인터넷 때문에 대중문화에서 속어의 역할이 근본적으로 바뀌었다."
+    ],
+    [
+      "예전",
+      "표준 영어의 규칙 제정자들이 의사소통 경로를 지배했고, 인쇄·방송 매체의 기준에 맞춰야 했다."
+    ],
+    [
+      "지금",
+      "소셜 미디어가 장벽을 허물어 누구나 공적 인물이 되고, 옛 규칙을 강제할 사람이 없다."
+    ],
+    [
+      "확산",
+      "다양한 배경의 콘텐츠 제작자들이 속어를 합법화하고, 온라인 네트워크는 더 강해 밈이 빠르게 퍼진다."
+    ]
+  ],
+  "tip": "41번: 첫 문장 because of the internet과 Social media completely broke that barrier가 핵심이라 '새로운 미디어'가 들어간 제목을 고르세요. 42번: 마지막 문장의 and memes are now transmitted at rapid pace와 같은 방향이어야 해요. 빠르게 퍼지려면 네트워크가 더 '강해야' 해요.",
+  "keywords": [
+    "2026년 9월 고1 모의고사 영어 41~42번",
+    "2026 9월 고1 영어 41~42번 해설",
+    "고1 9월 모의고사 41번 정답",
+    "고1 9월 모의고사 42번 정답",
+    "고1 모의고사 장문 독해",
+    "속어 slang 소셜 미디어 지문"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 1,
+      "evidence": [
+        {
+          "en": "The role of 'slang' in popular culture has fundamentally changed because of the internet.",
+          "ko": "대중문화에서 '속어'의 역할은 인터넷 때문에 근본적으로 변했다.",
+          "note": "첫 문장이 주제예요. 속어 + 새로운 미디어(인터넷)."
+        },
+        {
+          "en": "Social media completely broke that barrier.",
+          "ko": "소셜 미디어가 그 장벽을 완전히 허물었다.",
+          "note": "새로운 미디어가 옛 언어 규칙의 장벽을 허물었어요."
+        },
+        {
+          "en": "TV presenters and journalists might not have been able to use slang, but content creators can.",
+          "ko": "TV 진행자와 기자들은 속어를 쓸 수 없었을지도 모르지만, 콘텐츠 제작자들은 쓸 수 있다.",
+          "note": "전통 매체와 새 미디어의 대비 = When Slang Meets New Media."
+        }
+      ],
+      "choices": [
+        {
+          "en": "When Slang Meets New Media",
+          "ko": "속어가 새로운 미디어를 만날 때",
+          "why": "정답. 인터넷·소셜 미디어로 속어의 역할이 바뀐 이야기 전체를 담아요."
+        },
+        {
+          "en": "Slang: Respected Throughout History",
+          "ko": "속어: 역사 내내 존중받다",
+          "why": "예전엔 규칙 제정자들 때문에 속어가 제약을 받았어요."
+        },
+        {
+          "en": "Content Creators, Use Standard Language!",
+          "ko": "콘텐츠 제작자들이여, 표준어를 사용하라!",
+          "why": "반대예요. 콘텐츠 제작자들은 속어를 쓰고 퍼뜨려요."
+        },
+        {
+          "en": "Break the Barrier Between Social Networks",
+          "ko": "소셜 네트워크 사이의 장벽을 허물어라",
+          "why": "허문 것은 언어 규칙(표준 영어)의 장벽이지 네트워크 사이의 장벽이 아니에요."
+        },
+        {
+          "en": "How Language Evolves in Traditional Media",
+          "ko": "전통 매체에서 언어는 어떻게 진화하는가",
+          "why": "글의 중심은 전통 매체가 아니라 새로운 미디어예요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 3,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "The loose social networks that previously connected us geographically are simply (e) weaker online, and memes are now transmitted at rapid pace.",
+          "ko": "이전에 우리를 지리적으로 연결했던 느슨한 사회적 네트워크는 온라인에서 그저 (e) 더 약하고, 밈은 이제 빠른 속도로 전파된다.",
+          "note": "네트워크가 더 약한데 밈이 빠르게 퍼진다면 앞뒤가 안 맞아요. 더 강하다(stronger)가 맞아요."
+        },
+        {
+          "en": "… nobody's left to (c) enforce the old rules.",
+          "ko": "… 옛 규칙을 (c) 강제할 사람이 아무도 남아 있지 않다.",
+          "note": "누구나 공적 인물이 되니 규칙을 강제할 사람이 없어요. 적절."
+        },
+        {
+          "en": "Content creators also come from a (d) greater variety of backgrounds than people working in traditional media.",
+          "ko": "콘텐츠 제작자들은 또한 전통 매체에서 일하는 사람들보다 (d) 더 다양한 배경 출신이다.",
+          "note": "그래서 속어가 경제적·사회적 장벽을 넘어요. 적절."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) channels",
+          "ko": "경로",
+          "why": "적절. 규범적 기준이 의사소통 '경로'를 지배해 왔다."
+        },
+        {
+          "en": "(b) within",
+          "ko": "~ 안에서",
+          "why": "적절. 예전엔 규칙 제정자들의 제약 '안에서' 활동해야 했다."
+        },
+        {
+          "en": "(c) enforce",
+          "ko": "강제하다",
+          "why": "적절. 옛 규칙을 '강제할' 사람이 없다."
+        },
+        {
+          "en": "(d) greater",
+          "ko": "더 다양한",
+          "why": "적절. 전통 매체보다 '더 다양한' 배경 → 장벽을 넘는다."
+        },
+        {
+          "en": "(e) weaker",
+          "ko": "weaker → stronger",
+          "why": "정답(부적절). 밈이 빠르게 전파되려면 온라인 네트워크가 더 '강해야' 해요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "want + O + to be p.p.",
+      "ex": "If you wanted your voice to be heard by the public, …",
+      "d": "목소리가 대중에게 들리기를 원했다면."
+    },
+    {
+      "t": "might have p.p.",
+      "ex": "TV presenters and journalists might not have been able to use slang",
+      "d": "쓸 수 없었을지도 모른다(과거 추측)."
+    },
+    {
+      "t": "both A and B",
+      "ex": "our influence both legitimizes these terms and gives them a large platform",
+      "d": "합법화하기도 하고 플랫폼을 주기도 한다."
+    }
+  ],
+  "vocab": [
+    [
+      "slang",
+      "속어"
+    ],
+    [
+      "fundamentally",
+      "근본적으로"
+    ],
+    [
+      "emergence",
+      "등장"
+    ],
+    [
+      "prescriptive norm",
+      "규범적 기준"
+    ],
+    [
+      "dominate",
+      "지배하다"
+    ],
+    [
+      "conform to",
+      "~에 순응하다"
+    ],
+    [
+      "barrier",
+      "장벽"
+    ],
+    [
+      "democratize",
+      "민주화하다"
+    ],
+    [
+      "enforce",
+      "강제하다"
+    ],
+    [
+      "legitimize",
+      "합법화하다"
+    ],
+    [
+      "transmit",
+      "전파하다"
+    ]
+  ],
+  "summary": {
+    "en": "Social media broke the old language rules, so content creators from diverse backgrounds now spread slang quickly through strong online networks.",
+    "ko": "소셜 미디어가 옛 언어 규칙을 허물어, 다양한 배경의 콘텐츠 제작자들이 이제 강한 온라인 네트워크를 통해 속어를 빠르게 퍼뜨린다."
+  },
+  "writing": {
+    "en": "Social media completely broke that barrier.",
+    "ko": "소셜 미디어가 그 장벽을 완전히 허물었다."
+  },
+  "note": "42번은 (e)가 있는 마지막 문장을 and 뒤까지 끝까지 읽는 게 핵심이에요. 밈이 빠르게(at rapid pace) 퍼진다는 결과와 '약하다'는 원인이 맞는지 확인하는 습관을 들이자고 말해 줘요.",
+  "faq": [
+    [
+      "2026년 9월 고1 모의고사 영어 41번 정답은?",
+      "① When Slang Meets New Media예요."
+    ],
+    [
+      "2026년 9월 고1 모의고사 영어 42번 정답은?",
+      "⑤ (e)예요. weaker를 stronger로 고쳐야 해요."
+    ],
+    [
+      "④ Break the Barrier Between Social Networks가 오답인 이유는?",
+      "허물어진 장벽은 표준 영어 규칙이 만든 장벽이에요. 소셜 네트워크 사이의 장벽이 아니에요."
+    ]
+  ],
+  "date": "2026-11-19"
+}
