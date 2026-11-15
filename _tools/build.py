@@ -256,6 +256,27 @@ def cp_news(body, d):
     note = ''  # 쿠팡 문구는 맨 위 한 번만 (끝 표기엔 '출판사 대가 없음'만)
     return body.replace('<!--BUYBOX-->', box).replace('<!--CPDIS-->', dis).replace('<!--CPNOTE-->', note)
 
+# 코코스학원 안내 띠: 모든 페이지 바닥글 바로 위 (2026-11-15 원장님 확정 — 자료실 방향 = 학원 원생 모집 우선).
+# 누른 횟수는 GA 이벤트 cocos_click (to: home·tel·talk) 로 재요. 홍보 문구에 '예비'·'선행' 은 쓰지 않아요.
+COCOS_BAND = '''<aside class="cc-band" aria-label="코코스학원 안내"><style>
+.cc-band{max-width:1040px;margin:-28px auto 0;padding:0 16px 8px;box-sizing:border-box}
+.cc-in{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:18px 20px;border-radius:16px;background:#142943;color:#fff}
+.cc-tx{flex:1 1 300px;min-width:0}
+.cc-tx b{display:block;font-size:1.05rem;line-height:1.45}
+.cc-tx span{display:block;margin-top:4px;font-size:.88rem;line-height:1.6;color:#c9d6e8}
+.cc-bt{display:flex;flex-wrap:wrap;gap:8px}
+.cc-bt a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:8px 14px;border-radius:10px;background:#fff;color:#142943;font-weight:700;font-size:.9rem;text-decoration:none;white-space:nowrap}
+.cc-bt a.g{background:#ffc857}
+@media(max-width:560px){.cc-bt{width:100%}.cc-bt a{flex:1 1 40%}.cc-bt a[data-cc=tel]{flex:1 1 100%;order:3}}
+@media print{.cc-band{display:none}}
+</style><div class="cc-in"><div class="cc-tx"><b>이 자료를 만든 리카수니 원장이 분당 이매동에서 직접 가르쳐요</b>
+<span>코코스학원 · 초등·중등·고등 영어·수학 · 한 반 최대 7명 · 무료 레벨테스트<br>경기 성남시 분당구 판교로 476 2층</span></div>
+<div class="cc-bt"><a class="g" data-cc="home" href="https://www.cocosedu.co.kr/" target="_blank" rel="noopener">학원 홈페이지</a>
+<a data-cc="tel" href="tel:0317060505">전화 031-706-0505</a>
+<a data-cc="talk" href="https://talk.naver.com/profile/c/cocos" target="_blank" rel="noopener">네이버 톡톡</a></div></div>
+<script>document.querySelectorAll('.cc-bt a').forEach(function(a){a.addEventListener('click',function(){try{gtag('event','cocos_click',{to:a.dataset.cc,from:location.pathname})}catch(e){}})})</script></aside>'''
+
+
 def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld=(), og_type='website', og_image=None):
     url = SITE + path
     META[path] = (title, desc)
@@ -306,6 +327,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 {body}
 {cm}
 </main>
+{COCOS_BAND}
 <footer>
 © 리카수니 자료실 · <a href="https://www.likasuni.com" target="_blank" rel="noopener">리카수니 블로그</a>
 <a href="/privacy.html">개인정보처리방침</a> <a href="/admin.html" rel="nofollow">관리자</a>
