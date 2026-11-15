@@ -6,7 +6,7 @@
 
 | 원장님이 말하면 | 주소 | 무엇 | 올리는 방법 |
 |---|---|---|---|
-| **자료실** (= "자료 블로그") | data.likasuni.com | 이 저장소 (GitHub Pages, `CNAME`) | 저장소에 쓰고 main 에 합치면 바로 반영 |
+| **자료실** (= "자료 블로그") | data.likasuni.com | 이 저장소 → Cloudflare Pages `likasuni-data` (2026-11-11~, GitHub Pages 아님) | main 에 합친 뒤 **`_tools/deploy.sh` 를 돌려야 반영** (이 Mac 에서 직접 올림. 합치기만 하면 다음 새벽 3:07 자동 작업 때까지 안 보여요). 올린 뒤 `curl` 로 실제 주소 확인 |
 | **블로그** (= "리카수니 블로그") | www.likasuni.com | 구글 블로그(Blogger), 이름 '리카수니 영어' 예정 | `_tools/blogger_post.py` 자동 발행 통로, 또는 붙여 넣을 HTML 전달 |
 | **둘 다** | 두 곳 | 자료실엔 상세 글, 블로그엔 구성이 다른 요약 글 | 같은 내용을 통째로 복사하지 않음 (검색 중복 방지) |
 
