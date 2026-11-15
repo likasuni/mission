@@ -960,8 +960,11 @@ def memo_card(m):  # 첫 화면 썸네일 카드 (한 줄 가로 나열, 넘치�
            else f'<span class="th ph">{e(m["one"]["key"])}</span>')
     return (f'<a href="/memo/{m["slug"]}/">{img}<span class="tx"><small>{m["date"][5:].replace("-", ".")} · {e(m["book"])} {e(m["where"])}</small>'
             f'<b>{e(m["h1"])}</b></span></a>')
-memo_home = (f'<section class="card mm-home"><style>{MEMO_CSS}</style><h2 style="margin:0 0 4px">✏️ 원장님 노트 <small class="muted" style="font-size:.8rem;font-weight:600">분석노트 만들며 정리한 포인트</small></h2>'
-             f'<div class="mm-row mm-two">{"".join(memo_card(m) for m in MEMOS[:4])}{f'<div class="mm-ad">{ad()}</div>' if MANUAL_ADS else ''}</div><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
+def memo_mini(m):  # 첫 화면: 그림 없이 제목 한 줄 (2026-11-15 원장님: 자료 요청 흐름 아래로 작게)
+    return (f'<li><a href="/memo/{m["slug"]}/" style="padding:7px 0"><small>{m["date"][5:].replace("-", ".")} · {e(m["book"])} {e(m["where"])}</small> '
+            f'<b style="font-size:.95rem">{e(m["h1"])}</b></a></li>')
+memo_home = (f'<section class="card mm-home"><style>{MEMO_CSS}</style><h2 style="margin:0 0 4px;font-size:1.05rem">✏️ 원장님 노트 <small class="muted" style="font-size:.8rem;font-weight:600">분석노트 만들며 정리한 포인트</small></h2>'
+             f'<ul class="mm-list">{"".join(memo_mini(m) for m in MEMOS[:4])}</ul><p style="margin:6px 0 0"><a href="/memo/">원장님 노트 전체 보기 →</a></p></section>') if MEMOS else ''
 
 var_files = sum(len(dict(VAR[k])) for k in var_sess)
 tiles = f'''<div class="grid4">
@@ -993,8 +996,6 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <a class="svc-c c5" href="/english/#words"><b>영어 단어 총정리</b><span>회차별 18~45번 핵심 어휘 정리</span><em>{len(word_sess)}개 회차</em></a>
 <a class="svc-c c4" href="/books/"><b>부교재 자료</b><span>수능특강 라이트·올림포스 등 분석노트·단어</span><em>{{NBOOKS}}권</em></a>
 </div>
-{memo_home}
-<a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>
 <section class="rq-box"><div class="rq-box-h"><b>자료 요청</b><span>필요한 자료를 고르면 카카오톡으로 받아요</span></div>
 <div class="rq-box-btns"><a class="rqb r1" href="/notes/"><b>모의고사 분석노트</b><small>18~45번 · 하루 1개 무료</small></a>
 <a class="rqb r2" href="/notes/?book=%EC%88%98%EB%8A%A5%ED%8A%B9%EA%B0%95%20%EB%9D%BC%EC%9D%B4%ED%8A%B8"><b>부교재 분석노트</b><small>수능특강 라이트·올림포스 등 · 하루 1개</small></a>
@@ -1006,12 +1007,15 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 ''' + ad(True).replace('class="ad-slot"', 'class="ad-slot rc-ad"') + '''
 <div id="talk" class="tk-in"><div class="tk-h"><b>자료 문의</b><span>"이런 자료도 받을 수 있나요?" 원장님께 물어보세요</span></div>
 <div class="tk-form"></div><div class="tk-list"><p class="muted">불러오는 중...</p></div></div></div></section>
+<!--NSBAN-->
 <h2 class="sec-h">최근 영어 모의고사</h2>
 <div class="card"><div class="chips chip-grid">''' + ''.join(
     f'<a class="chip" href="{subj_url(k, "영어")}">{e(s_name(k))}</a>' for k in sorted(en_sess, key=lambda k: (-s_year(k), -k[3], k[1]))[:9]) + '''</div>
 <p><a href="/english/">영어 모의고사 전체 회차 보기 →</a></p></div>''' + f'''
+{memo_home}
 <h2 class="sec-h">전과목 기출문제</h2>
 <p class="muted">국어·수학·사회·과학·한국사까지 전과목 문제지·정답·해설 PDF도 함께 제공해요. 총 {len(sessions)}개 회차, {len(R):,}개 파일.</p>''' + tiles
+body = body.replace('<!--NSBAN-->', f'''<a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>''')  # 내신 띠: 자료 요청 상자 바로 아래 (2026-11-15)
 
 # ---------- 영어 모의고사 허브 ----------
 def en_table(g):
