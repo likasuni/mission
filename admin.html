@@ -35,6 +35,7 @@ function shell() {
       <button class="tab" data-t="requests" onclick="showTab('requests')">자료 요청 <span id="n-requests"></span></button>
       <button class="tab" data-t="materials" onclick="showTab('materials')">자료 관리</button>
       <button class="tab" data-t="naesin" onclick="showTab('naesin')">학원생 승인 <span id="n-naesin"></span></button>
+      <button class="tab" data-t="people" onclick="showTab('people')">요청자</button>
     </div>
     <section id="panel"></section>`;
 }
@@ -48,6 +49,7 @@ async function showTab(t) {
   if (t === 'materials') await tabMaterials();
   if (t === 'notes') await tabNotes();
   if (t === 'naesin') await tabNaesin();
+  if (t === 'people') await tabPeople();
   updateBadges();
 }
 
@@ -282,6 +284,81 @@ async function nsSet(uid, status) {
   if (error) return toast('오류: ' + error.message);
   toast(status === 'approved' ? '승인했어요.' : '거절(취소)했어요.');
   showTab('naesin');
+}
+
+/* ---------- 요청자 (회원별 요청 기록, 2026-11-17~) ----------
+   서버 함수 admin_requesters() — 관리자만, 이메일·전화번호 없이 닉네임만. */
+let ppData = null, ppSort = 'req', ppOnly = 'req';
+const PP_ROLE = { student: ['학생', '#1e3a8a'], teacher: ['선생님·강사', '#b45309'], parent: ['학부모', '#2f855a'] };
+const ppGrade = o => o.k === 'book' ? '부교재' : (o.q && o.q.g ? '고' + o.q.g : '기타');
+const ppAgo = t => { if (!t) return '-'; const d = Math.floor((Date.now() - new Date(t)) / 864e5); return d <= 0 ? '오늘' : d + '일 전'; };
+async function tabPeople() {
+  if (!ppData) {
+    const { data, error } = await sb.rpc('admin_requesters');
+    if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
+    ppData = (data || []).filter(m => !m.admin);
+  }
+  const all = ppData, req = all.filter(m => m.orders.length);
+  const pct = (a, b) => b ? Math.round(a * 100 / b) + '%' : '-';
+  const week = t => t && Date.now() - new Date(t) < 7 * 864e5;
+  // 학년별: 요청 건수 / 요청한 사람 수
+  const gr = {};
+  for (const m of req) {
+    const seen = new Set();
+    for (const o of m.orders) { const g = ppGrade(o); gr[g] = gr[g] || { n: 0, p: 0 }; gr[g].n++; if (!seen.has(g)) { seen.add(g); gr[g].p++; } }
+  }
+  const gOrder = ['고1', '고2', '고3', '부교재', '기타'].filter(g => gr[g]);
+  const gTotal = gOrder.reduce((s, g) => s + gr[g].n, 0);
+  const rc = k => all.filter(m => m.role === k).length;
+  const stat = (n, l) => `<div style="flex:1 1 120px;padding:12px;border-radius:12px;background:#f3f6fb"><b style="font-size:1.4rem;color:#142943">${n}</b><br><span class="meta">${l}</span></div>`;
+  // 목록
+  let list = ppOnly === 'req' ? req : ppOnly === 'none' ? all.filter(m => !m.orders.length) : all;
+  const key = { req: m => m.orders.length, recent: m => +new Date(m.last_in || 0), gone: m => -new Date(m.last_req || m.last_in || 0), days: m => m.days };
+  list = [...list].sort((a, b) => key[ppSort](b) - key[ppSort](a));
+  const sbtn = (k, l) => `<button class="btn btn-sm ${ppSort === k ? 'btn-navy' : 'btn-line'}" onclick="ppSort='${k}';tabPeople()">${l}</button>`;
+  const obtn = (k, l) => `<button class="btn btn-sm ${ppOnly === k ? 'btn-navy' : 'btn-line'}" onclick="ppOnly='${k}';tabPeople()">${l}</button>`;
+  const row = m => {
+    const r = PP_ROLE[m.role];
+    const gs = {}; m.orders.forEach(o => { const g = ppGrade(o); gs[g] = (gs[g] || 0) + 1; });
+    const main = Object.entries(gs).sort((a, b) => b[1] - a[1]).map(([g, n]) => `${g} ${n}`).join(' · ');
+    return `<details class="card" style="padding:12px 16px">
+      <summary style="cursor:pointer;list-style:none">
+        <div class="row between" style="gap:8px;flex-wrap:wrap">
+          <div><strong>${esc(m.name)}</strong>
+            ${r ? `<span style="font-size:.78rem;font-weight:700;color:${r[1]}">[${r[0]}]</span>` : '<span class="meta">[구분 없음]</span>'}
+            ${m.academy ? '<span class="tag ok">학원생</span>' : ''}
+            <span class="meta">${m.via === 'kakao' ? '카카오' : m.via === 'google' ? '구글' : esc(m.via || '')}</span><br>
+            <span class="meta">요청 <b>${m.orders.length}</b>건 · ${m.days}일 · ${main || '요청 없음'}${m.comments ? ' · 댓글 ' + m.comments : ''}</span></div>
+          <div class="meta">마지막 방문 ${ppAgo(m.last_in)}<br>가입 ${fmtDate(m.joined)}</div>
+        </div></summary>
+      ${m.orders.length ? `<ul style="margin:10px 0 0;padding-left:18px;font-size:.9rem">${m.orders.map(o =>
+        `<li>${esc(o.l || '')} <span class="meta">${fmtDate(o.t)} · ${{ missing: '만드는 중', resolved: '받을 수 있음', sent: '받음', expired: '기한 지남', done: '처리됨' }[o.s] || esc(o.s)}</span></li>`).join('')}</ul>`
+        : '<p class="meta" style="margin:8px 0 0">아직 요청한 자료가 없어요.</p>'}
+    </details>`;
+  };
+  $('#panel').innerHTML = `
+    <div class="card"><h2>요청자 한눈에 보기 <span class="meta">관리자 계정 빼고</span></h2>
+      <div class="row" style="flex-wrap:wrap;gap:8px;margin:8px 0">
+        ${stat(all.length + '명', '가입 회원')}
+        ${stat(all.filter(m => week(m.last_in)).length + '명', '최근 7일 방문')}
+        ${stat(req.length + '명', `요청한 회원 (${pct(req.length, all.length)})`)}
+        ${stat(req.filter(m => m.days >= 2).length + '명', `다른 날 다시 요청 (${pct(req.filter(m => m.days >= 2).length, req.length)})`)}
+      </div>
+      <p style="margin:12px 0 4px"><b>학년별 요청</b> <span class="meta">건수 · 요청한 사람</span></p>
+      ${gOrder.map(g => `<div class="row" style="gap:8px;align-items:center;margin:4px 0">
+        <span style="width:52px">${g}</span>
+        <div style="flex:1;background:#eef1f6;border-radius:6px;height:14px;overflow:hidden"><div style="width:${gr[g].n * 100 / gTotal}%;height:100%;background:#142943"></div></div>
+        <span class="meta" style="width:110px;text-align:right">${gr[g].n}건 · ${gr[g].p}명</span></div>`).join('')}
+      <p style="margin:12px 0 4px"><b>회원 구분</b> <span class="meta">첫 요청 때 고름 (11-15~)</span></p>
+      <p class="meta" style="margin:0">학생 ${rc('student')} · 선생님·강사 ${rc('teacher')} · 학부모 ${rc('parent')} · 아직 안 고름 ${all.length - rc('student') - rc('teacher') - rc('parent')}</p>
+      <p class="meta" style="margin:10px 0 0">사는 지역은 모아지지 않아서 알 수 없어요. 이메일·전화번호는 보여 주지 않아요.</p>
+    </div>
+    <div class="card"><div class="row" style="flex-wrap:wrap;gap:6px">
+      ${obtn('req', `요청한 회원 ${req.length}`)} ${obtn('none', `요청 없음 ${all.length - req.length}`)} ${obtn('all', `전체 ${all.length}`)}
+    </div><div class="row" style="flex-wrap:wrap;gap:6px;margin-top:8px">
+      <span class="meta">정렬</span> ${sbtn('req', '요청 많은 순')} ${sbtn('days', '자주 온 순')} ${sbtn('recent', '최근 방문 순')} ${sbtn('gone', '오래 안 온 순')}
+    </div><p class="meta" style="margin:8px 0 0">이름을 누르면 요청한 자료가 펼쳐져요.</p></div>
+    ${list.map(row).join('') || '<div class="card"><p class="muted">해당하는 회원이 없어요.</p></div>'}`;
 }
 
 /* ---------- 분석노트 요청 (카톡 자동 발송 기록) ---------- */
