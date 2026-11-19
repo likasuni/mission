@@ -62542,5 +62542,25 @@
 "id": "1xe6ypt9EM7rWpAA6Hvim1ldWlCOUW-AB",
 "size": 41023,
 "title": "2026학년도 대학수학능력시험 화학2 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "영어",
+"group": "영어",
+"kind": "문제",
+"id": "1eq4ymB6S6MJoD3gVkavvhK73ln3p3P9t",
+"size": 1481135,
+"title": "2027학년도 대학수학능력시험 영어 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "영어",
+"group": "영어",
+"kind": "정답",
+"id": "1iCXV2dJlZITGh__IO2-B1y9NPnxGuUqO",
+"size": 73778,
+"title": "2027학년도 대학수학능력시험 영어 정답.pdf"
 }
 ]
