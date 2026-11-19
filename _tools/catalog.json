@@ -62546,6 +62546,46 @@
 {
 "exam": "sn",
 "year": 2027,
+"subject": "국어",
+"group": "국어",
+"kind": "문제",
+"id": "1OviJPgsHYS6xE3mPXPFznlAZ9kZzUOag",
+"size": 3284093,
+"title": "2027학년도 대학수학능력시험 국어 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "국어",
+"group": "국어",
+"kind": "정답",
+"id": "1gzLuKfVPKVhFIyoEZZiNoVrnrS8La5A6",
+"size": 77560,
+"title": "2027학년도 대학수학능력시험 국어 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "수학",
+"group": "수학",
+"kind": "문제",
+"id": "16pVlHtX-bdeFeZlWxmJ_f4DDW0tryGz9",
+"size": 1221296,
+"title": "2027학년도 대학수학능력시험 수학 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "수학",
+"group": "수학",
+"kind": "정답",
+"id": "1A24uUach9hTk4Tm20cY5fO3sVHQwGO8u",
+"size": 77385,
+"title": "2027학년도 대학수학능력시험 수학 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
 "subject": "영어",
 "group": "영어",
 "kind": "문제",
