@@ -206,6 +206,10 @@ def s_name(k, short=False):
         return f'{y}년 {m}월 고{g} 모의고사' if not short else f'{m}월'
     return f'{y}학년도 수능'
 
+def s_alias(k):  # 검색 제목용 다른 이름 (2026-11-21 원장님, 네이버 유입 검색어: '2026 수능 영어 pdf'·'2026 고1 10모 영어')
+    ex, g, y, m = k
+    return f'{y - 1} 수능' if ex == 'sn' else f'{m}모'  # 수능은 시행 연도로도 찾고, 모의고사는 '10모' 줄임말로 찾음
+
 def s_org(k):
     ex, g, y, m = k
     if ex == 'sn': return '한국교육과정평가원 (대학수학능력시험)'
@@ -457,7 +461,7 @@ for idx, k in enumerate(keys_sorted):
 {rows}
 {ad()}
 {pn}'''
-    page(s_url(k), f'{name} ' + ('등급컷 · ' if inf.get('rows') else '') + '전과목 기출문제·정답·해설 PDF | 리카수니 자료실',
+    page(s_url(k), f'{name} ({s_alias(k)}) ' + ('등급컷 · ' if inf.get('rows') else '') + '전과목 기출문제·정답·해설 PDF | 리카수니 자료실',
          f'{name} 전과목 기출문제 PDF 무료 다운로드와 ' + ('등급컷·시험 요약. ' if inf else '') + f'{sub_names} 문제지·정답·해설. 리카수니 자료실', body, crumbs, active,
          comments=(s_url(k).strip('/'), name))
 
@@ -537,11 +541,11 @@ for idx, k in enumerate(keys_sorted):
             body += post_card([p for p in POSTS_BY[k] if p['subj'] == s], f'{full} 문항별 해설')
         body = body.replace('<!--READ-->\n', '').replace('<!--READ-->', '')
         if en_top:
-            page(subj_url(k, s), f'{full} ' + ('기출문제·정답·해설·분석노트 PDF' if k[0] == 'sn' else '분석노트·변형문제·단어 PDF') + ' | 리카수니 자료실',
+            page(subj_url(k, s), f'{full} ({s_alias(k)}) ' + ('기출문제·정답·해설·분석노트 PDF' if k[0] == 'sn' else '기출문제·분석노트·변형문제·단어 PDF') + ' | 리카수니 자료실',
                  f'{full} 문항별 분석노트, 변형문제, 영어 단어 총정리와 기출 원본(문제지·정답) PDF 무료. {s_when(k)}. 리카수니 자료실',
                  body, crumbs + [(subj_url(k, s), sn)], '/english/', comments=(subj_url(k, s).strip('/'), full))
         else:
-            page(subj_url(k, s), f'{full} 기출문제·해설 PDF 다운로드 | 리카수니 자료실',
+            page(subj_url(k, s), f'{full} ({s_alias(k)}) 기출문제·해설 PDF 다운로드 | 리카수니 자료실',
                  f'{full} 문제지·정답·해설 PDF 무료 다운로드. {s_when(k)}. 리카수니 자료실',
                  body, crumbs + [(subj_url(k, s), sn)], active, comments=(subj_url(k, s).strip('/'), full))
 
@@ -639,7 +643,7 @@ for p in POSTS:
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p['faq']]})
     crumbs = [('/', '홈'), ('/suneung/' if k[0] == 'sn' else f'/moe/go{k[1]}/', '수능 기출' if k[0] == 'sn' else f'고{k[1]} 모의고사'),
               (s_url(k), s_name(k)), (subj_url(k, p['subj']), sn), (url, f'{post_no(p)}번 해설')]
-    page(url, f'{nm} 해설·분석 {ans_s}{vtag} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
+    page(url, f'{nm}' + (f' ({s_alias(p["k"])})' if p['k'][0] == 'sn' else '') + f' 해설·분석 {ans_s}{vtag} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
          desc[:150], body, crumbs, '/posts/',
          comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
     for q in qs if multi else []:  # 세트로 합치기 전 번호별 주소(…/41/)는 세트 페이지로 넘겨 줌
