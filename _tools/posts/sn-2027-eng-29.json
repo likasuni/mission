@@ -1,0 +1,63 @@
+{
+  "exam": "sn-2027",
+  "n": 29,
+  "type": "어법",
+  "points": 2,
+  "answer": 3,
+  "topic": "믿음을 의심하고 시험해 보는 사람이 더 비판적으로 생각한다",
+  "date": "2026-11-20",
+  "keywords": ["2027 수능 영어 29번", "2027학년도 수능 29번 해설", "2027 수능 29번 정답", "수능 영어 어법", "동명사 주어 어법", "2027 수능 영어 해설"],
+  "lead": "2027학년도 수능 영어 29번은 자기 믿음을 의심하고 시험해 보는 태도를 다룬 어법 문항이에요. ③ think 뒤로 reflectively about the existing beliefs가 이어지고 진짜 동사 helps가 따로 있어요. 문장의 주어 자리라서 동사원형 think가 아니라 동명사 thinking이 와야 해요. 정답은 ③이에요.",
+  "flow": [
+    ["현상", "사람들은 객관적 증거가 거의 없어도 자기 믿음과 맞는 생각을 믿는 경향이 있다."],
+    ["문제", "그런 생각의 바탕이 주관적 관찰이라면 결국 틀린 것으로 드러날 수 있다."],
+    ["대안", "신중한 사람은 기존 믿음을 그냥 유지하지 않고 시험해 보며, 증거가 맞지 않으면 다른 관점에서 다시 살핀다."],
+    ["효과", "기존 믿음을 되짚어 보면 증거에 맞게 믿음을 고치고, 솔깃하거나 익숙하다는 이유만으로 새 생각을 받아들이지 않게 된다."],
+    ["결론", "자기 믿음을 객관화하고 시험하는 사람은 그렇지 않은 사람보다 더 비판적으로 생각한다."]
+  ],
+  "evidence": [
+    {"en": "Therefore, ③ think reflectively about the existing beliefs helps people adjust them …", "ko": "따라서 기존 믿음에 대해 숙고하며 생각하는 것은 사람들이 그것을 조정하도록 돕는다 …", "note": "helps가 이 문장의 진짜 동사예요. 그 앞 think reflectively about ~ 덩어리는 주어라서 동명사 Thinking으로 고쳐야 해요."},
+    {"en": "they reexamine ② it from alternative viewpoints", "ko": "그들은 다른 관점에서 그것을 다시 살핀다", "note": "it은 앞의 the idea(단수)를 받아요. 단수 대명사라 맞아요."},
+    {"en": "those who objectify and test their own beliefs tend to think more critically than those who ⑤ do not.", "ko": "자기 믿음을 객관화하고 시험하는 사람은 그렇지 않은 사람보다 더 비판적으로 생각하는 경향이 있다.", "note": "do not은 objectify and test their own beliefs를 대신하는 대동사예요. 일반동사를 받으니 do가 맞아요."}
+  ],
+  "choices": [
+    {"en": "① largely rely on", "ko": "능동 동사", "why": "적절. 주어 the assumptions(복수)에 맞는 복수 동사이고, '가정이 주관적 관찰에 의존한다'는 능동 관계예요. underlying them은 앞에서 assumptions를 꾸며요."},
+    {"en": "② it", "ko": "단수 대명사", "why": "적절. 앞 문장의 the idea(단수)를 가리켜요."},
+    {"en": "③ think", "ko": "think → Thinking", "why": "정답(틀림). 뒤에 helps라는 동사가 따로 있어요. think reflectively about the existing beliefs는 주어 자리라 동명사 Thinking이 와야 해요."},
+    {"en": "④ what", "ko": "관계대명사 what", "why": "적절. 전치사 with의 목적어 자리이고, 뒤의 they have long believed에 목적어가 빠져 있어요. '그들이 오랫동안 믿어 온 것'이에요."},
+    {"en": "⑤ do", "ko": "대동사", "why": "적절. 앞의 objectify and test their own beliefs(일반동사)를 대신해요. those가 복수라 does가 아닌 do예요."}
+  ],
+  "grammar": [
+    {"t": "동명사 주어 + 단수 동사", "ex": "Thinking reflectively about the existing beliefs helps people adjust them …", "d": "문장 맨 앞 동사원형은 명령문일 때만 와요. 뒤에 진짜 동사(helps)가 따로 있으면 앞부분은 주어라서 동명사나 to부정사로 바꿔야 해요."},
+    {"t": "help + 목적어 + 동사원형", "ex": "… helps people adjust them according to available evidence.", "d": "help는 목적격 보어로 동사원형과 to부정사를 모두 써요. adjust는 맞아요."},
+    {"t": "enable + 목적어 + to부정사", "ex": "it enables people to become less likely to accept new ideas …", "d": "enable은 반드시 to부정사를 써요. help와 헷갈리지 마세요."},
+    {"t": "현재분사 후치 수식", "ex": "the assumptions underlying them", "d": "underlying them이 assumptions를 뒤에서 꾸며요. '그것들의 바탕이 되는 가정'. 진짜 동사는 rely on이에요."}
+  ],
+  "vocab": [
+    ["correspond to", "~와 일치하다, 들어맞다"],
+    ["objective", "객관적인"],
+    ["turn out to be", "~인 것으로 드러나다"],
+    ["assumption", "가정, 전제"],
+    ["underlie", "~의 바탕이 되다"],
+    ["subjective", "주관적인"],
+    ["entertain", "(생각을) 품다"],
+    ["alternative", "다른, 대안의"],
+    ["go about", "(일을) 시작하다, 착수하다"],
+    ["reflectively", "숙고하여, 곰곰이"],
+    ["adjust", "조정하다"],
+    ["tempting", "솔깃한, 유혹적인"],
+    ["consistent with", "~와 일치하는"],
+    ["considerably", "상당히"],
+    ["objectify", "객관화하다"],
+    ["critically", "비판적으로"]
+  ],
+  "summary": {"en": "People who question and test their own beliefs, instead of simply keeping them, think more critically and adjust their beliefs to the evidence.", "ko": "자기 믿음을 그냥 유지하지 않고 의심하고 시험해 보는 사람은 더 비판적으로 생각하고 증거에 맞게 믿음을 고친다."},
+  "writing": {"en": "Testing our beliefs helps us think more critically.", "ko": "우리의 믿음을 시험해 보는 것은 우리가 더 비판적으로 생각하도록 돕는다."},
+  "tip": "밑줄이 문장 맨 앞의 동사원형이면 먼저 그 문장의 진짜 동사를 찾으세요. 뒤에 helps 같은 동사가 따로 있으면 밑줄 친 부분은 주어예요. 주어는 동명사(-ing)나 to부정사여야 해요.",
+  "note": "③은 Therefore 다음에 바로 동사원형이 와서 명령문처럼 보여요. 하지만 뒤에 helps가 있으니 주어예요. '동사가 두 개면 하나는 가짜' — 이 원칙으로 확인해 보세요.",
+  "faq": [
+    ["2027학년도 수능 영어 29번 정답은?", "③ think예요. 뒤에 helps라는 동사가 따로 있어서 think reflectively about the existing beliefs는 주어 자리예요. 동명사 Thinking으로 고쳐야 해요."],
+    ["2027 수능 29번은 어떤 유형인가요?", "밑줄 친 부분 중 어법상 틀린 것을 고르는 2점 어법 문항이에요. 자기 믿음을 시험해 보는 비판적 사고를 다룬 지문이에요."],
+    ["④ what은 왜 맞나요?", "전치사 with의 목적어 자리이고, 뒤의 they have long believed에 believed의 목적어가 빠져 있어요. '그들이 오랫동안 믿어 온 것'이라 관계대명사 what이 맞아요."]
+  ]
+}

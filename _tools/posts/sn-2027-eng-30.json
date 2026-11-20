@@ -1,0 +1,63 @@
+{
+  "exam": "sn-2027",
+  "n": 30,
+  "type": "어휘",
+  "points": 3,
+  "answer": 3,
+  "topic": "집단 지성의 한계: 지능은 더해지지 않는 개인의 능력이다",
+  "date": "2026-11-20",
+  "keywords": ["2027 수능 영어 30번", "2027학년도 수능 30번 해설", "2027 수능 30번 정답", "수능 영어 어휘 문항", "집단 지성 지문 additive", "2027 수능 영어 해설"],
+  "lead": "2027학년도 수능 영어 30번은 '집단이 개인보다 더 똑똑할 수 있다'는 주장의 한계를 다룬 3점 어휘 문항이에요. 바로 앞에서 군중 속에 진짜 전문가가 있을 때만 집단 지성이 통한다고 했으니, 지능은 사람 수만큼 더해지지 않는 능력이에요. ③ additive(더해지는)는 non-additive(더해지지 않는)가 되어야 해요. 정답은 ③이에요.",
+  "flow": [
+    ["주장 소개", "어떤 이들은 개미·벌처럼 개인들의 집단이 한 개인보다 더 지적일 수 있다고 믿는다."],
+    ["인정", "군중에게 질문하면 문헌을 찾거나 철학자에게 묻는 것보다 좋은 답을 쉽게 얻을 수도 있다."],
+    ["한계", "하지만 그것은 군중 속에 진짜 전문가가 있을 때만 믿을 만하게 통한다. 지능은 더해지지 않는 개인의 능력이기 때문이다."],
+    ["집단의 몫", "집단은 대성당 건축 같은 계획을 실행하고, 오랜 시행착오와 세대를 넘는 협력으로 새 사회 양식을 만들 수 있다."],
+    ["결론", "그러나 시·소설 쓰기, 자연의 발견, 어려운 수학 문제 풀이는 주로 개인이나 아주 작은 집단이 한다."]
+  ],
+  "evidence": [
+    {"en": "But this works in a ② reliable fashion only where some genuine expert happens to be in the crowd.", "ko": "하지만 이것은 군중 속에 우연히 진짜 전문가가 있는 경우에만 믿을 만한 방식으로 통한다.", "note": "집단의 답이 좋은 건 그 안의 '한 사람' 덕분이라는 뜻이에요. 사람이 많아진다고 지능이 늘지 않는다는 말로 이어져요."},
+    {"en": "This is because human intelligence is an individual capability that is ③ additive.", "ko": "이는 인간의 지능이 더해지는 개인의 능력이기 때문이다. (→ 더해지지 않는)", "note": "This is because는 앞 문장(전문가가 있을 때만 통함)의 이유예요. 지능이 더해진다면 전문가 없이도 통해야 하니 앞뒤가 맞지 않아요. non-additive가 맞아요."},
+    {"en": "This is done predominantly by ⑤ individuals or by very small groups.", "ko": "이것은 주로 개인이나 아주 작은 집단에 의해 이루어진다.", "note": "마지막 결론도 '창의적 지적 작업은 개인의 몫'이에요. 지능 = 개인 능력, 더해지지 않음과 같은 방향이에요."}
+  ],
+  "choices": [
+    {"en": "① easily", "ko": "쉽게", "why": "적절. 군중에게 묻는 것이 문헌을 찾는 것보다 '쉽게' 답을 얻는 방법일 수 있다는 인정 부분이에요."},
+    {"en": "② reliable", "ko": "믿을 만한", "why": "적절. 진짜 전문가가 있을 때만 '믿을 만하게' 통한다는 조건이에요."},
+    {"en": "③ additive", "ko": "더해지는 → 더해지지 않는", "why": "정답(부적절). 앞 문장의 이유가 되려면 지능은 사람 수만큼 합쳐지지 않는 능력이어야 해요. non-additive가 맞아요."},
+    {"en": "④ collaboration", "ko": "협력", "why": "적절. 학문 분야를 만들고 유지하는 세대를 넘는 '협력'은 집단이 할 수 있는 일의 예예요."},
+    {"en": "⑤ individuals", "ko": "개인들", "why": "적절. 시·소설·발견·수학 문제는 주로 개인이나 아주 작은 집단이 한다는 결론이에요."}
+  ],
+  "grammar": [
+    {"t": "비교 대상 than by -ing", "ex": "you may get a good answer more easily than by, say, researching the literature …", "d": "by addressing ~(군중에게 묻는 방법)와 by researching ~(문헌 찾는 방법)을 비교해요. say는 '예를 들어'라는 삽입어예요."},
+    {"t": "only where ~", "ex": "this works in a reliable fashion only where some genuine expert happens to be in the crowd", "d": "'~인 경우에만'. 조건을 좁히는 표현이라 주장을 제한하는 신호예요. 바로 뒤 This is because가 그 이유를 말해요."},
+    {"t": "happen to V", "ex": "some genuine expert happens to be in the crowd", "d": "'우연히 ~하다'. 전문가가 있는 것이 우연이라는 뜻이라 집단 지성이 늘 믿을 만하지는 않다는 말이에요."},
+    {"t": "과거분사 후치 수식", "ex": "individuals taken singly", "d": "'하나씩 따로 본 개인들'. taken singly가 individuals를 뒤에서 꾸며요."}
+  ],
+  "vocab": [
+    ["collective", "집단, 집합체"],
+    ["singly", "하나씩, 따로"],
+    ["point to", "~을 예로 들다, 가리키다"],
+    ["address", "(질문을) 제기하다, 던지다"],
+    ["crowd intelligence", "군중 지성, 집단 지성"],
+    ["literature", "문헌"],
+    ["reliable", "믿을 만한"],
+    ["genuine", "진짜의"],
+    ["capability", "능력"],
+    ["additive", "더해지는, 부가적인"],
+    ["carry out", "실행하다"],
+    ["trial-and-error", "시행착오"],
+    ["transgenerational", "세대를 넘는"],
+    ["sustainment", "유지"],
+    ["discipline", "학문 분야"],
+    ["predominantly", "주로, 대개"]
+  ],
+  "summary": {"en": "Although collectives can carry out large plans and evolve social patterns, intelligence is an individual, non-additive capability, so creative intellectual work is done mainly by individuals or very small groups.", "ko": "집단은 큰 계획을 실행하고 사회 양식을 발전시킬 수 있지만, 지능은 더해지지 않는 개인의 능력이라 창의적인 지적 작업은 주로 개인이나 아주 작은 집단이 한다."},
+  "writing": {"en": "A crowd is only as smart as the expert in it.", "ko": "군중은 그 안에 있는 전문가만큼만 똑똑하다."},
+  "tip": "This is because 문장에 밑줄이 있으면 앞 문장과 '원인-결과'로 맞는지 확인하세요. 앞에서 '전문가가 있을 때만 통한다'고 했으니, 지능이 사람 수만큼 쌓인다는 additive는 이유가 될 수 없어요. 반의어(non-additive)를 넣어 읽어 보면 바로 보여요.",
+  "note": "어휘 문항은 But, only where처럼 주장을 제한하는 말 바로 뒤에 답이 자주 숨어 있어요. 글쓴이가 어느 쪽 편인지(집단 지성에 비판적)를 먼저 잡고 밑줄을 보세요.",
+  "faq": [
+    ["2027학년도 수능 영어 30번 정답은?", "③ additive예요. 진짜 전문가가 있을 때만 집단 지성이 통한다는 앞 문장의 이유가 되려면 지능은 '더해지지 않는(non-additive)' 개인 능력이어야 해요."],
+    ["2027 수능 30번은 어떤 유형인가요?", "문맥상 낱말의 쓰임이 적절하지 않은 것을 고르는 3점 어휘 문항이에요. 집단 지성의 한계를 다룬 지문이에요."],
+    ["④ collaboration은 왜 맞나요?", "학문 분야를 만들고 유지하는 데 필요한 세대를 넘는 협력은 집단이 할 수 있는 일의 예예요. 글쓴이도 집단의 이런 능력은 인정해요."]
+  ]
+}

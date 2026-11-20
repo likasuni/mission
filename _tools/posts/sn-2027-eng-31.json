@@ -1,0 +1,62 @@
+{
+  "exam": "sn-2027",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "조작 장치를 여러 단계로 만들면 실수로 작동시킬 일이 줄어든다",
+  "date": "2026-11-20",
+  "keywords": ["2027 수능 영어 31번", "2027학년도 수능 31번 해설", "2027 수능 31번 정답", "수능 영어 빈칸 추론", "accidental activation 지문 reconsider", "2027 수능 영어 해설"],
+  "lead": "2027학년도 수능 영어 31번은 기계 조작 장치가 실수로 작동되지 않게 설계하는 방법을 다룬 빈칸 추론 문항이에요. 작동에 여러 단계가 필요하면 단계마다 '결정'을 해야 하니, 그때마다 작동시킬지 다시 생각할 기회가 생겨요. 정답은 ① reconsider(재고하다)예요.",
+  "flow": [
+    ["주제", "설계자가 조작 장치의 우발적 작동 가능성을 줄이는 방법은 여러 가지다."],
+    ["방법 1", "장치를 멀리 두거나, 누르는 힘(저항)을 키운다."],
+    ["방법 2", "패널 안으로 오목하게 넣거나 가림막 뒤에 두고, 자주 안 쓰면 덮개를 씌우거나 잠근다."],
+    ["원리", "이런 방법들은 작동을 어렵게 할 뿐 아니라 여러 단계의 동작을 거치게 만든다."],
+    ["결론", "단계마다 동작뿐 아니라 결정도 해야 하므로, 각 단계가 작동시키려는 선택을 다시 생각할 기회가 된다."]
+  ],
+  "evidence": [
+    {"en": "These options not only make the control harder to operate, but they create a sequence of several actions …", "ko": "이런 선택지들은 장치를 작동하기 어렵게 만들 뿐 아니라 여러 동작의 순서를 만들어 낸다 …", "note": "not only A but B에서 B(여러 단계)가 글쓴이가 강조하는 핵심이에요."},
+    {"en": "… the operator must go through a sequence not only of actions, but also of decisions to make each action.", "ko": "… 작동자는 동작뿐 아니라 각 동작을 하기 위한 결정의 순서도 거쳐야 한다.", "note": "단계 = 결정. 결정을 여러 번 한다는 건 '다시 생각할' 기회가 여러 번 생긴다는 뜻이에요."},
+    {"en": "Each point in the activation process then provides an opportunity for the operator to ______ his or her choice to activate the control.", "ko": "그러면 작동 과정의 각 지점이 작동자가 장치를 작동시키겠다는 자신의 선택을 ______할 기회를 준다.", "note": "글 전체 목적이 '실수로 작동 막기'예요. 실수를 막으려면 선택을 다시 생각(reconsider)해야 해요."}
+  ],
+  "choices": [
+    {"en": "reconsider", "ko": "재고하다", "why": "정답. 단계마다 결정을 해야 하니 작동시킬지 다시 생각할 기회가 생겨요. 실수로 작동되는 것을 막는다는 글의 목적과 맞아요."},
+    {"en": "accelerate", "ko": "가속하다", "why": "단계를 늘려 작동을 늦추고 어렵게 하는 글이에요. 빠르게 한다는 건 반대 방향이에요."},
+    {"en": "generalize", "ko": "일반화하다", "why": "선택을 일반화한다는 건 글의 내용과 관계가 없어요."},
+    {"en": "verbalize", "ko": "말로 표현하다", "why": "결정을 말로 하는 이야기는 나오지 않아요. decisions라는 단어만 보고 고르기 쉬운 함정이에요."},
+    {"en": "document", "ko": "기록하다", "why": "기록에 대한 언급은 없어요. 실수 방지와 직접 연결되지 않아요."}
+  ],
+  "grammar": [
+    {"t": "not only A but (also) B", "ex": "These options not only make the control harder to operate, but they create a sequence of several actions …", "d": "강조점은 B예요. 빈칸 문장도 B(여러 단계·결정) 쪽에서 답을 찾아야 해요."},
+    {"t": "so that ~ (목적)", "ex": "make sure the control is far away so that the operator is unlikely to come into accidental contact with it", "d": "'~하도록'. 멀리 두는 목적이 우발적 접촉을 막는 것이에요."},
+    {"t": "계속적 관계대명사 which", "ex": "increase the control resistance, which in turn will increase the force required …", "d": "which는 앞 절 전체(저항을 키우는 것)를 받아요. in turn은 '그 결과 다시'."},
+    {"t": "opportunity for 의미상 주어 to V", "ex": "an opportunity for the operator to reconsider his or her choice", "d": "for the operator가 to reconsider의 의미상 주어예요. '작동자가 다시 생각할 기회'."}
+  ],
+  "vocab": [
+    ["minimize", "최소화하다"],
+    ["likelihood", "가능성"],
+    ["control", "조작 장치"],
+    ["accidental", "우발적인, 실수의"],
+    ["activation", "작동"],
+    ["operator", "작동자, 조작자"],
+    ["resistance", "저항"],
+    ["in turn", "그 결과 다시, 결국"],
+    ["activate", "작동시키다"],
+    ["recess", "오목한 곳에 두다"],
+    ["barrier", "가림막, 장벽"],
+    ["protective cover", "보호 덮개"],
+    ["sequence", "순서, 연속"],
+    ["go through", "거치다, 겪다"],
+    ["reconsider", "재고하다, 다시 생각하다 — 빈칸 정답"]
+  ],
+  "summary": {"en": "Designers prevent accidental activation by making a control require several steps, because each step gives the operator a chance to reconsider the decision.", "ko": "설계자는 조작 장치가 여러 단계를 거쳐야 작동하도록 만들어 실수를 막는다. 각 단계가 작동자에게 결정을 다시 생각할 기회를 주기 때문이다."},
+  "writing": {"en": "More steps give us more chances to reconsider.", "ko": "단계가 많을수록 다시 생각할 기회가 많아진다."},
+  "tip": "빈칸이 글 마지막에 있으면 첫 문장의 목적(우발적 작동 줄이기)과 연결하세요. 실수를 막으려면 결국 '다시 생각하게' 해야 해요. 빈칸 바로 앞의 decisions도 결정 → 다시 생각으로 이어지는 단서예요.",
+  "note": "어려운 단어보다 글의 목적을 먼저 잡으면 쉬워지는 문항이에요. '이 글은 무엇을 막으려는가?' 한 줄로 답해 보고 선택지를 보세요.",
+  "faq": [
+    ["2027학년도 수능 영어 31번 정답은?", "① reconsider(재고하다)예요. 작동에 여러 단계가 필요하면 단계마다 결정을 해야 해서, 작동시키려는 선택을 다시 생각할 기회가 생겨요."],
+    ["2027 수능 31번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 조작 장치의 우발적 작동을 막는 설계를 다룬 지문이에요."],
+    ["④ verbalize가 오답인 이유는?", "결정을 말로 표현한다는 내용은 없어요. 글의 목적은 실수로 작동되는 것을 막는 것이라 '다시 생각하다'가 맞아요."]
+  ]
+}

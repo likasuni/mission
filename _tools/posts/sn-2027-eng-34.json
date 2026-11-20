@@ -1,0 +1,64 @@
+{
+  "exam": "sn-2027",
+  "n": 34,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 3,
+  "topic": "그림의 구성이 시간 속에서 차례로 지각될 때 리듬이 된다",
+  "date": "2026-11-20",
+  "keywords": ["2027 수능 영어 34번", "2027학년도 수능 34번 해설", "2027 수능 34번 정답", "수능 영어 빈칸 추론 3점", "painting rhythm composition 지문", "2027 수능 영어 해설"],
+  "lead": "2027학년도 수능 영어 34번은 화가들이 음악 개념인 '리듬'을 그림에 가져온 이유를 다룬 3점 빈칸 추론 문항이에요. 리듬은 구성에 '시간 속에서 규칙적으로 반복되는 패턴'을 더한 것이에요. 그러니 공간 속 그림의 구성이 시간 속에서 차례로 지각되는 패턴의 형태를 띠면 리듬이 돼요. 정답은 ③ patterns of lines and colors successively perceived in time이에요.",
+  "flow": [
+    ["문제 제기", "화가들이 음악 개념인 리듬으로 자기 예술의 필수 요소를 정의하려는 건 그림이 자연스러운 한계를 넘으려 한다는 신호다."],
+    ["공간 예술의 개념", "건축·조각·회화 같은 공간 예술의 기본 개념은 구성이다. 구성은 크기·모양·색·밝기의 비율이 보기 좋게 부분을 배열하는 것이다."],
+    ["현대 화가", "피카소, 브라크, 후안 그리스 이후 현대 화가들은 구성에 리듬 개념을 더했다."],
+    ["리듬의 정의", "리듬은 구성을 포함하지만, 소리의 지속 시간 속에 규칙적으로 반복되는 패턴을 더한다."],
+    ["결론", "공간 속 그림의 구성이 시간 속에서 차례로 지각되는 선과 색의 패턴이 되는 순간, 구성은 리듬이 된다."]
+  ],
+  "evidence": [
+    {"en": "… rhythm implies composition, but it adds to it a regularly reoccurring pattern in the duration of sounds.", "ko": "… 리듬은 구성을 포함하지만, 거기에 소리의 지속 시간 속에서 규칙적으로 반복되는 패턴을 더한다.", "note": "리듬 = 구성 + '시간 속 반복 패턴'. 빈칸은 이 차이(시간)를 그림 쪽 말로 바꾼 것이어야 해요."},
+    {"en": "This is to say that, as soon as pictorial composition in space assumes the form of ______, composition becomes for us a rhythm.", "ko": "이는 공간 속 그림의 구성이 ______의 형태를 띠자마자 구성은 우리에게 리듬이 된다는 말이다.", "note": "This is to say(즉)로 앞 문장을 바꿔 말해요. in the duration of sounds(소리의 지속 시간 속) → in time(시간 속)이에요."},
+    {"en": "To compose is to arrange the parts of a picture in such a way that the proportions … are pleasing to perceive.", "ko": "구성한다는 것은 비율이 보기 좋게 그림의 부분들을 배열하는 것이다.", "note": "이건 '구성'의 정의일 뿐이에요. ②·④처럼 배열·조화만 말하는 선택지는 리듬이 아닌 구성 쪽 설명이에요."}
+  ],
+  "choices": [
+    {"en": "delicate signs that represent diverse elements of paintings", "ko": "그림의 다양한 요소를 나타내는 섬세한 기호", "why": "기호(signs)나 표현 이야기는 나오지 않아요. 시간 요소가 없어요."},
+    {"en": "distributions of various shapes and colors on an artist's canvas", "ko": "화가의 캔버스 위 다양한 모양과 색의 분포", "why": "공간 속 배열, 즉 '구성'의 설명이에요. 리듬이 더하는 '시간 속 반복'이 빠져 있어요."},
+    {"en": "patterns of lines and colors successively perceived in time", "ko": "시간 속에서 차례로 지각되는 선과 색의 패턴", "why": "정답. 리듬은 구성에 시간 속 반복 패턴을 더한 것이에요. 그림의 구성이 시간 속에서 차례로 지각되는 패턴이 될 때 리듬이 돼요."},
+    {"en": "harmonious arrangements of lights and shades in a skillful way", "ko": "빛과 그림자의 능숙하고 조화로운 배열", "why": "본문의 luminosity(밝기), pleasing을 바꿔 쓴 함정이에요. 역시 구성의 설명이고 시간 요소가 없어요."},
+    {"en": "pairings of repetitive ideas in spatial and temporal arts", "ko": "공간 예술과 시간 예술의 반복적 아이디어의 짝짓기", "why": "repetitive, temporal 같은 단어가 들어 있지만, 그림의 구성이 어떤 형태를 띠는지가 아니라 예술 분야끼리의 짝짓기를 말해요."}
+  ],
+  "grammar": [
+    {"t": "부정어 도치 Nor + 동사 + 주어", "ex": "Nor are painters themselves unaware of the fact.", "d": "'화가들 자신도 그 사실을 모르지 않는다' = 잘 안다. Nor가 앞에 나와 are painters 어순이 됐어요. 이중 부정이라 긍정이에요."},
+    {"t": "in such a way that ~", "ex": "arrange the parts of a picture in such a way that the proportions … are pleasing to perceive", "d": "'~하는 방식으로'. 뒤에 결과가 와요."},
+    {"t": "The reason ~ is not mysterious", "ex": "The reason modern painters … have added the notion of rhythm to that of composition is not mysterious.", "d": "주어는 The reason, 동사는 is예요. 중간 modern painters ~ composition은 관계부사 why가 생략된 수식 절이에요. that은 the notion을 받아요."},
+    {"t": "as soon as ~", "ex": "as soon as pictorial composition in space assumes the form of …", "d": "'~하자마자'. assume the form of는 '~의 형태를 띠다'예요. assume을 '가정하다'로 읽으면 안 돼요."}
+  ],
+  "vocab": [
+    ["essentially", "본질적으로"],
+    ["notion", "개념"],
+    ["define", "정의하다"],
+    ["overstep", "넘어서다"],
+    ["unaware of", "~을 모르는"],
+    ["fundamental", "기본적인, 근본적인"],
+    ["composition", "구성"],
+    ["proportion", "비율"],
+    ["respective", "각각의"],
+    ["luminosity", "밝기"],
+    ["perceive", "지각하다"],
+    ["imply", "포함하다, 함축하다"],
+    ["reoccurring", "반복되는"],
+    ["duration", "지속 시간"],
+    ["pictorial", "그림의"],
+    ["assume the form of", "~의 형태를 띠다"],
+    ["successively", "연속적으로, 차례로"]
+  ],
+  "summary": {"en": "Modern painters added rhythm to composition because when a picture's arrangement in space is perceived as patterns of lines and colors over time, it becomes a rhythm.", "ko": "현대 화가들이 구성에 리듬을 더한 이유는, 공간 속 그림의 배열이 시간 속에서 차례로 지각되는 선과 색의 패턴이 되면 그것이 리듬이 되기 때문이다."},
+  "writing": {"en": "A painting can have rhythm when we see its patterns one after another.", "ko": "그림은 우리가 그 패턴들을 차례로 볼 때 리듬을 가질 수 있다."},
+  "tip": "A implies B, but adds C 구조에서는 A와 다른 '추가 요소 C'가 핵심이에요. 여기서는 구성에 '시간'이 더해진 게 리듬이에요. 선택지 중 시간(in time, successively)이 들어간 것을 먼저 찾고, 공간 배열만 말하는 ②·④는 구성 설명이라 지우세요.",
+  "note": "34번은 단어가 어려워 보이지만 '리듬 = 구성 + 시간' 한 줄만 잡으면 돼요. 빈칸 문장의 This is to say는 앞 문장을 다시 말한다는 신호니, 앞 문장의 in the duration of sounds를 그림의 말로 바꿔 보세요.",
+  "faq": [
+    ["2027학년도 수능 영어 34번 정답은?", "③ patterns of lines and colors successively perceived in time이에요. 리듬은 구성에 시간 속 반복 패턴을 더한 것이라, 그림의 구성이 시간 속에서 차례로 지각되는 패턴이 될 때 리듬이 돼요."],
+    ["2027 수능 34번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 회화의 구성과 음악의 리듬 개념을 비교한 지문이에요."],
+    ["② distributions of various shapes and colors on an artist's canvas가 오답인 이유는?", "캔버스 위의 모양과 색 분포는 공간 속 배열, 즉 '구성'의 설명이에요. 리듬이 더하는 '시간 속 반복'이 빠져 있어요."]
+  ]
+}

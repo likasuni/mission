@@ -1,0 +1,63 @@
+{
+  "exam": "sn-2027",
+  "n": 33,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 5,
+  "topic": "문화 차이가 있으려면 사회 안에서는 규범을 따라야 한다",
+  "date": "2026-11-20",
+  "keywords": ["2027 수능 영어 33번", "2027학년도 수능 33번 해설", "2027 수능 33번 정답", "수능 영어 빈칸 추론 3점", "conformity to norm 지문", "2027 수능 영어 해설"],
+  "lead": "2027학년도 수능 영어 33번은 '무엇을 배워야 하는가'를 문화와 사회의 관점에서 다룬 3점 빈칸 추론 문항이에요. 사회마다 배울 것이 다르다는 원리 뒤에 숨은 귀결은, 그런 차이가 생기려면 각 사회 '안'에서는 사람들이 같은 규범을 따라야 한다는 것이에요. 정답은 ⑤ a significant degree of conformity to norm(규범에 대한 상당한 정도의 순응)이에요.",
+  "flow": [
+    ["원리", "인류학자들이 알려 주었듯, 한 사회에서 배워야 할 것이 다른 사회에서는 필요 없을 수 있다. 무엇을 배울지는 문화에 달려 있다."],
+    ["숨은 귀결", "뚜렷한 문화 차이가 존재하려면 각 사회 안에서는 규범에 대한 상당한 순응이 있어야 한다."],
+    ["반박", "그래서 '무엇을 배울지는 개인이 혼자 정할 문제'라고 주장할 수 없다."],
+    ["근거", "어떤 사회도 개인에게 원하는 것을 아무거나 배울 권리를 주지 않는다."],
+    ["결론", "개인이 알아야 할 것을 배우도록 보장하려고 가족이 아닌 공동체가 학교를 세운다."]
+  ],
+  "evidence": [
+    {"en": "But concealed behind this principle lies a corollary: in order that noticeable cultural differences shall exist at all, there must be ______ within each society.", "ko": "그러나 이 원리 뒤에는 논리적 귀결이 숨어 있다. 뚜렷한 문화 차이가 존재하려면 각 사회 안에 ______이 있어야 한다.", "note": "사회 '사이'에 차이가 있으려면 사회 '안'은 같아야 해요. between과 within의 대비를 잡으세요."},
+    {"en": "And this prevents us from going on to assert that what a man should learn is a matter for him alone to decide.", "ko": "그리고 이것은 우리가 무엇을 배워야 하는지가 개인 혼자 정할 문제라고 주장하지 못하게 한다.", "note": "빈칸 내용은 '개인이 마음대로 정하는 것'을 막는 것이어야 해요. 순응(conformity)이 그 역할을 해요."},
+    {"en": "… no human society on the face of the earth which grants to any individual the right to learn anything he chooses.", "ko": "… 지구상 어떤 인간 사회도 개인에게 원하는 것은 무엇이든 배울 권리를 주지 않는다.", "note": "개인의 선택권을 부정하는 근거예요. ②·④처럼 개인의 권리·다양성을 말하는 선택지는 정반대예요."}
+  ],
+  "choices": [
+    {"en": "a dynamic process of resisting external cultural influences", "ko": "외부 문화의 영향에 저항하는 역동적 과정", "why": "다른 문화에 대한 저항 이야기가 아니에요. 글은 사회 안의 개인과 규범의 관계를 말해요."},
+    {"en": "a belief in individuals' rights to choose what to learn", "ko": "무엇을 배울지 고르는 개인의 권리에 대한 믿음", "why": "바로 뒤에서 '개인 혼자 정할 문제가 아니다', '그런 권리를 주는 사회는 없다'고 해요. 정반대예요."},
+    {"en": "widespread acceptance of multi-cultural perspectives", "ko": "다문화적 관점의 폭넓은 수용", "why": "cultural differences라는 말에 끌린 함정이에요. 사회 안에서 여러 관점을 받아들이면 오히려 사회 간 차이가 흐려져요."},
+    {"en": "an emphasis on tolerance for individual diversity", "ko": "개인의 다양성에 대한 관용 강조", "why": "개인의 다양성을 강조하면 개인이 배울 것을 정한다는 쪽이 돼요. 글의 결론과 반대예요."},
+    {"en": "a significant degree of conformity to norm", "ko": "규범에 대한 상당한 정도의 순응", "why": "정답. 사회마다 뚜렷이 다르려면 한 사회 안의 사람들은 같은 규범을 따라야 해요. 그래서 개인이 마음대로 배울 것을 정할 수 없어요."}
+  ],
+  "grammar": [
+    {"t": "장소 부사구 도치", "ex": "But concealed behind this principle lies a corollary …", "d": "원래 어순은 A corollary lies concealed behind this principle. 분사구가 앞으로 나가면서 동사(lies)와 주어(a corollary)가 뒤바뀌었어요."},
+    {"t": "in order that ~ shall …", "ex": "in order that noticeable cultural differences shall exist at all", "d": "'~하기 위해서'. at all은 조건문에서 '조금이라도, 애초에'의 강조예요."},
+    {"t": "prevent A from -ing", "ex": "this prevents us from going on to assert that …", "d": "'A가 ~하지 못하게 하다'. go on to V는 '이어서 ~하다'."},
+    {"t": "삽입절 be it noted", "ex": "it is the school which is established by the community ― not, be it noted, by the family ―", "d": "be it noted는 '주목할 점은'이라는 오래된 삽입 표현이에요. it is ~ which 강조 구문으로 '공동체가 세운 것은 바로 학교'를 강조해요."}
+  ],
+  "vocab": [
+    ["anthropologist", "인류학자"],
+    ["evidently", "분명히"],
+    ["needful", "필요한"],
+    ["absolute", "절대적인"],
+    ["a function of", "~에 따라 달라지는 것, ~의 함수"],
+    ["conceal", "숨기다"],
+    ["corollary", "논리적 귀결"],
+    ["noticeable", "뚜렷한, 눈에 띄는"],
+    ["assert", "주장하다"],
+    ["grant", "주다, 허락하다"],
+    ["on the face of the earth", "지구상에"],
+    ["establish", "세우다, 설립하다"],
+    ["ensure", "보장하다"],
+    ["conformity", "순응, 따름"],
+    ["norm", "규범"],
+    ["tolerance", "관용"]
+  ],
+  "summary": {"en": "For cultures to differ noticeably, people within each society must largely conform to its norms, so no society lets individuals decide alone what to learn.", "ko": "문화가 뚜렷이 다르려면 각 사회 안의 사람들은 그 규범을 상당히 따라야 한다. 그래서 어떤 사회도 개인이 혼자 무엇을 배울지 정하게 두지 않는다."},
+  "writing": {"en": "What we should learn depends on the society we live in.", "ko": "우리가 무엇을 배워야 하는지는 우리가 사는 사회에 달려 있다."},
+  "tip": "빈칸 문장에 between(사회 사이)과 within(사회 안)이 대비되면 '밖은 다르고 안은 같다'는 논리예요. 빈칸 뒤 this prevents us from ~(개인이 정한다고 말할 수 없다)와 어울리는 선택지를 고르세요. cultural, diversity 같은 본문 단어가 들어간 선택지는 의심부터 하세요.",
+  "note": "33번은 빈칸 뒤 문장이 빈칸 앞 문장보다 더 큰 단서예요. '그래서 개인이 정할 수 없다'에서 거꾸로 빈칸을 추론해 보세요.",
+  "faq": [
+    ["2027학년도 수능 영어 33번 정답은?", "⑤ a significant degree of conformity to norm(규범에 대한 상당한 정도의 순응)이에요. 사회마다 뚜렷이 다르려면 한 사회 안에서는 규범을 따라야 하기 때문이에요."],
+    ["2027 수능 33번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 3점 빈칸 추론 문항이에요. 무엇을 배워야 하는가를 문화와 사회의 관점에서 다룬 지문이에요."],
+    ["③ widespread acceptance of multi-cultural perspectives가 오답인 이유는?", "본문의 cultural differences라는 말에 끌린 함정이에요. 글은 사회 안에서 규범을 따라야 개인이 배울 것을 정할 수 없다는 내용이라 다문화 수용과 맞지 않아요."]
+  ]
+}

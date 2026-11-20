@@ -505,6 +505,7 @@ for idx, k in enumerate(keys_sorted):
         else:
             body = f'''<h1 class="page-h1">{e(full)} 문제·정답·해설 PDF</h1>
 <p class="lead">{e(s_when(k))} · {e(s_org(k))}</p>
+<!--READ-->
 {files}
 {sinfo}
 {ad()}
@@ -513,9 +514,10 @@ for idx, k in enumerate(keys_sorted):
 {rel}
 {ad()}'''
         if POSTS_BY.get(k) and any(p['subj'] == s for p in POSTS_BY[k]):
-            if en_top: body = body.replace('<!--READ-->', post_quick([p for p in POSTS_BY[k] if p['subj'] == s]))
+            # 수능 영어 등 en_top 이 없는 회차도 해설 번호 칩을 PDF 위에 (2026-11-20, 해설이 맨 아래라 안 보였음)
+            body = body.replace('<!--READ-->', post_quick([p for p in POSTS_BY[k] if p['subj'] == s]))
             body += post_card([p for p in POSTS_BY[k] if p['subj'] == s], f'{full} 문항별 해설')
-        body = body.replace('<!--READ-->', '')
+        body = body.replace('<!--READ-->\n', '').replace('<!--READ-->', '')
         if en_top:
             page(subj_url(k, s), f'{full} 분석노트·변형문제·단어 PDF | 리카수니 자료실',
                  f'{full} 문항별 분석노트, 변형문제, 영어 단어 총정리와 기출 원본 PDF 무료. 리카수니 자료실',

@@ -1,0 +1,62 @@
+{
+  "exam": "sn-2027",
+  "n": 32,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "VR은 영화처럼 '언제, 어떻게 볼지'를 정해 줄 수 없다",
+  "date": "2026-11-20",
+  "keywords": ["2027 수능 영어 32번", "2027학년도 수능 32번 해설", "2027 수능 32번 정답", "수능 영어 빈칸 추론", "virtual reality 영화 비교 지문", "2027 수능 영어 해설"],
+  "lead": "2027학년도 수능 영어 32번은 가상현실(VR)과 영화를 비교한 빈칸 추론 문항이에요. 영화는 특정 순간에 클로즈업으로 원하는 장면을 정확히 보여 주지만, VR 관람자는 그 순간 다른 곳을 보고 있을 수도 있어요. 정답은 ① control exactly when and how we see those things예요.",
+  "flow": [
+    ["정의", "VR은 관람자를 360도 가상 환경에 몰입시킨다. 평면 화면을 보는 대신 헤드셋을 쓴다."],
+    ["공통점", "영화처럼 VR 경험도 기술자와 예술가가 구성할 수 있고, 볼 만한 것을 제공할 수 있다."],
+    ["차이점", "하지만 VR은 우리가 그것을 언제, 어떻게 볼지를 정확히 통제할 수 없다."],
+    ["예시 (영화)", "영화는 특정 순간에 인물 표정을 클로즈업해 정확한 의미와 감정을 전달할 수 있다."],
+    ["예시 (VR)", "VR 관람자는 그 세부를 볼 만큼 가깝지 않거나, 그 순간 다른 쪽을 보고 있을 수도 있다."]
+  ],
+  "evidence": [
+    {"en": "Like a movie, a VR experience can be curated by technicians and artists … But virtual reality cannot ______.", "ko": "영화처럼 VR 경험도 기술자와 예술가가 구성할 수 있다 … 하지만 VR은 ______할 수 없다.", "note": "Like a movie(공통점) → But(차이점) 구조예요. 빈칸은 '영화는 할 수 있지만 VR은 못 하는 것'이에요."},
+    {"en": "a movie can choose to show us a close-up detail … at a particular moment and in a precise way …", "ko": "영화는 특정 순간에, 정확한 방식으로 클로즈업 세부를 보여 주기로 선택할 수 있다 …", "note": "at a particular moment = when, in a precise way = how. 정답 ①의 when and how와 그대로 맞아요."},
+    {"en": "… could even be looking the other way at something else at the moment that particular detail emerged.", "ko": "… 그 특정 세부가 나타난 순간에 다른 쪽에서 다른 것을 보고 있을 수도 있다.", "note": "VR에서는 관람자가 보는 방향을 정하지 못해요. '언제·어떻게 볼지'를 통제할 수 없다는 뜻이에요."}
+  ],
+  "choices": [
+    {"en": "control exactly when and how we see those things", "ko": "우리가 그것들을 언제, 어떻게 보는지 정확히 통제하다", "why": "정답. 영화는 특정 순간(when)에 정확한 방식(how)으로 보여 주지만, VR 관람자는 그 순간 다른 곳을 볼 수 있어요."},
+    {"en": "deliver the overall atmosphere that we experience", "ko": "우리가 경험하는 전체 분위기를 전달하다", "why": "VR은 360도 환경에 몰입시키니 전체 분위기 전달은 오히려 잘해요. 글의 차이점과 맞지 않아요."},
+    {"en": "provide us with modified details of natural landscapes", "ko": "자연 경관의 수정된 세부를 제공하다", "why": "자연 경관이나 수정 이야기는 나오지 않아요."},
+    {"en": "reflect how viewers experience their emotions", "ko": "관람자가 감정을 경험하는 방식을 반영하다", "why": "emotional response가 본문에 나오지만 영화가 감정을 '만들어 낸다'는 말이에요. 단어만 걸린 함정이에요."},
+    {"en": "exceed movies in multi-sensory effects of such things", "ko": "그런 것들의 다감각 효과에서 영화를 능가하다", "why": "'VR은 영화를 능가할 수 없다'는 비교는 글의 초점이 아니에요. 글은 시점 통제의 차이를 말해요."}
+  ],
+  "grammar": [
+    {"t": "make it appear as if ~", "ex": "a special headset that makes it appear as if she is surrounded by a digitally animated environment", "d": "'마치 ~인 것처럼 보이게 하다'. it은 가목적어 역할이고 as if절이 실제 내용이에요."},
+    {"t": "Like A, B … But B cannot ~", "ex": "Like a movie, a VR experience can be curated … But virtual reality cannot …", "d": "공통점 다음 But은 차이점 신호예요. 빈칸은 차이점 쪽 내용이에요."},
+    {"t": "과거분사 후치 수식", "ex": "A viewer shown the same thing as part of a VR experience would not necessarily be close enough …", "d": "shown ~이 A viewer를 꾸며요. '같은 것을 보게 된 관람자'. 진짜 동사는 would not be예요."},
+    {"t": "부분 부정 not necessarily", "ex": "would not necessarily be close enough to see the detail", "d": "'반드시 ~인 것은 아니다'. 볼 수도, 못 볼 수도 있다는 뜻이에요."}
+  ],
+  "vocab": [
+    ["immerse", "몰두하게 하다, 몰입시키다"],
+    ["simulated", "모의의, 가상의"],
+    ["three-dimensional", "3차원의"],
+    ["linear", "직선적인, 순차적인"],
+    ["finite", "한정된, 유한한"],
+    ["headset", "헤드셋"],
+    ["digitally animated", "디지털로 움직이는"],
+    ["specialized", "특수한, 전문화된"],
+    ["curate", "(전시·경험을) 기획하다, 구성하다"],
+    ["engaging", "매력적인, 몰입하게 하는"],
+    ["spectacular", "화려한, 굉장한"],
+    ["close-up", "클로즈업, 근접 촬영"],
+    ["convey", "전달하다"],
+    ["emotional response", "감정 반응"],
+    ["emerge", "나타나다"]
+  ],
+  "summary": {"en": "Unlike a movie, virtual reality cannot control exactly when and how viewers see specific details, since viewers may be looking elsewhere at the key moment.", "ko": "영화와 달리 VR은 관람자가 특정 세부를 언제, 어떻게 볼지 정확히 통제할 수 없다. 관람자가 중요한 순간에 다른 곳을 보고 있을 수 있기 때문이다."},
+  "writing": {"en": "A movie decides what we see, but VR lets us look anywhere.", "ko": "영화는 우리가 무엇을 볼지 정하지만, VR은 우리가 어디든 보게 한다."},
+  "tip": "Like A ~ But ~ cannot ____ 구조는 '공통점 다음 차이점'이에요. 빈칸 뒤 For example에서 영화가 하는 일(특정 순간, 정확한 방식)을 찾으면 그게 VR이 못 하는 일이에요. at a particular moment → when, in a precise way → how로 바꿔 읽으세요.",
+  "note": "예시 문장의 at a particular moment, in a precise way를 선택지의 when and how와 짝지어 보세요. 빈칸 문항은 예시가 빈칸을 풀어서 다시 말해 주는 경우가 많아요.",
+  "faq": [
+    ["2027학년도 수능 영어 32번 정답은?", "① control exactly when and how we see those things예요. 영화는 특정 순간에 정확한 방식으로 보여 주지만, VR 관람자는 그 순간 다른 곳을 볼 수 있어서 통제가 안 돼요."],
+    ["2027 수능 32번은 어떤 유형인가요?", "빈칸에 들어갈 말을 고르는 2점 빈칸 추론 문항이에요. 가상현실(VR)과 영화의 차이를 다룬 지문이에요."],
+    ["④ reflect how viewers experience their emotions가 오답인 이유는?", "본문의 emotional response는 영화가 감정 반응을 '만들어 낸다'는 말이에요. VR이 못 하는 것은 감정 반영이 아니라 보는 시점의 통제예요."]
+  ]
+}

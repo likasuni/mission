@@ -1,0 +1,63 @@
+{
+  "exam": "sn-2027",
+  "n": 39,
+  "type": "삽입",
+  "points": 3,
+  "answer": 4,
+  "topic": "경쟁이 거세지면 혁신만이 살아남는 길이 된다",
+  "date": "2026-11-20",
+  "keywords": ["2027 수능 영어 39번", "2027학년도 수능 39번 해설", "2027 수능 39번 정답", "수능 영어 문장 삽입", "innovation competition 지문", "2027 수능 영어 해설"],
+  "lead": "2027학년도 수능 영어 39번은 경쟁과 혁신 전략을 다룬 3점 문장 삽입 문항이에요. 주어진 문장의 All these mechanisms는 바로 앞에 여러 '장치'가 나열되어야 해요. ③ 다음 문장이 지리적 거리·운송비, 소비자의 비교 능력 한계, 규제 산업을 나열하고, ④ 다음 However가 그 효과가 약해졌다고 말해요. 정답은 ④예요.",
+  "flow": [
+    ["배경", "경쟁이 뚜렷이 커지면서 기업은 훨씬 공격적인 혁신 전략을 택하게 되었다."],
+    ["혁신의 역할", "혁신은 수익이 나지 않는 경쟁에서 벗어나 일시적 독점 위치를 얻어 이윤을 내게 해 준다."],
+    ["다른 수단", "시장에서 살아남는 다른 전통적 수단도 있다: 지리적 거리와 운송비, 가격·품질을 다 비교하지 못하는 소비자, 규제된 산업."],
+    ["(주어진 문장)", "이 모든 장치는 경쟁을 줄여 최고의 제품이나 최저 가격이 아니어도 기업이 살아남게 한다."],
+    ["변화와 결론", "그러나 세계화, 규제 완화, 반독점 정책이 이 전통적 수단을 약화시켜, 혁신 전략만이 살아남는 길이 되었다."]
+  ],
+  "evidence": [
+    {"en": "These conventional means rely mainly on geographical distances and transportation costs, the limited capacity of consumers to compare prices and qualities fully, and the existence of regulated activities.", "ko": "이런 전통적 수단은 주로 지리적 거리와 운송비, 가격과 품질을 충분히 비교하지 못하는 소비자의 한계, 그리고 규제된 산업의 존재에 기대고 있다.", "note": "세 가지 장치가 나열돼요. 주어진 문장의 All these mechanisms(이 모든 장치)가 바로 이 목록을 받아요."},
+    {"en": "All these mechanisms reduce the degree of competition and allow companies to survive even if they do not have the best product or the cheapest price.", "ko": "이 모든 장치는 경쟁의 정도를 줄이고, 최고의 제품이나 가장 싼 가격이 없어도 기업이 살아남게 한다.", "note": "주어진 문장은 목록의 '효과'를 정리해요. 목록 바로 뒤인 ④ 자리예요."},
+    {"en": "( ④ ) However, globalization, deregulation, and some antitrust policies are all trends which dramatically weaken the effectiveness of those conventional means.", "ko": "그러나 세계화, 규제 완화, 일부 반독점 정책은 모두 그 전통적 수단의 효과를 크게 약화시키는 흐름이다.", "note": "However는 '이 장치들이 기업을 지켜 준다'는 내용 뒤에 와야 대조가 돼요. ③ 문장 바로 뒤에 However가 오면 효과 설명 없이 바로 반전이라 어색해요."}
+  ],
+  "choices": [
+    {"en": "( ① )", "ko": "혁신이 경쟁에서 벗어나게 해 준다는 문장 뒤", "why": "아직 '장치'가 하나도 나열되지 않았어요. All these mechanisms가 받을 대상이 없어요."},
+    {"en": "( ② )", "ko": "혁신으로 독점 위치를 얻어 이윤을 낸다는 문장 뒤", "why": "혁신은 하나의 방법이고, 바로 뒤 문장이 '다른 수단도 있다'로 이어져요. 여기에 넣으면 흐름이 끊겨요."},
+    {"en": "( ③ )", "ko": "'다른 수단도 있다' 문장 뒤", "why": "다른 수단이 있다고만 했지 아직 무엇인지 나오지 않았어요. 구체적 목록은 ③ 다음 문장에 나와요."},
+    {"en": "( ④ )", "ko": "세 가지 전통적 수단을 나열한 문장 뒤", "why": "정답. 거리·운송비, 소비자의 비교 한계, 규제 산업이라는 목록을 All these mechanisms로 받고, 경쟁을 줄이는 효과를 정리해요. 그 뒤 However로 효과가 약해졌다고 이어져요."},
+    {"en": "( ⑤ )", "ko": "세계화 등이 전통적 수단을 약화시킨다는 문장 뒤", "why": "이미 그 장치들이 약해졌다고 한 뒤에 '장치들이 기업을 살린다'고 하면 앞뒤가 거꾸로예요."}
+  ],
+  "grammar": [
+    {"t": "allow + 목적어 + to부정사", "ex": "All these mechanisms … allow companies to survive even if they do not have the best product …", "d": "'~가 …하게 해 주다'. even if는 '설령 ~라 하더라도'."},
+    {"t": "force + 목적어 + to부정사", "ex": "Trends toward a marked increase in competition have forced companies to adopt much more aggressive innovation strategies.", "d": "'~에게 …하도록 강요하다'. 주어는 Trends, 동사는 have forced예요."},
+    {"t": "which is to say ~", "ex": "a way of getting out of the competition, which is to say situations in which activities are not very profitable", "d": "'즉, 다시 말해'. 앞의 the competition을 '수익이 별로 안 나는 상황'으로 풀어 말해요."},
+    {"t": "either A or B", "ex": "make a profit either by increasing prices or by reducing costs", "d": "'A이거나 B'. by -ing가 두 개 짝을 이뤄 이윤을 내는 두 방법을 말해요."}
+  ],
+  "vocab": [
+    ["mechanism", "장치, 방법"],
+    ["marked", "뚜렷한"],
+    ["aggressive", "공격적인"],
+    ["innovation", "혁신"],
+    ["profitable", "수익성 있는"],
+    ["set oneself apart", "자신을 차별화하다"],
+    ["temporarily", "일시적으로"],
+    ["monopoly", "독점"],
+    ["prosper", "번영하다"],
+    ["conventional", "전통적인, 기존의"],
+    ["transportation", "운송"],
+    ["capacity", "능력"],
+    ["regulated", "규제된"],
+    ["deregulation", "규제 완화"],
+    ["antitrust", "반(反)독점의"],
+    ["effectiveness", "효과"]
+  ],
+  "summary": {"en": "Conventional means that once reduced competition have been weakened by globalization and deregulation, so innovation has become the only way for companies to survive.", "ko": "경쟁을 줄여 주던 전통적 수단이 세계화와 규제 완화로 약해지면서, 혁신이 기업이 살아남는 유일한 길이 되었다."},
+  "writing": {"en": "Innovation lets a company escape unprofitable competition.", "ko": "혁신은 기업이 수익 없는 경쟁에서 벗어나게 해 준다."},
+  "tip": "주어진 문장이 All these / Such / These + 명사로 시작하면 앞에 '여러 개의 구체적 예'가 있어야 해요. 목록이 나오는 문장을 찾고 그 바로 뒤에 넣어 보세요. 그다음 넣은 자리 뒤 However가 자연스럽게 반전되는지 확인하면 끝이에요.",
+  "note": "③과 ④ 사이에서 많이 고민했을 거예요. ③ 뒤 문장은 '다른 수단이 있다'는 예고일 뿐, 목록은 그다음 문장에 나와요. 'these가 받을 내용이 이미 나왔는가'로 판단하세요.",
+  "faq": [
+    ["2027학년도 수능 영어 39번 정답은?", "④예요. 주어진 문장의 All these mechanisms가 바로 앞 문장의 세 가지 전통적 수단(거리·운송비, 소비자의 비교 한계, 규제 산업)을 받고, 뒤의 However로 그 효과가 약해졌다고 이어져요."],
+    ["2027 수능 39번은 어떤 유형인가요?", "주어진 문장이 들어가기에 가장 적절한 곳을 고르는 3점 문장 삽입 문항이에요. 경쟁과 혁신 전략을 다룬 지문이에요."],
+    ["③이 오답인 이유는?", "③ 앞은 '다른 수단도 있다'는 예고일 뿐, 어떤 수단인지는 아직 나오지 않았어요. All these mechanisms가 받을 목록이 ③ 다음 문장에 있어서 ④가 맞아요."]
+  ]
+}
