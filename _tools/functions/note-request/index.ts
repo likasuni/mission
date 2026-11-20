@@ -81,7 +81,7 @@ function moeKey(f: Entry): number[] | null {
   for (const p of [...f.path].reverse()) {
     m = p.match(/(\d{4})\s*년\s*(\d{1,2})\s*월\s*고\s*(\d)/);
     if (m) return [+m[1], +m[2], +m[3]];
-    m = p.match(/(\d{4})\s*학년도\s*수능/); // 수능 = [학년도, 0, 3] (폴더 '고3 모의고사/2027학년도 수능', 2026-11-20~)
+    m = p.match(/(\d{4})\s*학년도\s*수능/); // 수능 = [학년도, 0, 3] (폴더 '수능 모의고사/2027학년도 수능', 2026-11-20~)
     if (m) return [+m[1], 0, 3];
   }
   return null;
