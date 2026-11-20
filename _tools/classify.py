@@ -44,6 +44,8 @@ for o in out:
         elif _re.search(r'(^|[\s_-])사회([\s_,]|$)',tn): s='통합사회'
         else:
             mm=_re.findall(r'[-_]\s*([^-_]+?)\s*(?:문제|정답|해설)',tn)
+            if not mm:  # '2027학년도 수능 독일어Ⅰ 문제.pdf' 처럼 띄어쓰기 이름 (2026-11-20)
+                mm=_re.findall(r'(?:수능|대학수학능력시험|모의평가|학력평가)\s+(.+?)\s*(?:문제|정답|해설)',tn)
             nm=(mm[-1] if mm else '').replace('직업탐구','').strip(' _-·')
             grp='직업탐구' if ('직업탐구' in fold or '직업탐구' in tn) else '제2외국어·한문'
             if nm: s=nm; GROUP.setdefault(nm,grp)

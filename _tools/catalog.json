@@ -62546,12 +62546,52 @@
 {
 "exam": "sn",
 "year": 2027,
+"subject": "경제",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1QU1hiz6lRqPPaNAqAJ1DpSBPv244keg3",
+"size": 1362367,
+"title": "2027학년도 수능 경제 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "경제",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1pDDNeHL_rW2BRUoj3jawLVSDqR7ymWhu",
+"size": 41493,
+"title": "2027학년도 수능 경제 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "공업 일반",
+"group": "직업탐구",
+"kind": "문제",
+"id": "1nLxHCACfbu9rAOY9YSHip-uidllDL4P1",
+"size": 3735812,
+"title": "2027학년도 수능 공업 일반 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "공업 일반",
+"group": "직업탐구",
+"kind": "정답",
+"id": "1Z9-I-hy6ugL7A7TgAsDiWv6X2a3zjdW1",
+"size": 41773,
+"title": "2027학년도 수능 공업 일반 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
 "subject": "국어",
 "group": "국어",
 "kind": "문제",
-"id": "1OviJPgsHYS6xE3mPXPFznlAZ9kZzUOag",
+"id": "1w5KXzq8DuvnuUnB27Qq7vrR7VwQZ6ean",
 "size": 3284093,
-"title": "2027학년도 대학수학능력시험 국어 문제.pdf"
+"title": "2027학년도 수능 국어 문제.pdf"
 },
 {
 "exam": "sn",
@@ -62559,9 +62599,329 @@
 "subject": "국어",
 "group": "국어",
 "kind": "정답",
-"id": "1NC7U-a35mKmIIUPHRf_zFBLuU5nShMTK",
+"id": "1pP-WaDCRfIiJlpjvBnOL9RaPgoKTLoY1",
 "size": 77560,
-"title": "2027학년도 대학수학능력시험 국어 정답.pdf"
+"title": "2027학년도 수능 국어 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "농업 기초 기술",
+"group": "직업탐구",
+"kind": "문제",
+"id": "1keloqAyQJ0X-fqULJ2kYybCgJg-8TS2D",
+"size": 3455899,
+"title": "2027학년도 수능 농업 기초 기술 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "농업 기초 기술",
+"group": "직업탐구",
+"kind": "정답",
+"id": "1QxaVyxt8VCOS9gr7tN4HQj95ofuHwcP1",
+"size": 41969,
+"title": "2027학년도 수능 농업 기초 기술 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "독일어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "1xQlpwftC50TS6-8n4-TlNqQDe6AtzS7N",
+"size": 2947802,
+"title": "2027학년도 수능 독일어Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "독일어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "1Y6537Ms9JvBlMBqGTzNErLdrYmF3WXpN",
+"size": 41848,
+"title": "2027학년도 수능 독일어Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "동아시아사",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1P3aaRYIvWsCmMPaOkoM7GTSRt8uXIsH4",
+"size": 2062673,
+"title": "2027학년도 수능 동아시아사 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "동아시아사",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1i_8WedGyAYOwb0LSK0xvlmgQ6wFt8ln0",
+"size": 41445,
+"title": "2027학년도 수능 동아시아사 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "러시아어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "1rNhGqg61tCd7O-5jl3LPS60YkYmVX_S_",
+"size": 4416826,
+"title": "2027학년도 수능 러시아어Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "러시아어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "1ON01jjKn759liegLc1gvsnbRNSvBR4xz",
+"size": 41742,
+"title": "2027학년도 수능 러시아어Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "물리학1",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1I-dvXekDIF9WHv0hzicxZLfkS0QHiCEc",
+"size": 1398462,
+"title": "2027학년도 수능 물리학Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "물리학1",
+"group": "과학탐구",
+"kind": "정답",
+"id": "1hFVMurkNwo7Y2OmbcylbuI8DqCYUHmU_",
+"size": 41254,
+"title": "2027학년도 수능 물리학Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "물리학2",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1ZjprTN0zDeyYb4-bGkAEFCWpmHIJxKTD",
+"size": 1528815,
+"title": "2027학년도 수능 물리학Ⅱ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "물리학2",
+"group": "과학탐구",
+"kind": "정답",
+"id": "1CzPSCBKxiq8PWQGpMYD9zLiBYZT5wJ5u",
+"size": 41286,
+"title": "2027학년도 수능 물리학Ⅱ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "베트남어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "1WMT81N7TV96aiSXpLL84n_Dkj5dKX-6G",
+"size": 1600605,
+"title": "2027학년도 수능 베트남어Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "베트남어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "1Fcl59sIIKksuxFIl6hwsfn8DXRHZqgF8",
+"size": 41993,
+"title": "2027학년도 수능 베트남어Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "사회문화",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1Gw9j9DFLCz8UdQXFrGjgm7fSJPfZOXk_",
+"size": 2217067,
+"title": "2027학년도 수능 사회·문화 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "사회문화",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1NJxRGcKQyPVfGvhImoAh9C1Gs3i9_MqJ",
+"size": 41354,
+"title": "2027학년도 수능 사회·문화 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "상업 경제",
+"group": "직업탐구",
+"kind": "문제",
+"id": "1MCP7uH0r69qonHH0ZblLqbN0agg4_TwQ",
+"size": 2108105,
+"title": "2027학년도 수능 상업 경제 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "상업 경제",
+"group": "직업탐구",
+"kind": "정답",
+"id": "1mdVsmYtmYgbXgQ80bh9NPLN65W2WN0HP",
+"size": 41739,
+"title": "2027학년도 수능 상업 경제 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "생명과학1",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1dzEwqm1vkL9xEuBjOoU-sS_bcd3Y5sUl",
+"size": 1362405,
+"title": "2027학년도 수능 생명과학Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "생명과학1",
+"group": "과학탐구",
+"kind": "정답",
+"id": "1IC7yOislh2i40qnrFsHTsuM244wPeOZV",
+"size": 41246,
+"title": "2027학년도 수능 생명과학Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "생명과학2",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1nJPo4bPg-mQuinQEBBhgdxzeDpYfxfnV",
+"size": 965419,
+"title": "2027학년도 수능 생명과학Ⅱ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "생명과학2",
+"group": "과학탐구",
+"kind": "정답",
+"id": "1iCzLfawCfkVDjQ71KenMkvAspwZJGFF3",
+"size": 43984,
+"title": "2027학년도 수능 생명과학Ⅱ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "생활과윤리",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1u9Eu4ZlfqR0-IiN6A4scku-AsPTSywMO",
+"size": 1140199,
+"title": "2027학년도 수능 생활과 윤리 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "생활과윤리",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1kh6DTwzlALt4udkeX25CF6SIJznVMGsq",
+"size": 42077,
+"title": "2027학년도 수능 생활과 윤리 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "성공적인 직업생활",
+"group": "직업탐구",
+"kind": "문제",
+"id": "1vKhU0T2AkFn8DTXVABRalxda127r2vEk",
+"size": 2584841,
+"title": "2027학년도 수능 성공적인 직업생활 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "성공적인 직업생활",
+"group": "직업탐구",
+"kind": "정답",
+"id": "12ooecIbY5YvIVBEzA8JwpmltbcPILbOW",
+"size": 42547,
+"title": "2027학년도 수능 성공적인 직업생활 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "세계사",
+"group": "사회탐구",
+"kind": "문제",
+"id": "14tCQXsQ35CyhdpKG6LN62wLCXQGkup0r",
+"size": 2132473,
+"title": "2027학년도 수능 세계사 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "세계사",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1B3gAAC4g9LLnSWoSaVAOQLGIuvgNxh9j",
+"size": 41496,
+"title": "2027학년도 수능 세계사 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "세계지리",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1oYlz7hjdIm6itTqedXYOJ1bljecb3LA9",
+"size": 1869505,
+"title": "2027학년도 수능 세계지리 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "세계지리",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1Y7JA-G7FjScbesRa43rmsNVMc-B8_1B2",
+"size": 41853,
+"title": "2027학년도 수능 세계지리 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "수산·해운 산업 기초",
+"group": "직업탐구",
+"kind": "문제",
+"id": "1Jd855aaKhLClHr2DynBAbE-022JuVguF",
+"size": 1736750,
+"title": "2027학년도 수능 수산·해운 산업 기초 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "수산·해운 산업 기초",
+"group": "직업탐구",
+"kind": "정답",
+"id": "1Rf60rH16Cq8QuQfr-reRkNyPudpAzLpo",
+"size": 42134,
+"title": "2027학년도 수능 수산·해운 산업 기초 정답.pdf"
 },
 {
 "exam": "sn",
@@ -62569,9 +62929,9 @@
 "subject": "수학",
 "group": "수학",
 "kind": "문제",
-"id": "1OGaweBZU4GsqMKxc51o6ZeGiTlHAvG_o",
+"id": "1kDSCll2_MMb2fwM63pLegkPnJJzLy-4M",
 "size": 1221296,
-"title": "2027학년도 대학수학능력시험 수학 문제.pdf"
+"title": "2027학년도 수능 수학 문제.pdf"
 },
 {
 "exam": "sn",
@@ -62579,9 +62939,59 @@
 "subject": "수학",
 "group": "수학",
 "kind": "정답",
-"id": "1bLV0GsyZBEiQGc3PAj5i7IBAZrERtKGq",
+"id": "18E9L2zkd5rN7eusSxu6oGlYcli4uEGL0",
 "size": 77385,
-"title": "2027학년도 대학수학능력시험 수학 정답.pdf"
+"title": "2027학년도 수능 수학 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "스페인어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "14xiO_CY2kOKPrGnDx1WHNh2IHvl-5_BI",
+"size": 3279099,
+"title": "2027학년도 수능 스페인어Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "스페인어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "1Ik_DsR8t6n3rT6IlFMynT7s3zhvmfkPq",
+"size": 41960,
+"title": "2027학년도 수능 스페인어Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "아랍어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "1O-5tsCaTSEonY6PoPlDuVXcYMwGDK5wt",
+"size": 2045198,
+"title": "2027학년도 수능 아랍어Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "아랍어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "1f84Y5135xXHT7yVBJwoP20cLERo6HAF9",
+"size": 41825,
+"title": "2027학년도 수능 아랍어Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "영어",
+"group": "영어",
+"kind": "듣기대본",
+"id": "1ZVWyceoQoyRyzTKXq7HyVlejpH8C2a5-",
+"size": 325696,
+"title": "2027학년도 수능 영어 음성대본.pdf"
 },
 {
 "exam": "sn",
@@ -62589,9 +62999,9 @@
 "subject": "영어",
 "group": "영어",
 "kind": "문제",
-"id": "1eq4ymB6S6MJoD3gVkavvhK73ln3p3P9t",
+"id": "1j4WrDEqIzCtCTHWTKtZGT2tXOJG32jKS",
 "size": 1481135,
-"title": "2027학년도 대학수학능력시험 영어 문제.pdf"
+"title": "2027학년도 수능 영어 문제.pdf"
 },
 {
 "exam": "sn",
@@ -62599,8 +63009,268 @@
 "subject": "영어",
 "group": "영어",
 "kind": "정답",
-"id": "1iCXV2dJlZITGh__IO2-B1y9NPnxGuUqO",
+"id": "1z-EmMESasz-3H08D_NHuy9Xqlnu97bpb",
 "size": 73778,
-"title": "2027학년도 대학수학능력시험 영어 정답.pdf"
+"title": "2027학년도 수능 영어 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "윤리와사상",
+"group": "사회탐구",
+"kind": "문제",
+"id": "15Rb_jXuExI0D2WTKAMg_Efm-5W1yNCp1",
+"size": 1939672,
+"title": "2027학년도 수능 윤리와 사상 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "윤리와사상",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1b6nL5MfOwoWb5ZzNzhAe6dJYoA-Jw2ZM",
+"size": 41860,
+"title": "2027학년도 수능 윤리와 사상 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "인간 발달",
+"group": "직업탐구",
+"kind": "문제",
+"id": "1pvjjM0-kUzK93l1nXUj4XN9sCAz4qftH",
+"size": 2851614,
+"title": "2027학년도 수능 인간 발달 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "인간 발달",
+"group": "직업탐구",
+"kind": "정답",
+"id": "1RbsSZZjlzMNohQVWWR73fKxCRfLYmSSY",
+"size": 42031,
+"title": "2027학년도 수능 인간 발달 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "일본어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "1HfFa_XWofI-Tt9jMiz0zeQAE3mtHE0Nd",
+"size": 4364008,
+"title": "2027학년도 수능 일본어Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "일본어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "1gthNiGxQr86nNKYturZAmeUlX6OfWgy6",
+"size": 41833,
+"title": "2027학년도 수능 일본어Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "정치와법",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1qbt76MgLZG__roLo8TFskiqhApQNHbur",
+"size": 741673,
+"title": "2027학년도 수능 정치와 법 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "정치와법",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1k9piuBBXAhrfjmU73izMZzMUbpOtvKLh",
+"size": 41713,
+"title": "2027학년도 수능 정치와 법 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "중국어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "1bInRgMZlnfN0wzw5op5NiUinhUiMq48M",
+"size": 1426706,
+"title": "2027학년도 수능 중국어Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "중국어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "19GHUWuEF_mPM17tHC8fiL9DiyjffrNZ0",
+"size": 41554,
+"title": "2027학년도 수능 중국어Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "지구과학1",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1WALYCUhbbVmmw3xHPJ0ihKsgJjJnOrKj",
+"size": 2180376,
+"title": "2027학년도 수능 지구과학Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "지구과학1",
+"group": "과학탐구",
+"kind": "정답",
+"id": "19-u373Qgqym5D955w8m1Two1FIPVGDU-",
+"size": 40901,
+"title": "2027학년도 수능 지구과학Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "지구과학2",
+"group": "과학탐구",
+"kind": "문제",
+"id": "11ESt5Z1joC1Eh1KEio7X60P88BWsIzNN",
+"size": 3632516,
+"title": "2027학년도 수능 지구과학Ⅱ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "지구과학2",
+"group": "과학탐구",
+"kind": "정답",
+"id": "1fuzNYzT3xpHJePJys4qStfjp0CNt6Quq",
+"size": 40923,
+"title": "2027학년도 수능 지구과학Ⅱ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "프랑스어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "174eUP-FVSgFcLl01hbHx-UK1F1z8on3l",
+"size": 1406815,
+"title": "2027학년도 수능 프랑스어Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "프랑스어Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "1Z_6hm5PLWPZWeKIowe1DT6Novs9VB60c",
+"size": 42109,
+"title": "2027학년도 수능 프랑스어Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "한국사",
+"group": "한국사",
+"kind": "문제",
+"id": "11lvFPBRk864LfXccN2fysZc0XzYFZndg",
+"size": 2356475,
+"title": "2027학년도 수능 한국사 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "한국사",
+"group": "한국사",
+"kind": "정답",
+"id": "1coLlLxuac6qFhQCNkA00xtfNqAU7b6rt",
+"size": 73607,
+"title": "2027학년도 수능 한국사 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "한국지리",
+"group": "사회탐구",
+"kind": "문제",
+"id": "1vVJJhlG6OJBL3ebyULh6G6Tm2LcKAS95",
+"size": 3483880,
+"title": "2027학년도 수능 한국지리 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "한국지리",
+"group": "사회탐구",
+"kind": "정답",
+"id": "1A73SMMuDyT18GKKCyC40XoYnzuP9lb3h",
+"size": 41824,
+"title": "2027학년도 수능 한국지리 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "한문Ⅰ",
+"group": "제2외국어·한문",
+"kind": "문제",
+"id": "1UhgIpQy-YbvNbqPnYJFGOFv0vaoJ9KaU",
+"size": 2601008,
+"title": "2027학년도 수능 한문Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "한문Ⅰ",
+"group": "제2외국어·한문",
+"kind": "정답",
+"id": "1vYcqiYQS1ip7s_RiB7ncCBD9C_tomiM7",
+"size": 41391,
+"title": "2027학년도 수능 한문Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "화학1",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1NPSC6EiXVsYI0wF9lCsBxSBMfsMwWEj2",
+"size": 1021749,
+"title": "2027학년도 수능 화학Ⅰ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "화학1",
+"group": "과학탐구",
+"kind": "정답",
+"id": "1Xi-VUkYdtEspI6j5Y3XyInYhTHwIT9XO",
+"size": 41018,
+"title": "2027학년도 수능 화학Ⅰ 정답.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "화학2",
+"group": "과학탐구",
+"kind": "문제",
+"id": "1xNjgTJ_VQ-CP2KDRwNXtC7c2qd_1sqNL",
+"size": 915532,
+"title": "2027학년도 수능 화학Ⅱ 문제.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
+"subject": "화학2",
+"group": "과학탐구",
+"kind": "정답",
+"id": "1sQUrFz3_u5CgOOAhxVb1ELKkDHglscov",
+"size": 43734,
+"title": "2027학년도 수능 화학Ⅱ 정답.pdf"
 }
 ]
