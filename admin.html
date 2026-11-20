@@ -26,6 +26,44 @@
 let user = null;
 let current = 'comments';
 
+/* ---------- 방문자 (2026-11-20~, SQL _tools/sql/2026-11-20_visits.sql) ---------- */
+let vsDays = 14;
+const VS_SRC = { naver: '네이버', google: '구글', daum: '다음', kakao: '카카오톡', blog: '리카수니 블로그', bing: 'Bing', direct: '주소 직접·앱', inside: '자료실 안', other: '기타 사이트' };
+const vsPage = p => p === '/' ? '첫 화면' : p.replace(/^\/|\/$/g, '')
+  .replace(/^moe\/go(\d)\/(\d{4})-(\d{2})\/eng\/?(.*)$/, (m, g, y, mo, r) => `${y}년 ${+mo}월 고${g} 영어${r ? ' ' + r.replace(/\/$/, '') + '번' : ''}`)
+  .replace(/^suneung\/(\d{4})\/eng\/?(.*)$/, (m, y, r) => `${y}학년도 수능 영어${r ? ' ' + r + '번' : ''}`)
+  .replace(/^notes$/, '자료 요청').replace(/^english$/, '영어 PDF 자료받기').replace(/^get$/, '받기 페이지(카톡 링크)')
+  .replace(/^posts$/, '분석노트 전자책').replace(/^exams$/, '전과목 기출');
+async function tabVisits() {
+  const { data, error } = await sb.rpc('admin_visits', { p_days: vsDays });
+  if (error) return $('#panel').innerHTML = `<p class="muted">오류: ${esc(error.message)}</p>`;
+  const days = data.days || [], today = days[0] || { users: 0, views: 0 }, yday = days[1] || { users: 0, views: 0 };
+  const sum = (a, k) => a.reduce((s, d) => s + (+d[k] || 0), 0);
+  const w7 = days.slice(0, 7);
+  const max = Math.max(1, ...days.map(d => d.users));
+  const stat = (n, l) => `<div style="flex:1 1 120px;padding:12px;border-radius:12px;background:#f3f6fb"><b style="font-size:1.4rem;color:#142943">${n.toLocaleString()}</b><br><span class="meta">${l}</span></div>`;
+  const wk = d => '일월화수목금토'[new Date(d + 'T00:00:00+09:00').getDay()];
+  const bars = days.map(d => `<div style="display:flex;align-items:center;gap:8px;margin:3px 0;font-size:.88rem">
+      <span style="width:62px;color:#667">${d.day.slice(5).replace('-', '.')} ${wk(d.day)}</span>
+      <span style="flex:1;background:#eef2f8;border-radius:6px;height:18px;overflow:hidden"><span style="display:block;height:100%;width:${Math.round(d.users * 100 / max)}%;background:#2b4c7e"></span></span>
+      <span style="width:120px;text-align:right"><b>${d.users}</b>명 · ${d.views}쪽</span></div>`).join('');
+  const sTot = (data.srcs || []).reduce((s, x) => s + x.n, 0);
+  const srcs = (data.srcs || []).map(x => `<li>${VS_SRC[x.src] || esc(x.src)} <b>${x.n}</b>명 <span class="meta">${Math.round(x.n * 100 / (sTot || 1))}%</span></li>`).join('');
+  const pages = arr => (arr || []).map(x => `<li><a href="${esc(x.path)}" target="_blank" rel="noopener">${esc(vsPage(x.path))}</a> <b>${x.n}</b></li>`).join('') || '<li class="meta">아직 기록이 없어요</li>';
+  const dbtn = (n, l) => `<button class="btn btn-sm ${vsDays === n ? 'btn-navy' : 'btn-line'}" onclick="vsDays=${n};tabVisits()">${l}</button>`;
+  $('#panel').innerHTML = `
+    <div class="card">
+      <div class="row" style="gap:10px;flex-wrap:wrap">
+        ${stat(today.users, '오늘 방문자')}${stat(yday.users, '어제 방문자')}${stat(sum(w7, 'users'), '최근 7일 방문자')}${stat(sum(w7, 'views'), '최근 7일 페이지 조회')}
+      </div>
+      <p class="meta" style="margin:10px 0 0">2026-11-20부터 기록. 같은 사람(같은 브라우저)은 하루 한 번만 세고, 검색 로봇과 이 관리자 브라우저는 빼요. 광고 차단·구글 애널리틱스와 세는 방식이 달라 숫자가 조금 달라요.</p>
+    </div>
+    <div class="card"><div class="row between" style="flex-wrap:wrap;gap:8px"><h3 style="margin:0">날짜별 방문자</h3><div>${dbtn(14, '14일')} ${dbtn(30, '30일')} ${dbtn(90, '90일')}</div></div>${bars}</div>
+    <div class="card"><h3 style="margin-top:0">어디서 왔나 <small class="meta">최근 7일, 그날 처음 들어온 곳</small></h3><ul>${srcs || '<li class="meta">아직 기록이 없어요</li>'}</ul></div>
+    <div class="card"><h3 style="margin-top:0">오늘 많이 본 페이지</h3><ol>${pages(data.today_pages)}</ol></div>
+    <div class="card"><h3 style="margin-top:0">최근 7일 많이 본 페이지</h3><ol>${pages(data.pages)}</ol></div>`;
+}
+
 /* ---------- 탭 ---------- */
 function shell() {
   $('#main').innerHTML = `
@@ -36,6 +74,7 @@ function shell() {
       <button class="tab" data-t="materials" onclick="showTab('materials')">자료 관리</button>
       <button class="tab" data-t="naesin" onclick="showTab('naesin')">학원생 승인 <span id="n-naesin"></span></button>
       <button class="tab" data-t="people" onclick="showTab('people')">요청자</button>
+      <button class="tab" data-t="visits" onclick="showTab('visits')">방문자</button>
     </div>
     <section id="panel"></section>`;
 }
@@ -50,6 +89,7 @@ async function showTab(t) {
   if (t === 'notes') await tabNotes();
   if (t === 'naesin') await tabNaesin();
   if (t === 'people') await tabPeople();
+  if (t === 'visits') await tabVisits();
   updateBadges();
 }
 
@@ -590,6 +630,7 @@ async function removeMaterial(id) {
     return;
   }
 
+  try { localStorage.setItem('lks_admin', '1'); } catch (e) {} // 이 브라우저의 원장님 방문은 방문자 수에서 빼요
   shell();
   showTab('comments');
 })();

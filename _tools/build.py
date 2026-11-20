@@ -264,6 +264,17 @@ def cp_news(body, d):
 
 # 코코스학원 안내 띠: 모든 페이지 바닥글 바로 위 (2026-11-15 원장님 확정 — 자료실 방향 = 학원 원생 모집 우선).
 # 누른 횟수는 GA 이벤트 cocos_click (to: home·tel·talk) 로 재요. 홍보 문구에 '예비'·'선행' 은 쓰지 않아요.
+# 방문자 수 (2026-11-20 원장님 요청, 관리자 '방문자' 탭 · SQL _tools/sql/2026-11-20_visits.sql). 브라우저마다 임의 번호로 하루 한 번만 셈, 검색 로봇·관리자(lks_admin)는 빼요
+VISIT_JS = '''<script>
+(function () { try {
+  if (/bot|crawl|spider|slurp|yeti|headless|lighthouse|preview|facebookexternal/i.test(navigator.userAgent) || navigator.webdriver || location.hostname !== 'data.likasuni.com' || localStorage.getItem('lks_admin')) return;
+  var vid = localStorage.getItem('lks_vid'); if (!vid) { vid = Math.random().toString(36).slice(2, 12) + Date.now().toString(36); localStorage.setItem('lks_vid', vid); }
+  var h = ''; try { h = document.referrer ? new URL(document.referrer).hostname : ''; } catch (e) {}
+  var src = !h ? (/KAKAOTALK/i.test(navigator.userAgent) ? 'kakao' : 'direct') : h === location.hostname ? 'inside' : /naver/.test(h) ? 'naver' : /google/.test(h) ? 'google' : /daum/.test(h) ? 'daum' : /kakao/.test(h) ? 'kakao' : /likasuni\\.com|blogger|blogspot/.test(h) ? 'blog' : /bing/.test(h) ? 'bing' : 'other';
+  setTimeout(function () { fetch('https://iiyhmskvdjgstoikonwu.supabase.co/rest/v1/rpc/hit', { method: 'POST', keepalive: true, headers: { apikey: 'sb_publishable_JHxdlqWVh26TqD36jLflYQ_KoUmeuUj', 'Content-Type': 'application/json' }, body: JSON.stringify({ p_path: location.pathname, p_vid: vid, p_src: src }) }).catch(function () {}); }, 800);
+} catch (e) {} })();
+</script>'''
+
 COCOS_BAND = '''<aside class="cc-band" aria-label="코코스학원 안내"><style>
 .cc-band{max-width:1040px;margin:-28px auto 0;padding:0 16px 8px;box-sizing:border-box}
 .cc-in{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:18px 20px;border-radius:16px;background:#142943;color:#fff}
@@ -340,6 +351,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 <div class="biz">기출문제 저작권은 한국교육과정평가원·각 시도교육청에 있으며, 학습 목적으로 공개 자료를 정리해 제공합니다.<br>상호: 리카수니</div>
 </footer>
 <script src="/push.js?v=5" defer></script>
+{VISIT_JS}
 <script>
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
