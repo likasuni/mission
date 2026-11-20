@@ -7,6 +7,9 @@
   if (!box) return;
   // 첫 화면에서만 보여요 (가젯이 모든 페이지에 들어가도 글 페이지에선 숨김)
   if (location.pathname !== '/' && location.pathname !== '/index.html') { box.style.display = 'none'; return; }
+  // 가젯은 첫 화면 소개(긴 HTML 가젯) 아래 맨 끝에 놓여서 잘 안 보임 → 소개 안 '03 우리 학교의 시험' 칸(#cocos-school) 안으로 옮겨요
+  var home = document.querySelector('#cocos-school .cx-container');
+  if (home) home.appendChild(box);
 
   // [구분, 학교 이름(버튼), 제목에서 찾을 말]
   var SCHOOLS = [
