@@ -145,8 +145,8 @@ Deno.serve(async (req) => {
     for (const x of readyAll) {
       // 관리자 목록: '만들어야 함'(missing) → '올림·수령 대기'(resolved)
       const { data: moved } = await db.from('note_orders').update({ status: 'resolved' }).eq('user_id', uid).eq('label', x.w.label).eq('status', 'missing').select('id');
-      // 카톡 동의가 없는 요청은 '완성된 때'부터 3일을 셈 (아래 정리 규칙) — 방금 완성으로 바뀐 줄만
-      if (moved?.length) await db.from('note_orders').update({ kakao_issue_at: new Date().toISOString() }).in('id', moved.map((r: any) => r.id)).eq('kakao_issue', 'no_consent');
+      // 카톡을 못 보내는 요청(동의 없음·연결 없음·실패)은 '완성된 때'부터 3일을 셈 (아래 정리 규칙) — 방금 완성으로 바뀐 줄만
+      if (moved?.length) await db.from('note_orders').update({ kakao_issue_at: new Date().toISOString() }).in('id', moved.map((r: any) => r.id)).not('kakao_issue', 'is', null);
       await db.from('comments').update({ reply: `${x.w.label} 준비됐어요! 자료실에 카카오로 로그인해서 '카톡으로 받기'를 누르면 바로 받을 수 있어요.`, replied_at: new Date().toISOString() })
         .eq('user_id', uid).eq('content', `[자료 요청] ${x.w.label} 부탁드려요.`).like('reply', '%접수했어요%');
     }
@@ -218,13 +218,13 @@ Deno.serve(async (req) => {
       .eq('user_id', uid).eq('content', `[자료 요청] ${w.label} 부탁드려요.`).not('reply', 'like', '%보내 드렸어요%');
     log.push(`${uid}: sent ${w.label}`);
   }
-  // 연락이 안 되는 요청 정리: 완성됐지만 카톡 동의가 없어 못 보내고 3일 동안 받으러 오지 않으면
+  // 연락이 안 되는 요청 정리: 완성됐지만 카톡을 못 보내고(동의 없음·연결 없음·발송 실패, 2026-11-20 셋 다로 넓힘) 3일 동안 받으러 오지 않으면
   // 목록(첫 화면 '받을 수 있어요'·관리자 '직접 안내 필요')에서 빼고, 답글로 다시 요청하도록 안내 (자료는 이미 있어서 다시 요청하면 바로 받음)
-  const { data: stale } = await db.from('note_orders').select('id,user_id,label').eq('status', 'resolved').eq('kakao_issue', 'no_consent')
+  const { data: stale } = await db.from('note_orders').select('id,user_id,label,kakao_issue').eq('status', 'resolved').in('kakao_issue', ['no_consent', 'no_token', 'fail'])
     .lt('kakao_issue_at', new Date(Date.now() - 3 * 86400e3).toISOString()).limit(200);
   for (const o of stale || []) {
     await db.from('note_orders').update({ status: 'expired' }).eq('id', o.id);
-    await db.from('comments').update({ reply: `${o.label} 완성됐지만 카톡 받기 동의가 없어서 보내 드리지 못했어요. 필요하면 자료실에 카카오로 로그인해서 다시 요청해 주세요. (바로 받을 수 있어요)`, replied_at: new Date().toISOString() })
+    await db.from('comments').update({ reply: `${o.label} 완성됐지만 ${o.kakao_issue === 'no_consent' ? '카톡 받기 동의가 없어서' : '카톡이 연결되지 않아'} 보내 드리지 못했어요. 필요하면 자료실에 카카오로 로그인해서 다시 요청해 주세요. (바로 받을 수 있어요)`, replied_at: new Date().toISOString() })
       .eq('user_id', o.user_id).eq('content', `[자료 요청] ${o.label} 부탁드려요.`).not('reply', 'like', '%보내 드렸어요%');
     log.push(`${o.user_id}: expired ${o.label}`);
   }
