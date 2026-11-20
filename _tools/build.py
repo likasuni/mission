@@ -338,7 +338,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
   if (location.pathname.indexOf('/notes') === 0 && location.hash === '#etc-req') {{ location.replace('/#talk'); return; }}  /* 옛 기타 자료 요청 → 자료 문의 (2026-11-14) */
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=56'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=57'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -1058,19 +1058,32 @@ def en_table(g):
                  f'<td>{mark(nn, f"{nn}문항")}</td><td>{mark(vv, f"{vv}문항")}</td><td>{mark(k in WORDS, "✓")}</td></tr>')
     return (f'<div class="card g-panel" id="go{g}" data-g="{g}"><h2>고{g} 영어 모의고사</h2><table class="en-t"><thead><tr><th>회차</th><th>분석노트</th><th>변형문제</th><th>단어</th></tr></thead>'
             f'<tbody>{rows}</tbody></table></div>')
+# 수능 탭 (2026-11-20 원장님: 영어 PDF 자료받기에 수능도). 학년도 순, 문항 해설 수 + 분석노트 카톡 요청(m=0, y=학년도)
+sn_en = sorted([k for k in sessions if k[0] == 'sn' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: -k[2])
+def sn_table():
+    if not sn_en: return ''
+    rows = ''
+    for k in sn_en:
+        pc = len([p for p in POSTS_BY.get(k, []) if p['subj'] == '영어'])
+        rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{k[2]}학년도 수능 영어</a></td>'
+                 + (f'<td><a class="ok" href="{subj_url(k, "영어")}#read">{pc}문항</a></td>' if pc else '<td><span class="no">–</span></td>')
+                 + f'<td><a href="/notes/?y={k[2]}&m=0&g=3#note-req">카톡 요청</a></td></tr>')
+    return (f'<div class="card g-panel" id="gosn" data-g="sn"><h2>수능 영어</h2><p class="muted">수능은 학년도로 적어요 (2026년 11월에 본 시험 = 2027학년도).</p>'
+            f'<table class="en-t"><thead><tr><th>시험</th><th>문항 해설</th><th>분석노트</th></tr></thead><tbody>{rows}</tbody></table></div>')
 enbody = ('''<h1 class="page-h1">영어 모의고사 분석노트·변형문제·단어</h1>
 <p class="lead">회차를 누르면 문항별 분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
-<b>21~24번·30~40번 분석노트</b>는 카카오톡 요청으로 받을 수 있어요.</p>'''
+<b>21~24번·30~40번 분석노트</b>는 카카오톡 요청으로 받을 수 있어요. <b>수능</b> 영어 문항 해설과 분석노트 요청은 <a href="#gosn">수능</a> 탭에 있어요.</p>'''
           # 고1·고2·고3 탭: 누른 학년 표만 보임 (JS 없으면 세 표 모두 보임), 고른 학년은 주소(#go2)와 브라우저에 기억
           + '<div class="g-tabs" role="tablist">' + ''.join(
               f'<button type="button" class="g-tab" role="tab" data-g="{g}">고{g}<small>{sum(1 for k in en_sess if k[1] == g)}회차</small></button>'
-              for g in (1, 2, 3) if any(k[1] == g for k in en_sess)) + '</div>'
-          + en_table(1) + en_table(2) + en_table(3) + ad()
+              for g in (1, 2, 3) if any(k[1] == g for k in en_sess))
+          + (f'<button type="button" class="g-tab" role="tab" data-g="sn">수능<small>{len(sn_en)}회</small></button>' if sn_en else '') + '</div>'
+          + en_table(1) + en_table(2) + en_table(3) + sn_table() + ad()
           + '''<script>(function(){var t=document.querySelectorAll('.g-tab'),p=document.querySelectorAll('.g-panel');
 function show(g){t.forEach(function(b){var on=b.dataset.g==g;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});
 p.forEach(function(x){x.hidden=x.dataset.g!=g});try{localStorage.setItem('enGrade',g)}catch(e){}}
 t.forEach(function(b){b.onclick=function(){show(b.dataset.g);history.replaceState(null,'','#go'+b.dataset.g)}});
-var h=(location.hash.match(/go([123])/)||[])[1],s=null;try{s=localStorage.getItem('enGrade')}catch(e){}
+var h=(location.hash.match(/go([123]|sn)/)||[])[1],s=null;try{s=localStorage.getItem('enGrade')}catch(e){}
 show(h||s||'1')})();</script>''')
 page('/english/', '영어 모의고사 분석노트·변형문제·단어 PDF | 리카수니 자료실',
      '고1·고2·고3 영어 모의고사 회차별 문항 분석노트, 변형문제, 영어 단어 총정리 PDF 무료. 리카수니 원장 직접 제작.', enbody,

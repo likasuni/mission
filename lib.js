@@ -469,7 +469,7 @@ async function noteRequest(user) {
   // 수능(월 칸의 '수능' = 값 0)은 학년도로 골라요 (2026-11-20~). 11월에 본 수능 = 다음 해 학년도
   const snY0 = y0 + (new Date().getMonth() >= 10 ? 1 : 0);
   const yOpts = (sn, sel) => sn
-    ? range(2021, snY0).reverse().map(v => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${v}학년도</option>`).join('')
+    ? range(2016, snY0).reverse().map(v => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${v}학년도</option>`).join('')
     : opt(range(2020, y0).reverse(), sel);
   const bcfg = b => NOTE_BOOK_CFG[b] || { u: '강', max: 30, n: 10 };
   const curBook = () => (document.getElementById('nr-b') || {}).value || d.book || NOTE_BOOKS[0];

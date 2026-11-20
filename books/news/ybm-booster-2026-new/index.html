@@ -207,7 +207,7 @@
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {
   if (location.pathname.indexOf('/notes') === 0 && location.hash === '#etc-req') { location.replace('/#talk'); return; }  /* 옛 기타 자료 요청 → 자료 문의 (2026-11-14) */
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=56'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=57'];
   function next(i) { if (i >= srcs.length) { if (after) after(); return; } var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () { next(i + 1); }; document.body.appendChild(s); }
   function go() { if (!done) { done = true; next(0); } }
   window.lazyLogin = function () { after = function () { showLogin(); }; if (done) { if (window.showLogin) showLogin(); } else go(); };
