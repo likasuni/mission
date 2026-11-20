@@ -25,6 +25,8 @@
 
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var B = 'box-sizing:border-box;max-width:100%;';
+  // 글 목록 날짜는 미국 시간으로 와서 한국 날짜로 바꿔요
+  var kst = function (t) { var d = new Date(t); return isNaN(d) ? '' : new Date(d.getTime() + 9 * 3600e3).toISOString().slice(0, 10); };
   box.innerHTML = '<div style="' + B + 'width:100%;overflow:hidden;border:1px solid #dbe3ec;border-top:4px solid #2456c7;background:#fff;padding:20px 18px;margin:18px 0;color:#142943;line-height:1.7;word-break:keep-all">'
     + '<h2 style="margin:0 0 4px;font-size:21px;color:#142943">🏫 학교별 학부모 정보</h2>'
     + '<p style="margin:0 0 14px;font-size:14px;color:#53647a">우리 아이 학교 글만 모아 보세요. 내신 분석 · 시험 일정 · 교과서 · 방학 준비</p>'
@@ -37,7 +39,7 @@
         var es = (j.feed && j.feed.entry) || [];
         es.forEach(function (e) {
           var a = (e.link || []).filter(function (l) { return l.rel === 'alternate'; })[0];
-          if (a) acc.push({ t: e.title.$t, u: a.href, d: (e.published.$t || '').slice(0, 10) });
+          if (a) acc.push({ t: e.title.$t, u: a.href, d: kst(e.published.$t) });
         });
         return es.length === 150 && start < 1500 ? load(start + 150, acc) : acc;
       });
