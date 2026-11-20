@@ -53,6 +53,10 @@ for v in (json.load(open(_vp)) if os.path.exists(_vp) else []):
     m = _re.search(_ex, t) or _re.search(_ex, v['path'][-1])  # 파일명에 회차가 없으면(예: 18번_변형문제.pdf) 폴더 이름에서
     nm = _re.search(r'[_\s](\d{1,2}(?:\s*[~-]\s*\d{1,2})?)\s*번', '_' + t)
     m2 = None if m else _re.match(r'고(\d)_(\d{4})_(\d{1,2})월', v['path'][-1])  # 폴더 이름 '고3_2025_6월_변형문제_18-45번' (연도는 학년도, PDF 제목 기준)
+    msn = None if (m or m2) else (_re.search(r'(\d{4})\s*학년도[\s_]*(?:대학수학능력시험|수능)', t) or _re.search(r'(\d{4})\s*학년도[\s_]*(?:대학수학능력시험|수능)', v['path'][-1]))
+    if msn and nm:  # 수능 변형문제 (폴더 '2027학년도 수능', 2026-11-20~)
+        VAR[('sn', 0, int(msn.group(1)), 0)].append((nm.group(1).replace(' ', '').replace('-', '~'), v['id']))
+        continue
     if not (m or m2) or not nm: continue
     if m2:
         VAR[('moe', int(m2.group(1)), int(m2.group(2)), int(m2.group(3)))].append((nm.group(1).replace(' ', '').replace('-', '~'), v['id']))
@@ -105,9 +109,11 @@ def post_card(ps, title):
         + '</div></div>')
 
 
-def skey(t):  # 제목·폴더 이름에서 회차 (moe, 학년, 연도, 월)
+def skey(t):  # 제목·폴더 이름에서 회차 (moe, 학년, 연도, 월) · 수능은 'YYYY학년도 수능' → (sn, 0, 학년도, 0) (2026-11-20~)
     m = _re.search(r'(\d{4})\s*(년|학년도)[\s_]*(\d{1,2})\s*월[\s_]*고\s*(\d)', t)
-    if not m: return None
+    if not m:
+        m = _re.search(r'(\d{4})\s*학년도[\s_]*(?:대학수학능력시험|수능)', t)
+        return ('sn', 0, int(m.group(1)), 0) if m else None
     y, mo, g = int(m.group(1)), int(m.group(3)), int(m.group(4))
     if g == 3 and mo in (6, 9) and m.group(2) == '년': y += 1
     return ('moe', g, y, mo)
@@ -450,7 +456,7 @@ for idx, k in enumerate(keys_sorted):
 <div class="dl"><a href="{view(r["id"])}" target="_blank" rel="noopener">미리보기</a><a href="{down(r["id"])}" rel="noopener">다운로드</a></div></div>''' for r in xs)
         extra = ''
         en_top = ''
-        if s == '영어' and k[0] == 'moe':
+        if s == '영어' and k[0] in ('moe', 'sn'):  # 수능도 같은 틀 (2026-11-20 원장님)
             nt = NOTES.get(k, {})
             def nbtn(n):
                 if is_req(n):
@@ -478,7 +484,7 @@ for idx, k in enumerate(keys_sorted):
                         '<div class="var" id="var"><b>리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
                         + ''.join(f'<a class="chip" href="{view(i)}" target="_blank" rel="noopener">{e(n)}번</a>' for n, i in vs) + '</div></div>')
             extra = f'''<section class="card mission req-box"><div id="note-req"{pre}><h2>분석노트 카톡 요청 <small>18~45번</small></h2><p class="muted">이 회차 18~45번 분석노트를 카카오톡으로 받을 수 있어요. 불러오는 중...</p></div>{ad(True)}</section>'''  # 광고는 요청 상자 안 맨 아래 (lib.js 는 #note-req 안만 다시 그림)
-            if k[0] != 'moe': extra += f'<div class="card">{var_html}</div>'
+            if not en_top: extra += f'<div class="card">{var_html}</div>'
         # 같은 과목 다른 회차
         others = [x for x in same if x != k and s in {r['subject'] for r in sessions[x]}]
         others = sorted(others, key=lambda x: (-s_year(x), -x[3]))[:12]
@@ -495,8 +501,8 @@ for idx, k in enumerate(keys_sorted):
                     (f'<p><b>오답이 많았던 문항</b> · {e(inf["wrong"][s])}</p>' if (inf.get('wrong') or {}).get(s) else '') + \
                     f'<p><a href="{s_url(k)}">{e(name)} 전체 요약·등급컷 보기 →</a></p></div>'
         if en_top:
-            body = f'''<h1 class="page-h1">{e(full)} 분석노트·변형문제·단어</h1>
-<p class="lead">{e(s_when(k))} · 리카수니 원장이 직접 만든 영어 자료와 기출 원본을 한곳에 모았어요.</p>
+            body = f'''<h1 class="page-h1">{e(full)} {"문제·정답·해설·분석노트" if k[0] == "sn" else "분석노트·변형문제·단어"}</h1>
+<p class="lead">{e(s_when(k))} · 리카수니 원장이 직접 만든 영어 자료와 기출 원본(문제지·정답표·듣기대본)을 한곳에 모았어요.</p>
 {en_top}
 {extra}
 {ad()}
@@ -519,8 +525,8 @@ for idx, k in enumerate(keys_sorted):
             body += post_card([p for p in POSTS_BY[k] if p['subj'] == s], f'{full} 문항별 해설')
         body = body.replace('<!--READ-->\n', '').replace('<!--READ-->', '')
         if en_top:
-            page(subj_url(k, s), f'{full} 분석노트·변형문제·단어 PDF | 리카수니 자료실',
-                 f'{full} 문항별 분석노트, 변형문제, 영어 단어 총정리와 기출 원본 PDF 무료. 리카수니 자료실',
+            page(subj_url(k, s), f'{full} ' + ('기출문제·정답·해설·분석노트 PDF' if k[0] == 'sn' else '분석노트·변형문제·단어 PDF') + ' | 리카수니 자료실',
+                 f'{full} 문항별 분석노트, 변형문제, 영어 단어 총정리와 기출 원본(문제지·정답) PDF 무료. {s_when(k)}. 리카수니 자료실',
                  body, crumbs + [(subj_url(k, s), sn)], '/english/', comments=(subj_url(k, s).strip('/'), full))
         else:
             page(subj_url(k, s), f'{full} 기출문제·해설 PDF 다운로드 | 리카수니 자료실',
@@ -1062,17 +1068,17 @@ def en_table(g):
 sn_en = sorted([k for k in sessions if k[0] == 'sn' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: -k[2])
 def sn_table():
     if not sn_en: return ''
+    mark = lambda ok, t: f'<span class="ok">{t}</span>' if ok else '<span class="no">–</span>'
     rows = ''
     for k in sn_en:
-        pc = len([p for p in POSTS_BY.get(k, []) if p['subj'] == '영어'])
-        rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{k[2]}학년도 수능 영어</a></td>'
-                 + (f'<td><a class="ok" href="{subj_url(k, "영어")}#read">{pc}문항</a></td>' if pc else '<td><span class="no">–</span></td>')
-                 + f'<td><a href="/notes/?y={k[2]}&m=0&g=3#note-req">카톡 요청</a></td></tr>')
-    return (f'<div class="card g-panel" id="gosn" data-g="sn"><h2>수능 영어</h2><p class="muted">수능은 학년도로 적어요 (2026년 11월에 본 시험 = 2027학년도).</p>'
-            f'<table class="en-t"><thead><tr><th>시험</th><th>문항 해설</th><th>분석노트</th></tr></thead><tbody>{rows}</tbody></table></div>')
+        nn = len(NOTES.get(k, {})); vv = len(dict(VAR.get(k, [])))
+        rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{k[2]}학년도 수능</a></td>'
+                 f'<td>{mark(nn, f"{nn}문항")}</td><td>{mark(vv, f"{vv}문항")}</td><td>{mark(k in WORDS, "✓")}</td></tr>')
+    return (f'<div class="card g-panel" id="gosn" data-g="sn"><h2>수능 영어</h2>'
+            f'<table class="en-t"><thead><tr><th>회차</th><th>분석노트</th><th>변형문제</th><th>단어</th></tr></thead><tbody>{rows}</tbody></table></div>')
 enbody = ('''<h1 class="page-h1">영어 모의고사 분석노트·변형문제·단어</h1>
 <p class="lead">회차를 누르면 문항별 분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
-<b>21~24번·30~40번 분석노트</b>는 카카오톡 요청으로 받을 수 있어요. <b>수능</b> 영어 문항 해설과 분석노트 요청은 <a href="#gosn">수능</a> 탭에 있어요.</p>'''
+<b>21~24번·30~40번 분석노트</b>는 카카오톡 요청으로 받을 수 있어요. <b>수능</b>은 <a href="#gosn">수능</a> 탭에서 학년도별로 볼 수 있어요.</p>'''
           # 고1·고2·고3 탭: 누른 학년 표만 보임 (JS 없으면 세 표 모두 보임), 고른 학년은 주소(#go2)와 브라우저에 기억
           + '<div class="g-tabs" role="tablist">' + ''.join(
               f'<button type="button" class="g-tab" role="tab" data-g="{g}">고{g}<small>{sum(1 for k in en_sess if k[1] == g)}회차</small></button>'
