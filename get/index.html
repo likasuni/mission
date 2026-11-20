@@ -87,7 +87,13 @@
   // '이어서 공부하기': 모의고사면 그 번호 전자책·해설(있으면) 또는 회차 페이지 + 같은 회차 다른 번호 요청
   function nextLinks(info) {
     var q = info.query || {}, html = '';
-    if (info.kind === 'moe' && q.g && q.y && q.m) {
+    if (info.kind === 'moe' && q.y && +q.m === 0) { // 수능 (y = 학년도, 2026-11-20~)
+      var sr = '/suneung/' + q.y + '/eng/';
+      html += btn('btn-navy', sr + q.n + '/', q.n + '번 문항 해설 보기 (있으면)', 'post');
+      html += btn('btn-line', sr, q.y + '학년도 수능 영어 자료 보기', 'round');
+      html += btn('btn-line', '/notes/?g=3&y=' + q.y + '&m=0', '같은 수능 다른 번호 받기', 'more');
+      show(html, q.y + '학년도 수능 영어 ' + q.n + '번을 받았어요. 같은 시험 자료를 이어서 볼 수 있어요.');
+    } else if (info.kind === 'moe' && q.g && q.y && q.m) {
       var round = '/moe/go' + q.g + '/' + q.y + '-' + pad(q.m) + '/eng/';
       var name = q.y + '년 ' + q.m + '월 고' + q.g;
       fetch('/notes/view/list.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (eb) {

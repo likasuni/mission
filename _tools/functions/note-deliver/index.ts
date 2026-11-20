@@ -69,6 +69,8 @@ function moeKey(f: Entry): number[] | null {
   for (const p of [...f.path].reverse()) {
     m = p.match(/(\d{4})\s*년\s*(\d{1,2})\s*월\s*고\s*(\d)/);
     if (m) return [+m[1], +m[2], +m[3]];
+    m = p.match(/(\d{4})\s*학년도\s*수능/); // 수능 = [학년도, 0, 3] (폴더 '고3 모의고사/2027학년도 수능', 2026-11-20~)
+    if (m) return [+m[1], 0, 3];
   }
   return null;
 }
@@ -81,7 +83,9 @@ function makeSpec(b: any): Spec | { error: string } {
   const n = Number(b.n);
   if (b.kind === 'moe') {
     const y = Number(b.y), m = Number(b.m), g = Number(b.g);
-    if (!(y >= 2015 && y <= 2030 && m >= 1 && m <= 12 && g >= 1 && g <= 3)) return { error: '회차를 확인해 주세요.' };
+    if (!(y >= 2015 && y <= 2030 && m >= 0 && m <= 12 && g >= 1 && g <= 3) || (m === 0 && g !== 3)) return { error: '회차를 확인해 주세요.' };
+    // m = 0 은 수능 (y = 학년도, 2026-11-20~)
+    if (m === 0) return { kind: 'moe', label: `${y}학년도 수능 영어 ${n}번 분석노트`, query: { y, m, g, n }, words: [], unitRe: /$^/, n };
     return { kind: 'moe', label: `${y}년 ${m}월 고${g} 영어 모의고사 ${n}번 분석노트`, query: { y, m, g, n }, words: [], unitRe: /$^/, n };
   }
   if (b.kind === 'book') {

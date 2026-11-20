@@ -141,13 +141,14 @@ function recentComments() {
     const t = c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '');
     let m = t.match(/^(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번$/), q = '';
     if (m) q = `?y=${m[1]}&m=${m[2]}&g=${m[3]}&n=${m[4]}`;
+    else if ((m = t.match(/^(\d{4})학년도 수능 영어 (\d+)번$/))) q = `?y=${m[1]}&m=0&g=3&n=${m[2]}`;  // 수능 (m=0, 학년도)
     else if ((m = t.match(/^(.+) (\d+)(?:강|회) (?:Gateway|예시문제|(\d+)번)$/))) q = `?book=${encodeURIComponent(m[1])}&unit=${m[2]}&n=${m[3] || 0}`;
     return `/${c.page_key}/${q}#note-req`;
   };
   const short = c => c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').replace(' 부탁드려요.', '').replace(' 영어 모의고사', '');
   const shown = { pre: 6, rdy: 6 };
   let cache = null, gf = 'all';  // gf: 학년 필터 (all·1·2·3·b=부교재)
-  const gradeOf = c => { if (c.content.startsWith('[자료 요청] 기타 ·')) return 'e'; const m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; };  // e = 기타 자료 요청
+  const gradeOf = c => { if (c.content.startsWith('[자료 요청] 기타 ·')) return 'e'; if (/\d학년도 수능 /.test(c.content)) return '3'; const m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; };  // e = 기타 자료 요청
   // 미리보기: notes/pv/index.json 에 있는 번호만 (분석노트 첫 쪽 윗부분 그림, _tools/note_preview.py 로 만듦)
   let pv = new Set();
   fetch('/notes/pv/index.json').then(r => r.ok ? r.json() : []).then(a => { pv = new Set(a); if (cache) render(); }).catch(() => {});
@@ -327,6 +328,7 @@ const ebList = () => _eb || (_eb = fetch('/notes/view/list.json').then(r => r.ok
 // 받은 모의고사 분석노트 → [전자책 보기] [해설 보기] (전자책이 없으면 그 회차 자료 페이지)
 function noteLinks(kind, q, eb) {
   if (kind !== 'moe' || !q || !q.g) return '';
+  if (+q.m === 0) return `<a class="btn btn-line btn-sm" href="/suneung/${q.y}/eng/">수능 해설·자료 보기</a>`; // 수능 (y = 학년도)
   const e = eb[`moe-g${q.g}-${q.y}-${q.m}-${q.n}`];
   return e ? `<a class="btn btn-navy btn-sm" href="${e}">📘 ${q.n}번 전자책 보기</a> <a class="btn btn-line btn-sm" href="${e.replace('#ebook', '')}">해설 보기</a>`
     : `<a class="btn btn-line btn-sm" href="/moe/go${q.g}/${q.y}-${String(q.m).padStart(2, '0')}/eng/">회차 자료 보기</a>`;
@@ -464,6 +466,11 @@ async function noteRequest(user) {
   const y0 = new Date().getFullYear();
   const opt = (arr, sel) => arr.map(v => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${v}</option>`).join('');
   const range = (a, b) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
+  // 수능(월 칸의 '수능' = 값 0)은 학년도로 골라요 (2026-11-20~). 11월에 본 수능 = 다음 해 학년도
+  const snY0 = y0 + (new Date().getMonth() >= 10 ? 1 : 0);
+  const yOpts = (sn, sel) => sn
+    ? range(2021, snY0).reverse().map(v => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${v}학년도</option>`).join('')
+    : opt(range(2020, y0).reverse(), sel);
   const bcfg = b => NOTE_BOOK_CFG[b] || { u: '강', max: 30, n: 10 };
   const curBook = () => (document.getElementById('nr-b') || {}).value || d.book || NOTE_BOOKS[0];
   const numOpts = k => {
@@ -483,9 +490,9 @@ async function noteRequest(user) {
     <p class="nr-hint" id="nr-hint">${HINT[startEtc ? 'etc' : startBook ? 'book' : 'moe']}</p>
     <div id="nr-pick"${startEtc ? ' style="display:none"' : ''}>
     <div id="nr-moe" class="row"${startBook ? ' style="display:none"' : ''}>
-      <select id="nr-y">${opt(range(2020, y0).reverse(), d.y || y0)}</select>
-      <select id="nr-m">${opt([3, 4, 5, 6, 7, 9, 10, 11], d.m || 9)}</select><span>월</span>
-      <select id="nr-g">${opt([1, 2, 3], d.g || 1)}</select><span>학년 영어</span>
+      <select id="nr-y">${yOpts(d.m === '0', d.y || (d.m === '0' ? snY0 : y0))}</select>
+      <select id="nr-m">${opt([3, 4, 5, 6, 7, 9, 10, 11], d.m || 9)}<option value="0"${d.m === '0' ? ' selected' : ''}>수능</option></select><span id="nr-ml">${d.m === '0' ? '' : '월'}</span>
+      <select id="nr-g"${d.m === '0' ? ' style="display:none"' : ''}>${opt([1, 2, 3], d.m === '0' ? 3 : d.g || 1)}</select><span id="nr-gl">${d.m === '0' ? '영어' : '학년 영어'}</span>
     </div>
     <div id="nr-book" class="row"${startBook ? '' : ' style="display:none"'}>
       <select id="nr-b">${opt(NOTE_BOOKS, d.book)}</select>
@@ -502,8 +509,9 @@ async function noteRequest(user) {
   const $v = id => document.getElementById(id).value;
   const preview = () => {
     const n = $v('nr-n');
+    const nn = n === '41' ? '41~42' : n === '43' ? '43~45' : n;
     document.getElementById('nr-preview').textContent = kind === 'moe'
-      ? `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${n === '41' ? '41~42' : n === '43' ? '43~45' : n}번 분석노트`
+      ? ($v('nr-m') === '0' ? `요청: ${$v('nr-y')}학년도 수능 영어 ${nn}번 분석노트` : `요청: ${$v('nr-y')}년 ${$v('nr-m')}월 고${$v('nr-g')} 영어 모의고사 ${nn}번 분석노트`)
       : `요청: ${$v('nr-b')} ${$v('nr-u')}${bcfg($v('nr-b')).u} ${n === '0' ? zeroName($v('nr-b')) : n + '번'} 분석노트`;
   };
   const tabs = [...card.querySelectorAll('.tabs .tab')];
@@ -523,6 +531,20 @@ async function noteRequest(user) {
     preview();
   });
   card.querySelectorAll('select').forEach(s => s.onchange = preview);
+  let wasSn = $v('nr-m') === '0';
+  document.getElementById('nr-m').onchange = () => { // 수능 ↔ 모의고사: 연도는 학년도로, 학년은 고3 고정
+    const sn = $v('nr-m') === '0';
+    if (sn !== wasSn) {
+      const yv = +$v('nr-y');
+      document.getElementById('nr-y').innerHTML = yOpts(sn, sn ? Math.min(yv + 1, snY0) : Math.min(yv - 1, y0));
+      document.getElementById('nr-g').style.display = sn ? 'none' : '';
+      if (sn) document.getElementById('nr-g').value = '3';
+      document.getElementById('nr-ml').textContent = sn ? '' : '월';
+      document.getElementById('nr-gl').textContent = sn ? '영어' : '학년 영어';
+      wasSn = sn;
+    }
+    preview();
+  };
   // 페이지의 주황 번호 버튼(요청 가능한 번호)을 누르면 요청 칸에 그 번호를 바로 선택
   document.querySelectorAll('a.nb.req[data-n]').forEach(a => a.addEventListener('click', () => {
     if (kind !== 'moe' || document.getElementById('nr-pick').style.display) card.querySelector('.tab[data-k="moe"]').click();

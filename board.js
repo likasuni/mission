@@ -19,7 +19,7 @@
   if (w) for (var j = 0; j < w.children.length; j++) { var ch = w.children[j]; if (/^H[23]$/.test(ch.tagName) || ch.classList.contains('title')) ch.style.display = 'none'; }
   var list = root.querySelector('.lks-list');
   var shown = { pre: 4, rdy: 4, cmt: 1 }, cache = [], talk = [], gf = 'all'; // gf: 학년 필터 (all·1·2·3·b=부교재)
-  function gradeOf(c) { if (c.content.indexOf('[자료 요청] 기타 ·') === 0) return 'e'; var m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; } // e = 기타 자료 요청
+  function gradeOf(c) { if (c.content.indexOf('[자료 요청] 기타 ·') === 0) return 'e'; if (/\d학년도 수능 /.test(c.content)) return '3'; var m = c.content.match(/ 고(\d) /); return m ? m[1] : 'b'; } // e = 기타 자료 요청
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function mask(n) { n = String(n || '회원').trim(); if (n === '리카수니' || n.length < 2) return n; return n.length === 2 ? n[0] + '*' : n[0] + new Array(n.length - 1).join('*') + n[n.length - 1]; }
   function ago(t) {
@@ -37,6 +37,7 @@
     var t = c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', ''), q = '';
     var m = t.match(/^(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번$/);
     if (m) q = '?y=' + m[1] + '&m=' + m[2] + '&g=' + m[3] + '&n=' + m[4];
+    else if ((m = t.match(/^(\d{4})학년도 수능 영어 (\d+)번$/))) q = '?y=' + m[1] + '&m=0&g=3&n=' + m[2]; // 수능 (m=0, 학년도)
     else if ((m = t.match(/^(.+) (\d+)(?:강|회) (?:Gateway|(\d+)번)$/))) q = '?book=' + encodeURIComponent(m[1]) + '&unit=' + m[2] + '&n=' + (m[3] || 0);
     return SITE + c.page_key + '/' + q + '#note-req';
   }

@@ -290,7 +290,7 @@ async function nsSet(uid, status) {
    서버 함수 admin_requesters() — 관리자만, 이메일·전화번호 없이 닉네임만. */
 let ppData = null, ppSort = 'req', ppOnly = 'req';
 const PP_ROLE = { student: ['학생', '#1e3a8a'], teacher: ['선생님·강사', '#b45309'], parent: ['학부모', '#2f855a'] };
-const ppGrade = o => o.k === 'book' ? '부교재' : (o.q && o.q.g ? '고' + o.q.g : '기타');
+const ppGrade = o => o.k === 'book' ? '부교재' : o.q && +o.q.m === 0 && o.q.y ? '수능' : (o.q && o.q.g ? '고' + o.q.g : '기타');
 const ppAgo = t => { if (!t) return '-'; const d = Math.floor((Date.now() - new Date(t)) / 864e5); return d <= 0 ? '오늘' : d + '일 전'; };
 async function tabPeople() {
   if (!ppData) {
@@ -307,7 +307,7 @@ async function tabPeople() {
     const seen = new Set();
     for (const o of m.orders) { const g = ppGrade(o); gr[g] = gr[g] || { n: 0, p: 0 }; gr[g].n++; if (!seen.has(g)) { seen.add(g); gr[g].p++; } }
   }
-  const gOrder = ['고1', '고2', '고3', '부교재', '기타'].filter(g => gr[g]);
+  const gOrder = ['고1', '고2', '고3', '수능', '부교재', '기타'].filter(g => gr[g]);
   const gTotal = gOrder.reduce((s, g) => s + gr[g].n, 0);
   const rc = k => all.filter(m => m.role === k).length;
   const stat = (n, l) => `<div style="flex:1 1 120px;padding:12px;border-radius:12px;background:#f3f6fb"><b style="font-size:1.4rem;color:#142943">${n}</b><br><span class="meta">${l}</span></div>`;

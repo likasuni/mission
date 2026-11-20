@@ -338,7 +338,7 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
 /* 로그인·댓글 기능은 필요할 때만 불러옴: 로그인했던 회원 / 댓글 영역 근처까지 스크롤 / 로그인 버튼 클릭 */
 (function () {{
   if (location.pathname.indexOf('/notes') === 0 && location.hash === '#etc-req') {{ location.replace('/#talk'); return; }}  /* 옛 기타 자료 요청 → 자료 문의 (2026-11-14) */
-  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=55'];
+  var done = false, after = null, srcs = ['https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js', '/common.js?v=4', '/lib.js?v=56'];
   function next(i) {{ if (i >= srcs.length) {{ if (after) after(); return; }} var s = document.createElement('script'); s.src = srcs[i]; s.onload = function () {{ next(i + 1); }}; document.body.appendChild(s); }}
   function go() {{ if (!done) {{ done = true; next(0); }} }}
   window.lazyLogin = function () {{ after = function () {{ showLogin(); }}; if (done) {{ if (window.showLogin) showLogin(); }} else go(); }};
@@ -472,7 +472,7 @@ for idx, k in enumerate(keys_sorted):
                 + (f'<section class="card en-sec" id="words"><h2>영어 단어 총정리</h2><p class="muted">이 회차 18~45번 지문의 핵심 어휘를 한 장에 정리했어요.</p><div class="dl"><a href="{view(wd)}" target="_blank" rel="noopener">미리보기</a><a href="{down(wd)}" rel="noopener">다운로드</a></div></section>'
                    if wd else '<section class="card en-sec" id="words"><h2>영어 단어 총정리</h2><p class="muted">이 회차 단어 자료는 준비 중이에요.</p></section>'))
         if s == '영어':
-            pre = f' data-y="{s_year(k)}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else ''
+            pre = f' data-y="{s_year(k)}" data-m="{k[3]}" data-g="{k[1]}"' if k[0] == 'moe' else f' data-y="{k[2]}" data-m="0" data-g="3"'  # 수능: m=0, y=학년도 (2026-11-20~)
             vs = sorted(dict(VAR.get(k, [])).items(), key=lambda x: vkey(x[0]))
             var_html = ('<div class="soon"><b>변형문제</b> · 준비 중이에요</div>' if not vs else
                         '<div class="var" id="var"><b>리카수니 변형문제 (무료)</b><p class="muted">번호를 누르면 PDF가 열려요. 미리보기 화면에서 바로 내려받을 수 있어요.</p><div class="chips">'
