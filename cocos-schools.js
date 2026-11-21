@@ -7,8 +7,10 @@
 (function () {
   var box = document.getElementById('cocos-schools');
   if (!box) return;
-  // 첫 화면에서만 (가젯이 모든 페이지에 들어가도 글 페이지에선 숨김)
-  if (location.pathname !== '/' && location.pathname !== '/index.html') { box.style.display = 'none'; return; }
+  var path = location.pathname;
+  var isLabel = path.indexOf('/search/label/') === 0; // 태그 페이지(예: 이매중 영어내신)는 큰 카드 대신 목록으로 (2026-11-21 원장님)
+  // 그 밖의 페이지(글 페이지 등)에선 숨김
+  if (!isLabel && path !== '/' && path !== '/index.html') { box.style.display = 'none'; return; }
 
   // [구분, 학교 이름, 제목에서 찾을 말] — 이 순서로 목록에 놓여요 (초 → 중 → 고)
   var SCHOOLS = [
@@ -29,8 +31,8 @@
   var kst = function (t) { var d = new Date(t); return isNaN(d) ? '' : new Date(d.getTime() + 9 * 3600e3).toISOString().slice(0, 10).replace(/-/g, '.'); };
   var B = 'box-sizing:border-box;max-width:100%;';
 
-  function load(start, acc) {
-    return fetch('/feeds/posts/summary?alt=json&max-results=150&start-index=' + start)
+  function load(start, acc, label) {
+    return fetch('/feeds/posts/summary' + (label ? '/-/' + encodeURIComponent(label) : '') + '?alt=json&max-results=150&start-index=' + start)
       .then(function (r) { return r.json(); })
       .then(function (j) {
         var es = (j.feed && j.feed.entry) || [];
@@ -38,7 +40,7 @@
           var a = (e.link || []).filter(function (l) { return l.rel === 'alternate'; })[0];
           if (a) acc.push({ t: e.title.$t, u: a.href, d: kst(e.published.$t) });
         });
-        return es.length === 150 && start < 1500 ? load(start + 150, acc) : acc;
+        return es.length === 150 && start < 1500 ? load(start + 150, acc, label) : acc;
       });
   }
 
@@ -48,7 +50,7 @@
   var tabBtn = 'margin:0 6px 6px 0;padding:3px 10px;border:1px solid #e0e6ee;border-radius:4px;font:inherit;font-size:13px;cursor:pointer;';
 
   // 펼친 학교정보: 학년 탭 + 글 목록 (목록은 높이를 정해 두고 안에서 스크롤 → 페이지가 길게 밀려 내려가지 않게)
-  function drawPanel(panel, ps) {
+  function drawPanel(panel, ps, full) {
     var groups = {}, order = [];
     ps.forEach(function (p) { var g = gradeOf(p.t); if (!groups[g]) { groups[g] = []; order.push(g); } groups[g].push(p); });
     order.sort(function (a, b) { return (a === '기타') - (b === '기타') || a.localeCompare(b); });
@@ -59,7 +61,7 @@
         var on = g === sel, n = g === '전체' ? ps.length : groups[g].length;
         return '<button type="button" data-g="' + g + '" style="' + tabBtn + (on ? 'background:#2456c7;color:#fff;border-color:#2456c7' : 'background:#f1f5fb;color:#2456c7') + '">' + g + ' ' + n + '</button>';
       }).join('') + '</div>' : '')
-        + '<div style="' + B + 'width:100%;max-height:300px;overflow-y:auto;border-bottom:1px solid #dbe3ec">' + listHtml(list) + '</div>';
+        + '<div style="' + B + 'width:100%;' + (full ? '' : 'max-height:300px;overflow-y:auto;') + 'border-bottom:1px solid #dbe3ec">' + listHtml(list) + '</div>';
       [].forEach.call(panel.querySelectorAll('button[data-g]'), function (b) { b.onclick = function () { draw(b.getAttribute('data-g')); }; });
     }
     draw(tabs.length ? '전체' : order[0]);
@@ -129,6 +131,25 @@
       wrap.appendChild(d);
     });
   }
+
+  // ③ 태그 페이지: 카드 목록을 숨기고 학년 탭 + 글 목록으로
+  function labelPage() {
+    box.style.display = 'none';
+    var posts = document.querySelector('#Blog1 .blog-posts');
+    if (!posts) return;
+    var label = decodeURIComponent(path.slice('/search/label/'.length).split('/')[0]);
+    load(1, [], label).then(function (ps) {
+      if (!ps.length) return; // 못 읽으면 원래 카드 그대로
+      var wrap = document.createElement('div');
+      wrap.style.cssText = B + 'width:100%;margin:8px 0 28px;color:#142943;line-height:1.7;word-break:keep-all;border-top:2px solid #142943';
+      wrap.innerHTML = '<p style="margin:12px 0 0;font-size:14px;color:#53647a">글 ' + ps.length + '개</p><div></div>';
+      posts.parentNode.insertBefore(wrap, posts);
+      posts.style.display = 'none';
+      var pager = document.querySelector('#Blog1 .blog-pager'); if (pager) pager.style.display = 'none';
+      drawPanel(wrap.lastChild, ps, true);
+    }).catch(function () {});
+  }
+  if (isLabel) { labelPage(); return; }
 
   load(1, []).then(function (posts) {
     var by = {};
