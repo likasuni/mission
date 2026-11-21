@@ -2,7 +2,7 @@
    Blogger 가젯에는 _tools/blogger_widgets/cocos-schools.html 두 줄만 있고, 내용은 이 파일이 그려요.
    제목에 학교 이름이 들어간 글을 블로그 글 목록(feed)에서 찾아 학교별로 묶어요. 새 글은 자동으로 들어가요.
    첫 화면 소개의 '03 우리 학교의 시험' 학교 목록(.cx-school-list)이 있으면 그 목록에 합쳐요 (같은 디자인):
-   없는 학교 줄은 새로 만들고, 줄마다 [글 N] 칩 → 누르면 그 줄 아래에 글 목록이 펼쳐짐. 목록이 없으면 따로 상자로 그려요.
+   없는 학교 줄은 새로 만들고, 줄마다 [학교정보 N] 칩 → 누르면 그 줄 아래에 글 목록이 펼쳐짐. 목록이 없으면 따로 상자로 그려요.
    학교를 더하려면 아래 SCHOOLS 에 한 줄 추가 → main 에 합치고 deploy.sh (원장님이 다시 붙여 넣을 필요 없음). */
 (function () {
   var box = document.getElementById('cocos-schools');
@@ -23,7 +23,6 @@
     ['고등', '야탑고', /야탑고/],
     ['고등', '판교고', /판교고/]
   ];
-  var SHOW = 6; // 펼쳤을 때 처음 보여 줄 글 수
 
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   // 글 목록 날짜는 미국 시간으로 와서 한국 날짜로 바꿔요
@@ -43,15 +42,35 @@
       });
   }
 
-  // 펼친 글 목록 (줄 아래)
-  function listHtml(ps, all) {
-    var vis = all ? ps : ps.slice(0, SHOW);
-    return '<ul style="' + B + 'width:100%;margin:0;padding:4px 0 8px;list-style:none">' + vis.map(function (p) {
-      return '<li style="' + B + 'display:flex;gap:12px;align-items:baseline;padding:9px 0;border-top:1px solid #eef2f7">'
+  // 학년: 제목의 '고1·중3·초5' 또는 '2학년' (범위 '3~6학년'·학년 표시 없음은 '기타') — 2026-11-21 원장님: 학년별로 보이게
+  var GRADE_RE = /(?:^|[^~\d])(?:고|중|초)\s*([1-6])(?![\d~])|(?:^|[^~\d])([1-6])\s*학년/; // 옛 아이폰 사파리도 되게 뒤보기(?<!) 안 씀
+  var gradeOf = function (t) { var m = t.match(GRADE_RE); return m ? (m[1] || m[2]) + '학년' : '기타'; };
+  var tabBtn = 'margin:0 6px 6px 0;padding:3px 10px;border:1px solid #e0e6ee;border-radius:4px;font:inherit;font-size:13px;cursor:pointer;';
+
+  // 펼친 학교정보: 학년 탭 + 글 목록 (목록은 높이를 정해 두고 안에서 스크롤 → 페이지가 길게 밀려 내려가지 않게)
+  function drawPanel(panel, ps) {
+    var groups = {}, order = [];
+    ps.forEach(function (p) { var g = gradeOf(p.t); if (!groups[g]) { groups[g] = []; order.push(g); } groups[g].push(p); });
+    order.sort(function (a, b) { return (a === '기타') - (b === '기타') || a.localeCompare(b); });
+    var tabs = order.length > 1 ? ['전체'].concat(order) : [];
+    function draw(sel) {
+      var list = sel === '전체' ? ps : groups[sel];
+      panel.innerHTML = (tabs.length ? '<div style="' + B + 'padding:10px 0 4px">' + tabs.map(function (g) {
+        var on = g === sel, n = g === '전체' ? ps.length : groups[g].length;
+        return '<button type="button" data-g="' + g + '" style="' + tabBtn + (on ? 'background:#2456c7;color:#fff;border-color:#2456c7' : 'background:#f1f5fb;color:#2456c7') + '">' + g + ' ' + n + '</button>';
+      }).join('') + '</div>' : '')
+        + '<div style="' + B + 'width:100%;max-height:300px;overflow-y:auto;border-bottom:1px solid #dbe3ec">' + listHtml(list) + '</div>';
+      [].forEach.call(panel.querySelectorAll('button[data-g]'), function (b) { b.onclick = function () { draw(b.getAttribute('data-g')); }; });
+    }
+    draw(tabs.length ? '전체' : order[0]);
+  }
+
+  function listHtml(ps) {
+    return '<ul style="' + B + 'width:100%;margin:0;padding:0 0 4px;list-style:none">' + ps.map(function (p, i) {
+      return '<li style="' + B + 'display:flex;gap:12px;align-items:baseline;padding:9px 0;' + (i ? 'border-top:1px solid #eef2f7' : '') + '">'
         + '<a href="' + esc(p.u) + '" style="flex:1;min-width:0;color:#142943;text-decoration:none;font-size:15px;line-height:1.55">' + esc(p.t) + '</a>'
         + '<span style="flex:none;color:#8a97a8;font-size:12px">' + esc(p.d) + '</span></li>';
-    }).join('') + '</ul>'
-      + (ps.length > vis.length ? '<button type="button" class="cs-more" style="margin:0 0 12px;padding:0;border:0;background:none;color:#2456c7;font:inherit;font-size:14px;cursor:pointer">더보기 (' + (ps.length - vis.length) + '개) ↓</button>' : '');
+    }).join('') + '</ul>';
   }
 
   // ① 첫 화면 소개의 학교 목록에 합치기
@@ -78,18 +97,14 @@
       btn.className = 'cx-chip';
       btn.setAttribute('aria-expanded', 'false');
       btn.style.cssText = 'font:inherit;font-size:13px;cursor:pointer;border-style:solid;margin-left:' + (chips.children.length ? '8px' : '0');
-      btn.innerHTML = '글 ' + ps.length + ' <span aria-hidden="true">▾</span>';
+      btn.innerHTML = '학교정보 ' + ps.length + ' <span aria-hidden="true">▾</span>';
       chips.appendChild(btn);
       var panel = document.createElement('div');
-      panel.style.cssText = B + 'width:100%;display:none';
+      panel.style.cssText = B + 'width:100%;display:none;margin-top:-1px';
       row.parentNode.insertBefore(panel, row.nextSibling);
-      function draw(all) {
-        panel.innerHTML = listHtml(ps, all);
-        var m = panel.querySelector('.cs-more'); if (m) m.onclick = function () { draw(true); };
-      }
       btn.onclick = function () {
         var open = panel.style.display === 'none';
-        if (open) draw(false);
+        if (open) drawPanel(panel, ps);
         panel.style.display = open ? 'block' : 'none';
         btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         btn.querySelector('span').textContent = open ? '▴' : '▾';
@@ -109,10 +124,8 @@
       var ps = by[s[1]]; if (!ps.length) return;
       var d = document.createElement('details');
       d.style.cssText = B + 'border-top:1px solid #dbe3ec;padding:10px 0';
-      d.innerHTML = '<summary style="cursor:pointer;font-weight:700">' + esc(s[1]) + ' <small style="color:#53647a;font-weight:400">글 ' + ps.length + '</small></summary><div></div>';
-      var inner = d.querySelector('div');
-      function draw(all) { inner.innerHTML = listHtml(ps, all); var m = inner.querySelector('.cs-more'); if (m) m.onclick = function () { draw(true); }; }
-      draw(false);
+      d.innerHTML = '<summary style="cursor:pointer;font-weight:700">' + esc(s[1]) + ' <small style="color:#53647a;font-weight:400">학교정보 ' + ps.length + '</small></summary><div></div>';
+      drawPanel(d.querySelector('div'), ps);
       wrap.appendChild(d);
     });
   }
