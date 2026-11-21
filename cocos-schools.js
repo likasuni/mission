@@ -133,10 +133,9 @@
         var lv = el.getAttribute('data-lv');
         if (!lv) return; // 원래 목록에만 있던 줄은 늘 보임
         if (el.classList.contains('cx-schoolrow')) el.style.display = lv === g ? '' : 'none';
-        else if (lv !== g && el.style.display !== 'none') { // 다른 구분의 펼친 목록은 접기
-          el.style.display = 'none';
+        else if (lv !== g && el.style.display !== 'none') { // 다른 구분의 펼친 목록은 접기 (버튼을 눌러 닫아 버튼 모양도 함께 되돌림)
           var b = el.previousSibling && el.previousSibling.querySelector && el.previousSibling.querySelector('button[aria-expanded="true"]');
-          if (b) b.click(), el.style.display = 'none';
+          if (b) b.click(); else el.style.display = 'none';
         }
       });
       try { sessionStorage.setItem('cocos-lv', g); } catch (e) {}
