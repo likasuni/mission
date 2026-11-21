@@ -113,8 +113,45 @@
         btn.style.background = open ? '#2456c7' : ''; btn.style.color = open ? '#fff' : '';
       };
       // 줄 사이에 끼운 패널이 다음 순서 줄보다 먼저 오도록, 다음 학교는 패널 뒤에서 시작
+      row.setAttribute('data-lv', s[0]); panel.setAttribute('data-lv', s[0]);
       first = panel.nextSibling;
     });
+    // 초등·중등·고등 탭 (2026-11-21 원장님: '출발점으로' 제목 아래 탭으로) — 고른 구분의 학교 줄만 보여요
+    var lvs = ['초등', '중등', '고등'].filter(function (g) { return list.querySelector('.cx-schoolrow[data-lv="' + g + '"]'); });
+    if (lvs.length < 2) return;
+    var tabs = document.createElement('div');
+    tabs.setAttribute('role', 'tablist');
+    tabs.style.cssText = B + 'width:100%;display:flex;gap:8px;margin:0 0 16px';
+    list.parentNode.insertBefore(tabs, list);
+    function pick(g) {
+      [].forEach.call(tabs.children, function (b) {
+        var on = b.getAttribute('data-lv') === g;
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+        b.style.background = on ? '#142943' : '#fff'; b.style.color = on ? '#fff' : '#142943'; b.style.borderColor = on ? '#142943' : '#dbe3ec';
+      });
+      [].forEach.call(list.children, function (el) {
+        var lv = el.getAttribute('data-lv');
+        if (!lv) return; // 원래 목록에만 있던 줄은 늘 보임
+        if (el.classList.contains('cx-schoolrow')) el.style.display = lv === g ? '' : 'none';
+        else if (lv !== g && el.style.display !== 'none') { // 다른 구분의 펼친 목록은 접기
+          el.style.display = 'none';
+          var b = el.previousSibling && el.previousSibling.querySelector && el.previousSibling.querySelector('button[aria-expanded="true"]');
+          if (b) b.click(), el.style.display = 'none';
+        }
+      });
+      try { sessionStorage.setItem('cocos-lv', g); } catch (e) {}
+    }
+    lvs.forEach(function (g) {
+      var n = list.querySelectorAll('.cx-schoolrow[data-lv="' + g + '"]').length;
+      var b = document.createElement('button');
+      b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('data-lv', g);
+      b.style.cssText = B + 'flex:1 1 0;min-height:44px;padding:8px 10px;border:1px solid #dbe3ec;border-radius:4px;font:inherit;font-size:16px;font-weight:700;cursor:pointer';
+      b.innerHTML = g + ' <small style="font-weight:400;opacity:.7">' + n + '</small>';
+      b.onclick = function () { pick(g); };
+      tabs.appendChild(b);
+    });
+    var saved = ''; try { saved = sessionStorage.getItem('cocos-lv') || ''; } catch (e) {}
+    pick(lvs.indexOf(saved) > -1 ? saved : lvs[0]);
   }
 
   // ② 목록이 없을 때: 따로 상자
