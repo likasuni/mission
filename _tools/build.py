@@ -897,6 +897,7 @@ for m in NEWS + BOOKNEWS:
 page('/books/news/', '신간 소개 – 고등 영어 부교재 신간 · 개정 교재 정리 | 리카수니 자료실',
      '고등 영어 부교재 신간·개정 소식을 리카수니 원장이 요약해 알려 드려요. 교재 구성과 대상, 출판사 이벤트 정보.',
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>📘 신간 소개</h1><p>고등 영어 부교재 신간·개정 교재를 리카수니 원장이 정리해요. 책 구성과 고르는 법을 보고, 필요한 책은 글 안에서 바로 구매할 수 있어요.</p></section>'
+     + '<div class="ask-box ask-band"><b>📮 원하는 신간 교재가 있나요?</b><p>새로 나온 교재의 분석노트·단어 시험지·변형문제가 필요하면 <b>신간교재 요청</b>에 남겨 주세요. 원장님이 답글로 알려 드리고, 가능한 자료는 요청 목록에 추가해요.</p><a class="btn btn-navy" href="/#talk">✍️ 신간교재 요청 남기기</a></div>'  # 2026-11-23 원장님
      + (f'<div class="card">{book_groups(BOOKNEWS)}</div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
      [('/', '홈'), ('/books/news/', '신간 소개')], '/books/news/')
 # 옛 쿠팡 모음 페이지 (/books/kit/ 수험생 준비물, /shop/ 쇼핑) → 신간 소개로 넘김 (2026-11-14 원장님: 쿠팡은 신간 소개 글 안에만)

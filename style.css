@@ -807,3 +807,4 @@ textarea:focus, input:focus { outline-color: var(--navy); }
 .ask-box > b { display: block; font-size: 1.05rem; color: #1e3a8a; }
 .ask-box p { margin: 6px 0 12px; font-size: .95rem; color: #374151; }
 .tk-ask { margin: 0 0 10px; padding: 10px 14px; border-radius: 10px; background: #eef2ff; border: 1px solid #c7d2fe; color: #1e3a8a; font-size: .92rem; }
+.ask-band { margin: 0 0 14px; }
