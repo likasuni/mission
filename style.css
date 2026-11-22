@@ -795,3 +795,15 @@ textarea:focus, input:focus { outline-color: var(--navy); }
 .chip-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .chip-grid .chip { text-align: center; padding: 12px 10px; }
 @media (max-width: 640px) { .chip-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; } .chip-grid .chip { padding: 10px 6px; font-size: .84rem; } .chip-grid .chip:nth-child(n+9) { display: none; } }
+/* 교재 소식: 맨 위 큰 구매 상자 1번 (2026-11-23) · 신간교재 요청 상자 */
+.cp-top { box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden; margin: 0 0 20px; padding: 16px; border: 2px solid #f5a99a; border-radius: 14px; background: #fff5f3; text-align: center; }
+.cp-top-h { margin: 0 0 10px; font-size: 1.15rem; font-weight: 900; color: #b42318; }
+.cp-cards.big { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 0; }
+.cp-cards.big .cp-card { padding: 14px; gap: 16px; border-width: 1.5px; }
+.cp-cards.big .cp-card img { width: 92px; height: 122px; }
+.cp-cards.big .cp-card b { font-size: 1.08rem; }
+.cp-cards.big .cp-card i { font-size: 1rem; padding: 9px 18px; border-radius: 9px; margin-top: 8px; }
+.ask-box { box-sizing: border-box; width: 100%; max-width: 100%; overflow: hidden; margin: 22px 0 14px; padding: 16px 18px; border: 2px solid #c7d2fe; border-radius: 14px; background: #eef2ff; }
+.ask-box > b { display: block; font-size: 1.05rem; color: #1e3a8a; }
+.ask-box p { margin: 6px 0 12px; font-size: .95rem; color: #374151; }
+.tk-ask { margin: 0 0 10px; padding: 10px 14px; border-radius: 10px; background: #eef2ff; border: 1px solid #c7d2fe; color: #1e3a8a; font-size: .92rem; }

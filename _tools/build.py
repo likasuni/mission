@@ -256,17 +256,28 @@ def cp_card(b, sub=None):  # 표지(쿠팡 상품 사진)가 보이는 구매 �
     sub = sub if sub is not None else b.get('note', '')
     return (f'<a class="cp-card" href="{e(b["url"])}" target="_blank" rel="sponsored nofollow noopener">{img}<span><b>{e(b["name"])}</b>'
             + (f'<small>{e(sub)}</small>' if sub else '') + '<i>🛒 구매하기</i></span></a>')
-def cp_news(body, d):
+def cp_news(body, d, top=False):
+    # top=True (교재 소식 글, 2026-11-23 원장님): 구매 상자는 맨 위 수수료 문구 바로 아래 한 번만, 크게. 본문 중간 <!--BUY:key-->·<!--BUYBOX--> 는 지움
     f = os.path.join(d, 'coupang.json')
     bs = [b for b in (json.load(open(f, encoding='utf-8')) if os.path.exists(f) else []) if b.get('url')]
+    dis = ('<p style="font-size:14.5px;color:#92400e;background:#fffaf0;border:1px solid #f3d38a;border-radius:8px;padding:10px 14px;margin:0 0 16px;width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;">'
+           '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>') if bs else ''
+    if top:
+        box = ('<div class="cp-top"><p class="cp-top-h">🛒 교재 구매하기</p><div class="cp-cards big">' + ''.join(cp_card(b) for b in bs) + '</div></div>') if bs else ''
+        body = _re.sub(r'\s*<!--(?:BUY:[\w-]+|BUYBOX)-->', '', body)
+        return body.replace('<!--CPDIS-->', dis + box).replace('<!--CPNOTE-->', '')
     body = _re.sub(r'<!--BUY:([\w-]+)-->', lambda mm: next((f'<div class="cp-cards one">{cp_card(b)}</div>' for b in bs if b.get('key') == mm.group(1)), ''), body)
     box = ('<div style="width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;background:#fff5f3;border:1px solid #f5c2b8;border-radius:10px;padding:12px 16px;margin:14px 0;text-align:center;">'
            '<p style="margin:0 0 6px;font-weight:800;color:#b42318;">교재 구매하기</p><div class="cp-cards">' + ''.join(cp_card(b) for b in bs)
            + '</div></div>') if bs else ''  # 쿠팡 문구는 글 맨 위 <!--CPDIS--> 한 번만
-    dis = ('<p style="font-size:14.5px;color:#92400e;background:#fffaf0;border:1px solid #f3d38a;border-radius:8px;padding:10px 14px;margin:0 0 16px;width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;">'
-           '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>') if bs else ''
-    note = ''  # 쿠팡 문구는 맨 위 한 번만 (끝 표기엔 '출판사 대가 없음'만)
-    return body.replace('<!--BUYBOX-->', box).replace('<!--CPDIS-->', dis).replace('<!--CPNOTE-->', note)
+    return body.replace('<!--BUYBOX-->', box).replace('<!--CPDIS-->', dis).replace('<!--CPNOTE-->', '')
+# 교재 소식 글 → 첫 화면 '신간교재 요청'(#talk)으로 이끄는 상자 (2026-11-23 원장님: 문의글 활성화, 원장님이 답글로 답변)
+def ask_box(m):
+    nm = _re.split(r'\s+[—–-]\s+', m['title'])[0]
+    from urllib.parse import quote
+    return (f'<div class="ask-box"><b>📮 이 교재 자료가 필요하다면?</b>'
+            f'<p>「{e(nm)}」 분석노트·단어 시험지·변형문제가 필요하면 <b>신간교재 요청</b>에 남겨 주세요. 원장님이 답글로 알려 드리고, 가능한 자료는 요청 목록에 추가해요.</p>'
+            f'<a class="btn btn-navy" href="/?ask={quote(nm)}#talk">✍️ 신간교재 요청 남기기</a></div>')
 
 # 코코스학원 안내 띠: 모든 페이지 바닥글 바로 위 (2026-11-15 원장님 확정 — 자료실 방향 = 학원 원생 모집 우선).
 # 누른 횟수는 GA 이벤트 cocos_click (to: home·tel·talk) 로 재요. 홍보 문구에 '예비'·'선행' 은 쓰지 않아요.
@@ -865,7 +876,10 @@ for m in NEWS + BOOKNEWS:
     has_th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
     th_html = (f'<div style="box-sizing:border-box;margin:0 0 16px;max-width:100%;overflow:hidden;text-align:center;width:100%;"><img src="thumb.png" alt="{e(m["title"])}" width="1080" height="1080" loading="eager" style="border-radius:10px;height:auto;max-width:560px;width:100%;"></div>') if has_th else ''
     body = body.replace('<!--THUMB-->', th_html).replace('<!--AD-->', ad())
-    body = cp_news(body, m['_dir'])
+    body = cp_news(body, m['_dir'], isbook)
+    if isbook:  # 신간교재 요청 상자: 끝 표기(※) 바로 앞, 없으면 글 끝
+        mm = _re.search(r'<p[^>]*>\s*※', body)
+        body = body[:mm.start()] + ask_box(m) + body[mm.start():] if mm else body + ask_box(m)
     others =[x for x in (BOOKNEWS if isbook else NEWS) if x is not m][:5]
     body = f'<div class="card">{body}</div>' + (f'<div class="card"><style>{NEWS_CSS}</style><h2 style="font-size:1rem;margin:0 0 4px">{"다른 교재 소식" if isbook else "다른 학원 소식"}</h2><ul class="nw-list">{"".join(news_line(x) for x in others)}</ul></div>' if others else '')
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": m['title'], "description": m['desc'], "datePublished": m['date'],
@@ -1052,13 +1066,13 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <section class="rq-box"><div class="rq-box-h"><b>자료 요청</b><span>필요한 자료를 고르면 카카오톡으로 받아요</span></div>
 <div class="rq-box-btns"><a class="rqb r1" href="/notes/"><b>모의고사 분석노트</b><small>18~45번 · 하루 1개 무료</small></a>
 <a class="rqb r2" href="/notes/?book=%EC%88%98%EB%8A%A5%ED%8A%B9%EA%B0%95%20%EB%9D%BC%EC%9D%B4%ED%8A%B8"><b>부교재 분석노트</b><small>수능특강 라이트·올림포스 등 · 하루 1개</small></a>
-<a class="rqb r3" href="/#talk"><b>자료 문의</b><small>목록에 없는 교재·단어 시험지·변형문제</small></a></div>
+<a class="rqb r3" href="/#talk"><b>신간교재 요청</b><small>신간 교재·목록에 없는 자료 문의</small></a></div>
 <p class="rq-box-ft">자료는 카톡 <b>'나와의 채팅'</b>으로 와요. · <a href="https://contents.premium.naver.com/likasuni/cocos/category" rel="noopener">부교재 강 단위 구매</a> · <a href="https://drive.google.com/open?id=105f20gSuhZvR44gCK6oW5mxn2-ZFG12J" target="_blank" rel="noopener">분석노트 샘플 보기</a></p></section>
-<section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청 · 자료 문의</b></div>
-<div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 목록에 없는 교재·단어 시험지·변형문제는 아래 <a href="#talk"><b>자료 문의</b></a>에 물어봐 주세요.<button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
+<section id="recent-cmt"><div class="rc-head"><span class="rc-live"><i></i>실시간</span><b class="rc-title">자료 요청 · 신간교재 요청</b></div>
+<div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 신간 교재나 목록에 없는 교재·단어 시험지·변형문제는 아래 <a href="#talk"><b>신간교재 요청</b></a>에 남겨 주세요.<button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div>
 ''' + ad(True).replace('class="ad-slot"', 'class="ad-slot rc-ad"') + '''
-<div id="talk" class="tk-in"><div class="tk-h"><b>자료 문의</b><span>"이런 자료도 받을 수 있나요?" 원장님께 물어보세요</span></div>
+<div id="talk" class="tk-in"><div class="tk-h"><b>신간교재 요청</b><span>"이 신간 교재 자료도 받을 수 있나요?" 원장님께 물어보세요 · 목록에 없는 자료 문의도 여기에</span></div>
 <div class="tk-form"></div><div class="tk-list"><p class="muted">불러오는 중...</p></div></div></div></section>
 <!--NSBAN-->
 <h2 class="sec-h">최근 영어 모의고사</h2>
