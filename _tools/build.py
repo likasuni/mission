@@ -777,9 +777,9 @@ def book_tabs(ms):  # 신간 소개 목록 위 분류 탭: 전체 · 독해 · �
             'b.querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x===t)});'
             'document.querySelectorAll(".nw-compact section").forEach(function(sec){var n=0;sec.querySelectorAll("li").forEach(function(li){'
             'var ok=!f||(li.dataset.t||"").split("|").indexOf(f)>=0;li.style.display=ok?"":"none";if(ok)n++});sec.style.display=n?"":"none"})};})();</script>')
-def book_groups(ms, n=None):  # 교재 소식: 신간 소개 · 자료·정보 두 칸 (칸마다 테두리, 썸네일 포함)
+def book_groups(ms, n=None, one=False):  # 교재 소식: 신간 소개 · 자료·정보 두 칸 (칸마다 테두리, 썸네일 포함). one = 한 줄에 1개·표지 크게 (/books/news/, 2026-11-23)
     cols = [(k, h, [m for m in ms if news_kind(m) == k]) for k, h in (('new', '📘 신간 소개'), ('info', '🔗 자료·정보'))]
-    return '<div class="nw-cols nw-compact">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'
+    return f'<div class="nw-cols nw-compact{" nw-one" if one else ""}">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'
 
 nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
       '<p class="lead">이매동 코코스학원 리카수니 원장이 학교 기출 시험지를 직접 분석해요. 출제 범위, 문항별 포인트, 서술형 대비까지 정리하고, '
@@ -912,7 +912,7 @@ page('/books/news/', '신간 소개 – 고등 영어 부교재 신간 · 개정
      '고등 영어 부교재 신간·개정 소식을 리카수니 원장이 요약해 알려 드려요. 교재 구성과 대상, 출판사 이벤트 정보.',
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>📘 신간 소개</h1><p>고등 영어 부교재 신간·개정 교재를 리카수니 원장이 정리해요. 책 구성과 고르는 법을 보고, 필요한 책은 글 안에서 바로 구매할 수 있어요.</p></section>'
      + '<div class="ask-box ask-band"><b>📮 원하는 신간 교재가 있나요?</b><p>새로 나온 교재의 분석노트·단어 시험지·변형문제가 필요하면 <b>신간교재 요청</b>에 남겨 주세요. 원장님이 답글로 알려 드리고, 가능한 자료는 요청 목록에 추가해요.</p><a class="btn btn-navy" href="/#talk">✍️ 신간교재 요청 남기기</a></div>'  # 2026-11-23 원장님
-     + (f'<div class="card">{book_tabs(BOOKNEWS)}{book_groups(BOOKNEWS)}</div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
+     + (f'<div class="card">{book_tabs(BOOKNEWS)}{book_groups(BOOKNEWS, one=True)}</div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
      [('/', '홈'), ('/books/news/', '신간 소개')], '/books/news/')
 # 옛 쿠팡 모음 페이지 (/books/kit/ 수험생 준비물, /shop/ 쇼핑) → 신간 소개로 넘김 (2026-11-14 원장님: 쿠팡은 신간 소개 글 안에만)
 for _old in ('books/kit', 'shop'):

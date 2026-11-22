@@ -816,3 +816,7 @@ textarea:focus, input:focus { outline-color: var(--navy); }
 .bk-tabs button small { color: #64748b; font-weight: 600; }
 .bk-tabs button.on { background: #1e3a8a; border-color: #1e3a8a; color: #fff; }
 .bk-tabs button.on small { color: #c7d2fe; }
+/* 신간 소개 목록: 한 줄에 1개, 표지 30% 크게 (2026-11-23) */
+.nw-compact.nw-one .nw-list { grid-template-columns: 1fr !important; }
+.nw-compact.nw-one img { width: 84px !important; height: 84px !important; }
+.nw-compact.nw-one em { white-space: normal; }
