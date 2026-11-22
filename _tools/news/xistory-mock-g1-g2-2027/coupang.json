@@ -1,4 +1,44 @@
 [
-  {"key": "m1", "name": "전국연합 모의고사 고1 영어", "query": "자이스토리 전국연합 모의고사 고1 영어 2027", "must": ["자이스토리", "전국연합", "고1", "영어", "2027"], "not": ["2026", "수학", "국어"], "url": ""},
-  {"key": "m2", "name": "전국연합 모의고사 고2 영어", "query": "자이스토리 전국연합 모의고사 고2 영어 2027", "must": ["자이스토리", "전국연합", "고2", "영어", "2027"], "not": ["2026", "수학", "국어"], "url": ""}
+  {
+    "key": "m1",
+    "name": "전국연합 모의고사 고1 영어",
+    "query": "자이스토리 전국연합 모의고사 고1 영어 2027",
+    "must": [
+      "자이스토리",
+      "전국연합",
+      "고1",
+      "영어",
+      "2027"
+    ],
+    "not": [
+      "2026",
+      "수학",
+      "국어"
+    ],
+    "url": "https://link.coupang.com/re/AFFSDP?lptag=AF0931331&pageKey=9834424063&itemId=29457185112&vendorItemId=96366263966&traceid=V0-153-c64c2d46dbae6be5&requestid=20261123062730151226941440&token=31850C%7CGM&pt=0&slot=1",
+    "product": "(김현아) Xistory 자이스토리 전국연합 모의고사 고1 영어 (2027년) + Bookmark -수능기출문제집",
+    "image": "https://ads-partners.coupang.com/image1/W6b0CskyH9_cEZAoW5LFtXM1bcZYkgCl3PeIzjxW9VD5qTPs2I0EIVxUOsa-KpMu9Rdi9WM_naLoE1y44k_qmr6xcJgM0SqPKyLfM9YxF_pgSmWlD8z1TAhs_uWANEWLmiRAi_9EkyNGxKje7CUajts4SgsM0CFipLUn64bx_upywhX391Y0oEPhFCZzpcphWnDuyzj48TwrPadXLUvHLMfTxnemNJUHAHcLGuMbCgu-npwQBQjdxK0HYxSsPLjiwbUqADNtP6yOmzLr4gHBRi1CuRUnvxuwyBQVEHakCNYXuDiaEFGfAlX-JUNtjGk7Zo3RoBBLq8Xo4JENsXgWkhmNac6BhObRe3zZESRMeFFFbyKHMemw74QNPDOwcSm1cSS5R8IeKXeCdd-TVEMSWCNs01SKi3jkG-YhQPMEES85zg3lcJhES6T_5pWPQnnHqM7SCB8qa0gqBMYVB-XQ5ouiYtlOJuusM1DVEHRqB71neBu6ITA0DPQNPpLrMwRxuCdseeNXp1i1ISFmevOu-86AZ3nISKX85AeYf5yJvg==",
+    "checked": "2026-11-23"
+  },
+  {
+    "key": "m2",
+    "name": "전국연합 모의고사 고2 영어",
+    "query": "자이스토리 전국연합 모의고사 고2 영어 2027",
+    "must": [
+      "자이스토리",
+      "전국연합",
+      "고2",
+      "영어",
+      "2027"
+    ],
+    "not": [
+      "2026",
+      "수학",
+      "국어"
+    ],
+    "url": "https://link.coupang.com/re/AFFSDP?lptag=AF0931331&pageKey=9798244886&itemId=29365160039&vendorItemId=96277661061&traceid=V0-153-f8e32125c89f45d1&requestid=20261123062733442135108993&token=31850C%7CGM&pt=0&slot=1",
+    "product": "Xistory 자이스토리 전국연합 모의고사 고2 영어 (2027년) (오늘출발+노트제공)",
+    "image": "https://ads-partners.coupang.com/image1/mYmnXebuGgN0_lb3mcnVZ-amOPyyez6e_9izaJT60TgnUnPEdx6mabOun_fCItJ7BEyYftpCJmZ84k2eg59N_DVA7c2nIKreLZsI0N-k3AE8KsAS6zfYen3LwwI78_BHty_FMrsTC9sa8oCCkiHn74nxAbNDFCHZfYGw8-DeqEr8cVFc0_MCl528IvcdxVTok_aAnHEsegEsOesfwuAMex3ip2uHbtLVPwEQcxT3JJ3ceOq-1AqyUSxnY9ZIqBCxvyVlFE4EtMad5BZ4YMYcmTzZ2uPfLM4JwzxViohDxfrIV_JdrEb3B-Iff8MWU-alDM0JW5oXo35MPMP6EtfBVD88N6mkOcSScuIpzY2VjjwrDavgwfts-pFeXDtYK1YRst-HrrDp05uJ5Rpy9QqHB4HgMDu7taTWVOsw9c2sPe7M-i3CKo6Ybev23UVHzHk8O5jwxC5V1P6usAHvOdM2M0yzp-vQUuHyrCRrENlFRah38uHC5GsjAa9ViWzR2-4rsNYeF5OYY9c_s4IZnRBlSt5KUFf6i9UItBItTU1fKg==",
+    "checked": "2026-11-23"
+  }
 ]
