@@ -61,27 +61,27 @@
       ],
       "choices": [
         {
-          "en": "① (B) – (D) – (C)",
+          "en": "(B) – (D) – (C)",
           "ko": "상담 → 아버지 권유 → 복귀",
           "why": "상담 권유(D)보다 상담(B)이 먼저 올 수 없어요."
         },
         {
-          "en": "② (C) – (B) – (D)",
+          "en": "(C) – (B) – (D)",
           "ko": "복귀 → 상담 → 권유",
           "why": "결말(C)이 맨 앞에 올 수 없어요."
         },
         {
-          "en": "③ (C) – (D) – (B)",
+          "en": "(C) – (D) – (B)",
           "ko": "복귀 → 권유 → 상담",
           "why": "(C)의 the conversation with Mr. Johnson은 상담(B) 뒤에 와야 해요."
         },
         {
-          "en": "④ (D) – (B) – (C)",
+          "en": "(D) – (B) – (C)",
           "ko": "권유 → 상담 → 복귀",
           "why": "정답. 시간 순서와 연결 고리가 모두 맞아요."
         },
         {
-          "en": "⑤ (D) – (C) – (B)",
+          "en": "(D) – (C) – (B)",
           "ko": "권유 → 복귀 → 상담",
           "why": "(C)에서 상담 대화를 떠올리는데, 상담(B)이 아직 나오지 않았어요."
         }
@@ -111,27 +111,27 @@
       ],
       "choices": [
         {
-          "en": "① (a)",
+          "en": "(a)",
           "ko": "Andy",
           "why": "아버지 물음에 답하지 않은 Andy예요."
         },
         {
-          "en": "② (b)",
+          "en": "(b)",
           "ko": "Mr. Johnson",
           "why": "정답. 상담 선생님의 따뜻한 환영이에요. 나머지는 모두 Andy예요."
         },
         {
-          "en": "③ (c)",
+          "en": "(c)",
           "ko": "Andy",
           "why": "Mr. Johnson이 Andy에게 '네가 팀원을 아낀다'고 말해요."
         },
         {
-          "en": "④ (d)",
+          "en": "(d)",
           "ko": "Andy",
           "why": "Andy가 팀원들에게 '내가 어리석었어'라고 말해요."
         },
         {
-          "en": "⑤ (e)",
+          "en": "(e)",
           "ko": "Andy",
           "why": "아버지가 안심시킨 사람이에요."
         }
@@ -161,27 +161,27 @@
       ],
       "choices": [
         {
-          "en": "① Andy는 농구 결승전에서 다른 어떤 선수들보다 많이 득점했다.",
+          "en": "Andy는 농구 결승전에서 다른 어떤 선수들보다 많이 득점했다.",
           "ko": "scored more points than any other player",
           "why": "일치해요."
         },
         {
-          "en": "② Andy는 상담 교사의 질문을 듣고 잠시 동안 생각했다.",
+          "en": "Andy는 상담 교사의 질문을 듣고 잠시 동안 생각했다.",
           "ko": "thought for a moment",
           "why": "일치해요."
         },
         {
-          "en": "③ Andy는 팀 훈련에 결국 복귀하지 않았다.",
+          "en": "Andy는 팀 훈련에 결국 복귀하지 않았다.",
           "ko": "joined team training again",
           "why": "정답(불일치). 훈련에 다시 합류했어요."
         },
         {
-          "en": "④ Charles는 Andy의 경기력을 칭찬했다.",
+          "en": "Charles는 Andy의 경기력을 칭찬했다.",
           "ko": "Your performance was unbelievable!",
           "why": "일치해요."
         },
         {
-          "en": "⑤ Andy의 아버지는 사정을 알고 Andy를 위로했다.",
+          "en": "Andy의 아버지는 사정을 알고 Andy를 위로했다.",
           "ko": "comforted Andy with encouraging words",
           "why": "일치해요."
         }
