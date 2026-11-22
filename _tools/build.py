@@ -747,6 +747,12 @@ NEWS = [m for m in NEWS if m.get('cat') != 'book']  # 학원 소식만
 NEWS_CSS = '.nw-list{list-style:none;margin:0;padding:0}.nw-list li+li{border-top:1px dashed var(--line)}.nw-list a{display:flex;gap:14px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}.nw-list img.nw-cover{object-fit:contain;background:#fff}.nw-list img{flex:none;width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}.nw-list small{color:var(--muted);font-size:.8rem}.nw-list b{display:block;color:var(--navy-d);margin:2px 0;line-height:1.4}.nw-list span{color:var(--muted);font-size:.9rem}.nw-list a:hover b{text-decoration:underline}.nw-list em{display:block;font-style:normal;color:#475569;font-size:.88rem;line-height:1.45}.nw-chip{display:inline-block;font-style:normal;font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:999px;background:#eef2ff;color:#1f3a8a;margin-right:6px}.nw-chip.new{background:#fff1e6;color:#c2410c}.nw-chip.buy{background:#fee2e2;color:#b42318}.nw-cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}.nw-cols h3{font-size:1rem;margin:4px 0 0;color:var(--navy-d)}.nw-cols h3 small{color:var(--muted);font-weight:500}.nw-cols img{width:64px;height:64px}@media(max-width:760px){.nw-cols{grid-template-columns:1fr}}.nw-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:28px}.nw-grid li+li{border-top:0}.nw-grid li{border-bottom:1px dashed var(--line)}@media(max-width:760px){.nw-grid{grid-template-columns:1fr}}' + '.nw-compact{display:block}.nw-compact section+section{margin-top:14px}.nw-compact .nw-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.nw-compact .nw-list li,.nw-compact .nw-list li+li{border:1px solid var(--line);border-radius:12px;background:#fff;min-width:0}.nw-compact .nw-list li:hover{border-color:#c9d6f5;box-shadow:0 2px 8px rgba(30,58,138,.08)}.nw-compact a{padding:10px 12px;gap:12px}.nw-compact img{width:64px;height:64px}.nw-compact a>div{min-width:0}.nw-compact b{font-size:.95rem;margin:1px 0}.nw-compact small{font-size:.74rem}.nw-compact em{font-size:.82rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media(max-width:760px){.nw-compact .nw-list{grid-template-columns:1fr}}'
 def news_kind(m):  # 교재 소식 분류: 신간 소개 / 자료·정보
     return 'new' if m.get('tag', '').startswith('교재 신간') else 'info'
+BOOK_TYPES = ['독해', '어법·어휘', '구문·서술형', '듣기', '기출']  # 신간 소개 분류 (2026-11-23 원장님). meta.json "types" 가 없으면 제목으로 짐작
+def book_types(m):
+    if m.get('types'): return m['types']
+    t = m['title']
+    rules = [('독해', r'독해|빈칸|순서|삽입'), ('어법·어휘', r'어법|어휘|VOCA|보카|단어'), ('구문·서술형', r'구문|서술형|영작'), ('듣기', r'듣기'), ('기출', r'기출|모의고사|학력평가|모의평가')]
+    return [k for k, rx in rules if _re.search(rx, t, _re.I)]
 def news_line(m):
     th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
     main, _, sub = m['title'].partition(' — ')  # 목록에선 긴 제목을 두 줄로: 굵은 이름 + 작은 설명
@@ -759,8 +765,18 @@ def news_line(m):
     cover = next((b['image'] for b in _cp if b.get('url') and b.get('image')), '') if m.get('cat') == 'book' else ''
     img = (f'<img class="nw-cover" src="{e(cover)}" alt="{e(main)} 표지" loading="lazy" width="84" height="84" referrerpolicy="no-referrer">' if cover
            else f'<img src="{nurl(m)}thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '')
-    return (f'<li><a href="{nurl(m)}">' + img +
+    dt = f' data-t="{e("|".join(book_types(m)))}"' if m.get('cat') == 'book' else ''
+    return (f'<li{dt}><a href="{nurl(m)}">' + img +
             f'<div><small>{chip}{m["date"].replace("-", ".")}</small><b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a></li>')
+def book_tabs(ms):  # 신간 소개 목록 위 분류 탭: 전체 · 독해 · 어법·어휘 · 구문·서술형 · 듣기 · 기출 (누르면 그 분류 글만)
+    cnt = {k: sum(k in book_types(m) for m in ms) for k in BOOK_TYPES}
+    tabs = f'<button type="button" class="on" data-f="">전체 <small>{len(ms)}</small></button>' + ''.join(
+        f'<button type="button" data-f="{e(k)}">{e(k)} <small>{c}</small></button>' for k, c in cnt.items() if c)
+    return (f'<div class="bk-tabs" id="bk-tabs">{tabs}</div><script>(function(){{var b=document.getElementById("bk-tabs");'
+            'b.onclick=function(ev){var t=ev.target.closest("button");if(!t)return;var f=t.dataset.f;'
+            'b.querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x===t)});'
+            'document.querySelectorAll(".nw-compact section").forEach(function(sec){var n=0;sec.querySelectorAll("li").forEach(function(li){'
+            'var ok=!f||(li.dataset.t||"").split("|").indexOf(f)>=0;li.style.display=ok?"":"none";if(ok)n++});sec.style.display=n?"":"none"})};})();</script>')
 def book_groups(ms, n=None):  # 교재 소식: 신간 소개 · 자료·정보 두 칸 (칸마다 테두리, 썸네일 포함)
     cols = [(k, h, [m for m in ms if news_kind(m) == k]) for k, h in (('new', '📘 신간 소개'), ('info', '🔗 자료·정보'))]
     return '<div class="nw-cols nw-compact">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'
@@ -896,7 +912,7 @@ page('/books/news/', '신간 소개 – 고등 영어 부교재 신간 · 개정
      '고등 영어 부교재 신간·개정 소식을 리카수니 원장이 요약해 알려 드려요. 교재 구성과 대상, 출판사 이벤트 정보.',
      f'<style>{NEWS_CSS}</style><section class="hero"><h1>📘 신간 소개</h1><p>고등 영어 부교재 신간·개정 교재를 리카수니 원장이 정리해요. 책 구성과 고르는 법을 보고, 필요한 책은 글 안에서 바로 구매할 수 있어요.</p></section>'
      + '<div class="ask-box ask-band"><b>📮 원하는 신간 교재가 있나요?</b><p>새로 나온 교재의 분석노트·단어 시험지·변형문제가 필요하면 <b>신간교재 요청</b>에 남겨 주세요. 원장님이 답글로 알려 드리고, 가능한 자료는 요청 목록에 추가해요.</p><a class="btn btn-navy" href="/#talk">✍️ 신간교재 요청 남기기</a></div>'  # 2026-11-23 원장님
-     + (f'<div class="card">{book_groups(BOOKNEWS)}</div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
+     + (f'<div class="card">{book_tabs(BOOKNEWS)}{book_groups(BOOKNEWS)}</div>' if BOOKNEWS else '<div class="card"><p class="muted">곧 첫 소식이 올라와요.</p></div>'),
      [('/', '홈'), ('/books/news/', '신간 소개')], '/books/news/')
 # 옛 쿠팡 모음 페이지 (/books/kit/ 수험생 준비물, /shop/ 쇼핑) → 신간 소개로 넘김 (2026-11-14 원장님: 쿠팡은 신간 소개 글 안에만)
 for _old in ('books/kit', 'shop'):
