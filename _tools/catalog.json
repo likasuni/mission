@@ -63016,6 +63016,16 @@
 {
 "exam": "sn",
 "year": 2027,
+"subject": "영어",
+"group": "영어",
+"kind": "해설",
+"id": "1jJyqltxEV4ez-BJ65UA7KuZ0NMGfGgg7",
+"size": 321032,
+"title": "2027학년도 수능 영어 정답 해설.pdf"
+},
+{
+"exam": "sn",
+"year": 2027,
 "subject": "윤리와사상",
 "group": "사회탐구",
 "kind": "문제",
