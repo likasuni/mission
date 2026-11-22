@@ -753,7 +753,11 @@ def book_types(m):
     t = m['title']
     rules = [('독해', r'독해|빈칸|순서|삽입'), ('어법·어휘', r'어법|어휘|VOCA|보카|단어'), ('구문·서술형', r'구문|서술형|영작'), ('듣기', r'듣기'), ('기출', r'기출|모의고사|학력평가|모의평가')]
     return [k for k, rx in rules if _re.search(rx, t, _re.I)]
-def news_line(m):
+from urllib.parse import quote
+def pub_txt(v):  # 출간일 '2026-11-01' 또는 '2026-11-01~2026-11-10' → '2026.11.01' / '2026.11.01~11.10'
+    a, _, z = v.partition('~')
+    return a.replace('-', '.') + ('~' + z[5:].replace('-', '.') if z else '')
+def news_line(m, req=False):
     th = os.path.exists(os.path.join(m['_dir'], 'thumb.png'))
     main, _, sub = m['title'].partition(' — ')  # 목록에선 긴 제목을 두 줄로: 굵은 이름 + 작은 설명
     sub = _re.sub(r'\s*\((이매동 )?코코스학원[^)]*\)\s*$', '', sub)
@@ -767,7 +771,9 @@ def news_line(m):
            else f'<img src="{nurl(m)}thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '')
     dt = f' data-t="{e("|".join(book_types(m)))}"' if m.get('cat') == 'book' else ''
     return (f'<li{dt}><a href="{nurl(m)}">' + img +
-            f'<div><small>{chip}{m["date"].replace("-", ".")}</small><b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a></li>')
+            f'<div><small>{chip}' + (f'<i class="nw-pub">📅 {pub_txt(m["pub"])} 출간</i><span class="nw-date">소개 {m["date"][5:].replace("-", ".")}</span>' if m.get('pub') else m["date"].replace("-", ".")) + '</small>'
+            f'<b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a>'
+            + (f'<a class="nw-req" href="/?ask={quote(main)}#talk">📮 자료<br> 요청하기</a>' if req and news_kind(m) == 'new' else '') + '</li>')
 def book_tabs(ms):  # 신간 소개 목록 위 분류 탭: 전체 · 독해 · 어법·어휘 · 구문·서술형 · 듣기 · 기출 (누르면 그 분류 글만)
     cnt = {k: sum(k in book_types(m) for m in ms) for k in BOOK_TYPES}
     tabs = f'<button type="button" class="on" data-f="">전체 <small>{len(ms)}</small></button>' + ''.join(
@@ -779,7 +785,7 @@ def book_tabs(ms):  # 신간 소개 목록 위 분류 탭: 전체 · 독해 · �
             'var ok=!f||(li.dataset.t||"").split("|").indexOf(f)>=0;li.style.display=ok?"":"none";if(ok)n++});sec.style.display=n?"":"none"})};})();</script>')
 def book_groups(ms, n=None, one=False):  # 교재 소식: 신간 소개 · 자료·정보 두 칸 (칸마다 테두리, 썸네일 포함). one = 한 줄에 1개·표지 크게 (/books/news/, 2026-11-23)
     cols = [(k, h, [m for m in ms if news_kind(m) == k]) for k, h in (('new', '📘 신간 소개'), ('info', '🔗 자료·정보'))]
-    return f'<div class="nw-cols nw-compact{" nw-one" if one else ""}">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'
+    return f'<div class="nw-cols nw-compact{" nw-one" if one else ""}">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m, one) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'
 
 nb = ('<h1 class="page-h1">학교별 영어 내신 분석 <small class="ns-lock">🔒 코코스 학원생 전용</small></h1>'
       '<p class="lead">이매동 코코스학원 리카수니 원장이 학교 기출 시험지를 직접 분석해요. 출제 범위, 문항별 포인트, 서술형 대비까지 정리하고, '

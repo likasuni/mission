@@ -820,3 +820,18 @@ textarea:focus, input:focus { outline-color: var(--navy); }
 .nw-compact.nw-one .nw-list { grid-template-columns: 1fr !important; }
 .nw-compact.nw-one img { width: 84px !important; height: 84px !important; }
 .nw-compact.nw-one em { white-space: normal; }
+/* 신간 소개: 출간일 강조 · 오른쪽 자료 요청 블록 (2026-11-23) */
+.nw-pub { display: inline-block; font-style: normal; font-size: .8rem; font-weight: 900; color: #b42318; background: #fff1ee; border: 1px solid #f5c2b8; border-radius: 6px; padding: 1px 8px; margin-right: 6px; }
+.nw-date { color: #94a3b8; font-size: .74rem; white-space: nowrap; }
+.nw-compact.nw-one .nw-list li { display: flex; align-items: stretch; }
+.nw-compact.nw-one .nw-list li > a:first-child { flex: 1; min-width: 0; }
+.nw-req { flex: none; display: flex; align-items: center; justify-content: center; text-align: center; width: 92px; margin: 8px 8px 8px 0; border-radius: 10px; background: #eef2ff; border: 1px solid #c7d2fe; color: #1e3a8a !important; font-size: .82rem; font-weight: 800; line-height: 1.35; text-decoration: none; }
+.nw-req:hover { background: #1e3a8a; color: #fff !important; }
+.nw-pub { white-space: nowrap; }
+@media (max-width: 600px) {
+  .nw-compact.nw-one .nw-list li { flex-direction: column; }
+  .nw-compact.nw-one img { width: 72px !important; height: 72px !important; }
+  .nw-req { width: auto; margin: 0 10px 10px; padding: 8px; font-size: .86rem; }
+  .nw-req br { display: none; }
+  .nw-req::before { content: ''; }
+}
