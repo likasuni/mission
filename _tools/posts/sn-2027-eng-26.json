@@ -1,0 +1,175 @@
+{
+  "exam": "sn-2027",
+  "n": 26,
+  "type": "내용 불일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "영장류의 사회적 관계를 연구한 미국 생물학자 Dorothy L. Cheney",
+  "keywords": [
+    "2027 수능 영어 26번",
+    "2027학년도 수능 26번 해설",
+    "2027 수능 26번 정답",
+    "2026 수능 영어 26번",
+    "수능 영어 내용 일치",
+    "Dorothy L. Cheney 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 26번은 버빗원숭이와 개코원숭이의 사회적 관계를 연구한 생물학자 Dorothy L. Cheney의 일생을 다룬 인물 글이에요. Baboon Metaphysics는 Cheney and her husband wrote라고 남편과 함께 썼어요. '단독 집필'이라는 ④가 틀려서 정답은 ④예요.",
+  "flow": [
+    [
+      "소개",
+      "Dorothy L. Cheney는 영장류의 사회적 관계 연구로 유명한 미국 생물학자다."
+    ],
+    [
+      "성장",
+      "1950년 보스턴에서 태어나 1972년 웰즐리 대학을 졸업했다."
+    ],
+    [
+      "진로",
+      "원래 로스쿨에 갈 계획이었지만 남편과 동물 행동 현장 연구를 하며 바뀌었다."
+    ],
+    [
+      "연구",
+      "1977~1988년 케냐에서 버빗원숭이의 포식자별 경고음을 발견했고, 이후 보츠와나에서 개코원숭이를 연구했다."
+    ],
+    [
+      "업적",
+      "남편과 Baboon Metaphysics를 썼고, 동물 행동 연구자들에게 큰 영향을 미쳤다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Cheney and her husband wrote Baboon Metaphysics, describing results from their fieldwork.",
+      "ko": "Cheney와 그녀의 남편은 현장 연구 결과를 담은 Baboon Metaphysics를 썼다.",
+      "note": "주어가 Cheney and her husband예요. 공동 집필이라 ④ '단독 집필'은 틀려요."
+    },
+    {
+      "en": "Although she originally planned to go to law school, her career plan changed …",
+      "ko": "그녀는 원래 로스쿨에 갈 계획이었지만 진로 계획이 바뀌었다 …",
+      "note": "② '로스쿨 진학 계획'은 일치해요. 실제로 가지는 않았지만 '계획'은 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 1950년에 Boston에서 태어났다.",
+      "ko": "Born in Boston in 1950",
+      "why": "일치해요."
+    },
+    {
+      "en": "② 로스쿨에 진학할 계획이었다.",
+      "ko": "originally planned to go to law school",
+      "why": "일치해요. '계획'만 말하니 맞아요."
+    },
+    {
+      "en": "③ 케냐에서 현장 연구를 수행했다.",
+      "ko": "conducted field research in Kenya",
+      "why": "일치해요."
+    },
+    {
+      "en": "④ Baboon Metaphysics를 단독 집필하였다.",
+      "ko": "Cheney and her husband wrote",
+      "why": "정답(불일치). 남편과 함께 썼어요."
+    },
+    {
+      "en": "⑤ 동물 행동 연구자들에게 큰 영향을 미쳤다.",
+      "ko": "had a strong influence on researchers",
+      "why": "일치해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "Although + 절 (양보)",
+      "ex": "Although she originally planned to go to law school, her career plan changed …",
+      "d": "'~했지만'. 앞뒤가 반대 내용이에요."
+    },
+    {
+      "t": "분사구문 (부대 상황)",
+      "ex": "discovering that vervet monkeys used different alarm calls",
+      "d": "= and she discovered that … 결과를 덧붙여요."
+    },
+    {
+      "t": "과거분사 수식이 아닌 분사구문 describing",
+      "ex": "wrote Baboon Metaphysics, describing results from their fieldwork",
+      "d": "책이 연구 결과를 '설명하는' 능동이라 -ing예요."
+    },
+    {
+      "t": "go on to V",
+      "ex": "many graduate students she mentored went on to distinguished careers",
+      "d": "went on to + 명사: (이어서) ~로 나아가다."
+    }
+  ],
+  "vocab": [
+    [
+      "renowned",
+      "유명한"
+    ],
+    [
+      "primate",
+      "영장류"
+    ],
+    [
+      "vervet monkey",
+      "버빗원숭이"
+    ],
+    [
+      "baboon",
+      "개코원숭이"
+    ],
+    [
+      "fieldwork",
+      "현장 연구"
+    ],
+    [
+      "subsequently",
+      "그 후에"
+    ],
+    [
+      "doctoral degree",
+      "박사 학위"
+    ],
+    [
+      "zoology",
+      "동물학"
+    ],
+    [
+      "alarm call",
+      "경고음"
+    ],
+    [
+      "predator",
+      "포식자"
+    ],
+    [
+      "mentor",
+      "지도하다"
+    ],
+    [
+      "distinguished",
+      "뛰어난"
+    ]
+  ],
+  "summary": {
+    "en": "Dorothy L. Cheney studied the social lives of monkeys and baboons and co-wrote Baboon Metaphysics with her husband.",
+    "ko": "Dorothy L. Cheney는 원숭이와 개코원숭이의 사회생활을 연구했고, 남편과 함께 Baboon Metaphysics를 썼다."
+  },
+  "writing": {
+    "en": "She wrote the book together with her husband.",
+    "ko": "그녀는 남편과 함께 그 책을 썼다."
+  },
+  "tip": "인물 내용 일치는 선택지 순서가 글 순서와 같아요. 선택지를 하나씩 들고 글에서 그 자리를 찾으세요. '단독·유일·처음' 같은 말이 나오면 주어가 몇 명인지 꼭 확인하세요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 26번 정답은?",
+      "④ 'Baboon Metaphysics를 단독 집필하였다'예요. 글에는 Cheney and her husband wrote라고 나와요."
+    ],
+    [
+      "②번 로스쿨은 왜 맞나요?",
+      "originally planned to go to law school이라 '계획이었다'는 말은 맞아요. 실제로 갔다고 하지 않았어요."
+    ],
+    [
+      "2026 수능 영어 26번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

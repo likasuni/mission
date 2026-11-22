@@ -1,0 +1,239 @@
+{
+  "exam": "sn-2027",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "지구를 닮은 생명만 찾을 것인가, 지구의 규칙 밖 생명도 찾을 것인가",
+  "keywords": [
+    "2027 수능 영어 41~42번",
+    "2027학년도 수능 41~42번 해설",
+    "2027 수능 41번 정답",
+    "2027 수능 42번 정답",
+    "2026 수능 영어 41~42번",
+    "수능 영어 장문 독해",
+    "search for alien life terracentric 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 41~42번은 외계 생명 탐사의 두 가지 논리를 비교한 장문 세트예요. 하나는 지구와 닮은 행성에서 생명을 찾는 '지구 중심' 논리, 다른 하나는 지구 생명이 대표적이지 않다고 보는 대안 논리예요. 41번 제목은 ① Within or Beyond Earth's Rules, 42번은 서식 가능 영역 개념과 '잘 맞는' 문맥인데 (b) contradicts(모순되다)가 쓰여 틀렸어요. 정답은 41번 ①, 42번 ②예요.",
+  "flow": [
+    [
+      "논리 1",
+      "지구에 생명이 있으니, 지구와 닮은 곳에서 생명을 찾고 알아볼 가능성이 가장 높다."
+    ],
+    [
+      "적용",
+      "그래서 '물을 따라가라', 액체 물·대기·적당한 크기의 암석 행성, '별의 서식 가능 영역'을 찾는다. 우리 모습을 닮은 생명 찾기다."
+    ],
+    [
+      "논리 2",
+      "지구 생명이 다른 곳 생명을 대표하지 않을 수 있으니, 지구 조건을 한계로 볼 필요가 없다."
+    ],
+    [
+      "확장",
+      "사실 우리 눈에 보이는 생명은 지구 생물량의 대부분도 대표하지 못한다. 땅속·바닷속 미생물이 규칙이고, 큰 생물은 예외다."
+    ]
+  ],
+  "tip": "41번: 두 논리(This is the logic … / The alternative logic …)를 모두 담은 제목을 고르세요. 42번: It fuels … It forms … It fits perfectly …처럼 같은 주어 It이 계속 '지구 중심 논리를 뒷받침하는' 말로 이어져요. 그 사이에 혼자 반대 방향(contradicts)인 단어가 답이에요.",
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 1,
+      "evidence": [
+        {
+          "en": "This is the logic of the search for Earth-like planets in other systems, and the terracentric search for life on those worlds.",
+          "ko": "이것이 다른 항성계에서 지구 같은 행성을 찾고 그 세계에서 지구 중심적으로 생명을 찾는 논리다.",
+          "note": "첫 번째 논리: 지구의 규칙 안에서(Within Earth's Rules) 찾기."
+        },
+        {
+          "en": "The alternative logic is one that starts from a different assumption― that life on Earth is not representative necessarily of life elsewhere …",
+          "ko": "대안 논리는 다른 가정에서 출발한다. 지구 생명이 반드시 다른 곳 생명을 대표하는 것은 아니라는 가정이다 …",
+          "note": "두 번째 논리: 지구의 규칙을 넘어서(Beyond Earth's Rules) 찾기."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① Within or Beyond Earth's Rules: The Search for Alien Life",
+          "ko": "지구 규칙 안인가 밖인가: 외계 생명 탐사",
+          "why": "정답. 두 논리를 모두 담았어요."
+        },
+        {
+          "en": "② Why Do We Navigate the Universe for Habitability?",
+          "ko": "왜 거주 가능성을 찾아 우주를 탐사하는가",
+          "why": "탐사 '이유'가 아니라 '어떤 논리로 찾을지'가 주제예요."
+        },
+        {
+          "en": "③ Alien Civilization: The Motive for Exploring Other Planets",
+          "ko": "외계 문명: 다른 행성 탐사 동기",
+          "why": "문명 이야기는 없어요. 미생물이 오히려 핵심이에요."
+        },
+        {
+          "en": "④ Various Reasons for the Delay in Finding Alien Life",
+          "ko": "외계 생명 발견이 늦어지는 이유",
+          "why": "발견 지연은 다루지 않아요."
+        },
+        {
+          "en": "⑤ The Future of Space Journeys: Challenging but Promising!",
+          "ko": "우주여행의 미래",
+          "why": "우주여행 이야기가 아니에요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "낱말의 쓰임",
+      "points": 3,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "It (b) contradicts the concept of the \"stellar habitable zone,\" which assumes that life is restricted to those planets at just the right distance …",
+          "ko": "그것은 생명이 딱 알맞은 거리의 행성에만 있다고 가정하는 '별의 서식 가능 영역' 개념과 (b) 모순된다.",
+          "note": "서식 가능 영역은 '지구 같은 조건'을 찾는 개념이라 지구 중심 논리와 같은 편이에요. contradicts가 아니라 underlies(뒷받침하다)·supports 같은 말이 맞아요."
+        },
+        {
+          "en": "It fits perfectly with the search for life in our own image.",
+          "ko": "그것은 우리 모습을 닮은 생명 찾기와 완벽하게 들어맞는다.",
+          "note": "바로 다음 문장도 '잘 맞는다'예요. (b)만 방향이 반대예요."
+        },
+        {
+          "en": "with the larger organisms that catch our eye simply being the (e) exceptions that command our attention.",
+          "ko": "눈에 띄는 큰 생물은 단지 우리 주의를 끄는 (e) 예외일 뿐이다.",
+          "note": "미생물이 '규칙(rule)'이니 큰 생물은 '예외'가 맞아요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① (a) fuels",
+          "ko": "부추기다",
+          "why": "적절. 지구 중심 논리가 '물을 따라가라'는 노력을 부추겨요."
+        },
+        {
+          "en": "② (b) contradicts",
+          "ko": "모순되다",
+          "why": "정답(부적절). 서식 가능 영역 개념은 지구 중심 논리의 바탕이에요. supports·underlies가 맞아요."
+        },
+        {
+          "en": "③ (c) different",
+          "ko": "다른",
+          "why": "적절. alternative logic이니 '다른' 가정에서 출발해요."
+        },
+        {
+          "en": "④ (d) typical",
+          "ko": "전형적인",
+          "why": "적절. 보이는 생명은 지구 생물량 대부분의 '전형'이 아니라는 뜻이에요."
+        },
+        {
+          "en": "⑤ (e) exceptions",
+          "ko": "예외",
+          "why": "적절. 미생물이 rule, 큰 생물은 exception이에요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "be most likely to V",
+      "ex": "we're most likely to find it and recognize it on other worlds that resemble Earth",
+      "d": "'~할 가능성이 가장 높다'."
+    },
+    {
+      "t": "동격 대시 + that절",
+      "ex": "a different assumption― that life on Earth is not representative …",
+      "d": "대시 뒤 that절이 assumption의 내용을 풀어 줘요."
+    },
+    {
+      "t": "need not be p.p.",
+      "ex": "the conditions … need not be viewed as limitations",
+      "d": "'~될 필요가 없다'. need가 조동사로 쓰였어요."
+    },
+    {
+      "t": "with + 명사 + 분사 (부대 상황)",
+      "ex": "with the larger organisms that catch our eye simply being the exceptions",
+      "d": "'큰 생물은 단지 예외인 채로'."
+    }
+  ],
+  "vocab": [
+    [
+      "resemble",
+      "닮다"
+    ],
+    [
+      "terracentric",
+      "지구 중심의"
+    ],
+    [
+      "fuel",
+      "부추기다"
+    ],
+    [
+      "liquid water",
+      "액체 상태의 물"
+    ],
+    [
+      "orbit",
+      "궤도"
+    ],
+    [
+      "contradict",
+      "모순되다"
+    ],
+    [
+      "stellar",
+      "별의"
+    ],
+    [
+      "habitable zone",
+      "서식 가능 영역"
+    ],
+    [
+      "representative",
+      "대표하는"
+    ],
+    [
+      "nuanced",
+      "미묘한 차이가 있는"
+    ],
+    [
+      "biomass",
+      "생물량"
+    ],
+    [
+      "microbial",
+      "미생물의"
+    ],
+    [
+      "crust",
+      "지각"
+    ],
+    [
+      "command attention",
+      "주의를 끌다"
+    ]
+  ],
+  "summary": {
+    "en": "Scientists can search for alien life on Earth-like planets, or assume that life elsewhere need not follow Earth's conditions, since even on Earth microbes are the rule.",
+    "ko": "외계 생명은 지구를 닮은 행성에서 찾을 수도 있고, 지구 조건을 따를 필요가 없다고 볼 수도 있다. 지구에서도 미생물이 생명의 규칙이기 때문이다."
+  },
+  "writing": {
+    "en": "Life on Earth may not represent life on other planets.",
+    "ko": "지구의 생명이 다른 행성의 생명을 대표하지 않을 수도 있다."
+  },
+  "note": "42번처럼 같은 주어(It)가 여러 번 나오면, 그 문장들이 모두 같은 방향인지 표시해 보세요. fuels·forms·fits perfectly 사이에 contradicts 하나만 반대로 튀어요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 41번 정답은?",
+      "① Within or Beyond Earth's Rules: The Search for Alien Life예요."
+    ],
+    [
+      "2027학년도 수능 영어 42번 정답은?",
+      "② (b)예요. contradicts가 아니라 supports·underlies처럼 '뒷받침하다'라는 말이 와야 해요."
+    ],
+    [
+      "(e) exceptions는 왜 맞나요?",
+      "미생물 세계가 생명의 '규칙(rule)'이라고 했으니, 눈에 띄는 큰 생물은 '예외'가 맞아요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

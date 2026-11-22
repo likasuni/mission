@@ -1,0 +1,181 @@
+{
+  "exam": "sn-2027",
+  "n": 21,
+  "type": "밑줄 의미",
+  "points": 3,
+  "answer": 2,
+  "topic": "데이터를 꽁꽁 싸매 두는 회사는 닻을 끌고 가듯 스스로 발목을 잡는다",
+  "keywords": [
+    "2027 수능 영어 21번",
+    "2027학년도 수능 21번 해설",
+    "2027 수능 21번 정답",
+    "2026 수능 영어 21번",
+    "수능 영어 밑줄 의미",
+    "dragging an anchor 뜻",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 21번은 데이터를 '봉인된 상자'처럼 지키기만 하는 회사를 dragging an anchor(닻을 끌고 가기)에 비유한 3점 문항이에요. 지능 시대에는 데이터를 연결해야 가치가 생기니, 감춰 두면 회사의 발전을 늦춘다는 뜻이에요. 정답은 ②예요.",
+  "flow": [
+    [
+      "과거",
+      "회사들은 수십 년 동안 데이터를 가치 있고 비밀스러운 봉인된 상자처럼 다뤘다."
+    ],
+    [
+      "이유",
+      "산업 경제에서는 데이터를 소유하는 것이 힘이었다."
+    ],
+    [
+      "전환",
+      "지능 시대에는 그 논리가 장애물이다. 가치는 데이터를 연결하는 데서 나온다."
+    ],
+    [
+      "밑줄",
+      "상자를 붙들고 있는 것은 자산을 지키는 것이 아니라 닻을 끌고 가는 것이다."
+    ],
+    [
+      "대안",
+      "앞서가는 회사들은 상자를 안전하게, 선택적으로, 목적에 맞게 딱 필요한 만큼 연다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But in the Intelligence Age, that logic is becoming an obstacle.",
+      "ko": "하지만 지능 시대에는 그 논리가 장애물이 되고 있다.",
+      "note": "obstacle(장애물)이 anchor(닻)와 같은 말이에요. 앞으로 나아가는 걸 막는 것이에요."
+    },
+    {
+      "en": "Holding on to the sealed box today is less like safeguarding an asset and more like dragging an anchor.",
+      "ko": "오늘날 봉인된 상자를 붙들고 있는 것은 자산을 지키는 것이라기보다는 닻을 끌고 가는 것에 더 가깝다.",
+      "note": "less like A and more like B: A가 아니라 B에 가깝다. 지키는 게 아니라 짐이 된다는 뜻이에요."
+    },
+    {
+      "en": "The companies moving fastest are not just opening the box.",
+      "ko": "가장 빨리 움직이는 회사들은 그저 상자를 여는 것이 아니다.",
+      "note": "moving fastest와 대조돼요. 닫아 두면 느려진다는 걸 보여 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① struggling to collect information for a competitive advantage",
+      "ko": "경쟁 우위를 위해 정보 수집에 애씀",
+      "why": "모으기 어려움이 아니라 이미 가진 데이터를 감춰 두는 게 문제예요."
+    },
+    {
+      "en": "② limiting a company's progress by keeping its data private",
+      "ko": "데이터를 비공개로 두어 회사 발전을 제한함",
+      "why": "정답. 상자를 붙듦 = 비공개, 닻 = 발전을 막음."
+    },
+    {
+      "en": "③ attempting to share protected information within a company",
+      "ko": "회사 안에서 보호된 정보를 나누려 함",
+      "why": "나누는 건 오히려 글이 권하는 방향이에요. 반대예요."
+    },
+    {
+      "en": "④ decreasing the profits of a company due to data release",
+      "ko": "데이터 공개 때문에 이익이 줆",
+      "why": "공개가 아니라 감춤이 문제예요. 원인이 반대예요."
+    },
+    {
+      "en": "⑤ preventing a company from improperly handling valuable data",
+      "ko": "귀한 데이터를 잘못 다루지 않게 막음",
+      "why": "데이터 보호의 장점처럼 읽혀요. 글은 감추는 게 짐이라고 해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "less like A and more like B",
+      "ex": "is less like safeguarding an asset and more like dragging an anchor",
+      "d": "'A라기보다는 B에 가깝다'. 뒤쪽 B가 필자의 진짜 생각이에요."
+    },
+    {
+      "t": "no longer A but B",
+      "ex": "Value no longer comes primarily from keeping information but from connecting it",
+      "d": "'더 이상 A가 아니라 B'. 과거와 현재를 대조해요."
+    },
+    {
+      "t": "동명사 주어 + 단수 동사",
+      "ex": "Holding on to the sealed box today is …",
+      "d": "동명사 주어는 단수 취급해서 is예요."
+    },
+    {
+      "t": "not A for its own sake but B",
+      "ex": "The objective is not openness for its own sake but smart connection",
+      "d": "'A 그 자체를 위한 것이 아니라 B'."
+    }
+  ],
+  "vocab": [
+    [
+      "sealed",
+      "봉인된"
+    ],
+    [
+      "instinct",
+      "본능, 직감"
+    ],
+    [
+      "proprietary",
+      "독점의, 소유권이 있는"
+    ],
+    [
+      "competitive advantage",
+      "경쟁 우위"
+    ],
+    [
+      "obstacle",
+      "장애물"
+    ],
+    [
+      "ecosystem",
+      "생태계"
+    ],
+    [
+      "safeguard",
+      "지키다, 보호하다"
+    ],
+    [
+      "asset",
+      "자산"
+    ],
+    [
+      "anchor",
+      "닻"
+    ],
+    [
+      "deliberate",
+      "신중한, 계획된"
+    ],
+    [
+      "selectively",
+      "선택적으로"
+    ],
+    [
+      "edge",
+      "우위"
+    ]
+  ],
+  "summary": {
+    "en": "In the Intelligence Age, keeping data locked away holds a company back; value comes from connecting data securely and selectively.",
+    "ko": "지능 시대에 데이터를 꽁꽁 감춰 두면 회사가 뒤처지고, 가치는 데이터를 안전하고 선택적으로 연결하는 데서 나온다."
+  },
+  "writing": {
+    "en": "Keeping data private can slow a company down.",
+    "ko": "데이터를 비공개로 두는 것은 회사를 느리게 만들 수 있다."
+  },
+  "tip": "밑줄 의미 문제는 밑줄 바로 앞뒤의 대조를 보세요. less like safeguarding an asset ↔ more like dragging an anchor. '지킴'이 아니라 '짐'이라는 뜻이니, 감추는 것(private)과 발전 제한(limiting progress)이 같이 들어간 선택지를 고르면 돼요.",
+  "note": "비유 밑줄은 '좋은 뜻인지 나쁜 뜻인지'부터 정하세요. 닻을 '끌고' 가면 배가 느려지죠. 나쁜 뜻이니 ③·⑤처럼 긍정적으로 읽히는 선택지는 먼저 지워요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 21번 정답은?",
+      "② limiting a company's progress by keeping its data private예요."
+    ],
+    [
+      "dragging an anchor는 무슨 뜻인가요?",
+      "직역은 '닻을 끌고 가기'예요. 배가 닻을 끌면 느려지듯, 데이터를 감춰 두는 습관이 회사의 발전을 막는다는 비유예요."
+    ],
+    [
+      "④번은 왜 틀리나요?",
+      "글은 데이터를 공개해서가 아니라 감춰 둬서 손해라고 말해요. 원인이 반대예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

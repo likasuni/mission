@@ -1,0 +1,163 @@
+{
+  "exam": "sn-2027",
+  "n": 20,
+  "type": "필자의 주장",
+  "points": 2,
+  "answer": 2,
+  "topic": "야생 동물을 찍기 전에 그 동물을 충분히 공부해야 한다",
+  "keywords": [
+    "2027 수능 영어 20번",
+    "2027학년도 수능 20번 해설",
+    "2027 수능 20번 정답",
+    "2026 수능 영어 20번",
+    "수능 영어 필자 주장",
+    "wildlife photography preparedness 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 20번은 야생 동물 사진에서 사람들이 놓치는 요소가 '준비'라고 말하는 글이에요. Before you face your animal subject, you should study and learn about it … 이 주장 문장이에요. 정답은 ② '촬영하기 전에 대상 동물에 대해 충분히 학습해야 한다'예요.",
+  "flow": [
+    [
+      "통념",
+      "야생 동물 사진에는 인내·자신감·정확성이 필요하다고 알려져 있다."
+    ],
+    [
+      "주장",
+      "하지만 많은 사람이 놓치는 것은 준비다. 동물을 미리 공부해서 행동을 예측해야 한다."
+    ],
+    [
+      "예시",
+      "새끼 거북의 이동을 찍으려면 7월의 서늘하고 어두운 밤에 움직인다는 것까지 알아야 한다."
+    ],
+    [
+      "효과",
+      "동물에 대한 진짜 지식은 성공 확률을 높이고 기다리는 시간도 즐겁게 만든다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Before you face your animal subject, you should study and learn about it so that you can anticipate its behavior.",
+      "ko": "동물 피사체를 마주하기 전에 그것의 행동을 예측할 수 있도록 그것에 대해 공부하고 배워야 한다.",
+      "note": "should가 있는 문장이 주장이에요. Yet 바로 뒤에 나와요."
+    },
+    {
+      "en": "Genuine knowledge about the animal you wish to capture … not only increases the likelihood of success but makes the slow time in the field much more enjoyable.",
+      "ko": "찍고 싶은 동물에 대한 진짜 지식은 성공 가능성을 높일 뿐 아니라 현장의 느린 시간을 훨씬 즐겁게 만든다.",
+      "note": "마지막 문장이 주장을 다시 한 번 정리해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 생명체 촬영 윤리를 준수해야 한다",
+      "ko": "윤리",
+      "why": "윤리 이야기는 없어요."
+    },
+    {
+      "en": "② 촬영하기 전에 대상 동물에 대해 충분히 학습해야 한다",
+      "ko": "사전 학습",
+      "why": "정답. you should study and learn about it과 같아요."
+    },
+    {
+      "en": "③ 적합한 카메라와 보조 장치를 준비해야 한다",
+      "ko": "장비 준비",
+      "why": "preparedness(준비)라는 말에 끌리는 함정이에요. 장비가 아니라 지식 준비예요."
+    },
+    {
+      "en": "④ 안전 전문가와 동행해야 한다",
+      "ko": "안전 동행",
+      "why": "안전 이야기는 없어요."
+    },
+    {
+      "en": "⑤ 관련 기관의 사전 허가를 얻어야 한다",
+      "ko": "허가",
+      "why": "허가 이야기는 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "Yet + 주장 (역접 뒤가 핵심)",
+      "ex": "Yet the factor that many don't consider is preparedness.",
+      "d": "통념 → Yet → 필자의 생각. 주장 문제의 대표 구조예요."
+    },
+    {
+      "t": "so that + 주어 + can",
+      "ex": "so that you can anticipate its behavior",
+      "d": "'~할 수 있도록' (목적)."
+    },
+    {
+      "t": "not only A but (also) B",
+      "ex": "not only increases the likelihood of success but makes the slow time … enjoyable",
+      "d": "A와 B 모두 동사 자리라 increases, makes로 맞춰요."
+    },
+    {
+      "t": "make + 목적어 + 형용사",
+      "ex": "makes the slow time in the field much more enjoyable",
+      "d": "목적격 보어 자리에 형용사가 와요. much는 비교급 강조예요."
+    }
+  ],
+  "vocab": [
+    [
+      "wildlife",
+      "야생 동물"
+    ],
+    [
+      "patience",
+      "인내"
+    ],
+    [
+      "precision",
+      "정확성"
+    ],
+    [
+      "preparedness",
+      "준비(된 상태)"
+    ],
+    [
+      "anticipate",
+      "예측하다"
+    ],
+    [
+      "migration",
+      "이동, 이주"
+    ],
+    [
+      "momentous",
+      "중대한"
+    ],
+    [
+      "ought to",
+      "~해야 한다"
+    ],
+    [
+      "genuine",
+      "진짜의"
+    ],
+    [
+      "likelihood",
+      "가능성"
+    ]
+  ],
+  "summary": {
+    "en": "Wildlife photographers should study their animal subjects beforehand to predict their behavior.",
+    "ko": "야생 동물 사진가는 동물의 행동을 예측할 수 있도록 미리 그 동물을 공부해야 한다."
+  },
+  "writing": {
+    "en": "Knowing the animal well increases the chance of a good shot.",
+    "ko": "동물을 잘 알면 좋은 사진을 찍을 확률이 높아진다."
+  },
+  "tip": "주장 문제는 should·ought to·must가 있는 문장을 찾으세요. 이 글은 그런 문장이 두 번(should, ought to) 나오고 둘 다 '공부하라'예요. '준비'라는 단어만 보고 장비(③)를 고르지 마세요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 20번 정답은?",
+      "② '야생 동물을 촬영하기 전에 대상 동물에 대해 충분히 학습해야 한다'예요."
+    ],
+    [
+      "③번 '장비 준비'는 왜 틀리나요?",
+      "글의 preparedness는 장비가 아니라 동물에 대한 지식이에요. study and learn about it이라고 분명히 나와요."
+    ],
+    [
+      "2026 수능 영어 20번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

@@ -1,0 +1,176 @@
+{
+  "exam": "sn-2027",
+  "n": 40,
+  "type": "요약문 완성",
+  "points": 2,
+  "answer": 2,
+  "topic": "광고의 진짜 효과는 판매 순간이 아니라 소비의 순간에 있다",
+  "keywords": [
+    "2027 수능 영어 40번",
+    "2027학년도 수능 40번 해설",
+    "2027 수능 40번 정답",
+    "2026 수능 영어 40번",
+    "수능 영어 요약문",
+    "advertising point of consumption 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 40번은 오늘날 광고가 판매를 바로 늘리는 것이 아니라, 브랜드에 대한 태도를 길러 장기적 판매로 이어지게 한다는 글이에요. (A)는 태도를 '기르다(cultivate)', (B)는 기대와 함께 '시험 삼아 써 보기(trials)'를 늘린다는 뜻이에요. 정답은 ② cultivate … trials예요.",
+  "flow": [
+    [
+      "통념",
+      "오늘날 광고는 판매를 직접 늘리는 것이 아니며, 늘려도 광고비를 회수하기 어렵다고 본다."
+    ],
+    [
+      "질문",
+      "그럼 광고의 목적은 무엇인가?"
+    ],
+    [
+      "답",
+      "브랜드에 대한 소비자 태도를 개선해 장기적 판매로 이어지게 하는 것이다."
+    ],
+    [
+      "설명",
+      "광고의 진짜 효과는 판매 시점이 아니라 소비 시점에 있다. 의견은 써 본 뒤에 생기지만 광고가 만든 기대의 영향을 받는다."
+    ],
+    [
+      "정리",
+      "광고는 시험 삼아 사 볼 가능성을 높이고, 제품에 대한 느낌에 큰 영향을 준다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "it is argued that its value lies in improving the consumer's attitude towards brands, thus leading to long-term sales.",
+      "ko": "광고의 가치는 브랜드에 대한 소비자의 태도를 개선해 장기적 판매로 이어지게 하는 데 있다고 주장된다.",
+      "note": "improving the consumer's attitude → (A) cultivate(기르다)."
+    },
+    {
+      "en": "it does increase the likelihood of a consumer making an exploratory purchase of the brand",
+      "ko": "그것은 소비자가 그 브랜드를 시험 삼아 구매할 가능성을 확실히 높인다",
+      "note": "exploratory purchase(시험 삼아 하는 구매) → (B) trials(시험 사용)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① criticise …… understandings",
+      "ko": "비판하다 … 이해",
+      "why": "광고가 소비자 태도를 비판한다는 말은 없어요."
+    },
+    {
+      "en": "② cultivate …… trials",
+      "ko": "기르다 … 시험 사용",
+      "why": "정답. 태도를 개선(improving)하고, 시험 구매(exploratory purchase)를 늘려요."
+    },
+    {
+      "en": "③ reflect …… valuations",
+      "ko": "반영하다 … 평가",
+      "why": "광고가 태도를 '반영'하는 게 아니라 '바꾸는' 쪽이에요."
+    },
+    {
+      "en": "④ manipulate …… imitations",
+      "ko": "조종하다 … 모방",
+      "why": "부정적 단어예요. 글은 광고의 정당한 역할을 설명해요."
+    },
+    {
+      "en": "⑤ display …… campaigns",
+      "ko": "보여 주다 … 캠페인",
+      "why": "캠페인은 광고 자체예요. 소비자의 무엇을 늘리는지가 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "lie in -ing",
+      "ex": "its value lies in improving the consumer's attitude",
+      "d": "'~에 있다'. 가치·문제의 핵심을 말할 때 써요."
+    },
+    {
+      "t": "분사구문 thus -ing (결과)",
+      "ex": "…, thus leading to long-term sales",
+      "d": "'그래서 ~로 이어진다'."
+    },
+    {
+      "t": "not A but B",
+      "ex": "the real effect of advertising is not at the point of sale but at the point of consumption",
+      "d": "'A가 아니라 B'. 이 글의 핵심 대조예요."
+    },
+    {
+      "t": "강조의 do",
+      "ex": "it does increase the likelihood of …",
+      "d": "동사 앞의 does는 '정말로, 확실히'라는 강조예요."
+    },
+    {
+      "t": "동명사의 의미상 주어",
+      "ex": "the likelihood of a consumer making an exploratory purchase",
+      "d": "a consumer가 making의 주어예요."
+    }
+  ],
+  "vocab": [
+    [
+      "established brand",
+      "자리 잡은 브랜드"
+    ],
+    [
+      "insufficient",
+      "부족한"
+    ],
+    [
+      "recover",
+      "회수하다"
+    ],
+    [
+      "practitioner",
+      "실무자"
+    ],
+    [
+      "point of sale",
+      "판매 시점"
+    ],
+    [
+      "consumption",
+      "소비"
+    ],
+    [
+      "perception",
+      "인식"
+    ],
+    [
+      "exploratory",
+      "탐색적인, 시험 삼아 하는"
+    ],
+    [
+      "cultivate",
+      "기르다, 함양하다"
+    ],
+    [
+      "trial",
+      "시험 사용"
+    ],
+    [
+      "manipulate",
+      "조종하다"
+    ]
+  ],
+  "summary": {
+    "en": "Today's advertising aims to cultivate positive attitudes toward brands and encourage trial purchases, leading to long-term sales.",
+    "ko": "오늘날 광고는 브랜드에 대한 좋은 태도를 기르고 시험 구매를 이끌어 장기적 판매로 이어지게 하는 것을 목표로 한다."
+  },
+  "writing": {
+    "en": "Advertising shapes how consumers feel about a brand after they try it.",
+    "ko": "광고는 소비자가 브랜드를 써 본 뒤 그것을 어떻게 느끼는지에 영향을 준다."
+  },
+  "tip": "요약문은 본문의 핵심 단어를 비슷한 말로 바꿔 놓아요. improving attitude → cultivate, exploratory purchase → trials. 본문에서 요약문 빈칸 앞뒤 말(consumers' attitude, of the brand)을 찾아 그 근처 단어를 바꿔 말한 선택지를 고르세요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 40번 정답은?",
+      "② cultivate …… trials예요."
+    ],
+    [
+      "trials는 무슨 뜻인가요?",
+      "여기서는 '시험 삼아 써 보기'예요. 본문의 exploratory purchase(시험 삼아 하는 구매)를 바꿔 말했어요."
+    ],
+    [
+      "④ manipulate는 왜 틀리나요?",
+      "광고가 태도에 영향을 주는 건 맞지만, 글은 '조종'이 아니라 태도를 좋게 '기른다(improving)'고 말해요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

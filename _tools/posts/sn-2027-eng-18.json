@@ -1,0 +1,159 @@
+{
+  "exam": "sn-2027",
+  "n": 18,
+  "type": "글의 목적",
+  "points": 2,
+  "answer": 5,
+  "topic": "호텔 베개 덕분에 푹 잔 손님이 같은 베개를 어디서 살 수 있는지 묻는 편지",
+  "keywords": [
+    "2027 수능 영어 18번",
+    "2027학년도 수능 18번 해설",
+    "2027 수능 18번 정답",
+    "2026 수능 영어 18번",
+    "수능 영어 글의 목적",
+    "hotel pillow 편지 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 18번은 호텔에 묵은 손님이 쓴 편지예요. 앞부분은 칭찬이지만 목적은 So, I am writing to ask where I can purchase pillows … 한 문장에 있어요. 호텔 베개를 어디서 살 수 있는지 묻는 글이라 정답은 ⑤예요.",
+  "flow": [
+    [
+      "인사",
+      "축제 기간에 호텔에서 편안하게 묵었다."
+    ],
+    [
+      "칭찬",
+      "시설과 직원이 좋았고, 무엇보다 오랜만에 가장 푹 잤다."
+    ],
+    [
+      "이유",
+      "목이 전혀 아프지 않았고, 호텔 베개 덕분이라고 생각한다."
+    ],
+    [
+      "목적",
+      "그래서 그 베개를 어디서 살 수 있는지 묻고 싶다."
+    ],
+    [
+      "바람",
+      "집에서도 그렇게 잘 자고 싶다. 답장을 기다린다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "So, I am writing to ask where I can purchase pillows like those used at your hotel.",
+      "ko": "그래서 귀 호텔에서 사용하는 것과 같은 베개를 어디서 살 수 있는지 여쭤보려고 편지를 씁니다.",
+      "note": "목적 문제는 I am writing to ~ 문장이 바로 답이에요. ask where I can purchase가 '구입처 문의'와 같아요."
+    },
+    {
+      "en": "I believe your hotel pillows were the reason that I could sleep so well.",
+      "ko": "귀 호텔의 베개가 제가 그렇게 잘 잘 수 있었던 이유라고 생각합니다.",
+      "note": "베개를 칭찬하는 말이에요. 불만(②)과 정반대예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 잘못된 객실 배정에 대해 항의하려고",
+      "ko": "객실 항의",
+      "why": "객실 배정 이야기는 없어요. 시설이 wonderful했다고 칭찬해요."
+    },
+    {
+      "en": "② 호텔 침구류에 대한 불만을 전달하려고",
+      "ko": "침구 불만",
+      "why": "베개(침구) 이야기는 맞지만 불만이 아니라 칭찬이에요. 소재만 같은 함정이에요."
+    },
+    {
+      "en": "③ 호텔 예약 취소 가능 여부를 확인하려고",
+      "ko": "예약 취소",
+      "why": "이미 지난주에 묵고 난 뒤의 편지예요. 예약 이야기는 없어요."
+    },
+    {
+      "en": "④ 객실 내 가습기를 준비해 줄 것을 요청하려고",
+      "ko": "가습기 요청",
+      "why": "가습기는 나오지 않아요."
+    },
+    {
+      "en": "⑤ 호텔에서 사용하는 베개의 구입처를 문의하려고",
+      "ko": "구입처 문의",
+      "why": "정답. ask where I can purchase pillows like those used at your hotel과 그대로 맞아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "I am writing to V (편지 목적)",
+      "ex": "I am writing to ask where I can purchase pillows …",
+      "d": "'~하려고 편지를 씁니다'. 목적 문제에서 이 표현 뒤가 정답이에요."
+    },
+    {
+      "t": "간접의문문 where + 주어 + 동사",
+      "ex": "ask where I can purchase pillows",
+      "d": "의문사 뒤에 '주어 + 동사' 순서예요. where can I가 아니에요."
+    },
+    {
+      "t": "those used at ~ (과거분사 후치 수식)",
+      "ex": "pillows like those used at your hotel",
+      "d": "those = pillows. used at your hotel이 뒤에서 꾸며요. '호텔에서 사용되는 것들'."
+    },
+    {
+      "t": "as well as + 주어 + did",
+      "ex": "I can sleep as well at home as I did last week",
+      "d": "did는 slept를 대신하는 대동사예요."
+    }
+  ],
+  "vocab": [
+    [
+      "To Whom It May Concern",
+      "담당자께 (편지 첫인사)"
+    ],
+    [
+      "facility",
+      "시설"
+    ],
+    [
+      "welcoming",
+      "친절하게 맞이하는"
+    ],
+    [
+      "in ages",
+      "오랜만에, 아주 오랫동안"
+    ],
+    [
+      "fully rested",
+      "완전히 피로가 풀린"
+    ],
+    [
+      "ache",
+      "아프다, 쑤시다"
+    ],
+    [
+      "purchase",
+      "구입하다"
+    ],
+    [
+      "look forward to -ing",
+      "~을 고대하다"
+    ]
+  ],
+  "summary": {
+    "en": "A guest who slept very well at a hotel writes to ask where she can buy the same pillows.",
+    "ko": "호텔에서 아주 잘 잔 손님이 같은 베개를 어디서 살 수 있는지 묻는 편지이다."
+  },
+  "writing": {
+    "en": "I am writing to ask where I can buy the pillows.",
+    "ko": "그 베개를 어디서 살 수 있는지 여쭤보려고 편지를 씁니다."
+  },
+  "tip": "목적 문제는 So, I am writing to ~ / I would like to ~ 같은 문장을 먼저 찾으세요. 앞의 칭찬·사연은 배경일 뿐이에요. 소재(베개)만 같은 선택지(②)를 조심하세요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 18번 정답은?",
+      "⑤ '호텔에서 사용하는 베개의 구입처를 문의하려고'예요. So, I am writing to ask where I can purchase pillows … 문장이 목적이에요."
+    ],
+    [
+      "②번 '침구류 불만'은 왜 틀리나요?",
+      "베개 이야기는 맞지만 글쓴이는 베개 덕분에 푹 잤다고 칭찬해요. 불만이 아니에요."
+    ],
+    [
+      "2026 수능 영어 18번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 시험이 2027학년도 수능이에요. 같은 시험을 두 이름으로 불러요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

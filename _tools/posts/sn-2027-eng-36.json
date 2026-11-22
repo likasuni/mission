@@ -1,0 +1,176 @@
+{
+  "exam": "sn-2027",
+  "n": 36,
+  "type": "글의 순서",
+  "points": 2,
+  "answer": 2,
+  "topic": "곤충이 사라지면 사람의 식량에도 문제 — 세계적으로 곤충은 흔한 음식",
+  "keywords": [
+    "2027 수능 영어 36번",
+    "2027학년도 수능 36번 해설",
+    "2027 수능 36번 정답",
+    "2026 수능 영어 36번",
+    "수능 영어 글의 순서",
+    "eating insects 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 36번은 곤충이 먹이 사슬에서 사라지면 야생 동물뿐 아니라 사람의 식량에도 문제가 된다는 글이에요. 주어진 글의 not just 다음에 (B)의 also가 이어지고, (B)의 '유럽·북미는 곤충을 꺼린다' 뒤에 (A)의 however(그러나 세계적으로는 흔하다), 그 뒤 (C)의 구체적 예시가 와요. 정답은 ② (B) – (A) – (C)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "곤충이 사라지면 야생 동물에게만 재앙인 것이 아니다."
+    ],
+    [
+      "(B)",
+      "사람의 식량에도 직접 영향이 있다. 유럽·북미 사람은 곤충 먹기를 싫어하지만, 새우는 먹으니 이상하다."
+    ],
+    [
+      "(A)",
+      "그러나 세계적으로는 곤충 먹기가 일반적이다. 세계 인구의 약 80%가 곤충을 먹는다."
+    ],
+    [
+      "(C)",
+      "약 2,000종의 곤충을 먹는다. 남아프리카에서는 해마다 모파네 벌레가 1,600톤 팔린다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The loss of insect life … would not just be disastrous for wildlife. / (B) It would also have direct consequences for the human food supply.",
+      "ko": "곤충이 사라지는 것은 야생 동물에게만 재앙이 아닐 것이다. / (B) 그것은 사람의 식량 공급에도 직접적인 영향을 줄 것이다.",
+      "note": "not just A → also B 짝이에요. 주어진 글 → (B)."
+    },
+    {
+      "en": "(B) Most Europeans and North Americans are disgusted by the prospect of eating insects … / (A) Globally, however, eating insects is the norm …",
+      "ko": "(B) 대부분의 유럽인과 북미인은 곤충을 먹는다는 생각에 질색한다 … / (A) 하지만 세계적으로는 곤충을 먹는 것이 일반적이다 …",
+      "note": "유럽·북미(일부) ↔ however 세계(전체). (B) → (A)."
+    },
+    {
+      "en": "(A) Roughly 80 per cent of the world's population regularly consume insects … / (C) Approximately 2,000 different insect species are regularly eaten by people …",
+      "ko": "(A) 세계 인구의 약 80%가 곤충을 정기적으로 먹는다 … / (C) 약 2,000종의 곤충이 사람들에게 정기적으로 먹힌다 …",
+      "note": "(A)의 일반적 사실을 (C)가 종류·예시로 구체화해요. (A) → (C)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① (A) – (C) – (B)",
+      "ko": "세계 → 예시 → 식량 영향",
+      "why": "(A)의 however는 앞에 '곤충을 꺼리는' 내용이 있어야 해요. 주어진 글 바로 뒤에 올 수 없어요."
+    },
+    {
+      "en": "② (B) – (A) – (C)",
+      "ko": "식량 영향 → 세계적으로는 흔함 → 예시",
+      "why": "정답. not just → also, 일부 지역 → however 세계, 일반 → 구체 예시."
+    },
+    {
+      "en": "③ (B) – (C) – (A)",
+      "ko": "식량 영향 → 예시 → 세계",
+      "why": "(C)의 예시가 (A)의 '세계적으로 흔하다'보다 먼저 오면 어색해요."
+    },
+    {
+      "en": "④ (C) – (A) – (B)",
+      "ko": "예시 → 세계 → 식량 영향",
+      "why": "(B)의 also가 주어진 글의 not just와 짝이라 (B)가 먼저 와야 해요."
+    },
+    {
+      "en": "⑤ (C) – (B) – (A)",
+      "ko": "예시 → 식량 영향 → 세계",
+      "why": "(C)가 맨 앞에 오면 주어진 글과 연결 고리가 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "not just A … also B",
+      "ex": "would not just be disastrous for wildlife. It would also have …",
+      "d": "문장이 나뉘어도 짝으로 이어져요. 순서 문제의 큰 단서예요."
+    },
+    {
+      "t": "which is odd, since ~",
+      "ex": "…, which is odd, since they consume prawns",
+      "d": "계속적 용법 which가 앞 문장 전체를 받아요. '그건 이상한 일인데, 왜냐하면 ~'."
+    },
+    {
+      "t": "would have p.p. (과거 추측)",
+      "ex": "Their ancient ancestors would certainly have eaten insects.",
+      "d": "'분명 ~했을 것이다'."
+    },
+    {
+      "t": "with + 명사 + 형용사/분사",
+      "ex": "with the practice very common in South America …",
+      "d": "부대 상황. '그 관습이 ~에서 매우 흔한 채로'."
+    }
+  ],
+  "vocab": [
+    [
+      "food chain",
+      "먹이 사슬"
+    ],
+    [
+      "disastrous",
+      "재앙의"
+    ],
+    [
+      "consequence",
+      "결과, 영향"
+    ],
+    [
+      "disgusted",
+      "혐오감을 느끼는"
+    ],
+    [
+      "prospect",
+      "생각, 가능성"
+    ],
+    [
+      "norm",
+      "표준, 일반적인 것"
+    ],
+    [
+      "proportion",
+      "비율"
+    ],
+    [
+      "consume",
+      "먹다, 소비하다"
+    ],
+    [
+      "species",
+      "종"
+    ],
+    [
+      "grub",
+      "애벌레, 굼벵이"
+    ],
+    [
+      "pupa",
+      "번데기 (복수 pupae)"
+    ],
+    [
+      "consumption",
+      "섭취, 소비"
+    ]
+  ],
+  "summary": {
+    "en": "Losing insects would also hurt the human food supply, because eating insects is common for most of the world's people.",
+    "ko": "곤충이 사라지면 사람의 식량에도 타격이 있다. 세계 인구 대부분에게 곤충은 흔한 음식이기 때문이다."
+  },
+  "writing": {
+    "en": "Eating insects is the norm in many parts of the world.",
+    "ko": "곤충을 먹는 것은 세계 여러 곳에서 일반적이다."
+  },
+  "tip": "순서 문제는 연결어부터 보세요. also는 앞에 not just/not only가, however는 앞에 반대 내용이 있어야 해요. (B)의 also, (A)의 however만 잡아도 (B) – (A)가 정해져요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 36번 정답은?",
+      "② (B) – (A) – (C)예요."
+    ],
+    [
+      "(A)가 주어진 글 바로 뒤에 오면 안 되나요?",
+      "(A)는 Globally, however로 시작해요. 앞에 '곤충을 안 먹는' 내용이 있어야 하는데, 그게 (B)의 유럽·북미 이야기예요."
+    ],
+    [
+      "2026 수능 영어 36번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

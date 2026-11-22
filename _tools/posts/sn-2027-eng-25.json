@@ -1,0 +1,148 @@
+{
+  "exam": "sn-2027",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 5,
+  "topic": "6개 도시의 2023·2024년 매우 더운 날(35℃ 이상) 수",
+  "keywords": [
+    "2027 수능 영어 25번",
+    "2027학년도 수능 25번 해설",
+    "2027 수능 25번 정답",
+    "2026 수능 영어 25번",
+    "수능 영어 도표",
+    "very hot days six cities 도표",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 25번은 6개 도시의 2023년과 2024년 '매우 더운 날(최고 기온 35℃ 이상)' 수를 비교한 막대 도표예요. 워싱턴 D.C.는 13일에서 32일로 늘었는데, 13의 3배(39)보다 적어서 '3배 넘게'라는 ⑤가 틀려요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "도표",
+      "6개 도시의 2023·2024년 매우 더운 날 수 (2023 → 2024)"
+    ],
+    [
+      "숫자",
+      "카이로 66→106, 베이징 48→36, 마닐라 47→79, 로마 25→53, 산티아고 6→10, 워싱턴 D.C. 13→32"
+    ],
+    [
+      "①~④",
+      "모두 도표와 일치"
+    ],
+    [
+      "⑤",
+      "워싱턴 D.C. 32는 13×3=39보다 작다 → 불일치"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Among the six cities, Cairo showed a greater number of very hot days than any other city in 2023 and in 2024, respectively.",
+      "ko": "6개 도시 중 카이로가 2023년과 2024년 각각 다른 어떤 도시보다 매우 더운 날이 많았다.",
+      "note": "카이로 66·106이 두 해 모두 1위예요. ① 일치."
+    },
+    {
+      "en": "Beijing was the only city whose number of very hot days in 2024 was smaller than that in 2023 …",
+      "ko": "베이징은 2024년 매우 더운 날 수가 2023년보다 적은 유일한 도시였다 …",
+      "note": "베이징만 48 → 36으로 줄었어요. ② 일치."
+    },
+    {
+      "en": "In Washington, D.C., the number of very hot days in 2024 was more than three times that in 2023.",
+      "ko": "워싱턴 D.C.에서 2024년 매우 더운 날 수는 2023년의 3배가 넘었다.",
+      "note": "13 × 3 = 39인데 2024년은 32예요. 3배가 안 돼요. ⑤ 불일치 → 정답."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① Cairo: 두 해 모두 1위",
+      "ko": "카이로 66, 106",
+      "why": "두 해 모두 가장 많아서 일치해요."
+    },
+    {
+      "en": "② Beijing: 유일하게 감소",
+      "ko": "베이징 48 → 36",
+      "why": "다른 도시는 모두 늘었어요. 일치해요."
+    },
+    {
+      "en": "③ 2024년 Manila > Rome",
+      "ko": "79 > 53",
+      "why": "일치해요."
+    },
+    {
+      "en": "④ Santiago: 두 해 모두 최소",
+      "ko": "6, 10",
+      "why": "일치해요."
+    },
+    {
+      "en": "⑤ Washington, D.C.: 2024년이 2023년의 3배 넘음",
+      "ko": "13 → 32",
+      "why": "정답(불일치). 32는 39(13의 3배)보다 작아요. 2배는 넘지만 3배는 안 돼요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "배수 비교 + that in",
+      "ex": "more than three times that in 2023",
+      "d": "that = the number of very hot days. 반복을 피하려고 that을 써요. 복수면 those."
+    },
+    {
+      "t": "비교급 + than any other + 단수 명사",
+      "ex": "a greater number of very hot days than any other city",
+      "d": "'다른 어떤 도시보다 더' = 최상급 의미."
+    },
+    {
+      "t": "the only + 명사 + whose",
+      "ex": "the only city whose number … was smaller",
+      "d": "'~가 …인 유일한 도시'."
+    },
+    {
+      "t": "as well as",
+      "ex": "in 2023 as well as in 2024",
+      "d": "'2024년뿐 아니라 2023년에도'. 두 해 모두 확인하라는 뜻이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "define A as B",
+      "A를 B로 정의하다"
+    ],
+    [
+      "daytime temperature",
+      "낮 기온"
+    ],
+    [
+      "respectively",
+      "각각"
+    ],
+    [
+      "among",
+      "~ 중에서"
+    ],
+    [
+      "more than three times",
+      "3배가 넘는"
+    ]
+  ],
+  "summary": {
+    "en": "The graph compares the number of very hot days in six cities in 2023 and 2024, and Washington, D.C.'s increase was less than threefold.",
+    "ko": "도표는 6개 도시의 2023·2024년 매우 더운 날 수를 비교하며, 워싱턴 D.C.의 증가는 3배에 못 미친다."
+  },
+  "writing": {
+    "en": "Washington, D.C. had more than twice as many very hot days in 2024 as in 2023.",
+    "ko": "워싱턴 D.C.는 2024년 매우 더운 날이 2023년의 2배가 넘었다."
+  },
+  "tip": "도표 문제에서 배수(twice, three times)와 '유일한(only)', '최소·최대'는 꼭 직접 계산하세요. 이 문제는 ⑤의 '3배'만 계산하면 바로 풀려요 (13 × 3 = 39 > 32).",
+  "faq": [
+    [
+      "2027학년도 수능 영어 25번 정답은?",
+      "⑤예요. 워싱턴 D.C.는 13일 → 32일이라 3배(39일)가 안 돼요."
+    ],
+    [
+      "②번 베이징은 맞나요?",
+      "네. 베이징만 48일 → 36일로 줄었고, 나머지 다섯 도시는 모두 늘었어요."
+    ],
+    [
+      "2026 수능 영어 25번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

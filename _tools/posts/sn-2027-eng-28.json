@@ -1,0 +1,155 @@
+{
+  "exam": "sn-2027",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "고장 난 물건을 고쳐 주는 Fix-it Festival 안내",
+  "keywords": [
+    "2027 수능 영어 28번",
+    "2027학년도 수능 28번 해설",
+    "2027 수능 28번 정답",
+    "2026 수능 영어 28번",
+    "수능 영어 안내문",
+    "Fix-it Festival",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 28번은 Prindlewood 마을의 Fix-it Festival 안내문이에요. Special Activities에 Bicycle Riding Lessons for Kids가 있어서 '아이들을 위한 자전거 타기 수업이 있다'는 ④가 일치해요. 정답은 ④예요.",
+  "flow": [
+    [
+      "소개",
+      "Prindlewood 공동체가 처음으로 여는 수리 축제"
+    ],
+    [
+      "일시·장소",
+      "11월 29일 일요일 오전 9시~오후 6시, Prindlewood 고등학교"
+    ],
+    [
+      "수리",
+      "옷·시계·가방·자전거, 종류마다 전문가 2명, 사전 등록 필수"
+    ],
+    [
+      "특별 활동",
+      "옷 교환 부스, 아이들을 위한 자전거 타기 수업"
+    ],
+    [
+      "참고",
+      "참가비 없음, 자세한 내용은 웹사이트"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Bicycle Riding Lessons for Kids (1:00 p.m.—4:00 p.m.)",
+      "ko": "아이들을 위한 자전거 타기 수업 (오후 1시~4시)",
+      "note": "Special Activities 아래에 있어요. ④ 일치 → 정답."
+    },
+    {
+      "en": "Our Prindlewood community is holding the Fix-it Festival for the first time.",
+      "ko": "우리 Prindlewood 공동체가 Fix-it Festival을 처음으로 엽니다.",
+      "note": "for the first time → ① '2회째'는 틀려요."
+    },
+    {
+      "en": "There will be two repair experts for each category.",
+      "ko": "종류마다 수리 전문가가 두 명 있을 것입니다.",
+      "note": "② '세 명'은 틀려요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 2회째 개최되는 행사이다.",
+      "ko": "for the first time",
+      "why": "불일치. 처음 열려요."
+    },
+    {
+      "en": "② 수리 카테고리당 세 명의 수리 전문가들이 있을 것이다.",
+      "ko": "two repair experts",
+      "why": "불일치. 두 명이에요."
+    },
+    {
+      "en": "③ 사전 등록되지 않은 물건을 축제 당일에 가져와도 된다.",
+      "ko": "do not bring items that are not pre-registered",
+      "why": "불일치. 가져오지 말라고 해요."
+    },
+    {
+      "en": "④ 특별 활동으로 아이들을 위한 자전거 타기 수업이 있다.",
+      "ko": "Bicycle Riding Lessons for Kids",
+      "why": "정답(일치)."
+    },
+    {
+      "en": "⑤ 참가비가 있다.",
+      "ko": "no participation fees",
+      "why": "불일치. 참가비가 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "not know what to do with",
+      "ex": "not know what to do with them",
+      "d": "'그것들을 어떻게 해야 할지 모르다'. 의문사 + to부정사."
+    },
+    {
+      "t": "make + 목적어 + like new",
+      "ex": "try to make them like new",
+      "d": "'새것처럼 만들다'."
+    },
+    {
+      "t": "현재진행형으로 예정 표현",
+      "ex": "is holding the Fix-it Festival",
+      "d": "가까운 미래에 정해진 일정을 말할 때 써요."
+    }
+  ],
+  "vocab": [
+    [
+      "broken",
+      "고장 난"
+    ],
+    [
+      "repair",
+      "수리"
+    ],
+    [
+      "expert",
+      "전문가"
+    ],
+    [
+      "category",
+      "종류, 범주"
+    ],
+    [
+      "pre-registration",
+      "사전 등록"
+    ],
+    [
+      "exchange",
+      "교환"
+    ],
+    [
+      "participation fee",
+      "참가비"
+    ]
+  ],
+  "summary": {
+    "en": "The notice introduces a first-time community festival where experts repair broken items for free.",
+    "ko": "이 안내문은 전문가가 고장 난 물건을 무료로 고쳐 주는, 처음 열리는 마을 축제를 소개한다."
+  },
+  "writing": {
+    "en": "Children can take bicycle riding lessons at the festival.",
+    "ko": "아이들은 축제에서 자전거 타기 수업을 들을 수 있다."
+  },
+  "tip": "'일치하는 것' 문제는 숫자(2회째, 세 명)와 허용·금지(가져와도 된다, 참가비)를 하나씩 지우면 남는 게 답이에요. 안내문 숫자는 선택지에서 살짝 바꿔 나오는 경우가 많아요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 28번 정답은?",
+      "④ '특별 활동으로 아이들을 위한 자전거 타기 수업이 있다'예요."
+    ],
+    [
+      "수리 전문가는 몇 명인가요?",
+      "종류마다 두 명이에요. ②의 '세 명'은 틀려요."
+    ],
+    [
+      "2026 수능 영어 28번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

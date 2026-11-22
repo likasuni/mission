@@ -1,0 +1,163 @@
+{
+  "exam": "sn-2027",
+  "n": 22,
+  "type": "글의 요지",
+  "points": 2,
+  "answer": 5,
+  "topic": "무엇을 찾는지 아는 독자가 가장 많이, 빨리 읽어 낸다",
+  "keywords": [
+    "2027 수능 영어 22번",
+    "2027학년도 수능 22번 해설",
+    "2027 수능 22번 정답",
+    "2026 수능 영어 22번",
+    "수능 영어 글의 요지",
+    "reading observation 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 22번은 독서를 '관찰'에 빗대어, 무엇을 찾는지 분명히 아는 독자가 가장 많이 얻는다고 말하는 글이에요. the reader finds the most when he knows just what he is looking for가 요지 문장이에요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "원리",
+      "관찰은 무엇을 볼지 미리 정하고 거기에 집중하는 것이 가장 좋다."
+    ],
+    [
+      "적용",
+      "독서도 일종의 관찰이라 같은 규칙이 통한다. 무엇을 찾는지 알 때 가장 많이 찾는다."
+    ],
+    [
+      "예시",
+      "이야기 읽기는 주인공이 어떻게 곤경을 벗어나는지 알고 싶어서 앞으로 나아가기 때문에 효율적이다."
+    ],
+    [
+      "결론",
+      "진지한 글을 잘 읽는 사람도 저자의 질문을 잡고 답을 찾아 나아간다. 빠르고 오래 기억한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "That is to say that the reader finds the most when he knows just what he is looking for.",
+      "ko": "즉 독자는 자신이 무엇을 찾고 있는지 정확히 알 때 가장 많은 것을 찾는다.",
+      "note": "That is to say(즉)로 앞 내용을 정리하는 요지 문장이에요."
+    },
+    {
+      "en": "they get the author's question, and press on to find his answer. Such readers are both quick and retentive.",
+      "ko": "그들은 저자의 질문을 파악하고 그 답을 찾아 계속 나아간다. 그런 독자는 빠르고 기억도 잘한다.",
+      "note": "quick and retentive가 ⑤의 '효율성'이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 독서는 독자의 주관적 목적이 개입된다는 점에서 관찰과 다르다",
+      "ko": "독서 ≠ 관찰",
+      "why": "글은 독서를 관찰의 한 종류라고 해요. 반대예요."
+    },
+    {
+      "en": "② 독서의 목적에 따라 다른 읽기 전략을 사용하는 것이 효과적이다",
+      "ko": "목적별 전략",
+      "why": "이야기와 진지한 글 모두 '찾는 것을 알고 나아가기'라는 같은 원리예요. 다른 전략이 아니에요."
+    },
+    {
+      "en": "③ 흥미 중심으로 독서를 시작할 때 읽기 능력이 가장 잘 발달한다",
+      "ko": "흥미 중심",
+      "why": "이야기 읽기는 예시일 뿐이에요. 흥미로 시작하라는 말은 없어요."
+    },
+    {
+      "en": "④ 세부 사항에 주목하며 꼼꼼히 읽으면 기억력이 높아진다",
+      "ko": "꼼꼼히 읽기",
+      "why": "retentive(기억 잘함)에 끌리는 함정이에요. 원인은 꼼꼼함이 아니라 목적의식이에요."
+    },
+    {
+      "en": "⑤ 독자가 글에서 찾는 바를 명확히 인식하면 읽기의 효율성이 높아진다",
+      "ko": "찾는 바 인식 → 효율",
+      "why": "정답. knows just what he is looking for와 quick and retentive가 그대로 맞아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "the rule that holds for A holds also for B",
+      "ex": "the rule that holds for other observations holds also for reading",
+      "d": "hold for: ~에 적용되다. 같은 규칙이 독서에도 통한다는 뜻이에요."
+    },
+    {
+      "t": "That is to say (that) ~",
+      "ex": "That is to say that the reader finds the most when …",
+      "d": "'즉, 다시 말해'. 앞말을 바꿔 말하는 요지 신호예요."
+    },
+    {
+      "t": "의문사 what + 주어 + 동사 (명사절)",
+      "ex": "just what he is looking for",
+      "d": "know의 목적어. '그가 찾고 있는 바로 그것'."
+    },
+    {
+      "t": "독립분사구문 (the reason being that)",
+      "ex": "the reason being that attention is always pressing forward",
+      "d": "= and the reason is that … 이유를 덧붙여요."
+    }
+  ],
+  "vocab": [
+    [
+      "beforehand",
+      "미리"
+    ],
+    [
+      "observation",
+      "관찰"
+    ],
+    [
+      "hold for",
+      "~에 적용되다"
+    ],
+    [
+      "efficient",
+      "효율적인"
+    ],
+    [
+      "press forward",
+      "계속 나아가다"
+    ],
+    [
+      "definite",
+      "분명한"
+    ],
+    [
+      "fix",
+      "곤경"
+    ],
+    [
+      "certainty",
+      "확실성"
+    ],
+    [
+      "eagerness",
+      "열의"
+    ],
+    [
+      "retentive",
+      "기억력이 좋은"
+    ]
+  ],
+  "summary": {
+    "en": "Like good observers, readers get the most out of reading when they know exactly what they are looking for.",
+    "ko": "좋은 관찰자처럼, 독자도 무엇을 찾는지 정확히 알 때 독서에서 가장 많은 것을 얻는다."
+  },
+  "writing": {
+    "en": "Knowing what you are looking for makes reading more efficient.",
+    "ko": "무엇을 찾는지 알면 독서가 더 효율적이 된다."
+  },
+  "tip": "요지는 That is to say, In other words 같은 '바꿔 말하기' 신호 뒤에 자주 나와요. 이야기 읽기 예시에 끌려 ③을 고르지 말고, 예시가 무엇을 보여 주려는지(목적의식)를 잡으세요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 22번 정답은?",
+      "⑤ '독자가 글에서 찾는 바를 명확히 인식하면 읽기의 효율성이 높아진다'예요."
+    ],
+    [
+      "④번은 왜 틀리나요?",
+      "글의 retentive는 꼼꼼히 읽어서가 아니라 무엇을 찾는지 알고 읽어서 생기는 결과예요."
+    ],
+    [
+      "2026 수능 영어 22번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

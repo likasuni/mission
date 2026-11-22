@@ -1,0 +1,167 @@
+{
+  "exam": "sn-2027",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 3,
+  "topic": "온라인 게임과 e스포츠가 널리 퍼진 기술·사회문화·경제적 요인",
+  "keywords": [
+    "2027 수능 영어 35번",
+    "2027학년도 수능 35번 해설",
+    "2027 수능 35번 정답",
+    "2026 수능 영어 35번",
+    "수능 영어 무관한 문장",
+    "online games esports 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 35번은 온라인 게임과 e스포츠가 널리 퍼진 이유(기술·사회문화·경제)를 나열하는 글이에요. ③은 '소셜 미디어 콘텐츠가 매우 다양하다'는 내용이라 게임 확산의 이유가 아니에요. ②의 social media에서 단어만 이어받은 함정이라 정답은 ③이에요.",
+  "flow": [
+    [
+      "주제",
+      "온라인 게임과 e스포츠의 확산은 기술·사회문화·경제 요인이 합쳐진 결과다."
+    ],
+    [
+      "① 기술",
+      "하드웨어·콘솔·모바일 기기의 발전이 관심을 높였다."
+    ],
+    [
+      "② 사회문화",
+      "소셜 미디어와 라이브 스트리밍이 관객을 넓혔다."
+    ],
+    [
+      "③ (무관)",
+      "소셜 미디어 콘텐츠는 매우 다양하다. → 게임 확산 이유가 아님"
+    ],
+    [
+      "④ 경제",
+      "대회·보상·프로 조직이 e스포츠를 매력적인 직업으로 만들었다."
+    ],
+    [
+      "⑤ 사회",
+      "소속감과 팀워크가 젊은 세대를 끌어당긴다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The widespread use of online games and esports is based on a combination of technological, sociocultural, and economic factors.",
+      "ko": "온라인 게임과 e스포츠의 광범위한 사용은 기술적, 사회문화적, 경제적 요인의 결합에 바탕을 둔다.",
+      "note": "첫 문장이 글의 틀이에요. 나머지 문장은 이 세 요인 중 하나여야 해요."
+    },
+    {
+      "en": "③ Social media content is enormously diverse, reflecting creators' and viewers' interests in sports, entertainment, and social issues.",
+      "ko": "소셜 미디어 콘텐츠는 매우 다양해서 창작자와 시청자의 스포츠·연예·사회 문제에 대한 관심을 반영한다.",
+      "note": "주어가 게임이 아니라 소셜 미디어 콘텐츠 전체예요. 게임이 퍼진 이유와 상관없어요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① Improvements in computer hardware …",
+      "ko": "기술 요인",
+      "why": "글의 흐름(기술적 요인)과 맞아요."
+    },
+    {
+      "en": "② The rise of social media and live streaming platforms …",
+      "ko": "사회문화 요인",
+      "why": "게임·e스포츠 관객이 넓어졌다는 이유라 맞아요."
+    },
+    {
+      "en": "③ Social media content is enormously diverse …",
+      "ko": "소셜 미디어 콘텐츠의 다양성",
+      "why": "정답(무관). 게임 이야기가 빠지고 소셜 미디어 자체 설명으로 새요."
+    },
+    {
+      "en": "④ Competition, reward systems, and professional tournament organizations …",
+      "ko": "경제 요인",
+      "why": "후원·광고 수입 등 경제적 측면이라 맞아요."
+    },
+    {
+      "en": "⑤ Furthermore, the social interaction, teamwork …",
+      "ko": "사회 요인",
+      "why": "Furthermore로 이유를 하나 더 보태요. 맞아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "make it possible for A to V",
+      "ex": "have made it possible for players from different regions to connect",
+      "d": "가목적어 it, 진목적어 to connect. for players가 의미상 주어예요."
+    },
+    {
+      "t": "transform A into B",
+      "ex": "transforming players into not only participants but also content creators",
+      "d": "'A를 B로 바꾸다'. not only A but also B가 함께 쓰였어요."
+    },
+    {
+      "t": "분사구문 (결과)",
+      "ex": "…, strengthening its economic dimension through sponsorship",
+      "d": "= and it strengthened … 앞 문장의 결과예요."
+    }
+  ],
+  "vocab": [
+    [
+      "widespread",
+      "널리 퍼진"
+    ],
+    [
+      "sociocultural",
+      "사회문화적인"
+    ],
+    [
+      "infrastructure",
+      "기반 시설"
+    ],
+    [
+      "connectivity",
+      "연결성"
+    ],
+    [
+      "resolution",
+      "해상도"
+    ],
+    [
+      "platform",
+      "플랫폼"
+    ],
+    [
+      "enormously",
+      "엄청나게"
+    ],
+    [
+      "dimension",
+      "측면"
+    ],
+    [
+      "sponsorship",
+      "후원"
+    ],
+    [
+      "sense of belonging",
+      "소속감"
+    ]
+  ],
+  "summary": {
+    "en": "Online games and esports spread widely due to technological, sociocultural, and economic factors.",
+    "ko": "온라인 게임과 e스포츠는 기술적, 사회문화적, 경제적 요인 덕분에 널리 퍼졌다."
+  },
+  "writing": {
+    "en": "Technology and social media helped esports reach more people.",
+    "ko": "기술과 소셜 미디어는 e스포츠가 더 많은 사람에게 닿도록 도왔다."
+  },
+  "tip": "무관한 문장은 '앞 문장의 단어를 그대로 이어받았지만 주제에서 벗어난 문장'이 가장 흔해요. ③은 ②의 social media를 받아 시작하지만, 게임 이야기가 사라졌어요. 문장마다 주어가 '게임 확산의 이유'인지 확인하세요.",
+  "note": "무관한 문장은 단어 연결이 아니라 '주제와의 연결'로 보세요. ③은 앞 문장과 단어가 이어져서 자연스럽게 읽히지만, 정작 게임 이야기가 없어요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 35번 정답은?",
+      "③ Social media content is enormously diverse …예요. 게임이 퍼진 이유가 아니라 소셜 미디어 콘텐츠 자체를 설명해요."
+    ],
+    [
+      "②번도 소셜 미디어 이야기 아닌가요?",
+      "②는 소셜 미디어가 게임·e스포츠를 더 많은 관객에게 닿게 했다는 '확산 이유'예요. ③에는 게임이 없어요."
+    ],
+    [
+      "2026 수능 영어 35번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

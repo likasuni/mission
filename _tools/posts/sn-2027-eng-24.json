@@ -1,0 +1,163 @@
+{
+  "exam": "sn-2027",
+  "n": 24,
+  "type": "글의 제목",
+  "points": 2,
+  "answer": 5,
+  "topic": "첨단 유통 기술 덕분에 신선 식품이 전 세계에서 동네 마트로 온다",
+  "keywords": [
+    "2027 수능 영어 24번",
+    "2027학년도 수능 24번 해설",
+    "2027 수능 24번 정답",
+    "2026 수능 영어 24번",
+    "수능 영어 글의 제목",
+    "fresh produce transportation 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 24번은 실시간 컴퓨터 예측과 유통 기술 덕분에 먼 나라의 신선 식품이 동네 마트로 효율적으로 온다는 글이에요. 마지막의 '태국 망고가 10마일 안 콩보다 오기 쉬울 수도 있다'는 아이러니가 핵심이에요. 정답은 ⑤ How Freshness Travels Globally with Advanced Technology예요.",
+  "flow": [
+    [
+      "배경",
+      "제철이 아닌 신선 식품 수요와 농산물 무역의 세계화로 운송이 발전하고 있다."
+    ],
+    [
+      "현실",
+      "대부분 신선 식품은 여전히 마트에서 사고, 그 대부분은 지역산이 아니다."
+    ],
+    [
+      "기술",
+      "실시간 컴퓨터 예측으로 유통업자는 어디로 무엇을 보낼지 안다."
+    ],
+    [
+      "결과",
+      "밭에서 마트까지 모든 과정의 기술 발전이 상품을 가장 가까운 마트로 옮긴다."
+    ],
+    [
+      "아이러니",
+      "태국 망고가 우리 집 근처 콩보다 마트에 오기 쉬울 수 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Technological advances in every operation from the field through the chain of events efficiently and effectively move items to the supermarket closest to us.",
+      "ko": "밭에서부터 일련의 과정 전체에 걸친 기술 발전이 상품을 우리와 가장 가까운 마트로 효율적이고 효과적으로 옮긴다.",
+      "note": "Advanced Technology + Travels(이동)가 이 문장이에요."
+    },
+    {
+      "en": "Ironically, it may be easier to deliver a fresh mango from Chiang Mai, Thailand, … than fresh beans grown within 10 miles of our house.",
+      "ko": "아이러니하게도, 태국 치앙마이의 신선한 망고를 … 집에서 10마일 안에서 자란 신선한 콩보다 배달하기가 더 쉬울 수 있다.",
+      "note": "Globally(전 세계에서)와 연결돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① Local to Global: Expansion of Fresh Food Production Sites",
+      "ko": "지역에서 세계로: 생산지 확대",
+      "why": "생산지가 늘어난 게 아니라 운송·유통이 발전한 이야기예요."
+    },
+    {
+      "en": "② Is Keeping Fresh a Temporary Trend in Food Markets?",
+      "ko": "신선함은 일시적 유행인가?",
+      "why": "유행 여부는 다루지 않아요."
+    },
+    {
+      "en": "③ Tech at the Table: How Algorithms Influence Our Taste",
+      "ko": "알고리즘이 입맛에 주는 영향",
+      "why": "기술은 맞지만 입맛이 아니라 배송이에요."
+    },
+    {
+      "en": "④ New Habits of Eating Fresh in a Changing Marketplace",
+      "ko": "신선하게 먹는 새 습관",
+      "why": "소비 습관(텃밭, 파머스 마켓)은 배경으로만 나와요."
+    },
+    {
+      "en": "⑤ How Freshness Travels Globally with Advanced Technology",
+      "ko": "첨단 기술로 신선함이 세계를 여행하는 방법",
+      "why": "정답. 기술(computer projections, technological advances) + 세계 이동(mango from Thailand)이 다 들어 있어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "Thanks to + 명사",
+      "ex": "Thanks to real-time computer projections …, distributors know what products to send where.",
+      "d": "'~ 덕분에'. 뒤의 주절이 결과예요."
+    },
+    {
+      "t": "의문사 + to부정사",
+      "ex": "know what products to send where",
+      "d": "'어떤 상품을 어디로 보낼지'. 의문사 두 개가 함께 쓰였어요."
+    },
+    {
+      "t": "가주어 it + to부정사 비교",
+      "ex": "it may be easier to deliver a fresh mango … than fresh beans",
+      "d": "to deliver가 진주어. than 뒤에 (to deliver) fresh beans가 생략됐어요."
+    },
+    {
+      "t": "A as well as B",
+      "ex": "exotic tropical fruits as well as more familiar imports",
+      "d": "'B뿐 아니라 A도'. 강조는 A쪽이에요."
+    }
+  ],
+  "vocab": [
+    [
+      "out of season",
+      "제철이 아닌"
+    ],
+    [
+      "globalization",
+      "세계화"
+    ],
+    [
+      "produce",
+      "농산물"
+    ],
+    [
+      "community gardening",
+      "공동체 텃밭 가꾸기"
+    ],
+    [
+      "exotic",
+      "이국적인"
+    ],
+    [
+      "projection",
+      "예측, 추정"
+    ],
+    [
+      "distributor",
+      "유통업자"
+    ],
+    [
+      "operation",
+      "작업, 과정"
+    ],
+    [
+      "ironically",
+      "아이러니하게도"
+    ]
+  ],
+  "summary": {
+    "en": "Thanks to advanced technology, fresh food travels from all over the world to our local supermarkets efficiently.",
+    "ko": "첨단 기술 덕분에 신선 식품이 전 세계에서 동네 마트로 효율적으로 온다."
+  },
+  "writing": {
+    "en": "Technology helps fresh food travel around the world.",
+    "ko": "기술은 신선 식품이 전 세계를 오가도록 돕는다."
+  },
+  "tip": "제목 문제는 글의 '결론 + 반복되는 말'을 담은 선택지를 고르세요. 이 글은 기술(technological, computer)과 먼 곳(globalization, Thailand)이 계속 반복돼요. ①은 Local to Global이 그럴듯하지만 '생산지 확대'가 틀려요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 24번 정답은?",
+      "⑤ How Freshness Travels Globally with Advanced Technology예요."
+    ],
+    [
+      "①번은 왜 틀리나요?",
+      "글은 생산지가 늘었다는 게 아니라, 기술 덕분에 먼 곳의 식품이 잘 '운송'된다는 이야기예요."
+    ],
+    [
+      "2026 수능 영어 24번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

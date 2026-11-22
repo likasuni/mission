@@ -1,0 +1,291 @@
+{
+  "exam": "sn-2027",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "결승전 자유투를 놓친 농구부 주장 Andy가 상담으로 마음을 열다",
+  "keywords": [
+    "2027 수능 영어 43~45번",
+    "2027학년도 수능 43~45번 해설",
+    "2027 수능 43번 정답",
+    "2027 수능 44번 정답",
+    "2027 수능 45번 정답",
+    "2026 수능 영어 43~45번",
+    "수능 영어 장문 독해",
+    "Andy basketball counselor 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 43~45번은 결승전 마지막 1분에 자유투 두 개를 놓쳐 자책하던 농구부 주장 Andy가 아버지의 권유로 상담 선생님을 만나 마음을 푸는 이야기예요. 43번 순서는 (A) 자책 → (D) 아버지의 상담 권유 → (B) 상담 → (C) 팀 복귀, 44번은 (b)만 상담 교사 Mr. Johnson, 45번은 '팀 훈련에 복귀하지 않았다'가 불일치예요. 정답은 43번 ④, 44번 ②, 45번 ③이에요.",
+  "flow": [
+    [
+      "(A)",
+      "결승전 마지막 1분에 자유투 두 개를 놓쳐 팀이 졌다. Andy는 베개에 얼굴을 묻고 아버지의 물음에도 답하지 않는다."
+    ],
+    [
+      "(D)",
+      "며칠 동안 말을 거의 하지 않는다. 아버지가 위로하고 상담 선생님을 만나 보라고 권한다."
+    ],
+    [
+      "(B)",
+      "Andy는 Mr. Johnson을 만난다. '같은 실수를 한 팀원을 심하게 탓하겠니?'라는 질문에 아니라고 깨닫는다."
+    ],
+    [
+      "(C)",
+      "감정을 나누는 법을 배우고 팀 훈련에 돌아간다. 팀원들은 반갑게 맞고 Charles는 Andy의 경기를 칭찬한다."
+    ]
+  ],
+  "tip": "43번: (A) 끝의 '아버지 물음에 답하지 않음'과 (D)의 For a few days … father를 이으세요. (D) 끝 '상담 권유' → (B) After some thought, Andy agreed to meet …. 44번: 등장인물이 Andy·아버지·Mr. Johnson·Charles라 대명사마다 '누가 누구에게'를 확인하세요. 45번: '결국 ~하지 않았다' 같은 결말 선택지는 마지막 단락과 비교하세요.",
+  "qs": [
+    {
+      "n": 43,
+      "type": "장문 순서",
+      "points": 2,
+      "answer": 4,
+      "evidence": [
+        {
+          "en": "(A) \"Andy, is something wrong?\" his father asked anxiously …, but he didn't answer. / (D) For a few days, Andy hardly spoke to anyone …",
+          "ko": "(A) '앤디, 무슨 일 있니?' 아버지가 걱정스럽게 물었지만 그는 대답하지 않았다. / (D) 며칠 동안 Andy는 거의 아무와도 말하지 않았다 …",
+          "note": "대답하지 않음 → 며칠 동안 말을 안 함. (A) → (D)."
+        },
+        {
+          "en": "(D) The next day, he suggested seeing the school counselor. … / (B) After some thought, Andy agreed to meet Mr. Johnson, the school counselor.",
+          "ko": "(D) 다음 날 그는 학교 상담 선생님을 만나 보라고 제안했다 … / (B) 잠시 생각한 뒤 Andy는 학교 상담 선생님인 Mr. Johnson을 만나기로 했다.",
+          "note": "상담 제안 → 동의하고 만남. (D) → (B)."
+        },
+        {
+          "en": "(B) Andy thought for a moment and realized that he would not. / (C) Andy learned that sharing his feelings with someone could help him …",
+          "ko": "(B) Andy는 잠시 생각하고 자기는 그러지 않을 것임을 깨달았다. / (C) Andy는 누군가와 감정을 나누는 것이 도움이 될 수 있음을 배웠다 …",
+          "note": "상담에서 깨달음 → 배운 점과 팀 복귀. (B) → (C)."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① (B) – (D) – (C)",
+          "ko": "상담 → 아버지 권유 → 복귀",
+          "why": "상담 권유(D)보다 상담(B)이 먼저 올 수 없어요."
+        },
+        {
+          "en": "② (C) – (B) – (D)",
+          "ko": "복귀 → 상담 → 권유",
+          "why": "결말(C)이 맨 앞에 올 수 없어요."
+        },
+        {
+          "en": "③ (C) – (D) – (B)",
+          "ko": "복귀 → 권유 → 상담",
+          "why": "(C)의 the conversation with Mr. Johnson은 상담(B) 뒤에 와야 해요."
+        },
+        {
+          "en": "④ (D) – (B) – (C)",
+          "ko": "권유 → 상담 → 복귀",
+          "why": "정답. 시간 순서와 연결 고리가 모두 맞아요."
+        },
+        {
+          "en": "⑤ (D) – (C) – (B)",
+          "ko": "권유 → 복귀 → 상담",
+          "why": "(C)에서 상담 대화를 떠올리는데, 상담(B)이 아직 나오지 않았어요."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭 대상",
+      "points": 2,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "\"Andy, is something wrong?\" his father asked anxiously …, but (a) he didn't answer.",
+          "ko": "… 하지만 (a) 그는 대답하지 않았다.",
+          "note": "(a) = Andy. 아버지의 질문에 답하지 않은 사람이에요."
+        },
+        {
+          "en": "After some thought, Andy agreed to meet Mr. Johnson, the school counselor. (b) His warm welcome helped Andy slowly explain his emotions …",
+          "ko": "… (b) 그의 따뜻한 환영은 Andy가 천천히 감정을 설명하도록 도왔다 …",
+          "note": "(b) = Mr. Johnson. Andy를 맞아 준 사람이라 나머지(Andy)와 달라요."
+        },
+        {
+          "en": "His father reassured (e) him.",
+          "ko": "그의 아버지는 (e) 그를 안심시켰다.",
+          "note": "(e) = Andy."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① (a)",
+          "ko": "Andy",
+          "why": "아버지 물음에 답하지 않은 Andy예요."
+        },
+        {
+          "en": "② (b)",
+          "ko": "Mr. Johnson",
+          "why": "정답. 상담 선생님의 따뜻한 환영이에요. 나머지는 모두 Andy예요."
+        },
+        {
+          "en": "③ (c)",
+          "ko": "Andy",
+          "why": "Mr. Johnson이 Andy에게 '네가 팀원을 아낀다'고 말해요."
+        },
+        {
+          "en": "④ (d)",
+          "ko": "Andy",
+          "why": "Andy가 팀원들에게 '내가 어리석었어'라고 말해요."
+        },
+        {
+          "en": "⑤ (e)",
+          "ko": "Andy",
+          "why": "아버지가 안심시킨 사람이에요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "내용 불일치",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "When he joined team training again, everyone welcomed him back.",
+          "ko": "그가 다시 팀 훈련에 합류하자 모두가 그를 반겼다.",
+          "note": "팀 훈련에 돌아갔어요. ③ '복귀하지 않았다'는 불일치 → 정답."
+        },
+        {
+          "en": "He couldn't even remember that he had scored more points than any other player in the game.",
+          "ko": "그는 자기가 그 경기에서 다른 어떤 선수보다 많은 점수를 냈다는 것조차 기억하지 못했다.",
+          "note": "① 일치. 기억하지 못했을 뿐 사실은 최다 득점이에요."
+        },
+        {
+          "en": "Charles added with a smile, \"Your performance was unbelievable! Nobody could stop you!\"",
+          "ko": "Charles는 웃으며 '네 경기력은 믿을 수 없을 정도였어! 아무도 너를 못 막았어!'라고 덧붙였다.",
+          "note": "④ 일치."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① Andy는 농구 결승전에서 다른 어떤 선수들보다 많이 득점했다.",
+          "ko": "scored more points than any other player",
+          "why": "일치해요."
+        },
+        {
+          "en": "② Andy는 상담 교사의 질문을 듣고 잠시 동안 생각했다.",
+          "ko": "thought for a moment",
+          "why": "일치해요."
+        },
+        {
+          "en": "③ Andy는 팀 훈련에 결국 복귀하지 않았다.",
+          "ko": "joined team training again",
+          "why": "정답(불일치). 훈련에 다시 합류했어요."
+        },
+        {
+          "en": "④ Charles는 Andy의 경기력을 칭찬했다.",
+          "ko": "Your performance was unbelievable!",
+          "why": "일치해요."
+        },
+        {
+          "en": "⑤ Andy의 아버지는 사정을 알고 Andy를 위로했다.",
+          "ko": "comforted Andy with encouraging words",
+          "why": "일치해요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "If only + 과거완료 (가정법)",
+      "ex": "If only I'd stayed calm and made those shots, we would've won",
+      "d": "'~했더라면 좋았을 텐데'. 과거 사실과 반대예요."
+    },
+    {
+      "t": "keep A from -ing",
+      "ex": "the guilt that kept him from facing his teammates",
+      "d": "'A가 ~하지 못하게 하다'."
+    },
+    {
+      "t": "help + 목적어 + 동사원형",
+      "ex": "His warm welcome helped Andy slowly explain his emotions",
+      "d": "help 뒤 목적격 보어는 동사원형이나 to부정사."
+    },
+    {
+      "t": "can't wait to V",
+      "ex": "he couldn't wait to see his teammates",
+      "d": "'빨리 ~하고 싶다'."
+    },
+    {
+      "t": "as much as + 주어 + do",
+      "ex": "a captain who cares about his teammates as much as you do",
+      "d": "do는 care를 대신해요."
+    }
+  ],
+  "vocab": [
+    [
+      "bury",
+      "묻다"
+    ],
+    [
+      "free throw",
+      "자유투"
+    ],
+    [
+      "rival",
+      "경쟁 상대"
+    ],
+    [
+      "anxiously",
+      "걱정스럽게"
+    ],
+    [
+      "counselor",
+      "상담 교사"
+    ],
+    [
+      "guilt",
+      "죄책감"
+    ],
+    [
+      "harshly",
+      "가혹하게"
+    ],
+    [
+      "comfort",
+      "위로하다; 위안"
+    ],
+    [
+      "convinced",
+      "확신하는"
+    ],
+    [
+      "reassure",
+      "안심시키다"
+    ],
+    [
+      "open up",
+      "마음을 열다"
+    ],
+    [
+      "performance",
+      "경기력, 수행"
+    ]
+  ],
+  "summary": {
+    "en": "After missing two free throws in a final, Andy blamed himself, but talking with a counselor helped him forgive himself and return to his team.",
+    "ko": "결승전에서 자유투 두 개를 놓친 Andy는 자책했지만, 상담 선생님과의 대화로 자신을 용서하고 팀에 돌아갔다."
+  },
+  "writing": {
+    "en": "Sharing your feelings can help you find comfort.",
+    "ko": "감정을 나누는 것은 위안을 찾는 데 도움이 될 수 있다."
+  },
+  "faq": [
+    [
+      "2027학년도 수능 영어 43번 정답은?",
+      "④ (D) – (B) – (C)예요."
+    ],
+    [
+      "2027학년도 수능 영어 44번 정답은?",
+      "② (b)예요. (b)만 상담 교사 Mr. Johnson이고 나머지는 모두 Andy예요."
+    ],
+    [
+      "2027학년도 수능 영어 45번 정답은?",
+      "③ 'Andy는 팀 훈련에 결국 복귀하지 않았다'예요. 글에는 joined team training again이라고 나와요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

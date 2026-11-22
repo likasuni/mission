@@ -1,0 +1,175 @@
+{
+  "exam": "sn-2027",
+  "n": 23,
+  "type": "글의 주제",
+  "points": 2,
+  "answer": 2,
+  "topic": "부모 식물이 겪은 환경이 자손의 몸과 생존 능력에 대물림된다",
+  "keywords": [
+    "2027 수능 영어 23번",
+    "2027학년도 수능 23번 해설",
+    "2027 수능 23번 정답",
+    "2026 수능 영어 23번",
+    "수능 영어 글의 주제",
+    "wild radish offspring 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 23번은 식물이 사는 환경이 자손의 몸 구조까지 바꾸고, 그 변화가 대물림된다는 글이에요. parent plants can pass on skills for surviving in a tough world가 핵심이에요. 정답은 ② '세대에 걸친 식물의 적응에 환경이 미치는 영향'이에요.",
+  "flow": [
+    [
+      "주장",
+      "식물이 사는 환경은 식물 자체와 떼어 놓을 수 없다."
+    ],
+    [
+      "설명",
+      "환경은 자손이 어떤 식물이 될지 알려 주고, 몸 구조와 발달을 바꾼다."
+    ],
+    [
+      "대물림",
+      "그 변화는 자손에게 전해져, 자손은 부모가 겪은 혹독한 조건을 더 잘 견딘다."
+    ],
+    [
+      "예시",
+      "애벌레 공격을 겪은 야생 무는 더 까슬한 잎과 방어 물질을 가진 새끼 무를 만든다."
+    ],
+    [
+      "결론",
+      "같은 어려움을 만나면 자손은 훨씬 잘 대비되어 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "And those changes can be passed down to their offspring, whose body will develop differently from the start …",
+      "ko": "그리고 그런 변화는 자손에게 전해질 수 있고, 자손의 몸은 처음부터 다르게 발달할 것이다 …",
+      "note": "passed down to their offspring = across generations(세대에 걸쳐)."
+    },
+    {
+      "en": "In other words, parent plants can pass on skills for surviving in a tough world.",
+      "ko": "다시 말해 부모 식물은 험한 세상에서 살아남는 기술을 물려줄 수 있다.",
+      "note": "In other words 뒤가 주제를 한 줄로 정리해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① effectiveness of plants' defensive chemicals against natural enemies",
+      "ko": "천적에 대한 방어 물질의 효과",
+      "why": "방어 물질은 야생 무 예시의 일부예요. 너무 좁아요."
+    },
+    {
+      "en": "② impact of the environment on plants' adaptation across generations",
+      "ko": "세대에 걸친 적응에 환경이 미치는 영향",
+      "why": "정답. 환경(environment) + 대물림(across generations) + 적응이 모두 들어 있어요."
+    },
+    {
+      "en": "③ difficulties of plants' adaptation to periodic environmental changes",
+      "ko": "주기적 환경 변화에 대한 적응의 어려움",
+      "why": "어려움이 아니라 적응을 '잘하게 된다'는 글이에요. periodic도 없어요."
+    },
+    {
+      "en": "④ advantages of protecting plant diversity in the imbalanced ecosystem",
+      "ko": "식물 다양성 보호의 이점",
+      "why": "다양성·생태계 보호 이야기는 없어요."
+    },
+    {
+      "en": "⑤ significance of the environment in determining the shapes of plants",
+      "ko": "식물 모양을 정하는 환경의 중요성",
+      "why": "모양만이 아니라 생존 능력의 대물림이 핵심이에요. '세대'가 빠져 있어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "전치사 + 관계대명사",
+      "ex": "The environment in which a plant lives",
+      "d": "= where a plant lives. which 뒤는 완전한 문장이에요."
+    },
+    {
+      "t": "소유격 관계대명사 whose",
+      "ex": "their offspring, whose body will develop differently",
+      "d": "'그 자손의 몸은'. whose 뒤에 명사가 바로 와요."
+    },
+    {
+      "t": "be better able to V",
+      "ex": "be better able to handle the harsh conditions",
+      "d": "'~을 더 잘 할 수 있다'. 앞의 will에 연결돼요."
+    },
+    {
+      "t": "end up -ing",
+      "ex": "If these plant-children end up facing the same challenges",
+      "d": "'결국 ~하게 되다'."
+    }
+  ],
+  "vocab": [
+    [
+      "inseparable",
+      "떼어 놓을 수 없는"
+    ],
+    [
+      "inform",
+      "(성격·결과를) 결정하다, 알려 주다"
+    ],
+    [
+      "offspring",
+      "자손"
+    ],
+    [
+      "thrive",
+      "번성하다"
+    ],
+    [
+      "body plan",
+      "몸 구조"
+    ],
+    [
+      "pass down",
+      "물려주다"
+    ],
+    [
+      "harsh",
+      "혹독한"
+    ],
+    [
+      "armor",
+      "갑옷"
+    ],
+    [
+      "destructive",
+      "파괴적인"
+    ],
+    [
+      "scratchy",
+      "까슬까슬한"
+    ],
+    [
+      "preload",
+      "미리 넣어 두다"
+    ],
+    [
+      "defensive",
+      "방어의"
+    ]
+  ],
+  "summary": {
+    "en": "Plants pass on to their offspring the changes their environment caused, helping the next generation survive similar threats.",
+    "ko": "식물은 환경 때문에 생긴 변화를 자손에게 물려주어, 다음 세대가 비슷한 위협에서 살아남도록 돕는다."
+  },
+  "writing": {
+    "en": "Parent plants can pass on survival skills to their offspring.",
+    "ko": "부모 식물은 생존 기술을 자손에게 물려줄 수 있다."
+  },
+  "tip": "주제 선택지는 '너무 좁은 것(①, 예시 속 소재만)'과 '절반만 맞는 것(⑤, 세대가 빠짐)'을 지우면 남아요. 핵심 단어 두 개(environment + offspring/generations)가 모두 들어간 선택지를 고르세요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 23번 정답은?",
+      "② impact of the environment on plants' adaptation across generations예요."
+    ],
+    [
+      "⑤번도 환경 이야기 아닌가요?",
+      "⑤는 식물 '모양'을 정하는 환경만 말해요. 글의 핵심인 '자손에게 물려준다(세대)'가 빠져 있어요."
+    ],
+    [
+      "2026 수능 영어 23번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

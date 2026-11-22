@@ -1,0 +1,154 @@
+{
+  "exam": "sn-2027",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "Brain Power Memory Championship 대회 안내",
+  "keywords": [
+    "2027 수능 영어 27번",
+    "2027학년도 수능 27번 해설",
+    "2027 수능 27번 정답",
+    "2026 수능 영어 27번",
+    "수능 영어 안내문",
+    "Brain Power Memory Championship",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 27번은 Lilythorpe 마을의 암기 대회 안내문이에요. 맨 끝 괄호에 Registration cannot be done online.(온라인 등록 불가)이 있어서 '온라인으로 등록이 가능하다'는 ⑤가 틀려요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "대상",
+      "13세 이상 모든 Lilythorpe 주민"
+    ],
+    [
+      "일시",
+      "12월 5일 토요일 오후 1시~6시"
+    ],
+    [
+      "종목",
+      "숫자·단어·이름 암기 세 종목 모두 참가"
+    ],
+    [
+      "규칙",
+      "종목마다 암기 5분, 답 쓰기 15분"
+    ],
+    [
+      "참고",
+      "최종 점수 = 세 종목 합, 상위 3명 메달, 12월 3일 오후 5시 30분 전까지 직접 방문 등록 (온라인 불가)"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "To register, visit Lilythorpe Convention Center in person before 5:30 p.m., December 3. (Registration cannot be done online.)",
+      "ko": "등록하려면 12월 3일 오후 5시 30분 전에 Lilythorpe 컨벤션 센터를 직접 방문하세요. (온라인 등록은 할 수 없습니다.)",
+      "note": "in person(직접)과 cannot be done online이 ⑤와 반대예요."
+    },
+    {
+      "en": "Memorization time: 5 minutes",
+      "ko": "암기 시간: 5분",
+      "note": "③ 일치. 답 쓰기 15분과 헷갈리지 마세요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 13세 이상의 모든 Lilythorpe 거주자가 참여할 수 있다.",
+      "ko": "age 13 and older",
+      "why": "일치해요."
+    },
+    {
+      "en": "② 대회 종목에는 숫자 암기가 포함된다.",
+      "ko": "Memorizing Numbers",
+      "why": "일치해요."
+    },
+    {
+      "en": "③ 각 종목당 5분의 암기 시간이 주어진다.",
+      "ko": "Memorization time: 5 minutes",
+      "why": "일치해요."
+    },
+    {
+      "en": "④ 참가자의 최종 점수는 세 종목 점수의 합이다.",
+      "ko": "sum of the three event scores",
+      "why": "일치해요."
+    },
+    {
+      "en": "⑤ 온라인으로 등록이 가능하다.",
+      "ko": "cannot be done online",
+      "why": "정답(불일치). 직접 방문해야 해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "in person",
+      "ex": "visit … in person",
+      "d": "'직접 (가서)'. 안내문 등록 방법에서 자주 나와요."
+    },
+    {
+      "t": "수동태 부정 cannot be p.p.",
+      "ex": "Registration cannot be done online.",
+      "d": "'~될 수 없다'."
+    },
+    {
+      "t": "관계대명사 who",
+      "ex": "The three participants who get the top final scores",
+      "d": "주격 관계대명사. 동사 get은 복수 주어 participants에 맞춰요."
+    }
+  ],
+  "vocab": [
+    [
+      "host",
+      "개최하다"
+    ],
+    [
+      "resident",
+      "주민"
+    ],
+    [
+      "compete",
+      "겨루다"
+    ],
+    [
+      "memorize",
+      "암기하다"
+    ],
+    [
+      "random",
+      "무작위의"
+    ],
+    [
+      "participant",
+      "참가자"
+    ],
+    [
+      "sum",
+      "합계"
+    ],
+    [
+      "register",
+      "등록하다"
+    ]
+  ],
+  "summary": {
+    "en": "This notice explains the rules, schedule, and in-person registration for a memory championship.",
+    "ko": "이 안내문은 암기 대회의 규칙, 일정, 직접 방문 등록 방법을 알려 준다."
+  },
+  "writing": {
+    "en": "You must register in person because online registration is not available.",
+    "ko": "온라인 등록이 안 되기 때문에 직접 가서 등록해야 한다."
+  },
+  "tip": "안내문은 맨 아래 Notes와 괄호 속 작은 글씨에서 정답이 자주 나와요. 등록 방법·요금·대상 나이는 꼭 확인하세요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 27번 정답은?",
+      "⑤ '온라인으로 등록이 가능하다'예요. 안내문에 Registration cannot be done online이라고 나와요."
+    ],
+    [
+      "답 쓰는 시간은 얼마인가요?",
+      "종목마다 15분이에요. 암기 시간은 5분이에요."
+    ],
+    [
+      "2026 수능 영어 27번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}

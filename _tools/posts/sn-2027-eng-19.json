@@ -1,0 +1,171 @@
+{
+  "exam": "sn-2027",
+  "n": 19,
+  "type": "심경 변화",
+  "points": 2,
+  "answer": 1,
+  "topic": "부풀지 않던 빵 반죽이 아버지 조언으로 부풀자 신이 난 Christine",
+  "keywords": [
+    "2027 수능 영어 19번",
+    "2027학년도 수능 19번 해설",
+    "2027 수능 19번 정답",
+    "2026 수능 영어 19번",
+    "수능 영어 심경 변화",
+    "Christine bread 지문",
+    "2027 수능 영어 해설"
+  ],
+  "lead": "2027학년도 수능 영어 19번은 빵 반죽이 부풀지 않아 짜증 난 Christine이 아버지 조언대로 베이킹파우더를 더 넣고 반죽이 부풀자 기뻐하는 이야기예요. 앞부분 Ugh!·sighed·frown은 좌절, 뒷부분 eyes widened·exclaimed·eagerly는 신남이에요. 정답은 ① frustrated → excited예요.",
+  "flow": [
+    [
+      "문제",
+      "빵 반죽이 부풀지 않는다. 레시피를 다시 봐도 이유를 모른다."
+    ],
+    [
+      "좌절",
+      "크게 한숨 쉬고 그릇을 밀어낸다. '왜 안 되는 거야?' 얼굴을 찌푸린다."
+    ],
+    [
+      "조언",
+      "아버지가 베이킹파우더를 조금 더 넣어 보라고 한다."
+    ],
+    [
+      "해결",
+      "몇 분 뒤 반죽이 부풀기 시작한다."
+    ],
+    [
+      "신남",
+      "눈이 커지고 가슴이 뛴다. '드디어 된다!' 신나게 오븐에 넣는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Christine sighed loudly and pushed the bowl away. \"Why won't this work?\" she said with a frown.",
+      "ko": "Christine은 크게 한숨을 쉬고 그릇을 밀어냈다. '이게 왜 안 되는 거야?' 그녀는 얼굴을 찌푸리며 말했다.",
+      "note": "한숨·그릇 밀어내기·찌푸림 → 앞 심경은 frustrated(좌절한)예요."
+    },
+    {
+      "en": "Christine's eyes widened, and her heart began pounding. \"It finally works!\" she exclaimed.",
+      "ko": "Christine의 눈이 커지고 가슴이 두근거리기 시작했다. '드디어 된다!' 그녀가 외쳤다.",
+      "note": "눈이 커짐·가슴 뜀·외침·eagerly → 뒤 심경은 excited(신난)예요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① frustrated → excited",
+      "ko": "좌절한 → 신난",
+      "why": "정답. 반죽이 안 될 때의 짜증과 부풀었을 때의 기쁨이 그대로 맞아요."
+    },
+    {
+      "en": "② hopeful → embarrassed",
+      "ko": "희망찬 → 당황한",
+      "why": "처음부터 Ugh!로 짜증을 내요. 희망적이지 않아요."
+    },
+    {
+      "en": "③ envious → relieved",
+      "ko": "부러워하는 → 안도한",
+      "why": "부러워할 대상이 없어요. 뒤도 안도보다 신남(eagerly, delicious!)이에요."
+    },
+    {
+      "en": "④ angry → discouraged",
+      "ko": "화난 → 낙담한",
+      "why": "뒤 심경이 반대예요. 결국 성공해서 기뻐해요."
+    },
+    {
+      "en": "⑤ pleased → indifferent",
+      "ko": "기쁜 → 무관심한",
+      "why": "앞뒤 모두 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "would not (과거의 고집·거부)",
+      "ex": "the mixture would not rise",
+      "d": "'도무지 ~하려 하지 않았다'. 사물이 말을 안 들을 때도 써요."
+    },
+    {
+      "t": "분사구문 (이유·때)",
+      "ex": "Seeing her struggle, Christine's father offered some advice.",
+      "d": "= When he saw her struggle. 주어는 뒤의 father예요."
+    },
+    {
+      "t": "suggest의 직접 화법",
+      "ex": "\"Try adding a little more baking powder,\" he suggested.",
+      "d": "try -ing는 '시험 삼아 ~해 보다'. try to V(~하려고 애쓰다)와 달라요."
+    },
+    {
+      "t": "begin -ing",
+      "ex": "the mixture began to rise / her heart began pounding",
+      "d": "begin은 to V와 -ing 둘 다 써요."
+    }
+  ],
+  "vocab": [
+    [
+      "stare at",
+      "~을 빤히 보다"
+    ],
+    [
+      "mixture",
+      "반죽, 혼합물"
+    ],
+    [
+      "rise",
+      "(빵 반죽이) 부풀다"
+    ],
+    [
+      "sigh",
+      "한숨 쉬다"
+    ],
+    [
+      "frown",
+      "찌푸림"
+    ],
+    [
+      "struggle",
+      "애씀, 고생"
+    ],
+    [
+      "spoonful",
+      "한 숟가락"
+    ],
+    [
+      "widen",
+      "커지다"
+    ],
+    [
+      "pound",
+      "(가슴이) 쿵쿵 뛰다"
+    ],
+    [
+      "exclaim",
+      "외치다"
+    ],
+    [
+      "eagerly",
+      "열심히, 신이 나서"
+    ]
+  ],
+  "summary": {
+    "en": "Christine was frustrated when her bread would not rise, but she became excited when her father's advice worked.",
+    "ko": "Christine은 빵 반죽이 부풀지 않아 좌절했지만, 아버지의 조언이 통하자 신이 났다."
+  },
+  "writing": {
+    "en": "Her frustration turned into excitement when the bread finally rose.",
+    "ko": "빵이 마침내 부풀었을 때 그녀의 좌절은 신남으로 바뀌었다."
+  },
+  "tip": "심경 변화는 전환점(여기선 아버지의 조언) 앞뒤를 나눠서 감정 단서를 두 개씩 찾으세요. 행동(한숨, 그릇 밀기)과 몸의 반응(눈이 커짐, 가슴이 뜀)이 가장 확실한 단서예요.",
+  "faq": [
+    [
+      "2027학년도 수능 영어 19번 정답은?",
+      "① frustrated → excited예요. 반죽이 안 부풀 때 짜증 내다가, 부풀자 신이 났어요."
+    ],
+    [
+      "heart began pounding은 긴장 아닌가요?",
+      "문맥이 '드디어 된다!'는 외침과 eagerly(신이 나서)로 이어져서 기대·흥분의 두근거림이에요."
+    ],
+    [
+      "2026 수능 영어 19번과 같은 문제인가요?",
+      "네. 2026년 11월에 본 2027학년도 수능 문제예요."
+    ]
+  ],
+  "date": "2026-11-22"
+}
