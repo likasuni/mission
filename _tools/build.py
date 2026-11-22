@@ -1073,7 +1073,7 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 <div class="rc-body"><p class="rc-tip">없는 분석노트도 <b>카카오로 로그인</b>한 뒤 <b>요청</b>하면 원장님이 만들어 <b>카톡으로</b> 보내 드려요. 로그인할 때 <b>카톡 메시지 받기</b>에 동의해 주셔야 받을 수 있어요. 신간 교재나 목록에 없는 교재·단어 시험지·변형문제는 아래 <a href="#talk"><b>신간교재 요청</b></a>에 남겨 주세요.<button type="button" class="rc-login" onclick="showLogin()">💬 카카오로 로그인</button></p>
 <div class="rc-list"><p class="muted">불러오는 중...</p></div>
 ''' + ad(True).replace('class="ad-slot"', 'class="ad-slot rc-ad"') + '''
-<div id="talk" class="tk-in"><div class="tk-h"><b>신간교재 요청</b><span>"이 신간 교재 자료도 받을 수 있나요?" 원장님께 물어보세요 · 목록에 없는 자료 문의도 여기에</span></div>
+<div id="talk" class="tk-in"><div class="tk-h"><b>신간교재 요청</b><span>"이 신간 교재 자료도 받을 수 있나요?" 원장님께 물어보세요 · 목록에 없는 자료 문의도 여기에</span><a class="tk-books" href="/books/news/">📘 신간교재 보러가기 →</a></div>
 <div class="tk-form"></div><div class="tk-list"><p class="muted">불러오는 중...</p></div></div></div></section>
 <!--NSBAN-->
 <h2 class="sec-h">최근 영어 모의고사</h2>
