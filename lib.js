@@ -158,6 +158,8 @@ function recentComments() {
   const pvKey = c => {  // 모의고사 moe-g2-2026-10-37 · 부교재 bk-수능특강라이트-20-1 (Gateway·예시문제는 0)
     let m = c.content.match(/(\d{4})년 (\d{1,2})월 고(\d) 영어 모의고사 (\d+)번/);
     if (m) return `moe-g${m[3]}-${m[1]}-${+m[2]}-${+m[4]}`;
+    m = c.content.match(/(\d{4})학년도 수능 영어 (\d+)번/);  // 수능: moe-g3-2027-0-31
+    if (m) return `moe-g3-${m[1]}-0-${+m[2]}`;
     m = c.content.replace('[자료 요청] ', '').replace(' 분석노트 부탁드려요.', '').match(/^(.+) (\d+)(?:강|회) (?:Gateway|예시문제|(\d+)번)$/);
     return m ? `bk-${m[1].replace(/ /g, '')}-${+m[2]}-${+(m[3] || 0)}` : '';
   };
@@ -328,8 +330,8 @@ const ebList = () => _eb || (_eb = fetch('/notes/view/list.json').then(r => r.ok
 // 받은 모의고사 분석노트 → [전자책 보기] [해설 보기] (전자책이 없으면 그 회차 자료 페이지)
 function noteLinks(kind, q, eb) {
   if (kind !== 'moe' || !q || !q.g) return '';
-  if (+q.m === 0) return `<a class="btn btn-line btn-sm" href="/suneung/${q.y}/eng/">수능 해설·자료 보기</a>`; // 수능 (y = 학년도)
-  const e = eb[`moe-g${q.g}-${q.y}-${q.m}-${q.n}`];
+  const e = eb[`moe-g${q.g}-${q.y}-${q.m}-${q.n}`];  // 수능은 m 0 · y 학년도
+  if (+q.m === 0 && !e) return `<a class="btn btn-line btn-sm" href="/suneung/${q.y}/eng/">수능 해설·자료 보기</a>`;
   return e ? `<a class="btn btn-navy btn-sm" href="${e}">📘 ${q.n}번 전자책 보기</a> <a class="btn btn-line btn-sm" href="${e.replace('#ebook', '')}">해설 보기</a>`
     : `<a class="btn btn-line btn-sm" href="/moe/go${q.g}/${q.y}-${String(q.m).padStart(2, '0')}/eng/">회차 자료 보기</a>`;
 }

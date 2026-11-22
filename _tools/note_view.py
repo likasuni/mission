@@ -71,7 +71,8 @@ def make(g, y, m, n, src, idx):
 
 def main():
     g, y, m = sys.argv[1], sys.argv[2], int(sys.argv[3])
-    folder = glob.glob(os.path.join(DRIVE, f'고{g} 모의고사', f'{y}년 {m}월 고{g}'))
+    # 수능은 월 0 · 학년도 (python3 _tools/note_view.py 3 2027 0 31 → moe-g3-2027-0-31, 드라이브 '수능 모의고사/2027학년도 수능')
+    folder = glob.glob(os.path.join(DRIVE, '수능 모의고사', f'{y}학년도 수능') if m == 0 else os.path.join(DRIVE, f'고{g} 모의고사', f'{y}년 {m}월 고{g}'))
     if not folder:
         sys.exit(f'드라이브 폴더를 찾지 못했어요: 고{g} {y}년 {m}월')
     nums = sys.argv[4:] or sorted((f[:-4] for f in os.listdir(folder[0]) if re.fullmatch(r'\d+(-\d+)?\.pdf', f)), key=lambda s: int(s.split('-')[0]))

@@ -90,12 +90,14 @@ def post_ans(p):
     return f"정답 {CIRC[p['answer'] - 1]}"
 _nvf = os.path.join(ROOT, 'notes', 'view', 'index.json')
 NV = json.load(open(_nvf, encoding='utf-8')) if os.path.exists(_nvf) else {}  # 분석노트 전자책 목록 (note_view.py)
+def nv_key(k, no):  # 전자책 키: 모의고사 moe-g1-2026-10-24, 수능 moe-g3-2027-0-31 (요청 query {g:3, y:학년도, m:0} 와 같게)
+    return f"moe-g3-{k[2]}-0-{no}" if k[0] == 'sn' else f"moe-g{k[1]}-{s_year(k)}-{k[3]}-{no}"
 def post_quick(ps):
     # 영어 회차 페이지 맨 위 '화면으로 바로 보기' (2026-11-15 원장님 확정): 광고가 있는 전자책·해설 페이지로 가는 번호 칩.
     # 수익이 회차 페이지에 몰려 있어서, 들어온 학생이 해설을 한 장 더 보게 하는 자리. 자세한 목록(#posts)은 아래에 그대로 둠.
     def chip(p):
         k = p['k']
-        eb = k[0] == 'moe' and f"moe-g{k[1]}-{s_year(k)}-{k[3]}-{post_no(p).replace('~', '-')}" in NV
+        eb = nv_key(k, post_no(p).replace('~', '-')) in NV
         return f'<a class="nb rd{" eb" if eb else ""}" href="{post_url(p)}{"#ebook" if eb else ""}">{"📘 " if eb else ""}{post_no(p)}번</a>'
     has_eb = '📘 ' in ''.join(chip(p) for p in ps)
     return ('<section class="card en-sec" id="read"><style>.nb.rd{background:#fff;color:#1e3a8a;border:1.5px solid #c7d2fe}.nb.rd.eb{background:#eef2ff;border-color:#1e3a8a}</style>'
@@ -555,11 +557,11 @@ for idx, k in enumerate(keys_sorted):
 EBOOK = {}  # 요청 번호 키(moe-g1-2026-10-41) → 주소, 세트(41-42)는 번호마다
 def note_view(p, nm):
     k = p['k']
-    key = f"moe-g{k[1]}-{s_year(k)}-{k[3]}-{post_no(p).replace('~', '-')}" if k[0] == 'moe' else ''
+    key = nv_key(k, post_no(p).replace('~', '-'))
     nv = NV.get(key)
     if not nv: return ''
     for x in range(p['n'], p.get('n2', p['n']) + 1):
-        EBOOK[f"moe-g{k[1]}-{s_year(k)}-{k[3]}-{x}"] = post_url(p) + '#ebook'
+        EBOOK[nv_key(k, x)] = post_url(p) + '#ebook'
     pgs = []
     for i in range(nv['pages']):
         src = f"/notes/view/{key}-{i + 1}.webp?v={nv['v']}"
