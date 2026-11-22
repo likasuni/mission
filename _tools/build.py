@@ -755,14 +755,12 @@ def news_line(m):
     chip = f'<i class="nw-chip{" new" if tag.startswith("교재 신간") else ""}">{e(tag)}</i>'
     _cf = os.path.join(m['_dir'], 'coupang.json')
     _cp = json.load(open(_cf, encoding='utf-8')) if os.path.exists(_cf) else []
-    buy = '<i class="nw-chip buy">🛒 구매 링크</i>' if ('link.coupang.com' in open(os.path.join(m['_dir'], 'body.html'), encoding='utf-8').read()
-                                                     or any(b.get('url') for b in _cp)) else ''
     # 신간 소개 목록 썸네일 = 쿠팡 상품 사진(교재 표지, 쿠팡 서버에서 바로 불러옴 — 우리 서버엔 저장 안 함). 없으면 남색 썸네일. og:image 는 thumb.png 그대로 (2026-11-15 원장님)
     cover = next((b['image'] for b in _cp if b.get('url') and b.get('image')), '') if m.get('cat') == 'book' else ''
     img = (f'<img class="nw-cover" src="{e(cover)}" alt="{e(main)} 표지" loading="lazy" width="84" height="84" referrerpolicy="no-referrer">' if cover
            else f'<img src="{nurl(m)}thumb.png" alt="" loading="lazy" width="84" height="84">' if th else '')
     return (f'<li><a href="{nurl(m)}">' + img +
-            f'<div><small>{chip}{buy}{m["date"].replace("-", ".")}</small><b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a></li>')
+            f'<div><small>{chip}{m["date"].replace("-", ".")}</small><b>{e(main)}</b>' + (f'<em>{e(sub)}</em>' if sub else '') + '</div></a></li>')
 def book_groups(ms, n=None):  # 교재 소식: 신간 소개 · 자료·정보 두 칸 (칸마다 테두리, 썸네일 포함)
     cols = [(k, h, [m for m in ms if news_kind(m) == k]) for k, h in (('new', '📘 신간 소개'), ('info', '🔗 자료·정보'))]
     return '<div class="nw-cols nw-compact">' + ''.join(f'<section class="nw-{k}"><h3>{h} <small>{len(g)}</small></h3><ul class="nw-list">{"".join(news_line(m) for m in (g[:n] if n else g))}</ul></section>' for k, h, g in cols if g) + '</div>'

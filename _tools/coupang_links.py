@@ -73,9 +73,12 @@ def main():
             lines.append(f'- [{g}] {b["name"]}: ⚠️ 맞는 상품 없음, 그대로 둠 (검색어: {b["query"]})')
         else:
             lines.append(f'- [{g}] {b["name"]}: {it["productName"]} · {int(float(it.get("productPrice") or 0)):,}원')
-            if b.get('url') != it['productUrl'] or b.get('product') != it['productName'] or b.get('image') != it.get('productImage', ''):
+            if (b.get('url') != it['productUrl'] and not b.get('keep_url')) or b.get('product') != it['productName'] or b.get('image') != it.get('productImage', ''):
                 changed += 1
-            b.update(url=it['productUrl'], product=it['productName'], image=it.get('productImage', ''), checked=today)  # image = 쿠팡 상품 사진 (구매 카드에만 씀)
+            if b.get('keep_url') and b.get('url'):  # 원장님이 준 링크는 그대로, 표지 사진(image)만 채움 (2026-11-23)
+                b.update(product=it['productName'], image=it.get('productImage', ''), checked=today)
+            else:
+                b.update(url=it['productUrl'], product=it['productName'], image=it.get('productImage', ''), checked=today)  # image = 쿠팡 상품 사진 (구매 카드에만 씀)
         time.sleep(3)
     report = '\n'.join(lines) + f'\n\n바뀐 책 {changed}권' + (' (미리보기라 저장 안 함)' if DRY else '')
     print(report)
