@@ -20,20 +20,15 @@
   `t=$(printf "protocol=https\nhost=github.com\n\n" | git credential fill 2>/dev/null | sed -n 's/^password=//p'); curl -sI -H "Authorization: Bearer $t" https://api.github.com/repos/likasuni/mission | grep -i github-authentication-token-expiration; unset t`
   만료까지 **14일 이하**면 보고 맨 위에 "⚠️ 깃허브 토큰이 N일 뒤(날짜) 만료돼요"와 갱신 방법(GitHub → Settings → Developer settings → Fine-grained tokens → 새 토큰: mission 저장소, Contents·Workflows Read and write → ⧉ 복사 → Documents/mission/깃허브_로그인.command 실행)을 넣어요. 만료가 지났거나 확인이 안 되면 그것도 알려요. (2026-10-30 만든 토큰은 2027-01-27 만료)
 
-## 2. 교재 소식 초안 1편 (많아야 2편)
-- 고르기: status new 중 고등 영어 학습자에게 쓸모 있는 원래 교재. 변형문제집·분석노트·공무원·토익·중등·독학사 제외. 이미 posted 인 시리즈와 겹치면 건너뜀.
-- 정보: 출판사·교보문고·예스24 공개 페이지에서 확인한 사실만. 본문 인용·변형 문제 금지.
-- 형식: _tools/news/mothertongue-mock-2027/ 와 같은 구조 + 1080×1080 thumb.png (남색 그라데이션, 골드 #FFC857, '교재 소식 · 리카수니 자료실' 알약, data.likasuni.com; HTML 을 만들어 headless Chrome `--screenshot` 으로 캡처). 가격은 '따로 확인' 한 줄.
-- 쿠팡: 링크를 원장님께 받지 않아요. 글 폴더에 coupang.json = [{"key","name","query","must","url":""}] + body.html 에 <!--CPDIS-->(n-lead 앞), <!--BUY:key-->(책 설명 아래), <!--BUYBOX-->(표 아래·글 끝), 끝 표기 "출판사로부터 받은 대가는 없어요.<!--CPNOTE-->". main 에 합치면 Actions coupang-links 가 링크를 채워요.
-- 쓴 책은 book_candidates.json status "posted", 안 쓸 책은 "skip".
-- python3 _tools/build.py 로 빌드, 로컬 서버로 글 화면 확인 (깨짐·박스 넘침).
+## 2. 교재 소식 (2026-11-24~ 매일 작업으로 옮김)
+- 교재 소식은 매일 아침 예약 작업 daily-book-news(_tools/daily-book-news.md)가 1편씩 바로 공개해요. 주간 루틴에서는 쓰지 않아요.
+- 주간 보고에 지난 7일 공개된 교재 소식 제목·주소, 남은 new 후보 수, 쿠팡 버튼이 비어 있는 글만 적어요.
 
-## 3. 올리기 (main 에 바로 합치지 않음)
-- worktree 에서 커밋(끝에 Co-Authored-By: Claude <noreply@anthropic.com>), git push -u origin weekly/<날짜>.
-- 원장님이 "합쳐" 하면: rebase origin/main → build → 커밋 → git push origin HEAD:main → 몇 분 뒤 실제 글 주소에서 쿠팡 버튼 확인 → worktree 정리.
+## 3. 올리기
+- 주간 보고만 하므로 올릴 것이 없어요. 고칠 것이 있으면 보고에 적고 원장님 답을 기다려요.
 
 ## 4. 보고 형식
-1) 이번 주 숫자 표 2) 이번 주 초안: 제목·책·브랜치·화면 캡처 3) 고칠 것·실패 4) 다음 주 제안 3가지 (검색 유입·광고 수익·학원 홍보 중 무엇에 도움 되는지) 5) 마지막 줄: "초안을 올릴까요? '합쳐'라고 하시면 바로 올려요."
+1) 이번 주 숫자 표 2) 이번 주 교재 소식(매일 작업) 목록 3) 고칠 것·실패 4) 다음 주 제안 3가지 (검색 유입·광고 수익·학원 홍보 중 무엇에 도움 되는지)
 
 ## 하지 않는 것
 - 승인 없이 main 합치기, Blogger·네이버 발행, 푸시 알림, 애드센스 광고 자리 변경.

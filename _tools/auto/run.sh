@@ -3,7 +3,7 @@
 # 쓰는 법: _tools/auto/run.sh sync|backup|coupang|booknew [--no-deploy]
 #   sync    드라이브 → 분류 → 빌드 → 블로그 요약 글 → 커밋 → 올리기   (매일 새벽 3:07)
 #   backup  댓글·요청 데이터(Supabase) 암호화 백업 → 커밋                  (일요일 새벽 4:17)
-#   booknew 고등 영어 신간 후보 모으기 → 커밋                             (월요일 새벽 4:37)
+#   booknew 고등 영어 신간 후보 모으기 → 커밋                             (매일 새벽 4:37)
 #   coupang 부교재 쿠팡 링크 채우기 → 빌드 → 커밋 → 올리기                (월요일 새벽 5:07)
 # 열쇠(Secrets)는 맥 키체인에 'likasuni-<이름>' 으로 넣어 두고 여기서 꺼내 써요 (_tools/auto/README.md).
 set -u
