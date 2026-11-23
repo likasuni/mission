@@ -74,7 +74,7 @@
 - 노트 썸네일: `_tools/memos/img/<slug>/og.jpg`(1200 폭) + `thumb.webp`(480 폭). og.jpg 는 대표 이미지·og:image, JSON 노트는 h1 아래에도 보여요. 첫 화면 '원장님 노트'는 **2026-11-15 원장님 확정: 그림 없이 제목 4줄**(`build.py` `memo_mini`)로 줄이고 '최근 영어 모의고사' 아래로 내렸어요. 첫 화면 순서: 핵심 자료 → 자료 요청 상자·요청 목록 → 학교별 내신 분석 띠 → 최근 영어 모의고사 → 원장님 노트 → 전과목 기출. 썸네일은 노트 글·/memo/ 목록·og:image 에 그대로 써요.
 - 노트 페이지는 첫 화면 '원장님 노트', `/memo/` 목록, 사이트맵에 들어가요. date 가 미래면 그날 공개.
 
-## 학원 소식 (자료실 `/news/`, 메뉴 '코코스학원' = /naesin/ 위쪽 '학원 소식' 칸 + 아래 학교별 내신 분석)
+## 학원 소식 (자료실 `/news/`, /naesin/ 위쪽 '학원 소식' 칸 + 아래 학교별 내신 분석. 메뉴 '코코스학원'은 2026-11-23부터 학원 홈페이지 https://www.cocosedu.co.kr/ 로 바로 가요)
 
 - 학원 홍보·대비반 안내·시험 대비 정리 글. 폴더 `_tools/news/<slug>/` 에 `meta.json`(slug·date·tag·title·desc·summary·keywords·faq) + `body.html`(받은 본문 그대로) + `thumb.png`(있으면 썸네일·og:image·목록 이미지).
 - body.html 의 `<!--THUMB-->` 자리에 썸네일, `<!--AD-->` 자리에 자료실 수동 광고가 들어가요. 주소는 `/news/<slug>/`, 사이트맵 포함.
