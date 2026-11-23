@@ -835,3 +835,6 @@ textarea:focus, input:focus { outline-color: var(--navy); }
   .nw-req br { display: none; }
   .nw-req::before { content: ''; }
 }
+.bk-news-band { display: block; box-sizing: border-box; width: 100%; margin: 0 0 14px; padding: 11px 16px; border-radius: 12px; background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412; font-size: .92rem; text-decoration: none; }
+.bk-news-band b { color: #c2410c; margin-right: 6px; }
+.bk-news-band:hover { background: #ffedd5; }

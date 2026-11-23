@@ -319,8 +319,8 @@ def page(path, title, desc, body, crumbs=(), active='/', comments=None, extra_ld
     crumb_html = ('<nav class="crumb">' + ' › '.join(f'<a href="{u}">{e(n)}</a>' for u, n in crumbs) + '</nav>') if crumbs else ''
     act = '/exams/' if (active.startswith('/moe/') or active == '/suneung/') else ('/english/' if active == '/variants/' else ('/naesin/' if active == '/news/' else active))  # 학년별·수능 페이지는 '기출문제' 메뉴에 불이 들어옴
     g_on = act in [u for u, _ in MOE_NAV]
-    nav = ''.join((f'<button type="button" class="nav-g{" on" if g_on else ""}" aria-expanded="{"true" if g_on else "false"}" '
-                   f'onclick="var s=document.getElementById(\'nav-sub\');s.hidden=!s.hidden;this.setAttribute(\'aria-expanded\',!s.hidden)">{n}<i class="cr">▾</i></button>')
+    # 모의고사: 누르면 모의고사 첫 페이지(/english/)로 이동 — 하위 줄은 모의고사 페이지들에서만 펼쳐짐 (2026-11-23 원장님: 다른 메뉴 위에서 하위 줄만 열려 헷갈림)
+    nav = ''.join((f'<a href="/english/" class="nav-g{" on" if g_on else ""}">{n}<i class="cr">▾</i></a>')
                   if u == 'moe' else f'<a href="{u}" class="{"on " if u == act else ""}">{n}</a>' for u, n in NAV)
     nav_sub = (f'<div class="nav-sub" id="nav-sub"{"" if g_on else " hidden"}><div class="nav-sub-in">'
                + ''.join(f'<a href="{u}"{" class=on" if u == act else ""}>{n}</a>' for u, n in MOE_NAV) + '</div></div>')
@@ -1279,8 +1279,8 @@ show(h,true)||show(s)||show(t[0]&&t[0].dataset.b)})();</script>''' +
          '<li>다른 부교재 분석노트가 필요하면 아래 댓글로 교재 이름을 남겨 주세요. 요청이 많은 교재부터 추가해요.</li>'
          '</ul></div>' + ad())
 if BOOKNEWS:
-    bbody = bbody.replace('</p>', '</p>' + f'<div class="card"><style>{NEWS_CSS}</style><h2>📚 교재 소식</h2>{book_groups(BOOKNEWS, 3)}'
-                          + f'<p style="margin:10px 0 0"><a href="/books/news/">교재 소식 전체 보기 ({len(BOOKNEWS)}개) →</a></p></div>', 1)
+    # 부교재 페이지엔 신간 카드 대신 한 줄 띠만 (2026-11-23 원장님: 부교재 메뉴에 신간 소개 내용이 먼저 보여 헷갈림)
+    bbody = bbody.replace('</p>', '</p>' + f'<a class="bk-news-band" href="/books/news/">📚 <b>신간 소개</b> 새로 나온 고등 영어 교재 {len(BOOKNEWS)}권 정리 보기 →</a>', 1)
 page('/books/', 'EBS 부교재 영어 분석노트 요청 · 수능특강 라이트 | 리카수니 자료실',
      '수능특강 라이트 등 EBS 부교재 영어 분석노트. 문항 1개는 카카오톡으로 무료, 강 단위 구매도 가능. 리카수니 원장 직접 제작.', bbody,
      [('/', '홈'), ('/books/', '부교재')], '/books/', comments=('books', '부교재 요청방'))
