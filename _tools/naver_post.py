@@ -1,6 +1,6 @@
 """네이버 블로그 글 만들기 도우미 (2026-11-16~, CLAUDE.md '네이버 블로그 글')
 
-    python3 _tools/naver_post.py _tools/naver_posts/<날짜>-<자료>.txt "<썸네일 위 두 줄(<br>로 줄바꿈)>" "<파란 배지 문구>"
+    python3 _tools/naver_post.py _tools/naver_posts/<날짜>-<자료>.txt "<썸네일 위 두 줄(<br>로 줄바꿈)>" "<파란 배지 문구>" ["<골드 줄>" "<바닥 줄>"]
 
 - txt([제목]·[태그]·[대표 사진: …]·[본문]) → 같은 이름 .html (브라우저에서 열어 드래그 복사 → 네이버 본문 붙여 넣기)
 - [대표 사진: thumb-….png] 이름으로 1080 정사각형 남색 썸네일을 헤드리스 크롬으로 만들어요.
@@ -20,7 +20,7 @@ font-family:'Apple SD Gothic Neo',sans-serif;color:#fff;display:flex;flex-direct
 .s{{margin-top:34px;font-size:40px;font-weight:700;color:#FFC857}}
 .f{{position:absolute;bottom:60px;font-size:34px;color:#7d97cf;font-weight:600}}
 </style><div class="bar"></div><div class="a">이매동 코코스학원 · 리카수니</div><div class="t">{t}</div><div class="b">{b}</div>
-<div class="s">정답 근거 · 구문 · 어휘</div><div class="f">분석노트 PDF · data.likasuni.com</div>'''
+<div class="s">{s}</div><div class="f">{f}</div>'''
 
 
 def to_html(s):
@@ -59,11 +59,13 @@ def to_html(s):
 
 def main():
     src, top, badge = sys.argv[1:4]
+    sub = sys.argv[4] if len(sys.argv) > 4 else '정답 근거 · 구문 · 어휘'
+    foot = sys.argv[5] if len(sys.argv) > 5 else '분석노트 PDF · data.likasuni.com'
     thumb, doc = to_html(open(src, encoding='utf-8').read())
     open(src[:-4] + '.html', 'w', encoding='utf-8').write(doc)
     d = os.path.dirname(os.path.abspath(src))
     with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False, encoding='utf-8') as f:
-        f.write(THUMB.format(t=top, b=badge))
+        f.write(THUMB.format(t=top, b=badge, s=sub, f=foot))
     subprocess.run([CHROME, '--headless', '--disable-gpu', '--hide-scrollbars', '--window-size=1080,1080',
                     f'--screenshot={os.path.join(d, thumb)}', 'file://' + f.name], capture_output=True)
     os.unlink(f.name)
