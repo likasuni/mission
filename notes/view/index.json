@@ -172,6 +172,16 @@
 "Goldenrods in peaceful areas send alarm signals only their kin understand, but those in hostile areas send signals all neighbors can understand, which benefits both senders and receivers."
 ]
 },
+"moe-g1-2026-10-41-42": {
+"pages": 3,
+"v": 1795559317,
+"en": [
+"① Creating Web Design That Respects Users and the Environment ② The Better the Web Design, the More Data Usage Required ③ The Environmental Costs of Making Digital Devices ④ Why Do Users Prefer Autoplaying Visual Content? ⑤ User-Friendly Design: Making Purchasing Easier ① (a)e② (b)e③ (c)e④ (d)e⑤ (e) Patterns such as infinite scroll, autoplaying videos, / or requiring an account just to make a purchase / all interfere with the user's control / over their own experience. / From a sustainability perspective, / many of these patterns encourage / (a) overconsumption of data and attention.",
+"The default setting is the quietest but most powerful choice a designer makes. user wants it or not, / increasing data usage and device processing. / Autoplay (b) forces media to load and play / even for people who may never watch it. / These choices consume more energy / on both the user's device and the servers delivering the content. Take the decision by a popular music streaming platform / to replace static album artwork with short video loops by default. / This change significantly increases data usage and battery consumption, / while the option to disable it is buried (c) deep in the settings. / As a result, most users consume more resources / unless they actively search for a way to opt out.",
+"Many web design patterns weaken user control and waste data and energy, so designers should make low-impact options the default while keeping alternatives clearly available.",
+"When video loops are played by default and the option to turn them off is hidden, most users end up using more data and battery. Take the decision ~ nudges behavior in some way. / Showing consequences and highlighting options / are all forms of influence. / The ethical line is not whether nudging exists, / but whether it is transparent, reversible, / and aligned with the user's interests. In many cases, the most (d) responsible approach / is to make the lower-impact option the default, / while keeping alternatives clearly available. / Defaults are (e) powerless, / and when chosen carefully, / they can → p o w e r f u l reduce environmental impact / without removing user agency. Creating Web Design That Respects Users and the Environment I don't know whether he will succeed (or not). Whether we win or lose, we must play fairly. Setting low-impact options as the default can reduce environmental impact without taking away users' freedom to choose."
+]
+},
 "moe-g2-2025-10-20": {
 "pages": 2,
 "v": 1793658695,

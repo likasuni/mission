@@ -37,6 +37,9 @@ def main():
         g, y, m, n = sys.argv[1:5]
         src = glob.glob(os.path.join(DRIVE, '수능 모의고사', f'{y}학년도 수능', f'{int(n)}.pdf') if int(m) == 0 else  # 수능: 3 2027 0 31
                         os.path.join(DRIVE, f'고{g} 모의고사', f'{y}년 {int(m)}월 고{g}', f'{int(n)}.pdf'))
+        if not src:  # 장문 세트: 41 → '41-42.pdf', 43 → '43-45.pdf' (요청 번호 키는 41·43)
+            src = glob.glob(os.path.join(DRIVE, '수능 모의고사', f'{y}학년도 수능', f'{int(n)}-*.pdf') if int(m) == 0 else
+                            os.path.join(DRIVE, f'고{g} 모의고사', f'{y}년 {int(m)}월 고{g}', f'{int(n)}-*.pdf'))
         name, key = f'고{g} {y}년 {m}월 {n}번', f'moe-g{g}-{y}-{int(m)}-{int(n)}'
     if not src:
         sys.exit(f'PDF 를 찾지 못했어요: {name} (드라이브 업로드가 끝났는지 확인)')
