@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "isbn13": "9791175489400",
+   "title": "수능ON 고등 영어 유형독해(2027)",
+   "author": "미래엔콘텐츠연구회",
+   "publisher": "미래엔",
+   "pubDate": "2026-11-23",
+   "price": 19000,
+   "description": "",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7364811&q=%EC%88%98%EB%8A%A5ON+%EA%B3%A0%EB%93%B1+%EC%98%81%EC%96%B4+%EC%9C%A0%ED%98%95%EB%8F%85%ED%95%B4%282027%29",
+   "found": "2026-11-25",
+   "status": "new"
+  },
+  {
+   "isbn13": "9791175489394",
+   "title": "수능ON 고등 영어 소재독해(2027)",
+   "author": "미래엔콘텐츠연구회",
+   "publisher": "미래엔",
+   "pubDate": "2026-11-23",
+   "price": 17000,
+   "description": "",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7365025&q=%EC%88%98%EB%8A%A5ON+%EA%B3%A0%EB%93%B1+%EC%98%81%EC%96%B4+%EC%86%8C%EC%9E%AC%EB%8F%85%ED%95%B4%282027%29",
+   "found": "2026-11-25",
+   "status": "new"
+  },
+  {
+   "isbn13": "9791175489387",
+   "title": "수능ON 고등 영어 구조독해(2027)",
+   "author": "미래엔콘텐츠연구회",
+   "publisher": "미래엔",
+   "pubDate": "2026-11-23",
+   "price": 17000,
+   "description": "",
+   "link": "https://search.daum.net/search?w=bookpage&bookId=7364589&q=%EC%88%98%EB%8A%A5ON+%EA%B3%A0%EB%93%B1+%EC%98%81%EC%96%B4+%EA%B5%AC%EC%A1%B0%EB%8F%85%ED%95%B4%282027%29",
+   "found": "2026-11-25",
+   "status": "new"
+  },
+  {
    "isbn13": "9791175634763",
    "title": "2027 마더텅 전국연합 학력평가 기출문제집 고2 영어 어법·어휘",
    "author": "마더텅 편집부",
@@ -2089,5 +2125,5 @@
    "status": "new"
   }
  ],
- "updated": "2026-11-23"
+ "updated": "2026-11-25"
 }
