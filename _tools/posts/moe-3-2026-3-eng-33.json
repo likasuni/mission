@@ -1,0 +1,157 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 33,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 3,
+  "topic": "심오한 건물은 인간의 몸과 마음의 연장이다",
+  "date": "2026-12-10",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 33번",
+    "2026 3월 고3 영어 33번 해설",
+    "고3 3월 모의고사 33번 정답",
+    "2026 고3 3모 영어 33번",
+    "고3 모의고사 빈칸",
+    "심오한 건물은 인간의 몸과 마음의"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 33번은 건축이 사람의 행동과 감정을 이끄는 공간 연출이고, 좋은 설계자는 사는 사람의 본능적 필요를 미리 느껴 창문과 계단을 둔다는 글이에요. 그래서 심오한 건물은 ③ an extension of human bodily and mental actions and capabilities예요.",
+  "flow": [
+    [
+      "주장",
+      "모든 건축은 행동을 이끄는 공간 연출이다."
+    ],
+    [
+      "설계자",
+      "공감하는 설계자는 인간의 행동과 욕구를 직관으로 알고, 상상 속에서 미래 거주자를 대신해 집을 산다."
+    ],
+    [
+      "예시",
+      "창문은 정원을 내다보고 싶은 곳에, 계단은 오르내리고 싶은 곳에 있다."
+    ],
+    [
+      "결론",
+      "성공한 건축은 설명서가 필요 없다. 심오한 건물은 인간 몸과 마음의 연장이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "this intuitive architectural scripting resonates with the actual user/occupant's natural and instinctual needs and intentions.",
+      "ko": "이러한 직관적인 건축적 대본 쓰기는 실제 사용자의 자연스럽고 본능적인 욕구 및 의도와 공명한다.",
+      "note": "건물이 사람의 욕구·행동과 하나가 됨."
+    },
+    {
+      "en": "A correctly placed window is located exactly where the occupant wishes to look out into the garden, or where daylight is needed.",
+      "ko": "올바르게 배치된 창문은 입주자가 정원을 내다보고 싶어 하는, 또는 햇빛이 필요한 바로 그곳에 있다.",
+      "note": "건물이 사람의 행동을 그대로 이어받음 = 연장."
+    }
+  ],
+  "choices": [
+    {
+      "en": "an instrument to pass down cultural mindsets of its time",
+      "ko": "그 시대의 문화적 사고방식을 전하는 도구",
+      "why": "문화 전승 이야기는 없어요."
+    },
+    {
+      "en": "a spatial logic made independent from nonprofessional opinions",
+      "ko": "비전문가 의견과 무관한 공간 논리",
+      "why": "오히려 사용자(비전문가)의 욕구에 맞추라는 글이에요. 반대예요."
+    },
+    {
+      "en": "an extension of human bodily and mental actions and capabilities",
+      "ko": "인간의 신체적·정신적 행동과 능력의 연장",
+      "why": "정답. 사람의 행동·욕구에 맞춰 창문·계단을 두니 건물이 몸과 마음의 연장이에요."
+    },
+    {
+      "en": "an architectural expression of the designer’s aesthetic preference",
+      "ko": "설계자의 미적 취향의 건축적 표현",
+      "why": "설계자의 취향이 아니라 사용자의 필요가 핵심이에요."
+    },
+    {
+      "en": "a structure whose outward appearance masks its function",
+      "ko": "겉모습이 기능을 가리는 구조물",
+      "why": "좋은 건축은 말없이 구조와 용도를 드러낸다고 했어요. 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "on behalf of",
+      "ex": "the designer lives, uses and feels the non-existent house in his imagination on behalf of the future dweller",
+      "d": "~을 대신하여."
+    },
+    {
+      "t": "관계부사 where (선행사 생략)",
+      "ex": "is located exactly where the occupant wishes to look out into the garden",
+      "d": "~하는 곳에."
+    },
+    {
+      "t": "as (이유)",
+      "ex": "as it reveals its very structure and use in a wordless manner",
+      "d": "~ 때문에."
+    }
+  ],
+  "vocab": [
+    [
+      "architectural",
+      "건축의"
+    ],
+    [
+      "facilitate",
+      "촉진하다"
+    ],
+    [
+      "prohibit",
+      "금지하다"
+    ],
+    [
+      "inhibit",
+      "억제하다"
+    ],
+    [
+      "predetermine",
+      "미리 결정하다"
+    ],
+    [
+      "imagery",
+      "심상"
+    ],
+    [
+      "empathic",
+      "공감할 수 있는"
+    ],
+    [
+      "occupant",
+      "입주자"
+    ],
+    [
+      "instinctual",
+      "본능적인"
+    ],
+    [
+      "dweller",
+      "거주자"
+    ],
+    [
+      "profound",
+      "심오한"
+    ]
+  ],
+  "summary": {
+    "en": "Good architecture fits people's natural needs so well that a profound building works as an extension of human body and mind.",
+    "ko": "좋은 건축은 사람의 본능적 필요에 꼭 맞아서, 심오한 건물은 인간의 몸과 마음의 연장처럼 작동한다."
+  },
+  "writing": {
+    "en": "Successful architecture does not need manuals or signage for its use.",
+    "ko": "성공적인 건축은 사용을 위한 설명서나 표지판이 필요 없다."
+  },
+  "tip": "빈칸이 결론이면 앞 예시(창문·계단이 원하는 곳에)가 공통으로 말하는 것을 고르세요. ②·④처럼 사용자를 빼고 설계자 쪽으로 기운 선택지는 반대예요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 33번 정답은?",
+      "③ an extension of human bodily and mental actions and capabilities예요."
+    ],
+    [
+      "⑤번은 왜 틀리나요?",
+      "좋은 건축은 말없이 구조와 용도를 '드러낸다'고 했어요. 기능을 가린다는 ⑤는 반대예요."
+    ]
+  ]
+}

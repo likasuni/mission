@@ -1,0 +1,168 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 30,
+  "type": "어휘",
+  "points": 2,
+  "answer": 3,
+  "topic": "논문 중심 박사 과정의 한계와 폭넓은 기술을 기르는 구조화된 과정",
+  "date": "2026-12-04",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 30번",
+    "2026 3월 고2 영어 30번 해설",
+    "고2 3월 모의고사 30번 정답",
+    "2026 고2 3모 영어 30번",
+    "고2 모의고사 어휘",
+    "논문 중심 박사 과정의 한계와 폭"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 30번은 논문 중심 박사 과정이 초점을 좁혀 지식과 기술의 폭을 제한한다는 글이에요. 폭이 좁아지면 다양한 진로에 적응하는 능력을 '돕는(facilitating)' 게 아니라 '방해(hindering)'해야 앞뒤가 맞아요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "장점",
+      "특정 주제에 깊이 몰두하면 철저한 탐구와 이해가 가능하다."
+    ],
+    [
+      "한계",
+      "하지만 초점이 좁아져 관련 분야·기술에 시간을 덜 쓰고, 지식·기술의 폭이 제한된다."
+    ],
+    [
+      "대안",
+      "유럽 일부 대학은 수업·세미나·인턴십을 결합한 구조화된 과정을 도입했다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Consequently, this singular focus may limit the breadth of knowledge and skills developed during the programme, potentially ③ facilitating students' ability to adapt to diverse career paths",
+      "ko": "결과적으로, 이러한 단일한 초점은 지식과 기술의 폭을 제한하여, 잠재적으로 학생들이 다양한 진로에 적응하는 능력을 촉진(→저해)할 수 있다",
+      "note": "limit(제한)의 결과인데 facilitating(촉진)은 방향이 반대예요. hindering이 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① thorough",
+      "ko": "철저한",
+      "why": "적절. 깊이 몰두하면 '철저한' 탐구가 가능해요."
+    },
+    {
+      "en": "② less",
+      "ko": "더 적은",
+      "why": "적절. 연구에 몰두하면 다른 분야에 '더 적은' 시간을 써요."
+    },
+    {
+      "en": "③ facilitating",
+      "ko": "촉진하는 (→ 저해하는)",
+      "why": "정답(부적절). 폭이 제한되면 적응 능력을 '저해(hindering)'해요."
+    },
+    {
+      "en": "④ recognised",
+      "ko": "인식했다",
+      "why": "적절. 대학들이 한계를 '인식하고' 새 방식을 시작했어요."
+    },
+    {
+      "en": "⑤ transferable",
+      "ko": "전이 가능한",
+      "why": "적절. 여러 진로에 쓸 수 있는 '전이 가능한' 기술이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "allow for",
+      "ex": "this deep dive into a particular area allows for thorough exploration",
+      "d": "~을 가능하게 하다, 고려하다."
+    },
+    {
+      "t": "result in",
+      "ex": "it can also result in narrowing the focus",
+      "d": "~의 결과를 낳다. 뒤에 명사·동명사."
+    },
+    {
+      "t": "by + -ing",
+      "ex": "By incorporating coursework, seminars, workshops and internships into the curriculum",
+      "d": "~함으로써. incorporate A into B: A를 B에 통합하다."
+    }
+  ],
+  "vocab": [
+    [
+      "significant",
+      "상당한"
+    ],
+    [
+      "thorough",
+      "철저한"
+    ],
+    [
+      "exploration",
+      "탐구"
+    ],
+    [
+      "result in",
+      "~의 결과를 가져오다"
+    ],
+    [
+      "absorbed in",
+      "~에 몰두한"
+    ],
+    [
+      "immediate",
+      "직접적인"
+    ],
+    [
+      "consequently",
+      "결과적으로"
+    ],
+    [
+      "breadth",
+      "폭, 너비"
+    ],
+    [
+      "potentially",
+      "잠재적으로"
+    ],
+    [
+      "adapt to",
+      "~에 적응하다"
+    ],
+    [
+      "diverse",
+      "다양한"
+    ],
+    [
+      "address",
+      "처리하다"
+    ],
+    [
+      "interdisciplinary",
+      "학제 간"
+    ],
+    [
+      "implement",
+      "시행하다"
+    ],
+    [
+      "transferable",
+      "전이 가능한"
+    ],
+    [
+      "incorporate",
+      "통합하다"
+    ]
+  ],
+  "summary": {
+    "en": "Thesis-based doctoral programmes can narrow students' skills, so some universities now combine research with broader training.",
+    "ko": "논문 중심 박사 과정은 학생의 기술을 좁힐 수 있어서, 일부 대학은 연구에 폭넓은 훈련을 결합하고 있다."
+  },
+  "writing": {
+    "en": "This singular focus may limit the breadth of knowledge and skills.",
+    "ko": "이러한 단일한 초점은 지식과 기술의 폭을 제한할 수 있다."
+  },
+  "tip": "낱말 쓰임은 밑줄 앞의 원인(limit 제한)과 밑줄의 결과가 같은 방향인지 보세요. 부정적 원인 뒤에 긍정 단어(facilitating)가 오면 의심하세요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 30번 정답은?",
+      "③ facilitating이에요. hindering(저해하는)이 맞아요."
+    ],
+    [
+      "② less는 왜 맞나요?",
+      "연구에 깊이 몰두하면 관련 분야를 탐색하는 데 '더 적은' 시간을 쓰게 되니 맞아요."
+    ]
+  ]
+}

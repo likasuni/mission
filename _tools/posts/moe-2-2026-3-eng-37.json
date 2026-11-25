@@ -1,0 +1,149 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 37,
+  "type": "글의 순서",
+  "points": 3,
+  "answer": 2,
+  "topic": "언어 비교는 모든 언어에 있는 친족 어휘에서 시작한다",
+  "date": "2026-12-05",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 37번",
+    "2026 3월 고2 영어 37번 해설",
+    "고2 3월 모의고사 37번 정답",
+    "2026 고2 3모 영어 37번",
+    "고2 모의고사 글의 순서",
+    "언어 비교는 모든 언어에 있는 친"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 37번은 언어를 비교할 때 모든 언어에 있는 '어머니·아버지' 같은 친족 용어로 시작하면 좋다는 글이에요. 주어진 글 → (B) 친족 어휘 범주 정의, 일부 관계에만 명칭 → (A) And 명칭이 있을 확률은 예측 가능, 핵심 용어 → (C) By contrast 덜 중심적인 용어 순서라 정답은 ② (B)-(A)-(C)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "언어 비교는 모든 언어에 있는 것(어머니·아버지)부터 시작하면 좋다."
+    ],
+    [
+      "(B)",
+      "여기에 다른 가족 관계를 더하면 친족 어휘 범주가 된다. 언어는 일부 관계에만 명칭이 있다."
+    ],
+    [
+      "(A)",
+      "그리고 명칭이 있을 확률은 예측 가능하다. 모든 언어에 핵심 용어(어머니·아버지)가 있다."
+    ],
+    [
+      "(C)",
+      "반면 덜 중심적인 관계는 핵심 용어로 만든다 (시어머니, 의붓아버지)."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "(B) If we add other family relationships to this category",
+      "ko": "(B) 만약 이 범주에 다른 가족 관계를 추가하면",
+      "note": "this category = 주어진 글의 mother and father. 주어진 글 → (B)."
+    },
+    {
+      "en": "(A) … all languages have a core set of kinship terms—like mother and father. / (C) By contrast, terms for less central category members are often built up from the core terms",
+      "ko": "(A) 모든 언어에는 핵심 친족 용어들이 있다. / (C) 반면, 덜 중심적인 구성원에 대한 용어는 핵심 용어를 기반으로 만들어진다.",
+      "note": "core(핵심) ↔ By contrast less central(덜 중심적). (A) → (C)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A)-(C)-(B)",
+      "ko": "",
+      "why": "(A)의 And는 (B)의 '일부 관계에만 명칭'을 이어받아야 해요. 주어진 글 바로 뒤는 어색해요."
+    },
+    {
+      "en": "(B)-(A)-(C)",
+      "ko": "",
+      "why": "정답. 범주 정의(B) → 명칭이 있을 확률·핵심 용어(A) → 반면 덜 중심적 용어(C)."
+    },
+    {
+      "en": "(B)-(C)-(A)",
+      "ko": "",
+      "why": "(C)의 By contrast는 (A)의 core terms와 대조라서 (A) 뒤에 와야 해요."
+    },
+    {
+      "en": "(C)-(A)-(B)",
+      "ko": "",
+      "why": "(C)가 먼저 오면 By contrast가 대조할 대상이 없어요."
+    },
+    {
+      "en": "(C)-(B)-(A) [38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "ko": "",
+      "why": "(C)가 맨 앞이면 대조 대상(core terms)이 아직 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "it helps to부정사",
+      "ex": "it helps to start with something that you are confident you can find in all languages",
+      "d": "가주어 it, ~하는 것이 도움이 된다. you are confident는 삽입절."
+    },
+    {
+      "t": "명령문 Take for example",
+      "ex": "Take for example signs or words for mother and father.",
+      "d": "예를 들어 ~를 보자."
+    },
+    {
+      "t": "be built up from",
+      "ex": "terms for less central category members are often built up from the core terms",
+      "d": "~으로부터 만들어지다."
+    }
+  ],
+  "vocab": [
+    [
+      "compare",
+      "비교하다"
+    ],
+    [
+      "confident",
+      "확신하는"
+    ],
+    [
+      "probability",
+      "확률"
+    ],
+    [
+      "core",
+      "핵심의"
+    ],
+    [
+      "term",
+      "용어"
+    ],
+    [
+      "define",
+      "정의하다"
+    ],
+    [
+      "terminology",
+      "어휘 체계"
+    ],
+    [
+      "typically",
+      "일반적으로"
+    ],
+    [
+      "modify",
+      "변형하다, 수정하다"
+    ]
+  ],
+  "summary": {
+    "en": "Comparing kinship terms shows that all languages have core terms like mother and father, while other relations are built from them.",
+    "ko": "친족 용어를 비교하면 모든 언어에 어머니·아버지 같은 핵심 용어가 있고, 다른 관계는 그것으로부터 만들어진다는 것을 알 수 있다."
+  },
+  "writing": {
+    "en": "All languages have a core set of kinship terms like mother and father.",
+    "ko": "모든 언어에는 어머니와 아버지 같은 핵심 친족 용어가 있다."
+  },
+  "tip": "By contrast가 보이면 앞에 대조할 짝이 있어야 해요. (C)의 less central ↔ (A)의 core를 찾으면 (A) → (C)가 고정돼요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 37번 정답은?",
+      "② (B)-(A)-(C)예요."
+    ],
+    [
+      "(B)가 첫 번째인 이유는?",
+      "(B)의 this category가 주어진 글의 '어머니·아버지'를 가리켜요. 그 범주를 넓혀 친족 어휘를 정의하는 단락이에요."
+    ]
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 24,
+  "type": "글의 제목",
+  "points": 3,
+  "answer": 2,
+  "topic": "스피커 소리는 방마다 다르다 — 공간이 소리의 경로에 들어올 때",
+  "date": "2026-12-03",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 24번",
+    "2026 3월 고2 영어 24번 해설",
+    "고2 3월 모의고사 24번 정답",
+    "2026 고2 3모 영어 24번",
+    "고2 모의고사 글의 제목",
+    "스피커 소리는 방마다 다르다 — "
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 24번은 헤드폰 소리는 어디서나 같지만, 스피커 소리는 방이 신호 경로의 일부가 되어 방마다·위치마다 다르게 들린다는 글이에요. 정답은 ② When Space Enters the Sound's Route to the Ear예요.",
+  "flow": [
+    [
+      "주장",
+      "방은 그 안의 소리에 자기 특성을 입혀 자체 '소리'를 가진다."
+    ],
+    [
+      "대조 1",
+      "헤드폰: 방이 재생 경로에 없어서 어디서나 똑같이 들린다."
+    ],
+    [
+      "대조 2",
+      "스피커: 방이 신호 경로의 일부라 방마다, 위치마다 다르게 들린다."
+    ],
+    [
+      "확장",
+      "악기 녹음도 방과 마이크 위치에 따라 달라진다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "That's because the room is not part of that playback signal path.",
+      "ko": "이는 방이 재생 신호 경로의 일부가 아니기 때문이다.",
+      "note": "헤드폰은 공간이 경로에 없어요."
+    },
+    {
+      "en": "that is because the room is now part of the signal path.",
+      "ko": "이는 그 방이 신호 경로의 일부가 되기 때문이다.",
+      "note": "스피커는 공간(방)이 소리의 경로(route)에 들어와요 = ②."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Headphones vs. Loudspeakers: Which One Wins?",
+      "ko": "헤드폰 대 스피커: 어느 쪽이 이길까?",
+      "why": "어느 쪽이 더 좋은지 비교하는 글이 아니에요."
+    },
+    {
+      "en": "When Space Enters the Sound’s Route to the Ear",
+      "ko": "공간이 귀로 가는 소리의 경로에 들어올 때",
+      "why": "정답. 방(공간)이 신호 경로의 일부가 되면 소리가 달라진다는 글이에요."
+    },
+    {
+      "en": "Musical Instruments as Key Players in Sound Quality",
+      "ko": "음질의 핵심 주자로서의 악기",
+      "why": "악기는 마지막 예시일 뿐이에요."
+    },
+    {
+      "en": "From Signal to Sound: Principles of Sound Transmission",
+      "ko": "신호에서 소리로: 소리 전달의 원리",
+      "why": "소리 전달 원리 일반이 아니라 '공간의 영향'이 핵심이에요."
+    },
+    {
+      "en": "Chasing Consistent Sound Effects Through Shifting Spaces",
+      "ko": "변하는 공간 속에서 일관된 음향 효과 쫓기",
+      "why": "일관된 소리를 쫓는 게 아니라 공간마다 달라진다는 글이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "impose A on B",
+      "ex": "they impose their own characteristics on audio signals",
+      "d": "A를 B에 부여하다(강요하다)."
+    },
+    {
+      "t": "No matter what",
+      "ex": "No matter what acoustical environment we are in, the headphones sound the same.",
+      "d": "어떤 ~이든 (= Whatever)."
+    },
+    {
+      "t": "cause + O + to부정사",
+      "ex": "will cause the sound you hear to be different",
+      "d": "목적어가 ~하게 하다. you hear는 목적격 관계대명사가 생략된 관계절."
+    }
+  ],
+  "vocab": [
+    [
+      "impose",
+      "~ on … ~을 …에게 부여하다"
+    ],
+    [
+      "characteristics",
+      "특성"
+    ],
+    [
+      "remarkable",
+      "놀라운"
+    ],
+    [
+      "playback",
+      "재생"
+    ],
+    [
+      "path",
+      "경로"
+    ]
+  ],
+  "summary": {
+    "en": "Unlike headphones, loudspeakers sound different in every room because the room becomes part of the sound's path.",
+    "ko": "헤드폰과 달리 스피커는 방이 소리 경로의 일부가 되기 때문에 방마다 다르게 들린다."
+  },
+  "writing": {
+    "en": "Every room where you set up the loudspeaker will cause the sound you hear to be different.",
+    "ko": "스피커를 설치하는 모든 방은 당신이 듣는 소리를 다르게 만든다."
+  },
+  "tip": "제목 문제는 글이 반복하는 핵심 표현(signal path, room)을 비유로 바꾼 선택지를 찾으세요. ①처럼 비교 대상만 제목으로 내세운 선택지는 함정이에요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 24번 정답은?",
+      "② When Space Enters the Sound's Route to the Ear예요."
+    ],
+    [
+      "①번은 왜 틀리나요?",
+      "헤드폰과 스피커 중 무엇이 나은지가 아니라, 공간이 경로에 들어오면 소리가 달라진다는 게 핵심이에요."
+    ]
+  ]
+}

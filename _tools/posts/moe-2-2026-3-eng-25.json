@@ -1,0 +1,129 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 4,
+  "topic": "후기 요청 방식별로 응답할 의향이 있는 미국 소비자 비율 (2023~2025)",
+  "date": "2026-12-03",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 25번",
+    "2026 3월 고2 영어 25번 해설",
+    "고2 3월 모의고사 25번 정답",
+    "2026 고2 3모 영어 25번",
+    "고2 모의고사 도표",
+    "후기 요청 방식별로 응답할 의향이"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 25번은 이메일·대면·소셜 미디어·문자 메시지로 후기를 요청받을 때 응답할 의향이 있는 미국 소비자 비율 도표예요. 이메일과 대면의 차이는 2023년 1%p, 2024년 4%p라서 '2024년에 더 작았다'는 ④가 틀려요. 정답은 ④예요.",
+  "flow": [
+    [
+      "도표",
+      "2023 → 2024 → 2025 (%)"
+    ],
+    [
+      "이메일",
+      "34 → 32 → 40"
+    ],
+    [
+      "대면",
+      "33 → 28 → 27"
+    ],
+    [
+      "소셜 미디어",
+      "31 → 27 → 27"
+    ],
+    [
+      "문자 메시지",
+      "23 → 25 → 27"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The gap between the percentages of consumers who were likely to respond in an email and in person was smaller in 2024 than in 2023.",
+      "ko": "이메일과 대면으로 응답할 의향이 있는 소비자 비율의 차이는 2023년보다 2024년에 더 작았다.",
+      "note": "2023년 34−33=1, 2024년 32−28=4. 2024년이 더 커요. ④ 불일치."
+    },
+    {
+      "en": "In 2025, the percentages of consumers who were likely to respond to each review request method were the same except for those who were likely to respond in an email.",
+      "ko": "2025년에, 이메일을 제외하고는 각 방식의 비율이 같았다.",
+      "note": "2025년 대면·소셜·문자 모두 27%. ② 일치."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 매년 이메일이 네 방식 중 가장 높았다",
+      "ko": "일치",
+      "why": "일치. 2023년 34, 2024년 32, 2025년 40으로 매년 1위예요."
+    },
+    {
+      "en": "② 2025년 이메일을 빼면 나머지 비율이 모두 같았다",
+      "ko": "일치",
+      "why": "일치. 2025년 대면·소셜·문자 모두 27%예요."
+    },
+    {
+      "en": "③ 2024년 대면이 소셜 미디어보다 높았다",
+      "ko": "일치",
+      "why": "일치. 2024년 대면 28% > 소셜 27%."
+    },
+    {
+      "en": "④ 이메일과 대면의 차이가 2023년보다 2024년에 더 작았다",
+      "ko": "불일치",
+      "why": "정답(불일치). 차이가 2023년 1%p → 2024년 4%p로 오히려 커졌어요."
+    },
+    {
+      "en": "⑤ 문자 메시지 비율이 2023~2025년 매년 늘었다",
+      "ko": "일치",
+      "why": "일치. 23 → 25 → 27로 매년 늘었어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "except for",
+      "ex": "were the same except for those who were likely to respond in an email",
+      "d": "~을 제외하고. those는 consumers를 받아요."
+    },
+    {
+      "t": "비교 표현 smaller ~ than",
+      "ex": "was smaller in 2024 than in 2023",
+      "d": "두 해를 비교할 땐 각 해의 차이를 직접 빼서 비교해요."
+    },
+    {
+      "t": "be likely to",
+      "ex": "consumers who were likely to respond",
+      "d": "~할 가능성이 있다, ~할 의향이 있다."
+    }
+  ],
+  "vocab": [
+    [
+      "consumer",
+      "소비자"
+    ],
+    [
+      "in person",
+      "대면하여"
+    ],
+    [
+      "except for",
+      "~을 제외하고"
+    ]
+  ],
+  "summary": {
+    "en": "The graph shows how likely U.S. consumers were to respond to four review request methods, and email was the highest every year.",
+    "ko": "도표는 미국 소비자가 네 가지 후기 요청 방식에 응답할 의향을 보여 주며, 이메일이 매년 가장 높았다."
+  },
+  "writing": {
+    "en": "In each year, the percentage of consumers who were likely to respond in an email was the highest.",
+    "ko": "매년 이메일에 응답할 의향이 있는 소비자 비율이 가장 높았다."
+  },
+  "tip": "도표에서 '차이(gap)가 더 작았다/컸다'는 두 해의 차이를 각각 계산해 비교하세요. 막대 높이만 보고 판단하면 틀리기 쉬워요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 25번 정답은?",
+      "④예요. 이메일과 대면의 차이는 2023년 1%p, 2024년 4%p라서 2024년이 더 커요."
+    ],
+    [
+      "②번은 왜 맞나요?",
+      "2025년 대면·소셜 미디어·문자 메시지가 모두 27%로 같고, 이메일만 40%예요."
+    ]
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 29,
+  "type": "어법",
+  "points": 2,
+  "answer": 4,
+  "topic": "산업 혁명이 만든 새 제조 방식 — 현대적 피아노 공장의 탄생",
+  "date": "2026-12-04",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 29번",
+    "2026 3월 고2 영어 29번 해설",
+    "고2 3월 모의고사 29번 정답",
+    "2026 고2 3모 영어 29번",
+    "고2 모의고사 어법",
+    "산업 혁명이 만든 새 제조 방식 "
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 29번은 산업 혁명이 견습생 제도 대신 현대적 공장이라는 새 제조 방식을 만들었다는 글이에요. The development of a true piano factory가 주어인데 문장에 진짜 동사가 없어서 ④ occurring은 occurred가 되어야 해요. 정답은 ④예요.",
+  "flow": [
+    [
+      "주장",
+      "산업 혁명은 새 물건뿐 아니라 새 제조 과정(현대적 공장)을 만들었다."
+    ],
+    [
+      "이전",
+      "1850년 이전 피아노 가게는 견습생 제도, 한 번에 한 대씩 만들었다."
+    ],
+    [
+      "변화",
+      "진정한 피아노 공장은 미국에서 먼저 생겨 효율과 품질을 높였다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The development of a true piano factory ④ occurring first in the United States, led by Jonas Chickering in Boston",
+      "ko": "진정한 피아노 공장의 발전은 미국에서 먼저 일어났는데, 보스턴의 Jonas Chickering이 주도했다",
+      "note": "주어 The development ~ 뒤에 동사가 없어요. occurring → occurred."
+    },
+    {
+      "en": "The larger piano shops ② did have specialists",
+      "ko": "더 큰 피아노 가게들에는 전문가가 (분명히) 있었다",
+      "note": "did + 동사원형은 강조의 조동사. 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① in which",
+      "ko": "전치사 + 관계대명사",
+      "why": "적절. 뒤에 완전한 절(a master builder taught ~)이 와서 전치사 + 관계대명사가 맞아요."
+    },
+    {
+      "en": "② did have",
+      "ko": "강조의 did",
+      "why": "적절. 동사 have를 강조하는 did(과거 시제)."
+    },
+    {
+      "en": "③ made",
+      "ko": "수동태 과거분사",
+      "why": "적절. 피아노가 '만들어진' 것이라 were made(수동)."
+    },
+    {
+      "en": "④ occurring",
+      "ko": "occurring → occurred",
+      "why": "정답(틀림). 주어 The development of a true piano factory에 대한 동사가 없어요. occurred가 맞아요."
+    },
+    {
+      "en": "⑤ its",
+      "ko": "소유격 대명사",
+      "why": "적절. one of the factories(단수)를 받는 its."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "문장의 동사 찾기",
+      "ex": "The development of a true piano factory occurred first in the United States",
+      "d": "주어 뒤에 -ing만 있으면 문장이 끝나지 않아요. 진짜 동사(occurred)가 있어야 해요."
+    },
+    {
+      "t": "강조의 do/does/did",
+      "ex": "The larger piano shops did have specialists",
+      "d": "did + 동사원형: 정말로 ~했다."
+    },
+    {
+      "t": "no more than",
+      "ex": "produced no more than 5-10 pianos per year per worker",
+      "d": "단지 ~, 겨우 ~ (= only)."
+    }
+  ],
+  "vocab": [
+    [
+      "Industrial Revolution",
+      "산업 혁명"
+    ],
+    [
+      "invent",
+      "발명하다"
+    ],
+    [
+      "manufacturing",
+      "제조"
+    ],
+    [
+      "prior to",
+      "~ 이전에"
+    ],
+    [
+      "trade",
+      "업계"
+    ],
+    [
+      "specialist",
+      "전문가"
+    ],
+    [
+      "hammer",
+      "(피아노의) 해머"
+    ],
+    [
+      "efficiency",
+      "효율성"
+    ],
+    [
+      "casting",
+      "주조 (틀에서 찍어 물건을 만드는 방식)"
+    ],
+    [
+      "plate",
+      "(금속 따위의) 판"
+    ]
+  ],
+  "summary": {
+    "en": "The Industrial Revolution created the modern factory, which made piano making more efficient and better in quality.",
+    "ko": "산업 혁명은 현대적 공장을 만들어 피아노 제작을 더 효율적이고 질 좋게 만들었다."
+  },
+  "writing": {
+    "en": "The Industrial Revolution invented a new process for manufacturing: the modern factory.",
+    "ko": "산업 혁명은 제조의 새로운 과정, 즉 현대적 공장을 만들어 냈다."
+  },
+  "tip": "밑줄이 -ing·p.p.면 그 문장에 진짜 동사가 따로 있는지 먼저 확인하세요. led by ~ 같은 분사구가 길게 붙어 있어 동사가 없는 걸 놓치기 쉬워요.",
+  "note": "④ 뒤에 led by ~가 이어져서 문장이 완성된 것처럼 보여요. 주어(The development) 하나에 동사가 하나는 꼭 있어야 한다는 기본부터 확인하세요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 29번 정답은?",
+      "④ occurring이에요. 문장의 동사가 없어서 occurred가 되어야 해요."
+    ],
+    [
+      "② did have는 왜 맞나요?",
+      "did가 동사 have를 강조하는 조동사예요. '분명히 있었다'는 뜻이에요."
+    ]
+  ]
+}

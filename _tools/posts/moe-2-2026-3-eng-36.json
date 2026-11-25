@@ -1,0 +1,153 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 36,
+  "type": "글의 순서",
+  "points": 2,
+  "answer": 5,
+  "topic": "농업 혁신과 늘어나는 인구, 줄어드는 농경지",
+  "date": "2026-12-05",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 36번",
+    "2026 3월 고2 영어 36번 해설",
+    "고2 3월 모의고사 36번 정답",
+    "2026 고2 3모 영어 36번",
+    "고2 모의고사 글의 순서",
+    "농업 혁신과 늘어나는 인구, 줄어"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 36번은 기원전부터 이어진 농업이 혁신으로 생산성을 높였지만, 늘어나는 인구에 비해 농경지는 제한되고 줄고 있다는 글이에요. 주어진 글 → (C) 수천 년의 혁신, 그러나 인구 증가 → (B) 2050년 인구와 제한된 땅 → (A) 정치·경제 요인 '또한', 줄어드는 농경지 순서라 정답은 ⑤ (C)-(B)-(A)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "기원전 9500년 Levant에서 이미 농작물을 재배했다."
+    ],
+    [
+      "(C)",
+      "수천 년의 혁신이 생산성을 높였지만, 인구 증가로 식량은 늘 더 필요하다."
+    ],
+    [
+      "(B)",
+      "2050년 97억 명, 식량 70% 증산 필요. 그러나 기후·지형 등으로 농사에 맞는 땅은 일부뿐."
+    ],
+    [
+      "(A)",
+      "정치·경제 요인도 토지 이용에 영향, 실제로 농경지는 줄어 왔다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "(C) Over the millennia, continuous innovations have boosted agricultural productivity",
+      "ko": "(C) 수천 년 동안, 지속적인 혁신은 농업 생산성을 증가시켰다",
+      "note": "기원전 9500년(주어진 글) → Over the millennia로 시간이 이어져요."
+    },
+    {
+      "en": "(B) … only a small portion of the Earth's surface is suitable for farming due to limitations such as climate, topography, soil quality, and technology. / (A) Political and economic factors … also influence agricultural land use.",
+      "ko": "(B) 기후, 지형, 토양, 기술 등의 제한으로 지구 표면의 일부만 농업에 적합하다. / (A) 정치 및 경제적 요인 또한 농업용 토지 사용에 영향을 미친다.",
+      "note": "(B)의 제한 요인들에 (A)가 also로 다른 요인을 더해요. (B) → (A)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A)-(C)-(B)",
+      "ko": "",
+      "why": "(A)의 also는 앞에 다른 요인(B)이 있어야 해요."
+    },
+    {
+      "en": "(B)-(A)-(C)",
+      "ko": "",
+      "why": "(B)의 2050년 인구 예측은 (C)의 '인구 증가' 뒤에 와야 자연스러워요."
+    },
+    {
+      "en": "(B)-(C)-(A)",
+      "ko": "",
+      "why": "(A)가 (C) 뒤에 오면 also가 받을 요인이 없어요."
+    },
+    {
+      "en": "(C)-(A)-(B)",
+      "ko": "",
+      "why": "(C) 다음 (A)가 오면 also가 받을 요인이 없어요."
+    },
+    {
+      "en": "(C)-(B)-(A)",
+      "ko": "",
+      "why": "정답. 고대 재배 → 수천 년 혁신·인구 증가 → 2050년 수요와 제한된 땅 → 다른 요인과 줄어드는 농경지."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "as early as",
+      "ex": "various crops were being cultivated as early as 9500 BC",
+      "d": "일찍이 ~에. 과거진행 수동(were being cultivated)."
+    },
+    {
+      "t": "It is projected that ~",
+      "ex": "It is projected that by 2050, the world's population will increase to 9.7 billion",
+      "d": "~할 것으로 예상된다."
+    },
+    {
+      "t": "계속적 용법 which (앞 절 전체)",
+      "ex": "…, which will require global food production to rise by at least 70%",
+      "d": "which가 앞 내용(인구 증가)을 받아요. require + O + to부정사."
+    }
+  ],
+  "vocab": [
+    [
+      "cultivate",
+      "경작하다"
+    ],
+    [
+      "density",
+      "밀도"
+    ],
+    [
+      "decline",
+      "감소하다"
+    ],
+    [
+      "suitable",
+      "적합한"
+    ],
+    [
+      "millennia",
+      "수천 년"
+    ],
+    [
+      "continuous",
+      "지속적인"
+    ],
+    [
+      "boost",
+      "증가시키다"
+    ],
+    [
+      "productivity",
+      "생산성"
+    ],
+    [
+      "manual",
+      "손으로 하는, 육체노동의"
+    ],
+    [
+      "labor",
+      "노동"
+    ]
+  ],
+  "summary": {
+    "en": "Agriculture has improved over thousands of years, but growing population and limited, shrinking farmland make food production a challenge.",
+    "ko": "농업은 수천 년 동안 발전했지만, 늘어나는 인구와 제한되고 줄어드는 농경지 때문에 식량 생산은 어려운 과제다."
+  },
+  "writing": {
+    "en": "The growing global population will always demand more food.",
+    "ko": "증가하는 세계 인구는 계속 더 많은 식량을 필요로 할 것이다."
+  },
+  "tip": "순서 문제에서 also가 보이면 앞에 비슷한 종류의 내용이 먼저 나와야 해요. (A)의 also → (B)의 제한 요인 뒤라는 게 열쇠예요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 36번 정답은?",
+      "⑤ (C)-(B)-(A)예요."
+    ],
+    [
+      "(A)가 마지막인 이유는?",
+      "(A)는 정치·경제 요인도(also) 영향을 준다고 해요. 기후·지형 같은 제한 요인을 말한 (B) 뒤에 와야 자연스러워요."
+    ]
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 19,
+  "type": "심경 변화",
+  "points": 2,
+  "answer": 1,
+  "topic": "전학 온 첫날 불안했던 Oliver가 말을 걸어 준 친구 덕분에 안심하다",
+  "date": "2026-12-02",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 19번",
+    "2026 3월 고2 영어 19번 해설",
+    "고2 3월 모의고사 19번 정답",
+    "2026 고2 3모 영어 19번",
+    "고2 모의고사 심경 변화",
+    "전학 온 첫날 불안했던 Olive"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 19번은 새 학교 구내식당에서 불안해하던 Oliver에게 수학 수업 친구가 다가와 말을 걸자 마음이 놓이는 이야기예요. 앞은 nervous, 뒤는 relieved라서 정답은 ① nervous → relieved예요.",
+  "flow": [
+    [
+      "불안",
+      "시끄러운 식당에서 쟁반을 꽉 쥐고, 새 학교라 부담과 불안을 느낀다."
+    ],
+    [
+      "걱정",
+      "구석에 앉아 한숨 쉬며 남은 하루를 버틸 수 있을지 걱정한다."
+    ],
+    [
+      "전환",
+      "수학 수업 친구가 맞은편에 쟁반을 놓으며 말을 건다."
+    ],
+    [
+      "안심",
+      "보이지 않는 벽이 녹아내리고, 긴장이 풀려 밝게 웃는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Not knowing how the day would go made him feel anxious.",
+      "ko": "하루가 어떻게 흘러갈지 모른다는 것이 그를 불안하게 느끼도록 만들었다.",
+      "note": "anxious·gripped his tray tightly·heavy sigh → 앞 심경 nervous."
+    },
+    {
+      "en": "Starting to feel at ease, he smiled brightly at the boy.",
+      "ko": "긴장이 풀리는 것을 느끼기 시작하며, 그는 소년을 향해 밝게 웃었다.",
+      "note": "wall melt away·at ease·smiled brightly → 뒤 심경 relieved."
+    }
+  ],
+  "choices": [
+    {
+      "en": "nervous → relieved",
+      "ko": "긴장한 → 안도한",
+      "why": "정답. 불안(anxious, 한숨) → 안심(at ease, 밝은 웃음)."
+    },
+    {
+      "en": "curious → regretful",
+      "ko": "호기심 있는 → 후회하는",
+      "why": "호기심·후회는 나오지 않아요."
+    },
+    {
+      "en": "bored → thrilled",
+      "ko": "지루한 → 신이 난",
+      "why": "지루한 게 아니라 불안했어요. 뒤도 신남보다 안도예요."
+    },
+    {
+      "en": "lonely → indifferent",
+      "ko": "외로운 → 무관심한",
+      "why": "앞은 외로움과 비슷하지만, 뒤가 무관심이 아니라 반가움·안도예요."
+    },
+    {
+      "en": "impressed → doubtful",
+      "ko": "감동한 → 의심하는",
+      "why": "감동·의심과는 관계없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사 주어 + make + O + 동사원형",
+      "ex": "Not knowing how the day would go made him feel anxious.",
+      "d": "동명사구(Not knowing ~)가 주어, 사역동사 made + 목적어 + 동사원형(feel)."
+    },
+    {
+      "t": "분사구문",
+      "ex": "Looking around the noisy cafeteria, Oliver gripped his tray tightly.",
+      "d": "= As he looked around ~. 주어는 Oliver예요."
+    },
+    {
+      "t": "seem to부정사",
+      "ex": "The invisible wall around Oliver seemed to melt away.",
+      "d": "~하는 것 같았다."
+    }
+  ],
+  "vocab": [
+    [
+      "Oliver",
+      "주변의 보이지 않는 벽이 녹아 사라지는 것 같"
+    ],
+    [
+      "grip",
+      "꽉 쥐다"
+    ],
+    [
+      "weight",
+      "부담"
+    ],
+    [
+      "anxious",
+      "불안한"
+    ],
+    [
+      "sigh",
+      "한숨"
+    ],
+    [
+      "by the way",
+      "그런데"
+    ],
+    [
+      "invisible",
+      "보이지 않는"
+    ],
+    [
+      "melt",
+      "녹다"
+    ],
+    [
+      "at ease",
+      "긴장이 풀리는, 편안한"
+    ]
+  ],
+  "summary": {
+    "en": "Oliver felt nervous on his first day at a new school, but he felt relieved when a classmate came to sit with him.",
+    "ko": "Oliver는 새 학교 첫날 긴장했지만, 반 친구가 와서 함께 앉자 안도했다."
+  },
+  "writing": {
+    "en": "Not knowing how the day would go made him feel anxious.",
+    "ko": "하루가 어떻게 흘러갈지 모른다는 것이 그를 불안하게 만들었다."
+  },
+  "tip": "심경 변화는 전환점(Just then) 앞뒤를 나눠 보세요. 몸의 반응(쟁반을 꽉 쥠, 한숨)과 비유(벽이 녹음)가 감정 단서예요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 19번 정답은?",
+      "① nervous → relieved예요."
+    ],
+    [
+      "④ lonely는 왜 안 되나요?",
+      "앞은 외롭고 불안한 느낌이 맞지만, 뒤가 indifferent(무관심한)가 아니라 마음이 놓인 relieved예요."
+    ]
+  ]
+}

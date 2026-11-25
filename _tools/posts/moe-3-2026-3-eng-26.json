@@ -1,0 +1,144 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 26,
+  "type": "내용 불일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "Michigan 최초의 주 지질학자이자 Detroit 시장 Douglass Houghton",
+  "date": "2026-12-08",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 26번",
+    "2026 3월 고3 영어 26번 해설",
+    "고3 3월 모의고사 26번 정답",
+    "2026 고3 3모 영어 26번",
+    "고3 모의고사 내용 불일치",
+    "Michigan 최초의 주 지질학"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 26번은 미국의 지질학자이자 의사 Douglass Houghton의 일생을 다룬 인물 글이에요. 그는 처음엔 시장직을 망설였지만 친구들의 조언을 듣고 '받아들여' 두 번 임기를 지냈어요. 그래서 '시장직을 거절했다'는 ⑤가 틀려요.",
+  "flow": [
+    [
+      "성장",
+      "1809년 뉴욕 출생, 1829년 Rensselaer Scientific School 학위."
+    ],
+    [
+      "경력",
+      "1830년 Detroit에서 인기 과학 강연자, 1831년 의사 면허."
+    ],
+    [
+      "전환점",
+      "1837년 Michigan 최초의 주 지질학자."
+    ],
+    [
+      "시장",
+      "1842년 Detroit 시장 당선, 망설였지만 친구 조언으로 수락해 두 번 재임."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Upon hearing the advice of friends, he accepted the mayor's position and served two terms.",
+      "ko": "친구들의 조언을 듣자마자, 그는 시장직을 받아들였고 두 번 임기를 지냈다.",
+      "note": "accepted(수락) ↔ ⑤ 거절. 불일치."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Rensselaer Scientific School에서 학위를 받았다.",
+      "ko": "",
+      "why": "일치. earned a degree in 1829 at the Rensselaer Scientific School."
+    },
+    {
+      "en": "Detroit에서 인기 있는 과학 강연자가 되었다.",
+      "ko": "",
+      "why": "일치. he soon became a popular science lecturer (in Detroit)."
+    },
+    {
+      "en": "1831년에 면허를 취득했다.",
+      "ko": "",
+      "why": "일치. studied medicine and earned his license in 1831."
+    },
+    {
+      "en": "Michigan 최초의 주(州) 지질학자로 임명되었다.",
+      "ko": "",
+      "why": "일치. appointed Michigan's first State Geologist."
+    },
+    {
+      "en": "친구들의 조언을 듣고 시장직을 거절했다.",
+      "ko": "",
+      "why": "정답(불일치). 친구들의 조언을 듣고 시장직을 받아들였어요(accepted)."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "계속적 용법 where",
+      "ex": "travel to Detroit, where soon he became a popular science lecturer",
+      "d": "그리고 그곳에서. 앞 장소를 보충 설명해요."
+    },
+    {
+      "t": "계속적 용법 when",
+      "ex": "a major turning point in 1837, when he was appointed Michigan's first State Geologist",
+      "d": "그리고 그때."
+    },
+    {
+      "t": "Upon + -ing",
+      "ex": "Upon hearing the advice of friends, he accepted",
+      "d": "~하자마자 (= As soon as he heard)."
+    }
+  ],
+  "vocab": [
+    [
+      "geologist",
+      "지질학자"
+    ],
+    [
+      "physician",
+      "의사"
+    ],
+    [
+      "enroll in",
+      "~에 입학하다"
+    ],
+    [
+      "offer",
+      "제안하다"
+    ],
+    [
+      "lecturer",
+      "강연자"
+    ],
+    [
+      "appoint",
+      "임명하다"
+    ],
+    [
+      "elect",
+      "선출하다"
+    ],
+    [
+      "reluctant",
+      "주저하는"
+    ],
+    [
+      "term",
+      "임기"
+    ]
+  ],
+  "summary": {
+    "en": "Douglass Houghton was a geologist and doctor who became Michigan's first State Geologist and served as Mayor of Detroit.",
+    "ko": "Douglass Houghton은 지질학자이자 의사로, Michigan 최초의 주 지질학자가 되었고 Detroit 시장을 지냈다."
+  },
+  "writing": {
+    "en": "Upon hearing the advice of friends, he accepted the mayor's position.",
+    "ko": "친구들의 조언을 듣고 그는 시장직을 받아들였다."
+  },
+  "tip": "인물 문제에서 '처음엔 망설였다(reluctant)' 같은 말이 나오면 결국 어떻게 했는지 끝까지 읽으세요. 처음 태도만 보고 '거절했다'를 고르기 쉬워요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 26번 정답은?",
+      "⑤ '친구들의 조언을 듣고 시장직을 거절했다'예요."
+    ],
+    [
+      "시장직은 어떻게 되었나요?",
+      "처음엔 받아들이길 망설였지만, 친구들의 조언을 듣고 수락해 두 번 임기를 지냈어요."
+    ]
+  ]
+}

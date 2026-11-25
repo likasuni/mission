@@ -1,0 +1,226 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "데이터에서 통찰로 — 시각화의 힘",
+  "date": "2026-12-06",
+  "lead": "2026년 3월 고2 모의고사 영어 41~42번은 19세기 사회 과학과 큰 데이터의 등장으로 표·차트·그래프 같은 시각화가 생겨나 해석을 가능하게 했다는 장문이에요. 41번 제목은 ③ From Data to Insight: The Power of Visualization, 42번은 2차원 인쇄의 한계를 '강화(intensifying)'가 아니라 '극복(overcoming)'해야 해서 ⑤ (e)예요.",
+  "flow": [
+    [
+      "배경",
+      "19세기 사회 과학과 큰 데이터의 등장으로 새로운 시각화 방법이 필요해졌다."
+    ],
+    [
+      "발전",
+      "통계를 쓰는 학문이 차트·그래프 개발을 이끌었고, 역사학은 주로 소비자였다."
+    ],
+    [
+      "효과",
+      "통계 분석이 정교해질수록 시각화가 논증의 중심이 되고 해석을 가능하게 했다."
+    ],
+    [
+      "사례",
+      "John Snow의 콜레라 지도는 시각화가 이야기이자 분석이 될 수 있음을 보여 줬다."
+    ]
+  ],
+  "tip": "41번: 시각화가 숫자를 해석(통찰)으로 바꾼다는 흐름을 담은 제목을 고르세요. 42번: 시각적 단서로 더 많은 정보를 전달했다면 2차원의 한계를 '극복'한 거예요. 앞뒤 결과가 맞는지 보세요.",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 41~42번",
+    "2026 3월 고2 영어 41~42번 해설",
+    "고2 3월 모의고사 41번 정답",
+    "고2 3월 모의고사 42번 정답",
+    "2026 고2 3모 영어 41~42번",
+    "고2 모의고사 장문"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "As statistical analysis became more sophisticated, the visualizations that resulted became more and more central to the argument. In some cases, the visualization made interpretation possible.",
+          "ko": "통계 분석이 정교해질수록 그 결과 나온 시각화는 논증의 중심이 되었다. 어떤 경우에는 시각화가 해석을 가능하게 했다.",
+          "note": "데이터 → 해석(통찰)을 가능하게 한 시각화 = ③."
+        },
+        {
+          "en": "Snow's cholera map showed that visualizations could serve as both narrative and analysis.",
+          "ko": "Snow의 콜레라 지도는 시각화가 이야기이자 분석의 역할을 할 수 있음을 보여 주었다.",
+          "note": "시각화의 힘을 보여 주는 대표 사례예요."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① Balancing Narrative and Analysis in Research",
+          "ko": "연구에서 이야기와 분석의 균형 잡기",
+          "why": "균형 잡기가 아니라 시각화가 둘 다 해낸다는 사례예요."
+        },
+        {
+          "en": "② How Numbers Stepped into the Field of History",
+          "ko": "숫자는 어떻게 역사 분야에 들어섰나",
+          "why": "역사학은 주로 소비자로 잠깐 나와요. 핵심이 아니에요."
+        },
+        {
+          "en": "③ From Data to Insight: The Power of Visualization",
+          "ko": "데이터에서 통찰로: 시각화의 힘",
+          "why": "정답. 시각화가 데이터를 해석 가능하게 만든다는 글이에요."
+        },
+        {
+          "en": "④ Visual Conventions Used in Numerical Processing",
+          "ko": "수치 처리에 쓰이는 시각적 관습",
+          "why": "관습은 일부 세부 내용이에요."
+        },
+        {
+          "en": "⑤ Cholera Outbreak: Why Social Studies Need Statistics",
+          "ko": "콜레라 발병: 사회 연구에 통계가 필요한 이유",
+          "why": "콜레라는 사례 하나일 뿐이에요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 3,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "increasing the amount of information that could be conveyed in a small space and thereby (e) intensifying the limitations of two dimensions in print.",
+          "ko": "작은 공간에 전달될 수 있는 정보의 양을 늘리고, 그럼으로써 인쇄물의 2차원 한계를 (e) 강화했다(→ 극복했다).",
+          "note": "정보를 더 많이 담았다면 한계를 '극복'한 거예요. intensifying → overcoming."
+        },
+        {
+          "en": "Mathematics, natural sciences, and social sciences that employed statistics were at the (a) forefront of the development of charts and graphs.",
+          "ko": "통계를 쓰는 수학·자연 과학·사회 과학이 차트와 그래프 개발의 (a) 선두에 있었다.",
+          "note": "역사학(소비자)과 대비되는 '선두'. 적절."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) forefront",
+          "ko": "선두",
+          "why": "적절. 통계를 쓰는 학문이 개발의 선두였어요."
+        },
+        {
+          "en": "(b) ordinary",
+          "ko": "평범한",
+          "why": "적절. 간단한 차트는 '평범한' 독자도 따라 읽을 수 있었어요."
+        },
+        {
+          "en": "(c) sophisticated",
+          "ko": "정교한",
+          "why": "적절. 분석이 '정교해질수록' 시각화가 중요해졌어요."
+        },
+        {
+          "en": "(d) demonstrated",
+          "ko": "입증했다",
+          "why": "적절. 성공 사례가 시각화의 가치를 '입증했어요'."
+        },
+        {
+          "en": "(e) intensifying",
+          "ko": "강화하는 (→ 극복하는)",
+          "why": "정답(부적절). 정보를 더 담아 2차원의 한계를 '극복(overcoming)'한 거예요."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "create demand for",
+      "ex": "created demand for new ways of visualizing information",
+      "d": "~에 대한 수요를 만들다."
+    },
+    {
+      "t": "the + 비교급, the + 비교급 (as 구문)",
+      "ex": "As statistical analysis became more sophisticated, the visualizations that resulted became more and more central",
+      "d": "~할수록 더 …하다. more and more: 점점 더."
+    },
+    {
+      "t": "make + O + 형용사",
+      "ex": "the visualization made interpretation possible",
+      "d": "목적어를 ~하게 만들다."
+    }
+  ],
+  "vocab": [
+    [
+      "emergence",
+      "등장"
+    ],
+    [
+      "visualize",
+      "시각화하다"
+    ],
+    [
+      "numerical",
+      "수치의"
+    ],
+    [
+      "employ",
+      "사용하다"
+    ],
+    [
+      "statistics",
+      "통계"
+    ],
+    [
+      "forefront",
+      "선두"
+    ],
+    [
+      "lag behind",
+      "~에 뒤처지다"
+    ],
+    [
+      "interpret",
+      "해석하다"
+    ],
+    [
+      "convention",
+      "관습"
+    ],
+    [
+      "sophisticated",
+      "정교한"
+    ],
+    [
+      "demonstrate",
+      "입증하다"
+    ],
+    [
+      "incidence",
+      "발생"
+    ],
+    [
+      "outbreak",
+      "발병"
+    ],
+    [
+      "convey",
+      "전달하다"
+    ],
+    [
+      "dimension",
+      "차원"
+    ]
+  ],
+  "summary": {
+    "en": "Visualizations of data grew with the social sciences and became powerful tools for turning numbers into understanding.",
+    "ko": "데이터 시각화는 사회 과학과 함께 성장하여 숫자를 이해로 바꾸는 강력한 도구가 되었다."
+  },
+  "writing": {
+    "en": "Visualizations could serve as both narrative and analysis.",
+    "ko": "시각화는 이야기이자 분석의 역할을 할 수 있었다."
+  },
+  "faq": [
+    [
+      "2026년 3월 고2 영어 41번 정답은?",
+      "③ From Data to Insight: The Power of Visualization이에요."
+    ],
+    [
+      "2026년 3월 고2 영어 42번 정답은?",
+      "⑤ (e)예요. intensifying(강화하는)이 아니라 overcoming(극복하는)이 맞아요."
+    ]
+  ]
+}

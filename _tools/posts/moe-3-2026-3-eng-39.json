@@ -1,0 +1,153 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 39,
+  "type": "문장 삽입",
+  "points": 3,
+  "answer": 5,
+  "topic": "지식 공동체는 열려 있어도, 훈련 없는 외부인에게는 여전히 이해되지 않는다",
+  "date": "2026-12-11",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 39번",
+    "2026 3월 고3 영어 39번 해설",
+    "고3 3월 모의고사 39번 정답",
+    "2026 고3 3모 영어 39번",
+    "고3 모의고사 문장 삽입",
+    "지식 공동체는 열려 있어도, 훈련"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 39번은 전문 지식을 얻으려면 '지식 공동체'의 구성원이 되어야 하고, 옛날엔 비밀이었지만 지금은 열린 쪽으로 바뀌었다는 글이에요. '그럼에도 외부인에겐 투명해도 이해할 수 없다'는 문장은 '개방성' 이야기 뒤, '다른 적극적 전략이 필요하다'가 나오기 전인 ⑤에 들어가요.",
+  "flow": [
+    [
+      "개념",
+      "전문 지식을 얻으려면 지식 공동체의 구성원이 되어야 한다."
+    ],
+    [
+      "과정",
+      "신입은 전문가에게 배우고 관행에 사회화되며, 입회 시험도 있다."
+    ],
+    [
+      "변화",
+      "전근대엔 비밀이었지만 지금은 구성원 사이와 외부에도 개방이 이상이다."
+    ],
+    [
+      "주어진 문장 (⑤) → 결론",
+      "그래도 훈련 없는 외부인은 이해 못 한다 → 지식을 '접근 가능'하게 할 더 적극적인 전략이 필요하다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "on the whole, the ideal has shifted to openness among the members of epistemic communities, and also, to some extent, toward outsiders. ( ⑤ ) Other, more active strategies are needed",
+      "ko": "전반적으로 이상은 지식 공동체 구성원 사이, 그리고 어느 정도 외부인에 대한 개방성으로 바뀌었다. ( ⑤ ) 다른, 더 적극적인 전략이 필요하다",
+      "note": "개방(투명) → Nonetheless 그래도 이해 못 함 → 그래서 다른 전략이 필요. ⑤ 자리."
+    },
+    {
+      "en": "Nonetheless, for most outsiders even completely transparent practices do not lift the veil",
+      "ko": "그럼에도 불구하고, 대부분의 외부인에게는 완전히 투명한 관행조차 베일을 걷어 내지 못한다",
+      "note": "transparent = 앞의 openness. Nonetheless로 한계를 말해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "",
+      "why": "지식 공동체 개념을 막 소개한 자리라 '투명한 관행' 이야기가 아직 없어요."
+    },
+    {
+      "en": "②",
+      "ko": "",
+      "why": "신입이 배우는 과정 설명이 이어지는 자리예요."
+    },
+    {
+      "en": "③",
+      "ko": "",
+      "why": "입회 절차 다음 전근대의 비밀 이야기가 이어져요."
+    },
+    {
+      "en": "④",
+      "ko": "",
+      "why": "전근대 비밀 → 오늘날 흔적과 개방으로 이어지는 자리예요."
+    },
+    {
+      "en": "⑤",
+      "ko": "정답 자리",
+      "why": "정답. 개방(투명)해졌다 → 그래도 외부인은 이해 못 한다 → 그래서 더 적극적인 전략이 필요하다."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "전치사 + 관계대명사 (계속적)",
+      "ex": "the relevant group of knowledge bearers, for which I will use the term \"epistemic communities.\"",
+      "d": "그것에 대해 나는 ~라는 용어를 쓰겠다."
+    },
+    {
+      "t": "not least because",
+      "ex": "were often kept secret … not least because of fears that specialized knowledge would fall into the \"wrong hands.\"",
+      "d": "특히 ~ 때문에. fears that ~은 동격 that절."
+    },
+    {
+      "t": "as ~ as is possible",
+      "ex": "as \"accessible\" as is realistically possible",
+      "d": "현실적으로 가능한 한 ~하게."
+    }
+  ],
+  "vocab": [
+    [
+      "nonetheless",
+      "그럼에도 불구하고"
+    ],
+    [
+      "outsider",
+      "외부인"
+    ],
+    [
+      "acquisition",
+      "습득"
+    ],
+    [
+      "socialize",
+      "사회화하다"
+    ],
+    [
+      "candidate",
+      "후보자"
+    ],
+    [
+      "premodern",
+      "전근대적인"
+    ],
+    [
+      "strict",
+      "엄격한"
+    ],
+    [
+      "ideal",
+      "이상"
+    ],
+    [
+      "shift",
+      "옮겨 가다"
+    ],
+    [
+      "strategy",
+      "전략"
+    ]
+  ],
+  "summary": {
+    "en": "Expert knowledge belongs to epistemic communities, and even when they are open, outsiders need training or active strategies to understand it.",
+    "ko": "전문 지식은 지식 공동체에 속하며, 공동체가 열려 있어도 외부인이 이해하려면 훈련이나 적극적인 전략이 필요하다."
+  },
+  "writing": {
+    "en": "To acquire expert knowledge, one needs to become a member of the relevant group.",
+    "ko": "전문 지식을 얻으려면 관련 집단의 구성원이 되어야 한다."
+  },
+  "tip": "Nonetheless로 시작하는 주어진 문장은 앞의 긍정적 변화(개방)를 뒤집어요. 그리고 마지막 문장의 Other(다른) 전략은 '개방만으로는 부족하다'는 말 뒤에 와야 해요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 39번 정답은?",
+      "⑤예요."
+    ],
+    [
+      "⑤ 뒤 문장의 Other는 무엇과 다른가요?",
+      "개방(투명하게 공개하기)과 다른 전략이에요. 주어진 문장이 '공개만으로는 이해 못 한다'고 말해 줘야 Other가 자연스러워요."
+    ]
+  ]
+}

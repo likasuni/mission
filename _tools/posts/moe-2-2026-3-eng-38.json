@@ -1,0 +1,141 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 38,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 4,
+  "topic": "역할 놀이에서 역할 속 행동만으로 부족할 때는 잠깐 역할에서 벗어난다",
+  "date": "2026-12-06",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 38번",
+    "2026 3월 고2 영어 38번 해설",
+    "고2 3월 모의고사 38번 정답",
+    "2026 고2 3모 영어 38번",
+    "고2 모의고사 문장 삽입",
+    "역할 놀이에서 역할 속 행동만으로"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 38번은 가상 역할 놀이에서 참가자들이 허구의 세계를 어떻게 전달하는지 다룬 글이에요. '하지만 역할에 충실한 행동만으로는 공통된 이해를 유지하기에 부족할 수 있다'는 문장은, 피터 팬 예시가 끝나고 '이럴 때(At these times) 역할에서 벗어난다'가 나오기 전인 ④에 들어가요.",
+  "flow": [
+    [
+      "소개",
+      "역할 놀이 참가자가 허구의 세계를 전달하는 방법은 여러 가지다."
+    ],
+    [
+      "방법 1",
+      "역할에 충실한 말·행동이 자연스럽게 전달한다 (피터 팬이 칼을 뽑으면 후크 선장 접근)."
+    ],
+    [
+      "주어진 문장 (④)",
+      "그러나 역할 속 행동만으로는 공통된 이해를 유지하기에 부족할 수 있다."
+    ],
+    [
+      "방법 2",
+      "이럴 때 참가자는 잠깐 역할에서 벗어나 필요한 정보를 준다 (\"넌 후크 선장이야!\")."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "This might be sufficient to communicate that fictionally one of Peter's enemies, such as Captain Hook, is approaching. ( ④ ) At these times participants often come at least partly out of character",
+      "ko": "이것만으로도 후크 선장 같은 적이 다가온다는 것을 전달하기에 충분할 수 있다. ( ④ ) 이럴 때 참가자들은 종종 최소한 부분적으로라도 역할에서 벗어난다",
+      "note": "sufficient(충분) → 주어진 문장 insufficient(불충분) → At these times(불충분한 이런 때). ④ 자리."
+    },
+    {
+      "en": "These in-character behaviors can be insufficient, however, to maintain the necessary amount of common ground",
+      "ko": "그러나 이러한 역할에 충실한 행동은 필요한 만큼의 공통된 이해를 유지하기에 불충분할 수 있다",
+      "note": "These in-character behaviors = 앞의 피터 팬 행동. however로 방향이 바뀌어요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "",
+      "why": "아직 역할 속 행동(첫 번째 방법)을 소개하기 전이에요."
+    },
+    {
+      "en": "②",
+      "ko": "",
+      "why": "역할 속 행동의 예시(피터 팬)가 시작되는 자리라 끊으면 안 돼요."
+    },
+    {
+      "en": "③",
+      "ko": "",
+      "why": "예시와 그 효과(충분히 전달)가 이어지는 자리예요."
+    },
+    {
+      "en": "④",
+      "ko": "정답 자리",
+      "why": "정답. sufficient(충분) 다음에 insufficient(불충분)로 바뀌고, 뒤의 At these times가 그 '불충분한 때'를 받아요."
+    },
+    {
+      "en": "⑤",
+      "ko": "",
+      "why": "이미 역할에서 벗어나는 방법의 예시가 나오는 자리예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "i.e. (= that is)",
+      "ex": "emitted naturally as a result of full participation in the fictional world—i.e., something said or done by a player",
+      "d": "즉, 다시 말해."
+    },
+    {
+      "t": "과거분사 후치 수식",
+      "ex": "something said or done by a player while in character",
+      "d": "said or done이 something을 뒤에서 꾸며요. while (he is) in character."
+    },
+    {
+      "t": "be sufficient to부정사",
+      "ex": "This might be sufficient to communicate that ~",
+      "d": "~하기에 충분하다 ↔ insufficient to."
+    }
+  ],
+  "vocab": [
+    [
+      "insufficient",
+      "불충분한"
+    ],
+    [
+      "common ground",
+      "공통된 이해"
+    ],
+    [
+      "fictional",
+      "허구의"
+    ],
+    [
+      "participant",
+      "참가자"
+    ],
+    [
+      "emit",
+      "발산하다"
+    ],
+    [
+      "draw",
+      "뽑다, 끄집어내다"
+    ],
+    [
+      "approach",
+      "접근하다"
+    ]
+  ],
+  "summary": {
+    "en": "In make-believe, in-character actions can share fictional details, but players sometimes step out of character when that is not enough.",
+    "ko": "역할 놀이에서 역할 속 행동이 허구의 내용을 전달하지만, 그것만으로 부족하면 참가자들은 잠깐 역할에서 벗어난다."
+  },
+  "writing": {
+    "en": "These in-character behaviors can be insufficient to maintain the necessary amount of common ground.",
+    "ko": "이러한 역할 속 행동은 필요한 공통된 이해를 유지하기에 불충분할 수 있다."
+  },
+  "tip": "주어진 문장의 insufficient, however는 앞에 '충분하다(sufficient)'는 말이 있어야 해요. 반대말 짝을 찾으면 자리가 바로 보여요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 38번 정답은?",
+      "④예요."
+    ],
+    [
+      "At these times는 무엇을 가리키나요?",
+      "주어진 문장의 '역할 속 행동만으로 부족할 때'를 가리켜요. 그래서 주어진 문장이 그 바로 앞(④)에 와야 해요."
+    ]
+  ]
+}

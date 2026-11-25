@@ -1,0 +1,169 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 23,
+  "type": "글의 주제",
+  "points": 2,
+  "answer": 1,
+  "topic": "AI 시대에는 직장에서 지속적인 학습이 필수다",
+  "date": "2026-12-08",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 23번",
+    "2026 3월 고3 영어 23번 해설",
+    "고3 3월 모의고사 23번 정답",
+    "2026 고3 3모 영어 23번",
+    "고3 모의고사 글의 주제",
+    "AI 시대에는 직장에서 지속적인 "
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 23번은 AI가 일부 일을 자동화하지만 새로운 기회도 만들며, 끊임없이 변하는 기술 환경에서 직원들의 지속적인 학습과 재교육이 필수라는 글이에요. 정답은 ① need for ongoing learning at the workplace in the age of AI예요.",
+  "flow": [
+    [
+      "현상",
+      "AI는 일부 직업을 자동화하지만 새로운 직업 기회와 수요도 만든다."
+    ],
+    [
+      "필요",
+      "AI를 다룰 전문가와 혁신적 사고·문제 해결 같은 소프트 스킬이 중요해졌다."
+    ],
+    [
+      "핵심",
+      "AI 시대에 지속적인 학습은 필수 자질이다. 재교육과 적응력만이 해법이다."
+    ],
+    [
+      "제안",
+      "조직은 지속적 학습 문화를 최우선으로 만들어야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In the age of AI, continuous learning has become an essential quality for professionals in the workplace.",
+      "ko": "AI 시대에, 지속적인 학습은 직장에서 전문가에게 필수적인 자질이 되었다.",
+      "note": "continuous learning = ongoing learning. 주제 문장이에요."
+    },
+    {
+      "en": "Implanting a culture of ongoing learning … should be a main priority for each organization.",
+      "ko": "계속 진행되는 학습의 문화를 심어 주는 것은 각 조직의 주요 우선순위가 되어야 한다.",
+      "note": "마지막 문장이 같은 말을 다시 해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "need for ongoing learning at the workplace in the age of AI",
+      "ko": "AI 시대 직장에서 지속적인 학습의 필요성",
+      "why": "정답. AI 시대에 직장에서 지속적인 학습이 필요하다는 글이에요."
+    },
+    {
+      "en": "rise of ethical concerns regarding AI­driven job automation",
+      "ko": "AI 자동화에 대한 윤리적 우려의 증가",
+      "why": "실직 우려는 나오지만 윤리 문제는 아니에요."
+    },
+    {
+      "en": "significance of soft skills in resolving workplace conflicts",
+      "ko": "직장 갈등 해결에서 소프트 스킬의 중요성",
+      "why": "소프트 스킬은 나오지만 '갈등 해결' 이야기가 아니에요."
+    },
+    {
+      "en": "risk of relying on AI as a tool for retraining employees",
+      "ko": "직원 재교육 도구로 AI에 의존하는 위험",
+      "why": "AI에 의존하는 위험은 다루지 않아요."
+    },
+    {
+      "en": "limitation of adopting AI systems in workforce planning",
+      "ko": "인력 계획에 AI 시스템을 도입하는 한계",
+      "why": "AI 도입의 한계가 아니라 사람의 학습이 핵심이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "give rise to",
+      "ex": "it is also giving rise to new career opportunities and demands",
+      "d": "~을 생기게 하다, 일으키다."
+    },
+    {
+      "t": "get the most out of",
+      "ex": "professionals who can effectively manage and get the most out of AI systems",
+      "d": "~을 최대한 활용하다."
+    },
+    {
+      "t": "necessitate + O + to부정사",
+      "ex": "The ever-evolving technological landscape necessitates employees to consistently update their skills",
+      "d": "목적어가 ~하는 것을 필요로 하다."
+    }
+  ],
+  "vocab": [
+    [
+      "employee",
+      "직원"
+    ],
+    [
+      "dynamics",
+      "역학"
+    ],
+    [
+      "potential",
+      "잠재력"
+    ],
+    [
+      "automate",
+      "자동화하다"
+    ],
+    [
+      "application",
+      "적용"
+    ],
+    [
+      "interdisciplinary",
+      "학문 간의"
+    ],
+    [
+      "collaboration",
+      "협력"
+    ],
+    [
+      "continuous",
+      "지속적인"
+    ],
+    [
+      "quality",
+      "자질"
+    ],
+    [
+      "landscape",
+      "지형"
+    ],
+    [
+      "necessitate",
+      "필요로 하다"
+    ],
+    [
+      "adapt",
+      "적응하다"
+    ],
+    [
+      "ongoing",
+      "계속 진행되는"
+    ],
+    [
+      "foster",
+      "조성하다"
+    ]
+  ],
+  "summary": {
+    "en": "In the age of AI, workers must keep learning and adapting, so organizations should build a culture of continuous learning.",
+    "ko": "AI 시대에 직원들은 계속 배우고 적응해야 하므로, 조직은 지속적인 학습 문화를 만들어야 한다."
+  },
+  "writing": {
+    "en": "In the age of AI, continuous learning has become an essential quality.",
+    "ko": "AI 시대에 지속적인 학습은 필수적인 자질이 되었다."
+  },
+  "tip": "주제 문제는 반복되는 핵심어(continuous·ongoing learning, reskilling)를 찾으세요. 글에 나오는 단어(soft skills, job loss)가 들어 있어도 핵심이 아니면 함정이에요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 23번 정답은?",
+      "① need for ongoing learning at the workplace in the age of AI예요."
+    ],
+    [
+      "③번은 왜 틀리나요?",
+      "소프트 스킬이 인정받는다는 말은 나오지만, 직장 갈등 해결과 연결한 내용은 없어요."
+    ]
+  ]
+}

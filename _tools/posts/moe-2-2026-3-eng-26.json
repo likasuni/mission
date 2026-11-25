@@ -1,0 +1,144 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 26,
+  "type": "내용 불일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "우주론 물리학자이자 Stephen Hawking의 스승 Dennis William Sciama",
+  "date": "2026-12-03",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 26번",
+    "2026 3월 고2 영어 26번 해설",
+    "고2 3월 모의고사 26번 정답",
+    "2026 고2 3모 영어 26번",
+    "고2 모의고사 내용 불일치",
+    "우주론 물리학자이자 Stephen"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 26번은 물리학자 Dennis William Sciama의 일생을 다룬 인물 글이에요. 그는 처음엔 정상 우주론을 지지했지만 1960년대 새 증거가 나오자 견해를 바꿔 빅뱅 모델을 '받아들였어요'. 그래서 'Big Bang model에 반대했다'는 ③이 틀려요.",
+  "flow": [
+    [
+      "성장",
+      "1926년 Manchester 출생, Malvern College에서 수학·물리 교육."
+    ],
+    [
+      "진로",
+      "가업을 잇길 바란 아버지 뜻과 달리 학업을 계속, 1953년 케임브리지 박사."
+    ],
+    [
+      "견해 변화",
+      "정상 우주론 지지 → 1960년대 새 증거로 빅뱅 모델 수용."
+    ],
+    [
+      "업적",
+      "1991년 Guthrie Medal, Stephen Hawking의 스승으로 영화에 소개."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "However, when new evidence against the theory appeared in the 1960s, he changed his view and accepted the Big Bang model.",
+      "ko": "그러나 1960년대에 그 이론에 반하는 새 증거가 나타나자, 그는 견해를 바꾸어 빅뱅 모델을 받아들였다.",
+      "note": "accepted(받아들였다) ↔ ③ 반대했다. 불일치."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Malvern College에서 수학과 물리학 교육을 받았다.",
+      "ko": "",
+      "why": "일치. He received an education in mathematics and physics at Malvern College."
+    },
+    {
+      "en": "1953년에 물리학 박사 학위를 취득했다.",
+      "ko": "",
+      "why": "일치. earning a doctoral degree in physics ~ in 1953."
+    },
+    {
+      "en": "자신의 견해를 바꾸어 Big Bang model에 반대했다.",
+      "ko": "",
+      "why": "정답(불일치). 견해를 바꿔 빅뱅 모델을 받아들였어요(accepted)."
+    },
+    {
+      "en": "실험 물리학에 대한 탁월한 기여로 Guthrie Medal을 받았다.",
+      "ko": "",
+      "why": "일치. Guthrie Medal for outstanding contributions to experimental physics."
+    },
+    {
+      "en": "Stephen Hawking에 관한 영화에서 소개되었다.",
+      "ko": "",
+      "why": "일치. introduced in films about his most famous student, Stephen Hawking."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "Despite + 명사",
+      "ex": "Despite his father's wish for him to take over the family business",
+      "d": "~에도 불구하고. 뒤에 명사(구)가 와요. for him은 to take의 의미상 주어."
+    },
+    {
+      "t": "계속적 용법 which",
+      "ex": "the steady-state theory, which argued that the universe had no beginning",
+      "d": "콤마 뒤 which가 앞 명사를 보충 설명해요."
+    },
+    {
+      "t": "계속적 용법 which (앞 절 전체)",
+      "ex": "…, which made Sciama known to a wider audience.",
+      "d": "which가 앞 내용 전체(영화에 소개된 일)를 받아요. make + O + p.p."
+    }
+  ],
+  "vocab": [
+    [
+      "take over",
+      "~을 물려받다"
+    ],
+    [
+      "pursue",
+      "추구하다"
+    ],
+    [
+      "career",
+      "경력"
+    ],
+    [
+      "doctoral",
+      "박사의"
+    ],
+    [
+      "degree",
+      "학위"
+    ],
+    [
+      "evidence",
+      "증거"
+    ],
+    [
+      "award",
+      "수여하다"
+    ],
+    [
+      "outstanding",
+      "탁월한, 눈에 띄는"
+    ],
+    [
+      "contribution",
+      "기여"
+    ]
+  ],
+  "summary": {
+    "en": "Physicist Dennis Sciama changed his view to accept the Big Bang model and became known as Stephen Hawking's mentor.",
+    "ko": "물리학자 Dennis Sciama는 견해를 바꿔 빅뱅 모델을 받아들였고 Stephen Hawking의 스승으로 알려졌다."
+  },
+  "writing": {
+    "en": "When new evidence appeared, he changed his view and accepted the Big Bang model.",
+    "ko": "새 증거가 나타나자 그는 견해를 바꿔 빅뱅 모델을 받아들였다."
+  },
+  "tip": "인물 문제에서 '견해를 바꾸었다' 같은 선택지는 바꾼 '뒤'의 입장을 정확히 확인하세요. 바꾼 건 맞지만 방향(반대 ↔ 수용)을 거꾸로 쓴 함정이에요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 26번 정답은?",
+      "③ '자신의 견해를 바꾸어 Big Bang model에 반대했다'예요."
+    ],
+    [
+      "Sciama는 어떤 이론을 지지하다 바꿨나요?",
+      "처음엔 우주에 시작이 없다는 정상 우주론을 지지했고, 1960년대 새 증거 뒤 빅뱅 모델을 받아들였어요."
+    ]
+  ]
+}

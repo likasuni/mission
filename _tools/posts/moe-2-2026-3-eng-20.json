@@ -1,0 +1,153 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 20,
+  "type": "필자의 주장",
+  "points": 2,
+  "answer": 5,
+  "topic": "새 환경에서 일에만 집중하지 말고 전환기를 새 네트워크를 만드는 발판으로",
+  "date": "2026-12-02",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 20번",
+    "2026 3월 고2 영어 20번 해설",
+    "고2 3월 모의고사 20번 정답",
+    "2026 고2 3모 영어 20번",
+    "고2 모의고사 필자의 주장",
+    "새 환경에서 일에만 집중하지 말고"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 20번은 새로운 상황에서 일에만 집중해 인간관계를 줄이는 건 실수라고 말하는 글이에요. 레이저처럼 집중하는 대신 전환기를 새 네트워크를 만드는 발판으로 삼으라는 마지막 문장이 주장이라 정답은 ⑤예요.",
+  "flow": [
+    [
+      "통념",
+      "새 상황에서 많은 사람이 새것을 익히려고 주의를 흩트리는 관계·활동을 줄인다."
+    ],
+    [
+      "반박",
+      "하지만 그건 실수다. 너무 집중하면 일차원적이 되어 스트레스를 상쇄할 것이 없다."
+    ],
+    [
+      "주장",
+      "집중만 하지 말고, 전환기를 새 네트워크를 만드는 발판으로 삼아라."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But that is a mistake.",
+      "ko": "하지만 이는 실수다.",
+      "note": "통념(관계를 줄인다)을 뒤집는 신호예요."
+    },
+    {
+      "en": "Instead of staying laser-focused, use this transition as the jumping-off point for building new networks",
+      "ko": "레이저처럼 집중만 하는 대신, 이 전환기를 새로운 네트워크를 구축하는 발판으로 활용하라",
+      "note": "명령문이 필자의 주장이에요. jumping-off point = 발판."
+    }
+  ],
+  "choices": [
+    {
+      "en": "새로운 일을 시작할 때는 방해 요소를 없애야 한다.",
+      "ko": "",
+      "why": "방해 요소를 없애는 건 글이 '실수'라고 한 통념이에요. 반대예요."
+    },
+    {
+      "en": "스트레스 관리를 위해 정기적으로 휴식을 취해야 한다.",
+      "ko": "",
+      "why": "정기적인 휴식 이야기는 없어요."
+    },
+    {
+      "en": "갈등 상황에서는 다양한 가치를 모두 균형 있게 고려해야 한다.",
+      "ko": "",
+      "why": "갈등 상황의 가치 균형은 나오지 않아요."
+    },
+    {
+      "en": "변화의 시기를 직업 전문성 향상의 기회로 활용해야 한다.",
+      "ko": "",
+      "why": "직업 전문성 향상이 아니라 새로운 사람·관계(네트워크)가 핵심이에요."
+    },
+    {
+      "en": "전환기를 새로운 네트워크 구축의 발판으로 삼아야 한다.",
+      "ko": "",
+      "why": "정답. 전환기를 새 네트워크 구축의 발판으로 삼으라는 마지막 문장과 같아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "To this end",
+      "ex": "To this end, they reduce their connections to people or activities",
+      "d": "'이 목적을 위해'. end가 '목적'이라는 뜻으로 쓰였어요."
+    },
+    {
+      "t": "lead to + -ing",
+      "ex": "Being too focused can lead to becoming unidimensional",
+      "d": "lead to의 to는 전치사라 뒤에 동명사가 와요."
+    },
+    {
+      "t": "instead of + -ing",
+      "ex": "Instead of staying laser-focused, use this transition",
+      "d": "~하는 대신. 뒤에 동명사."
+    }
+  ],
+  "vocab": [
+    [
+      "master",
+      "숙지하다"
+    ],
+    [
+      "end",
+      "목적"
+    ],
+    [
+      "distract",
+      "주의를 분산시키다"
+    ],
+    [
+      "unidimensional",
+      "일차원적인"
+    ],
+    [
+      "remedy",
+      "치료제"
+    ],
+    [
+      "inevitably",
+      "불가피하게"
+    ],
+    [
+      "bombard",
+      "(폭탄처럼) 쏟아붓다"
+    ],
+    [
+      "tough",
+      "(다루기) 힘든"
+    ],
+    [
+      "transition",
+      "전환기, 과도기"
+    ],
+    [
+      "counterbalance",
+      "상쇄하다, 균형을 맞추다"
+    ],
+    [
+      "shape",
+      "구상하다, 형성하다"
+    ]
+  ],
+  "summary": {
+    "en": "During a transition, instead of only focusing on work, people should build new networks to handle stress and shape their future work.",
+    "ko": "전환기에는 일에만 집중하는 대신, 스트레스를 견디고 앞으로의 일을 만들어 가기 위해 새 네트워크를 쌓아야 한다."
+  },
+  "writing": {
+    "en": "Use this transition as the jumping-off point for building new networks.",
+    "ko": "이 전환기를 새로운 네트워크를 구축하는 발판으로 활용하라."
+  },
+  "tip": "주장 문제에서 'But that is a mistake.'처럼 통념을 뒤집는 문장이 나오면, 그 뒤의 명령문(use ~)이 답이에요. ①은 글이 부정한 통념이라 함정이에요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 20번 정답은?",
+      "⑤ '전환기를 새로운 네트워크 구축의 발판으로 삼아야 한다'예요."
+    ],
+    [
+      "①번은 왜 틀리나요?",
+      "방해 요소를 줄이는 건 많은 사람이 하는 행동이고, 글은 그걸 '실수'라고 해요. 반대예요."
+    ]
+  ]
+}

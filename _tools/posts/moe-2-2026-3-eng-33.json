@@ -1,0 +1,174 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 33,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 5,
+  "topic": "도덕적 우월성을 따지려면 두 존재 모두 도덕적 기준이 적용되는 대상이어야 한다",
+  "date": "2026-12-05",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 33번",
+    "2026 3월 고2 영어 33번 해설",
+    "고2 3월 모의고사 33번 정답",
+    "2026 고2 3모 영어 33번",
+    "고2 모의고사 빈칸",
+    "도덕적 우월성을 따지려면 두 존재"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 33번은 인간이 도덕적 행위자라는 이유로 동식물보다 도덕적으로 우월하다고 말할 수 없다는 글이에요. 도덕적 우월을 비교하려면 두 존재 모두 도덕적 기준이 적용되는 범위 안에 있어야 하기 때문이에요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "주장",
+      "도덕적 행위자 능력이 있다는 이유로 인간이 도덕적으로 우월하다고 할 수 없다."
+    ],
+    [
+      "이유",
+      "도덕적 행위자만 도덕적으로 선하거나 악하다고 말할 수 있다."
+    ],
+    [
+      "조건",
+      "도덕적 기준을 두 존재에 적용해 더 잘 충족하면 우월하다 → 둘 다 기준의 적용 범위 안에 있어야 한다 (빈칸)."
+    ],
+    [
+      "결론",
+      "동식물은 도덕적 행위자가 아니라서 인간과 비교할 수 없다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "when valid moral standards are applied to both entities, the first fulfills them to a greater degree than the second.",
+      "ko": "타당한 도덕적 기준을 두 존재 모두에게 적용했을 때, 첫 번째 존재가 두 번째 존재보다 그것들을 더 높은 정도로 충족하는 경우",
+      "note": "기준이 '두 존재 모두'에 적용돼야 비교가 성립해요."
+    },
+    {
+      "en": "This would not be the case, however, if humans were being judged superior to animals and plants, since the latter are not moral agents.",
+      "ko": "그러나 인간이 동물과 식물보다 우월하다고 판단되는 경우에는 이것이 성립되지 않는데, 후자는 도덕적 행위자가 아니기 때문이다.",
+      "note": "동식물은 도덕적 기준의 적용 범위 밖 → 빈칸은 '범위 안에 있어야 한다'."
+    }
+  ],
+  "choices": [
+    {
+      "en": "stand on the highest level of moral excellence",
+      "ko": "도덕적 탁월성의 최고 수준에 있어야",
+      "why": "최고 수준에 있을 필요는 없어요. 비교 가능하기만 하면 돼요."
+    },
+    {
+      "en": "have sympathy for each other’s moral deficiency",
+      "ko": "서로의 도덕적 결함에 공감해야",
+      "why": "공감 이야기는 없어요."
+    },
+    {
+      "en": "come to an agreement on a set of moral values",
+      "ko": "일련의 도덕적 가치에 합의해야",
+      "why": "합의가 아니라 기준이 '적용'되는지가 핵심이에요."
+    },
+    {
+      "en": "be excluded from the judgment of moral superiority",
+      "ko": "도덕적 우월성 판단에서 제외되어야",
+      "why": "판단에서 제외되면 비교 자체가 안 돼요. 반대예요."
+    },
+    {
+      "en": "fall within the range of application of moral standards",
+      "ko": "도덕적 기준의 적용 범위 안에 들어야",
+      "why": "정답. 기준을 두 존재 모두에 적용하려면 둘 다 그 범위 안에 있어야 해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "on the ground that ~",
+      "ex": "on the ground that they possess, while others lack, the capacities of a moral agent",
+      "d": "~라는 근거로. that절 안에 while others lack이 삽입됐어요."
+    },
+    {
+      "t": "as far as ~ be concerned",
+      "ex": "as far as moral standards are concerned",
+      "d": "~에 관한 한."
+    },
+    {
+      "t": "the former / the latter",
+      "ex": "since the latter are not moral agents",
+      "d": "the latter = 후자(동물과 식물)."
+    }
+  ],
+  "vocab": [
+    [
+      "validly",
+      "타당하게"
+    ],
+    [
+      "morally",
+      "도덕적으로"
+    ],
+    [
+      "superior",
+      "우월한"
+    ],
+    [
+      "on the ground that",
+      "~이라는 근거로"
+    ],
+    [
+      "possess",
+      "지니다"
+    ],
+    [
+      "lack",
+      "부족하다"
+    ],
+    [
+      "agent",
+      "행위자"
+    ],
+    [
+      "standard",
+      "기준"
+    ],
+    [
+      "meaningfully",
+      "유의미하게"
+    ],
+    [
+      "comparative",
+      "상대적인"
+    ],
+    [
+      "merit",
+      "장점"
+    ],
+    [
+      "deficiency",
+      "결함"
+    ],
+    [
+      "determine",
+      "결정하다"
+    ],
+    [
+      "apply",
+      "적용하다"
+    ],
+    [
+      "fulfill",
+      "충족하다"
+    ]
+  ],
+  "summary": {
+    "en": "Humans cannot be called morally superior to animals and plants, because moral comparison only works between moral agents.",
+    "ko": "도덕적 비교는 도덕적 행위자끼리만 가능하므로, 인간이 동식물보다 도덕적으로 우월하다고 할 수 없다."
+  },
+  "writing": {
+    "en": "Only moral agents can be judged to be morally better or worse than others.",
+    "ko": "오직 도덕적 행위자만이 다른 존재보다 도덕적으로 더 낫거나 나쁘다고 판단될 수 있다."
+  },
+  "tip": "빈칸 앞 therefore는 바로 앞 문장의 결론이에요. '두 존재 모두에 기준을 적용한다' → '둘 다 적용 범위 안에 있어야 한다'로 그대로 이어 보세요.",
+  "note": "마지막 문장(This would not be the case ~)이 확인 장치예요. 동식물은 도덕적 행위자가 아니라 기준이 적용되지 않으니, 빈칸은 '적용 범위 안'이 되어야 해요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 33번 정답은?",
+      "⑤ fall within the range of application of moral standards예요."
+    ],
+    [
+      "④번은 왜 틀리나요?",
+      "판단에서 제외되면 우월성을 비교할 수 없어요. 글은 두 존재 모두 기준이 적용되어야 비교된다고 해요."
+    ]
+  ]
+}

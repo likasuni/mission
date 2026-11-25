@@ -1,0 +1,129 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 19,
+  "type": "심경 변화",
+  "points": 2,
+  "answer": 1,
+  "topic": "첫 출근날 투명 인간 같던 '나'가 동료의 꽃다발과 인사로 환영받다",
+  "date": "2026-12-07",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 19번",
+    "2026 3월 고3 영어 19번 해설",
+    "고3 3월 모의고사 19번 정답",
+    "2026 고3 3모 영어 19번",
+    "고3 모의고사 심경 변화",
+    "첫 출근날 투명 인간 같던 '나'"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 19번은 첫 출근날 아무도 쳐다보지 않아 투명 인간처럼 느끼던 '나'가, 점심 뒤 책상의 꽃다발과 옆자리 동료의 따뜻한 소개로 진정으로 받아들여졌다고 느끼는 이야기예요. 정답은 ① isolated → welcomed예요.",
+  "flow": [
+    [
+      "고립",
+      "칸막이 책상, 아무도 쳐다보지 않고 말 걸 사람도 없다. 투명 인간 같다."
+    ],
+    [
+      "전환",
+      "점심 후 책상 위 꽃다발, 옆자리 동료가 다가와 사정을 말한다."
+    ],
+    [
+      "환영",
+      "팀에 소개되고 모두에게 따뜻한 인사를 받아 진정으로 받아들여졌다고 느낀다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "It felt as if no one knew I was there. … I felt invisible.",
+      "ko": "마치 아무도 내가 거기에 있다는 것을 모르는 것 같았다. … 나는 눈에 보이지 않는 것 같았다.",
+      "note": "아무도 몰라주는 느낌 → isolated(고립된)."
+    },
+    {
+      "en": "Her kindness made me feel truly accepted.",
+      "ko": "그녀의 친절은 내가 진정으로 받아들여졌다고 느끼게 해 주었다.",
+      "note": "warm greetings·accepted → welcomed(환영받는)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "isolated → welcomed",
+      "ko": "고립된 → 환영받는",
+      "why": "정답. 투명 인간 같던 고립감 → 따뜻한 환영."
+    },
+    {
+      "en": "joyful → embarrassed",
+      "ko": "즐거운 → 당황한",
+      "why": "처음부터 즐겁지 않았어요."
+    },
+    {
+      "en": "thrilled → disappointed",
+      "ko": "신이 난 → 실망한",
+      "why": "앞뒤가 반대예요. 처음엔 소외, 뒤엔 기쁨이에요."
+    },
+    {
+      "en": "anxious → indifferent",
+      "ko": "불안한 → 무관심한",
+      "why": "앞은 불안에 가깝지만 뒤가 무관심이 아니라 환영받는 기쁨이에요."
+    },
+    {
+      "en": "relieved → sorrowful",
+      "ko": "안도한 → 슬픈",
+      "why": "뒤가 슬픔이 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "완료 분사구문",
+      "ex": "Having been guided to a small desk surrounded by dividers, I sat.",
+      "d": "Having been p.p.: 앉기 전에 이미 안내된 상태(먼저 일어난 수동)."
+    },
+    {
+      "t": "as if + 과거",
+      "ex": "It felt as if no one knew I was there.",
+      "d": "마치 ~인 것처럼."
+    },
+    {
+      "t": "사역동사 make + O + 동사원형",
+      "ex": "Her kindness made me feel truly accepted.",
+      "d": "목적어가 ~하게 만들다. feel + 과거분사(accepted)."
+    }
+  ],
+  "vocab": [
+    [
+      "divider",
+      "칸막이"
+    ],
+    [
+      "invisible",
+      "눈에 보이지 않는"
+    ],
+    [
+      "bouquet",
+      "꽃다발, 부케"
+    ],
+    [
+      "greet",
+      "인사하다"
+    ],
+    [
+      "rest",
+      "나머지 사람들"
+    ]
+  ],
+  "summary": {
+    "en": "On the first day at work, the writer felt ignored, but a kind coworker made her feel welcomed.",
+    "ko": "첫 출근날 필자는 무시당하는 느낌이었지만, 친절한 동료 덕분에 환영받는다고 느꼈다."
+  },
+  "writing": {
+    "en": "Her kindness made me feel truly accepted.",
+    "ko": "그녀의 친절은 내가 진정으로 받아들여졌다고 느끼게 했다."
+  },
+  "tip": "심경 변화는 '전환점(After lunch, Then)'을 기준으로 감정 단어를 찾으세요. invisible·no one looked at me(고립) ↔ warm greetings·accepted(환영).",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 19번 정답은?",
+      "① isolated → welcomed예요."
+    ],
+    [
+      "④ anxious는 왜 안 되나요?",
+      "앞의 감정은 불안과도 비슷하지만, 뒤가 indifferent(무관심한)가 아니라 따뜻하게 받아들여진 welcomed예요."
+    ]
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 24,
+  "type": "글의 제목",
+  "points": 3,
+  "answer": 1,
+  "topic": "번역은 익숙해진 작품에 다시 낯섦과 생기를 돌려준다",
+  "date": "2026-12-08",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 24번",
+    "2026 3월 고3 영어 24번 해설",
+    "고3 3월 모의고사 24번 정답",
+    "2026 고3 3모 영어 24번",
+    "고3 모의고사 글의 제목",
+    "번역은 익숙해진 작품에 다시 낯섦"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 24번은 위대한 작품이 모방·분석에 묻혀 따분해질 때, 번역이 다른 언어로 옮겨 '돌을 다시 돌답게' 만든다는 글이에요. 번역은 작품을 '더 낯설게, 새롭게 낯설게' 하니 정답은 ① Translation's True Calling: Restoring Vitality of the Unfamiliar예요.",
+  "flow": [
+    [
+      "전제",
+      "너무 길든 것은 증발해 버리고, 예술이 다시 보이게 할 때까지 당연하게 여겨진다."
+    ],
+    [
+      "번역",
+      "번역은 작품을 따분한 명성에서 해방시켜 '돌을 다시 돌답게' 만든다."
+    ],
+    [
+      "기준",
+      "나쁜 텍스트는 '본래의 낯섦'이 없어 번역해도 아무 일도 없다."
+    ],
+    [
+      "결론",
+      "번역은 작품을 더 낯설게, 새롭게 낯설게 보이게 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "translations of that work free it from its stodgy fame and make the stone stony again, precisely by putting it in another language.",
+      "ko": "그 작품의 번역본은 다른 언어로 옮김으로써 작품을 따분한 명성에서 해방시키고 돌을 다시 돌답게 만든다.",
+      "note": "익숙해진 것에 다시 생기를 줌 = Restoring Vitality."
+    },
+    {
+      "en": "As Wilson put it, translation makes the work \"seem more strange, and newly strange.\"",
+      "ko": "Wilson이 말했듯, 번역은 작품을 \"더 낯설게, 그리고 새롭게 낯설게 보이도록\" 한다.",
+      "note": "the Unfamiliar(낯선 것)과 연결돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "Translation’s True Calling: Restoring Vitality of the Unfamiliar",
+      "ko": "번역의 진정한 소명: 낯선 것의 생기 되살리기",
+      "why": "정답. 번역이 익숙해진 작품에 낯섦과 생기를 되살린다는 글이에요."
+    },
+    {
+      "en": "Is Refining the Original Tone Always Better for Accessibility?",
+      "ko": "원래 어조를 다듬는 것이 접근성에 늘 더 좋을까?",
+      "why": "다듬어 쉽게 만드는 건 글이 경계하는 '길들임'이에요. 반대예요."
+    },
+    {
+      "en": "How Literary Guides Deprive Readers of Art’s True Rawness",
+      "ko": "문학 안내서는 어떻게 독자에게서 예술의 날것을 빼앗나",
+      "why": "안내서가 작품을 묻는다는 말은 나오지만 핵심은 번역의 역할이에요."
+    },
+    {
+      "en": "The Role of Translation in Distributing Regional Literature",
+      "ko": "지역 문학을 퍼뜨리는 번역의 역할",
+      "why": "지역 문학 보급 이야기는 없어요."
+    },
+    {
+      "en": "Overcoming Native Strangeness for Successful Translation",
+      "ko": "성공적인 번역을 위해 본래의 낯섦 극복하기",
+      "why": "낯섦은 극복할 게 아니라 살려야 할 자질이에요. 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "take ~ for granted",
+      "ex": "we just take it for granted until art restores its visibility",
+      "d": "~을 당연하게 여기다."
+    },
+    {
+      "t": "make + O + 형용사",
+      "ex": "make the stone stony again",
+      "d": "목적어를 ~하게 만들다. 돌을 다시 돌답게."
+    },
+    {
+      "t": "not A but B",
+      "ex": "translation is not a makeshift, but the mode of existence",
+      "d": "A가 아니라 B."
+    }
+  ],
+  "vocab": [
+    [
+      "domesticated",
+      "길든"
+    ],
+    [
+      "accessible",
+      "다가가기 쉬운"
+    ],
+    [
+      "approachable",
+      "이해하기 쉬운"
+    ],
+    [
+      "evaporate",
+      "증발하다"
+    ],
+    [
+      "take",
+      "~ for granted ~을 당연하게 여기다"
+    ],
+    [
+      "fame",
+      "명성"
+    ],
+    [
+      "language",
+      "언어"
+    ],
+    [
+      "reinforce",
+      "강화하다"
+    ],
+    [
+      "inherent",
+      "내재된"
+    ],
+    [
+      "makeshift",
+      "임시방편"
+    ]
+  ],
+  "summary": {
+    "en": "Translation frees great works from overfamiliarity and makes them strange and alive again.",
+    "ko": "번역은 위대한 작품을 지나친 익숙함에서 해방시켜 다시 낯설고 생생하게 만든다."
+  },
+  "writing": {
+    "en": "Translation makes the work seem more strange, and newly strange.",
+    "ko": "번역은 작품을 더 낯설게, 그리고 새롭게 낯설게 보이게 한다."
+  },
+  "tip": "제목 문제에서 글이 '좋다'고 하는 것(낯섦)을 '극복하자'고 쓴 ⑤처럼 방향을 뒤집은 선택지를 조심하세요. 핵심어(strange, stony again)의 가치를 먼저 정하세요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 24번 정답은?",
+      "① Translation's True Calling: Restoring Vitality of the Unfamiliar예요."
+    ],
+    [
+      "⑤번은 왜 틀리나요?",
+      "글은 '본래의 낯섦'이 좋은 작품의 자질이고 번역이 그것을 강화한다고 해요. 낯섦을 극복하자는 ⑤는 반대예요."
+    ]
+  ]
+}

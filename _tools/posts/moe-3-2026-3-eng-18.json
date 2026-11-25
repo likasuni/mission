@@ -1,0 +1,136 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 18,
+  "type": "글의 목적",
+  "points": 2,
+  "answer": 1,
+  "topic": "작가의 건강 문제로 잡지 칼럼이 한 달 쉰다는 공지",
+  "date": "2026-12-07",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 18번",
+    "2026 3월 고3 영어 18번 해설",
+    "고3 3월 모의고사 18번 정답",
+    "2026 고3 3모 영어 18번",
+    "고3 모의고사 글의 목적",
+    "작가의 건강 문제로 잡지 칼럼이 "
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 18번은 잡지사가 독자들에게 보내는 글이에요. 칼럼 'A Better Way to Live'가 작가의 건강 문제로 한 달 쉬고 다음 달에 돌아온다는 내용이라 정답은 ① '칼럼의 휴재를 공지하려고'예요.",
+  "flow": [
+    [
+      "감사",
+      "칼럼에 대한 관심과 격려에 감사한다."
+    ],
+    [
+      "공지",
+      "작가의 최근 건강 문제로 칼럼이 한 달 쉰다."
+    ],
+    [
+      "마무리",
+      "양해를 구하며, 다음 달 새 에너지로 돌아온다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Due to the writer's recent health problems, the column will take a one-month break.",
+      "ko": "작가의 최근 건강 문제로 인해 해당 칼럼은 한 달간 잠시 쉴 예정입니다.",
+      "note": "However, we would like to share an important update 뒤의 핵심 문장. 휴재 공지 = ①."
+    }
+  ],
+  "choices": [
+    {
+      "en": "칼럼의 휴재를 공지하려고",
+      "ko": "",
+      "why": "정답. 작가의 건강 문제로 칼럼이 한 달 쉰다는 공지예요."
+    },
+    {
+      "en": "잡지의 정기 구독 혜택을 안내하려고",
+      "ko": "",
+      "why": "정기 구독 혜택은 나오지 않아요."
+    },
+    {
+      "en": "잡지에 대한 독자 의견을 조사하려고",
+      "ko": "",
+      "why": "독자 의견 조사는 없어요."
+    },
+    {
+      "en": "건강 칼럼의 신설을 홍보하려고",
+      "ko": "",
+      "why": "건강은 작가의 사정일 뿐, 건강 칼럼을 새로 만든다는 게 아니에요."
+    },
+    {
+      "en": "칼럼 작가를 모집하려고",
+      "ko": "",
+      "why": "작가 모집은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "allow + O + to부정사",
+      "ex": "Your support has allowed the column to grow steadily",
+      "d": "목적어가 ~하게 해 주다."
+    },
+    {
+      "t": "분사구문 (결과)",
+      "ex": "to grow steadily, gaining widespread recognition",
+      "d": "그리고 폭넓은 인정을 받았다."
+    },
+    {
+      "t": "Due to + 명사",
+      "ex": "Due to the writer's recent health problems",
+      "d": "~ 때문에. 뒤에 명사(구)."
+    }
+  ],
+  "vocab": [
+    [
+      "steadily",
+      "꾸준히"
+    ],
+    [
+      "widespread",
+      "폭넓은"
+    ],
+    [
+      "recognition",
+      "인정"
+    ],
+    [
+      "appreciate",
+      "감사하다"
+    ],
+    [
+      "encouragement",
+      "격려"
+    ],
+    [
+      "set aside",
+      "~을 마련하다"
+    ],
+    [
+      "recover",
+      "회복하다"
+    ],
+    [
+      "perspective",
+      "관점"
+    ]
+  ],
+  "summary": {
+    "en": "The magazine announces that a popular column will take a one-month break because of the writer's health.",
+    "ko": "잡지는 작가의 건강 때문에 인기 칼럼이 한 달 쉰다고 알린다."
+  },
+  "writing": {
+    "en": "The column will take a one-month break.",
+    "ko": "칼럼은 한 달간 쉴 예정입니다."
+  },
+  "tip": "목적 문제는 However, we would like to share ~처럼 앞의 감사 인사를 뒤집는 말 뒤가 핵심이에요. '건강'이라는 단어만 보고 ④를 고르지 마세요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 18번 정답은?",
+      "① '칼럼의 휴재를 공지하려고'예요."
+    ],
+    [
+      "④번은 왜 틀리나요?",
+      "건강은 작가가 쉬는 이유일 뿐이에요. 건강 칼럼을 새로 연다는 내용은 없어요."
+    ]
+  ]
+}

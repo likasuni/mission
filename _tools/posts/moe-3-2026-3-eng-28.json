@@ -1,0 +1,136 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "Chopstick Bridge Building Contest (젓가락 다리 만들기 대회) 안내",
+  "date": "2026-12-09",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 28번",
+    "2026 3월 고3 영어 28번 해설",
+    "고3 3월 모의고사 28번 정답",
+    "2026 고3 3모 영어 28번",
+    "고3 모의고사 안내문 일치",
+    "Chopstick Bridge B"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 28번은 젓가락으로 다리를 만드는 대회 안내문이에요. Awards에 'The top three teams will receive a prize.'가 있어 ⑤ '상위 세 팀은 상품을 받을 것이다'가 일치해요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "등록",
+      "최대 4명 팀, 3월 31일까지 신청."
+    ],
+    [
+      "일정",
+      "2026년 4월 11일, 오후 2시 개회식, 오후 5시 시상식."
+    ],
+    [
+      "심사·상",
+      "강도·디자인·관객 투표, 추가 재료 금지, 상위 세 팀 시상."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The top three teams will receive a prize.",
+      "ko": "상위 세 팀은 상품을 받을 것입니다.",
+      "note": "⑤와 그대로 일치해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "최소 4명으로 구성된 팀으로 등록해야 한다.",
+      "ko": "",
+      "why": "불일치. 최소가 아니라 최대(up to) 4명이에요."
+    },
+    {
+      "en": "3월 31일부터 신청할 수 있다.",
+      "ko": "",
+      "why": "불일치. 3월 31일'까지(by)' 신청해야 해요."
+    },
+    {
+      "en": "시상식은 오후 2시에 열린다.",
+      "ko": "",
+      "why": "불일치. 시상식은 오후 5시, 오후 2시는 개회식이에요."
+    },
+    {
+      "en": "추가 재료의 사용이 허용된다.",
+      "ko": "",
+      "why": "불일치. 추가 재료 사용은 허용되지 않아요."
+    },
+    {
+      "en": "상위 세 팀은 상품을 받을 것이다.",
+      "ko": "",
+      "why": "정답. The top three teams will receive a prize."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "up to",
+      "ex": "register as a team of up to four members",
+      "d": "최대 ~까지 (최소가 아님)."
+    },
+    {
+      "t": "by + 날짜",
+      "ex": "Participants should sign up by March 31.",
+      "d": "~까지 (마감). from(~부터)과 구별하세요."
+    },
+    {
+      "t": "동명사 주어",
+      "ex": "Using additional materials is not allowed.",
+      "d": "동명사 주어는 단수 취급 → is."
+    }
+  ],
+  "vocab": [
+    [
+      "chopstick",
+      "젓가락"
+    ],
+    [
+      "bridge",
+      "다리"
+    ],
+    [
+      "registration",
+      "등록"
+    ],
+    [
+      "sign up",
+      "신청하다"
+    ],
+    [
+      "details",
+      "세부 사항"
+    ],
+    [
+      "ceremony",
+      "식, 의식"
+    ],
+    [
+      "award",
+      "상"
+    ],
+    [
+      "material",
+      "재료"
+    ]
+  ],
+  "summary": {
+    "en": "Teams of up to four can join the chopstick bridge contest, and the top three teams will win prizes.",
+    "ko": "최대 4명 팀이 젓가락 다리 대회에 참가할 수 있고, 상위 세 팀은 상품을 받는다."
+  },
+  "writing": {
+    "en": "All participants must register as a team of up to four members.",
+    "ko": "모든 참가자는 최대 4명으로 구성된 팀으로 등록해야 한다."
+  },
+  "tip": "up to(최대) ↔ 최소, by(까지) ↔ 부터처럼 전치사 하나로 뜻을 뒤집는 선택지가 많아요. 시간은 개회식·시상식을 헷갈리지 않게 표에서 짝지으세요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 28번 정답은?",
+      "⑤ '상위 세 팀은 상품을 받을 것이다'예요."
+    ],
+    [
+      "①번은 왜 틀리나요?",
+      "up to four members는 '최대' 4명이에요. '최소' 4명이 아니에요."
+    ]
+  ]
+}

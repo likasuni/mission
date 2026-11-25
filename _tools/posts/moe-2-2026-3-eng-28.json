@@ -1,0 +1,128 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 28,
+  "type": "안내문 일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "Library of Things (물건 빌려 주는 주민 센터 서비스) 안내",
+  "date": "2026-12-04",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 28번",
+    "2026 3월 고2 영어 28번 해설",
+    "고2 3월 모의고사 28번 정답",
+    "2026 고2 3모 영어 28번",
+    "고2 모의고사 안내문 일치",
+    "Library of Things "
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 28번은 주민 센터에서 공구·캠핑 장비를 빌려 주는 'Library of Things' 안내문이에요. 최대 7일 대여에 한 번 연장할 수 있어서 ④ '대여 기간 연장은 한 번 가능하다'가 일치해요. 정답은 ④예요.",
+  "flow": [
+    [
+      "이용 방법",
+      "앱 설치·로그인 → 앱에서 예약(온라인만) → 월~일 수령 → 좋은 상태로 반납."
+    ],
+    [
+      "물품",
+      "가정용 공구와 캠핑 장비."
+    ],
+    [
+      "기간·요금",
+      "최대 7일, 한 번 연장 가능. 무료, 늦으면 하루 2달러 연체료."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Items can be borrowed for up to 7 days, with one possible extension.",
+      "ko": "물품은 최대 7일까지 대여할 수 있으며, 한 번 연장할 수 있습니다.",
+      "note": "one possible extension = ④ 연장 한 번 가능. 일치."
+    }
+  ],
+  "choices": [
+    {
+      "en": "로그인하지 않아도 서비스를 이용할 수 있다.",
+      "ko": "",
+      "why": "불일치. 앱을 내려받아 로그인해야 해요."
+    },
+    {
+      "en": "방문 접수를 통해 대여 예약이 가능하다.",
+      "ko": "",
+      "why": "불일치. 온라인 예약만 돼요(Online reservation only)."
+    },
+    {
+      "en": "주중에만 예약한 물품을 수령할 수 있다.",
+      "ko": "",
+      "why": "불일치. 월요일부터 일요일까지 수령할 수 있어요."
+    },
+    {
+      "en": "대여 기간 연장은 한 번 가능하다.",
+      "ko": "",
+      "why": "정답. with one possible extension."
+    },
+    {
+      "en": "대여료는 하루에 2달러이다.",
+      "ko": "",
+      "why": "불일치. 대여는 무료이고, 2달러는 늦게 반납할 때만 붙는 하루 연체료예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "To부정사 (목적)",
+      "ex": "To use this service, download the \"Library of Things\" app and log in.",
+      "d": "~하기 위해. 문장 앞에 와서 목적을 나타내요."
+    },
+    {
+      "t": "조동사 수동태",
+      "ex": "Items can be borrowed for up to 7 days",
+      "d": "can be p.p.: ~될 수 있다."
+    },
+    {
+      "t": "Only if ~ (조건)",
+      "ex": "Only if returned late, a late fee of $2 will be charged daily.",
+      "d": "~할 경우에만. if (they are) returned late에서 주어·be동사가 생략됐어요."
+    }
+  ],
+  "vocab": [
+    [
+      "borrow",
+      "빌리다"
+    ],
+    [
+      "reserve",
+      "예약하다"
+    ],
+    [
+      "household",
+      "가정용의"
+    ],
+    [
+      "gear",
+      "장비"
+    ],
+    [
+      "extension",
+      "연장"
+    ],
+    [
+      "late fee",
+      "연체료"
+    ]
+  ],
+  "summary": {
+    "en": "Residents can borrow tools and camping gear for free through the Library of Things app.",
+    "ko": "주민들은 Library of Things 앱으로 공구와 캠핑 장비를 무료로 빌릴 수 있다."
+  },
+  "writing": {
+    "en": "Items can be borrowed for up to 7 days, with one possible extension.",
+    "ko": "물품은 최대 7일까지 빌릴 수 있고, 한 번 연장할 수 있다."
+  },
+  "tip": "'요금'과 '연체료'를 구별하세요. 무료(free)인데 늦을 때만 돈을 내는 구조라 ⑤처럼 섞어 놓은 선택지가 함정이에요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 28번 정답은?",
+      "④ '대여 기간 연장은 한 번 가능하다'예요."
+    ],
+    [
+      "⑤번 2달러는 무엇인가요?",
+      "대여료가 아니라 늦게 반납할 때만 하루에 붙는 연체료예요. 대여 자체는 무료예요."
+    ]
+  ]
+}

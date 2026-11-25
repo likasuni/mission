@@ -1,0 +1,170 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 2,
+  "topic": "교사의 '무표정' — 학생 답에 맞다·틀리다 반응을 드러내지 않기",
+  "date": "2026-12-02",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 21번",
+    "2026 3월 고2 영어 21번 해설",
+    "고2 3월 모의고사 21번 정답",
+    "2026 고2 3모 영어 21번",
+    "고2 모의고사 함축 의미",
+    "교사의 '무표정' — 학생 답에 "
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 21번은 존중하는 수학 교실을 만들려면 틀린 답도 모두 받아들여야 한다는 글이에요. 교사가 어떤 답에도 동의·반대를 드러내지 않는 것이 having a \"blank face\"라서 정답은 ② suppressing evaluative responses to students' answers예요.",
+  "flow": [
+    [
+      "주장",
+      "존중하는 학습 공동체의 첫 단계는 오류와 상관없이 모든 생각과 답을 받아들이는 것이다."
+    ],
+    [
+      "이유",
+      "틀린 답은 오개념에서 오므로 드러나야 학생이 자기 생각을 마주할 수 있다."
+    ],
+    [
+      "방법",
+      "교사는 동의·반대를 드러내는 말이나 몸짓 없이 모든 답을 기록한다 → 무표정."
+    ],
+    [
+      "목표",
+      "정답의 근원을 교사에서 학생에게로 옮긴다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "by recording all answers to be considered without giving any verbal or physical expressions that indicate agreement or disagreement with any answer",
+      "ko": "어느 답변에도 동의 또는 비동의함을 나타내는 일체의 언어적 또는 신체적 표현도 제공하지 않으며 모든 답변이 고려되도록 기록함으로써",
+      "note": "밑줄 바로 앞 문장이 blank face의 뜻을 풀어 줘요. 평가 반응을 드러내지 않는 것."
+    },
+    {
+      "en": "Students look to teachers as the source of correct answers.",
+      "ko": "학생들은 정답의 근원을 교사에게서 찾는다.",
+      "note": "그래서 교사가 표정으로 정답을 알려 주면 안 돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "avoiding the urge to resolve students’ emotional conflicts",
+      "ko": "학생들의 감정 갈등을 해결하려는 충동을 피하기",
+      "why": "감정 갈등 이야기가 아니에요."
+    },
+    {
+      "en": "suppressing evaluative responses to students’ answers",
+      "ko": "학생 답에 대한 평가 반응을 억누르기",
+      "why": "정답. 동의·반대를 나타내는 표현을 하지 않는 것 = 평가 반응을 억누르기."
+    },
+    {
+      "en": "treating all answers as correct to facilitate learning",
+      "ko": "배움을 돕기 위해 모든 답을 정답으로 취급하기",
+      "why": "모든 답을 '받아들이는' 것이지 '정답으로 취급'하는 게 아니에요."
+    },
+    {
+      "en": "indicating misconceptions in mathematical discussions",
+      "ko": "수학 토론에서 오개념을 지적하기",
+      "why": "오개념을 지적하는 건 바로 표정·말로 평가하는 일이라 반대예요."
+    },
+    {
+      "en": "controlling facial expressions to maintain strict authority",
+      "ko": "엄격한 권위를 지키려고 표정을 통제하기",
+      "why": "권위를 지키려는 게 아니라 정답의 근원을 학생에게 넘기려는 거예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "regardless of",
+      "ex": "acceptance of all ideas and answers—regardless of any obvious errors",
+      "d": "~과 상관없이."
+    },
+    {
+      "t": "unless",
+      "ex": "unless these ideas are allowed to be brought to the forefront, we cannot help students confront their thinking",
+      "d": "unless = if ~ not. help + 목적어 + 동사원형(confront)."
+    },
+    {
+      "t": "by + -ing",
+      "ex": "by equipping them to defend the thinking behind their solutions",
+      "d": "~함으로써. equip + 목적어 + to부정사: ~할 수 있게 준비시키다."
+    }
+  ],
+  "vocab": [
+    [
+      "establish",
+      "구축하다"
+    ],
+    [
+      "respectful",
+      "존중하는"
+    ],
+    [
+      "acceptance",
+      "수용"
+    ],
+    [
+      "regardless of",
+      "~과 상관없이"
+    ],
+    [
+      "obvious",
+      "명백한"
+    ],
+    [
+      "mathematical",
+      "수학적인"
+    ],
+    [
+      "misconception",
+      "오개념"
+    ],
+    [
+      "forefront",
+      "전면, 선두"
+    ],
+    [
+      "confront",
+      "마주하다"
+    ],
+    [
+      "risk",
+      "위험을 감수하다"
+    ],
+    [
+      "model",
+      "본보기를 보이다"
+    ],
+    [
+      "verbal",
+      "언어적인"
+    ],
+    [
+      "agreement",
+      "동의"
+    ],
+    [
+      "defend",
+      "방어하다"
+    ]
+  ],
+  "summary": {
+    "en": "To build a safe learning community, teachers should accept all answers without showing whether they are right or wrong.",
+    "ko": "안전한 학습 공동체를 만들려면 교사는 답이 맞는지 틀렸는지 드러내지 않고 모든 답을 받아들여야 한다."
+  },
+  "writing": {
+    "en": "Students look to teachers as the source of correct answers.",
+    "ko": "학생들은 정답의 근원을 교사에게서 찾는다."
+  },
+  "tip": "밑줄 함축 문제는 바로 앞 문장이 풀이인 경우가 많아요. without giving any verbal or physical expressions ~ = blank face. ③처럼 '모두 정답으로'까지 나가는 과장 선택지를 조심하세요.",
+  "note": "③이 가장 헷갈려요. 모든 답을 '수용'한다는 건 틀린 답도 꺼내 놓고 함께 따져 본다는 뜻이지, 정답이라고 인정한다는 뜻이 아니에요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 21번 정답은?",
+      "② suppressing evaluative responses to students' answers예요."
+    ],
+    [
+      "③번은 왜 틀리나요?",
+      "글은 모든 답을 받아들이라고 하지만, 틀린 답을 정답으로 취급하라는 게 아니에요. 오개념을 드러내 함께 따져 보려는 거예요."
+    ]
+  ]
+}

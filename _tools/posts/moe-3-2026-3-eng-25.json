@@ -1,0 +1,161 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 2,
+  "topic": "세대별 소셜 네트워크 사용 이유 (2019년 미국 설문)",
+  "date": "2026-12-08",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 25번",
+    "2026 3월 고3 영어 25번 해설",
+    "고3 3월 모의고사 25번 정답",
+    "2026 고3 3모 영어 25번",
+    "고3 모의고사 도표",
+    "세대별 소셜 네트워크 사용 이유 "
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 25번은 Z 세대·밀레니얼·X 세대가 소셜 네트워크를 쓰는 이유를 비교한 도표예요. '영감 얻기'에서 Z 세대 26%는 X 세대 14%의 두 배(28%)가 안 되는데 ②는 '두 배가 넘는다'고 해서 틀려요. 정답은 ②예요.",
+  "flow": [
+    [
+      "도표",
+      "Z 세대 · 밀레니얼 · X 세대 (%)"
+    ],
+    [
+      "사진·소식 공유",
+      "33 · 44 · 50"
+    ],
+    [
+      "영감 얻기",
+      "26 · 20 · 14"
+    ],
+    [
+      "편하게 뉴스 보기",
+      "24 · 26 · 24"
+    ],
+    [
+      "유명인 팔로우",
+      "23 · 18 · 9"
+    ],
+    [
+      "직업 네트워크 넓히기",
+      "16 · 18 · 15"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "When it comes to using social networks to get inspired, the percentage of Gen Z was more than twice the percentage of Gen X",
+      "ko": "영감을 얻기 위해 소셜 네트워크를 사용하는 것에 관해서는, Z 세대의 비율이 X 세대 비율의 두 배를 넘었다",
+      "note": "14 × 2 = 28인데 Z 세대는 26%예요. 두 배가 안 돼요. ② 불일치."
+    },
+    {
+      "en": "the percentage of Millennials was higher than that of Gen X, reporting exactly twice the percentage of Gen X.",
+      "ko": "밀레니얼의 비율은 X 세대보다 높았고, 정확히 X 세대의 두 배였다.",
+      "note": "유명인 팔로우 18% = 9% × 2. ④ 일치."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 사진·소식 공유에서 X 세대 50%가 가장 높았다",
+      "ko": "일치",
+      "why": "일치. X 세대 50% > 밀레니얼 44% > Z 세대 33%."
+    },
+    {
+      "en": "② 영감 얻기에서 Z 세대가 X 세대의 두 배를 넘었다",
+      "ko": "불일치",
+      "why": "정답(불일치). Z 세대 26%는 X 세대 14%의 두 배(28%)에 못 미쳐요."
+    },
+    {
+      "en": "③ 뉴스 보기에서 세 세대 모두 20%를 넘었다",
+      "ko": "일치",
+      "why": "일치. 24%, 26%, 24%로 모두 20% 넘어요."
+    },
+    {
+      "en": "④ 유명인 팔로우에서 밀레니얼이 X 세대의 정확히 두 배였다",
+      "ko": "일치",
+      "why": "일치. 밀레니얼 18%, X 세대 9%로 정확히 두 배."
+    },
+    {
+      "en": "⑤ 직업 네트워크에서 밀레니얼 18%가 가장 높았다",
+      "ko": "일치",
+      "why": "일치. 밀레니얼 18% > Z 세대 16% > X 세대 15%."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "When it comes to + -ing",
+      "ex": "When it comes to using social networks to get inspired",
+      "d": "~에 관해서라면. to는 전치사라 동명사가 와요."
+    },
+    {
+      "t": "배수 비교",
+      "ex": "was more than twice the percentage of Gen X",
+      "d": "twice + the + 명사: ~의 두 배. 직접 곱해서 확인하세요."
+    },
+    {
+      "t": "with + 명사 + 분사",
+      "ex": "with Gen X showing the lowest figure among the three generations",
+      "d": "X 세대가 가장 낮은 수치를 보이면서 (부대 상황)."
+    }
+  ],
+  "vocab": [
+    [
+      "generation",
+      "세대"
+    ],
+    [
+      "survey",
+      "설문 조사"
+    ],
+    [
+      "conduct",
+      "실시하다"
+    ],
+    [
+      "inspired",
+      "영감을 받은"
+    ],
+    [
+      "conveniently",
+      "편리하게"
+    ],
+    [
+      "celebrity",
+      "유명인"
+    ],
+    [
+      "expand",
+      "넓히다"
+    ],
+    [
+      "professional",
+      "직업의"
+    ],
+    [
+      "when it comes to",
+      "~에 관해서라면"
+    ],
+    [
+      "figure",
+      "수치"
+    ]
+  ],
+  "summary": {
+    "en": "The graph compares why three generations use social networks, and Gen X used them most for sharing pictures and updates.",
+    "ko": "도표는 세 세대가 소셜 네트워크를 쓰는 이유를 비교하며, X 세대는 사진·소식 공유 목적이 가장 높았다."
+  },
+  "writing": {
+    "en": "For sharing pictures and updates, the percentage of Gen X was the highest among the three generations.",
+    "ko": "사진과 소식 공유에서 X 세대의 비율이 세 세대 중 가장 높았다."
+  },
+  "tip": "도표의 배수(twice, exactly twice)는 꼭 곱해서 확인하세요. 26과 14처럼 '얼추 두 배'로 보이는 숫자가 함정이에요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 25번 정답은?",
+      "②예요. Z 세대 26%는 X 세대 14%의 두 배(28%)가 안 돼요."
+    ],
+    [
+      "④번은 왜 맞나요?",
+      "유명인 팔로우에서 밀레니얼 18%, X 세대 9%라 정확히 두 배예요."
+    ]
+  ]
+}

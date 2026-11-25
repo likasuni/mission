@@ -1,0 +1,145 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 36,
+  "type": "글의 순서",
+  "points": 3,
+  "answer": 4,
+  "topic": "끝없는 이유 묻기를 멈추게 하는 말 — 도덕적 고려의 쓸모 (Dennett)",
+  "date": "2026-12-10",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 36번",
+    "2026 3월 고3 영어 36번 해설",
+    "고3 3월 모의고사 36번 정답",
+    "2026 고3 3모 영어 36번",
+    "고3 모의고사 글의 순서",
+    "끝없는 이유 묻기를 멈추게 하는 "
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 36번은 Dennett이 도덕적 고려가 끝없는 '왜?'를 멈추게 하는 대화 중단자 역할을 한다고 본다는 글이에요. 주어진 글 → (C) 문제는 끝없이 이유를 물어 결정을 못 한다는 것 → (A) 이건 사적인 고민에도 문제, 그래서 멈추게 하는 말이 유용 → (B) '도덕적으로 잘못이야!'가 그 예 순서라 정답은 ④ (C)-(A)-(B)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "Dennett: 도덕적 고려는 심사숙고를 끝내는 대화 중단자다. 우리는 늘 이유를 물을 수 있다."
+    ],
+    [
+      "(C)",
+      "문제는 좋은 답에도 '그건 왜?'를 끝없이 물어 결정을 못 내린다는 것이다."
+    ],
+    [
+      "(A)",
+      "이는 사적인 고민에도 문제다. 더 이상의 숙고를 멈추게 하는 말이 유용하다."
+    ],
+    [
+      "(B)",
+      "\"그건 도덕적으로 잘못이야!\"가 그런 말이다. 받아들이면 더 이유를 찾을 필요가 없다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "always able to ask for justification … / (C) The problem is that upon receiving a perfectly good answer we can always sensibly respond \"Okay, but what justifies that?\"",
+      "ko": "항상 이유를 요구할 수 있다 … / (C) 문제는 좋은 답을 받아도 늘 \"좋아, 그런데 그건 왜?\"라고 응수할 수 있다는 것이다",
+      "note": "이유를 묻는 특성 → 그 특성의 문제. 주어진 글 → (C)."
+    },
+    {
+      "en": "(A) This is potentially as much a problem … Dennett suggests that it is useful to have \"consideration-generator-squelchers\" / (B) \"That would be morally wrong!\" would appear to work in this manner.",
+      "ko": "(A) 이것은 잠재적으로 문제이다 … 멈추게 하는 말을 갖는 것이 유용하다 / (B) \"그건 도덕적으로 잘못이야!\"는 이런 방식으로 작동한다.",
+      "note": "This = (C)의 끝없는 질문. in this manner = (A)의 멈추게 하는 말. (C) → (A) → (B)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A)-(C)-(B)",
+      "ko": "",
+      "why": "(A)의 This가 가리킬 '끝없는 질문 문제'가 아직 없어요."
+    },
+    {
+      "en": "(B)-(A)-(C)",
+      "ko": "",
+      "why": "(B)의 in this manner가 가리킬 방식이 아직 나오지 않았어요."
+    },
+    {
+      "en": "(B)-(C)-(A)",
+      "ko": "",
+      "why": "(A)가 마지막이면 (B)의 in this manner가 가리킬 것이 없어요."
+    },
+    {
+      "en": "(C)-(A)-(B)",
+      "ko": "",
+      "why": "정답. 이유를 묻는 특성 → 끝없는 질문이라는 문제 → 멈추게 하는 말이 필요 → 그 예(도덕적으로 잘못)."
+    },
+    {
+      "en": "(C)-(B)-(A)",
+      "ko": "",
+      "why": "(B)가 (A)보다 먼저 오면 '이런 방식'이 무엇인지 알 수 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "upon + -ing",
+      "ex": "upon receiving a perfectly good answer",
+      "d": "~하자마자."
+    },
+    {
+      "t": "as much A as B",
+      "ex": "as much a problem for our own private deliberations as for our public interpersonal ones",
+      "d": "B만큼이나 A에도."
+    },
+    {
+      "t": "분사구문 (결과)",
+      "ex": "never coming to a decision, forever hesitant and doubting",
+      "d": "그래서 결코 결정을 내리지 못하고."
+    }
+  ],
+  "vocab": [
+    [
+      "consideration",
+      "고려 사항"
+    ],
+    [
+      "bring",
+      "~ to a close ~을 끝내다"
+    ],
+    [
+      "deliberation",
+      "심사숙고"
+    ],
+    [
+      "justification",
+      "타당한 이유"
+    ],
+    [
+      "trait",
+      "특성"
+    ],
+    [
+      "potentially",
+      "잠재적으로, 어쩌면"
+    ],
+    [
+      "room",
+      "여지"
+    ],
+    [
+      "hesitant",
+      "망설이는"
+    ]
+  ],
+  "summary": {
+    "en": "Because we can endlessly ask for justification, moral claims are useful as conversation-stoppers that end deliberation.",
+    "ko": "우리는 끝없이 이유를 물을 수 있기 때문에, 도덕적 주장은 숙고를 끝내는 대화 중단자로 유용하다."
+  },
+  "writing": {
+    "en": "Their value is to bring deliberations to a close.",
+    "ko": "그것들의 가치는 심사숙고를 끝내는 데 있다."
+  },
+  "tip": "순서 문제에서 This·in this manner 같은 지시어는 바로 앞 단락의 내용을 받아요. (A)의 This → (C)의 끝없는 질문, (B)의 this manner → (A)의 멈추게 하는 말.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 36번 정답은?",
+      "④ (C)-(A)-(B)예요."
+    ],
+    [
+      "(C)가 첫 번째인 이유는?",
+      "주어진 글 끝의 '항상 이유를 요구할 수 있다'를 (C)가 '그게 문제다'로 이어받아요."
+    ]
+  ]
+}

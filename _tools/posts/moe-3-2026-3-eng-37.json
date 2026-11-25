@@ -1,0 +1,153 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 37,
+  "type": "글의 순서",
+  "points": 2,
+  "answer": 2,
+  "topic": "우주는 어디로 팽창할까? — 어디로도 아닌, 스스로 늘어나는 시공간",
+  "date": "2026-12-10",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 37번",
+    "2026 3월 고3 영어 37번 해설",
+    "고3 3월 모의고사 37번 정답",
+    "2026 고3 3모 영어 37번",
+    "고3 모의고사 글의 순서",
+    "우주는 어디로 팽창할까? — 어디"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 37번은 우주가 무엇 속으로 팽창하느냐는 질문에 '아무것도 아닌 곳, 그 자체 안에서 팽창한다'고 답하는 글이에요. 주어진 글(질문) → (B) 답: 어디로도 팽창하지 않는다 → (A) 풍선과 달리 시공간 구조가 늘어난다 → (C) 이 구조는 탄력적이다 순서라 정답은 ② (B)-(A)-(C)예요.",
+  "flow": [
+    [
+      "주어진 글",
+      "팽창이라 하면 경계가 늘어나는 우주를 떠올리고, 어디로 팽창하는지 궁금해진다."
+    ],
+    [
+      "(B)",
+      "답: 우주는 어디로도 팽창하지 않는다. 그 자체 안에서 스스로 팽창한다."
+    ],
+    [
+      "(A)",
+      "풍선이나 방에 퍼지는 가스와 달리, 늘어나는 것은 시공간의 구조다."
+    ],
+    [
+      "(C)",
+      "이 시공간 구조는 탄력적이라 그 안의 모든 것을 서로 멀어지게 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Our natural instinct is to wonder what the Universe could possibly be expanding into. / (B) Unfortunately, the only answer I can give you … the Universe expands into nothingness.",
+      "ko": "우리의 본능은 우주가 어디로 팽창하는지 궁금해하는 것이다. / (B) 안타깝게도 내가 줄 수 있는 유일한 답은 … 우주는 무(無)로 팽창한다는 것이다.",
+      "note": "질문 → 답. 주어진 글 → (B)."
+    },
+    {
+      "en": "(A) It is the structure of space and time that stretches … / (C) This structure or fabric of space and time is elastic and malleable.",
+      "ko": "(A) 뻗어 나가는 것은 바로 공간과 시간의 구조이다 … / (C) 공간과 시간의 이 구조는 탄력적이고 가단성이 있다.",
+      "note": "This structure = (A)의 the structure of space and time. (A) → (C)."
+    }
+  ],
+  "choices": [
+    {
+      "en": "(A)-(C)-(B)",
+      "ko": "",
+      "why": "(A)의 '풍선과 달리'는 (B)의 답(어디로도 팽창하지 않음)을 설명하는 말이라 (B) 뒤에 와야 해요."
+    },
+    {
+      "en": "(B)-(A)-(C)",
+      "ko": "",
+      "why": "정답. 질문 → 답(어디로도 아님) → 늘어나는 건 시공간 구조 → 그 구조의 성질."
+    },
+    {
+      "en": "(B)-(C)-(A)",
+      "ko": "",
+      "why": "(C)의 This structure가 가리킬 구조가 (B)에는 없어요. (A)가 먼저예요."
+    },
+    {
+      "en": "(C)-(A)-(B)",
+      "ko": "",
+      "why": "(C)가 맨 앞이면 This structure가 가리킬 것이 없어요."
+    },
+    {
+      "en": "(C)-(B)-(A) [38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "ko": "",
+      "why": "(C)가 (B)보다 먼저 오면 질문에 대한 답이 늦게 나와요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "It is ~ that 강조 구문",
+      "ex": "It is the structure of space and time that stretches",
+      "d": "바로 시공간의 구조가 늘어난다."
+    },
+    {
+      "t": "not A, nor B",
+      "ex": "is not spilling into another separate entity, nor even another dimension",
+      "d": "A도 아니고 B도 아니다."
+    },
+    {
+      "t": "cause + O + to부정사",
+      "ex": "cause anything and anyone embedded in it to move farther apart",
+      "d": "목적어가 ~하게 하다."
+    }
+  ],
+  "vocab": [
+    [
+      "expansion",
+      "팽창"
+    ],
+    [
+      "mention",
+      "언급하다"
+    ],
+    [
+      "resist",
+      "참다"
+    ],
+    [
+      "boundary",
+      "경계"
+    ],
+    [
+      "entity",
+      "객체"
+    ],
+    [
+      "dimension",
+      "차원"
+    ],
+    [
+      "structure",
+      "구조"
+    ],
+    [
+      "stretch",
+      "뻗어 나가다, 뻗다"
+    ],
+    [
+      "satisfy",
+      "만족시키다"
+    ],
+    [
+      "accurate",
+      "정확한"
+    ]
+  ],
+  "summary": {
+    "en": "The Universe does not expand into anything; the elastic structure of space and time itself stretches.",
+    "ko": "우주는 어떤 것 속으로 팽창하는 것이 아니라, 탄력적인 시공간 구조 자체가 늘어난다."
+  },
+  "writing": {
+    "en": "The Universe simply expands by itself within itself.",
+    "ko": "우주는 단지 그 자체 안에서 스스로 팽창할 뿐이다."
+  },
+  "tip": "주어진 글이 질문(what ~ expanding into?)으로 끝나면 바로 다음은 그 답이에요. 그다음은 This structure 같은 지시어로 연결을 잡으세요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 37번 정답은?",
+      "② (B)-(A)-(C)예요."
+    ],
+    [
+      "(B)가 첫 번째인 이유는?",
+      "주어진 글이 '우주는 어디로 팽창할까?'라는 질문으로 끝나고, (B)가 그 답을 줘요."
+    ]
+  ]
+}

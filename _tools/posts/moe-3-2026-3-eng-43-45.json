@@ -1,0 +1,272 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "같은 고향이라는 이유로 아픈 소녀 가족에게 집을 내준 Cora",
+  "date": "2026-12-11",
+  "lead": "2026년 3월 고3 모의고사 영어 43~45번은 심장 이식을 기다리는 7살 소녀의 가족이 같은 고향(Appalachia) 출신이라는 걸 안 Cora가 병원에 사과 버터를 가져가고, 가족을 자기 집에 머물게 한 이야기예요. 43번 ② (C)-(B)-(D), 44번 ③ (c), 45번 ④가 정답이에요.",
+  "flow": [
+    [
+      "(A)",
+      "Cora는 인터넷에서 심장 이식이 필요한 7살 소녀 가족의 글을 읽는다. 그들은 같은 고향 출신이다."
+    ],
+    [
+      "(C)",
+      "가까운 병원에 있다는 걸 알고 연락하자, 소녀가 사과 버터를 원해 만들어 가져간다."
+    ],
+    [
+      "(B)",
+      "소녀는 병원 가까이 머물며 기증자를 기다려야 하는데 집이 4시간 거리라 걱정한다. Cora가 자기 집에 머물라고 한다."
+    ],
+    [
+      "(D)",
+      "Cora는 소녀에게 가장 큰 방을 내주고, 가족은 낯선 이의 집에서 고향을 느낀다."
+    ]
+  ],
+  "tip": "43번은 (C)의 '계속 글을 읽다가'가 (A)의 인터넷 글 읽기와 이어지는 걸 잡으세요. 44번은 Cora와 소녀(she·her)를 구별하세요. 45번은 '만들었다/샀다'처럼 동사 하나를 바꾼 선택지를 조심하세요.",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 43~45번",
+    "2026 3월 고3 영어 43~45번 해설",
+    "고3 3월 모의고사 43번 정답",
+    "고3 3월 모의고사 44번 정답",
+    "고3 3월 모의고사 45번 정답",
+    "2026 고3 3모 영어 43~45번",
+    "고3 모의고사 장문"
+  ],
+  "qs": [
+    {
+      "n": 43,
+      "type": "장문 순서",
+      "points": 2,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "(A) Cora … read a friend's response to a family's post. / (C) As she kept reading the post, she noticed that the family was in a nearby hospital.",
+          "ko": "(A) Cora는 한 가족의 게시물에 대한 친구의 응답을 읽었다. / (C) 그 게시물을 계속 읽으면서, 그녀는 그 가족이 근처 병원에 있다는 것을 알게 되었다.",
+          "note": "글을 읽음 → 계속 읽음. (A) → (C)."
+        },
+        {
+          "en": "(C) During the visit, Cora learned more about the family's situation. / (B) Their daughter seemed to be a healthy girl until she suddenly collapsed.",
+          "ko": "(C) 방문하는 동안 Cora는 가족의 상황을 더 알게 되었다. / (B) 그들의 딸은 갑자기 쓰러지기 전까지 건강한 소녀처럼 보였다.",
+          "note": "상황을 더 알게 됨 → 그 상황 설명. (C) → (B)."
+        },
+        {
+          "en": "(B) … invited them to stay with her. / (D) Cora wanted to make sure the girl felt comfortable, so she let her stay in the largest room",
+          "ko": "(B) … 그들을 자기 집에 머물도록 초대했다. / (D) Cora는 소녀가 편안하도록 가장 큰 방에 머물게 했다.",
+          "note": "집으로 초대 → 집에서 지냄. (B) → (D)."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(B)-(D)-(C)",
+          "ko": "",
+          "why": "(B)의 가족 상황은 (C)의 병원 방문에서 알게 된 내용이라 (C)가 먼저예요."
+        },
+        {
+          "en": "(C)-(B)-(D)",
+          "ko": "",
+          "why": "정답. 글을 더 읽고 병원 방문 → 가족 사정을 알고 초대 → 집에서 지냄."
+        },
+        {
+          "en": "(C)-(D)-(B)",
+          "ko": "",
+          "why": "(D)에서 이미 집에 머무는데, 초대(B)가 그 뒤에 오면 순서가 뒤집혀요."
+        },
+        {
+          "en": "(D)-(B)-(C)",
+          "ko": "",
+          "why": "(D)가 먼저 오면 초대도 하기 전에 집에 머물게 돼요."
+        },
+        {
+          "en": "(D)-(C)-(B)",
+          "ko": "",
+          "why": "(D)가 맨 앞이면 시간 순서가 맞지 않아요."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭 대상",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "Cora, unsure how much (c) she could really help but wanting to do more for the girl and her family, invited them to stay with her.",
+          "ko": "Cora는 (c) 자신이 얼마나 도울 수 있을지 확신하지 못했지만, 소녀와 가족을 위해 더 하고 싶어서 그들을 초대했다.",
+          "note": "(c) she = Cora."
+        },
+        {
+          "en": "Soon, Cora heard back from the girl herself that (d) she would really like some apple butter",
+          "ko": "곧 Cora는 소녀에게서 직접 (d) 자기가 사과 버터를 정말 먹고 싶다는 답을 들었다",
+          "note": "(d) she = 소녀."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) she",
+          "ko": "소녀",
+          "why": "소녀예요. 심장 이식이 필요해요."
+        },
+        {
+          "en": "(b) her",
+          "ko": "소녀",
+          "why": "소녀예요. 심장이 기능을 잃어 가요."
+        },
+        {
+          "en": "(c) she",
+          "ko": "Cora",
+          "why": "정답. (c)만 Cora예요. 얼마나 도울지 확신 못 해요."
+        },
+        {
+          "en": "(d) she",
+          "ko": "소녀",
+          "why": "소녀예요. 사과 버터를 원해요."
+        },
+        {
+          "en": "(e) her",
+          "ko": "소녀",
+          "why": "소녀예요. 가장 큰 방에 머물러요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "내용 불일치",
+      "points": 2,
+      "answer": 4,
+      "evidence": [
+        {
+          "en": "So Cora made some apple butter, and bought biscuits to eat it with.",
+          "ko": "그래서 Cora는 사과 버터를 만들고, 그것과 함께 먹을 비스킷을 샀다.",
+          "note": "비스킷은 '샀다(bought)'. ④ '직접 만들었다'는 불일치."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① Cora의 고향은 Appalachia라는 마을이다.",
+          "ko": "일치",
+          "why": "일치. a small town called Appalachia which was also Cora's hometown."
+        },
+        {
+          "en": "② 의사들은 소녀가 병원 가까이에 머무르길 원했다.",
+          "ko": "일치",
+          "why": "일치. wanted her to remain close to the hospital."
+        },
+        {
+          "en": "③ 소녀의 집은 병원에서 네 시간 거리에 있었다.",
+          "ko": "일치",
+          "why": "일치. their home was four hours away from the hospital."
+        },
+        {
+          "en": "④ Cora는 비스킷을 직접 만들었다.",
+          "ko": "불일치",
+          "why": "정답(불일치). 사과 버터는 만들었지만 비스킷은 샀어요(bought)."
+        },
+        {
+          "en": "⑤ Cora는 추가 매트리스를 준비했다.",
+          "ko": "일치",
+          "why": "일치. Cora also prepared an extra mattress."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문 (이유)",
+      "ex": "Knowing that the wait for a donor could take months, they worried",
+      "d": "~을 알았기 때문에."
+    },
+    {
+      "t": "in case of",
+      "ex": "in case of any complications",
+      "d": "~의 경우에 대비해서."
+    },
+    {
+      "t": "let + O + 동사원형",
+      "ex": "she let her stay in the largest room in the house",
+      "d": "목적어가 ~하게 허락하다."
+    }
+  ],
+  "vocab": [
+    [
+      "housework",
+      "집안일"
+    ],
+    [
+      "grieving",
+      "슬픔에 잠긴"
+    ],
+    [
+      "transplant",
+      "이식"
+    ],
+    [
+      "collapse",
+      "쓰러지다"
+    ],
+    [
+      "fail",
+      "기능을 잃다"
+    ],
+    [
+      "stable",
+      "안정된"
+    ],
+    [
+      "complication",
+      "합병증"
+    ],
+    [
+      "donor",
+      "기증자"
+    ],
+    [
+      "afford",
+      "감당하다"
+    ],
+    [
+      "instant",
+      "즉각적인"
+    ],
+    [
+      "mattress",
+      "매트리스"
+    ],
+    [
+      "grateful",
+      "감사하는"
+    ],
+    [
+      "endure",
+      "견디다"
+    ],
+    [
+      "generosity",
+      "너그러움"
+    ]
+  ],
+  "summary": {
+    "en": "Cora helped a sick girl's family from her hometown by bringing apple butter and letting them stay at her house.",
+    "ko": "Cora는 같은 고향 출신인 아픈 소녀의 가족에게 사과 버터를 가져다주고 자기 집에 머물게 하며 도왔다."
+  },
+  "writing": {
+    "en": "Sharing the heart of a hometown created a friendship among strangers.",
+    "ko": "고향의 마음을 나누는 것이 낯선 사람들 사이에 우정을 만들었다."
+  },
+  "faq": [
+    [
+      "2026년 3월 고3 영어 43번 정답은?",
+      "② (C)-(B)-(D)예요."
+    ],
+    [
+      "2026년 3월 고3 영어 44번 정답은?",
+      "③ (c)예요. (c)만 Cora이고 나머지는 모두 소녀예요."
+    ],
+    [
+      "2026년 3월 고3 영어 45번 정답은?",
+      "④예요. Cora는 사과 버터를 만들었지만 비스킷은 샀어요."
+    ]
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "평범한 돌을 그리며 '보는 법'을 배운 화가 Aiden",
+  "date": "2026-12-06",
+  "lead": "2026년 3월 고2 모의고사 영어 43~45번은 위대한 화가를 꿈꾸던 Aiden이 거장 Rowan에게서 평범한 회색 돌을 그리라는 과제를 받고, 그 안의 아름다움을 발견하며 '예술가는 창조가 아니라 관찰'이라는 가르침을 얻는 이야기예요. 43번 ② (C)-(B)-(D), 44번 ③ (c), 45번 ③이 정답이에요.",
+  "flow": [
+    [
+      "(A)",
+      "Aiden이 거장 Rowan을 찾아가 설레고 두려운 마음으로 문을 두드린다."
+    ],
+    [
+      "(C)",
+      "Rowan은 그의 풍경화를 훑어보고 밀어낸 뒤, 평범한 돌을 주며 '안에 있는 것을 그려라'라고 한다."
+    ],
+    [
+      "(B)",
+      "Aiden은 좌절하며 며칠 돌을 보다가, 빛에 따라 숨은 아름다움을 발견하고 그리기 시작한다."
+    ],
+    [
+      "(D)",
+      "완성한 그림에 Rowan이 미소 짓고, '예술가는 창조가 아니라 관찰'이라고 말한다."
+    ]
+  ],
+  "tip": "43번은 'On entering(들어가자마자)'과 'Reluctantly(마지못해)'처럼 장면을 잇는 첫 말을 잡으세요. 44번은 Aiden과 Rowan이 번갈아 나오니 he마다 누구의 행동인지 확인하세요. 45번은 칭찬처럼 결과를 뒤집은 선택지를 조심하세요.",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 43~45번",
+    "2026 3월 고2 영어 43~45번 해설",
+    "고2 3월 모의고사 43번 정답",
+    "고2 3월 모의고사 44번 정답",
+    "고2 3월 모의고사 45번 정답",
+    "2026 고2 3모 영어 43~45번",
+    "고2 모의고사 장문"
+  ],
+  "qs": [
+    {
+      "n": 43,
+      "type": "장문 순서",
+      "points": 2,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "(A) … Rowan gestured for him to enter. / (C) On entering, Aiden eagerly spread his best landscape drawings",
+          "ko": "(A) Rowan은 그에게 들어오라고 손짓했다. / (C) 들어가자마자, Aiden은 간절히 자신의 최고 풍경화들을 펼쳤다",
+          "note": "들어오라는 손짓 → 들어가자마자. (A) → (C)."
+        },
+        {
+          "en": "(C) He picked up a plain, gray stone and handed it to Aiden. / (B) Reluctantly, Aiden took the stone to his place.",
+          "ko": "(C) 그는 평범한 회색 돌을 집어 Aiden에게 건넸다. / (B) 마지못해, Aiden은 그 돌을 머무는 곳으로 가져갔다.",
+          "note": "돌을 받음 → 마지못해 가져감. (C) → (B)."
+        },
+        {
+          "en": "(B) … he grabbed his brush and began to mix colors. / (D) Several days later, Aiden returned with his canvas",
+          "ko": "(B) 그는 붓을 잡고 물감을 섞기 시작했다. / (D) 며칠 후, Aiden은 캔버스를 들고 돌아갔다.",
+          "note": "그리기 시작 → 며칠 후 완성작을 들고 감. (B) → (D)."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(B)-(D)-(C)",
+          "ko": "",
+          "why": "(B)의 the stone은 (C)에서 돌을 받은 뒤에 나와야 해요."
+        },
+        {
+          "en": "(C)-(B)-(D)",
+          "ko": "",
+          "why": "정답. 들어감·과제 → 돌을 관찰하고 그림 → 완성작을 가져감."
+        },
+        {
+          "en": "(C)-(D)-(B)",
+          "ko": "",
+          "why": "(D)에서 이미 완성작을 들고 가는데, 그다음 (B)에서 돌을 처음 관찰하면 시간이 뒤집혀요."
+        },
+        {
+          "en": "(D)-(B)-(C)",
+          "ko": "",
+          "why": "(D)의 캔버스는 과제(C)를 받기 전엔 나올 수 없어요."
+        },
+        {
+          "en": "(D)-(C)-(B)",
+          "ko": "",
+          "why": "(D)가 먼저 오면 그림을 그리기 전에 결과가 나와요."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭 대상",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "Not giving any comments that Aiden expected, (c) he walked to his garden. He picked up a plain, gray stone and handed it to Aiden.",
+          "ko": "Aiden이 기대했던 평가를 하지 않고, (c) 그는 정원으로 걸어갔다. 그는 평범한 회색 돌을 집어 Aiden에게 건넸다.",
+          "note": "(c) he = Rowan. 돌을 Aiden에게 건넨 사람이에요."
+        },
+        {
+          "en": "(d) He thought the master was mocking him.",
+          "ko": "(d) 그는 거장이 자신을 조롱하고 있다고 생각했다.",
+          "note": "(d) He = Aiden."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) He",
+          "ko": "Aiden",
+          "why": "Aiden이에요. 그림을 안고 문을 두드려요."
+        },
+        {
+          "en": "(b) he",
+          "ko": "Aiden",
+          "why": "Aiden이에요. 붓을 잡고 물감을 섞어요."
+        },
+        {
+          "en": "(c) he",
+          "ko": "Rowan",
+          "why": "정답. (c)만 Rowan이에요. 정원으로 가서 돌을 건네요."
+        },
+        {
+          "en": "(d) He",
+          "ko": "Aiden",
+          "why": "Aiden이에요. 거장이 조롱한다고 생각해요."
+        },
+        {
+          "en": "(e) his",
+          "ko": "Aiden",
+          "why": "Aiden이에요. 자기 캔버스를 들고 돌아가요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "내용 불일치",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "However, Rowan scanned them quickly and pushed them aside. Not giving any comments that Aiden expected",
+          "ko": "그러나 Rowan은 그것들을 빠르게 훑어보고는 옆으로 밀어냈다. Aiden이 기대했던 평가를 하지 않고",
+          "note": "칭찬하지 않고 밀어냈어요. ③ 불일치."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① Aiden은 전설적인 예술가인 Rowan을 만나려고 먼 길을 떠났다.",
+          "ko": "일치",
+          "why": "일치. He traveled far to meet Master Rowan, a legendary artist."
+        },
+        {
+          "en": "② Aiden은 며칠 밤낮으로 좌절한 채 돌을 응시했다.",
+          "ko": "일치",
+          "why": "일치. For days and nights, he stared at it, frustrated."
+        },
+        {
+          "en": "③ Rowan은 Aiden이 가져온 풍경화들을 보며 칭찬했다.",
+          "ko": "불일치",
+          "why": "정답(불일치). 빠르게 훑어보고 밀어냈고, 기대한 평가를 하지 않았어요."
+        },
+        {
+          "en": "④ Rowan은 Aiden에게 화려한 기교를 잊으라고 말했다.",
+          "ko": "일치",
+          "why": "일치. But forget your fancy techniques."
+        },
+        {
+          "en": "⑤ Rowan에게 캔버스를 건네줄 때 Aiden의 손이 떨렸다.",
+          "ko": "일치",
+          "why": "일치. His hands shook as he handed the canvas to the master."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "On + -ing",
+      "ex": "On entering, Aiden eagerly spread his best landscape drawings",
+      "d": "~하자마자 (= As soon as he entered)."
+    },
+    {
+      "t": "the + 비교급, the + 비교급",
+      "ex": "The more he looked at the stone, the more beauty he found in the rough surface.",
+      "d": "~할수록 더 …하다."
+    },
+    {
+      "t": "not A but B",
+      "ex": "To be an artist is not to invent, but to observe",
+      "d": "A가 아니라 B. to부정사 주어·보어가 쓰였어요."
+    }
+  ],
+  "vocab": [
+    [
+      "aspiring",
+      "의욕적인"
+    ],
+    [
+      "legendary",
+      "전설적인"
+    ],
+    [
+      "cottage",
+      "오두막"
+    ],
+    [
+      "pound",
+      "두근거리다"
+    ],
+    [
+      "gesture",
+      "손짓하다"
+    ],
+    [
+      "reluctantly",
+      "마지못해"
+    ],
+    [
+      "frustrated",
+      "좌절한"
+    ],
+    [
+      "lump",
+      "덩어리"
+    ],
+    [
+      "patch",
+      "자국"
+    ],
+    [
+      "fascinated",
+      "매료된"
+    ],
+    [
+      "eagerly",
+      "간절히"
+    ],
+    [
+      "praise",
+      "칭찬"
+    ],
+    [
+      "plain",
+      "평범한"
+    ],
+    [
+      "mock",
+      "조롱하다"
+    ],
+    [
+      "dull",
+      "칙칙한"
+    ],
+    [
+      "interpretation",
+      "해석"
+    ]
+  ],
+  "summary": {
+    "en": "By painting a plain stone, Aiden learned that being an artist is about observing, not inventing.",
+    "ko": "평범한 돌을 그리면서 Aiden은 예술가가 된다는 것은 창조가 아니라 관찰하는 것임을 배웠다."
+  },
+  "writing": {
+    "en": "To be an artist is not to invent, but to observe.",
+    "ko": "예술가가 된다는 것은 창조하는 것이 아니라 관찰하는 것이다."
+  },
+  "faq": [
+    [
+      "2026년 3월 고2 영어 43번 정답은?",
+      "② (C)-(B)-(D)예요."
+    ],
+    [
+      "2026년 3월 고2 영어 44번 정답은?",
+      "③ (c)예요. (c)만 Rowan이고 나머지는 모두 Aiden이에요."
+    ],
+    [
+      "2026년 3월 고2 영어 45번 정답은?",
+      "③이에요. Rowan은 풍경화를 칭찬하지 않고 훑어본 뒤 밀어냈어요."
+    ]
+  ]
+}

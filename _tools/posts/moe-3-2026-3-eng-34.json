@@ -1,0 +1,145 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 34,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 3,
+  "topic": "우리의 모든 데이터 흔적은 하나로 모이면 사회적 위치를 보여 준다",
+  "date": "2026-12-10",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 34번",
+    "2026 3월 고3 영어 34번 해설",
+    "고3 3월 모의고사 34번 정답",
+    "2026 고3 3모 영어 34번",
+    "고3 모의고사 빈칸",
+    "우리의 모든 데이터 흔적은 하나로"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 34번은 소셜 미디어·신용 기관·쇼핑몰 등에 남은 우리의 행동 데이터가 하나의 자원이며, 이론상 하나의 정보 벡터로 모아 우리의 상황과 가치를 요약할 수 있다는 글이에요. 결국 그것은 ③ characterize your social location(사회적 위치를 특징짓다)이에요.",
+  "flow": [
+    [
+      "자원",
+      "기록·수집된 모든 상호 작용 데이터의 흔적은 일종의 자원이다."
+    ],
+    [
+      "출처",
+      "소셜 미디어, 신용 기관, 쇼핑, 법원, 약국, 이메일 등에서 쌓인다."
+    ],
+    [
+      "형태",
+      "다양하고 다차원적이지만, 이론상 하나의 정보 벡터로 압축될 수 있다."
+    ],
+    [
+      "결론",
+      "그것은 분류 공간에서 당신의 위치를 나타낸다 → 사회적 위치를 특징짓는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "something that compactly represents your position in the multidimensional space of classification situations.",
+      "ko": "분류 상황의 다차원적 공간에서 여러분의 위치를 간결하게 나타내는 무언가",
+      "note": "your position = social location. 빈칸 바로 앞 문장이 근거예요."
+    },
+    {
+      "en": "It incorporates whatever value is in your social network, along with synthetic measures of your trustworthiness or accountability in the world.",
+      "ko": "그것은 세상에서 여러분의 신뢰성이나 책임감에 대한 종합적 측정치와 함께 사회관계망의 가치를 포함한다.",
+      "note": "사회적 관계·신뢰도까지 담겨 '사회적' 위치가 돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "conceal your digital traces",
+      "ko": "디지털 흔적을 숨기다",
+      "why": "흔적을 숨기는 게 아니라 모아서 보여 주는 거예요. 반대예요."
+    },
+    {
+      "en": "correct one’s misconception",
+      "ko": "오해를 바로잡다",
+      "why": "오해를 바로잡는 이야기는 없어요."
+    },
+    {
+      "en": "characterize your social location",
+      "ko": "사회적 위치를 특징짓다",
+      "why": "정답. 여러 특징에 걸쳐 '당신의 위치'를 요약하니 사회적 위치를 특징짓는다."
+    },
+    {
+      "en": "define what has exchange values",
+      "ko": "교환 가치가 있는 것을 정의하다",
+      "why": "교환 가치 정의는 핵심이 아니에요."
+    },
+    {
+      "en": "represent widespread social trends",
+      "ko": "널리 퍼진 사회적 경향을 나타내다",
+      "why": "사회 전체 경향이 아니라 '당신' 개인의 위치예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "명령문 Think of",
+      "ex": "Think of the totality of your interactions",
+      "d": "~을 생각해 보라."
+    },
+    {
+      "t": "whatever + 명사",
+      "ex": "It incorporates whatever value is in your social network",
+      "d": "어떤 ~이든. 명사절이 목적어로 쓰였어요."
+    },
+    {
+      "t": "in short",
+      "ex": "It would, in short, characterize your social location.",
+      "d": "요컨대. 앞 내용을 한마디로 정리해요."
+    }
+  ],
+  "vocab": [
+    [
+      "totality",
+      "전체"
+    ],
+    [
+      "accumulate",
+      "축적하다"
+    ],
+    [
+      "incorporate",
+      "포함하다"
+    ],
+    [
+      "trustworthiness",
+      "신뢰성"
+    ],
+    [
+      "accountability",
+      "책임감"
+    ],
+    [
+      "multidimensional",
+      "다차원적인"
+    ],
+    [
+      "compactly",
+      "간결하게"
+    ],
+    [
+      "classification",
+      "분류"
+    ]
+  ],
+  "summary": {
+    "en": "All our recorded data traces could, in principle, be combined to summarize our position in society.",
+    "ko": "기록된 우리의 모든 데이터 흔적은 이론상 하나로 모여 사회 속 우리의 위치를 요약할 수 있다."
+  },
+  "writing": {
+    "en": "It would, in short, characterize your social location.",
+    "ko": "요컨대 그것은 여러분의 사회적 위치를 특징지을 것이다."
+  },
+  "tip": "빈칸 앞 in short(요컨대)는 바로 앞 문장을 줄인 말이에요. 'your position in the space of classification' → your social location.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 34번 정답은?",
+      "③ characterize your social location이에요."
+    ],
+    [
+      "⑤번은 왜 틀리나요?",
+      "글은 사회 전체의 경향이 아니라 데이터로 요약되는 '당신 개인'의 위치를 말해요."
+    ]
+  ]
+}

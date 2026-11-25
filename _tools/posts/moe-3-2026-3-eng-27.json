@@ -1,0 +1,124 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 5,
+  "topic": "River Breeze Campsite (강변 캠프장) 안내",
+  "date": "2026-12-08",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 27번",
+    "2026 3월 고3 영어 27번 해설",
+    "고3 3월 모의고사 27번 정답",
+    "2026 고3 3모 영어 27번",
+    "고3 모의고사 안내문 불일치",
+    "River Breeze Camps"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 27번은 River Breeze 캠프장 안내문이에요. 안전을 위해 불꽃놀이와 캠프장 상공 드론 비행이 금지되어 있어서 '드론 비행이 허용된다'는 ⑤가 틀려요. 정답은 ⑤예요.",
+  "flow": [
+    [
+      "운영 시간",
+      "피크닉 구역 오전 11시~오후 10시, 텐트 구역 오전 11시~다음 날 오전 10시."
+    ],
+    [
+      "요금",
+      "피크닉: 8세 이상 1인 4달러, 7세 이하 무료. 텐트 자리 1박 15달러, 텐트 대여 1박 20달러."
+    ],
+    [
+      "지침",
+      "유효한 입장권 필요, 오후 10시 소등, 불꽃놀이·드론 금지."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "For safety, the following is not allowed: -Fireworks -Flying drones over the campsite",
+      "ko": "안전을 위해 다음은 허용되지 않습니다: 불꽃놀이, 캠프장 상공 드론 비행",
+      "note": "not allowed ↔ ⑤ 허용된다. 불일치."
+    }
+  ],
+  "choices": [
+    {
+      "en": "피크닉 구역은 오전 11시부터 운영한다.",
+      "ko": "",
+      "why": "일치. Picnic Area: 11:00 a.m.-10:00 p.m."
+    },
+    {
+      "en": "7세 이하의 피크닉 구역 요금은 무료이다.",
+      "ko": "",
+      "why": "일치. Ages 7 and Under: Free."
+    },
+    {
+      "en": "텐트 대여료는 1박당 20달러이다.",
+      "ko": "",
+      "why": "일치. Tent Rental: $20 per night."
+    },
+    {
+      "en": "오후 10시에 캠프장 조명이 꺼진다.",
+      "ko": "",
+      "why": "일치. Campsite lights are turned off at 10:00 p.m."
+    },
+    {
+      "en": "캠프장 상공에서 드론 비행이 허용된다.",
+      "ko": "",
+      "why": "정답(불일치). 캠프장 상공 드론 비행은 허용되지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "조동사 may (허가)",
+      "ex": "Only guests with a valid admission ticket may enter.",
+      "d": "~해도 된다. Only가 앞에 있어 '~만 들어올 수 있다'."
+    },
+    {
+      "t": "수동태",
+      "ex": "Campsite lights are turned off at 10:00 p.m.",
+      "d": "be turned off: 꺼지다."
+    },
+    {
+      "t": "keep ~ down",
+      "ex": "guests should keep the noise down",
+      "d": "(소리 등을) 낮추다."
+    }
+  ],
+  "vocab": [
+    [
+      "River Breeze",
+      "캠프장"
+    ],
+    [
+      "provide",
+      "제공하다"
+    ],
+    [
+      "rental",
+      "대여료"
+    ],
+    [
+      "admission",
+      "입장권"
+    ],
+    [
+      "allow",
+      "허용하다"
+    ]
+  ],
+  "summary": {
+    "en": "River Breeze Campsite offers picnic and tent areas, with rules such as lights off at 10 p.m. and no fireworks or drones.",
+    "ko": "River Breeze 캠프장은 피크닉·텐트 구역이 있고, 오후 10시 소등과 불꽃놀이·드론 금지 같은 규칙이 있다."
+  },
+  "writing": {
+    "en": "For safety, flying drones over the campsite is not allowed.",
+    "ko": "안전을 위해 캠프장 상공 드론 비행은 허용되지 않는다."
+  },
+  "tip": "안내문의 '허용되지 않는 것(not allowed)' 목록은 선택지에서 '허용된다'로 뒤집혀 자주 나와요. Guidelines 부분을 꼭 확인하세요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 27번 정답은?",
+      "⑤ '캠프장 상공에서 드론 비행이 허용된다'예요."
+    ],
+    [
+      "텐트를 빌리면 얼마인가요?",
+      "텐트 대여는 1박에 20달러예요. 텐트 자리만은 1박 15달러이고 텐트는 주지 않아요."
+    ]
+  ]
+}

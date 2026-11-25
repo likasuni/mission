@@ -1,0 +1,149 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 32,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 2,
+  "topic": "이야기는 선택적이고 왜곡될 수 있다 — 시민에겐 학문으로서의 역사가 필요하다",
+  "date": "2026-12-09",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 32번",
+    "2026 3월 고3 영어 32번 해설",
+    "고3 3월 모의고사 32번 정답",
+    "2026 고3 3모 영어 32번",
+    "고3 모의고사 빈칸",
+    "이야기는 선택적이고 왜곡될 수 있"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 32번은 과거의 사실은 이야기 속에서만 이해되는데 이야기는 선택적·주관적이라 늘 왜곡이 생긴다는 글이에요. 그래서 시민에게는 사실뿐 아니라 학문으로서의 역사(근거·논증 방법)가 필요하다는 ②가 정답이에요.",
+  "flow": [
+    [
+      "전제",
+      "과거의 사실은 이야기 속에서만 이해되고, 이야기는 중립적이지 않다."
+    ],
+    [
+      "문제",
+      "이야기는 선택적·주관적이며 생략으로 늘 왜곡한다."
+    ],
+    [
+      "빈칸",
+      "그래서 모든 시민에게 ___가 필요하다."
+    ],
+    [
+      "설명",
+      "학문적 역사 논증은 일화가 아니라 일반화·학문적 담론·증거 활용을 요구하고, 일상 지식처럼 저절로 익혀지지 않는다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Stories influence subtly, invest power, make hidden moral judgement and always distort by omission, whether intentionally or not.",
+      "ko": "이야기는 미묘하게 영향을 미치고, 권력을 부여하며, 숨겨진 도덕적 판단을 내리고, 의도적이든 아니든 항상 생략을 통해 왜곡한다.",
+      "note": "이야기(사실 모음)만으로는 부족한 이유예요."
+    },
+    {
+      "en": "Disciplined historical argument is not the same as informal hearing and telling of stories",
+      "ko": "(학문적) 규율에 따른 역사적 논증은 비공식적으로 이야기를 듣고 말하는 것과 같지 않다",
+      "note": "history as a discipline(학문으로서의 역사)과 연결돼요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "an ability to appropriate history for one’s own ends",
+      "ko": "자기 목적을 위해 역사를 전유하는 능력",
+      "why": "역사를 자기 목적에 쓰는 건 오히려 이야기의 왜곡이에요."
+    },
+    {
+      "en": "not just facts about the past but history as a discipline",
+      "ko": "과거에 대한 사실뿐 아니라 학문으로서의 역사",
+      "why": "정답. 이야기의 왜곡을 알아보려면 학문으로서의 역사(논증·증거)가 필요해요."
+    },
+    {
+      "en": "informal methods to record overlooked historical moments",
+      "ko": "간과된 역사적 순간을 기록하는 비공식적 방법",
+      "why": "글은 비공식적 방법으로는 학문적 지식을 얻기 어렵다고 해요. 반대예요."
+    },
+    {
+      "en": "disciplinary measures to maintain cultural particularity",
+      "ko": "문화적 특수성을 지키기 위한 징계 조치",
+      "why": "disciplinary를 '징계'로 바꾼 함정이에요."
+    },
+    {
+      "en": "a firm moral sense when reflecting on the past",
+      "ko": "과거를 돌아볼 때의 확고한 도덕 감각",
+      "why": "도덕적 판단은 오히려 이야기가 숨기는 것으로 나와요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "unless",
+      "ex": "We cannot make sense of the facts of the past unless they are embedded in stories",
+      "d": "~하지 않으면 (= if ~ not)."
+    },
+    {
+      "t": "whether ~ or not",
+      "ex": "always distort by omission, whether intentionally or not",
+      "d": "~이든 아니든."
+    },
+    {
+      "t": "in order to부정사",
+      "ex": "in order to substantiate claims",
+      "d": "~하기 위해 (목적)."
+    }
+  ],
+  "vocab": [
+    [
+      "neutral",
+      "중립적인"
+    ],
+    [
+      "conscious",
+      "의식적인"
+    ],
+    [
+      "subtly",
+      "미묘하게"
+    ],
+    [
+      "intentionally",
+      "의도적으로"
+    ],
+    [
+      "scholarly",
+      "학문적인"
+    ],
+    [
+      "generalization",
+      "일반화"
+    ],
+    [
+      "discourse",
+      "담론"
+    ],
+    [
+      "analytic",
+      "분석적인"
+    ],
+    [
+      "substantiate",
+      "입증하다, 실체화하다"
+    ]
+  ],
+  "summary": {
+    "en": "Because stories about the past are selective and distorted, citizens need to understand history as a discipline, not just facts.",
+    "ko": "과거에 관한 이야기는 선택적이고 왜곡되므로, 시민은 사실만이 아니라 학문으로서의 역사를 이해해야 한다."
+  },
+  "writing": {
+    "en": "Stories are necessarily selective, subjective and attractive.",
+    "ko": "이야기는 필연적으로 선택적이고, 주관적이며, 매력적이다."
+  },
+  "tip": "빈칸 뒤 For(왜냐하면)·설명 문장을 빈칸의 근거로 쓰세요. 뒤에서 '학문적 역사 논증'을 길게 설명하니 빈칸도 그 말이에요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 32번 정답은?",
+      "② not just facts about the past but history as a discipline이에요."
+    ],
+    [
+      "③번은 왜 틀리나요?",
+      "글은 학문적 지식이 비공식적으로는 잘 익혀지지 않는다고 해요. 비공식적 방법을 말하는 ③은 반대예요."
+    ]
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 4,
+  "topic": "인쇄술이 가져온 정보의 표준화 — Marco Polo와 Columbus의 기록 비교",
+  "date": "2026-12-05",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 35번",
+    "2026 3월 고2 영어 35번 해설",
+    "고2 3월 모의고사 35번 정답",
+    "2026 고2 3모 영어 35번",
+    "고2 모의고사 무관한 문장",
+    "인쇄술이 가져온 정보의 표준화 —"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 35번은 인쇄술이 정보를 정확히 복제해 표준화를 가져왔다는 글이에요. 필사본이 150가지로 달라진 Marco Polo와, 인쇄로 한 판본만 남은 Columbus를 비교해요. ④는 Columbus 일지의 관찰력이 부족하다는 평가라 흐름과 관계없어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "주제",
+      "인쇄술은 정보의 정확한 복제로 표준화를 가져왔다."
+    ],
+    [
+      "Polo",
+      "인쇄술 이전 Polo의 이야기는 150가지 필사본으로 달라져 진본을 알 수 없다."
+    ],
+    [
+      "Columbus",
+      "인쇄되어 배포된 Columbus의 편지는 판본이 하나뿐이다."
+    ],
+    [
+      "결론",
+      "정확성에 대한 확신이 인쇄술이 나아진 점이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "④ Christopher Columbus's travel logs are largely lacking in sharp observation, suggestive reflection, or even much of a sense of novelty.",
+      "ko": "Columbus의 여행 일지는 정확한 관찰, 생각해 볼 만한 고찰, 독창성이 대체로 부족하다.",
+      "note": "정보의 정확성(판본)이 아니라 내용의 질을 평가해요. 흐름과 무관."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 이는 Polo와 Columbus의 기록 대조에서 드러난다",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. 두 기록을 비교하겠다고 소개해요."
+    },
+    {
+      "en": "② Polo의 이야기는 150가지 필사본으로 달라졌다",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. 인쇄 전 필사본의 부정확함."
+    },
+    {
+      "en": "③ Columbus의 편지는 인쇄되어 판본이 하나뿐이다",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. 인쇄 뒤 판본이 하나로 고정됨."
+    },
+    {
+      "en": "④ Columbus의 일지는 관찰·고찰·독창성이 부족하다",
+      "ko": "무관",
+      "why": "정답(무관). 기록의 정확성이 아니라 내용의 질(관찰력·독창성) 평가예요."
+    },
+    {
+      "en": "⑤ 정확성에 대한 확신이 인쇄술의 개선점이다",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. So로 결론을 내려요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "so ~ that",
+      "ex": "with so many differences that we're not sure which version is authentic",
+      "d": "너무 ~해서 …하다."
+    },
+    {
+      "t": "in a way that ~",
+      "ex": "allowed exact reproduction of information in a way that manuscript copying did not",
+      "d": "did not = did not allow. 대동사예요."
+    },
+    {
+      "t": "In contrast",
+      "ex": "In contrast, there is only one version of Christopher Columbus's letters",
+      "d": "대조. 앞의 Polo와 반대 사례를 꺼내요."
+    }
+  ],
+  "vocab": [
+    [
+      "standardization",
+      "표준화"
+    ],
+    [
+      "reproduction",
+      "복제"
+    ],
+    [
+      "evident",
+      "분명한"
+    ],
+    [
+      "contrast",
+      "대조"
+    ],
+    [
+      "log",
+      "일지"
+    ],
+    [
+      "narrative",
+      "이야기"
+    ],
+    [
+      "authentic",
+      "진짜의"
+    ],
+    [
+      "distribute",
+      "배포하다"
+    ],
+    [
+      "suggestive",
+      "생각해 볼 만한, 암시하는"
+    ],
+    [
+      "novelty",
+      "독창성"
+    ],
+    [
+      "accuracy",
+      "정확성"
+    ],
+    [
+      "improvement",
+      "나아진 점, 개선"
+    ]
+  ],
+  "summary": {
+    "en": "Printing standardized information, as shown by the many versions of Polo's story and the single version of Columbus's letters.",
+    "ko": "인쇄술은 정보를 표준화했는데, 여러 판본이 있는 Polo의 이야기와 판본이 하나인 Columbus의 편지가 이를 보여 준다."
+  },
+  "writing": {
+    "en": "Standardization of information was an effect of printing.",
+    "ko": "정보의 표준화는 인쇄술의 한 결과였다."
+  },
+  "tip": "무관한 문장은 같은 인물(Columbus)이 나와도 주제(정확한 복제)와 다른 기준(내용의 질)으로 말하면 답이에요. 고유명사가 같다고 안심하지 마세요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 35번 정답은?",
+      "④예요."
+    ],
+    [
+      "④도 Columbus 이야기인데 왜 무관한가요?",
+      "글은 판본이 하나라는 '정확성'을 말하는데, ④는 일지 내용이 관찰력·독창성이 부족하다는 평가라 주제와 다른 이야기예요."
+    ]
+  ]
+}

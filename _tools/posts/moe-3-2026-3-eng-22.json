@@ -1,0 +1,141 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 22,
+  "type": "글의 요지",
+  "points": 2,
+  "answer": 5,
+  "topic": "좋은 답은 질문 속 문제를 해결하는 답이다 — \"내 열쇠 어디 있어?\"",
+  "date": "2026-12-07",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 22번",
+    "2026 3월 고3 영어 22번 해설",
+    "고3 3월 모의고사 22번 정답",
+    "2026 고3 3모 영어 22번",
+    "고3 모의고사 글의 요지",
+    "좋은 답은 질문 속 문제를 해결하"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 22번은 '내 열쇠 어디 있어?'라는 질문이 사실 '집을 나가야 한다'는 문제를 숨기고 있다는 글이에요. 좋은 답은 위치를 정확히 말하는 게 아니라 그 문제를 해결하는 답이라 정답은 ⑤예요.",
+  "flow": [
+    [
+      "주장",
+      "우리는 문제를 질문 형태로 표현한다. '열쇠 어디 있어?'는 질문 옷을 입은 문제다."
+    ],
+    [
+      "예시 1",
+      "'태양 표면엔 없어'는 사실이지만 집을 나서는 목표에 도움이 안 되어 나쁜 답이다."
+    ],
+    [
+      "예시 2",
+      "'네 방에 있어'는 방이 작으면 좋은 답, 크고 지저분하면 부족하다."
+    ],
+    [
+      "결론",
+      "'내 거 가져가'도 좋은 답일 수 있다. 좋은 답은 문제를 해결하는 답이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Whether or not it is a good reply is a function of whether or not it solves the problem.",
+      "ko": "그것이 좋은 답변인지 아닌지는 그것이 문제를 해결하는지 아닌지에 달려 있다.",
+      "note": "좋은 답의 기준 = 문제 해결. 요지 문장이에요."
+    },
+    {
+      "en": "A good reply doesn't need to offer an answer to the question, … as long as it resolves the problem of not being able to leave the house.",
+      "ko": "좋은 답변은 집을 떠날 수 없다는 문제를 해결하기만 한다면, 질문에 대한 대답을 제공할 필요가 없다.",
+      "note": "마지막 문장이 요지를 다시 확인해요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "의문문의 형태로 요청할 경우 의미 전달이 약해질 수 있다.",
+      "ko": "",
+      "why": "의문문이 의미 전달을 약하게 한다는 내용은 없어요."
+    },
+    {
+      "en": "타인의 요구에 대하여 진심으로 공감하는 자세가 필요하다.",
+      "ko": "",
+      "why": "공감 자세 이야기는 없어요."
+    },
+    {
+      "en": "공신력 있는 자료에 근거한 답변이 더 신뢰를 얻는다.",
+      "ko": "",
+      "why": "공신력 있는 자료는 나오지 않아요."
+    },
+    {
+      "en": "정확한 의도 전달에는 간결한 형태의 질문이 효과적이다.",
+      "ko": "",
+      "why": "간결한 질문 이야기가 아니에요."
+    },
+    {
+      "en": "질문이 내포한 문제를 해결할 수 있는 답변이 좋은 답이다.",
+      "ko": "",
+      "why": "정답. 질문에 숨은 문제를 해결하는 답이 좋은 답이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "as does ~ (도치)",
+      "ex": "\"Not on the surface of the sun\" truthfully gives the location of my keys, as does, \"Wherever your keys are.\"",
+      "d": "as + 대동사 + 주어: ~도 마찬가지이다."
+    },
+    {
+      "t": "전치사 + 관계대명사",
+      "ex": "the goal … to which keylessness constituted an obstacle",
+      "d": "열쇠 없음이 그 목표에 장애물이 되었던. constitute an obstacle to ~."
+    },
+    {
+      "t": "whether or not",
+      "ex": "Whether or not it is a good reply is a function of whether or not it solves the problem.",
+      "d": "~인지 아닌지. 명사절이 주어로 쓰였어요."
+    }
+  ],
+  "vocab": [
+    [
+      "express",
+      "표현하다"
+    ],
+    [
+      "command",
+      "명령하다"
+    ],
+    [
+      "surface",
+      "표면"
+    ],
+    [
+      "location",
+      "위치"
+    ],
+    [
+      "achieve",
+      "달성하다"
+    ],
+    [
+      "tidy",
+      "잘 정돈된"
+    ],
+    [
+      "resolve",
+      "(문제를) 해결하다"
+    ]
+  ],
+  "summary": {
+    "en": "A good answer to a question like \"Where are my keys?\" is one that solves the hidden problem, not just one that is true.",
+    "ko": "\"내 열쇠 어디 있어?\" 같은 질문에 좋은 답은 그저 사실인 답이 아니라 숨은 문제를 해결하는 답이다."
+  },
+  "writing": {
+    "en": "Whether or not it is a good reply depends on whether or not it solves the problem.",
+    "ko": "좋은 답인지 아닌지는 그것이 문제를 해결하는지에 달려 있다."
+  },
+  "tip": "요지는 예시들의 공통점을 한 문장으로 말한 곳이에요. 여러 답변 예시(태양, 방, 내 열쇠)가 모두 '문제 해결 여부'로 평가되는 걸 잡으세요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 22번 정답은?",
+      "⑤ '질문이 내포한 문제를 해결할 수 있는 답변이 좋은 답이다'예요."
+    ],
+    [
+      "\"Here, take mine\"은 왜 좋은 답인가요?",
+      "열쇠 위치는 말하지 않지만, 빨리 집을 나가야 하는 진짜 문제를 해결해 주기 때문이에요."
+    ]
+  ]
+}

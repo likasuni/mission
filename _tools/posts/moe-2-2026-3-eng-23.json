@@ -1,0 +1,153 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 23,
+  "type": "글의 주제",
+  "points": 2,
+  "answer": 2,
+  "topic": "공연 조명은 장면과 전환마다 목적(계기)을 가지고 바뀐다",
+  "date": "2026-12-03",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 23번",
+    "2026 3월 고2 영어 23번 해설",
+    "고2 3월 모의고사 23번 정답",
+    "2026 고2 3모 영어 23번",
+    "고2 모의고사 글의 주제",
+    "공연 조명은 장면과 전환마다 목적"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 23번은 공연 조명 신호(cue)도 배우처럼 계기가 필요하고, 장면과 전환마다 '조명이 무엇을 할 것인가'를 물어야 한다는 글이에요. 정답은 ② purposeful lighting for shaping scenes and shifts in performance예요.",
+  "flow": [
+    [
+      "개념",
+      "공연 조명은 여러 조명 상태로 이루어지고, 조명 신호가 새 상태로 바꾼다."
+    ],
+    [
+      "핵심",
+      "배우처럼 조명 신호도 계기(motivation)가 필요하다."
+    ],
+    [
+      "예시",
+      "스위치를 켤 때 밝히기, 버튼 큐, 일몰·위협적 분위기로 천천히 바꾸기."
+    ],
+    [
+      "결론",
+      "장면·전환마다 '조명이 무엇을 할 것인가'를 물어야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Like actors, lighting cues usually need a motivation.",
+      "ko": "배우처럼, 조명 신호도 보통 계기가 필요하다.",
+      "note": "motivation(계기, 목적) = purposeful."
+    },
+    {
+      "en": "The question, 'What will lighting do for this production?' needs to be asked for each moment of the production, each dramatic unit or scene, and each transition.",
+      "ko": "'이 작품에서 조명이 무엇을 할 것인가?'라는 질문은 작품의 각 순간, 각 장면, 그리고 각 전환마다 제기될 필요가 있다.",
+      "note": "scene·transition = ②의 scenes and shifts."
+    }
+  ],
+  "choices": [
+    {
+      "en": "various lighting cues for inducing an active audience engagement",
+      "ko": "관객의 적극적 참여를 이끄는 다양한 조명 신호",
+      "why": "관객 참여 이야기는 없어요."
+    },
+    {
+      "en": "purposeful lighting for shaping scenes and shifts in performance",
+      "ko": "공연의 장면과 전환을 만드는 목적 있는 조명",
+      "why": "정답. 계기가 있는(목적 있는) 조명이 장면과 전환을 만든다는 글이에요."
+    },
+    {
+      "en": "ways to mark the passage of time in a scene with lighting",
+      "ko": "조명으로 장면 속 시간의 흐름을 나타내는 방법",
+      "why": "일몰은 예시 하나일 뿐이에요. 너무 좁아요."
+    },
+    {
+      "en": "commercial effects of a dramatic lighting performance",
+      "ko": "극적인 조명 공연의 상업적 효과",
+      "why": "상업적 효과는 나오지 않아요."
+    },
+    {
+      "en": "technical process of designing performance lighting",
+      "ko": "공연 조명을 설계하는 기술적 과정",
+      "why": "기술적 설계 과정이 아니라 조명의 '목적'이 핵심이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "be made up of",
+      "ex": "Most performance lighting is made up of a number of different looks",
+      "d": "~으로 구성되다."
+    },
+    {
+      "t": "목적격 관계대명사 생략",
+      "ex": "different looks which we have called lighting states",
+      "d": "call + 목적어 + 보어의 목적어(looks)가 앞으로 나간 관계절이에요."
+    },
+    {
+      "t": "need to be p.p.",
+      "ex": "needs to be asked for each moment of the production",
+      "d": "~될 필요가 있다."
+    }
+  ],
+  "vocab": [
+    [
+      "cue",
+      "신호, 큐"
+    ],
+    [
+      "trigger",
+      "이끌어내다"
+    ],
+    [
+      "motivation",
+      "계기, 동기"
+    ],
+    [
+      "rapid",
+      "빠른"
+    ],
+    [
+      "intensity",
+      "강도"
+    ],
+    [
+      "subtle",
+      "미묘한"
+    ],
+    [
+      "atmosphere",
+      "분위기"
+    ],
+    [
+      "intention",
+      "의도"
+    ],
+    [
+      "threatening",
+      "위협적인"
+    ],
+    [
+      "dramatic",
+      "극적인"
+    ]
+  ],
+  "summary": {
+    "en": "Performance lighting changes need a clear purpose for each scene and transition.",
+    "ko": "공연 조명의 변화는 각 장면과 전환마다 분명한 목적이 필요하다."
+  },
+  "writing": {
+    "en": "Like actors, lighting cues usually need a motivation.",
+    "ko": "배우처럼, 조명 신호도 보통 계기가 필요하다."
+  },
+  "tip": "주제 문제는 예시(스위치, 일몰)보다 그 예시가 보여 주려는 공통점(계기·목적)을 잡으세요. ③처럼 예시 하나만 담은 선택지는 너무 좁아요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 23번 정답은?",
+      "② purposeful lighting for shaping scenes and shifts in performance예요."
+    ],
+    [
+      "⑤번은 왜 틀리나요?",
+      "조명을 어떻게 설계하는지 기술 과정이 아니라, 조명이 장면마다 '무슨 목적'을 가져야 하는지가 핵심이에요."
+    ]
+  ]
+}

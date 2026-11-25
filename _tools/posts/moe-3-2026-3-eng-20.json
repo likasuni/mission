@@ -1,0 +1,177 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 20,
+  "type": "필자의 주장",
+  "points": 2,
+  "answer": 1,
+  "topic": "과학이 인간의 활동이라는 점은 약점이 아니라 지식 추구의 바탕이다",
+  "date": "2026-12-07",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 20번",
+    "2026 3월 고3 영어 20번 해설",
+    "고3 3월 모의고사 20번 정답",
+    "2026 고3 3모 영어 20번",
+    "고3 모의고사 필자의 주장",
+    "과학이 인간의 활동이라는 점은 약"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 20번은 과학이 문화에 묻힌 인간의 활동이라 진짜 지식이 아니라는 주장을 반박하는 글이에요. 활을 쏘는 사람의 몸과 문화가 과녁을 맞히는 수단과 동기를 주듯, 인간 활동이라는 점이 오히려 지식의 바탕이라는 주장이라 정답은 ①이에요.",
+  "flow": [
+    [
+      "반대 의견",
+      "과학이 문화·예술·철학과 얽힌 인간 활동이라면 진짜 지식이라는 주장이 약해진다."
+    ],
+    [
+      "반박",
+      "하지만 정반대가 참이다."
+    ],
+    [
+      "비유",
+      "활을 쏠 때 몸과 문화 속에 있다는 사실이 장애물이 아니라 수단과 동기를 준다."
+    ],
+    [
+      "결론",
+      "과학과 지각도 세계에 대한 확실한 지식을 겨냥하는 인간 활동이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "But why say this? Just the opposite is true.",
+      "ko": "하지만 왜 이렇게 말하는가? 정확히 그 반대가 참이다.",
+      "note": "앞의 통념(인간 활동 = 지식의 약점)을 뒤집는 신호예요."
+    },
+    {
+      "en": "it is that embedding that supplies me not only with the physical means … but also with the motivation to hit the target in the first place.",
+      "ko": "나에게 물리적 수단뿐 아니라 애초에 과녁을 맞히려는 동기를 주는 것은 바로 그 파묻혀 있는 상태이다.",
+      "note": "인간 활동(문화에 묻힘)이 지식 추구의 기반이라는 주장 = ①."
+    }
+  ],
+  "choices": [
+    {
+      "en": "과학이 인간의 활동이라는 점을 지식 추구의 기반으로 봐야 한다.",
+      "ko": "",
+      "why": "정답. 인간 활동이라는 점이 수단과 동기를 주는 바탕이라는 글이에요."
+    },
+    {
+      "en": "과학적 진리에 도달하려면 인간 활동의 한계를 극복해야 한다.",
+      "ko": "",
+      "why": "인간 활동의 한계를 극복하라는 게 아니라, 그 자체가 바탕이라는 글이에요. 반대예요."
+    },
+    {
+      "en": "지식 탐구를 위해서는 과학적 사실 그 자체에 집중해야 한다.",
+      "ko": "",
+      "why": "과학적 사실 그 자체에 집중하라는 말은 없어요."
+    },
+    {
+      "en": "객관적 연구를 위해 연구자의 개인적 가치관을 배제해야 한다.",
+      "ko": "",
+      "why": "개인적 가치관을 배제하라는 건 글이 반박하는 쪽 생각에 가까워요."
+    },
+    {
+      "en": "인간 행위를 합리화하려는 목적으로 과학을 이용하지 말아야 한다.",
+      "ko": "",
+      "why": "과학을 합리화에 쓰지 말라는 내용은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "It is ~ that 강조 구문",
+      "ex": "it is that embedding that supplies me ~",
+      "d": "그 파묻혀 있는 상태가 바로 ~을 준다. that embedding을 강조해요."
+    },
+    {
+      "t": "not only A but also B",
+      "ex": "not only with the physical means … but also with the motivation",
+      "d": "A뿐 아니라 B도. supply A with B(A에게 B를 제공하다)와 함께 쓰였어요."
+    },
+    {
+      "t": "no better than",
+      "ex": "science is no better than religion",
+      "d": "~보다 나을 게 없는, ~와 마찬가지인."
+    }
+  ],
+  "vocab": [
+    [
+      "argue",
+      "주장하다"
+    ],
+    [
+      "philosophy",
+      "철학"
+    ],
+    [
+      "undermine",
+      "~의 기반을 약화시키다"
+    ],
+    [
+      "claim",
+      "주장"
+    ],
+    [
+      "genuine",
+      "진짜의"
+    ],
+    [
+      "knowledge",
+      "지식"
+    ],
+    [
+      "no better than",
+      "~보다 별로 나을 것이 없는"
+    ],
+    [
+      "religion",
+      "종교"
+    ],
+    [
+      "practice",
+      "관습"
+    ],
+    [
+      "bow",
+      "활"
+    ],
+    [
+      "arrow",
+      "화살"
+    ],
+    [
+      "concentrate",
+      "집중하다"
+    ],
+    [
+      "obstacle",
+      "장애물"
+    ],
+    [
+      "supply",
+      "제공하다"
+    ],
+    [
+      "physical",
+      "물리적인"
+    ],
+    [
+      "means",
+      "수단"
+    ]
+  ],
+  "summary": {
+    "en": "Science being a human, culturally embedded activity does not weaken it; it gives the means and motivation for seeking knowledge.",
+    "ko": "과학이 문화에 묻힌 인간 활동이라는 점은 약점이 아니라 지식을 추구하는 수단과 동기를 준다."
+  },
+  "writing": {
+    "en": "Science and perception are human activities that aim at secure knowledge of the world.",
+    "ko": "과학과 지각은 세계에 대한 확실한 지식을 겨냥하는 인간 활동이다."
+  },
+  "tip": "주장 문제에서 'Just the opposite is true.'가 나오면 앞의 주장과 정반대가 필자의 생각이에요. 앞(인간 활동 = 약점)을 뒤집으면 ①이 돼요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 20번 정답은?",
+      "① '과학이 인간의 활동이라는 점을 지식 추구의 기반으로 봐야 한다'예요."
+    ],
+    [
+      "②번은 왜 틀리나요?",
+      "글은 인간 활동이라는 점이 극복할 한계가 아니라 오히려 수단과 동기를 주는 바탕이라고 해요."
+    ]
+  ]
+}

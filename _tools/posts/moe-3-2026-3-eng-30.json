@@ -1,0 +1,148 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 30,
+  "type": "어휘",
+  "points": 2,
+  "answer": 2,
+  "topic": "이름을 붙이고 범주로 묶으면 개별적인 차이는 사라진다",
+  "date": "2026-12-09",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 30번",
+    "2026 3월 고3 영어 30번 해설",
+    "고3 3월 모의고사 30번 정답",
+    "2026 고3 3모 영어 30번",
+    "고3 모의고사 어휘",
+    "이름을 붙이고 범주로 묶으면 개별"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 30번은 보통 명사로 이름을 붙이고 범주화할 때 대상의 개별적 특징이 빠진다는 글이에요. '잔디'라는 말은 다양한 풀과 풀 아닌 식물을 '인정하는(acknowledges)' 게 아니라 '무시해요(neglects)'. 정답은 ②예요.",
+  "flow": [
+    [
+      "주장",
+      "고유 명사가 아닌 이름을 붙이면 대상의 개별적 특징에서 멀어진다."
+    ],
+    [
+      "예시",
+      "'꽃'·'잔디' 같은 보통 명사는 데이지·클로버·풀의 차이를 빼 버린다."
+    ],
+    [
+      "실용",
+      "대부분의 목적에는 차이를 무시해도 되지만, 경기장 관리인에게는 중요하다."
+    ],
+    [
+      "결론",
+      "무한한 정신에게는 풀잎마다 자기 이름이 있을 수 있다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "\"Lawn\" ② acknowledges the varieties of grass and all the nongrassy plants that are there.",
+      "ko": "'잔디'라는 말은 그곳에 있는 다양한 풀과 풀이 아닌 모든 식물을 인정한다(→ 무시한다).",
+      "note": "앞 문장들이 모두 '차이를 빼 버린다'는 흐름이라 acknowledges는 반대예요. neglects가 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① differences",
+      "ko": "차이",
+      "why": "적절. 보통 명사는 대상들의 '차이'를 빼 버려요."
+    },
+    {
+      "en": "② acknowledges",
+      "ko": "인정한다 (→ 무시한다)",
+      "why": "정답(부적절). '잔디'라는 말은 다양한 풀을 '무시(neglects)'해요."
+    },
+    {
+      "en": "③ alike",
+      "ko": "똑같은",
+      "why": "적절. 어떤 두 데이지도 정확히 '같지' 않아요."
+    },
+    {
+      "en": "④ ignored",
+      "ko": "무시되는",
+      "why": "적절. 실용적 목적에는 차이를 '무시해도' 돼요."
+    },
+    {
+      "en": "⑤ co-categorized",
+      "ko": "한 범주로 묶인",
+      "why": "적절. 무한한 정신에게는 풀잎을 '한 범주로 묶을' 필요가 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "명령문 + and",
+      "ex": "Zoom in, and you will find individuality and uniqueness everywhere.",
+      "d": "~해라, 그러면 …할 것이다."
+    },
+    {
+      "t": "No two ~ are alike",
+      "ex": "No two daisies, no two clovers, are exactly alike",
+      "d": "어떤 두 개도 똑같지 않다."
+    },
+    {
+      "t": "need not + 동사원형",
+      "ex": "each blade of grass … need not be co-categorized with all its fellows",
+      "d": "~할 필요가 없다 (need가 조동사)."
+    }
+  ],
+  "vocab": [
+    [
+      "conceptualize",
+      "개념화하다"
+    ],
+    [
+      "categorize",
+      "범주화하다, 분류하다"
+    ],
+    [
+      "proper name",
+      "고유 명사"
+    ],
+    [
+      "lawn",
+      "잔디"
+    ],
+    [
+      "ordinary noun",
+      "보통 명사"
+    ],
+    [
+      "individuality",
+      "개별성"
+    ],
+    [
+      "uniqueness",
+      "고유성"
+    ],
+    [
+      "uniformly",
+      "균일하게"
+    ],
+    [
+      "ignore",
+      "무시하다"
+    ],
+    [
+      "constituent",
+      "구성하는"
+    ]
+  ],
+  "summary": {
+    "en": "Naming and categorizing things leaves out their individual differences, which matter only for some purposes.",
+    "ko": "사물에 이름을 붙이고 범주화하면 개별적 차이가 빠지며, 그 차이는 일부 목적에서만 중요하다."
+  },
+  "writing": {
+    "en": "Every time you put a name on something, you abstract away from its particularities.",
+    "ko": "무언가에 이름을 붙일 때마다 여러분은 그것의 개별적 특징에서 멀어진다."
+  },
+  "tip": "낱말 쓰임은 앞뒤 예시가 모두 같은 방향(차이를 빼 버림)인지 확인하세요. 그 흐름과 반대인 단어(acknowledges)가 답이에요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 30번 정답은?",
+      "② acknowledges예요. neglects(무시하다)가 맞아요."
+    ],
+    [
+      "④ ignored는 왜 맞나요?",
+      "데이지 사슬 만들기나 일광욕처럼 실용적인 목적에는 풀의 차이를 무시해도 된다는 뜻이라 맞아요."
+    ]
+  ]
+}

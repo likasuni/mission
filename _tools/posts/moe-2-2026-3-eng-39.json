@@ -1,0 +1,152 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 39,
+  "type": "문장 삽입",
+  "points": 3,
+  "answer": 3,
+  "topic": "우리가 겪는 압력 변화는 행성 전체의 압력 범위에 비하면 미미하다",
+  "date": "2026-12-06",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 39번",
+    "2026 3월 고2 영어 39번 해설",
+    "고2 3월 모의고사 39번 정답",
+    "2026 고2 3모 영어 39번",
+    "고2 모의고사 문장 삽입",
+    "우리가 겪는 압력 변화는 행성 전"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 39번은 우리가 물질의 상태 변화를 온도 탓으로만 여기는 건 압력이 일정한 지표면에 살기 때문이라는 글이에요. '하지만 우리가 겪는 압력 변화는 행성 전체에 비하면 미미하다'는 문장은 물속·산꼭대기의 작은 압력 변화 이야기 뒤, 깊이에 따른 압력 증가가 나오기 전인 ③에 들어가요.",
+  "flow": [
+    [
+      "직관",
+      "지표면은 압력이 낮고 일정해서, 우리는 녹고 끓는 것을 온도 상승으로 여긴다."
+    ],
+    [
+      "편향",
+      "이는 일정한 압력 환경에 살기 때문이다. 물속·산꼭대기의 작은 압력 변화도 신진대사에 큰 영향을 준다."
+    ],
+    [
+      "주어진 문장 (③)",
+      "그러나 우리가 겪는 압력 변화는 행성 전체 범위에 비하면 미미하다."
+    ],
+    [
+      "확장",
+      "압력은 깊이에 따라 급격히 커져, 행성의 압력 범위는 0에서 수백만 기압까지다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Even small changes in pressure, such as those we experience when under water or on high mountaintops, can have very large effects on our metabolism. ( ③ ) Since pressure is controlled by the weight of overlying material, pressures increase rapidly with depth.",
+      "ko": "물속이나 높은 산에서 겪는 작은 압력 변화조차 신진대사에 큰 영향을 줄 수 있다. ( ③ ) 압력은 위에 쌓인 물질의 무게에 좌우되므로 깊이에 따라 급격히 증가한다.",
+      "note": "우리가 겪는 압력(작은 변화) → 행성 전체 압력(거대한 범위)으로 넘어가는 자리. ③."
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "",
+      "why": "편향의 이유(일정한 압력)를 설명하기 전이라 But이 받을 내용이 없어요."
+    },
+    {
+      "en": "②",
+      "ko": "",
+      "why": "편향의 이유와 그 예(작은 압력 변화)가 이어지는 자리예요."
+    },
+    {
+      "en": "③",
+      "ko": "정답 자리",
+      "why": "정답. the pressure changes we experience가 바로 앞의 '물속·산꼭대기 변화'를 받고, 뒤에서 행성 규모 압력 이야기가 시작돼요."
+    },
+    {
+      "en": "④",
+      "ko": "",
+      "why": "깊이와 압력의 관계 설명이 이어지는 자리예요."
+    },
+    {
+      "en": "⑤",
+      "ko": "",
+      "why": "For this reason이 앞의 깊이·암석 무게를 받아 결론을 내려요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "compared to",
+      "ex": "are trivial compared to the pressure range of the overall planetary environment",
+      "d": "~에 비하면."
+    },
+    {
+      "t": "계속적 용법 where",
+      "ex": "Earth's surface, where the pressure is uniformly low",
+      "d": "콤마 뒤 where: 그리고 그곳에서는."
+    },
+    {
+      "t": "대명사 those",
+      "ex": "such as those we experience when under water",
+      "d": "those = changes. 반복을 피하는 대명사예요."
+    }
+  ],
+  "vocab": [
+    [
+      "pressure",
+      "압력"
+    ],
+    [
+      "trivial",
+      "미미한"
+    ],
+    [
+      "planetary",
+      "지구의, 행성의"
+    ],
+    [
+      "uniformly",
+      "균일하게"
+    ],
+    [
+      "variation",
+      "변화"
+    ],
+    [
+      "solid",
+      "고체"
+    ],
+    [
+      "assume",
+      "추측하다"
+    ],
+    [
+      "bias",
+      "편향"
+    ],
+    [
+      "constant",
+      "일정한"
+    ],
+    [
+      "generate",
+      "만들어 내다"
+    ],
+    [
+      "interior",
+      "내부"
+    ]
+  ],
+  "summary": {
+    "en": "Our intuition links changes of state to temperature because we live under nearly constant pressure, but planetary pressures vary enormously.",
+    "ko": "우리는 거의 일정한 압력 아래 살기 때문에 상태 변화를 온도와 연결하지만, 행성의 압력은 엄청나게 다양하다."
+  },
+  "writing": {
+    "en": "The pressure changes we experience are trivial compared to the pressure range of the planet.",
+    "ko": "우리가 겪는 압력 변화는 행성의 압력 범위에 비하면 미미하다."
+  },
+  "tip": "주어진 문장의 the pressure changes we experience처럼 '앞에서 말한 것'을 다시 받는 표현이 있으면, 그 내용(물속·산꼭대기)이 끝나는 바로 뒤가 자리예요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 39번 정답은?",
+      "③이에요."
+    ],
+    [
+      "④는 왜 안 되나요?",
+      "③ 뒤 문장부터 이미 행성 규모(깊이에 따른 압력)를 이야기해요. 주어진 문장은 그 전환을 여는 문장이라 ③에 와야 해요."
+    ]
+  ]
+}

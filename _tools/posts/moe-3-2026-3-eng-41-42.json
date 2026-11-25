@@ -1,0 +1,230 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "문학이라는 거울이 비추지 못하는 것의 의미",
+  "date": "2026-12-11",
+  "lead": "2026년 3월 고3 모의고사 영어 41~42번은 문학 작품이 현실을 비추는 거울이지만 결함과 사각지대가 있고, 비추지 못하는 것(배제·왜곡)도 비추는 것만큼 중요하다는 장문이에요. 41번은 ① The Significance of What Literary Mirrors Fail to Show, 42번은 George Eliot이 소박한 사실주의를 '칭찬(praising)'이 아니라 '비판(reproaching)'해야 해서 ④ (d)예요.",
+  "flow": [
+    [
+      "주장",
+      "Macherey: Tolstoy의 작품은 1905년 혁명의 거울이지만, 직접적인 반영이 아니다."
+    ],
+    [
+      "결함",
+      "문학의 거울엔 결함과 사각지대가 있고, 비추지 못하는 것도 중요하다."
+    ],
+    [
+      "효과",
+      "거울은 그 부재를 알아차리게 해, 없는 것을 더 잘 보게 한다."
+    ],
+    [
+      "관점",
+      "거울은 스스로 담을 수 없는 관점에서 현실을 보여 주며, 그 관점은 보이지 않아 의심 없이 받아들여지기 쉽다."
+    ]
+  ],
+  "tip": "41번: 글이 강조하는 '비추지 못하는 것(exclusions, absences)'을 담은 제목을 고르세요. ④는 글이 부정한 '있는 그대로의 반영'이에요. 42번: Eliot의 말(거울은 결함이 있다)과 '소박한 사실주의'는 반대라서 칭찬이 아니라 비판이에요.",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 41~42번",
+    "2026 3월 고3 영어 41~42번 해설",
+    "고3 3월 모의고사 41번 정답",
+    "고3 3월 모의고사 42번 정답",
+    "2026 고3 3모 영어 41~42번",
+    "고3 모의고사 장문"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 1,
+      "evidence": [
+        {
+          "en": "In fact, they are as significant for what they don't reflect—for their exclusions and distortions—as for what they do.",
+          "ko": "사실, 그것들은 비추는 것만큼이나 비추지 않는 것, 즉 배제와 왜곡 때문에도 중요하다.",
+          "note": "비추지 못하는 것의 의미 = ①."
+        },
+        {
+          "en": "It is as though it allows us to see more clearly what isn't there.",
+          "ko": "그것은 마치 거기에 없는 것을 더 분명히 보게 해 주는 것 같다.",
+          "note": "없는 것(부재)을 보게 하는 거울."
+        }
+      ],
+      "choices": [
+        {
+          "en": "① The Significance of What Literary Mirrors Fail to Show",
+          "ko": "문학의 거울이 보여 주지 못하는 것의 중요성",
+          "why": "정답. 배제·왜곡·부재가 비추는 것만큼 중요하다는 글이에요."
+        },
+        {
+          "en": "② Literature: A Tool for Writers to Deliver Their View",
+          "ko": "문학: 작가가 관점을 전달하는 도구",
+          "why": "작가의 관점 전달이 핵심이 아니에요."
+        },
+        {
+          "en": "③ Why Are We Fascinated by Twists in Literature?",
+          "ko": "왜 우리는 문학의 반전에 매료되는가?",
+          "why": "반전 이야기는 없어요."
+        },
+        {
+          "en": "④ The Power of Literature to Reflect Reality As It Stands",
+          "ko": "현실을 있는 그대로 비추는 문학의 힘",
+          "why": "글은 '있는 그대로의 반영이 결코 아니다'라고 해요. 반대예요."
+        },
+        {
+          "en": "⑤ What Makes a Classic: All Elements Working in Harmony",
+          "ko": "고전을 만드는 것: 모든 요소의 조화",
+          "why": "거울에 비친 것은 조각나고 어긋날 수 있다고 했어요. 반대예요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 3,
+      "answer": 4,
+      "evidence": [
+        {
+          "en": "'The mirror is doubtless defective; the outlines will sometimes be disturbed; the reflection faint or confused', remarks George Eliot in Adam Bede, (d) praising the kind of naive realism which holds that art (or mirrors) always tell it like it is.",
+          "ko": "'거울은 의심할 여지 없이 결함이 있다'라고 George Eliot은 말하며, 예술(거울)이 항상 있는 그대로 말한다고 여기는 소박한 사실주의를 (d) 칭찬한다(→ 비판한다).",
+          "note": "거울에 결함이 있다는 말은 '항상 있는 그대로'라는 소박한 사실주의와 반대예요. reproaching이 맞아요."
+        },
+        {
+          "en": "Even so, the mirror makes us aware of these (c) absences, which thus become faintly present.",
+          "ko": "그렇더라도 거울은 이러한 (c) 부재를 알아차리게 하고, 그래서 그것들은 희미하게 존재하게 된다.",
+          "note": "비추지 못한 것 = 부재. 적절."
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) direct",
+          "ko": "직접적인",
+          "why": "적절. 거울은 세상을 '직접' 반영하는 게 결코 아니라는 문맥이에요."
+        },
+        {
+          "en": "(b) figure",
+          "ko": "나타나다",
+          "why": "적절. 거울에 '나타나지' 않는 것들이 있어요."
+        },
+        {
+          "en": "(c) absences",
+          "ko": "부재",
+          "why": "적절. 거울은 그 '부재'를 알아차리게 해요."
+        },
+        {
+          "en": "(d) praising",
+          "ko": "칭찬하는 (→ 비판하는)",
+          "why": "정답(부적절). 거울에 결함이 있다는 Eliot의 말은 소박한 사실주의를 '비판(reproaching)'하는 거예요."
+        },
+        {
+          "en": "(e) invisible",
+          "ko": "보이지 않는",
+          "why": "적절. 거울의 관점은 거울 안에 담기지 않아 '보이지 않아요'."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "by no means",
+      "ex": "by no means a direct reflection of the world as it stands",
+      "d": "결코 ~이 아닌."
+    },
+    {
+      "t": "as A as B",
+      "ex": "as significant for what they don't reflect … as for what they do",
+      "d": "B만큼 A도. do는 reflect를 대신해요."
+    },
+    {
+      "t": "as though",
+      "ex": "It is as though it allows us to see more clearly what isn't there.",
+      "d": "마치 ~인 것처럼."
+    }
+  ],
+  "vocab": [
+    [
+      "commentary",
+      "논평"
+    ],
+    [
+      "mirroring",
+      "반영"
+    ],
+    [
+      "reflection",
+      "반영"
+    ],
+    [
+      "flaw",
+      "결함"
+    ],
+    [
+      "blind spot",
+      "사각지대"
+    ],
+    [
+      "exclusion",
+      "배제"
+    ],
+    [
+      "distortion",
+      "왜곡"
+    ],
+    [
+      "figure",
+      "나타나다"
+    ],
+    [
+      "contradiction",
+      "모순"
+    ],
+    [
+      "faintly",
+      "희미하게"
+    ],
+    [
+      "coherent",
+      "일관된"
+    ],
+    [
+      "discordant",
+      "조화되지 않는"
+    ],
+    [
+      "defective",
+      "결함이 있는"
+    ],
+    [
+      "naive",
+      "소박한, 순진한"
+    ],
+    [
+      "reproach",
+      "비판하다"
+    ],
+    [
+      "invisible",
+      "보이지 않는"
+    ]
+  ],
+  "summary": {
+    "en": "Literary works mirror reality with flaws, and what they fail to show is as meaningful as what they show.",
+    "ko": "문학 작품은 결함을 지닌 채 현실을 비추며, 그것이 보여 주지 못하는 것은 보여 주는 것만큼 의미가 있다."
+  },
+  "writing": {
+    "en": "They are as significant for what they don't reflect as for what they do.",
+    "ko": "그것들은 비추는 것만큼이나 비추지 않는 것으로도 중요하다."
+  },
+  "faq": [
+    [
+      "2026년 3월 고3 영어 41번 정답은?",
+      "① The Significance of What Literary Mirrors Fail to Show예요."
+    ],
+    [
+      "2026년 3월 고3 영어 42번 정답은?",
+      "④ (d)예요. praising(칭찬하는)이 아니라 reproaching(비판하는)이 맞아요."
+    ]
+  ]
+}

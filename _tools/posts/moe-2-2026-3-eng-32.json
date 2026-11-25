@@ -1,0 +1,177 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 32,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 5,
+  "topic": "Dewey는 예술과 삶을 떼어 놓지 않았다 — 일상의 미학",
+  "date": "2026-12-04",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 32번",
+    "2026 3월 고2 영어 32번 해설",
+    "고2 3월 모의고사 32번 정답",
+    "2026 고2 3모 영어 32번",
+    "고2 모의고사 빈칸",
+    "Dewey는 예술과 삶을 떼어 놓"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 32번은 일상생활의 미학이 John Dewey의 'Art as Experience'에서 현대적 기원을 찾는다는 글이에요. Dewey는 미적 경험을 인간 삶의 조건에 두고, 자아와 세계의 상호 침투에서 찾았어요. 정답은 ⑤ argued against the separation of art from life예요.",
+  "flow": [
+    [
+      "소개",
+      "미적 경험의 확장에서 나온 대표적 발전은 일상생활의 미학이다."
+    ],
+    [
+      "배경",
+      "평범한 사물의 미적 만족은 오래 인식되었지만 철학에서는 무시되었다."
+    ],
+    [
+      "기원",
+      "Dewey는 미적 경험을 인간 삶의 생물학적·문화적 조건에 두었다 (빈칸)."
+    ],
+    [
+      "설명",
+      "미적인 것 = 자아와 세계의 완전한 상호 침투, 일상 경험의 특성이 명확해진 것."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "by basing aesthetic experience on the biological and cultural conditions of human life",
+      "ko": "미적 경험을 인간 삶의 생물학적, 문화적 조건에 기반하여",
+      "note": "예술(미적 경험)을 삶의 조건 위에 둔 것 = 예술과 삶을 분리하지 않음."
+    },
+    {
+      "en": "\"the aesthetic is the clarified and intensified development of traits that belong to every normally complete experience.\"",
+      "ko": "\"미적인 것이란 모든 일상적으로 완전한 경험에 속하는 특성들이 명확해지고 강화되어 발전된 형태이다.\"",
+      "note": "미적인 것이 일상 경험 안에 있다는 말이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "identified aesthetic appreciation with literary convention",
+      "ko": "미적 감상을 문학적 관습과 동일시했다",
+      "why": "문학적 관습 이야기는 없어요."
+    },
+    {
+      "en": "preferred artistic value to practical value of objects",
+      "ko": "사물의 실용적 가치보다 예술적 가치를 선호했다",
+      "why": "예술 가치와 실용 가치를 비교하지 않아요."
+    },
+    {
+      "en": "confined aesthetic experience to sensory pleasure",
+      "ko": "미적 경험을 감각적 즐거움에 한정했다",
+      "why": "Dewey는 미적인 것을 감각의 내면화된 인식이 아니라고 했어요. 반대예요."
+    },
+    {
+      "en": "advocated for the reform of artistic techniques",
+      "ko": "예술 기법의 개혁을 지지했다",
+      "why": "예술 기법 개혁은 나오지 않아요."
+    },
+    {
+      "en": "argued against the separation of art from life",
+      "ko": "예술을 삶에서 분리하는 것에 반대했다",
+      "why": "정답. 미적 경험을 삶의 조건에 두었으니 예술과 삶의 분리에 반대한 거예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "even if + 과거분사",
+      "ex": "has long been recognized, even if degraded and dismissed by prevalent philosophical theory",
+      "d": "even if (it was) degraded ~에서 주어·be동사가 생략됐어요."
+    },
+    {
+      "t": "not A but B",
+      "ex": "not in an internalized awareness of sensation and feeling but in \"a complete interpenetration of self and the world\"",
+      "d": "A가 아니라 B."
+    },
+    {
+      "t": "가주어 it ~ to부정사",
+      "ex": "It may be most convenient, though, to locate its contemporary intellectual origins",
+      "d": "to locate ~가 진주어예요."
+    }
+  ],
+  "vocab": [
+    [
+      "perhaps",
+      "아마도"
+    ],
+    [
+      "emerge",
+      "나타나다, 출현하다"
+    ],
+    [
+      "liberation",
+      "해방"
+    ],
+    [
+      "expansion",
+      "확장"
+    ],
+    [
+      "aesthetic",
+      "미적인"
+    ],
+    [
+      "presently",
+      "현재"
+    ],
+    [
+      "a flowering of",
+      "활발한"
+    ],
+    [
+      "possibility",
+      "가능성"
+    ],
+    [
+      "degrade",
+      "격하시키다"
+    ],
+    [
+      "dismiss",
+      "무시하다"
+    ],
+    [
+      "prevalent",
+      "지배적인"
+    ],
+    [
+      "novelist",
+      "소설가"
+    ],
+    [
+      "convenient",
+      "적절한, 편리한"
+    ],
+    [
+      "contemporary",
+      "현대의"
+    ],
+    [
+      "intellectual",
+      "지적인"
+    ],
+    [
+      "biological",
+      "생물학적인"
+    ]
+  ],
+  "summary": {
+    "en": "Dewey connected aesthetic experience to everyday human life rather than separating art from life.",
+    "ko": "Dewey는 예술을 삶에서 떼어 놓지 않고 미적 경험을 인간의 일상 삶과 연결했다."
+  },
+  "writing": {
+    "en": "Dewey argued against the separation of art from life.",
+    "ko": "Dewey는 예술을 삶에서 분리하는 것에 반대했다."
+  },
+  "tip": "빈칸 바로 뒤 by + -ing(방법)를 보세요. '미적 경험을 삶의 조건에 두었다'는 방법이 곧 '예술과 삶을 잇는다'는 주장이에요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 32번 정답은?",
+      "⑤ argued against the separation of art from life예요."
+    ],
+    [
+      "③번은 왜 틀리나요?",
+      "Dewey는 미적인 것을 감각과 감정의 내면화된 인식이 '아니라고' 했어요. 감각적 즐거움에 한정한 게 아니에요."
+    ]
+  ]
+}

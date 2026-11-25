@@ -1,0 +1,150 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 29,
+  "type": "어법",
+  "points": 3,
+  "answer": 4,
+  "topic": "유전은 보수적이라 모든 생물이 어디서나 살 수는 없다 (Darwin)",
+  "date": "2026-12-09",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 29번",
+    "2026 3월 고3 영어 29번 해설",
+    "고3 3월 모의고사 29번 정답",
+    "2026 고3 3모 영어 29번",
+    "고3 모의고사 어법",
+    "유전은 보수적이라 모든 생물이 어"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 29번은 Darwin의 생각을 바탕으로, 유전이 환경과 무관하게 비슷한 자손을 많이 만들어 모든 생물이 어디서나 살 수는 없다는 글이에요. find themselves in the conditions(그 상황에 처하다)라서 ④ which는 in which가 되어야 해요. 정답은 ④예요.",
+  "flow": [
+    [
+      "Darwin의 이해",
+      "유전은 보수적이라 생물은 환경과 상관없이 비슷하지만 변이 있는 자손을 많이 낳는다."
+    ],
+    [
+      "과잉 생산",
+      "자원보다 많은 자손을 낳는다. 필요와 기회는 완벽히 맞지 않는다."
+    ],
+    [
+      "한계",
+      "자손은 처할 상황을 예측하지 못하고, 유연성도 유전의 제약에 비하면 작다."
+    ],
+    [
+      "결론",
+      "모든 생물이 어디서나 살 수는 없다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Offspring cannot anticipate the nature of the conditions ④ which they find themselves",
+      "ko": "자손은 자신들이 처하게 되는 상황의 성질을 예측할 수 없다",
+      "note": "find oneself in the conditions → 관계절에서 in이 빠졌어요. in which(= where)가 맞아요."
+    },
+    {
+      "en": "the capacity for using necessary resources must complement the opportunity to use ③ them",
+      "ko": "필수적인 자원을 사용하는 능력은 그것들을 사용할 기회를 보완해야 한다",
+      "note": "them = necessary resources(복수). 맞아요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① producing",
+      "ko": "분사구문",
+      "why": "적절. 앞 절의 결과를 덧붙이는 분사구문(생물이 자손을 생산하는 능동)."
+    },
+    {
+      "en": "② imply",
+      "ko": "복수 동사",
+      "why": "적절. 주어 these fundamental aspects(복수)에 맞는 복수 동사."
+    },
+    {
+      "en": "③ them",
+      "ko": "복수 대명사",
+      "why": "적절. necessary resources(복수)를 받는 them."
+    },
+    {
+      "en": "④ which",
+      "ko": "which → in which",
+      "why": "정답(틀림). they find themselves in the conditions라서 전치사가 필요해요. in which가 맞아요."
+    },
+    {
+      "en": "⑤ minor",
+      "ko": "형용사 보어",
+      "why": "적절. are 뒤 보어 자리라 형용사 minor."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "전치사 + 관계대명사",
+      "ex": "the nature of the conditions in which they find themselves",
+      "d": "관계절 뒤가 완전한 절(they find themselves)이면 전치사 + which(= where)가 와요."
+    },
+    {
+      "t": "much less",
+      "ex": "cannot anticipate ~, much less alter themselves",
+      "d": "부정문 뒤에서 '하물며 ~은 더욱 아니다'."
+    },
+    {
+      "t": "compared to",
+      "ex": "these adjustments are minor compared to the constraints of inheritance",
+      "d": "~에 비하면."
+    }
+  ],
+  "vocab": [
+    [
+      "inheritance",
+      "유전"
+    ],
+    [
+      "nature",
+      "본성, 성질"
+    ],
+    [
+      "impose",
+      "강요하다"
+    ],
+    [
+      "surroundings",
+      "주변 환경"
+    ],
+    [
+      "variable",
+      "변이성이 있는"
+    ],
+    [
+      "imply",
+      "~을 수반하다, 시사하다"
+    ],
+    [
+      "complement",
+      "보완하다"
+    ],
+    [
+      "need",
+      "(보통 복수로) 필요한 것"
+    ],
+    [
+      "constraint",
+      "제약"
+    ]
+  ],
+  "summary": {
+    "en": "Because inheritance is conservative and indifferent to surroundings, organisms cannot adapt to every environment, so not every living thing can live everywhere.",
+    "ko": "유전은 보수적이고 환경에 무관해서 생물은 모든 환경에 적응할 수 없으므로, 모든 생물이 어디서나 살 수는 없다."
+  },
+  "writing": {
+    "en": "Offspring cannot anticipate the nature of the conditions in which they find themselves.",
+    "ko": "자손은 자신이 처하게 될 상황의 성질을 예측할 수 없다."
+  },
+  "tip": "관계사 밑줄은 뒤 절이 완전한지 먼저 보세요. they find themselves는 목적어까지 다 있는 완전한 절이라 which만으로는 안 되고 전치사가 필요해요.",
+  "note": "find oneself in ~(~에 처하다)를 알면 바로 풀려요. 관계절 뒤에서 빠진 게 목적어가 아니라 '전치사 + 명사'라는 걸 확인하세요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 29번 정답은?",
+      "④ which예요. in which가 되어야 해요."
+    ],
+    [
+      "① producing은 왜 맞나요?",
+      "앞 절(생물이 환경에 자신을 강요한다)의 결과를 덧붙이는 분사구문이고, 생물이 자손을 '생산하는' 능동이라 producing이 맞아요."
+    ]
+  ]
+}

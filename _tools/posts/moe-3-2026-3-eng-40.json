@@ -1,0 +1,177 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 40,
+  "type": "요약문 완성",
+  "points": 2,
+  "answer": 2,
+  "topic": "나이 들수록 목표를 우선순위에 맞게 조율하고 긍정적 자아로 동기를 유지한다",
+  "date": "2026-12-11",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 40번",
+    "2026 3월 고3 영어 40번 해설",
+    "고3 3월 모의고사 40번 정답",
+    "2026 고3 3모 영어 40번",
+    "고3 모의고사 요약문 완성",
+    "나이 들수록 목표를 우선순위에 맞"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 40번은 목표가 나이와 함께 성숙해, 노년층이 목표를 더 선택적으로 고르고 우선순위에 맞게 자원을 배분하며 긍정적인 자기 인식으로 동기와 행복을 유지한다는 글이에요. 정답은 ② coordinate(조율하다) … favorable(긍정적인)이에요.",
+  "flow": [
+    [
+      "이론 1",
+      "Carstensen: 목표는 나이와 함께 강해지고 성숙하는 평생의 과정이다."
+    ],
+    [
+      "이론 2",
+      "Higgins: 목표의 균형과 조직에 따라 동기는 노년에 가장 높을 수 있다."
+    ],
+    [
+      "최근 연구",
+      "자기 가치감과 긍정적 자아관이 노년의 행복에 중요하다."
+    ],
+    [
+      "결론",
+      "노년 학습자는 목표와 자원 배분에서 더 선택적이고 삶의 목적의식이 강하다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "third-age learners exhibit a higher degree of selectivity when it comes to determining which goals to pursue and how to allocate their resources towards those specific priorities.",
+      "ko": "노년 학습자는 어떤 목표를 추구하고 그 우선순위에 자원을 어떻게 배분할지 정하는 데 더 높은 선택성을 보인다.",
+      "note": "우선순위에 맞게 목표를 조정 → (A) coordinate."
+    },
+    {
+      "en": "both goal alignment and a positive self-perception are crucial for enhancing motivation and overall well-being in later life.",
+      "ko": "목표 정렬과 긍정적 자기 인식 모두 노년의 동기와 행복을 높이는 데 중요하다.",
+      "note": "positive self-perception → (B) favorable."
+    }
+  ],
+  "choices": [
+    {
+      "en": "coordinate ······· objective",
+      "ko": "조율하다 … 객관적인",
+      "why": "(B) objective(객관적인)는 글의 positive self-view와 달라요."
+    },
+    {
+      "en": "coordinate ······· favorable",
+      "ko": "조율하다 … 긍정적인",
+      "why": "정답. 목표를 우선순위에 맞게 조율(coordinate), 긍정적(favorable) 자아관."
+    },
+    {
+      "en": "organize ······· inconsistent",
+      "ko": "조직하다 … 일관성 없는",
+      "why": "(B) inconsistent(일관성 없는)는 반대예요."
+    },
+    {
+      "en": "disassociate ······· positive",
+      "ko": "분리하다 … 긍정적인",
+      "why": "(A) disassociate(분리하다)는 목표를 정렬·조율한다는 내용과 반대예요."
+    },
+    {
+      "en": "disassociate ······· indefinite",
+      "ko": "분리하다 … 불명확한",
+      "why": "(A)·(B) 모두 글과 맞지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "subject to",
+      "ex": "subject to the balance and organisation of one's goals",
+      "d": "~에 따라, ~을 조건으로."
+    },
+    {
+      "t": "When it comes to + -ing",
+      "ex": "when it comes to determining which goals to pursue",
+      "d": "~에 관해서라면."
+    },
+    {
+      "t": "의문사 + to부정사",
+      "ex": "which goals to pursue and how to allocate their resources",
+      "d": "어떤 목표를 추구할지, 자원을 어떻게 배분할지."
+    }
+  ],
+  "vocab": [
+    [
+      "strengthen",
+      "강화되다"
+    ],
+    [
+      "framework",
+      "틀"
+    ],
+    [
+      "transition",
+      "전환기"
+    ],
+    [
+      "crucial",
+      "결정적인"
+    ],
+    [
+      "exhibit",
+      "보이다"
+    ],
+    [
+      "commentary",
+      "논평"
+    ],
+    [
+      "affair",
+      "일"
+    ],
+    [
+      "by no means",
+      "결코 ~이 아니다"
+    ],
+    [
+      "reflection",
+      "(비친) 상(像)"
+    ],
+    [
+      "flaw",
+      "결함"
+    ],
+    [
+      "blind spot",
+      "사각지대"
+    ],
+    [
+      "significant",
+      "중요한"
+    ],
+    [
+      "exclusion",
+      "배제"
+    ],
+    [
+      "distortion",
+      "왜곡"
+    ],
+    [
+      "figure",
+      "나타나다"
+    ],
+    [
+      "contradiction",
+      "모순"
+    ]
+  ],
+  "summary": {
+    "en": "As people age, they choose goals more selectively and keep motivation and well-being through a positive view of themselves.",
+    "ko": "사람은 나이가 들면서 목표를 더 선택적으로 고르고, 긍정적인 자기 인식으로 동기와 행복을 유지한다."
+  },
+  "writing": {
+    "en": "Both goal alignment and a positive self-perception are crucial for well-being in later life.",
+    "ko": "목표 정렬과 긍정적 자기 인식은 모두 노년의 행복에 중요하다."
+  },
+  "tip": "요약문 (A)·(B)는 본문 핵심어의 동의어를 찾으세요. goal alignment·allocate to priorities → coordinate, positive self-perception → favorable.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 40번 정답은?",
+      "② coordinate …… favorable이에요."
+    ],
+    [
+      "④ disassociate는 왜 틀리나요?",
+      "글은 목표를 우선순위에 맞게 정렬·조율한다고 해요. 목표를 떼어 놓는다(disassociate)는 반대예요."
+    ]
+  ]
+}

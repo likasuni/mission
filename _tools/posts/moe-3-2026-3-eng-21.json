@@ -1,0 +1,166 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 3,
+  "topic": "새로움만 쫓는 시대, 음악가도 기술적 진보를 내세우는 '연구자'가 된다",
+  "date": "2026-12-07",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 21번",
+    "2026 3월 고3 영어 21번 해설",
+    "고3 3월 모의고사 21번 정답",
+    "2026 고3 3모 영어 21번",
+    "고3 모의고사 함축 의미",
+    "새로움만 쫓는 시대, 음악가도 기"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 21번은 새로움을 쫓는 현대에 음악이 기술처럼 '끝없는 진보'의 법칙을 따르게 되었다고 비판하는 글이에요. 음악가가 다른 모두처럼 '연구자'가 된다는 건 기술적으로 보여 줄 수 있는 새로움과 진보에 매달린다는 뜻이라 정답은 ③이에요.",
+  "flow": [
+    [
+      "전제",
+      "뛰어난 음악가는 발명가가 아니어도 혁신가일 수 있다."
+    ],
+    [
+      "비판",
+      "새로움에 대한 욕구는 음악을 기교(사물)로 만들고, 끝없는 진보를 음악의 법칙으로 만든다."
+    ],
+    [
+      "경쟁",
+      "새 음악은 이전 기록을 깨며 최신이라 자처하고, 음악가는 발명 특허를 주장한다."
+    ],
+    [
+      "밑줄",
+      "과학 연구의 모방이 흔한 시대에 음악가도 '연구자'가 되어야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "so never-ending progress shall be the law of music. Farther, faster, more powerful!",
+      "ko": "끝없는 진보가 음악의 법칙이 될 것이다. 더 멀리, 더 빠르게, 더 강력하게!",
+      "note": "음악이 기술처럼 진보·새로움을 경쟁해요."
+    },
+    {
+      "en": "each musician, forcing predecessors into the category of the unfashionable and outmoded, claims the patent on the invention.",
+      "ko": "각 음악가는 전임자를 구식으로 몰아넣으며 그 발명품에 대한 특허를 주장한다.",
+      "note": "'연구자' = 새로움을 발명하고 특허를 내세우는 사람. 비꼬는 말이에요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "reproduce the signature style of master composers faithfully",
+      "ko": "거장 작곡가들의 대표 스타일을 충실히 재현하기",
+      "why": "재현이 아니라 새로움을 쫓는 이야기예요. 반대예요."
+    },
+    {
+      "en": "admit that the quality of artistic output is not subject to temporal factors",
+      "ko": "예술 작품의 질이 시간적 요인에 좌우되지 않음을 인정하기",
+      "why": "글은 오히려 '최신'이 중요해진 시대를 말해요. 반대예요."
+    },
+    {
+      "en": "embrace the prevailing focus on technically demonstrable novelty and formal progress",
+      "ko": "기술적으로 증명 가능한 새로움과 형식적 진보에 집중하는 흐름을 받아들이기",
+      "why": "정답. 과학 연구처럼 새로움과 진보를 내세우는 흐름에 따르는 것 = '연구자'가 되기."
+    },
+    {
+      "en": "question the impact that music has on maintaining aesthetic standards and cultural identities",
+      "ko": "음악이 미적 기준과 문화 정체성 유지에 미치는 영향에 의문을 갖기",
+      "why": "음악의 영향을 의심하는 내용은 없어요."
+    },
+    {
+      "en": "distinguish the fundamental independence musicians have on their craft from the principles of science",
+      "ko": "음악가가 기예에서 가진 근본적 독립성을 과학의 원리와 구별하기",
+      "why": "과학과 구별하는 게 아니라 과학을 따라 하는 거예요. 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "Let there be no doubt",
+      "ex": "Let there be no doubt: the eager need for novelty ~",
+      "d": "의심의 여지가 없게 하자 (확실히 말하자면)."
+    },
+    {
+      "t": "just as ~, so …",
+      "ex": "just as technique is the consequence of an indefinite process of perfection … so never-ending progress shall be the law of music",
+      "d": "~인 것과 꼭 마찬가지로 …도 그렇다."
+    },
+    {
+      "t": "owe it to oneself to부정사",
+      "ex": "musicians owe it to themselves to become \"researchers\"",
+      "d": "~하는 것이 스스로에게 마땅하다 (~해야 한다)."
+    }
+  ],
+  "vocab": [
+    [
+      "brilliant",
+      "뛰어난"
+    ],
+    [
+      "innovator",
+      "혁신가"
+    ],
+    [
+      "inventor",
+      "발명가"
+    ],
+    [
+      "disappointed",
+      "실망한"
+    ],
+    [
+      "escalating",
+      "점점 고조되는"
+    ],
+    [
+      "auction",
+      "경매"
+    ],
+    [
+      "consequence",
+      "결과물"
+    ],
+    [
+      "indefinite",
+      "무기한의"
+    ],
+    [
+      "automobile",
+      "자동차"
+    ],
+    [
+      "appliance",
+      "용품"
+    ],
+    [
+      "predecessor",
+      "이전 것, 전임자"
+    ],
+    [
+      "outmoded",
+      "구식의"
+    ],
+    [
+      "patent",
+      "특허"
+    ]
+  ],
+  "summary": {
+    "en": "In an age obsessed with novelty, music is treated like technology, and musicians pursue technical progress like researchers.",
+    "ko": "새로움에 집착하는 시대에 음악은 기술처럼 다뤄지고, 음악가는 연구자처럼 기술적 진보를 쫓는다."
+  },
+  "writing": {
+    "en": "Never-ending progress shall be the law of music.",
+    "ko": "끝없는 진보가 음악의 법칙이 될 것이다."
+  },
+  "tip": "밑줄에 따옴표(\"researchers\")가 있으면 진짜 연구자가 아니라 비꼬는 뜻이에요. 글 전체가 비판하는 '새로움·진보 경쟁'과 같은 방향의 선택지를 고르세요.",
+  "note": "이 글은 음악을 기술처럼 '진보'로만 보는 시대를 비판해요. 밑줄은 그 흐름에 음악가도 휩쓸린다는 말이라, 비판받는 쪽(새로움·진보)에 맞춰 고르면 돼요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 21번 정답은?",
+      "③ embrace the prevailing focus on technically demonstrable novelty and formal progress예요."
+    ],
+    [
+      "⑤번은 왜 틀리나요?",
+      "글은 음악가가 과학 연구를 흉내 내는 상황을 말해요. 과학의 원리와 구별한다는 ⑤는 반대예요."
+    ]
+  ]
+}

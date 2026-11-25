@@ -1,0 +1,145 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 3,
+  "topic": "도덕성은 추론 능력과 자유 의지를 가진 인간과 연결된다",
+  "date": "2026-12-10",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 35번",
+    "2026 3월 고3 영어 35번 해설",
+    "고3 3월 모의고사 35번 정답",
+    "2026 고3 3모 영어 35번",
+    "고3 모의고사 무관한 문장",
+    "도덕성은 추론 능력과 자유 의지를"
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 35번은 도덕성이 이성적 인간과 연결되는 이유로 추론 능력과 자유 의지를 드는 글이에요. ③은 '이익에만 집착하면 잘못된 선택을 한다'는 말로, 추론 능력·자유라는 흐름과 관계없어요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "주제",
+      "도덕성은 추론 능력과 자유 의지 때문에 이성적 인간과 연결된다."
+    ],
+    [
+      "추론",
+      "생각하고 장단점을 따지는 능력 덕분에 미래를 계획하고 목표를 이룬다."
+    ],
+    [
+      "자유",
+      "인간은 강요받지 않는 한 자유롭게 선택한다. 자유는 인간을 다른 동물과 구별한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "③ In other words, obsessing over advantages only and fixating on benefits lead human beings to make wrong choices.",
+      "ko": "다시 말해, 오직 이익에 집착하고 혜택에 매달리는 것은 인간이 잘못된 선택을 하게 한다.",
+      "note": "앞의 '장단점을 따지는 능력'을 다시 말한 게 아니라, 이익 집착의 문제점으로 새요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 생각하고 추론하는 것은 인간 정신의 주된 기능이다",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. 첫째 이유(추론 능력)를 설명해요."
+    },
+    {
+      "en": "② 장단점을 따지는 능력 덕분에 미래를 계획한다",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. 추론 능력의 결과(계획·목표 달성)."
+    },
+    {
+      "en": "③ 이익에만 집착하면 잘못된 선택을 한다",
+      "ko": "무관",
+      "why": "정답(무관). In other words로 시작하지만 앞 내용을 다시 말한 게 아니라 이익 집착의 문제로 새요."
+    },
+    {
+      "en": "④ 인간은 강요받지 않는 한 자유롭게 선택한다",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. Besides로 둘째 이유(자유)로 넘어가요."
+    },
+    {
+      "en": "⑤ 자유는 인간을 다른 동물과 구별한다",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. Thus로 자유의 의미를 정리해요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "It is ~ who/that 강조 구문",
+      "ex": "it is human beings who are gifted with the faculty of reasoning",
+      "d": "바로 인간이 추론 능력을 부여받았다."
+    },
+    {
+      "t": "It is because of ~ that",
+      "ex": "It is because of this capacity to think … that human beings can plan for their future",
+      "d": "바로 이 능력 때문에 ~할 수 있다."
+    },
+    {
+      "t": "except where",
+      "ex": "except where they are constrained to act",
+      "d": "~하는 경우를 제외하고."
+    }
+  ],
+  "vocab": [
+    [
+      "morality",
+      "도덕성"
+    ],
+    [
+      "associate",
+      "연관시키다"
+    ],
+    [
+      "reason",
+      "이유; 추론하다"
+    ],
+    [
+      "alternative",
+      "대안"
+    ],
+    [
+      "pros and cons",
+      "장단점"
+    ],
+    [
+      "sufficient",
+      "충분한"
+    ],
+    [
+      "obsess over",
+      "~에 집착하다"
+    ],
+    [
+      "fixate",
+      "매달리다"
+    ],
+    [
+      "constrain",
+      "강요하다"
+    ],
+    [
+      "distinguish",
+      "구별 짓다"
+    ]
+  ],
+  "summary": {
+    "en": "Morality belongs to humans because they can reason and have free will to choose.",
+    "ko": "인간은 추론할 수 있고 선택할 자유 의지가 있기 때문에 도덕성은 인간에게 속한다."
+  },
+  "writing": {
+    "en": "Freedom is a basic feature of human life which distinguishes humans from other animals.",
+    "ko": "자유는 인간을 다른 동물과 구별하는 인간 삶의 기본 특징이다."
+  },
+  "tip": "In other words(다시 말해)로 시작해도 앞 문장과 다른 말을 하면 무관한 문장이에요. 연결어보다 '내용이 정말 같은지'를 보세요.",
+  "note": "③은 In other words로 시작해서 자연스러워 보이지만, 앞 문장(장단점을 따져 계획한다)과 전혀 다른 말(이익 집착은 나쁘다)을 해요. 연결어에 속지 마세요.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 35번 정답은?",
+      "③이에요."
+    ],
+    [
+      "③은 In other words로 시작하는데 왜 무관한가요?",
+      "다시 말한다고 해 놓고, 실제로는 앞의 추론 능력 이야기와 다른 '이익 집착의 위험'을 말해서 흐름에서 벗어나요."
+    ]
+  ]
+}

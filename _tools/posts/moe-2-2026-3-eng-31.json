@@ -1,0 +1,145 @@
+{
+  "exam": "moe-2-2026-3",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "상상과 현실을 구별하는 아이도 무서운 감정 앞에서는 흔들린다",
+  "date": "2026-12-04",
+  "keywords": [
+    "2026년 3월 고2 모의고사 영어 31번",
+    "2026 3월 고2 영어 31번 해설",
+    "고2 3월 모의고사 31번 정답",
+    "2026 고2 3모 영어 31번",
+    "고2 모의고사 빈칸",
+    "상상과 현실을 구별하는 아이도 무"
+  ],
+  "lead": "2026년 3월 고2 모의고사 영어 31번은 세 살 아이도 상상한 물건이 실제로 생기지 않는다는 걸 알지만, 괴물처럼 무서운 것을 상상하면 그 이해가 흔들린다는 글이에요. 그 이해를 방해하는 것은 ① emotion(감정)이에요.",
+  "flow": [
+    [
+      "사실",
+      "세 살이면 상상한 물건이 살아나지 않는다는 걸 안다 (빈 상자의 연필)."
+    ],
+    [
+      "빈칸",
+      "그러나 ___이 때때로 이 이해를 방해한다."
+    ],
+    [
+      "예시",
+      "괴물이 진짜가 아님을 알아도 침대 밑 괴물 생각에 방에 못 들어간다."
+    ],
+    [
+      "연구",
+      "빈 상자에 괴물을 상상한 아이들은 혼자 남자 상자를 무서워하고 피했다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "even though a child knows that monsters are not real, the thought of a monster under a bed might be enough to make a child refuse to go into his room at night.",
+      "ko": "비록 아이가 괴물이 실제가 아니라는 것을 알아도, 침대 밑에 괴물이 있을 거라는 생각만으로 밤에 방에 들어가기를 거부할 수 있다.",
+      "note": "아는 것(이해)을 이기는 건 '무서움' = 감정이에요."
+    },
+    {
+      "en": "However, when they were left alone with the box they exhibited fear and avoidance of it.",
+      "ko": "그러나, 상자와 함께 혼자 남겨졌을 때 그들은 그것에 대한 두려움과 회피를 보였다.",
+      "note": "fear(두려움)가 빈칸의 정체를 확인해 줘요."
+    }
+  ],
+  "choices": [
+    {
+      "en": "emotion",
+      "ko": "감정",
+      "why": "정답. 두려움(fear) 같은 감정이 상상과 현실의 구별을 방해해요."
+    },
+    {
+      "en": "curiosity",
+      "ko": "호기심",
+      "why": "호기심이 아니라 두려움이 핵심이에요."
+    },
+    {
+      "en": "familiarity",
+      "ko": "친숙함",
+      "why": "친숙한 일상 사물에서는 오히려 이해가 분명해요. 반대예요."
+    },
+    {
+      "en": "memory",
+      "ko": "기억",
+      "why": "기억 이야기는 없어요."
+    },
+    {
+      "en": "ignorance",
+      "ko": "무지",
+      "why": "아이들은 상자가 비었다는 걸 알고 있어요. 모르는 게(무지) 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "even though",
+      "ex": "even though they imagine a pencil in an empty box, the box will remain empty",
+      "d": "비록 ~하더라도."
+    },
+    {
+      "t": "enough to부정사",
+      "ex": "might be enough to make a child refuse to go into his room",
+      "d": "~하기에 충분하다. make + O + 동사원형(refuse)."
+    },
+    {
+      "t": "have a difficult time + -ing",
+      "ex": "children have a more difficult time displaying their understanding",
+      "d": "~하는 데 어려움을 겪다."
+    }
+  ],
+  "vocab": [
+    [
+      "imaginary",
+      "상상의"
+    ],
+    [
+      "with respect to",
+      "~에 관해"
+    ],
+    [
+      "disrupt",
+      "방해하다"
+    ],
+    [
+      "display",
+      "드러내다"
+    ],
+    [
+      "causal relation",
+      "인과 관계"
+    ],
+    [
+      "pretend",
+      "가장하다"
+    ],
+    [
+      "exhibit",
+      "보여 주다"
+    ],
+    [
+      "avoidance",
+      "회피"
+    ]
+  ],
+  "summary": {
+    "en": "Children know imagined things are not real, but emotions like fear can disrupt that understanding.",
+    "ko": "아이들은 상상한 것이 진짜가 아님을 알지만, 두려움 같은 감정이 그 이해를 방해할 수 있다."
+  },
+  "writing": {
+    "en": "Emotion can sometimes disrupt this understanding.",
+    "ko": "감정은 때때로 이러한 이해를 방해할 수 있다."
+  },
+  "tip": "빈칸 뒤 예시(괴물, 두려움, 회피)를 하나로 묶는 말을 고르세요. 예시가 모두 '무서움'이면 답은 감정이에요.",
+  "faq": [
+    [
+      "2026년 3월 고2 영어 31번 정답은?",
+      "① emotion이에요."
+    ],
+    [
+      "⑤ ignorance는 왜 틀리나요?",
+      "아이들은 상자가 비어 있다는 걸 모두 알고 있었어요. 몰라서가 아니라 무서워서 피한 거예요."
+    ]
+  ]
+}

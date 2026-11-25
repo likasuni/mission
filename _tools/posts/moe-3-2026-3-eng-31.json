@@ -1,0 +1,149 @@
+{
+  "exam": "moe-3-2026-3",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 5,
+  "topic": "\"상업 없는 예술은 취미다\" — 서양에서 전문 예술은 본질적으로 자본주의적이다",
+  "date": "2026-12-09",
+  "keywords": [
+    "2026년 3월 고3 모의고사 영어 31번",
+    "2026 3월 고3 영어 31번 해설",
+    "고3 3월 모의고사 31번 정답",
+    "2026 고3 3모 영어 31번",
+    "고3 모의고사 빈칸",
+    "\"상업 없는 예술은 취미다\" — "
+  ],
+  "lead": "2026년 3월 고3 모의고사 영어 31번은 '상업이 없는 예술은 취미'라는 말처럼, 서양 문화에서는 돈을 버는 능력이 예술가를 전문가로 인정하는 기준이 되었다는 글이에요. 그래서 전문 예술은 본질적으로 ⑤ capitalist(자본주의적)예요.",
+  "flow": [
+    [
+      "발단",
+      "\"상업 없는 예술은 취미다\"라는 말은 예술가가 무시하기 어렵다."
+    ],
+    [
+      "현상",
+      "예술은 수량화할 수 없는데도, 작가·화가는 생산적으로 보이려고 분량을 센다."
+    ],
+    [
+      "통념",
+      "예술을 위한 창작은 낭만적이라 여겨지고, 돈이 유일한 성공 지표가 된다."
+    ],
+    [
+      "결론",
+      "서양에서 전문성은 상업성과 떨어질 수 없어, 전문 예술은 본질적으로 ___이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In Western culture, it is almost impossible to separate professional from commercial, and so the artist is legitimized by their ability to earn money.",
+      "ko": "서양 문화권에서는 상업성에서 전문성을 분리하는 것이 거의 불가능하며, 따라서 예술가는 돈을 버는 능력에 의해 정당성을 부여받는다.",
+      "note": "돈을 버는 능력 = 전문성 → capitalist."
+    },
+    {
+      "en": "Of course one can engage in art, but it better be for money, for that is the only marker of success.",
+      "ko": "물론 예술에 종사할 수 있지만, 그것은 돈을 위한 편이 나은데, 돈이 성공의 유일한 지표이기 때문이다.",
+      "note": "돈 = 유일한 성공 지표."
+    }
+  ],
+  "choices": [
+    {
+      "en": "universal",
+      "ko": "보편적인",
+      "why": "보편성 이야기가 아니에요."
+    },
+    {
+      "en": "individualist",
+      "ko": "개인주의적인",
+      "why": "개인주의는 나오지 않아요."
+    },
+    {
+      "en": "romantic",
+      "ko": "낭만적인",
+      "why": "낭만적인 건 '예술을 위한 예술'이에요. 전문 예술과 반대예요."
+    },
+    {
+      "en": "collective",
+      "ko": "집단적인",
+      "why": "집단성 이야기는 없어요."
+    },
+    {
+      "en": "capitalist",
+      "ko": "자본주의적인",
+      "why": "정답. 돈을 버는 능력이 전문성의 기준이니 전문 예술은 자본주의적이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "be unable to부정사",
+      "ex": "the kind that those who create art are unable to ignore",
+      "d": "~할 수 없다. those who: ~하는 사람들."
+    },
+    {
+      "t": "had better (구어 better)",
+      "ex": "but it better be for money",
+      "d": "~하는 편이 낫다 (it had better be의 구어체)."
+    },
+    {
+      "t": "separate A from B",
+      "ex": "it is almost impossible to separate professional from commercial",
+      "d": "A를 B와 분리하다. 가주어 it ~ to부정사."
+    }
+  ],
+  "vocab": [
+    [
+      "commerce",
+      "상업"
+    ],
+    [
+      "senior",
+      "졸업반"
+    ],
+    [
+      "fine art",
+      "미술"
+    ],
+    [
+      "quantify",
+      "수량화하다"
+    ],
+    [
+      "hopelessly",
+      "어찌할 도리가 없을 정도로"
+    ],
+    [
+      "romantic",
+      "낭만적인"
+    ],
+    [
+      "indefensible",
+      "옹호의 여지가 없는"
+    ],
+    [
+      "legitimize",
+      "정당성을 부여하다"
+    ],
+    [
+      "inherently",
+      "본질적으로"
+    ]
+  ],
+  "summary": {
+    "en": "In Western culture, art is considered professional only when it earns money, so professional art is inherently capitalist.",
+    "ko": "서양 문화에서 예술은 돈을 벌 때만 전문적이라 여겨지므로, 전문 예술은 본질적으로 자본주의적이다."
+  },
+  "writing": {
+    "en": "The artist is legitimized by their ability to earn money.",
+    "ko": "예술가는 돈을 버는 능력에 의해 정당성을 인정받는다."
+  },
+  "tip": "빈칸이 글 마지막 결론이면 바로 앞 문장(and so ~)을 한 단어로 줄이세요. 돈을 버는 능력이 기준 → capitalist.",
+  "faq": [
+    [
+      "2026년 3월 고3 영어 31번 정답은?",
+      "⑤ capitalist예요."
+    ],
+    [
+      "③ romantic은 왜 틀리나요?",
+      "글에서 낭만적이라고 한 건 '예술을 위한 창작'이에요. 돈으로 인정받는 전문 예술은 그 반대예요."
+    ]
+  ]
+}
