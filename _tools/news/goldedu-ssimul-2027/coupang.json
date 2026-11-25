@@ -1,0 +1,40 @@
+[
+  {
+    "key": "g1",
+    "name": "씨뮬 3년간 기출 모의고사 고1 영어",
+    "query": "씨뮬 전국연합 3년간 기출 모의고사 고1 영어 2027",
+    "must": [
+      "씨뮬",
+      "고1",
+      "영어"
+    ],
+    "not": [
+      "2026년",
+      "국어",
+      "수학"
+    ],
+    "url": "https://link.coupang.com/re/AFFSDP?lptag=AF0931331&pageKey=9810577770&itemId=29380361614&vendorItemId=87809717557&traceid=V0-153-2d2c77a0f98e7208&requestid=20261126080346958145949668&token=31850C%7CGM&pt=0&slot=3",
+    "product": "씨뮬 15th 전국연합 3년간 기출 모의고사 고1 영어 (2027년)",
+    "image": "https://ads-partners.coupang.com/image1/T466fiQPkjVVzacET4TBLivPy0LYOwc5Ha3wbN5lCF4wVntH0LwUK7trpqZ8SlLzCV4kVeyxR8-bkTpntxY7Qf4MuOdTEzEDyHUJlb91TOvB9B0ihG3gVQG0Uk3scFWLeSuZC5RFULVliYPXpf4qa7z6ccZazohfrlGH_3qjvgk2x81zY6N10Q13H5K6kAb7RNM0g-Zqq88ljJzfJ5MGLKjXvn2y8cW2YQooLQOX2PJ1TBH8KCiP9fYw-744buz3HId1hZem3eo3zp5LoaiphWnovqoYBcAmwu3LmX8nvUGr9m8qHWPOBWXmmM9ivT__w6toj0WPnrp-eIOpEb6oNnV4c3YCuSqIFX3VZvSpntEX_771H1_f_TbWllLMuFmtCvc2Sj3IpyS5F1L6WhI_boj2YLmpTfcGWMhu_1tbfjwu8P30JRZf22s1TCX_f_Rjv_F5SUKL65Nt3a20y9YdMVmReR4cO6SR7Kzcm8cm_yMojcHverrM83yrF4LK7HjPudoF1oM1yqXPxIEw9bbbD5h0H-wGXEhSm38nARN--EE=",
+    "checked": "2026-11-26"
+  },
+  {
+    "key": "g2",
+    "name": "씨뮬 3년간 기출 모의고사 고2 영어",
+    "query": "씨뮬 전국연합 3년간 기출 모의고사 고2 영어 2027",
+    "must": [
+      "씨뮬",
+      "고2",
+      "영어"
+    ],
+    "not": [
+      "2026년",
+      "국어",
+      "수학"
+    ],
+    "url": "https://link.coupang.com/re/AFFSDP?lptag=AF0931331&pageKey=9824503087&itemId=29425351282&vendorItemId=96335282076&traceid=V0-153-f94d42539c77e749&requestid=20261126080350228165885898&token=31850C%7CGM&pt=0&slot=1",
+    "product": "2027년 씨뮬 전국연합 3년간 기출 모의고사 고2 영어 [쁘띠수첩+당근볼펜] 검은색표지",
+    "image": "https://ads-partners.coupang.com/image1/l3EuiSzTOsImnfrRl--fqAdZHCL-7gBKr8DuQKQYpR26kBy18Dfu7FW8MjlR-zRQQXdGzSwe7-7mH_PUUyNN83j4MNaNtQuMffLM0RaST49qhu6BQU0oKEwAeNIWF303eMK8jMdcLmXHx48rYqA4-u-zQTB9n2D497FJM8-Odj597sHMtvobE8MaqJTAaMWgif0ErblMgHlE8DZIbXBT2XYHOi5xptjBYvYVrp2X8792Ogto_FXRxi8EJpdofzkr4GD6z4QC7H-w3jNUe8_6wldF6-6ryP5TqLXgwpc-ZdwZV4VGBoWEzLeLHbdBieupfFjVNx6tkHzLJjLQuM73fp_cDBrdyIQXVow6tUzN9VPw5jZpCL94Shyrm1lFwdEUjrjaxo6qXi7fGR1P0O6U5SkDNsTAvhJ7Yo-zLHS--2jE4kSctEBTONPprq6PF4PMPi7n1NTihXaf1QMzBhvYfvDpkI008QHBS6jhiDawPaaRNAHaVSyo-bJUBBAJSYsJ-71wPKwxB0l5Eks0_8XySiR8Ud_ecKpCiYHxdqhQtg==",
+    "checked": "2026-11-26"
+  }
+]
