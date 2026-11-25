@@ -1,0 +1,178 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 22,
+  "type": "글의 요지",
+  "points": 2,
+  "answer": 5,
+  "topic": "입맛은 반복된 경험과 바꾸려는 의지로 어느 나이에도 바뀐다",
+  "date": "2026-11-27",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 22번",
+    "2026 3월 고1 영어 22번 해설",
+    "고1 3월 모의고사 22번 정답",
+    "2026 고1 3모 영어 22번",
+    "고1 모의고사 글의 요지",
+    "입맛은 반복된 경험과 바꾸려는 의지로"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 22번은 맛 선호가 평생 바뀔 수 있고, 어른도 반복된 경험과 변화하려는 의지로 입맛을 다시 맞출 수 있다는 글이에요. 정답은 ⑤ '식성은 반복된 경험과 변화 의지를 통해 바꿀 수 있다'예요.",
+  "flow": [
+    [
+      "1단락",
+      "유아기에 형성되는 학습된 섭식 행동에도 불구하고 그리고 타고난 생물학적 차이에도 불구하고,"
+    ],
+    [
+      "2단락",
+      "이것은 저녁 메뉴를 넓히고 싶은 모험적인 사람들에게 아주 좋은 소식이다 저 밖은 크고 맛있는 세상이다!"
+    ],
+    [
+      "3단락",
+      "예를 들어, 흰 빵과 흰쌀 같은 가공된 곡물 식품에서 바꾸는 많은 사람들은 통곡물 종류로"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Despite learned eating behaviors that are formed in early childhood and inborn biological differences, taste preferences can be changed throughout our lives",
+      "ko": "유아기에 형성되는 학습된 섭식 행동에도 불구하고 그리고 타고난 생물학적 차이에도 불구하고, 맛 선호는 우리 삶 전체에 걸쳐 바뀔 수 있다",
+      "note": "맛 선호는 평생 바뀔 수 있음"
+    },
+    {
+      "en": "but it's amazing news for those eager to break poor diet habits. Just as kids gradually learn to like nutritious foods, so, too, can adults readjust their taste.",
+      "ko": "하지만 나쁜 식습관을 고치기를 열망하는 사람들에게는 놀라운 소식이다. 아이들이 점차 영양가 있는 음식을 좋아하게 되는 것처럼, 어른들도 입맛을 재조정할 수 있다.",
+      "note": "어른도 입맛을 재조정할 수 있음"
+    },
+    {
+      "en": "For instance, many who switch from processed grain foods like white bread and white rice to whole grain types",
+      "ko": "예를 들어, 흰 빵과 흰쌀 같은 가공된 곡물 식품에서 바꾸는 많은 사람들은 통곡물 종류로",
+      "note": "반복된 경험 + 변화하려는 의지 = 핵심"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 뇌의 적응력은 나이가 들수록 급격히 저하된다.",
+      "ko": "",
+      "why": "뇌의 적응력 덕분에 나이가 들어도 바뀔 수 있다는 글이에요. 반대예요."
+    },
+    {
+      "en": "② 어릴 때 형성된 식습관이 평생의 건강을 좌우한다.",
+      "ko": "",
+      "why": "어릴 때 식습관이 평생을 좌우한다는 게 아니라 바뀔 수 있다는 글이에요."
+    },
+    {
+      "en": "③ 개인의 식습관에는 유전적인 영향이 크게 작용한다.",
+      "ko": "",
+      "why": "유전 이야기가 핵심이 아니에요."
+    },
+    {
+      "en": "④ 다양한 음식의 섭취가 뇌의 구조적 발달을 촉진한다.",
+      "ko": "",
+      "why": "음식이 뇌 구조를 발달시킨다는 말은 없어요."
+    },
+    {
+      "en": "⑤ 식성은 반복된 경험과 변화 의지를 통해 바꿀 수 있다.",
+      "ko": "정답",
+      "why": "정답. 반복된 경험 + 바꾸려는 의지 = 핵심."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "Despite learned eating behaviors that are formed in early childhood",
+      "d": "뒤에 주어가 빠진 절이 오는 주격 관계대명사. 동사는 선행사에 수를 맞춰요."
+    },
+    {
+      "t": "동격 (neuroplasticity, our brain's ~)",
+      "ex": "due to neuroplasticity, our brain's amazing adaptability:",
+      "d": "콤마 뒤 명사구가 앞 명사를 다시 풀어 설명하는 동격이에요."
+    },
+    {
+      "t": "주격 관계대명사 who",
+      "ex": "This is terrific news for adventurous eaters who want to expand their dinner menu",
+      "d": "사람 선행사를 받는 주격 관계대명사."
+    }
+  ],
+  "vocab": [
+    [
+      "inborn",
+      "타고난"
+    ],
+    [
+      "biological",
+      "생물학적인"
+    ],
+    [
+      "preference",
+      "선호"
+    ],
+    [
+      "neuroplasticity",
+      "신경 가소성"
+    ],
+    [
+      "adaptability",
+      "적응력"
+    ],
+    [
+      "flexibility",
+      "유연성"
+    ],
+    [
+      "adventurous",
+      "모험적인"
+    ],
+    [
+      "expand",
+      "확장하다"
+    ],
+    [
+      "eager to",
+      "~를 열망하는"
+    ],
+    [
+      "nutritious",
+      "영양분이 많은"
+    ],
+    [
+      "readjust",
+      "재조정하다"
+    ],
+    [
+      "processed",
+      "가공된"
+    ],
+    [
+      "gradually",
+      "점차"
+    ],
+    [
+      "texture",
+      "식감"
+    ],
+    [
+      "exposure",
+      "경험, 노출"
+    ],
+    [
+      "willingness",
+      "의지"
+    ]
+  ],
+  "summary": {
+    "en": "Thanks to the brain's adaptability, taste preferences can change at any age through repeated exposure and a willingness to change.",
+    "ko": "뇌의 적응력 덕분에, 맛 선호는 반복된 경험과 변화하려는 의지를 통해 어느 나이에서든 바뀔 수 있다."
+  },
+  "writing": {
+    "en": "Just as kids gradually learn to like nutritious foods, so, too, can adults readjust their taste.",
+    "ko": "아이들이 점차 영양가 있는 음식을 좋아하게 되는 것처럼, 어른들도 입맛을 재조정할 수 있다."
+  },
+  "tip": "요지는 글 끝에서 '핵심은 ~이다(the key is ~)'처럼 정리하는 문장을 찾으세요. 통념(어릴 때 입맛이 굳는다)을 뒤집는 구조예요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 22번 정답은?",
+      "⑤ '식성은 반복된 경험과 변화 의지를 통해 바꿀 수 있다'예요."
+    ],
+    [
+      "②번은 왜 틀리나요?",
+      "글은 입맛이 평생 바뀔 수 있다고 해요. 어릴 때 식습관이 평생을 좌우한다는 ②는 반대예요."
+    ]
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 25,
+  "type": "도표",
+  "points": 2,
+  "answer": 4,
+  "topic": "재택근무의 주요 이점 (2023년 세계 설문, %)",
+  "date": "2026-11-28",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 25번",
+    "2026 3월 고1 영어 25번 해설",
+    "고1 3월 모의고사 25번 정답",
+    "2026 고1 3모 영어 25번",
+    "고1 모의고사 도표",
+    "재택근무의 주요 이점 (2023년 세"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 25번은 2023년 세계 노동자 2만여 명이 답한 재택근무의 주요 이점 도표예요. 각 문장의 숫자를 도표와 하나씩 비교하면 ④가 도표와 맞지 않아요. 정답은 ④예요.",
+  "flow": [
+    [
+      "도표",
+      "위 그래프는 재택근무의 주요 이점들을 보여 준다, 2만 명이 넘는 노동자를 대상으로 한 2023년 세계적 설문 조사에 기반한."
+    ],
+    [
+      "2단락",
+      "① 가장 큰 이점은 '통근 없음'이었다, 60퍼센트를 바로 밑도는 응답자가 선택한."
+    ],
+    [
+      "3단락",
+      "② '가스와 점심 비용 절약'이 2위를 차지했다, 그리고 '일하는 시간에 대한 유연성'이 3위에 올랐다."
+    ],
+    [
+      "4단락",
+      "③ '출근 준비 시간이 줄어듦'을 선택한 응답자의 비율은 30퍼센트가 넘었다."
+    ],
+    [
+      "5단락",
+      "④ '개인적인 조용한 시간'을 언급한 응답자의 비율은 '가족 및 친구와 더 많은 시간 보내기'를 선택한 사람들의 비율보다 낮았다."
+    ],
+    [
+      "6단락",
+      "⑤ '회의 감소'를 선택한 응답자의 비율과 '통근 없음'을 선택한 사람들의 비율 사이의 차이는"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "④ The percentage of respondents citing 'Individual Quiet Time'",
+      "ko": "④ '개인적인 조용한 시간'을 언급한 응답자의 비율은",
+      "note": "조용한 시간 35.27% > 가족·친구 28.55% → '낮았다'가 아니라 '높았다'"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① The biggest benefit was 'No Commute,' / chosen by just under 60 percent of respondents.",
+      "ko": "일치",
+      "why": "일치. 59.65% = 60% 바로 아래"
+    },
+    {
+      "en": "② 'Save on Gas and Lunch Costs' came in second place, / and 'Flexibility over When I Work' ranked third.",
+      "ko": "일치",
+      "why": "일치. 43.84% 2위, 41.93% 3위"
+    },
+    {
+      "en": "③ The percentage of respondents who selected 'Less Time Getting Ready for Work' / was over 30 percent.",
+      "ko": "일치",
+      "why": "일치. 38.00% > 30%"
+    },
+    {
+      "en": "④ The percentage of respondents citing 'Individual Quiet Time' / was lower than that of those who selected 'Spending More Time with Family and Friends",
+      "ko": "일치하지 않음",
+      "why": "정답(불일치). 조용한 시간 35.27% > 가족·친구 28.55% → '낮았다'가 아니라 '높았다'"
+    },
+    {
+      "en": "⑤ The gap between the percentage of respondents who selected 'Fewer Meetings' / and that of those who selected 'No Commute' / was about 50 percentage ",
+      "ko": "일치",
+      "why": "일치. 59.65 - 9.62 = 50.03 ≒ 50"
+    }
+  ],
+  "grammar": [
+    {
+      "t": "과거분사구 (based on ~)",
+      "ex": "based on a 2023 global survey of over 20,000 workers.",
+      "d": "과거분사로 시작하는 수식어구. 수동 의미예요."
+    },
+    {
+      "t": "주격 관계대명사 who",
+      "ex": "③ The percentage of respondents who selected 'Less Time Getting Ready for Work'",
+      "d": "사람 선행사를 받는 주격 관계대명사."
+    },
+    {
+      "t": "현재분사 후치 수식 (respondents citing ~)",
+      "ex": "④ The percentage of respondents citing 'Individual Quiet Time'",
+      "d": "현재분사(구)가 뒤에서 명사를 꾸며요. '~하는'으로 해석."
+    }
+  ],
+  "vocab": [
+    [
+      "benefit",
+      "이점"
+    ],
+    [
+      "survey",
+      "설문 조사"
+    ],
+    [
+      "commute",
+      "통근"
+    ],
+    [
+      "respondent",
+      "응답자"
+    ],
+    [
+      "flexibility",
+      "유연성"
+    ],
+    [
+      "rank",
+      "(순위를) 차지하다"
+    ],
+    [
+      "select",
+      "선택하다"
+    ],
+    [
+      "cite",
+      "언급하다"
+    ],
+    [
+      "gap",
+      "차이"
+    ],
+    [
+      "percentage point",
+      "퍼센트포인트"
+    ]
+  ],
+  "summary": {
+    "en": "In a 2023 survey, 'No Commute' was the top benefit of working from home, while 'Fewer Meetings' was chosen the least.",
+    "ko": "2023년 설문 조사에서 '통근 없음'이 재택근무의 가장 큰 이점이었고, '회의 감소'가 가장 적게 선택되었다."
+  },
+  "writing": {
+    "en": "The biggest benefit was 'No Commute,' chosen by just under 60 percent of respondents.",
+    "ko": "가장 큰 이점은 60퍼센트를 바로 밑도는 응답자가 선택한 '통근 없음'이었다."
+  },
+  "tip": "도표 문제는 배수(twice, three times)와 '더 크다/작다' 비교를 직접 계산하세요. 한 사람이 여러 개를 고를 수 있는 설문이라 합이 100%가 넘어도 정상이에요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 25번 정답은?",
+      "④예요. 도표의 숫자와 문장의 비교가 맞지 않아요."
+    ],
+    [
+      "퍼센트를 다 더하면 100이 넘는데 괜찮나요?",
+      "네. 한 사람이 이점을 여러 개(세 개까지) 고를 수 있는 설문이라 합이 100%를 넘어요."
+    ]
+  ]
+}

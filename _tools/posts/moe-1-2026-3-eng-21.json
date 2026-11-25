@@ -1,0 +1,162 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 3,
+  "answer": 5,
+  "topic": "조상이 심은 정원을 누리면서 후손의 그늘을 빼앗지 말라",
+  "date": "2026-11-27",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 21번",
+    "2026 3월 고1 영어 21번 해설",
+    "고1 3월 모의고사 21번 정답",
+    "2026 고1 3모 영어 21번",
+    "고1 모의고사 함축 의미",
+    "조상이 심은 정원을 누리면서 후손의 "
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 21번은 오늘의 결정이 미래 세대에 영향을 주니 좋은 조상이 되어야 한다는 글이에요. steal the shade from our descendants는 '후손이 누려야 할 것을 빼앗다'라는 뜻이라 정답은 ⑤예요.",
+  "flow": [
+    [
+      "도입",
+      "우리는 이제 종으로서 전례 없는 유전적, 문화적, 환경적 힘의 지점에 있다, 그리고 우리는 지구상의 거의 모든 다른 사람과 연결되어 있다."
+    ],
+    [
+      "2단락",
+      "오늘 우리의 결정은 광범위한 영향을 미친다 우리에게 좋은 조상이 될 책임을 지우는,"
+    ],
+    [
+      "3단락",
+      "수세기 전, 북미 원주민 Iroquois족의 지도자들은 '일곱 세대 관리'를 만들었다,"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Our decisions today have far-reaching impacts",
+      "ko": "오늘 우리의 결정은 광범위한 영향을 미친다",
+      "note": "오늘의 결정 → 미래 세대(후손)에게 영향, 좋은 조상이 될 책임"
+    },
+    {
+      "en": "while we enjoy the gardens planted by our ancestors, we must not steal the shade from our descendants.",
+      "ko": "우리가 조상이 심은 정원을 누리는 동안, 우리는 후손에게서 그늘을 빼앗아서는 안 된다.",
+      "note": "조상이 심은 정원(혜택)을 누리면서 후손의 그늘(누려야 할 것)을 빼앗지 말라"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① ignore the benefits passed down from our fathers",
+      "ko": "조상에게서 물려받은 이익을 무시하다",
+      "why": "조상의 혜택을 '무시'하는 게 아니라 후손의 것을 빼앗지 말라는 말이에요."
+    },
+    {
+      "en": "② remove environmental problems our generation faces",
+      "ko": "우리 세대가 직면한 환경 문제를 없애다",
+      "why": "환경 문제를 없애는 건 긍정적인 행동이에요. 밑줄은 하지 말아야 할 일이에요."
+    },
+    {
+      "en": "③ blame our children for their lack of responsibilities",
+      "ko": "아이들의 책임감 부족을 탓하다",
+      "why": "아이들을 탓한다는 내용은 없어요."
+    },
+    {
+      "en": "④ take care of resources to give to the future generation",
+      "ko": "미래 세대에게 줄 자원을 관리하다",
+      "why": "우리가 '해야 할 일'이에요. 밑줄은 '하지 말아야 할 일(must not)'이라 반대예요."
+    },
+    {
+      "en": "⑤ take from future generations what they deserve to have",
+      "ko": "미래 세대가 가질 자격이 있는 것을 그들에게서 빼앗다",
+      "why": "정답. 그늘 = 후손이 누려야 할 것, 빼앗다 = take from."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "be linked to",
+      "ex": "and we are linked to nearly every other person on Earth.",
+      "d": "be linked to: ~와 연결되어 있다."
+    },
+    {
+      "t": "과거분사 후치 수식 (trapped within ~)",
+      "ex": "We are embodied individuals trapped within limited time,",
+      "d": "과거분사(구)가 뒤에서 명사를 꾸며요. '~된'으로 해석."
+    },
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "that place a responsibility on us to become good ancestors,",
+      "d": "뒤에 주어가 빠진 절이 오는 주격 관계대명사. 동사는 선행사에 수를 맞춰요."
+    }
+  ],
+  "vocab": [
+    [
+      "unprecedented",
+      "전례 없는"
+    ],
+    [
+      "genetic",
+      "유전적인"
+    ],
+    [
+      "species",
+      "종"
+    ],
+    [
+      "embodied",
+      "육체를 가진"
+    ],
+    [
+      "humanity",
+      "인류"
+    ],
+    [
+      "far-reaching",
+      "광범위한"
+    ],
+    [
+      "responsibility",
+      "책임"
+    ],
+    [
+      "ancestor",
+      "조상"
+    ],
+    [
+      "stewardship",
+      "관리"
+    ],
+    [
+      "instruct",
+      "가르치다"
+    ],
+    [
+      "precious",
+      "소중한"
+    ],
+    [
+      "descendant",
+      "후손"
+    ],
+    [
+      "deserve",
+      "~을 받을 자격이 있다"
+    ]
+  ],
+  "summary": {
+    "en": "Our decisions today affect future generations, so we must act as good ancestors and not take away what our descendants deserve.",
+    "ko": "오늘 우리의 결정은 미래 세대에 영향을 주므로, 우리는 좋은 조상으로서 후손이 누려야 할 것을 빼앗지 말아야 한다."
+  },
+  "writing": {
+    "en": "While we enjoy the gardens planted by our ancestors, we must not steal the shade from our descendants.",
+    "ko": "우리가 조상이 심은 정원을 누리는 동안, 우리는 후손에게서 그늘을 빼앗아서는 안 된다."
+  },
+  "tip": "밑줄 앞에 must not이 있으면, 밑줄은 '하지 말아야 할 나쁜 일'이에요. 좋은 행동을 말하는 ④처럼 방향이 반대인 선택지를 먼저 지우세요.",
+  "note": "'정원(gardens)'은 조상에게서 받은 혜택, '그늘(shade)'은 후손이 누려야 할 혜택이에요. 비유를 하나씩 우리말로 바꿔 보면 답이 바로 보여요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 21번 정답은?",
+      "⑤ take from future generations what they deserve to have예요."
+    ],
+    [
+      "④번은 왜 틀리나요?",
+      "④는 우리가 해야 할 좋은 일이에요. 밑줄은 must not 뒤에 있어서 하지 말아야 할 일이라 반대예요."
+    ]
+  ]
+}

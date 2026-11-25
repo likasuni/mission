@@ -1,0 +1,168 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 35,
+  "type": "무관한 문장",
+  "points": 2,
+  "answer": 4,
+  "topic": "설정점 이론: 지방 세포가 많고 설정점이 높으면 다이어트 때 식욕이 강하다",
+  "date": "2026-11-30",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 35번",
+    "2026 3월 고1 영어 35번 해설",
+    "고1 3월 모의고사 35번 정답",
+    "2026 고1 3모 영어 35번",
+    "고1 모의고사 무관한 문장",
+    "설정점 이론: 지방 세포가 많고 설정"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 35번은 '설정점 이론'으로 다이어트할 때 식욕이 강해지는 이유를 설명하는 글이에요. ④는 지방 세포가 질병 치료에 도움이 될 수 있다는 이야기라 설정점·식욕 흐름과 관계없어요. 정답은 ④예요.",
+  "flow": [
+    [
+      "주제",
+      "'설정점 이론' 개념은 여러분이 성인이 될 무렵이면 몸이 안정적인 양의 지방 세포를 가진다는 것이다. 어린 시절과 십 대 시절에 체중이 더 많이 나갈수록,"
+    ],
+    [
+      "2단락",
+      "① 그 후 이 지방 세포는 '더 가득 차거나' '더 얇아진다' 성인이 되어 살이 찌고 빠짐에 따라."
+    ],
+    [
+      "3단락",
+      "② 설정점은 이 세포 안의 방아쇠이다 뇌에 메시지를 보낼"
+    ],
+    [
+      "4단락",
+      "③ 사람마다 지방 세포는 서로 다른 설정점을 가질 것이다, 그리고 메시지의 강도는 세포 수에 영향을 받는다."
+    ],
+    [
+      "5단락",
+      "④ 일부 연구자들은 보고한다 지방 세포가 호르몬과 다른 화학 물질을 분비할 수 있다고"
+    ],
+    [
+      "6단락",
+      "⑤ 따라서 지방 세포가 많고 설정점이 높은 사람은 다이어트를 할 때 음식에 대한 강한 욕구와 싸울 것이다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "④ Some researchers report",
+      "ko": "④ 일부 연구자들은 보고한다",
+      "note": "설정점·식욕이 아니라 지방 세포의 질병 치료 효과 이야기"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① These fat cells then become \"fuller\" or \"thinner\" / as you gain and lose weight as an adult.",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. 지방 세포의 변화"
+    },
+    {
+      "en": "② The set point is the trigger in these cells / that will send a message to your brain / saying that your fat cells are ",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. 설정점 = 더 먹으라는 신호"
+    },
+    {
+      "en": "③ Different people's fat cells will have different set points, / and the strength of the message is affected by the numb",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. 세포 수 → 메시지 강도"
+    },
+    {
+      "en": "④ Some researchers report / that fat cells can release hormones and other chemicals / that could help treat a disease.",
+      "ko": "무관",
+      "why": "정답(무관). 설정점·식욕이 아니라 지방 세포의 질병 치료 효과 이야기"
+    },
+    {
+      "en": "⑤ Thus a person with lots of fat cells and a high set point / will battle with a strong desire for food when dieting.",
+      "ko": "흐름 맞음",
+      "why": "흐름에 맞아요. Thus로 ③(세포 수 → 메시지 강도)의 결론 → ④를 빼면 바로 이어짐"
+    }
+  ],
+  "grammar": [
+    {
+      "t": "that절 보어",
+      "ex": "The \"set point theory\" concept is that your body has a stable quantity of fat cells by the time you are an adult.",
+      "d": "be동사 뒤 that절이 보어로 쓰여요 (~라는 것이다)."
+    },
+    {
+      "t": "접속사 as",
+      "ex": "as you gain and lose weight as an adult.",
+      "d": "접속사 as는 문맥에 따라 ~함에 따라, ~듯이, ~할 때, ~ 때문에."
+    },
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "that will send a message to your brain",
+      "d": "뒤에 주어가 빠진 절이 오는 주격 관계대명사. 동사는 선행사에 수를 맞춰요."
+    }
+  ],
+  "vocab": [
+    [
+      "set point",
+      "설정점"
+    ],
+    [
+      "stable",
+      "안정적인"
+    ],
+    [
+      "quantity",
+      "양"
+    ],
+    [
+      "fat cell",
+      "지방 세포"
+    ],
+    [
+      "gain weight",
+      "살이 찌다"
+    ],
+    [
+      "trigger",
+      "방아쇠, 계기"
+    ],
+    [
+      "strength",
+      "강도"
+    ],
+    [
+      "affect",
+      "영향을 주다"
+    ],
+    [
+      "release",
+      "분비하다"
+    ],
+    [
+      "chemical",
+      "화학 물질"
+    ],
+    [
+      "treat",
+      "치료하다"
+    ],
+    [
+      "battle with",
+      "~와 싸우다"
+    ],
+    [
+      "desire",
+      "욕구"
+    ]
+  ],
+  "summary": {
+    "en": "According to set point theory, people with many fat cells and a high set point feel a strong urge to eat when dieting.",
+    "ko": "설정점 이론에 따르면, 지방 세포가 많고 설정점이 높은 사람은 다이어트할 때 강한 식욕을 느낀다."
+  },
+  "writing": {
+    "en": "The more weight you carried in your childhood, the more fat cells you will have as an adult.",
+    "ko": "어린 시절에 체중이 더 많이 나갈수록, 성인이 되어 더 많은 지방 세포를 가질 것이다."
+  },
+  "tip": "무관한 문장은 첫 문장(주제)을 한 줄로 정해 두고, 문장마다 그 주제를 이어 가는지 확인하세요. 앞 문장의 단어를 이어받아도 주제가 바뀌면 답이에요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 35번 정답은?",
+      "④예요."
+    ],
+    [
+      "⑤의 Thus는 무엇을 받나요?",
+      "③의 '세포 수가 메시지 강도에 영향을 준다'를 받아요. ④를 빼면 ③ → ⑤가 바로 이어져요."
+    ]
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 31,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "장난감이 너무 많으면 아이가 압도된다 — 줄이고 정리하기",
+  "date": "2026-11-29",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 31번",
+    "2026 3월 고1 영어 31번 해설",
+    "고1 3월 모의고사 31번 정답",
+    "2026 고1 3모 영어 31번",
+    "고1 모의고사 빈칸",
+    "장난감이 너무 많으면 아이가 압도된다"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 31번은 물건이 너무 많으면 아이들이 불안하고 압도되니, 놀이 공간을 줄이고 정리해야 가진 것을 보고 쓸 수 있다는 글이에요. 빈칸에는 Streamlining(간소화)과 같은 뜻의 ① Revision이 들어가요.",
+  "flow": [
+    [
+      "1단락",
+      "여러분 집의 다른 방들이 불안을 일으킬 수 있는 것처럼 너무 많은 물건으로 채워져 있을 때,"
+    ],
+    [
+      "2단락",
+      "이것은 여성들이 옷으로 가득 찬 옷장을 들여다보는 방식을 우리에게 상기시킨다 그리고 '나는 입을 게 없어'라고 생각하는 방식을."
+    ],
+    [
+      "3단락",
+      "놀이 공간을 간소화하는 것은 정말 중요하다. 여러분은 아이들이 그 방에서 영감을 받고 상상력이 풍부하다고 느끼기를 원한다"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "but they can feel overwhelmed by so much stuff.",
+      "ko": "하지만 그들은 너무 많은 물건에 압도된다고 느낄 수 있다.",
+      "note": "물건이 너무 많으면 불안하고 압도됨"
+    },
+    {
+      "en": "( ) Revision helps everyone see what they have and use what they own. When there's too much to see, too much to step over, and too much input, kids have a hard time making a choice.",
+      "ko": "(　　) 재정리(수정)는 모든 사람이 자신이 가진 것을 보고 소유한 것을 사용하도록 돕는다. 볼 것이 너무 많고, 넘어 다녀야 할 것이 너무 많고, 입력이 너무 많을 때, 아이들은 선택하는 데 어려움을 겪는다.",
+      "note": "너무 많으면 못 고름 → 정리해서 줄여야(revision) 가진 것을 보고 씀"
+    },
+    {
+      "en": "Streamlining a play space is so important.",
+      "ko": "놀이 공간을 간소화하는 것은 정말 중요하다.",
+      "note": "Streamlining(간소화) = Revision(정리·수정)"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① Revision",
+      "ko": "수정, 재정리",
+      "why": "정답. 너무 많은 것을 줄이고 다시 정리하는 것 = revision."
+    },
+    {
+      "en": "② Invitation",
+      "ko": "초대",
+      "why": "초대는 관계없어요."
+    },
+    {
+      "en": "③ Collection",
+      "ko": "수집",
+      "why": "더 모으는(collection) 게 아니라 줄이는 이야기예요. 반대예요."
+    },
+    {
+      "en": "④ Possession",
+      "ko": "소유",
+      "why": "소유를 늘리라는 글이 아니에요."
+    },
+    {
+      "en": "⑤ Cooperation",
+      "ko": "협력",
+      "why": "협력 이야기는 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "접속사 + 과거분사 (when filled)",
+      "ex": "when filled with too much stuff,",
+      "d": "접속사 + 과거분사: ~될 때."
+    },
+    {
+      "t": "과거분사 후치 수식 (packed full of)",
+      "ex": "This reminds us of how women look in their closets packed full of clothes",
+      "d": "과거분사(구)가 뒤에서 명사를 꾸며요. '~된'으로 해석."
+    },
+    {
+      "t": "help + O + 동사원형",
+      "ex": "( ) Revision helps everyone see what they have and use what they own.",
+      "d": "help + 목적어 + 동사원형/to부정사: ~가 …하도록 돕다."
+    }
+  ],
+  "vocab": [
+    [
+      "anxiety",
+      "불안"
+    ],
+    [
+      "stuff",
+      "물건"
+    ],
+    [
+      "house",
+      "보관하다"
+    ],
+    [
+      "overwhelmed",
+      "압도된"
+    ],
+    [
+      "remind A of B",
+      "A에게 B를 상기시키다"
+    ],
+    [
+      "closet",
+      "옷장"
+    ],
+    [
+      "input",
+      "입력"
+    ],
+    [
+      "streamline",
+      "간소화하다"
+    ],
+    [
+      "inspired",
+      "영감을 받은"
+    ],
+    [
+      "imaginative",
+      "상상력이 풍부한"
+    ],
+    [
+      "indecision",
+      "망설임"
+    ],
+    [
+      "revision",
+      "수정, 재정리"
+    ]
+  ],
+  "summary": {
+    "en": "Too many toys overwhelm children, so reducing and organizing their play space helps them use what they have.",
+    "ko": "장난감이 너무 많으면 아이들이 압도되므로, 놀이 공간을 줄이고 정리하면 가진 것을 쓸 수 있게 된다."
+  },
+  "writing": {
+    "en": "When there's too much to see, kids have a hard time making a choice.",
+    "ko": "볼 것이 너무 많을 때 아이들은 선택하는 데 어려움을 겪는다."
+  },
+  "tip": "빈칸 문장 앞뒤에 같은 뜻의 말(Streamlining, 줄이다)이 있는지 찾으세요. 빈칸은 글에서 다른 말로 한 번 더 나오는 경우가 많아요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 31번 정답은?",
+      "① Revision이에요."
+    ],
+    [
+      "③ Collection은 왜 틀리나요?",
+      "글은 물건을 줄이고 정리하라는 내용이에요. 더 모으는 Collection은 반대예요."
+    ]
+  ]
+}

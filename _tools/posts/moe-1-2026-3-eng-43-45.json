@@ -1,0 +1,280 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "동전을 왕에게 준 현자 — 만족의 가치",
+  "date": "2026-12-01",
+  "lead": "2026년 3월 고1 모의고사 영어 43~45번은 길에서 주운 동전을 진짜 필요한 사람에게 주려던 현자가, 더 많은 것을 원해 전쟁을 준비하던 왕에게 동전을 건네 만족의 가치를 깨닫게 한 이야기예요. 43번 ② (C)-(B)-(D), 44번 ⑤ (e), 45번 ③이 정답이에요.",
+  "flow": [
+    [
+      "(A)",
+      "(A) 어느 날, 한 현자가 제자와 함께 여행하고 있었다 번영한 왕국의 수도를 지나."
+    ],
+    [
+      "(C)",
+      "(C) 다음 날 아침, 궁전 근처에서, 그들은 왕이 전쟁을 준비하는 것을 보았다. 왕은 자신이 가진 것에 만족하지 않았다"
+    ],
+    [
+      "(B)",
+      "(B) 왕은, 그가 한 행동에 당황하고 약간 불쾌해하며, 물었다, \"이 동전의 의미가 무엇이냐? 나는 이 땅에서 가장 부유한 왕이다."
+    ],
+    [
+      "(D)",
+      "(D) 현자는 덧붙였다, \"오늘, 저는 당신이 더 정복하려고 전쟁을 준비하는 것을 봅니다. 그래서 (d) 저는 더 많은 것을 원하는 분인 당신이 이 동전이 필요하다고 생각했습니다.\""
+    ]
+  ],
+  "tip": "43번은 시간 표현(The next morning)과 '덧붙였다(added)'를 잡으세요. 44번은 등장인물이 현자·제자·왕이라 대명사마다 누구의 말·행동인지 확인하세요. 45번은 '돌아오는/준비하는'처럼 동작 하나만 바꾼 선택지를 조심하세요.",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 43~45번",
+    "2026 3월 고1 영어 43~45번 해설",
+    "고1 3월 모의고사 43번 정답",
+    "고1 3월 모의고사 44번 정답",
+    "고1 3월 모의고사 45번 정답",
+    "2026 고1 3모 영어 43~45번",
+    "고1 모의고사 장문"
+  ],
+  "qs": [
+    {
+      "n": 43,
+      "type": "장문 순서",
+      "points": 2,
+      "answer": 2,
+      "evidence": [
+        {
+          "en": "(C) The next morning, near the palace, they saw the king preparing for a war. The king was not satisfied with what he had",
+          "ko": "(C) 다음 날 아침, 궁전 근처에서, 그들은 왕이 전쟁을 준비하는 것을 보았다. 왕은 자신이 가진 것에 만족하지 않았다",
+          "note": "(A) 동전을 줄 사람을 못 찾음 → (C) The next morning 왕을 만나 동전을 건넴"
+        },
+        {
+          "en": "(B) The king, puzzled and slightly annoyed at what he did, asked, \"What is the meaning of this coin? I am the richest king in the land.",
+          "ko": "(B) 왕은, 그가 한 행동에 당황하고 약간 불쾌해하며, 물었다, \"이 동전의 의미가 무엇이냐? 나는 이 땅에서 가장 부유한 왕이다.",
+          "note": "(C) 현자가 동전을 건넴 → (B) 왕이 동전의 의미를 물음"
+        },
+        {
+          "en": "And (d) I thought you, the one who desires more, were in need of this coin.\" The king was struck by the sage's words.",
+          "ko": "그래서 (d) 저는 더 많은 것을 원하는 분인 당신이 이 동전이 필요하다고 생각했습니다.\" 왕은 현자의 말에 깊은 인상을 받았다.",
+          "note": "(B) 현자의 설명 → (D) The sage added 설명을 마무리, 왕이 깨달음 (마무리)"
+        }
+      ],
+      "choices": [
+        {
+          "en": "① (B) – (D) – (C)",
+          "ko": "",
+          "why": "(B)는 왕이 동전을 받은 뒤의 반응이라 (C)보다 먼저 올 수 없어요."
+        },
+        {
+          "en": "② (C) – (B) – (D)",
+          "ko": "",
+          "why": "정답. 동전을 줄 사람 못 찾음 → 다음 날 왕에게 건넴 → 왕의 질문과 현자의 설명 → 깨달음."
+        },
+        {
+          "en": "③ (C) – (D) – (B)",
+          "ko": "",
+          "why": "(D)의 The sage added는 (B)의 현자 대답 뒤에 와야 해요."
+        },
+        {
+          "en": "④ (D) – (B) – (C)",
+          "ko": "",
+          "why": "(D)가 먼저 오면 현자가 아직 동전을 건네지 않았어요."
+        },
+        {
+          "en": "⑤ (D) – (C) – (B)",
+          "ko": "",
+          "why": "(D)가 (C) 바로 뒤에 오면 왕의 질문(B)이 빠져요."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "type": "지칭 대상",
+      "points": 2,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "he told his disciple (a) he hoped to give it to someone who truly required it.",
+          "ko": "그는 제자에게 (a) 자신이 그것을 진정으로 필요로 하는 누군가에게 주고 싶다고 말했다.",
+          "note": "(a) he = 현자"
+        },
+        {
+          "en": "The sage's simple but powerful lesson made him change (e) his plans.",
+          "ko": "현자의 단순하지만 강력한 교훈은 그가 (e) 자신의 계획을 바꾸게 했다.",
+          "note": "(e) his = 왕"
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) he",
+          "ko": "현자",
+          "why": "현자예요."
+        },
+        {
+          "en": "(b) I",
+          "ko": "현자",
+          "why": "현자예요."
+        },
+        {
+          "en": "(c) he",
+          "ko": "현자",
+          "why": "현자예요."
+        },
+        {
+          "en": "(d) I",
+          "ko": "현자",
+          "why": "현자예요."
+        },
+        {
+          "en": "(e) his",
+          "ko": "왕",
+          "why": "정답. (e)만 왕이에요."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "type": "내용 불일치",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "(C) The next morning, near the palace, they saw the king preparing for a war. The king was not satisfied with what he had",
+          "ko": "(C) 다음 날 아침, 궁전 근처에서, 그들은 왕이 전쟁을 준비하는 것을 보았다. 왕은 자신이 가진 것에 만족하지 않았다",
+          "note": "전쟁을 '준비하는' 왕을 봄 (돌아오는 왕이 아님)"
+        }
+      ],
+      "choices": [
+        {
+          "en": "① 현자는 소박한 삶을 살았기에 동전이 필요하지 않았다.",
+          "ko": "일치",
+          "why": "일치. Since he lived simply and had no need for it"
+        },
+        {
+          "en": "② 왕은 현자가 한 행동에 당황스러웠고 약간 불쾌함을 느꼈다.",
+          "ko": "일치",
+          "why": "일치. puzzled and slightly annoyed at what he did"
+        },
+        {
+          "en": "③ 현자는 전쟁을 마치고 돌아오는 왕을 궁전 근처에서 보았다.",
+          "ko": "불일치",
+          "why": "정답(불일치). 전쟁을 '준비하는' 왕을 봄 (돌아오는 왕이 아님)"
+        },
+        {
+          "en": "④ 왕은 현자에게 다가가 축복을 부탁했다.",
+          "ko": "일치",
+          "why": "일치. He approached the sage and asked for a blessing"
+        },
+        {
+          "en": "⑤ 왕은 침략을 취소했고 자신이 가진 것을 소중히 여기기로 했다.",
+          "ko": "일치",
+          "why": "일치. called off the invasion and chose to appreciate what he already had"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "주격 관계대명사 who",
+      "ex": "he told his disciple (a) he hoped to give it to someone who truly required it.",
+      "d": "사람 선행사를 받는 주격 관계대명사."
+    },
+    {
+      "t": "지각동사 see + O + -ing",
+      "ex": "(C) The next morning, near the palace, they saw the king preparing for a war.",
+      "d": "지각동사 + 목적어 + -ing: 목적어가 ~하고 있는 것을 보다."
+    },
+    {
+      "t": "관계대명사 what",
+      "ex": "The king was not satisfied with what he had",
+      "d": "선행사를 품은 관계대명사. '~하는 것'으로 해석하고 뒤 절은 불완전해요."
+    }
+  ],
+  "vocab": [
+    [
+      "sage",
+      "현자"
+    ],
+    [
+      "disciple",
+      "제자"
+    ],
+    [
+      "prosperous",
+      "번영한"
+    ],
+    [
+      "genuine",
+      "진정한"
+    ],
+    [
+      "in need of",
+      "~이 필요한"
+    ],
+    [
+      "expand",
+      "확장하다"
+    ],
+    [
+      "accompany",
+      "동행하다"
+    ],
+    [
+      "ensure",
+      "보장하다"
+    ],
+    [
+      "puzzled",
+      "당황한"
+    ],
+    [
+      "annoyed",
+      "불쾌한"
+    ],
+    [
+      "content",
+      "만족한"
+    ],
+    [
+      "urgent",
+      "긴급한"
+    ],
+    [
+      "conquer",
+      "정복하다"
+    ],
+    [
+      "be struck by",
+      "~에 깊은 인상을 받다"
+    ],
+    [
+      "contentment",
+      "만족"
+    ],
+    [
+      "call off",
+      "취소하다"
+    ]
+  ],
+  "summary": {
+    "en": "A sage gave a coin to a king who wanted more, teaching him the value of contentment, so the king called off his war.",
+    "ko": "현자는 더 많은 것을 원하는 왕에게 동전을 주어 만족의 가치를 가르쳤고, 왕은 전쟁을 취소했다."
+  },
+  "writing": {
+    "en": "He realized that his hunger for more had made him forget the value of contentment.",
+    "ko": "그는 더 많은 것에 대한 갈망이 자신에게 만족의 가치를 잊게 했다는 것을 깨달았다."
+  },
+  "faq": [
+    [
+      "2026년 3월 고1 영어 43번 정답은?",
+      "② (C) - (B) - (D)예요."
+    ],
+    [
+      "2026년 3월 고1 영어 44번 정답은?",
+      "⑤ (e)예요. (e) his만 왕이고 나머지는 모두 현자예요."
+    ],
+    [
+      "2026년 3월 고1 영어 45번 정답은?",
+      "③이에요. 현자는 전쟁을 마치고 돌아오는 왕이 아니라 전쟁을 준비하는 왕을 봤어요."
+    ]
+  ]
+}

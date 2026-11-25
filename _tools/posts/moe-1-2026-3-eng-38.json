@@ -1,0 +1,177 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 38,
+  "type": "문장 삽입",
+  "points": 3,
+  "answer": 4,
+  "topic": "과학자는 패러다임 안에서 연구한다 — 과학의 진보는 더 정확해지는 것이 아니다",
+  "date": "2026-12-01",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 38번",
+    "2026 3월 고1 영어 38번 해설",
+    "고1 3월 모의고사 38번 정답",
+    "2026 고1 3모 영어 38번",
+    "고1 모의고사 문장 삽입",
+    "과학자는 패러다임 안에서 연구한다"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 38번은 Kuhn의 패러다임 이론을 다룬 문장 삽입 문항이에요. '따라서 과학의 큰 진보는 덜 정확한 패러다임에서 더 정확한 패러다임으로의 이동이 아니다'라는 문장은 ④ 자리에 들어가요. 정답은 ④예요.",
+  "flow": [
+    [
+      "1단락",
+      "Kuhn이 제안했듯이, 세상에 대한 우리의 명제는 패러다임 안에 깊이 박혀 있다, 즉 대략 특정 이론에 대한 서로 연관된 약속들의 네트워크,"
+    ],
+    [
+      "2단락",
+      "( ② ) 가장 엄밀한 측정조차 그 패러다임 안에서만 타당하다. ( ③ ) 예를 들어, 현미경을 들여다보는 것은 여러분에게 아무것도 알려 주지 않는다"
+    ],
+    [
+      "3단락",
+      "따라서, 우리가 과학에서 주요한 진보라고 부르는 것은 덜 정확한 패러다임에서 더 정확한 패러다임으로의 이동이 아니다."
+    ],
+    [
+      "4단락",
+      "( ④ ) 오히려, 그것은 하나의 '세상을 보는 방식'에서 다른 방식으로의 수평적 전환이다. ( ⑤ ) Kuhn에게 있어, '새로운 패러다임을 가진 과학자는 다르게 본다"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Thus, what we call major progress in science",
+      "ko": "따라서, 우리가 과학에서 주요한 진보라고 부르는 것은",
+      "note": "③까지: 모든 것은 패러다임 안에서만 의미 → Thus 진보는 '더 정확한' 쪽으로의 이동이 아님 → ④ 뒤 Rather 수평적 전환"
+    },
+    {
+      "en": "( ④ ) Rather, it is a horizontal shift from one 'way of seeing the world' to another.",
+      "ko": "( ④ ) 오히려, 그것은 하나의 '세상을 보는 방식'에서 다른 방식으로의 수평적 전환이다.",
+      "note": "not A(더 정확한 쪽으로 이동) → Rather B(수평적 전환) 짝"
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "",
+      "why": "명제는 패러다임 안에 있음 → 그래서 과학자도 패러다임 안에서 연구 (자연스러움)"
+    },
+    {
+      "en": "②",
+      "ko": "",
+      "why": "측정도 패러다임 안에서만 의미 있음 → 현미경 예시"
+    },
+    {
+      "en": "③",
+      "ko": "",
+      "why": "측정도 패러다임 안에서만 의미 있음 → 현미경 예시"
+    },
+    {
+      "en": "④",
+      "ko": "정답 자리",
+      "why": "정답. ③까지: 모든 것은 패러다임 안에서만 의미 → Thus 진보는 '더 정확한' 쪽으로의 이동이 아님 → ④ 뒤 Rather 수평적 전환"
+    },
+    {
+      "en": "⑤",
+      "ko": "",
+      "why": "Kuhn의 말로 마무리"
+    }
+  ],
+  "grammar": [
+    {
+      "t": "접속사 as",
+      "ex": "As Kuhn proposed, our propositions about the world are embedded within paradigms,",
+      "d": "접속사 as는 문맥에 따라 ~함에 따라, ~듯이, ~할 때, ~ 때문에."
+    },
+    {
+      "t": "동격 (paradigms, roughly a network ~)",
+      "ex": "As Kuhn proposed, our propositions about the world are embedded within paradigms,",
+      "d": "콤마 뒤 명사구가 앞 명사를 다시 풀어 설명하는 동격이에요."
+    },
+    {
+      "t": "대동사 do so",
+      "ex": "( ① ) Thus, when scientists undertake research, they do so from within a specific paradigm.",
+      "d": "앞에 나온 동사(구)를 반복하지 않으려고 do·does·did로 받아요."
+    }
+  ],
+  "vocab": [
+    [
+      "propose",
+      "제안하다"
+    ],
+    [
+      "proposition",
+      "명제"
+    ],
+    [
+      "embed",
+      "깊이 박아 넣다"
+    ],
+    [
+      "paradigm",
+      "패러다임"
+    ],
+    [
+      "interrelated",
+      "서로 연관된"
+    ],
+    [
+      "commitment",
+      "약속, 전념"
+    ],
+    [
+      "conception",
+      "개념"
+    ],
+    [
+      "methodological",
+      "방법론적인"
+    ],
+    [
+      "undertake",
+      "착수하다"
+    ],
+    [
+      "exacting",
+      "엄밀한"
+    ],
+    [
+      "measurement",
+      "측정"
+    ],
+    [
+      "sensible",
+      "타당한"
+    ],
+    [
+      "microscope",
+      "현미경"
+    ],
+    [
+      "instrument",
+      "도구"
+    ],
+    [
+      "accurate",
+      "정확한"
+    ],
+    [
+      "horizontal",
+      "수평적인"
+    ]
+  ],
+  "summary": {
+    "en": "According to Kuhn, science works within paradigms, so major progress is a shift to a new way of seeing, not a move toward more accuracy.",
+    "ko": "Kuhn에 따르면 과학은 패러다임 안에서 작동하므로, 주요한 진보는 더 정확해지는 것이 아니라 새로운 보는 방식으로의 전환이다."
+  },
+  "writing": {
+    "en": "What we call major progress in science is not a movement from a less to a more accurate paradigm.",
+    "ko": "우리가 과학에서 주요한 진보라고 부르는 것은 덜 정확한 패러다임에서 더 정확한 패러다임으로의 이동이 아니다."
+  },
+  "tip": "Thus로 시작하는 주어진 문장은 '결론'이에요. 앞에 그 결론의 이유(측정도 패러다임 안에서만 의미 있다)가 다 나온 뒤 자리를 찾으세요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 38번 정답은?",
+      "④예요."
+    ],
+    [
+      "주어진 문장의 Thus는 무엇을 받나요?",
+      "앞에서 측정·관찰도 패러다임 안에서만 의미가 있다고 한 내용을 받아, 그래서 진보를 '더 정확해짐'으로 볼 수 없다고 결론 내려요."
+    ]
+  ]
+}

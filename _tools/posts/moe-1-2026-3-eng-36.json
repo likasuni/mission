@@ -1,0 +1,174 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 36,
+  "type": "글의 순서",
+  "points": 2,
+  "answer": 3,
+  "topic": "'더 적은 것이 더 많다'는 생각이 너무 자주 쓰일 때 — 라디오 버튼의 예",
+  "date": "2026-11-30",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 36번",
+    "2026 3월 고1 영어 36번 해설",
+    "고1 3월 모의고사 36번 정답",
+    "2026 고1 3모 영어 36번",
+    "고1 모의고사 글의 순서",
+    "'더 적은 것이 더 많다'는 생각이 "
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 36번은 '단순한 것이 낫다'는 생각이 너무 자주 쓰이면서 생긴 부작용을 라디오의 예로 보여 주는 글이에요. 주어진 글 → (B) 너무 자주 쓰임 → (C) 라디오 예 → (A) 그 버튼들 순서라 정답은 ③ (B) - (C) - (A)예요.",
+  "flow": [
+    [
+      "1단락",
+      "처음에 '더 적은 것이 더 많은 것이다'라는 유명 문구는 단순한 의미를 가졌다."
+    ],
+    [
+      "(B)",
+      "(B) Robert Browning의 시 'Andrea del Sarto'에서 처음 언급되었는데, 그것은 단순한 모든 것이 더 낫고 더 아름답다는 것을 시사한다"
+    ],
+    [
+      "(C)",
+      "(C) 하지만 인식하는 것이 중요하다 이 말 뒤에 있는 사고방식이 우리 일상에서 특정한 습관을 서서히 없앤다는 것을."
+    ],
+    [
+      "(A)",
+      "(A) 시간이 지나며, 그것들의 많은 버튼이 '여분'으로 여겨져 제거되었다, 그리고 축소될 때마다 이 기기들은 결국 우리 주머니 속 전화기로 발전했다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Initially the catchphrase \"less is more\" had a simple meaning.",
+      "ko": "처음에 '더 적은 것이 더 많은 것이다'라는 유명 문구는 단순한 의미를 가졌다.",
+      "note": "순서 판단  (B) - (C) - (A)  정답 ③"
+    },
+    {
+      "en": "(B) First mentioned in Robert Browning's poem \"Andrea del Sarto,\"",
+      "ko": "(B) Robert Browning의 시 'Andrea del Sarto'에서 처음 언급되었는데,",
+      "note": "주어진 글의 '단순한 의미' = 단순한 것이 더 낫다"
+    },
+    {
+      "en": "(C) But it's important to recognize that the way of thinking that lies behind these words slowly extinguishes certain habits from our daily life. For example, think about the heavy, massive radio receivers",
+      "ko": "(C) 하지만 인식하는 것이 중요하다 이 말 뒤에 있는 사고방식이 우리 일상에서 특정한 습관을 서서히 없앤다는 것을. 예를 들어, 무겁고 거대한 라디오 수신기를 생각해 보라",
+      "note": "(B)의 '너무 자주 쓰임' → But 그 사고방식의 부작용, 라디오 예를 꺼냄"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① (A) - (C) - (B)",
+      "ko": "",
+      "why": "(A)의 their buttons가 가리킬 라디오가 아직 나오지 않았어요."
+    },
+    {
+      "en": "② (B) - (A) - (C)",
+      "ko": "",
+      "why": "(A)가 (C)의 라디오보다 먼저 오면 their가 가리킬 대상이 없어요."
+    },
+    {
+      "en": "③ (B) - (C) - (A)",
+      "ko": "정답",
+      "why": "정답. 단순함의 장점 → 너무 자주 쓰임(But) → 라디오 예 → 그 버튼들."
+    },
+    {
+      "en": "④ (C) - (A) - (B)",
+      "ko": "",
+      "why": "(C)의 But은 앞에 '너무 자주 쓰인다'는 (B)가 있어야 자연스러워요."
+    },
+    {
+      "en": "⑤ (C) - (B) - (A)",
+      "ko": "",
+      "why": "(B)가 맨 뒤로 가면 단순함 이야기와 라디오 예가 끊겨요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "과거분사 분사구문 (First mentioned ~)",
+      "ex": "(B) First mentioned in Robert Browning's poem \"Andrea del Sarto,\"",
+      "d": "접속사와 주어를 줄인 분사구문. 능동이면 -ing, 수동이면 p.p."
+    },
+    {
+      "t": "가주어 it ~ to부정사",
+      "ex": "(C) But it's important to recognize",
+      "d": "가주어 it, 진주어 to부정사. 긴 주어를 뒤로 보내요."
+    },
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "that the way of thinking that lies behind these words slowly extinguishes certain habits from our daily life.",
+      "d": "뒤에 주어가 빠진 절이 오는 주격 관계대명사. 동사는 선행사에 수를 맞춰요."
+    }
+  ],
+  "vocab": [
+    [
+      "initially",
+      "처음에"
+    ],
+    [
+      "catchphrase",
+      "유명 문구"
+    ],
+    [
+      "mention",
+      "언급하다"
+    ],
+    [
+      "suggest",
+      "시사하다"
+    ],
+    [
+      "complex",
+      "복잡한"
+    ],
+    [
+      "tangled",
+      "뒤엉킨"
+    ],
+    [
+      "recognize",
+      "인식하다"
+    ],
+    [
+      "extinguish",
+      "소멸시키다"
+    ],
+    [
+      "massive",
+      "거대한"
+    ],
+    [
+      "receiver",
+      "수신기"
+    ],
+    [
+      "remove",
+      "제거하다"
+    ],
+    [
+      "reduction",
+      "축소"
+    ],
+    [
+      "scale",
+      "크기"
+    ],
+    [
+      "function",
+      "기능"
+    ]
+  ],
+  "summary": {
+    "en": "The idea \"less is more\" has led to removing many things, like the buttons of old radios that turned into smartphones.",
+    "ko": "'더 적은 것이 더 많은 것'이라는 생각은, 스마트폰이 된 옛 라디오의 버튼처럼 많은 것을 없애는 결과를 낳았다."
+  },
+  "writing": {
+    "en": "The way of thinking that lies behind these words slowly extinguishes certain habits from our daily life.",
+    "ko": "이 말 뒤에 있는 사고방식은 우리 일상에서 특정한 습관을 서서히 없앤다."
+  },
+  "tip": "순서 문제는 대명사(their buttons)와 연결어(But)부터 잡으세요. their buttons는 (C)의 radio receivers를 받으니 (C) → (A)가 고정돼요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 36번 정답은?",
+      "③ (B) - (C) - (A)예요."
+    ],
+    [
+      "(A)가 마지막인 이유는?",
+      "(A)의 their buttons가 (C)의 radio receivers를 가리켜서 (C) 뒤에 와야 해요."
+    ]
+  ]
+}

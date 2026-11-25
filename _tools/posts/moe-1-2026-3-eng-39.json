@@ -1,0 +1,173 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 39,
+  "type": "문장 삽입",
+  "points": 2,
+  "answer": 3,
+  "topic": "새벽엔 얼어붙고 몇 시간 뒤엔 생기 넘치는 겨울 온실",
+  "date": "2026-12-01",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 39번",
+    "2026 3월 고1 영어 39번 해설",
+    "고1 3월 모의고사 39번 정답",
+    "2026 고1 3모 영어 39번",
+    "고1 모의고사 문장 삽입",
+    "새벽엔 얼어붙고 몇 시간 뒤엔 생기 "
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 39번은 영하의 밤을 지낸 겨울 온실을 새벽과 몇 시간 뒤 두 번 찾아가 보는 글이에요. ②까지는 새벽의 얼어붙은 모습, 주어진 문장(Yet a few hours later ~)부터 두 번째 방문의 생기 넘치는 모습이라 정답은 ③이에요.",
+  "flow": [
+    [
+      "1단락",
+      "우리의 추운 온실 중 하나를 두 번 방문하는 것은 하나는 영하의 밤이 지난 새벽에, 다른 하나는 몇 시간 뒤에"
+    ],
+    [
+      "2단락",
+      "( ② ) 내부 덮개를 들어 올리는 것은, 그것도 얼어 있어서 어려운데, 단단하고 서리가 내려앉은 잎의 광경을 드러낸다"
+    ],
+    [
+      "3단락",
+      "하지만 몇 시간 뒤, 해가 온실을 어는점 위로 데운 후에는, 두 번째 방문이 기적 같은 대조를 보여 준다."
+    ],
+    [
+      "4단락",
+      "( ③ ) 내부 덮개 아래에는 생기 넘치고 싱싱한 잎들이 촘촘한 줄을 이루고 있다 온실 길이만큼 뻗은."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Yet a few hours later, after the sun has warmed the greenhouses above freezing,",
+      "ko": "하지만 몇 시간 뒤, 해가 온실을 어는점 위로 데운 후에는,",
+      "note": "②까지 새벽의 얼어붙은 모습 → Yet 몇 시간 뒤 두 번째 방문 → ③ 뒤 생기 넘치는 잎 묘사"
+    },
+    {
+      "en": "( ⑤ ) It looks like a never-ending spring.",
+      "ko": "( ⑤ ) 그것은 끝나지 않는 봄처럼 보인다.",
+      "note": "두 번째 방문의 모습 (얼어붙은 잎 ↔ 생기 넘치는 잎)"
+    }
+  ],
+  "choices": [
+    {
+      "en": "①",
+      "ko": "",
+      "why": "두 번의 방문 소개 → 첫 번째(새벽) 방문 묘사"
+    },
+    {
+      "en": "②",
+      "ko": "",
+      "why": "여전히 새벽 방문: 얼어붙은 잎 (부정적 장면)"
+    },
+    {
+      "en": "③",
+      "ko": "정답 자리",
+      "why": "정답. ②까지 새벽의 얼어붙은 모습 → Yet 몇 시간 뒤 두 번째 방문 → ③ 뒤 생기 넘치는 잎 묘사"
+    },
+    {
+      "en": "④",
+      "ko": "",
+      "why": "두 번째 방문의 묘사가 이어짐"
+    },
+    {
+      "en": "⑤",
+      "ko": "",
+      "why": "두 번째 방문의 묘사가 이어짐"
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사 주어 + 단수 동사 provides",
+      "ex": "Making two visits to one of our cold greenhouses",
+      "d": "동명사 주어는 단수 취급해요."
+    },
+    {
+      "t": "장소 부사구 + V + S 도치 (Under ~ are rows ~)",
+      "ex": "( ③ ) Under the inner covers are closely spaced rows of vigorous, healthy leaves",
+      "d": "장소 부사구가 앞으로 나가면 동사 + 주어로 도치돼요. 동사는 뒤 주어에 맞춰요."
+    },
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "that stretch the length of the greenhouse.",
+      "d": "뒤에 주어가 빠진 절이 오는 주격 관계대명사. 동사는 선행사에 수를 맞춰요."
+    }
+  ],
+  "vocab": [
+    [
+      "greenhouse",
+      "온실"
+    ],
+    [
+      "striking",
+      "인상적인"
+    ],
+    [
+      "harvest",
+      "수확"
+    ],
+    [
+      "crop",
+      "작물"
+    ],
+    [
+      "frozen solid",
+      "꽁꽁 언"
+    ],
+    [
+      "reveal",
+      "드러내다"
+    ],
+    [
+      "frost-coated",
+      "서리가 내려앉은"
+    ],
+    [
+      "bleak",
+      "황량한"
+    ],
+    [
+      "convince",
+      "납득시키다"
+    ],
+    [
+      "miraculous",
+      "기적적인"
+    ],
+    [
+      "contrast",
+      "대조"
+    ],
+    [
+      "vigorous",
+      "생기가 넘치는"
+    ],
+    [
+      "stretch",
+      "뻗다"
+    ],
+    [
+      "shade",
+      "색조"
+    ],
+    [
+      "soil",
+      "흙"
+    ]
+  ],
+  "summary": {
+    "en": "In winter, greenhouse crops look frozen at dawn, but a few hours later they appear fresh and colorful like spring.",
+    "ko": "겨울에 온실 작물은 새벽에는 얼어 보이지만, 몇 시간 뒤에는 봄처럼 싱싱하고 화려하게 보인다."
+  },
+  "writing": {
+    "en": "After the sun has warmed the greenhouses above freezing, the second visit presents a miraculous contrast.",
+    "ko": "해가 온실을 어는점 위로 데운 후에는, 두 번째 방문이 기적 같은 대조를 보여 준다."
+  },
+  "tip": "Yet·However로 시작하는 주어진 문장은 장면이 바뀌는 자리에 들어가요. 앞은 얼어붙은 잎(부정), 뒤는 싱싱한 잎(긍정)으로 바뀌는 곳을 찾으세요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 39번 정답은?",
+      "③이에요."
+    ],
+    [
+      "④는 왜 안 되나요?",
+      "③ 뒤부터 이미 두 번째 방문의 싱싱한 잎을 묘사해요. 주어진 문장은 그 묘사가 시작되기 전인 ③에 들어가야 해요."
+    ]
+  ]
+}

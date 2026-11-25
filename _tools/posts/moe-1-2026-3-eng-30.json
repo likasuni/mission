@@ -1,0 +1,168 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 30,
+  "type": "어휘",
+  "points": 2,
+  "answer": 3,
+  "topic": "개발 도상국에선 부담인 걷기가 서구에선 건강한 활동 — 그런데 러닝머신을 쓴다",
+  "date": "2026-11-29",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 30번",
+    "2026 3월 고1 영어 30번 해설",
+    "고1 3월 모의고사 30번 정답",
+    "2026 고1 3모 영어 30번",
+    "고1 모의고사 어휘",
+    "개발 도상국에선 부담인 걷기가 서구에"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 30번은 개발 도상국에서는 어쩔 수 없는 부담인 걷기가, 북미·서유럽에서는 효율적이고 건강한 활동으로 여겨진다는 글이에요. However로 대조하는 문장이라 ③ same(같은)은 opposite(정반대)가 되어야 해요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "1단락",
+      "개발 도상국의 주요 교통수단은, 대도시에서조차, 여전히 걷기이다"
+    ],
+    [
+      "2단락",
+      "그런 조건에서의 걷기는 피할 수 없는 부담이다 생산적인 능력을 ② 소모하는."
+    ],
+    [
+      "3단락",
+      "우리는 그것을 ④ 더 많이 해야 한다 거의 모든 사람이 동의한다 그리고 현재 추세 일부는 뒤바뀌어야 한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "that ② consumes productive capability. In North America and Western Europe, however, the attitude and policies are just the ③ same:",
+      "ko": "생산적인 능력을 ② 소모하는. 그러나 북미와 서유럽에서는, 태도와 정책이 그야말로 ③ 정반대이다:",
+      "note": "However로 대조: 개발 도상국(걷기 = 부담) ↔ 북미·서유럽(걷기 = 효율적·건강) → '같은'이 아니라 '정반대(opposite)'"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① long",
+      "ko": "적절",
+      "why": "적절. 개발 도상국에서는 매일 '먼' 거리를 걸음"
+    },
+    {
+      "en": "② consumes",
+      "ko": "적절",
+      "why": "적절. 부담인 걷기가 생산 능력을 '소모함'"
+    },
+    {
+      "en": "③ same",
+      "ko": "부적절",
+      "why": "정답(부적절). However로 대조: 개발 도상국(걷기 = 부담) ↔ 북미·서유럽(걷기 = 효율적·건강) → '같은'이 아니라 '정반대(opposite)'"
+    },
+    {
+      "en": "④ more",
+      "ko": "적절",
+      "why": "적절. 걷기가 좋으니 '더 많이' 해야 함"
+    },
+    {
+      "en": "⑤ accomplished",
+      "ko": "적절",
+      "why": "적절. 러닝머신 대신 거리에서 이동하며 걷기를 '달성'할 수 있음"
+    }
+  ],
+  "grammar": [
+    {
+      "t": "과거분사 후치 수식 (needed to ~)",
+      "ex": "needed to operate extensive transit systems.",
+      "d": "과거분사(구)가 뒤에서 명사를 꾸며요. '~된'으로 해석."
+    },
+    {
+      "t": "목적격 관계대명사 that",
+      "ex": "and expend human energy that they can hardly spare.",
+      "d": "뒤에 목적어가 빠진 절이 오는 관계대명사 that."
+    },
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "that ② consumes productive capability.",
+      "d": "뒤에 주어가 빠진 절이 오는 주격 관계대명사. 동사는 선행사에 수를 맞춰요."
+    }
+  ],
+  "vocab": [
+    [
+      "principal",
+      "주요한"
+    ],
+    [
+      "transportation",
+      "교통"
+    ],
+    [
+      "mode",
+      "수단"
+    ],
+    [
+      "constraint",
+      "제약"
+    ],
+    [
+      "operate",
+      "운영하다"
+    ],
+    [
+      "extensive",
+      "광범위한"
+    ],
+    [
+      "transit",
+      "운송"
+    ],
+    [
+      "expend",
+      "소비하다"
+    ],
+    [
+      "spare",
+      "내어 주다"
+    ],
+    [
+      "unavoidable",
+      "피할 수 없는"
+    ],
+    [
+      "burden",
+      "부담"
+    ],
+    [
+      "consume",
+      "소모하다"
+    ],
+    [
+      "capability",
+      "능력"
+    ],
+    [
+      "reverse",
+      "뒤바꾸다"
+    ],
+    [
+      "simulate",
+      "모방하다"
+    ],
+    [
+      "accomplish",
+      "달성하다"
+    ]
+  ],
+  "summary": {
+    "en": "In developing countries walking is a burden, but in the West it is seen as healthy, so people use treadmills instead of walking for transport.",
+    "ko": "개발 도상국에서 걷기는 부담이지만 서구에서는 건강에 좋은 것으로 여겨지는데, 사람들은 이동하며 걷는 대신 러닝머신을 쓴다."
+  },
+  "writing": {
+    "en": "Walking under those conditions is an unavoidable burden that consumes productive capability.",
+    "ko": "그런 조건에서의 걷기는 생산적인 능력을 소모하는 피할 수 없는 부담이다."
+  },
+  "tip": "However 뒤에 밑줄이 있으면 앞 내용과 '반대'인지 먼저 확인하세요. 대조 신호 뒤에 same(같은)이 오면 거의 항상 의심해 볼 자리예요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 30번 정답은?",
+      "③ same이에요. 문맥상 opposite가 맞아요."
+    ],
+    [
+      "왜 opposite가 맞나요?",
+      "개발 도상국에서 걷기는 부담인데, However 뒤 북미·서유럽에서는 효율적이고 건강하다고 봐요. 태도가 '정반대'라서 opposite가 맞아요."
+    ]
+  ]
+}

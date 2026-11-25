@@ -1,0 +1,140 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 18,
+  "type": "글의 목적",
+  "points": 2,
+  "answer": 2,
+  "topic": "탁구 센터 재개장이 전기 문제로 한 달 미뤄졌다는 안내",
+  "date": "2026-11-27",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 18번",
+    "2026 3월 고1 영어 18번 해설",
+    "고1 3월 모의고사 18번 정답",
+    "2026 고1 3모 영어 18번",
+    "고1 모의고사 글의 목적",
+    "탁구 센터 재개장이 전기 문제로 한 "
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 18번은 탁구 센터 관리자가 회원들에게 보내는 안내문이에요. 보수 중 예상치 못한 전기 문제가 발견돼 재개장이 4월 1일에서 5월 1일로 미뤄졌다는 내용이라, 정답은 ② '탁구 센터 재개장 일정 연기를 알리려고'예요.",
+  "flow": [
+    [
+      "도입",
+      "Connexa Point 탁구 센터 회원님께, 저는 Connexa Point 탁구 센터의 관리자입니다."
+    ],
+    [
+      "2단락",
+      "센터 재개장을 연기해야 함을 알려 드리게 되어 유감입니다. 센터는 원래 4월 1일에 재개장할 예정이었습니다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "We regret to inform you that the center's reopening must be delayed. The center was originally scheduled to reopen on April 1st. However, it will now reopen on May 1st",
+      "ko": "센터 재개장을 연기해야 함을 알려 드리게 되어 유감입니다. 센터는 원래 4월 1일에 재개장할 예정이었습니다. 하지만, 이제 5월 1일에 재개장할 것입니다",
+      "note": "재개장 연기 (4월 1일 → 5월 1일)"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 탁구 대회 운영을 위한 물품 기부를 요청하려고",
+      "ko": "",
+      "why": "대회나 기부 이야기는 없어요."
+    },
+    {
+      "en": "② 탁구 센터 재개장 일정 연기를 알리려고",
+      "ko": "정답",
+      "why": "정답. We regret to inform you that the center's reopening must be delayed가 목적 문장이에요."
+    },
+    {
+      "en": "③ 탁구 센터 이전 소식을 안내하려고",
+      "ko": "",
+      "why": "센터를 옮긴다는 말은 없어요. 같은 센터의 재개장 이야기예요."
+    },
+    {
+      "en": "④ 탁구 강습 프로그램을 홍보하려고",
+      "ko": "",
+      "why": "강습 프로그램 홍보는 나오지 않아요."
+    },
+    {
+      "en": "⑤ 탁구 강습비 인상을 공지하려고",
+      "ko": "",
+      "why": "강습비 이야기는 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "결과의 분사구문 causing",
+      "ex": "Thank you for your interest in the upcoming reopening of the center.",
+      "d": "앞 절의 결과를 덧붙이는 분사구문. and + 동사로 풀어 읽어요."
+    },
+    {
+      "t": "cause + O + to부정사",
+      "ex": "causing the work to take longer than we planned.",
+      "d": "cause + 목적어 + to부정사: 목적어가 ~하게 하다."
+    },
+    {
+      "t": "비교급 + than",
+      "ex": "causing the work to take longer than we planned.",
+      "d": "비교급 + than: ~보다 더 …한."
+    }
+  ],
+  "vocab": [
+    [
+      "upcoming",
+      "다가오는"
+    ],
+    [
+      "repair",
+      "보수"
+    ],
+    [
+      "unexpected",
+      "예상치 못한"
+    ],
+    [
+      "electrical",
+      "전기의"
+    ],
+    [
+      "regret to",
+      "~하게 되어 유감이다"
+    ],
+    [
+      "inform",
+      "알리다"
+    ],
+    [
+      "delay",
+      "연기하다"
+    ],
+    [
+      "originally",
+      "원래"
+    ],
+    [
+      "ensure",
+      "보장하다"
+    ],
+    [
+      "patience",
+      "인내"
+    ]
+  ],
+  "summary": {
+    "en": "Because of unexpected electrical problems, the table tennis center's reopening is delayed from April 1st to May 1st.",
+    "ko": "예상치 못한 전기 문제 때문에 탁구 센터의 재개장이 4월 1일에서 5월 1일로 연기된다."
+  },
+  "writing": {
+    "en": "We regret to inform you that the center's reopening must be delayed.",
+    "ko": "센터 재개장을 연기해야 함을 알려 드리게 되어 유감입니다."
+  },
+  "tip": "목적 문제는 Unfortunately, We regret to inform you that ~처럼 '알리는' 표현 뒤가 정답이에요. 앞의 인사·사정 설명은 배경일 뿐이에요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 18번 정답은?",
+      "② '탁구 센터 재개장 일정 연기를 알리려고'예요."
+    ],
+    [
+      "regret to inform은 무슨 뜻인가요?",
+      "'~을 알려 드리게 되어 유감입니다'예요. 안내문에서 안 좋은 소식을 전할 때 쓰는 표현이에요."
+    ]
+  ]
+}

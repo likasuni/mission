@@ -1,0 +1,128 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 27,
+  "type": "안내문 불일치",
+  "points": 2,
+  "answer": 4,
+  "topic": "Green Parking Pass (시 공영 주차장 주차권) 안내",
+  "date": "2026-11-28",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 27번",
+    "2026 3월 고1 영어 27번 해설",
+    "고1 3월 모의고사 27번 정답",
+    "2026 고1 3모 영어 27번",
+    "고1 모의고사 안내문 불일치",
+    "Green Parking Pass ("
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 27번은 시 공영 주차장에서 쓰는 Green Parking Pass 안내문이에요. 주차권은 온라인이나 시 공영 주차장 사무소에서 살 수 있어서 '사무소에서는 구매할 수 없다'는 ④가 틀려요. 정답은 ④예요.",
+  "flow": [
+    [
+      "1단락",
+      "Green Parking Pass 우리 시에서 편리한 주차 방법을 찾고 계신다면,"
+    ],
+    [
+      "2단락",
+      "사용 장소: 시의 모든 공영 주차장 사용 기간: 2026년 4월 1일부터 6월 30일까지"
+    ],
+    [
+      "3단락",
+      "구매 세부 사항 주차권은 온라인이나 시 공영 주차장 사무소에서 구매할 수 있습니다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The pass can be purchased online or at the city public parking offices. Each person can purchase only one pass.",
+      "ko": "주차권은 온라인이나 시 공영 주차장 사무소에서 구매할 수 있습니다. 한 사람당 한 개의 주차권만 구매할 수 있습니다.",
+      "note": "at the city public parking offices에서도 구매 가능"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 시의 모든 공영 주차장에서 사용할 수 있다.",
+      "ko": "",
+      "why": "All public parking lots in the city"
+    },
+    {
+      "en": "② Basic 타입은 오전 9시부터 오후 6시까지 이용 가능하다.",
+      "ko": "",
+      "why": "Basic 9 a.m. to 6 p.m."
+    },
+    {
+      "en": "③ Premium 타입의 가격은 120달러이다.",
+      "ko": "",
+      "why": "Premium $120"
+    },
+    {
+      "en": "④ 시 공영 주차장 사무소에서는 구매할 수 없다.",
+      "ko": "정답",
+      "why": "정답(불일치). at the city public parking offices에서도 구매 가능"
+    },
+    {
+      "en": "⑤ 한 사람당 한 개만 구매할 수 있다.",
+      "ko": "",
+      "why": "Each person can purchase only one pass"
+    }
+  ],
+  "grammar": [
+    {
+      "t": "명령문",
+      "ex": "Green Parking Pass",
+      "d": "동사원형으로 시작하는 명령문."
+    },
+    {
+      "t": "접속사 + 분사 (while using)",
+      "ex": "while using the pass in the city.",
+      "d": "접속사를 남긴 분사구문 (while -ing: ~하는 동안)."
+    },
+    {
+      "t": "의문사 + to부정사 (Where to Use, When to Use)",
+      "ex": "Where to Use: All public parking lots in the city",
+      "d": "의문사 + to부정사 = 의문사 + 주어 + should + 동사원형."
+    }
+  ],
+  "vocab": [
+    [
+      "convenient",
+      "편리한"
+    ],
+    [
+      "option",
+      "방법, 선택"
+    ],
+    [
+      "public parking lot",
+      "공영 주차장"
+    ],
+    [
+      "available",
+      "이용 가능한"
+    ],
+    [
+      "reserved",
+      "지정된, 예약된"
+    ],
+    [
+      "purchase",
+      "구매(하다)"
+    ]
+  ],
+  "summary": {
+    "en": "The Green Parking Pass lets people park in all public lots in the city and can be bought online or at parking offices.",
+    "ko": "Green Parking Pass로 시의 모든 공영 주차장에 주차할 수 있으며, 온라인이나 주차장 사무소에서 살 수 있다."
+  },
+  "writing": {
+    "en": "The pass can be purchased online or at the city public parking offices.",
+    "ko": "주차권은 온라인이나 시 공영 주차장 사무소에서 구매할 수 있다."
+  },
+  "tip": "안내문은 '어디서 살 수 있나(구매처)', '몇 개까지', '이용 시간'을 표와 Notes에서 하나씩 확인하세요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 27번 정답은?",
+      "④ '시 공영 주차장 사무소에서는 구매할 수 없다'예요."
+    ],
+    [
+      "Premium 타입 가격은 얼마인가요?",
+      "안내문에 120달러로 나와 있어요. ③은 일치해요."
+    ]
+  ]
+}

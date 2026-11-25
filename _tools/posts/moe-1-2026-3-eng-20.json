@@ -1,0 +1,165 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 20,
+  "type": "필자의 주장",
+  "points": 2,
+  "answer": 2,
+  "topic": "청중을 움직이려면 화자 자신의 이야기로 유대감을 만들어라",
+  "date": "2026-11-27",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 20번",
+    "2026 3월 고1 영어 20번 해설",
+    "고1 3월 모의고사 20번 정답",
+    "2026 고1 3모 영어 20번",
+    "고1 모의고사 필자의 주장",
+    "청중을 움직이려면 화자 자신의 이야기"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 20번은 청중에게 영향을 주는 가장 좋은 방법이 개인적인 이야기로 마음을 여는 것이라고 주장하는 글이에요. 사람들은 주장이 아니라 '사람'과 유대감을 느끼기 때문이에요. 정답은 ②예요.",
+  "flow": [
+    [
+      "1단락",
+      "청중에게 영향을 주거나 그들을 동요시키는 더 나은 방법은 결코 없다 즉각적으로, 강력하게, 진정성 있게"
+    ],
+    [
+      "2단락",
+      "나는 여러분이 핵심적인 전기적 세부 사항을 공유할 수 있다고 말하는 것이다, 또는 그 순간 느끼고 있는 감정을,"
+    ],
+    [
+      "3단락",
+      "냉혹한 현실은 ~이다 사람들이 진공 상태에서 여러분의 주장과 유대감을 형성하지는 않을 것이라는 것,"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "There is simply no better way to influence or stir an audience ― instantly, powerfully, authentically ― than by opening up to them with a personal story or anecdote.",
+      "ko": "청중에게 영향을 주거나 그들을 동요시키는 더 나은 방법은 결코 없다 즉각적으로, 강력하게, 진정성 있게 개인적인 이야기나 일화로 그들에게 마음을 여는 것보다.",
+      "note": "청중에게 영향을 주는 최고의 방법 = 개인적인 이야기로 마음을 열기"
+    },
+    {
+      "en": "I'm saying that you can share a key biographical detail,",
+      "ko": "나는 여러분이 핵심적인 전기적 세부 사항을 공유할 수 있다고 말하는 것이다,",
+      "note": "자기 이야기 공유 = 청중과 유대감 형성 → 설득의 기틀"
+    },
+    {
+      "en": "The harsh reality is that people won't bond with your arguments in a vacuum, but they will, says speech coach Bas van den Beld, \"bond with you\"",
+      "ko": "냉혹한 현실은 ~이다 사람들이 진공 상태에서 여러분의 주장과 유대감을 형성하지는 않을 것이라는 것, 하지만 강연 코치 Bas van den Beld가 말하기를 '여러분과는 유대감을 형성할' 것이라는 것",
+      "note": "사람들은 주장이 아니라 '사람'과 유대감을 형성 → 자기 이야기로 유대감"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 청중에게서 신뢰감을 얻기 위해 화자의 전문성을 강조해야 한다.",
+      "ko": "",
+      "why": "전문성 강조가 아니라 개인적인 이야기가 핵심이에요."
+    },
+    {
+      "en": "② 청중에게 영향을 주려면 화자 자신의 이야기로 유대감을 형성해야 한다.",
+      "ko": "정답",
+      "why": "정답. 자기 이야기를 공유해 청중과 유대감을 만드는 것이 설득의 바탕이라는 글이에요."
+    },
+    {
+      "en": "③ 논리적인 타당성을 확보하기 위해 객관적인 통계 자료를 제시해야 한다.",
+      "ko": "",
+      "why": "통계 자료 이야기는 없어요."
+    },
+    {
+      "en": "④ 강연의 일관성을 유지하려면 화자의 사적인 감정 표현을 자제해야 한다.",
+      "ko": "",
+      "why": "오히려 사적인 이야기를 나누라는 글이에요. 반대예요."
+    },
+    {
+      "en": "⑤ 청중을 효과적으로 설득하기 위해 정보를 최대한 상세히 설명해야 한다.",
+      "ko": "",
+      "why": "정보를 자세히 설명하라는 말은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "목적격 관계대명사 that",
+      "ex": "I'm saying that you can share a key biographical detail,",
+      "d": "뒤에 목적어가 빠진 절이 오는 관계대명사 that."
+    },
+    {
+      "t": "현재분사 후치 수식",
+      "ex": "― the person making those arguments.",
+      "d": "현재분사(구)가 뒤에서 명사를 꾸며요. '~하는'으로 해석."
+    }
+  ],
+  "vocab": [
+    [
+      "influence",
+      "영향을 주다"
+    ],
+    [
+      "stir",
+      "동요시키다"
+    ],
+    [
+      "authentically",
+      "진정성 있게"
+    ],
+    [
+      "anecdote",
+      "일화"
+    ],
+    [
+      "biographical",
+      "전기적인"
+    ],
+    [
+      "self-deprecating",
+      "자기 비하의"
+    ],
+    [
+      "tried-and-tested",
+      "입증된"
+    ],
+    [
+      "bond",
+      "유대감을 형성하다"
+    ],
+    [
+      "groundwork",
+      "기틀"
+    ],
+    [
+      "persuade",
+      "설득하다"
+    ],
+    [
+      "harsh",
+      "냉혹한"
+    ],
+    [
+      "vacuum",
+      "진공"
+    ],
+    [
+      "flaw",
+      "결점"
+    ],
+    [
+      "identify with",
+      "~와 동일시하다"
+    ]
+  ],
+  "summary": {
+    "en": "Sharing personal stories helps speakers bond with their audience, which makes it easier to persuade them.",
+    "ko": "개인적인 이야기를 공유하면 화자가 청중과 유대감을 형성할 수 있고, 그것이 설득을 더 쉽게 만든다."
+  },
+  "writing": {
+    "en": "By sharing a revealing story or a personal flaw, you allow audience members a way to identify with you.",
+    "ko": "의미심장한 이야기나 개인적인 결점을 공유함으로써, 여러분은 청중이 여러분과 동일시할 방법을 허락한다."
+  },
+  "tip": "주장 문제는 '가장 좋은 방법은 ~이다(the best way to ~)'처럼 필자의 판단이 드러난 문장을 찾으세요. 마지막 문장이 같은 말을 반복하면 그게 답이에요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 20번 정답은?",
+      "② '청중에게 영향을 주려면 화자 자신의 이야기로 유대감을 형성해야 한다'예요."
+    ],
+    [
+      "④번은 왜 틀리나요?",
+      "글은 개인적인 이야기를 나누라고 해요. 사적인 감정 표현을 자제하라는 ④는 반대 방향이에요."
+    ]
+  ]
+}

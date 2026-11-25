@@ -1,0 +1,173 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 32,
+  "type": "빈칸",
+  "points": 2,
+  "answer": 1,
+  "topic": "가르치는 사람처럼 생각하면 안다는 착각이 깨진다",
+  "date": "2026-11-29",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 32번",
+    "2026 3월 고1 영어 32번 해설",
+    "고1 3월 모의고사 32번 정답",
+    "2026 고1 3모 영어 32번",
+    "고1 모의고사 빈칸",
+    "가르치는 사람처럼 생각하면 안다는 착"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 32번은 익숙함을 숙달로 착각하는 문제를 '가르치기'로 해결한다는 글이에요. 다른 사람에게 (상상으로라도) 가르쳐 보면 착각이 깨져요. 정답은 ① adopting the teacher mindset이에요.",
+  "flow": [
+    [
+      "문제",
+      "학생들은 흔히 친숙함을 진정한 숙달로 착각한다, 위험한 '능력의 착각'을 만들어 내면서"
+    ],
+    [
+      "2단락",
+      "(비공식적이거나 상상 속에서라도) 자료를 가르치는 것은 이 착각에 적극적으로 대응한다 깊은 처리, 능동적 회상, 구조적 정리를 요구함으로써,"
+    ],
+    [
+      "3단락",
+      "궁극적으로, (　　) 가르치는 사람의 사고방식을 채택하는 것은 표면적 친숙함을 진짜 숙달로 바꾼다, 지식의 빈틈을 드러내고 채우면서"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Teaching materials (even informally or imaginatively) actively counters this illusion",
+      "ko": "(비공식적이거나 상상 속에서라도) 자료를 가르치는 것은 이 착각에 적극적으로 대응한다",
+      "note": "'가르치는 것'이 착각을 깨뜨림 → 가르치는 사람의 사고방식"
+    },
+    {
+      "en": "Ultimately, ( ) adopting the teacher mindset transforms surface familiarity into real mastery,",
+      "ko": "궁극적으로, (　　) 가르치는 사람의 사고방식을 채택하는 것은 표면적 친숙함을 진짜 숙달로 바꾼다,",
+      "note": "가르치는 방법들(가르치는 사람처럼 생각하기) → 진짜 숙달"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① adopting the teacher mindset",
+      "ko": "가르치는 사람의 사고방식을 채택하는 것",
+      "why": "정답. 가르치는 사람의 사고방식 = 착각을 깨고 진짜 숙달로."
+    },
+    {
+      "en": "② using leisure time effectively",
+      "ko": "여가 시간을 효과적으로 사용하는 것",
+      "why": "여가 시간 이야기는 없어요."
+    },
+    {
+      "en": "③ activating background knowledge",
+      "ko": "배경지식을 활성화하는 것",
+      "why": "배경지식 활성화는 핵심이 아니에요."
+    },
+    {
+      "en": "④ supporting the emotional stability",
+      "ko": "정서적 안정을 지원하는 것",
+      "why": "정서적 안정 이야기는 없어요."
+    },
+    {
+      "en": "⑤ reducing the amount of studying time",
+      "ko": "공부 시간의 양을 줄이는 것",
+      "why": "공부 시간을 줄이라는 말은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "분사구문 creating",
+      "ex": "creating a dangerous \"illusion of competence\"",
+      "d": "접속사와 주어를 줄인 분사구문. 능동이면 -ing, 수동이면 p.p."
+    },
+    {
+      "t": "관계부사 where",
+      "ex": "where recognizing information feels like genuine knowledge,",
+      "d": "장소 선행사 + 완전한 절."
+    },
+    {
+      "t": "접속사 + 과거분사 (when asked)",
+      "ex": "but they struggle when asked to recall or apply it independently.",
+      "d": "접속사 + 과거분사: ~될 때."
+    }
+  ],
+  "vocab": [
+    [
+      "mistake A with B",
+      "A를 B로 착각하다"
+    ],
+    [
+      "familiarity",
+      "친숙함"
+    ],
+    [
+      "mastery",
+      "숙달"
+    ],
+    [
+      "illusion",
+      "착각"
+    ],
+    [
+      "competence",
+      "능력"
+    ],
+    [
+      "genuine",
+      "진짜의"
+    ],
+    [
+      "recall",
+      "회상(하다)"
+    ],
+    [
+      "cognitive",
+      "인지적"
+    ],
+    [
+      "bias",
+      "편향"
+    ],
+    [
+      "passive",
+      "수동적인"
+    ],
+    [
+      "overestimate",
+      "과대평가하다"
+    ],
+    [
+      "counter",
+      "대응하다"
+    ],
+    [
+      "reveal",
+      "드러내다"
+    ],
+    [
+      "transform A into B",
+      "A를 B로 바꾸다"
+    ],
+    [
+      "reliable",
+      "믿을 만한"
+    ],
+    [
+      "mindset",
+      "사고방식"
+    ]
+  ],
+  "summary": {
+    "en": "Teaching material to others, even in imagination, breaks the illusion of knowing and turns familiarity into real mastery.",
+    "ko": "다른 사람에게 가르치는 것은, 상상 속에서라도, 안다는 착각을 깨고 친숙함을 진짜 숙달로 바꾼다."
+  },
+  "writing": {
+    "en": "Students often mistake familiarity with true mastery.",
+    "ko": "학생들은 흔히 친숙함을 진정한 숙달로 착각한다."
+  },
+  "tip": "빈칸 앞에서 문제(친숙함 ≠ 숙달)를 제시하면, 빈칸은 그 해결책이에요. 뒤에 나오는 예시(가르치는 방법들)와 같은 말을 고르세요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 32번 정답은?",
+      "① adopting the teacher mindset이에요."
+    ],
+    [
+      "③ 배경지식 활성화는 왜 틀리나요?",
+      "글의 해결책은 배경지식이 아니라 '가르치기'예요. 뒤 예시가 모두 가르치는 방법이에요."
+    ]
+  ]
+}

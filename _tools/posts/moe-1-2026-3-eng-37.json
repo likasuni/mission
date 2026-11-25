@@ -1,0 +1,178 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 37,
+  "type": "글의 순서",
+  "points": 2,
+  "answer": 5,
+  "topic": "편리함의 상징이 된 플라스틱과, 소비자를 탓한 재활용",
+  "date": "2026-11-30",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 37번",
+    "2026 3월 고1 영어 37번 해설",
+    "고1 3월 모의고사 37번 정답",
+    "2026 고1 3모 영어 37번",
+    "고1 모의고사 글의 순서",
+    "편리함의 상징이 된 플라스틱과, 소비"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 37번은 플라스틱이 미국인의 꿈(편리함)의 상징이 되었지만 오염 우려가 커지자 산업이 소비자를 탓하며 재활용을 내세웠다는 글이에요. 주어진 글 → (C) However 플라스틱 이후 → (B) This dream → (A) these concerns 순서라 정답은 ⑤ (C) - (B) - (A)예요.",
+  "flow": [
+    [
+      "1단락",
+      "우리는 먼저 플라스틱 산업 이면의 짧지만 숨겨진 역사를 이해해야 한다 그리고 그것이 어떻게 우리 일상에 깊이 뿌리내리게 되었는지를."
+    ],
+    [
+      "(C)",
+      "(C) 하지만, 플라스틱의 발명, 제2차 세계 대전 동안의 빠른 채택, 그리고 소비재로의 폭발적 확대 이후,"
+    ],
+    [
+      "(B)",
+      "(B) 이 꿈은 대가를 치렀다. 시간이 지나며, 사람들은 환경에 대한 영향을 알아차리기 시작했다,"
+    ],
+    [
+      "(A)",
+      "(A) 하지만, 플라스틱 산업은 이러한 우려에 빠르게 대응했다, 재활용을 우리 모든 문제의 해결책으로 제시하는 캠페인을 시작하면서."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "Before plastic, people lived more sustainably,",
+      "ko": "플라스틱 이전에, 사람들은 더 지속 가능하게 살았다,",
+      "note": "순서 판단  (C) - (B) - (A)  정답 ⑤"
+    },
+    {
+      "en": "(C) However, after the invention of plastic, its rapid adoption during World War II, and its explosion into consumer goods,",
+      "ko": "(C) 하지만, 플라스틱의 발명, 제2차 세계 대전 동안의 빠른 채택, 그리고 소비재로의 폭발적 확대 이후,",
+      "note": "주어진 글의 '플라스틱 이전' → However 플라스틱 이후, 끝에 American dream"
+    },
+    {
+      "en": "(B) This dream came with a price.",
+      "ko": "(B) 이 꿈은 대가를 치렀다.",
+      "note": "This dream = (C)의 the American dream"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① (A) - (C) - (B)",
+      "ko": "",
+      "why": "(A)의 these concerns가 가리킬 우려가 아직 나오지 않았어요."
+    },
+    {
+      "en": "② (B) - (A) - (C)",
+      "ko": "",
+      "why": "(B)의 This dream이 가리킬 American dream이 (C)에 있어서 (C)가 먼저예요."
+    },
+    {
+      "en": "③ (B) - (C) - (A)",
+      "ko": "",
+      "why": "(A)의 these concerns는 (B)의 환경 우려를 받아서 (B) 뒤에 와야 해요."
+    },
+    {
+      "en": "④ (C) - (A) - (B)",
+      "ko": "",
+      "why": "(A)가 (B)보다 먼저 오면 these concerns가 가리킬 게 없어요."
+    },
+    {
+      "en": "⑤ (C) - (B) - (A)",
+      "ko": "정답",
+      "why": "정답. 플라스틱 이전 → However 이후(American dream) → This dream → these concerns."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "간접의문문 how ~",
+      "ex": "and how it became deeply rooted in our daily lives.",
+      "d": "의문사 + 주어 + 동사 순서의 간접의문문. 문장 안에서 명사 역할을 해요."
+    },
+    {
+      "t": "비교급 강조 far",
+      "ex": "with far fewer waste problems than we face today.",
+      "d": "far·much·even + 비교급: 훨씬 더 ~한."
+    },
+    {
+      "t": "수동태",
+      "ex": "and the early seeds of today's environmental movement were planted.",
+      "d": "be + p.p. 수동태: 주어가 ~되다."
+    }
+  ],
+  "vocab": [
+    [
+      "industry",
+      "산업"
+    ],
+    [
+      "be rooted in",
+      "~에 뿌리내리다"
+    ],
+    [
+      "sustainably",
+      "지속 가능하게"
+    ],
+    [
+      "adoption",
+      "채택"
+    ],
+    [
+      "explosion",
+      "폭발적 증가"
+    ],
+    [
+      "consumer goods",
+      "소비재"
+    ],
+    [
+      "symbolize",
+      "상징하다"
+    ],
+    [
+      "convenience",
+      "편리함"
+    ],
+    [
+      "prosperity",
+      "번영"
+    ],
+    [
+      "impact",
+      "영향"
+    ],
+    [
+      "movement",
+      "운동"
+    ],
+    [
+      "counter",
+      "대응하다"
+    ],
+    [
+      "launch",
+      "시작하다"
+    ],
+    [
+      "pollution",
+      "오염"
+    ],
+    [
+      "corporation",
+      "기업"
+    ]
+  ],
+  "summary": {
+    "en": "Plastic became a symbol of convenience, but when people worried about pollution, the industry blamed consumers and promoted recycling.",
+    "ko": "플라스틱은 편리함의 상징이 되었지만, 사람들이 오염을 걱정하자 산업은 소비자를 탓하며 재활용을 내세웠다."
+  },
+  "writing": {
+    "en": "Before plastic, people lived more sustainably, with far fewer waste problems than we face today.",
+    "ko": "플라스틱 이전에 사람들은 오늘날 우리가 직면한 것보다 훨씬 적은 쓰레기 문제를 가지고 더 지속 가능하게 살았다."
+  },
+  "tip": "this·these + 명사가 보이면 바로 앞 단락에서 그 명사를 찾으세요. This dream ← American dream, these concerns ← 환경 우려로 순서가 정해져요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 37번 정답은?",
+      "⑤ (C) - (B) - (A)예요."
+    ],
+    [
+      "(C)가 첫 번째인 이유는?",
+      "주어진 글이 플라스틱 이전 이야기이고, (C)가 However로 플라스틱 이후를 시작해요. 끝의 American dream을 (B)가 This dream으로 받아요."
+    ]
+  ]
+}

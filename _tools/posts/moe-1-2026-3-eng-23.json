@@ -1,0 +1,170 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 23,
+  "type": "글의 주제",
+  "points": 2,
+  "answer": 3,
+  "topic": "또래를 따르는 경향은 14세쯤 가장 강하고 나이가 들며 줄어든다",
+  "date": "2026-11-28",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 23번",
+    "2026 3월 고1 영어 23번 해설",
+    "고1 3월 모의고사 23번 정답",
+    "2026 고1 3모 영어 23번",
+    "고1 모의고사 글의 주제",
+    "또래를 따르는 경향은 14세쯤 가장 "
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 23번은 또래에게 순응하는 경향이 나이에 따라 다르다는 글이에요. 14세쯤 정점에 이르고 그 뒤로 줄어든다는 연구가 근거예요. 정답은 ③ '연령에 따라 또래를 따르는 경향의 변화'예요.",
+  "flow": [
+    [
+      "1단락",
+      "십 대 시절의 순응은 연구되어 왔다 청소년들을 상황에 놓음으로써"
+    ],
+    [
+      "2단락",
+      "그래서, 다른 사람들을 따르려는 의지는 14세 무렵에 정점에 이른다. 그 이후, 이 경향은 줄어든다,"
+    ],
+    [
+      "3단락",
+      "이것은 중요한 발견이다. 그것은 또래 집단의 영향이 모든 연령에서 같지 않다는 것을 입증한다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The fascinating thing about the results of these studies is that conformity is not spread equally across all age groups.",
+      "ko": "이 연구 결과에 대한 흥미로운 점은 순응이 모든 연령 집단에 고르게 퍼져 있지 않다는 것이다.",
+      "note": "순응은 연령마다 다름"
+    },
+    {
+      "en": "Thus, the willingness to go along with others reaches a peak around the age of 14. After that, this tendency decreases, so that by 16 or 17, young people are much more able to disagree with the group",
+      "ko": "그래서, 다른 사람들을 따르려는 의지는 14세 무렵에 정점에 이른다. 그 이후, 이 경향은 줄어든다, 그래서 16세나 17세가 되면, 청소년들은 집단에 반대하는 것을 훨씬 더 잘할 수 있다",
+      "note": "14세에 정점 → 이후 감소 = 연령에 따른 변화"
+    },
+    {
+      "en": "It demonstrates that the influence of the peer group is not the same across all ages.",
+      "ko": "그것은 또래 집단의 영향이 모든 연령에서 같지 않다는 것을 입증한다.",
+      "note": "또래 집단의 영향은 연령마다 다름"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① negative effects of social influence on teenagers",
+      "ko": "십 대에 대한 사회적 영향의 부정적 효과",
+      "why": "부정적 효과가 아니라 '나이에 따른 변화'가 핵심이에요."
+    },
+    {
+      "en": "② various factors that influence group decision-making",
+      "ko": "집단 의사 결정에 영향을 주는 다양한 요인",
+      "why": "집단 의사 결정의 요인은 다루지 않아요."
+    },
+    {
+      "en": "③ changes in the tendency to follow peers across ages",
+      "ko": "연령에 따라 또래를 따르는 경향의 변화",
+      "why": "정답. 순응 경향이 연령에 따라 달라진다(14세 정점 → 감소)."
+    },
+    {
+      "en": "④ differences between individual choices and group decisions",
+      "ko": "개인의 선택과 집단 결정의 차이",
+      "why": "개인 선택과 집단 결정의 차이는 나오지 않아요."
+    },
+    {
+      "en": "⑤ ways to overcome peer pressure in the early teenage years",
+      "ko": "십 대 초반에 또래 압력을 극복하는 방법",
+      "why": "또래 압력을 극복하는 방법은 나오지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "현재완료 수동",
+      "ex": "Conformity in the teenage years has been studied",
+      "d": "have been + p.p.: (지금까지) ~되어 왔다."
+    },
+    {
+      "t": "by + -ing",
+      "ex": "by putting young people in situations",
+      "d": "by + -ing: ~함으로써 (방법)."
+    },
+    {
+      "t": "관계부사 where 두 번",
+      "ex": "where they are asked to make a choice or decision",
+      "d": "장소 선행사 + 완전한 절."
+    }
+  ],
+  "vocab": [
+    [
+      "conformity",
+      "순응"
+    ],
+    [
+      "fascinating",
+      "흥미로운"
+    ],
+    [
+      "willingness",
+      "의지"
+    ],
+    [
+      "go along with",
+      "~을 따르다"
+    ],
+    [
+      "peak",
+      "정점"
+    ],
+    [
+      "tendency",
+      "경향"
+    ],
+    [
+      "decrease",
+      "줄어들다"
+    ],
+    [
+      "stand up for",
+      "~을 옹호하다"
+    ],
+    [
+      "finding",
+      "발견"
+    ],
+    [
+      "demonstrate",
+      "입증하다"
+    ],
+    [
+      "peer",
+      "또래"
+    ],
+    [
+      "mature",
+      "성숙하다"
+    ],
+    [
+      "resilient",
+      "회복 탄력적인"
+    ],
+    [
+      "defend",
+      "방어하다"
+    ]
+  ],
+  "summary": {
+    "en": "Teenagers' tendency to conform to their peers peaks at about 14 and then decreases as they mature.",
+    "ko": "또래에게 순응하려는 십 대의 경향은 14세쯤 정점에 이르고, 성숙해 감에 따라 줄어든다."
+  },
+  "writing": {
+    "en": "The willingness to go along with others reaches a peak around the age of 14.",
+    "ko": "다른 사람들을 따르려는 의지는 14세 무렵에 정점에 이른다."
+  },
+  "tip": "주제 선택지는 글에 반복되는 핵심어 두 개(또래 순응 + 나이)가 모두 들어간 것을 고르세요. 한쪽만 맞는 선택지(①·⑤)는 함정이에요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 23번 정답은?",
+      "③ changes in the tendency to follow peers across ages예요."
+    ],
+    [
+      "⑤번도 또래 압력 이야기 아닌가요?",
+      "글은 극복 방법이 아니라 나이에 따라 순응 경향이 어떻게 변하는지를 다뤄요."
+    ]
+  ]
+}

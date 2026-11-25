@@ -1,0 +1,153 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 29,
+  "type": "어법",
+  "points": 3,
+  "answer": 2,
+  "topic": "컴퓨터 폴더 같은 개념 모형은 편리하지만 혼란을 주기도 한다",
+  "date": "2026-11-29",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 29번",
+    "2026 3월 고1 영어 29번 해설",
+    "고1 3월 모의고사 29번 정답",
+    "2026 고1 3모 영어 29번",
+    "고1 모의고사 어법",
+    "컴퓨터 폴더 같은 개념 모형은 편리하"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 29번은 컴퓨터 화면의 파일·폴더처럼 단순화된 '개념 모형'을 다룬 어법 문항이에요. 주어가 The files, folders, and icons(복수)라서 ② helps는 help가 되어야 해요. 정답은 ②예요.",
+  "flow": [
+    [
+      "1단락",
+      "개념 모형은 무언가가 어떻게 작동하는지에 대한, 보통 매우 단순화된 설명이다. 그것은 유용하기만 하면 완전하거나 심지어 ① 정확할 필요도 없다."
+    ],
+    [
+      "2단락",
+      "사실, 컴퓨터 안에는 폴더가 없다 그것들은 그것을 사용하기 더 쉽게 만들기 위해 ③ 설계된 효과적인 개념화이다."
+    ],
+    [
+      "3단락",
+      "하지만 사실, 많은 경우에 실제 자료는 '클라우드 안에' 있다, 어떤 멀리 있는 기계에 위치한."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "It doesn't have to be complete or even ① accurate as long as it is useful. The files, folders, and icons you see displayed on a computer screen ② helps people create the conceptual model",
+      "ko": "그것은 유용하기만 하면 완전하거나 심지어 ① 정확할 필요도 없다. 여러분이 컴퓨터 화면에 표시되어 있는 것을 보는 파일, 폴더, 아이콘은 사람들이 개념 모형을 만드는 것을 ② 돕는다",
+      "note": "주어가 The files, folders, and icons (복수) → 복수 동사 help"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① accurate",
+      "ko": "적절",
+      "why": "적절. be동사(be) 뒤 보어 → 형용사 (complete or even accurate 병렬)"
+    },
+    {
+      "en": "② helps",
+      "ko": "틀림",
+      "why": "정답(틀림). 주어가 The files, folders, and icons (복수) → 복수 동사 help"
+    },
+    {
+      "en": "③ designed",
+      "ko": "적절",
+      "why": "적절. conceptualizations가 '설계되는' 것 → 수동의 과거분사"
+    },
+    {
+      "en": "④ where",
+      "ko": "적절",
+      "why": "적절. 보어 자리의 관계부사절 (= the place where), 뒤에 완전한 절"
+    },
+    {
+      "en": "⑤ that",
+      "ko": "적절",
+      "why": "적절. 선행사 different machines를 받는 주격 관계대명사 (뒤에 주어 없는 절)"
+    }
+  ],
+  "grammar": [
+    {
+      "t": "간접의문문 how ~",
+      "ex": "A conceptual model is an explanation, usually highly simplified, of how something works.",
+      "d": "의문사 + 주어 + 동사 순서의 간접의문문. 문장 안에서 명사 역할을 해요."
+    },
+    {
+      "t": "as long as",
+      "ex": "It doesn't have to be complete or even ① accurate as long as it is useful.",
+      "d": "as long as: ~하기만 하면 (조건)."
+    },
+    {
+      "t": "help + O + 동사원형",
+      "ex": "The files, folders, and icons you see displayed on a computer screen ② helps people create the conceptual model",
+      "d": "help + 목적어 + 동사원형/to부정사: ~가 …하도록 돕다."
+    }
+  ],
+  "vocab": [
+    [
+      "conceptual",
+      "개념적인"
+    ],
+    [
+      "explanation",
+      "설명"
+    ],
+    [
+      "simplified",
+      "단순화된"
+    ],
+    [
+      "accurate",
+      "정확한"
+    ],
+    [
+      "display",
+      "표시하다"
+    ],
+    [
+      "conceptualization",
+      "개념화"
+    ],
+    [
+      "depiction",
+      "묘사"
+    ],
+    [
+      "confusion",
+      "혼란"
+    ],
+    [
+      "device",
+      "기기"
+    ],
+    [
+      "distant",
+      "멀리 있는"
+    ],
+    [
+      "coherent",
+      "일관된"
+    ],
+    [
+      "consist of",
+      "~으로 구성되다"
+    ]
+  ],
+  "summary": {
+    "en": "Conceptual models like computer folders make things easier to use, but they can be confusing since the real material may be far away in the cloud.",
+    "ko": "컴퓨터 폴더 같은 개념 모형은 사용을 쉽게 해 주지만, 실제 자료가 멀리 클라우드에 있을 수 있어서 혼란을 줄 수도 있다."
+  },
+  "writing": {
+    "en": "The files, folders, and icons you see displayed on a computer screen help people create the conceptual model.",
+    "ko": "여러분이 컴퓨터 화면에 표시된 것으로 보는 파일, 폴더, 아이콘은 사람들이 개념 모형을 만드는 것을 돕는다."
+  },
+  "tip": "동사 밑줄은 진짜 주어를 찾아 수를 맞추세요. 주어 뒤에 you see displayed ~처럼 수식어가 길게 붙으면 바로 앞 단어에 맞추는 실수를 하기 쉬워요.",
+  "note": "The files, folders, and icons ~ 뒤에 you see displayed on a computer screen이 끼어 있어요. 괄호로 묶고 보면 '파일·폴더·아이콘이 돕는다' → help가 바로 보여요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 29번 정답은?",
+      "② helps예요. 주어가 복수(The files, folders, and icons)라서 help가 맞아요."
+    ],
+    [
+      "④ where는 왜 맞나요?",
+      "that is 뒤 보어 자리에서 '그것이 표시되고 쓰이는 곳'이라는 뜻이고, 뒤에 완전한 절이 와서 관계부사 where가 맞아요."
+    ]
+  ]
+}

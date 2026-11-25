@@ -1,0 +1,231 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 41,
+  "n2": 42,
+  "type": "장문 (제목·어휘)",
+  "points": 2,
+  "topic": "인내: 약점이 아니라 힘",
+  "date": "2026-12-01",
+  "lead": "2026년 3월 고1 모의고사 영어 41~42번은 예전엔 약하고 수동적인 것으로 여겨지던 인내가, 빨라진 사회에서는 서두르려는 충동을 억제하는 힘이 되었다는 장문이에요. 41번 정답은 ③ Patience: Not a Weakness, but a Power, 42번은 (e) feed가 resist(억제하다)가 되어야 해서 ⑤예요.",
+  "flow": [
+    [
+      "1단락",
+      "인내가 끔찍한 평판을 가지고 있다고 말하는 것은 타당하다. 우선 한 가지는, 인내가 필요할 거라고 들은 무언가를 하게 된다는 예상은"
+    ],
+    [
+      "2단락",
+      "승진을 위해 '인내심 있게 기다리는' 재능 있지만 자기를 내세우지 않는 직원은, 우리가 느끼기에, 오래 기다리게 될 것이다:"
+    ],
+    [
+      "3단락",
+      "하지만 사회가 가속화됨에 따라, 무언가가 (d) 변한다. 점점 더 많은 상황에서, 인내는 권력의 한 형태가 된다."
+    ]
+  ],
+  "tip": "41번: 글 앞부분(인내 = 약점)과 뒷부분(인내 = 힘)의 대조를 함께 담은 제목을 고르세요. 42번: 인내의 뜻(참는 것)과 반대되는 밑줄을 찾으면 돼요. 충동을 '채우는(feed)' 건 인내가 아니에요.",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 41~42번",
+    "2026 3월 고1 영어 41~42번 해설",
+    "고1 3월 모의고사 41번 정답",
+    "고1 3월 모의고사 42번 정답",
+    "2026 고1 3모 영어 41~42번",
+    "고1 모의고사 장문"
+  ],
+  "qs": [
+    {
+      "n": 41,
+      "type": "제목",
+      "points": 2,
+      "answer": 3,
+      "evidence": [
+        {
+          "en": "More specifically, though, it's disturbingly (a) passive. It is the virtue that has traditionally been urged upon housewives, while their husbands led more exciting lives outside the home;",
+          "ko": "하지만 더 구체적으로는, 그것은 불안할 정도로 (a) 수동적이다. 그것은 전통적으로 가정주부에게 강요되어 온 미덕이다, 그들의 남편이 집 밖에서 더 신나는 삶을 사는 동안;",
+          "note": "전통적으로 인내 = 약하고 수동적인 것 (약점)"
+        },
+        {
+          "en": "But as society accelerates, something (d) shifts. In more and more contexts, patience becomes a form of power.",
+          "ko": "하지만 사회가 가속화됨에 따라, 무언가가 (d) 변한다. 점점 더 많은 상황에서, 인내는 권력의 한 형태가 된다.",
+          "note": "가속화된 사회에서 인내 = 힘"
+        }
+      ],
+      "choices": [
+        {
+          "en": "① Patience Can Never Be an Answer",
+          "ko": "인내는 결코 답이 될 수 없다",
+          "why": "인내가 답이 될 수 없다는 건 글과 반대예요."
+        },
+        {
+          "en": "② Focus on the Work That Truly Counts",
+          "ko": "진정으로 중요한 일에 집중하라",
+          "why": "중요한 일에 집중하라는 게 핵심이 아니에요."
+        },
+        {
+          "en": "③ Patience: Not a Weakness, but a Power",
+          "ko": "인내: 약점이 아니라 힘",
+          "why": "정답. 약점으로 여겨지던 인내가 힘이 되었다는 글이에요."
+        },
+        {
+          "en": "④ The Hidden Costs of Waiting Too Long",
+          "ko": "너무 오래 기다리는 것의 숨겨진 대가",
+          "why": "기다림의 대가가 아니라 인내의 가치를 말해요."
+        },
+        {
+          "en": "⑤ Being Patient: a Key to Long-term Relationship",
+          "ko": "인내하기: 장기적 관계의 열쇠",
+          "why": "장기적 관계 이야기는 없어요."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "type": "어휘",
+      "points": 3,
+      "answer": 5,
+      "evidence": [
+        {
+          "en": "More specifically, though, it's disturbingly (a) passive. It is the virtue that has traditionally been urged upon housewives, while their husbands led more exciting lives outside the home;",
+          "ko": "하지만 더 구체적으로는, 그것은 불안할 정도로 (a) 수동적이다. 그것은 전통적으로 가정주부에게 강요되어 온 미덕이다, 그들의 남편이 집 밖에서 더 신나는 삶을 사는 동안;",
+          "note": "인내는 '수동적'이라는 나쁜 평판"
+        },
+        {
+          "en": "she ought to be trumpeting her (b) achievements instead. In all such cases, patience is a way of psychologically accommodating yourself to a lack of power, an attitude intended to help you to resign yourself to your (c) lowly position,",
+          "ko": "그녀는 대신 자신의 (b) 성취를 널리 알려야 한다. 그런 모든 경우에, 인내는 권력의 부족에 자신을 심리적으로 순응시키는 방식이다, 자신을 (c) 낮은 지위로 단념하도록 돕기 위해 의도된 태도,",
+          "note": "기다리지 말고 '성취'를 알려야 함"
+        },
+        {
+          "en": "But as society accelerates, something (d) shifts. In more and more contexts, patience becomes a form of power.",
+          "ko": "하지만 사회가 가속화됨에 따라, 무언가가 (d) 변한다. 점점 더 많은 상황에서, 인내는 권력의 한 형태가 된다.",
+          "note": "인내 = 서두르려는 충동을 '채우는' 것이 아니라 '억제하는(resist)' 능력"
+        }
+      ],
+      "choices": [
+        {
+          "en": "(a) passive",
+          "ko": "적절",
+          "why": "적절. 인내는 '수동적'이라는 나쁜 평판"
+        },
+        {
+          "en": "(b) achievements",
+          "ko": "적절",
+          "why": "적절. 기다리지 말고 '성취'를 알려야 함"
+        },
+        {
+          "en": "(c) lowly",
+          "ko": "적절",
+          "why": "적절. 인내 = '낮은' 지위를 받아들이는 태도"
+        },
+        {
+          "en": "(d) shifts",
+          "ko": "적절",
+          "why": "적절. 사회가 빨라지며 인내의 의미가 '변함'"
+        },
+        {
+          "en": "(e) feed",
+          "ko": "부적절",
+          "why": "정답(부적절). 인내 = 서두르려는 충동을 '채우는' 것이 아니라 '억제하는(resist)' 능력"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "t": "가주어 it ~ to부정사",
+      "ex": "It's fair to say that patience has a terrible name.",
+      "d": "가주어 it, 진주어 to부정사. 긴 주어를 뒤로 보내요."
+    },
+    {
+      "t": "주격 관계대명사 who",
+      "ex": "The talented but self-effacing employee who \"waits patiently\" for a promotion,",
+      "d": "사람 선행사를 받는 주격 관계대명사."
+    },
+    {
+      "t": "과거분사 후치 수식 (intended to ~)",
+      "ex": "an attitude intended to help you to resign yourself to your (c) lowly position,",
+      "d": "과거분사(구)가 뒤에서 명사를 꾸며요. '~된'으로 해석."
+    }
+  ],
+  "vocab": [
+    [
+      "patience",
+      "인내"
+    ],
+    [
+      "prospect",
+      "예상"
+    ],
+    [
+      "passive",
+      "수동적인"
+    ],
+    [
+      "virtue",
+      "미덕"
+    ],
+    [
+      "urge A upon B",
+      "A를 B에게 강요하다"
+    ],
+    [
+      "minority",
+      "소수자"
+    ],
+    [
+      "self-effacing",
+      "자기를 내세우지 않는"
+    ],
+    [
+      "promotion",
+      "승진"
+    ],
+    [
+      "achievement",
+      "성취"
+    ],
+    [
+      "accommodate A to B",
+      "A를 B에 순응시키다"
+    ],
+    [
+      "resign oneself to",
+      "~을 단념하고 받아들이다"
+    ],
+    [
+      "lowly",
+      "낮은"
+    ],
+    [
+      "accelerate",
+      "가속화되다"
+    ],
+    [
+      "capacity",
+      "능력"
+    ],
+    [
+      "urge",
+      "충동"
+    ],
+    [
+      "resist",
+      "억제하다, 저항하다"
+    ]
+  ],
+  "summary": {
+    "en": "Patience used to be seen as weak and passive, but in a fast world, resisting the urge to hurry has become a form of power.",
+    "ko": "인내는 약하고 수동적인 것으로 여겨졌지만, 빠른 세상에서는 서두르려는 충동을 억제하는 것이 힘이 되었다."
+  },
+  "writing": {
+    "en": "In more and more contexts, patience becomes a form of power.",
+    "ko": "점점 더 많은 상황에서 인내는 권력의 한 형태가 된다."
+  },
+  "faq": [
+    [
+      "2026년 3월 고1 영어 41번 정답은?",
+      "③ Patience: Not a Weakness, but a Power예요."
+    ],
+    [
+      "2026년 3월 고1 영어 42번 정답은?",
+      "⑤ (e)예요. 인내는 서두르려는 충동을 채우는(feed) 게 아니라 억제하는(resist) 능력이에요."
+    ]
+  ]
+}

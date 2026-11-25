@@ -1,0 +1,140 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 19,
+  "type": "심경 변화",
+  "points": 2,
+  "answer": 1,
+  "topic": "첫 축제에서 신났던 Cassie가 거대한 퍼레이드 풍선을 보고 겁에 질리다",
+  "date": "2026-11-27",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 19번",
+    "2026 3월 고1 영어 19번 해설",
+    "고1 3월 모의고사 19번 정답",
+    "2026 고1 3모 영어 19번",
+    "고1 모의고사 심경 변화",
+    "첫 축제에서 신났던 Cassie가 거"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 19번은 처음 축제에 간 Cassie가 신나서 뛰고 환호하다가, 괴물 같은 퍼레이드 풍선이 다가오자 얼어붙고 숨는 이야기예요. 앞은 excited, 뒤는 scared라서 정답은 ① excited → scared예요.",
+  "flow": [
+    [
+      "심경",
+      "그날은 네 살 소녀 Cassie의 첫 축제였다. 그녀는 어머니에게서 그것에 대해 듣기만 했었다."
+    ],
+    [
+      "심경",
+      "하지만 갑자기, 그녀는 퍼레이드의 많은 거대한 풍선을 보았다 자신을 향해 오고 있는."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "the twinkling lights and music made her jump with joy. The magician showed his tricks and she cheered with her family.",
+      "ko": "반짝이는 불빛과 음악은 그녀를 기뻐서 뛰게 만들었다. 마술사가 마술을 보여 주었고 그녀는 가족과 함께 환호했다.",
+      "note": "jump with joy, cheered → 신이 남(excited)"
+    },
+    {
+      "en": "But suddenly, she saw a lot of huge balloons in the parade coming towards her.",
+      "ko": "하지만 갑자기, 그녀는 퍼레이드의 많은 거대한 풍선을 보았다 자신을 향해 오고 있는.",
+      "note": "괴물 같은 풍선, 공포로 심장이 뜀, 얼어붙음, 숨음 → 겁먹음(scared)"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① excited → scared",
+      "ko": "신이 난 → 겁먹은",
+      "why": "정답. jump with joy·cheered(신남) → 심장이 뛰고 얼어붙어 숨음(겁먹음)."
+    },
+    {
+      "en": "② amazed → envious",
+      "ko": "놀란 → 부러워하는",
+      "why": "부러워할 대상이 없어요. 뒤 감정도 겁이에요."
+    },
+    {
+      "en": "③ relaxed → annoyed",
+      "ko": "느긋한 → 짜증 난",
+      "why": "처음부터 느긋하지 않고 신나 있어요. 짜증 난 게 아니라 무서운 거예요."
+    },
+    {
+      "en": "④ proud → embarrassed",
+      "ko": "자랑스러운 → 당황한",
+      "why": "자랑스러워할 일이 없어요."
+    },
+    {
+      "en": "⑤ confident → disappointed",
+      "ko": "자신감 있는 → 실망한",
+      "why": "자신감·실망과는 관계없어요. 뒤는 공포예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "과거완료",
+      "ex": "She had only heard about it from her mother.",
+      "d": "had + p.p.: 과거의 어느 때보다 더 앞선 일."
+    },
+    {
+      "t": "사역동사 make + O + 동사원형",
+      "ex": "the twinkling lights and music made her jump with joy.",
+      "d": "사역동사 make + 목적어 + 동사원형: ~가 …하게 만들다."
+    }
+  ],
+  "vocab": [
+    [
+      "carnival",
+      "축제"
+    ],
+    [
+      "imagine",
+      "상상하다"
+    ],
+    [
+      "twinkling",
+      "반짝이는"
+    ],
+    [
+      "trick",
+      "마술, 기술"
+    ],
+    [
+      "cheer",
+      "환호하다"
+    ],
+    [
+      "suddenly",
+      "갑자기"
+    ],
+    [
+      "beat",
+      "(심장이) 뛰다"
+    ],
+    [
+      "fear",
+      "공포"
+    ],
+    [
+      "freeze",
+      "얼어붙다"
+    ],
+    [
+      "cotton candy",
+      "솜사탕"
+    ]
+  ],
+  "summary": {
+    "en": "Cassie was excited at her first carnival, but she became scared when huge parade balloons came toward her.",
+    "ko": "Cassie는 첫 축제에서 신이 났지만, 거대한 퍼레이드 풍선이 다가오자 겁을 먹었다."
+  },
+  "writing": {
+    "en": "The twinkling lights and music made her jump with joy.",
+    "ko": "반짝이는 불빛과 음악은 그녀를 기뻐서 뛰게 만들었다."
+  },
+  "tip": "심경 변화는 전환점(풍선 등장) 앞뒤를 나눠 감정 단서를 찾으세요. 몸의 반응(심장이 뜀, 얼어붙음)과 행동(숨음)이 가장 확실한 단서예요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 19번 정답은?",
+      "① excited → scared예요."
+    ],
+    [
+      "어디서 감정이 바뀌나요?",
+      "거대한 퍼레이드 풍선이 다가오는 장면부터예요. 그 뒤로 공포·얼어붙음·숨기가 이어져요."
+    ]
+  ]
+}

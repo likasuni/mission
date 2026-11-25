@@ -1,0 +1,165 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 40,
+  "type": "요약문 완성",
+  "points": 2,
+  "answer": 1,
+  "topic": "독립적인 아이를 키우려면 아이 친화적인 환경과 가벼운 감독이 필요하다",
+  "date": "2026-12-01",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 40번",
+    "2026 3월 고1 영어 40번 해설",
+    "고1 3월 모의고사 40번 정답",
+    "2026 고1 3모 영어 40번",
+    "고1 모의고사 요약문 완성",
+    "독립적인 아이를 키우려면 아이 친화적"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 40번은 도시와 교외가 아이 혼자 다닐 수 있는 안전한 환경을 만들어야 부모가 아이를 가볍게만 지켜보며 독립적으로 키울 수 있다는 글이에요. 정답은 ① supportive … mild예요.",
+  "flow": [
+    [
+      "문제",
+      "육아 전문가들은 아이들이 독립심과 회복 탄력성을 배워야 한다고 말한다. 하지만 도시와 교외는 안전한 도보 및 자전거 통학로를 제공하지 않는다,"
+    ],
+    [
+      "2단락",
+      "임상 심리학자인 Darby Saxbe가 최근 뉴욕 타임스에 썼듯이, '언더페어런팅은 구조적 변화를 필요로 한다.'"
+    ],
+    [
+      "3단락",
+      "우리는 '공공장소에서 아이들에 대한 관용을 다시 쌓아야 한다'고 그녀는 쓴다, '그리고 안전한 환경을 만들어야 한다"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "She's talking about actual physical structures, and the cultural change required to populate them.",
+      "ko": "그녀는 실제 물리적 구조와 그곳에 사는 데 필요한 문화적 변화에 대해 말하고 있다.",
+      "note": "물리적 구조와 문화의 변화 필요"
+    },
+    {
+      "en": "where lightly supervised kids can move around freely.\"",
+      "ko": "가볍게 감독받는 아이들이 자유롭게 돌아다닐 수 있는.'",
+      "note": "lightly supervised = 가벼운(mild) 감독"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① supportive … mild",
+      "ko": "지원적인 … 가벼운",
+      "why": "정답. 안전한 아이 친화적 환경 = supportive, lightly supervised = mild."
+    },
+    {
+      "en": "② supportive … strict",
+      "ko": "지원적인 … 엄격한",
+      "why": "(B)가 strict(엄격한)면 '가볍게 감독'과 반대예요."
+    },
+    {
+      "en": "③ educational … strict",
+      "ko": "교육적인 … 엄격한",
+      "why": "educational·strict 모두 글과 맞지 않아요."
+    },
+    {
+      "en": "④ competing … mild",
+      "ko": "경쟁하는 … 가벼운",
+      "why": "competing(경쟁하는) 환경이 아니라 지원하는 환경이에요."
+    },
+    {
+      "en": "⑤ competing … public",
+      "ko": "경쟁하는 … 공공의",
+      "why": "competing·public 모두 글과 맞지 않아요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "접속사 as",
+      "ex": "As Darby Saxbe, a clinical psychologist, recently wrote in the New York Times,",
+      "d": "접속사 as는 문맥에 따라 ~함에 따라, ~듯이, ~할 때, ~ 때문에."
+    },
+    {
+      "t": "동격 (Darby Saxbe, a ~)",
+      "ex": "As Darby Saxbe, a clinical psychologist, recently wrote in the New York Times,",
+      "d": "콤마 뒤 명사구가 앞 명사를 다시 풀어 설명하는 동격이에요."
+    },
+    {
+      "t": "과거분사 후치 수식 (required to ~)",
+      "ex": "She's talking about actual physical structures, and the cultural change required to populate them.",
+      "d": "과거분사(구)가 뒤에서 명사를 꾸며요. '~된'으로 해석."
+    }
+  ],
+  "vocab": [
+    [
+      "parenting",
+      "육아"
+    ],
+    [
+      "independence",
+      "독립심"
+    ],
+    [
+      "resilience",
+      "회복 탄력성"
+    ],
+    [
+      "suburb",
+      "교외"
+    ],
+    [
+      "route",
+      "경로"
+    ],
+    [
+      "disappear",
+      "사라지다"
+    ],
+    [
+      "navigate",
+      "헤쳐 나가다"
+    ],
+    [
+      "clinical psychologist",
+      "임상 심리학자"
+    ],
+    [
+      "structural",
+      "구조적인"
+    ],
+    [
+      "populate",
+      "~에 살다"
+    ],
+    [
+      "tolerance",
+      "관용"
+    ],
+    [
+      "supervise",
+      "감독하다"
+    ],
+    [
+      "supportive",
+      "지원적인"
+    ],
+    [
+      "mild",
+      "가벼운"
+    ]
+  ],
+  "summary": {
+    "en": "To raise independent children, cities need safe, child-friendly spaces where kids can move around with only light supervision.",
+    "ko": "독립적인 아이를 기르려면, 도시에는 아이들이 가벼운 감독만 받으며 돌아다닐 수 있는 안전하고 아이 친화적인 공간이 필요하다."
+  },
+  "writing": {
+    "en": "Underparenting requires structural change.",
+    "ko": "언더페어런팅은 구조적 변화를 필요로 한다."
+  },
+  "tip": "요약문 빈칸은 본문의 핵심어를 비슷한 말로 바꿔 놓아요. lightly supervised → mild supervision처럼, 빈칸 앞뒤 단어(supervision)를 본문에서 먼저 찾으세요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 40번 정답은?",
+      "① supportive … mild예요."
+    ],
+    [
+      "(B)가 strict가 아닌 이유는?",
+      "본문에 lightly supervised(가볍게 감독되는)라고 나와요. strict(엄격한)는 반대예요."
+    ]
+  ]
+}

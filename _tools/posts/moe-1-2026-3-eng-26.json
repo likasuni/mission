@@ -1,0 +1,139 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 26,
+  "type": "내용 불일치",
+  "points": 2,
+  "answer": 3,
+  "topic": "피아니스트이자 교육자 Gary Graffman",
+  "date": "2026-11-28",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 26번",
+    "2026 3월 고1 영어 26번 해설",
+    "고1 3월 모의고사 26번 정답",
+    "2026 고1 3모 영어 26번",
+    "고1 모의고사 내용 불일치",
+    "피아니스트이자 교육자 Gary Gra"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 26번은 피아니스트 Gary Graffman의 일생을 다룬 인물 글이에요. 그는 1970년대 후반 오른손 손가락을 제어할 수 없게 되었지만 피아노를 포기하지 않고 왼손만을 위한 작품에 집중했어요. 그래서 '피아노 연주를 포기했다'는 ③이 틀려요. 정답은 ③이에요.",
+  "flow": [
+    [
+      "1단락",
+      "Gary Graffman은 1928년 뉴욕시에서 태어났다 그리고 세 살에 피아노를 연주하기 시작했다."
+    ],
+    [
+      "2단락",
+      "1970년대 후반, Graffman은 오른손 손가락을 제어할 수 없게 되었다, 하지만 그는 결코 피아노 연주를 포기하지 않았다."
+    ],
+    [
+      "3단락",
+      "Graffman은 1980년에 Curtis Institute of Music으로 돌아갔다 피아노 교수진의 일원으로."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "but he never gave up playing the piano.",
+      "ko": "하지만 그는 결코 피아노 연주를 포기하지 않았다.",
+      "note": "never gave up playing the piano (포기하지 않고 왼손 작품에 집중)"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① 세 살에 피아노 연주를 시작했다.",
+      "ko": "",
+      "why": "began playing the piano at the age of three"
+    },
+    {
+      "en": "② 1949년에 Leventritt Award를 수상했다.",
+      "ko": "",
+      "why": "In 1949, he won the Leventritt Award"
+    },
+    {
+      "en": "③ 오른손 손가락을 제어할 수 없게 되어 피아노 연주를 포기했다.",
+      "ko": "정답",
+      "why": "정답(불일치). never gave up playing the piano (포기하지 않고 왼손 작품에 집중)"
+    },
+    {
+      "en": "④ 1980년에 Curtis Institute of Music으로 돌아갔다.",
+      "ko": "",
+      "why": "returned to the Curtis Institute of Music in 1980"
+    },
+    {
+      "en": "⑤ Lang Lang을 포함한 많은 뛰어난 젊은 음악가들을 가르쳤다.",
+      "ko": "",
+      "why": "taught many outstanding young musicians, including Lang Lang"
+    }
+  ],
+  "grammar": [
+    {
+      "t": "주격 관계대명사 that",
+      "ex": "where he received training that laid the foundation for his career.",
+      "d": "뒤에 주어가 빠진 절이 오는 주격 관계대명사. 동사는 선행사에 수를 맞춰요."
+    },
+    {
+      "t": "분사구문 Reconsidering ~",
+      "ex": "but he never gave up playing the piano.",
+      "d": "접속사와 주어를 줄인 분사구문. 능동이면 -ing, 수동이면 p.p."
+    }
+  ],
+  "vocab": [
+    [
+      "foundation",
+      "기초"
+    ],
+    [
+      "reconsider",
+      "재고하다"
+    ],
+    [
+      "traditional",
+      "전통적인"
+    ],
+    [
+      "convention",
+      "관습"
+    ],
+    [
+      "concerto",
+      "협주곡"
+    ],
+    [
+      "faculty",
+      "교수진"
+    ],
+    [
+      "outstanding",
+      "뛰어난"
+    ],
+    [
+      "lifelong",
+      "평생의"
+    ],
+    [
+      "commitment",
+      "헌신"
+    ],
+    [
+      "inspire",
+      "영감을 주다"
+    ]
+  ],
+  "summary": {
+    "en": "Pianist Gary Graffman lost the use of his right hand but kept playing with his left and taught many young musicians.",
+    "ko": "피아니스트 Gary Graffman은 오른손을 쓸 수 없게 되었지만 왼손으로 연주를 계속했고 많은 젊은 음악가를 가르쳤다."
+  },
+  "writing": {
+    "en": "In the late 1970s, Graffman lost control of the fingers on his right hand, but he never gave up playing the piano.",
+    "ko": "1970년대 후반 Graffman은 오른손 손가락을 제어할 수 없게 되었지만, 결코 피아노 연주를 포기하지 않았다."
+  },
+  "tip": "인물 내용 일치는 선택지 순서가 글 순서와 같아요. '포기했다·처음·유일' 같은 말이 나오면 글에서 그 부분을 꼭 다시 확인하세요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 26번 정답은?",
+      "③ '오른손 손가락을 제어할 수 없게 되어 피아노 연주를 포기했다'예요."
+    ],
+    [
+      "Graffman은 손을 다친 뒤 어떻게 했나요?",
+      "피아노를 포기하지 않고 왼손만을 위한 작품에 집중했고, 1980년부터는 Curtis 음악원 교수로 Lang Lang 같은 젊은 음악가들을 가르쳤어요."
+    ]
+  ]
+}

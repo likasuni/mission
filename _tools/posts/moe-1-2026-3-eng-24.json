@@ -1,0 +1,158 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 24,
+  "type": "글의 제목",
+  "points": 3,
+  "answer": 5,
+  "topic": "즐거운 습관과 길러야 할 습관을 묶으면 새 행동이 생긴다 (유혹 묶기)",
+  "date": "2026-11-28",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 24번",
+    "2026 3월 고1 영어 24번 해설",
+    "고1 3월 모의고사 24번 정답",
+    "2026 고1 3모 영어 24번",
+    "고1 모의고사 글의 제목",
+    "즐거운 습관과 길러야 할 습관을 묶으"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 24번은 즐거운 습관(오디오북 듣기)을 기르고 싶은 습관(운동)과 묶어 새로운 행동을 이끄는 '유혹 묶기'를 다룬 글이에요. 정답은 ⑤ Pairing Pleasure with Effort: Guiding People to New Behavior예요.",
+  "flow": [
+    [
+      "1단락",
+      "습관은 나쁘지 않다. 우리는 살아남기 위해 그것이 필요하다. 뇌가 습관을 어떻게 사용하는지, 그리고 여러분이 습관을 가지고 어떻게 일할 수 있는지를 이해하는 것은"
+    ],
+    [
+      "2단락",
+      "Wharton 교수 Katy Milkman은 연구 프로젝트를 이끌었다 '헝거 게임을 체육관에 볼모로 잡아 두기'라는,"
+    ],
+    [
+      "3단락",
+      "기기가 '볼모로 잡힌' 참가자들은 체육관에 갈 가능성이 51퍼센트 더 높았다."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "or would you do better by attaching to another one (known as temptation bundling)?",
+      "ko": "아니면 다른 습관에 붙임으로써 더 잘하겠는가 (유혹 묶기라고 알려진)?",
+      "note": "습관을 고치기보다 다른 습관에 붙이기 = 유혹 묶기"
+    },
+    {
+      "en": "This uses a tempting habit ― listening to that awesome audiobook ― and combines it with a habit people would like to build, but may otherwise feel forced to put off, like exercising.",
+      "ko": "이것은 유혹적인 습관을 사용한다 그 멋진 오디오북 듣기를 그리고 그것을 사람들이 기르고 싶어 하는 습관과 결합한다, 하지만 그렇지 않으면 미룰 수밖에 없다고 느낄 수도 있는, 운동하기처럼.",
+      "note": "즐거운 습관(오디오북) + 기르고 싶은 습관(운동)을 결합"
+    },
+    {
+      "en": "nearly two-thirds opted to pay to have gym-only access for their devices!",
+      "ko": "거의 3분의 2가 기기를 체육관에서만 쓰도록 돈을 내기로 선택했다!",
+      "note": "즐거움과 노력을 짝지으니 새로운 행동(운동)이 생기고 이어짐"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① Stop Thinking and Just Go to the Gym Now!",
+      "ko": "생각을 멈추고 지금 당장 체육관에 가라!",
+      "why": "생각을 멈추라는 내용이 아니에요."
+    },
+    {
+      "en": "② Avoid Listening to Music While You Work Out",
+      "ko": "운동하는 동안 음악 듣기를 피하라",
+      "why": "운동 중 오디오북을 듣게 하는 방법이라 반대예요."
+    },
+    {
+      "en": "③ Why Smart Businesses Focus on Healthcare Service",
+      "ko": "현명한 기업이 건강 관리 서비스에 집중하는 이유",
+      "why": "기업의 건강 관리 서비스는 핵심이 아니에요."
+    },
+    {
+      "en": "④ The Key to Success in Life: Give Up Everyday Hobbies",
+      "ko": "인생 성공의 열쇠: 일상의 취미를 포기하라",
+      "why": "취미를 포기하라는 게 아니라 취미를 운동에 붙이라는 글이에요."
+    },
+    {
+      "en": "⑤ Pairing Pleasure with Effort: Guiding People to New Behavior",
+      "ko": "즐거움과 노력을 짝짓기: 사람들을 새로운 행동으로 이끌기",
+      "why": "정답. 즐거움(오디오북) + 노력(운동) = 새로운 행동."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "동명사 주어 + 간접의문문 목적어",
+      "ex": "Understanding how the brain uses habits, and how you can work with them,",
+      "d": "의문사 + 주어 + 동사 순서의 간접의문문. 문장 안에서 명사 역할을 해요."
+    },
+    {
+      "t": "형용사적 to부정사",
+      "ex": "Habits aren't bad. We need them to survive.",
+      "d": "명사 뒤에서 꾸미는 to부정사 (~할, ~하는)."
+    },
+    {
+      "t": "by + -ing",
+      "ex": "or would you do better by attaching to another one (known as temptation bundling)?",
+      "d": "by + -ing: ~함으로써 (방법)."
+    }
+  ],
+  "vocab": [
+    [
+      "habit",
+      "습관"
+    ],
+    [
+      "essential",
+      "필수적인"
+    ],
+    [
+      "attach",
+      "붙이다"
+    ],
+    [
+      "temptation",
+      "유혹"
+    ],
+    [
+      "bundling",
+      "묶기"
+    ],
+    [
+      "hostage",
+      "볼모"
+    ],
+    [
+      "participant",
+      "참가자"
+    ],
+    [
+      "access",
+      "이용, 접근"
+    ],
+    [
+      "combine A with B",
+      "A를 B와 결합하다"
+    ],
+    [
+      "put off",
+      "미루다"
+    ],
+    [
+      "opt to",
+      "~하기로 선택하다"
+    ]
+  ],
+  "summary": {
+    "en": "By pairing a pleasant habit with a habit people want to build, such as exercise, we can guide them to new behavior.",
+    "ko": "즐거운 습관을 운동처럼 기르고 싶은 습관과 짝지으면, 사람들을 새로운 행동으로 이끌 수 있다."
+  },
+  "writing": {
+    "en": "This uses a tempting habit and combines it with a habit people would like to build.",
+    "ko": "이것은 유혹적인 습관을 사용하여 그것을 사람들이 기르고 싶어 하는 습관과 결합한다."
+  },
+  "tip": "제목 문제는 예시(오디오북·체육관)가 무엇을 보여 주려는지 한 줄로 바꿔 보세요. '즐거운 것과 해야 할 것을 묶는다'가 되면 ⑤가 보여요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 24번 정답은?",
+      "⑤ Pairing Pleasure with Effort: Guiding People to New Behavior예요."
+    ],
+    [
+      "④번은 왜 틀리나요?",
+      "글은 취미를 포기하라는 게 아니라 즐거운 취미를 운동과 짝지으라고 해요."
+    ]
+  ]
+}

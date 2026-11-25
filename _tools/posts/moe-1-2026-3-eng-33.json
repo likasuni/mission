@@ -1,0 +1,162 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 33,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 2,
+  "topic": "수메르인은 수를 세는 대상에서 분리해 독립된 숫자를 만들었다",
+  "date": "2026-11-30",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 33번",
+    "2026 3월 고1 영어 33번 해설",
+    "고1 3월 모의고사 33번 정답",
+    "2026 고1 3모 영어 33번",
+    "고1 모의고사 빈칸",
+    "수메르인은 수를 세는 대상에서 분리해"
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 33번은 수메르인이 처음엔 물고기 다섯 마리를 물고기 그림 다섯 개로 나타냈지만, 숫자 5와 물고기 기호를 따로 쓰면서 수를 대상에서 떼어 낸 과정을 다룬 글이에요. 정답은 ② separating the number from the object they were counting이에요.",
+  "flow": [
+    [
+      "빈칸",
+      "기원전 3000년경부터, 수메르 관리들은 점토판에 물품 목록을 표시하곤 했다. 물고기 다섯 마리를 기록하고 싶으면,"
+    ],
+    [
+      "2단락",
+      "다시 말해, 그들은 물고기의 기호 옆에 숫자 5를 나타내는 숫자로 물고기 다섯 마리를 나타내곤 했다. 다른 무언가 다섯 개를 묘사하고 싶으면,"
+    ],
+    [
+      "3단락",
+      "수메르인들은 해방된 숫자의 개념을 발전시켰다, 그 자체로 존재하는"
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "In other words, they would represent five fish with a numeral for the number five alongside a symbol for the fish.",
+      "ko": "다시 말해, 그들은 물고기의 기호 옆에 숫자 5를 나타내는 숫자로 물고기 다섯 마리를 나타내곤 했다.",
+      "note": "숫자 5 + 물고기 기호 → 숫자는 그대로, 대상만 바꿈 = 수를 대상과 분리"
+    },
+    {
+      "en": "but to the earliest civilizations it was intellectually new and extremely powerful.",
+      "ko": "하지만 가장 초기의 문명에게 그것은 지적으로 새롭고 매우 강력했다.",
+      "note": "emancipated number = 세는 대상과 상관없이 독립된 수"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① adding more complex symbols to describe the quality of goods",
+      "ko": "물품의 질을 묘사하려고 더 복잡한 기호를 더하는 것",
+      "why": "기호를 더 복잡하게 만든 게 아니라 숫자를 독립시켰어요."
+    },
+    {
+      "en": "② separating the number from the object they were counting",
+      "ko": "수를 세고 있던 대상으로부터 분리하는 것",
+      "why": "정답. 숫자는 그대로 두고 대상 기호만 바꿈 = 수를 대상에서 분리."
+    },
+    {
+      "en": "③ representing the physical shape of each object accurately",
+      "ko": "각 대상의 물리적 모양을 정확하게 나타내는 것",
+      "why": "모양을 정확히 그리는 건 첫 단계의 방식이에요. 도약이 아니에요."
+    },
+    {
+      "en": "④ connecting the count of an object with its market value",
+      "ko": "대상의 수를 시장 가치와 연결하는 것",
+      "why": "시장 가치 이야기는 없어요."
+    },
+    {
+      "en": "⑤ applying the use of numbers to only precious items",
+      "ko": "숫자의 사용을 귀중한 물품에만 적용하는 것",
+      "why": "귀중한 물품에만 쓴다는 말은 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "목적격 관계대명사 생략 (the object they were counting)",
+      "ex": "From around 3000 BC, the Sumerian officials would mark their lists of goods on clay tablets.",
+      "d": "명사 뒤에 '주어 + 동사'가 바로 오면 목적격 관계대명사가 생략된 것이에요."
+    },
+    {
+      "t": "과거완료",
+      "ex": "The Sumerians had developed the idea of an emancipated number,",
+      "d": "had + p.p.: 과거의 어느 때보다 더 앞선 일."
+    },
+    {
+      "t": "분사구문 existing",
+      "ex": "existing in its own right",
+      "d": "접속사와 주어를 줄인 분사구문. 능동이면 -ing, 수동이면 p.p."
+    }
+  ],
+  "vocab": [
+    [
+      "official",
+      "관리"
+    ],
+    [
+      "clay tablet",
+      "점토판"
+    ],
+    [
+      "intellectual",
+      "지적인"
+    ],
+    [
+      "leap",
+      "도약"
+    ],
+    [
+      "represent",
+      "나타내다"
+    ],
+    [
+      "numeral",
+      "숫자"
+    ],
+    [
+      "alongside",
+      "~ 옆에"
+    ],
+    [
+      "trade A for B",
+      "A를 B로 바꾸다"
+    ],
+    [
+      "emancipated",
+      "해방된"
+    ],
+    [
+      "in its own right",
+      "그 자체로"
+    ],
+    [
+      "independent of",
+      "~와 상관없이"
+    ],
+    [
+      "take ~ for granted",
+      "~을 당연하게 여기다"
+    ],
+    [
+      "civilization",
+      "문명"
+    ]
+  ],
+  "summary": {
+    "en": "The Sumerians made a great leap by separating numbers from the objects they counted, creating the idea of an independent number.",
+    "ko": "수메르인들은 수를 세는 대상으로부터 분리하여 독립된 숫자의 개념을 만듦으로써 큰 도약을 이루었다."
+  },
+  "writing": {
+    "en": "The Sumerians had developed the idea of an emancipated number, existing in its own right.",
+    "ko": "수메르인들은 그 자체로 존재하는 해방된 숫자의 개념을 발전시켰다."
+  },
+  "tip": "빈칸이 '큰 도약'이면, 그 전 단계와 무엇이 달라졌는지 비교하세요. 그림 5개 → 숫자 5 + 기호 1개로 바뀐 점이 답이에요.",
+  "note": "뒤에 나오는 emancipated number(해방된 숫자)를 놓치지 마세요. '대상에서 풀려난 숫자'라는 뜻이라 ②와 같은 말이에요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 33번 정답은?",
+      "② separating the number from the object they were counting이에요."
+    ],
+    [
+      "③번은 왜 틀리나요?",
+      "물체 모양을 그대로 그리는 건 첫 단계 방식이에요. 글이 말하는 도약은 숫자를 대상에서 떼어 낸 것이에요."
+    ]
+  ]
+}

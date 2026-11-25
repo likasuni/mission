@@ -1,0 +1,178 @@
+{
+  "exam": "moe-1-2026-3",
+  "n": 34,
+  "type": "빈칸",
+  "points": 3,
+  "answer": 1,
+  "topic": "싫어하는 사람이라도 내집단이면 따라 한다 — 집단의 규칙을 따르려는 마음",
+  "date": "2026-11-30",
+  "keywords": [
+    "2026년 3월 고1 모의고사 영어 34번",
+    "2026 3월 고1 영어 34번 해설",
+    "고1 3월 모의고사 34번 정답",
+    "2026 고1 3모 영어 34번",
+    "고1 모의고사 빈칸",
+    "싫어하는 사람이라도 내집단이면 따라 "
+  ],
+  "lead": "2026년 3월 고1 모의고사 영어 34번은 사람들이 내집단 구성원을 싫어할 때조차 그들을 따라 한다는 연구를 다룬 글이에요. 효율이 아니라 '올바른 방식', 즉 집단의 규칙과 관습을 따르고 싶기 때문이에요. 정답은 ①이에요.",
+  "flow": [
+    [
+      "1단락",
+      "내집단으로부터 배우는 것에 대한 강조는 개인을 거의 고려하지 않는다. 놀랍게도, 우리는 내집단의 일부 사람들을 싫어할 수도 있지만,"
+    ],
+    [
+      "2단락",
+      "아이들은 내집단의 모든 구성원을 단순히 좋아하지는 않았다; 그들은 반사회적인 방식으로 행동한 사람들을 싫어했다."
+    ],
+    [
+      "3단락",
+      "이 과잉 모방은 드러낸다 우리가 상자를 가장 효율적으로 여는 법을 배우려고 따라 하는 것이 아니라는 것을."
+    ]
+  ],
+  "evidence": [
+    {
+      "en": "The emphasis on learning from the ingroup takes little account of individuals. Amazingly, while we may dislike some of the people in our ingroup, we still copy them.",
+      "ko": "내집단으로부터 배우는 것에 대한 강조는 개인을 거의 고려하지 않는다. 놀랍게도, 우리는 내집단의 일부 사람들을 싫어할 수도 있지만, 여전히 그들을 따라 한다.",
+      "note": "싫어하는 사람이라도 내집단이면 따라 함"
+    },
+    {
+      "en": "Indeed, they liked these antisocial ingroup members less than the prosocial members of an outgroup. Still, their dislike did not affect their tendency to copy ingroup behavior more closely than outgroup behavior.",
+      "ko": "실제로, 그들은 이 반사회적인 내집단 구성원들을 덜 좋아했다 외집단의 친사회적인 구성원들보다. 그럼에도, 그들의 반감은 외집단 행동보다 내집단 행동을 더 면밀히 따라 하는 경향에 영향을 주지 않았다.",
+      "note": "싫어해도 여전히 내집단 행동을 더 따라 함"
+    },
+    {
+      "en": "that we are not copying in order to learn how to open a box most efficiently. We want to learn how to do it in the proper way ― in other words, ( ) conforming to the rules and conventions of the ingroup.",
+      "ko": "우리가 상자를 가장 효율적으로 여는 법을 배우려고 따라 하는 것이 아니라는 것을. 우리는 그것을 '올바른' 방식으로 하는 법을 배우고 싶어 한다 다시 말해, (　　) 내집단의 규칙과 관습을 따르는 것.",
+      "note": "효율이 아니라 '올바른 방식' = 내집단의 규칙과 관습 → 반사회적 구성원도 그것을 보여 줌"
+    }
+  ],
+  "choices": [
+    {
+      "en": "① conforming to the rules and conventions of the ingroup",
+      "ko": "내집단의 규칙과 관습을 따르는 것",
+      "why": "정답. 내집단의 규칙과 관습을 따르는 것."
+    },
+    {
+      "en": "② following outgroup behavior which is socially appropriate",
+      "ko": "사회적으로 적절한 외집단의 행동을 따르는 것",
+      "why": "외집단이 아니라 내집단을 따라 해요."
+    },
+    {
+      "en": "③ avoiding behaviors demonstrated by the ingroup on purpose",
+      "ko": "내집단이 보여 준 행동을 일부러 피하는 것",
+      "why": "일부러 피하는 게 아니라 오히려 따라 해요. 반대예요."
+    },
+    {
+      "en": "④ pursuing the most efficient strategy for completing the task",
+      "ko": "과제를 완수하기 위한 가장 효율적인 전략을 추구하는 것",
+      "why": "효율 때문이 아니라는 게 글의 핵심이에요."
+    },
+    {
+      "en": "⑤ maintaining an individual identity rather than a group identity",
+      "ko": "집단 정체성보다 개인 정체성을 유지하는 것",
+      "why": "개인 정체성이 아니라 집단을 따르는 이야기예요."
+    }
+  ],
+  "grammar": [
+    {
+      "t": "양보 while",
+      "ex": "Amazingly, while we may dislike some of the people in our ingroup,",
+      "d": "while이 '~하지만, ~하는 동안'의 뜻으로 대조를 만들어요."
+    },
+    {
+      "t": "의문사 + to부정사",
+      "ex": "in the context of observing how to open a puzzle box.",
+      "d": "의문사 + to부정사 = 의문사 + 주어 + should + 동사원형."
+    },
+    {
+      "t": "분사구문 using",
+      "ex": "The emphasis on learning from the ingroup takes little account of individuals.",
+      "d": "접속사와 주어를 줄인 분사구문. 능동이면 -ing, 수동이면 p.p."
+    }
+  ],
+  "vocab": [
+    [
+      "emphasis",
+      "강조"
+    ],
+    [
+      "ingroup",
+      "내집단"
+    ],
+    [
+      "take account of",
+      "~을 고려하다"
+    ],
+    [
+      "context",
+      "상황, 맥락"
+    ],
+    [
+      "distinguish",
+      "식별하다, 구분하다"
+    ],
+    [
+      "minimal",
+      "최소한의"
+    ],
+    [
+      "antisocial",
+      "반사회적인"
+    ],
+    [
+      "prosocial",
+      "친사회적인"
+    ],
+    [
+      "tendency",
+      "경향"
+    ],
+    [
+      "overimitation",
+      "과잉 모방"
+    ],
+    [
+      "reveal",
+      "드러내다"
+    ],
+    [
+      "efficiently",
+      "효율적으로"
+    ],
+    [
+      "proper",
+      "올바른"
+    ],
+    [
+      "conform to",
+      "~을 따르다"
+    ],
+    [
+      "convention",
+      "관습"
+    ],
+    [
+      "demonstrate",
+      "보여 주다"
+    ]
+  ],
+  "summary": {
+    "en": "People copy their ingroup even when they dislike its members, because they want to follow the group's rules and conventions.",
+    "ko": "사람들은 내집단 구성원을 싫어할 때조차 그들을 따라 하는데, 집단의 규칙과 관습을 따르고 싶기 때문이다."
+  },
+  "writing": {
+    "en": "This overimitation reveals that we are not copying in order to learn how to open a box most efficiently.",
+    "ko": "이 과잉 모방은 우리가 상자를 가장 효율적으로 여는 법을 배우려고 따라 하는 것이 아님을 드러낸다."
+  },
+  "tip": "빈칸 앞에 not A but B 구조가 있으면 B가 답의 방향이에요. 여기선 '효율적인 방법이 아니라 올바른 방법'이에요.",
+  "faq": [
+    [
+      "2026년 3월 고1 영어 34번 정답은?",
+      "① conforming to the rules and conventions of the ingroup이에요."
+    ],
+    [
+      "④번은 왜 틀리나요?",
+      "글은 효율이 아니라 집단의 '올바른 방식'을 따르려 한다고 해요. ④는 글이 부정한 이유예요."
+    ]
+  ]
+}
