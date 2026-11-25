@@ -104,7 +104,19 @@ def post_quick(ps):
             '<h2>화면으로 바로 보기 <small>다운로드 없이 · 무료</small></h2>'
             + (f'<p class="muted"><b>📘 번호는 분석노트 전자책</b>(끊어읽기·해석·어휘)까지, 나머지 번호는 정답 근거·오답 이유 해설을 바로 볼 수 있어요.</p>' if has_eb
                else '<p class="muted">번호를 누르면 정답 근거·오답 이유 해설을 바로 볼 수 있어요.</p>')
+            + POP_JS
             + '<div class="nbs">' + ''.join(chip(p) for p in sorted(ps, key=lambda p: p['n'])) + '</div></section>')
+# '많이 본 해설' 칩 (2026-11-26 원장님): 최근 7일 실제 조회 수(Supabase RPC popular_posts) 상위 3개를 '화면으로 바로 보기' 위에.
+# 회차 페이지에서 광고가 있는 해설·전자책으로 더 넘어가게 하는 자리. 조회가 적으면(5회 미만) 안 보여요. 링크는 아래 번호 칩과 같게(📘 → #ebook).
+POP_JS = '''<div id="pop-posts" hidden><style>#pop-posts{margin:2px 0 12px;padding:10px 12px;border-radius:12px;background:#fff7ed;border:1px solid #fed7aa}
+#pop-posts b{color:#9a3412;font-size:15px;margin-right:6px}#pop-posts .pp{display:inline-flex;align-items:center;gap:6px;margin:4px 6px 4px 0;padding:7px 14px;border-radius:999px;background:#fff;border:1.5px solid #fb923c;color:#9a3412;font-weight:800;text-decoration:none}
+#pop-posts .pp i{font-style:normal;font-size:12px;background:#fb923c;color:#fff;border-radius:999px;padding:1px 7px}</style></div>
+<script>(function(){try{var pre=location.pathname;if(!/\\/eng\\/$/.test(pre))return;var box=document.getElementById('pop-posts');
+fetch('https://iiyhmskvdjgstoikonwu.supabase.co/rest/v1/rpc/popular_posts',{method:'POST',headers:{apikey:'sb_publishable_JHxdlqWVh26TqD36jLflYQ_KoUmeuUj','Content-Type':'application/json'},body:JSON.stringify({p_prefix:pre,p_days:7,p_limit:3})})
+.then(function(r){return r.json()}).then(function(a){a=(a||[]).filter(function(x){return x.n>=5});if(!a.length)return;var h='<b>🔥 많이 본 해설</b>';
+a.forEach(function(x,i){var no=x.path.replace(/\\/$/,'').split('/').pop();var c=document.querySelector('#read .nbs a[href^="'+x.path+'"]');var href=c?c.getAttribute('href'):x.path;
+h+='<a class="pp" href="'+href+'" onclick="try{gtag(\\'event\\',\\'pop_post\\',{to:\\''+no+'\\'})}catch(e){}"><i>'+(i+1)+'위</i>'+no.replace('-','~')+'번</a>';});
+box.insertAdjacentHTML('beforeend',h);box.hidden=false;});}catch(e){}})();</script>'''
 def post_card(ps, title):
     return (f'<div class="card" id="posts"><h2>{e(title)}</h2><div class="plist">' + ''.join(
         f'<a href="{post_url(p)}"><b>{e(post_name(p))}</b><span>{post_ans(p)} · {e(p["type"])} · {e(p["topic"])}</span></a>' for p in ps)
