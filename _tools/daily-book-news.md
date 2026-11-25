@@ -20,11 +20,11 @@
 
 ## 2. 글 쓰기 (확인한 사실만)
 - 정보: 출판사·교보문고·예스24·알라딘의 공개 책 소개에서 확인한 사실만 (구성, 대상 학년, 회차·문항 수, 특징, 출간일). 확인 못 한 내용은 쓰지 않아요. 본문 인용·지문·변형 문제·표지·본문 이미지 금지. 가격은 '가격은 판매처에서 따로 확인해 주세요' 한 줄.
-- 형식: 기존 교재 소식(_tools/news/ybm-booster-2026-new/, _tools/news/mothertongue-mock-2027/)과 같은 폴더 구조 — meta.json(slug·"cat": "book"·date=오늘·tag·title·desc·summary·keywords·faq 2~3개) + body.html + thumb.png + coupang.json.
+- 형식: 기존 교재 소식(_tools/news/ybm-booster-2026-new/, _tools/news/mothertongue-mock-2027/)과 같은 폴더 구조 — meta.json(slug·"cat": "book"·date=오늘·tag·title·desc·summary·keywords·faq 2~3개·**types**(["독해","기출"…] 중)·**pub**(출간일, 서점마다 다르면 "2026-11-16~2026-11-23")) + body.html + thumb.png + coupang.json.
 - 원장님 말투(쉬운 존댓말)로 '누구에게 맞는지·어떻게 쓰면 좋은지'를 원장님 수업 관점에서 짧게. 확인할 수 없는 통계·학생 사례는 쓰지 않아요. 학원 홍보 표현 규칙(예비·선행 금지)도 지켜요.
 - 제목은 검색어를 앞에: `<책 이름> 2027 — <대상·구성 한 줄>` 꼴.
 - thumb.png: 1080×1080, 남색 그라데이션, 골드 #FFC857, '교재 소식 · 리카수니 자료실' 알약, data.likasuni.com. HTML 을 만들어 headless Chrome `--screenshot` 으로 캡처.
-- 쿠팡: coupang.json = [{"key","name","query","must","not","url":""}] + body.html 에 <!--CPDIS-->(n-lead 앞), <!--BUY:key-->(책 설명 아래), <!--BUYBOX-->(글 끝), 끝 표기 "출판사로부터 받은 대가는 없어요.<!--CPNOTE-->".
+- 쿠팡: coupang.json = [{"key","name","query","must","not","url":""}] + body.html 에 <!--CPDIS-->(n-lead 앞) 하나와 끝 표기 "출판사로부터 받은 대가는 없어요.<!--CPNOTE-->". 구매 카드는 빌드가 맨 위에 한 번만 크게 넣어요 (<!--BUY:key-->·<!--BUYBOX--> 는 넣지 않아도 됨). 글 끝 '📮 이 교재 자료가 필요하다면?' 상자도 빌드가 자동으로 넣어요.
   링크 채우기: `COUPANG_ACCESS_KEY=$(security find-generic-password -s likasuni-COUPANG_ACCESS_KEY -w) COUPANG_SECRET_KEY=$(security find-generic-password -s likasuni-COUPANG_SECRET_KEY -w) DRY_RUN=0 python3 _tools/coupang_links.py` (열쇠 값은 화면에 내지 않음). 못 찾은 책은 버튼이 자리째 안 보여서 괜찮아요.
 
 ## 3. 공개
@@ -36,7 +36,7 @@
 ## 4. 네이버 블로그 글 (2026-11-24 원장님 요청, 원장님이 직접 붙여 넣음)
 - 같은 책으로 네이버 블로그(blog.naver.com/cubuk)용 글을 함께 만들어요: `_tools/naver_posts/<날짜>-book-<slug>.txt` → `python3 _tools/naver_post.py <txt> "<책 이름 두 줄, <br>>" "2027 신간" "구성 · 대상 · 활용법" "교재 소식 · data.likasuni.com"` 이 같은 이름 .html 과 썸네일 `thumb-book-<slug>.png` 를 만들어요.
 - txt 형식은 _tools/naver_posts/ 의 기존 글과 같아요([제목]·[태그]·[대표 사진: thumb-book-<slug>.png]·[본문], 소제목은 '■ ', 링크 줄은 '▶').
-- **자료실 글을 통째로 복사하지 않고 구성을 바꿔요** (검색 중복 방지): 첫 두 줄에 검색어(책 이름 2027·대상 학년) → 원장님 인사 → ■ 한눈에 보기(출판사·대상·구성 3~4줄) → ■ 이런 학생에게 → ■ 원장님 활용 팁(수업 관점, 확인할 수 없는 사례 금지) → ■ 자세한 구성은 자료실에서(자료실 글 주소 ▶) → ■ 함께 보면 좋은 자료(자료실 /english/ 등) → 코코스학원 안내(홈페이지 https://www.cocosedu.co.kr/ · 주소 경기 성남시 분당구 판교로 476 2층).
+- **자료실 글을 통째로 복사하지 않고 구성을 바꿔요** (검색 중복 방지): 첫 두 줄에 검색어(책 이름 2027·대상 학년) → 원장님 인사 → ■ 한눈에 보기(출판사·대상·구성 3~4줄) → ■ 이런 학생에게 → ■ 원장님 활용 팁(수업 관점, 확인할 수 없는 사례 금지) → ■ 자세한 구성은 자료실에서(자료실 글 주소 ▶ **딱 1개** — 다른 자료실 페이지는 '같은 페이지 위쪽 메뉴에서' 문장으로만) → 코코스학원 안내(홈페이지 https://www.cocosedu.co.kr/ · 주소 경기 성남시 분당구 판교로 476 2층).
 - **쿠팡 링크·수수료 문구는 넣지 않아요** (네이버 글 규칙). 표지·본문 사진도 넣지 않아요 (썸네일만).
 - 제목: `<책 이름> 2027 신간 – <대상> <구성> 정리` 꼴, 태그는 붙여 쓴 검색어 10~14개(#책이름 #2027수능영어 #고등영어교재 … #이매동영어학원 #코코스학원 #리카수니).
 - txt·html·png 를 같은 커밋에 넣어요.
