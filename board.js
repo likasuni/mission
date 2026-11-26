@@ -21,7 +21,9 @@
   // 직접 광고 (2026-11-27 원장님: 자료실 첫 화면처럼 요청 상자 안, 신간교재 요청 바로 위). 목록은 30초마다 다시 그려도 광고 칸은 따로라 그대로 남음.
   // 블로그(likasuni.com)에서만 — 학원 홈페이지(cocosedu.co.kr)엔 광고를 달지 않아요. 버튼 바로 옆이 아니게 점선으로 떼어 둠
   var adEl = root.querySelector('.lks-ad');
-  if (adEl && /(^|\.)likasuni\.com$/.test(location.hostname) && location.hostname !== 'data.likasuni.com') {
+  // 애드센스 스크립트(adsbygoogle.js)가 페이지에 있을 때만 — 지금 블로그 테마는 이 스크립트를 불러오지 않아서(2026-11-27 확인) 빈 칸이 생기지 않게 막아 둠
+  var AD_LOADER = !!document.querySelector('script[src*="adsbygoogle.js"]');
+  if (adEl && AD_LOADER && /(^|\.)likasuni\.com$/.test(location.hostname) && location.hostname !== 'data.likasuni.com') {
     adEl.setAttribute('style', BOX + ' margin: 18px 0 0; padding-top: 14px; border-top: 1px dashed #e3e7ef; text-align: center;');
     adEl.innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3951386769813957" data-ad-slot="8157681795" data-ad-format="auto" data-full-width-responsive="true"></ins>';
     try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
