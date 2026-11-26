@@ -1129,7 +1129,10 @@ EN_CSS = """<style>.en-y{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
 .en-y:last-child{border-bottom:0}.en-y>b{flex:0 0 64px;font-size:.95rem;color:#475069}
 .en-y a{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:#1e2a44;font-weight:700;text-decoration:none;font-size:.95rem}
 .en-y a:hover{border-color:#3355cc;color:#3355cc}.en-y a small{font-size:.72rem;font-weight:700;color:#fff;background:#3355cc;border-radius:6px;padding:2px 6px}
-@media(max-width:560px){.en-y>b{flex-basis:100%}.en-y a{flex:0 0 calc(25% - 6px);justify-content:center;padding:10px 4px;gap:4px;font-size:.9rem}}</style>"""
+.en-h{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}.en-h h2{margin:0}
+.en-rq{display:flex;flex-wrap:wrap;gap:6px}.en-rq a{padding:8px 12px;border-radius:10px;font-size:.88rem;font-weight:700;text-decoration:none;white-space:nowrap}
+.en-rq .r1{background:#f97316;color:#fff}.en-rq .r2{background:#fff;color:#c2410c;border:1px solid #fdba74}
+@media(max-width:560px){.en-rq{width:100%}.en-rq a{flex:1;text-align:center}.en-y>b{flex-basis:100%}.en-y a{flex:0 0 calc(25% - 6px);justify-content:center;padding:10px 4px;gap:4px;font-size:.9rem}}</style>"""
 def _en_rows(ks, label):
     by = collections.defaultdict(list)
     for k in ks: by[k[2] if k[0] == 'sn' else s_year(k)].append(k)
@@ -1139,16 +1142,19 @@ def _en_rows(ks, label):
                         for k in sorted(by[y], key=lambda k: -k[3]))
         out += f'<div class="en-y"><b>{y}{"학년도" if ks[0][0] == "sn" else "년"}</b>{chips}</div>'
     return out
+def en_head(title, req):  # 제목 옆 요청 버튼 (2026-11-27 원장님): 분석노트는 카톡 요청 칸, 변형문제·단어는 자료 문의 게시판
+    return (f'<div class="en-h"><h2>{title}</h2><div class="en-rq"><a class="r1" href="{e(req)}">📮 분석노트 요청</a>'
+            '<a class="r2" href="/#talk">💬 변형문제·단어 문의</a></div></div>')
 def en_table(g):
     ks = [k for k in en_sess if k[1] == g]
     if not ks: return ''
-    return (f'<div class="card g-panel" id="go{g}" data-g="{g}"><h2>고{g} 영어 모의고사</h2>'
+    return (f'<div class="card g-panel" id="go{g}" data-g="{g}">' + en_head(f'고{g} 영어 모의고사', f'/notes/?g={g}#note-req')
             + _en_rows(ks, lambda k: f'{k[3]}월') + '</div>')
 # 수능 탭 (2026-11-20 원장님: 영어 PDF 자료받기에 수능도). 학년도 순
 sn_en = sorted([k for k in sessions if k[0] == 'sn' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: -k[2])
 def sn_table():
     if not sn_en: return ''
-    return (f'<div class="card g-panel" id="gosn" data-g="sn"><h2>수능 영어</h2>'
+    return (f'<div class="card g-panel" id="gosn" data-g="sn">' + en_head('수능 영어', f'/notes/?y={sn_en[0][2]}&m=0&g=3#note-req')
             + _en_rows(sn_en, lambda k: f'{k[2]}학년도 수능') + '</div>')
 enbody = ('''<h1 class="page-h1">영어 모의고사 분석노트·변형문제·단어</h1>
 <p class="lead">회차를 누르면 문항별 해설·분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
