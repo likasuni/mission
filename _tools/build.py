@@ -487,7 +487,8 @@ for idx, k in enumerate(keys_sorted):
 {ad()}
 {pn}'''
     page(s_url(k), f'{name} ({s_alias(k)}) ' + ('등급컷 · ' if inf.get('rows') else '') + '전과목 기출문제·정답·해설 PDF | 리카수니 자료실',
-         f'{name} 전과목 기출문제 PDF 무료 다운로드와 ' + ('등급컷·시험 요약. ' if inf else '') + f'{sub_names} 문제지·정답·해설. 리카수니 자료실', body, crumbs, active,
+         # 설명에 과목 이름을 다 나열하지 않음 (2026-11-27, 검색 결과에서 잘리고 키워드 나열로 보임)
+         f'{name}({s_when(k)}) 국어·수학·영어·한국사·탐구' + ('·제2외국어' if k[0] == 'sn' else '') + ' 전과목 시험지와 정답·해설 PDF를 무료로 받으세요.' + (' 등급컷·시험 요약도 함께.' if inf else '') + ' 리카수니 자료실', body, crumbs, active,
          comments=(s_url(k).strip('/'), name))
 
     # 과목 페이지
@@ -570,8 +571,9 @@ for idx, k in enumerate(keys_sorted):
                  f'{full} 문항별 분석노트, 변형문제, 영어 단어 총정리와 기출 원본(문제지·정답) PDF 무료. {s_when(k)}. 리카수니 자료실',
                  body, crumbs + [(subj_url(k, s), sn)], '/english/', comments=(subj_url(k, s).strip('/'), full))
         else:
-            page(subj_url(k, s), f'{full} ({s_alias(k)}) 기출문제·해설 PDF 다운로드 | 리카수니 자료실',
-                 f'{full} 문제지·정답·해설 PDF 무료 다운로드. {s_when(k)}. 리카수니 자료실',
+            page(subj_url(k, s), (f'{full} 시험지·정답·해설 PDF | {s_alias(k)} {sn} 기출문제 | 리카수니 자료실' if k[0] == 'sn'
+                                  else f'{full} ({s_alias(k)}) 시험지·기출문제·해설 PDF | 리카수니 자료실'),
+                 f'{full} 시험지(문제지)·정답·해설 PDF 무료 다운로드. {s_when(k)}. 리카수니 자료실',
                  body, crumbs + [(subj_url(k, s), sn)], active, comments=(subj_url(k, s).strip('/'), full))
 
 # ---------- 문항별 해설 ----------
@@ -608,7 +610,10 @@ for p in POSTS:
     ans_s = post_ans(p)
     LASTMOD[url] = p.get('updated', p['date'])
     PUB[url] = p['date']
-    desc = f'{nm} {ans_s}. ' + _re.sub('^' + _re.escape(nm) + '[은는]\\s*', '', p['lead'])
+    # 검색 결과에 정답 번호는 내지 않음 (2026-11-27 원장님: 결과만 보고 떠나지 않게 — 정답은 페이지 안 표에)
+    _ld = _re.sub('^' + _re.escape(nm) + '[은는]\\s*', '', p['lead'])
+    _ld = _re.sub(r'\s*[^.]*(정답은|[①②③④⑤])[^.]*\.', '', _ld).strip()
+    desc = f'{nm}({p["type"]}) 정답 근거와 오답 이유, 구문·어휘 분석. ' + _ld
     h1 = f'{nm} 해설·분석 · {p["type"]} {ans_s}'
     flow = ''.join(f'<li><b>{e(a)}</b> {e(b)}</li>' for a, b in p.get('flow', []))
     def _ev(q): return ''.join(f'<blockquote class="ev"><p class="en">{e(x["en"])}</p><p class="ko">{e(x["ko"])}</p><p class="nt">{e(x["note"])}</p></blockquote>' for x in q.get('evidence', []))
@@ -668,7 +673,7 @@ for p in POSTS:
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p['faq']]})
     crumbs = [('/', '홈'), ('/suneung/' if k[0] == 'sn' else f'/moe/go{k[1]}/', '수능 기출' if k[0] == 'sn' else f'고{k[1]} 모의고사'),
               (s_url(k), s_name(k)), (subj_url(k, p['subj']), sn), (url, f'{post_no(p)}번 해설')]
-    page(url, f'{nm}' + (f' ({s_alias(p["k"])})' if p['k'][0] == 'sn' else '') + f' 해설·분석 {ans_s}{vtag} | {p["type"]} · {p["topic"]} - 리카수니 자료실',
+    page(url, f'{nm}' + (f' ({s_alias(p["k"])})' if p['k'][0] == 'sn' else '') + f' 해설·분석 | {p["type"]} 정답 근거{vtag} - 리카수니 자료실',
          desc[:150], body, crumbs, '/posts/',
          comments=(url.strip('/'), f'{nm} 해설'), extra_ld=ld, og_type='article')
     for q in qs if multi else []:  # 세트로 합치기 전 번호별 주소(…/41/)는 세트 페이지로 넘겨 줌
