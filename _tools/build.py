@@ -1123,32 +1123,36 @@ body = f'''<section class="hero"><h1>리카수니 영어 자료실</h1>
 body = body.replace('<!--NSBAN-->', f'''<a class="ns-banner" href="/naesin/"><b>🔒 학교별 영어 내신 분석 <small>코코스 학원생 전용</small></b><span>{" · ".join(x["short"] for x in NAESIN)}</span><em>학교 목록 보기 →</em></a>''')  # 내신 띠: 자료 요청 상자 바로 아래 (2026-11-15)
 
 # ---------- 영어 모의고사 허브 ----------
+# 2026-11-27 원장님: 숫자 표(분석노트·변형문제·단어 개수)는 오해가 생겨서 빼고, 회차만 누르기 쉽게 연도별 버튼으로.
+# 문항 해설이 공개된 회차엔 작은 '해설' 표시 (해설 페이지로 가는 길)
+EN_CSS = """<style>.en-y{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 0;border-bottom:1px solid var(--line)}
+.en-y:last-child{border-bottom:0}.en-y>b{flex:0 0 64px;font-size:.95rem;color:#475069}
+.en-y a{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:#1e2a44;font-weight:700;text-decoration:none;font-size:.95rem}
+.en-y a:hover{border-color:#3355cc;color:#3355cc}.en-y a small{font-size:.72rem;font-weight:700;color:#fff;background:#3355cc;border-radius:6px;padding:2px 6px}
+@media(max-width:560px){.en-y>b{flex-basis:100%}.en-y a{flex:0 0 calc(25% - 6px);justify-content:center;padding:10px 4px;gap:4px;font-size:.9rem}}</style>"""
+def _en_rows(ks, label):
+    by = collections.defaultdict(list)
+    for k in ks: by[k[2] if k[0] == 'sn' else s_year(k)].append(k)
+    out = ''
+    for y in sorted(by, reverse=True):
+        chips = ''.join(f'<a href="{subj_url(k, "영어")}">{e(label(k))}' + ('<small>해설</small>' if POSTS_BY.get(k) else '') + '</a>'
+                        for k in sorted(by[y], key=lambda k: -k[3]))
+        out += f'<div class="en-y"><b>{y}{"학년도" if ks[0][0] == "sn" else "년"}</b>{chips}</div>'
+    return out
 def en_table(g):
     ks = [k for k in en_sess if k[1] == g]
     if not ks: return ''
-    rows = ''
-    for k in sorted(ks, key=lambda k: (-s_year(k), -k[3])):
-        nn = len(NOTES.get(k, {})); vv = len(dict(VAR.get(k, [])))
-        mark = lambda ok, t: f'<span class="ok">{t}</span>' if ok else '<span class="no">–</span>'
-        rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{e(s_name(k))}</a></td>'
-                 f'<td>{mark(nn, f"{nn}문항")}</td><td>{mark(vv, f"{vv}문항")}</td><td>{mark(k in WORDS, "✓")}</td></tr>')
-    return (f'<div class="card g-panel" id="go{g}" data-g="{g}"><h2>고{g} 영어 모의고사</h2><table class="en-t"><thead><tr><th>회차</th><th>분석노트</th><th>변형문제</th><th>단어</th></tr></thead>'
-            f'<tbody>{rows}</tbody></table></div>')
-# 수능 탭 (2026-11-20 원장님: 영어 PDF 자료받기에 수능도). 학년도 순, 문항 해설 수 + 분석노트 카톡 요청(m=0, y=학년도)
+    return (f'<div class="card g-panel" id="go{g}" data-g="{g}"><h2>고{g} 영어 모의고사</h2>'
+            + _en_rows(ks, lambda k: f'{k[3]}월') + '</div>')
+# 수능 탭 (2026-11-20 원장님: 영어 PDF 자료받기에 수능도). 학년도 순
 sn_en = sorted([k for k in sessions if k[0] == 'sn' and '영어' in {r['subject'] for r in sessions[k]}], key=lambda k: -k[2])
 def sn_table():
     if not sn_en: return ''
-    mark = lambda ok, t: f'<span class="ok">{t}</span>' if ok else '<span class="no">–</span>'
-    rows = ''
-    for k in sn_en:
-        nn = len(NOTES.get(k, {})); vv = len(dict(VAR.get(k, [])))
-        rows += (f'<tr><td><a href="{subj_url(k, "영어")}">{k[2]}학년도 수능</a></td>'
-                 f'<td>{mark(nn, f"{nn}문항")}</td><td>{mark(vv, f"{vv}문항")}</td><td>{mark(k in WORDS, "✓")}</td></tr>')
     return (f'<div class="card g-panel" id="gosn" data-g="sn"><h2>수능 영어</h2>'
-            f'<table class="en-t"><thead><tr><th>회차</th><th>분석노트</th><th>변형문제</th><th>단어</th></tr></thead><tbody>{rows}</tbody></table></div>')
+            + _en_rows(sn_en, lambda k: f'{k[2]}학년도 수능') + '</div>')
 enbody = ('''<h1 class="page-h1">영어 모의고사 분석노트·변형문제·단어</h1>
-<p class="lead">회차를 누르면 문항별 분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
-<b>21~24번·30~40번 분석노트</b>는 카카오톡 요청으로 받을 수 있어요. <b>수능</b>은 <a href="#gosn">수능</a> 탭에서 학년도별로 볼 수 있어요.</p>'''
+<p class="lead">회차를 누르면 문항별 해설·분석노트, 변형문제, 단어 총정리, 영어 기출 원본을 한 페이지에서 볼 수 있어요.
+<b>해설</b> 표시가 있는 회차는 번호별 해설을 화면으로 바로 볼 수 있어요. 바로 보기 없는 번호의 분석노트는 카카오톡 요청으로 받아요.</p>''' + EN_CSS
           # 고1·고2·고3 탭: 누른 학년 표만 보임 (JS 없으면 세 표 모두 보임), 고른 학년은 주소(#go2)와 브라우저에 기억
           + '<div class="g-tabs" role="tablist">' + ''.join(
               f'<button type="button" class="g-tab" role="tab" data-g="{g}">고{g}<small>{sum(1 for k in en_sess if k[1] == g)}회차</small></button>'
