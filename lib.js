@@ -18,6 +18,8 @@ const NOTE_BOOK_CFG = {
 const NOTE_BOOKS = Object.keys(NOTE_BOOK_CFG);
 const zeroName = b => { const c = NOTE_BOOK_CFG[b] || {}; return c.gw ? 'Gateway' : c.ex ? '예시문제' : ''; }; // 번호 0 이름
 const NOTE_LIMIT = { moe: 1, book: 1 }; // 하루에 받을 수 있는 개수 (note-request 함수 LIMIT 와 같게)
+// 하루 한도 안내 (build.py LIM_NOTE 와 같게, 2026-11-27 원장님: 각각 1개씩, 같은 종류 2개는 안 됨)
+const LIM_NOTE = `<p class="lim-note"><b>📌 하루 최대 2개</b><span class="lim-pair"><span class="lim-k">모의고사 1개</span>+<span class="lim-k">부교재 1개</span></span><small>각각 1개씩만 돼요. 모의고사 2개, 부교재 2개는 안 돼요. (요청·받기 모두, 한국 시간 자정에 다시 채워져요)</small></p>`;
 
 // 옛 '기타 자료 요청' 링크(/notes/#etc-req)는 첫 화면 '자료 문의'로 (2026-11-14)
 if (location.pathname.startsWith('/notes') && location.hash === '#etc-req') location.replace('/#talk');
@@ -439,8 +441,9 @@ async function noteRequest(user) {
   };
   const head = `<h2>${hasEtc ? '자료 요청' : '분석노트 요청'}</h2>
     <p class="muted">원하는 자료를 <b>카카오톡으로</b> 보내 드려요.</p>
+    ${LIM_NOTE}
     <details class="nr-more"><summary>자세히 보기</summary>
-    <p class="meta"><b>받는 방법:</b> 번호를 <b>하나</b> 골라 받아요. 요청과 받기 모두 하루 모의고사 1개 · 부교재 1개까지예요. 다른 번호는 다음 날 받을 수 있어요.</p>
+    <p class="meta"><b>받는 방법:</b> 번호를 <b>하나</b> 골라 받아요. 요청과 받기 모두 하루 모의고사 1개 · 부교재 1개까지예요 (같은 종류 2개는 안 돼요). 다른 번호는 다음 날 받을 수 있어요.</p>
     <p class="meta">아직 없는 자료는 원장님이 1~2일 안에 만들어요. 완성되면 <b>처음 요청한 1개는 카톡으로 자동</b> 보내 드리고, 나머지는 다시 로그인했을 때 이 칸 위 <b>"요청하신 자료가 준비됐어요"</b>에서 받아요.</p>
     ${hasEtc ? '<p class="meta">기타 자료는 원장님이 준비되면 카톡으로 보내 드려요. 이메일·전화번호는 적지 않아도 돼요.</p>' : ''}</details>
     <p class="meta nr-ask">신간 교재나 목록에 없는 교재·단어 시험지·변형문제는 <a href="/#talk"><b>신간교재 요청</b></a>에 먼저 물어봐 주세요. 가능한 자료는 요청 목록에 추가해 드려요.</p>

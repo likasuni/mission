@@ -838,3 +838,9 @@ textarea:focus, input:focus { outline-color: var(--navy); }
 .bk-news-band { display: block; box-sizing: border-box; width: 100%; margin: 0 0 14px; padding: 11px 16px; border-radius: 12px; background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412; font-size: .92rem; text-decoration: none; }
 .bk-news-band b { color: #c2410c; margin-right: 6px; }
 .bk-news-band:hover { background: #ffedd5; }
+/* 하루 받기 한도 안내 (2026-11-27 원장님: 모의고사 1개 + 부교재 1개, 같은 종류 2개는 안 됨) */
+.lim-note { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 10px 0; padding: 10px 14px; border-radius: 12px; background: #fff4e5; border: 2px solid #fdba74; color: #7c2d12; font-size: .92rem; line-height: 1.5; box-sizing: border-box; max-width: 100%; }
+.lim-note > b { font-size: .98rem; }
+.lim-note .lim-k { display: inline-block; padding: 2px 10px; border-radius: 999px; background: #fff; border: 1px solid #fdba74; font-weight: 800; color: #9a3412; white-space: nowrap; }
+.lim-note small { flex-basis: 100%; color: #9a3412; font-size: .84rem; }
+.lim-note .lim-pair { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
