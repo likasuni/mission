@@ -28,7 +28,7 @@ let current = 'comments';
 
 /* ---------- 방문자 (2026-11-20~, SQL _tools/sql/2026-11-20_visits.sql) ---------- */
 let vsDays = 14;
-const VS_SRC = { naver: '네이버', google: '구글', daum: '다음', kakao: '카카오톡', blog: '리카수니 블로그', bing: 'Bing', direct: '주소 직접·앱', inside: '자료실 안', other: '기타 사이트' };
+const VS_SRC = { naver: '네이버', google: '구글', daum: '다음', kakao: '카카오톡', blog: '리카수니 블로그', bing: 'Bing', threads: '스레드', direct: '주소 직접·앱', inside: '자료실 안', other: '기타 사이트' };
 const vsPage = p => p === '/' ? '첫 화면' : p.replace(/^\/|\/$/g, '')
   .replace(/^moe\/go(\d)\/(\d{4})-(\d{2})\/eng\/?(.*)$/, (m, g, y, mo, r) => `${y}년 ${+mo}월 고${g} 영어${r ? ' ' + r.replace(/\/$/, '') + '번' : ''}`)
   .replace(/^suneung\/(\d{4})\/eng\/?(.*)$/, (m, y, r) => `${y}학년도 수능 영어${r ? ' ' + r + '번' : ''}`)

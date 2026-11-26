@@ -69,7 +69,7 @@
   if (/bot|crawl|spider|slurp|yeti|headless|lighthouse|preview|facebookexternal/i.test(navigator.userAgent) || navigator.webdriver || location.hostname !== 'data.likasuni.com' || localStorage.getItem('lks_admin')) return;
   var vid = localStorage.getItem('lks_vid'); if (!vid) { vid = Math.random().toString(36).slice(2, 12) + Date.now().toString(36); localStorage.setItem('lks_vid', vid); }
   var h = ''; try { h = document.referrer ? new URL(document.referrer).hostname : ''; } catch (e) {}
-  var src = !h ? (/KAKAOTALK/i.test(navigator.userAgent) ? 'kakao' : 'direct') : h === location.hostname ? 'inside' : /naver/.test(h) ? 'naver' : /google/.test(h) ? 'google' : /daum/.test(h) ? 'daum' : /kakao/.test(h) ? 'kakao' : /likasuni\.com|blogger|blogspot/.test(h) ? 'blog' : /bing/.test(h) ? 'bing' : 'other';
+  var src = (/[?&]from=threads/.test(location.search) || /threads\.(net|com)/.test(h) || /Barcelona/.test(navigator.userAgent)) ? 'threads' : !h ? (/KAKAOTALK/i.test(navigator.userAgent) ? 'kakao' : 'direct') : h === location.hostname ? 'inside' : /naver/.test(h) ? 'naver' : /google/.test(h) ? 'google' : /daum/.test(h) ? 'daum' : /kakao/.test(h) ? 'kakao' : /likasuni\.com|blogger|blogspot/.test(h) ? 'blog' : /bing/.test(h) ? 'bing' : 'other';
   setTimeout(function () { fetch('https://iiyhmskvdjgstoikonwu.supabase.co/rest/v1/rpc/hit', { method: 'POST', keepalive: true, headers: { apikey: 'sb_publishable_JHxdlqWVh26TqD36jLflYQ_KoUmeuUj', 'Content-Type': 'application/json' }, body: JSON.stringify({ p_path: location.pathname, p_vid: vid, p_src: src }) }).catch(function () {}); }, 800);
 } catch (e) {} })();
 </script>

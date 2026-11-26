@@ -1,5 +1,6 @@
 스레드 글 5개 (2026-11-30 월 ~ 12-04 금, 기말고사 기간)
 쓰는 법: 본문엔 링크 없이 올리고, 올린 직후 내가 단 첫 댓글에 [첫 댓글] 내용을 붙여 넣어요.
+주소 끝 ?from=threads 는 지우지 마세요 (관리자 방문자 탭에서 '스레드'로 세려고 붙인 표시).
 숫자·정답은 자료실 해설 파일과 요청 기록(2026-11-27 기준)에서 확인한 것만 썼어요.
 
 ════════════════════════════════
@@ -19,8 +20,8 @@
 주소는 댓글에 둘게요 👇
 
 [첫 댓글]
-고1 10모 영어 👉 https://data.likasuni.com/moe/go1/2026-10/eng/
-고2 10모 영어 👉 https://data.likasuni.com/moe/go2/2026-10/eng/
+고1 10모 영어 👉 https://data.likasuni.com/moe/go1/2026-10/eng/?from=threads
+고2 10모 영어 👉 https://data.likasuni.com/moe/go2/2026-10/eng/?from=threads
 
 [사진] 고1 10모 영어 페이지 위쪽 '화면으로 바로 보기' 번호 칩 부분 캡처 1장
 
@@ -44,7 +45,7 @@ of being able to ~, or even ~ 수식어가 길게 붙어서
 해설 전체는 댓글에 👇
 
 [첫 댓글]
-고1 10모 29번 해설·분석노트 👉 https://data.likasuni.com/moe/go1/2026-10/eng/29/
+고1 10모 29번 해설·분석노트 👉 https://data.likasuni.com/moe/go1/2026-10/eng/29/?from=threads
 
 [사진] 29번 해설 페이지의 '구문 포인트' 칸 캡처 1장
 
@@ -66,7 +67,7 @@ of being able to ~, or even ~ 수식어가 길게 붙어서
 요청하는 곳은 댓글에 👇
 
 [첫 댓글]
-분석노트 요청하기 (카카오 로그인 → 번호 고르기) 👉 https://data.likasuni.com/notes/#note-req
+분석노트 요청하기 (카카오 로그인 → 번호 고르기) 👉 https://data.likasuni.com/notes/?from=threads#note-req
 
 [사진] 자료실 첫 화면 '최근 자료 요청' (만드는 중 / 받을 수 있어요) 캡처 1장
 
@@ -90,7 +91,7 @@ some of whom, most of which
 해설은 댓글에 👇
 
 [첫 댓글]
-고2 10모 29번 해설·분석노트 👉 https://data.likasuni.com/moe/go2/2026-10/eng/29/
+고2 10모 29번 해설·분석노트 👉 https://data.likasuni.com/moe/go2/2026-10/eng/29/?from=threads
 
 [사진] 29번 해설 페이지의 정답 근거 칸 캡처 1장
 
@@ -113,7 +114,7 @@ some of whom, most of which
 댓글로 남겨 주시면 그 번호부터 정리해 둘게요 ✍️
 
 [첫 댓글]
-고1 10모 21번 해설 👉 https://data.likasuni.com/moe/go1/2026-10/eng/21/
+고1 10모 21번 해설 👉 https://data.likasuni.com/moe/go1/2026-10/eng/21/?from=threads
 
 [사진] 21번 해설 페이지 위쪽(정답 표) 캡처 1장
 
