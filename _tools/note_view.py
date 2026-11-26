@@ -9,7 +9,7 @@
 - 기록 notes/view/index.json: {키: {pages, v(PDF 수정 시각), en(영어 원문 줄)}} → build.py 가 문항 해설 페이지에 '원장님 분석노트' 칸을 그려요.
 - PDF 를 고쳐 다시 올리면 수정 시각이 바뀌어서 다음 실행 때 그림도 새로 만들어요.
 """
-import glob, json, os, re, subprocess, sys, tempfile
+import glob, json, os, re, subprocess, sys, tempfile, unicodedata
 
 import pypdf
 from PIL import Image  # pip3 install --user pillow (WebP 저장)
@@ -75,12 +75,19 @@ def main():
     folder = glob.glob(os.path.join(DRIVE, '수능 모의고사', f'{y}학년도 수능') if m == 0 else os.path.join(DRIVE, f'고{g} 모의고사', f'{y}년 {m}월 고{g}'))
     if not folder:
         sys.exit(f'드라이브 폴더를 찾지 못했어요: 고{g} {y}년 {m}월')
-    nums = sys.argv[4:] or sorted((f[:-4] for f in os.listdir(folder[0]) if re.fullmatch(r'\d+(-\d+)?\.pdf', f)), key=lambda s: int(s.split('-')[0]))
+    # 파일 이름은 '30.pdf' 또는 '2026-03_고2_30번_분석노트.pdf' 꼴 (note-deliver 와 같게)
+    files = {}
+    for raw in os.listdir(folder[0]):
+        f = unicodedata.normalize('NFC', raw)  # 맥 드라이브 이름은 자모가 풀려 있을 때가 있어요
+        mm = re.fullmatch(r'(\d+(?:-\d+)?)\.pdf', f) or (re.search(r'(?:^|_)(\d+(?:-\d+)?)번', f) if f.endswith('.pdf') and not re.search('문제|정답|해설|듣기', f) else None)
+        if mm and (mm.group(1) not in files or f == mm.group(1) + '.pdf'):
+            files[mm.group(1)] = raw
+    nums = sys.argv[4:] or sorted(files, key=lambda s: int(s.split('-')[0]))
     os.makedirs(OUT, exist_ok=True)
     idx = json.load(open(IDX)) if os.path.exists(IDX) else {}
     done = 0
     for n in nums:
-        src = os.path.join(folder[0], f'{n}.pdf')
+        src = os.path.join(folder[0], files.get(n, f'{n}.pdf'))
         if not os.path.exists(src):
             print(f'{n}번 PDF 없음'); continue
         done += make(g, y, m, n, src, idx)
