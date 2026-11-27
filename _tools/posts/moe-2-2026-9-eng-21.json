@@ -1,0 +1,45 @@
+{
+  "exam": "moe-2-2026-9",
+  "n": 21,
+  "type": "함축 의미",
+  "points": 2,
+  "answer": 2,
+  "topic": "유연한 시간 문화의 회의는 상황에 따라 가지를 뻗는 상록수 같다",
+  "date": "2026-11-28",
+  "keywords": ["2026년 9월 고2 모의고사 영어 21번", "2026 9월 고2 영어 21번 해설", "고2 9월 모의고사 21번 정답", "고2 모의고사 함축 의미", "an evergreen tree 밑줄 의미", "flexible-time culture 회의 지문"],
+  "lead": "2026년 9월 고2 모의고사 영어 21번은 유연한 시간 문화의 회의를 '상록수(an evergreen tree)'에 빗댄 글의 함축 의미 문항이에요. 의제는 나무의 줄기 역할만 하고, 회의는 우선순위가 바뀌면 새 방향으로 가지를 뻗으며 예측 불가능하게 자라요. 정답은 ② a fluid process that adapts to shifting focuses예요.",
+  "flow": [
+    ["비유", "유연한 시간 문화(남미, 유럽 일부, 아프리카, 중동)의 회의는 상록수와 더 비슷하다."],
+    ["줄기", "회의 시작 시간과 주제가 적힌 의제가 미리 배부되고, 이것이 나무의 줄기 역할을 한다."],
+    ["가지", "하지만 회의가 선형적으로 진행되리라는 기대는 없다. 우선순위가 바뀌면 논의가 새 방향으로 가지를 뻗고, 전화나 소그룹 같은 다른 가지도 싹튼다."],
+    ["결론", "가장 생산적인 회의는 예측 불가능하게 자라고, 유능한 관리자는 변하는 우선순위와 요구를 활용할 만큼 유연하다. 방해와 방향 전환은 자연스럽고 필요하다."]
+  ],
+  "evidence": [
+    {"en": "But there's no expectation that the meeting will progress in a linear manner.", "ko": "하지만 회의가 선형적인 방식으로 진행될 것이라는 기대는 없다.", "note": "정해진 순서대로 가지 않는다는 말이에요. ①⑤의 '고정·일관'과 반대예요."},
+    {"en": "… so discussion may branch off in a new direction.", "ko": "… 그래서 논의는 새로운 방향으로 가지를 뻗어 나갈 수 있다.", "note": "나무 비유의 '가지' = 바뀐 초점을 따라가는 논의예요."},
+    {"en": "… the most productive meetings grow in unpredictable ways, and the effective manager is flexible and professional enough to capitalize on priorities and changing needs as they arise.", "ko": "… 가장 생산적인 회의는 예측 불가능한 방식으로 성장하고, 유능한 관리자는 우선순위와 변하는 요구가 생길 때 그것을 활용할 만큼 유연하고 전문적이다.", "note": "상록수 = 상황에 맞춰 계속 자라는 유동적인 과정. ②와 맞아요."}
+  ],
+  "choices": [
+    {"en": "a fixed discussion without any disagreement", "ko": "이견 없이 고정된 논의", "why": "글은 회의가 고정되지 않고 계속 방향이 바뀐다고 해요. 반대예요."},
+    {"en": "a fluid process that adapts to shifting focuses", "ko": "변하는 초점에 적응하는 유동적인 과정", "why": "정답. 우선순위가 바뀌면 가지를 뻗으며 예측 불가능하게 자라는 회의를 말해요."},
+    {"en": "a strict communication system that meets its needs", "ko": "요구를 충족하는 엄격한 의사소통 체계", "why": "'엄격한(strict)'이 글의 유연함과 맞지 않아요."},
+    {"en": "a long-lasting business relationship that remains stable", "ko": "안정적으로 유지되는 오래 지속되는 비즈니스 관계", "why": "evergreen(늘 푸른)을 '오래 지속'으로만 읽은 함정이에요. 비즈니스 관계 이야기는 없어요."},
+    {"en": "a consistent tradition that resists any sudden modifications", "ko": "갑작스러운 수정에 저항하는 일관된 전통", "why": "글은 방해와 방향 전환을 자연스럽고 필요한 것으로 봐요. 반대예요."}
+  ],
+  "grammar": [
+    {"t": "like those found in ~ (과거분사 후치 수식)", "ex": "A meeting in a flexible-time culture like those found in South America, parts of Europe, Africa, and the Middle East is more like an evergreen tree.", "d": "those = cultures, found in ~이 those를 꾸며요. 주어가 길어도 동사는 is예요."},
+    {"t": "동격 that / 관계대명사 what", "ex": "But there's no expectation that the meeting will progress in a linear manner. What seemed like a priority last week … is not necessarily the priority right now", "d": "expectation 뒤 that절은 기대의 내용(동격)이에요. What seemed ~ week가 주어예요. not necessarily는 부분 부정이에요."},
+    {"t": "주격 관계대명사 that + take A in and out of B", "ex": "… as some members have urgent phone calls that take them in and out of the meeting.", "d": "'A를 B에 들락날락하게 하다'."},
+    {"t": "가주어 it + that절 / 형용사 enough to부정사", "ex": "it seems clear that the most productive meetings grow in unpredictable ways, and the effective manager is flexible and professional enough to capitalize on priorities", "d": "it은 가주어, that절이 진주어예요. enough는 형용사 뒤에 와요."}
+  ],
+  "vocab": [["flexible-time culture", "유연한 시간 문화"], ["evergreen tree", "상록수"], ["agenda", "의제"], ["circulate", "배부하다"], ["trunk", "(나무) 줄기"], ["linear manner", "선형적인 방식"], ["priority", "우선순위"], ["craft", "(신중하게) 작성하다"], ["branch off", "가지를 뻗다, 갈라지다"], ["sprout", "싹트다"], ["urgent", "긴급한"], ["sub-group", "소그룹"], ["timely", "시의적절한"], ["productive", "생산적인"], ["unpredictable", "예측 불가능한"], ["capitalize on", "~을 활용하다"], ["arise", "발생하다"], ["interruption", "방해"]],
+  "summary": {"en": "In flexible-time cultures, meetings resemble an evergreen tree: the agenda is only a trunk, and discussions branch off unpredictably as priorities shift.", "ko": "유연한 시간 문화에서 회의는 상록수와 비슷하다. 의제는 줄기일 뿐이고, 우선순위가 바뀌면 논의가 예측 불가능하게 가지를 뻗는다."},
+  "writing": {"en": "The most productive meetings grow in unpredictable ways.", "ko": "가장 생산적인 회의는 예측 불가능한 방식으로 자란다."},
+  "tip": "비유 함축 문제는 비유의 '부분'이 본문에서 무엇에 대응하는지 맞춰 보세요. 줄기 = 의제, 가지 = 바뀐 방향의 논의. 그러면 나무 전체 = 계속 변하며 자라는 회의라는 게 보여요. evergreen의 사전 뜻(늘 푸른, 오래가는)만 보고 ④를 고르면 안 돼요.",
+  "faq": [
+    ["2026년 9월 고2 모의고사 영어 21번 정답은?", "② a fluid process that adapts to shifting focuses예요. 회의가 우선순위에 따라 가지를 뻗으며 예측 불가능하게 자란다는 뜻이에요."],
+    ["2026 9월 고2 21번은 어떤 유형인가요?", "밑줄 친 an evergreen tree가 의미하는 바를 고르는 함축 의미 문항이에요."],
+    ["④ long-lasting relationship은 왜 틀리나요?", "evergreen을 '오래 지속되는'으로만 읽은 함정이에요. 글은 변화와 유연함을 말하고, 비즈니스 관계 이야기는 없어요."]
+  ],
+  "note": "비유 문제는 '줄기는 뭐고 가지는 뭐냐'를 본문에서 찾아 짝지어 보세요. 이 글은 줄기 = 의제, 가지 = 새 방향의 논의라고 직접 알려 줘요."
+}

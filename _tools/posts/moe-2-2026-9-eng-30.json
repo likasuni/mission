@@ -1,0 +1,45 @@
+{
+  "exam": "moe-2-2026-9",
+  "n": 30,
+  "type": "어휘",
+  "points": 3,
+  "answer": 3,
+  "topic": "도덕적 허가와 환경 죄책감, 그리고 균형을 되찾으려는 행동",
+  "date": "2026-11-28",
+  "keywords": ["2026년 9월 고2 모의고사 영어 30번", "2026 9월 고2 영어 30번 해설", "고2 9월 모의고사 30번 정답", "고2 모의고사 어휘", "eco-guilt moral licensing 지문", "reluctant inclined 낱말 쓰임"],
+  "lead": "2026년 9월 고2 모의고사 영어 30번은 도덕적 허가(moral licensing)와 환경 죄책감(eco-guilt)을 다룬 글의 낱말 쓰임 문항이에요. 사람들은 도덕적 균형을 되찾고 죄책감에서 '가능한 한 빠르고 쉽게' 벗어나고 싶어 하니, 임시방편을 믿기를 꺼리는(reluctant) 게 아니라 믿는 경향이 있어야(inclined) 해요. 정답은 ③이에요.",
+  "flow": [
+    ["도덕적 허가", "'친환경' 제품을 사면 좋은 행동을 했다고 여겨, 오히려 속이거나 훔쳐도 된다고 느끼기도 한다. 이런 현상은 환경 협력에서도 관찰돼 왔다."],
+    ["환경 죄책감", "환경에 해로웠던 자신의 행동을 떠올리면 '환경 죄책감'을 느끼고, 이를 보상해 균형을 회복하려고 친환경 행동을 찾는다."],
+    ["임시방편", "균형을 찾을 때 사람들은 빠르고 쉽게 죄책감에서 벗어나고 싶어서 '임시방편'을 믿는 경향이 있다."],
+    ["평가 바꾸기", "태도를 바꾸듯 과거·미래 행동에 대한 평가도 바꾼다. 예컨대 환경 피해 증거를 본 뒤 환경 청원에 서명할 가능성이 더 크다."]
+  ],
+  "evidence": [
+    {"en": "People who experience eco-guilt seek pro-environmental actions to compensate for this guilt and ② restore balance.", "ko": "환경 죄책감을 경험하는 사람들은 이 죄책감을 보상하고 균형을 회복하기 위해 친환경 행동을 찾는다.", "note": "글의 원리예요. 죄책감을 느끼면 '균형 회복'을 원해요."},
+    {"en": "In their search for such a balance, people are ③ reluctant to believe in \"quick-fixes,\" because they want to re-establish the moral balance and escape the guilt as quickly and easily as possible.", "ko": "그러한 균형을 찾는 과정에서 사람들은 '임시방편'을 믿기를 ③ 꺼리는데, 왜냐하면 그들은 도덕적 균형을 다시 세우고 가능한 한 빠르고 쉽게 죄책감에서 벗어나고 싶어 하기 때문이다.", "note": "because 뒤 이유(빠르고 쉽게 벗어나고 싶음)와 맞으려면 임시방편을 '믿는 경향이 있다(inclined)'여야 해요. reluctant는 반대예요."},
+    {"en": "For instance, people are ⑤ more likely to sign a petition addressing environmental damage after viewing evidence of human-caused environmental damage.", "ko": "예를 들어, 사람들은 인간이 일으킨 환경 피해의 증거를 본 뒤에 환경 피해를 다루는 청원서에 서명할 가능성이 더 크다.", "note": "피해 증거 → 죄책감 → 보상 행동(서명) 가능성 '더 큼'. ⑤는 적절해요."}
+  ],
+  "choices": [
+    {"en": "① observed", "ko": "관찰되다", "why": "적절. 도덕적 허가가 환경 협력의 맥락에서도 '관찰되어' 왔다는 뜻이에요."},
+    {"en": "② restore", "ko": "회복하다", "why": "적절. 죄책감을 보상하고 균형을 '회복'하려고 친환경 행동을 찾아요."},
+    {"en": "③ reluctant", "ko": "꺼리는 → 경향이 있는(inclined)", "why": "정답(부적절). 빠르고 쉽게 죄책감에서 벗어나고 싶으니 임시방편을 '믿으려는' 경향이 있어야 해요."},
+    {"en": "④ evaluation", "ko": "평가", "why": "적절. 태도처럼 과거·미래 행동에 대한 '평가'도 바꿀 수 있다는 뜻이에요."},
+    {"en": "⑤ more", "ko": "더 (가능성이 큰)", "why": "적절. 피해 증거를 보면 죄책감 때문에 청원에 서명할 가능성이 '더' 커요."}
+  ],
+  "grammar": [
+    {"t": "be likely to V / feel licensed to V", "ex": "Some people are more likely to cheat and steal after purchasing \"eco-friendly\" products, probably because they feel licensed to do so …", "d": "'~할 가능성이 크다', '그렇게 해도 된다고 허락받은 기분이 들다'. after + 동명사 purchasing."},
+    {"t": "삽입절 they know", "ex": "When people are reminded of deeds they have done that they know were harmful to the environment, …", "d": "deeds (that) they have done 뒤에 that절이 또 와요. that ~ were harmful 안에 they know가 끼어든 구조예요. '해로웠다고 그들이 아는 행동'."},
+    {"t": "as + 원급 + as possible", "ex": "… escape the guilt as quickly and easily as possible.", "d": "'가능한 한 빠르고 쉽게'. 원급 부사 두 개를 and로 묶었어요."},
+    {"t": "in the same way that ~ / 현재분사 후치 수식", "ex": "In the same way that people may change their attitudes …, people may also change their evaluation … a petition addressing environmental damage", "d": "'~와 같은 방식으로'. addressing ~이 petition을 꾸며요(환경 피해를 다루는 청원서)."}
+  ],
+  "vocab": [["eco-friendly", "친환경의"], ["licensed", "허락받은"], ["account A as B", "A를 B로 간주하다"], ["deed", "행동"], ["moral licensing", "도덕적 허가"], ["cooperation", "협력"], ["be reminded of", "~을 떠올리다"], ["eco-guilt", "환경 죄책감"], ["compensate for", "~을 보상하다"], ["restore", "회복하다"], ["reluctant", "꺼리는"], ["inclined", "~하는 경향이 있는"], ["quick-fix", "임시방편"], ["inconsistency", "불일치"], ["evaluation", "평가"], ["burdening", "부담을 주는"], ["petition", "청원서"], ["address", "다루다"]],
+  "summary": {"en": "People who feel eco-guilt look for quick ways to restore moral balance, such as doing something good for the environment.", "ko": "환경 죄책감을 느끼는 사람들은 환경에 좋은 일을 하는 것처럼 도덕적 균형을 회복하는 빠른 방법을 찾는다."},
+  "writing": {"en": "People who experience eco-guilt seek pro-environmental actions to compensate for this guilt.", "ko": "환경 죄책감을 경험하는 사람들은 이 죄책감을 보상하기 위해 친환경 행동을 찾는다."},
+  "tip": "낱말 쓰임 문제는 밑줄 바로 뒤 because·so 문장과 방향이 맞는지 확인하세요. '빠르고 쉽게 벗어나고 싶다'는 이유라면 임시방편을 꺼릴 게 아니라 믿고 싶어져요. tend·likely·apt·inclined·liable·prone(~하는 경향이 있다)은 한데 묶어 외워 두세요.",
+  "faq": [
+    ["2026년 9월 고2 모의고사 영어 30번 정답은?", "③ reluctant예요. 빠르고 쉽게 죄책감에서 벗어나고 싶어서 임시방편을 믿는 경향이 있다(inclined)는 흐름이에요."],
+    ["2026 9월 고2 30번은 어떤 유형인가요?", "밑줄 친 낱말 중 문맥상 쓰임이 적절하지 않은 것을 고르는 어휘 문항(3점)이에요. 도덕적 허가와 환경 죄책감을 다룬 지문이에요."],
+    ["moral licensing은 무슨 뜻인가요?", "좋은 일을 했다고 느끼면 그다음엔 덜 도덕적인 행동을 해도 된다고 스스로 허락하는 심리예요. '도덕적 허가'라고 해요."]
+  ],
+  "note": "because 뒤 이유를 먼저 읽고 밑줄 단어를 넣어 보세요. '빨리 벗어나고 싶다 → 그래서 임시방편을 꺼린다'는 말이 안 되죠. 이유와 결과가 어긋나는 자리가 답이에요."
+}

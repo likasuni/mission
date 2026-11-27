@@ -1,0 +1,45 @@
+{
+  "exam": "moe-2-2026-9",
+  "n": 24,
+  "type": "제목",
+  "points": 2,
+  "answer": 2,
+  "topic": "미디어와 앱의 의도된 설계를 알아차리게 하는 주의력 문해력 교육",
+  "date": "2026-11-28",
+  "keywords": ["2026년 9월 고2 모의고사 영어 24번", "2026 9월 고2 영어 24번 해설", "고2 9월 모의고사 24번 정답", "고2 모의고사 글의 제목", "attention literacy 주의력 문해력 지문", "media literacy clickbait algorithm"],
+  "lead": "2026년 9월 고2 모의고사 영어 24번은 교육자와 사서들이 '주의력 문해력'을 가르친다는 글의 제목 문항이에요. 소셜 미디어 피드와 앱이 주의를 흩뜨리도록 의도적으로 설계됐다는 것을 알아차리게 해서, 학생들을 수동적인 소비자가 아닌 비판적인 사용자로 만든다는 내용이에요. 정답은 ② Raising Media Awareness: Noticing Intended Manipulations예요.",
+  "flow": [
+    ["도입", "진보적인 교육자와 사서들이 '주의력 문해력'을 가르치는 교육과정을 개발하고 있다. 피드와 뉴스 사이트의 구조가 주의를 흩뜨리도록 의도적으로 설계됐음을 알아차리게 돕는 것이다."],
+    ["확장", "미디어 문해력 수업은 출처의 신뢰성 평가에서 나아가 낚시성 기사 알아보기, 알고리즘의 역할 이해, 자신의 주의 산만 패턴 관찰까지 다룬다."],
+    ["예시", "숙제 한 시간 동안 몇 번 작업을 바꾸거나 휴대폰을 보는지 추적하고, 무한 스크롤·알림 색과 소리 같은 앱 설계를 분석한다."],
+    ["결론", "이것들을 의도적인 설계 선택으로 다룸으로써 젊은이들은 수동적인 소비자가 아니라 더 비판적인 사용자가 된다."]
+  ],
+  "evidence": [
+    {"en": "This means helping students recognize, for example, how the architecture of a social media feed or a news site is deliberately designed to distract or provoke them.", "ko": "이것은 예를 들어 학생들이 소셜 미디어 피드나 뉴스 사이트의 구조가 그들의 주의를 흩뜨리거나 자극하도록 어떻게 의도적으로 설계되었는지 알아차리도록 돕는 것을 의미한다.", "note": "deliberately designed = Intended Manipulations, recognize = Noticing. ②와 그대로 맞아요."},
+    {"en": "… now they also include recognizing clickbait, understanding the role of algorithms in what content is served up, and observing one's own patterns of distraction.", "ko": "… 이제 그것은 낚시성 기사를 알아보는 것, 어떤 콘텐츠가 제공되는지에서 알고리즘의 역할을 이해하는 것, 자신의 주의 산만 패턴을 관찰하는 것도 포함한다.", "note": "신뢰성 평가(①)는 '전통적으로' 다루던 것일 뿐, 글은 그 너머를 말해요."},
+    {"en": "By treating these as deliberate design choices …, young people become more critical users rather than passive consumers.", "ko": "이것들을 의도적인 설계 선택으로 다룸으로써 … 젊은이들은 수동적인 소비자가 아니라 더 비판적인 사용자가 된다.", "note": "마지막 결론도 '의도된 설계를 알아차리기 → 비판적 사용자'예요."}
+  ],
+  "choices": [
+    {"en": "Can Students Learn to Identify the Credibility of Information?", "ko": "학생들은 정보의 신뢰성을 판별하는 법을 배울 수 있을까?", "why": "신뢰성 평가는 전통적인 수업 내용으로 잠깐 나올 뿐, 글의 중심은 의도된 설계를 알아차리는 것이에요."},
+    {"en": "Raising Media Awareness: Noticing Intended Manipulations", "ko": "미디어 인식 높이기: 의도된 조작 알아차리기", "why": "정답. 피드·앱이 주의를 흩뜨리도록 의도적으로 설계됐음을 알아차리게 하는 교육을 잘 담았어요."},
+    {"en": "Application Developers' Focus on Users' Activeness", "ko": "앱 개발자들의 사용자 능동성에 대한 관심", "why": "글의 주체는 개발자가 아니라 교육자·사서와 학생이에요."},
+    {"en": "The Dark Side of Algorithms: A Threat to Privacy", "ko": "알고리즘의 어두운 면: 사생활에 대한 위협", "why": "알고리즘이 나오지만 사생활 이야기는 없어요."},
+    {"en": "Using Social Media to Communicate: Treasure or Poison?", "ko": "소통을 위한 소셜 미디어 사용: 보물인가 독인가?", "why": "소통 수단으로서 장단점을 따지는 글이 아니에요."}
+  ],
+  "grammar": [
+    {"t": "관계대명사 what + we might call", "ex": "… curricula to teach what we might call attention literacy.", "d": "'우리가 ~이라 부를 만한 것'. what절이 teach의 목적어예요."},
+    {"t": "help + O + 동사원형 / 간접의문문", "ex": "This means helping students recognize … how the architecture of a social media feed … is deliberately designed to distract or provoke them.", "d": "help 뒤 목적격 보어는 동사원형(recognize)이나 to부정사. how ~ them은 recognize의 목적어인 간접의문문이에요."},
+    {"t": "동명사 병렬 / 의문사 + to부정사", "ex": "Classes … traditionally cover how to evaluate … now they also include recognizing clickbait, understanding …, and observing …", "d": "include의 목적어 세 개가 모두 동명사로 나란해요."},
+    {"t": "by + -ing / treat A as B / A rather than B", "ex": "By treating these as deliberate design choices, young people become more critical users rather than passive consumers.", "d": "'A를 B로 다룸으로써', 'B가 아니라 A'."}
+  ],
+  "vocab": [["progressive", "진보적인"], ["curriculum (pl. curricula)", "교육과정"], ["literacy", "문해력"], ["architecture", "구조"], ["deliberately", "의도적으로"], ["distract", "주의를 흩뜨리다"], ["provoke", "자극하다"], ["credibility", "신뢰성"], ["clickbait", "낚시성 기사"], ["serve up", "제공하다"], ["be tasked with", "~하는 과제를 받다"], ["fragmentation", "분산, 파편화"], ["unpack", "분석하다"], ["infinite scrolling", "무한 스크롤"], ["notification", "알림"], ["be rooted in", "~에 뿌리를 두다"], ["profit motive", "이익 동기"], ["passive", "수동적인"]],
+  "summary": {"en": "Attention literacy classes teach students to notice how media and apps are deliberately designed to grab their attention, making them critical users.", "ko": "주의력 문해력 수업은 미디어와 앱이 주의를 끌도록 의도적으로 설계된 방식을 알아차리게 하여 학생들을 비판적 사용자로 만든다."},
+  "writing": {"en": "Young people become more critical users rather than passive consumers.", "ko": "젊은이들은 수동적인 소비자가 아니라 더 비판적인 사용자가 된다."},
+  "tip": "제목 문제는 첫 문단의 핵심어(deliberately designed)와 결론(critical users)을 둘 다 담은 선택지를 고르세요. ①처럼 '전통적으로' 하던 일을 소개하는 문장의 단어(credibility)를 쓴 선택지는 함정이에요.",
+  "faq": [
+    ["2026년 9월 고2 모의고사 영어 24번 정답은?", "② Raising Media Awareness: Noticing Intended Manipulations예요. 미디어가 의도적으로 설계됐음을 알아차리게 하는 교육을 다룬 글이에요."],
+    ["2026 9월 고2 24번은 어떤 유형인가요?", "글의 제목을 고르는 문항이에요. 주의력 문해력(attention literacy) 교육을 다룬 지문이에요."],
+    ["① 신뢰성 판별은 왜 답이 아닌가요?", "출처의 신뢰성 평가는 미디어 문해력 수업이 '전통적으로' 다루던 것이라고 잠깐 나올 뿐이에요. 글은 그 너머(낚시성 기사·알고리즘·주의 산만)를 강조해요."]
+  ],
+  "note": "제목 문제에서 '전통적으로 ~했다, 이제는 ~도'라는 흐름이 나오면 '이제는' 쪽이 글의 중심이에요. 옛것을 담은 선택지부터 지우면 빨라요."
+}

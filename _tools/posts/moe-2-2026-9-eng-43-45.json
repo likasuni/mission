@@ -1,0 +1,76 @@
+{
+  "exam": "moe-2-2026-9",
+  "n": 43,
+  "n2": 45,
+  "type": "장문 (순서·지칭·내용 일치)",
+  "points": 2,
+  "topic": "안뜰 건너 기타 연주자에게 가사를 보낸 Ridge",
+  "date": "2026-11-28",
+  "lead": "2026년 9월 고2 모의고사 영어 43~45번은 음악 전공을 꿈꾸는 고등학생 Ridge가 안뜰 건너편 남자의 기타 연주에 자기 가사를 붙여 부르다가, 문자로 연락을 주고받고 가사를 보내게 되는 이야기의 장문 세트예요. 알고 보니 그 남자는 청각 장애가 있는 기타리스트이자 작곡가였어요. 43번 순서는 (A) → (C) → (D) → (B), 44번은 (c)만 남자, 45번은 '가사를 남에게 자주 보여 주었다'가 불일치예요. 정답은 43번 ③, 44번 ③, 45번 ②예요.",
+  "flow": [
+    ["(A)", "음악 전공을 꿈꾸는 Ridge는 몇 주 동안 밤마다 발코니에서 안뜰 건너 남자의 기타 연주를 들으며 지어낸 가사를 붙였다. 어느 날 밤 숙제를 한다며 발코니에 나가 리듬을 따라가기 시작한다."],
+    ["(C)", "Ridge가 따라 부르는 중에 남자가 노래 중간에 처음으로 연주를 멈춘다. 검지를 들어 '잠깐만'이라는 듯 하고, 전화번호와 '문자 보내'가 적힌 종이를 들어 보인 뒤 '질문이 있어'라고 쓴다."],
+    ["(D)", "왜 전화 대신 문자를 원하는지 궁금해하며 Ridge가 '질문이 뭐예요?'라고 보낸다. 남자는 '아직 가사도 안 붙인 내 노래에 어떻게 가사를 붙여 부르는지 알고 싶어'라며 '보내 줄래?'라고 묻는다."],
+    ["(B)", "가사를 한 번도 남과 나눈 적 없는 Ridge는 망설이다 결국 좋아하는 가사 하나를 보낸다. 며칠 뒤 남자는 새 앨범에 그 가사를 쓰고 싶다고 하고, 알고 보니 그는 청각 장애가 있는 기타리스트이자 작곡가였다."]
+  ],
+  "tip": "43번: (A) 끝 '리듬을 따라가기 시작' → (C) '따라 부르는 동안 남자가 멈춤', (C) 끝 '질문이 있어' → (D) '질문이 뭐예요?', (D) 끝 '보내 줄래?' → (B) '가사를 요청하는 메시지를 읽고 망설임'처럼 단락 끝과 첫 문장을 이어 보세요. 44번: 대화가 오가는 장면은 '누가 쓰고, 누가 입력했는지' 동작의 주인을 확인하세요. 45번: never(한 번도 ~않다) 같은 부정어를 선택지와 꼭 대조하세요.",
+  "keywords": ["2026년 9월 고2 모의고사 영어 43~45번", "2026 9월 고2 영어 43~45번 해설", "고2 9월 모의고사 43번 정답", "고2 9월 모의고사 44번 정답", "고2 9월 모의고사 45번 정답", "고2 모의고사 장문 독해", "Ridge guitar lyrics 지문"],
+  "qs": [
+    {"n": 43, "type": "장문 순서", "points": 2, "answer": 3,
+     "evidence": [
+       {"en": "(A) … The man was playing the guitar on his balcony as usual and Ridge started to mindlessly follow the rhythm. / (C) While Ridge was singing along to the music, the man suddenly stopped playing.", "ko": "(A) … 남자는 평소처럼 발코니에서 기타를 치고 있었고 Ridge는 무심코 리듬을 따라가기 시작했다. / (C) Ridge가 음악에 맞춰 따라 부르는 동안, 남자가 갑자기 연주를 멈췄다.", "note": "리듬을 따라가기 시작 → 따라 부르는 중에 멈춤. (A) → (C)."},
+       {"en": "(C) … Then he flipped the paper over and wrote, \"I have a question.\" / (D) Curious about the man's question, … Ridge pulled out his phone and entered the number.", "ko": "(C) … 그러고 나서 그는 종이를 뒤집어 '질문이 있어'라고 썼다. / (D) 남자의 질문이 궁금해서 … Ridge는 휴대폰을 꺼내 번호를 입력했다.", "note": "'질문이 있어' → '그 질문이 궁금해서'. (C) → (D)."},
+       {"en": "(D) … The man sent another message asking, \"Will you send them to me?\" / (B) After reading the man's message asking for his lyrics, Ridge hesitated.", "ko": "(D) … 남자는 '그것들을 나한테 보내 줄래?'라고 묻는 또 다른 메시지를 보냈다. / (B) 가사를 요청하는 남자의 메시지를 읽은 후, Ridge는 망설였다.", "note": "'보내 줄래?' → '가사를 요청하는 메시지를 읽고'. (D) → (B)."}
+     ],
+     "choices": [
+       {"en": "① (B) - (D) - (C)", "ko": "", "why": "(B)의 '가사를 요청하는 메시지'는 (D)에서 요청이 나온 뒤라야 해요."},
+       {"en": "② (C) - (B) - (D)", "ko": "", "why": "(C) 끝 '질문이 있어' 다음에는 질문을 묻는 (D)가 와야 해요."},
+       {"en": "③ (C) - (D) - (B)", "ko": "", "why": "정답. 멈춤·'질문이 있어'(C) → '질문이 뭐예요?'·'보내 줄래?'(D) → 망설이다 보냄(B)."},
+       {"en": "④ (D) - (B) - (C)", "ko": "", "why": "(D)의 '남자의 질문'은 (C)에서 '질문이 있어'가 나온 뒤라야 해요."},
+       {"en": "⑤ (D) - (C) - (B)", "ko": "", "why": "(D)가 (C)보다 앞설 수 없어요. 질문 이야기가 먼저 나와야 해요."}
+     ]},
+    {"n": 44, "type": "지칭 대상", "points": 2, "answer": 3,
+     "evidence": [
+       {"en": "Although the songs the man played were all new to Ridge, (a) he somehow managed to attach his own made-up lyrics to them.", "ko": "남자가 연주한 노래들은 Ridge에게 모두 처음이었지만, (a) 그는 어떻게든 자신이 지어낸 가사를 그것들에 붙였다.", "note": "자기 가사를 붙인 사람은 Ridge. (a) = Ridge."},
+       {"en": "Then (c) he flipped the paper over and wrote, \"I have a question.\"", "ko": "그러고 나서 (c) 그는 종이를 뒤집어 '질문이 있어'라고 썼다.", "note": "종이를 들어 보이고 뒤집어 쓴 사람은 남자(기타 연주자). (c) = the man."},
+       {"en": "(d) He typed, \"What's your question?\"", "ko": "(d) 그는 '질문이 뭐예요?'라고 입력했다.", "note": "휴대폰을 꺼내 질문을 입력한 사람은 Ridge. (d) = Ridge."}
+     ],
+     "choices": [
+       {"en": "(a) he", "ko": "Ridge", "why": "남자의 노래에 자신이 지어낸 가사를 붙인 사람은 Ridge예요."},
+       {"en": "(b) he", "ko": "Ridge", "why": "좋아하는 가사 하나를 적어 남자에게 보낸 사람은 Ridge예요."},
+       {"en": "(c) he", "ko": "the man", "why": "정답. 전화번호가 적힌 종이를 뒤집어 '질문이 있어'라고 쓴 사람은 남자예요."},
+       {"en": "(d) He", "ko": "Ridge", "why": "번호를 입력하고 '질문이 뭐예요?'라고 보낸 사람은 Ridge예요."},
+       {"en": "(e) he", "ko": "Ridge", "why": "남자가 자신을 볼 수 있다고 생각하지 못한 사람은 Ridge예요."}
+     ]},
+    {"n": 45, "type": "내용 불일치", "points": 2, "answer": 2,
+     "evidence": [
+       {"en": "He told his mom he was going out to the balcony to do his homework.", "ko": "그는 엄마에게 숙제를 하러 발코니에 나간다고 말했다.", "note": "① 일치."},
+       {"en": "Ridge loved writing lyrics, but he had never shared anything he'd written with anyone.", "ko": "Ridge는 가사 쓰는 것을 좋아했지만, 자신이 쓴 것을 누구와도 공유한 적이 없었다.", "note": "② '자주 보여 주었다'와 반대예요. 정답."},
+       {"en": "He wanted to use Ridge's lyrics for his new album.", "ko": "그는 Ridge의 가사를 새 앨범에 쓰고 싶어 했다.", "note": "③ 일치."}
+     ],
+     "choices": [
+       {"en": "Ridge는 엄마에게 숙제를 하러 발코니에 나간다고 말했다.", "ko": "(A)", "why": "일치. He told his mom he was going out to the balcony to do his homework."},
+       {"en": "Ridge는 자신이 쓴 가사를 남에게 자주 보여주었다.", "ko": "(B)", "why": "정답(불일치). he had never shared anything he'd written with anyone — 한 번도 보여 준 적이 없어요."},
+       {"en": "남자는 Ridge의 가사를 자신의 새 앨범에 사용하고 싶어 했다.", "ko": "(B)", "why": "일치. He wanted to use Ridge's lyrics for his new album."},
+       {"en": "남자는 한 장의 종이를 들어 올렸다.", "ko": "(C)", "why": "일치. He lifted one sheet of paper."},
+       {"en": "Ridge는 왜 남자가 전화 대신 문자 메시지를 요청했는지 궁금했다.", "ko": "(D)", "why": "일치. wondering why he had asked for a text instead of a call."}
+     ]}
+  ],
+  "grammar": [
+    {"t": "지각동사 + O + -ing", "ex": "every night he listened to a man playing the guitar in the apartment across the courtyard.", "d": "listen to·see·notice + 목적어 + -ing(동사원형). to play는 틀려요. could see him sitting, had noticed him singing도 같은 구조예요."},
+    {"t": "양보 although / manage to V", "ex": "Although the songs the man played were all new to Ridge, he somehow managed to attach his own made-up lyrics to them.", "d": "the songs (that) the man played에서 목적격 관계대명사가 생략됐어요. manage to는 '어떻게든 ~해내다'."},
+    {"t": "as if + to부정사", "ex": "The man held up his index finger as if to say, \"Hold on.\"", "d": "'마치 ~하려는 듯이'. as if 뒤에 절 대신 to부정사가 왔어요."},
+    {"t": "과거완료 had p.p.", "ex": "He had never stopped in the middle of a song … he had never shared anything he'd written with anyone.", "d": "이야기의 과거 시점보다 앞선 경험을 말해요."},
+    {"t": "형용사·분사구문 / 간접의문문", "ex": "Curious about the man's question, and wondering why he had asked for a text instead of a call, Ridge pulled out his phone", "d": "(Being) Curious ~, wondering ~이 이유를 나타내는 분사구문이에요. why ~ call은 간접의문문이에요."},
+    {"t": "It turned out (that) ~", "ex": "It turned out he was a deaf guitarist and songwriter in a band called Brennan's Band.", "d": "'알고 보니 ~였다'. called ~는 band를 꾸미는 과거분사예요."}
+  ],
+  "vocab": [["major in", "~을 전공하다"], ["courtyard", "안뜰"], ["lyrics", "가사"], ["made-up", "지어낸"], ["slide open", "(문을) 밀어 열다"], ["mindlessly", "무심코"], ["sing along (to)", "(~에 맞춰) 따라 부르다"], ["look in one's direction", "~ 쪽을 바라보다"], ["index finger", "검지"], ["narrow one's eyes", "눈을 가늘게 뜨다"], ["flip over", "뒤집다"], ["curious", "궁금한"], ["enter", "입력하다"], ["hesitate", "망설이다"], ["eventually", "결국"], ["turn out", "~로 밝혀지다"], ["deaf", "청각 장애가 있는"]],
+  "summary": {"en": "Ridge sang his own lyrics to a neighbor's guitar music, and the neighbor, a deaf songwriter, asked to use his lyrics for a new album.", "ko": "Ridge는 이웃의 기타 음악에 자신의 가사를 붙여 불렀고, 청각 장애가 있는 작곡가인 그 이웃은 그의 가사를 새 앨범에 쓰고 싶어 했다."},
+  "writing": {"en": "He had never shared anything he'd written with anyone.", "ko": "그는 자신이 쓴 것을 누구와도 공유한 적이 없었다."},
+  "faq": [
+    ["2026년 9월 고2 모의고사 영어 43~45번 정답은?", "43번 ③ (C)-(D)-(B), 44번 ③ (c), 45번 ②예요."],
+    ["44번에서 (c)만 다른 이유는?", "종이를 뒤집어 '질문이 있어'라고 쓴 사람은 기타 치는 남자예요. 나머지 (a)(b)(d)(e)는 모두 Ridge예요."],
+    ["남자는 왜 전화 대신 문자를 원했나요?", "글 끝에서 그가 청각 장애가 있는 기타리스트라는 게 밝혀져요. 45번 ⑤ 선택지와 이어지는 반전이에요."]
+  ],
+  "note": "장문 순서는 단락 끝 말과 다음 단락 첫 말이 '질문이 있어 → 질문이 뭐예요?', '보내 줄래? → 요청을 읽고'처럼 대화로 이어지는지 보면 빨리 풀려요."
+}

@@ -1,0 +1,44 @@
+{
+  "exam": "moe-2-2026-9",
+  "n": 26,
+  "type": "내용 일치",
+  "points": 2,
+  "answer": 2,
+  "topic": "미국 조경 건축의 아버지 Frederick Law Olmsted의 일생",
+  "date": "2026-11-28",
+  "keywords": ["2026년 9월 고2 모의고사 영어 26번", "2026 9월 고2 영어 26번 해설", "고2 9월 모의고사 26번 정답", "고2 모의고사 내용 일치", "Frederick Law Olmsted 지문", "Central Park 설계 Olmsted"],
+  "lead": "2026년 9월 고2 모의고사 영어 26번은 '미국 조경 건축의 아버지' Frederick Law Olmsted의 일생을 다룬 내용 일치 문항이에요. 14세에 Yale College에서 공부할 준비를 했지만 옻나무 중독으로 시력이 손상돼 입학하지 못했다고 하니, '입학했다'는 ②가 일치하지 않아요. 정답은 ②예요.",
+  "flow": [
+    ["소개", "Olmsted는 미국 조경 건축의 아버지로 알려졌고 1822년에 태어났다. 어릴 때 경치를 사랑한 아버지와 자주 시골로 여행을 갔다."],
+    ["청년기", "14세에 Yale College 입학을 준비했지만 심한 옻나무 중독으로 시력이 손상돼 입학하지 못했다. 대신 사무원·선원·농부로 일하며 경험을 쌓았다."],
+    ["업적", "1858년 Calvert Vaux와 함께 '그린스워드 계획'으로 Central Park 설계 공모전에서 당선됐다. 남북 전쟁 중엔 미국 위생 위원회 사무총장으로 일했다."],
+    ["유산", "1903년 세상을 떠난 뒤 아들들과 후계자들이 설계 철학을 이어 갔고, 1979년 Brookline의 집과 사무실이 국가 사적지로 지정됐다."]
+  ],
+  "evidence": [
+    {"en": "At age 14, he was preparing himself to study at Yale College, but he could not enter due to a severe sumac poisoning that damaged his eyesight.", "ko": "14세에 그는 Yale College에서 공부할 준비를 하고 있었지만, 시력을 손상시킨 심한 옻나무 중독 때문에 입학할 수 없었다.", "note": "'입학할 수 없었다'예요. ② '입학했다'와 반대라서 정답이에요."},
+    {"en": "Instead of attending a college, he gained experience working as a clerk, a sailor, and a farmer.", "ko": "대학에 다니는 대신, 그는 사무원, 선원, 농부로 일하며 경험을 쌓았다.", "note": "바로 다음 문장도 대학에 다니지 않았다는 것을 다시 확인해 줘요."},
+    {"en": "In 1858, he worked with Calvert Vaux and won the design competition for New York City's Central Park with the \"Greensward Plan.\"", "ko": "1858년에 그는 Calvert Vaux와 함께 일했고 '그린스워드 계획'으로 뉴욕시 Central Park 설계 공모전에서 당선되었다.", "note": "③ 일치. 연도(1858)와 내용을 함께 맞춰 보세요."}
+  ],
+  "choices": [
+    {"en": "어렸을 때 아버지와 시골로 여행을 다녔다.", "ko": "어린 시절", "why": "일치. When Olmsted was young, he often went on trips to the countryside with his father."},
+    {"en": "14세에 Yale College에 입학했다.", "ko": "14세", "why": "정답(불일치). 옻나무 중독으로 시력이 손상돼 입학할 수 없었어요(he could not enter)."},
+    {"en": "1858년에 뉴욕시 Central Park 설계 공모전에서 당선되었다.", "ko": "1858년", "why": "일치. won the design competition for New York City's Central Park."},
+    {"en": "Civil War 기간 중 미국 Sanitary Commission에서 일했다.", "ko": "남북 전쟁", "why": "일치. During the Civil War, Olmsted served as General Secretary of the United States Sanitary Commission."},
+    {"en": "Brookline에 있는 집과 사무실이 National Historic Site로 지정되었다.", "ko": "1979년", "why": "일치. the National Park Service designated his home and office in Brookline, Massachusetts, as a National Historic Site."}
+  ],
+  "grammar": [
+    {"t": "과거분사구 삽입 known as ~ / 계속적 용법 who", "ex": "Frederick Law Olmsted, known as the father of American landscape architecture, was born in 1822.", "d": "known as ~는 '~로 알려진'. 삽입구라 동사는 was born이에요. with his father, who loved scenery의 who는 아버지를 덧붙여 설명해요."},
+    {"t": "due to + 명사 / 주격 관계대명사 that", "ex": "… but he could not enter due to a severe sumac poisoning that damaged his eyesight.", "d": "due to 뒤에는 명사(구)가 와요. that damaged ~가 poisoning을 꾸며요."},
+    {"t": "instead of + 동명사 / work as ~", "ex": "Instead of attending a college, he gained experience working as a clerk, a sailor, and a farmer.", "d": "전치사 of 뒤라 동명사 attending. gain experience (in) -ing는 '~하며 경험을 쌓다'."},
+    {"t": "양보 although / designate A as B / 목적 to부정사", "ex": "In 1979, the National Park Service designated his home and office … as a National Historic Site to honor his legacy.", "d": "'A를 B로 지정하다'. to honor는 '기리기 위해'(목적)예요."}
+  ],
+  "vocab": [["landscape architecture", "조경 건축"], ["scenery", "경치"], ["severe", "심한"], ["sumac", "옻나무"], ["poisoning", "중독"], ["eyesight", "시력"], ["attend", "다니다"], ["clerk", "사무원"], ["competition", "공모전"], ["serve as", "~로 일하다"], ["sanitary", "위생의"], ["pass away", "세상을 떠나다"], ["successor", "후계자"], ["designate", "지정하다"], ["honor", "기리다"], ["legacy", "유산"]],
+  "summary": {"en": "Olmsted, the father of American landscape architecture, could not attend college but designed Central Park and left a lasting legacy.", "ko": "미국 조경 건축의 아버지 Olmsted는 대학에 다니지 못했지만 Central Park를 설계하고 오래 남는 유산을 남겼다."},
+  "writing": {"en": "He could not enter Yale College due to a severe sumac poisoning that damaged his eyesight.", "ko": "그는 시력을 손상시킨 심한 옻나무 중독 때문에 Yale College에 입학할 수 없었다."},
+  "tip": "인물 내용 일치는 선택지 순서가 글 순서와 같아요. 나이·연도(14세, 1858년, 1979년) 옆 문장부터 찾아 한 줄씩 대조하세요. '준비했다(was preparing)'와 '입학했다'처럼 비슷해 보이는 동사를 특히 조심하세요.",
+  "faq": [
+    ["2026년 9월 고2 모의고사 영어 26번 정답은?", "② 14세에 Yale College에 입학했다예요. 글에서는 시력 손상 때문에 입학하지 못했다고 해요."],
+    ["2026 9월 고2 26번은 어떤 유형인가요?", "Frederick Law Olmsted에 관한 글의 내용과 일치하지 않는 것을 고르는 내용 일치 문항이에요."],
+    ["④ Sanitary Commission은 무슨 뜻인가요?", "남북 전쟁 때의 미국 위생 위원회예요. Olmsted는 그곳의 사무총장(General Secretary)으로 일했어요."]
+  ]
+}

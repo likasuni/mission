@@ -1,0 +1,45 @@
+{
+  "exam": "moe-1-2026-6",
+  "n": 22,
+  "type": "요지",
+  "points": 2,
+  "answer": 1,
+  "topic": "창의성을 높이려면 관심을 좁히지 말고 경험의 폭을 넓혀야 한다",
+  "date": "2026-11-28",
+  "keywords": ["2026년 6월 고1 모의고사 영어 22번", "2026 6월 고1 영어 22번 해설", "고1 6월 모의고사 22번 정답", "고1 모의고사 글의 요지", "eureka moment 창의성 지문", "breadth of experience 경험의 폭"],
+  "lead": "2026년 6월 고1 모의고사 영어 22번은 오랫동안 한 문제에 몰두하면서 주변의 온갖 것에 주의를 기울이면, 편안할 때 창의적 해결책이 떠오른다는 글의 요지 문항이에요. 필자는 '관심을 한 주제로 좁히라는 뜻이 아니다'라고 못 박고 On the contrary 뒤에서 경험의 폭이 창의성의 열쇠라고 말해요. 정답은 ① 창의성 향상을 위해 폭넓은 경험이 필요하다예요.",
+  "flow": [
+    ["전제", "어려운 기술 문제를 여러 해 붙들고 있으면서, 그 문제와 관련 있을 만한 다른 무엇에든 주의를 기울여 왔다고 가정해 보자."],
+    ["현상", "그러면 편안할 때 창의적 해결책이 갑자기 떠오를 가능성이 높다. 이런 '유레카의 순간'은 예기치 않을 때 일어난다."],
+    ["방향", "그러니 자연 발생적 창의성을 높이려면 가치 있는 결과로 이어질 만한 것들에 주의해야 한다. 하지만 관심을 한 주제로 좁히라는 뜻은 아니다."],
+    ["주장", "오히려 경험의 폭이 창의성의 열쇠다. 경험이 좁으면 상상력의 범위도 좁아져 창의성에 해롭다."]
+  ],
+  "evidence": [
+    {"en": "This does not mean that you must narrow down your interest to one specific topic.", "ko": "이는 관심을 하나의 특정 주제로 좁혀야 한다는 뜻이 아니다.", "note": "'~라는 뜻이 아니다'로 오해를 먼저 막아요. 다음 문장에 진짜 주장이 온다는 신호예요."},
+    {"en": "On the contrary, breadth of experience is the key to creativity.", "ko": "오히려 경험의 폭이 창의성의 열쇠다.", "note": "글의 요지 문장이에요. ① '폭넓은 경험이 필요하다'와 그대로 맞아요."},
+    {"en": "If your experience is limited to a narrow range of topics, then the scope of your imagination will likewise be narrow, which would be harmful to creativity.", "ko": "경험이 좁은 범위의 주제에 한정되면 상상력의 범위도 마찬가지로 좁아질 것이고, 그것은 창의성에 해로울 것이다.", "note": "반대 경우(좁은 경험 → 좁은 상상력)까지 보여 주며 주장을 굳혀요."}
+  ],
+  "choices": [
+    {"en": "창의성 향상을 위해 폭넓은 경험이 필요하다.", "ko": "경험의 폭", "why": "정답. breadth of experience is the key to creativity를 그대로 옮긴 말이에요."},
+    {"en": "유연한 사고는 심리적으로 안정될 때 길러진다.", "ko": "심리적 안정", "why": "relaxed는 해결책이 떠오르는 '때'를 말하는 과정의 한 조건일 뿐, 필자의 주장이 아니에요."},
+    {"en": "친숙한 환경에서 창의적인 해결책이 잘 떠오른다.", "ko": "친숙한 환경", "why": "환경이 친숙한지는 글에서 다루지 않아요."},
+    {"en": "체계적인 계획 수립이 창의적인 활동에 도움이 된다.", "ko": "계획 수립", "why": "계획 이야기는 나오지 않아요. 오히려 유레카의 순간은 예기치 않게 온다고 해요."},
+    {"en": "문제 해결을 위해서는 한 분야에 집중하는 것이 중요하다.", "ko": "한 분야 집중", "why": "본문이 '한 주제로 좁히라는 뜻이 아니다'라고 분명히 부정한 내용이에요."}
+  ],
+  "grammar": [
+    {"t": "Suppose (that) ~ / Let's also suppose that ~", "ex": "Suppose you have been working on the solution to a challenging technological problem for many years.", "d": "'~라고 가정해 보자'. 명령문 꼴로 상황을 세워요. have been working은 현재완료진행이에요."},
+    {"t": "chances are that ~", "ex": "In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed.", "d": "'~할 가능성이 높다'. that절이 진짜 내용이에요."},
+    {"t": "This does not mean that ~ / narrow down A to B", "ex": "This does not mean that you must narrow down your interest to one specific topic.", "d": "'이것이 ~라는 뜻은 아니다'. 요지 문제에서 바로 뒤 문장을 주목하게 만드는 표현이에요."},
+    {"t": "계속적 용법 which (앞 절 전체)", "ex": "… the scope of your imagination will likewise be narrow, which would be harmful to creativity.", "d": "which가 '상상력이 좁아지는 것' 전체를 받아요."}
+  ],
+  "vocab": [["work on", "~에 매달리다"], ["challenging", "어려운"], ["pay attention to", "~에 주의를 기울이다"], ["encounter", "마주치다"], ["be related to", "~과 관련이 있다"], ["chances are that", "~할 가능성이 높다"], ["pop up", "불쑥 떠오르다"], ["eureka moment", "유레카의 순간"], ["insight", "통찰"], ["take place", "일어나다"], ["enhance", "높이다"], ["spontaneous", "자연 발생적인"], ["narrow down A to B", "A를 B로 좁히다"], ["on the contrary", "오히려"], ["breadth of experience", "경험의 폭"], ["be limited to", "~에 한정되다"], ["scope", "범위"], ["likewise", "마찬가지로"]],
+  "summary": {"en": "Creative solutions often pop up unexpectedly, so to boost creativity we should not narrow our interests; breadth of experience is the key.", "ko": "창의적 해결책은 예기치 않게 떠오르므로, 창의성을 높이려면 관심을 좁히지 말아야 한다. 경험의 폭이 열쇠다."},
+  "writing": {"en": "Breadth of experience is the key to creativity.", "ko": "경험의 폭이 창의성의 열쇠다."},
+  "tip": "요지 문제의 결정타는 On the contrary·Rather 같은 전환어예요. '~라는 뜻이 아니다 → 오히려 …'가 보이면 '오히려' 뒤가 요지예요. ②처럼 과정 속 한 조건(relaxed)을 요지로 착각하지 마세요.",
+  "faq": [
+    ["2026년 6월 고1 모의고사 영어 22번 정답은?", "① 창의성 향상을 위해 폭넓은 경험이 필요하다예요. On the contrary, breadth of experience is the key to creativity가 근거예요."],
+    ["2026 6월 고1 22번은 어떤 유형인가요?", "글의 요지를 고르는 문항이에요. 유레카의 순간과 창의성을 다룬 지문이에요."],
+    ["⑤ 한 분야에 집중하는 것이 왜 답이 아닌가요?", "본문이 '관심을 한 주제로 좁히라는 뜻이 아니다'라고 명시적으로 부정했어요. 정반대 내용이에요."]
+  ],
+  "note": "이 글은 '좁히라는 뜻이 아니다'라고 한 번 막고 On the contrary로 주장을 박아요. 요지 문제는 이렇게 필자가 스스로 부정한 말과, 그 뒤에 내세운 말을 짝으로 찾으면 금방 풀려요."
+}
