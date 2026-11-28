@@ -122,6 +122,9 @@ def to_html(s):
                             '#eaf2ff', f'2px solid {BLUE}'))
         elif '서술형' in name:
             out.append(_box(f'<b><font color="{GOLD}">서술형 대비</font></b><br>' + '<br>'.join(_e(l) for l in items), NAVY, white=True))
+        elif '원문' in name:  # 시험에 나올 문장 (원문 2~3개 + 분석, 2026-11-28~)
+            out.append(_box('<br>'.join(f'<b><font color="{NAVY}">{_e(l.strip())}</font></b>' if re.match(r'[①-⑨] ', l.strip())
+                                        else _line(l) for l in items), '#ffffff', f'1.5px solid {NAVY}', 14))
         elif '구문' in name or '오답' in name or '푸는' in name:
             out.append(_box('<br>'.join(_line(l) for l in items), '#f7f8fb', '1px solid #dfe3ea'))
         else:
