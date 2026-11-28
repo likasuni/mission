@@ -1,0 +1,45 @@
+{
+  "exam": "moe-3-2027-9",
+  "n": 23,
+  "type": "주제",
+  "points": 2,
+  "answer": 5,
+  "topic": "쾌락 분자가 아니라 가능성을 실현시키는 힘으로서의 도파민",
+  "date": "2026-11-28",
+  "keywords": ["2026년 9월 고3 모의고사 영어 23번", "2026 9월 고3 영어 23번 해설", "2027학년도 9월 모의평가 영어 23번", "고3 9월 모의고사 23번 정답", "고3 모의고사 글의 주제", "dopamine pleasure molecule 지문"],
+  "lead": "2026년 9월 고3 모의고사(2027학년도 9월 모의평가) 영어 23번은 도파민을 '쾌락 분자'로만 보는 대중의 생각과 달리, 기대·노력·상상을 이끌고 가능성을 열어 주는 힘이라고 설명하는 글의 주제 문항이에요. 도파민은 만족감이 아니라 가능성을 전달하고, 결과뿐 아니라 과정에 보상을 줘요. 정답은 ⑤ force of dopamine as a facilitator of realizing possibilities예요.",
+  "flow": [
+    ["통념", "대중문화는 도파민을 '쾌락 분자'라고 부르지만, 과학은 더 풍부하고 미묘한 현실을 보여 준다."],
+    ["진짜 역할", "도파민의 진정한 역할은 보상의 짜릿함이 아니라 기대·노력·있을 수 있는 것을 상상하는 것의 조화에 있다. 하루를 시작하는 동기, 문제를 푸는 집중력, 야망을 부채질하는 호기심이 모두 도파민에 의해 조율된다."],
+    ["가능성", "도파민은 만족감이 아니라 가능성을 전달한다. 새 도전의 발판을 마련하고, 목표를 달성 가능한 것으로 보이게 하며, '만약에?'라고 묻게 한다."],
+    ["결론", "결정적으로 도파민은 완성된 결과뿐 아니라 과정에 보상을 주고, 집중력을 높이며 평범한 순간을 잠재력으로 채운다."]
+  ],
+  "evidence": [
+    {"en": "Dopamine's true role is found not simply in the thrill of reward, but in the dance of anticipation, striving, and imagining what could be.", "ko": "도파민의 진정한 역할은 단순히 보상의 짜릿함이 아니라, 기대, 노력, 그리고 있을 수 있는 것을 상상하는 것의 조화에 있다.", "note": "not A but B로 통념(쾌락)을 걷어 내고 진짜 역할을 말해요. ②'강렬한 쾌락'은 A 쪽이라 함정이에요."},
+    {"en": "Dopamine doesn't give contentment; it delivers possibility.", "ko": "도파민은 만족감을 주지 않는다. 그것은 가능성을 전달한다.", "note": "핵심 문장이에요. possibility가 ⑤ realizing possibilities로 이어져요."},
+    {"en": "It sets the stage for new challenges, frames future goals as attainable, and propels you to ask \"What if?\"", "ko": "그것은 새로운 도전을 위한 발판을 마련하고, 미래의 목표를 달성 가능한 것으로 만들며, '만약에?'라고 묻도록 재촉한다.", "note": "가능성을 '실현하도록 돕는' 구체적 모습이에요. ⑤ facilitator(촉진자)와 맞아요."}
+  ],
+  "choices": [
+    {"en": "limitation of dopamine as a chemical reaction orchestrator", "ko": "화학 반응 조율자로서 도파민의 한계", "why": "orchestrated를 빌린 함정이에요. 글은 도파민의 '한계'가 아니라 힘을 말해요."},
+    {"en": "impact of dopamine on sparking intense pleasure", "ko": "강렬한 쾌락을 촉발하는 데 있어 도파민의 영향", "why": "글이 'not simply in the thrill of reward'라며 걷어 낸 통념이에요."},
+    {"en": "usefulness of dopamine in improving cognitive skills", "ko": "인지 능력 향상에 있어 도파민의 유용성", "why": "집중력이 나오지만 인지 능력 향상이 중심은 아니에요. 범위가 좁아요."},
+    {"en": "importance of rewards in sustaining motivation", "ko": "동기 유지에 있어 보상의 중요성", "why": "보상 자체가 아니라 도파민이 '과정'에 주는 힘을 말해요. 초점이 어긋나요."},
+    {"en": "force of dopamine as a facilitator of realizing possibilities", "ko": "가능성을 실현시키는 촉진자로서 도파민의 힘", "why": "정답. delivers possibility, frames goals as attainable, fills ordinary moments with potential이 모두 이 말로 모여요."}
+  ],
+  "grammar": [
+    {"t": "label A as B / not simply A but B", "ex": "Popular culture loves to label dopamine as the \"pleasure molecule,\" … Dopamine's true role is found not simply in the thrill of reward, but in the dance of anticipation …", "d": "'A를 B라고 부르다', 'A가 아니라 B'. 주제 문제에서 B 쪽이 필자의 주장이에요."},
+    {"t": "주격 관계대명사 that 세 번 + 복수 동사 are", "ex": "The rush of motivation that energizes you …, the focus that allows you to solve complex problems, and the curiosity that fuels ambition are all orchestrated by dopamine.", "d": "주어가 세 개(A, B, and C)라서 동사는 are예요. allow + 목적어 + to부정사도 확인하세요."},
+    {"t": "frame A as B / propel A to V", "ex": "It sets the stage for new challenges, frames future goals as attainable, and propels you to ask \"What if?\"", "d": "'A를 B로 보이게 하다', 'A가 ~하도록 재촉하다'. 동사 세 개가 병렬이에요."},
+    {"t": "문장 부사 Critically / not just A / what절 보어", "ex": "Critically, dopamine rewards the process, not just the finished result. It's what sharpens focus and fills ordinary moments with potential.", "d": "문두 Critically는 '결정적으로'(문장 전체 수식). what ~ potential은 보어 자리 명사절이에요. fill A with B = A를 B로 채우다."}
+  ],
+  "vocab": [["label A as B", "A를 B라고 부르다"], ["molecule", "분자"], ["nuanced", "미묘한"], ["thrill", "짜릿함"], ["anticipation", "기대"], ["striving", "노력"], ["rush of motivation", "동기의 쇄도"], ["energize", "활력을 주다"], ["fuel", "부채질하다"], ["ambition", "야망"], ["orchestrate", "조율하다"], ["contentment", "만족감"], ["set the stage for", "~의 발판을 마련하다"], ["attainable", "달성 가능한"], ["propel", "재촉하다, 나아가게 하다"], ["aspiration", "열망"], ["sharpen", "예리하게 하다"], ["facilitator", "촉진자"]],
+  "summary": {"en": "Rather than simply providing pleasure, dopamine drives anticipation, motivation, and curiosity and rewards the process itself, making it a force that realizes possibility.", "ko": "도파민은 단순히 쾌락을 주는 것이 아니라 기대·동기·호기심을 이끌고 과정 자체에 보상을 주어, 가능성을 실현시키는 힘이 된다."},
+  "writing": {"en": "Dopamine doesn't give contentment; it delivers possibility.", "ko": "도파민은 만족감을 주지 않는다. 그것은 가능성을 전달한다."},
+  "tip": "주제 문제는 '통념(Popular culture ~) → 반박(yet science ~)' 구조가 보이면 반박 쪽이 주제예요. ②처럼 통념(쾌락)을 그대로 담은 선택지, ①처럼 본문 단어(orchestrate)만 빌린 선택지를 먼저 지우세요.",
+  "faq": [
+    ["2026년 9월 고3 모의고사 영어 23번 정답은?", "⑤ force of dopamine as a facilitator of realizing possibilities예요. 도파민은 만족감이 아니라 가능성을 전달한다는 글이에요."],
+    ["2027학년도 9월 모의평가 23번과 같은 문제인가요?", "네. 2026년 9월에 시행된 고3 모의고사가 2027학년도 9월 모의평가예요."],
+    ["② 강렬한 쾌락은 왜 답이 아닌가요?", "글 첫머리에서 '쾌락 분자'는 대중의 통념이고, 진짜 역할은 보상의 짜릿함이 아니라고 반박해요."]
+  ],
+  "note": "'대중은 ~라고 하지만(yet) 과학은 …' 꼴이 보이면 뒤쪽이 주제예요. 첫 문장의 '쾌락'을 그대로 담은 ②는 필자가 반박한 쪽이라 바로 지우세요."
+}
