@@ -1,0 +1,40 @@
+{
+  "school": "maesong-ms",
+  "exam": "2026-2-fin-g3",
+  "date": "2026-11-28",
+  "n": "8",
+  "type": "어법 (옳은 것 고르기)",
+  "points": "4점",
+  "answer": "⑤",
+  "title": "them·embarrassing·very worse·수동태 — 다섯 개 중 맞는 건 where 하나",
+  "keywords": [
+    "매송중 3학년 영어 내신",
+    "매송중 2학기 기말고사 영어",
+    "매송중 2학기 2차 정기시험 영어",
+    "매송중 영어 기출",
+    "매송중 영어 8번 어법",
+    "very worse much worse",
+    "embarrassing embarrassed 구별",
+    "중3 영어 내신 어법"
+  ],
+  "lead": "매송중 2026학년도 2학기 2차 정기시험(기말고사, 3학년 영어) 8번은 사과에 관한 글에서 밑줄 친 다섯 곳 중 어법상 옳은 것을 고르는 4점 문항이에요. ⓐ~ⓓ가 모두 틀렸고 ⓔ where만 맞아서 정답은 ⑤예요. (원장 풀이 기준)",
+  "sections": [
+    [
+      "밑줄 판단",
+      "ⓐ posted <b>them</b> ✗ → <b>it</b> (a picture 하나) / ⓑ June was <b>embarrassing</b> ✗ → <b>embarrassed</b> (사람이 느끼는 감정) / ⓒ feel <b>very</b> worse ✗ → <b>much / even</b> worse (비교급 강조) / ⓓ our actions <b>have been affected</b> that person ✗ → <b>have affected</b> (목적어가 있으니 능동) / ⓔ an environment <b>where</b> everyone feels ~ ○ (장소 + 완전한 문장)"
+    ],
+    [
+      "핵심 원리 네 가지",
+      "① 대명사는 <b>가리키는 말의 수</b>에 맞춰요. ② 감정 형용사는 사람이 느끼면 <b>-ed</b>, 감정을 일으키면 <b>-ing</b>. ③ 비교급 앞에는 very를 못 쓰고 <b>much, even, far, a lot</b>을 써요. ④ 뒤에 목적어가 있으면 <b>능동태</b>예요."
+    ],
+    [
+      "함정 포인트",
+      "'옳은 것'을 고르는 문제라 틀린 이유를 네 개 모두 찾아야 확신할 수 있어요. 특히 ⓒ very worse는 우리말로 '훨씬 더 나쁘게'라 자연스럽게 읽혀서 놓치기 쉬워요."
+    ],
+    [
+      "다음 시험 대비법",
+      "이번 시험 어법은 8·10·14번과 논술형 1번이었어요. 중간고사(과거완료·what/that·병렬)에 이어 <b>감정 형용사, 비교급 강조, 관계부사, 분사구문</b>이 새로 나왔어요. 교과서 문장으로 직접 바꿔 써 보는 연습이 필요해요."
+    ]
+  ],
+  "tip": "밑줄이 동사면 '목적어가 있나?'(능동/수동), 형용사면 '누가 느끼나?'(-ed/-ing), 비교급이면 '앞에 very가 있나?'를 먼저 확인해요."
+}

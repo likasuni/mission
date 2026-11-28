@@ -1,0 +1,40 @@
+{
+  "school": "maesong-ms",
+  "exam": "2026-2-fin-g3",
+  "date": "2026-11-28",
+  "n": "14",
+  "type": "어법 (옳은 것 고르기)",
+  "points": "5점",
+  "answer": "③",
+  "title": "the 비교급 ~, the 비교급 … 만 맞았어요",
+  "keywords": [
+    "매송중 3학년 영어 내신",
+    "매송중 2학기 기말고사 영어",
+    "매송중 2학기 2차 정기시험 영어",
+    "매송중 영어 기출",
+    "매송중 영어 14번 어법",
+    "the 비교급 the 비교급",
+    "the way how 어법",
+    "continue to grow 어법"
+  ],
+  "lead": "매송중 2026학년도 2학기 2차 정기시험(기말고사, 3학년 영어) 14번은 친구를 소개하는 글에서 밑줄 친 다섯 곳 중 어법상 옳은 것을 고르는 5점 문항이에요. 이번 시험 최고 배점 중 하나예요. 'The more time we spend together, the closer our friendship becomes'만 맞아서 정답은 ③이에요. (원장 풀이 기준)",
+  "sections": [
+    [
+      "밑줄 판단",
+      "ⓐ <b>the way how</b> he helped me ✗ → the way 또는 how 하나만 / ⓑ the notes <b>what</b> he had taken ✗ → <b>that / which</b> (선행사 the notes가 있음) / ⓒ The more time ~, the closer our friendship becomes ○ / ⓓ someone who supports you <b>which</b> you need help ✗ → <b>when</b> / ⓔ will continue <b>grow</b> ✗ → <b>to grow / growing</b>"
+    ],
+    [
+      "핵심 원리",
+      "what은 선행사를 품은 관계대명사라 <b>앞에 명사가 있으면 못 써요</b>. the way와 how는 <b>함께 쓰지 않아요</b>. continue 뒤에는 <b>to부정사나 동명사</b>가 와요. ⓓ는 '도움이 필요할 <b>때</b>'라는 시간이라 when이에요."
+    ],
+    [
+      "함정 포인트",
+      "ⓓ which는 앞 문장이 길어서 관계대명사처럼 보여요. 하지만 뒤 문장 'you need help'가 빠진 자리 없이 완전해서 관계대명사는 올 수 없어요. 완전한 문장 앞이면 <b>관계부사(when, where)</b>를 떠올려요."
+    ],
+    [
+      "다음 시험 대비법",
+      "중간고사 10번(옳은 것)에 이어 기말 8·14번도 '옳은 것 고르기'였어요. 이 유형은 틀린 네 개를 모두 찾아야 하니, 관계사(what/that/which/when/where)와 동사 뒤 형태(continue to, stop -ing)를 정리해 두세요."
+    ]
+  ],
+  "tip": "'옳은 것' 문제는 맞아 보이는 하나를 고르기보다, 나머지 넷의 틀린 이유를 하나씩 지워 가는 게 정확해요."
+}
